@@ -1,0 +1,11 @@
+# 欄位定義。order 決定由左至右的順序，也決定配色 slot（0=藍, 1=橘）。
+# 新增地區：在這裡加一筆，然後建 src/data/<id>/periods.yaml 與 events.yaml。
+- id: china
+  name: 中國
+  subtitle: 東亞
+  order: 0
+
+- id: europe
+  name: 歐洲
+  subtitle: 地中海與西歐
+  order: 1

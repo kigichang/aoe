@@ -1,0 +1,544 @@
+/* ---------------------------------------------------------------
+   顏色只承載「地區」這一個維度（兩個 slot，色盲安全距離全數通過）。
+   事件類別改用漢字圖釘識別 —— 六個類別散佈在畫布上屬於任意兩色都可能
+   相鄰的情境，沒有任何六色配色能同時通過色盲安全門檻。
+   --------------------------------------------------------------- */
+:root {
+  color-scheme: light;
+
+  --surface-1: #fcfcfb;
+  --page: #f9f9f7;
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --muted: #898781;
+  --gridline: #e1e0d9;
+  --baseline: #c3c2b7;
+  --border: rgba(11, 11, 11, 0.1);
+
+  --r0: #2a78d6;
+  --r1: #eb6834;
+  --r2: #1baf7a;
+  --r3: #eda100;
+  --r4: #e87ba4;
+  --r5: #008300;
+  --r6: #4a3aa7;
+  --r7: #e34948;
+
+  --head-h: 58px;
+  --axis-w: 88px;
+  --rail-w: 26px;
+  --font: system-ui, -apple-system, 'Segoe UI', 'Noto Sans TC', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme='light'])) {
+    color-scheme: dark;
+    --surface-1: #1a1a19;
+    --page: #0d0d0d;
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --muted: #898781;
+    --gridline: #2c2c2a;
+    --baseline: #383835;
+    --border: rgba(255, 255, 255, 0.1);
+    --r0: #3987e5;
+    --r1: #d95926;
+    --r2: #199e70;
+    --r3: #c98500;
+    --r4: #d55181;
+    --r5: #008300;
+    --r6: #9085e9;
+    --r7: #e66767;
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --surface-1: #1a1a19;
+  --page: #0d0d0d;
+  --text-primary: #ffffff;
+  --text-secondary: #c3c2b7;
+  --muted: #898781;
+  --gridline: #2c2c2a;
+  --baseline: #383835;
+  --border: rgba(255, 255, 255, 0.1);
+  --r0: #3987e5;
+  --r1: #d95926;
+  --r2: #199e70;
+  --r3: #c98500;
+  --r4: #d55181;
+  --r5: #008300;
+  --r6: #9085e9;
+  --r7: #e66767;
+}
+
+/* 每個地區欄位把自己的 slot 顏色映到 --region，底下一律用 --region */
+.r0 { --region: var(--r0); }
+.r1 { --region: var(--r1); }
+.r2 { --region: var(--r2); }
+.r3 { --region: var(--r3); }
+.r4 { --region: var(--r4); }
+.r5 { --region: var(--r5); }
+.r6 { --region: var(--r6); }
+.r7 { --region: var(--r7); }
+
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--page);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* ---------------- masthead + toolbar ---------------- */
+
+.masthead {
+  padding: 14px 20px 8px;
+}
+.masthead h1 {
+  margin: 0;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+}
+.masthead p {
+  margin: 3px 0 0;
+  font-size: 12.5px;
+  color: var(--text-secondary);
+}
+
+.toolbar {
+  padding: 6px 20px 10px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.toolbar-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.toolbar-row .jumps { margin-left: auto; }
+
+.zoom { display: flex; align-items: center; gap: 6px; }
+.zoom button {
+  width: 30px; height: 28px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--surface-1);
+  font-size: 15px;
+  line-height: 1;
+}
+.zoom button:hover { border-color: var(--baseline); }
+.hint {
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-left: 4px;
+}
+
+.jumps { display: flex; flex-wrap: wrap; gap: 4px; }
+.jumps button {
+  padding: 4px 9px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+.jumps button:hover {
+  background: var(--surface-1);
+  border-color: var(--border);
+}
+
+/* 篩選列同時就是圖例 */
+.legend .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px 3px 4px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  font-size: 12px;
+  color: var(--muted);
+}
+.legend .chip .glyph {
+  display: grid;
+  place-items: center;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid currentColor;
+  font-size: 11px;
+  font-weight: 600;
+}
+.legend .chip.is-on {
+  color: var(--text-primary);
+  border-color: var(--baseline);
+  background: var(--surface-1);
+}
+
+/* ---------------- 時間軸畫布 ---------------- */
+
+.scroller {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  background: var(--surface-1);
+}
+
+.lanes {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  min-width: 100%;
+}
+
+.lane {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border-right: 1px solid var(--border);
+}
+.lane:last-of-type { border-right: none; }
+
+.axis-lane { width: var(--axis-w); flex: none; }
+.region-lane { flex: 1 1 0; }
+
+.lane-head {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  height: var(--head-h);
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+  background: var(--surface-1);
+  border-bottom: 1px solid var(--baseline);
+}
+.region-lane .lane-head { border-bottom-color: var(--region); }
+
+.lane-name { font-size: 14px; font-weight: 600; }
+.lane-sub, .lane-count { font-size: 11px; color: var(--muted); }
+.lane-count { position: absolute; right: 10px; top: 10px; }
+
+.lane-body {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* 全幅的年代格線，讓橫向對照有依據 */
+.gridlines {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.gridline {
+  position: absolute;
+  inset-inline: 0;
+  height: 1px;
+  background: var(--gridline);
+}
+
+.tick {
+  position: absolute;
+  inset-inline: 0;
+  padding-right: 10px;
+  text-align: right;
+  transform: translateY(-50%);
+}
+.tick-label {
+  font-size: 11px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  background: var(--surface-1);
+  padding: 1px 0;
+}
+
+/* ---------------- 朝代／時期色帶 ---------------- */
+
+.period-rail {
+  position: relative;
+  width: var(--rail-w);
+  flex: none;
+  margin-right: 2px;
+}
+.period {
+  position: absolute;
+  inset-inline: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  /* 相鄰色帶之間留一道 surface 縫隙，邊界才不會糊在一起 */
+  margin-bottom: 2px;
+  background: color-mix(in oklab, var(--region) 22%, var(--surface-1));
+  border: 1px solid color-mix(in oklab, var(--region) 45%, var(--surface-1));
+  display: grid;
+  place-items: center;
+}
+.period-name {
+  writing-mode: vertical-rl;
+  font-size: 11.5px;
+  letter-spacing: 0.14em;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+/* ---------------- 事件 ---------------- */
+
+.event-area {
+  display: flex;
+  gap: 12px;
+  flex: 1 1 0;
+  min-width: 0;
+  padding-left: 4px;
+}
+.event-lane {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.mark {
+  position: absolute;
+  left: 0;
+  right: 6px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  text-align: left;
+  border-radius: 6px;
+  z-index: 2;
+}
+.mark:hover { background: color-mix(in oklab, var(--region) 9%, transparent); }
+.mark.is-selected { background: color-mix(in oklab, var(--region) 16%, transparent); }
+
+.mark .glyph {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: color-mix(in oklab, var(--region) 20%, var(--surface-1));
+  /* 2px surface 環，marks 疊在格線上時不會黏住 */
+  box-shadow: 0 0 0 2px var(--surface-1);
+  border: 1.5px solid var(--region);
+}
+
+.mark-year {
+  flex: none;
+  font-size: 11px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  min-width: 34px;
+}
+.mark-title {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.imp-5 .mark-title { font-size: 13.5px; font-weight: 600; color: var(--text-primary); }
+.imp-4 .mark-title { font-size: 13px; color: var(--text-primary); }
+
+/* 標籤被推開時的引線，頂端那一橫才是真正的年份位置 */
+.leader {
+  position: absolute;
+  width: 1px;
+  background: color-mix(in oklab, var(--region) 55%, transparent);
+  z-index: 1;
+}
+.leader::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -3px;
+  width: 7px; height: 1px;
+  background: var(--region);
+}
+
+/* 有跨度的事件（戰爭、朝代更迭）畫成一條區間 */
+.span {
+  position: absolute;
+  width: 3px;
+  margin-left: -1px;
+  border-radius: 2px;
+  background: color-mix(in oklab, var(--region) 45%, transparent);
+  z-index: 1;
+}
+
+/* 標籤擠不下時只留這個小點，年份資訊不會消失 */
+.mark-dot-only {
+  position: absolute;
+  left: 8px;
+  width: 7px; height: 7px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: var(--region);
+  box-shadow: 0 0 0 2px var(--surface-1);
+  z-index: 2;
+}
+
+/* ---------------- 時間游標 ---------------- */
+
+.time-cursor {
+  position: absolute;
+  inset-inline: 0;
+  height: 0;
+  border-top: 1px dashed var(--text-secondary);
+  z-index: 3;
+  pointer-events: none;
+}
+.time-cursor-chip {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  padding: 2px 7px;
+  border-radius: 5px;
+  background: var(--text-primary);
+  color: var(--surface-1);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------------- 詳情面板 ---------------- */
+
+.detail {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: min(360px, calc(100vw - 32px));
+  max-height: min(62vh, 560px);
+  overflow-y: auto;
+  padding: 16px 18px 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-1);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  z-index: 10;
+}
+.detail-close {
+  position: absolute;
+  top: 8px; right: 10px;
+  width: 26px; height: 26px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  font-size: 17px;
+  color: var(--muted);
+}
+.detail-close:hover { background: var(--page); }
+
+.detail-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+.detail-tag .glyph {
+  display: grid;
+  place-items: center;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid var(--region);
+  background: color-mix(in oklab, var(--region) 20%, var(--surface-1));
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.detail h2 { margin: 8px 0 2px; font-size: 16px; line-height: 1.4; }
+.detail-date {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.detail-desc {
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+.detail-links { margin: 10px 0 0; font-size: 12.5px; display: flex; gap: 10px; }
+.detail-links a { color: var(--r0); }
+
+.detail-concurrent {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.detail-concurrent h3 { margin: 0 0 8px; font-size: 12px; color: var(--muted); font-weight: 600; }
+.concurrent-group + .concurrent-group { margin-top: 10px; }
+.concurrent-group h4 {
+  margin: 0 0 4px;
+  font-size: 11.5px;
+  color: var(--region);
+  font-weight: 600;
+}
+.concurrent-group ul { margin: 0; padding: 0; list-style: none; }
+.concurrent-group li button {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  padding: 3px 6px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  text-align: left;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+.concurrent-group li button:hover { background: var(--page); }
+.c-year { flex: none; color: var(--muted); font-variant-numeric: tabular-nums; }
+.c-title { color: var(--text-secondary); }
+
+/* ---------------- 窄螢幕 ---------------- */
+
+@media (max-width: 640px) {
+  :root { --axis-w: 56px; --rail-w: 20px; }
+  .masthead p { display: none; }
+  .mark-year { display: none; }
+  .detail { max-height: 50vh; }
+}

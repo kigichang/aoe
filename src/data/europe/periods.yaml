@@ -1,0 +1,116 @@
+# 歐洲不是單一政體，所以拆成兩條 track（同 track 內不重疊）：
+#   track 0 = 希臘／拜占庭一線
+#   track 1 = 羅馬／西歐一線
+- id: eu-mycenae
+  name: 邁錫尼
+  track: 0
+  start: -1600
+  end: -1101
+
+- id: eu-greek-dark
+  name: 希臘黑暗時代
+  track: 0
+  start: -1100
+  end: -801
+
+- id: eu-archaic
+  name: 古風希臘
+  track: 0
+  start: -800
+  end: -481
+
+- id: eu-classical
+  name: 古典希臘
+  track: 0
+  start: -480
+  end: -324
+
+- id: eu-hellenistic
+  name: 希臘化時代
+  track: 0
+  start: -323
+  end: -32
+
+- id: eu-roman-east
+  name: 羅馬統治
+  track: 0
+  start: -31
+  end: 329
+
+- id: eu-byzantine
+  name: 拜占庭帝國
+  track: 0
+  start: 330
+  end: 1452
+
+- id: eu-ottoman-greece
+  name: 鄂圖曼統治
+  track: 0
+  start: 1453
+  end: 1829
+
+- id: eu-modern-greece
+  name: 近現代希臘
+  track: 0
+  start: 1830
+  end: 2025
+
+- id: eu-roman-kingdom
+  name: 羅馬王政
+  track: 1
+  start: -753
+  end: -510
+
+- id: eu-roman-republic
+  name: 羅馬共和
+  track: 1
+  start: -509
+  end: -28
+
+- id: eu-roman-empire
+  name: 羅馬帝國
+  track: 1
+  start: -27
+  end: 475
+
+- id: eu-early-medieval
+  name: 中世紀早期
+  track: 1
+  start: 476
+  end: 999
+
+- id: eu-high-medieval
+  name: 中世紀盛期
+  track: 1
+  start: 1000
+  end: 1299
+
+- id: eu-late-medieval
+  name: 中世紀晚期
+  track: 1
+  start: 1300
+  end: 1449
+
+- id: eu-renaissance
+  name: 文藝復興
+  track: 1
+  start: 1450
+  end: 1599
+
+- id: eu-early-modern
+  name: 近代早期
+  track: 1
+  start: 1600
+  end: 1788
+
+- id: eu-revolution
+  name: 革命與工業時代
+  track: 1
+  start: 1789
+  end: 1913
+
+- id: eu-contemporary
+  name: 現代
+  track: 1
+  start: 1914
+  end: 2025

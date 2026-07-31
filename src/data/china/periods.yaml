@@ -1,0 +1,99 @@
+# 時期／朝代 = 欄位背景色帶。同一個 track 內不可重疊。
+# start 為起始年，end 為結束年（含）。負數 = 西元前，沒有西元 0 年。
+- id: cn-xia
+  name: 夏
+  start: -2070
+  end: -1601
+  note: 傳說時代，考古上仍有爭議
+
+- id: cn-shang
+  name: 商
+  start: -1600
+  end: -1047
+
+- id: cn-western-zhou
+  name: 西周
+  start: -1046
+  end: -772
+
+- id: cn-spring-autumn
+  name: 春秋
+  start: -771
+  end: -476
+
+- id: cn-warring-states
+  name: 戰國
+  start: -475
+  end: -222
+
+- id: cn-qin
+  name: 秦
+  start: -221
+  end: -207
+
+- id: cn-han
+  name: 漢
+  start: -206
+  end: 219
+  note: 西漢、新莽、東漢
+
+- id: cn-three-kingdoms
+  name: 三國
+  start: 220
+  end: 265
+
+- id: cn-jin
+  name: 晉
+  start: 266
+  end: 419
+
+- id: cn-northern-southern
+  name: 南北朝
+  start: 420
+  end: 580
+
+- id: cn-sui
+  name: 隋
+  start: 581
+  end: 617
+
+- id: cn-tang
+  name: 唐
+  start: 618
+  end: 906
+
+- id: cn-five-dynasties
+  name: 五代十國
+  start: 907
+  end: 959
+
+- id: cn-song
+  name: 宋
+  start: 960
+  end: 1278
+  note: 北宋、南宋；同期北方有遼、金
+
+- id: cn-yuan
+  name: 元
+  start: 1279
+  end: 1367
+
+- id: cn-ming
+  name: 明
+  start: 1368
+  end: 1643
+
+- id: cn-qing
+  name: 清
+  start: 1644
+  end: 1911
+
+- id: cn-roc
+  name: 中華民國
+  start: 1912
+  end: 1948
+
+- id: cn-prc
+  name: 現代
+  start: 1949
+  end: 2025

@@ -1,0 +1,410 @@
+# year: 負數 = 西元前，沒有西元 0 年。endYear 選填（有跨度的事件）。
+# category: politics | war | culture | science | religion | economy
+# importance: 1-5。縮放到全域視角時只會顯示 5，放大後才逐層釋出。
+- id: eu-mycenae-rise
+  year: -1600
+  title: 邁錫尼文明興起
+  category: culture
+  importance: 3
+
+- id: eu-bronze-collapse
+  year: -1200
+  title: 青銅時代崩潰；特洛伊戰爭傳說
+  category: war
+  importance: 4
+  desc: 東地中海各文明在數十年內接連瓦解，成因至今仍有爭論。
+
+- id: eu-olympics
+  year: -776
+  title: 第一屆古代奧林匹克運動會
+  category: culture
+  importance: 4
+
+- id: eu-rome-founded
+  year: -753
+  title: 羅馬建城（傳說）
+  category: politics
+  importance: 4
+
+- id: eu-solon
+  year: -594
+  title: 梭倫改革
+  category: politics
+  importance: 3
+
+- id: eu-republic
+  year: -509
+  title: 羅馬共和國建立
+  category: politics
+  importance: 5
+
+- id: eu-cleisthenes
+  year: -508
+  title: 克里斯提尼改革，雅典民主制成形
+  category: politics
+  importance: 5
+
+- id: eu-marathon
+  year: -490
+  title: 馬拉松戰役
+  category: war
+  importance: 4
+
+- id: eu-salamis
+  year: -480
+  title: 溫泉關與薩拉米斯海戰
+  category: war
+  importance: 5
+
+- id: eu-parthenon
+  year: -447
+  title: 帕德嫩神廟動工
+  category: culture
+  importance: 4
+
+- id: eu-peloponnesian
+  year: -431
+  title: 伯羅奔尼撒戰爭
+  category: war
+  importance: 4
+  endYear: -404
+
+- id: eu-socrates
+  year: -399
+  title: 蘇格拉底之死
+  category: culture
+  importance: 5
+
+- id: eu-academy
+  year: -387
+  title: 柏拉圖創立學院
+  category: culture
+  importance: 4
+
+- id: eu-lyceum
+  year: -335
+  title: 亞里斯多德創立呂克昂學園
+  category: culture
+  importance: 4
+
+- id: eu-alexander
+  year: -334
+  title: 亞歷山大東征
+  category: war
+  importance: 5
+  endYear: -323
+  desc: 希臘文化一路擴散到埃及、波斯與印度西北，開啟希臘化時代。
+
+- id: eu-euclid
+  year: -300
+  title: 歐幾里得《幾何原本》
+  category: science
+  importance: 5
+
+- id: eu-punic-1
+  year: -264
+  title: 第一次布匿戰爭
+  category: war
+  importance: 4
+
+- id: eu-hannibal
+  year: -218
+  title: 漢尼拔翻越阿爾卑斯山
+  category: war
+  importance: 4
+
+- id: eu-carthage-fall
+  year: -146
+  title: 羅馬毀滅迦太基與科林斯
+  category: war
+  importance: 4
+
+- id: eu-caesar
+  year: -44
+  title: 凱撒遇刺
+  category: politics
+  importance: 5
+
+- id: eu-augustus
+  year: -27
+  title: 屋大維成為奧古斯都，羅馬帝國建立
+  category: politics
+  importance: 5
+
+- id: eu-crucifixion
+  year: 30
+  title: 耶穌被釘十字架
+  category: religion
+  importance: 5
+
+- id: eu-pompeii
+  year: 79
+  title: 維蘇威火山爆發，龐貝城覆滅
+  category: culture
+  importance: 3
+
+- id: eu-hadrian-wall
+  year: 122
+  title: 哈德良長城動工
+  category: politics
+  importance: 3
+
+- id: eu-milan-edict
+  year: 313
+  title: 米蘭敕令，基督教合法化
+  category: religion
+  importance: 5
+
+- id: eu-constantinople
+  year: 330
+  title: 君士坦丁堡定為新都
+  category: politics
+  importance: 4
+
+- id: eu-rome-split
+  year: 395
+  title: 羅馬帝國東西分裂
+  category: politics
+  importance: 4
+
+- id: eu-sack-rome
+  year: 410
+  title: 西哥德人洗劫羅馬
+  category: war
+  importance: 4
+
+- id: eu-west-rome-fall
+  year: 476
+  title: 西羅馬帝國滅亡
+  category: politics
+  importance: 5
+
+- id: eu-justinian
+  year: 527
+  title: 查士丁尼即位，編纂羅馬法
+  category: politics
+  importance: 4
+  desc: 《民法大全》成為後世大陸法系的源頭。
+
+- id: eu-tours
+  year: 732
+  title: 圖爾戰役
+  category: war
+  importance: 3
+
+- id: eu-charlemagne
+  year: 800
+  title: 查理曼加冕為羅馬人的皇帝
+  category: politics
+  importance: 5
+
+- id: eu-verdun
+  year: 843
+  title: 凡爾登條約，法蘭克帝國三分
+  category: politics
+  importance: 4
+  desc: 法、德、義三國的雛形自此浮現。
+
+- id: eu-schism
+  year: 1054
+  title: 東西教會大分裂
+  category: religion
+  importance: 4
+
+- id: eu-norman-conquest
+  year: 1066
+  title: 諾曼征服英格蘭
+  category: war
+  importance: 5
+
+- id: eu-crusade-1
+  year: 1095
+  title: 第一次十字軍東征
+  category: religion
+  importance: 5
+
+- id: eu-magna-carta
+  year: 1215
+  title: 英格蘭大憲章
+  category: politics
+  importance: 5
+
+- id: eu-dante
+  year: 1265
+  title: 但丁誕生
+  category: culture
+  importance: 3
+
+- id: eu-black-death
+  year: 1347
+  title: 黑死病席捲歐洲
+  category: culture
+  importance: 5
+  endYear: 1351
+  desc: 數年內奪走約三分之一人口，勞動力短缺鬆動了莊園制。
+
+- id: eu-constantinople-fall
+  year: 1453
+  title: 君士坦丁堡陷落，拜占庭滅亡
+  category: war
+  importance: 5
+
+- id: eu-gutenberg
+  year: 1455
+  title: 古騰堡以活字印刷《聖經》
+  category: science
+  importance: 5
+
+- id: eu-columbus
+  year: 1492
+  title: 哥倫布抵達美洲；收復失地運動完成
+  category: economy
+  importance: 5
+
+- id: eu-luther
+  year: 1517
+  title: 馬丁路德發表《九十五條論綱》
+  category: religion
+  importance: 5
+
+- id: eu-copernicus
+  year: 1543
+  title: 哥白尼《天體運行論》
+  category: science
+  importance: 5
+
+- id: eu-armada
+  year: 1588
+  title: 英格蘭擊敗西班牙無敵艦隊
+  category: war
+  importance: 4
+
+- id: eu-thirty-years
+  year: 1618
+  title: 三十年戰爭爆發
+  category: war
+  importance: 4
+  endYear: 1648
+
+- id: eu-westphalia
+  year: 1648
+  title: 西發里亞和約
+  category: politics
+  importance: 5
+  desc: 確立主權國家互不干涉的原則，近代國際體系的起點。
+
+- id: eu-newton
+  year: 1687
+  title: 牛頓《自然哲學的數學原理》
+  category: science
+  importance: 5
+
+- id: eu-bill-of-rights
+  year: 1689
+  title: 英國權利法案，君主立憲
+  category: politics
+  importance: 4
+
+- id: eu-newcomen
+  year: 1712
+  title: 紐科門蒸汽機投入礦場
+  category: science
+  importance: 4
+
+- id: eu-encyclopedie
+  year: 1751
+  title: 《百科全書》開始出版，啟蒙運動
+  category: culture
+  importance: 4
+
+- id: eu-watt
+  year: 1769
+  title: 瓦特改良蒸汽機，工業革命
+  category: science
+  importance: 5
+
+- id: eu-french-revolution
+  year: 1789
+  title: 法國大革命
+  category: politics
+  importance: 5
+
+- id: eu-napoleon
+  year: 1804
+  title: 拿破崙稱帝
+  category: politics
+  importance: 5
+
+- id: eu-waterloo
+  year: 1815
+  title: 滑鐵盧戰役，維也納體系成形
+  category: war
+  importance: 4
+
+- id: eu-1848
+  year: 1848
+  title: 歐洲革命之年；《共產黨宣言》
+  category: politics
+  importance: 4
+
+- id: eu-darwin
+  year: 1859
+  title: 達爾文《物種起源》
+  category: science
+  importance: 5
+
+- id: eu-german-unification
+  year: 1871
+  title: 德意志帝國統一
+  category: politics
+  importance: 5
+
+- id: eu-einstein
+  year: 1905
+  title: 愛因斯坦發表狹義相對論
+  category: science
+  importance: 5
+
+- id: eu-ww1
+  year: 1914
+  title: 第一次世界大戰爆發
+  category: war
+  importance: 5
+  endYear: 1918
+
+- id: eu-october-revolution
+  year: 1917
+  title: 俄國十月革命
+  category: politics
+  importance: 5
+
+- id: eu-ww2
+  year: 1939
+  title: 第二次世界大戰爆發
+  category: war
+  importance: 5
+  endYear: 1945
+
+- id: eu-un
+  year: 1945
+  title: 二戰結束，聯合國成立
+  category: politics
+  importance: 5
+
+- id: eu-rome-treaty
+  year: 1957
+  title: 羅馬條約，歐洲經濟共同體
+  category: politics
+  importance: 4
+
+- id: eu-berlin-wall
+  year: 1989
+  title: 柏林圍牆倒塌
+  category: politics
+  importance: 5
+
+- id: eu-maastricht
+  year: 1993
+  title: 馬斯垂克條約，歐盟成立
+  category: politics
+  importance: 4

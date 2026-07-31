@@ -1,0 +1,411 @@
+# year: 負數 = 西元前，沒有西元 0 年。endYear 選填（有跨度的事件）。
+# category: politics | war | culture | science | religion | economy
+# importance: 1-5。縮放到全域視角時只會顯示 5，放大後才逐層釋出。
+- id: cn-shang-tang
+  year: -1600
+  title: 商湯滅夏
+  category: politics
+  importance: 3
+
+- id: cn-oracle-bone
+  year: -1300
+  title: 盤庚遷殷，甲骨文成熟
+  category: culture
+  importance: 4
+  desc: 現存最早的成系統漢字，也是中國信史的重要物證。
+
+- id: cn-zhou-founding
+  year: -1046
+  title: 武王伐紂，西周建立
+  category: politics
+  importance: 4
+
+- id: cn-gonghe
+  year: -841
+  title: 國人暴動，共和行政
+  category: politics
+  importance: 4
+  desc: 中國歷史確切紀年的起點，此後每一年都有明確記載。
+
+- id: cn-zhou-east
+  year: -771
+  title: 犬戎破鎬京，西周滅亡
+  category: war
+  importance: 4
+
+- id: cn-guanzhong
+  year: -685
+  title: 齊桓公即位，管仲改革
+  category: politics
+  importance: 3
+
+- id: cn-confucius
+  year: -551
+  title: 孔子誕生
+  category: culture
+  importance: 5
+  desc: 儒家思想的源頭，深刻影響此後兩千餘年的東亞社會秩序。
+
+- id: cn-laozi
+  year: -500
+  title: 道家思想成形
+  category: culture
+  importance: 4
+
+- id: cn-partition-jin
+  year: -453
+  title: 三家分晉，戰國時代開始
+  category: politics
+  importance: 4
+
+- id: cn-shang-yang
+  year: -356
+  title: 商鞅變法
+  category: politics
+  importance: 4
+  desc: 秦國以耕戰立國，為日後統一奠定制度基礎。
+
+- id: cn-quyuan
+  year: -278
+  title: 屈原投汨羅江
+  category: culture
+  importance: 3
+
+- id: cn-changping
+  year: -260
+  title: 長平之戰
+  category: war
+  importance: 4
+
+- id: cn-qin-unification
+  year: -221
+  title: 秦滅六國，統一中國
+  category: politics
+  importance: 5
+  desc: 廢封建、行郡縣，書同文、車同軌，確立此後兩千年的中央集權格局。
+
+- id: cn-burning-books
+  year: -213
+  title: 焚書坑儒
+  category: culture
+  importance: 3
+
+- id: cn-chen-sheng
+  year: -209
+  title: 陳勝吳廣起義
+  category: war
+  importance: 3
+
+- id: cn-han-founding
+  year: -202
+  title: 劉邦稱帝，西漢建立
+  category: politics
+  importance: 5
+
+- id: cn-wudi
+  year: -141
+  title: 漢武帝即位
+  category: politics
+  importance: 4
+
+- id: cn-zhang-qian
+  year: -138
+  title: 張騫出使西域，絲路開通
+  category: economy
+  importance: 5
+  desc: 首次把中原與中亞、乃至地中海世界的貿易網路連起來。
+
+- id: cn-shiji
+  year: -104
+  title: 司馬遷開始撰寫《史記》
+  category: culture
+  importance: 4
+
+- id: cn-wangmang
+  year: 9
+  title: 王莽篡漢，建立新朝
+  category: politics
+  importance: 3
+
+- id: cn-eastern-han
+  year: 25
+  title: 光武中興，東漢建立
+  category: politics
+  importance: 4
+
+- id: cn-paper
+  year: 105
+  title: 蔡倫改進造紙術
+  category: science
+  importance: 5
+  desc: 廉價書寫材料的出現，是知識傳播史上的分水嶺。
+
+- id: cn-yellow-turban
+  year: 184
+  title: 黃巾之亂
+  category: war
+  importance: 4
+
+- id: cn-red-cliffs
+  year: 208
+  title: 赤壁之戰
+  category: war
+  importance: 4
+
+- id: cn-three-kingdoms-start
+  year: 220
+  title: 曹丕篡漢，三國鼎立
+  category: politics
+  importance: 4
+
+- id: cn-jin-unify
+  year: 280
+  title: 西晉統一
+  category: politics
+  importance: 3
+
+- id: cn-yongjia
+  year: 316
+  title: 永嘉之亂，五胡十六國
+  category: war
+  importance: 4
+  desc: 北方長期分裂，士族大舉南遷，江南首次成為文化重心。
+
+- id: cn-faxian
+  year: 399
+  title: 法顯西行求法
+  category: religion
+  importance: 3
+
+- id: cn-equal-field
+  year: 485
+  title: 北魏推行均田制
+  category: economy
+  importance: 3
+
+- id: cn-sui-unify
+  year: 589
+  title: 隋滅陳，重新統一
+  category: politics
+  importance: 4
+
+- id: cn-grand-canal
+  year: 605
+  title: 開鑿大運河
+  category: economy
+  importance: 4
+
+- id: cn-tang-founding
+  year: 618
+  title: 唐朝建立
+  category: politics
+  importance: 5
+
+- id: cn-zhenguan
+  year: 627
+  title: 貞觀之治
+  category: politics
+  importance: 4
+  endYear: 649
+
+- id: cn-xuanzang
+  year: 629
+  title: 玄奘西行印度取經
+  category: religion
+  importance: 4
+
+- id: cn-wu-zetian
+  year: 690
+  title: 武則天稱帝
+  category: politics
+  importance: 4
+
+- id: cn-talas
+  year: 751
+  title: 怛羅斯之戰，造紙術西傳
+  category: war
+  importance: 4
+  desc: 唐與阿拔斯王朝的一場邊境戰役，卻意外把造紙術帶進了伊斯蘭世界與歐洲。
+
+- id: cn-anshi
+  year: 755
+  title: 安史之亂
+  category: war
+  importance: 5
+  endYear: 763
+
+- id: cn-diamond-sutra
+  year: 868
+  title: 《金剛經》雕版印刷
+  category: science
+  importance: 4
+  desc: 現存最早有明確紀年的印刷品。
+
+- id: cn-tang-fall
+  year: 907
+  title: 唐亡，五代十國
+  category: politics
+  importance: 3
+
+- id: cn-song-founding
+  year: 960
+  title: 趙匡胤建立北宋
+  category: politics
+  importance: 4
+
+- id: cn-movable-type
+  year: 1041
+  title: 畢昇發明活字印刷
+  category: science
+  importance: 5
+
+- id: cn-wang-anshi
+  year: 1069
+  title: 王安石變法
+  category: politics
+  importance: 3
+
+- id: cn-jingkang
+  year: 1127
+  title: 靖康之變，北宋滅亡
+  category: war
+  importance: 4
+
+- id: cn-genghis
+  year: 1206
+  title: 成吉思汗統一蒙古
+  category: politics
+  importance: 5
+
+- id: cn-yaishan
+  year: 1279
+  title: 崖山之戰，元朝統一全國
+  category: war
+  importance: 4
+
+- id: cn-ming-founding
+  year: 1368
+  title: 朱元璋建立明朝
+  category: politics
+  importance: 4
+
+- id: cn-zheng-he
+  year: 1405
+  title: 鄭和下西洋
+  category: economy
+  importance: 5
+  endYear: 1433
+  desc: 七次遠航直抵東非，規模遠超同時期的歐洲航海，卻在其後戛然而止。
+
+- id: cn-beijing-capital
+  year: 1421
+  title: 明成祖遷都北京
+  category: politics
+  importance: 3
+
+- id: cn-zhang-juzheng
+  year: 1573
+  title: 張居正改革
+  category: politics
+  importance: 3
+
+- id: cn-qing-enters
+  year: 1644
+  title: 李自成入北京，清軍入關
+  category: war
+  importance: 5
+
+- id: cn-koxinga
+  year: 1662
+  title: 鄭成功驅逐荷蘭人，取得臺灣
+  category: war
+  importance: 3
+
+- id: cn-taiwan-qing
+  year: 1683
+  title: 清朝統一臺灣
+  category: politics
+  importance: 3
+
+- id: cn-macartney
+  year: 1793
+  title: 馬戛爾尼使華
+  category: politics
+  importance: 3
+  desc: 英國使節團要求通商被拒，常被視為兩個世界秩序的正面相遇。
+
+- id: cn-opium-war
+  year: 1840
+  title: 鴉片戰爭
+  category: war
+  importance: 5
+  endYear: 1842
+
+- id: cn-taiping
+  year: 1851
+  title: 太平天國
+  category: war
+  importance: 4
+  endYear: 1864
+
+- id: cn-self-strengthening
+  year: 1861
+  title: 洋務運動開始
+  category: economy
+  importance: 4
+
+- id: cn-jiawu
+  year: 1894
+  title: 甲午戰爭
+  category: war
+  importance: 5
+
+- id: cn-hundred-days
+  year: 1898
+  title: 戊戌變法
+  category: politics
+  importance: 4
+
+- id: cn-boxer
+  year: 1900
+  title: 義和團與八國聯軍
+  category: war
+  importance: 4
+
+- id: cn-xinhai
+  year: 1911
+  title: 辛亥革命，帝制終結
+  category: politics
+  importance: 5
+
+- id: cn-may-fourth
+  year: 1919
+  title: 五四運動
+  category: culture
+  importance: 5
+
+- id: cn-war-japan
+  year: 1937
+  title: 七七事變，抗日戰爭全面爆發
+  category: war
+  importance: 5
+  endYear: 1945
+
+- id: cn-prc-founding
+  year: 1949
+  title: 中華人民共和國成立；國府遷臺
+  category: politics
+  importance: 5
+
+- id: cn-cultural-revolution
+  year: 1966
+  title: 文化大革命
+  category: politics
+  importance: 5
+  endYear: 1976
+
+- id: cn-reform-opening
+  year: 1978
+  title: 改革開放
+  category: economy
+  importance: 5
