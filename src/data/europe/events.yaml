@@ -16,15 +16,26 @@
 
 - id: eu-bronze-collapse
   year: -1200
-  title: 青銅時代崩潰；特洛伊戰爭傳說
+  title: 青銅時代崩潰
   category: war
   importance: 4
   desc: 東地中海各文明在數十年內接連瓦解，成因至今仍有爭論。
   sources:
     - title: 維基百科：青銅時代晚期崩潰
       url: https://zh.wikipedia.org/wiki/青銅時代晚期崩潰
+
+- id: eu-trojan-war
+  year: -1184
+  title: 特洛伊戰爭傳說
+  category: war
+  importance: 3
+  legendary: true
+  desc: 傳統年代出自古希臘學者埃拉托斯特尼的推定。特洛伊遺址確有城破的考古層位，但與史詩的關聯至今無定論。
+  sources:
     - title: 維基百科：特洛伊戰爭
       url: https://zh.wikipedia.org/wiki/特洛伊戰爭
+    - title: 維基百科：特洛伊
+      url: https://zh.wikipedia.org/wiki/特洛伊
 
 - id: eu-olympics
   year: -776
