@@ -16,6 +16,8 @@ interface Props {
   onToggleRegion: (id: string) => void
   categories: Set<Category>
   onToggleCategory: (c: Category) => void
+  showLegendary: boolean
+  onToggleLegendary: () => void
   onZoom: (factor: number) => void
   onJump: (year: number) => void
 }
@@ -26,6 +28,8 @@ export function Toolbar({
   onToggleRegion,
   categories,
   onToggleCategory,
+  showLegendary,
+  onToggleLegendary,
   onZoom,
   onJump,
 }: Props) {
@@ -89,6 +93,27 @@ export function Toolbar({
               </button>
             )
           })}
+        </div>
+
+        <span className="group-sep" aria-hidden="true" />
+
+        {/*
+          傳說是獨立的一軸，不是第七個類別 —— 伏羲仍然是「文化」、黃帝仍然是
+          「戰爭」，這顆 chip 篩的是「年代確不確定」。
+        */}
+        <div className="chip-group" role="group" aria-label="傳說事件">
+          <button
+            type="button"
+            className={`chip chip-legendary${showLegendary ? ' is-on' : ''}`}
+            aria-pressed={showLegendary}
+            onClick={onToggleLegendary}
+            title="三皇五帝、神武天皇這類年代出自後世追記的事件"
+          >
+            <span className="glyph" aria-hidden="true">
+              傳
+            </span>
+            傳說
+          </button>
         </div>
       </div>
     </div>

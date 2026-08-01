@@ -10,6 +10,7 @@ interface Props {
   slot: number
   ppy: number
   categories: Set<Category>
+  showLegendary: boolean
   laneCount: number
   selectedId: string | null
   onSelect: (id: string) => void
@@ -20,6 +21,7 @@ function RegionColumnImpl({
   slot,
   ppy,
   categories,
+  showLegendary,
   laneCount,
   selectedId,
   onSelect,
@@ -28,10 +30,13 @@ function RegionColumnImpl({
 
   const placed = useMemo(() => {
     const visible = region.events.filter(
-      (e) => e.importance >= floor && categories.has(e.category),
+      (e) =>
+        e.importance >= floor &&
+        categories.has(e.category) &&
+        (showLegendary || !e.legendary),
     )
     return placeEvents(visible, (year) => yearToY(year, ppy), laneCount, ppy)
-  }, [region.events, floor, categories, ppy, laneCount])
+  }, [region.events, floor, categories, showLegendary, ppy, laneCount])
 
   const lanes = useMemo(
     () =>

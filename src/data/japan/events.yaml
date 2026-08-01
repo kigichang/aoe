@@ -5,6 +5,38 @@
 # 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
 
 
+
+- id: jp-jimmu
+  year: -660
+  title: 神武天皇即位（傳說），日本建國神話
+  category: politics
+  importance: 5
+  legendary: true
+  desc: 《記紀》所載的初代天皇。前 660 年是《日本書紀》編纂時以干支推定的，考古上沒有對應。
+  sources:
+    - title: 維基百科：神武天皇
+      url: https://zh.wikipedia.org/wiki/神武天皇
+    - title: 日文維基百科：神武天皇
+      url: https://ja.wikipedia.org/wiki/神武天皇
+    - title: 維基百科：日本書紀
+      url: https://zh.wikipedia.org/wiki/日本書紀
+
+- id: jp-kesshi
+  year: -581
+  title: 綏靖天皇即位，闕史八代開始
+  category: politics
+  importance: 3
+  endYear: -98
+  legendary: true
+  desc: 第二代到第九代天皇只留下系譜、沒有事蹟，史學界多認為是後世為拉長皇統而追補的。
+  sources:
+    - title: 維基百科：欠史八代
+      url: https://zh.wikipedia.org/wiki/欠史八代
+    - title: 日文維基百科：欠史八代
+      url: https://ja.wikipedia.org/wiki/欠史八代
+    - title: 維基百科：綏靖天皇
+      url: https://zh.wikipedia.org/wiki/綏靖天皇
+
 - id: jp-yayoi-culture
   year: -300
   title: 彌生文化，稻作與金屬器傳入
@@ -15,6 +47,19 @@
     - title: 維基百科：彌生時代
       url: https://zh.wikipedia.org/wiki/彌生時代
 
+- id: jp-sujin
+  year: -97
+  title: 崇神天皇即位
+  category: politics
+  importance: 3
+  legendary: true
+  desc: 《記紀》稱其「御肇國天皇」，被認為可能是最早一位有實體的大王，但年代仍是傳說。
+  sources:
+    - title: 維基百科：崇神天皇
+      url: https://zh.wikipedia.org/wiki/崇神天皇
+    - title: 日文維基百科：崇神天皇
+      url: https://ja.wikipedia.org/wiki/崇神天皇
+
 - id: jp-han-seal
   year: 57
   title: 倭奴國王受漢光武帝金印
@@ -23,6 +68,34 @@
   sources:
     - title: 維基百科：漢委奴國王印
       url: https://zh.wikipedia.org/wiki/漢委奴國王印
+
+- id: jp-yamato-takeru
+  year: 110
+  title: 日本武尊東征傳說
+  category: war
+  importance: 3
+  legendary: true
+  desc: 傳說中平定熊襲與東國的皇子，是《記紀》裡最具文學色彩的英雄形象。
+  sources:
+    - title: 維基百科：日本武尊
+      url: https://zh.wikipedia.org/wiki/日本武尊
+    - title: 日文維基百科：日本武尊
+      url: https://ja.wikipedia.org/wiki/ヤマトタケル
+
+- id: jp-jingu
+  year: 200
+  title: 神功皇后三韓征伐傳說
+  category: war
+  importance: 3
+  legendary: true
+  desc: 傳說中出兵朝鮮半島。史實成分長期有爭議，近代曾被援引為對外擴張的依據。
+  sources:
+    - title: 維基百科：三韓征伐
+      url: https://zh.wikipedia.org/wiki/三韓征伐
+    - title: 日文維基百科：三韓征伐
+      url: https://ja.wikipedia.org/wiki/三韓征伐
+    - title: 維基百科：神功皇后
+      url: https://zh.wikipedia.org/wiki/神功皇后
 
 - id: jp-himiko
   year: 239

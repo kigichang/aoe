@@ -5,6 +5,113 @@
 # 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
 
 
+
+- id: cn-fuxi
+  year: -2852
+  title: 伏羲畫八卦，傳說中的文明肇始
+  category: culture
+  importance: 4
+  legendary: true
+  desc: 三皇之首，傳說教民結網漁獵、始畫八卦。年代出自晉人皇甫謐《帝王世紀》的追記，非考古定年。
+  sources:
+    - title: 維基百科：伏羲
+      url: https://zh.wikipedia.org/wiki/伏羲
+    - title: 維基百科：八卦
+      url: https://zh.wikipedia.org/wiki/八卦
+    - title: 維基百科：帝王世紀
+      url: https://zh.wikipedia.org/wiki/帝王世紀
+
+- id: cn-shennong
+  year: -2737
+  title: 神農嘗百草，教民耕種
+  category: economy
+  importance: 4
+  legendary: true
+  desc: 傳說中農耕與醫藥的開端。與黃帝並稱炎黃，被後世追認為華夏共祖之一。
+  sources:
+    - title: 維基百科：神農
+      url: https://zh.wikipedia.org/wiki/神農
+    - title: 維基百科：三皇五帝
+      url: https://zh.wikipedia.org/wiki/三皇五帝
+
+- id: cn-zhuolu
+  year: -2698
+  title: 黃帝敗蚩尤於涿鹿
+  category: war
+  importance: 5
+  legendary: true
+  desc: 傳說中部落聯盟成形的關鍵一戰。黃帝其人其事無考古佐證，年代同樣出自後世推定。
+  sources:
+    - title: 維基百科：黃帝
+      url: https://zh.wikipedia.org/wiki/黃帝
+    - title: 維基百科：涿鹿之戰
+      url: https://zh.wikipedia.org/wiki/涿鹿之戰
+    - title: 維基百科：蚩尤
+      url: https://zh.wikipedia.org/wiki/蚩尤
+
+- id: cn-cangjie
+  year: -2650
+  title: 倉頡造字
+  category: culture
+  importance: 3
+  legendary: true
+  desc: 傳為黃帝史官。文字實際上是長期演化的結果，考古上最早的成熟系統是商代甲骨文。
+  sources:
+    - title: 維基百科：倉頡
+      url: https://zh.wikipedia.org/wiki/倉頡
+
+- id: cn-yao
+  year: -2357
+  title: 堯命羲和觀象授時，定四時成歲
+  category: science
+  importance: 3
+  legendary: true
+  desc: 《尚書·堯典》所載的曆法起源。
+  sources:
+    - title: 維基百科：堯
+      url: https://zh.wikipedia.org/wiki/堯
+    - title: 維基百科：三皇五帝
+      url: https://zh.wikipedia.org/wiki/三皇五帝
+
+- id: cn-shanrang
+  year: -2255
+  title: 堯禪位於舜
+  category: politics
+  importance: 4
+  legendary: true
+  desc: 禪讓傳說是後世論證政權正當性的重要依據，先秦諸子對它已各有詮釋。
+  sources:
+    - title: 維基百科：舜
+      url: https://zh.wikipedia.org/wiki/舜
+    - title: 維基百科：禪讓
+      url: https://zh.wikipedia.org/wiki/禪讓
+
+- id: cn-yu-flood
+  year: -2200
+  title: 大禹治水
+  category: economy
+  importance: 4
+  legendary: true
+  desc: 以疏導取代堵塞，傳說治水十三年三過家門不入。
+  sources:
+    - title: 維基百科：大禹治水
+      url: https://zh.wikipedia.org/wiki/大禹治水
+
+- id: cn-xia-founded
+  year: -2070
+  title: 禹傳子啟，世襲取代禪讓；夏朝建立
+  category: politics
+  importance: 5
+  legendary: true
+  desc: 前 2070 年是夏商周斷代工程的推定值。二里頭遺址是否即夏，考古上仍無定論。
+  sources:
+    - title: 維基百科：夏朝
+      url: https://zh.wikipedia.org/wiki/夏朝
+    - title: 維基百科：夏商周斷代工程
+      url: https://zh.wikipedia.org/wiki/夏商周斷代工程
+    - title: 維基百科：二里頭遺址
+      url: https://zh.wikipedia.org/wiki/二里頭遺址
+
 - id: cn-shang-tang
   year: -1600
   title: 商湯滅夏

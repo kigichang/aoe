@@ -461,11 +461,41 @@ button {
 .imp-4 .mark-title { font-size: 13px; color: var(--text-primary); }
 
 /* 標籤被推開時的引線，頂端那一橫才是真正的年份位置 */
+/* ── 傳說事件 ────────────────────────────────────────────────
+   年代是後世追記的（三皇五帝、神武天皇、羅馬建城），不是考古定年。
+   圖釘仍畫在傳世年代上，但改成虛線 + 半透明，讓人掃一眼就看得出
+   這條線比較「軟」—— 不必點開詳情。
+
+   不用降低整體 opacity，那會把文字也一起弄糊、影響可讀性；
+   只弱化圖釘的邊框與底色，標題維持原本的對比。 */
+.mark.is-legendary .glyph {
+  border-style: dashed;
+  background: color-mix(in oklab, var(--region) 8%, var(--surface-1));
+}
+.mark.is-legendary .mark-year {
+  font-style: italic;
+}
+.mark.is-legendary .mark-title {
+  color: var(--text-secondary);
+}
+.mark-dot-only.is-legendary {
+  background: color-mix(in oklab, var(--region) 45%, transparent);
+}
+
 .leader {
   position: absolute;
   width: 1px;
   background: color-mix(in oklab, var(--region) 55%, transparent);
   z-index: 1;
+}
+/* 引線改虛線。用 repeating-gradient 而不是 border-style，
+   因為引線是靠 background 上色的 1px 元素。 */
+.leader.is-legendary {
+  background: repeating-linear-gradient(
+    to bottom,
+    color-mix(in oklab, var(--region) 55%, transparent) 0 3px,
+    transparent 3px 6px
+  );
 }
 .leader::before {
   content: '';

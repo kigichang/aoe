@@ -37,9 +37,10 @@
 
 - id: eu-rome-founded
   year: -753
-  title: 羅馬建城（傳說）
+  title: 羅馬建城
   category: politics
   importance: 4
+  legendary: true
   sources:
     - title: 維基百科：羅馬王政時代
       url: https://zh.wikipedia.org/wiki/羅馬王政時代

@@ -1,5 +1,11 @@
 # 時期／朝代 = 欄位背景色帶。同一個 track 內不可重疊。
 # start 為起始年，end 為結束年（含）。負數 = 西元前，沒有西元 0 年。
+- id: cn-legendary
+  name: 傳說時代
+  start: -2852
+  end: -2071
+  note: 三皇五帝。年代皆為後世追記，非考古定年。
+
 - id: cn-xia
   name: 夏
   start: -2070

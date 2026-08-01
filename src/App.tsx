@@ -39,6 +39,7 @@ export default function App() {
   const scrollRef = useRef<HTMLDivElement>(null)
   const [ppy, setPpy] = useState(0.6)
   const [categories, setCategories] = useState(() => new Set<Category>(CATEGORY_IDS))
+  const [showLegendary, setShowLegendary] = useState(true)
   const [visibleRegions, setVisibleRegions] = useState(
     () => new Set(REGIONS.map((r) => r.id)),
   )
@@ -214,6 +215,8 @@ export default function App() {
         regions={regionChips}
         onToggleRegion={toggleRegion}
         categories={categories}
+        showLegendary={showLegendary}
+        onToggleLegendary={() => setShowLegendary((v) => !v)}
         onToggleCategory={toggleCategory}
         onZoom={(f) => zoomAt(f, (scrollRef.current?.clientHeight ?? 0) / 2)}
         onJump={scrollToYear}
@@ -243,6 +246,7 @@ export default function App() {
               slot={slot}
               ppy={ppy}
               categories={categories}
+              showLegendary={showLegendary}
               laneCount={laneCount}
               selectedId={selectedId}
               onSelect={setSelectedId}
