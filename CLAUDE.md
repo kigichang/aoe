@@ -263,7 +263,7 @@ https://zh.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=A
 **時期（面）與事件（點）分開存。** 這是可讀性的分水嶺 —— 朝代畫成背景色帶，
 事件畫成圖釘。混在一起畫會讓兩者都讀不清楚。
 
-**DOM 渲染，不用 Canvas。** 目前約 130 則事件，DOM 完全撐得住，而且免費得到
+**DOM 渲染，不用 Canvas。** 目前約 310 則事件，DOM 完全撐得住，而且免費得到
 文字選取、無障礙、CSS 主題。**超過約 2000 則再考慮虛擬化**（`RegionColumn` 目前
 會把整欄的可見事件全部排版並渲染，沒有做 viewport 裁切）。
 

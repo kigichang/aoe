@@ -4,6 +4,7 @@
 #
 # 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
 
+
 - id: tw-tapenkeng
   year: -3000
   title: 大坌坑文化，進入新石器時代
@@ -137,6 +138,16 @@
     - title: 維基百科：朱一貴
       url: https://zh.wikipedia.org/wiki/朱一貴
 
+- id: tw-longshan-temple
+  year: 1738
+  title: 艋舺龍山寺創建
+  category: religion
+  importance: 3
+  desc: 泉州移民的信仰中心，也是清代艋舺的公共議事場所。
+  sources:
+    - title: 維基百科：艋舺龍山寺
+      url: https://zh.wikipedia.org/wiki/艋舺龍山寺
+
 - id: tw-lin-shuangwen
   year: 1786
   title: 林爽文事件
@@ -158,6 +169,16 @@
       url: https://zh.wikipedia.org/wiki/天津條約
     - title: 維基百科：臺灣清治時期
       url: https://zh.wikipedia.org/wiki/臺灣清治時期
+
+- id: tw-catholic-return
+  year: 1859
+  title: 道明會士抵打狗，天主教重返台灣
+  category: religion
+  importance: 3
+  desc: 距離荷西時期的傳教中斷已逾兩百年。
+  sources:
+    - title: 維基百科：玫瑰聖母聖殿主教座堂
+      url: https://zh.wikipedia.org/wiki/玫瑰聖母聖殿主教座堂
 
 - id: tw-maxwell
   year: 1865
@@ -291,6 +312,16 @@
     - title: 維基百科：臺灣文化協會
       url: https://zh.wikipedia.org/wiki/臺灣文化協會
 
+- id: tw-taihoku-imperial-univ
+  year: 1928
+  title: 臺北帝國大學創立
+  category: culture
+  importance: 4
+  desc: 台灣第一所大學，戰後改制為台灣大學。
+  sources:
+    - title: 維基百科：臺北帝國大學
+      url: https://zh.wikipedia.org/wiki/臺北帝國大學
+
 - id: tw-jianan-canal
   year: 1930
   title: 嘉南大圳完工
@@ -380,6 +411,16 @@
     - title: 維基百科：金門炮戰
       url: https://zh.wikipedia.org/wiki/金門炮戰
 
+- id: tw-kaohsiung-epz
+  year: 1966
+  title: 高雄加工出口區啟用，出口導向工業化
+  category: economy
+  importance: 3
+  desc: 全球首座加工出口區，以租稅優惠與簡化通關吸引外資設廠。
+  sources:
+    - title: 維基百科：前鎮科技產業園區
+      url: https://zh.wikipedia.org/wiki/前鎮科技產業園區
+
 - id: tw-nine-year-education
   year: 1968
   title: 實施九年國民義務教育
@@ -438,6 +479,16 @@
   sources:
     - title: 維基百科：臺灣省戒嚴令
       url: https://zh.wikipedia.org/wiki/臺灣省戒嚴令
+
+- id: tw-tsmc
+  year: 1987
+  title: 台積電成立，開創晶圓代工模式
+  category: science
+  importance: 4
+  desc: 只製造、不設計自有產品的分工，重塑了全球半導體產業的結構。
+  sources:
+    - title: 維基百科：台積電
+      url: https://zh.wikipedia.org/wiki/台積電
 
 - id: tw-end-mobilization
   year: 1991

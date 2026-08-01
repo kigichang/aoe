@@ -4,6 +4,7 @@
 #
 # 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
 
+
 - id: cn-shang-tang
   year: -1600
   title: 商湯滅夏
@@ -223,6 +224,15 @@
     - title: 維基百科：東漢
       url: https://zh.wikipedia.org/wiki/東漢
 
+- id: cn-white-horse-temple
+  year: 68
+  title: 洛陽白馬寺興建，佛教東傳
+  category: religion
+  importance: 3
+  sources:
+    - title: 維基百科：白馬寺
+      url: https://zh.wikipedia.org/wiki/白馬寺
+
 - id: cn-paper
   year: 105
   title: 蔡倫改進造紙術
@@ -235,6 +245,17 @@
     - title: 維基百科：造紙術
       url: https://zh.wikipedia.org/wiki/造紙術
 
+- id: cn-seismoscope
+  year: 132
+  title: 張衡製候風地動儀
+  category: science
+  importance: 3
+  sources:
+    - title: 維基百科：地動儀
+      url: https://zh.wikipedia.org/wiki/地動儀
+    - title: 維基百科：張衡
+      url: https://zh.wikipedia.org/wiki/張衡
+
 - id: cn-yellow-turban
   year: 184
   title: 黃巾之亂
@@ -243,6 +264,16 @@
   sources:
     - title: 維基百科：黃巾之亂
       url: https://zh.wikipedia.org/wiki/黃巾之亂
+
+- id: cn-shanghan-lun
+  year: 200
+  title: 張仲景《傷寒雜病論》
+  category: science
+  importance: 3
+  desc: 確立辨證論治的架構，是後世中醫臨床的基礎文本。
+  sources:
+    - title: 維基百科：傷寒雜病論
+      url: https://zh.wikipedia.org/wiki/傷寒雜病論
 
 - id: cn-red-cliffs
   year: 208
@@ -293,6 +324,16 @@
   sources:
     - title: 維基百科：法顯
       url: https://zh.wikipedia.org/wiki/法顯
+
+- id: cn-zu-chongzhi-pi
+  year: 480
+  title: 祖沖之推算圓周率至小數七位
+  category: science
+  importance: 4
+  desc: 3.1415926 與 3.1415927 之間的上下界，這個精度在世界上領先了將近千年。
+  sources:
+    - title: 維基百科：祖沖之
+      url: https://zh.wikipedia.org/wiki/祖沖之
 
 - id: cn-equal-field
   year: 485
@@ -380,6 +421,26 @@
     - title: 維基百科：安史之亂
       url: https://zh.wikipedia.org/wiki/安史之亂
 
+- id: cn-two-tax
+  year: 780
+  title: 兩稅法，稅基由人丁改為資產
+  category: economy
+  importance: 3
+  desc: 均田制崩解後的因應之策，也是中國賦稅史上從稅人到稅地的轉折點。
+  sources:
+    - title: 維基百科：兩稅法
+      url: https://zh.wikipedia.org/wiki/兩稅法
+
+- id: cn-huichang-persecution
+  year: 845
+  title: 會昌毀佛
+  category: religion
+  importance: 3
+  desc: 大量寺產被沒入官府。佛教在中國的制度性擴張自此受挫。
+  sources:
+    - title: 維基百科：會昌毀佛
+      url: https://zh.wikipedia.org/wiki/會昌毀佛
+
 - id: cn-diamond-sutra
   year: 868
   title: 《金剛經》雕版印刷
@@ -412,6 +473,16 @@
     - title: 維基百科：北宋
       url: https://zh.wikipedia.org/wiki/北宋
 
+- id: cn-jiaozi
+  year: 1024
+  title: 交子成為官方紙幣
+  category: economy
+  importance: 4
+  desc: 世界最早的官方紙幣，比歐洲早了約六百年。
+  sources:
+    - title: 維基百科：交子
+      url: https://zh.wikipedia.org/wiki/交子
+
 - id: cn-movable-type
   year: 1041
   title: 畢昇發明活字印刷
@@ -431,6 +502,16 @@
   sources:
     - title: 維基百科：王安石變法
       url: https://zh.wikipedia.org/wiki/王安石變法
+
+- id: cn-mengxi-bitan
+  year: 1088
+  title: 沈括《夢溪筆談》
+  category: science
+  importance: 3
+  desc: 記錄了活字印刷、磁針指向與地層成因等觀察，是宋代科技的第一手材料。
+  sources:
+    - title: 維基百科：夢溪筆談
+      url: https://zh.wikipedia.org/wiki/夢溪筆談
 
 - id: cn-jingkang
   year: 1127
@@ -494,6 +575,28 @@
     - title: 維基百科：明成祖
       url: https://zh.wikipedia.org/wiki/明成祖
 
+- id: cn-macau-lease
+  year: 1557
+  title: 葡萄牙人取得澳門居留權
+  category: economy
+  importance: 3
+  desc: 歐洲人在東亞的第一個長期據點，成為中國、日本與歐洲三方轉口貿易的節點。
+  sources:
+    - title: 維基百科：葡屬澳門
+      url: https://zh.wikipedia.org/wiki/葡屬澳門
+    - title: 維基百科：澳門歷史
+      url: https://zh.wikipedia.org/wiki/澳門歷史
+
+- id: cn-manila-galleon
+  year: 1571
+  title: 馬尼拉大帆船開航，美洲白銀流入
+  category: economy
+  importance: 4
+  desc: 美洲白銀經馬尼拉大量進入中國，支撐了明代後期的銀本位與賦稅折銀。
+  sources:
+    - title: 維基百科：馬尼拉大帆船
+      url: https://zh.wikipedia.org/wiki/馬尼拉大帆船
+
 - id: cn-zhang-juzheng
   year: 1573
   title: 張居正改革
@@ -502,6 +605,87 @@
   sources:
     - title: 維基百科：張居正
       url: https://zh.wikipedia.org/wiki/張居正
+
+- id: cn-bencao-gangmu
+  year: 1578
+  title: 李時珍《本草綱目》成書
+  category: science
+  importance: 4
+  desc: 收錄藥物近一千九百種，體例上以自然屬性分類，而非依療效編排。
+  sources:
+    - title: 維基百科：本草綱目
+      url: https://zh.wikipedia.org/wiki/本草綱目
+
+- id: cn-imjin-war
+  year: 1592
+  title: 萬曆朝鮮之役，明軍援朝抗日
+  category: war
+  importance: 4
+  endYear: 1598
+  desc: 明、朝鮮、日本三方投入的大規模戰爭，耗竭明朝國庫，也削弱了豐臣政權。
+  sources:
+    - title: 維基百科：萬曆朝鮮之役
+      url: https://zh.wikipedia.org/wiki/萬曆朝鮮之役
+
+- id: cn-sweet-potato
+  year: 1593
+  title: 番薯自呂宋傳入福建
+  category: economy
+  importance: 4
+  desc: 耐旱、可種於瘠地的新作物。與玉米一同讓中國人口在此後兩百年間增長數倍。
+  sources:
+    - title: 維基百科：番薯
+      url: https://zh.wikipedia.org/wiki/番薯
+    - title: 維基百科：陳振龍
+      url: https://zh.wikipedia.org/wiki/陳振龍
+
+- id: cn-peony-pavilion
+  year: 1598
+  title: 湯顯祖《牡丹亭》
+  category: culture
+  importance: 3
+  desc: 崑曲的代表作，也是晚明市民文化興盛的指標。
+  sources:
+    - title: 維基百科：牡丹亭
+      url: https://zh.wikipedia.org/wiki/牡丹亭
+
+- id: cn-ricci-beijing
+  year: 1601
+  title: 利瑪竇入北京，西學東漸
+  category: religion
+  importance: 4
+  desc: 以曆算與輿圖為敲門磚傳教，把歐幾里得幾何與世界地圖一併帶進士大夫圈子。
+  sources:
+    - title: 維基百科：利瑪竇
+      url: https://zh.wikipedia.org/wiki/利瑪竇
+
+- id: cn-later-jin
+  year: 1616
+  title: 努爾哈赤建後金
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：努爾哈赤
+      url: https://zh.wikipedia.org/wiki/努爾哈赤
+
+- id: cn-qing-proclaimed
+  year: 1636
+  title: 皇太極改國號為清
+  category: politics
+  importance: 3
+  sources:
+    - title: 維基百科：皇太極
+      url: https://zh.wikipedia.org/wiki/皇太極
+
+- id: cn-tiangong-kaiwu
+  year: 1637
+  title: 宋應星《天工開物》
+  category: science
+  importance: 4
+  desc: 系統記錄農業與手工業的實作技術，在當時的士人著作裡相當罕見。
+  sources:
+    - title: 維基百科：天工開物
+      url: https://zh.wikipedia.org/wiki/天工開物
 
 - id: cn-qing-enters
   year: 1644
@@ -514,6 +698,16 @@
     - title: 維基百科：甲申之變
       url: https://zh.wikipedia.org/wiki/甲申之變
 
+- id: cn-queue-order
+  year: 1645
+  title: 剃髮易服令
+  category: politics
+  importance: 3
+  desc: 「留頭不留髮」的強制同化，激起江南各地激烈抵抗。
+  sources:
+    - title: 維基百科：剃髮易服
+      url: https://zh.wikipedia.org/wiki/剃髮易服
+
 - id: cn-koxinga
   year: 1662
   title: 鄭成功驅逐荷蘭人，取得臺灣
@@ -522,6 +716,17 @@
   sources:
     - title: 維基百科：鄭成功攻臺之役
       url: https://zh.wikipedia.org/wiki/鄭成功攻臺之役
+
+- id: cn-three-feudatories
+  year: 1673
+  title: 三藩之亂
+  category: war
+  importance: 4
+  endYear: 1681
+  desc: 康熙撤藩引發的八年內戰。平定之後，清朝對南方的統治才真正穩固。
+  sources:
+    - title: 維基百科：三藩之亂
+      url: https://zh.wikipedia.org/wiki/三藩之亂
 
 - id: cn-taiwan-qing
   year: 1683
@@ -532,6 +737,68 @@
     - title: 維基百科：澎湖海戰
       url: https://zh.wikipedia.org/wiki/澎湖海戰
 
+- id: cn-nerchinsk
+  year: 1689
+  title: 尼布楚條約，中俄劃定東段邊界
+  category: politics
+  importance: 4
+  desc: 中國第一份與歐洲國家對等簽訂的條約，以拉丁文為正本。
+  sources:
+    - title: 維基百科：尼布楚條約
+      url: https://zh.wikipedia.org/wiki/尼布楚條約
+
+- id: cn-poll-tax-frozen
+  year: 1712
+  title: 滋生人丁永不加賦
+  category: economy
+  importance: 3
+  desc: 人頭稅額就此凍結，隨後併入田賦（攤丁入畝），隱匿人口的誘因消失，戶口數字開始暴增。
+  sources:
+    - title: 維基百科：攤丁入畝
+      url: https://zh.wikipedia.org/wiki/攤丁入畝
+
+- id: cn-rites-controversy
+  year: 1724
+  title: 雍正禁教，中國禮儀之爭落幕
+  category: religion
+  importance: 3
+  desc: 祭祖祭孔算不算偶像崇拜的爭執，最終以全面禁教收場，西學東漸中斷百餘年。
+  sources:
+    - title: 維基百科：中國禮儀之爭
+      url: https://zh.wikipedia.org/wiki/中國禮儀之爭
+
+- id: cn-dream-red-chamber
+  year: 1754
+  title: 《紅樓夢》抄本流傳
+  category: culture
+  importance: 4
+  desc: 曹雪芹生前僅以抄本傳世，成書年份只能推定。
+  sources:
+    - title: 維基百科：紅樓夢
+      url: https://zh.wikipedia.org/wiki/紅樓夢
+
+- id: cn-canton-system
+  year: 1757
+  title: 一口通商，廣州十三行專營對外貿易
+  category: economy
+  importance: 4
+  desc: 對歐貿易集中於廣州一港並由行商包辦，這個體制一直維持到鴉片戰爭。
+  sources:
+    - title: 維基百科：一口通商
+      url: https://zh.wikipedia.org/wiki/一口通商
+    - title: 維基百科：廣州十三行
+      url: https://zh.wikipedia.org/wiki/廣州十三行
+
+- id: cn-siku-quanshu
+  year: 1782
+  title: 《四庫全書》修成
+  category: culture
+  importance: 4
+  desc: 規模空前的叢書工程，同時也是一次大規模的禁毀與刪改。
+  sources:
+    - title: 維基百科：四庫全書
+      url: https://zh.wikipedia.org/wiki/四庫全書
+
 - id: cn-macartney
   year: 1793
   title: 馬戛爾尼使華
@@ -541,6 +808,17 @@
   sources:
     - title: 維基百科：馬戛爾尼使團
       url: https://zh.wikipedia.org/wiki/馬戛爾尼使團
+
+- id: cn-white-lotus
+  year: 1796
+  title: 川楚白蓮教起事
+  category: war
+  importance: 3
+  endYear: 1804
+  desc: 歷時九年才平定，軍費耗盡國庫，八旗綠營的戰力衰退也就此暴露。
+  sources:
+    - title: 維基百科：川楚教亂
+      url: https://zh.wikipedia.org/wiki/川楚教亂
 
 - id: cn-opium-war
   year: 1840

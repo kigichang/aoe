@@ -4,6 +4,7 @@
 #
 # 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
 
+
 - id: jp-yayoi-culture
   year: -300
   title: 彌生文化，稻作與金屬器傳入
@@ -136,6 +137,18 @@
     - title: 維基百科：平安京
       url: https://zh.wikipedia.org/wiki/平安京
 
+- id: jp-saicho-kukai
+  year: 806
+  title: 最澄、空海自唐歸國，天台與真言宗興起
+  category: religion
+  importance: 3
+  desc: 兩宗把佛教從奈良的官寺體制帶向山林修行，也深深影響了往後的日本文化。
+  sources:
+    - title: 維基百科：最澄
+      url: https://zh.wikipedia.org/wiki/最澄
+    - title: 維基百科：空海
+      url: https://zh.wikipedia.org/wiki/空海
+
 - id: jp-end-kentoshi
   year: 894
   title: 廢止遣唐使
@@ -177,6 +190,16 @@
     - title: 維基百科：保元之亂
       url: https://zh.wikipedia.org/wiki/保元之亂
 
+- id: jp-honen-pureland
+  year: 1175
+  title: 法然開創淨土宗，念佛信仰普及
+  category: religion
+  importance: 3
+  desc: 只需稱名念佛即可往生的主張，讓佛教首度走出貴族階層，進入庶民生活。
+  sources:
+    - title: 維基百科：法然
+      url: https://zh.wikipedia.org/wiki/法然
+
 - id: jp-dannoura
   year: 1185
   title: 壇之浦之戰，平氏滅亡
@@ -197,6 +220,15 @@
       url: https://zh.wikipedia.org/wiki/鎌倉幕府
     - title: 維基百科：源賴朝
       url: https://zh.wikipedia.org/wiki/源賴朝
+
+- id: jp-nichiren
+  year: 1253
+  title: 日蓮創立法華信仰
+  category: religion
+  importance: 3
+  sources:
+    - title: 維基百科：日蓮
+      url: https://zh.wikipedia.org/wiki/日蓮
 
 - id: jp-bunei
   year: 1274
@@ -298,6 +330,16 @@
     - title: 維基百科：本能寺之變
       url: https://zh.wikipedia.org/wiki/本能寺之變
 
+- id: jp-bateren-edict
+  year: 1587
+  title: 伴天連追放令，開始壓制基督教
+  category: religion
+  importance: 3
+  desc: 豐臣秀吉下令傳教士離境。此後禁教逐步收緊，最終促成鎖國。
+  sources:
+    - title: 維基百科：伴天連追放令
+      url: https://zh.wikipedia.org/wiki/伴天連追放令
+
 - id: jp-hideyoshi
   year: 1590
   title: 豐臣秀吉統一日本
@@ -339,6 +381,17 @@
     - title: 維基百科：德川家康
       url: https://zh.wikipedia.org/wiki/德川家康
 
+- id: jp-shimabara
+  year: 1637
+  title: 島原之亂
+  category: religion
+  importance: 4
+  endYear: 1638
+  desc: 苛稅與禁教引發的大規模起事。平定後幕府徹底禁絕基督教，鎖國體制隨之定型。
+  sources:
+    - title: 維基百科：島原之亂
+      url: https://zh.wikipedia.org/wiki/島原之亂
+
 - id: jp-sakoku
   year: 1639
   title: 鎖國體制完成
@@ -349,6 +402,18 @@
     - title: 維基百科：鎖國 (日本)
       url: https://zh.wikipedia.org/wiki/鎖國_(日本)
 
+- id: jp-jokyo-calendar
+  year: 1684
+  title: 澀川春海編貞享曆，首部日本自製曆法
+  category: science
+  importance: 3
+  desc: 沿用八百年的中國宣明曆已累積明顯誤差，改曆是日本天文學獨立的起點。
+  sources:
+    - title: 維基百科：貞享曆
+      url: https://zh.wikipedia.org/wiki/貞享曆
+    - title: 維基百科：澀川春海
+      url: https://zh.wikipedia.org/wiki/澀川春海
+
 - id: jp-genroku
   year: 1688
   title: 元祿文化，町人文化興盛
@@ -357,6 +422,16 @@
   sources:
     - title: 維基百科：元祿文化
       url: https://zh.wikipedia.org/wiki/元祿文化
+
+- id: jp-dojima-rice
+  year: 1730
+  title: 堂島米會所，米價期貨交易
+  category: economy
+  importance: 3
+  desc: 幕府正式承認的米價遠期交易，被認為是世界最早的期貨市場之一。
+  sources:
+    - title: 維基百科：堂島米會所
+      url: https://zh.wikipedia.org/wiki/堂島米會所
 
 - id: jp-kaitai
   year: 1774
@@ -405,6 +480,16 @@
   sources:
     - title: 維基百科：日本鐵路運輸
       url: https://zh.wikipedia.org/wiki/日本鐵路運輸
+
+- id: jp-bank-of-japan
+  year: 1882
+  title: 日本銀行成立
+  category: economy
+  importance: 3
+  desc: 統一紙幣發行、終結通膨，是明治財政改革的關鍵一步。
+  sources:
+    - title: 維基百科：日本銀行
+      url: https://zh.wikipedia.org/wiki/日本銀行
 
 - id: jp-meiji-constitution
   year: 1889
@@ -493,6 +578,27 @@
     - title: 維基百科：日本國憲法
       url: https://zh.wikipedia.org/wiki/日本國憲法
 
+- id: jp-yukawa-nobel
+  year: 1949
+  title: 湯川秀樹獲諾貝爾物理獎
+  category: science
+  importance: 4
+  desc: 日本首位諾貝爾獎得主。在戰敗後的低潮裡，這件事的象徵意義遠超過學術本身。
+  sources:
+    - title: 維基百科：湯川秀樹
+      url: https://zh.wikipedia.org/wiki/湯川秀樹
+
+- id: jp-high-growth
+  year: 1955
+  title: 高度經濟成長期開始
+  category: economy
+  importance: 4
+  endYear: 1973
+  desc: 年均近一成的成長持續近二十年，日本從戰敗國變成世界第二大經濟體。
+  sources:
+    - title: 維基百科：日本戰後經濟奇蹟
+      url: https://zh.wikipedia.org/wiki/日本戰後經濟奇蹟
+
 - id: jp-tokyo-olympics
   year: 1964
   title: 東京奧運；東海道新幹線通車
@@ -512,3 +618,13 @@
   sources:
     - title: 維基百科：平成
       url: https://zh.wikipedia.org/wiki/平成
+
+- id: jp-bubble-burst
+  year: 1991
+  title: 泡沫經濟破滅，失落的十年
+  category: economy
+  importance: 4
+  desc: 地價與股價同時崩跌，此後長期低成長與通縮。
+  sources:
+    - title: 維基百科：日本泡沫經濟
+      url: https://zh.wikipedia.org/wiki/日本泡沫經濟
