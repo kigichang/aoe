@@ -12,6 +12,7 @@
 
 
 
+
 - id: cn-fuxi
   year: -2852
   title: 伏羲畫八卦，傳說中的文明肇始
@@ -491,6 +492,18 @@
     - title: 維基百科：唐朝
       url: https://zh.wikipedia.org/wiki/唐朝
 
+- id: cn-xuanwu-gate
+  year: 626
+  title: 玄武門之變，李世民奪嫡
+  category: politics
+  importance: 3
+  desc: 誅殺太子李建成與齊王李元吉，控制長安。高祖隨即禪位 —— 貞觀之治的起點，也是唐代皇位繼承屢屢流血的開端。
+  sources:
+    - title: 維基百科：玄武門之變
+      url: https://zh.wikipedia.org/wiki/玄武門之變
+    - title: 維基百科：唐太宗
+      url: https://zh.wikipedia.org/wiki/唐太宗
+
 - id: cn-zhenguan
   year: 627
   title: 貞觀之治
@@ -510,6 +523,30 @@
     - title: 維基百科：玄奘
       url: https://zh.wikipedia.org/wiki/玄奘
 
+- id: cn-tiankehan
+  year: 630
+  title: 滅東突厥，太宗受尊「天可汗」
+  category: war
+  importance: 4
+  desc: 四年前突厥還兵臨渭水逼唐訂盟，此役後北方各族入貢長安，共尊唐帝為天可汗。中原王朝首次同時是草原共主。
+  sources:
+    - title: 維基百科：東突厥
+      url: https://zh.wikipedia.org/wiki/東突厥
+    - title: 維基百科：天可汗
+      url: https://zh.wikipedia.org/wiki/天可汗
+    - title: 維基百科：唐太宗
+      url: https://zh.wikipedia.org/wiki/唐太宗
+
+- id: cn-wencheng-princess
+  year: 641
+  title: 文成公主入吐蕃
+  category: politics
+  importance: 3
+  desc: 與贊普松贊干布通婚。唐蕃此後時戰時和，但漢地的工藝、曆法與佛教也隨之進入高原。
+  sources:
+    - title: 維基百科：文成公主
+      url: https://zh.wikipedia.org/wiki/文成公主
+
 - id: cn-wu-zetian
   year: 690
   title: 武則天稱帝
@@ -518,6 +555,46 @@
   sources:
     - title: 維基百科：武則天
       url: https://zh.wikipedia.org/wiki/武則天
+
+- id: cn-shenlong-coup
+  year: 705
+  title: 神龍革命，武周終、唐室復辟
+  category: politics
+  importance: 3
+  desc: 張柬之等人趁武則天病重起兵，逼其禪位於中宗。國號復為唐，還都長安 —— 中國史上唯一由女性建立的王朝歷十四年而終。
+  sources:
+    - title: 維基百科：神龍革命
+      url: https://zh.wikipedia.org/wiki/神龍革命
+    - title: 維基百科：武周
+      url: https://zh.wikipedia.org/wiki/武周
+    - title: 維基百科：武則天
+      url: https://zh.wikipedia.org/wiki/武則天
+
+- id: cn-kaiyuan
+  year: 713
+  title: 開元盛世，人口達八千萬
+  category: politics
+  importance: 4
+  desc: 玄宗革除前朝弊端，政治開明，威震四方，是唐朝的第二個高峰。但天寶年間他志得意滿、不問國事，由盛轉衰的伏筆就埋在此。
+  sources:
+    - title: 維基百科：開元之治
+      url: https://zh.wikipedia.org/wiki/開元之治
+    - title: 維基百科：唐玄宗
+      url: https://zh.wikipedia.org/wiki/唐玄宗
+
+- id: cn-tang-poetry
+  year: 750
+  title: 李白杜甫並世，唐詩臻於鼎盛
+  category: culture
+  importance: 4
+  desc: 《全唐詩》收兩千兩百多位詩人、四萬八千九百多首，而這還不是全部。詩仙與詩聖同處盛唐轉衰的那幾十年，安史之亂的離亂也寫進了詩裡。
+  sources:
+    - title: 維基百科：唐詩
+      url: https://zh.wikipedia.org/wiki/唐詩
+    - title: 維基百科：李白
+      url: https://zh.wikipedia.org/wiki/李白
+    - title: 維基百科：杜甫
+      url: https://zh.wikipedia.org/wiki/杜甫
 
 - id: cn-talas
   year: 751
@@ -551,6 +628,16 @@
     - title: 維基百科：兩稅法
       url: https://zh.wikipedia.org/wiki/兩稅法
 
+- id: cn-ganlu-incident
+  year: 835
+  title: 甘露之變，宦官盡掌軍政
+  category: politics
+  importance: 3
+  desc: 文宗謀誅宦官失敗，仇士良以神策軍反殺大臣。此後宦官牢握軍政大權，皇帝的廢立幾乎全出其手。
+  sources:
+    - title: 維基百科：甘露之變
+      url: https://zh.wikipedia.org/wiki/甘露之變
+
 - id: cn-huichang-persecution
   year: 845
   title: 會昌毀佛
@@ -572,6 +659,19 @@
       url: https://zh.wikipedia.org/wiki/金剛經
     - title: 維基百科：雕版印刷
       url: https://zh.wikipedia.org/wiki/雕版印刷
+
+- id: cn-huangchao
+  year: 875
+  title: 黃巢之亂
+  category: war
+  importance: 4
+  endYear: 885
+  desc: 流動作戰十年，一度攻陷長安。江南經濟遭嚴重破壞，門閥士族在戰亂中幾乎盡毀 —— 唐朝的統治基礎自此瓦解，二十二年後即亡於降將朱溫之手。
+  sources:
+    - title: 維基百科：黃巢之亂
+      url: https://zh.wikipedia.org/wiki/黃巢之亂
+    - title: 維基百科：唐朝
+      url: https://zh.wikipedia.org/wiki/唐朝
 
 - id: cn-tang-fall
   year: 907
