@@ -6,6 +6,7 @@ import {
   MIN_YEAR,
   clampPpy,
   fmtYear,
+  ppyForImportance,
   ticks,
   totalHeight,
   yToYear,
@@ -17,6 +18,7 @@ import { Toolbar } from './components/Toolbar'
 import { DetailPanel } from './components/DetailPanel'
 import { ThemeToggle } from './components/ThemeToggle'
 import { HelpOverlay } from './components/HelpOverlay'
+import { SearchBox } from './components/SearchBox'
 import { useTheme } from './lib/theme'
 import { readUrlState, writeUrlState } from './lib/urlState'
 
@@ -242,6 +244,36 @@ export default function App() {
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
 
+  /**
+   * 搜尋跳轉。**跳之前得先確保那則事件真的畫得出來** ——
+   * 重要度低於當前層級、地區或類別被關掉、傳說被關掉，
+   * 任何一項成立都會讓使用者跳過去只看到一片空白，
+   * 而且畫面上完全沒有線索說明為什麼。
+   */
+  const revealEvent = useCallback(
+    (id: string) => {
+      const found = ALL_EVENTS.find((x) => x.event.id === id)
+      const el = scrollRef.current
+      if (!found || !el) return
+      const { event, region } = found
+
+      setVisibleRegions((prev) => (prev.has(region.id) ? prev : new Set(prev).add(region.id)))
+      setCategories((prev) => (prev.has(event.category) ? prev : new Set(prev).add(event.category)))
+      if (event.legendary) setShowLegendary(true)
+
+      const needed = ppyForImportance(event.importance)
+      if (needed > ppyRef.current) {
+        // 借用縮放錨定：ppy 更新後由 layout effect 把該年份對到視窗錨點
+        anchorRef.current = { year: event.year, offset: el.clientHeight * VIEW_ANCHOR }
+        setPpy(needed)
+      } else {
+        scrollToYear(event.year)
+      }
+      setSelectedId(id)
+    },
+    [scrollToYear],
+  )
+
   const onPointerMove = (e: React.MouseEvent) => {
     const el = scrollRef.current
     if (!el) return
@@ -326,6 +358,7 @@ export default function App() {
         onToggleCategory={toggleCategory}
         onZoom={(f) => zoomAt(f, (scrollRef.current?.clientHeight ?? 0) / 2)}
         onJump={scrollToYear}
+        search={<SearchBox all={ALL_EVENTS} onPick={revealEvent} />}
       />
 
       {/* 捲動區與詳情面板並排：面板是版面的一部分，不是浮在上面的東西 */}

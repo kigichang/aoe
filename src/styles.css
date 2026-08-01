@@ -489,6 +489,21 @@ button {
 .mark.is-legendary .mark-title {
   color: var(--text-secondary);
 }
+/*
+ * 選中的圖釘要看得出來。原本只有帶標籤的 .mark 有 is-selected 樣式，
+ * 圖釘完全沒有回饋 —— 搜尋跳到密集區時常會落在圖釘上，
+ * 沒有回饋就變成「跳過去卻看不出跳到哪」。
+ * 圖釘只有 7px，靠放大加外環才看得見。
+ */
+.mark-dot-only.is-selected {
+  width: 13px; height: 13px;
+  margin: -3px 0 0 -3px;
+  background: var(--region);
+  box-shadow:
+    0 0 0 2px var(--surface-1),
+    0 0 0 4px color-mix(in oklab, var(--region) 60%, transparent);
+}
+
 .mark-dot-only.is-legendary {
   background: color-mix(in oklab, var(--region) 45%, transparent);
 }
@@ -823,3 +838,92 @@ button {
 }
 
 .masthead-actions { flex: none; display: flex; align-items: center; gap: 8px; }
+
+/* ── 搜尋 ────────────────────────────────────────────────────
+   搜尋是導覽不是篩選：結果只是一份清單，點了跳過去，時間軸本身不動。
+   篩選會毀掉橫向對照 —— 那需要各區的事件都留在原位。 */
+.search { position: relative; flex: 1 1 220px; max-width: 320px; }
+.search-input {
+  width: 100%;
+  height: 28px;
+  padding: 0 10px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--surface-1);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 12.5px;
+}
+.search-input::placeholder { color: var(--muted); }
+.search-input:focus {
+  outline: none;
+  border-color: var(--baseline);
+}
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: min(440px, 96vw);
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-1);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.24);
+  z-index: 30;                       /* 高於說明覆蓋層以外的一切 */
+}
+.search-empty {
+  margin: 0;
+  padding: 10px 12px;
+  font-size: 12.5px;
+  color: var(--text-secondary);
+}
+
+.search-hit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+.search-hit.is-active { background: color-mix(in oklab, var(--region) 14%, transparent); }
+.search-hit .glyph {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: color-mix(in oklab, var(--region) 20%, var(--surface-1));
+  border: 1.5px solid var(--region);
+}
+.search-hit-year {
+  flex: none;
+  width: 52px;
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+.search-hit-title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  color: var(--text-primary);
+}
+.search-hit-meta {
+  flex: none;
+  font-size: 11px;
+  color: var(--muted);
+}

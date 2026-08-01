@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import { CATEGORIES, CATEGORY_IDS, type Category, type Region } from '../lib/schema'
 import { minImportance } from '../lib/scale'
 
@@ -20,6 +21,8 @@ interface Props {
   onToggleLegendary: () => void
   onZoom: (factor: number) => void
   onJump: (year: number) => void
+  /** 搜尋框。由 App 傳進來，Toolbar 不需要知道事件索引長什麼樣子 */
+  search: ReactNode
 }
 
 export function Toolbar({
@@ -32,6 +35,7 @@ export function Toolbar({
   onToggleLegendary,
   onZoom,
   onJump,
+  search,
 }: Props) {
   const floor = minImportance(ppy)
   return (
@@ -48,6 +52,7 @@ export function Toolbar({
             重要度 {floor}+ ・ ⌘/Ctrl + 滾輪縮放
           </span>
         </div>
+        {search}
         <nav className="jumps" aria-label="跳到年代">
           {JUMPS.map((y) => (
             <button type="button" key={y} onClick={() => onJump(y)}>

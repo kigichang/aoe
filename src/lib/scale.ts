@@ -52,11 +52,31 @@ export function ticks(ppy: number): number[] {
 /**
  * 縮放層級決定顯示到第幾級的事件。全域視角只留下最重要的那些，
  * 否則五千年的事件全部擠在一屏，什麼都讀不到。
+ *
+ * `[ppy 下界, 該層級最低顯示的重要度]`，由小到大。
+ * **正查與反查共用這一張表** —— 搜尋跳轉要反過來問「這則要放大到多少才看得到」，
+ * 兩邊各寫一份門檻的話遲早會走鐘。
  */
+const TIERS: readonly (readonly [number, number])[] = [
+  [0, 5],
+  [0.4, 4],
+  [1.2, 3],
+  [4, 2],
+  [12, 1],
+]
+
 export function minImportance(ppy: number) {
-  if (ppy < 0.4) return 5
-  if (ppy < 1.2) return 4
-  if (ppy < 4) return 3
-  if (ppy < 12) return 2
-  return 1
+  let out = 5
+  for (const [from, imp] of TIERS) if (ppy >= from) out = imp
+  return out
+}
+
+/**
+ * 反查：要讓這個重要度的事件顯示出來，至少得放大到多少 px/年。
+ * 搜尋跳到一則重要度 3 的事件時，若停在全域視角那則根本不會被畫出來，
+ * 使用者只會看到一片空白。
+ */
+export function ppyForImportance(importance: number) {
+  for (const [from, imp] of TIERS) if (imp <= importance) return Math.max(MIN_PPY, from)
+  return MAX_PPY
 }
