@@ -6,6 +6,7 @@
 
 
 
+
 - id: tw-tapenkeng
   year: -3000
   title: 大坌坑文化，進入新石器時代
@@ -130,6 +131,19 @@
     - title: 維基百科：臺灣府
       url: https://zh.wikipedia.org/wiki/臺灣府
 
+- id: tw-crossing-ban
+  year: 1684
+  title: 渡臺禁令，限制赴臺與攜眷
+  category: politics
+  importance: 3
+  endYear: 1875
+  desc: 意在防止臺灣再成為反抗基地。政策時緊時鬆，卻造成長期男女比例失衡與遊民問題，直到 1875 年才全面解除。
+  sources:
+    - title: 維基百科：渡臺禁令
+      url: https://zh.wikipedia.org/wiki/渡臺禁令
+    - title: 維基百科：臺灣清治時期
+      url: https://zh.wikipedia.org/wiki/臺灣清治時期
+
 - id: tw-zhu-yigui
   year: 1721
   title: 朱一貴事件
@@ -138,6 +152,32 @@
   sources:
     - title: 維基百科：朱一貴
       url: https://zh.wikipedia.org/wiki/朱一貴
+
+- id: tw-changhua-tamsui
+  year: 1723
+  title: 增設彰化縣與淡水廳，行政北擴
+  category: politics
+  importance: 3
+  desc: 朱一貴事件後，朝廷採藍鼎元之議分割幅員過廣的諸羅縣。漢人拓墾的重心自此正式北移。
+  sources:
+    - title: 維基百科：彰化縣 (清朝)
+      url: https://zh.wikipedia.org/wiki/彰化縣_(清朝)
+    - title: 維基百科：淡水廳
+      url: https://zh.wikipedia.org/wiki/淡水廳
+    - title: 維基百科：藍鼎元
+      url: https://zh.wikipedia.org/wiki/藍鼎元
+
+- id: tw-family-migration
+  year: 1733
+  title: 開放移民攜眷渡臺
+  category: politics
+  importance: 3
+  desc: 藍鼎元建言獲雍正採納。此前以單身男性為主的移墾社會，自此逐步轉為攜家帶眷的定居社會。
+  sources:
+    - title: 維基百科：渡臺禁令
+      url: https://zh.wikipedia.org/wiki/渡臺禁令
+    - title: 維基百科：藍鼎元
+      url: https://zh.wikipedia.org/wiki/藍鼎元
 
 - id: tw-longshan-temple
   year: 1738
@@ -158,6 +198,30 @@
   sources:
     - title: 維基百科：林爽文事件
       url: https://zh.wikipedia.org/wiki/林爽文事件
+
+- id: tw-kavalan-prefecture
+  year: 1811
+  title: 增設噶瑪蘭廳，宜蘭納入版圖
+  category: politics
+  importance: 3
+  desc: 吳沙率漳泉粵移民入墾蘭陽平原後原漢糾紛頻仍，朝廷始設官治理。
+  sources:
+    - title: 維基百科：噶瑪蘭廳
+      url: https://zh.wikipedia.org/wiki/噶瑪蘭廳
+    - title: 維基百科：吳沙
+      url: https://zh.wikipedia.org/wiki/吳沙
+
+- id: tw-perry-keelung
+  year: 1854
+  title: 培理艦隊勘查基隆煤礦
+  category: politics
+  importance: 3
+  desc: 前一年叩關日本的同一支艦隊北上，在基隆停泊十日。培理返國後主張佔領臺灣未獲採納，但其報告引起歐美各國對臺灣的注意。
+  sources:
+    - title: 維基百科：馬修·培里
+      url: https://zh.wikipedia.org/wiki/馬修·培里
+    - title: 維基百科：臺灣清治時期
+      url: https://zh.wikipedia.org/wiki/臺灣清治時期
 
 - id: tw-treaty-ports
   year: 1858
@@ -181,6 +245,16 @@
     - title: 維基百科：玫瑰聖母聖殿主教座堂
       url: https://zh.wikipedia.org/wiki/玫瑰聖母聖殿主教座堂
 
+- id: tw-dai-chaochun
+  year: 1862
+  title: 戴潮春事件
+  category: war
+  importance: 3
+  desc: 清代臺灣三大民變的最後一起，與朱一貴、林爽文事件並稱。
+  sources:
+    - title: 維基百科：戴潮春事件
+      url: https://zh.wikipedia.org/wiki/戴潮春事件
+
 - id: tw-maxwell
   year: 1865
   title: 馬雅各在台南行醫傳教
@@ -189,6 +263,16 @@
   sources:
     - title: 維基百科：馬雅各
       url: https://zh.wikipedia.org/wiki/馬雅各
+
+- id: tw-camphor-war
+  year: 1868
+  title: 樟腦戰爭，樟腦開放自由貿易
+  category: economy
+  importance: 3
+  desc: 英商因樟腦專賣與官府衝突，英艦砲擊安平。此後臺灣樟腦成為國際市場的主要來源。
+  sources:
+    - title: 維基百科：樟腦戰爭
+      url: https://zh.wikipedia.org/wiki/樟腦戰爭
 
 - id: tw-mackay
   year: 1872
@@ -208,6 +292,35 @@
   sources:
     - title: 維基百科：牡丹社事件
       url: https://zh.wikipedia.org/wiki/牡丹社事件
+
+- id: tw-shen-baozhen
+  year: 1875
+  title: 沈葆楨開山撫番，解除渡臺禁令
+  category: politics
+  importance: 4
+  desc: 牡丹社事件後治臺方針由消極轉為積極。增設臺北府與恆春縣，開闢通往後山的道路，並解除實行近兩百年的渡臺限制。
+  sources:
+    - title: 維基百科：沈葆楨
+      url: https://zh.wikipedia.org/wiki/沈葆楨
+    - title: 維基百科：開山撫番
+      url: https://zh.wikipedia.org/wiki/開山撫番
+    - title: 維基百科：渡臺禁令
+      url: https://zh.wikipedia.org/wiki/渡臺禁令
+
+- id: tw-sino-french-war
+  year: 1884
+  title: 清法戰爭波及臺灣，法軍攻基隆、佔澎湖
+  category: war
+  importance: 4
+  endYear: 1885
+  desc: 法軍封鎖臺灣、數度攻擊基隆與淡水，並一度佔領澎湖。此役凸顯臺灣的海防地位，直接促成隔年建省。
+  sources:
+    - title: 維基百科：西仔反
+      url: https://zh.wikipedia.org/wiki/西仔反
+    - title: 維基百科：滬尾之役
+      url: https://zh.wikipedia.org/wiki/滬尾之役
+    - title: 維基百科：中法戰爭
+      url: https://zh.wikipedia.org/wiki/中法戰爭
 
 - id: tw-province
   year: 1885
