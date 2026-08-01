@@ -13,6 +13,7 @@
 
 
 
+
 - id: cn-fuxi
   year: -2852
   title: 伏羲畫八卦，傳說中的文明肇始
@@ -465,6 +466,48 @@
     - title: 維基百科：均田制
       url: https://zh.wikipedia.org/wiki/均田制
 
+- id: cn-sui-founded
+  year: 581
+  title: 楊堅代周建隋，開皇之治
+  category: politics
+  importance: 4
+  desc: 外戚受禪代周。輕徭薄賦、廣設義倉，戶口由四百餘萬增至八百餘萬，社會累積的財富足供五六十年之用 —— 這份底子後來被煬帝耗盡。
+  sources:
+    - title: 維基百科：隋文帝
+      url: https://zh.wikipedia.org/wiki/隋文帝
+    - title: 維基百科：開皇之治
+      url: https://zh.wikipedia.org/wiki/開皇之治
+    - title: 維基百科：隋朝
+      url: https://zh.wikipedia.org/wiki/隋朝
+
+- id: cn-kaihuang-code
+  year: 583
+  title: 頒行《開皇律》，確立三省六部
+  category: politics
+  importance: 3
+  desc: 博採南北律典之長，廢除鞭刑、梟首、裂刑等酷刑，史稱「刑網簡要，疏而不失」。連同三省六部與州縣二級制，成為唐及此後各代的基本架構。
+  sources:
+    - title: 維基百科：開皇律
+      url: https://zh.wikipedia.org/wiki/開皇律
+    - title: 維基百科：三省六部制
+      url: https://zh.wikipedia.org/wiki/三省六部制
+    - title: 維基百科：隋朝
+      url: https://zh.wikipedia.org/wiki/隋朝
+
+- id: cn-imperial-exam-founded
+  year: 587
+  title: 創立科舉，選官不問門第
+  category: politics
+  importance: 4
+  desc: 取代行之三百年的九品中正制，門第不再是入仕的前提。606 年煬帝再增設進士科，制度大體成形 —— 此後行用一千三百餘年，直到 1905 年才廢除。
+  sources:
+    - title: 維基百科：科舉
+      url: https://zh.wikipedia.org/wiki/科舉
+    - title: 維基百科：九品中正制
+      url: https://zh.wikipedia.org/wiki/九品中正制
+    - title: 維基百科：隋朝
+      url: https://zh.wikipedia.org/wiki/隋朝
+
 - id: cn-sui-unify
   year: 589
   title: 隋滅陳，重新統一
@@ -482,6 +525,21 @@
   sources:
     - title: 維基百科：京杭大運河
       url: https://zh.wikipedia.org/wiki/京杭大運河
+
+- id: cn-sui-goguryeo
+  year: 612
+  title: 三征高句麗，引爆隋末民變
+  category: war
+  importance: 4
+  endYear: 614
+  desc: 三度東征皆無功而返，勞民耗財最甚。徵調與饑荒下民變四起，數年間群雄割據，煬帝於 618 年在江都被弒 —— 立國僅三十八年。
+  sources:
+    - title: 維基百科：隋與高句麗的戰爭
+      url: https://zh.wikipedia.org/wiki/隋與高句麗的戰爭
+    - title: 維基百科：隋末民變
+      url: https://zh.wikipedia.org/wiki/隋末民變
+    - title: 維基百科：隋煬帝
+      url: https://zh.wikipedia.org/wiki/隋煬帝
 
 - id: cn-tang-founding
   year: 618
