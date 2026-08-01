@@ -15,6 +15,7 @@
 
 
 
+
 - id: cn-fuxi
   year: -2852
   title: 伏羲畫八卦，傳說中的文明肇始
@@ -439,6 +440,18 @@
     - title: 維基百科：五胡十六國
       url: https://zh.wikipedia.org/wiki/五胡十六國
 
+- id: cn-northern-wei-founded
+  year: 386
+  title: 拓跋珪建北魏
+  category: politics
+  importance: 3
+  desc: 淝水之戰後前秦瓦解，拓跋珪趁勢起兵稱魏王，398 年定都平城。十六國的混亂自此走向終結。
+  sources:
+    - title: 維基百科：北魏
+      url: https://zh.wikipedia.org/wiki/北魏
+    - title: 維基百科：十六國
+      url: https://zh.wikipedia.org/wiki/十六國
+
 - id: cn-faxian
   year: 399
   title: 法顯西行求法
@@ -475,6 +488,30 @@
     - title: 維基百科：宋文帝
       url: https://zh.wikipedia.org/wiki/宋文帝
 
+- id: cn-wei-unify-north
+  year: 439
+  title: 北魏統一北方，南北朝格局確立
+  category: politics
+  importance: 4
+  desc: 太武帝先後滅夏、北燕、北涼，結束十六國。此後與南朝隔淮對峙一百五十年 —— 「南北朝」這個格局至此才真正成形。
+  sources:
+    - title: 維基百科：北魏
+      url: https://zh.wikipedia.org/wiki/北魏
+    - title: 維基百科：南北朝
+      url: https://zh.wikipedia.org/wiki/南北朝
+
+- id: cn-yungang-grottoes
+  year: 453
+  title: 詔開鑿雲岡石窟
+  category: religion
+  importance: 4
+  desc: 太武帝滅佛後文成帝復法，隨即下詔開窟。與後來的龍門石窟同為北魏佛教藝術的代表 —— 佛像的面容自此由犍陀羅式逐步轉為漢地樣貌。
+  sources:
+    - title: 維基百科：雲岡石窟
+      url: https://zh.wikipedia.org/wiki/雲岡石窟
+    - title: 維基百科：北魏
+      url: https://zh.wikipedia.org/wiki/北魏
+
 - id: cn-southern-qi
   year: 479
   title: 蕭道成代宋建齊
@@ -506,6 +543,18 @@
     - title: 維基百科：均田制
       url: https://zh.wikipedia.org/wiki/均田制
 
+- id: cn-xiaowen-sinicization
+  year: 494
+  title: 孝文帝遷都洛陽，全面漢化
+  category: politics
+  importance: 4
+  desc: 次年禁鮮卑語，496 年令八大貴族改漢姓（皇族拓跋改姓元），並著漢服、與漢人通婚。這是中國史上規模最大的一次由統治民族主動推行的漢化。
+  sources:
+    - title: 維基百科：魏孝文帝
+      url: https://zh.wikipedia.org/wiki/魏孝文帝
+    - title: 維基百科：北魏
+      url: https://zh.wikipedia.org/wiki/北魏
+
 - id: cn-southern-liang
   year: 502
   title: 蕭衍代齊建梁
@@ -517,6 +566,20 @@
       url: https://zh.wikipedia.org/wiki/南梁
     - title: 維基百科：梁武帝
       url: https://zh.wikipedia.org/wiki/梁武帝
+
+- id: cn-wei-split
+  year: 534
+  title: 北魏分裂為東魏、西魏
+  category: politics
+  importance: 3
+  desc: 高歡與宇文泰各擁宗室，一據鄴城、一據長安。北方重回分裂，兩邊此後長期攻伐。
+  sources:
+    - title: 維基百科：東魏
+      url: https://zh.wikipedia.org/wiki/東魏
+    - title: 維基百科：西魏
+      url: https://zh.wikipedia.org/wiki/西魏
+    - title: 維基百科：北魏
+      url: https://zh.wikipedia.org/wiki/北魏
 
 - id: cn-houjing-rebellion
   year: 548
@@ -531,6 +594,20 @@
     - title: 維基百科：南梁
       url: https://zh.wikipedia.org/wiki/南梁
 
+- id: cn-qi-zhou
+  year: 550
+  title: 北齊代東魏，七年後北周代西魏
+  category: politics
+  importance: 3
+  desc: 高洋建北齊，宇文覺建北周。北齊據關東最為富庶，北周據關中而行府兵制與六官制 —— 最後勝出的是後者，那套制度也被隋唐承繼。
+  sources:
+    - title: 維基百科：北齊
+      url: https://zh.wikipedia.org/wiki/北齊
+    - title: 維基百科：北周
+      url: https://zh.wikipedia.org/wiki/北周
+    - title: 維基百科：府兵制
+      url: https://zh.wikipedia.org/wiki/府兵制
+
 - id: cn-southern-chen
   year: 557
   title: 陳霸先代梁建陳，南朝最後一代
@@ -542,6 +619,18 @@
       url: https://zh.wikipedia.org/wiki/南陳
     - title: 維基百科：陳霸先
       url: https://zh.wikipedia.org/wiki/陳霸先
+
+- id: cn-zhou-unify-north
+  year: 577
+  title: 北周滅北齊，統一北方
+  category: war
+  importance: 3
+  desc: 周武帝親征滅齊。四年後外戚楊堅代周建隋，再八年滅陳 —— 自魏晉以來四百年的分裂就此終結。
+  sources:
+    - title: 維基百科：北周
+      url: https://zh.wikipedia.org/wiki/北周
+    - title: 維基百科：北齊
+      url: https://zh.wikipedia.org/wiki/北齊
 
 - id: cn-sui-founded
   year: 581
