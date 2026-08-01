@@ -1,17 +1,34 @@
-import { CATEGORIES, CATEGORY_IDS, type Category } from '../lib/schema'
+import { CATEGORIES, CATEGORY_IDS, type Category, type Region } from '../lib/schema'
 import { minImportance } from '../lib/scale'
 
 const JUMPS = [-2000, -1000, -500, 1, 500, 1000, 1500, 1800, 1950]
 
+export interface RegionChip {
+  region: Region
+  /** 地區在 regions.yaml 裡的原始索引，決定配色 slot */
+  slot: number
+  visible: boolean
+}
+
 interface Props {
   ppy: number
+  regions: RegionChip[]
+  onToggleRegion: (id: string) => void
   categories: Set<Category>
   onToggleCategory: (c: Category) => void
   onZoom: (factor: number) => void
   onJump: (year: number) => void
 }
 
-export function Toolbar({ ppy, categories, onToggleCategory, onZoom, onJump }: Props) {
+export function Toolbar({
+  ppy,
+  regions,
+  onToggleRegion,
+  categories,
+  onToggleCategory,
+  onZoom,
+  onJump,
+}: Props) {
   const floor = minImportance(ppy)
   return (
     <div className="toolbar">
@@ -35,25 +52,44 @@ export function Toolbar({ ppy, categories, onToggleCategory, onZoom, onJump }: P
           ))}
         </nav>
       </div>
-      {/* 這排同時是圖例：類別靠漢字識別，不靠顏色 */}
-      <div className="toolbar-row legend" role="group" aria-label="類別篩選">
-        {CATEGORY_IDS.map((id) => {
-          const on = categories.has(id)
-          return (
+      {/* 這排同時是圖例：地區靠顏色識別，類別靠漢字識別 */}
+      <div className="toolbar-row legend">
+        <div className="chip-group" role="group" aria-label="顯示哪些地區">
+          {regions.map(({ region, slot, visible }) => (
             <button
               type="button"
-              key={id}
-              className={`chip${on ? ' is-on' : ''}`}
-              aria-pressed={on}
-              onClick={() => onToggleCategory(id)}
+              key={region.id}
+              className={`chip region-chip r${slot % 8}${visible ? ' is-on' : ''}`}
+              aria-pressed={visible}
+              onClick={() => onToggleRegion(region.id)}
             >
-              <span className="glyph" aria-hidden="true">
-                {CATEGORIES[id].glyph}
-              </span>
-              {CATEGORIES[id].label}
+              <span className="swatch" aria-hidden="true" />
+              {region.name}
             </button>
-          )
-        })}
+          ))}
+        </div>
+
+        <span className="group-sep" aria-hidden="true" />
+
+        <div className="chip-group" role="group" aria-label="類別篩選">
+          {CATEGORY_IDS.map((id) => {
+            const on = categories.has(id)
+            return (
+              <button
+                type="button"
+                key={id}
+                className={`chip${on ? ' is-on' : ''}`}
+                aria-pressed={on}
+                onClick={() => onToggleCategory(id)}
+              >
+                <span className="glyph" aria-hidden="true">
+                  {CATEGORIES[id].glyph}
+                </span>
+                {CATEGORIES[id].label}
+              </button>
+            )
+          })}
+        </div>
       </div>
     </div>
   )

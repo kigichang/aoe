@@ -30,7 +30,7 @@ function RegionColumnImpl({
     const visible = region.events.filter(
       (e) => e.importance >= floor && categories.has(e.category),
     )
-    return placeEvents(visible, (year) => yearToY(year, ppy), laneCount)
+    return placeEvents(visible, (year) => yearToY(year, ppy), laneCount, ppy)
   }, [region.events, floor, categories, ppy, laneCount])
 
   const lanes = useMemo(
@@ -50,8 +50,11 @@ function RegionColumnImpl({
   return (
     <div className={`lane region-lane r${slot % 8}`}>
       <header className="lane-head">
-        <span className="lane-name">{region.name}</span>
-        {region.subtitle && <span className="lane-sub">{region.subtitle}</span>}
+        {/* sticky-left：欄位捲到一半時名稱仍留在畫面上，才知道正在看哪一區 */}
+        <div className="lane-head-name">
+          <span className="lane-name">{region.name}</span>
+          {region.subtitle && <span className="lane-sub">{region.subtitle}</span>}
+        </div>
         <span className="lane-count">{placed.length} 則</span>
       </header>
       <div className="lane-body" style={{ height: totalHeight(ppy) }}>

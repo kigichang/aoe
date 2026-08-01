@@ -22,6 +22,8 @@ import { useTheme } from './lib/theme'
 const HEAD_H = 58
 /** 年代軸的寬度，必須跟 CSS 的 --axis-w 一致 */
 const AXIS_W = 88
+/** 一個地區欄至少要這麼寬。低於這個寬度標題會被切到讀不懂，寧可讓畫布橫向捲動 */
+const MIN_COL_W = 340
 /** 一個標籤欄至少要這麼寬，事件標題才不會被切掉 */
 const MIN_LANE_W = 340
 /** 標籤欄再多下去，視線得之字形來回掃，反而比偶爾退化成圖釘更難讀 */
@@ -37,6 +39,9 @@ export default function App() {
   const scrollRef = useRef<HTMLDivElement>(null)
   const [ppy, setPpy] = useState(0.6)
   const [categories, setCategories] = useState(() => new Set<Category>(CATEGORY_IDS))
+  const [visibleRegions, setVisibleRegions] = useState(
+    () => new Set(REGIONS.map((r) => r.id)),
+  )
   const [hoverYear, setHoverYear] = useState<number | null>(null)
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const { theme, toggle: toggleTheme } = useTheme()
@@ -91,18 +96,52 @@ export default function App() {
     return () => el.removeEventListener('wheel', onWheel)
   }, [zoomAt])
 
-  // 螢幕夠寬就把標籤排成兩三欄。單欄放不下時標籤會被往下推，
-  // 推擠一累積就會讓事件順序看起來是錯的，多開一欄比縮小位移上限有效得多。
+  /**
+   * slot 一律沿用地區在 REGIONS 裡的原始索引，不是篩選後的名次 ——
+   * 顏色跟著地區走，關掉一欄不該讓剩下的欄換色。
+   */
+  const shownRegions = useMemo(
+    () =>
+      REGIONS.map((region, slot) => ({ region, slot })).filter((x) =>
+        visibleRegions.has(x.region.id),
+      ),
+    [visibleRegions],
+  )
+
+  const regionChips = useMemo(
+    () =>
+      REGIONS.map((region, slot) => ({
+        region,
+        slot,
+        visible: visibleRegions.has(region.id),
+      })),
+    [visibleRegions],
+  )
+
+  // 量捲動容器而不是 window，才拿得到扣掉捲軸後的真實可用寬度
   const [viewportWidth, setViewportWidth] = useState(() => window.innerWidth)
   useEffect(() => {
-    const onResize = () => setViewportWidth(window.innerWidth)
-    window.addEventListener('resize', onResize)
-    return () => window.removeEventListener('resize', onResize)
+    const el = scrollRef.current
+    if (!el) return
+    const ro = new ResizeObserver(() => setViewportWidth(el.clientWidth))
+    ro.observe(el)
+    return () => ro.disconnect()
   }, [])
-  const laneCount = useMemo(() => {
-    const perRegion = (viewportWidth - AXIS_W) / REGIONS.length
-    return Math.min(MAX_LANES, Math.max(1, Math.floor(perRegion / MIN_LANE_W)))
-  }, [viewportWidth])
+
+  /**
+   * 地區欄不再硬擠進一個畫面。地區少時平分寬度，多到擠不下就讓畫布橫向捲動，
+   * 每欄保住 MIN_COL_W。畫布寬度在這裡算好、直接寫進 .lanes，
+   * 格線與時間游標（inset-inline: 0）才會跨滿整個可捲動寬度而不是只有一個畫面。
+   */
+  const { canvasWidth, columnWidth } = useMemo(() => {
+    const count = Math.max(1, shownRegions.length)
+    const width = Math.max(viewportWidth, AXIS_W + count * MIN_COL_W)
+    return { canvasWidth: width, columnWidth: (width - AXIS_W) / count }
+  }, [viewportWidth, shownRegions.length])
+
+  // 欄位夠寬就把標籤排成兩欄。單欄放不下時標籤會被往下推，
+  // 推擠一累積就會讓事件順序看起來是錯的，多開一欄比縮小位移上限有效得多。
+  const laneCount = Math.min(MAX_LANES, Math.max(1, Math.floor(columnWidth / MIN_LANE_W)))
 
   // 開場停在西元前後，一眼看到秦漢對上羅馬
   useEffect(() => {
@@ -118,6 +157,16 @@ export default function App() {
     setHoverYear(contentY < 0 || year < MIN_YEAR || year > MAX_YEAR ? null : year)
   }
 
+  const toggleRegion = useCallback((id: string) => {
+    setVisibleRegions((prev) => {
+      const next = new Set(prev)
+      // 全部關掉等於整個畫面空白，所以最後一個不給關
+      if (next.has(id) && next.size > 1) next.delete(id)
+      else next.add(id)
+      return next
+    })
+  }, [])
+
   const toggleCategory = useCallback((c: Category) => {
     setCategories((prev) => {
       const next = new Set(prev)
@@ -128,22 +177,25 @@ export default function App() {
     })
   }, [])
 
-  const selected = useMemo(
-    () => ALL_EVENTS.find((x) => x.event.id === selectedId) ?? null,
-    [selectedId],
-  )
+  // 選中的事件所屬地區被關掉時，詳情面板就跟著收起來
+  const selected = useMemo(() => {
+    const hit = ALL_EVENTS.find((x) => x.event.id === selectedId)
+    return hit && visibleRegions.has(hit.region.id) ? hit : null
+  }, [selectedId, visibleRegions])
 
   const concurrent = useMemo(() => {
     if (!selected) return []
     const { year } = selected.event
-    return REGIONS.map((r, slot) => ({
-      region: r,
-      slot,
-      events: r.events.filter(
-        (e) => e.id !== selected.event.id && Math.abs(e.year - year) <= CONCURRENT_WINDOW,
-      ),
-    })).filter((g) => g.events.length > 0)
-  }, [selected])
+    return shownRegions
+      .map(({ region, slot }) => ({
+        region,
+        slot,
+        events: region.events.filter(
+          (e) => e.id !== selected.event.id && Math.abs(e.year - year) <= CONCURRENT_WINDOW,
+        ),
+      }))
+      .filter((g) => g.events.length > 0)
+  }, [selected, shownRegions])
 
   const gridTicks = useMemo(() => ticks(ppy), [ppy])
 
@@ -159,6 +211,8 @@ export default function App() {
 
       <Toolbar
         ppy={ppy}
+        regions={regionChips}
+        onToggleRegion={toggleRegion}
         categories={categories}
         onToggleCategory={toggleCategory}
         onZoom={(f) => zoomAt(f, (scrollRef.current?.clientHeight ?? 0) / 2)}
@@ -171,7 +225,10 @@ export default function App() {
         onMouseMove={onPointerMove}
         onMouseLeave={() => setHoverYear(null)}
       >
-        <div className="lanes" style={{ height: totalHeight(ppy) + HEAD_H }}>
+        <div
+          className="lanes"
+          style={{ height: totalHeight(ppy) + HEAD_H, width: canvasWidth }}
+        >
           <div className="gridlines" style={{ top: HEAD_H }} aria-hidden="true">
             {gridTicks.map((year) => (
               <div key={year} className="gridline" style={{ top: yearToY(year, ppy) }} />
@@ -179,7 +236,7 @@ export default function App() {
           </div>
 
           <Axis ppy={ppy} />
-          {REGIONS.map((region, slot) => (
+          {shownRegions.map(({ region, slot }) => (
             <RegionColumn
               key={region.id}
               region={region}

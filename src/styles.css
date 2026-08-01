@@ -204,6 +204,33 @@ button {
 }
 
 /* 篩選列同時就是圖例 */
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.group-sep {
+  width: 1px;
+  align-self: stretch;
+  min-height: 20px;
+  background: var(--border);
+}
+
+.legend .region-chip .swatch {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1.5px solid var(--region);
+  background: transparent;
+}
+.legend .region-chip.is-on .swatch {
+  background: var(--region);
+}
+.legend .region-chip {
+  padding-left: 10px;
+  gap: 7px;
+}
+
 .legend .chip {
   display: inline-flex;
   align-items: center;
@@ -234,17 +261,16 @@ button {
 
 .scroller {
   flex: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: auto;
   overscroll-behavior: contain;
   background: var(--surface-1);
 }
 
+/* 寬度由 App 算好寫進 style，格線與時間游標才跨得滿整個可捲動寬度 */
 .lanes {
   position: relative;
   display: flex;
   align-items: flex-start;
-  min-width: 100%;
 }
 
 .lane {
@@ -255,7 +281,18 @@ button {
 }
 .lane:last-of-type { border-right: none; }
 
-.axis-lane { width: var(--axis-w); flex: none; }
+/* 年代軸凍結在左緣，橫向捲動時仍讀得到年份 —— 這是多地區版面的關鍵。
+   自成 stacking context（z-index 6），所以整條軸會蓋在欄位內容與其標題之上。 */
+.axis-lane {
+  width: var(--axis-w);
+  flex: none;
+  position: sticky;
+  left: 0;
+  z-index: 6;
+  background: var(--surface-1);
+  border-right-color: var(--baseline);
+}
+
 .region-lane { flex: 1 1 0; }
 
 .lane-head {
@@ -272,6 +309,19 @@ button {
   border-bottom: 1px solid var(--baseline);
 }
 .region-lane .lane-head { border-bottom-color: var(--region); }
+
+/* 卡在凍結年代軸的右緣，不會滑到軸底下被蓋掉 */
+.lane-head-name {
+  position: sticky;
+  left: calc(var(--axis-w) + 10px);
+  /* 不能被 flex 拉成滿欄寬，否則沒有可滑動的餘裕，sticky 等於失效 */
+  align-self: flex-start;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
 
 .lane-name { font-size: 14px; font-weight: 600; }
 .lane-sub, .lane-count { font-size: 11px; color: var(--muted); }
@@ -355,6 +405,9 @@ button {
   position: relative;
   flex: 1 1 0;
   min-width: 0;
+  /* 關掉其他地區後欄位會變得很寬，標籤欄跟著撐開的話兩欄會相距數百 px，
+     視線掃不過去。寧可右邊留白。 */
+  max-width: 480px;
 }
 
 .mark {
@@ -447,18 +500,21 @@ button {
 
 /* ---------------- 時間游標 ---------------- */
 
+/* 疊在凍結的年代軸（z-index 6）之上，年份讀數才不會被軸蓋掉 */
 .time-cursor {
   position: absolute;
   inset-inline: 0;
   height: 0;
   border-top: 1px dashed var(--text-secondary);
-  z-index: 3;
+  z-index: 7;
   pointer-events: none;
 }
+/* sticky 讓讀數黏在畫面左緣，橫向捲動時不會跟著跑掉 */
 .time-cursor-chip {
-  position: absolute;
-  left: 0;
-  top: -10px;
+  position: sticky;
+  left: 4px;
+  display: inline-block;
+  margin-top: -10px;
   padding: 2px 7px;
   border-radius: 5px;
   background: var(--text-primary);
