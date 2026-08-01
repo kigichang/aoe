@@ -3,11 +3,14 @@ import {
   eventSchema,
   periodSchema,
   regionSchema,
+  timelineSchema,
   type HistEvent,
   type Period,
   type Region,
+  type Timeline,
 } from './schema'
 import regionsRaw from '../data/regions.yaml'
+import timelineRaw from '../data/timeline.yaml'
 
 /**
  * 用 glob 載入，所以新增一個地區只要放檔案 + 在 regions.yaml 加一筆，
@@ -35,6 +38,20 @@ function parse<T>(schema: z.ZodType<T>, raw: unknown, where: string): T[] {
   }
   return result.data
 }
+
+function parseOne<T>(schema: z.ZodType<T>, raw: unknown, where: string): T {
+  const result = schema.safeParse(raw)
+  if (!result.success) {
+    const issues = result.error.issues
+      .map((i) => `  [${i.path.join('.')}] ${i.message}`)
+      .join('\n')
+    throw new Error(`${where} 資料格式錯誤：\n${issues}`)
+  }
+  return result.data
+}
+
+/** 時間軸的上下界。scale.ts 的 MIN_YEAR / MAX_YEAR 由此而來。 */
+export const TIMELINE: Timeline = parseOne(timelineSchema, timelineRaw, 'timeline.yaml')
 
 function byPath<T>(files: Record<string, unknown>, schema: z.ZodType<T>) {
   const out = new Map<string, T[]>()
@@ -78,6 +95,26 @@ function assertNoOverlap(periods: Period[], regionId: string) {
   }
 }
 
+/**
+ * 事件與時期都必須落在時間軸的上下界之內。
+ *
+ * 沒有這道防護時，超出範圍的資料會被算成負的 y 座標、畫到畫布外面 ——
+ * **不報錯、主控台乾淨、欄位標題的「N 則」還照算**，只是讀者永遠看不到它。
+ * 實測一則 `year: -5000` 的事件會落在 `top: -1211px`，完全無聲無息。
+ * 這跟 assertNoOverlap 是同一種東西：寧可載入期整片白，也不要靜默掉資料。
+ */
+function assertInRange(items: { id: string; from: number; to: number }[], where: string) {
+  const { minYear, maxYear } = TIMELINE
+  for (const { id, from, to } of items) {
+    if (from < minYear || to > maxYear) {
+      throw new Error(
+        `${where}："${id}" 的年份 ${from}…${to} 超出時間軸範圍 ${minYear}…${maxYear}。` +
+          `請修正資料，或調整 src/data/timeline.yaml 的上下界。`,
+      )
+    }
+  }
+}
+
 export const REGIONS: Region[] = parse(regionSchema, regionsRaw, 'regions.yaml')
   .sort((a, b) => a.order - b.order)
   .map((meta) => {
@@ -86,6 +123,14 @@ export const REGIONS: Region[] = parse(regionSchema, regionsRaw, 'regions.yaml')
     assertUniqueIds(periods, `${meta.id}/periods.yaml`)
     assertUniqueIds(events, `${meta.id}/events.yaml`)
     assertNoOverlap(periods, meta.id)
+    assertInRange(
+      periods.map((p) => ({ id: p.id, from: p.start, to: p.end })),
+      `${meta.id}/periods.yaml`,
+    )
+    assertInRange(
+      events.map((e) => ({ id: e.id, from: e.year, to: e.endYear ?? e.year })),
+      `${meta.id}/events.yaml`,
+    )
     return {
       ...meta,
       periods,

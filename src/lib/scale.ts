@@ -3,8 +3,14 @@
  * 「古代稀疏、近代密集」的問題，而不是用非線性刻度 —— 非線性刻度會讓
  * 「同時期」這個核心比較失去直覺。
  */
-export const MIN_YEAR = -3000
-export const MAX_YEAR = 2025
+import { TIMELINE } from './data'
+/**
+ * 上下界來自 `src/data/timeline.yaml`，不寫死在這裡 —— 寫死的值會安靜地過期
+ * （`MAX_YEAR` 原本是 2025，跨年之後軸的下緣就停在去年了）。
+ * 超出範圍的資料由 `data.ts` 的 `assertInRange` 在載入期擋下。
+ */
+export const MIN_YEAR = TIMELINE.minYear
+export const MAX_YEAR = TIMELINE.maxYear
 export const SPAN_YEARS = MAX_YEAR - MIN_YEAR
 
 export const MIN_PPY = 0.15

@@ -66,6 +66,19 @@ export const periodSchema = z
   })
   .refine((p) => p.end >= p.start, { message: 'end 不能早於 start' })
 
+/**
+ * 時間軸的上下界（`src/data/timeline.yaml`）。
+ * 曾經寫死在 `scale.ts` 裡，問題是超出範圍的資料會被畫到畫布外面 ——
+ * 不報錯、主控台乾淨，只是讀者永遠看不到那一筆。範圍改成資料之後，
+ * `data.ts` 的 `assertInRange` 才有東西可以比對。
+ */
+export const timelineSchema = z
+  .object({
+    minYear: year,
+    maxYear: year,
+  })
+  .refine((t) => t.maxYear > t.minYear, { message: 'maxYear 必須大於 minYear' })
+
 export const regionSchema = z.object({
   id: z.string().min(1),
   name: z.string().min(1),
@@ -76,6 +89,7 @@ export const regionSchema = z.object({
 export type HistEvent = z.infer<typeof eventSchema>
 export type Period = z.infer<typeof periodSchema>
 export type RegionMeta = z.infer<typeof regionSchema>
+export type Timeline = z.infer<typeof timelineSchema>
 
 export interface Region extends RegionMeta {
   periods: Period[]

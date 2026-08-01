@@ -78,16 +78,41 @@
 ## 檔案地圖
 
 ```
-src/lib/schema.ts    Zod schema + 類別定義（漢字在這裡）
-src/lib/data.ts      glob 掃 YAML → 驗證 → 匯出 REGIONS
-src/lib/scale.ts     年↔像素、刻度級距、importance 分層門檻
-src/lib/layout.ts    標籤排版演算法 ★ 最需要小心的一支
-src/components/      Axis / RegionColumn / PeriodRail / EventMark / Toolbar / DetailPanel
-src/App.tsx          狀態、縮放錨定、時間游標、欄數計算
+src/lib/schema.ts       Zod schema + 類別定義（漢字在這裡）
+src/lib/data.ts         glob 掃 YAML → 驗證 → 匯出 REGIONS / TIMELINE
+src/lib/scale.ts        年↔像素、刻度級距、importance 分層門檻
+src/lib/layout.ts       標籤排版演算法 ★ 最需要小心的一支
+src/components/         Axis / RegionColumn / PeriodRail / EventMark / Toolbar / DetailPanel
+src/App.tsx             狀態、縮放錨定、時間游標、欄數計算
+src/data/regions.yaml   欄位定義（order 決定左右順序與配色 slot）
+src/data/timeline.yaml  時間軸的上下界
 ```
 
 資料是 `import.meta.glob('../data/*/events.yaml')` 掃進來的，
 **新增地區不需要改任何程式碼**，只要放檔案 + 在 `regions.yaml` 加一筆。
+
+### 時間軸的上下界（`timeline.yaml`）
+
+`minYear` / `maxYear` 曾經寫死在 `scale.ts`。改成資料有兩個原因：
+
+**寫死的值會安靜地過期。** `MAX_YEAR` 原本是 2025，跨年之後軸的下緣就停在去年了 ——
+`ticks()` 的迴圈是 `y <= MAX_YEAR`，連當年的刻度都不會產生。
+
+**超出範圍的資料會靜默消失。** 這是更嚴重的一個。`yearToY` 對範圍外的年份就是算出
+負的 y，元素被畫到畫布上方，`.lane-body` 又是 `overflow: visible`，於是：不報錯、
+主控台乾淨、欄位標題的「N 則」還照算，只有讀者永遠找不到那一筆。實測一則
+`year: -5000` 的事件會落在 `top: -1211px`。
+
+所以 `data.ts` 有 `assertInRange`，事件（含 `endYear`）與時期（`start`…`end`）
+都會檢查。跟 `assertNoOverlap` 同一種精神：**寧可載入期整片白配一則明確訊息，
+也不要靜默掉資料。**
+
+**為什麼是設定值，不是從資料推導。** 推導不會過期，聽起來更好，但一則離群的資料
+（例如 -10000）就會把整條軸拉長，其他五千年全被擠扁 —— 而擠扁的正是拿來做橫向
+對照的那段。範圍固定，`SPAN_YEARS`、刻度級距、捲動位置才穩定。代價是要記得維護，
+那就是 `assertInRange` 在幫忙盯的事。
+
+擴大範圍時記得：`SPAN_YEARS` 一變，整條軸的像素高度與捲動座標都會跟著變。
 
 ---
 
@@ -320,6 +345,10 @@ GitHub Pages 專案頁面掛在 `/<repo>/` 底下，`base` 設錯是整頁空白
    `addEventListener('wheel', …, { passive: false })`。
 5. **暗色模式下引線幾乎看不見**（原本用 `--baseline`）。引線是「位移誠實性」的
    保證，不能低調到看不見，改用地區色 55%。
+6. **軸範圍外的事件會靜默消失** —— 沒有任何錯誤，元素被畫到畫布上方而已。
+   已補 `assertInRange`（見上方「時間軸的上下界」）。順帶抓到 `MAX_YEAR` 寫死
+   2025 早已過期。**這類「畫面看起來正常，資料其實錯了」的 bug 是這個專案
+   最該防的一種**，發現時優先補載入期防護，而不是只修當下那筆資料。
 
 ---
 
