@@ -10,6 +10,7 @@
 
 
 
+
 - id: cn-fuxi
   year: -2852
   title: 伏羲畫八卦，傳說中的文明肇始
@@ -580,6 +581,72 @@
     - title: 維基百科：五代十國
       url: https://zh.wikipedia.org/wiki/五代十國
 
+- id: cn-khitan-founded
+  year: 916
+  title: 耶律阿保機建契丹國
+  category: politics
+  importance: 4
+  desc: 契丹統一各部後稱帝建國，兩年後定都臨潢府，並創制契丹文字。此國祚二百一十年，與中原長期對峙 —— 俄語至今仍以「契丹」稱中國。
+  sources:
+    - title: 維基百科：耶律阿保機
+      url: https://zh.wikipedia.org/wiki/耶律阿保機
+    - title: 維基百科：遼朝
+      url: https://zh.wikipedia.org/wiki/遼朝
+    - title: 維基百科：契丹
+      url: https://zh.wikipedia.org/wiki/契丹
+
+- id: cn-later-tang
+  year: 923
+  title: 李存勗滅後梁，建後唐
+  category: war
+  importance: 3
+  desc: 沙陀人以「復興唐朝」為名稱帝，滅掉朱溫所建的後梁。此後五代的君主多出自李克用的子孫與部屬。
+  sources:
+    - title: 維基百科：後唐
+      url: https://zh.wikipedia.org/wiki/後唐
+    - title: 維基百科：後梁
+      url: https://zh.wikipedia.org/wiki/後梁
+    - title: 維基百科：五代十國
+      url: https://zh.wikipedia.org/wiki/五代十國
+
+- id: cn-sixteen-prefectures
+  year: 936
+  title: 石敬瑭割燕雲十六州予契丹
+  category: politics
+  importance: 4
+  desc: 為向契丹借兵奪位，石敬瑭稱兒皇帝並割讓幽薊十六州、歲輸帛三十萬匹。中原自此失去北方屏障，直到 1368 年明軍北伐才收回 —— 前後四百三十二年。
+  sources:
+    - title: 維基百科：燕雲十六州
+      url: https://zh.wikipedia.org/wiki/燕雲十六州
+    - title: 維基百科：石敬瑭
+      url: https://zh.wikipedia.org/wiki/石敬瑭
+    - title: 維基百科：後晉
+      url: https://zh.wikipedia.org/wiki/後晉
+
+- id: cn-liao-proclaimed
+  year: 947
+  title: 契丹滅後晉，改國號大遼
+  category: war
+  importance: 3
+  desc: 遼太宗攻入開封，自居為繼承後晉的中原正統。但縱兵掠奪招來反抗，數月後即北返，中原由後漢接手。
+  sources:
+    - title: 維基百科：遼朝
+      url: https://zh.wikipedia.org/wiki/遼朝
+    - title: 維基百科：後晉
+      url: https://zh.wikipedia.org/wiki/後晉
+
+- id: cn-zhou-shizong
+  year: 955
+  title: 周世宗改革與北伐
+  category: politics
+  importance: 3
+  desc: 整頓軍政、抑制佛寺、清丈田畝，並南征淮南、北伐取瀛莫二州。五年後他病逝，趙匡胤接手的正是這份底子。
+  sources:
+    - title: 維基百科：周世宗
+      url: https://zh.wikipedia.org/wiki/周世宗
+    - title: 維基百科：後周
+      url: https://zh.wikipedia.org/wiki/後周
+
 - id: cn-song-founding
   year: 960
   title: 趙匡胤建立北宋
@@ -604,6 +671,18 @@
       url: https://zh.wikipedia.org/wiki/陳橋兵變
     - title: 維基百科：北宋
       url: https://zh.wikipedia.org/wiki/北宋
+
+- id: cn-conquer-southern-tang
+  year: 975
+  title: 宋滅南唐
+  category: war
+  importance: 3
+  desc: 十國之中最強的南唐亡於宋，李煜被俘。南方大致底定，只剩北漢待四年後解決。
+  sources:
+    - title: 維基百科：宋滅南唐之戰
+      url: https://zh.wikipedia.org/wiki/宋滅南唐之戰
+    - title: 維基百科：南唐
+      url: https://zh.wikipedia.org/wiki/南唐
 
 - id: cn-conquer-beihan
   year: 979
