@@ -7,6 +7,7 @@
 
 
 
+
 - id: tw-tapenkeng
   year: -3000
   title: 大坌坑文化，進入新石器時代
@@ -371,6 +372,18 @@
     - title: 維基百科：乙未戰爭
       url: https://zh.wikipedia.org/wiki/乙未戰爭
 
+- id: tw-law-63
+  year: 1896
+  title: 六三法，總督獨攬立法權
+  category: politics
+  importance: 3
+  desc: 授權總督在臺灣發布具法律效力的命令，行政、立法、司法與軍事大權集於一身。這是「特別統治」的法源。
+  sources:
+    - title: 維基百科：六三法
+      url: https://zh.wikipedia.org/wiki/六三法
+    - title: 維基百科：臺灣總督府
+      url: https://zh.wikipedia.org/wiki/臺灣總督府
+
 - id: tw-goto
   year: 1898
   title: 後藤新平任民政長官，展開殖民地經營
@@ -399,6 +412,16 @@
   sources:
     - title: 維基百科：臺灣總督府鐵道部
       url: https://zh.wikipedia.org/wiki/臺灣總督府鐵道部
+
+- id: tw-armed-resistance-crushed
+  year: 1902
+  title: 武裝抗日勢力大致肅清
+  category: war
+  importance: 3
+  desc: 據總督府自身的統計，統治前八年約三萬二千人遭殺害，超過當時總人口的百分之一。此後漢人抗日沉寂約五年。
+  sources:
+    - title: 維基百科：臺灣日治時期
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期
 
 - id: tw-census
   year: 1905
@@ -439,6 +462,18 @@
     - title: 維基百科：臺灣總督
       url: https://zh.wikipedia.org/wiki/臺灣總督
 
+- id: tw-admin-reform-1920
+  year: 1920
+  title: 地方制度改正，五州二廳；地名雅化
+  category: politics
+  importance: 4
+  desc: 今日臺灣的行政區界大致在此確立，此後變動極少。打狗改高雄、枋橋改板橋、噍吧哖改玉井，多數新地名沿用至今。
+  sources:
+    - title: 維基百科：町名改正
+      url: https://zh.wikipedia.org/wiki/町名改正
+    - title: 維基百科：臺灣日治時期
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期
+
 - id: tw-cultural-association
   year: 1921
   title: 台灣文化協會成立
@@ -448,6 +483,19 @@
   sources:
     - title: 維基百科：臺灣文化協會
       url: https://zh.wikipedia.org/wiki/臺灣文化協會
+
+- id: tw-parliament-petition
+  year: 1921
+  title: 臺灣議會設置請願運動
+  category: politics
+  importance: 4
+  endYear: 1934
+  desc: 十四年間十五次向帝國議會請願，要求設置由臺灣人選出的議會。1923 年當局以治警事件大舉搜捕，運動終未成事。
+  sources:
+    - title: 維基百科：臺灣議會設置請願運動
+      url: https://zh.wikipedia.org/wiki/臺灣議會設置請願運動
+    - title: 維基百科：治警事件
+      url: https://zh.wikipedia.org/wiki/治警事件
 
 - id: tw-coast-line
   year: 1922
@@ -481,6 +529,16 @@
     - title: 維基百科：臺東線
       url: https://zh.wikipedia.org/wiki/臺東線
 
+- id: tw-peoples-party
+  year: 1927
+  title: 臺灣民眾黨成立，首個近代政黨
+  category: politics
+  importance: 3
+  desc: 文化協會左右分裂後，舊幹部另組民眾黨。1931 年遭總督府以結社禁止令解散。
+  sources:
+    - title: 維基百科：臺灣民眾黨 (1927年)
+      url: https://zh.wikipedia.org/wiki/臺灣民眾黨_(1927年)
+
 - id: tw-taihoku-imperial-univ
   year: 1928
   title: 臺北帝國大學創立
@@ -512,6 +570,28 @@
     - title: 維基百科：霧社事件
       url: https://zh.wikipedia.org/wiki/霧社事件
 
+- id: tw-sunmoonlake-power
+  year: 1934
+  title: 日月潭水力發電所完工
+  category: economy
+  importance: 4
+  desc: 1919 年動工，數度停工復工，歷十五年建成。十萬千瓦的電力是臺灣由農業轉向工業化的基礎。
+  sources:
+    - title: 維基百科：日月潭水力電氣工事
+      url: https://zh.wikipedia.org/wiki/日月潭水力電氣工事
+    - title: 維基百科：大觀發電廠
+      url: https://zh.wikipedia.org/wiki/大觀發電廠
+
+- id: tw-first-election
+  year: 1935
+  title: 首次地方選舉
+  category: politics
+  importance: 4
+  desc: 臺灣史上第一次選舉，選出半數的市會及街庄協議會員，另一半仍為官派；選舉權另有年齡、納稅額與性別的限制。
+  sources:
+    - title: 維基百科：1935年臺灣市會及街庄協議會員選舉
+      url: https://zh.wikipedia.org/wiki/1935年臺灣市會及街庄協議會員選舉
+
 - id: tw-kominka
   year: 1937
   title: 進入皇民化時期
@@ -521,6 +601,31 @@
   sources:
     - title: 維基百科：皇民化運動
       url: https://zh.wikipedia.org/wiki/皇民化運動
+
+- id: tw-volunteer-soldiers
+  year: 1942
+  title: 實施陸軍特別志願兵，臺灣人投入戰場
+  category: war
+  importance: 3
+  desc: 太平洋戰爭擴大後，1943 年增設海軍特別志願兵，1945 年全面實施徵兵制。
+  sources:
+    - title: 維基百科：台籍日本兵
+      url: https://zh.wikipedia.org/wiki/台籍日本兵
+    - title: 維基百科：臺灣日治時期
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期
+
+- id: tw-allied-bombing
+  year: 1944
+  title: 盟軍空襲臺灣，農工生產崩跌
+  category: war
+  importance: 3
+  endYear: 1945
+  desc: 二十五次大空襲。到 1945 年，農業產值只剩 1937 年的一半，工業產值不到三分之一。
+  sources:
+    - title: 維基百科：臺北大空襲
+      url: https://zh.wikipedia.org/wiki/臺北大空襲
+    - title: 維基百科：臺灣日治時期
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期
 
 - id: tw-retrocession
   year: 1945
