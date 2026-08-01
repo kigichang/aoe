@@ -18,6 +18,7 @@ import { DetailPanel } from './components/DetailPanel'
 import { ThemeToggle } from './components/ThemeToggle'
 import { HelpOverlay } from './components/HelpOverlay'
 import { useTheme } from './lib/theme'
+import { readUrlState, writeUrlState } from './lib/urlState'
 
 /** 欄位標題列的高度，必須跟 CSS 的 --head-h 一致 */
 const HEAD_H = 58
@@ -31,6 +32,15 @@ const MIN_LANE_W = 340
 const MAX_LANES = 2
 /** 「同時期」清單往前後各看多少年 */
 const CONCURRENT_WINDOW = 60
+/**
+ * 「目前在看哪一年」取視窗高度的這個比例處。
+ * 跳年代、開場定位、網址讀寫**必須用同一個值** —— 不然分享出去的連結
+ * 打開之後位置會偏掉，而且偏多少還跟視窗高度有關。
+ */
+const VIEW_ANCHOR = 0.4
+
+/** 只在載入時讀一次；之後網址由這支程式自己寫，不再回頭讀 */
+const INITIAL_URL = readUrlState()
 
 const ALL_EVENTS = REGIONS.flatMap((r, slot) =>
   r.events.map((e) => ({ event: e, region: r, slot })),
@@ -38,7 +48,7 @@ const ALL_EVENTS = REGIONS.flatMap((r, slot) =>
 
 export default function App() {
   const scrollRef = useRef<HTMLDivElement>(null)
-  const [ppy, setPpy] = useState(0.6)
+  const [ppy, setPpy] = useState(() => INITIAL_URL.ppy ?? 0.6)
   const [categories, setCategories] = useState(() => new Set<Category>(CATEGORY_IDS))
   const [showLegendary, setShowLegendary] = useState(true)
   const [helpOpen, setHelpOpen] = useState(false)
@@ -46,7 +56,7 @@ export default function App() {
     () => new Set(REGIONS.map((r) => r.id)),
   )
   const [hoverYear, setHoverYear] = useState<number | null>(null)
-  const [selectedId, setSelectedId] = useState<string | null>(null)
+  const [selectedId, setSelectedId] = useState<string | null>(INITIAL_URL.eventId)
   const { theme, toggle: toggleTheme } = useTheme()
 
   // 縮放時要固定住指標所指的那一年，否則畫面會亂跳
@@ -80,7 +90,7 @@ export default function App() {
     const el = scrollRef.current
     if (!el) return
     el.scrollTo({
-      top: yearToY(year, ppyRef.current) + HEAD_H - el.clientHeight * 0.4,
+      top: yearToY(year, ppyRef.current) + HEAD_H - el.clientHeight * VIEW_ANCHOR,
       behavior: 'smooth',
     })
   }, [])
@@ -146,10 +156,80 @@ export default function App() {
   // 推擠一累積就會讓事件順序看起來是錯的，多開一欄比縮小位移上限有效得多。
   const laneCount = Math.min(MAX_LANES, Math.max(1, Math.floor(columnWidth / MIN_LANE_W)))
 
-  // 開場停在西元前後，一眼看到秦漢對上羅馬
+  // 網址帶了年份就聽網址的；否則開場停在西元前後，一眼看到秦漢對上羅馬
   useEffect(() => {
     const el = scrollRef.current
-    if (el) el.scrollTop = yearToY(1, 0.6) + HEAD_H - el.clientHeight * 0.45
+    if (!el) return
+    const year = INITIAL_URL.year ?? 1
+    el.scrollTop = yearToY(year, ppyRef.current) + HEAD_H - el.clientHeight * VIEW_ANCHOR
+  }, [])
+
+  // syncUrl 要讀得到最新的選取，但自己的 identity 必須穩定
+  const selectedIdRef = useRef(selectedId)
+  selectedIdRef.current = selectedId
+
+  const syncUrl = useCallback(() => {
+    const el = scrollRef.current
+    if (!el) return
+    const contentY = el.scrollTop - HEAD_H + el.clientHeight * VIEW_ANCHOR
+    writeUrlState({
+      year: yToYear(contentY, ppyRef.current),
+      ppy: ppyRef.current,
+      eventId: selectedIdRef.current,
+    })
+  }, [])
+
+  /*
+   * 捲動時更新網址。**必須 debounce** —— 捲動事件一秒可以觸發數十次，
+   * 每次都呼叫 history.replaceState 會拖慢捲動，Safari 還會直接丟出
+   * 「呼叫太頻繁」的警告。
+   *
+   * 副作用是開場的程式化捲動也會觸發一次，所以網址在載入後約 0.25 秒
+   * 就會補上 #y=…&z=…。這是刻意接受的：網址永遠反映現況，
+   * 「複製網址列」才會一直是可靠的分享方式。
+   */
+  useEffect(() => {
+    const el = scrollRef.current
+    if (!el) return
+    let timer: number | undefined
+    const onScroll = () => {
+      clearTimeout(timer)
+      timer = window.setTimeout(syncUrl, 250)
+    }
+    el.addEventListener('scroll', onScroll, { passive: true })
+    return () => {
+      el.removeEventListener('scroll', onScroll)
+      clearTimeout(timer)
+    }
+  }, [syncUrl])
+
+  // 縮放與選取是離散動作，不需要 debounce
+  useEffect(() => {
+    syncUrl()
+  }, [ppy, selectedId, syncUrl])
+
+  /*
+   * 外部改動 hash（貼上別人分享的連結、手動編輯網址）時要跟著跳。
+   * 自己寫入用的是 replaceState，不會觸發 hashchange，所以不會打架。
+   */
+  useEffect(() => {
+    const onHashChange = () => {
+      const el = scrollRef.current
+      const next = readUrlState()
+      if (!el) return
+      setSelectedId(next.eventId)
+      const nextPpy = next.ppy ?? ppyRef.current
+      const year = next.year ?? yToYear(el.scrollTop - HEAD_H + el.clientHeight * VIEW_ANCHOR, ppyRef.current)
+      if (nextPpy !== ppyRef.current) {
+        // 借用縮放錨定：先記下要對齊的年份，ppy 更新後由 layout effect 定位
+        anchorRef.current = { year, offset: el.clientHeight * VIEW_ANCHOR }
+        setPpy(nextPpy)
+      } else {
+        el.scrollTop = yearToY(year, nextPpy) + HEAD_H - el.clientHeight * VIEW_ANCHOR
+      }
+    }
+    window.addEventListener('hashchange', onHashChange)
+    return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
 
   const onPointerMove = (e: React.MouseEvent) => {
