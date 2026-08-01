@@ -131,6 +131,8 @@
   sources:
     - title: 維基百科：柏拉圖學院
       url: https://zh.wikipedia.org/wiki/柏拉圖學院
+    - title: 英文維基百科：柏拉圖學院
+      url: https://en.wikipedia.org/wiki/Platonic_Academy
 
 - id: eu-lyceum
   year: -335
@@ -140,6 +142,8 @@
   sources:
     - title: 維基百科：呂克昂
       url: https://zh.wikipedia.org/wiki/呂克昂
+    - title: 英文維基百科：呂克昂學園
+      url: https://en.wikipedia.org/wiki/Lyceum_(classical)
     - title: 維基百科：亞里斯多德
       url: https://zh.wikipedia.org/wiki/亞里斯多德
 
@@ -251,8 +255,8 @@
   category: religion
   importance: 5
   sources:
-    - title: 維基百科：米蘭敕令
-      url: https://zh.wikipedia.org/wiki/米蘭敕令
+    - title: 維基百科：米蘭敕令 (君士坦丁)
+      url: https://zh.wikipedia.org/wiki/米蘭敕令_(君士坦丁)
 
 - id: eu-constantinople
   year: 330
@@ -262,8 +266,8 @@
   sources:
     - title: 維基百科：君士坦丁堡
       url: https://zh.wikipedia.org/wiki/君士坦丁堡
-    - title: 維基百科：君士坦丁一世
-      url: https://zh.wikipedia.org/wiki/君士坦丁一世
+    - title: 維基百科：君士坦丁大帝
+      url: https://zh.wikipedia.org/wiki/君士坦丁大帝
 
 - id: eu-rome-split
   year: 395
@@ -284,6 +288,8 @@
   sources:
     - title: 維基百科：羅馬之劫 (410年)
       url: https://zh.wikipedia.org/wiki/羅馬之劫_(410年)
+    - title: 英文維基百科：羅馬之劫（410年）
+      url: https://en.wikipedia.org/wiki/Sack_of_Rome_(410)
 
 - id: eu-west-rome-fall
   year: 476
@@ -358,6 +364,8 @@
   sources:
     - title: 維基百科：倫巴底人
       url: https://zh.wikipedia.org/wiki/倫巴底人
+    - title: 英文維基百科：倫巴底人
+      url: https://en.wikipedia.org/wiki/Lombards
 
 - id: eu-gregory-i
   year: 590
@@ -388,6 +396,8 @@
   sources:
     - title: 維基百科：希臘火
       url: https://zh.wikipedia.org/wiki/希臘火
+    - title: 英文維基百科：君士坦丁堡之圍（674–678）
+      url: https://en.wikipedia.org/wiki/Siege_of_Constantinople_(674–678)
 
 - id: eu-al-andalus
   year: 711
@@ -398,6 +408,8 @@
   sources:
     - title: 維基百科：安達魯斯
       url: https://zh.wikipedia.org/wiki/安達魯斯
+    - title: 英文維基百科：穆斯林征服伊比利半島
+      url: https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Iberian_Peninsula
     - title: 維基百科：西哥德王國
       url: https://zh.wikipedia.org/wiki/西哥德王國
 
@@ -408,8 +420,8 @@
   importance: 3
   desc: 聖像該不該敬拜的爭執撕裂帝國逾百年，也拉開了東西教會的距離。
   sources:
-    - title: 維基百科：聖像破壞運動
-      url: https://zh.wikipedia.org/wiki/聖像破壞運動
+    - title: 英文維基百科：拜占庭聖像破壞運動
+      url: https://en.wikipedia.org/wiki/Byzantine_Iconoclasm
 
 - id: eu-tours
   year: 732
@@ -473,6 +485,8 @@
   sources:
     - title: 維基百科：三圃制
       url: https://zh.wikipedia.org/wiki/三圃制
+    - title: 英文維基百科：三圃制
+      url: https://en.wikipedia.org/wiki/Three-field_system
 
 - id: eu-verdun
   year: 843
@@ -532,7 +546,7 @@
   importance: 4
   sources:
     - title: 維基百科：奧托一世 (神聖羅馬帝國)
-      url: https://zh.wikipedia.org/wiki/奧托一世 (神聖羅馬帝國)
+      url: https://zh.wikipedia.org/wiki/奧托一世_(神聖羅馬帝國)
     - title: 維基百科：神聖羅馬帝國
       url: https://zh.wikipedia.org/wiki/神聖羅馬帝國
 
@@ -555,6 +569,8 @@
   sources:
     - title: 維基百科：羅斯受洗
       url: https://zh.wikipedia.org/wiki/羅斯受洗
+    - title: 英文維基百科：基輔羅斯的基督教化
+      url: https://en.wikipedia.org/wiki/Christianization_of_Kievan_Rus'
 
 - id: eu-schism
   year: 1054
@@ -783,8 +799,8 @@
   category: politics
   importance: 4
   sources:
-    - title: 維基百科：權利法案
-      url: https://zh.wikipedia.org/wiki/權利法案
+    - title: 維基百科：1689年權利法案
+      url: https://zh.wikipedia.org/wiki/1689年權利法案
 
 - id: eu-bank-of-england
   year: 1694
@@ -804,6 +820,8 @@
   sources:
     - title: 維基百科：托馬斯·紐科門
       url: https://zh.wikipedia.org/wiki/托馬斯·紐科門
+    - title: 英文維基百科：托馬斯·紐科門
+      url: https://en.wikipedia.org/wiki/Thomas_Newcomen
     - title: 維基百科：蒸汽機
       url: https://zh.wikipedia.org/wiki/蒸汽機
 

@@ -109,6 +109,8 @@
   sources:
     - title: 維基百科：平城京
       url: https://zh.wikipedia.org/wiki/平城京
+    - title: 日文維基百科：平城京
+      url: https://ja.wikipedia.org/wiki/平城京
 
 - id: jp-kojiki
   year: 712
@@ -199,6 +201,8 @@
   sources:
     - title: 維基百科：法然
       url: https://zh.wikipedia.org/wiki/法然
+    - title: 日文維基百科：法然
+      url: https://ja.wikipedia.org/wiki/法然
 
 - id: jp-dannoura
   year: 1185
@@ -339,6 +343,8 @@
   sources:
     - title: 維基百科：伴天連追放令
       url: https://zh.wikipedia.org/wiki/伴天連追放令
+    - title: 日文維基百科：伴天連追放令
+      url: https://ja.wikipedia.org/wiki/バテレン追放令
 
 - id: jp-hideyoshi
   year: 1590
@@ -411,6 +417,8 @@
   sources:
     - title: 維基百科：貞享曆
       url: https://zh.wikipedia.org/wiki/貞享曆
+    - title: 日文維基百科：貞享曆
+      url: https://ja.wikipedia.org/wiki/貞享暦
     - title: 維基百科：澀川春海
       url: https://zh.wikipedia.org/wiki/澀川春海
 
@@ -432,6 +440,8 @@
   sources:
     - title: 維基百科：堂島米會所
       url: https://zh.wikipedia.org/wiki/堂島米會所
+    - title: 日文維基百科：堂島米會所
+      url: https://ja.wikipedia.org/wiki/堂島米会所
 
 - id: jp-kaitai
   year: 1774
@@ -441,6 +451,8 @@
   sources:
     - title: 維基百科：解體新書
       url: https://zh.wikipedia.org/wiki/解體新書
+    - title: 日文維基百科：解體新書
+      url: https://ja.wikipedia.org/wiki/解体新書
     - title: 維基百科：蘭學
       url: https://zh.wikipedia.org/wiki/蘭學
 

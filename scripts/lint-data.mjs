@@ -7,6 +7,10 @@
  *   node scripts/lint-data.mjs --min 3        # 調整門檻（預設 4）
  *   node scripts/lint-data.mjs --strict       # 有缺漏就以 exit 1 結束，可用於 CI
  *   node scripts/lint-data.mjs --check-urls   # 連線驗證每個出處網址是否還活著
+ *   node scripts/lint-data.mjs --check-pages  # 問維基 API：條目是否存在、是不是消歧義頁
+ *
+ * --check-urls 只看 HTTP 狀態碼，驗不出「連得通但指錯地方」——
+ * 消歧義頁一樣回 200。--check-pages 補的就是這一段。
  */
 import { readFileSync, readdirSync, existsSync } from 'node:fs'
 import { join, dirname } from 'node:path'
@@ -81,6 +85,77 @@ if (has('--check-urls')) {
   }
   console.log(dead === 0 ? `  全部 ${urls.size} 個網址正常` : `\n  ${dead} 個網址有問題`)
   if (dead && has('--strict')) process.exit(1)
+}
+
+if (has('--check-pages')) {
+  /**
+   * 依站台分組後問各自的 API。出處不限中文維基：日本史可引日文版、
+   * 歐洲史可引英文版（`title` 一律寫繁體中文），所以這裡要按 host 分開查。
+   */
+  const byHost = new Map()
+  for (const [url, where] of urls) {
+    const m = url.match(/^https:\/\/([a-z-]+\.wikipedia\.org)\/wiki\/(.+)$/)
+    if (!m) continue
+    if (!byHost.has(m[1])) byHost.set(m[1], new Map())
+    byHost.get(m[1]).set(decodeURIComponent(m[2]).replace(/_/g, ' '), where)
+  }
+
+  console.log(`\n查詢維基 API：${urls.size} 個條目，${byHost.size} 個站台…\n`)
+  let bad = 0
+
+  for (const [host, titles] of byHost) {
+    const all = [...titles.keys()]
+    for (let i = 0; i < all.length; i += 40) {
+      // 一個請求最多 50 個標題，但別打太快
+      if (i || byHost.size > 1) await new Promise((r) => setTimeout(r, 1500))
+      const params = new URLSearchParams({
+        format: 'json',
+        action: 'query',
+        redirects: '1',
+        prop: 'pageprops',
+        ppprop: 'disambiguation',
+        titles: all.slice(i, i + 40).join('|'),
+      })
+      // 中文維基的 API 不做繁簡變體轉換（`/wiki/` 路徑會做），
+      // 少了這個參數，繁體標題會被大量誤報成 missing。
+      if (host.startsWith('zh.')) params.set('converttitles', 'zh-hans')
+
+      const res = await fetch(`https://${host}/w/api.php?${params}`, {
+        headers: { 'User-Agent': 'aoe-data-lint (https://github.com/kigichang/aoe)' },
+      })
+      const { query } = await res.json()
+
+      // normalized / converted / redirects 逐層把回傳標題對回原始寫法
+      const chain = new Map()
+      for (const kind of ['normalized', 'converted', 'redirects'])
+        for (const r of query[kind] ?? []) chain.set(r.to, r.from)
+      const original = (t) => {
+        let cur = t
+        for (const seen = new Set(); chain.has(cur) && !seen.has(cur); ) {
+          seen.add(cur)
+          cur = chain.get(cur)
+        }
+        return cur
+      }
+
+      for (const page of Object.values(query.pages)) {
+        const title = original(page.title)
+        const problem =
+          page.missing !== undefined
+            ? '條目不存在'
+            : page.pageprops?.disambiguation !== undefined
+              ? '這是消歧義頁，不是條目'
+              : null
+        if (problem) {
+          bad++
+          console.log(`  ✗ ${problem}  ${host}  ${title}\n      ${titles.get(title) ?? ''}`)
+        }
+      }
+    }
+  }
+
+  console.log(bad === 0 ? `  全部 ${urls.size} 個條目正常` : `\n  ${bad} 個條目有問題`)
+  if (bad && has('--strict')) process.exit(1)
 }
 
 if (missing && has('--strict')) process.exit(1)
