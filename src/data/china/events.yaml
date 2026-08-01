@@ -8,6 +8,7 @@
 
 
 
+
 - id: cn-fuxi
   year: -2852
   title: 伏羲畫八卦，傳說中的文明肇始
@@ -589,6 +590,18 @@
     - title: 維基百科：北宋
       url: https://zh.wikipedia.org/wiki/北宋
 
+- id: cn-chanyuan-treaty
+  year: 1004
+  title: 澶淵之盟，宋遼結為兄弟之國
+  category: politics
+  importance: 4
+  desc: 宋以歲幣換取和平，此後宋遼百餘年無大戰。以錢帛代替戰爭的做法，成為北宋處理北方關係的基調。
+  sources:
+    - title: 維基百科：澶淵之盟
+      url: https://zh.wikipedia.org/wiki/澶淵之盟
+    - title: 維基百科：宋朝
+      url: https://zh.wikipedia.org/wiki/宋朝
+
 - id: cn-jiaozi
   year: 1024
   title: 交子成為官方紙幣
@@ -619,6 +632,18 @@
     - title: 維基百科：王安石變法
       url: https://zh.wikipedia.org/wiki/王安石變法
 
+- id: cn-zizhi-tongjian
+  year: 1084
+  title: 司馬光《資治通鑑》成書
+  category: culture
+  importance: 4
+  desc: 歷十九年編成的編年體通史，上起戰國下至五代，共二百九十四卷。體例與《史記》的紀傳體分庭抗禮，成為後世治史的兩大範式之一。
+  sources:
+    - title: 維基百科：資治通鑑
+      url: https://zh.wikipedia.org/wiki/資治通鑑
+    - title: 維基百科：司馬光
+      url: https://zh.wikipedia.org/wiki/司馬光
+
 - id: cn-mengxi-bitan
   year: 1088
   title: 沈括《夢溪筆談》
@@ -638,6 +663,28 @@
     - title: 維基百科：靖康之變
       url: https://zh.wikipedia.org/wiki/靖康之變
 
+- id: cn-shaoxing-treaty
+  year: 1141
+  title: 紹興和議，宋金劃淮而治
+  category: politics
+  importance: 3
+  desc: 南宋向金稱臣納貢，以淮河大散關為界。岳飛於同年下獄遇害，北伐就此中止。
+  sources:
+    - title: 維基百科：紹興和議
+      url: https://zh.wikipedia.org/wiki/紹興和議
+
+- id: cn-zhu-xi
+  year: 1200
+  title: 朱熹歿，程朱理學集大成
+  category: culture
+  importance: 3
+  desc: 以四書取代五經為核心，元代以後成為科舉的標準，支配東亞思想界六百餘年，直到王陽明心學才出現大規模的反動。
+  sources:
+    - title: 維基百科：朱熹
+      url: https://zh.wikipedia.org/wiki/朱熹
+    - title: 維基百科：程朱理學
+      url: https://zh.wikipedia.org/wiki/程朱理學
+
 - id: cn-genghis
   year: 1206
   title: 成吉思汗統一蒙古
@@ -649,6 +696,86 @@
     - title: 維基百科：蒙古帝國
       url: https://zh.wikipedia.org/wiki/蒙古帝國
 
+- id: cn-mongol-jin-war
+  year: 1211
+  title: 蒙金戰爭起，野狐嶺大破金軍
+  category: war
+  importance: 3
+  desc: 成吉思汗與金斷交後南下，四十萬金軍潰敗。1215 年蒙軍攻陷中都，金朝遷都汴京。
+  sources:
+    - title: 維基百科：蒙金戰爭
+      url: https://zh.wikipedia.org/wiki/蒙金戰爭
+    - title: 維基百科：蒙古帝國
+      url: https://zh.wikipedia.org/wiki/蒙古帝國
+
+- id: cn-first-western-campaign
+  year: 1219
+  title: 蒙古第一次西征，滅花剌子模
+  category: war
+  importance: 4
+  endYear: 1223
+  desc: 因商隊遭屠殺而起兵。中亞大國兩年內亡國，蒙軍越高加索山，於迦勒迦河擊潰羅斯諸國聯軍。
+  sources:
+    - title: 維基百科：蒙古第一次西征
+      url: https://zh.wikipedia.org/wiki/蒙古第一次西征
+    - title: 維基百科：花剌子模
+      url: https://zh.wikipedia.org/wiki/花剌子模
+    - title: 維基百科：蒙古帝國
+      url: https://zh.wikipedia.org/wiki/蒙古帝國
+
+- id: cn-mongol-destroy-jin
+  year: 1234
+  title: 蒙古滅金
+  category: war
+  importance: 3
+  desc: 聯宋滅金。華北與黃土高原自此入蒙古之手，南宋失去屏障，也開啟了此後四十餘年的宋蒙戰爭。
+  sources:
+    - title: 維基百科：蒙金戰爭
+      url: https://zh.wikipedia.org/wiki/蒙金戰爭
+    - title: 維基百科：元朝
+      url: https://zh.wikipedia.org/wiki/元朝
+
+- id: cn-second-western-campaign
+  year: 1236
+  title: 第二次西征，滅基輔羅斯、震動東歐
+  category: war
+  importance: 4
+  endYear: 1242
+  desc: 拔都率軍西進，滅伏爾加保加利亞與基輔羅斯，再破波蘭與匈牙利，前鋒抵達亞得里亞海濱。窩闊台的死訊傳來才班師。
+  sources:
+    - title: 維基百科：蒙古第二次西征
+      url: https://zh.wikipedia.org/wiki/蒙古第二次西征
+    - title: 維基百科：拔都
+      url: https://zh.wikipedia.org/wiki/拔都
+    - title: 維基百科：蒙古帝國
+      url: https://zh.wikipedia.org/wiki/蒙古帝國
+
+- id: cn-kublai-split
+  year: 1260
+  title: 忽必烈自立，蒙古帝國分裂為四大汗國
+  category: politics
+  importance: 4
+  desc: 蒙哥死於釣魚城後，忽必烈與阿里不哥爭位。四年後忽必烈獲勝，但欽察、察合台、窩闊台、伊兒四大汗國自此各自獨立。
+  sources:
+    - title: 維基百科：忽必烈
+      url: https://zh.wikipedia.org/wiki/忽必烈
+    - title: 維基百科：四大汗國
+      url: https://zh.wikipedia.org/wiki/四大汗國
+    - title: 維基百科：蒙古帝國
+      url: https://zh.wikipedia.org/wiki/蒙古帝國
+
+- id: cn-yuan-proclaimed
+  year: 1271
+  title: 忽必烈建國號大元
+  category: politics
+  importance: 4
+  desc: 取《易經》「大哉乾元」之意。這是中國歷史上第一個把「大」字放進正式國號的統一王朝，蒙文則並稱「大元大蒙古國」。
+  sources:
+    - title: 維基百科：元朝
+      url: https://zh.wikipedia.org/wiki/元朝
+    - title: 維基百科：忽必烈
+      url: https://zh.wikipedia.org/wiki/忽必烈
+
 - id: cn-yaishan
   year: 1279
   title: 崖山之戰，元朝統一全國
@@ -657,6 +784,18 @@
   sources:
     - title: 維基百科：崖山海戰
       url: https://zh.wikipedia.org/wiki/崖山海戰
+    - title: 維基百科：元朝
+      url: https://zh.wikipedia.org/wiki/元朝
+
+- id: cn-red-turban
+  year: 1351
+  title: 紅巾軍起義
+  category: war
+  importance: 3
+  desc: 黃河改道與徵發民夫引爆的民變，十餘年間席捲南北。朱元璋即出身其中一支。
+  sources:
+    - title: 維基百科：紅巾軍
+      url: https://zh.wikipedia.org/wiki/紅巾軍
     - title: 維基百科：元朝
       url: https://zh.wikipedia.org/wiki/元朝
 
@@ -670,6 +809,19 @@
       url: https://zh.wikipedia.org/wiki/明太祖
     - title: 維基百科：明朝
       url: https://zh.wikipedia.org/wiki/明朝
+
+- id: cn-northern-yuan
+  year: 1368
+  title: 元順帝北走，北元繼續奉大元國號
+  category: politics
+  importance: 3
+  endYear: 1388
+  desc: 明軍攻克大都後元廷北遷，仍據有嶺北、遼陽、甘肅、雲南等行省與明對峙。1388 年捕魚兒海之戰後大元國號被廢。
+  sources:
+    - title: 維基百科：北元
+      url: https://zh.wikipedia.org/wiki/北元
+    - title: 維基百科：元朝
+      url: https://zh.wikipedia.org/wiki/元朝
 
 - id: cn-abolish-chancellor
   year: 1380
