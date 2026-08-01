@@ -17,6 +17,7 @@
 
 
 
+
 - id: cn-fuxi
   year: -2852
   title: 伏羲畫八卦，傳說中的文明肇始
@@ -390,6 +391,20 @@
     - title: 維基百科：黃巾之亂
       url: https://zh.wikipedia.org/wiki/黃巾之亂
 
+- id: cn-cao-cao-emperor
+  year: 196
+  title: 曹操迎獻帝至許昌，挾天子以令諸侯
+  category: politics
+  importance: 4
+  desc: 袁紹不取此策，曹操從毛玠之議「奉天子以令不臣」。同時大興屯田解決軍糧 —— 名義上的天子與實際的權力自此分離，開魏晉霸府政治之先河。
+  sources:
+    - title: 維基百科：曹操
+      url: https://zh.wikipedia.org/wiki/曹操
+    - title: 維基百科：曹魏
+      url: https://zh.wikipedia.org/wiki/曹魏
+    - title: 維基百科：三國
+      url: https://zh.wikipedia.org/wiki/三國
+
 - id: cn-shanghan-lun
   year: 200
   title: 張仲景《傷寒雜病論》
@@ -399,6 +414,18 @@
   sources:
     - title: 維基百科：傷寒雜病論
       url: https://zh.wikipedia.org/wiki/傷寒雜病論
+
+- id: cn-guandu
+  year: 200
+  title: 官渡之戰，曹操大破袁紹
+  category: war
+  importance: 4
+  desc: 以寡擊眾擊潰北方最大勢力，此後數年陸續掌控中國北方。八年後南下卻在赤壁受挫 —— 三分之勢由這一勝一敗定型。
+  sources:
+    - title: 維基百科：官渡之戰
+      url: https://zh.wikipedia.org/wiki/官渡之戰
+    - title: 維基百科：曹魏
+      url: https://zh.wikipedia.org/wiki/曹魏
 
 - id: cn-red-cliffs
   year: 208
@@ -419,6 +446,69 @@
       url: https://zh.wikipedia.org/wiki/曹丕
     - title: 維基百科：三國
       url: https://zh.wikipedia.org/wiki/三國
+
+- id: cn-nine-rank
+  year: 220
+  title: 九品中正制，門第決定仕途
+  category: politics
+  importance: 4
+  desc: 陳群所議，由地方中正官依家世、德行、才能評定人物等第，以取代漢代察舉。原意在矯正漢末用人唯親之弊，實際卻使門第固化。此制行用三百餘年，至 587 年隋設科舉才被取代。
+  sources:
+    - title: 維基百科：九品中正制
+      url: https://zh.wikipedia.org/wiki/九品中正制
+    - title: 維基百科：曹魏
+      url: https://zh.wikipedia.org/wiki/曹魏
+    - title: 維基百科：三國
+      url: https://zh.wikipedia.org/wiki/三國
+
+- id: cn-shu-han
+  year: 221
+  title: 劉備稱帝，蜀漢建立
+  category: politics
+  importance: 3
+  desc: 以漢室宗親身分承繼漢祚，國號仍為「漢」。孫權遲至 229 年才稱帝，三國到那時才正式鼎立。
+  sources:
+    - title: 維基百科：蜀漢
+      url: https://zh.wikipedia.org/wiki/蜀漢
+    - title: 維基百科：孫吳
+      url: https://zh.wikipedia.org/wiki/孫吳
+
+- id: cn-zhuge-north
+  year: 227
+  title: 諸葛亮北伐
+  category: war
+  importance: 3
+  endYear: 234
+  desc: 七年間與曹魏六度交兵、五次北伐，曾奪武都陰平、斬魏將張郃。但司馬懿堅守不戰，蜀道補給又難，最終無功而終於五丈原。
+  sources:
+    - title: 維基百科：諸葛亮北伐
+      url: https://zh.wikipedia.org/wiki/諸葛亮北伐
+    - title: 維基百科：蜀漢
+      url: https://zh.wikipedia.org/wiki/蜀漢
+
+- id: cn-gaopingling
+  year: 249
+  title: 高平陵之變，司馬氏掌魏權
+  category: politics
+  importance: 4
+  desc: 司馬懿誅曹爽及其黨羽，魏國朝政落入司馬氏之手。其子師、昭相繼掌權，十七年後司馬炎受禪建晉 —— 曹丕代漢的方式，原封不動地回到曹家身上。
+  sources:
+    - title: 維基百科：高平陵之變
+      url: https://zh.wikipedia.org/wiki/高平陵之變
+    - title: 維基百科：曹魏
+      url: https://zh.wikipedia.org/wiki/曹魏
+
+- id: cn-wei-conquer-shu
+  year: 263
+  title: 魏滅蜀漢
+  category: war
+  importance: 3
+  desc: 司馬昭為建立軍功以備代魏而三路南下。姜維擋住鍾會於劍閣，鄧艾卻走陰平小路直逼成都，劉禪出降 —— 三國中最先亡的一國。
+  sources:
+    - title: 維基百科：魏滅蜀之戰
+      url: https://zh.wikipedia.org/wiki/魏滅蜀之戰
+    - title: 維基百科：蜀漢
+      url: https://zh.wikipedia.org/wiki/蜀漢
 
 - id: cn-western-jin-founded
   year: 266
