@@ -11,6 +11,7 @@
 
 
 
+
 - id: cn-fuxi
   year: -2852
   title: 伏羲畫八卦，傳說中的文明肇始
@@ -635,17 +636,48 @@
     - title: 維基百科：後晉
       url: https://zh.wikipedia.org/wiki/後晉
 
-- id: cn-zhou-shizong
-  year: 955
-  title: 周世宗改革與北伐
+- id: cn-later-zhou-founded
+  year: 951
+  title: 郭威滅後漢，建後周
   category: politics
   importance: 3
-  desc: 整頓軍政、抑制佛寺、清丈田畝，並南征淮南、北伐取瀛莫二州。五年後他病逝，趙匡胤接手的正是這份底子。
+  desc: 後漢隱帝誅殺顧命大臣，郭威以清君側起兵，數日入開封。登基後減免徭役、整頓軍紀與吏治，是五代少見的節儉之君 —— 死後陵前僅立石碑一塊，連守陵宦官都沒有。
+  sources:
+    - title: 維基百科：郭威
+      url: https://zh.wikipedia.org/wiki/郭威
+    - title: 維基百科：後周
+      url: https://zh.wikipedia.org/wiki/後周
+    - title: 維基百科：後漢 (五代)
+      url: https://zh.wikipedia.org/wiki/後漢_(五代)
+
+- id: cn-gaoping-battle
+  year: 954
+  title: 高平之戰，柴榮親征扭轉戰局
+  category: war
+  importance: 3
+  desc: 北漢聯遼趁後周新君初立來攻。柴榮親臨戰場，在右翼潰退的劣勢下逆轉取勝，戰後藉勢整頓禁軍 —— 那正是六年後趙匡胤統領的同一支部隊。
+  sources:
+    - title: 維基百科：高平之戰
+      url: https://zh.wikipedia.org/wiki/高平之戰
+    - title: 維基百科：周世宗
+      url: https://zh.wikipedia.org/wiki/周世宗
+    - title: 維基百科：北漢
+      url: https://zh.wikipedia.org/wiki/北漢
+
+- id: cn-zhou-shizong
+  year: 955
+  title: 周世宗三征南唐，盡取江北
+  category: war
+  importance: 3
+  endYear: 958
+  desc: 三度親征，迫使南唐去帝號、割讓長江以北幾乎全部土地。959 年他再北上攻遼，兩個月幾乎抵達幽州，卻突然患病而中止，不久病逝 —— 趙匡胤接手的正是這份底子。
   sources:
     - title: 維基百科：周世宗
       url: https://zh.wikipedia.org/wiki/周世宗
     - title: 維基百科：後周
       url: https://zh.wikipedia.org/wiki/後周
+    - title: 維基百科：南唐
+      url: https://zh.wikipedia.org/wiki/南唐
 
 - id: cn-song-founding
   year: 960
