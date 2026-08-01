@@ -16,6 +16,7 @@
 
 
 
+
 - id: cn-fuxi
   year: -2852
   title: 伏羲畫八卦，傳說中的文明肇始
@@ -419,6 +420,18 @@
     - title: 維基百科：三國
       url: https://zh.wikipedia.org/wiki/三國
 
+- id: cn-western-jin-founded
+  year: 266
+  title: 司馬炎代魏建晉
+  category: politics
+  importance: 3
+  desc: 高平陵之變後司馬氏掌魏權十七年，至此受禪稱帝（泰始元年冬十二月，換算西曆為 266 年 2 月）。十四年後滅吳，三國鼎立告終。
+  sources:
+    - title: 維基百科：西晉
+      url: https://zh.wikipedia.org/wiki/西晉
+    - title: 維基百科：司馬炎
+      url: https://zh.wikipedia.org/wiki/司馬炎
+
 - id: cn-jin-unify
   year: 280
   title: 西晉統一
@@ -428,15 +441,80 @@
     - title: 維基百科：西晉
       url: https://zh.wikipedia.org/wiki/西晉
 
-- id: cn-yongjia
-  year: 316
-  title: 永嘉之亂，五胡十六國
+- id: cn-eight-princes
+  year: 291
+  title: 八王之亂
   category: war
   importance: 4
-  desc: 北方長期分裂，士族大舉南遷，江南首次成為文化重心。
+  endYear: 306
+  desc: 賈后干政引爆宗室相攻，八位宗王先後捲入，各引地方官與內遷諸族參戰。晉廷對地方的控制力就此瓦解 —— 五胡起兵的門就是這樣被推開的。
+  sources:
+    - title: 維基百科：八王之亂
+      url: https://zh.wikipedia.org/wiki/八王之亂
+    - title: 維基百科：西晉
+      url: https://zh.wikipedia.org/wiki/西晉
+
+- id: cn-sixteen-kingdoms-start
+  year: 304
+  title: 劉淵建漢趙、李雄建成漢，十六國之始
+  category: politics
+  importance: 4
+  desc: 八王之亂中晉廷失去對地方的影響力，胡族陸續叛變。此後一百三十五年間華北政權更迭不休，直到 439 年北魏統一才結束。
+  sources:
+    - title: 維基百科：五胡十六國
+      url: https://zh.wikipedia.org/wiki/五胡十六國
+    - title: 維基百科：劉淵
+      url: https://zh.wikipedia.org/wiki/劉淵
+
+- id: cn-yongjia
+  year: 316
+  title: 永嘉之亂，西晉滅亡
+  category: war
+  importance: 4
+  desc: 311 年漢趙攻陷洛陽、擄晉懷帝，316 年長安再陷、愍帝出降。統一僅三十六年的西晉告終，華北全境落入胡族政權之手。
   sources:
     - title: 維基百科：永嘉之亂
       url: https://zh.wikipedia.org/wiki/永嘉之亂
+    - title: 維基百科：西晉
+      url: https://zh.wikipedia.org/wiki/西晉
+
+- id: cn-eastern-jin
+  year: 317
+  title: 司馬睿建東晉，士族南遷
+  category: politics
+  importance: 4
+  desc: 洛陽、長安相繼陷落後，琅琊王在建康即位。政權憑長江天險偏安，倚仗南遷的中原士族與南方大族，時人謂「王與馬，共天下」。江南自此成為文化重心。
+  sources:
+    - title: 維基百科：東晉
+      url: https://zh.wikipedia.org/wiki/東晉
+    - title: 維基百科：司馬睿
+      url: https://zh.wikipedia.org/wiki/司馬睿
+
+- id: cn-huan-wen-north
+  year: 354
+  title: 桓溫北伐，一度收復洛陽
+  category: war
+  importance: 3
+  desc: 東晉北伐屢起屢敗：祖逖曾收復黃河以南，卻因朝廷猜忌而無援，321 年憂憤而死；桓溫三度北伐，請求遷都洛陽也遭大族反對。君主表面支持，實則怕將領威望過高。
+  sources:
+    - title: 維基百科：桓溫
+      url: https://zh.wikipedia.org/wiki/桓溫
+    - title: 維基百科：祖逖
+      url: https://zh.wikipedia.org/wiki/祖逖
+    - title: 維基百科：東晉
+      url: https://zh.wikipedia.org/wiki/東晉
+
+- id: cn-feishui
+  year: 383
+  title: 淝水之戰，東晉以弱勝強
+  category: war
+  importance: 4
+  desc: 前秦苻堅號稱八十七萬大軍南下，謝安主戰、謝石謝玄迎擊而大勝。前秦隨即瓦解，北方重回分裂，南方因此又安穩了數十年 —— 三年後拓跋珪正是趁此起兵。
+  sources:
+    - title: 維基百科：淝水之戰
+      url: https://zh.wikipedia.org/wiki/淝水之戰
+    - title: 維基百科：東晉
+      url: https://zh.wikipedia.org/wiki/東晉
     - title: 維基百科：五胡十六國
       url: https://zh.wikipedia.org/wiki/五胡十六國
 
