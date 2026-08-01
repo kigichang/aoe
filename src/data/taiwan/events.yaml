@@ -5,6 +5,7 @@
 # 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
 
 
+
 - id: tw-tapenkeng
   year: -3000
   title: 大坌坑文化，進入新石器時代
@@ -219,11 +220,24 @@
     - title: 維基百科：劉銘傳
       url: https://zh.wikipedia.org/wiki/劉銘傳
 
-- id: tw-railway-qing
-  year: 1891
-  title: 基隆—新竹鐵路通車
+- id: tw-railway-bureau-qing
+  year: 1887
+  title: 全臺鐵路商務總局成立，鐵路動工
   category: economy
   importance: 3
+  desc: 劉銘傳主導，原規劃基隆經台北、新竹通到台南。1891 年他去職後，繼任巡撫以財政困難奏請中止。
+  sources:
+    - title: 維基百科：全臺鐵路商務總局
+      url: https://zh.wikipedia.org/wiki/全臺鐵路商務總局
+    - title: 維基百科：劉銘傳
+      url: https://zh.wikipedia.org/wiki/劉銘傳
+
+- id: tw-railway-qing
+  year: 1891
+  title: 台北—基隆鐵路通車，台灣首條鐵路
+  category: economy
+  importance: 3
+  desc: 首段由大稻埕通至基隆，1893 年才延伸到新竹。清代的建設止步於此，原訂的台南段未及動工。
   sources:
     - title: 維基百科：劉銘傳
       url: https://zh.wikipedia.org/wiki/劉銘傳
@@ -262,6 +276,16 @@
   sources:
     - title: 維基百科：臺灣總督府醫學校
       url: https://zh.wikipedia.org/wiki/臺灣總督府醫學校
+
+- id: tw-railway-bureau-japan
+  year: 1899
+  title: 總督府鐵道部成立，縱貫線改為官辦
+  category: economy
+  importance: 3
+  desc: 民間業者募款接連失敗後改由官方主導，西部縱貫線的興建自此加速。
+  sources:
+    - title: 維基百科：臺灣總督府鐵道部
+      url: https://zh.wikipedia.org/wiki/臺灣總督府鐵道部
 
 - id: tw-census
   year: 1905
@@ -311,6 +335,38 @@
   sources:
     - title: 維基百科：臺灣文化協會
       url: https://zh.wikipedia.org/wiki/臺灣文化協會
+
+- id: tw-coast-line
+  year: 1922
+  title: 海線通車，取代山線成為縱貫線主線
+  category: economy
+  importance: 3
+  desc: 竹南經清水到彰化的新線，避開山線的坡度限制。中部西岸的沿海市街隨之發展起來。
+  sources:
+    - title: 維基百科：海岸線 (臺鐵)
+      url: https://zh.wikipedia.org/wiki/海岸線_(臺鐵)
+    - title: 維基百科：縱貫線 (鐵路)
+      url: https://zh.wikipedia.org/wiki/縱貫線_(鐵路)
+
+- id: tw-yilan-line
+  year: 1924
+  title: 宜蘭線全線通車
+  category: economy
+  importance: 3
+  desc: 1917 年動工，因經費不足而延宕。蘭陽平原首次以公共運輸與台北相連。
+  sources:
+    - title: 維基百科：宜蘭線
+      url: https://zh.wikipedia.org/wiki/宜蘭線
+
+- id: tw-taitung-line
+  year: 1926
+  title: 台東線花蓮—台東通車
+  category: economy
+  importance: 3
+  desc: 花東縱谷南北貫通。但軌距與西部不同，要到 1982 年拓寬後列車才能從台北直駛台東。
+  sources:
+    - title: 維基百科：臺東線
+      url: https://zh.wikipedia.org/wiki/臺東線
 
 - id: tw-taihoku-imperial-univ
   year: 1928
@@ -460,6 +516,18 @@
     - title: 維基百科：中華民國與美國關係
       url: https://zh.wikipedia.org/wiki/中華民國與美國關係
 
+- id: tw-west-electrification
+  year: 1979
+  title: 西部幹線電氣化完工
+  category: economy
+  importance: 3
+  desc: 十大建設之一。西部走廊的運能與速度同時提升。
+  sources:
+    - title: 維基百科：縱貫線 (鐵路)
+      url: https://zh.wikipedia.org/wiki/縱貫線_(鐵路)
+    - title: 維基百科：臺灣鐵路
+      url: https://zh.wikipedia.org/wiki/臺灣鐵路
+
 - id: tw-hsinchu-park
   year: 1980
   title: 新竹科學園區設立
@@ -469,6 +537,16 @@
   sources:
     - title: 維基百科：新竹科學園區
       url: https://zh.wikipedia.org/wiki/新竹科學園區
+
+- id: tw-north-link-line
+  year: 1980
+  title: 北迴線通車，東部幹線接上西部
+  category: economy
+  importance: 3
+  desc: 蘇澳到花蓮打通，東部的對外運輸不再只能仰賴海運與公路。
+  sources:
+    - title: 維基百科：北迴線
+      url: https://zh.wikipedia.org/wiki/北迴線
 
 - id: tw-martial-law-lifted
   year: 1987
@@ -499,6 +577,18 @@
     - title: 維基百科：動員戡亂時期臨時條款
       url: https://zh.wikipedia.org/wiki/動員戡亂時期臨時條款
 
+- id: tw-round-island-rail
+  year: 1991
+  title: 南迴線通車，環島鐵路網完成
+  category: economy
+  importance: 4
+  desc: 距 1887 年動工已逾一世紀，鐵路終於繞行全島一周。
+  sources:
+    - title: 維基百科：南迴線
+      url: https://zh.wikipedia.org/wiki/南迴線
+    - title: 維基百科：臺灣鐵路
+      url: https://zh.wikipedia.org/wiki/臺灣鐵路
+
 - id: tw-direct-election
   year: 1996
   title: 首次總統直選
@@ -516,6 +606,16 @@
   sources:
     - title: 維基百科：2000年中華民國總統選舉
       url: https://zh.wikipedia.org/wiki/2000年中華民國總統選舉
+
+- id: tw-hsr
+  year: 2007
+  title: 台灣高鐵通車
+  category: economy
+  importance: 4
+  desc: 台北到高雄縮短為約九十分鐘，西部走廊形成一日生活圈，長途客運與國內航線隨之萎縮。
+  sources:
+    - title: 維基百科：臺灣高速鐵路
+      url: https://zh.wikipedia.org/wiki/臺灣高速鐵路
 
 - id: tw-female-president
   year: 2016
