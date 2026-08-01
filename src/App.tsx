@@ -16,6 +16,7 @@ import { RegionColumn } from './components/RegionColumn'
 import { Toolbar } from './components/Toolbar'
 import { DetailPanel } from './components/DetailPanel'
 import { ThemeToggle } from './components/ThemeToggle'
+import { HelpOverlay } from './components/HelpOverlay'
 import { useTheme } from './lib/theme'
 
 /** 欄位標題列的高度，必須跟 CSS 的 --head-h 一致 */
@@ -40,6 +41,7 @@ export default function App() {
   const [ppy, setPpy] = useState(0.6)
   const [categories, setCategories] = useState(() => new Set<Category>(CATEGORY_IDS))
   const [showLegendary, setShowLegendary] = useState(true)
+  const [helpOpen, setHelpOpen] = useState(false)
   const [visibleRegions, setVisibleRegions] = useState(
     () => new Set(REGIONS.map((r) => r.id)),
   )
@@ -207,8 +209,22 @@ export default function App() {
           <h1>AoE</h1>
           <p>把不同地區放在同一條時間軸上，看同一個年代各自在發生什麼。</p>
         </div>
-        <ThemeToggle theme={theme} onToggle={toggleTheme} />
+        <div className="masthead-actions">
+          <button
+            type="button"
+            className="theme-toggle"
+            onClick={() => setHelpOpen(true)}
+            title="怎麼讀這張圖"
+            aria-label="怎麼讀這張圖"
+          >
+            <span aria-hidden="true">？</span>
+            <span>說明</span>
+          </button>
+          <ThemeToggle theme={theme} onToggle={toggleTheme} />
+        </div>
       </header>
+
+      {helpOpen && <HelpOverlay onClose={() => setHelpOpen(false)} />}
 
       <Toolbar
         ppy={ppy}

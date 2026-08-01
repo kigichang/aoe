@@ -104,7 +104,8 @@ src/lib/schema.ts       Zod schema + 類別定義（漢字在這裡）
 src/lib/data.ts         glob 掃 YAML → 驗證 → 匯出 REGIONS / TIMELINE
 src/lib/scale.ts        年↔像素、刻度級距、importance 分層門檻
 src/lib/layout.ts       標籤排版演算法 ★ 最需要小心的一支
-src/components/         Axis / RegionColumn / PeriodRail / EventMark / Toolbar / DetailPanel
+src/components/         Axis / RegionColumn / PeriodRail / EventMark / Toolbar /
+                        DetailPanel / HelpOverlay / ThemeToggle
 src/App.tsx             狀態、縮放錨定、時間游標、欄數計算
 src/data/regions.yaml   欄位定義（order 決定左右順序與配色 slot）
 src/data/timeline.yaml  時間軸的上下界
@@ -335,6 +336,29 @@ URL 裡的空白一律寫成底線（`羅馬之劫_(410年)`、`Sack_of_Rome_(41
 `<head>` 裡那段防閃爍的 inline script **必須一致**。那段 script 的用途是在首次繪製前
 就套用存下來的主題，不然手動選亮色的人在暗色系統上會先閃一下暗底 —— React 掛載
 太晚了。改 key 的時候兩邊要一起改。
+
+---
+
+## 說明覆蓋層（`HelpOverlay.tsx`）
+
+標題列的「？說明」開啟，Esc／點背景／關閉鈕都能關掉，焦點會還給觸發的按鈕。
+
+**圖例裡的範例是用真正的 class 畫的**（`.mark`、`.leader`、`.span`、
+`.mark-dot-only`、`.imp-4/5`、`.is-legendary`），不是另外畫一套示意圖或截圖。
+改了 `styles.css`，說明會跟著變。**不要為了排版方便把它改成手繪 SVG 或圖片** ——
+那份複製品一定會悄悄與實際畫面脫節，而說明錯了比沒有說明更糟。
+
+範例外面包一層 `.help-sample.r0`：`.r0` 是為了給 `--region`（圖釘靠那個變數上色），
+`.help-sample` 是絕對定位的定位基準。位置一律由元件的 `top` prop 明確指定，
+不要用 CSS 的 `nth-of-type` 猜 —— 引線那條範例就是靠 `top` 錯開才示範得出
+「標籤被推開」。
+
+**這裡有一份不會自動同步的東西：說明文字。** 它複述了縮放分層、位移上限、
+傳說旗標、出處政策這些行為。改動 `minImportance()` 的門檻、`MAX_SHIFT_YEARS`、
+`legendary` 的視覺，或出處規則時，記得回來看一眼這支檔案。
+
+「如何填寫資料」刻意**不**寫進站上，只放一個連到儲存庫的連結 ——
+README 已經有完整的一份，站上再寫一份就是兩份會各自腐化的文件。
 
 ---
 

@@ -676,3 +676,120 @@ button {
   .mark-year { display: none; }
   .detail { max-height: 50vh; }
 }
+
+/* ── 說明覆蓋層 ──────────────────────────────────────────────
+   圖例裡的範例是用真正的 .mark / .leader / .span 畫的，所以這裡只做
+   兩件事：把絕對定位的元素關進一個有尺寸的框，以及排版。
+   不要為了說明另外複製一套樣式 —— 複製出來的那份一定會跟實際畫面走鐘。 */
+.help-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 20;                       /* 高於詳情面板（10）與時間游標（7） */
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: color-mix(in oklab, var(--surface-0) 72%, transparent);
+  backdrop-filter: blur(2px);
+}
+.help {
+  width: min(680px, 100%);
+  max-height: min(86vh, 900px);
+  overflow-y: auto;
+  padding: 20px 24px 26px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface-1);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
+}
+.help-head {
+  position: sticky;
+  top: -20px;                        /* 抵銷 .help 的上內距，捲動時標題不漏餡 */
+  margin: -20px -24px 0;
+  padding: 20px 24px 10px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--surface-1);
+}
+.help-head h2 { margin: 0; font-size: 16px; }
+.help-close {
+  flex: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 3px 9px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  background: transparent;
+  cursor: pointer;
+}
+.help-close:hover { color: var(--text-primary); }
+
+.help h3 {
+  margin: 22px 0 8px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+}
+.help p { margin: 8px 0; font-size: 13px; line-height: 1.75; }
+.help-lead { color: var(--text-secondary); }
+.help-list { margin: 8px 0; padding-left: 1.1em; font-size: 13px; line-height: 1.85; }
+.help kbd {
+  padding: 1px 5px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 11.5px;
+}
+
+/* 每一條圖例：左邊是實際畫面的樣本，右邊是說明 */
+.help-rows > div {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 16px;
+  align-items: start;
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+}
+.help-rows > div > p:first-of-type { margin-top: 0; }
+
+/* .mark 是 position: absolute，樣本框要當它的定位基準 */
+.help-sample {
+  position: relative;
+  overflow: hidden;
+}
+.help-sample .mark { position: absolute; left: 0; right: 0; }
+
+.help-cats { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.help-cats > span { display: inline-flex; align-items: center; gap: 5px; }
+.help-cats .glyph {
+  display: grid;
+  place-items: center;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  background: color-mix(in oklab, var(--region) 20%, var(--surface-1));
+  border: 1.5px solid var(--region);
+}
+
+/* 時期色帶的樣本，比照 PeriodRail 的視覺 */
+.help-rail {
+  position: absolute;
+  top: 4px; bottom: 4px; left: 0;
+  width: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 3px;
+  background: color-mix(in oklab, var(--region) 16%, transparent);
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.help-link { color: var(--region, var(--r0)); font-size: 13px; }
+
+@media (max-width: 560px) {
+  .help-rows > div { grid-template-columns: 1fr; }
+}
+
+.masthead-actions { flex: none; display: flex; align-items: center; gap: 8px; }
