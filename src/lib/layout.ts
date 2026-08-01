@@ -75,10 +75,22 @@ export function placeEvents(
 
   for (const event of byPriority) {
     const y = yOf(event.year)
+    /*
+     * 標籤是以中心定位的，所以正好落在畫布頂端（年份 = timeline.yaml 的 minYear）
+     * 的事件，上半列會跑到內容區外面被 sticky 欄位標題蓋住 —— 實測台灣的
+     * 「前3000 大坌坑文化」是 top: -11px，只看得到下面一半。
+     *
+     * 這是邊界事件的通則問題，不是 minYear 的值不對：把 minYear 往前調，
+     * 同樣的事情只會換成新的最早那一則。所以在排版層夾住，不動資料。
+     *
+     * 位移最多 HALF_ROW（11px），一定小於 maxShift 的下限 MIN_SHIFT_PX（14px），
+     * 不會害事件退化成只剩圖釘。而且照樣會畫引線指回真實年份。
+     */
+    const floor = Math.max(y, HALF_ROW)
 
     let best: { lane: number; labelY: number } | null = null
     for (let i = 0; i < lanes.length; i++) {
-      const labelY = firstFreeBelow(lanes[i], y)
+      const labelY = firstFreeBelow(lanes[i], floor)
       if (labelY - y > maxShift) continue
       // 位移最小的欄；平手時留在較左邊，讀起來順
       if (!best || labelY < best.labelY) best = { lane: i, labelY }

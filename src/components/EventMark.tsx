@@ -27,7 +27,8 @@ export function EventMark({ placed, ppy, selected, onSelect }: Props) {
       <button
         type="button"
         className={`mark mark-dot-only${soft}`}
-        style={{ top: y - 3.5 }}
+        // 同 layout.ts 的理由：畫布頂端的圖釘也是以中心定位，不夾住會露一半
+        style={{ top: Math.max(0, y - 3.5) }}
         onClick={() => onSelect(event.id)}
         title={`${fmtYear(event.year)}　${event.title}`}
         aria-label={`${fmtYear(event.year)} ${event.title}`}
