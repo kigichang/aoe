@@ -7,6 +7,7 @@
 
 
 
+
 - id: cn-fuxi
   year: -2852
   title: 伏羲畫八卦，傳說中的文明肇始
@@ -670,6 +671,29 @@
     - title: 維基百科：明朝
       url: https://zh.wikipedia.org/wiki/明朝
 
+- id: cn-abolish-chancellor
+  year: 1380
+  title: 廢除宰相，六部直屬皇帝
+  category: politics
+  importance: 4
+  desc: 朱元璋以擅權植黨之名處死丞相胡惟庸，順勢廢掉行之一千六百年的宰相制度，君權與相權集於一身。此案連坐受誅逾三萬人。
+  sources:
+    - title: 維基百科：胡惟庸案
+      url: https://zh.wikipedia.org/wiki/胡惟庸案
+    - title: 維基百科：明朝
+      url: https://zh.wikipedia.org/wiki/明朝
+
+- id: cn-jingnan
+  year: 1399
+  title: 靖難之役，成祖奪位
+  category: war
+  importance: 3
+  endYear: 1402
+  desc: 建文帝削藩，燕王朱棣以「清君側」起兵，三年後攻入南京稱帝。此後遷都北京、六下西洋、修《永樂大典》皆出其手。
+  sources:
+    - title: 維基百科：靖難之役
+      url: https://zh.wikipedia.org/wiki/靖難之役
+
 - id: cn-zheng-he
   year: 1405
   title: 鄭和下西洋
@@ -681,6 +705,18 @@
     - title: 維基百科：鄭和下西洋
       url: https://zh.wikipedia.org/wiki/鄭和下西洋
 
+- id: cn-yongle-encyclopedia
+  year: 1408
+  title: 《永樂大典》成書
+  category: culture
+  importance: 3
+  desc: 二萬二千餘卷、約三億七千萬字，引書七八千種且未加刪節 —— 這點與後來的《四庫全書》正好相反。僅抄一部，今存不足百分之四。
+  sources:
+    - title: 維基百科：永樂大典
+      url: https://zh.wikipedia.org/wiki/永樂大典
+    - title: 維基百科：明朝
+      url: https://zh.wikipedia.org/wiki/明朝
+
 - id: cn-beijing-capital
   year: 1421
   title: 明成祖遷都北京
@@ -689,6 +725,30 @@
   sources:
     - title: 維基百科：明成祖
       url: https://zh.wikipedia.org/wiki/明成祖
+
+- id: cn-tumu-crisis
+  year: 1449
+  title: 土木堡之變，明朝由盛轉衰
+  category: war
+  importance: 4
+  desc: 宦官王振慫恿英宗親征瓦剌，二十萬大軍潰於土木堡，三大營幾乎全軍覆沒，皇帝被俘。此後明朝對北方由攻轉守。
+  sources:
+    - title: 維基百科：土木堡之變
+      url: https://zh.wikipedia.org/wiki/土木堡之變
+    - title: 維基百科：明朝
+      url: https://zh.wikipedia.org/wiki/明朝
+
+- id: cn-wang-yangming
+  year: 1508
+  title: 王陽明龍場悟道，心學興起
+  category: culture
+  importance: 4
+  desc: 貶謫貴州龍場時提出「心外無理」，後倡致良知與知行合一。心學把人的主體性放進學說重心，一洗程朱理學之弊，並東傳日本與朝鮮。
+  sources:
+    - title: 維基百科：王守仁
+      url: https://zh.wikipedia.org/wiki/王守仁
+    - title: 維基百科：心學
+      url: https://zh.wikipedia.org/wiki/心學
 
 - id: cn-macau-lease
   year: 1557
@@ -701,6 +761,18 @@
       url: https://zh.wikipedia.org/wiki/葡屬澳門
     - title: 維基百科：澳門歷史
       url: https://zh.wikipedia.org/wiki/澳門歷史
+
+- id: cn-longqing-opening
+  year: 1567
+  title: 隆慶開關，部分解除海禁
+  category: economy
+  importance: 4
+  desc: 漳州月港開放民間出海貿易。此前的走私與倭亂大幅減少，美洲白銀自此經馬尼拉大量流入，支撐了晚明的銀本位。
+  sources:
+    - title: 維基百科：隆慶開關
+      url: https://zh.wikipedia.org/wiki/隆慶開關
+    - title: 維基百科：明朝
+      url: https://zh.wikipedia.org/wiki/明朝
 
 - id: cn-manila-galleon
   year: 1571
@@ -793,6 +865,33 @@
     - title: 維基百科：薩爾滸之戰
       url: https://zh.wikipedia.org/wiki/薩爾滸之戰
 
+- id: cn-little-ice-age
+  year: 1620
+  title: 小冰河期最冷階段，農業歉收
+  category: economy
+  importance: 3
+  endYear: 1710
+  desc: 極端低溫使作物減產、財政收入下滑，旱災與流民接連而起。這是明末民變與王朝崩解的背景之一，而非單一事件。
+  sources:
+    - title: 維基百科：小冰期
+      url: https://zh.wikipedia.org/wiki/小冰期
+    - title: 維基百科：南明
+      url: https://zh.wikipedia.org/wiki/南明
+    - title: 維基百科：明末民變
+      url: https://zh.wikipedia.org/wiki/明末民變
+
+- id: cn-donglin-eunuchs
+  year: 1624
+  title: 魏忠賢閹黨與東林黨爭
+  category: politics
+  importance: 3
+  desc: 天啟年間閹黨大興冤獄，東林人士遭誅戮。崇禎即位後雖剷除閹黨，黨爭卻未止，吏治持續敗壞。
+  sources:
+    - title: 維基百科：魏忠賢
+      url: https://zh.wikipedia.org/wiki/魏忠賢
+    - title: 維基百科：東林黨
+      url: https://zh.wikipedia.org/wiki/東林黨
+
 - id: cn-qing-proclaimed
   year: 1636
   title: 皇太極改國號為清
@@ -823,6 +922,17 @@
     - title: 維基百科：甲申之變
       url: https://zh.wikipedia.org/wiki/甲申之變
 
+- id: cn-southern-ming
+  year: 1644
+  title: 南明諸政權相繼建立與覆滅
+  category: politics
+  importance: 4
+  endYear: 1662
+  desc: 弘光、隆武、紹武、永曆等政權在南方接連而起，彼此不相統屬甚至互相攻伐。1662 年永曆帝於昆明遇害，南明告終。
+  sources:
+    - title: 維基百科：南明
+      url: https://zh.wikipedia.org/wiki/南明
+
 - id: cn-queue-order
   year: 1645
   title: 剃髮易服令
@@ -832,6 +942,18 @@
   sources:
     - title: 維基百科：剃髮易服
       url: https://zh.wikipedia.org/wiki/剃髮易服
+
+- id: cn-yangzhou-massacre
+  year: 1645
+  title: 揚州十日，史可法殉城
+  category: war
+  importance: 3
+  desc: 清軍破揚州後屠城。同年弘光政權覆滅，江南反剃髮的抗清鬥爭隨之而起。
+  sources:
+    - title: 維基百科：揚州十日
+      url: https://zh.wikipedia.org/wiki/揚州十日
+    - title: 維基百科：史可法
+      url: https://zh.wikipedia.org/wiki/史可法
 
 - id: cn-koxinga
   year: 1662
