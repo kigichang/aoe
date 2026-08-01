@@ -135,12 +135,19 @@
 
 - id: cn-zhou-founding
   year: -1046
-  title: 武王伐紂，西周建立
+  title: 牧野之戰，武王克商；西周建立
   category: politics
   importance: 4
+  desc: 周軍趁商軍主力東征東夷時突襲，以兵車三百乘、虎賁三千直取朝歌，帝辛登鹿台自焚。年份極不確定：歷來有四十五種說法，從前 1130 到前 1018 年都有，相差逾百年；前 1046 年是夏商周斷代工程依《國語》「歲在鶉火」推定的，學界並未一致接受。
   sources:
+    - title: 維基百科：牧野之戰
+      url: https://zh.wikipedia.org/wiki/牧野之戰
     - title: 維基百科：武王伐紂
       url: https://zh.wikipedia.org/wiki/武王伐紂
+    - title: 維基百科：利簋
+      url: https://zh.wikipedia.org/wiki/利簋
+    - title: 維基百科：夏商周斷代工程
+      url: https://zh.wikipedia.org/wiki/夏商周斷代工程
     - title: 維基百科：西周
       url: https://zh.wikipedia.org/wiki/西周
 
