@@ -6,6 +6,7 @@
 
 
 
+
 - id: cn-fuxi
   year: -2852
   title: 伏羲畫八卦，傳說中的文明肇始
@@ -782,6 +783,16 @@
     - title: 維基百科：努爾哈赤
       url: https://zh.wikipedia.org/wiki/努爾哈赤
 
+- id: cn-sarhu
+  year: 1619
+  title: 薩爾滸之戰，明清攻守易勢
+  category: war
+  importance: 3
+  desc: 努爾哈赤以少擊眾，明軍四路喪其三。此後明朝在遼東由攻轉守，再無力主動出擊。
+  sources:
+    - title: 維基百科：薩爾滸之戰
+      url: https://zh.wikipedia.org/wiki/薩爾滸之戰
+
 - id: cn-qing-proclaimed
   year: 1636
   title: 皇太極改國號為清
@@ -861,6 +872,19 @@
     - title: 維基百科：尼布楚條約
       url: https://zh.wikipedia.org/wiki/尼布楚條約
 
+- id: cn-galdan-campaigns
+  year: 1690
+  title: 三征噶爾丹，喀爾喀蒙古歸清
+  category: war
+  importance: 3
+  endYear: 1697
+  desc: 準噶爾汗噶爾丹東征喀爾喀，康熙三度親征將其擊滅。多倫會盟後外蒙古正式納入版圖。
+  sources:
+    - title: 維基百科：三征噶爾丹
+      url: https://zh.wikipedia.org/wiki/三征噶爾丹
+    - title: 維基百科：多倫會盟
+      url: https://zh.wikipedia.org/wiki/多倫會盟
+
 - id: cn-poll-tax-frozen
   year: 1712
   title: 滋生人丁永不加賦
@@ -880,6 +904,16 @@
   sources:
     - title: 維基百科：中國禮儀之爭
       url: https://zh.wikipedia.org/wiki/中國禮儀之爭
+
+- id: cn-grand-council
+  year: 1729
+  title: 軍機處設立，皇權高度集中
+  category: politics
+  importance: 4
+  desc: 原是為西征準噶爾而設的軍務機構，後來成為實際的決策中樞，繞過內閣直達皇帝，密摺制度至此完備。
+  sources:
+    - title: 維基百科：軍機處
+      url: https://zh.wikipedia.org/wiki/軍機處
 
 - id: cn-dream-red-chamber
   year: 1754
@@ -902,6 +936,18 @@
       url: https://zh.wikipedia.org/wiki/一口通商
     - title: 維基百科：廣州十三行
       url: https://zh.wikipedia.org/wiki/廣州十三行
+
+- id: cn-xinjiang-conquest
+  year: 1759
+  title: 平定準噶爾與回部，疆域達於極盛
+  category: war
+  importance: 4
+  desc: 乾隆先滅準噶爾，再平大小和卓，天山南北納入版圖。清朝疆域至此約一千三百萬平方公里。
+  sources:
+    - title: 維基百科：三征噶爾丹
+      url: https://zh.wikipedia.org/wiki/三征噶爾丹
+    - title: 維基百科：大小和卓之亂
+      url: https://zh.wikipedia.org/wiki/大小和卓之亂
 
 - id: cn-siku-quanshu
   year: 1782
@@ -940,9 +986,12 @@
   category: war
   importance: 5
   endYear: 1842
+  desc: 林則徐虎門銷煙引發開戰。戰敗後簽下《南京條約》 —— 五口通商、割讓香港、賠款兩千一百萬銀元，是清朝第一個不平等條約。
   sources:
     - title: 維基百科：第一次鴉片戰爭
       url: https://zh.wikipedia.org/wiki/第一次鴉片戰爭
+    - title: 維基百科：南京條約
+      url: https://zh.wikipedia.org/wiki/南京條約
 
 - id: cn-taiping
   year: 1851
@@ -954,6 +1003,33 @@
     - title: 維基百科：太平天國
       url: https://zh.wikipedia.org/wiki/太平天國
 
+- id: cn-second-opium-war
+  year: 1856
+  title: 第二次鴉片戰爭；英法聯軍火燒圓明園
+  category: war
+  importance: 4
+  endYear: 1860
+  desc: 修約交涉破裂而開戰。1860 年聯軍攻陷北京、焚毀圓明園，清廷簽下《天津條約》與《北京條約》。
+  sources:
+    - title: 維基百科：第二次鴉片戰爭
+      url: https://zh.wikipedia.org/wiki/第二次鴉片戰爭
+    - title: 維基百科：圓明園
+      url: https://zh.wikipedia.org/wiki/圓明園
+    - title: 維基百科：北京條約
+      url: https://zh.wikipedia.org/wiki/北京條約
+
+- id: cn-aigun-treaty
+  year: 1858
+  title: 璦琿條約，俄國取走外東北
+  category: politics
+  importance: 3
+  desc: 俄方以調停有功為由取得黑龍江以北。1860 年北京條約再割烏蘇里江以東，1864 年勘分西北界又割外西北。
+  sources:
+    - title: 維基百科：璦琿條約
+      url: https://zh.wikipedia.org/wiki/璦琿條約
+    - title: 維基百科：北京條約
+      url: https://zh.wikipedia.org/wiki/北京條約
+
 - id: cn-self-strengthening
   year: 1861
   title: 洋務運動開始
@@ -962,6 +1038,17 @@
   sources:
     - title: 維基百科：洋務運動
       url: https://zh.wikipedia.org/wiki/洋務運動
+
+- id: cn-dingwu-famine
+  year: 1875
+  title: 丁戊奇荒，華北連年大旱
+  category: economy
+  importance: 4
+  endYear: 1878
+  desc: 河南、山西、陝西、直隸、山東連年旱災，山西尤重。死亡人數估計九百五十萬至兩千萬，約當時全國人口的百分之二到四。
+  sources:
+    - title: 維基百科：丁戊奇荒
+      url: https://zh.wikipedia.org/wiki/丁戊奇荒
 
 - id: cn-jiawu
   year: 1894
@@ -991,6 +1078,32 @@
       url: https://zh.wikipedia.org/wiki/義和團運動
     - title: 維基百科：八國聯軍之役
       url: https://zh.wikipedia.org/wiki/八國聯軍之役
+
+- id: cn-abolish-examination
+  year: 1905
+  title: 廢除科舉
+  category: culture
+  importance: 4
+  desc: 行之一千三百年的取士制度就此終結。士人上升的舊管道消失，新式學堂與出洋留學驟然成為主流。
+  sources:
+    - title: 維基百科：科舉
+      url: https://zh.wikipedia.org/wiki/科舉
+    - title: 維基百科：清末新政
+      url: https://zh.wikipedia.org/wiki/清末新政
+
+- id: cn-constitution-outline
+  year: 1908
+  title: 頒布《欽定憲法大綱》；光緒與慈禧同年去世
+  category: politics
+  importance: 3
+  desc: 清末新政的立憲承諾。同年兩位掌權者相繼過世，三歲的溥儀繼位，政局失去重心。
+  sources:
+    - title: 維基百科：欽定憲法大綱
+      url: https://zh.wikipedia.org/wiki/欽定憲法大綱
+    - title: 維基百科：清末新政
+      url: https://zh.wikipedia.org/wiki/清末新政
+    - title: 維基百科：慈禧太后
+      url: https://zh.wikipedia.org/wiki/慈禧太后
 
 - id: cn-xinhai
   year: 1911
