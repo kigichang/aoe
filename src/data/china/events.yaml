@@ -9,6 +9,7 @@
 
 
 
+
 - id: cn-fuxi
   year: -2852
   title: 伏羲畫八卦，傳說中的文明肇始
@@ -590,6 +591,34 @@
     - title: 維基百科：北宋
       url: https://zh.wikipedia.org/wiki/北宋
 
+- id: cn-cup-of-wine
+  year: 961
+  title: 杯酒釋兵權，確立重文輕武
+  category: politics
+  importance: 4
+  desc: 太祖以一場酒宴解除大將兵權，改以文官治軍，軍權財權盡歸中央。兩宋因此不再有藩鎮割據，代價是對外戰爭長期居於下風。
+  sources:
+    - title: 維基百科：杯酒釋兵權
+      url: https://zh.wikipedia.org/wiki/杯酒釋兵權
+    - title: 維基百科：陳橋兵變
+      url: https://zh.wikipedia.org/wiki/陳橋兵變
+    - title: 維基百科：北宋
+      url: https://zh.wikipedia.org/wiki/北宋
+
+- id: cn-conquer-beihan
+  year: 979
+  title: 滅北漢，結束二百年藩鎮割據
+  category: politics
+  importance: 3
+  desc: 安史之亂以來的分裂局面告終。但太宗乘勢北伐燕京，於高梁河慘敗，宋對遼自此轉為守勢。
+  sources:
+    - title: 維基百科：宋滅北漢之戰
+      url: https://zh.wikipedia.org/wiki/宋滅北漢之戰
+    - title: 維基百科：藩鎮
+      url: https://zh.wikipedia.org/wiki/藩鎮
+    - title: 維基百科：北宋
+      url: https://zh.wikipedia.org/wiki/北宋
+
 - id: cn-chanyuan-treaty
   year: 1004
   title: 澶淵之盟，宋遼結為兄弟之國
@@ -612,6 +641,18 @@
     - title: 維基百科：交子
       url: https://zh.wikipedia.org/wiki/交子
 
+- id: cn-xixia-founded
+  year: 1038
+  title: 西夏建國，宋夏戰爭起
+  category: politics
+  importance: 3
+  desc: 李元昊稱帝，宋軍於三川口、好水川、定川寨屢敗。遼趁機施壓索取歲幣，宋在西北與北方同時受制。
+  sources:
+    - title: 維基百科：西夏
+      url: https://zh.wikipedia.org/wiki/西夏
+    - title: 維基百科：宋夏戰爭
+      url: https://zh.wikipedia.org/wiki/宋夏戰爭
+
 - id: cn-movable-type
   year: 1041
   title: 畢昇發明活字印刷
@@ -622,6 +663,18 @@
       url: https://zh.wikipedia.org/wiki/畢昇
     - title: 維基百科：活字印刷術
       url: https://zh.wikipedia.org/wiki/活字印刷術
+
+- id: cn-qingli-reform
+  year: 1043
+  title: 慶曆新政
+  category: politics
+  importance: 3
+  desc: 范仲淹、富弼、韓琦等人整頓吏治。守舊派指其結黨營私，改革派多遭外放，新政不足兩年即止 —— 二十六年後王安石變法重啟同一課題。
+  sources:
+    - title: 維基百科：慶曆新政
+      url: https://zh.wikipedia.org/wiki/慶曆新政
+    - title: 維基百科：范仲淹
+      url: https://zh.wikipedia.org/wiki/范仲淹
 
 - id: cn-wang-anshi
   year: 1069
@@ -654,6 +707,18 @@
     - title: 維基百科：夢溪筆談
       url: https://zh.wikipedia.org/wiki/夢溪筆談
 
+- id: cn-sea-alliance
+  year: 1125
+  title: 聯金滅遼反遭南侵
+  category: politics
+  importance: 3
+  desc: 宋與金訂海上之盟夾攻遼，卻在合作中被看穿虛實。遼亡的同年金軍即分兩路南下，兩年後便是靖康之變。
+  sources:
+    - title: 維基百科：海上之盟
+      url: https://zh.wikipedia.org/wiki/海上之盟
+    - title: 維基百科：靖康之變
+      url: https://zh.wikipedia.org/wiki/靖康之變
+
 - id: cn-jingkang
   year: 1127
   title: 靖康之變，北宋滅亡
@@ -662,6 +727,16 @@
   sources:
     - title: 維基百科：靖康之變
       url: https://zh.wikipedia.org/wiki/靖康之變
+
+- id: cn-southern-song-capital
+  year: 1138
+  title: 南宋定都臨安
+  category: politics
+  importance: 3
+  desc: 高宗南渡後遷徙十餘年，最終擇杭州為都。建康仍作留都，開封則始終被視為正統首都。
+  sources:
+    - title: 維基百科：南宋
+      url: https://zh.wikipedia.org/wiki/南宋
 
 - id: cn-shaoxing-treaty
   year: 1141
@@ -735,6 +810,19 @@
     - title: 維基百科：元朝
       url: https://zh.wikipedia.org/wiki/元朝
 
+- id: cn-song-mongol-war
+  year: 1235
+  title: 宋蒙戰爭爆發
+  category: war
+  importance: 4
+  endYear: 1279
+  desc: 聯蒙滅金的隔年蒙軍即全面南侵。宋憑水軍與山城據守四十五年，是蒙古擴張途中耗時最久的一場征服。
+  sources:
+    - title: 維基百科：宋元戰爭
+      url: https://zh.wikipedia.org/wiki/宋元戰爭
+    - title: 維基百科：南宋
+      url: https://zh.wikipedia.org/wiki/南宋
+
 - id: cn-second-western-campaign
   year: 1236
   title: 第二次西征，滅基輔羅斯、震動東歐
@@ -749,6 +837,18 @@
       url: https://zh.wikipedia.org/wiki/拔都
     - title: 維基百科：蒙古帝國
       url: https://zh.wikipedia.org/wiki/蒙古帝國
+
+- id: cn-diaoyucheng
+  year: 1259
+  title: 釣魚城之戰，蒙哥戰死
+  category: war
+  importance: 4
+  desc: 大汗死於合州城下。忽必烈立即撤軍北返爭位，旭烈兀也從西亞班師，蒙古在敘利亞的攻勢就此中止。一場攻城戰同時改變了歐亞兩端的走向。
+  sources:
+    - title: 維基百科：釣魚城之戰
+      url: https://zh.wikipedia.org/wiki/釣魚城之戰
+    - title: 維基百科：蒙哥
+      url: https://zh.wikipedia.org/wiki/蒙哥
 
 - id: cn-kublai-split
   year: 1260
