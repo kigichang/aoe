@@ -48,7 +48,17 @@ const ALL_EVENTS = REGIONS.flatMap((r, slot) =>
 
 export default function App() {
   const scrollRef = useRef<HTMLDivElement>(null)
-  const [ppy, setPpy] = useState(() => INITIAL_URL.ppy ?? 0.6)
+  /*
+   * 開場縮放。1.0 是量出來的：門檻邏輯不動（<1.2 都是重要度 4+，同樣 226 則），
+   * 但 0.6 時有一半的事件擠不下標籤、只剩圓點，1.0 降到 31%。
+   * 讀得到的標題 112 → 155，台灣 9 → 14。
+   * 代價是一屏從 1167 年變 700 年 —— 仍看得到「秦漢對上羅馬」。
+   *
+   * 密度問題的槓桿是這裡，不是 minImportance() 的門檻：實測把預設門檻
+   * 調嚴到 5+，圖釘比例雖然降到 30%，讀得到的標題卻從 112 掉到 64。
+   * 圖釘「比例」是會騙人的指標，分母跟著變 —— 要看的是讀得到幾則。
+   */
+  const [ppy, setPpy] = useState(() => INITIAL_URL.ppy ?? 1)
   const [categories, setCategories] = useState(() => new Set<Category>(CATEGORY_IDS))
   const [showLegendary, setShowLegendary] = useState(true)
   const [helpOpen, setHelpOpen] = useState(false)
