@@ -3,8 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>並排歷史 — 中國史 × 歐洲史</title>
+    <title>AoE — 中國史 × 歐洲史</title>
     <meta name="description" content="把不同地區的歷史放在同一條時間軸上並排比較。" />
+    <script>
+      // 在首次繪製前就套用存下來的主題，否則手動選亮色的人在暗色系統上會先閃一下暗底。
+      // 必須跟 src/lib/theme.ts 的 THEME_KEY 一致。
+      try {
+        var t = localStorage.getItem('aoe:theme')
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

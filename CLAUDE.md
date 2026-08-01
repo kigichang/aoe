@@ -119,6 +119,11 @@ src/App.tsx          狀態、縮放錨定、時間游標、欄數計算
 
 `HEAD_H` 錯了會讓縮放錨定與時間游標整體偏移（sticky header 佔了捲動座標的前 58px）。
 
+還有一個跨檔案的字串常數：`theme.ts` 的 `THEME_KEY`（`aoe:theme`）與 `index.html`
+`<head>` 裡那段防閃爍的 inline script **必須一致**。那段 script 的用途是在首次繪製前
+就套用存下來的主題，不然手動選亮色的人在暗色系統上會先閃一下暗底 —— React 掛載
+太晚了。改 key 的時候兩邊要一起改。
+
 ---
 
 ## 其他決策紀錄

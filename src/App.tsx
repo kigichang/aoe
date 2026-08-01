@@ -15,6 +15,8 @@ import { Axis } from './components/Axis'
 import { RegionColumn } from './components/RegionColumn'
 import { Toolbar } from './components/Toolbar'
 import { DetailPanel } from './components/DetailPanel'
+import { ThemeToggle } from './components/ThemeToggle'
+import { useTheme } from './lib/theme'
 
 /** 欄位標題列的高度，必須跟 CSS 的 --head-h 一致 */
 const HEAD_H = 58
@@ -37,6 +39,7 @@ export default function App() {
   const [categories, setCategories] = useState(() => new Set<Category>(CATEGORY_IDS))
   const [hoverYear, setHoverYear] = useState<number | null>(null)
   const [selectedId, setSelectedId] = useState<string | null>(null)
+  const { theme, toggle: toggleTheme } = useTheme()
 
   // 縮放時要固定住指標所指的那一年，否則畫面會亂跳
   const anchorRef = useRef<{ year: number; offset: number } | null>(null)
@@ -147,8 +150,11 @@ export default function App() {
   return (
     <div className="app">
       <header className="masthead">
-        <h1>並排歷史</h1>
-        <p>把不同地區放在同一條時間軸上，看同一個年代各自在發生什麼。</p>
+        <div>
+          <h1>AoE</h1>
+          <p>把不同地區放在同一條時間軸上，看同一個年代各自在發生什麼。</p>
+        </div>
+        <ThemeToggle theme={theme} onToggle={toggleTheme} />
       </header>
 
       <Toolbar
