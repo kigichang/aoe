@@ -1,0 +1,34 @@
+# 採用台灣史學界通行的分期（史前／荷西／明鄭／清治／日治／戰後）。
+# 史前那條色帶橫跨四千多年，看起來突兀但那正是事實：
+# 台灣有文字記載的歷史只有約四百年，並排比較時這個對比本身就是資訊。
+- id: tw-prehistoric
+  name: 史前時期
+  start: -3000
+  end: 1623
+  note: 南島語族原住民時期；實際起點遠早於西元前 3000 年，此處為時間軸起點所截
+
+- id: tw-dutch-spanish
+  name: 荷西時期
+  start: 1624
+  end: 1661
+  note: 荷蘭據南台灣；西班牙 1626-1642 據北台灣
+
+- id: tw-zheng
+  name: 明鄭時期
+  start: 1662
+  end: 1682
+
+- id: tw-qing
+  name: 清治時期
+  start: 1683
+  end: 1894
+
+- id: tw-japanese
+  name: 日治時期
+  start: 1895
+  end: 1944
+
+- id: tw-postwar
+  name: 戰後時期
+  start: 1945
+  end: 2025

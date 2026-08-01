@@ -1,0 +1,487 @@
+# year: 負數 = 西元前，沒有西元 0 年。endYear 選填（有跨度的事件）。
+# category: politics | war | culture | science | religion | economy
+# importance: 1-5。縮放到全域視角時只會顯示 5，放大後才逐層釋出。
+#
+# 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
+
+- id: tw-tapenkeng
+  year: -3000
+  title: 大坌坑文化，進入新石器時代
+  category: culture
+  importance: 4
+  desc: 台灣最早的新石器文化之一，一般認為與南島語族的擴散有關。
+  sources:
+    - title: 維基百科：大坌坑文化
+      url: https://zh.wikipedia.org/wiki/大坌坑文化
+
+- id: tw-yizhou
+  year: 230
+  title: 東吳船隊抵「夷洲」
+  category: politics
+  importance: 3
+  desc: 《三國志》所載的航行，夷洲是否即台灣至今仍有爭議。
+  sources:
+    - title: 維基百科：夷洲
+      url: https://zh.wikipedia.org/wiki/夷洲
+    - title: 維基百科：衛溫
+      url: https://zh.wikipedia.org/wiki/衛溫
+
+- id: tw-formosa
+  year: 1582
+  title: 葡萄牙與西班牙船員因船難滯留台灣
+  category: culture
+  importance: 3
+  sources:
+    - title: 維基百科：臺灣歷史
+      url: https://zh.wikipedia.org/wiki/臺灣歷史
+
+- id: tw-zeelandia
+  year: 1624
+  title: 荷蘭東印度公司築熱蘭遮城，據南台灣
+  category: politics
+  importance: 5
+  desc: 台灣進入有系統文字記載的開端，也被捲入東亞海上貿易網。
+  sources:
+    - title: 維基百科：熱蘭遮城
+      url: https://zh.wikipedia.org/wiki/熱蘭遮城
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
+- id: tw-spanish-keelung
+  year: 1626
+  title: 西班牙人佔領雞籠，據北台灣
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：西班牙統治時期 (台灣)
+      url: https://zh.wikipedia.org/wiki/西班牙統治時期_(台灣)
+
+- id: tw-dutch-expel-spanish
+  year: 1642
+  title: 荷蘭驅逐西班牙人
+  category: war
+  importance: 4
+  sources:
+    - title: 維基百科：西班牙統治時期 (台灣)
+      url: https://zh.wikipedia.org/wiki/西班牙統治時期_(台灣)
+
+- id: tw-guo-huaiyi
+  year: 1652
+  title: 郭懷一抗荷事件
+  category: war
+  importance: 3
+  sources:
+    - title: 維基百科：郭懷一事件
+      url: https://zh.wikipedia.org/wiki/郭懷一事件
+
+- id: tw-siege-zeelandia
+  year: 1661
+  title: 鄭成功圍攻熱蘭遮城
+  category: war
+  importance: 4
+  endYear: 1662
+  sources:
+    - title: 維基百科：鄭成功攻臺之役
+      url: https://zh.wikipedia.org/wiki/鄭成功攻臺之役
+
+- id: tw-tungning
+  year: 1662
+  title: 鄭成功驅逐荷蘭人，明鄭治台
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：明鄭時期
+      url: https://zh.wikipedia.org/wiki/明鄭時期
+    - title: 維基百科：鄭成功
+      url: https://zh.wikipedia.org/wiki/鄭成功
+
+- id: tw-confucius-temple
+  year: 1666
+  title: 陳永華建台南孔廟，設學校
+  category: culture
+  importance: 3
+  sources:
+    - title: 維基百科：臺南孔子廟
+      url: https://zh.wikipedia.org/wiki/臺南孔子廟
+    - title: 維基百科：陳永華 (明鄭)
+      url: https://zh.wikipedia.org/wiki/陳永華_(明鄭)
+
+- id: tw-penghu-battle
+  year: 1683
+  title: 澎湖海戰，明鄭降清
+  category: war
+  importance: 5
+  sources:
+    - title: 維基百科：澎湖海戰
+      url: https://zh.wikipedia.org/wiki/澎湖海戰
+    - title: 維基百科：施琅
+      url: https://zh.wikipedia.org/wiki/施琅
+
+- id: tw-qing-prefecture
+  year: 1684
+  title: 設台灣府，隸屬福建省
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：臺灣清治時期
+      url: https://zh.wikipedia.org/wiki/臺灣清治時期
+    - title: 維基百科：臺灣府
+      url: https://zh.wikipedia.org/wiki/臺灣府
+
+- id: tw-zhu-yigui
+  year: 1721
+  title: 朱一貴事件
+  category: war
+  importance: 3
+  sources:
+    - title: 維基百科：朱一貴
+      url: https://zh.wikipedia.org/wiki/朱一貴
+
+- id: tw-lin-shuangwen
+  year: 1786
+  title: 林爽文事件
+  category: war
+  importance: 4
+  endYear: 1788
+  sources:
+    - title: 維基百科：林爽文事件
+      url: https://zh.wikipedia.org/wiki/林爽文事件
+
+- id: tw-treaty-ports
+  year: 1858
+  title: 天津條約，台灣開港通商
+  category: economy
+  importance: 4
+  desc: 茶、糖、樟腦成為出口大宗，北部因茶業興起而快速發展。
+  sources:
+    - title: 維基百科：天津條約
+      url: https://zh.wikipedia.org/wiki/天津條約
+    - title: 維基百科：臺灣清治時期
+      url: https://zh.wikipedia.org/wiki/臺灣清治時期
+
+- id: tw-maxwell
+  year: 1865
+  title: 馬雅各在台南行醫傳教
+  category: religion
+  importance: 3
+  sources:
+    - title: 維基百科：馬雅各
+      url: https://zh.wikipedia.org/wiki/馬雅各
+
+- id: tw-mackay
+  year: 1872
+  title: 馬偕抵淡水，行醫與辦學
+  category: religion
+  importance: 3
+  sources:
+    - title: 維基百科：馬偕
+      url: https://zh.wikipedia.org/wiki/馬偕
+
+- id: tw-mudan
+  year: 1874
+  title: 牡丹社事件，日本出兵台灣
+  category: war
+  importance: 4
+  desc: 促使清廷改變消極治台方針，轉向開山撫番與積極經營。
+  sources:
+    - title: 維基百科：牡丹社事件
+      url: https://zh.wikipedia.org/wiki/牡丹社事件
+
+- id: tw-province
+  year: 1885
+  title: 台灣建省，劉銘傳任首任巡撫
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：福建臺灣省
+      url: https://zh.wikipedia.org/wiki/福建臺灣省
+    - title: 維基百科：劉銘傳
+      url: https://zh.wikipedia.org/wiki/劉銘傳
+
+- id: tw-railway-qing
+  year: 1891
+  title: 基隆—新竹鐵路通車
+  category: economy
+  importance: 3
+  sources:
+    - title: 維基百科：劉銘傳
+      url: https://zh.wikipedia.org/wiki/劉銘傳
+    - title: 維基百科：臺灣鐵路
+      url: https://zh.wikipedia.org/wiki/臺灣鐵路
+
+- id: tw-shimonoseki
+  year: 1895
+  title: 馬關條約割台；台灣民主國與乙未戰爭
+  category: politics
+  importance: 5
+  desc: 割讓消息傳來後士紳宣布成立台灣民主國抵抗，數月內為日軍所平。
+  sources:
+    - title: 維基百科：馬關條約
+      url: https://zh.wikipedia.org/wiki/馬關條約
+    - title: 維基百科：臺灣民主國
+      url: https://zh.wikipedia.org/wiki/臺灣民主國
+    - title: 維基百科：乙未戰爭
+      url: https://zh.wikipedia.org/wiki/乙未戰爭
+
+- id: tw-goto
+  year: 1898
+  title: 後藤新平任民政長官，展開殖民地經營
+  category: politics
+  importance: 4
+  desc: 以調查與統計為基礎推動土地、戶口、度量衡與衛生制度。
+  sources:
+    - title: 維基百科：後藤新平
+      url: https://zh.wikipedia.org/wiki/後藤新平
+
+- id: tw-medical-school
+  year: 1899
+  title: 台灣總督府醫學校成立
+  category: science
+  importance: 3
+  sources:
+    - title: 維基百科：臺灣總督府醫學校
+      url: https://zh.wikipedia.org/wiki/臺灣總督府醫學校
+
+- id: tw-census
+  year: 1905
+  title: 首次戶口普查，人口約三百萬
+  category: economy
+  importance: 3
+  sources:
+    - title: 維基百科：臨時臺灣戶口調查
+      url: https://zh.wikipedia.org/wiki/臨時臺灣戶口調查
+
+- id: tw-trunk-railway
+  year: 1908
+  title: 縱貫鐵路全線通車
+  category: economy
+  importance: 4
+  desc: 基隆到高雄一日可達，西部平原自此連成一個市場。
+  sources:
+    - title: 維基百科：縱貫線 (鐵路)
+      url: https://zh.wikipedia.org/wiki/縱貫線_(鐵路)
+
+- id: tw-xilaian
+  year: 1915
+  title: 西來庵事件，最後一次大規模武裝抗日
+  category: war
+  importance: 4
+  sources:
+    - title: 維基百科：西來庵事件
+      url: https://zh.wikipedia.org/wiki/西來庵事件
+
+- id: tw-civilian-governor
+  year: 1919
+  title: 首任文官總督，推行內地延長主義
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：田健治郎
+      url: https://zh.wikipedia.org/wiki/田健治郎
+    - title: 維基百科：臺灣總督
+      url: https://zh.wikipedia.org/wiki/臺灣總督
+
+- id: tw-cultural-association
+  year: 1921
+  title: 台灣文化協會成立
+  category: culture
+  importance: 4
+  desc: 抗爭手段從武裝轉向文化啟蒙與議會請願。
+  sources:
+    - title: 維基百科：臺灣文化協會
+      url: https://zh.wikipedia.org/wiki/臺灣文化協會
+
+- id: tw-jianan-canal
+  year: 1930
+  title: 嘉南大圳完工
+  category: economy
+  importance: 4
+  desc: 灌溉嘉南平原十五萬甲農地，稻米與甘蔗產量大增。
+  sources:
+    - title: 維基百科：嘉南大圳
+      url: https://zh.wikipedia.org/wiki/嘉南大圳
+    - title: 維基百科：八田與一
+      url: https://zh.wikipedia.org/wiki/八田與一
+
+- id: tw-wushe
+  year: 1930
+  title: 霧社事件
+  category: war
+  importance: 5
+  sources:
+    - title: 維基百科：霧社事件
+      url: https://zh.wikipedia.org/wiki/霧社事件
+
+- id: tw-kominka
+  year: 1937
+  title: 進入皇民化時期
+  category: culture
+  importance: 4
+  endYear: 1945
+  sources:
+    - title: 維基百科：皇民化運動
+      url: https://zh.wikipedia.org/wiki/皇民化運動
+
+- id: tw-retrocession
+  year: 1945
+  title: 日本投降，中華民國接收台灣
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：臺灣光復
+      url: https://zh.wikipedia.org/wiki/臺灣光復
+
+- id: tw-228
+  year: 1947
+  title: 二二八事件
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：二二八事件
+      url: https://zh.wikipedia.org/wiki/二二八事件
+
+- id: tw-relocation
+  year: 1949
+  title: 國民政府遷台；台灣省戒嚴
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：中華民國政府遷臺
+      url: https://zh.wikipedia.org/wiki/中華民國政府遷臺
+    - title: 維基百科：臺灣省戒嚴令
+      url: https://zh.wikipedia.org/wiki/臺灣省戒嚴令
+
+- id: tw-land-reform
+  year: 1953
+  title: 耕者有其田，土地改革完成
+  category: economy
+  importance: 4
+  sources:
+    - title: 維基百科：耕者有其田
+      url: https://zh.wikipedia.org/wiki/耕者有其田
+    - title: 維基百科：三七五減租
+      url: https://zh.wikipedia.org/wiki/三七五減租
+
+- id: tw-first-strait-crisis
+  year: 1954
+  title: 第一次台海危機
+  category: war
+  importance: 4
+  sources:
+    - title: 維基百科：第一次臺灣海峽危機
+      url: https://zh.wikipedia.org/wiki/第一次臺灣海峽危機
+
+- id: tw-823
+  year: 1958
+  title: 八二三砲戰
+  category: war
+  importance: 4
+  sources:
+    - title: 維基百科：金門炮戰
+      url: https://zh.wikipedia.org/wiki/金門炮戰
+
+- id: tw-nine-year-education
+  year: 1968
+  title: 實施九年國民義務教育
+  category: culture
+  importance: 3
+  sources:
+    - title: 維基百科：九年國民義務教育
+      url: https://zh.wikipedia.org/wiki/九年國民義務教育
+
+- id: tw-un-withdrawal
+  year: 1971
+  title: 中華民國退出聯合國
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：聯合國大會第2758號決議
+      url: https://zh.wikipedia.org/wiki/聯合國大會第2758號決議
+
+- id: tw-ten-projects
+  year: 1974
+  title: 十大建設
+  category: economy
+  importance: 4
+  sources:
+    - title: 維基百科：十大建設
+      url: https://zh.wikipedia.org/wiki/十大建設
+
+- id: tw-formosa-incident
+  year: 1979
+  title: 台美斷交；美麗島事件
+  category: politics
+  importance: 5
+  desc: 黨外運動遭大規模逮捕，卻也成為此後民主化的人才與動員基礎。
+  sources:
+    - title: 維基百科：美麗島事件
+      url: https://zh.wikipedia.org/wiki/美麗島事件
+    - title: 維基百科：中華民國與美國關係
+      url: https://zh.wikipedia.org/wiki/中華民國與美國關係
+
+- id: tw-hsinchu-park
+  year: 1980
+  title: 新竹科學園區設立
+  category: economy
+  importance: 4
+  desc: 半導體與資訊產業的起點，日後成為台灣經濟的支柱。
+  sources:
+    - title: 維基百科：新竹科學園區
+      url: https://zh.wikipedia.org/wiki/新竹科學園區
+
+- id: tw-martial-law-lifted
+  year: 1987
+  title: 解除戒嚴
+  category: politics
+  importance: 5
+  desc: 歷時三十八年的戒嚴結束，報禁、黨禁隨後陸續解除。
+  sources:
+    - title: 維基百科：臺灣省戒嚴令
+      url: https://zh.wikipedia.org/wiki/臺灣省戒嚴令
+
+- id: tw-end-mobilization
+  year: 1991
+  title: 終止動員戡亂時期
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：動員戡亂時期臨時條款
+      url: https://zh.wikipedia.org/wiki/動員戡亂時期臨時條款
+
+- id: tw-direct-election
+  year: 1996
+  title: 首次總統直選
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：1996年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/1996年中華民國總統選舉
+
+- id: tw-party-transition
+  year: 2000
+  title: 首次政黨輪替
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：2000年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/2000年中華民國總統選舉
+
+- id: tw-female-president
+  year: 2016
+  title: 首位女性總統就任
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：2016年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/2016年中華民國總統選舉
+    - title: 維基百科：蔡英文
+      url: https://zh.wikipedia.org/wiki/蔡英文
+
+- id: tw-same-sex-marriage
+  year: 2019
+  title: 同性婚姻合法化，亞洲首例
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：臺灣同性婚姻
+      url: https://zh.wikipedia.org/wiki/臺灣同性婚姻

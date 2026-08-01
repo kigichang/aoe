@@ -36,6 +36,25 @@ export function DetailPanel({ event, region, slot, concurrent, onClose, onSelect
         </p>
       )}
 
+      {event.sources && (
+        <div className="detail-sources">
+          <h3>出處</h3>
+          <ul>
+            {event.sources.map((s) => (
+              <li key={s.title}>
+                {s.url ? (
+                  <a href={s.url} target="_blank" rel="noreferrer">
+                    {s.title}
+                  </a>
+                ) : (
+                  s.title
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       {concurrent.length > 0 && (
         <div className="detail-concurrent">
           <h3>同時期</h3>

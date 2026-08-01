@@ -1,23 +1,26 @@
-# 欄位定義。order 決定由左至右的順序，也決定配色 slot（0=藍 1=橘 2=青 3=黃 …）。
+# 欄位定義。order 決定由左至右的順序，**同時也決定配色 slot**
+# （0=藍 1=橘 2=青 3=黃 4=洋紅 5=綠 6=紫 7=紅）。
 # 新增地區：在這裡加一筆，然後建 src/data/<id>/periods.yaml 與 events.yaml。
 #
-# 地區數量沒有上限：塞不進一個畫面時畫布會橫向捲動，每欄保住最小寬度，
-# 年代軸凍結在左緣。但相鄰兩欄的顏色必須通過色盲安全距離，
-# 超過四個地區時請重新驗證配色（見 CLAUDE.md）。
+# 由近而遠排列：台灣 → 日本 → 中國 → 歐洲。
+# 調整 order 會連帶換色，而且相鄰欄的顏色必須通過色盲安全距離，
+# 所以每次調整順序都要重新驗證配色（見 CLAUDE.md）。
+- id: taiwan
+  name: 台灣
+  subtitle: 島嶼
+  order: 0
+
+- id: japan
+  name: 日本
+  subtitle: 列島
+  order: 1
+
 - id: china
   name: 中國
-  subtitle: 東亞
-  order: 0
+  subtitle: 東亞大陸
+  order: 2
 
 - id: europe
   name: 歐洲
   subtitle: 地中海與西歐
-  order: 1
-
-# 附加在最後而不是插在中國旁邊：order 同時決定配色 slot，
-# 插隊會讓歐洲從橘變青，既有讀者的顏色記憶就毀了。
-# 若要調整左右順序，請連同配色一起重新驗證。
-- id: japan
-  name: 日本
-  subtitle: 列島
-  order: 2
+  order: 3
