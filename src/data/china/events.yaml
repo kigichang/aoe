@@ -14,6 +14,7 @@
 
 
 
+
 - id: cn-fuxi
   year: -2852
   title: 伏羲畫八卦，傳說中的文明肇始
@@ -447,6 +448,45 @@
     - title: 維基百科：法顯
       url: https://zh.wikipedia.org/wiki/法顯
 
+- id: cn-liu-song
+  year: 420
+  title: 劉裕代晉建宋，南朝之始
+  category: politics
+  importance: 4
+  desc: 出身行伍的劉裕受晉禪代，定都建康。此後宋、齊、梁、陳四代相繼，與北方政權對峙一百七十年，史稱南北朝。
+  sources:
+    - title: 維基百科：劉宋
+      url: https://zh.wikipedia.org/wiki/劉宋
+    - title: 維基百科：劉裕
+      url: https://zh.wikipedia.org/wiki/劉裕
+    - title: 維基百科：南北朝
+      url: https://zh.wikipedia.org/wiki/南北朝
+
+- id: cn-yuanjia-era
+  year: 424
+  title: 元嘉之治
+  category: politics
+  importance: 3
+  endYear: 453
+  desc: 宋文帝在位三十年，勵精圖治、提倡節儉、澄清吏治，江南經濟大幅提升 —— 南朝國力的高點。三次北伐皆無功，最後死於太子之手。
+  sources:
+    - title: 維基百科：元嘉之治
+      url: https://zh.wikipedia.org/wiki/元嘉之治
+    - title: 維基百科：宋文帝
+      url: https://zh.wikipedia.org/wiki/宋文帝
+
+- id: cn-southern-qi
+  year: 479
+  title: 蕭道成代宋建齊
+  category: politics
+  importance: 3
+  desc: 劉宋末年宗王與強臣連年內鬥，蕭道成藉平叛與政變掌權後篡位。南齊僅二十三年，是南朝最短的一代。
+  sources:
+    - title: 維基百科：南齊
+      url: https://zh.wikipedia.org/wiki/南齊
+    - title: 維基百科：蕭道成
+      url: https://zh.wikipedia.org/wiki/蕭道成
+
 - id: cn-zu-chongzhi-pi
   year: 480
   title: 祖沖之推算圓周率至小數七位
@@ -465,6 +505,43 @@
   sources:
     - title: 維基百科：均田制
       url: https://zh.wikipedia.org/wiki/均田制
+
+- id: cn-southern-liang
+  year: 502
+  title: 蕭衍代齊建梁
+  category: politics
+  importance: 3
+  desc: 梁武帝在位四十八年，是南北朝在世最久的皇帝。早年頗有作為，晚年篤信佛教、三度捨身同泰寺，朝政日弛。
+  sources:
+    - title: 維基百科：南梁
+      url: https://zh.wikipedia.org/wiki/南梁
+    - title: 維基百科：梁武帝
+      url: https://zh.wikipedia.org/wiki/梁武帝
+
+- id: cn-houjing-rebellion
+  year: 548
+  title: 侯景之亂
+  category: war
+  importance: 4
+  endYear: 552
+  desc: 東魏降將侯景圍攻建康，各地宗室觀望不救。武帝餓死台城，繁華的江南遭徹底破壞，門閥世族在此役後一蹶不振 —— 南朝自此無力與北方抗衡。
+  sources:
+    - title: 維基百科：侯景之亂
+      url: https://zh.wikipedia.org/wiki/侯景之亂
+    - title: 維基百科：南梁
+      url: https://zh.wikipedia.org/wiki/南梁
+
+- id: cn-southern-chen
+  year: 557
+  title: 陳霸先代梁建陳，南朝最後一代
+  category: politics
+  importance: 3
+  desc: 承接侯景之亂與江陵陷落後的殘局，疆域已縮至長江以南。三十二年後為隋所滅，南北分裂就此告終。
+  sources:
+    - title: 維基百科：南陳
+      url: https://zh.wikipedia.org/wiki/南陳
+    - title: 維基百科：陳霸先
+      url: https://zh.wikipedia.org/wiki/陳霸先
 
 - id: cn-sui-founded
   year: 581
