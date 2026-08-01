@@ -8,6 +8,7 @@
 
 
 
+
 - id: tw-tapenkeng
   year: -3000
   title: 大坌坑文化，進入新石器時代
@@ -39,6 +40,18 @@
     - title: 維基百科：臺灣歷史
       url: https://zh.wikipedia.org/wiki/臺灣歷史
 
+- id: tw-dutch-penghu
+  year: 1622
+  title: 荷蘭佔領澎湖，兩年後轉進大員
+  category: politics
+  importance: 3
+  desc: 為打通與明朝、日本的貿易而奪澎湖築城。明軍圍城八個月後議和，荷蘭人拆城轉往不屬明朝版圖的臺灣。
+  sources:
+    - title: 維基百科：風櫃尾荷蘭城堡
+      url: https://zh.wikipedia.org/wiki/風櫃尾荷蘭城堡
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
 - id: tw-zeelandia
   year: 1624
   title: 荷蘭東印度公司築熱蘭遮城，據南台灣
@@ -60,6 +73,74 @@
     - title: 維基百科：西班牙統治時期 (台灣)
       url: https://zh.wikipedia.org/wiki/西班牙統治時期_(台灣)
 
+- id: tw-hamada-incident
+  year: 1628
+  title: 濱田彌兵衛事件，日荷貿易中斷
+  category: economy
+  importance: 3
+  desc: 荷蘭對日本商人課稅引發衝突，日方一度扣押臺灣長官。德川幕府隨即中止與荷蘭的貿易，至 1632 年才恢復。
+  sources:
+    - title: 維基百科：濱田彌兵衛事件
+      url: https://zh.wikipedia.org/wiki/濱田彌兵衛事件
+
+- id: tw-santo-domingo
+  year: 1628
+  title: 西班牙築聖多明哥城，據淡水
+  category: politics
+  importance: 3
+  desc: 佔領雞籠兩年後西進淡水。1637 年菲律賓當局為節省開支自行毀城，北臺防務空虛，終招來荷蘭進攻。
+  sources:
+    - title: 維基百科：聖多明哥城
+      url: https://zh.wikipedia.org/wiki/聖多明哥城
+    - title: 維基百科：臺灣西班牙統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣西班牙統治時期
+
+- id: tw-mattau-river
+  year: 1629
+  title: 麻豆溪事件，六十三名荷兵遭殺
+  category: war
+  importance: 3
+  desc: 西拉雅四大社中最強的麻豆社伏擊荷軍。荷蘭人在南臺灣的威望重挫，數年間無力報復。
+  sources:
+    - title: 維基百科：麻豆溪事件
+      url: https://zh.wikipedia.org/wiki/麻豆溪事件
+
+- id: tw-mattau-treaty
+  year: 1635
+  title: 麻豆協約，原住民村社臣服
+  category: politics
+  importance: 4
+  desc: 荷蘭聯合新港社擊破麻豆社後締約，確立領主與封臣的關係。到 1636 年底共五十七座村社服從，並以每年的地方會議維繫。
+  sources:
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+    - title: 維基百科：西拉雅族
+      url: https://zh.wikipedia.org/wiki/西拉雅族
+
+- id: tw-sinkang-school
+  year: 1636
+  title: 新港社設校，以羅馬字書寫西拉雅語
+  category: culture
+  importance: 4
+  desc: 臺灣史上第一所學校。傳教士用拉丁字母拼寫原住民語言，所留下的契約文書即新港文書，直到十九世紀仍在使用。
+  sources:
+    - title: 維基百科：新港文書
+      url: https://zh.wikipedia.org/wiki/新港文書
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
+- id: tw-deerskin-trade
+  year: 1637
+  title: 鹿皮出口達十五萬張
+  category: economy
+  importance: 3
+  desc: 漢人引進陷阱後產量大增，鹿皮主要銷往日本製甲冑。濫捕使鹿群銳減，1640 年起一度全面禁獵。
+  sources:
+    - title: 維基百科：臺灣梅花鹿
+      url: https://zh.wikipedia.org/wiki/臺灣梅花鹿
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
 - id: tw-dutch-expel-spanish
   year: 1642
   title: 荷蘭驅逐西班牙人
@@ -68,6 +149,18 @@
   sources:
     - title: 維基百科：西班牙統治時期 (台灣)
       url: https://zh.wikipedia.org/wiki/西班牙統治時期_(台灣)
+
+- id: tw-middag-kingdom
+  year: 1645
+  title: 大肚王國與荷蘭締約
+  category: politics
+  importance: 3
+  desc: 中部跨部落的政治聯盟。荷蘭打通南北陸路時遭其攻擊，翌年進兵後締約，但大肚王仍保有相當自主，連年貢都獲豁免。
+  sources:
+    - title: 維基百科：大肚王國
+      url: https://zh.wikipedia.org/wiki/大肚王國
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
 
 - id: tw-guo-huaiyi
   year: 1652
@@ -109,6 +202,16 @@
       url: https://zh.wikipedia.org/wiki/臺南孔子廟
     - title: 維基百科：陳永華 (明鄭)
       url: https://zh.wikipedia.org/wiki/陳永華_(明鄭)
+
+- id: tw-dutch-leave-keelung
+  year: 1668
+  title: 荷蘭放棄雞籠，徹底退出臺灣
+  category: politics
+  importance: 3
+  desc: 失去南部後，荷蘭於 1664 年重佔雞籠。但補給困難、與清朝的貿易也無進展，四年後撤回巴達維亞。
+  sources:
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
 
 - id: tw-penghu-battle
   year: 1683
