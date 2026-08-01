@@ -259,8 +259,19 @@ button {
 
 /* ---------------- 時間軸畫布 ---------------- */
 
+/*
+ * 捲動區與詳情面板並排。min-height / min-width 都要給 0 ——
+ * flex item 的預設 min-size 是 auto，不給就撐不下去、內部也不會自己捲動。
+ */
+.workspace {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
 .scroller {
   flex: 1;
+  min-width: 0;
   overflow: auto;
   overscroll-behavior: contain;
   background: var(--surface-1);
@@ -555,19 +566,38 @@ button {
 
 /* ---------------- 詳情面板 ---------------- */
 
+/*
+ * 停靠在右側，不浮在畫布上。
+ *
+ * 原本是 position: fixed 的浮動卡片，實測會蓋掉最右欄 79% 的寬度、15 則事件，
+ * **連剛點的那一則都看不到** —— 點最右欄的事件等於讓它自己消失。
+ *
+ * 停靠之後畫布跟著變窄（ResizeObserver 量的是 .scroller 的 clientWidth，
+ * 欄寬會自動重算），完全不遮擋。縱軸位置是年份算的、與寬度無關，
+ * 所以開關面板不會讓任何事件上下位移。
+ *
+ * 代價：欄寬變窄有可能讓 laneCount 從 2 掉到 1（地區少 + 螢幕寬時），
+ * 標籤退化成圖釘。可逆，關掉面板就復原，所以不另外處理。
+ */
 .detail {
-  position: fixed;
-  right: 16px;
-  bottom: 16px;
-  width: min(360px, calc(100vw - 32px));
-  max-height: min(62vh, 560px);
+  position: relative;      /* .detail-close 的定位基準 */
+  flex: none;
+  width: 360px;
   overflow-y: auto;
   padding: 16px 18px 18px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  border-left: 1px solid var(--border);
   background: var(--surface-1);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
-  z-index: 10;
+}
+
+/* 窄螢幕沒有空間並排，改成貼底的抽屜 */
+@media (max-width: 1099px) {
+  .workspace { flex-direction: column; }
+  .detail {
+    width: auto;
+    max-height: 45vh;
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
 }
 .detail-close {
   position: absolute;

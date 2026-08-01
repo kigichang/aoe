@@ -318,60 +318,63 @@ export default function App() {
         onJump={scrollToYear}
       />
 
-      <div
-        className="scroller"
-        ref={scrollRef}
-        onMouseMove={onPointerMove}
-        onMouseLeave={() => setHoverYear(null)}
-      >
+      {/* 捲動區與詳情面板並排：面板是版面的一部分，不是浮在上面的東西 */}
+      <div className="workspace">
         <div
-          className="lanes"
-          style={{ height: totalHeight(ppy) + HEAD_H, width: canvasWidth }}
+          className="scroller"
+          ref={scrollRef}
+          onMouseMove={onPointerMove}
+          onMouseLeave={() => setHoverYear(null)}
         >
-          <div className="gridlines" style={{ top: HEAD_H }} aria-hidden="true">
-            {gridTicks.map((year) => (
-              <div key={year} className="gridline" style={{ top: yearToY(year, ppy) }} />
-            ))}
-          </div>
-
-          <Axis ppy={ppy} />
-          {shownRegions.map(({ region, slot }) => (
-            <RegionColumn
-              key={region.id}
-              region={region}
-              slot={slot}
-              ppy={ppy}
-              categories={categories}
-              showLegendary={showLegendary}
-              laneCount={laneCount}
-              selectedId={selectedId}
-              onSelect={setSelectedId}
-            />
-          ))}
-
-          {/* 跟著游標的時間橫線 —— 「同時期」這件事就是靠它讀出來的 */}
-          {hoverYear !== null && (
-            <div
-              className="time-cursor"
-              style={{ top: yearToY(hoverYear, ppy) + HEAD_H }}
-              aria-hidden="true"
-            >
-              <span className="time-cursor-chip">{fmtYear(hoverYear)}</span>
+          <div
+            className="lanes"
+            style={{ height: totalHeight(ppy) + HEAD_H, width: canvasWidth }}
+          >
+            <div className="gridlines" style={{ top: HEAD_H }} aria-hidden="true">
+              {gridTicks.map((year) => (
+                <div key={year} className="gridline" style={{ top: yearToY(year, ppy) }} />
+              ))}
             </div>
-          )}
-        </div>
-      </div>
 
-      {selected && (
-        <DetailPanel
-          event={selected.event}
-          region={selected.region}
-          slot={selected.slot}
-          concurrent={concurrent}
-          onClose={() => setSelectedId(null)}
-          onSelect={setSelectedId}
-        />
-      )}
+            <Axis ppy={ppy} />
+            {shownRegions.map(({ region, slot }) => (
+              <RegionColumn
+                key={region.id}
+                region={region}
+                slot={slot}
+                ppy={ppy}
+                categories={categories}
+                showLegendary={showLegendary}
+                laneCount={laneCount}
+                selectedId={selectedId}
+                onSelect={setSelectedId}
+              />
+            ))}
+
+            {/* 跟著游標的時間橫線 —— 「同時期」這件事就是靠它讀出來的 */}
+            {hoverYear !== null && (
+              <div
+                className="time-cursor"
+                style={{ top: yearToY(hoverYear, ppy) + HEAD_H }}
+                aria-hidden="true"
+              >
+                <span className="time-cursor-chip">{fmtYear(hoverYear)}</span>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {selected && (
+          <DetailPanel
+            event={selected.event}
+            region={selected.region}
+            slot={selected.slot}
+            concurrent={concurrent}
+            onClose={() => setSelectedId(null)}
+            onSelect={setSelectedId}
+          />
+        )}
+      </div>
     </div>
   )
 }
