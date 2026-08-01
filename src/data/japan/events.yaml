@@ -6,6 +6,7 @@
 
 
 
+
 - id: jp-jimmu
   year: -660
   title: 神武天皇即位（傳說），日本建國神話
@@ -82,6 +83,18 @@
     - title: 日文維基百科：日本武尊
       url: https://ja.wikipedia.org/wiki/ヤマトタケル
 
+- id: jp-wakoku-turmoil
+  year: 180
+  title: 倭國大亂
+  category: war
+  importance: 3
+  desc: 《魏志倭人傳》記倭國原以男子為王，七、八十年後全境動亂，最後共立卑彌呼一女子為王才平息。確切年代無考，一般推定在二世紀後半。
+  sources:
+    - title: 維基百科：倭國大亂
+      url: https://zh.wikipedia.org/wiki/倭國大亂
+    - title: 日文維基百科：倭國大亂
+      url: https://ja.wikipedia.org/wiki/倭国大乱
+
 - id: jp-jingu
   year: 200
   title: 神功皇后三韓征伐傳說
@@ -102,11 +115,80 @@
   title: 邪馬台國卑彌呼遣使魏國
   category: politics
   importance: 4
+  desc: 魏帝封其為「親魏倭王」，賜金印紫綬與銅鏡百枚。年份有分歧：《魏志倭人傳》記為景初二年（238），《梁書》作景初三年（239），學界至今未定。
   sources:
     - title: 維基百科：卑彌呼
       url: https://zh.wikipedia.org/wiki/卑彌呼
     - title: 維基百科：邪馬台國
       url: https://zh.wikipedia.org/wiki/邪馬台國
+    - title: 維基百科：魏志倭人傳
+      url: https://zh.wikipedia.org/wiki/魏志倭人傳
+    - title: 日文維基百科：魏志倭人傳
+      url: https://ja.wikipedia.org/wiki/魏志倭人伝
+
+- id: jp-toyo
+  year: 247
+  title: 卑彌呼歿，壹與繼立
+  category: politics
+  importance: 3
+  desc: 築塚並以百人殉葬。改立男王後國中不服、互相殘殺死千餘人，再立卑彌呼宗女、年十三的壹與，國中才定。
+  sources:
+    - title: 維基百科：壹與
+      url: https://zh.wikipedia.org/wiki/壹與
+    - title: 日文維基百科：臺與
+      url: https://ja.wikipedia.org/wiki/台与
+    - title: 維基百科：卑彌呼
+      url: https://zh.wikipedia.org/wiki/卑彌呼
+
+- id: jp-last-envoy-jin
+  year: 266
+  title: 倭女王遣使西晉，中國史書自此失載近一百五十年
+  category: politics
+  importance: 3
+  desc: 《日本書紀》神功紀引已佚的《晉起居注》所記。下一次見於中國史書要等到 413 年倭王讚朝貢。
+  sources:
+    - title: 維基百科：魏志倭人傳
+      url: https://zh.wikipedia.org/wiki/魏志倭人傳
+    - title: 日文維基百科：魏志倭人傳
+      url: https://ja.wikipedia.org/wiki/魏志倭人伝
+
+- id: jp-sanguozhi
+  year: 285
+  title: 陳壽撰成《三國志》，倭人傳為日本最早的詳細紀錄
+  category: culture
+  importance: 3
+  desc: 中國正史中第一篇有系統記述日本的文字，記下邪馬台國的位置、官制、風俗與物產，比《後漢書》東夷傳早約一百五十年。
+  sources:
+    - title: 維基百科：魏志倭人傳
+      url: https://zh.wikipedia.org/wiki/魏志倭人傳
+    - title: 日文維基百科：魏志倭人傳
+      url: https://ja.wikipedia.org/wiki/魏志倭人伝
+    - title: 維基百科：三國志
+      url: https://zh.wikipedia.org/wiki/三國志
+
+- id: jp-gwanggaeto-stele
+  year: 391
+  title: 廣開土王碑所記倭渡海與百濟、新羅交戰
+  category: war
+  importance: 3
+  desc: 補上中國史書失載那一百五十年間，倭在朝鮮半島活動的線索。碑文的斷句與解讀至今仍有爭議。
+  sources:
+    - title: 維基百科：好太王碑
+      url: https://zh.wikipedia.org/wiki/好太王碑
+    - title: 日文維基百科：好太王碑
+      url: https://ja.wikipedia.org/wiki/好太王碑
+
+- id: jp-five-kings
+  year: 413
+  title: 倭王讚遣使東晉，倭五王時代開始
+  category: politics
+  importance: 3
+  desc: 中國史書再度出現倭國紀錄。此後讚、珍、濟、興、武五王相繼遣使南朝，求取封號以確立在朝鮮半島的地位。
+  sources:
+    - title: 維基百科：倭五王
+      url: https://zh.wikipedia.org/wiki/倭五王
+    - title: 日文維基百科：倭五王
+      url: https://ja.wikipedia.org/wiki/倭の五王
 
 - id: jp-buddhism
   year: 538
