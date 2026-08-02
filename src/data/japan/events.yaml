@@ -637,6 +637,39 @@
     - title: 維基百科：賤岳之戰
       url: https://zh.wikipedia.org/wiki/賤岳之戰
 
+- id: jp-osaka-castle-1583
+  year: 1583
+  endYear: 1585
+  title: 豐臣秀吉興建大坂城，打造豐臣政權中心
+  category: culture
+  importance: 4
+  desc: 豐臣秀吉於石山本願寺舊址動用全日本大名人夫與財力興建巨大水陸要塞「大坂城」。金箔飾頂的五重天守閣與雄偉石垣成為豐臣政權最高權威象徵，水陸交通交會使大坂成為日本最大商業都市。
+  sources:
+    - title: 維基百科：大阪城
+      url: https://zh.wikipedia.org/wiki/大阪城
+
+- id: jp-komaki-nagakute-1584
+  year: 1584
+  title: 小牧・長久手之戰，羽柴秀吉與德川家康對峙和睦
+  category: war
+  importance: 4
+  desc: 織田信雄聯合德川家康起兵對抗羽柴秀吉。家康於長久手伏擊擊殺秀吉部將池田恆興與森長可，秀吉隨後運用外交策略單獨與信雄和睦，促使家康隨後向秀吉臣服並前往大坂客從。
+  sources:
+    - title: 維基百科：小牧、長久手之戰
+      url: https://zh.wikipedia.org/wiki/小牧、長久手之戰
+
+- id: jp-kanpaku-hidetsugu-1585
+  year: 1585
+  title: 羽柴秀吉就任關白，賜姓「豐臣」公家政權化
+  category: politics
+  importance: 4
+  desc: 朝廷任命武家出身的羽柴秀吉為「關白」（次年更兼任太政大臣並獲天皇賜姓「豐臣」）。秀吉打破平氏與源氏武家棟樑傳統，藉由公家最高官位確立對全日本大名的統裁法理。
+  sources:
+    - title: 維基百科：豐臣秀吉
+      url: https://zh.wikipedia.org/wiki/豐臣秀吉
+    - title: 維基百科：關白
+      url: https://zh.wikipedia.org/wiki/關白
+
 - id: jp-bateren-edict
   year: 1587
   title: 伴天連追放令，開始壓制基督教
@@ -648,6 +681,16 @@
       url: https://zh.wikipedia.org/wiki/伴天連追放令
     - title: 日文維基百科：伴天連追放令
       url: https://ja.wikipedia.org/wiki/バテレン追放令
+
+- id: jp-kyushu-conquest-1587
+  year: 1587
+  title: 九州征伐，豐臣秀吉大軍平定九州降伏島津氏
+  category: war
+  importance: 4
+  desc: 應大友宗麟求援，豐臣秀吉頒布《惣無事令》（禁止大名私鬥），並親率二十萬大軍遠征九州。豐臣大軍一路突破日向與薩摩，島津義久切腹出家降伏，九州納入豐臣政權版圖。
+  sources:
+    - title: 維基百科：九州征伐
+      url: https://zh.wikipedia.org/wiki/九州征伐
 
 - id: jp-katana-gari-1588
   year: 1588
@@ -691,6 +734,38 @@
   sources:
     - title: 維基百科：萬曆朝鮮之役
       url: https://zh.wikipedia.org/wiki/萬曆朝鮮之役
+
+- id: jp-hidetsugu-incident-1595
+  year: 1595
+  title: 豐臣秀次切腹事件，秀次一族遭誅滅
+  category: politics
+  importance: 4
+  desc: 秀吉親生子豐臣秀賴出生後，秀吉與外甥兼關白豐臣秀次產生嚴重猜忌。秀次被流放高野山並勒令切腹自盡，其妻妾子嗣三十餘人於京都三條河原遭公開處刑。此事重創豐臣宗家家臣團凝聚力。
+  sources:
+    - title: 維基百科：豐臣秀次
+      url: https://zh.wikipedia.org/wiki/豐臣秀次
+
+- id: jp-26-martyrs-1597
+  year: 1597
+  title: 長崎二十六聖人殉教事件，嚴厲處刑天主教徒
+  category: religion
+  importance: 3
+  desc: 聖費利佩號事件後秀吉大怒，下令於京都、大坂逮捕方濟各會傳教士與日本天主教徒共 26 人，押解徒步押送至長崎立石山十字架處死。此為日本史上首次由國家大規模公開處決基督教徒事件。
+  sources:
+    - title: 維基百科：日本二十六聖人
+      url: https://zh.wikipedia.org/wiki/日本二十六聖人
+
+- id: jp-go-tairo-go-bugyo-1598
+  year: 1598
+  title: 豐臣秀吉設立「五大老」與「五奉行」輔政體制
+  category: politics
+  importance: 4
+  desc: 豐臣秀吉於伏見城臨終前，為確保幼子秀賴順利繼位，設立由德川家康、前田利家等大名組成的「五大老」掌行政權，以及石田三成、增田長盛等臣組成的「五奉行」掌司法與行政，然而秀吉死後兩派隨即陷入嚴重對立。
+  sources:
+    - title: 維基百科：五大老
+      url: https://zh.wikipedia.org/wiki/五大老
+    - title: 維基百科：五奉行
+      url: https://zh.wikipedia.org/wiki/五奉行
 
 - id: jp-sekigahara
   year: 1600
