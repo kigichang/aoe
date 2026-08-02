@@ -285,6 +285,19 @@
     - title: 維基百科：陳勝吳廣起義
       url: https://zh.wikipedia.org/wiki/陳勝吳廣起義
 
+- id: cn-chu-han-contention
+  year: -206
+  endYear: -202
+  title: 楚漢相爭
+  category: war
+  importance: 3
+  desc: 秦亡後項羽分封十八諸侯、自號西楚霸王，劉邦受封漢中。四年拉鋸以垓下決戰告終 —— 分封制最後一次被認真嘗試，隨即敗給郡縣的中央集權。
+  sources:
+    - title: 維基百科：楚漢戰爭
+      url: https://zh.wikipedia.org/wiki/楚漢戰爭
+    - title: 維基百科：項羽
+      url: https://zh.wikipedia.org/wiki/項羽
+
 - id: cn-han-founding
   year: -202
   title: 劉邦稱帝，西漢建立
@@ -295,6 +308,32 @@
       url: https://zh.wikipedia.org/wiki/漢高祖
     - title: 維基百科：西漢
       url: https://zh.wikipedia.org/wiki/西漢
+
+- id: cn-baideng
+  year: -200
+  title: 白登之圍，漢對匈奴改採和親
+  category: war
+  importance: 4
+  desc: 高祖親征匈奴，反被冒頓單于困於白登山七日。此後六十年漢廷以宗室女與歲幣換取邊境安定 —— 中原王朝面對草原勢力的兩條路，退讓與征伐，起點都在這一戰。
+  sources:
+    - title: 維基百科：白登之圍
+      url: https://zh.wikipedia.org/wiki/白登之圍
+    - title: 維基百科：和親
+      url: https://zh.wikipedia.org/wiki/和親
+    - title: 維基百科：漢匈戰爭
+      url: https://zh.wikipedia.org/wiki/漢匈戰爭
+
+- id: cn-seven-states-rebellion
+  year: -154
+  title: 七國之亂，諸侯王勢力遭剪除
+  category: war
+  importance: 4
+  desc: 景帝採晁錯之議削藩，吳楚等七國以「誅晁錯，清君側」起兵，三個月即平。漢初郡國並行留下的封建殘餘自此失去武力，替武帝的中央集權清好了場。
+  sources:
+    - title: 維基百科：七國之亂
+      url: https://zh.wikipedia.org/wiki/七國之亂
+    - title: 維基百科：郡國制
+      url: https://zh.wikipedia.org/wiki/郡國制
 
 - id: cn-wudi
   year: -141
@@ -317,6 +356,56 @@
     - title: 維基百科：絲綢之路
       url: https://zh.wikipedia.org/wiki/絲綢之路
 
+- id: cn-confucian-orthodoxy
+  year: -134
+  title: 罷黜百家，獨尊儒術
+  category: culture
+  importance: 5
+  desc: 董仲舒對策，儒學自此成為官學與選官的標準。此後兩千年，經義既是知識分子的共同語言，也是政權正當性的來源 —— 戰國以來諸子並立的局面到此收束。
+  sources:
+    - title: 維基百科：獨尊儒術
+      url: https://zh.wikipedia.org/wiki/獨尊儒術
+    - title: 維基百科：董仲舒
+      url: https://zh.wikipedia.org/wiki/董仲舒
+
+- id: cn-tuien-decree
+  year: -127
+  title: 推恩令，諸侯王國自行瓦解
+  category: politics
+  importance: 4
+  desc: 主父偃獻策：王國封地須分給每一個兒子，不再由嫡長獨得。不必動兵、也不必背削藩的惡名，王國數代之內就碎成不足為患的小侯 —— 七國之亂那樣的正面衝突再未重演。
+  sources:
+    - title: 維基百科：推恩令
+      url: https://zh.wikipedia.org/wiki/推恩令
+    - title: 維基百科：主父偃
+      url: https://zh.wikipedia.org/wiki/主父偃
+
+- id: cn-mobei-campaign
+  year: -119
+  title: 漠北之戰，衛青霍去病破匈奴
+  category: war
+  importance: 4
+  desc: 漢軍兩路出塞逾兩千里，匈奴遠遁，「漠南無王庭」。行之六十年的和親政策就此翻轉，代價是府庫耗盡 —— 同年即開鹽鐵國營籌措軍費。
+  sources:
+    - title: 維基百科：漠北之戰
+      url: https://zh.wikipedia.org/wiki/漠北之戰
+    - title: 維基百科：衛青
+      url: https://zh.wikipedia.org/wiki/衛青
+    - title: 維基百科：霍去病
+      url: https://zh.wikipedia.org/wiki/霍去病
+
+- id: cn-salt-iron-monopoly
+  year: -119
+  title: 鹽鐵國營，專賣制籌措軍費
+  category: economy
+  importance: 3
+  desc: 武帝把鹽、鐵的產銷收歸官府，孔僅、東郭咸陽主持，桑弘羊繼之而擴及均輸平準。國家專賣自此成為財政的常備手段，歷代屢屢重回這條路；昭帝時著名的鹽鐵會議，爭的就是它該不該廢。
+  sources:
+    - title: 維基百科：鹽鐵國營
+      url: https://zh.wikipedia.org/wiki/鹽鐵國營
+    - title: 維基百科：桑弘羊
+      url: https://zh.wikipedia.org/wiki/桑弘羊
+
 - id: cn-shiji
   year: -104
   title: 司馬遷開始撰寫《史記》
@@ -328,6 +417,16 @@
     - title: 維基百科：司馬遷
       url: https://zh.wikipedia.org/wiki/司馬遷
 
+- id: cn-western-regions-protectorate
+  year: -60
+  title: 設西域都護府，天山南北納入治下
+  category: politics
+  importance: 4
+  desc: 匈奴日逐王降漢，鄭吉為首任都護。張騫通西域七十八年之後，商路沿線諸國由「有往來」變成受漢廷節制 —— 絲路的暢通第一次有了駐軍與行政的保障。
+  sources:
+    - title: 維基百科：西域都護府
+      url: https://zh.wikipedia.org/wiki/西域都護府
+
 - id: cn-wangmang
   year: 9
   title: 王莽篡漢，建立新朝
@@ -338,6 +437,18 @@
       url: https://zh.wikipedia.org/wiki/王莽
     - title: 維基百科：新朝
       url: https://zh.wikipedia.org/wiki/新朝
+
+- id: cn-kunyang
+  year: 23
+  title: 昆陽之戰，新莽覆滅
+  category: war
+  importance: 3
+  desc: 王莽傾全國之兵四十餘萬圍昆陽，為劉秀所破，主力盡失，數月後長安即陷。綠林、赤眉並起的亂局裡，勝出的是這位兩年後稱帝的光武帝。
+  sources:
+    - title: 維基百科：昆陽之戰
+      url: https://zh.wikipedia.org/wiki/昆陽之戰
+    - title: 維基百科：赤眉軍
+      url: https://zh.wikipedia.org/wiki/赤眉軍
 
 - id: cn-eastern-han
   year: 25
@@ -358,6 +469,30 @@
   sources:
     - title: 維基百科：白馬寺
       url: https://zh.wikipedia.org/wiki/白馬寺
+
+- id: cn-ban-chao
+  year: 73
+  title: 班超出使西域，重通絲路
+  category: politics
+  importance: 3
+  desc: 王莽以來斷絕六十年的西域交通再度打開。班超以三十六人起家，在西域經營三十一年、官至都護；其部屬甘英曾西行至條支，是漢代使節所至最遠處。
+  sources:
+    - title: 維基百科：班超
+      url: https://zh.wikipedia.org/wiki/班超
+    - title: 維基百科：西域都護府
+      url: https://zh.wikipedia.org/wiki/西域都護府
+
+- id: cn-yanran
+  year: 89
+  title: 燕然勒石，北匈奴西遷
+  category: war
+  importance: 3
+  desc: 竇憲大破北匈奴，登燕然山刻石記功，班固作銘。北匈奴殘部自此西徙 —— 兩百多年後出現在歐洲的匈人是否為其後裔，史學界至今未有定論。
+  sources:
+    - title: 維基百科：燕然勒石
+      url: https://zh.wikipedia.org/wiki/燕然勒石
+    - title: 維基百科：北匈奴
+      url: https://zh.wikipedia.org/wiki/北匈奴
 
 - id: cn-paper
   year: 105
@@ -382,6 +517,19 @@
     - title: 維基百科：張衡
       url: https://zh.wikipedia.org/wiki/張衡
 
+- id: cn-partisan-prohibitions
+  year: 166
+  endYear: 169
+  title: 黨錮之禍，士大夫遭終身禁錮
+  category: politics
+  importance: 4
+  desc: 宦官集團兩度大興黨獄，李膺、范滂等士人或死或禁錮終身。朝廷自此失去最後一批願意糾正它的人，十五年後黃巾起事，已無可用之士。
+  sources:
+    - title: 維基百科：黨錮之禍
+      url: https://zh.wikipedia.org/wiki/黨錮之禍
+    - title: 維基百科：十常侍
+      url: https://zh.wikipedia.org/wiki/十常侍
+
 - id: cn-yellow-turban
   year: 184
   title: 黃巾之亂
@@ -390,6 +538,16 @@
   sources:
     - title: 維基百科：黃巾之亂
       url: https://zh.wikipedia.org/wiki/黃巾之亂
+
+- id: cn-dong-zhuo
+  year: 189
+  title: 董卓入京，東漢名存實亡
+  category: war
+  importance: 4
+  desc: 何進召外兵誅宦官事洩被殺，董卓趁亂入洛陽，廢少帝而立獻帝；次年關東群雄起兵討之，卓焚洛陽西遷長安。天子從此成為各方爭奪的號令工具，割據的格局就此定型。
+  sources:
+    - title: 維基百科：董卓
+      url: https://zh.wikipedia.org/wiki/董卓
 
 - id: cn-cao-cao-emperor
   year: 196
