@@ -380,6 +380,18 @@
     - title: 維基百科：壇之浦之戰
       url: https://zh.wikipedia.org/wiki/壇之浦之戰
 
+- id: jp-kamakura-era-start
+  year: 1185
+  title: 壇之浦之戰平氏滅亡，鎌倉時代開幕
+  category: war
+  importance: 5
+  desc: 源平合戰以平氏在壇之浦海戰中覆滅告終。源賴朝隨即以追捕源義經為由，獲得朝廷准許在全國各地設立「守護」與「地頭」，掌握了實質的軍事與警察權，開啟了鎌倉時代。
+  sources:
+    - title: 維基百科：鎌倉時代
+      url: https://zh.wikipedia.org/wiki/鎌倉時代
+    - title: 維基百科：壇之浦之戰
+      url: https://zh.wikipedia.org/wiki/壇之浦之戰
+
 - id: jp-kamakura-bakufu
   year: 1192
   title: 源賴朝任征夷大將軍，鎌倉幕府
@@ -402,6 +414,30 @@
     - title: 維基百科：承久之亂
       url: https://zh.wikipedia.org/wiki/承久之亂
 
+- id: jp-jokyu-kamakura
+  year: 1221
+  title: 承久之亂，幕府擊敗朝廷確立政治優勢
+  category: politics
+  importance: 5
+  desc: 後鳥羽上皇試圖推翻鎌倉幕府，引發承久之亂。在北條政子的號召下，幕府軍大勝並攻入京都，流放了三位上皇。此戰徹底改變了朝野勢力對比，幕府權威凌駕於朝廷之上。
+  sources:
+    - title: 維基百科：鎌倉時代
+      url: https://zh.wikipedia.org/wiki/鎌倉時代
+    - title: 維基百科：承久之亂
+      url: https://zh.wikipedia.org/wiki/承久之亂
+
+- id: jp-goseibai-kamakura
+  year: 1232
+  title: 制定《御成敗式目》，確立武家法律基礎
+  category: politics
+  importance: 4
+  desc: 執權北條泰時為了公平解決御家人之間的領地糾紛，頒布了基於武家習慣法的《御成敗式目》（貞永式目）。這成為日本史上第一部武家法典，對後世武家政權產生深遠影響。
+  sources:
+    - title: 維基百科：鎌倉時代
+      url: https://zh.wikipedia.org/wiki/鎌倉時代
+    - title: 維基百科：御成敗式目
+      url: https://zh.wikipedia.org/wiki/御成敗式目
+
 - id: jp-nichiren
   year: 1253
   title: 日蓮創立法華信仰
@@ -420,6 +456,19 @@
     - title: 維基百科：元日戰爭
       url: https://zh.wikipedia.org/wiki/元日戰爭
 
+- id: jp-mongol-kamakura
+  year: 1274
+  title: 元日戰爭，蒙古兩次入侵動搖幕府根基
+  category: war
+  importance: 5
+  endYear: 1281
+  desc: 蒙古帝國忽必烈發動「文永之役」與「弘安之役」入侵日本。雖然幕府成功抵禦外敵，但由於是防衛戰而無新土地可作為恩賞，導致參戰的御家人陷入嚴重財政困境，幕府威信大減。
+  sources:
+    - title: 維基百科：鎌倉時代
+      url: https://zh.wikipedia.org/wiki/鎌倉時代
+    - title: 維基百科：元日战争
+      url: https://zh.wikipedia.org/wiki/元日战争
+
 - id: jp-koan
   year: 1281
   title: 弘安之役，元軍再敗於颱風
@@ -428,6 +477,18 @@
   sources:
     - title: 維基百科：元日戰爭
       url: https://zh.wikipedia.org/wiki/元日戰爭
+
+- id: jp-einin-tokuseirei
+  year: 1297
+  title: 頒布《永仁德政令》，挽救御家人經濟破產
+  category: economy
+  importance: 4
+  desc: 面對元日戰爭後大量御家人抵押土地、瀕臨破產的窘境，鎌倉幕府發布了日本史上首道《德政令》（永仁德政令），強制廢除御家人的債務並無償收回被賣出的土地，但最終引發經濟混亂。
+  sources:
+    - title: 維基百科：鎌倉時代
+      url: https://zh.wikipedia.org/wiki/鎌倉時代
+    - title: 維基百科：德政令
+      url: https://zh.wikipedia.org/wiki/德政令
 
 - id: jp-genko-war
   year: 1331
