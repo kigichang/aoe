@@ -334,6 +334,18 @@
     - title: 維基百科：攝政
       url: https://zh.wikipedia.org/wiki/攝政
 
+- id: jp-fujiwara-yoshifusa
+  year: 858
+  title: 藤原良房成為首位非皇族攝政，開啟藤原北家專權
+  category: politics
+  importance: 4
+  desc: 清和天皇以9歲之齡即位，其外祖父藤原良房以外臣身分成為日本史上首位非皇族的「攝政」。這標誌著藤原北家開始以外戚身分掌控朝政，攝關政治的序幕正式拉開。
+  sources:
+    - title: 維基百科：攝關政治
+      url: https://zh.wikipedia.org/wiki/攝關政治
+    - title: 維基百科：藤原良房
+      url: https://zh.wikipedia.org/wiki/藤原良房
+
 - id: jp-otenmon
   year: 866
   title: 應天門之變，藤原氏攝關政治確立
@@ -345,6 +357,20 @@
       url: https://zh.wikipedia.org/wiki/應天門之變
     - title: 維基百科：攝關政治
       url: https://zh.wikipedia.org/wiki/攝關政治
+
+- id: jp-fujiwara-mototsune
+  year: 884
+  title: 藤原基經就任首位關白，確立攝關政治雛形
+  category: politics
+  importance: 4
+  desc: 光孝天皇即位後，委任藤原基經為首任「關白」，負責輔佐成年天皇處理政務。攝政與關白兩種職務的確立，使得藤原氏無論天皇年幼或成年皆能把持國政，攝關政治體制逐漸成形。
+  sources:
+    - title: 維基百科：攝關政治
+      url: https://zh.wikipedia.org/wiki/攝關政治
+    - title: 維基百科：藤原基經
+      url: https://zh.wikipedia.org/wiki/藤原基經
+    - title: 維基百科：關白
+      url: https://zh.wikipedia.org/wiki/關白
 
 - id: jp-end-kentoshi
   year: 894
@@ -373,6 +399,18 @@
       url: https://zh.wikipedia.org/wiki/遣唐使
     - title: 維基百科：國風文化
       url: https://zh.wikipedia.org/wiki/國風文化
+
+- id: jp-shotai-incident
+  year: 901
+  title: 昌泰之變，藤原時平謫降菅原道真排除異己
+  category: politics
+  importance: 4
+  desc: 為了鞏固藤原氏的絕對權力，左大臣藤原時平向醍醐天皇進讒言，將深受重用的右大臣菅原道真貶謫至太宰府。此事件進一步清除了朝廷內非藤原氏的有力競爭者。
+  sources:
+    - title: 維基百科：攝關政治
+      url: https://zh.wikipedia.org/wiki/攝關政治
+    - title: 維基百科：昌泰之變
+      url: https://zh.wikipedia.org/wiki/昌泰之變
 
 - id: jp-engi-shoen
   year: 902
@@ -436,6 +474,30 @@
       url: https://zh.wikipedia.org/wiki/源氏物語
     - title: 維基百科：紫式部
       url: https://zh.wikipedia.org/wiki/紫式部
+
+- id: jp-fujiwara-michinaga
+  year: 1016
+  title: 藤原道長建立「一家立三后」，攝關政治達到頂峰
+  category: politics
+  importance: 5
+  desc: 藤原道長將三個女兒先後送入宮中成為三位天皇的中宮（一家立三后），藉此壟斷了外戚地位。他出任攝政後，藤原北家的權力與榮華富貴達到極盛，成為平安時代攝關政治的巔峰。
+  sources:
+    - title: 維基百科：攝關政治
+      url: https://zh.wikipedia.org/wiki/攝關政治
+    - title: 維基百科：藤原道長
+      url: https://zh.wikipedia.org/wiki/藤原道長
+
+- id: jp-gosanjo-emperor
+  year: 1068
+  title: 後三條天皇即位，攝關政治開始衰退
+  category: politics
+  importance: 4
+  desc: 後三條天皇即位，成為 170 年來首位母親非藤原氏的天皇。他不受藤原氏控制，積極推動延久莊園整理令等改革以強化皇權，藤原氏的攝關政治自此開始走向衰退。
+  sources:
+    - title: 維基百科：攝關政治
+      url: https://zh.wikipedia.org/wiki/攝關政治
+    - title: 維基百科：後三條天皇
+      url: https://zh.wikipedia.org/wiki/後三條天皇
 
 - id: jp-enkyu-shoen
   year: 1069
@@ -675,8 +737,8 @@
   sources:
     - title: 維基百科：鎌倉時代
       url: https://zh.wikipedia.org/wiki/鎌倉時代
-    - title: 維基百科：永仁的德政令
-      url: https://zh.wikipedia.org/wiki/永仁的德政令
+    - title: 維基百科：御家人
+      url: https://zh.wikipedia.org/wiki/御家人
 
 - id: jp-genko-war
   year: 1331
