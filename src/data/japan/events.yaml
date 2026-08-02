@@ -90,6 +90,16 @@
     - title: 維基百科：彌生時代
       url: https://zh.wikipedia.org/wiki/彌生時代
 
+- id: jp-zoku-jomon-start
+  year: -250
+  title: 續繩文文化興起，北海道未隨本州轉入彌生農耕
+  category: culture
+  importance: 4
+  desc: 當本州、九州一帶隨稻作傳入邁向彌生時代之際，北海道因氣候不適於水稻栽培，延續繩文時代以來的狩獵漁撈採集生活，考古學上稱為「續繩文文化」。此後北海道與本州走上不同的文化發展軌跡，直到七世紀才轉入下一階段的擦文文化。
+  sources:
+    - title: 日文維基百科：続縄文時代
+      url: https://ja.wikipedia.org/wiki/続縄文時代
+
 - id: jp-sugu-okamoto
   year: -100
   title: 須玖岡本遺跡成為奴國都邑核心
@@ -299,6 +309,18 @@
     - title: 日文維基百科：大仙陵古墳
       url: https://ja.wikipedia.org/wiki/大仙陵古墳
 
+- id: jp-ezo-culture-formation
+  year: 450
+  title: 江別文化統一北海道，鄂霍次克文化同時形成
+  category: culture
+  importance: 3
+  desc: 五、六世紀間，北海道原本並立的道南惠山文化、道東宇津內文化等地域文化逐漸被「江別文化」統一。同時樺太與鄂霍次克海沿岸出現與續繩文文化明顯異質的「鄂霍次克文化」，兩者往後持續交流融合，形塑北海道多元的史前文化面貌。
+  sources:
+    - title: 日文維基百科：続縄文時代
+      url: https://ja.wikipedia.org/wiki/続縄文時代
+    - title: 維基百科：鄂霍次克文化
+      url: https://zh.wikipedia.org/wiki/鄂霍次克文化
+
 - id: jp-inariyama-sword
   year: 471
   title: 稻荷山古墳鐵劍銘文，證實大和王權勢力達關東
@@ -461,6 +483,18 @@
   sources:
     - title: 日文維基百科：薄葬令
       url: https://ja.wikipedia.org/wiki/薄葬令
+
+- id: jp-satsumon-transition
+  year: 650
+  title: 續繩文文化轉為擦文文化，北海道史前史邁入下一階段
+  category: culture
+  importance: 4
+  desc: 七世紀前後，北海道的續繩文文化逐漸被受本州古墳、飛鳥文化影響的「擦文文化」取代，土器紋樣由繩紋轉為以刷具刮擦形成的紋理，鐵器使用也隨之普及。擦文文化持續至十二、三世紀，是後來阿伊努文化形成前的最後一個史前階段。
+  sources:
+    - title: 日文維基百科：続縄文時代
+      url: https://ja.wikipedia.org/wiki/続縄文時代
+    - title: 維基百科：擦文文化
+      url: https://zh.wikipedia.org/wiki/擦文文化
 
 - id: jp-hakusukinoe
   year: 663
@@ -2677,6 +2711,18 @@
   sources:
     - title: 維基百科：九一八事變
       url: https://zh.wikipedia.org/wiki/九一八事變
+
+- id: jp-yamanouchi-zoku-jomon
+  year: 1936
+  title: 山內清男提出「續繩文時代」分期概念
+  category: science
+  importance: 2
+  desc: 考古學家山內清男在《ミネルヴァ》期刊發表論文，正式提出「續繩文時代」一詞，用以區別北海道未隨本州轉入彌生農耕、延續狩獵採集生活的史前階段。此一分期概念確立了北海道與本州古代史各自獨立的時間框架，至今仍是日本考古學界的通用分期。
+  sources:
+    - title: 日文維基百科：続縄文時代
+      url: https://ja.wikipedia.org/wiki/続縄文時代
+    - title: 維基百科：山內清男
+      url: https://zh.wikipedia.org/wiki/山內清男
 
 - id: jp-226-incident
   year: 1936
