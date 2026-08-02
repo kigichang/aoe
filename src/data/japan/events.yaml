@@ -655,6 +655,19 @@
     - title: 維基百科：戰國時代 (日本)
       url: https://zh.wikipedia.org/wiki/戰國時代_(日本)
 
+- id: jp-sengoku-start
+  year: 1467
+  title: 應仁之亂，京都化為焦土與戰國時代開幕
+  category: war
+  importance: 5
+  endYear: 1477
+  desc: 圍繞將軍繼承權與管領家督之爭，全日本守護大名分為東西兩軍在京都展開長達十年的混戰。幕府權威徹底掃地，莊園制崩潰，地方國人崛起，日本正式步入群雄割據的「戰國時代」。
+  sources:
+    - title: 維基百科：战国时代 (日本)
+      url: https://zh.wikipedia.org/wiki/战国时代_(日本)
+    - title: 維基百科：应仁之乱
+      url: https://zh.wikipedia.org/wiki/应仁之乱
+
 - id: jp-higashiyama-culture
   year: 1489
   title: 足利義政建立銀閣寺，東山文化與侘寂美學
@@ -669,6 +682,22 @@
     - title: 維基百科：東山文化
       url: https://zh.wikipedia.org/wiki/東山文化_(日本)
 
+- id: jp-meio-coup
+  year: 1493
+  title: 明應之變，細川政元廢黜將軍，下剋上風氣確立
+  category: politics
+  importance: 4
+  desc: 管領細川政元發動政變，廢黜第10代將軍足利義材（義稙），另立足利義澄為將軍。這是幕府高層首度以武力更迭將軍，標誌著「下克上」的風氣蔓延至國家最高權力中樞。
+  sources:
+    - title: 維基百科：战国时代 (日本)
+      url: https://zh.wikipedia.org/wiki/战国时代_(日本)
+    - title: 維基百科：明應之變
+      url: https://zh.wikipedia.org/wiki/明應之變
+    - title: 維基百科：細川政元
+      url: https://zh.wikipedia.org/wiki/細川政元
+    - title: 維基百科：下克上
+      url: https://zh.wikipedia.org/wiki/下克上
+
 - id: jp-teppo
   year: 1543
   title: 鐵砲傳入種子島
@@ -676,6 +705,18 @@
   importance: 4
   desc: 火繩槍在數十年內改寫了日本的築城與戰術，也加速了統一。
   sources:
+    - title: 維基百科：鐵砲傳來
+      url: https://zh.wikipedia.org/wiki/鐵砲傳來
+
+- id: jp-teppo-sengoku
+  year: 1543
+  title: 鐵砲傳來，火繩槍傳入徹底改變戰國戰術
+  category: science
+  importance: 5
+  desc: 一艘載有葡萄牙人的中國船隻漂流至種子島，將火繩槍（鐵砲）傳入日本。火器隨後在日本各地被迅速仿製並大量投入實戰，徹底改變了傳統的騎馬與弓矢戰術，加速了戰國時代的統一進程。
+  sources:
+    - title: 維基百科：战国时代 (日本)
+      url: https://zh.wikipedia.org/wiki/战国时代_(日本)
     - title: 維基百科：鐵砲傳來
       url: https://zh.wikipedia.org/wiki/鐵砲傳來
 
@@ -688,6 +729,18 @@
     - title: 維基百科：方濟·沙勿略
       url: https://zh.wikipedia.org/wiki/方濟·沙勿略
 
+- id: jp-xavier-sengoku
+  year: 1549
+  title: 天主教傳入日本，南蠻貿易與大航海時代的交會
+  category: religion
+  importance: 4
+  desc: 耶穌會傳教士方濟·沙勿略抵達鹿兒島，首次將天主教引入日本。隨著傳教活動的展開，葡萄牙與西班牙商船也帶來了歐洲的火器、絲綢與醫學，開啟了繁榮的「南蠻貿易」。
+  sources:
+    - title: 維基百科：战国时代 (日本)
+      url: https://zh.wikipedia.org/wiki/战国时代_(日本)
+    - title: 維基百科：方濟·沙勿略
+      url: https://zh.wikipedia.org/wiki/方濟·沙勿略
+
 - id: jp-okehazama
   year: 1560
   title: 桶狹間之戰，織田信長奇襲崛起
@@ -697,6 +750,20 @@
   sources:
     - title: 維基百科：桶狹間之戰
       url: https://zh.wikipedia.org/wiki/桶狹間之戰
+
+- id: jp-okehazama
+  year: 1560
+  title: 桶狹間之戰，織田信長擊敗今川義元崛起
+  category: war
+  importance: 5
+  desc: 稱霸東海道的強大戰國大名今川義元率領大軍上洛，卻在尾張國桶狹間遭到織田信長率領的少數兵力奇襲並戰死。此戰使織田信長一躍成為戰國風雲人物，奠定其邁向天下布武的基礎。
+  sources:
+    - title: 維基百科：战国时代 (日本)
+      url: https://zh.wikipedia.org/wiki/战国时代_(日本)
+    - title: 維基百科：桶狹間之戰
+      url: https://zh.wikipedia.org/wiki/桶狹間之戰
+    - title: 維基百科：織田信長
+      url: https://zh.wikipedia.org/wiki/織田信長
 
 - id: jp-ane-gawa-1570
   year: 1570
