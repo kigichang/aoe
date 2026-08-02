@@ -518,11 +518,24 @@
   title: 織田信長放逐足利義昭，室町幕府終結
   category: politics
   importance: 4
+  desc: 織田信長率軍討伐舉兵反抗的末代將軍足利義昭並將其驅逐出京都。足利氏統治二百三十餘年的室町幕府正式滅亡，信長掌握畿內霸權。
   sources:
     - title: 維基百科：織田信長
       url: https://zh.wikipedia.org/wiki/織田信長
     - title: 維基百科：室町幕府
       url: https://zh.wikipedia.org/wiki/室町幕府
+    - title: 維基百科：足利義昭
+      url: https://zh.wikipedia.org/wiki/足利義昭
+
+- id: jp-koshu-conquest-1582
+  year: 1582
+  title: 甲州征伐，織田德川聯軍消滅甲斐武田氏
+  category: war
+  importance: 4
+  desc: 織田信長與德川家康發動甲州征伐，聯軍大舉進攻甲斐與信濃，武田勝賴於天目山切腹，戰國威名赫赫的甲斐武田氏正式覆滅。
+  sources:
+    - title: 維基百科：甲州征伐
+      url: https://zh.wikipedia.org/wiki/甲州征伐
 
 - id: jp-honnoji
   year: 1582
@@ -532,6 +545,16 @@
   sources:
     - title: 維基百科：本能寺之變
       url: https://zh.wikipedia.org/wiki/本能寺之變
+
+- id: jp-shizugatake-1583
+  year: 1583
+  title: 賤岳之戰，羽柴秀吉確立信長繼承人地位
+  category: war
+  importance: 4
+  desc: 本能寺之變後，羽柴秀吉與織田家首席家老柴田勝家爆發爭霸戰爭。秀吉於近江賤岳大破柴田軍，柴田勝家與阿市切腹自盡，秀吉實質掌握織田舊領並確立霸主地位。
+  sources:
+    - title: 維基百科：賤岳之戰
+      url: https://zh.wikipedia.org/wiki/賤岳之戰
 
 - id: jp-bateren-edict
   year: 1587
@@ -545,6 +568,18 @@
     - title: 日文維基百科：伴天連追放令
       url: https://ja.wikipedia.org/wiki/バテレン追放令
 
+- id: jp-katana-gari-1588
+  year: 1588
+  title: 豐臣秀吉頒布刀狩令，實施兵農分離
+  category: politics
+  importance: 4
+  desc: 豐臣秀吉頒布《刀狩令》，沒收農民與寺社所持刀劍弓槍等武器，並結合全日本「太閤檢地」統一石高計稅。此舉鞏固封建治安並徹底實施兵農分離與石高制。
+  sources:
+    - title: 維基百科：刀狩令
+      url: https://zh.wikipedia.org/wiki/刀狩令
+    - title: 維基百科：太閤檢地
+      url: https://zh.wikipedia.org/wiki/太閤檢地
+
 - id: jp-hideyoshi
   year: 1590
   title: 豐臣秀吉統一日本
@@ -555,6 +590,16 @@
       url: https://zh.wikipedia.org/wiki/豐臣秀吉
     - title: 維基百科：小田原之戰
       url: https://zh.wikipedia.org/wiki/小田原之戰
+
+- id: jp-sen-no-rikyu-1591
+  year: 1591
+  title: 天下一茶人千利休賜死，侘茶文化全盛
+  category: culture
+  importance: 3
+  desc: 豐臣秀吉命令側近茶道大師千利休切腹自盡。千利休創立「侘茶」體系與黃金茶室/待庵茶室美學，集日本茶道美學之大成，深遠影響日本傳統審美與桃山文化。
+  sources:
+    - title: 維基百科：千利休
+      url: https://zh.wikipedia.org/wiki/千利休
 
 - id: jp-korea-campaign
   year: 1592
