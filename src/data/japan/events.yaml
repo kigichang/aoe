@@ -199,6 +199,20 @@
     - title: 維基百科：日本佛教
       url: https://zh.wikipedia.org/wiki/日本佛教
 
+- id: jp-buddhism-intro
+  year: 538
+  title: 佛教傳入日本，引發蘇我氏與物部氏宗教衝突
+  category: religion
+  importance: 4
+  desc: 百濟聖明王向欽明天皇獻上佛像與經卷，標誌著佛教正式傳入日本。這引發了崇佛派的蘇我氏與排佛派的物部氏之間激烈的政治與宗教衝突，最終蘇我氏獲勝，確立了佛教在日本的地位。
+  sources:
+    - title: 維基百科：佛教
+      url: https://zh.wikipedia.org/wiki/佛教
+    - title: 維基百科：蘇我氏
+      url: https://zh.wikipedia.org/wiki/蘇我氏
+    - title: 維基百科：物部氏
+      url: https://zh.wikipedia.org/wiki/物部氏
+
 - id: jp-shotoku
   year: 593
   title: 聖德太子攝政
@@ -207,6 +221,20 @@
   sources:
     - title: 維基百科：聖德太子
       url: https://zh.wikipedia.org/wiki/聖德太子
+
+- id: jp-shotoku-taishi
+  year: 593
+  title: 聖德太子攝政，推行推古朝改革與冠位十二階
+  category: politics
+  importance: 5
+  desc: 推古天皇即位，任命聖德太子為攝政。太子推行了一系列旨在強化皇權的改革，包括制定「冠位十二階」與「十七條憲法」，並派遣遣隋使積極吸收中國先進的政治與文化制度。
+  sources:
+    - title: 維基百科：聖德太子
+      url: https://zh.wikipedia.org/wiki/聖德太子
+    - title: 維基百科：推古天皇
+      url: https://zh.wikipedia.org/wiki/推古天皇
+    - title: 維基百科：冠位十二阶
+      url: https://zh.wikipedia.org/wiki/冠位十二阶
 
 - id: jp-17-articles
   year: 604
@@ -246,6 +274,38 @@
   sources:
     - title: 維基百科：大化改新
       url: https://zh.wikipedia.org/wiki/大化改新
+
+- id: jp-isshi-incident
+  year: 645
+  title: 乙巳之變，暗殺蘇我入鹿開啟大化改新
+  category: politics
+  importance: 5
+  desc: 中大兄皇子與中臣鎌足等人在宮中暗殺了權臣蘇我入鹿，消滅了專橫的蘇我氏本宗（乙巳之變）。隨後即位的孝德天皇頒布《改新之詔》，全面推動唐化改革（大化改新），確立天皇中心的中央集權制。
+  sources:
+    - title: 維基百科：乙巳之變
+      url: https://zh.wikipedia.org/wiki/乙巳之變
+    - title: 維基百科：大化改新
+      url: https://zh.wikipedia.org/wiki/大化改新
+
+- id: jp-hakusukinoe
+  year: 663
+  title: 白江口之戰，日本敗於唐新聯軍加速國內集權
+  category: war
+  importance: 5
+  desc: 為了援助百濟復國，日本出兵朝鮮半島，但在白江口之戰中慘敗於唐朝與新羅聯軍。此戰使日本放棄了對朝鮮半島的軍事干預，轉而專注於修築防禦工事與加速國內的律令制國家建設。
+  sources:
+    - title: 維基百科：白江口之战
+      url: https://zh.wikipedia.org/wiki/白江口之战
+
+- id: jp-jinshin-war
+  year: 672
+  title: 壬申之亂，天武天皇獲勝確立絕對皇權
+  category: war
+  importance: 5
+  desc: 天智天皇駕崩後，其弟大海人皇子與其子大友皇子之間爆發爭奪皇位的內戰（壬申之亂）。大海人皇子獲勝並即位為天武天皇，他進一步推進律令制，確立了強大的絕對皇權。
+  sources:
+    - title: 維基百科：壬申之亂
+      url: https://zh.wikipedia.org/wiki/壬申之亂
 
 - id: jp-taiho
   year: 701
