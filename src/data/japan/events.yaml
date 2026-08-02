@@ -213,6 +213,30 @@
     - title: 維基百科：物部氏
       url: https://zh.wikipedia.org/wiki/物部氏
 
+- id: jp-teibi-rebellion
+  year: 587
+  title: 丁未之亂，蘇我氏滅物部氏獨掌朝政
+  category: war
+  importance: 4
+  desc: 崇佛的蘇我馬子與排佛的物部守屋長期對立，終於兵戎相見。蘇我氏聯合皇族擊滅物部守屋一族，自此蘇我氏在朝廷再無政敵，佛教也隨之在日本站穩腳跟，為推古朝的改革鋪平了道路。
+  sources:
+    - title: 維基百科：丁未之亂
+      url: https://zh.wikipedia.org/wiki/丁未之亂
+    - title: 維基百科：物部守屋
+      url: https://zh.wikipedia.org/wiki/物部守屋
+
+- id: jp-sushun-assassination
+  year: 592
+  title: 蘇我馬子弒崇峻天皇，推古天皇即位
+  category: politics
+  importance: 4
+  desc: 崇峻天皇不滿大臣蘇我馬子專權，馬子竟指使東漢直駒將天皇弒殺，是日本信史中唯一一次天皇遭臣下暗殺的紀錄。其後由用明天皇之女、敏達天皇之后即位為推古天皇，是日本首位女性天皇。
+  sources:
+    - title: 維基百科：崇峻天皇
+      url: https://zh.wikipedia.org/wiki/崇峻天皇
+    - title: 維基百科：蘇我馬子
+      url: https://zh.wikipedia.org/wiki/蘇我馬子
+
 - id: jp-shotoku
   year: 593
   title: 聖德太子攝政
@@ -297,6 +321,26 @@
     - title: 維基百科：白江口之战
       url: https://zh.wikipedia.org/wiki/白江口之战
 
+- id: jp-otsu-palace
+  year: 667
+  title: 遷都近江大津宮，備戰唐朝反攻
+  category: politics
+  importance: 3
+  desc: 白江口戰敗後，中大兄皇子將都城由飛鳥遷至近江大津宮，遠離海岸以防唐朝與新羅聯軍來犯。翌年他在此即位為天智天皇，繼續推動戶籍與法制改革。
+  sources:
+    - title: 日文維基百科：近江大津宮
+      url: https://ja.wikipedia.org/wiki/近江大津宮
+
+- id: jp-koba-nenjaku
+  year: 670
+  title: 編製庚午年籍，日本首份全國戶籍
+  category: politics
+  importance: 4
+  desc: 天智天皇下令編製「庚午年籍」，是日本歷史上第一部涵蓋全國的戶籍。戶籍以氏姓為單位登錄人口，成為日後徵稅、徵兵與班田收授的基礎，象徵律令制國家在制度上邁出關鍵一步。
+  sources:
+    - title: 日文維基百科：古代日本の戸籍制度
+      url: https://ja.wikipedia.org/wiki/古代日本の戸籍制度
+
 - id: jp-jinshin-war
   year: 672
   title: 壬申之亂，天武天皇獲勝確立絕對皇權
@@ -307,6 +351,37 @@
     - title: 維基百科：壬申之亂
       url: https://zh.wikipedia.org/wiki/壬申之亂
 
+- id: jp-asuka-kiyomihara-code
+  year: 681
+  endYear: 689
+  title: 編纂並頒布飛鳥淨御原令
+  category: politics
+  importance: 4
+  desc: 天武天皇下令編纂日本第一部較完整的律令法典「飛鳥淨御原令」，天皇本人未及見其頒行便駕崩，由繼位的持統天皇於689年正式頒布施行，為701年的大寶律令奠定了基礎。
+  sources:
+    - title: 維基百科：飛鳥淨御原令
+      url: https://zh.wikipedia.org/wiki/飛鳥淨御原令
+
+- id: jp-handen-shuju
+  year: 692
+  title: 實施班田收授法，確立公地公民制土地分配
+  category: economy
+  importance: 4
+  desc: 持統天皇依飛鳥淨御原令的規定，依戶籍將口分田分配給人民耕作、身死後歸還國家的「班田收授法」正式實施。此法以中國均田制為藍本，是律令制國家「公地公民」原則落實於土地制度的具體展現。
+  sources:
+    - title: 維基百科：班田制
+      url: https://zh.wikipedia.org/wiki/班田制
+
+- id: jp-fujiwara-kyo
+  year: 694
+  title: 遷都藤原京，首座仿唐都城
+  category: politics
+  importance: 4
+  desc: 持統天皇將都城由飛鳥淨御原宮遷至藤原京，這是日本第一座仿照中國都城棋盤式格局建造、具備完整宮城與條坊制的正式都城，也是持續使用時間最短的都城，僅十六年後便讓位給平城京。
+  sources:
+    - title: 維基百科：藤原京
+      url: https://zh.wikipedia.org/wiki/藤原京
+
 - id: jp-taiho
   year: 701
   title: 大寶律令
@@ -315,6 +390,16 @@
   sources:
     - title: 維基百科：大寶律令
       url: https://zh.wikipedia.org/wiki/大寶律令
+
+- id: jp-wado-kaichin
+  year: 708
+  title: 鑄行和同開珍，日本最早的官鑄貨幣
+  category: economy
+  importance: 3
+  desc: 武藏國獻上銅礦後，朝廷仿唐朝開元通寶鑄造「和同開珍」銀錢與銅錢，是日本律令政府正式鑄行的第一種貨幣，用於支付遷都平城京的工資與物資採購，帶動了貨幣經濟的萌芽。
+  sources:
+    - title: 維基百科：和同開珍
+      url: https://zh.wikipedia.org/wiki/和同開珍
 
 - id: jp-nara-capital
   year: 710
