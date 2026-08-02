@@ -4,19 +4,31 @@
 #
 # 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
 
+- id: cn-liangzhu
+  year: -3000
+  endYear: -2000
+  title: 良渚古城，中華五千年文明的實證
+  category: culture
+  importance: 4
+  desc: 長江下游環太湖地區的新石器聚落群，有城牆、大型水利系統與階層分明的墓葬，玉琮玉鉞象徵神權與王權。2019 年列入世界遺產，被視為國家形態在此已然出現的證據 —— 這一批考古文化與同區間的三皇五帝條目並列，前者有碳十四定年，後者出自後世追記。良渚實際起於前 3300 年，此處為時間軸起點所截。
+  sources:
+    - title: 維基百科：良渚遺址
+      url: https://zh.wikipedia.org/wiki/良渚遺址
+    - title: 維基百科：良渚文化
+      url: https://zh.wikipedia.org/wiki/良渚文化
+    - title: 維基百科：古國時代
+      url: https://zh.wikipedia.org/wiki/古國時代
 
-
-
-
-
-
-
-
-
-
-
-
-
+- id: cn-longshan
+  year: -3000
+  endYear: -1900
+  title: 龍山文化，黑陶與城址林立
+  category: culture
+  importance: 3
+  desc: 黃河中下游承接仰韶與大汶口而起，以薄如蛋殼的黑陶得名，1928 年首見於山東城子崖。此期城址成群出現，聚落之間已有明顯的規模落差，是中原邁向早期國家的階段；二里頭即由此一系演變而來。
+  sources:
+    - title: 維基百科：龍山文化
+      url: https://zh.wikipedia.org/wiki/龍山文化
 
 - id: cn-fuxi
   year: -2852
@@ -84,6 +96,30 @@
       url: https://zh.wikipedia.org/wiki/堯
     - title: 維基百科：三皇五帝
       url: https://zh.wikipedia.org/wiki/三皇五帝
+
+- id: cn-taosi
+  year: -2300
+  endYear: -1900
+  title: 陶寺遺址，可能的堯都與最古老的天象臺
+  category: science
+  importance: 4
+  desc: 山西襄汾的龍山文化城址，出土宮殿、王陵、城牆與貴族墓園，另有一組夯土柱縫被認為是世上最古老的觀象臺，可由縫隙觀測日出方位以定節氣，並有中國最早的文字遺存之一。學界多視之為堯都的可能所在 —— 傳說中「堯命羲和觀象授時」繫於前 2357 年，與此僅隔半個世紀：一則是《尚書》的追記，一則是挖出來的夯土。
+  sources:
+    - title: 維基百科：陶寺遺址
+      url: https://zh.wikipedia.org/wiki/陶寺遺址
+    - title: 維基百科：龍山文化
+      url: https://zh.wikipedia.org/wiki/龍山文化
+
+- id: cn-shimao
+  year: -2300
+  endYear: -1800
+  title: 石峁石城，已知最大的新石器城址
+  category: politics
+  importance: 3
+  desc: 陝西神木的石砌城址，分內城、外城與「皇城台」，總面積四百二十五萬平方米，是已知中國新石器時代晚期規模最大的城。城牆藏玉、發現大量人頭奠基坑。沒有任何文獻記載過它 —— 傳世典籍寫滿了三皇五帝，卻對這座同時期最大的城一無所知。
+  sources:
+    - title: 維基百科：石峁遺址
+      url: https://zh.wikipedia.org/wiki/石峁遺址
 
 - id: cn-shanrang
   year: -2255
