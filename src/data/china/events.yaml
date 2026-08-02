@@ -323,6 +323,17 @@
     - title: 維基百科：漢匈戰爭
       url: https://zh.wikipedia.org/wiki/漢匈戰爭
 
+- id: cn-wenjing-rule
+  year: -180
+  endYear: -141
+  title: 文景之治，休養生息
+  category: politics
+  importance: 4
+  desc: 文帝、景帝兩朝約法省禁、輕徭薄賦，田租一度全免，其後定為三十稅一。四十年不興大役，府庫充盈到串錢的繩子都朽爛 —— 武帝日後得以連年用兵，本錢就是這裡攢下的。
+  sources:
+    - title: 維基百科：文景之治
+      url: https://zh.wikipedia.org/wiki/文景之治
+
 - id: cn-seven-states-rebellion
   year: -154
   title: 七國之亂，諸侯王勢力遭剪除
@@ -380,6 +391,18 @@
     - title: 維基百科：主父偃
       url: https://zh.wikipedia.org/wiki/主父偃
 
+- id: cn-hexi-corridor
+  year: -121
+  title: 霍去病取河西，設河西四郡
+  category: war
+  importance: 3
+  desc: 兩次出隴西，渾邪王率眾降漢。武威、張掖、酒泉、敦煌次第設郡，把匈奴與羌隔開，也把中原通往西域的走廊真正握在手裡 —— 張騫十七年前只是走通了路，這一戰才使它成為漢的領土。
+  sources:
+    - title: 維基百科：河西四郡
+      url: https://zh.wikipedia.org/wiki/河西四郡
+    - title: 維基百科：霍去病
+      url: https://zh.wikipedia.org/wiki/霍去病
+
 - id: cn-mobei-campaign
   year: -119
   title: 漠北之戰，衛青霍去病破匈奴
@@ -406,6 +429,30 @@
     - title: 維基百科：桑弘羊
       url: https://zh.wikipedia.org/wiki/桑弘羊
 
+- id: cn-wuzhu-coin
+  year: -118
+  title: 鑄五銖錢，幣制收歸中央
+  category: economy
+  importance: 3
+  desc: 廢半兩、行五銖，其後禁郡國私鑄、專令上林三官。這枚錢的形制沿用七百餘年，直到唐初改鑄開元通寶才告終 —— 鑄幣權歸於中央，自此是中原王朝的常態。
+  sources:
+    - title: 維基百科：五銖
+      url: https://zh.wikipedia.org/wiki/五銖
+
+- id: cn-han-four-commanderies
+  year: -108
+  title: 滅衛氏朝鮮，設漢四郡
+  category: war
+  importance: 3
+  desc: 漢軍水陸並進滅衛滿朝鮮，置樂浪、玄菟、真番、臨屯四郡。樂浪自此成為漢文化東傳的門戶，倭與三韓諸國都經由它與中原往來 —— 日本最早見於中國史書的紀錄，正是從這條路徑來的。
+  sources:
+    - title: 維基百科：漢四郡
+      url: https://zh.wikipedia.org/wiki/漢四郡
+    - title: 維基百科：衛滿朝鮮
+      url: https://zh.wikipedia.org/wiki/衛滿朝鮮
+    - title: 維基百科：樂浪郡
+      url: https://zh.wikipedia.org/wiki/樂浪郡
+
 - id: cn-shiji
   year: -104
   title: 司馬遷開始撰寫《史記》
@@ -417,6 +464,42 @@
     - title: 維基百科：司馬遷
       url: https://zh.wikipedia.org/wiki/司馬遷
 
+- id: cn-taichu-calendar
+  year: -104
+  title: 頒行太初曆，以正月為歲首
+  category: science
+  importance: 3
+  desc: 落下閎、鄧平等造，取代沿用秦制的顓頊曆。以孟春正月為一年之始、以無中氣之月置閏，這兩項自此定下 —— 今日農曆的骨架，就是在這一年立起來的。
+  sources:
+    - title: 維基百科：太初曆
+      url: https://zh.wikipedia.org/wiki/太初曆
+
+- id: cn-salt-iron-debate
+  year: -81
+  title: 鹽鐵會議，國策首次公開辯論
+  category: economy
+  importance: 3
+  desc: 昭帝詔郡國舉賢良文學，與桑弘羊當廷爭鹽鐵酒榷的存廢。賢良主張與民休息、斥專賣為與民爭利，桑弘羊持國用邊費不可缺。桓寬追記成《鹽鐵論》，是中國最早的一場經濟政策論戰實錄。
+  sources:
+    - title: 維基百科：鹽鐵論
+      url: https://zh.wikipedia.org/wiki/鹽鐵論
+    - title: 維基百科：桑弘羊
+      url: https://zh.wikipedia.org/wiki/桑弘羊
+
+- id: cn-huoguang-deposition
+  year: -74
+  title: 霍光廢昌邑王，立漢宣帝
+  category: politics
+  importance: 3
+  desc: 昌邑王劉賀即位二十七日即遭廢黜，霍光改立流落民間的戾太子之孫。權臣以「不可以承宗廟」廢立天子的先例自此而開，此後兩千年屢被援引；宣帝一朝則有昭宣之治之稱。
+  sources:
+    - title: 維基百科：霍光
+      url: https://zh.wikipedia.org/wiki/霍光
+    - title: 維基百科：劉賀
+      url: https://zh.wikipedia.org/wiki/劉賀
+    - title: 維基百科：昭宣之治
+      url: https://zh.wikipedia.org/wiki/昭宣之治
+
 - id: cn-western-regions-protectorate
   year: -60
   title: 設西域都護府，天山南北納入治下
@@ -427,26 +510,55 @@
     - title: 維基百科：西域都護府
       url: https://zh.wikipedia.org/wiki/西域都護府
 
+- id: cn-wang-zhaojun
+  year: -33
+  title: 昭君出塞，漢匈六十年無戰事
+  category: politics
+  importance: 3
+  desc: 呼韓邪單于入朝求為漢婿，元帝以宮女王嬙妻之。此時的和親已非前200年白登之後的輸幣求安，而是匈奴分裂、南匈奴附漢之後的結盟 —— 同一種形式，兩種完全相反的力量對比。
+  sources:
+    - title: 維基百科：王昭君
+      url: https://zh.wikipedia.org/wiki/王昭君
+
 - id: cn-wangmang
   year: 9
   title: 王莽篡漢，建立新朝
   category: politics
   importance: 3
+  desc: 廢孺子嬰自立，隨即托古改制：行王田制禁土地買賣、次年立六筦收鹽鐵酒與山澤之利、十五年間五度改幣。復古的藍本取自《周禮》，執行卻無配套，王田三年即廢，幣制反覆使民間交易崩壞 —— 新朝十四年而亡，敗因多在此。
   sources:
     - title: 維基百科：王莽
       url: https://zh.wikipedia.org/wiki/王莽
     - title: 維基百科：新朝
       url: https://zh.wikipedia.org/wiki/新朝
+    - title: 維基百科：王莽改制
+      url: https://zh.wikipedia.org/wiki/王莽改制
+    - title: 維基百科：六筦
+      url: https://zh.wikipedia.org/wiki/六筦
+
+- id: cn-lulin-chimei
+  year: 17
+  title: 綠林、赤眉起事
+  category: war
+  importance: 3
+  desc: 荊州饑民聚於綠林山，次年琅邪呂母之後又有赤眉軍起於青徐。兩支流民武裝並非衝著復漢而來，卻在六年內葬送新朝 —— 王莽改制的帳，最後是由災荒中的農民來結算的。
+  sources:
+    - title: 維基百科：綠林軍
+      url: https://zh.wikipedia.org/wiki/綠林軍
+    - title: 維基百科：赤眉軍
+      url: https://zh.wikipedia.org/wiki/赤眉軍
 
 - id: cn-kunyang
   year: 23
   title: 昆陽之戰，新莽覆滅
   category: war
-  importance: 3
-  desc: 王莽傾全國之兵四十餘萬圍昆陽，為劉秀所破，主力盡失，數月後長安即陷。綠林、赤眉並起的亂局裡，勝出的是這位兩年後稱帝的光武帝。
+  importance: 4
+  desc: 綠林軍已立劉玄為更始帝，王莽傾四十餘萬眾圍昆陽，為劉秀所破，主力盡失，同年十月長安即陷、王莽被殺。更始政權隨後入主長安，兩年後為赤眉軍所滅 —— 亂局裡真正勝出的，是昆陽這一戰打出名聲的劉秀。
   sources:
     - title: 維基百科：昆陽之戰
       url: https://zh.wikipedia.org/wiki/昆陽之戰
+    - title: 維基百科：更始政權
+      url: https://zh.wikipedia.org/wiki/更始政權
     - title: 維基百科：赤眉軍
       url: https://zh.wikipedia.org/wiki/赤眉軍
 
@@ -460,6 +572,18 @@
       url: https://zh.wikipedia.org/wiki/漢光武帝
     - title: 維基百科：東漢
       url: https://zh.wikipedia.org/wiki/東漢
+
+- id: cn-shangshutai
+  year: 26
+  title: 事歸台閣，尚書台架空三公
+  category: politics
+  importance: 3
+  desc: 光武帝增置尚書分曹理事，政務盡歸這個原本掌文書的近臣機構，三公徒有其名。皇帝身邊的秘書班子逐步變成真正的中樞，此後尚書、中書、門下一路演化，五百餘年後成為隋唐的三省。
+  sources:
+    - title: 維基百科：尚書令
+      url: https://zh.wikipedia.org/wiki/尚書令
+    - title: 維基百科：漢光武帝
+      url: https://zh.wikipedia.org/wiki/漢光武帝
 
 - id: cn-white-horse-temple
   year: 68
@@ -494,6 +618,18 @@
     - title: 維基百科：北匈奴
       url: https://zh.wikipedia.org/wiki/北匈奴
 
+- id: cn-gan-ying
+  year: 97
+  title: 甘英出使大秦，抵條支而返
+  category: politics
+  importance: 3
+  desc: 班超遣甘英西訪大秦（羅馬帝國），行至條支瀕海，安息船人誇言海途凶險，遂止步而還。漢與羅馬同時並存四百年，兩端都知道對方存在，卻始終只隔著中間商互通有無，這是最接近的一次。
+  sources:
+    - title: 維基百科：甘英
+      url: https://zh.wikipedia.org/wiki/甘英
+    - title: 維基百科：大秦
+      url: https://zh.wikipedia.org/wiki/大秦
+
 - id: cn-paper
   year: 105
   title: 蔡倫改進造紙術
@@ -516,6 +652,18 @@
       url: https://zh.wikipedia.org/wiki/地動儀
     - title: 維基百科：張衡
       url: https://zh.wikipedia.org/wiki/張衡
+
+- id: cn-liang-ji
+  year: 159
+  title: 桓帝誅梁冀，宦官全面掌權
+  category: politics
+  importance: 3
+  desc: 梁冀專擅二十年、毒殺質帝、廢立由己，桓帝倚宦官單超等五人族滅之，五人同日封侯。外戚一倒，權力並未回到皇帝手上，而是落進宦官集團 —— 七年後的黨錮之禍，對手就是他們。
+  sources:
+    - title: 維基百科：梁冀
+      url: https://zh.wikipedia.org/wiki/梁冀
+    - title: 維基百科：漢桓帝
+      url: https://zh.wikipedia.org/wiki/漢桓帝
 
 - id: cn-partisan-prohibitions
   year: 166
