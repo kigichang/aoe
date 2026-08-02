@@ -860,6 +860,18 @@
     - title: 維基百科：日本泡沫經濟
       url: https://zh.wikipedia.org/wiki/日本泡沫經濟
 
+- id: jp-55-system-collapse
+  year: 1993
+  title: 55年體制瓦解，細川護熙非自民聯合內閣成立
+  category: politics
+  importance: 4
+  desc: 自民黨因派系分裂與政治改革爭議遭倒閣，眾議院改選後細川護熙組建八黨派聯合內閣。自民黨自 1955 年成立以來連續 38 年的單獨執政終結，宣告「55年體制」正式瓦解。
+  sources:
+    - title: 維基百科：55年體制
+      url: https://zh.wikipedia.org/wiki/55年體制
+    - title: 維基百科：細川內閣
+      url: https://zh.wikipedia.org/wiki/細川內閣
+
 - id: jp-hanshin-sarin
   year: 1995
   title: 阪神大地震；東京地下鐵沙林毒氣事件
@@ -872,6 +884,48 @@
     - title: 維基百科：東京地下鐵沙林毒氣事件
       url: https://zh.wikipedia.org/wiki/東京地下鐵沙林毒氣事件
 
+- id: jp-yamaichi-collapse
+  year: 1997
+  title: 山一證券自主廢業，平成金融危機爆發
+  category: economy
+  importance: 3
+  desc: 消費稅率調升至 5% 後，日本四大證券之一的山一證券因巨額隱匿壞帳爆發自主廢業倒閉，北海道拓殖銀行亦相繼破產。平成金融危機加劇信用緊縮與資產通縮，使日本陷入「失落的二十年」。
+  sources:
+    - title: 日文維基百科：山一證券
+      url: https://ja.wikipedia.org/wiki/山一證券
+
+- id: jp-world-cup-2002
+  year: 2002
+  title: 日韓世界盃；小泉純一郎訪平壤簽署平壤宣言
+  category: culture
+  importance: 3
+  desc: 日韓兩國共同主辦第 17 屆世界盃足球賽，為世界盃首次在亞洲舉行；同年首相小泉純一郎首度出訪平壤與金正日會談並簽署《日朝平壤宣言》，北韓首度公開承認綁架日本國人事件並放還五名被害者。
+  sources:
+    - title: 維基百科：2002年國際足協世界盃
+      url: https://zh.wikipedia.org/wiki/2002年國際足協世界盃
+    - title: 維基百科：日朝平壤宣言
+      url: https://zh.wikipedia.org/wiki/日朝平壤宣言
+
+- id: jp-postal-privatization
+  year: 2005
+  title: 郵政民營化大選，自民黨獲壓倒性大勝
+  category: politics
+  importance: 4
+  desc: 首相小泉純一郎核心政策「郵政民營化」法案遭參議院否決，小泉毅然解散眾議院進行「郵政解散」大選。自民黨以改革為訴求斬獲過半席次，順利通過法案，成為平成時代結構性改革的代表作。
+  sources:
+    - title: 維基百科：日本郵政民營化
+      url: https://zh.wikipedia.org/wiki/日本郵政民營化
+
+- id: jp-dpj-transition
+  year: 2009
+  title: 民主黨政權交代，結束自民黨半世紀主導
+  category: politics
+  importance: 4
+  desc: 民主黨於第 45 屆眾議院大選中狂攬 308 席擊敗自民黨，黨首鳩山由紀夫組閣就任首相。這是自民黨建黨五十四年來首次失去第一大黨地位的單純政黨輪替。
+  sources:
+    - title: 維基百科：2009年日本眾議院選舉
+      url: https://zh.wikipedia.org/wiki/2009年日本眾議院選舉
+
 - id: jp-311-earthquake
   year: 2011
   title: 東日本大震災，福島核電廠事故
@@ -883,6 +937,16 @@
       url: https://zh.wikipedia.org/wiki/東日本大震災
     - title: 維基百科：福島第一核電廠事故
       url: https://zh.wikipedia.org/wiki/福島第一核電廠事故
+
+- id: jp-abenomics
+  year: 2012
+  title: 第二次安倍內閣成立，推動「安倍經濟學」
+  category: economy
+  importance: 4
+  desc: 自民黨勝選重返執政，安倍晉三再度就任首相並推出「三支箭」政策（超寬鬆貨幣政策、機動財政政策與經濟結構成長戰略），嘗試帶領日本走出長達二十年的通貨緊縮與低迷。
+  sources:
+    - title: 維基百科：安倍經濟學
+      url: https://zh.wikipedia.org/wiki/安倍經濟學
 
 - id: jp-reiwa-era
   year: 2019
