@@ -513,6 +513,36 @@
     - title: 維基百科：桶狹間之戰
       url: https://zh.wikipedia.org/wiki/桶狹間之戰
 
+- id: jp-ane-gawa-1570
+  year: 1570
+  title: 姊川之戰，織田德川聯軍擊敗淺井朝倉聯軍
+  category: war
+  importance: 4
+  desc: 織田信長與德川家康聯軍於近江姊川與妹川河畔迎擊妹婿淺井長政與越前朝倉義景聯軍。雙方爆發激烈血戰，信長軍最終成功突破朝倉軍防線取得勝利，重創「第一期信長包圍網」的核心武力。
+  sources:
+    - title: 維基百科：姊川之戰
+      url: https://zh.wikipedia.org/wiki/姊川之戰
+
+- id: jp-hieizan-burn-1571
+  year: 1571
+  title: 比叡山延曆寺燒討，信長打擊天台宗寺社勢力
+  category: religion
+  importance: 4
+  desc: 織田信長因天台宗大本山比叡山延曆寺庇護淺井朝倉聯軍，率大軍包圍比叡山並下令將山中堂塔神社全數焚毀，萬餘名僧兵與平民遭殘酷屠戮。此舉震撼全國宗教界，奠定信長壓制割據寺社勢力的基礎。
+  sources:
+    - title: 日文維基百科：比叡山燒討 (1571年)
+      url: https://ja.wikipedia.org/wiki/比叡山焼き討ち_(1571年)
+
+- id: jp-mikatagahara-1572
+  year: 1572
+  title: 三方原之戰，武田信玄發動西上作戰大破德川軍
+  category: war
+  importance: 4
+  desc: 「戰國第一名將」武田信玄響應包圍網號召發動西上作戰，率精銳騎兵於遠江三方原台地奇襲並大破德川家康與織田援軍。家康倉皇逃回濱松城。然而信玄隨後於陣中病逝，信長危機得以化解。
+  sources:
+    - title: 維基百科：三方原之戰
+      url: https://zh.wikipedia.org/wiki/三方原之戰
+
 - id: jp-nobunaga
   year: 1573
   title: 織田信長放逐足利義昭，室町幕府終結
@@ -526,6 +556,57 @@
       url: https://zh.wikipedia.org/wiki/室町幕府
     - title: 維基百科：足利義昭
       url: https://zh.wikipedia.org/wiki/足利義昭
+
+- id: jp-azuchi-castle-1576
+  year: 1576
+  endYear: 1579
+  title: 織田信長建造安土城，開創巨大高層天守閣建築
+  category: culture
+  importance: 4
+  desc: 織田信長於琵琶湖畔安土山興建巨大五重七階的高層城堡「安土城」。安土城擁有金碧輝煌的朱漆外觀與狩野派壁畫天守，兼具軍事防禦機能與政治權威象徵，開創了日本「城郭建築」與桃山文化的時代標誌。
+  sources:
+    - title: 維基百科：安土城
+      url: https://zh.wikipedia.org/wiki/安土城
+
+- id: jp-rakuichi-rakuza-1577
+  year: 1577
+  title: 織田信長頒布樂市樂座令，實施自由貿易與撤銷關所
+  category: economy
+  importance: 4
+  desc: 織田信長於安土城下町等領地全面頒布《樂市樂座令》，強制廢除獨佔交易特權的商業同業公會「座」與關所課稅。免除商稅與自由開市吸引了全日本商人與資本，大幅促進了商品經濟繁榮與城下町發展。
+  sources:
+    - title: 維基百科：樂市樂座
+      url: https://zh.wikipedia.org/wiki/樂市樂座
+
+- id: jp-tedorigawa-1577
+  year: 1577
+  title: 手取川之戰，「越後之龍」上杉謙信大破織田軍
+  category: war
+  importance: 3
+  desc: 上杉謙信南下加賀響應包圍網，於手取川大破柴田勝家與前田利家率領的織田大軍。手取川之戰為上杉謙信生涯最後大捷，然而翌年謙信暴斃，北陸戰線隨之動搖。
+  sources:
+    - title: 維基百科：手取川之戰
+      url: https://zh.wikipedia.org/wiki/手取川之戰
+
+- id: jp-ishiyama-honganji-1580
+  year: 1580
+  title: 石山合戰終結，本願寺顯如撤離石山城
+  category: religion
+  importance: 4
+  desc: 織田信長與淨土真宗本願寺顯如教團經歷長達十年之久的「石山合戰」。在朝廷敕命下雙方達成和睦，顯如率門徒退出石山本願寺（後之地改建為大坂城），信長徹底消滅了宗教武裝力量對政權的最後威脅。
+  sources:
+    - title: 維基百科：石山合戰
+      url: https://zh.wikipedia.org/wiki/石山合戰
+
+- id: jp-yasuke-1581
+  year: 1581
+  title: 織田信長召見黑人彌助，授予武士身分
+  category: culture
+  importance: 3
+  desc: 耶穌會巡視員范禮留帶同來自非洲的黑人僕從覲見織田信長。信長對其魁梧體格極感興趣，將其賜名「彌助」（Yasuke）並收為專屬近侍武士，成為日本史上首位非亞洲出身的武士。
+  sources:
+    - title: 維基百科：彌助
+      url: https://zh.wikipedia.org/wiki/彌助
 
 - id: jp-koshu-conquest-1582
   year: 1582
