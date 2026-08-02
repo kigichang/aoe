@@ -306,6 +306,18 @@
     - title: 維基百科：空海
       url: https://zh.wikipedia.org/wiki/空海
 
+- id: jp-otenmon
+  year: 866
+  title: 應天門之變，藤原氏攝關政治確立
+  category: politics
+  importance: 3
+  desc: 皇居應天門失火，藤原良房藉排擠伴善男、紀豐城等競爭政敵，獲賜「攝政」重權。此事件確立了藤原氏外戚獨攬朝政的「攝關政治」體制。
+  sources:
+    - title: 維基百科：應天門之變
+      url: https://zh.wikipedia.org/wiki/應天門之變
+    - title: 維基百科：攝關政治
+      url: https://zh.wikipedia.org/wiki/攝關政治
+
 - id: jp-end-kentoshi
   year: 894
   title: 廢止遣唐使
@@ -380,6 +392,16 @@
     - title: 維基百科：源賴朝
       url: https://zh.wikipedia.org/wiki/源賴朝
 
+- id: jp-jokyu
+  year: 1221
+  title: 承久之亂，幕府控制朝廷與西國
+  category: war
+  importance: 4
+  desc: 後鳥羽上皇發布討幕宣旨起兵企圖推翻幕府，北條義時率鎌倉武士迅即攻入京都平定。戰後幕府流放三上皇並設「六波羅探題」嚴密監視朝廷，幕府對朝廷與全國的控制力達到頂峰。
+  sources:
+    - title: 維基百科：承久之亂
+      url: https://zh.wikipedia.org/wiki/承久之亂
+
 - id: jp-nichiren
   year: 1253
   title: 日蓮創立法華信仰
@@ -429,6 +451,18 @@
     - title: 維基百科：南北朝時代 (日本)
       url: https://zh.wikipedia.org/wiki/南北朝時代_(日本)
 
+- id: jp-minatogawa
+  year: 1336
+  title: 建武新政失敗，湊川之戰與南北朝對立
+  category: war
+  importance: 4
+  desc: 後醍醐天皇推行建武新政試圖復闢公家親政，然因忽視武士權益引發足利尊氏反叛。湊川之戰中忠臣楠木正成戰死，後醍醐天皇避居吉野設立南朝，足利尊氏於京都另立北朝，日本進入半個多世紀的南北朝對立時期。
+  sources:
+    - title: 維基百科：建武新政
+      url: https://zh.wikipedia.org/wiki/建武新政
+    - title: 維基百科：湊川之戰
+      url: https://zh.wikipedia.org/wiki/湊川之戰
+
 - id: jp-kango-trade
   year: 1404
   title: 勘合貿易，日明通商
@@ -468,6 +502,16 @@
   sources:
     - title: 維基百科：方濟·沙勿略
       url: https://zh.wikipedia.org/wiki/方濟·沙勿略
+
+- id: jp-okehazama
+  year: 1560
+  title: 桶狹間之戰，織田信長奇襲崛起
+  category: war
+  importance: 4
+  desc: 今川義元率大軍上洛突襲尾張，織田信長於豪雨中發動戰術奇襲斬殺今川義元。桶狹間之戰使織田信長名震日本，翻轉了戰國大名的實力對比，為天下布武拉開序幕。
+  sources:
+    - title: 維基百科：桶狹間之戰
+      url: https://zh.wikipedia.org/wiki/桶狹間之戰
 
 - id: jp-nobunaga
   year: 1573
@@ -585,6 +629,16 @@
   sources:
     - title: 維基百科：元祿文化
       url: https://zh.wikipedia.org/wiki/元祿文化
+
+- id: jp-ako-incident
+  year: 1702
+  title: 元祿赤穗事件（四十七浪士復仇）
+  category: culture
+  importance: 3
+  desc: 赤穗藩主淺野長矩於江戶城砍傷吉良義央遭切腹廢藩，其舊臣大石內藏助等四十七人隱忍兩年後於夜半襲擊吉良邸斬殺敵首復仇。赤穗浪士復仇震撼幕府與民間，被視為主臣忠義與武士道的精神象徵，後改編為《假名手本忠臣藏》風靡至今。
+  sources:
+    - title: 維基百科：赤穗浪士
+      url: https://zh.wikipedia.org/wiki/赤穗浪士
 
 - id: jp-dojima-rice
   year: 1730
@@ -713,6 +767,16 @@
   sources:
     - title: 維基百科：九一八事變
       url: https://zh.wikipedia.org/wiki/九一八事變
+
+- id: jp-226-incident
+  year: 1936
+  title: 二二六事件，軍國主義勢力抬頭
+  category: politics
+  importance: 4
+  desc: 陸軍皇道派青年將校率近千五百名士兵於東京發動政變，殺害內大臣齋藤實、大藏大臣高橋是清等重臣並佔領永田町。政變雖於四日內遭鎮壓，但統制派軍閥自此完全主導軍政大權，加速了日本走向軍國主義與對外侵略的步伐。
+  sources:
+    - title: 維基百科：二二六事件
+      url: https://zh.wikipedia.org/wiki/二二六事件
 
 - id: jp-pearl-harbor
   year: 1941
