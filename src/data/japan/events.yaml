@@ -597,6 +597,18 @@
     - title: 維基百科：朱印船
       url: https://zh.wikipedia.org/wiki/朱印船
 
+- id: jp-ryukyu-invasion-1609
+  year: 1609
+  title: 薩摩藩發動慶長琉球之役，琉球形成兩屬關係
+  category: war
+  importance: 4
+  desc: 薩摩藩主島津家久率軍入侵琉球王國俘虜尚寧王。戰後琉球被迫向薩摩藩稱臣割讓奄美群島，並定期向江戶幕府派遣使節，同時維持對中國朝貢，形成「兩屬」外交體制。
+  sources:
+    - title: 維基百科：慶長琉球之役
+      url: https://zh.wikipedia.org/wiki/慶長琉球之役
+    - title: 維基百科：琉球國
+      url: https://zh.wikipedia.org/wiki/琉球國
+
 - id: jp-osaka-campaign
   year: 1614
   endYear: 1615
@@ -650,6 +662,28 @@
   sources:
     - title: 維基百科：鎖國 (日本)
       url: https://zh.wikipedia.org/wiki/鎖國_(日本)
+
+- id: jp-dejima-dutch-1641
+  year: 1641
+  title: 荷蘭商館遷至長崎出島，西洋貿易獨佔
+  category: economy
+  importance: 4
+  desc: 幕府將長崎港人工島出島上的葡萄牙人驅逐後，命令平戶的荷蘭東印度公司商館搬遷至出島。出島成為鎖國兩百年期間日本與西洋唯一的貿易與文化窗口。
+  sources:
+    - title: 維基百科：出島
+      url: https://zh.wikipedia.org/wiki/出島
+    - title: 維基百科：荷蘭東印度公司
+      url: https://zh.wikipedia.org/wiki/荷蘭東印度公司
+
+- id: jp-shakushain-revolt-1669
+  year: 1669
+  title: 沙庫沙英之亂，阿伊努人起義反抗松前藩
+  category: war
+  importance: 3
+  desc: 因松前藩獨佔阿伊努貿易與掠奪，阿伊努首領沙庫沙英發動蝦夷地阿伊努人起兵抗爭。松前藩結合幕府軍將其鎮壓，松前藩對蝦夷地阿伊努人的服屬體制隨之定型。
+  sources:
+    - title: 日文維基百科：沙庫沙英之亂
+      url: https://ja.wikipedia.org/wiki/シャクシャインの戦い
 
 - id: jp-jokyo-calendar
   year: 1684
@@ -741,6 +775,26 @@
   sources:
     - title: 維基百科：寬政改革
       url: https://zh.wikipedia.org/wiki/寬政改革
+
+- id: jp-foreign-ship-repulsion-1825
+  year: 1825
+  title: 幕府頒布《異國船打拂令》
+  category: politics
+  importance: 4
+  desc: 為應對頻繁出沒日本沿海的歐美船隻，江戶幕府頒布《異國船打拂令》（無二念打拂令），下令全日本沿海各藩凡發現外國船隻接近，無須確認身分一律開砲擊退。
+  sources:
+    - title: 日文維基百科：異國船打拂令
+      url: https://ja.wikipedia.org/wiki/異国船打払令
+
+- id: jp-siebold-incident-1828
+  year: 1828
+  title: 西博德事件，精密日本地圖流出案
+  category: science
+  importance: 3
+  desc: 出島荷蘭館醫西博德歸國前夕，幕府發現其行李中帶有禁令出口的《大日本沿海輿地全圖》（伊能忠敬地圖複製本）。西博德遭永久驅逐出境，提供地圖的天文方高橋景保等蘭學者遭逮捕下獄。
+  sources:
+    - title: 維基百科：菲利普·弗朗茨·馮·西博爾德
+      url: https://zh.wikipedia.org/wiki/菲利普·弗朗茨·馮·西博爾德
 
 - id: jp-hokusai-wave
   year: 1831
