@@ -374,6 +374,42 @@
     - title: 維基百科：國風文化
       url: https://zh.wikipedia.org/wiki/國風文化
 
+- id: jp-engi-shoen
+  year: 902
+  title: 頒布延喜莊園整理令，班田收授法實質崩潰
+  category: economy
+  importance: 4
+  desc: 醍醐天皇為了抑制貴族與寺社非法佔有土地（莊園），頒布了《延喜莊園整理令》。然而此令未能有效執行，反而標誌著基於律令制的「班田收授法」徹底崩潰，日本正式轉向以莊園和公領為基礎的「王朝國家」體制。
+  sources:
+    - title: 維基百科：平安時代
+      url: https://zh.wikipedia.org/wiki/平安時代
+    - title: 維基百科：莊園整理令
+      url: https://zh.wikipedia.org/wiki/莊園整理令
+
+- id: jp-johei-tengyo
+  year: 939
+  title: 承平天慶之亂，平將門與藤原純友叛亂
+  category: war
+  importance: 4
+  desc: 關東的平將門自稱「新皇」發動叛亂，同時瀨戶內海的海賊藤原純友也起兵作亂。朝廷無力直接鎮壓，只能依靠其他地方武士平亂，這標誌著武士階級作為軍事力量在王朝國家中開始抬頭。
+  sources:
+    - title: 維基百科：平安時代
+      url: https://zh.wikipedia.org/wiki/平安時代
+    - title: 維基百科：承平天慶之亂
+      url: https://zh.wikipedia.org/wiki/承平天慶之亂
+
+- id: jp-anna-incident
+  year: 969
+  title: 安和之變，藤原氏排擠他姓確立攝關政治
+  category: politics
+  importance: 4
+  desc: 左大臣源高明被藤原氏誣告謀反並流放至九州。此後，朝廷高層職位完全由藤原北家壟斷，排除了其他姓氏的競爭，王朝國家的權力核心「攝關政治」體制正式確立。
+  sources:
+    - title: 維基百科：平安時代
+      url: https://zh.wikipedia.org/wiki/平安時代
+    - title: 維基百科：安和之變
+      url: https://zh.wikipedia.org/wiki/安和之變
+
 - id: jp-genji
   year: 1008
   title: 紫式部《源氏物語》
@@ -400,6 +436,18 @@
       url: https://zh.wikipedia.org/wiki/源氏物語
     - title: 維基百科：紫式部
       url: https://zh.wikipedia.org/wiki/紫式部
+
+- id: jp-enkyu-shoen
+  year: 1069
+  title: 頒布延久莊園整理令，加強朝廷土地控制
+  category: economy
+  importance: 4
+  desc: 後三條天皇為了削弱藤原氏等權門的經濟基礎，頒布了嚴格的《延久莊園整理令》，設立記錄莊園券契所審查莊園合法性。這在一定程度上恢復了朝廷的財政與國司的權威。
+  sources:
+    - title: 維基百科：平安時代
+      url: https://zh.wikipedia.org/wiki/平安時代
+    - title: 維基百科：莊園整理令
+      url: https://zh.wikipedia.org/wiki/莊園整理令
 
 - id: jp-insei
   year: 1086
@@ -430,6 +478,18 @@
   category: war
   importance: 3
   sources:
+    - title: 維基百科：保元之亂
+      url: https://zh.wikipedia.org/wiki/保元之亂
+
+- id: jp-hogen-rebellion
+  year: 1156
+  title: 保元之亂，皇室內鬨引發武士實力決定政局
+  category: war
+  importance: 5
+  desc: 圍繞皇位繼承問題，後白河天皇與崇德上皇發生對立，雙方各自拉攏源氏與平氏武士集團。天皇方最終獲勝，這場內鬨使得武士的軍事實力成為決定國家政局的關鍵，王朝國家逐漸走向終結。
+  sources:
+    - title: 維基百科：平安時代
+      url: https://zh.wikipedia.org/wiki/平安時代
     - title: 維基百科：保元之亂
       url: https://zh.wikipedia.org/wiki/保元之亂
 
