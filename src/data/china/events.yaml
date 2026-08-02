@@ -128,22 +128,63 @@
   year: -1600
   title: 商湯滅夏
   category: politics
-  importance: 3
+  importance: 4
+  desc: 湯以伊尹為輔，敗桀於鳴條。商行內外服制：王畿由百官直轄為內服，外服則封侯、甸、男、衛，對周邊方國採聯合而非直接統治 —— 這是比周的分封更鬆散的一層架構。年份出自夏商周斷代工程的推定。
   sources:
     - title: 維基百科：商朝
       url: https://zh.wikipedia.org/wiki/商朝
+    - title: 維基百科：鳴條之戰
+      url: https://zh.wikipedia.org/wiki/鳴條之戰
+
+- id: cn-yiyin-taijia
+  year: -1580
+  title: 伊尹放太甲於桐宮
+  category: politics
+  importance: 3
+  desc: 太甲即位而不遵湯法，元老伊尹放之於桐宮，三年後見其悔過乃還政。這是中國最早的權臣廢立記載 —— 一千五百年後霍光廢昌邑王，援引的正是「伊尹相殷，廢太甲以安宗廟」。但《竹書紀年》另載伊尹自立而遭太甲所殺，兩說截然相反；商前期的紀年亦非考古定年，此處年份為後世推算。
+  sources:
+    - title: 維基百科：伊尹
+      url: https://zh.wikipedia.org/wiki/伊尹
+    - title: 維基百科：太甲
+      url: https://zh.wikipedia.org/wiki/太甲
 
 - id: cn-oracle-bone
   year: -1300
   title: 盤庚遷殷，甲骨文成熟
   category: culture
   importance: 4
-  desc: 現存最早的成系統漢字，也是中國信史的重要物證。
+  desc: 商自建國以來屢遷，經九世之亂後盤庚定都於殷，此後二百七十三年不再遷徙。甲骨文是現存最早的成系統漢字，也是中國信史的物證 —— 它到 1899 年才被辨識出來，此前商朝一直被當成傳說。卜辭所用的干支紀日循環至今未斷，是世上連續使用最久的紀日法。
   sources:
     - title: 維基百科：盤庚
       url: https://zh.wikipedia.org/wiki/盤庚
     - title: 維基百科：甲骨文
       url: https://zh.wikipedia.org/wiki/甲骨文
+    - title: 維基百科：殷墟
+      url: https://zh.wikipedia.org/wiki/殷墟
+
+- id: cn-wuding
+  year: -1250
+  title: 武丁中興，婦好將兵
+  category: war
+  importance: 4
+  desc: 武丁在位五十九年，征伐八十餘方國，商的勢力達於極盛，甲骨卜辭也自此大量出現。其配偶婦好見於卜辭，曾統兵征伐羌方，是中國最早有文字可考的女性統帥；1976 年出土的婦好墓，是殷墟唯一未經盜掘的王室墓葬。
+  sources:
+    - title: 維基百科：武丁
+      url: https://zh.wikipedia.org/wiki/武丁
+    - title: 維基百科：婦好
+      url: https://zh.wikipedia.org/wiki/婦好
+
+- id: cn-houmuwu-ding
+  year: -1200
+  title: 後母戊鼎，青銅工藝極盛
+  category: science
+  importance: 4
+  desc: 重逾八百公斤，是現存最大最重的古代青銅器，需數百人協同澆鑄。銘文「后母戊」指武丁之妻婦妌，鼎應為其子祖庚或祖甲所鑄。同一時期東地中海各文明正陷於青銅時代崩潰 —— 兩端的青銅文明，一個到頂，一個落幕。
+  sources:
+    - title: 維基百科：後母戊鼎
+      url: https://zh.wikipedia.org/wiki/後母戊鼎
+    - title: 維基百科：殷墟
+      url: https://zh.wikipedia.org/wiki/殷墟
 
 - id: cn-zhou-founding
   year: -1046
