@@ -429,6 +429,20 @@
     - title: 維基百科：元日戰爭
       url: https://zh.wikipedia.org/wiki/元日戰爭
 
+- id: jp-genko-war
+  year: 1331
+  title: 元弘之亂，後醍醐天皇舉兵倒幕
+  category: war
+  importance: 4
+  desc: 不滿鎌倉幕府干預皇位繼承的後醍醐天皇，帶著象徵正統的三神器逃出京都，於笠置山舉兵倒幕。雖然天皇很快被捕並流放隱岐，但這場動亂成為推翻鎌倉幕府、開啟南北朝動盪的序曲。
+  sources:
+    - title: 維基百科：南北朝時代 (日本)
+      url: https://zh.wikipedia.org/wiki/南北朝時代_(日本)
+    - title: 維基百科：元弘之亂
+      url: https://zh.wikipedia.org/wiki/元弘之亂
+    - title: 維基百科：後醍醐天皇
+      url: https://zh.wikipedia.org/wiki/後醍醐天皇
+
 - id: jp-kamakura-fall
   year: 1333
   title: 鎌倉幕府滅亡
@@ -475,6 +489,20 @@
     - title: 維基百科：南北朝時代 (日本)
       url: https://zh.wikipedia.org/wiki/南北朝時代_(日本)
 
+- id: jp-nanbokucho-split
+  year: 1336
+  title: 湊川之戰建武政權崩潰，後醍醐天皇逃往吉野
+  category: politics
+  importance: 5
+  desc: 建武新政失敗後，足利尊氏反叛並在湊川之戰擊敗朝廷軍隊。尊氏在京都擁立北朝天皇，而後醍醐天皇則攜帶三神器逃至大和國吉野建立南朝。自此，日本出現兩個並立的朝廷，史稱「南北朝時代」。
+  sources:
+    - title: 維基百科：南北朝時代 (日本)
+      url: https://zh.wikipedia.org/wiki/南北朝時代_(日本)
+    - title: 維基百科：吉野
+      url: https://zh.wikipedia.org/wiki/吉野
+    - title: 維基百科：凑川之战
+      url: https://zh.wikipedia.org/wiki/凑川之战
+
 - id: jp-muromachi-bakufu-est
   year: 1338
   title: 足利尊氏受封征夷大將軍，開創室町幕府
@@ -488,6 +516,33 @@
       url: https://zh.wikipedia.org/wiki/足利尊氏
     - title: 維基百科：征夷大將軍
       url: https://zh.wikipedia.org/wiki/征夷大將軍
+
+- id: jp-jinno-shotoki
+  year: 1339
+  title: 後醍醐天皇駕崩，北畠親房著《神皇正統記》
+  category: culture
+  importance: 4
+  desc: 南朝的後醍醐天皇駕崩，南朝勢力受挫。為鞏固南朝正統性並教育幼帝，重臣北畠親房撰寫了《神皇正統記》，強調三神器為皇室正統的唯一憑證，對後世的皇國史觀產生深遠影響。
+  sources:
+    - title: 維基百科：南北朝時代 (日本)
+      url: https://zh.wikipedia.org/wiki/南北朝時代_(日本)
+    - title: 維基百科：神皇正統記
+      url: https://zh.wikipedia.org/wiki/神皇正統記
+    - title: 維基百科：北畠親房
+      url: https://zh.wikipedia.org/wiki/北畠親房
+
+- id: jp-kanno-disturbance
+  year: 1350
+  title: 觀應之擾亂，室町幕府內部分裂，南朝趁機反攻
+  category: war
+  importance: 4
+  endYear: 1352
+  desc: 室町幕府內部爆發了將軍足利尊氏與其弟足利直義之間的激烈政治與軍事鬥爭（觀應之擾亂）。雙方為了打擊對手，不惜輪流向南朝短暫降伏。南朝軍隊趁機數次攻入京都，使南北朝戰局陷入膠著。
+  sources:
+    - title: 維基百科：南北朝時代 (日本)
+      url: https://zh.wikipedia.org/wiki/南北朝時代_(日本)
+    - title: 維基百科：观应扰乱
+      url: https://zh.wikipedia.org/wiki/观应扰乱
 
 - id: jp-yoshimitsu-shogun
   year: 1368
@@ -513,6 +568,18 @@
     - title: 維基百科：明德和約
       url: https://zh.wikipedia.org/wiki/明德和約
 
+- id: jp-nanbokucho-unification
+  year: 1392
+  title: 南北朝合一，南朝交出三神器結束56年分裂
+  category: politics
+  importance: 5
+  desc: 經過長達56年的戰亂與對立，南朝勢力已大幅衰退。在室町幕府將軍足利義滿的斡旋與保證下（明德和約），南朝後龜山天皇將三神器交還北朝後小松天皇，日本重新歸於統一。
+  sources:
+    - title: 維基百科：南北朝時代 (日本)
+      url: https://zh.wikipedia.org/wiki/南北朝時代_(日本)
+    - title: 維基百科：三神器
+      url: https://zh.wikipedia.org/wiki/三神器
+
 - id: jp-kitayama-culture
   year: 1397
   title: 足利義滿建立金閣寺，北山文化繁榮
@@ -525,7 +592,7 @@
     - title: 維基百科：鹿苑寺
       url: https://zh.wikipedia.org/wiki/鹿苑寺
     - title: 維基百科：北山文化
-      url: https://zh.wikipedia.org/wiki/北山文化
+      url: https://zh.wikipedia.org/wiki/北山文化_(日本)
 
 - id: jp-oei-rebellion
   year: 1399
@@ -600,7 +667,7 @@
     - title: 維基百科：慈照寺
       url: https://zh.wikipedia.org/wiki/慈照寺
     - title: 維基百科：東山文化
-      url: https://zh.wikipedia.org/wiki/東山文化
+      url: https://zh.wikipedia.org/wiki/東山文化_(日本)
 
 - id: jp-teppo
   year: 1543
