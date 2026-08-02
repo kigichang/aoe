@@ -530,6 +530,30 @@
     - title: 維基百科：院政
       url: https://zh.wikipedia.org/wiki/院政
 
+- id: jp-shirakawa-insei-start
+  year: 1086
+  title: 白河上皇開啟院政，法皇凌駕天皇掌握實權
+  category: politics
+  importance: 5
+  desc: 白河天皇將皇位讓給年幼的堀河天皇，成為「上皇」，並在院廳組建自己的家司與近衛軍團處理國政。這種退位天皇掌握實權的「院政」體系，成功壓制了藤原氏的攝關政治。
+  sources:
+    - title: 維基百科：院政
+      url: https://zh.wikipedia.org/wiki/院政
+    - title: 維基百科：白河天皇
+      url: https://zh.wikipedia.org/wiki/白河天皇
+
+- id: jp-toba-insei
+  year: 1129
+  title: 鳥羽上皇展開院政，北面武士力量擴張
+  category: politics
+  importance: 4
+  desc: 白河法皇駕崩後，鳥羽上皇接掌院政。他大量提拔源氏與平氏等武士擔任守衛院廳的「北面武士」，藉此強化軍事力量。這使得武士階級正式進入中央政治舞台。
+  sources:
+    - title: 維基百科：院政
+      url: https://zh.wikipedia.org/wiki/院政
+    - title: 維基百科：鳥羽天皇
+      url: https://zh.wikipedia.org/wiki/鳥羽天皇
+
 - id: jp-hogen
   year: 1156
   title: 保元之亂
@@ -551,6 +575,54 @@
     - title: 維基百科：保元之亂
       url: https://zh.wikipedia.org/wiki/保元之亂
 
+- id: jp-hogen-insei
+  year: 1156
+  title: 保元之亂，後白河天皇與崇德上皇為院政主導權內鬨
+  category: war
+  importance: 4
+  desc: 為了爭奪院政的主導權，後白河天皇與崇德上皇分別召集武士爆發武裝衝突。這場內鬨不僅使皇室權威受損，也證明了不論哪一方掌握院政，都必須仰賴武士的軍事實力。
+  sources:
+    - title: 維基百科：院政
+      url: https://zh.wikipedia.org/wiki/院政
+    - title: 維基百科：保元之亂
+      url: https://zh.wikipedia.org/wiki/保元之亂
+
+- id: jp-heiji-insei
+  year: 1159
+  title: 平治之亂，平清盛擊敗源義朝，武士勢力介入院政
+  category: war
+  importance: 5
+  desc: 後白河上皇的親信之間發生權力鬥爭，引發平治之亂。平清盛在動亂中擊敗了源義朝，成為朝廷唯一倚重的武裝力量。此後，院政的實行不得不深受平氏武家政權的牽制。
+  sources:
+    - title: 維基百科：院政
+      url: https://zh.wikipedia.org/wiki/院政
+    - title: 維基百科：平治之乱
+      url: https://zh.wikipedia.org/wiki/平治之乱
+
+- id: jp-heiji-taira
+  year: 1159
+  title: 平治之亂，平清盛消滅源氏勢力獨攬朝政
+  category: politics
+  importance: 4
+  desc: 在平治之亂中，平清盛成功擊敗源義朝為首的源氏勢力，掌握了京都的軍事控制權。平氏一族開始在朝廷中獨攬大權，為平氏政權的建立奠定了堅實基礎。
+  sources:
+    - title: 維基百科：平治之乱
+      url: https://zh.wikipedia.org/wiki/平治之乱
+    - title: 維基百科：平清盛
+      url: https://zh.wikipedia.org/wiki/平清盛
+
+- id: jp-daijo-daijin-taira
+  year: 1167
+  title: 平清盛就任太政大臣，建立首個武家政權
+  category: politics
+  importance: 5
+  desc: 平清盛打破常規，以武士身分就任朝廷最高文官職位「太政大臣」。平氏一族不僅壟斷朝廷高位，還與天皇家結為外戚，建立了日本歷史上第一個武家政權「平氏政權」。
+  sources:
+    - title: 維基百科：平清盛
+      url: https://zh.wikipedia.org/wiki/平清盛
+    - title: 維基百科：太政大臣
+      url: https://zh.wikipedia.org/wiki/太政大臣
+
 - id: jp-honen-pureland
   year: 1175
   title: 法然開創淨土宗，念佛信仰普及
@@ -562,6 +634,30 @@
       url: https://zh.wikipedia.org/wiki/法然
     - title: 日文維基百科：法然
       url: https://ja.wikipedia.org/wiki/法然
+
+- id: jp-shishigatani
+  year: 1177
+  title: 鹿谷陰謀，後白河法皇企圖推翻平氏失敗
+  category: politics
+  importance: 3
+  desc: 面對平氏政權的專橫，後白河法皇的近臣在京都東山的鹿谷別墅密謀打倒平氏。陰謀敗露後，平清盛流放了參與者，並將後白河法皇幽禁，平氏的獨裁統治達到頂峰。
+  sources:
+    - title: 維基百科：鹿谷陰謀
+      url: https://zh.wikipedia.org/wiki/鹿谷陰謀
+    - title: 維基百科：平清盛
+      url: https://zh.wikipedia.org/wiki/平清盛
+
+- id: jp-fukuhara-kyo
+  year: 1180
+  title: 平清盛強行遷都福原京，引發全國源氏舉兵
+  category: politics
+  importance: 4
+  desc: 為了推動宋日貿易並逃避京都舊勢力反對，平清盛強行將國都遷往攝津國的福原京（今神戶）。此舉引發極大民怨，加上以仁王發布討平旨令，促使全國各地的源氏武士紛紛舉兵反抗。
+  sources:
+    - title: 維基百科：福原京
+      url: https://zh.wikipedia.org/wiki/福原京
+    - title: 維基百科：平清盛
+      url: https://zh.wikipedia.org/wiki/平清盛
 
 - id: jp-dannoura
   year: 1185
@@ -583,6 +679,16 @@
       url: https://zh.wikipedia.org/wiki/鎌倉時代
     - title: 維基百科：壇之浦之戰
       url: https://zh.wikipedia.org/wiki/壇之浦之戰
+
+- id: jp-dan-no-ura-taira
+  year: 1185
+  title: 壇之浦之戰，平氏政權徹底覆滅
+  category: war
+  importance: 5
+  desc: 經過長達五年的源平合戰，源義經率領的源氏水軍在壇之浦海戰中徹底擊敗平氏。年幼的安德天皇抱著三神器投海自盡，曾經權傾一時的平氏政權至此覆滅。
+  sources:
+    - title: 維基百科：平清盛
+      url: https://zh.wikipedia.org/wiki/平清盛
 
 - id: jp-kamakura-bakufu
   year: 1192
@@ -641,6 +747,18 @@
   sources:
     - title: 維基百科：鎌倉時代
       url: https://zh.wikipedia.org/wiki/鎌倉時代
+    - title: 維基百科：承久之亂
+      url: https://zh.wikipedia.org/wiki/承久之亂
+
+- id: jp-jokyu-insei
+  year: 1221
+  title: 承久之亂後，幕府控制朝廷，院政實權名存實亡
+  category: politics
+  importance: 4
+  desc: 後鳥羽上皇發動承久之亂討伐鎌倉幕府失敗。幕府隨後設立「六波羅探題」監視朝廷，並干預皇位繼承與院政的人選。自此，院政完全受制於武家，失去了實質的政治權力。
+  sources:
+    - title: 維基百科：院政
+      url: https://zh.wikipedia.org/wiki/院政
     - title: 維基百科：承久之亂
       url: https://zh.wikipedia.org/wiki/承久之亂
 
