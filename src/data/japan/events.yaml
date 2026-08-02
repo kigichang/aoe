@@ -866,6 +866,42 @@
     - title: 維基百科：櫻田門外之變
       url: https://zh.wikipedia.org/wiki/櫻田門外之變
 
+- id: jp-namamugi-satsuei-war
+  year: 1862
+  endYear: 1863
+  title: 生麥事件與薩英戰爭爆發
+  category: war
+  importance: 4
+  desc: 薩摩藩主之父島津久光隊伍於生麥村砍殺橫越行列之英國商人（生麥事件）。談判破裂後英國艦隊砲擊鹿兒島（薩英戰爭）。薩摩藩體會西方軍力強大，轉而積極引進西洋軍事科技並與英國建立密切關係。
+  sources:
+    - title: 維基百科：生麥事件
+      url: https://zh.wikipedia.org/wiki/生麥事件
+    - title: 維基百科：薩英戰爭
+      url: https://zh.wikipedia.org/wiki/薩英戰爭
+
+- id: jp-shimonoseki-campaign-1864
+  year: 1863
+  endYear: 1864
+  title: 下關戰爭，英法美荷四國聯合艦隊砲擊下關
+  category: war
+  importance: 4
+  desc: 長州藩響應朝廷攘夷旨意，封鎖關門海峽砲擊外國船隻。英法美荷四國組成聯合艦隊派遣 17 艘戰艦砲擊並登陸佔領下關砲台。長州藩慘敗後認知攘夷不可行，促成高杉晉作組建奇兵隊與藩政轉向倒幕。
+  sources:
+    - title: 維基百科：下關戰爭
+      url: https://zh.wikipedia.org/wiki/下關戰爭
+
+- id: jp-ikedaya-incident-1864
+  year: 1864
+  title: 池田屋事件，新選組襲擊尊王攘夷派志士
+  category: politics
+  importance: 4
+  desc: 近藤勇、土方歲三帶領治安組織「新選組」襲擊京都池田屋旅館，突襲正在祕密開會計畫火燒京都、過激尊王攘夷派長州與土佐志士。事件重創尊攘派勢力，並成為禁門之變爆發的導火線。
+  sources:
+    - title: 維基百科：池田屋事件
+      url: https://zh.wikipedia.org/wiki/池田屋事件
+    - title: 維基百科：新選組
+      url: https://zh.wikipedia.org/wiki/新選組
+
 - id: jp-kinmon-incident
   year: 1864
   title: 禁門之變（蛤御門之變），長州軍進攻京都
@@ -885,6 +921,18 @@
   sources:
     - title: 維基百科：薩長同盟
       url: https://zh.wikipedia.org/wiki/薩長同盟
+
+- id: jp-second-choshu-expedition-1866
+  year: 1866
+  title: 第二次長州征討，長州藩奇兵隊大破幕府軍
+  category: war
+  importance: 4
+  desc: 幕府發動第二次長州征討，長州藩在薩長同盟祕密軍火支援下，由高杉晉作率領不限身分的「奇兵隊」配合近代阿姆斯壯大砲在四方戰線全面大破幕府軍。幕府軍威掃地，將軍德川家茂死於大坂城，戰事以幕府實質撤軍告終。
+  sources:
+    - title: 維基百科：長州征討
+      url: https://zh.wikipedia.org/wiki/長州征討
+    - title: 維基百科：奇兵隊
+      url: https://zh.wikipedia.org/wiki/奇兵隊
 
 - id: jp-taisei-hokan
   year: 1867
@@ -916,6 +964,16 @@
   sources:
     - title: 維基百科：戊辰戰爭
       url: https://zh.wikipedia.org/wiki/戊辰戰爭
+
+- id: jp-edo-castle-bloodless-surrender-1868
+  year: 1868
+  title: 西鄉隆盛與勝海舟會談，江戶城無血開城
+  category: politics
+  importance: 5
+  desc: 鳥羽伏見之戰後新政府軍大舉東征，幕府海軍奉行勝海舟與新政府軍參謀西鄉隆盛於江戶進行歷史性談判。雙方達成撤銷江戶總攻、德川家處分等協議，實現「無血開城」，使百萬江戶市民免於戰火浩劫。
+  sources:
+    - title: 維基百科：江戶開城
+      url: https://zh.wikipedia.org/wiki/江戶開城
 
 - id: jp-iwakura-mission
   year: 1871
