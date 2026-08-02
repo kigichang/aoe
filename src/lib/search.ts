@@ -1,4 +1,5 @@
-import { CATEGORIES, type HistEvent, type Region } from './schema'
+import { CATEGORIES, TOPIC } from './data'
+import type { HistEvent, Region } from './schema'
 
 export interface Indexed {
   event: HistEvent
@@ -6,13 +7,25 @@ export interface Indexed {
   slot: number
 }
 
+/** 內部用的命中欄位代號 */
+type Why = keyof typeof WEIGHT
+
 export interface Hit extends Indexed {
-  /** 命中的欄位，讓結果列表可以說明「為什麼這則會出現」 */
-  why: '標題' | '描述' | '年份' | '地區' | '類別'
+  /**
+   * 命中的欄位，讓結果列表可以說明「為什麼這則會出現」。
+   *
+   * **是顯示用的字串，不是代號** —— 「欄位」那一項會換成當前主題的
+   * `columnLabel`（世界史是「地區」，鐵道史可能是「路線」），
+   * 所以型別是 string 而不是字面值聯集。
+   */
+  why: string
 }
 
 /** 命中欄位的優先序：標題最直接，類別最鬆 */
-const WEIGHT = { 標題: 5, 年份: 4, 描述: 3, 地區: 2, 類別: 1 } as const
+const WEIGHT = { 標題: 5, 年份: 4, 描述: 3, 欄位: 2, 類別: 1 } as const
+
+/** 對外顯示時，「欄位」換成主題自己的說法 */
+const label = (why: Why) => (why === '欄位' ? TOPIC.columnLabel : why)
 
 /**
  * 搜尋是**導覽**，不是篩選。
@@ -35,15 +48,15 @@ export function search(query: string, all: Indexed[], limit = 10): Hit[] {
   const hits: (Hit & { weight: number })[] = []
   for (const item of all) {
     const { event, region } = item
-    let why: Hit['why'] | null = null
+    let why: Why | null = null
 
     if (event.title.toLowerCase().includes(q)) why = '標題'
     else if (numeric && String(Math.abs(event.year)).includes(q)) why = '年份'
     else if (event.desc?.toLowerCase().includes(q)) why = '描述'
-    else if (region.name.toLowerCase().includes(q)) why = '地區'
+    else if (region.name.toLowerCase().includes(q)) why = '欄位'
     else if (CATEGORIES[event.category].label.includes(q)) why = '類別'
 
-    if (why) hits.push({ ...item, why, weight: WEIGHT[why] })
+    if (why) hits.push({ ...item, why: label(why), weight: WEIGHT[why] })
   }
 
   hits.sort(

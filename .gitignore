@@ -5,3 +5,8 @@ dist
 
 # 補資料時的一次性腳本，不該進版控
 _*.mjs
+
+# 非 root 主題的 HTML entry 由 vite.config.ts 從根目錄的 index.html 產生。
+# 唯一的來源是 index.html（見 vite.config.ts 的說明），這裡只是建置產物。
+/*/index.html
+!/index.html

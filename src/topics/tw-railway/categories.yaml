@@ -1,0 +1,29 @@
+# 這個主題的事件類別。**最多六個** —— 識別完全靠圖釘上那個漢字，
+# 不靠顏色（顏色只承載欄位，理由見 CLAUDE.md）。
+#
+# glyph 限一個字，圖釘是個 22px 的小圓圈，兩個字就讀不出來了。
+# 挑字的原則是「掃一眼就知道是哪一類」，所以優先用該類最核心的那個動詞或名詞。
+
+- id: opening
+  label: 通車
+  glyph: 通
+
+- id: construction
+  label: 興建
+  glyph: 建
+
+- id: closure
+  label: 停駛
+  glyph: 廢
+
+- id: accident
+  label: 事故
+  glyph: 災
+
+- id: rolling-stock
+  label: 車輛
+  glyph: 車
+
+- id: institution
+  label: 制度
+  glyph: 制

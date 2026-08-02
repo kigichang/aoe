@@ -1,4 +1,4 @@
-import { CATEGORIES } from '../lib/schema'
+import { CATEGORIES } from '../lib/data'
 import { fmtYear, yearToY } from '../lib/scale'
 import type { PlacedEvent } from '../lib/layout'
 

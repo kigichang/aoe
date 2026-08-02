@@ -1,0 +1,27 @@
+# 欄位定義。order 決定由左至右的順序，**同時也決定配色 slot**
+# （0=藍 1=橘 2=青 3=黃 4=洋紅 5=綠 6=紫 7=紅）。
+#
+# 只有四欄是刻意的：相鄰欄的配色只驗證過前四個 slot 的色盲安全距離
+# （見 CLAUDE.md）。要加第五欄之前得先重驗，而且調整 order 也要重驗。
+#
+# 由主幹而支線排列：台鐵 → 高鐵／捷運 → 糖鐵 → 林鐵與礦鐵。
+
+- id: tra
+  name: 台鐵
+  subtitle: 清代鐵路至台灣鐵路公司
+  order: 0
+
+- id: rapid-transit
+  name: 高鐵與捷運
+  subtitle: 高速與都會軌道
+  order: 1
+
+- id: sugar
+  name: 糖業鐵道
+  subtitle: 製糖會社與台糖
+  order: 2
+
+- id: industrial
+  name: 林鐵與礦鐵
+  subtitle: 阿里山線與產業軌道
+  order: 3

@@ -1,0 +1,108 @@
+# 台鐵（清代鐵路 → 台灣總督府鐵道部 → 台灣鐵路管理局 → 台灣鐵路公司）
+#
+# ⚠️ 這是多主題機制的驗證用種子資料，尚未走完 README 的完整查證流程。
+# 補到正式規模時請照 README：先用維基 API 批次查證標題，再寫入。
+
+- id: tra-1887-start
+  year: 1887
+  title: 劉銘傳設全臺鐵路商務總局，台灣鐵路開工
+  category: construction
+  importance: 5
+  desc: 台灣第一條官辦鐵路動工，也是清帝國境內最早自建的鐵路之一。路線自基隆往南，目標是縱貫全島。
+  sources:
+    - title: 維基百科：台灣鐵路
+      url: https://zh.wikipedia.org/wiki/台灣鐵路
+    - title: 維基百科：劉銘傳
+      url: https://zh.wikipedia.org/wiki/劉銘傳
+
+- id: tra-1891-keelung-taipei
+  year: 1891
+  title: 基隆至台北段通車
+  category: opening
+  importance: 4
+  desc: 台灣第一段實際營運的鐵路。清代這條路線坡度大、彎道急，日治初期幾乎全線改線重建。
+  sources:
+    - title: 維基百科：台灣鐵路
+      url: https://zh.wikipedia.org/wiki/台灣鐵路
+
+- id: tra-1908-trunk-line
+  year: 1908
+  title: 縱貫線全線通車
+  category: opening
+  importance: 5
+  desc: 基隆到打狗（高雄）連成一氣，南北往來從數日縮短到一日之內。台灣西部的城市軸線自此定型。
+  sources:
+    - title: 維基百科：縱貫線 (臺鐵)
+      url: https://zh.wikipedia.org/wiki/縱貫線_(臺鐵)
+
+- id: tra-1948-tra-founded
+  year: 1948
+  title: 台灣鐵路管理局成立
+  category: institution
+  importance: 4
+  desc: 戰後接收日治時期鐵道部的資產與路線，統一由省營機構經營。這個名字沿用了七十六年。
+  sources:
+    - title: 維基百科：臺灣鐵路管理局
+      url: https://zh.wikipedia.org/wiki/臺灣鐵路管理局
+
+- id: tra-1979-electrification
+  year: 1979
+  title: 西部幹線電氣化完成
+  category: construction
+  importance: 5
+  desc: 十大建設之一。蒸汽與柴油動力退出主線，行車速度與運能都跳了一級。
+  sources:
+    - title: 維基百科：十大建設
+      url: https://zh.wikipedia.org/wiki/十大建設
+    - title: 維基百科：西部幹線
+      url: https://zh.wikipedia.org/wiki/西部幹線
+
+- id: tra-1980-north-link
+  year: 1980
+  title: 北迴線通車
+  category: opening
+  importance: 4
+  desc: 蘇澳到花蓮接上，東部從此不必再靠公路與海運進出。也是十大建設的一環。
+  sources:
+    - title: 維基百科：北迴線
+      url: https://zh.wikipedia.org/wiki/北迴線
+
+- id: tra-1991-south-link
+  year: 1991
+  title: 南迴線通車，環島鐵路網成形
+  category: opening
+  importance: 5
+  desc: 枋寮到台東的最後一段接通，台灣的鐵路自此連成一個環。這是縱貫線通車後最大的一次路網改變。
+  sources:
+    - title: 維基百科：南迴線
+      url: https://zh.wikipedia.org/wiki/南迴線
+
+- id: tra-2018-puyuma
+  year: 2018
+  title: 普悠瑪號新馬站出軌事故
+  category: accident
+  importance: 4
+  desc: 宜蘭線新馬站彎道出軌，十八人罹難。事後對列車速限自動控制與行車管理制度做了大幅檢討。
+  sources:
+    - title: 維基百科：普悠瑪號列車出軌事故
+      url: https://zh.wikipedia.org/wiki/普悠瑪號列車出軌事故
+
+- id: tra-2021-taroko
+  year: 2021
+  title: 太魯閣號清水隧道出軌事故
+  category: accident
+  importance: 4
+  desc: 工程車滑落邊坡侵入路線，列車在隧道口撞上，四十九人罹難，是台鐵史上死傷最重的事故。
+  sources:
+    - title: 維基百科：北迴線太魯閣號列車出軌事故
+      url: https://zh.wikipedia.org/wiki/北迴線太魯閣號列車出軌事故
+
+- id: tra-2024-corporatization
+  year: 2024
+  title: 台灣鐵路公司成立，台鐵局走入歷史
+  category: institution
+  importance: 4
+  desc: 由公務機關改制為國營公司，人事與財務脫離公務體系。組織形式的改變，不是路線的改變。
+  sources:
+    - title: 維基百科：臺灣鐵路公司
+      url: https://zh.wikipedia.org/wiki/臺灣鐵路公司

@@ -1,0 +1,55 @@
+# 高鐵與都會捷運
+#
+# ⚠️ 多主題機制的驗證用種子資料，尚未走完 README 的完整查證流程。
+
+- id: mrt-1996-muzha
+  year: 1996
+  title: 台北捷運木柵線通車
+  category: opening
+  importance: 5
+  desc: 台灣第一條捷運路線，也是第一條中運量膠輪系統。都會軌道運輸從這一年開始。
+  sources:
+    - title: 維基百科：臺北捷運
+      url: https://zh.wikipedia.org/wiki/臺北捷運
+    - title: 維基百科：文湖線
+      url: https://zh.wikipedia.org/wiki/文湖線
+
+- id: hsr-2007-opening
+  year: 2007
+  title: 台灣高鐵通車
+  category: opening
+  importance: 5
+  desc: 台北到高雄縮短到一個半小時，西部走廊變成一日生活圈。這是縱貫線通車之後對城際移動影響最大的一次。
+  sources:
+    - title: 維基百科：台灣高鐵
+      url: https://zh.wikipedia.org/wiki/台灣高鐵
+
+- id: mrt-2008-kaohsiung
+  year: 2008
+  title: 高雄捷運紅線通車
+  category: opening
+  importance: 4
+  desc: 台北以外的第一套捷運系統，南台灣的都會軌道網自此起步。
+  sources:
+    - title: 維基百科：高雄捷運紅線
+      url: https://zh.wikipedia.org/wiki/高雄捷運紅線
+
+- id: mrt-2017-airport
+  year: 2017
+  title: 桃園機場捷運通車
+  category: opening
+  importance: 3
+  desc: 台北車站直達桃園機場，籌備超過二十年。
+  sources:
+    - title: 維基百科：桃園機場捷運
+      url: https://zh.wikipedia.org/wiki/桃園機場捷運
+
+- id: mrt-2021-taichung
+  year: 2021
+  title: 台中捷運綠線通車
+  category: opening
+  importance: 3
+  desc: 中台灣第一條捷運路線。
+  sources:
+    - title: 維基百科：臺中捷運綠線
+      url: https://zh.wikipedia.org/wiki/臺中捷運綠線

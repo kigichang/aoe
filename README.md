@@ -3,7 +3,9 @@
 把不同地區的歷史放在同一條時間軸上並排比較 —— 秦統一中國的那一年，羅馬正在打第一次布匿戰爭。
 
 目前收錄台灣史、日本史、中國史、歐洲史共 518 則事件，時間範圍西元前 3000 年至
-西元 2026 年（見 `src/data/timeline.yaml`）。全部事件皆附維基百科出處（750 條連結，中/日/英三個站台，均已驗證可連）。
+西元 2026 年（見 `src/topics/world/timeline.yaml`）。全部事件皆附維基百科出處（750 條連結，中/日/英三個站台，均已驗證可連）。
+
+站上還有另一個主題「台灣鐵道史」（`/tw-railway/`），目前是驗證多主題機制用的種子資料。
 
 ## 開發
 
@@ -22,11 +24,74 @@ npm run check    # 只跑型別檢查
 `vite.config.ts` 會從 `GITHUB_REPOSITORY` 自動推出 `base`，所以專案頁面
 （`<user>.github.io/<repo>/`）不需要手動改設定。
 
+## 主題
+
+一個**主題**是一份獨立的資料集加上一個網址。世界史掛在根網址，其餘掛在
+`/<目錄名>/`：
+
+```
+https://kigichang.github.io/aoe/              → src/topics/world/
+https://kigichang.github.io/aoe/tw-railway/   → src/topics/tw-railway/
+```
+
+```
+src/topics/<主題>/
+  topic.yaml         主題設定（見下）
+  regions.yaml       欄位定義
+  timeline.yaml      時間軸上下界
+  categories.yaml    類別（選填，沒有就用預設六類）
+  <欄位id>/
+    events.yaml
+    periods.yaml
+```
+
+### `topic.yaml`
+
+```yaml
+name: 台灣鐵道史                  # 標題列的 h1
+title: 台灣鐵道史 — 並排比較…      # 選填，瀏覽器分頁標題。沒填就用 name
+description: 把台灣各家鐵道…      # 標題列副標，同時是 HTML 的 meta description
+columnLabel: 營運者               # 選填，欄位在這個主題叫什麼。預設「地區」
+defaultPpy: 12                   # 選填，開場縮放（px/年）。沒填取「整條軸約兩屏」
+jumps: [1890, 1910, 1930]        # 選填，年代跳轉按鈕。沒填依範圍自動產生
+root: true                       # 掛在根網址。**恰好一個主題可以設**
+```
+
+`root: true` 是「哪個主題掛在根網址」的唯一來源，`vite.config.ts` 與 `data.ts`
+都讀它。沒設或設兩個都會在建置期與載入期直接報錯。
+
+`defaultPpy` 是**密度問題的主要槓桿**：覺得畫面上圖釘太多、讀得到的標題太少時
+要調的是它，不是類別門檻，也不是資料的 `importance`（CLAUDE.md 有實測數據）。
+
+### 新增一個主題
+
+1. 建 `src/topics/<目錄名>/`，放 `topic.yaml`、`regions.yaml`、`timeline.yaml`
+2. 每個欄位建一個子目錄，放 `events.yaml`（與選填的 `periods.yaml`）
+3. 需要自己的類別就加 `categories.yaml`
+
+**不用改任何程式碼**，資料是用 `import.meta.glob` 掃進來的，HTML entry 由
+`vite.config.ts` 依 `topic.yaml` 產生（`/<目錄名>/index.html`，gitignored）。
+GitHub Pages 沒有 server-side rewrite，所以那份實體檔案是必要的 ——
+靠前端 router 接不到子路徑。
+
+### `categories.yaml`
+
+沒有這個檔就沿用預設六類（政治／戰爭／文化／科技／宗教／經濟）。
+
+```yaml
+- id: opening
+  label: 通車
+  glyph: 通      # 圖釘上那一個字，限一個字元
+```
+
+**最多六個**，而且 `glyph` 只能一個字 —— 類別的識別完全靠這個漢字，不靠顏色
+（顏色只承載欄位）。理由與量測結果見 CLAUDE.md。
+
 ## 新增資料
 
 ### 事件
 
-編輯 `src/data/<地區>/events.yaml`：
+編輯 `src/topics/<主題>/<欄位>/events.yaml`：
 
 ```yaml
 - id: cn-qin-unification    # 全域唯一
@@ -67,7 +132,7 @@ npm run check    # 只跑型別檢查
 關鍵是 ShareAlike：只要 `desc` 抄了或近似改寫維基的句子，整批資料就得跟著改採
 CC BY-SA。所以本專案的做法是 **查維基確認年代，`title` 與 `desc` 一律自行撰寫**，
 如此完全不觸發 ShareAlike。若日後真要引用條目文字，請放在明確標示的獨立欄位，
-並將 `src/data/` 與 MIT 的程式碼分開授權。
+並將 `src/topics/` 與 MIT 的程式碼分開授權。
 
 網址請用 `/wiki/<條目名>`，不要用 `/zh-tw/` —— 後者是繁簡變體路徑，前者才是正規網址。
 標題裡的空白寫成底線。
@@ -94,6 +159,7 @@ CC BY-SA。所以本專案的做法是 **查維基確認年代，`title` 與 `de
 ```bash
 npm run lint:data                  # 列出重要度 >= 4 卻沒有出處的事件
 npm run lint:data -- --min 3       # 調整門檻
+npm run lint:data -- --topic world # 只檢查單一主題（預設全部）
 npm run lint:data -- --check-urls  # 連線驗證每個出處網址是否還活著
 npm run lint:data -- --check-pages # 問維基 API：條目是否存在、是不是消歧義頁
 npm run lint:data -- --strict      # 有缺漏就 exit 1，可用於 CI
@@ -120,14 +186,14 @@ npm run lint:data -- --strict      # 有缺漏就 exit 1，可用於 CI
 
 ### 時期（朝代）
 
-編輯 `src/data/<地區>/periods.yaml`。時期畫成欄位左側的背景色帶，
+編輯 `src/topics/<主題>/<欄位>/periods.yaml`。時期畫成欄位左側的背景色帶，
 **同一條 `track` 上不可以重疊** —— 重疊時載入階段就會直接報錯。
 
 歐洲不是單一政體，所以拆成兩條 track：`0` 是希臘／拜占庭一線，`1` 是羅馬／西歐一線。
 
 ### 時間軸的上下界
 
-`src/data/timeline.yaml`：
+`src/topics/<主題>/timeline.yaml`：
 
 ```yaml
 minYear: -3000
@@ -142,20 +208,20 @@ maxYear: 2026
 範圍是設定值而不是從資料推導，因為一則離群的資料就會把整條軸拉長、其餘全被擠扁。
 代價是 `maxYear` 會逐年過期，加了超出的事件時防護會直接吼你。
 
-### 新增地區
+### 新增欄位（地區／營運者／…）
 
-1. 在 `src/data/regions.yaml` 加一筆（`order` 決定由左至右的順序）
-2. 建 `src/data/<id>/periods.yaml` 與 `src/data/<id>/events.yaml`
+1. 在 `src/topics/<主題>/regions.yaml` 加一筆（`order` 決定由左至右的順序）
+2. 建 `src/topics/<主題>/<id>/periods.yaml` 與 `events.yaml`
 
 資料是用 `import.meta.glob` 掃進來的，不用改任何程式碼。
 
 ## 搜尋
 
 <kbd>⌘K</kbd> 或 <kbd>/</kbd> 聚焦搜尋框，↑↓ 選擇、Enter 跳轉、Esc 關閉。
-可以找標題、描述、年份、地區與類別。
+可以找標題、描述、年份、欄位名稱與類別。
 
 **搜尋不篩選時間軸**，只是跳過去 —— 橫向對照需要各區的事件都留在原位。
-若目標在目前倍率下看不到（重要度太低、地區或類別被關掉、傳說被關掉），
+若目標在目前倍率下看不到（重要度太低、欄位或類別被關掉、傳說被關掉），
 會自動補上必要的設定並放大到剛好看得見。
 
 ## 詳情面板

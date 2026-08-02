@@ -5,6 +5,7 @@
  *
  *   node scripts/lint-data.mjs                # 列出重要度 >= 門檻卻沒有出處的事件
  *   node scripts/lint-data.mjs --min 3        # 調整門檻（預設 4）
+ *   node scripts/lint-data.mjs --topic world  # 只檢查單一主題（預設全部）
  *   node scripts/lint-data.mjs --strict       # 有缺漏就以 exit 1 結束，可用於 CI
  *   node scripts/lint-data.mjs --check-urls   # 連線驗證每個出處網址是否還活著
  *   node scripts/lint-data.mjs --check-pages  # 問維基 API：條目是否存在、是不是消歧義頁
@@ -17,50 +18,61 @@ import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import * as yaml from 'js-yaml'
 
-const DATA_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'src', 'data')
+const TOPICS_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'src', 'topics')
 
 const args = process.argv.slice(2)
 const has = (flag) => args.includes(flag)
 const minImportance = Number(args[args.indexOf('--min') + 1]) || 4
+const onlyTopic = args.includes('--topic') ? args[args.indexOf('--topic') + 1] : null
 
-const regions = yaml
-  .load(readFileSync(join(DATA_DIR, 'regions.yaml'), 'utf8'))
-  .sort((a, b) => a.order - b.order)
+const read = (path) => (existsSync(path) ? (yaml.load(readFileSync(path, 'utf8')) ?? []) : [])
 
-const load = (region, file) => {
-  const path = join(DATA_DIR, region.id, file)
-  return existsSync(path) ? (yaml.load(readFileSync(path, 'utf8')) ?? []) : []
+const topics = readdirSync(TOPICS_DIR, { withFileTypes: true })
+  .filter((d) => d.isDirectory() && existsSync(join(TOPICS_DIR, d.name, 'topic.yaml')))
+  .map((d) => ({ slug: d.name, meta: read(join(TOPICS_DIR, d.name, 'topic.yaml')) }))
+  .filter((t) => !onlyTopic || t.slug === onlyTopic)
+
+if (topics.length === 0) {
+  console.error(onlyTopic ? `找不到主題 "${onlyTopic}"` : '找不到任何主題')
+  process.exit(1)
 }
 
 let missing = 0
 let total = 0
 const urls = new Map()
 
-console.log(`\n出處覆蓋率（重要度 >= ${minImportance}）\n`)
+console.log(`\n出處覆蓋率（重要度 >= ${minImportance}）`)
 
-for (const region of regions) {
-  const events = load(region, 'events.yaml')
-  const target = events.filter((e) => e.importance >= minImportance)
-  const without = target.filter((e) => !e.sources?.length)
-  total += target.length
-  missing += without.length
+for (const topic of topics) {
+  const dir = join(TOPICS_DIR, topic.slug)
+  const regions = read(join(dir, 'regions.yaml')).sort((a, b) => a.order - b.order)
 
-  for (const e of events) {
-    for (const s of e.sources ?? []) {
-      if (s.url) urls.set(s.url, `${region.id}/${e.id}`)
+  console.log(`\n${topic.meta.name}（${topic.slug}）\n`)
+
+  for (const region of regions) {
+    const events = read(join(dir, region.id, 'events.yaml'))
+    const target = events.filter((e) => e.importance >= minImportance)
+    const without = target.filter((e) => !e.sources?.length)
+    total += target.length
+    missing += without.length
+
+    for (const e of events) {
+      for (const s of e.sources ?? []) {
+        if (s.url) urls.set(s.url, `${topic.slug}/${region.id}/${e.id}`)
+      }
     }
-  }
 
-  const covered = target.length - without.length
-  const pct = target.length ? Math.round((covered / target.length) * 100) : 100
-  const bar = '█'.repeat(Math.round(pct / 5)).padEnd(20, '·')
-  console.log(
-    `  ${region.name.padEnd(4)} ${bar} ${String(pct).padStart(3)}%  ` +
-      `${covered}/${target.length}　（全部 ${events.length} 則）`,
-  )
+    const covered = target.length - without.length
+    const pct = target.length ? Math.round((covered / target.length) * 100) : 100
+    const bar = '█'.repeat(Math.round(pct / 5)).padEnd(20, '·')
+    console.log(
+      `  ${region.name.padEnd(6)} ${bar} ${String(pct).padStart(3)}%  ` +
+        `${covered}/${target.length}　（全部 ${events.length} 則）`,
+    )
 
-  for (const e of without) {
-    console.log(`      缺出處  ${String(e.year).padStart(5)}  ${e.title}`)
+    for (const e of without) {
+      console.log(`      缺出處  ${String(e.year).padStart(5)}  ${e.title}`)
+    }
   }
 }
 

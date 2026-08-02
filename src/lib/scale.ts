@@ -5,7 +5,7 @@
  */
 import { TIMELINE } from './data'
 /**
- * 上下界來自 `src/data/timeline.yaml`，不寫死在這裡 —— 寫死的值會安靜地過期
+ * 上下界來自當前主題的 `timeline.yaml`，不寫死在這裡 —— 寫死的值會安靜地過期
  * （`MAX_YEAR` 原本是 2025，跨年之後軸的下緣就停在去年了）。
  * 超出範圍的資料由 `data.ts` 的 `assertInRange` 在載入期擋下。
  */
@@ -13,8 +13,25 @@ export const MIN_YEAR = TIMELINE.minYear
 export const MAX_YEAR = TIMELINE.maxYear
 export const SPAN_YEARS = MAX_YEAR - MIN_YEAR
 
-export const MIN_PPY = 0.15
-export const MAX_PPY = 40
+/**
+ * 名目視窗高度。實際高度由使用者的視窗決定，這裡只需要一個穩定的基準，
+ * 好把「整條軸大約一屏」這種說法換算成 ppy。
+ */
+const NOMINAL_VIEWPORT_H = 700
+
+/**
+ * 縮到最小時，整條軸大約剛好一屏 —— 再縮下去只是讓內容更擠，看不到更多東西。
+ *
+ * **必須依主題的跨度算，不能寫死。** 0.15 是為五千年跨度挑的：一個
+ * 1885–2026 的主題套上 0.15，整條軸只有 21px 高，所有事件疊成一團。
+ */
+export const MIN_PPY = NOMINAL_VIEWPORT_H / SPAN_YEARS
+
+/**
+ * 放到最大時的 ppy。40 px/年 對五千年的主題來說已經是「一年一列半」的細節，
+ * 夠用了；跨度短的主題 MIN_PPY 本身就高，所以再保底給八倍的縮放範圍。
+ */
+export const MAX_PPY = Math.max(40, MIN_PPY * 8)
 
 export const clampPpy = (ppy: number) => Math.min(MAX_PPY, Math.max(MIN_PPY, ppy))
 
@@ -46,6 +63,27 @@ export function ticks(ppy: number): number[] {
   const out: number[] = []
   const first = Math.ceil(MIN_YEAR / step) * step
   for (let y = first; y <= MAX_YEAR; y += step) out.push(y === 0 ? 1 : y)
+  return out
+}
+
+/**
+ * 開場的縮放。主題沒指定就取「整條軸大約兩屏」——
+ * 對事件不多的主題來說剛好一眼看完，密的主題請自己在 topic.yaml 指定。
+ */
+export const defaultPpy = (topicValue?: number) => clampPpy(topicValue ?? MIN_PPY * 2)
+
+/**
+ * 年代跳轉按鈕的預設值：在軸的範圍內取整數級距。
+ *
+ * 主題有填 `jumps` 就用它的 —— 手挑的能反映資料密度（世界史愈近代愈密），
+ * 這裡只保證「沒填也不會壞掉」，不保證好看。
+ */
+export function defaultJumps(count = 8): number[] {
+  const step = TICK_STEPS.find((s) => SPAN_YEARS / s <= count) ?? 1000
+  const out: number[] = []
+  for (let y = Math.ceil(MIN_YEAR / step) * step; y <= MAX_YEAR; y += step) {
+    out.push(y === 0 ? 1 : y)
+  }
   return out
 }
 

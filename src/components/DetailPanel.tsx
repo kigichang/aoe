@@ -1,4 +1,5 @@
-import { CATEGORIES, type HistEvent, type Region } from '../lib/schema'
+import { CATEGORIES } from '../lib/data'
+import type { HistEvent, Region } from '../lib/schema'
 import { fmtRange } from '../lib/scale'
 
 interface Props {

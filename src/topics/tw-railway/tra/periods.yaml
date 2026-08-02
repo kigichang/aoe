@@ -1,0 +1,26 @@
+# 經營主體的更迭。時期是「面」，畫成欄位左側的背景色帶。
+# 同一條 track 上不可重疊 —— 所以前一段的 end 要比下一段的 start 早一年。
+
+- id: tra-qing
+  name: 清代官辦
+  track: 0
+  start: 1887
+  end: 1894
+
+- id: tra-japanese
+  name: 總督府鐵道部
+  track: 0
+  start: 1895
+  end: 1945
+
+- id: tra-bureau
+  name: 台灣鐵路管理局
+  track: 0
+  start: 1946
+  end: 2023
+
+- id: tra-company
+  name: 台灣鐵路公司
+  track: 0
+  start: 2024
+  end: 2026

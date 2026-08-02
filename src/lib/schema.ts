@@ -1,28 +1,95 @@
 import { z } from 'zod'
 
-/**
- * 類別用單一漢字當作圖釘上的識別符號，而不是用顏色。
- * 六個類別散佈在畫布上屬於「任意兩色都可能相鄰」的情境，
- * 這種情況下沒有任何六色配色能同時通過色盲安全距離，所以識別交給文字。
- * 顏色只用來區分地區（兩個 slot），那是安全的。
- */
-export const CATEGORIES = {
-  politics: { label: '政治', glyph: '政' },
-  war: { label: '戰爭', glyph: '戰' },
-  culture: { label: '文化', glyph: '文' },
-  science: { label: '科技', glyph: '科' },
-  religion: { label: '宗教', glyph: '教' },
-  economy: { label: '經濟', glyph: '經' },
-} as const
-
-export type Category = keyof typeof CATEGORIES
-export const CATEGORY_IDS = Object.keys(CATEGORIES) as Category[]
-
 /** 歷史紀年沒有西元 0 年：西元前 1 年的下一年就是西元 1 年。 */
 const year = z
   .number()
   .int('年份必須是整數')
   .refine((y) => y !== 0, '沒有西元 0 年（-1 的下一年是 1）')
+
+/**
+ * 類別用單一漢字當作圖釘上的識別符號，而不是用顏色。
+ * 六個類別散佈在畫布上屬於「任意兩色都可能相鄰」的情境，
+ * 這種情況下沒有任何六色配色能同時通過色盲安全距離，所以識別交給文字。
+ * 顏色只用來區分地區（兩個 slot），那是安全的。
+ *
+ * 每個主題可以有自己的一組類別（世界史是政治／戰爭…，鐵道史是通車／廢線…），
+ * 所以實際的表在 `data.ts`，由當前主題的 `categories.yaml` 決定。
+ * 這裡只定義它長什麼樣子。
+ */
+export const categorySchema = z.object({
+  id: z.string().min(1),
+  label: z.string().min(1),
+  /**
+   * 圖釘上顯示的那一個字。**限一個字元** —— 圖釘是個小圓圈，
+   * 兩個字就會擠到讀不出來。
+   */
+  glyph: z.string().length(1, 'glyph 必須剛好一個字'),
+})
+
+/**
+ * 上限六個，理由同上：識別完全靠這個漢字，而漢字要能在圖釘裡讀得出來。
+ * 想加第七類之前先想清楚 —— 顏色救不了你，那條路 CLAUDE.md 已經量過了。
+ */
+export const categoryListSchema = z
+  .array(categorySchema)
+  .min(1)
+  .max(6, '類別最多六個（識別靠漢字圖釘，再多就讀不出來了）')
+
+export type CategoryDef = z.infer<typeof categorySchema>
+
+/**
+ * 類別 id 是主題自訂的，所以型別只能是 string；
+ * 合法性由 `data.ts` 的 `assertKnownCategory` 在載入期擋下。
+ */
+export type Category = string
+
+/** 沒有 `categories.yaml` 的主題沿用這一組。 */
+export const DEFAULT_CATEGORIES: CategoryDef[] = [
+  { id: 'politics', label: '政治', glyph: '政' },
+  { id: 'war', label: '戰爭', glyph: '戰' },
+  { id: 'culture', label: '文化', glyph: '文' },
+  { id: 'science', label: '科技', glyph: '科' },
+  { id: 'religion', label: '宗教', glyph: '教' },
+  { id: 'economy', label: '經濟', glyph: '經' },
+]
+
+/**
+ * 一個主題 = 一份獨立的資料集 + 一個網址（目錄名就是路徑）。
+ *
+ * `root: true` 的主題掛在根網址而不是 `/<目錄名>/`。恰好一個主題可以設，
+ * 這是「哪個主題掛在根網址」的**唯一**來源 —— `vite.config.ts` 與
+ * `data.ts` 都讀它，不要在程式裡另寫一個預設主題常數。
+ */
+export const topicSchema = z.object({
+  /** 標題列的 h1 */
+  name: z.string().min(1),
+  /** 瀏覽器分頁的標題。沒填就用 `name` */
+  title: z.string().min(1).optional(),
+  /** 標題列的副標，同時也是 HTML 的 meta description */
+  description: z.string().min(1),
+  /** 欄位在這個主題裡叫什麼（世界史是「地區」，鐵道史可能是「路線」） */
+  columnLabel: z.string().min(1).default('地區'),
+  /**
+   * 工具列上的年代跳轉按鈕。
+   *
+   * **必須是主題設定，不能寫死也不該從範圍平均切**：世界史那組
+   * （前2000／前1000／前500／1／500…）是刻意愈近代愈密的，因為資料密度就是那樣；
+   * 而一個 1887–2026 的主題套上前2000 只會得到一排全部夾到軸頂的按鈕。
+   *
+   * 沒填就由 `scale.ts` 依範圍取整數級距自動產生，堪用但不會有上面那種調校。
+   */
+  jumps: z.array(year).optional(),
+  /**
+   * 開場的縮放（px/年）。沒填就取「整條軸大約兩屏」。
+   *
+   * 這是**密度問題的主要槓桿** —— 覺得畫面上圖釘太多、標題太少時要調的是它，
+   * 不是 `minImportance()` 的門檻，也不是資料的 importance（CLAUDE.md 有實測）。
+   */
+  defaultPpy: z.number().positive().optional(),
+  root: z.boolean().optional(),
+})
+
+export type TopicMeta = z.infer<typeof topicSchema>
 
 /**
  * 一筆出處。`url` 選填，因為書籍、論文這類來源沒有網址。
@@ -43,7 +110,14 @@ export const eventSchema = z
     year,
     endYear: year.optional(),
     title: z.string().min(1),
-    category: z.enum(CATEGORY_IDS as [Category, ...Category[]]),
+    /**
+     * 類別 id，必須在當前主題的 `categories.yaml` 裡（沒有該檔就是預設六類）。
+     * 這裡刻意只驗 string 而不用 `z.enum`：類別表是主題資料，
+     * 要在 `data.ts` 讀完主題之後才知道 —— 寫成 enum 會讓 schema 反過來
+     * 依賴 data，形成循環。錯誤訊息也是 `data.ts` 那道 guard 比較好讀，
+     * 它會把可用的類別 id 全部列出來。
+     */
+    category: z.string().min(1),
     importance: z.number().int().min(1).max(5),
     desc: z.string().optional(),
     /**
@@ -81,7 +155,7 @@ export const periodSchema = z
   .refine((p) => p.end >= p.start, { message: 'end 不能早於 start' })
 
 /**
- * 時間軸的上下界（`src/data/timeline.yaml`）。
+ * 時間軸的上下界（`src/topics/<主題>/timeline.yaml`）。
  * 曾經寫死在 `scale.ts` 裡，問題是超出範圍的資料會被畫到畫布外面 ——
  * 不報錯、主控台乾淨，只是讀者永遠看不到那一筆。範圍改成資料之後，
  * `data.ts` 的 `assertInRange` 才有東西可以比對。

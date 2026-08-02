@@ -1,0 +1,43 @@
+# 林業與礦業鐵道
+#
+# ⚠️ 多主題機制的驗證用種子資料，尚未走完 README 的完整查證流程。
+
+- id: alishan-1912-opening
+  year: 1912
+  title: 阿里山林業鐵路嘉義至二萬平通車
+  category: opening
+  importance: 5
+  desc: 為運出阿里山檜木而建，從嘉義平原一路爬到海拔兩千公尺。獨立山的螺旋路線與之字形折返是為了克服坡度。
+  sources:
+    - title: 維基百科：阿里山林業鐵路
+      url: https://zh.wikipedia.org/wiki/阿里山林業鐵路
+
+- id: pingxi-1921-opening
+  year: 1921
+  title: 台陽礦業石底線（今平溪線）完工
+  category: construction
+  importance: 4
+  desc: 私人礦業公司自建的運煤鐵路，沿基隆河谷深入平溪一帶的煤田。
+  sources:
+    - title: 維基百科：平溪線
+      url: https://zh.wikipedia.org/wiki/平溪線
+
+- id: pingxi-1929-acquired
+  year: 1929
+  title: 總督府鐵道部收購石底線
+  category: institution
+  importance: 3
+  desc: 私設的運煤路線轉為官營並開辦客運，礦業鐵道就此併入一般鐵路網。煤礦結束後，這條線靠觀光活了下來。
+  sources:
+    - title: 維基百科：平溪線
+      url: https://zh.wikipedia.org/wiki/平溪線
+
+- id: alishan-1986-zhushan
+  year: 1986
+  title: 阿里山林鐵祝山線通車
+  category: opening
+  importance: 3
+  desc: 台灣海拔最高的鐵路支線，功能從運木材完全轉向看日出。
+  sources:
+    - title: 維基百科：阿里山林業鐵路
+      url: https://zh.wikipedia.org/wiki/阿里山林業鐵路

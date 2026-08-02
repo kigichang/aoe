@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
-import { REGIONS } from './lib/data'
-import { CATEGORY_IDS, type Category } from './lib/schema'
+import { CATEGORY_IDS, REGIONS, TOPIC } from './lib/data'
+import type { Category } from './lib/schema'
 import {
   MAX_YEAR,
   MIN_YEAR,
   clampPpy,
+  defaultPpy,
   fmtYear,
   ppyForImportance,
   ticks,
@@ -51,7 +52,9 @@ const ALL_EVENTS = REGIONS.flatMap((r, slot) =>
 export default function App() {
   const scrollRef = useRef<HTMLDivElement>(null)
   /*
-   * 開場縮放。1.0 是量出來的：門檻邏輯不動（<1.2 都是重要度 4+，同樣 226 則），
+   * 開場縮放，由主題的 defaultPpy 決定（沒填就取整條軸約兩屏）。
+   *
+   * 世界史那份填的 1.0 是量出來的：門檻邏輯不動（<1.2 都是重要度 4+，同樣 226 則），
    * 但 0.6 時有一半的事件擠不下標籤、只剩圓點，1.0 降到 31%。
    * 讀得到的標題 112 → 155，台灣 9 → 14。
    * 代價是一屏從 1167 年變 700 年 —— 仍看得到「秦漢對上羅馬」。
@@ -60,7 +63,7 @@ export default function App() {
    * 調嚴到 5+，圖釘比例雖然降到 30%，讀得到的標題卻從 112 掉到 64。
    * 圖釘「比例」是會騙人的指標，分母跟著變 —— 要看的是讀得到幾則。
    */
-  const [ppy, setPpy] = useState(() => INITIAL_URL.ppy ?? 1)
+  const [ppy, setPpy] = useState(() => INITIAL_URL.ppy ?? defaultPpy(TOPIC.defaultPpy))
   const [categories, setCategories] = useState(() => new Set<Category>(CATEGORY_IDS))
   const [showLegendary, setShowLegendary] = useState(true)
   const [helpOpen, setHelpOpen] = useState(false)
@@ -328,8 +331,8 @@ export default function App() {
     <div className="app">
       <header className="masthead">
         <div>
-          <h1>AoE</h1>
-          <p>把不同地區放在同一條時間軸上，看同一個年代各自在發生什麼。</p>
+          <h1>{TOPIC.name}</h1>
+          <p>{TOPIC.description}</p>
         </div>
         <div className="masthead-actions">
           <button

@@ -1,0 +1,38 @@
+# 糖業鐵道（製糖會社 → 台糖）
+#
+# ⚠️ 多主題機制的驗證用種子資料，尚未走完 README 的完整查證流程。
+# 糖鐵的路線總長曾經遠超過台鐵，但史料分散在各製糖會社，補資料時要特別小心年代。
+
+- id: sugar-1907-first-line
+  year: 1907
+  title: 台灣製糖鋪設橋仔頭糖廠專用線
+  category: construction
+  importance: 5
+  desc: 台灣糖業鐵道之始。762 公釐軌距，原本只為運甘蔗進廠，後來長成遍布嘉南平原的路網。
+  sources:
+    - title: 維基百科：臺灣糖業鐵路
+      url: https://zh.wikipedia.org/wiki/臺灣糖業鐵路
+    - title: 維基百科：橋頭糖廠
+      url: https://zh.wikipedia.org/wiki/橋頭糖廠
+
+- id: sugar-1946-taisugar
+  year: 1946
+  title: 台灣糖業公司成立，接收各製糖會社鐵道
+  category: institution
+  importance: 4
+  desc: 戰前分屬台灣製糖、明治製糖等會社的路線收歸一家，糖鐵成為單一經營者的系統。
+  sources:
+    - title: 維基百科：臺灣糖業鐵路
+      url: https://zh.wikipedia.org/wiki/臺灣糖業鐵路
+
+- id: sugar-1982-passenger-end
+  year: 1982
+  title: 糖鐵營業線客運全面停駛
+  category: closure
+  importance: 4
+  desc: 公路運輸取代之後，兼營客運的糖鐵路線陸續收掉，最後一條北港線停駛。此後只剩原料線與觀光路段。
+  sources:
+    - title: 維基百科：臺灣糖業鐵路
+      url: https://zh.wikipedia.org/wiki/臺灣糖業鐵路
+    - title: 維基百科：北港線
+      url: https://zh.wikipedia.org/wiki/北港線

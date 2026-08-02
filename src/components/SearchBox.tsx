@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { CATEGORIES } from '../lib/schema'
+import { CATEGORIES } from '../lib/data'
 import { fmtYear } from '../lib/scale'
 import { search, type Hit, type Indexed } from '../lib/search'
 

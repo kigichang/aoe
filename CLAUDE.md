@@ -100,19 +100,77 @@
 ## 檔案地圖
 
 ```
-src/lib/schema.ts       Zod schema + 類別定義（漢字在這裡）
-src/lib/data.ts         glob 掃 YAML → 驗證 → 匯出 REGIONS / TIMELINE
+src/lib/schema.ts       Zod schema（類別、主題、事件、時期的形狀）
+src/lib/topic.ts        從網址推出當前主題 ★ 所有資料載入的源頭
+src/lib/data.ts         glob 掃 YAML → 挑出當前主題 → 驗證 →
+                        匯出 TOPIC / REGIONS / TIMELINE / CATEGORIES
 src/lib/scale.ts        年↔像素、刻度級距、importance 分層門檻
 src/lib/layout.ts       標籤排版演算法 ★ 最需要小心的一支
 src/components/         Axis / RegionColumn / PeriodRail / EventMark / Toolbar /
                         DetailPanel / HelpOverlay / ThemeToggle
 src/App.tsx             狀態、縮放錨定、時間游標、欄數計算
-src/data/regions.yaml   欄位定義（order 決定左右順序與配色 slot）
-src/data/timeline.yaml  時間軸的上下界
+vite.config.ts          base 推導 + 依 topic.yaml 產生各主題的 HTML entry
+index.html              所有主題共用的模板（title/description 只是預留位）
+
+src/topics/<主題>/
+  topic.yaml            名稱、columnLabel、defaultPpy、jumps、root
+  regions.yaml          欄位定義（order 決定左右順序與配色 slot）
+  timeline.yaml         時間軸的上下界
+  categories.yaml       類別（選填，沒有就用 schema.ts 的預設六類）
+  <欄位>/events.yaml
+  <欄位>/periods.yaml
 ```
 
-資料是 `import.meta.glob('../data/*/events.yaml')` 掃進來的，
-**新增地區不需要改任何程式碼**，只要放檔案 + 在 `regions.yaml` 加一筆。
+資料是 `import.meta.glob('../topics/*/*/events.yaml')` 掃進來的，
+**新增主題或欄位都不需要改任何程式碼**，只要放檔案。
+
+### 主題是 per-document 的常數，不要改成 state
+
+每個主題有自己的 HTML entry（`/aoe/` 與 `/aoe/tw-railway/` 是兩份不同的
+index.html），所以瀏覽器一載入，「現在在看哪個主題」就已經定了。
+
+這是多主題能做得很輕的關鍵：`MIN_YEAR`、`REGIONS`、`CATEGORIES` 全部維持
+**模組層常數**，只是值改由當前主題決定。`layout.ts`、`urlState.ts` 與所有
+繪圖元件因此一行都沒動。
+
+**不要為了「主題可以即時切換」把它改成 state。** 那會讓 `scale.ts` 的
+`MIN_YEAR / MAX_YEAR / SPAN_YEARS` 變成函式參數，一路擴散到每一支檔案。
+換主題就整頁重新載入，成本比那個改動低太多。
+
+### 為什麼每個主題要有實體的 index.html
+
+**GitHub Pages 沒有 server-side rewrite。** `/aoe/tw-railway/` 這個路徑上
+必須真的存在一份 HTML，否則直接 404 —— 前端 router 根本沒有機會執行。
+
+非 root 主題的那份是 `vite.config.ts` 從根目錄的 `index.html` 複製產生的
+（gitignored）。**不要改成手寫**：`index.html` 的 `<head>` 有一段防閃爍的
+theme inline script，key 必須跟 `theme.ts` 的 `THEME_KEY` 一致，抄成 N 份之後
+漏改不會報錯，只會在暗色系統上閃一下白底。
+
+`<title>` 與 meta description 一律由 `topic.yaml` 決定，**根目錄那份也一樣**
+（走 `transformIndexHtml`）。曾經是產生子目錄 HTML 時做字串抽換，那樣 root 主題
+的標題就留在 index.html 裡，變成兩套規則。
+
+### 跨主題的東西要留意「這個值是為誰調的」
+
+好幾個常數原本是為五千年跨度的世界史挑的，換一個 141 年的主題就全錯：
+
+| 原本 | 問題 | 現在 |
+|---|---|---|
+| `MIN_PPY = 0.15` | 1885–2026 整條軸只有 21px 高 | `700 / SPAN_YEARS` |
+| 開場 `ppy = 1` | 141 年全擠在 141px | `topic.yaml` 的 `defaultPpy` |
+| `JUMPS = [-2000…1950]` | 按鈕全部出界，按了像沒反應 | `topic.yaml` 的 `jumps` |
+| 六個類別寫死在 schema | 鐵道史的「通車」「廢線」都變成「科」 | `categories.yaml` |
+
+`TIERS`（importance 分層）**刻意維持絕對值**。改成相對於 `MIN_PPY` 試過，
+反而更糟：跨度短的主題 `MIN_PPY` 高，相對門檻換算回去會超過 `MAX_PPY`，
+低重要度的事件永遠出不來。維持絕對值的話，跨度短 → ppy 高 → 事件自然全部顯示，
+而那正是資料少的主題該有的行為。
+
+**沒有欄位資料的 UI 就整個不顯示，不要留一顆按了沒反應的開關。**
+鐵道史沒有傳說事件，所以工具列的「傳說」chip 與說明裡那一格都不畫。
+說明覆蓋層的範例事件也是從當前主題的真實資料挑的 —— 寫死的話，
+「秦滅六國」會出現在鐵道史的說明裡。
 
 ### 時間軸的上下界（`timeline.yaml`）
 
@@ -195,8 +253,9 @@ src/data/timeline.yaml  時間軸的上下界
 - `MAX_SHIFT_YEARS` 只能往小調，不能往大。往大調會重現順序失真。
 - `MAX_LANES` 上調到 3 試過，視線要之字形來回掃，而且 340px 的欄寬會截斷標題。
   維持 2。寧可退化成圖釘（放大就讀得到），也不要三欄。
-- 覺得「圖釘太多、資訊太少」時，**解法是調開場的 `ppy`，不是門檻也不是資料。**
-  這條曾經寫成「調 `minImportance()` 門檻或修資料的 importance」，實測兩者都錯：
+- 覺得「圖釘太多、資訊太少」時，**解法是調該主題 `topic.yaml` 的 `defaultPpy`，
+  不是門檻也不是資料。** 這條曾經寫成「調 `minImportance()` 門檻或修資料的
+  importance」，實測兩者都錯（下面的數字是世界史那份量的）：
 
   | 預設視角的門檻 | 顯示 | 圖釘 | **讀得到標題** |
   |---|---|---|---|
@@ -454,6 +513,11 @@ flex item 的預設 `min-size` 是 `auto`，不給 0 的話 `.scroller` 不會�
 不要用 CSS 的 `nth-of-type` 猜 —— 引線那條範例就是靠 `top` 錯開才示範得出
 「標籤被推開」。
 
+**範例用的事件也是從當前主題的真實資料挑的**（依重要度取最高的那則），
+理由跟「用真正的 class 畫」是同一個：寫死的話，世界史的「秦滅六國」會出現在
+鐵道史的說明裡。挑不到就整格不顯示 —— 沒有傳說事件的主題本來就不該有一格
+在教你怎麼讀傳說，沒有跨度事件的主題也不該有那一格。
+
 **這裡有一份不會自動同步的東西：說明文字。** 它複述了縮放分層、位移上限、
 傳說旗標、出處政策這些行為。改動 `minImportance()` 的門檻、`MAX_SHIFT_YEARS`、
 `legendary` 的視覺，或出處規則時，記得回來看一眼這支檔案。
@@ -527,8 +591,15 @@ GitHub Pages 專案頁面掛在 `/<repo>/` 底下，`base` 設錯是整頁空白
 ## 已知限制與可能的下一步
 
 - **超過四個地區時**要重新驗證相鄰欄的配色（見上方「顏色只承載地區」）。
-  版面本身已支援任意數量，見「多地區版面」。
+  版面本身已支援任意數量，見「多地區版面」。**每個主題各自要驗** ——
+  鐵道史刻意只切四欄（以營運者而非路線分欄）就是為了留在已驗證的範圍內。
 - **沒有虛擬化**，見上方 DOM 渲染那條。
+- **所有主題的 YAML 會打進同一個共用 chunk。** `import.meta.glob` 的 pattern
+  必須是靜態字串，eager 之後 Rollup 沒辦法依 entry 切分。目前的量可以忽略。
+  真的大到影響首屏時，作法是給每個主題一支自己的 entry module 明確 import
+  自己的資料檔 —— **不要改成 `eager: false`**，那會讓資料變成 async，
+  `MIN_YEAR` 就沒辦法留在模組層，「主題是 per-document 常數」那整套前提就沒了。
+- **`tw-railway` 目前是種子資料**，只走過維基 API 的標題查證，還沒補到正式規模。
 - **資料是 Claude 在對話中逐筆整理的**（擬候選 → 維基 API 批次查證 → 寫入），
   不是資料庫匯入，也不是逐字手打。大量匯入建議走 Wikidata SPARQL，授權 CC0
   可直接用。注意維基百科的**條目文字是 CC BY-SA**，採用敘述需標示出處；純日期

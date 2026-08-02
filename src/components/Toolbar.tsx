@@ -1,12 +1,16 @@
 import type { ReactNode } from 'react'
-import { CATEGORIES, CATEGORY_IDS, type Category, type Region } from '../lib/schema'
-import { minImportance } from '../lib/scale'
+import { CATEGORIES, CATEGORY_IDS, REGIONS, TOPIC } from '../lib/data'
+import type { Category, Region } from '../lib/schema'
+import { defaultJumps, minImportance } from '../lib/scale'
 
-const JUMPS = [-2000, -1000, -500, 1, 500, 1000, 1500, 1800, 1950]
+/** 主題自己挑的年代按鈕；沒填就依軸的範圍自動產生（見 topicSchema 的 jumps） */
+const JUMPS = TOPIC.jumps ?? defaultJumps()
+
+const HAS_LEGENDARY = REGIONS.some((r) => r.events.some((e) => e.legendary))
 
 export interface RegionChip {
   region: Region
-  /** 地區在 regions.yaml 裡的原始索引，決定配色 slot */
+  /** 欄位在 regions.yaml 裡的原始索引，決定配色 slot */
   slot: number
   visible: boolean
 }
@@ -61,9 +65,9 @@ export function Toolbar({
           ))}
         </nav>
       </div>
-      {/* 這排同時是圖例：地區靠顏色識別，類別靠漢字識別 */}
+      {/* 這排同時是圖例：欄位靠顏色識別，類別靠漢字識別 */}
       <div className="toolbar-row legend">
-        <div className="chip-group" role="group" aria-label="顯示哪些地區">
+        <div className="chip-group" role="group" aria-label={`顯示哪些${TOPIC.columnLabel}`}>
           {regions.map(({ region, slot, visible }) => (
             <button
               type="button"
@@ -100,26 +104,32 @@ export function Toolbar({
           })}
         </div>
 
-        <span className="group-sep" aria-hidden="true" />
-
         {/*
           傳說是獨立的一軸，不是第七個類別 —— 伏羲仍然是「文化」、黃帝仍然是
           「戰爭」，這顆 chip 篩的是「年代確不確定」。
+
+          整個主題都沒有傳說事件時（鐵道史就沒有）連 chip 都不顯示 ——
+          留一顆按了什麼都不會變的開關，只會讓人以為自己弄壞了什麼。
         */}
-        <div className="chip-group" role="group" aria-label="傳說事件">
-          <button
-            type="button"
-            className={`chip chip-legendary${showLegendary ? ' is-on' : ''}`}
-            aria-pressed={showLegendary}
-            onClick={onToggleLegendary}
-            title="三皇五帝、神武天皇這類年代出自後世追記的事件"
-          >
-            <span className="glyph" aria-hidden="true">
-              傳
-            </span>
-            傳說
-          </button>
-        </div>
+        {HAS_LEGENDARY && (
+          <>
+            <span className="group-sep" aria-hidden="true" />
+            <div className="chip-group" role="group" aria-label="傳說事件">
+              <button
+                type="button"
+                className={`chip chip-legendary${showLegendary ? ' is-on' : ''}`}
+                aria-pressed={showLegendary}
+                onClick={onToggleLegendary}
+                title="三皇五帝、神武天皇這類年代出自後世追記的事件"
+              >
+                <span className="glyph" aria-hidden="true">
+                  傳
+                </span>
+                傳說
+              </button>
+            </div>
+          </>
+        )}
       </div>
     </div>
   )

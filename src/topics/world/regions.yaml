@@ -1,6 +1,6 @@
 # 欄位定義。order 決定由左至右的順序，**同時也決定配色 slot**
 # （0=藍 1=橘 2=青 3=黃 4=洋紅 5=綠 6=紫 7=紅）。
-# 新增地區：在這裡加一筆，然後建 src/data/<id>/periods.yaml 與 events.yaml。
+# 新增地區：在這裡加一筆，然後建 src/topics/world/<id>/periods.yaml 與 events.yaml。
 #
 # 由近而遠排列：台灣 → 日本 → 中國 → 歐洲。
 # 調整 order 會連帶換色，而且相鄰欄的顏色必須通過色盲安全距離，
