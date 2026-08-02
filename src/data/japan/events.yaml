@@ -750,6 +750,103 @@
     - title: 維基百科：日韓合併
       url: https://zh.wikipedia.org/wiki/日韓合併
 
+- id: jp-taisho-political-crisis
+  year: 1912
+  title: 大正政變，第一次護憲運動爆發
+  category: politics
+  importance: 4
+  desc: 桂太郎三度組閣引發輿論強烈反彈，尾崎行雄與犬養毅發起第一次護憲運動，號召「打倒閥族、擁護憲政」。數萬群眾包圍國會抗議迫使桂內閣成立 50 天即總辭，開啟「大正民主」時期。
+  sources:
+    - title: 維基百科：大正政變
+      url: https://zh.wikipedia.org/wiki/大正政變
+    - title: 維基百科：護憲運動
+      url: https://zh.wikipedia.org/wiki/護憲運動
+
+- id: jp-siege-of-tsingtao
+  year: 1914
+  title: 日本參戰一戰，攻佔德國租借地青島
+  category: war
+  importance: 4
+  desc: 第一次世界大戰爆發後日本依據《日英同盟》對德宣戰，派兵攻佔德國租借地青島及太平洋赤道以北之德屬諸島。戰後獲國際聯盟授權委任統治太平洋諸島，日本一躍成為遠東主要列強。
+  sources:
+    - title: 維基百科：青島戰役
+      url: https://zh.wikipedia.org/wiki/青島戰役
+
+- id: jp-takarazuka-1914
+  year: 1914
+  title: 寶塚歌劇團首演，大眾演劇新紀元
+  category: culture
+  importance: 3
+  desc: 阪急電鐵創辦人小林一三於兵庫縣寶塚市成立「寶塚少女歌劇團」並進行首次正式公演。全數由未婚女性飾演男角與女角的形式震撼演藝圈，成為日本大眾文化與洋風浪漫的代表象徵。
+  sources:
+    - title: 維基百科：寶塚歌劇團
+      url: https://zh.wikipedia.org/wiki/寶塚歌劇團
+
+- id: jp-21-demands
+  year: 1915
+  title: 對華二十一條要求提出
+  category: politics
+  importance: 4
+  desc: 大隈重信內閣利用列強忙於一戰之際，向袁世凱政府秘密提出擴大在華特權與掌控山東權益之《二十一條要求》。此舉引發中國反日浪潮，也加深了日本與美英列強間的矛盾。
+  sources:
+    - title: 維基百科：二十一條
+      url: https://zh.wikipedia.org/wiki/二十一條
+
+- id: jp-yoshino-minponism
+  year: 1916
+  title: 吉野作造發表《憲政之本義》，民本主義理論體系確立
+  category: culture
+  importance: 3
+  desc: 東京帝國大學教授吉野作造於《中央公論》發表《論憲政之本義其貫徹之道》，提出「民本主義」理論，將民主政治思想巧妙調和於帝國憲法體制下，成為「大正民主」運動的思想旗幟。
+  sources:
+    - title: 維基百科：吉野作造
+      url: https://zh.wikipedia.org/wiki/吉野作造
+
+- id: jp-rice-riots-1918
+  year: 1918
+  title: 米騷動爆發；原敬成立首個純政黨內閣
+  category: politics
+  importance: 4
+  desc: 富山縣漁婦引發的米價暴瀉抗議迅速擴散至全日本三十八個城市（米騷動），迫使寺內正毅內閣總辭。立憲政友會總裁「平民宰相」原敬就任首相，成立日本歷史上首個純政黨內閣。
+  sources:
+    - title: 維基百科：1918年米騷動
+      url: https://zh.wikipedia.org/wiki/1918年米騷動
+    - title: 維基百科：原敬
+      url: https://zh.wikipedia.org/wiki/原敬
+
+- id: jp-league-of-nations-permanent
+  year: 1920
+  title: 國際聯盟成立，日本成為常任理事國
+  category: politics
+  importance: 4
+  desc: 國際聯盟正式成立，日本作為一戰戰勝國，與英、法、義共同擔任四大常任理事國之一，新渡戶稻造出任國際聯盟副事務總長，標誌著日本外交與國際地位達到戰前巔峰。
+  sources:
+    - title: 維基百科：國際聯盟
+      url: https://zh.wikipedia.org/wiki/國際聯盟
+
+- id: jp-washington-conference
+  year: 1921
+  endYear: 1922
+  title: 華盛頓會議與海軍軍縮條約簽署
+  category: politics
+  importance: 4
+  desc: 美英日等國召開華盛頓會議，簽署《五國海軍條約》限制主力艦噸位比例（美 5：英 5：日 3），並簽署《四國條約》終結《日英同盟》。日本海軍內部隨之分裂為贊成派（條約派）與反對派（艦隊派）。
+  sources:
+    - title: 維基百科：華盛頓會議
+      url: https://zh.wikipedia.org/wiki/華盛頓會議
+
+- id: jp-jcp-suiheisha
+  year: 1922
+  title: 日本共產黨與全國水平社成立
+  category: culture
+  importance: 3
+  desc: 在俄國革命與大正民主思潮影響下，日本共產黨於東京秘密結黨；同年部落民解放運動組織「全國水平社」成立並發表宣言，標誌著戰前日本無產階級與人權社會運動的興起。
+  sources:
+    - title: 維基百科：日本共產黨
+      url: https://zh.wikipedia.org/wiki/日本共產黨
+    - title: 日文維基百科：全國水平社
+      url: https://ja.wikipedia.org/wiki/全国水平社
+
 - id: jp-kanto-earthquake
   year: 1923
   title: 關東大地震
@@ -758,6 +855,58 @@
   sources:
     - title: 維基百科：關東大地震
       url: https://zh.wikipedia.org/wiki/關東大地震
+
+- id: jp-toranomon-incident
+  year: 1923
+  title: 虎之門事件，刺殺攝政宮未遂
+  category: politics
+  importance: 3
+  desc: 無政府主義青年難波大助於東京虎之門交差點持杖槍企圖刺殺前往國會的攝政宮裕仁親王（昭和天皇）。刺殺雖告失敗，但震撼朝野，導致山本權兵衛內閣集體總辭以示政治責任。
+  sources:
+    - title: 維基百科：虎之門事件
+      url: https://zh.wikipedia.org/wiki/虎之門事件
+
+- id: jp-koshien-stadium-1924
+  year: 1924
+  title: 阪神甲子園球場竣工
+  category: culture
+  importance: 3
+  desc: 為承辦全日本中等學校棒球大會（高中棒球大賽），日本第一座鋼筋混凝土大型棒球場「阪神甲子園球場」於甲子年完工啟用。甲子園自此成為日本棒球文化與青春精神的聖地。
+  sources:
+    - title: 維基百科：阪神甲子園球場
+      url: https://zh.wikipedia.org/wiki/阪神甲子園球場
+
+- id: jp-universal-suffrage-1925
+  year: 1925
+  title: 普通選舉法與治安維持法制定
+  category: politics
+  importance: 4
+  desc: 加藤高明內閣通過《普通選舉法》，廢除納稅金額限制，賦予 25 歲以上成年男性參政權（選民擴增四倍）；同會期亦通過《治安維持法》嚴懲共產主義與變更國體者，展現大正民主的兩面性。
+  sources:
+    - title: 日文維基百科：普通選舉法
+      url: https://ja.wikipedia.org/wiki/普通選挙法
+    - title: 維基百科：治安維持法
+      url: https://zh.wikipedia.org/wiki/治安維持法
+
+- id: jp-nhk-radio-start
+  year: 1925
+  title: 日本無線電廣播開播
+  category: culture
+  importance: 3
+  desc: 社團法人東京放送局（今 NHK 日本放送協會前身）開始進行無線電廣播。廣播迅速融入大眾日常生活，成為新聞即時傳播、大眾文化娛樂與防災警報的關鍵媒介。
+  sources:
+    - title: 維基百科：日本放送協會
+      url: https://zh.wikipedia.org/wiki/日本放送協會
+
+- id: jp-end-of-taisho
+  year: 1926
+  title: 大正天皇駕崩，昭和天皇即位
+  category: politics
+  importance: 3
+  desc: 12 月 25 日大正天皇駕崩，皇太子裕仁（昭和天皇）即位，改元「昭和」，15 年的大正時代落幕。大正時期以政黨政治（大正民主）與西洋大眾文化（大正浪漫）為特色。
+  sources:
+    - title: 維基百科：大正
+      url: https://zh.wikipedia.org/wiki/大正
 
 - id: jp-showa-financial-crisis
   year: 1927
@@ -1014,6 +1163,16 @@
     - title: 維基百科：東京地下鐵沙林毒氣事件
       url: https://zh.wikipedia.org/wiki/東京地下鐵沙林毒氣事件
 
+- id: jp-pokemon-1996
+  year: 1996
+  title: 《寶可夢》遊戲發售，動漫遊戲文化風靡全球
+  category: culture
+  importance: 4
+  desc: 任天堂發行《寶可夢 紅／綠》，帶動集換式卡牌與動畫潮流。日本動漫（Anime）與電子遊戲（JRPG）成為全球流行文化符號，「Cool Japan」軟實力發展里程碑。
+  sources:
+    - title: 維基百科：寶可夢系列
+      url: https://zh.wikipedia.org/wiki/寶可夢系列
+
 - id: jp-yamaichi-collapse
   year: 1997
   title: 山一證券自主廢業，平成金融危機爆發
@@ -1023,6 +1182,26 @@
   sources:
     - title: 日文維基百科：山一證券
       url: https://ja.wikipedia.org/wiki/山一證券
+
+- id: jp-kyoto-protocol-1997
+  year: 1997
+  title: 氣候變遷會議通過《京都議定書》
+  category: science
+  importance: 4
+  desc: 聯合國氣候變遷框架公約締約國會議（COP3）於京都召開，通過首份對先進國家溫室氣體減量設定具法律約束力目標的國際條約《京都議定書》。
+  sources:
+    - title: 維基百科：京都議定書
+      url: https://zh.wikipedia.org/wiki/京都議定書
+
+- id: jp-nagano-olympics-1998
+  year: 1998
+  title: 長野冬季奧運會舉辦
+  category: culture
+  importance: 3
+  desc: 第 18 屆冬季奧林匹克運動會於長野縣舉行，日本地主隊奪下 5 金 14 面獎牌佳績。這是日本時隔 26 年再度主辦冬季奧運，展示了高科技與山岳賽場設施。
+  sources:
+    - title: 維基百科：1998年冬季奧林匹克運動會
+      url: https://zh.wikipedia.org/wiki/1998年冬季奧林匹克運動會
 
 - id: jp-world-cup-2002
   year: 2002
@@ -1035,6 +1214,27 @@
       url: https://zh.wikipedia.org/wiki/2002年國際足協世界盃
     - title: 維基百科：日朝平壤宣言
       url: https://zh.wikipedia.org/wiki/日朝平壤宣言
+
+- id: jp-spirited-away-oscar-2003
+  year: 2003
+  title: 宮崎駿《神隱少女》榮獲奧斯卡最佳動畫長片獎
+  category: culture
+  importance: 3
+  desc: 吉卜力工作室宮崎駿執導的《神隱少女》榮獲第 75 屆奧斯卡最佳動畫長片獎，並獲頒柏林影展金熊獎，改寫日本電影紀錄，將日本手繪動畫美學推向世界藝術殿堂巔峰。
+  sources:
+    - title: 維基百科：千與千尋
+      url: https://zh.wikipedia.org/wiki/千與千尋
+
+- id: jp-sdf-iraq-2004
+  year: 2004
+  endYear: 2008
+  title: 自衛隊派駐伊拉克，參與戰後人道復興
+  category: politics
+  importance: 4
+  desc: 小泉內閣依據《伊拉克復興特別措置法》，派遣陸上與航空自衛隊駐紮伊拉克薩馬瓦執行人道救援與重建。這是戰後日本自衛隊首次被派往尚處非安全狀態之異國戰地。
+  sources:
+    - title: 維基百科：自衛隊伊拉克復興支援群
+      url: https://zh.wikipedia.org/wiki/自衛隊伊拉克復興支援群
 
 - id: jp-postal-privatization
   year: 2005
@@ -1055,6 +1255,26 @@
   sources:
     - title: 維基百科：2009年日本眾議院選舉
       url: https://zh.wikipedia.org/wiki/2009年日本眾議院選舉
+
+- id: jp-lay-judge-system-2009
+  year: 2009
+  title: 裁判員制度正式上路，國民參與刑事審判
+  category: politics
+  importance: 3
+  desc: 為落實司法改革，日本正式實施「裁判員制度」，由隨機抽籤選出的普通國民與職業裁判官（法官）共同審理重大刑事案件並參與量刑，打破近百年僅由職業法官審判的傳統。
+  sources:
+    - title: 維基百科：裁判員制度
+      url: https://zh.wikipedia.org/wiki/裁判員制度
+
+- id: jp-hayabusa-sample-return-2010
+  year: 2010
+  title: 隼鳥號探測器成功攜帶小行星微粒返回地球
+  category: science
+  importance: 4
+  desc: 日本宇宙航空研究開發機構（JAXA）的「隼鳥號」（Hayabusa）探測器歷經七年艱難旅程與多次故障，成功從小行星「絲川」採樣並返回地球，實現人類首次小行星物質採樣返回。
+  sources:
+    - title: 維基百科：隼鳥號
+      url: https://zh.wikipedia.org/wiki/隼鳥號
 
 - id: jp-311-earthquake
   year: 2011
@@ -1078,6 +1298,26 @@
     - title: 維基百科：安倍經濟學
       url: https://zh.wikipedia.org/wiki/安倍經濟學
 
+- id: jp-skytree-2012
+  year: 2012
+  title: 東京晴空塔完工啟用
+  category: science
+  importance: 3
+  desc: 高 634 公尺的世界最高自立式電波塔「東京晴空塔」（Tokyo Skytree）於墨田區完工通塔，接替東京鐵塔提供數位地面電視訊號，成為 21 世紀東京新地標與觀光名勝。
+  sources:
+    - title: 維基百科：東京晴空塔
+      url: https://zh.wikipedia.org/wiki/東京晴空塔
+
+- id: jp-security-legislation-2015
+  year: 2015
+  title: 平和安全法制通過，解禁集體自衛權
+  category: politics
+  importance: 4
+  desc: 安倍內閣於國會強行通過安保法案（平和安全法制），修改《自衛隊法》等 10 部法律，允許日本在密切同盟國遭襲擊時行使集體自衛權。此法案引發憲法學者與社會大規模示威與合憲性爭議。
+  sources:
+    - title: 維基百科：日本和平安全法制
+      url: https://zh.wikipedia.org/wiki/日本和平安全法制
+
 - id: jp-reiwa-era
   year: 2019
   title: 明仁天皇退位，改元「令和」
@@ -1090,6 +1330,26 @@
     - title: 維基百科：明仁天皇退位
       url: https://zh.wikipedia.org/wiki/明仁天皇退位
 
+- id: jp-covid19-emergency-2020
+  year: 2020
+  title: COVID-19 疫情爆發，發布首次緊急事態宣言
+  category: culture
+  importance: 4
+  desc: COVID-19 全球疫情擴散，首相安倍晉三發布日本史上首次緊急事態宣言。學校停課、產業遠距運作與民眾自肅（避免非必要外出）深層改變社會生活模式。
+  sources:
+    - title: 維基百科：2019冠狀病毒病日本疫情
+      url: https://zh.wikipedia.org/wiki/2019冠狀病毒病日本疫情
+
+- id: jp-hayabusa2-sample-return-2020
+  year: 2020
+  title: 隼鳥2號順利將小行星「龍宮」微粒樣品帶回地球
+  category: science
+  importance: 4
+  desc: JAXA「隼鳥2號」（Hayabusa2）探測器將裝有小行星「龍宮」地下岩石樣品的再突入艙成功降落於澳洲沙漠。科學家於樣品中發現胺基酸與水成分，為太陽系與生命起源研究取得突破。
+  sources:
+    - title: 維基百科：隼鳥2號
+      url: https://zh.wikipedia.org/wiki/隼鳥2號
+
 - id: jp-tokyo-2020
   year: 2021
   title: 2020 東京奧運會（因疫情延期）登場
@@ -1099,6 +1359,16 @@
   sources:
     - title: 維基百科：2020年夏季奧林匹克運動會
       url: https://zh.wikipedia.org/wiki/2020年夏季奧林匹克運動會
+
+- id: jp-nishi-kyushu-shinkansen-2022
+  year: 2022
+  title: 西九州新幹線（武雄溫泉—長崎）通車
+  category: economy
+  importance: 3
+  desc: 連結佐賀縣武雄溫泉站與長崎站的「西九州新幹線」正式通車，採用 N700S 系列車「海鷗號」（Kamome）。這是時隔 7 年日本新幹線路線延伸，促進九州觀光與區域發展。
+  sources:
+    - title: 維基百科：西九州新幹線
+      url: https://zh.wikipedia.org/wiki/西九州新幹線
 
 - id: jp-abe-assassination
   year: 2022
@@ -1119,3 +1389,23 @@
   sources:
     - title: 維基百科：2024年能登半島地震
       url: https://zh.wikipedia.org/wiki/2024年能登半島地震
+
+- id: jp-new-banknotes-2024
+  year: 2024
+  title: 令和新紙幣全面發行，採用全息防偽新技術
+  category: economy
+  importance: 3
+  desc: 日本銀行時隔 20 年發行新版紙幣，一萬日圓肖像改為「日本資本主義之父」澀澤榮一、五千日圓改為女性教育先驅津田梅子、千日圓改為醫學家北里柴三郎，並導入全球首創 3D 全息防偽技術。
+  sources:
+    - title: 日文維基百科：日本銀行券
+      url: https://ja.wikipedia.org/wiki/日本銀行券
+
+- id: jp-slim-moon-landing-2024
+  year: 2024
+  title: SLIM 探測器成功精準登月，日本成為第五個登月國
+  category: science
+  importance: 4
+  desc: JAXA 的「SLIM」（智能月球探測器）於月球表面成功實現高精度著陸（目標地點誤差在 10 公尺內），日本成為繼前蘇聯、美國、中國與印度後，全球第 5 個成功將探測器送上月球的國家。
+  sources:
+    - title: 維基百科：智能月球探測器
+      url: https://zh.wikipedia.org/wiki/智能月球探測器
