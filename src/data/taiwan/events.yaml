@@ -246,6 +246,31 @@
     - title: 維基百科：鄭成功攻臺之役
       url: https://zh.wikipedia.org/wiki/鄭成功攻臺之役
 
+- id: tw-tuntian
+  year: 1661
+  title: 實施軍屯制，奠定漢人拓墾基礎
+  category: economy
+  importance: 4
+  desc: 鄭成功抵台後為解決糧食危機頒布屯田令，實施軍屯制度。官兵文封田、武屯墾，分駐中南部各地，此即今日新營、左營、柳營、前鎮等軍營地名的由來。軍屯奠定了台灣漢人開墾與聚落分布的基礎。
+  sources:
+    - title: 維基百科：臺灣明鄭時期
+      url: https://zh.wikipedia.org/wiki/臺灣明鄭時期
+    - title: 維基百科：屯田制
+      url: https://zh.wikipedia.org/wiki/屯田制
+
+- id: tw-qianjie
+  year: 1661
+  title: 清朝實施遷界令，封鎖明鄭經濟
+  category: politics
+  importance: 3
+  endYear: 1684
+  desc: 清朝為斷絕沿海居民對明鄭的物資支援，嚴令山東至廣東沿海居民內遷三十里並毀棄村莊。遷界令使沿海經濟受創，但也迫使明鄭轉向與日本、英國及東南亞展開國際走私與跨境貿易。
+  sources:
+    - title: 維基百科：遷界令
+      url: https://zh.wikipedia.org/wiki/遷界令
+    - title: 維基百科：臺灣明鄭時期
+      url: https://zh.wikipedia.org/wiki/臺灣明鄭時期
+
 - id: tw-tungning
   year: 1662
   title: 鄭成功驅逐荷蘭人，明鄭治台
@@ -269,6 +294,18 @@
     - title: 維基百科：鄭成功
       url: https://zh.wikipedia.org/wiki/鄭成功
 
+- id: tw-dongning-regime
+  year: 1664
+  title: 鄭經改東都為東寧，升天興萬年為州
+  category: politics
+  importance: 3
+  desc: 鄭經退守台灣後，改「東都」為「東寧」，升天興、萬年二縣為州，劃分行政區劃並設澎湖安撫司。東寧成為明鄭統治體制的核心，並以「東寧國」或「東寧王」之名開展外交與貿易。
+  sources:
+    - title: 維基百科：東寧_(臺灣古名)
+      url: https://zh.wikipedia.org/wiki/東寧_(臺灣古名)
+    - title: 維基百科：臺灣明鄭時期
+      url: https://zh.wikipedia.org/wiki/臺灣明鄭時期
+
 - id: tw-confucius-temple
   year: 1666
   title: 陳永華建台南孔廟，設學校
@@ -289,6 +326,43 @@
   sources:
     - title: 維基百科：臺灣荷蘭統治時期
       url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
+- id: tw-zheng-british-treaty
+  year: 1670
+  title: 英國東印度公司與明鄭締結通商條約
+  category: economy
+  importance: 4
+  desc: 明鄭與英國東印度公司簽署《鄭英通商條約》，英商於安平設置商館，為臺灣史上首次與歐美強權建立正式貿易關係。明鄭出口蔗糖與鹿皮，換取英方的火砲、彈藥與洋貨。
+  sources:
+    - title: 維基百科：鄭英通商
+      url: https://zh.wikipedia.org/wiki/鄭英通商
+    - title: 維基百科：臺灣明鄭時期
+      url: https://zh.wikipedia.org/wiki/臺灣明鄭時期
+
+- id: tw-sanfan-zheng
+  year: 1674
+  title: 響應三藩之亂，鄭經率軍西征閩粵
+  category: war
+  importance: 4
+  endYear: 1680
+  desc: 靖南王耿精忠於福建響應三藩之亂，邀請鄭經出兵。鄭經率主力西征反清，一度攻佔泉州、漳州、潮州等地。後因與耿精忠內爭、清軍反攻與資源枯竭，於 1680 年敗退回臺，明鄭精銳盡失。
+  sources:
+    - title: 維基百科：三藩之亂
+      url: https://zh.wikipedia.org/wiki/三藩之亂
+    - title: 維基百科：臺灣明鄭時期
+      url: https://zh.wikipedia.org/wiki/臺灣明鄭時期
+
+- id: tw-dongning-coup
+  year: 1681
+  title: 鄭經病逝，東寧之變
+  category: politics
+  importance: 3
+  desc: 鄭經西征失敗返台後病逝，大臣馮錫範與鄭聰等發動政變，殺害監國世子鄭克𡛕，擁立十二歲的鄭克塽。明鄭內部政爭加劇，政局嚴重動盪，加速了兩年後明鄭的覆亡。
+  sources:
+    - title: 維基百科：東寧之變
+      url: https://zh.wikipedia.org/wiki/東寧之變
+    - title: 維基百科：鄭克塽
+      url: https://zh.wikipedia.org/wiki/鄭克塽
 
 - id: tw-penghu-battle
   year: 1683
@@ -324,6 +398,38 @@
       url: https://zh.wikipedia.org/wiki/渡臺禁令
     - title: 維基百科：臺灣清治時期
       url: https://zh.wikipedia.org/wiki/臺灣清治時期
+
+- id: tw-yu-yonghe
+  year: 1697
+  title: 郁永河抵台採硫，著《裨海紀遊》
+  category: culture
+  importance: 3
+  desc: 福州鴉片庫火災失硫，郁永河自告奮勇前往臺灣採硫。他自府城陸路北上淡水，詳細記錄沿途原住民風貌與地理景物，所著《裨海紀遊》為清初臺灣最重要的遊記與人文地理文獻。
+  sources:
+    - title: 維基百科：裨海紀遊
+      url: https://zh.wikipedia.org/wiki/裨海紀遊
+    - title: 維基百科：郁永河
+      url: https://zh.wikipedia.org/wiki/郁永河
+
+- id: tw-chen-laizhang
+  year: 1709
+  title: 陳賴章墾號成立，台北盆地大開墾
+  category: economy
+  importance: 4
+  desc: 泉州商人陳天仕、陳賴章等申獲「陳賴章墾號」，獲准開墾大佳臘（今台北市艋舺、大稻埕至松山一帶）。這是漢人有系統開墾台北盆地的開端，奠定台北市街發展的基石。
+  sources:
+    - title: 維基百科：陳賴章
+      url: https://zh.wikipedia.org/wiki/陳賴章
+
+- id: tw-babao-canal
+  year: 1719
+  title: 八堡圳完工，水利灌溉彰化平原
+  category: economy
+  importance: 3
+  desc: 施世榜引濁水溪水開鑿八堡圳，耗時十年建成，灌溉彰化大部分農田。八堡圳為清代臺灣規模最大的水利工程，使彰化平原成為臺灣的中部糧倉。
+  sources:
+    - title: 維基百科：八堡圳
+      url: https://zh.wikipedia.org/wiki/八堡圳
 
 - id: tw-zhu-yigui
   year: 1721
@@ -370,6 +476,16 @@
     - title: 維基百科：艋舺龍山寺
       url: https://zh.wikipedia.org/wiki/艋舺龍山寺
 
+- id: tw-liugong-canal
+  year: 1753
+  title: 瑠公圳完工，水利灌溉台北盆地
+  category: economy
+  importance: 3
+  desc: 郭錫瑠引新店溪水開鑿水圳，克服穿山引水等工程難關，水圳橫貫景美、公館至大安一帶。瑠公圳提供穩定水源，促進台北盆地農耕與聚落繁榮。
+  sources:
+    - title: 維基百科：瑠公圳
+      url: https://zh.wikipedia.org/wiki/瑠公圳
+
 - id: tw-lin-shuangwen
   year: 1786
   title: 林爽文事件
@@ -391,6 +507,16 @@
       url: https://zh.wikipedia.org/wiki/噶瑪蘭廳
     - title: 維基百科：吳沙
       url: https://zh.wikipedia.org/wiki/吳沙
+
+- id: tw-dingxia-conflict
+  year: 1853
+  title: 頂下郊拚，同安人敗走大稻埕
+  category: war
+  importance: 3
+  desc: 艋舺的三邑人（頂郊）與同安人（下郊）因港口貿易利益與族群矛盾爆發大規模分類械鬥。同安人戰敗後背負霞海城隍神像避走大稻埕，帶動大稻埕商業與街肆興起。
+  sources:
+    - title: 維基百科：頂下郊拚
+      url: https://zh.wikipedia.org/wiki/頂下郊拚
 
 - id: tw-perry-keelung
   year: 1854
@@ -444,6 +570,18 @@
   sources:
     - title: 維基百科：馬雅各
       url: https://zh.wikipedia.org/wiki/馬雅各
+
+- id: tw-rover-incident
+  year: 1867
+  title: 羅發號事件，李仙得與卓杞篤締結南岬之盟
+  category: politics
+  importance: 4
+  desc: 美國商船羅發號於恆春遇難，船員登陸後遭原住民殺害。美軍派兵登陸攻擊未果，駐廈門領事李仙得隨後與排灣族十八社總頭目卓杞篤談判，簽署《南岬之盟》保護遇難外國船員，為臺灣原住民與外國簽署的首份國際協議。
+  sources:
+    - title: 維基百科：羅發號事件
+      url: https://zh.wikipedia.org/wiki/羅發號事件
+    - title: 維基百科：卓杞篤
+      url: https://zh.wikipedia.org/wiki/卓杞篤
 
 - id: tw-camphor-war
   year: 1868
@@ -593,6 +731,18 @@
     - title: 維基百科：臺灣總督府鐵道部
       url: https://zh.wikipedia.org/wiki/臺灣總督府鐵道部
 
+- id: tw-bank-of-taiwan
+  year: 1899
+  title: 臺灣銀行成立，發行臺灣銀行券
+  category: economy
+  importance: 4
+  desc: 臺灣銀行作為日治時期的中央與商業銀行成立，發行獨立貨幣「臺灣銀行券」。臺灣銀行的創立統一了全臺貨幣與金融體系，為殖民地產業、交通建設與貿易提供資金支撐。
+  sources:
+    - title: 維基百科：臺灣銀行
+      url: https://zh.wikipedia.org/wiki/臺灣銀行
+    - title: 維基百科：臺灣銀行券
+      url: https://zh.wikipedia.org/wiki/臺灣銀行券
+
 - id: tw-armed-resistance-crushed
   year: 1902
   title: 武裝抗日勢力大致肅清
@@ -611,6 +761,18 @@
   sources:
     - title: 維基百科：臨時臺灣戶口調查
       url: https://zh.wikipedia.org/wiki/臨時臺灣戶口調查
+
+- id: tw-rihan-policy
+  year: 1905
+  title: 理蕃政策與隘勇線推進
+  category: politics
+  importance: 3
+  desc: 總督府為控有高山山林與樟腦資源，大規模實施「理蕃政策」並推進行政與軍事的「隘勇線」。透過武力封鎖與討伐戰事，強行將高山原住民部落與山地納入殖民統治網絡。
+  sources:
+    - title: 維基百科：理蕃政策
+      url: https://zh.wikipedia.org/wiki/理蕃政策
+    - title: 維基百科：隘勇
+      url: https://zh.wikipedia.org/wiki/隘勇
 
 - id: tw-trunk-railway
   year: 1908
@@ -689,6 +851,28 @@
     - title: 維基百科：縱貫線 (鐵路)
       url: https://zh.wikipedia.org/wiki/縱貫線_(鐵路)
 
+- id: tw-taiwan-minpao
+  year: 1923
+  title: 《臺灣民報》創刊，臺灣人的唯一言論機關
+  category: culture
+  importance: 3
+  desc: 蔣渭水、蔡培火等於東京創辦《臺灣民報》（前身為《臺灣青年》與《臺灣》），後獲准回臺發行。作為日治時期臺灣人唯一自治的言論機關，積極宣揚民主思想、漢文白話文與啟蒙運動。
+  sources:
+    - title: 維基百科：臺灣民報
+      url: https://zh.wikipedia.org/wiki/臺灣民報
+
+- id: tw-zhijiing-incident
+  year: 1923
+  title: 治警事件，蔣渭水等政治領袖遭逮捕
+  category: politics
+  importance: 4
+  desc: 蔣渭水、蔡培火等成立「臺灣議會期成同盟會」，總督府以違反《治安警察法》發動全臺大搜捕，起訴十八名政治運動領袖。治警事件引發全臺與日本國內輿論關注，成為日治政治運動的重要里程碑。
+  sources:
+    - title: 維基百科：治警事件
+      url: https://zh.wikipedia.org/wiki/治警事件
+    - title: 維基百科：蔣渭水
+      url: https://zh.wikipedia.org/wiki/蔣渭水
+
 - id: tw-yilan-line
   year: 1924
   title: 宜蘭線全線通車
@@ -708,6 +892,18 @@
   sources:
     - title: 維基百科：臺東線
       url: https://zh.wikipedia.org/wiki/臺東線
+
+- id: tw-horai-rice
+  year: 1926
+  title: 蓬萊米命名問世，臺灣農業重大轉型
+  category: science
+  importance: 4
+  desc: 磯永吉與末永仁在臺試種日本稻成功，1926 年總督伊澤多喜男正式命名為「蓬萊米」。蓬萊米口感符合日本市場需求且產量大增，成功取代在地在來米，成為臺灣外銷日本的核心農產品與農業現代化代表。
+  sources:
+    - title: 維基百科：蓬萊米
+      url: https://zh.wikipedia.org/wiki/蓬萊米
+    - title: 維基百科：磯永吉
+      url: https://zh.wikipedia.org/wiki/磯永吉
 
 - id: tw-peoples-party
   year: 1927
@@ -771,6 +967,16 @@
   sources:
     - title: 維基百科：1935年臺灣市會及街庄協議會員選舉
       url: https://zh.wikipedia.org/wiki/1935年臺灣市會及街庄協議會員選舉
+
+- id: tw-expo-1935
+  year: 1935
+  title: 始政四十周年記念臺灣博覽會
+  category: culture
+  importance: 3
+  desc: 總督府為展示日治四十年的現代化建設成果，於臺北及全臺各地舉辦大型博覽會。五十日展期吸引三百萬人次參觀，展示近代產業、交通、衛生與都市計畫成就，為日治時期規模最大的文化展覽。
+  sources:
+    - title: 維基百科：始政四十周年記念臺灣博覽會
+      url: https://zh.wikipedia.org/wiki/始政四十周年記念臺灣博覽會
 
 - id: tw-kominka
   year: 1937
@@ -861,6 +1067,30 @@
     - title: 維基百科：四六事件
       url: https://zh.wikipedia.org/wiki/四六事件
 
+- id: tw-local-autonomy-1950
+  year: 1950
+  endYear: 1951
+  title: 頒布地方自治綱要，首次實施縣市長與議員選舉
+  category: politics
+  importance: 4
+  desc: 行政院頒布《臺灣省各縣市實施地方自治綱要》，劃分全臺十六縣五省轄市，並於 1950 至 1951 年間舉行戰後首次縣市長與縣市議員直接選舉（花蓮縣率先投開票）。開啟臺灣戰後地方自治與基層民主的制度實踐。
+  sources:
+    - title: 維基百科：1950年—1951年中華民國縣市長選舉
+      url: https://zh.wikipedia.org/wiki/1950年—1951年中華民國縣市長選舉
+    - title: 維基百科：臺灣省各縣市實施地方自治綱要
+      url: https://zh.wikipedia.org/wiki/臺灣省各縣市實施地方自治綱要
+
+- id: tw-us-aid
+  year: 1951
+  endYear: 1965
+  title: 美援正式啟動，支撐戰後經濟重建
+  category: economy
+  importance: 4
+  desc: 韓戰爆發後美國重啟對臺經濟與軍事援助，美援於 1951 年正式啟動，至 1965 年累計達十五億美元。美援穩定了戰後劇烈的通貨膨脹，並為基礎設施建設、農業化肥與工業發展提供資金，支撐臺灣戰後經濟復甦。
+  sources:
+    - title: 維基百科：美援
+      url: https://zh.wikipedia.org/wiki/美援
+
 - id: tw-land-reform
   year: 1953
   title: 耕者有其田，土地改革完成
@@ -944,12 +1174,22 @@
   title: 台美斷交；美麗島事件
   category: politics
   importance: 5
-  desc: 黨外運動遭大規模逮捕，卻也成為此後民主化的人才與動員基礎。
+  desc: 黨外運動遭大規模逮捕，卻也成為此後民主化的人才與動態動員基礎。
   sources:
     - title: 維基百科：美麗島事件
       url: https://zh.wikipedia.org/wiki/美麗島事件
     - title: 維基百科：中華民國與美國關係
       url: https://zh.wikipedia.org/wiki/中華民國與美國關係
+
+- id: tw-taoyuan-airport
+  year: 1979
+  title: 中正國際機場通航啟用
+  category: economy
+  importance: 3
+  desc: 列入十大建設的「中正國際機場」（今臺灣桃園國際機場）正式通航啟用，取代容量飽和的松山機場，成為臺灣對外交通的核心門戶，帶動臺灣國際貿易與航空客貨運快速成長。
+  sources:
+    - title: 維基百科：臺灣桃園國際機場
+      url: https://zh.wikipedia.org/wiki/臺灣桃園國際機場
 
 - id: tw-west-electrification
   year: 1979
@@ -1058,6 +1298,16 @@
     - title: 維基百科：臺灣原住民族運動
       url: https://zh.wikipedia.org/wiki/臺灣原住民族運動
 
+- id: tw-national-health-insurance
+  year: 1995
+  title: 全民健康保險開辦
+  category: politics
+  importance: 4
+  desc: 政府整合公保、勞保與農保，正式開辦「全民健康保險」，實施全體國民強制納保與社會保險制度。全民健保極大地提高了醫療覆蓋率與醫療平等，成為臺灣戰後最標誌性的社會福利制度。
+  sources:
+    - title: 維基百科：全民健康保險
+      url: https://zh.wikipedia.org/wiki/全民健康保險
+
 - id: tw-direct-election
   year: 1996
   title: 首次總統直選
@@ -1066,6 +1316,16 @@
   sources:
     - title: 維基百科：1996年中華民國總統選舉
       url: https://zh.wikipedia.org/wiki/1996年中華民國總統選舉
+
+- id: tw-taipei-mrt
+  year: 1996
+  title: 臺北捷運木柵線通車，臺灣首條捷運
+  category: economy
+  importance: 3
+  desc: 臺北捷運木柵線（今文湖線）正式通車營運，為臺灣第一條大眾捷運系統（MRT）。捷運系統的興建重塑了臺北都會區的交通習慣、土地開發與公共運輸網絡。
+  sources:
+    - title: 維基百科：臺北捷運
+      url: https://zh.wikipedia.org/wiki/臺北捷運
 
 - id: tw-921-earthquake
   year: 1999
@@ -1085,6 +1345,16 @@
   sources:
     - title: 維基百科：2000年中華民國總統選舉
       url: https://zh.wikipedia.org/wiki/2000年中華民國總統選舉
+
+- id: tw-sars-2003
+  year: 2003
+  title: SARS 疫情爆發，和平醫院封院
+  category: science
+  importance: 4
+  desc: 嚴重急性呼吸道症候群（SARS）於全臺爆發，臺北市立和平醫院緊急封院，造成數位醫護人員與民眾犧牲。此事件促使政府全面體檢公共衛生與防疫體系，重建傳染病防治指揮體系（CDC）與防疫物資儲備。
+  sources:
+    - title: 維基百科：嚴重急性呼吸系統綜合症疫情
+      url: https://zh.wikipedia.org/wiki/嚴重急性呼吸系統綜合症疫情
 
 - id: tw-indigenous-basic-law
   year: 2005
