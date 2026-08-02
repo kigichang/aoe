@@ -759,6 +759,18 @@
     - title: 維基百科：關東大地震
       url: https://zh.wikipedia.org/wiki/關東大地震
 
+- id: jp-showa-financial-crisis
+  year: 1927
+  title: 昭和金融恐慌爆發
+  category: economy
+  importance: 3
+  desc: 關東大地震震災手形壞帳問題引發擠兌潮，東京渡邊銀行倒閉，隨後引發全日本數十家銀行信用危機倒閉。若槻內閣總辭，高橋是清實施兩週存款凍結與緊急救市，促使金融業大規模合併集中。
+  sources:
+    - title: 維基百科：昭和金融恐慌
+      url: https://zh.wikipedia.org/wiki/昭和金融恐慌
+    - title: 日文維基百科：昭和金融恐慌
+      url: https://ja.wikipedia.org/wiki/昭和金融恐慌
+
 - id: jp-manchuria
   year: 1931
   title: 九一八事變
@@ -777,6 +789,17 @@
   sources:
     - title: 維基百科：二二六事件
       url: https://zh.wikipedia.org/wiki/二二六事件
+
+- id: jp-marco-polo-bridge
+  year: 1937
+  title: 盧溝橋事變，日中戰爭全面爆發
+  category: war
+  importance: 5
+  endYear: 1945
+  desc: 7 月 7 日北京宛平城外爆發盧溝橋事變，日軍隨後擴大軍事行動，演變成對中國的全面軍事侵略（日中戰爭/八年抗戰），嚴重改變了東亞戰局與國際秩序。
+  sources:
+    - title: 維基百科：七七事變
+      url: https://zh.wikipedia.org/wiki/七七事變
 
 - id: jp-pearl-harbor
   year: 1941
@@ -800,6 +823,17 @@
     - title: 維基百科：廣島與長崎原子彈爆炸
       url: https://zh.wikipedia.org/wiki/廣島與長崎原子彈爆炸
 
+- id: jp-tokyo-trials
+  year: 1946
+  endYear: 1948
+  title: 遠東國際軍事法庭（東京審判）開庭
+  category: politics
+  importance: 4
+  desc: 同盟國於東京成立遠東國際軍事法庭，開庭審判日本二戰甲級戰犯。東條英機等七人被判處絞刑，法庭追究了日本對外侵略與戰爭罪責，確立戰後檢討與歷史責任框架。
+  sources:
+    - title: 維基百科：遠東國際軍事法庭
+      url: https://zh.wikipedia.org/wiki/遠東國際軍事法庭
+
 - id: jp-constitution
   year: 1947
   title: 日本國憲法施行
@@ -819,6 +853,18 @@
     - title: 維基百科：湯川秀樹
       url: https://zh.wikipedia.org/wiki/湯川秀樹
 
+- id: jp-sf-peace-treaty
+  year: 1951
+  title: 舊金山和約與美日安保條約簽署
+  category: politics
+  importance: 4
+  desc: 49 國於舊金山簽署《對日和平條約》（舊金山和約），同盟國正式結束對日本的軍事佔領，日本恢復主權獨立；同日簽署《美日安保條約》，確立戰後美日同盟與美軍駐紮體制。
+  sources:
+    - title: 維基百科：舊金山和約
+      url: https://zh.wikipedia.org/wiki/舊金山和約
+    - title: 維基百科：美日安保條約
+      url: https://zh.wikipedia.org/wiki/美日安保條約
+
 - id: jp-high-growth
   year: 1955
   title: 高度經濟成長期開始
@@ -830,6 +876,26 @@
     - title: 維基百科：日本戰後經濟奇蹟
       url: https://zh.wikipedia.org/wiki/日本戰後經濟奇蹟
 
+- id: jp-conservative-merger
+  year: 1955
+  title: 自由民主黨成立，55年體制展開
+  category: politics
+  importance: 4
+  desc: 自由黨與日本民主黨合併成立自由民主黨（保守合同），同時日本社會黨完成左右統一。自民黨與社會黨形成一長一短的兩大黨對立結構（55年體制），自民黨自此長期執政。
+  sources:
+    - title: 維基百科：保守合同
+      url: https://zh.wikipedia.org/wiki/保守合同
+
+- id: jp-anpo-protests
+  year: 1960
+  title: 安保鬥爭爆發，岸信介內閣總辭
+  category: politics
+  importance: 4
+  desc: 岸信介政府強行於國會通過新《美日安保條約》，引發全日本數百萬工人、學生與市民爆發戰後最大規模的全國示威與罷工（安保鬥爭）。條約生效後岸信介被迫總辭，池田勇人接任並轉向「所得倍增計畫」。
+  sources:
+    - title: 維基百科：安保鬥爭
+      url: https://zh.wikipedia.org/wiki/安保鬥爭
+
 - id: jp-tokyo-olympics
   year: 1964
   title: 東京奧運；東海道新幹線通車
@@ -840,6 +906,70 @@
       url: https://zh.wikipedia.org/wiki/1964年夏季奧林匹克運動會
     - title: 維基百科：東海道新幹線
       url: https://zh.wikipedia.org/wiki/東海道新幹線
+
+- id: jp-kawabata-nobel
+  year: 1968
+  title: 川端康成獲諾貝爾文學獎
+  category: culture
+  importance: 3
+  desc: 川端康成憑《雪國》、《古都》、《千羽鶴》等作品榮獲諾貝爾文學獎，成為日本與東亞首位獲此殊榮的作家，彰顯日本傳統美學在現代文學的巔峰成就。
+  sources:
+    - title: 維基百科：川端康成
+      url: https://zh.wikipedia.org/wiki/川端康成
+
+- id: jp-expo-70
+  year: 1970
+  title: 大阪世界博覽會（Expo '70）舉辦
+  category: culture
+  importance: 3
+  desc: 亞洲首次主辦的世界博覽會（Expo '70）於大阪府吹田市登場，展期吸引超過 6,400 萬人次參觀，岡本太郎設計的「太陽之塔」成為象徵，集中展示日本戰後高度經濟成長與科技現代化成果。
+  sources:
+    - title: 維基百科：1970年世界博覽會
+      url: https://zh.wikipedia.org/wiki/1970年世界博覽會
+
+- id: jp-okinawa-reversion
+  year: 1972
+  title: 沖繩返還；中日聯合聲明簽署
+  category: politics
+  importance: 4
+  desc: 美國將受佔領二十七年的琉球群島（沖繩）施政權移交返還日本；同年首相田中角榮訪問北京簽署《中日聯合聲明》，實現日本與中華人民共和國邦交正常化，同時終結與中華民國的官方外交關係。
+  sources:
+    - title: 維基百科：沖繩返還
+      url: https://zh.wikipedia.org/wiki/沖繩返還
+    - title: 維基百科：中日聯合聲明
+      url: https://zh.wikipedia.org/wiki/中日聯合聲明
+
+- id: jp-oil-crisis-1973
+  year: 1973
+  title: 第一次石油危機，高度經濟成長期結束
+  category: economy
+  importance: 4
+  desc: 第四次中東戰爭爆發引發第一次石油危機，原油價格暴漲造成全日本物價飆升與社會慌亂。日本長達近二十年的高度經濟成長期正式告終，經濟轉向低速穩定成長體制。
+  sources:
+    - title: 維基百科：1973年石油危機
+      url: https://zh.wikipedia.org/wiki/1973年石油危機
+
+- id: jp-plaza-accord
+  year: 1985
+  title: 五國簽署廣場協定，日圓大幅升值
+  category: economy
+  importance: 4
+  desc: G5 五國財長於紐約廣場飯店簽署《廣場協定》，聯合干預外匯市場誘導美元貶值。日圓對美元匯率急劇升值，促進日企對外投資潮，卻也誘發熱錢湧入房市與股市，埋下泡沫經濟的種子。
+  sources:
+    - title: 維基百科：廣場協定
+      url: https://zh.wikipedia.org/wiki/廣場協定
+
+- id: jp-seikan-seto-bridges
+  year: 1988
+  title: 青函隧道與瀨戶大橋通車
+  category: economy
+  importance: 3
+  desc: 全球最長海底鐵路隧道「青函隧道」、以及跨海「瀨戶大橋」相繼通車。本州、北海道、九州與四國四大島首次全數透過陸路與軌道網路連結。
+  sources:
+    - title: 維基百科：青函隧道
+      url: https://zh.wikipedia.org/wiki/青函隧道
+    - title: 維基百科：瀨戶大橋
+      url: https://zh.wikipedia.org/wiki/瀨戶大橋
 
 - id: jp-heisei
   year: 1989
