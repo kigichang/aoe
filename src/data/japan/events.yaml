@@ -586,6 +586,17 @@
     - title: 維基百科：德川家康
       url: https://zh.wikipedia.org/wiki/德川家康
 
+- id: jp-shuin-sen-trade
+  year: 1604
+  endYear: 1635
+  title: 德川家康實施朱印船貿易
+  category: economy
+  importance: 3
+  desc: 德川家康發放加蓋將軍朱印的渡海執照（朱印狀），允許日本豪商與外國船隻前往安南、呂宋、暹羅等東南亞各地通商。無數日本商人遠渡重洋，並於東南亞港口形成「日本人町」。
+  sources:
+    - title: 維基百科：朱印船
+      url: https://zh.wikipedia.org/wiki/朱印船
+
 - id: jp-osaka-campaign
   year: 1614
   endYear: 1615
@@ -596,6 +607,18 @@
   sources:
     - title: 維基百科：大坂之陣
       url: https://zh.wikipedia.org/wiki/大坂之陣
+
+- id: jp-buke-shohatto-1615
+  year: 1615
+  title: 《武家諸法度》與《禁中並公家諸法度》頒布
+  category: politics
+  importance: 4
+  desc: 德川家康與二代將軍德川秀忠頒布《武家諸法度》（限制大名私自修城築城與聯姻）與《禁中並公家諸法度》（限制天皇與公家僅專注學問藝術）。幕府對大名與朝廷的統制法律基礎宣告定型。
+  sources:
+    - title: 維基百科：武家諸法度
+      url: https://zh.wikipedia.org/wiki/武家諸法度
+    - title: 維基百科：禁中並公家諸法度
+      url: https://zh.wikipedia.org/wiki/禁中並公家諸法度
 
 - id: jp-sankin-kotai
   year: 1635
@@ -767,6 +790,37 @@
   sources:
     - title: 維基百科：安政五國條約
       url: https://zh.wikipedia.org/wiki/安政五國條約
+
+- id: jp-ansei-purge
+  year: 1858
+  endYear: 1859
+  title: 大老井伊直弼發動安政大獄
+  category: politics
+  importance: 4
+  desc: 幕府大老井伊直弼為無敕許簽署《安政條約》及處理由將軍繼嗣問題（南紀派對一橋派），展開大規模政治鎮壓。吉田松陰、橋本左內等近百名尊王攘夷派志士與反對派公家遭處決或流放。
+  sources:
+    - title: 維基百科：安政大獄
+      url: https://zh.wikipedia.org/wiki/安政大獄
+
+- id: jp-sakuradamon-incident
+  year: 1860
+  title: 櫻田門外之變，大老井伊直弼遇刺
+  category: politics
+  importance: 4
+  desc: 3 月 24 日大雪之日，水戶藩與薩摩藩脫藩浪士於江戶城櫻田門外伏擊幕府大老井伊直弼之駕籠並斬首。大老於江戶城門口遇刺身亡震撼全日本，幕府專制威信崩解，幕末動亂全面開啟。
+  sources:
+    - title: 維基百科：櫻田門外之變
+      url: https://zh.wikipedia.org/wiki/櫻田門外之變
+
+- id: jp-kinmon-incident
+  year: 1864
+  title: 禁門之變（蛤御門之變），長州軍進攻京都
+  category: war
+  importance: 4
+  desc: 長州藩尊皇攘夷派急進浪士進軍京都皇居，與會津藩、薩摩藩率領的守衛軍於蛤御門爆發激烈槍戰。長州軍敗退，京都三分之一市街遭火災化為灰燼，長州藩被朝廷定為「朝敵」，隨後引發第一次長州征討。
+  sources:
+    - title: 維基百科：禁門之變
+      url: https://zh.wikipedia.org/wiki/禁門之變
 
 - id: jp-satcho-alliance
   year: 1866
