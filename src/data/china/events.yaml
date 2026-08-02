@@ -260,12 +260,44 @@
   title: 秦滅六國，統一中國
   category: politics
   importance: 5
-  desc: 廢封建、行郡縣，書同文、車同軌，確立此後兩千年的中央集權格局。
+  desc: 廢封建、行郡縣，分天下為三十六郡，郡守縣令由中央任免而不世襲。以官僚取代血緣分封，此後兩千年的中央集權格局自此定型 —— 秦十五年而亡，這套骨架卻被漢原樣接收。
   sources:
     - title: 維基百科：秦滅六國之戰
       url: https://zh.wikipedia.org/wiki/秦滅六國之戰
     - title: 維基百科：秦朝
       url: https://zh.wikipedia.org/wiki/秦朝
+    - title: 維基百科：郡縣制
+      url: https://zh.wikipedia.org/wiki/郡縣制
+
+- id: cn-qin-standardization
+  year: -221
+  title: 書同文、車同軌，度量衡歸一
+  category: culture
+  importance: 4
+  desc: 以小篆為正體統一六國文字，齊一度量衡與車軌，廢六國舊幣而專行半兩錢。軍事上的統一只維持了十五年，這套標準卻讓「書面上是一個中國」成為此後兩千年的事實 —— 戰國各國的文字若一路分歧下去，後來的局面會完全不同。
+  sources:
+    - title: 維基百科：小篆
+      url: https://zh.wikipedia.org/wiki/小篆
+    - title: 維基百科：半兩
+      url: https://zh.wikipedia.org/wiki/半兩
+    - title: 維基百科：秦始皇
+      url: https://zh.wikipedia.org/wiki/秦始皇
+
+- id: cn-qin-frontiers
+  year: -214
+  title: 北築長城、南取百越
+  category: war
+  importance: 4
+  desc: 前一年蒙恬將三十萬眾北逐匈奴、收河南地，隨即連綴秦趙燕舊城為萬里長城，西起臨洮東至遼東；同時任囂、趙佗南征百越，鑿靈渠通湘灕以運糧，置南海、桂林、象郡。中原王朝的南北兩條邊界，大致在這幾年一次畫定。
+  sources:
+    - title: 維基百科：秦長城
+      url: https://zh.wikipedia.org/wiki/秦長城
+    - title: 維基百科：秦征百越
+      url: https://zh.wikipedia.org/wiki/秦征百越
+    - title: 維基百科：靈渠
+      url: https://zh.wikipedia.org/wiki/靈渠
+    - title: 維基百科：蒙恬
+      url: https://zh.wikipedia.org/wiki/蒙恬
 
 - id: cn-burning-books
   year: -213
@@ -276,6 +308,20 @@
     - title: 維基百科：焚書坑儒
       url: https://zh.wikipedia.org/wiki/焚書坑儒
 
+- id: cn-shaqiu-coup
+  year: -210
+  title: 沙丘之變，趙高胡亥矯詔
+  category: politics
+  importance: 3
+  desc: 始皇東巡病死於沙丘，趙高脅李斯匿喪矯詔，賜死長子扶蘇與蒙恬，立胡亥為二世。統一才十一年，繼承這一環就先斷了 —— 次年大澤鄉起義，再三年秦亡。
+  sources:
+    - title: 維基百科：沙丘之變
+      url: https://zh.wikipedia.org/wiki/沙丘之變
+    - title: 維基百科：秦二世
+      url: https://zh.wikipedia.org/wiki/秦二世
+    - title: 維基百科：趙高
+      url: https://zh.wikipedia.org/wiki/趙高
+
 - id: cn-chen-sheng
   year: -209
   title: 陳勝吳廣起義
@@ -284,6 +330,18 @@
   sources:
     - title: 維基百科：陳勝吳廣起義
       url: https://zh.wikipedia.org/wiki/陳勝吳廣起義
+
+- id: cn-julu-qin-fall
+  year: -207
+  title: 鉅鹿之戰，秦亡
+  category: war
+  importance: 4
+  desc: 項羽破釜沉舟，以五萬楚軍殲章邯、王離所率的秦軍主力；數月後子嬰素車白馬出降，秦亡。自統一至覆滅十五年，是中國史上最短的大一統王朝，卻也是此後歷代制度的母本。
+  sources:
+    - title: 維基百科：巨鹿之戰
+      url: https://zh.wikipedia.org/wiki/巨鹿之戰
+    - title: 維基百科：子嬰
+      url: https://zh.wikipedia.org/wiki/子嬰
 
 - id: cn-chu-han-contention
   year: -206
