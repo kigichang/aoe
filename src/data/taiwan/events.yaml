@@ -257,6 +257,18 @@
     - title: 維基百科：鄭成功
       url: https://zh.wikipedia.org/wiki/鄭成功
 
+- id: tw-zheng-jing
+  year: 1662
+  title: 鄭成功歿，鄭經繼位
+  category: politics
+  importance: 3
+  desc: 鄭成功接收台灣後五個月即病逝，年僅三十八。明鄭二十一年的江山，其中十九年是鄭經在治 —— 他行陳永華之議屯田興學、通商日本與英國，也在 1674 年響應三藩之亂西征閩粵，耗盡實力而返。
+  sources:
+    - title: 維基百科：鄭經
+      url: https://zh.wikipedia.org/wiki/鄭經
+    - title: 維基百科：鄭成功
+      url: https://zh.wikipedia.org/wiki/鄭成功
+
 - id: tw-confucius-temple
   year: 1666
   title: 陳永華建台南孔廟，設學校
@@ -782,6 +794,16 @@
     - title: 維基百科：臺灣日治時期
       url: https://zh.wikipedia.org/wiki/臺灣日治時期
 
+- id: tw-cairo-declaration
+  year: 1943
+  title: 開羅宣言，聲明台灣戰後歸還中華民國
+  category: politics
+  importance: 4
+  desc: 羅斯福、蔣中正、邱吉爾會於開羅，會後公報聲明日本竊取自中國的領土（含台灣、澎湖）應歸還中華民國。這份文件是兩年後接收台灣的依據，其法律效力與地位至今仍是台灣主權論辯的核心爭點之一。
+  sources:
+    - title: 維基百科：開羅宣言
+      url: https://zh.wikipedia.org/wiki/開羅宣言
+
 - id: tw-allied-bombing
   year: 1944
   title: 盟軍空襲臺灣，農工生產崩跌
@@ -824,6 +846,21 @@
     - title: 維基百科：臺灣省戒嚴令
       url: https://zh.wikipedia.org/wiki/臺灣省戒嚴令
 
+- id: tw-white-terror
+  year: 1949
+  endYear: 1991
+  title: 白色恐怖
+  category: politics
+  importance: 5
+  desc: 起於 1949 年 5 月 20 日的戒嚴令，止於 1991 年廢止《戡亂時期檢肅匪諜條例》，歷時四十二年。以《懲治叛亂條例》等特別法整肅異議者，同年 4 月的四六事件已先一步在校園開始。這條軸線幾乎與戰後前半段等長 —— 二二八、雷震案、美麗島事件都落在它裡面。
+  sources:
+    - title: 維基百科：臺灣白色恐怖時期
+      url: https://zh.wikipedia.org/wiki/臺灣白色恐怖時期
+    - title: 維基百科：懲治叛亂條例
+      url: https://zh.wikipedia.org/wiki/懲治叛亂條例
+    - title: 維基百科：四六事件
+      url: https://zh.wikipedia.org/wiki/四六事件
+
 - id: tw-land-reform
   year: 1953
   title: 耕者有其田，土地改革完成
@@ -852,6 +889,18 @@
   sources:
     - title: 維基百科：金門炮戰
       url: https://zh.wikipedia.org/wiki/金門炮戰
+
+- id: tw-lei-chen
+  year: 1960
+  title: 雷震案，《自由中國》停刊
+  category: politics
+  importance: 3
+  desc: 雷震籌組「中國民主黨」，以叛亂罪判刑十年，發行近十一年的《自由中國》隨之停刊。那是 1950 年代檯面上幾乎唯一的異議聲音 —— 反對黨的嘗試自此中斷二十六年，直到 1986 年民進黨成立。
+  sources:
+    - title: 維基百科：雷震 (1897年)
+      url: https://zh.wikipedia.org/wiki/雷震_(1897年)
+    - title: 維基百科：自由中國 (雜誌)
+      url: https://zh.wikipedia.org/wiki/自由中國_(雜誌)
 
 - id: tw-kaohsiung-epz
   year: 1966
@@ -966,6 +1015,16 @@
     - title: 維基百科：台積電
       url: https://zh.wikipedia.org/wiki/台積電
 
+- id: tw-wild-lily
+  year: 1990
+  title: 野百合學運，要求國會全面改選
+  category: politics
+  importance: 4
+  desc: 三月間數千名學生靜坐於中正紀念堂廣場，要求解散萬年國會、廢除臨時條款、召開國是會議。這是政府遷台以來最大規模的學生行動，李登輝接見學生代表並允諾改革 —— 次年終止動員戡亂、資深中央民代全數退職，訴求幾乎都兌現了。
+  sources:
+    - title: 維基百科：野百合學運
+      url: https://zh.wikipedia.org/wiki/野百合學運
+
 - id: tw-end-mobilization
   year: 1991
   title: 終止動員戡亂時期
@@ -1008,6 +1067,16 @@
     - title: 維基百科：1996年中華民國總統選舉
       url: https://zh.wikipedia.org/wiki/1996年中華民國總統選舉
 
+- id: tw-921-earthquake
+  year: 1999
+  title: 921 大地震
+  category: culture
+  importance: 4
+  desc: 9 月 21 日凌晨車籠埔斷層錯動，芮氏規模 7.3，地表破裂帶長達八十五公里，二千四百餘人罹難、五萬餘戶房屋全倒。這是戰後台灣傷亡最重的天災，此後建築耐震規範全面翻修，也促成防災體系的重建。
+  sources:
+    - title: 維基百科：921大地震
+      url: https://zh.wikipedia.org/wiki/921大地震
+
 - id: tw-party-transition
   year: 2000
   title: 首次政黨輪替
@@ -1038,6 +1107,16 @@
   sources:
     - title: 維基百科：臺灣高速鐵路
       url: https://zh.wikipedia.org/wiki/臺灣高速鐵路
+
+- id: tw-sunflower-movement
+  year: 2014
+  title: 太陽花學運，佔領立法院二十四天
+  category: politics
+  importance: 4
+  desc: 《海峽兩岸服務貿易協議》遭強行通過審查，學生與公民團體佔領立法院議場二十四天，要求退回協議並先立兩岸協議監督條例。服貿自此擱置，也重塑了此後十年的政黨版圖與兩岸議題攻防。
+  sources:
+    - title: 維基百科：太陽花學運
+      url: https://zh.wikipedia.org/wiki/太陽花學運
 
 - id: tw-female-president
   year: 2016
