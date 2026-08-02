@@ -180,6 +180,19 @@
     - title: 維基百科：三國志
       url: https://zh.wikipedia.org/wiki/三國志
 
+- id: jp-wani-scholar
+  year: 285
+  title: 王仁渡日，儒學與漢字傳入
+  category: culture
+  importance: 4
+  legendary: true
+  desc: 《古事記》《日本書紀》記載百濟學者王仁應應神天皇之邀渡海赴日，獻上《論語》與《千字文》，是日本最早接觸儒學經典與漢字書寫系統的記錄之一。年代出自後世史書追記，與應神天皇本身的在位年代一樣仍有爭議。
+  sources:
+    - title: 日文維基百科：王仁
+      url: https://ja.wikipedia.org/wiki/王仁
+    - title: 維基百科：應神天皇
+      url: https://zh.wikipedia.org/wiki/應神天皇
+
 - id: jp-gwanggaeto-stele
   year: 391
   title: 廣開土王碑所記倭渡海與百濟、新羅交戰
@@ -323,6 +336,18 @@
       url: https://zh.wikipedia.org/wiki/小野妹子
     - title: 維基百科：遣隋使
       url: https://zh.wikipedia.org/wiki/遣隋使
+
+- id: jp-tennoki-kokki
+  year: 620
+  title: 聖德太子與蘇我馬子編纂《天皇記》《國記》
+  category: culture
+  importance: 3
+  desc: 聖德太子與大臣蘇我馬子共同編纂《天皇記》《國記》及〈臣連伴造國造百八十部並公民等本記〉，是日本最早的官修國史。645年乙巳之變時蘇我氏宅邸遭焚，《天皇記》全毀，《國記》僅部分搶救留存，成為後世《古事記》《日本書紀》編纂的先聲。
+  sources:
+    - title: 維基百科：蘇我馬子
+      url: https://zh.wikipedia.org/wiki/蘇我馬子
+    - title: 維基百科：聖德太子
+      url: https://zh.wikipedia.org/wiki/聖德太子
 
 - id: jp-kentoshi
   year: 630
