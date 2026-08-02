@@ -463,6 +463,84 @@
     - title: 維基百科：湊川之戰
       url: https://zh.wikipedia.org/wiki/湊川之戰
 
+- id: jp-muromachi-nanbokucho
+  year: 1336
+  title: 足利尊氏建立武家政權，南北朝時代與室町時代開幕
+  category: politics
+  importance: 5
+  desc: 足利尊氏在京都擁立光明天皇，頒布《建武式目》建立新的武家政權（後稱室町幕府）。同時，後醍醐天皇逃往吉野建立南朝，日本進入南北朝對立的「室町時代」初期。
+  sources:
+    - title: 維基百科：室町時代
+      url: https://zh.wikipedia.org/wiki/室町時代
+    - title: 維基百科：南北朝時代 (日本)
+      url: https://zh.wikipedia.org/wiki/南北朝時代_(日本)
+
+- id: jp-muromachi-bakufu-est
+  year: 1338
+  title: 足利尊氏受封征夷大將軍，開創室町幕府
+  category: politics
+  importance: 5
+  desc: 足利尊氏在京都北朝天皇的任命下，正式就任「征夷大將軍」。這標誌著繼鎌倉幕府之後，日本歷史上第二個武家政權「室町幕府」的建立，開始了幕府與守護大名共治的政治體制。
+  sources:
+    - title: 維基百科：室町幕府
+      url: https://zh.wikipedia.org/wiki/室町幕府
+    - title: 維基百科：足利尊氏
+      url: https://zh.wikipedia.org/wiki/足利尊氏
+    - title: 維基百科：征夷大將軍
+      url: https://zh.wikipedia.org/wiki/征夷大將軍
+
+- id: jp-yoshimitsu-shogun
+  year: 1368
+  title: 足利義滿就任第三代將軍，強化幕府統治體制
+  category: politics
+  importance: 4
+  desc: 年幼的足利義滿繼位為第三代將軍，在管領細川賴之的輔佐下，逐步削弱各地有力守護大名的勢力。他將幕府機構集中於京都室町，奠定了室町幕府絕對的統治權威。
+  sources:
+    - title: 維基百科：室町幕府
+      url: https://zh.wikipedia.org/wiki/室町幕府
+    - title: 維基百科：足利義滿
+      url: https://zh.wikipedia.org/wiki/足利義滿
+
+- id: jp-muromachi-meitoku
+  year: 1392
+  title: 明德和約，南北朝統一與室町時代全盛期
+  category: politics
+  importance: 4
+  desc: 第3代將軍足利義滿促成南朝後龜山天皇將三神器交還給北朝後小松天皇，結束了半世紀的皇室分裂。室町幕府的權威達到頂峰，迎來室町時代最穩定的全盛時期。
+  sources:
+    - title: 維基百科：室町時代
+      url: https://zh.wikipedia.org/wiki/室町時代
+    - title: 維基百科：明德和約
+      url: https://zh.wikipedia.org/wiki/明德和約
+
+- id: jp-kitayama-culture
+  year: 1397
+  title: 足利義滿建立金閣寺，北山文化繁榮
+  category: culture
+  importance: 4
+  desc: 足利義滿在京都北山建造豪華的鹿苑寺（金閣寺）。此時期融合了傳統公家貴族文化與新興武家文化，並受到明朝禪宗影響，形成了華麗的「北山文化」。
+  sources:
+    - title: 維基百科：室町時代
+      url: https://zh.wikipedia.org/wiki/室町時代
+    - title: 維基百科：鹿苑寺
+      url: https://zh.wikipedia.org/wiki/鹿苑寺
+    - title: 維基百科：北山文化
+      url: https://zh.wikipedia.org/wiki/北山文化
+
+- id: jp-oei-rebellion
+  year: 1399
+  title: 應永之亂，幕府鎮壓大內義弘鞏固權力
+  category: war
+  importance: 4
+  desc: 控制西國六國的強大守護大名大內義弘因不滿足利義滿的中央集權政策而舉兵叛亂。幕府軍在堺市將其擊敗並討伐，徹底掃除了幕府權威的最後障礙。
+  sources:
+    - title: 維基百科：室町幕府
+      url: https://zh.wikipedia.org/wiki/室町幕府
+    - title: 維基百科：应永之乱
+      url: https://zh.wikipedia.org/wiki/应永之乱
+    - title: 維基百科：大內義弘
+      url: https://zh.wikipedia.org/wiki/大內義弘
+
 - id: jp-kango-trade
   year: 1404
   title: 勘合貿易，日明通商
@@ -471,6 +549,32 @@
   sources:
     - title: 維基百科：勘合貿易
       url: https://zh.wikipedia.org/wiki/勘合貿易
+
+- id: jp-shocho-uprising
+  year: 1428
+  title: 正長土一揆，農民要求德政令的大規模起義
+  category: economy
+  importance: 4
+  desc: 隨著貨幣經濟發展與天災頻發，近畿地區的農民與馬借（運輸業者）為了逃避高利貸債務，發動了日本史上首次大規模的「土一揆」，襲擊酒屋與土倉，迫使幕府發布德政令。
+  sources:
+    - title: 維基百科：室町時代
+      url: https://zh.wikipedia.org/wiki/室町時代
+    - title: 維基百科：土一揆
+      url: https://zh.wikipedia.org/wiki/土一揆
+
+- id: jp-kakitsu-rebellion
+  year: 1441
+  title: 嘉吉之亂，將軍足利義教遭暗殺，幕府權威急墜
+  category: politics
+  importance: 4
+  desc: 第6代將軍足利義教推行強硬的獨裁政治，引發守護大名恐慌。播磨守護赤松滿祐在府邸宴會上將其暗殺，史稱「嘉吉之亂」。此事件導致將軍權威一落千丈，各地開始出現下剋上的風潮。
+  sources:
+    - title: 維基百科：室町幕府
+      url: https://zh.wikipedia.org/wiki/室町幕府
+    - title: 維基百科：嘉吉之乱
+      url: https://zh.wikipedia.org/wiki/嘉吉之乱
+    - title: 維基百科：足利义教
+      url: https://zh.wikipedia.org/wiki/足利义教
 
 - id: jp-onin
   year: 1467
@@ -483,6 +587,20 @@
       url: https://zh.wikipedia.org/wiki/應仁之亂
     - title: 維基百科：戰國時代 (日本)
       url: https://zh.wikipedia.org/wiki/戰國時代_(日本)
+
+- id: jp-higashiyama-culture
+  year: 1489
+  title: 足利義政建立銀閣寺，東山文化與侘寂美學
+  category: culture
+  importance: 4
+  desc: 第8代將軍足利義政於京都東山建造慈照寺（銀閣寺）。雖然當時正值應仁之亂後的衰敗期，但孕育出了茶道、花道與枯山水庭園等強調「侘寂」幽玄之美的「東山文化」，深遠影響了後世的日本審美。
+  sources:
+    - title: 維基百科：室町時代
+      url: https://zh.wikipedia.org/wiki/室町時代
+    - title: 維基百科：慈照寺
+      url: https://zh.wikipedia.org/wiki/慈照寺
+    - title: 維基百科：東山文化
+      url: https://zh.wikipedia.org/wiki/東山文化
 
 - id: jp-teppo
   year: 1543
@@ -552,6 +670,18 @@
   sources:
     - title: 維基百科：織田信長
       url: https://zh.wikipedia.org/wiki/織田信長
+    - title: 維基百科：室町幕府
+      url: https://zh.wikipedia.org/wiki/室町幕府
+    - title: 維基百科：足利義昭
+      url: https://zh.wikipedia.org/wiki/足利義昭
+
+- id: jp-muromachi-fall
+  year: 1573
+  title: 織田信長驅逐將軍足利義昭，室町幕府實質滅亡
+  category: politics
+  importance: 5
+  desc: 擁立第15代將軍足利義昭上洛的織田信長，因與義昭理念不合而爆發衝突。信長擊敗義昭並將其流放逐出京都，延續了近 240 年的室町幕府至此實質上宣告滅亡。
+  sources:
     - title: 維基百科：室町幕府
       url: https://zh.wikipedia.org/wiki/室町幕府
     - title: 維基百科：足利義昭
