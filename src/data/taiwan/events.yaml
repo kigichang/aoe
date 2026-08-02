@@ -205,6 +205,16 @@
     - title: 維基百科：西班牙統治時期 (台灣)
       url: https://zh.wikipedia.org/wiki/西班牙統治時期_(台灣)
 
+- id: tw-pacht
+  year: 1644
+  title: 贌社，村社交易權公開招標
+  category: economy
+  importance: 3
+  desc: 荷蘭人把各原住民村社的交易權公開標售，得標商人獨佔該社所有買賣，以鹽、鐵鍋、布疋換取鹿皮鹿肉再轉售。「贌」是荷語 pacht 的台語音譯。清治延續此制而改以社餉徵稅，直到 1737 年乾隆稅制改革才逐漸消失 —— 一套荷蘭的承包制在台灣運作了近百年。
+  sources:
+    - title: 維基百科：贌社
+      url: https://zh.wikipedia.org/wiki/贌社
+
 - id: tw-middag-kingdom
   year: 1645
   title: 大肚王國與荷蘭締約
@@ -924,6 +934,18 @@
     - title: 維基百科：北迴線
       url: https://zh.wikipedia.org/wiki/北迴線
 
+- id: tw-indigenous-movement
+  year: 1984
+  title: 原住民族運動興起
+  category: politics
+  importance: 3
+  desc: 台灣原住民權利促進會成立，提出正名、還我土地與自治三大訴求。1988 年嘉義火車站前的吳鳳銅像被拆除，「吳鳳捨生取義感化生番」這則寫進教科書數十年的敘事就此退場 —— 運動要爭的不只是權利，還有誰來講述這座島的歷史。
+  sources:
+    - title: 維基百科：臺灣原住民族運動
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族運動
+    - title: 維基百科：臺灣原住民族
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族
+
 - id: tw-martial-law-lifted
   year: 1987
   title: 解除戒嚴
@@ -965,6 +987,18 @@
     - title: 維基百科：臺灣鐵路
       url: https://zh.wikipedia.org/wiki/臺灣鐵路
 
+- id: tw-indigenous-renaming
+  year: 1994
+  title: 憲法增修條文改稱「原住民」
+  category: politics
+  importance: 4
+  desc: 沿用數十年的「山胞」正式改為「原住民」，1997 年再修為「原住民族」，承認其為集體的民族而非個別身分。名稱之爭表面上是用字，實際爭的是誰有權定義自己 —— 熟蕃、高砂族、山胞，歷來每個稱呼都是外來政權給的。
+  sources:
+    - title: 維基百科：中華民國憲法增修條文
+      url: https://zh.wikipedia.org/wiki/中華民國憲法增修條文
+    - title: 維基百科：臺灣原住民族運動
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族運動
+
 - id: tw-direct-election
   year: 1996
   title: 首次總統直選
@@ -982,6 +1016,18 @@
   sources:
     - title: 維基百科：2000年中華民國總統選舉
       url: https://zh.wikipedia.org/wiki/2000年中華民國總統選舉
+
+- id: tw-indigenous-basic-law
+  year: 2005
+  title: 原住民族基本法公布
+  category: politics
+  importance: 3
+  desc: 確立原住民族的自治、土地與自然資源權利，並明定在原住民族地區的開發行為須經部落諮商同意。同年將 8 月 1 日訂為原住民族日，紀念 1994 年的正名。法律架構立起來了，落實的爭議至今未停。
+  sources:
+    - title: 維基百科：臺灣原住民族
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族
+    - title: 維基百科：中華民國原住民族委員會
+      url: https://zh.wikipedia.org/wiki/中華民國原住民族委員會
 
 - id: tw-hsr
   year: 2007
@@ -1004,6 +1050,18 @@
     - title: 維基百科：蔡英文
       url: https://zh.wikipedia.org/wiki/蔡英文
 
+- id: tw-presidential-apology
+  year: 2016
+  title: 總統代表政府向原住民族道歉
+  category: politics
+  importance: 3
+  desc: 蔡英文於總統府向原住民族為四百年來的處境道歉，並設「總統府原住民族歷史正義與轉型正義委員會」。這是國家元首首次以政府名義為原住民政策致歉。
+  sources:
+    - title: 維基百科：臺灣原住民族
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族
+    - title: 維基百科：蔡英文
+      url: https://zh.wikipedia.org/wiki/蔡英文
+
 - id: tw-same-sex-marriage
   year: 2019
   title: 同性婚姻合法化，亞洲首例
@@ -1012,3 +1070,15 @@
   sources:
     - title: 維基百科：臺灣同性婚姻
       url: https://zh.wikipedia.org/wiki/臺灣同性婚姻
+
+- id: tw-siraya-recognition
+  year: 2026
+  title: 西拉雅族獲認定，第 17 個原住民族
+  category: politics
+  importance: 4
+  desc: 行政院於 7 月 30 日核定西拉雅族為原住民族，是噶瑪蘭族之後第二個、也是《平埔原住民族群身分法》通過後第一個獲認定的平埔族群。三十年正名路的里程碑：2022 年憲法法庭判《原住民身分法》違憲，2025 年立法院三讀新法，此年核定 —— 而 1636 年荷蘭人在新港社教的羅馬字，寫的正是西拉雅語。
+  sources:
+    - title: 維基百科：西拉雅族
+      url: https://zh.wikipedia.org/wiki/西拉雅族
+    - title: 維基百科：臺灣原住民族
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族
