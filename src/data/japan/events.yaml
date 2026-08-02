@@ -341,22 +341,15 @@
     - title: 維基百科：磐井之乱
       url: https://zh.wikipedia.org/wiki/磐井之乱
 
-- id: jp-buddhism
-  year: 538
-  title: 佛教傳入日本
-  category: religion
-  importance: 5
-  sources:
-    - title: 維基百科：日本佛教
-      url: https://zh.wikipedia.org/wiki/日本佛教
-
 - id: jp-buddhism-intro
   year: 538
   title: 佛教傳入日本，引發蘇我氏與物部氏宗教衝突
   category: religion
-  importance: 4
+  importance: 5
   desc: 百濟聖明王向欽明天皇獻上佛像與經卷，標誌著佛教正式傳入日本。這引發了崇佛派的蘇我氏與排佛派的物部氏之間激烈的政治與宗教衝突，最終蘇我氏獲勝，確立了佛教在日本的地位。
   sources:
+    - title: 維基百科：日本佛教
+      url: https://zh.wikipedia.org/wiki/日本佛教
     - title: 維基百科：佛教
       url: https://zh.wikipedia.org/wiki/佛教
     - title: 維基百科：蘇我氏
@@ -387,15 +380,6 @@
       url: https://zh.wikipedia.org/wiki/崇峻天皇
     - title: 維基百科：蘇我馬子
       url: https://zh.wikipedia.org/wiki/蘇我馬子
-
-- id: jp-shotoku
-  year: 593
-  title: 聖德太子攝政
-  category: politics
-  importance: 4
-  sources:
-    - title: 維基百科：聖德太子
-      url: https://zh.wikipedia.org/wiki/聖德太子
 
 - id: jp-shotoku-taishi
   year: 593
@@ -452,15 +436,6 @@
   sources:
     - title: 維基百科：遣唐使
       url: https://zh.wikipedia.org/wiki/遣唐使
-
-- id: jp-taika
-  year: 645
-  title: 大化改新
-  category: politics
-  importance: 5
-  sources:
-    - title: 維基百科：大化改新
-      url: https://zh.wikipedia.org/wiki/大化改新
 
 - id: jp-isshi-incident
   year: 645
@@ -586,17 +561,6 @@
     - title: 維基百科：和同開珍
       url: https://zh.wikipedia.org/wiki/和同開珍
 
-- id: jp-nara-capital
-  year: 710
-  title: 遷都平城京（奈良）
-  category: politics
-  importance: 4
-  sources:
-    - title: 維基百科：平城京
-      url: https://zh.wikipedia.org/wiki/平城京
-    - title: 日文維基百科：平城京
-      url: https://ja.wikipedia.org/wiki/平城京
-
 - id: jp-heijo-kyo
   year: 710
   title: 元明天皇遷都平城京，奈良時代開幕
@@ -606,15 +570,8 @@
   sources:
     - title: 維基百科：平城京
       url: https://zh.wikipedia.org/wiki/平城京
-
-- id: jp-kojiki
-  year: 712
-  title: 《古事記》成書
-  category: culture
-  importance: 4
-  sources:
-    - title: 維基百科：古事記
-      url: https://zh.wikipedia.org/wiki/古事記
+    - title: 日文維基百科：平城京
+      url: https://ja.wikipedia.org/wiki/平城京
 
 - id: jp-kojiki-nihon-shoki
   year: 712
@@ -639,15 +596,6 @@
     - title: 維基百科：墾田永年私財法
       url: https://zh.wikipedia.org/wiki/墾田永年私財法
 
-- id: jp-great-buddha
-  year: 752
-  title: 東大寺大佛開眼
-  category: religion
-  importance: 4
-  sources:
-    - title: 維基百科：東大寺
-      url: https://zh.wikipedia.org/wiki/東大寺
-
 - id: jp-todai-ji-daibutsu
   year: 752
   title: 聖武天皇建立東大寺大佛，鎮護國家思想盛行
@@ -655,8 +603,8 @@
   importance: 4
   desc: 面對天花流行與政治動盪，聖武天皇推崇「鎮護國家」的佛教思想。他在平城京建造了宏偉的東大寺並為巨大的盧舍那佛舉行開眼供養，佛教成為維繫國家安定的核心信仰。
   sources:
-    - title: 維基百科：东大寺
-      url: https://zh.wikipedia.org/wiki/东大寺
+    - title: 維基百科：東大寺
+      url: https://zh.wikipedia.org/wiki/東大寺
 
 - id: jp-ganjin
   year: 754
@@ -667,15 +615,6 @@
   sources:
     - title: 維基百科：鑑真
       url: https://zh.wikipedia.org/wiki/鑑真
-
-- id: jp-heian-capital
-  year: 794
-  title: 遷都平安京（京都）
-  category: politics
-  importance: 5
-  sources:
-    - title: 維基百科：平安京
-      url: https://zh.wikipedia.org/wiki/平安京
 
 - id: jp-heian-kyo
   year: 794
@@ -703,20 +642,6 @@
     - title: 維基百科：空海
       url: https://zh.wikipedia.org/wiki/空海
 
-- id: jp-sekkan-start
-  year: 858
-  title: 藤原良房就任攝政，攝關政治萌芽
-  category: politics
-  importance: 4
-  desc: 清和天皇年幼即位，其外祖父藤原良房以皇族以外臣子的身分首次就任「攝政」。這為日後藤原北家長期壟斷朝政的「攝關政治」奠定了基礎。
-  sources:
-    - title: 維基百科：平安時代
-      url: https://zh.wikipedia.org/wiki/平安時代
-    - title: 維基百科：藤原良房
-      url: https://zh.wikipedia.org/wiki/藤原良房
-    - title: 維基百科：攝政
-      url: https://zh.wikipedia.org/wiki/攝政
-
 - id: jp-fujiwara-yoshifusa
   year: 858
   title: 藤原良房成為首位非皇族攝政，開啟藤原北家專權
@@ -728,6 +653,10 @@
       url: https://zh.wikipedia.org/wiki/攝關政治
     - title: 維基百科：藤原良房
       url: https://zh.wikipedia.org/wiki/藤原良房
+    - title: 維基百科：平安時代
+      url: https://zh.wikipedia.org/wiki/平安時代
+    - title: 維基百科：攝政
+      url: https://zh.wikipedia.org/wiki/攝政
 
 - id: jp-otenmon
   year: 866
@@ -754,18 +683,6 @@
       url: https://zh.wikipedia.org/wiki/藤原基經
     - title: 維基百科：關白
       url: https://zh.wikipedia.org/wiki/關白
-
-- id: jp-end-kentoshi
-  year: 894
-  title: 廢止遣唐使
-  category: politics
-  importance: 4
-  desc: 停止官方遣唐後，假名文學與國風文化開始成形。
-  sources:
-    - title: 維基百科：遣唐使
-      url: https://zh.wikipedia.org/wiki/遣唐使
-    - title: 維基百科：菅原道真
-      url: https://zh.wikipedia.org/wiki/菅原道真
 
 - id: jp-kokufu-culture
   year: 894
@@ -890,15 +807,6 @@
     - title: 維基百科：平安時代
       url: https://zh.wikipedia.org/wiki/平安時代
 
-- id: jp-insei
-  year: 1086
-  title: 白河上皇開始院政
-  category: politics
-  importance: 3
-  sources:
-    - title: 維基百科：院政
-      url: https://zh.wikipedia.org/wiki/院政
-
 - id: jp-shirakawa-insei
   year: 1086
   title: 白河天皇讓位設立院廳，開啟院政時代
@@ -913,18 +821,6 @@
     - title: 維基百科：院政
       url: https://zh.wikipedia.org/wiki/院政
 
-- id: jp-shirakawa-insei-start
-  year: 1086
-  title: 白河上皇開啟院政，法皇凌駕天皇掌握實權
-  category: politics
-  importance: 5
-  desc: 白河天皇將皇位讓給年幼的堀河天皇，成為「上皇」，並在院廳組建自己的家司與近衛軍團處理國政。這種退位天皇掌握實權的「院政」體系，成功壓制了藤原氏的攝關政治。
-  sources:
-    - title: 維基百科：院政
-      url: https://zh.wikipedia.org/wiki/院政
-    - title: 維基百科：白河天皇
-      url: https://zh.wikipedia.org/wiki/白河天皇
-
 - id: jp-toba-insei
   year: 1129
   title: 鳥羽上皇展開院政，北面武士力量擴張
@@ -937,15 +833,6 @@
     - title: 維基百科：鳥羽天皇
       url: https://zh.wikipedia.org/wiki/鳥羽天皇
 
-- id: jp-hogen
-  year: 1156
-  title: 保元之亂
-  category: war
-  importance: 3
-  sources:
-    - title: 維基百科：保元之亂
-      url: https://zh.wikipedia.org/wiki/保元之亂
-
 - id: jp-hogen-rebellion
   year: 1156
   title: 保元之亂，皇室內鬨引發武士實力決定政局
@@ -957,18 +844,8 @@
       url: https://zh.wikipedia.org/wiki/平安時代
     - title: 維基百科：保元之亂
       url: https://zh.wikipedia.org/wiki/保元之亂
-
-- id: jp-hogen-insei
-  year: 1156
-  title: 保元之亂，後白河天皇與崇德上皇為院政主導權內鬨
-  category: war
-  importance: 4
-  desc: 為了爭奪院政的主導權，後白河天皇與崇德上皇分別召集武士爆發武裝衝突。這場內鬨不僅使皇室權威受損，也證明了不論哪一方掌握院政，都必須仰賴武士的軍事實力。
-  sources:
     - title: 維基百科：院政
       url: https://zh.wikipedia.org/wiki/院政
-    - title: 維基百科：保元之亂
-      url: https://zh.wikipedia.org/wiki/保元之亂
 
 - id: jp-heiji-insei
   year: 1159
@@ -979,18 +856,8 @@
   sources:
     - title: 維基百科：院政
       url: https://zh.wikipedia.org/wiki/院政
-    - title: 維基百科：平治之乱
-      url: https://zh.wikipedia.org/wiki/平治之乱
-
-- id: jp-heiji-taira
-  year: 1159
-  title: 平治之亂，平清盛消滅源氏勢力獨攬朝政
-  category: politics
-  importance: 4
-  desc: 在平治之亂中，平清盛成功擊敗源義朝為首的源氏勢力，掌握了京都的軍事控制權。平氏一族開始在朝廷中獨攬大權，為平氏政權的建立奠定了堅實基礎。
-  sources:
-    - title: 維基百科：平治之乱
-      url: https://zh.wikipedia.org/wiki/平治之乱
+    - title: 維基百科：平治之亂
+      url: https://zh.wikipedia.org/wiki/平治之亂
     - title: 維基百科：平清盛
       url: https://zh.wikipedia.org/wiki/平清盛
 
@@ -1042,48 +909,19 @@
     - title: 維基百科：平清盛
       url: https://zh.wikipedia.org/wiki/平清盛
 
-- id: jp-dannoura
-  year: 1185
-  title: 壇之浦之戰，平氏滅亡
-  category: war
-  importance: 5
-  sources:
-    - title: 維基百科：壇之浦之戰
-      url: https://zh.wikipedia.org/wiki/壇之浦之戰
-
 - id: jp-kamakura-era-start
   year: 1185
   title: 壇之浦之戰平氏滅亡，鎌倉時代開幕
   category: war
   importance: 5
-  desc: 源平合戰以平氏在壇之浦海戰中覆滅告終。源賴朝隨即以追捕源義經為由，獲得朝廷准許在全國各地設立「守護」與「地頭」，掌握了實質的軍事與警察權，開啟了鎌倉時代。
+  desc: 源平合戰以平氏在壇之浦海戰中覆滅告終，年幼的安德天皇抱著三神器投海自盡。源賴朝隨即以追捕源義經為由，獲得朝廷准許在全國各地設立「守護」與「地頭」，掌握了實質的軍事與警察權，開啟了鎌倉時代。
   sources:
     - title: 維基百科：鎌倉時代
       url: https://zh.wikipedia.org/wiki/鎌倉時代
     - title: 維基百科：壇之浦之戰
       url: https://zh.wikipedia.org/wiki/壇之浦之戰
-
-- id: jp-dan-no-ura-taira
-  year: 1185
-  title: 壇之浦之戰，平氏政權徹底覆滅
-  category: war
-  importance: 5
-  desc: 經過長達五年的源平合戰，源義經率領的源氏水軍在壇之浦海戰中徹底擊敗平氏。年幼的安德天皇抱著三神器投海自盡，曾經權傾一時的平氏政權至此覆滅。
-  sources:
     - title: 維基百科：平清盛
       url: https://zh.wikipedia.org/wiki/平清盛
-
-- id: jp-kamakura-bakufu
-  year: 1192
-  title: 源賴朝任征夷大將軍，鎌倉幕府
-  category: politics
-  importance: 5
-  desc: 武家政權登場，此後近七百年實權不在朝廷。
-  sources:
-    - title: 維基百科：鎌倉幕府
-      url: https://zh.wikipedia.org/wiki/鎌倉幕府
-    - title: 維基百科：源賴朝
-      url: https://zh.wikipedia.org/wiki/源賴朝
 
 - id: jp-kamakura-shogunate-est
   year: 1192
@@ -1092,8 +930,10 @@
   importance: 5
   desc: 後白河法皇崩駕後，朝廷正式任命源賴朝為「征夷大將軍」。這標誌著日本史上第一個武家政權「鎌倉幕府」的法理確立，開始了長達近 700 年的武家統治時代。
   sources:
-    - title: 維基百科：镰仓幕府
-      url: https://zh.wikipedia.org/wiki/镰仓幕府
+    - title: 維基百科：鎌倉幕府
+      url: https://zh.wikipedia.org/wiki/鎌倉幕府
+    - title: 維基百科：源賴朝
+      url: https://zh.wikipedia.org/wiki/源賴朝
     - title: 維基百科：征夷大將軍
       url: https://zh.wikipedia.org/wiki/征夷大將軍
 
@@ -1111,39 +951,19 @@
     - title: 維基百科：北條氏
       url: https://zh.wikipedia.org/wiki/北條氏
 
-- id: jp-jokyu
-  year: 1221
-  title: 承久之亂，幕府控制朝廷與西國
-  category: war
-  importance: 4
-  desc: 後鳥羽上皇發布討幕宣旨起兵企圖推翻幕府，北條義時率鎌倉武士迅即攻入京都平定。戰後幕府流放三上皇並設「六波羅探題」嚴密監視朝廷，幕府對朝廷與全國的控制力達到頂峰。
-  sources:
-    - title: 維基百科：承久之亂
-      url: https://zh.wikipedia.org/wiki/承久之亂
-
 - id: jp-jokyu-kamakura
   year: 1221
   title: 承久之亂，幕府擊敗朝廷確立政治優勢
   category: politics
   importance: 5
-  desc: 後鳥羽上皇試圖推翻鎌倉幕府，引發承久之亂。在北條政子的號召下，幕府軍大勝並攻入京都，流放了三位上皇。此戰徹底改變了朝野勢力對比，幕府權威凌駕於朝廷之上。
+  desc: 後鳥羽上皇試圖推翻鎌倉幕府，引發承久之亂。在北條政子的號召下，幕府軍大勝並攻入京都，流放了三位上皇，並設「六波羅探題」嚴密監視朝廷。此戰徹底改變了朝野勢力對比，幕府權威凌駕於朝廷之上，院政自此完全受制於武家。
   sources:
     - title: 維基百科：鎌倉時代
       url: https://zh.wikipedia.org/wiki/鎌倉時代
     - title: 維基百科：承久之亂
       url: https://zh.wikipedia.org/wiki/承久之亂
-
-- id: jp-jokyu-insei
-  year: 1221
-  title: 承久之亂後，幕府控制朝廷，院政實權名存實亡
-  category: politics
-  importance: 4
-  desc: 後鳥羽上皇發動承久之亂討伐鎌倉幕府失敗。幕府隨後設立「六波羅探題」監視朝廷，並干預皇位繼承與院政的人選。自此，院政完全受制於武家，失去了實質的政治權力。
-  sources:
     - title: 維基百科：院政
       url: https://zh.wikipedia.org/wiki/院政
-    - title: 維基百科：承久之亂
-      url: https://zh.wikipedia.org/wiki/承久之亂
 
 - id: jp-goseibai-kamakura
   year: 1232
@@ -1180,15 +1000,6 @@
     - title: 維基百科：日蓮
       url: https://zh.wikipedia.org/wiki/日蓮
 
-- id: jp-bunei
-  year: 1274
-  title: 文永之役（元寇）
-  category: war
-  importance: 4
-  sources:
-    - title: 維基百科：元日戰爭
-      url: https://zh.wikipedia.org/wiki/元日戰爭
-
 - id: jp-mongol-kamakura
   year: 1274
   title: 元日戰爭，蒙古兩次入侵動搖幕府根基
@@ -1199,8 +1010,8 @@
   sources:
     - title: 維基百科：鎌倉時代
       url: https://zh.wikipedia.org/wiki/鎌倉時代
-    - title: 維基百科：元日战争
-      url: https://zh.wikipedia.org/wiki/元日战争
+    - title: 維基百科：元日戰爭
+      url: https://zh.wikipedia.org/wiki/元日戰爭
 
 - id: jp-koan
   year: 1281
@@ -1251,14 +1062,17 @@
     - title: 維基百科：後醍醐天皇
       url: https://zh.wikipedia.org/wiki/後醍醐天皇
 
-- id: jp-kamakura-fall
+- id: jp-kamakura-fall-hojo
   year: 1333
-  title: 鎌倉幕府滅亡
-  category: politics
-  importance: 4
+  title: 新田義貞攻陷鎌倉，北條高時自盡與幕府滅亡
+  category: war
+  importance: 5
+  desc: 響應後醍醐天皇的倒幕運動，新田義貞率軍攻入鎌倉。最後一任得宗北條高時與一族數百人於東勝寺自盡，延續了近 150 年的鎌倉幕府與北條氏專制統治正式宣告滅亡。
   sources:
     - title: 維基百科：鎌倉幕府
       url: https://zh.wikipedia.org/wiki/鎌倉幕府
+    - title: 維基百科：北條高時
+      url: https://zh.wikipedia.org/wiki/北條高時
 
 - id: jp-kenmu-start
   year: 1333
@@ -1271,18 +1085,6 @@
       url: https://zh.wikipedia.org/wiki/建武新政
     - title: 維基百科：後醍醐天皇
       url: https://zh.wikipedia.org/wiki/後醍醐天皇
-
-- id: jp-kamakura-fall-hojo
-  year: 1333
-  title: 新田義貞攻陷鎌倉，北條高時自盡與幕府滅亡
-  category: war
-  importance: 5
-  desc: 響應後醍醐天皇的倒幕運動，新田義貞率軍攻入鎌倉。最後一任得宗北條高時與一族數百人於東勝寺自盡，延續了近 150 年的鎌倉幕府與北條氏專制統治正式宣告滅亡。
-  sources:
-    - title: 維基百科：镰仓幕府
-      url: https://zh.wikipedia.org/wiki/镰仓幕府
-    - title: 維基百科：北條高時
-      url: https://zh.wikipedia.org/wiki/北條高時
 
 - id: jp-kenmu-policies
   year: 1334
@@ -1316,30 +1118,21 @@
     - title: 維基百科：建武新政
       url: https://zh.wikipedia.org/wiki/建武新政
 
-- id: jp-muromachi-bakufu
-  year: 1336
-  title: 足利尊氏開室町幕府；南北朝分裂
-  category: politics
-  importance: 4
-  sources:
-    - title: 維基百科：室町幕府
-      url: https://zh.wikipedia.org/wiki/室町幕府
-    - title: 維基百科：足利尊氏
-      url: https://zh.wikipedia.org/wiki/足利尊氏
-    - title: 維基百科：南北朝時代 (日本)
-      url: https://zh.wikipedia.org/wiki/南北朝時代_(日本)
-
 - id: jp-minatogawa
   year: 1336
   title: 建武新政失敗，湊川之戰與南北朝對立
   category: war
-  importance: 4
-  desc: 後醍醐天皇推行建武新政試圖復闢公家親政，然因忽視武士權益引發足利尊氏反叛。湊川之戰中忠臣楠木正成戰死，後醍醐天皇避居吉野設立南朝，足利尊氏於京都另立北朝，日本進入半個多世紀的南北朝對立時期。
+  importance: 5
+  desc: 後醍醐天皇推行建武新政試圖復闢公家親政，因忽視武士權益，足利尊氏在平定中先代之亂後拒絕返京、公然反叛。湊川之戰中忠臣楠木正成戰死，後醍醐天皇攜三神器避居吉野設立南朝，足利尊氏於京都另立北朝，僅維持兩年半的建武新政徹底崩潰，日本進入半個多世紀的南北朝對立時期。
   sources:
     - title: 維基百科：建武新政
       url: https://zh.wikipedia.org/wiki/建武新政
     - title: 維基百科：湊川之戰
       url: https://zh.wikipedia.org/wiki/湊川之戰
+    - title: 維基百科：南北朝時代 (日本)
+      url: https://zh.wikipedia.org/wiki/南北朝時代_(日本)
+    - title: 維基百科：吉野
+      url: https://zh.wikipedia.org/wiki/吉野
 
 - id: jp-muromachi-nanbokucho
   year: 1336
@@ -1352,30 +1145,6 @@
       url: https://zh.wikipedia.org/wiki/室町時代
     - title: 維基百科：南北朝時代 (日本)
       url: https://zh.wikipedia.org/wiki/南北朝時代_(日本)
-
-- id: jp-nanbokucho-split
-  year: 1336
-  title: 湊川之戰建武政權崩潰，後醍醐天皇逃往吉野
-  category: politics
-  importance: 5
-  desc: 建武新政失敗後，足利尊氏反叛並在湊川之戰擊敗朝廷軍隊。尊氏在京都擁立北朝天皇，而後醍醐天皇則攜帶三神器逃至大和國吉野建立南朝。自此，日本出現兩個並立的朝廷，史稱「南北朝時代」。
-  sources:
-    - title: 維基百科：南北朝時代 (日本)
-      url: https://zh.wikipedia.org/wiki/南北朝時代_(日本)
-    - title: 維基百科：吉野
-      url: https://zh.wikipedia.org/wiki/吉野
-    - title: 維基百科：凑川之战
-      url: https://zh.wikipedia.org/wiki/凑川之战
-
-- id: jp-kenmu-collapse
-  year: 1336
-  title: 足利尊氏反叛，建武新政實質崩潰
-  category: politics
-  importance: 5
-  desc: 足利尊氏在平息中先代之亂後拒絕返回京都，並公然反叛建武政權。尊氏軍隊攻入京都，迫使後醍醐天皇逃亡，僅維持了兩年半的建武新政至此徹底崩潰。
-  sources:
-    - title: 維基百科：建武新政
-      url: https://zh.wikipedia.org/wiki/建武新政
     - title: 維基百科：足利尊氏
       url: https://zh.wikipedia.org/wiki/足利尊氏
 
@@ -1432,27 +1201,19 @@
     - title: 維基百科：足利義滿
       url: https://zh.wikipedia.org/wiki/足利義滿
 
-- id: jp-muromachi-meitoku
-  year: 1392
-  title: 明德和約，南北朝統一與室町時代全盛期
-  category: politics
-  importance: 4
-  desc: 第3代將軍足利義滿促成南朝後龜山天皇將三神器交還給北朝後小松天皇，結束了半世紀的皇室分裂。室町幕府的權威達到頂峰，迎來室町時代最穩定的全盛時期。
-  sources:
-    - title: 維基百科：室町時代
-      url: https://zh.wikipedia.org/wiki/室町時代
-    - title: 維基百科：明德和約
-      url: https://zh.wikipedia.org/wiki/明德和約
-
 - id: jp-nanbokucho-unification
   year: 1392
   title: 南北朝合一，南朝交出三神器結束56年分裂
   category: politics
   importance: 5
-  desc: 經過長達56年的戰亂與對立，南朝勢力已大幅衰退。在室町幕府將軍足利義滿的斡旋與保證下（明德和約），南朝後龜山天皇將三神器交還北朝後小松天皇，日本重新歸於統一。
+  desc: 經過長達56年的戰亂與對立，南朝勢力已大幅衰退。在室町幕府第3代將軍足利義滿的斡旋與保證下（明德和約），南朝後龜山天皇將三神器交還北朝後小松天皇，日本重新歸於統一，室町幕府的權威也隨之達到頂峰。
   sources:
+    - title: 維基百科：室町時代
+      url: https://zh.wikipedia.org/wiki/室町時代
     - title: 維基百科：南北朝時代 (日本)
       url: https://zh.wikipedia.org/wiki/南北朝時代_(日本)
+    - title: 維基百科：明德和約
+      url: https://zh.wikipedia.org/wiki/明德和約
     - title: 維基百科：三神器
       url: https://zh.wikipedia.org/wiki/三神器
 
@@ -1519,18 +1280,6 @@
     - title: 維基百科：足利义教
       url: https://zh.wikipedia.org/wiki/足利义教
 
-- id: jp-onin
-  year: 1467
-  title: 應仁之亂，戰國時代開始
-  category: war
-  importance: 5
-  endYear: 1477
-  sources:
-    - title: 維基百科：應仁之亂
-      url: https://zh.wikipedia.org/wiki/應仁之亂
-    - title: 維基百科：戰國時代 (日本)
-      url: https://zh.wikipedia.org/wiki/戰國時代_(日本)
-
 - id: jp-sengoku-start
   year: 1467
   title: 應仁之亂，京都化為焦土與戰國時代開幕
@@ -1539,10 +1288,10 @@
   endYear: 1477
   desc: 圍繞將軍繼承權與管領家督之爭，全日本守護大名分為東西兩軍在京都展開長達十年的混戰。幕府權威徹底掃地，莊園制崩潰，地方國人崛起，日本正式步入群雄割據的「戰國時代」。
   sources:
-    - title: 維基百科：战国时代 (日本)
-      url: https://zh.wikipedia.org/wiki/战国时代_(日本)
-    - title: 維基百科：应仁之乱
-      url: https://zh.wikipedia.org/wiki/应仁之乱
+    - title: 維基百科：應仁之亂
+      url: https://zh.wikipedia.org/wiki/應仁之亂
+    - title: 維基百科：戰國時代 (日本)
+      url: https://zh.wikipedia.org/wiki/戰國時代_(日本)
 
 - id: jp-higashiyama-culture
   year: 1489
@@ -1642,27 +1391,15 @@
     - title: 維基百科：三方原之戰
       url: https://zh.wikipedia.org/wiki/三方原之戰
 
-- id: jp-nobunaga
-  year: 1573
-  title: 織田信長放逐足利義昭，室町幕府終結
-  category: politics
-  importance: 4
-  desc: 織田信長率軍討伐舉兵反抗的末代將軍足利義昭並將其驅逐出京都。足利氏統治二百三十餘年的室町幕府正式滅亡，信長掌握畿內霸權。
-  sources:
-    - title: 維基百科：織田信長
-      url: https://zh.wikipedia.org/wiki/織田信長
-    - title: 維基百科：室町幕府
-      url: https://zh.wikipedia.org/wiki/室町幕府
-    - title: 維基百科：足利義昭
-      url: https://zh.wikipedia.org/wiki/足利義昭
-
 - id: jp-muromachi-fall
   year: 1573
   title: 織田信長驅逐將軍足利義昭，室町幕府實質滅亡
   category: politics
   importance: 5
-  desc: 擁立第15代將軍足利義昭上洛的織田信長，因與義昭理念不合而爆發衝突。信長擊敗義昭並將其流放逐出京都，延續了近 240 年的室町幕府至此實質上宣告滅亡。
+  desc: 擁立第15代將軍足利義昭上洛的織田信長，因與義昭理念不合而爆發衝突。信長擊敗義昭並將其流放逐出京都，延續了近 240 年的室町幕府至此實質上宣告滅亡，信長掌握畿內霸權。
   sources:
+    - title: 維基百科：織田信長
+      url: https://zh.wikipedia.org/wiki/織田信長
     - title: 維基百科：室町幕府
       url: https://zh.wikipedia.org/wiki/室町幕府
     - title: 維基百科：足利義昭
