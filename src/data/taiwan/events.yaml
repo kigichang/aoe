@@ -4,20 +4,64 @@
 #
 # 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
 
-
-
-
-
-
 - id: tw-tapenkeng
   year: -3000
+  endYear: -2200
   title: 大坌坑文化，進入新石器時代
   category: culture
   importance: 4
-  desc: 台灣最早的新石器文化之一，一般認為與南島語族的擴散有關。
+  desc: 台灣最早的新石器文化，以粗繩紋陶為特徵，廣布西部海岸。一般認為它是島嶼東南亞最早的農業人群，也是台灣原住民族與南島語族的起源文化 —— 南島語系今日西達馬達加斯加、東抵復活節島，分化與擴散的源頭被認為就在這座島上。實際約始於距今六千年（前 4000 年），此處為時間軸起點所截。
   sources:
     - title: 維基百科：大坌坑文化
       url: https://zh.wikipedia.org/wiki/大坌坑文化
+    - title: 維基百科：南島語系
+      url: https://zh.wikipedia.org/wiki/南島語系
+
+- id: tw-beinan
+  year: -1500
+  endYear: -300
+  title: 卑南文化，環太平洋最大的石板棺墓葬群
+  category: culture
+  importance: 4
+  desc: 台東卑南山麓的聚落，廣義面積達一百公頃，是台灣所發現最大的史前聚落。出土大量石板棺與棺內精美的玉器陪葬品，墓葬群規模為環太平洋之最 —— 有正式墓制與陪葬階序，意味著這裡已存在明顯的社會分化。
+  sources:
+    - title: 維基百科：卑南文化
+      url: https://zh.wikipedia.org/wiki/卑南文化
+    - title: 維基百科：卑南遺址
+      url: https://zh.wikipedia.org/wiki/卑南遺址
+
+- id: tw-qilin
+  year: -1500
+  endYear: -1
+  title: 麒麟文化，東海岸的巨石
+  category: culture
+  importance: 3
+  desc: 分布於花蓮新社至台東都蘭一帶，以岩棺、單石、石壁等大型立石著稱。1929 年鹿野忠雄曾與卑南並稱為「巨石文化」，1976 年宋文薰才將兩者分開。以山田燒墾種植穀類，農業技術的進展支撐了人口成長。
+  sources:
+    - title: 維基百科：麒麟文化
+      url: https://zh.wikipedia.org/wiki/麒麟文化
+
+- id: tw-yuanshan
+  year: -1200
+  endYear: -300
+  title: 圓山文化，台北盆地的貝塚
+  category: culture
+  importance: 3
+  desc: 台北盆地西側的多文化層遺址，以厚實的貝塚得名，出土磨製石器、獸骨魚叉與精緻玉器。1964 年圓山遺址是台灣考古史上第一個做出絕對年代鑑定的遺址；此處採該遺址碳十四定年的距今 3200 至 2300 年，維基條目導言另有一個「西元前3300年」的說法，與其內文的定年不合。
+  sources:
+    - title: 維基百科：圓山遺址
+      url: https://zh.wikipedia.org/wiki/圓山遺址
+
+- id: tw-shihsanhang
+  year: 200
+  endYear: 1600
+  title: 十三行文化，台灣進入鐵器時代
+  category: science
+  importance: 4
+  desc: 淡水河出海口南岸的聚落，出土煉鐵作坊與大量鐵器，是目前確定擁有煉鐵技術的台灣史前居民，很可能是凱達格蘭族的祖先。同層另有中國瓷器與玻璃器，顯示島外交易已成常態 —— 這一支一直延續到荷蘭人抵達前後，與有文字的歷史時期首尾相接。
+  sources:
+    - title: 維基百科：十三行遺址
+      url: https://zh.wikipedia.org/wiki/十三行遺址
 
 - id: tw-yizhou
   year: 230
@@ -28,6 +72,17 @@
   sources:
     - title: 維基百科：夷洲
       url: https://zh.wikipedia.org/wiki/夷洲
+
+- id: tw-tsiaosong
+  year: 400
+  endYear: 1500
+  title: 蔦松文化，西南平原的金屬器時代
+  category: culture
+  importance: 3
+  desc: 分布於台南、高雄與屏東北部，以台南永康蔦松遺址為代表，一般認為是西拉雅等平埔族群的祖先文化。與北部的十三行同屬金屬器時代 —— 荷蘭人 1624 年在大員登陸時，面對的正是這一支的後裔。
+  sources:
+    - title: 維基百科：蔦松文化
+      url: https://zh.wikipedia.org/wiki/蔦松文化
     - title: 維基百科：衛溫
       url: https://zh.wikipedia.org/wiki/衛溫
 
