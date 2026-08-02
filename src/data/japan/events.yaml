@@ -409,20 +409,18 @@
   sources:
     - title: 維基百科：攝關政治
       url: https://zh.wikipedia.org/wiki/攝關政治
-    - title: 維基百科：昌泰之變
-      url: https://zh.wikipedia.org/wiki/昌泰之變
+    - title: 維基百科：菅原道真
+      url: https://zh.wikipedia.org/wiki/菅原道真
 
 - id: jp-engi-shoen
   year: 902
-  title: 頒布延喜莊園整理令，班田收授法實質崩潰
+  title: 頒布延喜荘園整理令，班田收授法實質崩潰
   category: economy
   importance: 4
-  desc: 醍醐天皇為了抑制貴族與寺社非法佔有土地（莊園），頒布了《延喜莊園整理令》。然而此令未能有效執行，反而標誌著基於律令制的「班田收授法」徹底崩潰，日本正式轉向以莊園和公領為基礎的「王朝國家」體制。
+  desc: 醍醐天皇為了抑制貴族與寺社非法佔有土地（莊園），頒布了《延喜荘園整理令》。然而此令未能有效執行，反而標誌著基於律令制的「班田收授法」徹底崩潰，日本正式轉向以莊園和公領為基礎的「王朝國家」體制。
   sources:
     - title: 維基百科：平安時代
       url: https://zh.wikipedia.org/wiki/平安時代
-    - title: 維基百科：莊園整理令
-      url: https://zh.wikipedia.org/wiki/莊園整理令
 
 - id: jp-johei-tengyo
   year: 939
@@ -492,7 +490,7 @@
   title: 後三條天皇即位，攝關政治開始衰退
   category: politics
   importance: 4
-  desc: 後三條天皇即位，成為 170 年來首位母親非藤原氏的天皇。他不受藤原氏控制，積極推動延久莊園整理令等改革以強化皇權，藤原氏的攝關政治自此開始走向衰退。
+  desc: 後三條天皇即位，成為 170 年來首位母親非藤原氏的天皇。他不受藤原氏控制，積極推動延久荘園整理令等改革以強化皇權，藤原氏的攝關政治自此開始走向衰退。
   sources:
     - title: 維基百科：攝關政治
       url: https://zh.wikipedia.org/wiki/攝關政治
@@ -501,15 +499,13 @@
 
 - id: jp-enkyu-shoen
   year: 1069
-  title: 頒布延久莊園整理令，加強朝廷土地控制
+  title: 頒布延久荘園整理令，加強朝廷土地控制
   category: economy
   importance: 4
-  desc: 後三條天皇為了削弱藤原氏等權門的經濟基礎，頒布了嚴格的《延久莊園整理令》，設立記錄莊園券契所審查莊園合法性。這在一定程度上恢復了朝廷的財政與國司的權威。
+  desc: 後三條天皇為了削弱藤原氏等權門的經濟基礎，頒布了嚴格的《延久荘園整理令》，設立記錄莊園券契所審查莊園合法性。這在一定程度上恢復了朝廷的財政與國司的權威。
   sources:
     - title: 維基百科：平安時代
       url: https://zh.wikipedia.org/wiki/平安時代
-    - title: 維基百科：莊園整理令
-      url: https://zh.wikipedia.org/wiki/莊園整理令
 
 - id: jp-insei
   year: 1086
