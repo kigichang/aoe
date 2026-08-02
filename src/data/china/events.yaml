@@ -163,6 +163,20 @@
     - title: 維基百科：西周
       url: https://zh.wikipedia.org/wiki/西周
 
+- id: cn-zhougong-east
+  year: -1042
+  title: 周公東征，制禮作樂
+  category: politics
+  importance: 4
+  desc: 武王死後管叔、蔡叔挾武庚作亂，周公旦東征三年平之，續行大分封 —— 七十一國之中姬姓佔五十三。同時定宗法：嫡長子繼統為大宗，餘子分封為小宗，封建親戚以藩屏周。這套血緣與禮樂交織的秩序支撐周室八百年，也正是孔子畢生所嚮往的那個「周」。
+  sources:
+    - title: 維基百科：周公東征
+      url: https://zh.wikipedia.org/wiki/周公東征
+    - title: 維基百科：宗法
+      url: https://zh.wikipedia.org/wiki/宗法
+    - title: 維基百科：西周
+      url: https://zh.wikipedia.org/wiki/西周
+
 - id: cn-gonghe
   year: -841
   title: 國人暴動，共和行政
@@ -180,22 +194,74 @@
   title: 犬戎破鎬京，西周滅亡
   category: war
   importance: 4
+  desc: 幽王廢申后與太子宜臼，申侯引犬戎入寇，幽王死於驪山下。「烽火戲諸侯」的說法出自《史記》，清華簡等出土文獻並不支持，多視為後人附會 —— 王室的崩壞來自繼承之爭與諸侯離心，不是一個玩笑。
   sources:
     - title: 維基百科：周幽王
       url: https://zh.wikipedia.org/wiki/周幽王
     - title: 維基百科：西周
       url: https://zh.wikipedia.org/wiki/西周
 
+- id: cn-pingwang-move
+  year: -770
+  title: 平王東遷洛邑，東周始
+  category: politics
+  importance: 4
+  desc: 鎬京殘破，平王在晉、鄭、秦護送下遷都洛邑。王畿從方圓千里縮到六百里，天子自此仰賴諸侯供養與保護 —— 名義上的共主與實際的權力就此分離，春秋的爭霸格局由這一遷開始。
+  sources:
+    - title: 維基百科：周平王東遷
+      url: https://zh.wikipedia.org/wiki/周平王東遷
+    - title: 維基百科：東周
+      url: https://zh.wikipedia.org/wiki/東周
+
+- id: cn-xuge
+  year: -707
+  title: 繻葛之戰，周天子威信掃地
+  category: war
+  importance: 3
+  desc: 桓王率陳蔡衛聯軍伐鄭，大敗，鄭將祝聃一箭射中王肩。天子親征而敗於諸侯、中矢竟無人問罪 —— 「禮樂征伐自天子出」到此名存實亡，此後便是霸主代行號令。
+  sources:
+    - title: 維基百科：繻葛之戰
+      url: https://zh.wikipedia.org/wiki/繻葛之戰
+    - title: 維基百科：鄭莊公
+      url: https://zh.wikipedia.org/wiki/鄭莊公
+
 - id: cn-guanzhong
   year: -685
   title: 齊桓公即位，管仲改革
   category: politics
   importance: 3
+  desc: 管仲相齊，通貨積財、設鹽鐵之官、分士農工商而處之。桓公以「尊王攘夷」號召，九合諸侯，前651年葵丘之會受周王賜胙 —— 天子既已無力，霸主便成了維持秩序的替代品。
   sources:
     - title: 維基百科：齊桓公
       url: https://zh.wikipedia.org/wiki/齊桓公
     - title: 維基百科：管仲
       url: https://zh.wikipedia.org/wiki/管仲
+    - title: 維基百科：葵丘之會
+      url: https://zh.wikipedia.org/wiki/葵丘之會
+
+- id: cn-chengpu
+  year: -632
+  title: 城濮之戰，晉文公稱霸
+  category: war
+  importance: 3
+  desc: 晉軍退避三舍以踐流亡時的舊諾，隨即大破楚軍，會諸侯於踐土，周襄王策命晉侯為侯伯。齊桓之後霸業歸晉，晉楚爭霸此後持續近百年，中原諸國多在兩強之間反覆。
+  sources:
+    - title: 維基百科：城濮之戰
+      url: https://zh.wikipedia.org/wiki/城濮之戰
+    - title: 維基百科：晉文公
+      url: https://zh.wikipedia.org/wiki/晉文公
+
+- id: cn-first-land-tax
+  year: -594
+  title: 魯國初稅畝，井田制動搖
+  category: economy
+  importance: 3
+  desc: 宣公十五年下令按田畝徵稅，公田之外的私墾一併課徵，等於承認私田合法。晉、楚相繼仿行 —— 井田的公私之分自此瓦解，土地私有與戰國各國的變法，源頭都在這一步。
+  sources:
+    - title: 維基百科：初稅畝
+      url: https://zh.wikipedia.org/wiki/初稅畝
+    - title: 維基百科：井田制
+      url: https://zh.wikipedia.org/wiki/井田制
 
 - id: cn-confucius
   year: -551
@@ -207,22 +273,60 @@
     - title: 維基百科：孔子
       url: https://zh.wikipedia.org/wiki/孔子
 
+- id: cn-zichan-code
+  year: -536
+  title: 子產鑄刑書，成文法公布
+  category: politics
+  importance: 4
+  desc: 鄭國執政子產把刑法鑄於鼎上公諸國人，晉國叔向致書責之曰「民知爭端矣，將棄禮而徵於書」。法律由貴族祕藏改為人人可見，是中國成文法的起點 —— 同一個世紀，羅馬也走上了十二銅表法這條路。
+  sources:
+    - title: 維基百科：子產
+      url: https://zh.wikipedia.org/wiki/子產
+    - title: 維基百科：春秋時期
+      url: https://zh.wikipedia.org/wiki/春秋時期
+
+- id: cn-sunzi
+  year: -512
+  title: 孫武以《孫子兵法》見吳王
+  category: culture
+  importance: 4
+  desc: 十三篇論兵，主張「上兵伐謀」「不戰而屈人之兵」，把戰爭當成可計算的政治手段而非勇力之爭。現存最早的系統性兵書，兩千五百年後仍在各國軍校與商學院被讀。
+  sources:
+    - title: 維基百科：孫武
+      url: https://zh.wikipedia.org/wiki/孫武
+    - title: 維基百科：孫子兵法
+      url: https://zh.wikipedia.org/wiki/孫子兵法
+
 - id: cn-laozi
   year: -500
   title: 道家思想成形
   category: culture
   importance: 4
+  desc: 《老子》五千言主張道法自然、無為而治，與儒家的禮治並列為此後兩千年思想的兩極。其成書年代與老子其人皆有爭議，戰國中期的莊子繼之而大成。
   sources:
     - title: 維基百科：道家
       url: https://zh.wikipedia.org/wiki/道家
     - title: 維基百科：老子
       url: https://zh.wikipedia.org/wiki/老子
 
+- id: cn-yue-destroys-wu
+  year: -473
+  title: 越滅吳，句踐稱霸
+  category: war
+  importance: 3
+  desc: 句踐困於會稽而後臥薪嘗膽，二十年生聚教訓，圍吳三年而克，夫差自殺。春秋最後一位霸主出自長江下游 —— 中原之外的勢力第一次主導了天下格局。
+  sources:
+    - title: 維基百科：越滅吳之戰
+      url: https://zh.wikipedia.org/wiki/越滅吳之戰
+    - title: 維基百科：勾踐
+      url: https://zh.wikipedia.org/wiki/勾踐
+
 - id: cn-partition-jin
   year: -453
   title: 三家分晉，戰國時代開始
   category: politics
   importance: 4
+  desc: 韓趙魏三家滅智伯、瓜分晉地。戰國起於何年有三種算法：此年為三家實際瓜分，前403年周威烈王命三家為諸侯（《資治通鑑》以此開篇），前475年則是《史記》六國年表的起點 —— 本站的時期色帶用前475，事件用前453，指的是同一個過程的不同節點。
   sources:
     - title: 維基百科：三家分晉
       url: https://zh.wikipedia.org/wiki/三家分晉
@@ -237,11 +341,36 @@
     - title: 維基百科：商鞅變法
       url: https://zh.wikipedia.org/wiki/商鞅變法
 
+- id: cn-maling
+  year: -341
+  title: 馬陵之戰，魏國霸權崩解
+  category: war
+  importance: 3
+  desc: 孫臏減灶誘敵，魏軍主力覆沒於馬陵道，龐涓自剄、太子申被俘。魏自李悝變法以來的中原霸權就此終結，戰國轉入齊、秦東西對峙，商鞅變法後的秦國從此再無東進的阻力。
+  sources:
+    - title: 維基百科：馬陵之戰
+      url: https://zh.wikipedia.org/wiki/馬陵之戰
+    - title: 維基百科：孫臏
+      url: https://zh.wikipedia.org/wiki/孫臏
+
+- id: cn-hufu-cavalry
+  year: -307
+  title: 趙武靈王胡服騎射
+  category: war
+  importance: 3
+  desc: 令國人改著胡服短衣、習騎射，以取代笨重的車戰。趙國因此拓地至雲中、九原，成為戰國後期唯一能與秦長期抗衡的國家 —— 中原第一次成建制地向草原學習，而非只把對方當作威脅。
+  sources:
+    - title: 維基百科：胡服騎射
+      url: https://zh.wikipedia.org/wiki/胡服騎射
+    - title: 維基百科：趙武靈王
+      url: https://zh.wikipedia.org/wiki/趙武靈王
+
 - id: cn-quyuan
   year: -278
   title: 屈原投汨羅江
   category: culture
   importance: 3
+  desc: 同年秦將白起拔郢，楚國被迫遷都。屈原所作《離騷》《九歌》開南方文學一脈，與北方的《詩經》並為中國詩歌的兩個源頭。
   sources:
     - title: 維基百科：屈原
       url: https://zh.wikipedia.org/wiki/屈原
@@ -251,9 +380,34 @@
   title: 長平之戰
   category: war
   importance: 4
+  desc: 趙以趙括代廉頗，秦暗換白起為將，趙軍被圍四十六日而降，坑殺者號稱四十萬。六國中唯一還能野戰抗秦的力量就此瓦解 —— 統一的懸念，在秦兵入關前三十九年就已經解開了。
   sources:
     - title: 維基百科：長平之戰
       url: https://zh.wikipedia.org/wiki/長平之戰
+    - title: 維基百科：白起
+      url: https://zh.wikipedia.org/wiki/白起
+
+- id: cn-qin-ends-zhou
+  year: -256
+  title: 秦滅西周國，周朝亡
+  category: politics
+  importance: 4
+  desc: 秦昭襄王攻西周國，周赧王入秦獻三十六邑，九鼎遷於咸陽；七年後呂不韋再滅東周國。名義上的共主自此消失，八百年的周室終結，此後三十五年就是純粹的兼併戰爭。
+  sources:
+    - title: 維基百科：秦滅周
+      url: https://zh.wikipedia.org/wiki/秦滅周
+
+- id: cn-dujiangyan
+  year: -256
+  title: 都江堰動工，成都平原成沃野
+  category: science
+  importance: 4
+  desc: 蜀郡守李冰父子鑿離堆、分內外江，以魚嘴分水、飛沙堰洩洪、寶瓶口控流，不築壩而馴岷江。歷代整修後至今仍在灌溉，是世上使用時間最長的水利工程 —— 秦得蜀中之粟，統一戰爭的糧倉就在這裡。
+  sources:
+    - title: 維基百科：都江堰
+      url: https://zh.wikipedia.org/wiki/都江堰
+    - title: 維基百科：李冰
+      url: https://zh.wikipedia.org/wiki/李冰
 
 - id: cn-qin-unification
   year: -221
