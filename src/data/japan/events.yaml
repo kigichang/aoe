@@ -404,6 +404,32 @@
     - title: 維基百科：源賴朝
       url: https://zh.wikipedia.org/wiki/源賴朝
 
+- id: jp-kamakura-shogunate-est
+  year: 1192
+  title: 源賴朝就任征夷大將軍，鎌倉幕府正式成立
+  category: politics
+  importance: 5
+  desc: 後白河法皇崩駕後，朝廷正式任命源賴朝為「征夷大將軍」。這標誌著日本史上第一個武家政權「鎌倉幕府」的法理確立，開始了長達近 700 年的武家統治時代。
+  sources:
+    - title: 維基百科：镰仓幕府
+      url: https://zh.wikipedia.org/wiki/镰仓幕府
+    - title: 維基百科：征夷大將軍
+      url: https://zh.wikipedia.org/wiki/征夷大將軍
+
+- id: jp-hojo-regency
+  year: 1203
+  title: 北條時政就任執權，北條氏確立專制政治
+  category: politics
+  importance: 4
+  desc: 幕府初代將軍源賴朝死後，其岳父北條時政與北條政子奪取實權，廢黜二代將軍源賴家。時政就任第一代「執權」，自此鎌倉幕府將軍淪為傀儡，實權掌握在北條氏手中。
+  sources:
+    - title: 維基百科：镰仓幕府
+      url: https://zh.wikipedia.org/wiki/镰仓幕府
+    - title: 維基百科：執權
+      url: https://zh.wikipedia.org/wiki/執權
+    - title: 維基百科：北條氏
+      url: https://zh.wikipedia.org/wiki/北條氏
+
 - id: jp-jokyu
   year: 1221
   title: 承久之亂，幕府控制朝廷與西國
@@ -437,6 +463,20 @@
       url: https://zh.wikipedia.org/wiki/鎌倉時代
     - title: 維基百科：御成敗式目
       url: https://zh.wikipedia.org/wiki/御成敗式目
+
+- id: jp-hoji-battle
+  year: 1247
+  title: 寶治合戰，北條氏消滅三浦氏鞏固絕對專制
+  category: war
+  importance: 4
+  desc: 執權北條時賴為了徹底掃除幕府內部的反對勢力，發動寶治合戰，消滅了有力的御家人三浦泰村一族。此戰後，北條氏在鎌倉幕府內的獨裁體制（得宗專制）得以進一步鞏固。
+  sources:
+    - title: 維基百科：镰仓幕府
+      url: https://zh.wikipedia.org/wiki/镰仓幕府
+    - title: 維基百科：寶治合戰
+      url: https://zh.wikipedia.org/wiki/寶治合戰
+    - title: 維基百科：三浦氏
+      url: https://zh.wikipedia.org/wiki/三浦氏
 
 - id: jp-nichiren
   year: 1253
@@ -477,6 +517,20 @@
   sources:
     - title: 維基百科：元日戰爭
       url: https://zh.wikipedia.org/wiki/元日戰爭
+
+- id: jp-shimotsuki-incident
+  year: 1285
+  title: 霜月騷動，得宗專制確立與御家人沒落
+  category: politics
+  importance: 4
+  desc: 隨著蒙古入侵帶來的社會動盪，北條氏家臣（御內人）首領平賴綱在霜月騷動中消滅了代表御家人勢力的安達泰盛。這標誌著北條氏本家（得宗）與御內人徹底掌握幕府，傳統御家人勢力沒落。
+  sources:
+    - title: 維基百科：镰仓幕府
+      url: https://zh.wikipedia.org/wiki/镰仓幕府
+    - title: 維基百科：霜月骚动
+      url: https://zh.wikipedia.org/wiki/霜月骚动
+    - title: 維基百科：得宗
+      url: https://zh.wikipedia.org/wiki/得宗
 
 - id: jp-einin-tokuseirei
   year: 1297
@@ -524,6 +578,18 @@
       url: https://zh.wikipedia.org/wiki/建武新政
     - title: 維基百科：後醍醐天皇
       url: https://zh.wikipedia.org/wiki/後醍醐天皇
+
+- id: jp-kamakura-fall-hojo
+  year: 1333
+  title: 新田義貞攻陷鎌倉，北條高時自盡與幕府滅亡
+  category: war
+  importance: 5
+  desc: 響應後醍醐天皇的倒幕運動，新田義貞率軍攻入鎌倉。最後一任得宗北條高時與一族數百人於東勝寺自盡，延續了近 150 年的鎌倉幕府與北條氏專制統治正式宣告滅亡。
+  sources:
+    - title: 維基百科：镰仓幕府
+      url: https://zh.wikipedia.org/wiki/镰仓幕府
+    - title: 維基百科：北條高時
+      url: https://zh.wikipedia.org/wiki/北條高時
 
 - id: jp-kenmu-policies
   year: 1334
