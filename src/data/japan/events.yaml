@@ -294,6 +294,20 @@
     - title: 維基百科：平安京
       url: https://zh.wikipedia.org/wiki/平安京
 
+- id: jp-heian-kyo
+  year: 794
+  title: 桓武天皇遷都平安京，平安時代開幕
+  category: politics
+  importance: 5
+  desc: 為了擺脫奈良平城京強大的佛教寺院勢力干政，桓武天皇將都城遷至山城國的平安京（今京都市）。這標誌著長達 400 年、以貴族政治與獨特國風文化為特徵的「平安時代」正式開始。
+  sources:
+    - title: 維基百科：平安時代
+      url: https://zh.wikipedia.org/wiki/平安時代
+    - title: 維基百科：桓武天皇
+      url: https://zh.wikipedia.org/wiki/桓武天皇
+    - title: 維基百科：平安京
+      url: https://zh.wikipedia.org/wiki/平安京
+
 - id: jp-saicho-kukai
   year: 806
   title: 最澄、空海自唐歸國，天台與真言宗興起
@@ -305,6 +319,20 @@
       url: https://zh.wikipedia.org/wiki/最澄
     - title: 維基百科：空海
       url: https://zh.wikipedia.org/wiki/空海
+
+- id: jp-sekkan-start
+  year: 858
+  title: 藤原良房就任攝政，攝關政治萌芽
+  category: politics
+  importance: 4
+  desc: 清和天皇年幼即位，其外祖父藤原良房以皇族以外臣子的身分首次就任「攝政」。這為日後藤原北家長期壟斷朝政的「攝關政治」奠定了基礎。
+  sources:
+    - title: 維基百科：平安時代
+      url: https://zh.wikipedia.org/wiki/平安時代
+    - title: 維基百科：藤原良房
+      url: https://zh.wikipedia.org/wiki/藤原良房
+    - title: 維基百科：攝政
+      url: https://zh.wikipedia.org/wiki/攝政
 
 - id: jp-otenmon
   year: 866
@@ -330,6 +358,22 @@
     - title: 維基百科：菅原道真
       url: https://zh.wikipedia.org/wiki/菅原道真
 
+- id: jp-kokufu-culture
+  year: 894
+  title: 菅原道真建議廢止遣唐使，國風文化興起
+  category: culture
+  importance: 5
+  desc: 鑒於唐朝衰落與航海危險，菅原道真上奏建議廢止遣唐使。日本開始停止大規模吸收中國文化，轉而在消化唐風的基礎上，發展出假名文字、和歌與物語等獨特且本土化的「國風文化」。
+  sources:
+    - title: 維基百科：平安時代
+      url: https://zh.wikipedia.org/wiki/平安時代
+    - title: 維基百科：菅原道真
+      url: https://zh.wikipedia.org/wiki/菅原道真
+    - title: 維基百科：遣唐使
+      url: https://zh.wikipedia.org/wiki/遣唐使
+    - title: 維基百科：國風文化
+      url: https://zh.wikipedia.org/wiki/國風文化
+
 - id: jp-genji
   year: 1008
   title: 紫式部《源氏物語》
@@ -341,12 +385,42 @@
     - title: 維基百科：紫式部
       url: https://zh.wikipedia.org/wiki/紫式部
 
+- id: jp-genji-monogatari
+  year: 1016
+  title: 藤原道長就任攝政，攝關政治全盛與《源氏物語》
+  category: culture
+  importance: 4
+  desc: 藤原道長出任攝政，藤原氏的攝關政治達到權力巔峰。同時代的宮廷女房紫式部創作了世界最古老的長篇寫實小說《源氏物語》，成為平安時代貴族文學的最高成就。
+  sources:
+    - title: 維基百科：平安時代
+      url: https://zh.wikipedia.org/wiki/平安時代
+    - title: 維基百科：藤原道長
+      url: https://zh.wikipedia.org/wiki/藤原道長
+    - title: 維基百科：源氏物語
+      url: https://zh.wikipedia.org/wiki/源氏物語
+    - title: 維基百科：紫式部
+      url: https://zh.wikipedia.org/wiki/紫式部
+
 - id: jp-insei
   year: 1086
   title: 白河上皇開始院政
   category: politics
   importance: 3
   sources:
+    - title: 維基百科：院政
+      url: https://zh.wikipedia.org/wiki/院政
+
+- id: jp-shirakawa-insei
+  year: 1086
+  title: 白河天皇讓位設立院廳，開啟院政時代
+  category: politics
+  importance: 5
+  desc: 為了對抗藤原氏的攝關政治，白河天皇讓位給年幼的堀河天皇，自己成為「上皇」並設立「院廳」在幕後執政。這種由退位天皇掌握實權的「院政」體制，成為平安時代後期的主要政治形態。
+  sources:
+    - title: 維基百科：平安時代
+      url: https://zh.wikipedia.org/wiki/平安時代
+    - title: 維基百科：白河天皇
+      url: https://zh.wikipedia.org/wiki/白河天皇
     - title: 維基百科：院政
       url: https://zh.wikipedia.org/wiki/院政
 
@@ -541,8 +615,8 @@
   sources:
     - title: 維基百科：鎌倉時代
       url: https://zh.wikipedia.org/wiki/鎌倉時代
-    - title: 維基百科：德政令
-      url: https://zh.wikipedia.org/wiki/德政令
+    - title: 維基百科：永仁的德政令
+      url: https://zh.wikipedia.org/wiki/永仁的德政令
 
 - id: jp-genko-war
   year: 1331
