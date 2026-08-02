@@ -267,6 +267,16 @@
     - title: 日文維基百科：平城京
       url: https://ja.wikipedia.org/wiki/平城京
 
+- id: jp-heijo-kyo
+  year: 710
+  title: 元明天皇遷都平城京，奈良時代開幕
+  category: politics
+  importance: 5
+  desc: 元明天皇將都城從藤原京遷至仿造唐朝長安城建立的平城京（今奈良市）。這標誌著日本律令制國家的全盛時期「奈良時代」正式開始，國家行政與唐風文化在此高度發展。
+  sources:
+    - title: 維基百科：平城京
+      url: https://zh.wikipedia.org/wiki/平城京
+
 - id: jp-kojiki
   year: 712
   title: 《古事記》成書
@@ -276,6 +286,29 @@
     - title: 維基百科：古事記
       url: https://zh.wikipedia.org/wiki/古事記
 
+- id: jp-kojiki-nihon-shoki
+  year: 712
+  title: 編纂《古事記》與《日本書紀》，確立國家神話
+  category: culture
+  importance: 4
+  endYear: 720
+  desc: 為了確立天皇統治的歷史正當性，朝廷先後完成了《古事記》（712年）與《日本書紀》（720年）的編纂。這兩部史書結合了神話與歷史，成為日本國家起源與神道教思想的基石。
+  sources:
+    - title: 維基百科：古事記
+      url: https://zh.wikipedia.org/wiki/古事記
+    - title: 維基百科：日本書紀
+      url: https://zh.wikipedia.org/wiki/日本書紀
+
+- id: jp-konden-einen
+  year: 743
+  title: 頒布墾田永年私財法，莊園制萌芽
+  category: economy
+  importance: 5
+  desc: 為了解決人口增加導致的公地不足，朝廷頒布了《墾田永年私財法》，承認農民與貴族開墾的土地為永久私有。此舉實質上破壞了律令制的「公地公民」原則，促使私有莊園開始大規模發展。
+  sources:
+    - title: 維基百科：墾田永年私財法
+      url: https://zh.wikipedia.org/wiki/墾田永年私財法
+
 - id: jp-great-buddha
   year: 752
   title: 東大寺大佛開眼
@@ -284,6 +317,26 @@
   sources:
     - title: 維基百科：東大寺
       url: https://zh.wikipedia.org/wiki/東大寺
+
+- id: jp-todai-ji-daibutsu
+  year: 752
+  title: 聖武天皇建立東大寺大佛，鎮護國家思想盛行
+  category: religion
+  importance: 4
+  desc: 面對天花流行與政治動盪，聖武天皇推崇「鎮護國家」的佛教思想。他在平城京建造了宏偉的東大寺並為巨大的盧舍那佛舉行開眼供養，佛教成為維繫國家安定的核心信仰。
+  sources:
+    - title: 維基百科：东大寺
+      url: https://zh.wikipedia.org/wiki/东大寺
+
+- id: jp-ganjin
+  year: 754
+  title: 鑑真和尚東渡日本，確立日本佛教戒律
+  category: religion
+  importance: 4
+  desc: 唐朝高僧鑑真歷經多次失敗與失明，終於成功東渡抵達日本。他在東大寺設立戒壇，為聖武太上皇等人授戒，正式確立了日本佛教的受戒制度與律宗傳承。
+  sources:
+    - title: 維基百科：鑑真
+      url: https://zh.wikipedia.org/wiki/鑑真
 
 - id: jp-heian-capital
   year: 794
