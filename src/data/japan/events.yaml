@@ -140,6 +140,20 @@
     - title: 維基百科：卑彌呼
       url: https://zh.wikipedia.org/wiki/卑彌呼
 
+- id: jp-makimuku-yamato
+  year: 250
+  title: 纏向遺跡與箸墓古墳出現，大和王權初步成形
+  category: politics
+  importance: 4
+  desc: 奈良盆地東南的纏向遺跡出現多座百公尺級的前方後圓墳，其中規模最大的箸墓古墳一般推定即卑彌呼之墓。這是「前方後圓墳」這種日本特有墳制的最早範例，象徵以大和地區為核心的廣域政治聯盟開始成形，考古學上以此劃定古墳時代的起點。
+  sources:
+    - title: 日文維基百科：纒向遺跡
+      url: https://ja.wikipedia.org/wiki/纒向遺跡
+    - title: 日文維基百科：箸墓古墳
+      url: https://ja.wikipedia.org/wiki/箸墓古墳
+    - title: 維基百科：大和王權
+      url: https://zh.wikipedia.org/wiki/大和王權
+
 - id: jp-last-envoy-jin
   year: 266
   title: 倭女王遣使西晉，中國史書自此失載近一百五十年
@@ -189,6 +203,36 @@
       url: https://zh.wikipedia.org/wiki/倭五王
     - title: 日文維基百科：倭五王
       url: https://ja.wikipedia.org/wiki/倭の五王
+
+- id: jp-daisenryo-kofun
+  year: 450
+  title: 大仙陵古墳造營，古墳規模達到頂峰
+  category: culture
+  importance: 3
+  desc: 傳為仁德天皇陵的大仙陵古墳（大山古墳）於五世紀中葉造營，全長486公尺，是全世界墳丘面積最大的陵墓。此時期王墓的位置也由奈良盆地移往河內平原，反映大和王權的權力核心正在轉移。
+  sources:
+    - title: 日文維基百科：大仙陵古墳
+      url: https://ja.wikipedia.org/wiki/大仙陵古墳
+
+- id: jp-inariyama-sword
+  year: 471
+  title: 稻荷山古墳鐵劍銘文，證實大和王權勢力達關東
+  category: culture
+  importance: 4
+  desc: 埼玉縣稻荷山古墳出土的鐵劍上刻有「獲加多支鹵大王」（即雄略天皇）與辛亥年（推定471年）的銘文，是現存最早明確記錄大和大王名號的考古實物，證實五世紀後期大和王權的統治已擴及關東地區，也顯示當時已具備以漢字記事的能力。
+  sources:
+    - title: 日文維基百科：稲荷山古墳（行田市）
+      url: https://ja.wikipedia.org/wiki/稲荷山古墳_(行田市)
+
+- id: jp-iwai-rebellion
+  year: 527
+  title: 磐井之亂，九州豪族反抗大和王權失敗
+  category: war
+  importance: 4
+  desc: 勢力強大的筑紫國造磐井聯合新羅，阻撓大和王權出兵援助朝鮮半島的任那，爆發磐井之亂。大和朝廷歷時逾一年才平定叛亂，事後在九州設置「屯倉」直接管理當地，是大和王權向地方豪族貫徹中央集權的重要一步。
+  sources:
+    - title: 維基百科：磐井之乱
+      url: https://zh.wikipedia.org/wiki/磐井之乱
 
 - id: jp-buddhism
   year: 538
@@ -310,6 +354,16 @@
       url: https://zh.wikipedia.org/wiki/乙巳之變
     - title: 維基百科：大化改新
       url: https://zh.wikipedia.org/wiki/大化改新
+
+- id: jp-hakuso-edict
+  year: 646
+  title: 頒布薄葬令，古墳時代實質終結
+  category: politics
+  importance: 3
+  desc: 大化改新的《改新之詔》中一併頒布「薄葬令」，依身分等級嚴格限制墳墓規模與造墓人力，禁止厚葬。此令使延續近四百年、以巨大墳丘彰顯權力的古墳營造傳統迅速式微，考古學上多以此作為古墳時代終結的標誌。
+  sources:
+    - title: 日文維基百科：薄葬令
+      url: https://ja.wikipedia.org/wiki/薄葬令
 
 - id: jp-hakusukinoe
   year: 663
