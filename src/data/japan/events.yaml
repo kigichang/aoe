@@ -7,6 +7,18 @@
 
 
 
+- id: jp-nabatake-itazuke
+  year: -930
+  title: 菜畑、板付遺跡，日本最早水稻耕作證據
+  category: culture
+  importance: 4
+  desc: 九州北部的菜畑遺跡（佐賀縣）出土磨製石劍與水田遺構，板付遺跡（福岡縣）則發現已具階層差異的環濠聚落，是目前所知日本最早的水稻耕作證據。稻作技術經朝鮮半島傳入九州，標誌著繩文採集社會逐漸轉向彌生農耕社會。
+  sources:
+    - title: 維基百科：菜畑遺跡
+      url: https://zh.wikipedia.org/wiki/菜畑遺跡
+    - title: 維基百科：板付遺跡
+      url: https://zh.wikipedia.org/wiki/板付遺跡
+
 - id: jp-jimmu
   year: -660
   title: 神武天皇即位（傳說），日本建國神話
@@ -48,6 +60,16 @@
     - title: 維基百科：彌生時代
       url: https://zh.wikipedia.org/wiki/彌生時代
 
+- id: jp-sugu-okamoto
+  year: -100
+  title: 須玖岡本遺跡成為奴國都邑核心
+  category: culture
+  importance: 3
+  desc: 福岡平原的須玖岡本遺跡出土大量前漢式銅鏡、銅劍與玻璃璧等舶來品，一般認為是《漢書》地理志所載「倭人分為百餘國」中「奴國」的都邑所在，顯示北九州首長已透過與漢朝的交易累積財富與權威。
+  sources:
+    - title: 日文維基百科：須玖岡本遺跡
+      url: https://ja.wikipedia.org/wiki/須玖岡本遺跡
+
 - id: jp-sujin
   year: -97
   title: 崇神天皇即位
@@ -69,6 +91,16 @@
   sources:
     - title: 維基百科：漢委奴國王印
       url: https://zh.wikipedia.org/wiki/漢委奴國王印
+
+- id: jp-suisho-tribute
+  year: 107
+  title: 倭國王帥升朝貢後漢
+  category: politics
+  importance: 3
+  desc: 繼57年奴國王受金印之後，《後漢書》記載倭國王帥升等獻上生口（奴隸）160人向漢安帝請求朝見，是中國史書所載倭國第二次對中原王朝的正式朝貢，顯示北九州政治勢力持續透過對外交往鞏固地位。
+  sources:
+    - title: 維基百科：帥升
+      url: https://zh.wikipedia.org/wiki/帥升
 
 - id: jp-yamato-takeru
   year: 110
@@ -94,6 +126,16 @@
       url: https://zh.wikipedia.org/wiki/倭國大亂
     - title: 日文維基百科：倭國大亂
       url: https://ja.wikipedia.org/wiki/倭国大乱
+
+- id: jp-aoyakamijichi
+  year: 190
+  title: 青谷上寺地遺跡集體屠殺，倭國大亂的實物證據
+  category: war
+  importance: 4
+  desc: 鳥取縣青谷上寺地遺跡出土逾百具彌生時代後期人骨，多具帶有刀劍砍痕與箭鏃刺入痕跡，是規模罕見的集體殺戮遺存。年代與《魏志倭人傳》所記「倭國大亂」的時期相符，為文獻記載的內戰提供了直接的考古實物佐證。
+  sources:
+    - title: 日文維基百科：青谷上寺地遺跡
+      url: https://ja.wikipedia.org/wiki/青谷上寺地遺跡
 
 - id: jp-jingu
   year: 200
@@ -2891,6 +2933,16 @@
       url: https://zh.wikipedia.org/wiki/2002年國際足協世界盃
     - title: 維基百科：日朝平壤宣言
       url: https://zh.wikipedia.org/wiki/日朝平壤宣言
+
+- id: jp-yayoi-dating-revision
+  year: 2003
+  title: 放射性碳定年將彌生時代起點上修至前十世紀
+  category: science
+  importance: 3
+  desc: 國立歷史民俗博物館發表以AMS放射性碳定年法重新測定九州北部彌生早期陶器附著碳化物的結果，將彌生時代的開始年代從傳統認知的前5、4世紀大幅提前約500年，推定至前10世紀左右。此一修正引發日本考古學界對彌生時代分期的廣泛論戰，至今仍未完全定論。
+  sources:
+    - title: 日文維基百科：弥生時代
+      url: https://ja.wikipedia.org/wiki/弥生時代
 
 - id: jp-spirited-away-oscar-2003
   year: 2003
