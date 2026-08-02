@@ -859,3 +859,69 @@
   sources:
     - title: 維基百科：日本泡沫經濟
       url: https://zh.wikipedia.org/wiki/日本泡沫經濟
+
+- id: jp-hanshin-sarin
+  year: 1995
+  title: 阪神大地震；東京地下鐵沙林毒氣事件
+  category: culture
+  importance: 4
+  desc: 1 月阪神・淡路大地震重創關西，釀逾六千人死傷；3 月奧姆真理教於東京地下鐵發動沙林毒氣襲擊，造成 14 死數千傷。兩起重大災難重創日本社會治安與安全神話，促使應變與安全防禦機制的變革。
+  sources:
+    - title: 維基百科：阪神大地震
+      url: https://zh.wikipedia.org/wiki/阪神大地震
+    - title: 維基百科：東京地下鐵沙林毒氣事件
+      url: https://zh.wikipedia.org/wiki/東京地下鐵沙林毒氣事件
+
+- id: jp-311-earthquake
+  year: 2011
+  title: 東日本大震災，福島核電廠事故
+  category: culture
+  importance: 5
+  desc: 3 月 11 日東北地方太平洋沖發生芮氏規模 9.0 海溝型強震，引發巨大海嘯，造成近二萬人死亡與失蹤，並引發福島第一核電廠爐心融毀之核災事故。這是戰後日本遭逢最嚴重的複合型天災與人禍。
+  sources:
+    - title: 維基百科：東日本大震災
+      url: https://zh.wikipedia.org/wiki/東日本大震災
+    - title: 維基百科：福島第一核電廠事故
+      url: https://zh.wikipedia.org/wiki/福島第一核電廠事故
+
+- id: jp-reiwa-era
+  year: 2019
+  title: 明仁天皇退位，改元「令和」
+  category: politics
+  importance: 4
+  desc: 明仁天皇退位，皇太子德仁即位，為日本時隔兩百年首度實現天皇生前退位。新年號「令和」典出日本古典文獻《萬葉集》，象徵日本開啟全新時代。
+  sources:
+    - title: 維基百科：令和
+      url: https://zh.wikipedia.org/wiki/令和
+    - title: 維基百科：明仁天皇退位
+      url: https://zh.wikipedia.org/wiki/明仁天皇退位
+
+- id: jp-tokyo-2020
+  year: 2021
+  title: 2020 東京奧運會（因疫情延期）登場
+  category: culture
+  importance: 4
+  desc: 受 COVID-19 全球疫情影響延期一年後，第 32 屆奧林匹克運動會於東京登場。因應防疫大多數賽事採無觀眾閉門舉行，為現代奧運歷史上首次因全球大流行疫情延期舉辦之盛會。
+  sources:
+    - title: 維基百科：2020年夏季奧林匹克運動會
+      url: https://zh.wikipedia.org/wiki/2020年夏季奧林匹克運動會
+
+- id: jp-abe-assassination
+  year: 2022
+  title: 前首相安倍晉三遇刺身亡
+  category: politics
+  importance: 4
+  desc: 日本執政時間最長的前首相安倍晉三於奈良市助選演講時遭槍擊身亡。事件震撼全球，並引發全日本對政治安全防護、槍械管制以及政治人物與統一教鏈結的強烈檢討。
+  sources:
+    - title: 維基百科：安倍晉三遇刺案
+      url: https://zh.wikipedia.org/wiki/安倍晉三遇刺案
+
+- id: jp-noto-earthquake-2024
+  year: 2024
+  title: 能登半島地震，強震與海嘯重創北陸
+  category: culture
+  importance: 3
+  desc: 元旦下午能登半島發生芮氏規模 7.6 淺層強震並引發海嘯與火災，造成逾二百人罹難，古建築與傳統漆器工藝重創。為令和時代以來日本傷亡最慘重的自然災害。
+  sources:
+    - title: 維基百科：2024年能登半島地震
+      url: https://zh.wikipedia.org/wiki/2024年能登半島地震
