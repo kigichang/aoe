@@ -1577,14 +1577,30 @@
     - title: 維基百科：文成公主
       url: https://zh.wikipedia.org/wiki/文成公主
 
+- id: cn-tang-conquers-korea
+  year: 660
+  endYear: 668
+  title: 唐滅百濟、高句麗，重塑朝鮮半島格局
+  category: war
+  importance: 4
+  desc: 唐與新羅聯軍先滅百濟（660），再滅立國七百餘年的高句麗（668），一度於平壤設安東都護府直接統治。此後新羅逐步驅逐唐朝勢力統一半島，唐與新羅轉為聯盟，朝鮮半島的政治版圖自此定型。
+  sources:
+    - title: 維基百科：唐滅百濟之戰
+      url: https://zh.wikipedia.org/wiki/唐滅百濟之戰
+    - title: 維基百科：唐與高句麗戰爭
+      url: https://zh.wikipedia.org/wiki/唐與高句麗戰爭
+
 - id: cn-wu-zetian
   year: 690
   title: 武則天稱帝
   category: politics
   importance: 4
+  desc: 武則天從高宗皇后、與高宗「二聖臨朝」共治，到廢黜親生兩子（中宗、睿宗）後自行稱帝改國號周，是中國史上唯一的女皇帝。她任用酷吏興告密之風剷除異己，卻也開殿試選才、不拘門第拔擢寒門與能臣（狄仁傑等），統治十五年間國力續有發展，晚年才因男寵與繼承問題埋下神龍革命的種子。
   sources:
     - title: 維基百科：武則天
       url: https://zh.wikipedia.org/wiki/武則天
+    - title: 維基百科：武周
+      url: https://zh.wikipedia.org/wiki/武周
 
 - id: cn-shenlong-coup
   year: 705
@@ -1599,6 +1615,16 @@
       url: https://zh.wikipedia.org/wiki/武周
     - title: 維基百科：武則天
       url: https://zh.wikipedia.org/wiki/武則天
+
+- id: cn-tanglong-coup
+  year: 710
+  title: 唐隆政變，李隆基誅韋后
+  category: politics
+  importance: 3
+  desc: 中宗被韋皇后與安樂公主毒殺，兩人意圖仿效武則天臨朝稱制。臨淄王李隆基聯合姑母太平公主發動政變，誅殺韋后一黨，擁立其父睿宗復位。李隆基隨後鬥倒太平公主獨攬大權，兩年後即位，是為唐玄宗，開元盛世自此鋪路。
+  sources:
+    - title: 維基百科：唐隆政變
+      url: https://zh.wikipedia.org/wiki/唐隆政變
 
 - id: cn-kaiyuan
   year: 713
@@ -1644,6 +1670,7 @@
   category: war
   importance: 5
   endYear: 763
+  desc: 身兼三鎮節度使的安祿山以討楊國忠為名起兵，玄宗倉皇南逃，馬嵬驛兵變賜死楊貴妃，太子李亨於靈武自行稱帝（肅宗）。唐室借回紇兵收復兩京，但叛軍內鬥（安慶緒弒父、史思明弒安慶緒、史朝義弒父）延長戰事至八年才平定。戰後藩鎮割據成為定局，唐朝由盛轉衰，此後一百五十年再未真正重建中央集權。
   sources:
     - title: 維基百科：安史之亂
       url: https://zh.wikipedia.org/wiki/安史之亂
@@ -1657,6 +1684,19 @@
   sources:
     - title: 維基百科：兩稅法
       url: https://zh.wikipedia.org/wiki/兩稅法
+
+- id: cn-yuanhe-restoration
+  year: 806
+  endYear: 819
+  title: 元和中興，唐憲宗討平藩鎮
+  category: politics
+  importance: 4
+  desc: 順宗朝的永貞革新試圖以文官集團奪回宦官與藩鎮的權力，僅維持二百餘天便遭宦官政變推翻；憲宗改走武力路線，先後平定西川劉闢、鎮海李錡，最終派李愬雪夜奇襲蔡州、平定淮西吳元濟，河北藩鎮相繼歸順，安史之亂後六十年來中央權威首度重新籠罩全境，史稱「元和中興」。
+  sources:
+    - title: 維基百科：元和中興
+      url: https://zh.wikipedia.org/wiki/元和中興
+    - title: 維基百科：永貞革新
+      url: https://zh.wikipedia.org/wiki/永貞革新
 
 - id: cn-ganlu-incident
   year: 835
