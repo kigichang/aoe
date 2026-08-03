@@ -1860,6 +1860,16 @@
     - title: 維基百科：北宋
       url: https://zh.wikipedia.org/wiki/北宋
 
+- id: cn-yang-ye-death
+  year: 986
+  title: 雍熙北伐再敗，楊業陣亡
+  category: war
+  importance: 3
+  desc: 太宗三路北伐燕雲十六州，主帥潘美與監軍王侁指揮失當，名將楊業孤軍苦戰後被俘，絕食殉國。此役徹底打消宋朝收復燕雲的念頭，楊家將的故事也由此傳頌。
+  sources:
+    - title: 維基百科：楊業
+      url: https://zh.wikipedia.org/wiki/杨业
+
 - id: cn-chanyuan-treaty
   year: 1004
   title: 澶淵之盟，宋遼結為兄弟之國
@@ -1882,12 +1892,22 @@
     - title: 維基百科：交子
       url: https://zh.wikipedia.org/wiki/交子
 
+- id: cn-xixia-script
+  year: 1036
+  title: 西夏文正式頒行
+  category: culture
+  importance: 3
+  desc: 李元昊命野利仁榮參照漢字六書造字法創制西夏文，共約六千字，稱「國書」，頒令境內公私文書一律使用。這是中國歷史上少數由統治者主導、獨立於漢字系統的成熟文字。
+  sources:
+    - title: 維基百科：西夏文
+      url: https://zh.wikipedia.org/wiki/西夏文
+
 - id: cn-xixia-founded
   year: 1038
   title: 西夏建國，宋夏戰爭起
   category: politics
   importance: 3
-  desc: 李元昊稱帝，宋軍於三川口、好水川、定川寨屢敗。遼趁機施壓索取歲幣，宋在西北與北方同時受制。
+  desc: 李元昊稱帝，宋軍於三川口、好水川、定川寨屢敗。遼趁機施壓索取歲幣，宋在西北與北方同時受制。1044 年雙方簽訂慶曆和議，宋冊封元昊為夏國主並支付歲幣，換得對西夏事實獨立的承認。
   sources:
     - title: 維基百科：西夏
       url: https://zh.wikipedia.org/wiki/西夏
@@ -1922,9 +1942,25 @@
   title: 王安石變法
   category: politics
   importance: 3
+  desc: 推行青苗、市易、保甲等法富國強兵，卻因與民爭利、執行走樣而爭議不斷。神宗死後高太后重用司馬光盡廢新法（元祐更化），哲宗親政又反轉重啟新法（紹聖紹述），新舊黨爭反覆拉鋸近半世紀，朝政元氣大傷。
   sources:
     - title: 維基百科：王安石變法
       url: https://zh.wikipedia.org/wiki/王安石變法
+    - title: 維基百科：元祐更化
+      url: https://zh.wikipedia.org/wiki/元祐更化
+    - title: 維基百科：紹聖紹述
+      url: https://zh.wikipedia.org/wiki/绍圣绍述
+
+- id: cn-yongle-city-disaster
+  year: 1081
+  endYear: 1082
+  title: 宋神宗五路伐夏，永樂城之戰慘敗
+  category: war
+  importance: 4
+  desc: 宋神宗趁西夏內亂發動五路大軍西征，一度攻勢凌厲，卻在隔年築永樂城扼守時遭梁太后率三十萬大軍圍攻破城，宋軍與民夫死傷逾二十萬，是北宋對外戰爭最慘重的一次失敗，神宗自此不再言兵。
+  sources:
+    - title: 維基百科：永樂城之戰
+      url: https://zh.wikipedia.org/wiki/永樂城之戰
 
 - id: cn-zizhi-tongjian
   year: 1084
@@ -1947,6 +1983,51 @@
   sources:
     - title: 維基百科：夢溪筆談
       url: https://zh.wikipedia.org/wiki/夢溪筆談
+
+- id: cn-fang-la-song-jiang-rebellion
+  year: 1119
+  endYear: 1121
+  title: 方臘、宋江起義
+  category: war
+  importance: 3
+  desc: 徽宗設應奉局大興花石綱搜刮奇石異木，江南民怨沸騰，方臘於歙縣起事攻陷杭州等六州五十二縣，同時宋江也聚眾起於山東、河北，後受招安。兩場民變後來分別成為《水滸傳》的故事原型，也預示了北宋統治已現裂痕。
+  sources:
+    - title: 維基百科：方腊起义
+      url: https://zh.wikipedia.org/wiki/方腊起义
+    - title: 維基百科：宋江
+      url: https://zh.wikipedia.org/wiki/宋江
+
+- id: cn-jin-founding
+  year: 1115
+  title: 完顏阿骨打建金，起兵反遼
+  category: politics
+  importance: 4
+  desc: 完顏阿骨打統一女真各部後稱帝，國號「大金」，取「金不變不壞」之意，與遼朝的世仇宿怨隨即轉為公開戰爭。以猛安謀克制編組的女真軍隊十年間橫掃遼國，兵力精悍程度遠超其人口規模。
+  sources:
+    - title: 維基百科：完顏阿骨打
+      url: https://zh.wikipedia.org/wiki/完顏阿骨打
+
+- id: cn-jurchen-script
+  year: 1119
+  title: 完顏希尹創制女真文字
+  category: culture
+  importance: 3
+  desc: 完顏希尹參照漢字與契丹字創制女真大字，稍後又制女真小字，是金朝確立自身文化認同的重要一步，也用於編譯漢文經典與官方文書。
+  sources:
+    - title: 維基百科：女真文
+      url: https://zh.wikipedia.org/wiki/女真文
+
+- id: cn-jin-liao-fall
+  year: 1125
+  title: 金滅遼，耶律大石西遷建西遼
+  category: war
+  importance: 4
+  desc: 遼天祚帝被俘，立國二百餘年的遼朝滅亡。宗室耶律大石率殘部西遷中亞，擊敗當地突厥政權後建立西遼（哈喇契丹），延續遼的統緒近百年，直到被蒙古所滅。
+  sources:
+    - title: 維基百科：金滅遼之戰
+      url: https://zh.wikipedia.org/wiki/金滅遼之戰
+    - title: 維基百科：西遼
+      url: https://zh.wikipedia.org/wiki/西辽
 
 - id: cn-sea-alliance
   year: 1125
@@ -1979,6 +2060,17 @@
     - title: 維基百科：南宋
       url: https://zh.wikipedia.org/wiki/南宋
 
+- id: cn-xixia-renzong-golden-age
+  year: 1139
+  endYear: 1193
+  title: 夏仁宗盛世，天盛律令頒布
+  category: culture
+  importance: 3
+  desc: 夏仁宗在位五十四年，平定任得敬分國之謀，設科舉、興儒學、崇佛法，並頒行《天盛律令》——一部體例仿唐宋、以西夏文寫成的完整法典，是西夏國力與文化的鼎盛期。
+  sources:
+    - title: 維基百科：夏仁宗
+      url: https://zh.wikipedia.org/wiki/夏仁宗
+
 - id: cn-shaoxing-treaty
   year: 1141
   title: 紹興和議，宋金劃淮而治
@@ -1988,6 +2080,51 @@
   sources:
     - title: 維基百科：紹興和議
       url: https://zh.wikipedia.org/wiki/紹興和議
+
+- id: cn-yue-fei-death
+  year: 1142
+  title: 岳飛郾城大捷後遭「莫須有」罪名處死
+  category: war
+  importance: 5
+  desc: 岳飛率岳家軍北伐屢勝，郾城一役大破金軍精銳「拐子馬」，兵鋒直逼開封。秦檜為促成和議，以「莫須有」的罪名將岳飛下獄，父子最終在風波亭遇害。岳飛之死成為此後八百年中國「精忠報國」的象徵，也是南宋主戰派最沉重的一次挫敗。
+  sources:
+    - title: 維基百科：岳飛
+      url: https://zh.wikipedia.org/wiki/岳飞
+
+- id: cn-zhongdu-jin-capital
+  year: 1153
+  title: 金遷都中都（今北京）
+  category: politics
+  importance: 3
+  desc: 海陵王完顏亮擴建遼燕京為中都並遷都於此，人口迅速膨脹至二十餘萬戶，是北京首次成為大一統王朝級別政權的核心首都，此後元明清三代皆沿用其地。
+  sources:
+    - title: 維基百科：金中都
+      url: https://zh.wikipedia.org/wiki/金中都
+
+- id: cn-wanyan-liang-invasion
+  year: 1161
+  title: 完顏亮南侵，采石之戰擊退金軍
+  category: war
+  importance: 4
+  desc: 金海陵王完顏亮撕毀紹興和議大舉南侵，號稱百萬大軍。虞允文在采石磯以文臣身分臨陣督戰，憑新式車船擊潰金軍水師，完顏亮隨後在前線遭部將弒殺，南宋因此轉危為安。
+  sources:
+    - title: 維基百科：采石之戰 (1161年)
+      url: https://zh.wikipedia.org/wiki/采石之戰_(1161年)
+
+- id: cn-jin-golden-age
+  year: 1161
+  endYear: 1208
+  title: 金世宗大定之治，金章宗明昌之治
+  category: politics
+  importance: 4
+  desc: 完顏雍平定完顏亮亂政後即位，崇儒尚廉、與宋修好、與民休息，被《金史》譽為「小堯舜」；其孫金章宗前期延續盛世並深化漢化，設書畫院、興文教，稱「明昌之治」。這是金朝國力與文化的頂峰，晚期卻因章宗寵信外戚而由盛轉衰。
+  sources:
+    - title: 維基百科：金世宗
+      url: https://zh.wikipedia.org/wiki/金世宗
+    - title: 維基百科：大定之治
+      url: https://zh.wikipedia.org/wiki/大定之治
+    - title: 維基百科：金章宗
+      url: https://zh.wikipedia.org/wiki/金章宗
 
 - id: cn-zhu-xi
   year: 1200
@@ -2000,6 +2137,19 @@
       url: https://zh.wikipedia.org/wiki/朱熹
     - title: 維基百科：程朱理學
       url: https://zh.wikipedia.org/wiki/程朱理學
+
+- id: cn-kaixi-expedition
+  year: 1206
+  endYear: 1208
+  title: 韓侂胄開禧北伐兵敗，嘉定和議加碼歲幣
+  category: war
+  importance: 3
+  desc: 權臣韓侂胄倉促北伐圖謀恢復中原，準備不足全線潰敗。南宋為求和竟將韓侂胄頭顱函送金國，換得《嘉定和議》，歲幣由紹興舊額加碼至三十萬，南宋國格再受重創。
+  sources:
+    - title: 維基百科：開禧北伐
+      url: https://zh.wikipedia.org/wiki/開禧北伐
+    - title: 維基百科：韓侂胄
+      url: https://zh.wikipedia.org/wiki/韓侂冑
 
 - id: cn-genghis
   year: 1206
@@ -2138,6 +2288,17 @@
     - title: 維基百科：蒙古帝國
       url: https://zh.wikipedia.org/wiki/蒙古帝國
 
+- id: cn-xiangyang-siege
+  year: 1267
+  endYear: 1273
+  title: 襄樊之戰，回回炮破城
+  category: war
+  importance: 4
+  desc: 蒙古圍攻長江防線門戶襄陽、樊城長達六年，最終引進波斯工匠打造的巨型配重投石機「回回炮」轟破城牆，呂文煥出降。長江中游門戶洞開，是南宋滅亡前最關鍵的一役。
+  sources:
+    - title: 維基百科：襄樊之戰
+      url: https://zh.wikipedia.org/wiki/襄樊之戰
+
 - id: cn-phagpa-imperial-preceptor
   year: 1270
   title: 八思巴受封帝師，藏傳佛教確立特殊地位
@@ -2159,6 +2320,16 @@
       url: https://zh.wikipedia.org/wiki/元朝
     - title: 維基百科：忽必烈
       url: https://zh.wikipedia.org/wiki/忽必烈
+
+- id: cn-linan-fall
+  year: 1276
+  title: 元軍攻佔臨安，恭帝被俘
+  category: war
+  importance: 4
+  desc: 謝太后攜五歲恭帝出降，南宋朝廷正式覆滅。陸秀夫等大臣隨即在福州擁立端宗另立朝廷，繼續在東南沿海抵抗，直到三年後崖山之戰才畫下句點。
+  sources:
+    - title: 維基百科：宋元戰爭
+      url: https://zh.wikipedia.org/wiki/宋元戰爭
 
 - id: cn-yaishan
   year: 1279
