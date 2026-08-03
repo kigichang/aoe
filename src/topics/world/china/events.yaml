@@ -2169,10 +2169,12 @@
   title: 廢除宰相，六部直屬皇帝
   category: politics
   importance: 4
-  desc: 朱元璋以擅權植黨之名處死丞相胡惟庸，順勢廢掉行之一千六百年的宰相制度，君權與相權集於一身。此案連坐受誅逾三萬人。
+  desc: 朱元璋以擅權植黨之名處死丞相胡惟庸，順勢廢掉行之一千六百年的宰相制度，君權與相權集於一身。此案連坐受誅逾三萬人；十年後藍玉案再興大獄，株連約一萬五千人，兩案合稱「胡藍之獄」，開國功臣幾乎為之一空。
   sources:
     - title: 維基百科：胡惟庸案
       url: https://zh.wikipedia.org/wiki/胡惟庸案
+    - title: 維基百科：藍玉案
+      url: https://zh.wikipedia.org/wiki/藍玉案
     - title: 維基百科：明朝
       url: https://zh.wikipedia.org/wiki/明朝
 
@@ -2231,6 +2233,16 @@
     - title: 維基百科：明朝
       url: https://zh.wikipedia.org/wiki/明朝
 
+- id: cn-duomen-restoration
+  year: 1457
+  title: 奪門之變，英宗復辟
+  category: politics
+  importance: 3
+  desc: 被俘的英宗獲釋後遭弟弟景帝軟禁七年，趁景帝病重發動政變重登帝位，隨即處死力保北京的功臣于謙，是明朝罕見的皇帝復位事件。
+  sources:
+    - title: 維基百科：奪門之變
+      url: https://zh.wikipedia.org/wiki/奪門之變
+
 - id: cn-wang-yangming
   year: 1508
   title: 王陽明龍場悟道，心學興起
@@ -2242,6 +2254,27 @@
       url: https://zh.wikipedia.org/wiki/王守仁
     - title: 維基百科：心學
       url: https://zh.wikipedia.org/wiki/心學
+
+- id: cn-great-rites-controversy
+  year: 1521
+  endYear: 1524
+  title: 大禮議之爭
+  category: politics
+  importance: 3
+  desc: 以外藩身分入繼大統的嘉靖帝，堅持追尊生父為皇考而非僅稱皇叔，與內閣楊廷和等朝臣爆發長達三年的禮法之爭，最終皇帝獲勝，卻也重創了文官集團的制衡力量。
+  sources:
+    - title: 維基百科：大禮議
+      url: https://zh.wikipedia.org/wiki/大禮議
+
+- id: cn-gengxu-incident
+  year: 1550
+  title: 庚戌之變，俺答汗兵臨北京城下
+  category: war
+  importance: 3
+  desc: 蒙古土默特部俺答汗因求貢遭拒，率軍長驅直入圍攻北京城外八天，大肆焚掠而去，暴露京營戰力空虛，促成二十年後的隆慶封貢和議。
+  sources:
+    - title: 維基百科：庚戌之變
+      url: https://zh.wikipedia.org/wiki/庚戌之變
 
 - id: cn-macau-lease
   year: 1557
@@ -2415,6 +2448,29 @@
     - title: 維基百科：寧遠之戰
       url: https://zh.wikipedia.org/wiki/寧遠之戰
 
+- id: cn-jisi-incident
+  year: 1629
+  title: 己巳之變，皇太極首次入塞，袁崇煥下獄被殺
+  category: war
+  importance: 4
+  desc: 皇太極繞道蒙古突破長城防線，直逼北京城下，寧遠之戰的功臣袁崇煥星夜回援卻反遭崇禎帝以通敵之罪凌遲處死，明朝自毀長城，遼東再無良將可用。
+  sources:
+    - title: 維基百科：己巳之變 (崇禎)
+      url: https://zh.wikipedia.org/wiki/己巳之變_(崇禎)
+
+- id: cn-late-ming-rebellions
+  year: 1630
+  endYear: 1641
+  title: 李自成、張獻忠等民變勢力坐大
+  category: war
+  importance: 4
+  desc: 陝西饑荒與加派並起，流民聚為民變，李自成、張獻忠等部在官軍圍剿與招撫間反覆坐大。1641 年李自成攻破洛陽、殺福王朱常洵，民變自此從流竄劫掠轉為足以顛覆王朝的力量。
+  sources:
+    - title: 維基百科：李自成
+      url: https://zh.wikipedia.org/wiki/李自成
+    - title: 維基百科：張獻忠
+      url: https://zh.wikipedia.org/wiki/張獻忠
+
 - id: cn-qing-proclaimed
   year: 1636
   title: 皇太極改國號為清
@@ -2462,7 +2518,7 @@
   category: politics
   importance: 4
   endYear: 1662
-  desc: 弘光、隆武、紹武、永曆等政權在南方接連而起，彼此不相統屬甚至互相攻伐。1662 年永曆帝於昆明遇害，南明告終。
+  desc: 弘光、隆武、紹武、永曆等政權在南方接連而起，彼此不相統屬甚至互相攻伐。1659 年永曆帝在吳三桂追擊下逃入緬甸，1662 年遭吳三桂率軍入緬索回，於昆明遇害，南明告終。
   sources:
     - title: 維基百科：南明
       url: https://zh.wikipedia.org/wiki/南明
@@ -2488,6 +2544,26 @@
       url: https://zh.wikipedia.org/wiki/揚州十日
     - title: 維基百科：史可法
       url: https://zh.wikipedia.org/wiki/史可法
+
+- id: cn-li-dingguo-victories
+  year: 1652
+  title: 李定國兩蹶名王，南明中興一線生機
+  category: war
+  importance: 4
+  desc: 原大西軍將領李定國奉永曆政權出兵，桂林一役逼死清定南王孔有德，衡陽一役陣斬清敬謹親王尼堪，是南明抗清以來最輝煌的戰果，一度讓復國看似有望。
+  sources:
+    - title: 維基百科：李定國
+      url: https://zh.wikipedia.org/wiki/李定國
+
+- id: cn-zheng-chenggong-northern-expedition
+  year: 1659
+  title: 鄭成功北伐兵臨南京，功敗垂成
+  category: war
+  importance: 4
+  desc: 鄭成功率十餘萬大軍溯長江而上，一度兵臨南京城下，卻中緩兵之計延誤戰機，最終大敗撤回廈門。北伐受挫促使他轉而東取臺灣，作為反清基地。
+  sources:
+    - title: 維基百科：鄭成功北伐
+      url: https://zh.wikipedia.org/wiki/鄭成功北伐
 
 - id: cn-koxinga
   year: 1662
