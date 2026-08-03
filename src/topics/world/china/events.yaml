@@ -1899,17 +1899,30 @@
     - title: 維基百科：楊業
       url: https://zh.wikipedia.org/wiki/杨业
 
+- id: cn-xiao-taihou-regency
+  year: 982
+  endYear: 1009
+  title: 蕭太后攝政，遼聖宗盛世
+  category: politics
+  importance: 4
+  desc: 遼景宗去世，年僅十二歲的遼聖宗即位，生母蕭綽（蕭燕燕）以太后身分攝政近三十年，重用漢臣、整頓吏治、勸農興學，遼朝國力自此達到頂峰。1004年她更親率大軍南征，促成澶淵之盟。是中國史上少數長期臨朝、且治績斐然的女性統治者，後世戲曲小說常見其身影。
+  sources:
+    - title: 維基百科：蕭綽
+      url: https://zh.wikipedia.org/wiki/萧绰
+
 - id: cn-chanyuan-treaty
   year: 1004
   title: 澶淵之盟，宋遼結為兄弟之國
   category: politics
   importance: 4
-  desc: 宋以歲幣換取和平，此後宋遼百餘年無大戰。以錢帛代替戰爭的做法，成為北宋處理北方關係的基調。
+  desc: 遼聖宗與攝政的蕭太后親率大軍南征，遼將蕭撻凜陣前戰死，雙方隨即議和：宋以歲幣換取和平，此後宋遼百餘年無大戰。以錢帛代替戰爭的做法，成為北宋處理北方關係的基調。1042年遼朝再以陳兵邊境施壓，逼宋將歲幣加碼（重熙增幣），並堅持用字為「納」而非「贈」，維持名義上的優勢地位。
   sources:
     - title: 維基百科：澶淵之盟
       url: https://zh.wikipedia.org/wiki/澶淵之盟
     - title: 維基百科：宋朝
       url: https://zh.wikipedia.org/wiki/宋朝
+    - title: 維基百科：重熙增幣
+      url: https://zh.wikipedia.org/wiki/重熙增幣
 
 - id: cn-jiaozi
   year: 1024
@@ -1979,6 +1992,19 @@
       url: https://zh.wikipedia.org/wiki/元祐更化
     - title: 維基百科：紹聖紹述
       url: https://zh.wikipedia.org/wiki/绍圣绍述
+
+- id: cn-liao-yelu-yixin
+  year: 1075
+  endYear: 1083
+  title: 耶律乙辛專權，遼道宗冤殺皇后太子
+  category: politics
+  importance: 3
+  desc: 遼道宗寵信權臣耶律乙辛，聽信其誣陷賜死皇后蕭觀音（史稱十香詞冤案），太子耶律濬隨後也遭害死。耶律乙辛專權多年後才因意圖投宋事洩被誅。這場冤案重創遼朝統治核心，是遼朝由盛轉衰、四十餘年後亡於女真的關鍵轉折之一。
+  sources:
+    - title: 維基百科：耶律乙辛
+      url: https://zh.wikipedia.org/wiki/耶律乙辛
+    - title: 維基百科：蕭觀音
+      url: https://zh.wikipedia.org/wiki/萧观音
 
 - id: cn-yongle-city-disaster
   year: 1081
