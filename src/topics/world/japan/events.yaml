@@ -1579,9 +1579,14 @@
   category: war
   importance: 4
   endYear: 1598
+  desc: 秀吉懷抱「唐入り」野心，藉道朝鮮攻明遭拒後大舉出兵，文祿之役一度攻陷漢城、平壤，卻在明軍參戰與李舜臣水軍屢破日本艦隊（閑山島海戰）後陷入膠著，1593年休戰。1596年和議破裂，秀吉再度出兵（慶長之役），戰事同樣受阻於蔚山城久攻不下與鳴梁海戰的水軍慘敗。1598年秀吉病逝，各路大名以此為由決定撤兵，露梁海戰中李舜臣雖戰死卻重創撤退日軍。這場動員全國近半兵力的戰爭耗盡西國大名的財力軍力，也讓豐臣政權喪失出兵大義，是兩年後關原之戰豐臣勢力潰敗的遠因。
   sources:
     - title: 維基百科：萬曆朝鮮之役
       url: https://zh.wikipedia.org/wiki/萬曆朝鮮之役
+    - title: 日文維基百科：文禄・慶長の役
+      url: https://ja.wikipedia.org/wiki/文禄・慶長の役
+    - title: 維基百科：李舜臣
+      url: https://zh.wikipedia.org/wiki/李舜臣
 
 - id: jp-hidetsugu-incident-1595
   year: 1595
