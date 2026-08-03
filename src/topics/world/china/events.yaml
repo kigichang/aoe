@@ -1489,14 +1489,29 @@
     - title: 維基百科：隋朝
       url: https://zh.wikipedia.org/wiki/隋朝
 
+- id: cn-renshou-coup
+  year: 604
+  title: 仁壽宮變，楊廣繼位為隋煬帝
+  category: politics
+  importance: 4
+  desc: 隋文帝在仁壽宮病重期間暴斃，傳統史書多指控太子楊廣趁機弒父奪位。楊廣繼位後立即處死廢太子楊勇父子與幼弟漢王楊諒，開皇之治積累的國力自此轉由這位野心勃勃、好大喜功的新君主揮霍。
+  sources:
+    - title: 維基百科：隋文帝
+      url: https://zh.wikipedia.org/wiki/隋文帝
+    - title: 維基百科：隋煬帝
+      url: https://zh.wikipedia.org/wiki/隋煬帝
+
 - id: cn-grand-canal
   year: 605
-  title: 開鑿大運河
+  title: 開鑿大運河，遷都營建東都洛陽
   category: economy
   importance: 4
+  desc: 煬帝即位次年便同時開鑿通濟渠、興建東都洛陽兩項巨型工程，各動用民伕百萬以上，此後陸續完成通濟渠、江南運河等段，貫通海河、黃河、淮河、長江、錢塘江五大水系。運河日後成為維繫中國南北經濟的大動脈，但即時的代價是民力耗盡，直接助長了隋末民變。
   sources:
     - title: 維基百科：京杭大運河
       url: https://zh.wikipedia.org/wiki/京杭大運河
+    - title: 維基百科：隋煬帝
+      url: https://zh.wikipedia.org/wiki/隋煬帝
 
 - id: cn-sui-goguryeo
   year: 612
@@ -1518,9 +1533,16 @@
   title: 唐朝建立
   category: politics
   importance: 5
+  desc: 隋末群雄並起之際，李淵於太原起兵南下攻克長安，先擁立代王楊侑為傀儡（隋恭帝），待江都兵變、隋煬帝被弒的消息傳來，便逼恭帝禪位，建國號唐。同年洛陽方面另立越王楊侗為帝延續隋祚，直到隔年被王世充篡奪才真正滅亡——兩京並立的過渡局面，正是隋末唐初改朝換代的縮影。
   sources:
     - title: 維基百科：唐朝
       url: https://zh.wikipedia.org/wiki/唐朝
+    - title: 維基百科：晉陽起兵
+      url: https://zh.wikipedia.org/wiki/晉陽起兵
+    - title: 維基百科：宇文化及
+      url: https://zh.wikipedia.org/wiki/宇文化及
+    - title: 維基百科：王世充
+      url: https://zh.wikipedia.org/wiki/王世充
 
 - id: cn-xuanwu-gate
   year: 626
