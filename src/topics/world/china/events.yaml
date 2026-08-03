@@ -2729,6 +2729,48 @@
     - title: 維基百科：辛亥革命
       url: https://zh.wikipedia.org/wiki/辛亥革命
 
+- id: cn-roc-founding
+  year: 1912
+  title: 中華民國臨時政府成立，孫中山就任臨時大總統
+  category: politics
+  importance: 5
+  desc: 南京臨時政府成立，孫文就任臨時大總統，改用陽曆紀年。旋即讓位於掌握北洋新軍的袁世凱，臨時政府隨後北遷北京。
+  sources:
+    - title: 維基百科：中華民國臨時政府
+      url: https://zh.wikipedia.org/wiki/中華民國臨時政府
+
+- id: cn-second-revolution
+  year: 1913
+  title: 二次革命，國民黨討袁失敗
+  category: war
+  importance: 3
+  desc: 宋教仁遇刺後，孫中山、黃興號召南方各省起兵討伐袁世凱，旋即失敗，孫中山被迫二度流亡日本。
+  sources:
+    - title: 維基百科：二次革命
+      url: https://zh.wikipedia.org/wiki/二次革命
+
+- id: cn-hongxian
+  year: 1915
+  title: 洪憲帝制，護國戰爭爆發
+  category: politics
+  importance: 4
+  desc: 袁世凱稱帝改元洪憲，蔡鍔在雲南起兵反對，各省相繼響應，袁世凱被迫取消帝制，隔年病逝。
+  sources:
+    - title: 維基百科：中華帝國
+      url: https://zh.wikipedia.org/wiki/中華帝國
+    - title: 維基百科：護國戰爭
+      url: https://zh.wikipedia.org/wiki/護國戰爭
+
+- id: cn-zhang-xun-restoration
+  year: 1917
+  title: 張勳復辟，十二天帝制鬧劇
+  category: politics
+  importance: 3
+  desc: 張勳率辮子軍擁廢帝溥儀復位，段祺瑞自天津起兵討逆，十二天後復辟即告瓦解。
+  sources:
+    - title: 維基百科：張勳復辟
+      url: https://zh.wikipedia.org/wiki/張勳復辟
+
 - id: cn-may-fourth
   year: 1919
   title: 五四運動
@@ -2737,6 +2779,49 @@
   sources:
     - title: 維基百科：五四運動
       url: https://zh.wikipedia.org/wiki/五四運動
+
+- id: cn-northern-expedition
+  year: 1926
+  endYear: 1928
+  title: 國民革命軍北伐
+  category: war
+  importance: 5
+  desc: 蔣中正率國民革命軍自廣州出師，沿途收編或擊敗各地軍閥，1928年底東北易幟後完成形式上的全國統一。
+  sources:
+    - title: 維基百科：國民革命軍北伐
+      url: https://zh.wikipedia.org/wiki/國民革命軍北伐
+
+- id: cn-april-12-incident
+  year: 1927
+  title: 清黨，國共第一次合作破裂
+  category: politics
+  importance: 4
+  desc: 蔣中正在上海清剿中國共產黨與左派勢力，史稱四一二事件；國民政府隨後定都南京，寧漢分裂落幕，第一次國共合作正式終結。
+  sources:
+    - title: 維基百科：四一二事件
+      url: https://zh.wikipedia.org/wiki/四一二事件
+    - title: 維基百科：寧漢分裂
+      url: https://zh.wikipedia.org/wiki/寧漢分裂
+
+- id: cn-manchurian-incident
+  year: 1931
+  title: 九一八事變，日本佔領東北
+  category: war
+  importance: 5
+  desc: 關東軍炸毀南滿鐵路並反誣中國軍隊所為，隨即出兵佔領東北全境，扶植滿洲國，中日全面戰爭的序幕自此揭開。
+  sources:
+    - title: 維基百科：九一八事變
+      url: https://zh.wikipedia.org/wiki/九一八事變
+
+- id: cn-xian-incident
+  year: 1936
+  title: 西安事變，兵諫促成國共合作
+  category: politics
+  importance: 4
+  desc: 張學良、楊虎城扣留蔣中正，要求停止剿共、一致抗日。事件和平落幕，促成第二次國共合作與抗日民族統一戰線。
+  sources:
+    - title: 維基百科：西安事變
+      url: https://zh.wikipedia.org/wiki/西安事變
 
 - id: cn-war-japan
   year: 1937
@@ -2750,6 +2835,47 @@
     - title: 維基百科：中國抗日戰爭
       url: https://zh.wikipedia.org/wiki/中國抗日戰爭
 
+- id: cn-nanjing-massacre
+  year: 1937
+  title: 南京大屠殺
+  category: war
+  importance: 5
+  desc: 日軍攻陷首都南京後展開大規模屠殺與暴行，數週內死亡人數估計逾二十萬。
+  sources:
+    - title: 維基百科：南京大屠殺
+      url: https://zh.wikipedia.org/wiki/南京大屠殺
+
+- id: cn-roc-constitution
+  year: 1946
+  endYear: 1947
+  title: 制憲國民大會通過《中華民國憲法》
+  category: politics
+  importance: 4
+  desc: 國民大會在南京召開制憲會議，通過《中華民國憲法》，隔年12月25日施行，確立五權分立的憲政體制。
+  sources:
+    - title: 維基百科：中華民國憲法
+      url: https://zh.wikipedia.org/wiki/中華民國憲法
+
+- id: cn-1948-election
+  year: 1948
+  title: 行憲後首任總統選舉，蔣中正當選
+  category: politics
+  importance: 3
+  desc: 國民大會依新憲選出蔣中正、李宗仁為首任正副總統，是行憲後、也是遷台前唯一一次在中國大陸舉行的總統選舉。
+  sources:
+    - title: 維基百科：1948年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/1948年中華民國總統選舉
+
+- id: cn-temporary-provisions
+  year: 1948
+  title: 動員戡亂時期臨時條款公布
+  category: politics
+  importance: 4
+  desc: 國民大會通過臨時條款，賦予總統緊急處分權並凍結憲法部分條文，以因應國共內戰。此後在台灣延續四十三年，1991年始廢止。
+  sources:
+    - title: 維基百科：動員戡亂時期臨時條款
+      url: https://zh.wikipedia.org/wiki/動員戡亂時期臨時條款
+
 - id: cn-prc-founding
   year: 1949
   title: 中華人民共和國成立；國府遷臺
@@ -2761,6 +2887,60 @@
     - title: 維基百科：中華民國政府遷臺
       url: https://zh.wikipedia.org/wiki/中華民國政府遷臺
 
+- id: cn-korean-war
+  year: 1950
+  endYear: 1953
+  title: 抗美援朝，中國人民志願軍入朝參戰
+  category: war
+  importance: 5
+  desc: 韓戰爆發後，中國人民志願軍跨過鴨綠江參戰，與美軍為首的聯合國軍在朝鮮半島鏖戰近三年，最終在三八線附近停戰，也讓中華人民共和國自此與美國長期對立。
+  sources:
+    - title: 維基百科：朝鮮戰爭
+      url: https://zh.wikipedia.org/wiki/朝鮮戰爭
+
+- id: cn-land-reform-prc
+  year: 1950
+  title: 土地改革運動，廢除封建土地所有制
+  category: economy
+  importance: 4
+  desc: 沒收地主土地分配給無地或少地農民，徹底改變農村的土地所有結構，是中共建政初期鞏固政權、動員農村的核心政策。
+  sources:
+    - title: 維基百科：土地改革運動
+      url: https://zh.wikipedia.org/wiki/土地改革運動
+
+- id: cn-first-five-year-plan
+  year: 1953
+  title: 第一個五年計畫，優先發展重工業
+  category: economy
+  importance: 3
+  desc: 仿效蘇聯模式，集中資源發展重工業與國防工業，同時推行農業與工商業的社會主義改造，奠定計畫經濟體制的基礎。
+  sources:
+    - title: 維基百科：第一個五年計畫（中國）
+      url: https://zh.wikipedia.org/wiki/第一個五年計畫_(中國)
+
+- id: cn-anti-rightist-movement
+  year: 1957
+  title: 反右運動
+  category: politics
+  importance: 4
+  desc: 「百花齊放、百家爭鳴」政策開放批評後急轉直下，數十萬知識分子與黨內異議者被劃為「右派」，遭受批鬥、勞改或下放，此後政治氣氛急速收緊。
+  sources:
+    - title: 維基百科：反右運動
+      url: https://zh.wikipedia.org/wiki/反右運動
+
+- id: cn-great-leap-famine
+  year: 1958
+  endYear: 1961
+  title: 大躍進與三年大饑荒
+  category: economy
+  importance: 5
+  desc: 以土法煉鋼與浮誇的糧食產量口號推動超英趕美的躍進運動，人民公社化打亂農業生產，隨之而來的大饑荒造成至少上千萬人死亡，是中共建政以來最嚴重的人禍。
+  sources:
+    - title: 維基百科：大躍進
+      url: https://zh.wikipedia.org/wiki/大躍進
+    - title: 維基百科：三年困難時期
+      url: https://zh.wikipedia.org/wiki/三年困難時期
+
 - id: cn-cultural-revolution
   year: 1966
   title: 文化大革命
@@ -2771,6 +2951,46 @@
     - title: 維基百科：文化大革命
       url: https://zh.wikipedia.org/wiki/文化大革命
 
+- id: cn-un-seat
+  year: 1971
+  title: 取代中華民國，取得聯合國中國代表權
+  category: politics
+  importance: 5
+  desc: 聯合國大會通過第2758號決議，中華人民共和國取代中華民國成為中國在聯合國的唯一合法代表，並隨即取得安理會常任理事國席位。
+  sources:
+    - title: 維基百科：聯合國大會第2758號決議
+      url: https://zh.wikipedia.org/wiki/聯合國大會第2758號決議
+
+- id: cn-nixon-visit
+  year: 1972
+  title: 尼克森訪華，中美關係破冰
+  category: politics
+  importance: 5
+  desc: 美國總統尼克森應邀訪問北京，會見毛澤東，雙方發表《上海公報》，結束二十多年的敵對隔絕狀態，為後續建交鋪路。
+  sources:
+    - title: 維基百科：1972年尼克松訪華
+      url: https://zh.wikipedia.org/wiki/1972年尼克松訪華
+
+- id: cn-japan-normalization
+  year: 1972
+  title: 中日建交，中日和約失效
+  category: politics
+  importance: 4
+  desc: 日本首相田中角榮訪中，雙方發表《中日聯合聲明》建立外交關係，日本隨即宣布與中華民國的中日和約（台北和約）失去存在意義。
+  sources:
+    - title: 維基百科：中日聯合聲明
+      url: https://zh.wikipedia.org/wiki/中日聯合聲明
+
+- id: cn-mao-death
+  year: 1976
+  title: 毛澤東逝世；四人幫垮台，文革結束
+  category: politics
+  importance: 5
+  desc: 毛澤東病逝後不到一個月，華國鋒聯合軍方逮捕江青等四人幫成員，長達十年的文化大革命自此終結，中國隨即走向鄧小平主導的改革開放。
+  sources:
+    - title: 維基百科：四人幫
+      url: https://zh.wikipedia.org/wiki/四人幫
+
 - id: cn-reform-opening
   year: 1978
   title: 改革開放
@@ -2779,3 +2999,138 @@
   sources:
     - title: 維基百科：改革開放
       url: https://zh.wikipedia.org/wiki/改革開放
+
+- id: cn-tiananmen-1989
+  year: 1989
+  title: 六四事件
+  category: politics
+  importance: 5
+  desc: 學生與市民聚集天安門廣場要求政治改革，持續近兩個月的請願運動最終遭軍隊武力清場，總書記趙紫陽因同情學生而下台，事件至今仍是中國政治的禁忌話題。
+  sources:
+    - title: 維基百科：六四事件
+      url: https://zh.wikipedia.org/wiki/六四事件
+
+- id: cn-deng-southern-tour
+  year: 1992
+  title: 鄧小平南巡，改革開放重新提速
+  category: economy
+  importance: 4
+  desc: 鄧小平南下深圳、珠海等經濟特區發表談話，重申「發展才是硬道理」，扭轉六四事件後改革趨於保守的路線，市場化改革自此加速推進。
+  sources:
+    - title: 維基百科：鄧小平南巡
+      url: https://zh.wikipedia.org/wiki/鄧小平南巡
+
+- id: cn-hk-handover
+  year: 1997
+  title: 香港回歸，一國兩制正式實施
+  category: politics
+  importance: 5
+  desc: 英國結束一百五十餘年的殖民統治，香港主權移交中華人民共和國，成立特別行政區，「一國兩制」由構想進入實踐。
+  sources:
+    - title: 維基百科：香港回歸
+      url: https://zh.wikipedia.org/wiki/香港回歸
+
+- id: cn-macau-handover
+  year: 1999
+  title: 澳門回歸
+  category: politics
+  importance: 4
+  desc: 葡萄牙結束四百餘年的管治，澳門主權移交中華人民共和國，成為第二個實施「一國兩制」的特別行政區。
+  sources:
+    - title: 維基百科：澳門回歸
+      url: https://zh.wikipedia.org/wiki/澳門回歸
+
+- id: cn-wto-accession
+  year: 2001
+  title: 加入世界貿易組織
+  category: economy
+  importance: 4
+  desc: 歷經十五年談判，中國正式成為世界貿易組織成員，全面融入全球貿易體系，出口導向的經濟自此高速成長，也重塑了世界製造業版圖。
+  sources:
+    - title: 維基百科：世界貿易組織
+      url: https://zh.wikipedia.org/wiki/世界貿易組織
+
+- id: cn-sars-2003
+  year: 2003
+  title: SARS疫情爆發
+  category: politics
+  importance: 4
+  desc: 疫情起於廣東，初期因地方隱瞞疫情延誤防治，蔓延至北京與全球數十國，促使中國政府其後改革公共衛生通報體系。
+  sources:
+    - title: 維基百科：嚴重急性呼吸系統綜合症疫情
+      url: https://zh.wikipedia.org/wiki/嚴重急性呼吸系統綜合症疫情
+
+- id: cn-shenzhou5
+  year: 2003
+  title: 神舟五號，首次載人航天飛行
+  category: science
+  importance: 4
+  desc: 楊利偉搭乘神舟五號進入太空並安全返回，中國成為繼蘇聯／俄羅斯、美國之後第三個能夠自主將太空人送入太空的國家。
+  sources:
+    - title: 維基百科：神舟五號
+      url: https://zh.wikipedia.org/wiki/神舟五号
+
+- id: cn-beijing-olympics
+  year: 2008
+  title: 北京奧運
+  category: culture
+  importance: 4
+  desc: 第29屆夏季奧運在北京舉行，是中國首次主辦奧運，開幕式的大型場面展演被視為國力展示的象徵性時刻。
+  sources:
+    - title: 維基百科：2008年夏季奧林匹克運動會
+      url: https://zh.wikipedia.org/wiki/2008年夏季奧林匹克運動會
+
+- id: cn-gdp-second
+  year: 2010
+  title: GDP超越日本，成為全球第二大經濟體
+  category: economy
+  importance: 4
+  desc: 中國名目GDP正式超越日本，躍居僅次於美國的世界第二大經濟體，標誌著改革開放三十餘年高速成長的階段性成果。
+  sources:
+    - title: 維基百科：中華人民共和國國內生產總值
+      url: https://zh.wikipedia.org/wiki/中華人民共和國國內生產總值
+
+- id: cn-xi-jinping-succession
+  year: 2012
+  endYear: 2013
+  title: 習近平接班，出任總書記與國家主席
+  category: politics
+  importance: 4
+  desc: 中共十八大選出習近平為總書記，隔年全國人大選舉其為國家主席，完成第五代領導集體的權力交接，此後政治路線轉向更集中的個人領導。
+  sources:
+    - title: 維基百科：習近平
+      url: https://zh.wikipedia.org/wiki/習近平
+
+- id: cn-belt-and-road
+  year: 2013
+  title: 提出「一帶一路」倡議
+  category: economy
+  importance: 4
+  desc: 習近平先後提出「絲綢之路經濟帶」與「21世紀海上絲綢之路」構想，透過基礎建設投資與貸款串連歐亞非數十國，成為中國對外經濟與地緣戰略的核心工程。
+  sources:
+    - title: 維基百科：一帶一路
+      url: https://zh.wikipedia.org/wiki/一帶一路
+
+- id: cn-hk-protests-nsl
+  year: 2019
+  endYear: 2020
+  title: 香港反送中運動；港版國安法頒布
+  category: politics
+  importance: 5
+  desc: 《逃犯條例》修訂草案引爆大規模抗議，運動持續近半年並多次爆發激烈衝突。翌年北京主導制定《香港國安法》，香港的自治空間與言論環境自此大幅緊縮。
+  sources:
+    - title: 維基百科：反對逃犯條例修訂草案運動
+      url: https://zh.wikipedia.org/wiki/反對逃犯條例修訂草案運動
+    - title: 維基百科：中華人民共和國香港特別行政區維護國家安全法
+      url: https://zh.wikipedia.org/wiki/中華人民共和國香港特別行政區維護國家安全法
+
+- id: cn-covid-outbreak
+  year: 2019
+  endYear: 2022
+  title: 武漢新冠疫情爆發，清零政策實施與解封
+  category: politics
+  importance: 5
+  desc: 武漢首先出現不明肺炎病例，疫情迅速擴散為全球大流行。中國採取嚴格的「清零政策」封控超過兩年，2022年底因防疫成本與民眾抗議急轉為「新十條」全面解封。
+  sources:
+    - title: 維基百科：2019冠狀病毒病疫情
+      url: https://zh.wikipedia.org/wiki/2019冠狀病毒病疫情
