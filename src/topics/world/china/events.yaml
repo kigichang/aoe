@@ -1664,6 +1664,19 @@
     - title: 維基百科：造紙術
       url: https://zh.wikipedia.org/wiki/造紙術
 
+- id: cn-nanzhao-wars
+  year: 751
+  endYear: 754
+  title: 天寶戰爭，唐軍慘敗於南詔
+  category: war
+  importance: 3
+  desc: 崛起於雲南的南詔叛離唐朝，劍南節度使鮮于仲通、繼任的楊國忠兩度徵發大軍南征均全軍覆沒，唐軍前後折損近二十萬人。與同年怛羅斯之戰的挫敗東西呼應，暴露玄宗晚期窮兵黷武的惡果，也讓中央可用兵力在安史之亂爆發前先行透支。
+  sources:
+    - title: 維基百科：南詔
+      url: https://zh.wikipedia.org/wiki/南诏
+    - title: 維基百科：唐朝與南詔的戰爭
+      url: https://zh.wikipedia.org/wiki/唐朝與南詔的戰爭
+
 - id: cn-anshi
   year: 755
   title: 安史之亂
