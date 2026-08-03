@@ -2039,6 +2039,26 @@
     - title: 維基百科：蒙古帝國
       url: https://zh.wikipedia.org/wiki/蒙古帝國
 
+- id: cn-xixia-fall
+  year: 1227
+  title: 蒙古滅西夏
+  category: war
+  importance: 4
+  desc: 成吉思汗發動最後一次滅夏戰役，親率大軍分東西兩路進攻，自己卻在圍城期間病逝軍中，遺命秘不發喪。西夏末帝隨後獻城出降，立國近兩百年的西夏正式滅亡。
+  sources:
+    - title: 維基百科：蒙古滅西夏之戰
+      url: https://zh.wikipedia.org/wiki/蒙古滅西夏之戰
+
+- id: cn-sanfeng-mountain
+  year: 1232
+  title: 三峰山之戰，金軍主力覆滅
+  category: war
+  importance: 4
+  desc: 拖雷率蒙古軍在嚴寒中奔襲，於鈞州三峰山圍殲金朝最後的精銳野戰兵團，金軍主力自此不復存在，兩年後蔡州陷落只是收尾。
+  sources:
+    - title: 維基百科：三峰山之戰
+      url: https://zh.wikipedia.org/wiki/三峰山之戰
+
 - id: cn-mongol-destroy-jin
   year: 1234
   title: 蒙古滅金
@@ -2079,6 +2099,19 @@
     - title: 維基百科：蒙古帝國
       url: https://zh.wikipedia.org/wiki/蒙古帝國
 
+- id: cn-mongol-khan-succession
+  year: 1241
+  endYear: 1251
+  title: 窩闊台去世，汗位空懸十年後蒙哥即位
+  category: politics
+  importance: 3
+  desc: 窩闊台去世使西征大軍班師，此後貴由繼位僅兩年即病逝，皇后稱制數年，帝國陷入權力真空。1251 年拖雷長子蒙哥在拔都支持下即位，一舉肅清窩闊台系與察合台系政敵，蒙古帝國的重心自此轉向拖雷家族，也為忽必烈日後經略中國鋪路。
+  sources:
+    - title: 維基百科：貴由
+      url: https://zh.wikipedia.org/wiki/貴由
+    - title: 維基百科：蒙哥
+      url: https://zh.wikipedia.org/wiki/蒙哥
+
 - id: cn-diaoyucheng
   year: 1259
   title: 釣魚城之戰，蒙哥戰死
@@ -2105,6 +2138,16 @@
     - title: 維基百科：蒙古帝國
       url: https://zh.wikipedia.org/wiki/蒙古帝國
 
+- id: cn-phagpa-imperial-preceptor
+  year: 1270
+  title: 八思巴受封帝師，藏傳佛教確立特殊地位
+  category: religion
+  importance: 3
+  desc: 忽必烈尊薩迦派高僧八思巴為帝師，統領全國佛教與吐蕃事務，並命其創制蒙古新字（八思巴文）。藏傳佛教自此在元朝宮廷享有崇高地位，也開啟了此後蒙藏關係的基本格局。
+  sources:
+    - title: 維基百科：八思巴
+      url: https://zh.wikipedia.org/wiki/八思巴
+
 - id: cn-yuan-proclaimed
   year: 1271
   title: 忽必烈建國號大元
@@ -2128,12 +2171,45 @@
     - title: 維基百科：元朝
       url: https://zh.wikipedia.org/wiki/元朝
 
+- id: cn-shoushi-calendar
+  year: 1280
+  title: 郭守敬編訂《授時曆》
+  category: science
+  importance: 4
+  desc: 郭守敬等人實測全國二十七處觀測站，推算出一年長度為365.2425日，與現行公曆完全一致，卻早了三百年，是傳統中國曆法史上最精確的一部。
+  sources:
+    - title: 維基百科：授時曆
+      url: https://zh.wikipedia.org/wiki/授时历
+
+- id: cn-yanyou-exam-revival
+  year: 1313
+  title: 延祐復科，重開科舉
+  category: politics
+  importance: 3
+  desc: 科舉制度自南宋滅亡後中斷近四十年，元仁宗恢復開科取士，以程朱理學為考試內容，漢人與南人士子重新獲得入仕管道，卻仍受蒙古、色目人保障名額的限制。
+  sources:
+    - title: 維基百科：延祐復科
+      url: https://zh.wikipedia.org/wiki/延祐復科
+
+- id: cn-yuan-succession-crisis
+  year: 1323
+  endYear: 1333
+  title: 元中期皇位繼承動盪，南坡之變與天曆之變
+  category: politics
+  importance: 4
+  desc: 權臣鐵失刺殺元英宗於上都南郊（南坡之變），此後十年間走馬燈般換了六位皇帝，1328年更爆發兩都之戰般的天曆之變，權臣燕帖木兒操縱擁立與弒殺。頻繁的宮廷政變重創元朝統治威信，為此後民變埋下伏筆。
+  sources:
+    - title: 維基百科：南坡之變
+      url: https://zh.wikipedia.org/wiki/南坡之變
+    - title: 維基百科：天曆之變
+      url: https://zh.wikipedia.org/wiki/天曆之變
+
 - id: cn-red-turban
   year: 1351
   title: 紅巾軍起義
   category: war
   importance: 3
-  desc: 黃河改道與徵發民夫引爆的民變，十餘年間席捲南北。朱元璋即出身其中一支。
+  desc: 鈔法變更引發物價飛漲，加上黃河改道與徵發民夫治河，十餘年間民變席捲南北。朱元璋即出身其中一支。
   sources:
     - title: 維基百科：紅巾軍
       url: https://zh.wikipedia.org/wiki/紅巾軍
@@ -2163,6 +2239,16 @@
       url: https://zh.wikipedia.org/wiki/北元
     - title: 維基百科：元朝
       url: https://zh.wikipedia.org/wiki/元朝
+
+- id: cn-yunnan-fall
+  year: 1382
+  title: 雲南梁王殉國，元朝在雲南百餘年統治結束
+  category: war
+  importance: 3
+  desc: 明軍平定雲南，末代梁王把匝剌瓦爾密兵敗自殺。雲南是元朝滅亡後最後淪陷的行省之一，蒙古皇室在此的統治可追溯至忽必烈滅大理，前後長達一百二十八年。
+  sources:
+    - title: 維基百科：明平雲南之戰
+      url: https://zh.wikipedia.org/wiki/明平雲南之戰
 
 - id: cn-abolish-chancellor
   year: 1380
