@@ -2339,6 +2339,16 @@
     - title: 維基百科：利瑪竇
       url: https://zh.wikipedia.org/wiki/利瑪竇
 
+- id: cn-eight-banners
+  year: 1615
+  title: 努爾哈赤創建八旗制度
+  category: politics
+  importance: 4
+  desc: 將女真各部按軍事編制整編為八旗，兵民合一、出則為兵入則為民，是後金崛起的組織根基，也是日後滿洲統治中國近三百年的核心制度。
+  sources:
+    - title: 維基百科：八旗
+      url: https://zh.wikipedia.org/wiki/八旗
+
 - id: cn-later-jin
   year: 1616
   title: 努爾哈赤建後金
@@ -2347,6 +2357,16 @@
   sources:
     - title: 維基百科：努爾哈赤
       url: https://zh.wikipedia.org/wiki/努爾哈赤
+
+- id: cn-seven-grievances
+  year: 1618
+  title: 七大恨，後金起兵反明
+  category: war
+  importance: 3
+  desc: 努爾哈赤以「七大恨」告天，正式起兵伐明，隔年即在薩爾滸大破明軍四路。
+  sources:
+    - title: 維基百科：七大恨
+      url: https://zh.wikipedia.org/wiki/七大恨
 
 - id: cn-sarhu
   year: 1619
@@ -2385,11 +2405,22 @@
     - title: 維基百科：東林黨
       url: https://zh.wikipedia.org/wiki/東林黨
 
+- id: cn-ningyuan-battle
+  year: 1626
+  title: 寧遠之戰，努爾哈赤負傷病逝
+  category: war
+  importance: 4
+  desc: 明將袁崇煥以紅夷大砲固守寧遠，擊退努爾哈赤親率的十三萬大軍，是後金崛起以來首次重大挫敗。努爾哈赤數月後傷重去世，皇太極繼位。
+  sources:
+    - title: 維基百科：寧遠之戰
+      url: https://zh.wikipedia.org/wiki/寧遠之戰
+
 - id: cn-qing-proclaimed
   year: 1636
   title: 皇太極改國號為清
   category: politics
   importance: 3
+  desc: 皇太極先於前一年降服漠南蒙古末代大汗林丹汗之子，並將女真族名改為滿洲，隨後在盛京稱帝，改國號大清，滿蒙聯合統治的格局自此成形。
   sources:
     - title: 維基百科：皇太極
       url: https://zh.wikipedia.org/wiki/皇太極
@@ -2403,6 +2434,16 @@
   sources:
     - title: 維基百科：天工開物
       url: https://zh.wikipedia.org/wiki/天工開物
+
+- id: cn-songjin-campaign
+  year: 1642
+  title: 松錦之戰，明朝關外主力覆滅
+  category: war
+  importance: 4
+  desc: 清軍圍困松山、錦州近兩年，明將洪承疇兵敗被俘後降清，明朝在關外最後一支主力全軍覆沒，山海關外已無力抵禦，兩年後清軍便長驅入關。
+  sources:
+    - title: 維基百科：松錦之戰
+      url: https://zh.wikipedia.org/wiki/松錦之戰
 
 - id: cn-qing-enters
   year: 1644
@@ -2456,6 +2497,16 @@
   sources:
     - title: 維基百科：鄭成功攻臺之役
       url: https://zh.wikipedia.org/wiki/鄭成功攻臺之役
+
+- id: cn-kangxi-regent-ousted
+  year: 1669
+  title: 康熙帝智擒鰲拜，正式親政
+  category: politics
+  importance: 4
+  desc: 十六歲的康熙帝以布庫少年設局擒拿專擅跋扈的輔政大臣鰲拜，結束四大臣輔政體制，開啟長達六十一年的親政時期。
+  sources:
+    - title: 維基百科：鼇拜
+      url: https://zh.wikipedia.org/wiki/鼇拜
 
 - id: cn-three-feudatories
   year: 1673
@@ -2520,6 +2571,16 @@
     - title: 維基百科：中國禮儀之爭
       url: https://zh.wikipedia.org/wiki/中國禮儀之爭
 
+- id: cn-kyakhta-treaty
+  year: 1727
+  title: 恰克圖條約，劃定漠北中俄疆界
+  category: politics
+  importance: 3
+  desc: 繼尼布楚條約劃定東段邊界後，這次條約確立了外蒙古與西伯利亞之間的邊界，並開放恰克圖為兩國通商口岸。
+  sources:
+    - title: 維基百科：恰克圖界約
+      url: https://zh.wikipedia.org/wiki/恰克圖界約
+
 - id: cn-grand-council
   year: 1729
   title: 軍機處設立，皇權高度集中
@@ -2529,6 +2590,16 @@
   sources:
     - title: 維基百科：軍機處
       url: https://zh.wikipedia.org/wiki/軍機處
+
+- id: cn-tanding-ruyi
+  year: 1735
+  title: 攤丁入畝定制，耗羨歸公與養廉銀
+  category: economy
+  importance: 4
+  desc: 雍正將丁銀全數併入田賦徵收，並把地方私徵的耗羨銀收歸中央、轉發官員為養廉銀，同時抑制陋規、增加國庫收入，是清代財政制度最重要的一次整頓。
+  sources:
+    - title: 維基百科：攤丁入地
+      url: https://zh.wikipedia.org/wiki/攤丁入地
 
 - id: cn-dream-red-chamber
   year: 1754
@@ -2564,6 +2635,17 @@
     - title: 維基百科：大小和卓之亂
       url: https://zh.wikipedia.org/wiki/大小和卓之亂
 
+- id: cn-burma-campaigns
+  year: 1769
+  endYear: 1788
+  title: 清緬戰爭，四征皆無功而返
+  category: war
+  importance: 3
+  desc: 乾隆四度出兵緬甸貢榜王朝，瘴癘與叢林戰重創清軍，最終雙方僅止戰言和，是乾隆「十全武功」中唯一未能真正取勝的一役。
+  sources:
+    - title: 維基百科：清緬戰爭
+      url: https://zh.wikipedia.org/wiki/清緬戰爭
+
 - id: cn-siku-quanshu
   year: 1782
   title: 《四庫全書》修成
@@ -2594,6 +2676,16 @@
   sources:
     - title: 維基百科：川楚教亂
       url: https://zh.wikipedia.org/wiki/川楚教亂
+
+- id: cn-heshen-fall
+  year: 1799
+  title: 乾隆逝世，嘉慶誅殺和珅
+  category: politics
+  importance: 4
+  desc: 乾隆帝以太上皇身分掌權四年後去世，嘉慶帝隨即賜死寵臣和珅並抄沒家產，據稱其資產相當於當時國庫數年收入，「和珅跌倒，嘉慶吃飽」之說由此而來。
+  sources:
+    - title: 維基百科：和珅
+      url: https://zh.wikipedia.org/wiki/和珅
 
 - id: cn-opium-war
   year: 1840
@@ -2645,6 +2737,16 @@
     - title: 維基百科：北京條約
       url: https://zh.wikipedia.org/wiki/北京條約
 
+- id: cn-xinyou-coup
+  year: 1861
+  title: 辛酉政變，慈禧太后垂簾聽政
+  category: politics
+  importance: 5
+  desc: 咸豐帝崩逝後，慈禧太后聯合恭親王奕訢發動政變，剷除顧命八大臣，改行兩宮太后垂簾、恭親王輔政的體制。慈禧自此主導清廷政局近半世紀，直至1908年去世。
+  sources:
+    - title: 維基百科：辛酉政變
+      url: https://zh.wikipedia.org/wiki/辛酉政變
+
 - id: cn-self-strengthening
   year: 1861
   title: 洋務運動開始
@@ -2653,6 +2755,21 @@
   sources:
     - title: 維基百科：洋務運動
       url: https://zh.wikipedia.org/wiki/洋務運動
+
+- id: cn-zuo-zongtang-reconquest
+  year: 1862
+  endYear: 1878
+  title: 左宗棠平定陝甘回變，收復新疆
+  category: war
+  importance: 4
+  desc: 左宗棠先後鎮壓陝甘回變，再率湘軍西征，擊滅阿古柏在新疆建立的哲德沙爾汗國，收復除伊犁外的全疆，是清朝晚期少數成功的軍事行動。
+  sources:
+    - title: 維基百科：同治陝甘回亂
+      url: https://zh.wikipedia.org/wiki/同治陝甘回亂
+    - title: 維基百科：左宗棠
+      url: https://zh.wikipedia.org/wiki/左宗棠
+    - title: 維基百科：阿古柏
+      url: https://zh.wikipedia.org/wiki/阿古柏
 
 - id: cn-dingwu-famine
   year: 1875
@@ -2665,14 +2782,28 @@
     - title: 維基百科：丁戊奇荒
       url: https://zh.wikipedia.org/wiki/丁戊奇荒
 
+- id: cn-sino-french-war
+  year: 1884
+  endYear: 1885
+  title: 中法戰爭，清朝失去越南宗主權
+  category: war
+  importance: 4
+  desc: 法國為爭奪越南宗主權開戰，清軍在陸戰一度取勝（鎮南關大捷），卻仍簽下《中法新約》承認法國對越南的保護權，傳統朝貢體系在東南亞率先崩解。
+  sources:
+    - title: 維基百科：中法戰爭
+      url: https://zh.wikipedia.org/wiki/中法戰爭
+
 - id: cn-jiawu
   year: 1894
   title: 甲午戰爭
   category: war
   importance: 5
+  desc: 清朝敗於新興的日本，隔年簽下《馬關條約》——割讓臺灣、澎湖，承認朝鮮獨立，賠款二億兩白銀。鉅額賠款掏空國庫，列強隨後掀起劃分勢力範圍的瓜分狂潮。
   sources:
     - title: 維基百科：甲午戰爭
       url: https://zh.wikipedia.org/wiki/甲午戰爭
+    - title: 維基百科：馬關條約
+      url: https://zh.wikipedia.org/wiki/馬關條約
 
 - id: cn-hundred-days
   year: 1898
@@ -2688,11 +2819,14 @@
   title: 義和團與八國聯軍
   category: war
   importance: 4
+  desc: 慈禧太后借義和團之勢向十一國宣戰，八國聯軍隨即攻陷北京。隔年簽下《辛丑條約》，賠款四億五千萬兩、准許列強在北京至山海關沿線駐軍，清廷財政與主權自此更受制於外力。
   sources:
     - title: 維基百科：義和團運動
       url: https://zh.wikipedia.org/wiki/義和團運動
     - title: 維基百科：八國聯軍之役
       url: https://zh.wikipedia.org/wiki/八國聯軍之役
+    - title: 維基百科：辛丑條約
+      url: https://zh.wikipedia.org/wiki/辛丑條約
 
 - id: cn-abolish-examination
   year: 1905
