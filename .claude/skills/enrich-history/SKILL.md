@@ -155,9 +155,9 @@ npm run check                        # tsc 型別檢查
 複述——參考本次對話後段幾個單篇任務（如補〈文禄・慶長の役〉只豐富了一則
 既有事件、補〈中日和約〉判定沒有新缺口）的報告方式。
 
-## 不要自動 commit
+## 自動 commit
 
-寫完資料、跑完驗證後停下來，等使用者明確說「commit」再進 git 流程
+寫完資料、跑完驗證後停下來，自動 commit。
 （一個來源一個 commit，訊息用 `data(<地區>): 補充…` 的格式，可參考
 `git log --oneline` 裡近期的 `data(china)`／`data(taiwan)`／`data(japan)`
 commit）。
