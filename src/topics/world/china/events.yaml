@@ -1708,9 +1708,25 @@
   title: 唐亡，五代十國
   category: politics
   importance: 3
+  desc: 朱溫先於904年弒殺唐昭宗、在白馬驛一夜屠盡朝臣三十餘人投屍黃河（「此輩清流，可投濁流」），再逼末代皇帝唐哀帝禪位，建國號梁。享國近三百年的唐朝就此覆滅，中原進入五代更迭、南方十國並立的分裂局面，直到 960 年宋朝建立才逐步收拾。
   sources:
     - title: 維基百科：五代十國
       url: https://zh.wikipedia.org/wiki/五代十國
+    - title: 維基百科：白馬驛之禍
+      url: https://zh.wikipedia.org/wiki/白馬驛之禍
+
+- id: cn-wuyue-submission
+  year: 907
+  endYear: 978
+  title: 吳越國，亂世中的偏安典範，終以納土歸宋
+  category: politics
+  importance: 3
+  desc: 錢鏐據兩浙建吳越國，是十國中壽命最長的一個。歷代國主奉行「善事中原」的保境安民策略，興修水利、獎勵農桑，江南經濟在亂世中反而持續發展。978年末代國主錢俶主動獻土歸降北宋，是十國裡少數不經血戰、和平終結的政權。
+  sources:
+    - title: 維基百科：吳越國
+      url: https://zh.wikipedia.org/wiki/吳越國
+    - title: 維基百科：錢鏐
+      url: https://zh.wikipedia.org/wiki/錢鏐
 
 - id: cn-khitan-founded
   year: 916
@@ -1753,6 +1769,19 @@
       url: https://zh.wikipedia.org/wiki/石敬瑭
     - title: 維基百科：後晉
       url: https://zh.wikipedia.org/wiki/後晉
+
+- id: cn-southern-tang-culture
+  year: 937
+  endYear: 975
+  title: 南唐立國，李煜詞風締造五代文學高峰
+  category: culture
+  importance: 3
+  desc: 徐知誥（李昪）奪吳國政權，改國號唐，以江南富庶之地延續中原文教。末代國主李煜精書畫音律，尤以詞聞名，975年亡國降宋後所作「春花秋月何時了」等亡國之詞，反而將詞這種文體推向前所未有的高度，是五代十國留給中國文學最重要的遺產。
+  sources:
+    - title: 維基百科：南唐
+      url: https://zh.wikipedia.org/wiki/南唐
+    - title: 維基百科：李煜
+      url: https://zh.wikipedia.org/wiki/李煜
 
 - id: cn-liao-proclaimed
   year: 947
