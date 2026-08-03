@@ -1080,6 +1080,18 @@
     - title: 維基百科：臺灣省各縣市實施地方自治綱要
       url: https://zh.wikipedia.org/wiki/臺灣省各縣市實施地方自治綱要
 
+- id: tw-korean-war-strait
+  year: 1950
+  title: 韓戰爆發，第七艦隊巡弋台灣海峽
+  category: war
+  importance: 4
+  desc: 北韓南侵，美國杜魯門總統宣布台灣海峽中立化，第七艦隊隨即進駐巡弋，阻止兩岸雙方互相攻擊。台灣自此獲得美國安全保護傘，為戰後經濟社會的穩定奠定基礎。
+  sources:
+    - title: 維基百科：韓戰
+      url: https://zh.wikipedia.org/wiki/朝鮮戰爭
+    - title: 維基百科：臺灣海峽中立化
+      url: https://zh.wikipedia.org/wiki/臺灣海峽中立化
+
 - id: tw-us-aid
   year: 1951
   endYear: 1965
@@ -1090,6 +1102,28 @@
   sources:
     - title: 維基百科：美援
       url: https://zh.wikipedia.org/wiki/美援
+
+- id: tw-sf-treaty
+  year: 1951
+  title: 舊金山和約簽署，台灣主權歸屬未明載
+  category: politics
+  importance: 5
+  desc: 48國與日本在舊金山簽署對日和約，日本聲明放棄對台灣、澎湖的一切權利，但條文未指明歸屬何國——中華民國與中華人民共和國均未受邀與會。這段留白日後成為「台灣地位未定論」的起點。
+  sources:
+    - title: 維基百科：舊金山和約
+      url: https://zh.wikipedia.org/wiki/舊金山和約
+    - title: 維基百科：台灣地位未定論
+      url: https://zh.wikipedia.org/wiki/台灣地位未定論
+
+- id: tw-taipei-treaty
+  year: 1952
+  title: 中日和約（台北和約）簽訂
+  category: politics
+  importance: 4
+  desc: 舊金山和約生效前七小時，中華民國與日本在台北賓館另訂雙邊和約，日本同樣聲明放棄台灣、澎湖權利卻未載明歸屬，並約定台灣住民依中華民國國籍處理，日本並放棄對台戰爭賠償請求權。雙方批准書於同年8月5日互換，條約始正式生效。
+  sources:
+    - title: 維基百科：中日和約
+      url: https://zh.wikipedia.org/wiki/中日和約
 
 - id: tw-land-reform
   year: 1953
@@ -1110,6 +1144,16 @@
   sources:
     - title: 維基百科：第一次臺灣海峽危機
       url: https://zh.wikipedia.org/wiki/第一次臺灣海峽危機
+
+- id: tw-mutual-defense-treaty
+  year: 1954
+  title: 中美共同防禦條約簽訂
+  category: politics
+  importance: 4
+  desc: 第一次台海危機後，中華民國與美國簽署共同防禦條約，美軍協防台灣與澎湖正式法制化，直到 1979 年台美斷交後失效。
+  sources:
+    - title: 維基百科：中美共同防禦條約
+      url: https://zh.wikipedia.org/wiki/中美共同防禦條約
 
 - id: tw-823
   year: 1958
@@ -1160,6 +1204,18 @@
     - title: 維基百科：聯合國大會第2758號決議
       url: https://zh.wikipedia.org/wiki/聯合國大會第2758號決議
 
+- id: tw-japan-diplomatic-break
+  year: 1972
+  title: 台日斷交，中日和約失效
+  category: politics
+  importance: 4
+  desc: 日本與中華人民共和國建交，發表《中日聯合聲明》，宣布中日和約（台北和約）失去存在意義。台灣與日本自此僅維持非官方關係，格局延續至今。
+  sources:
+    - title: 維基百科：中日聯合聲明
+      url: https://zh.wikipedia.org/wiki/中日聯合聲明
+    - title: 維基百科：中日和約
+      url: https://zh.wikipedia.org/wiki/中日和約
+
 - id: tw-ten-projects
   year: 1974
   title: 十大建設
@@ -1168,6 +1224,26 @@
   sources:
     - title: 維基百科：十大建設
       url: https://zh.wikipedia.org/wiki/十大建設
+
+- id: tw-chiang-death
+  year: 1975
+  title: 蔣中正逝世，嚴家淦繼任總統
+  category: politics
+  importance: 4
+  desc: 蔣中正病逝，副總統嚴家淦依憲法繼任，實際權力則逐步移轉至行政院長蔣經國。
+  sources:
+    - title: 維基百科：蔣中正
+      url: https://zh.wikipedia.org/wiki/蔣中正
+
+- id: tw-ck-president
+  year: 1978
+  title: 蔣經國就任總統
+  category: politics
+  importance: 4
+  desc: 蔣經國經國民大會選舉就任總統，延續其父蔣中正的威權體制，同時展開十大建設後續工程與政治革新。
+  sources:
+    - title: 維基百科：蔣經國
+      url: https://zh.wikipedia.org/wiki/蔣經國
 
 - id: tw-formosa-incident
   year: 1979
@@ -1254,6 +1330,18 @@
   sources:
     - title: 維基百科：台積電
       url: https://zh.wikipedia.org/wiki/台積電
+
+- id: tw-lee-succession
+  year: 1988
+  title: 蔣經國逝世，李登輝繼任總統，首位台籍元首
+  category: politics
+  importance: 5
+  desc: 蔣經國病逝，副總統李登輝依憲法繼任，成為中華民國史上首位台灣本省籍國家元首，後續主導修憲與民主化進程。
+  sources:
+    - title: 維基百科：蔣經國
+      url: https://zh.wikipedia.org/wiki/蔣經國
+    - title: 維基百科：李登輝
+      url: https://zh.wikipedia.org/wiki/李登輝
 
 - id: tw-wild-lily
   year: 1990
@@ -1377,6 +1465,18 @@
   sources:
     - title: 維基百科：臺灣高速鐵路
       url: https://zh.wikipedia.org/wiki/臺灣高速鐵路
+
+- id: tw-ma-president
+  year: 2008
+  title: 馬英九當選總統，二次政黨輪替
+  category: politics
+  importance: 3
+  desc: 馬英九當選總統，國民黨重新執政，是民主化以來的第二次政黨輪替。
+  sources:
+    - title: 維基百科：2008年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/2008年中華民國總統選舉
+    - title: 維基百科：馬英九
+      url: https://zh.wikipedia.org/wiki/馬英九
 
 - id: tw-sunflower-movement
   year: 2014
