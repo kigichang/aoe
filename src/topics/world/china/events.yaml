@@ -635,6 +635,16 @@
     - title: 維基百科：李冰
       url: https://zh.wikipedia.org/wiki/李冰
 
+- id: cn-jingke-assassination
+  year: -227
+  title: 荊軻刺秦王，圖窮匕見
+  category: politics
+  importance: 3
+  desc: 燕太子丹遣荊軻以獻督亢地圖與樊於期首級為由接近秦王政，圖窮匕見，荊軻持匕首行刺未遂，秦王繞柱拔劍反殺荊軻。刺殺沒能改變滅六國的既定進程，秦隨後仍如期滅燕，卻讓荊軻成為《史記．刺客列傳》裡最鮮明的一位，兩千年來反覆被搬演。
+  sources:
+    - title: 維基百科：荊軻
+      url: https://zh.wikipedia.org/wiki/荊軻
+
 - id: cn-qin-unification
   year: -221
   title: 秦滅六國，統一中國
@@ -679,11 +689,26 @@
     - title: 維基百科：蒙恬
       url: https://zh.wikipedia.org/wiki/蒙恬
 
+- id: cn-qin-mausoleum
+  year: -246
+  endYear: -208
+  title: 秦始皇陵動工；兵馬俑1974年出土
+  category: culture
+  importance: 4
+  desc: 《史記》載陵墓自嬴政即位（前246年）起造，歷時三十餘年；今人考古估計實際大規模營造集中在統一後的前219至前213年，約七年建成。陵園仿秦都咸陽格局，現存封土高七十六米，地宮至今未曾發掘。1974年農民打井時意外掘出陵園外圍的兵馬俑坑，成為二十世紀最重要的考古發現之一，1987年與陵區一同列入世界遺產。
+  sources:
+    - title: 維基百科：秦始皇陵
+      url: https://zh.wikipedia.org/wiki/秦始皇陵
+    - title: 維基百科：秦始皇兵馬俑
+      url: https://zh.wikipedia.org/wiki/秦始皇兵馬俑
+
 - id: cn-burning-books
   year: -213
   title: 焚書坑儒
   category: culture
   importance: 3
+  endYear: -212
+  desc: 焚書在前213年：博士淳于越建議恢復封建，丞相李斯奏請焚毀《詩》《書》與百家語，僅留秦國史書、醫藥、卜筮、農書。坑儒在翌年：方士侯生、盧生為始皇求仙藥未果後逃亡並譏諷始皇，始皇遷怒之下坑殺四百六十餘人於咸陽。兩案相隔一年、起因也不同，卻常被並稱「焚書坑儒」——《史記》原文寫的是坑「術士」，被坑者主要是方士還是儒生，後世說法逐漸與儒生畫上等號，學界至今仍有爭議。
   sources:
     - title: 維基百科：焚書坑儒
       url: https://zh.wikipedia.org/wiki/焚書坑儒
