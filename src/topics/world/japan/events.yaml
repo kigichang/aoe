@@ -1104,6 +1104,23 @@
     - title: 維基百科：北條氏
       url: https://zh.wikipedia.org/wiki/北條氏
 
+- id: jp-hojo-purges
+  year: 1200
+  endYear: 1213
+  title: 北條氏連番剷除有力御家人，源氏將軍血脈斷絕
+  category: politics
+  importance: 3
+  desc: 源賴朝身故後，北條氏假將軍名義接連剷除昔日戰友：1200年誅殺梶原景時，1203年比企能員之變滅比企氏，1205年連北條時政本人也因牧氏事件遭嫡子義時逼退，1213年和田合戰再滅侍所別當和田義盛一族。二代將軍源賴家遭幽禁後遇害、三代將軍源實朝1219年遇刺身亡，源氏將軍血脈自此斷絕，北條執權成為鎌倉幕府實質的最高權力。
+  sources:
+    - title: 日文維基百科：梶原景時の変
+      url: https://ja.wikipedia.org/wiki/梶原景時の変
+    - title: 日文維基百科：比企能員の変
+      url: https://ja.wikipedia.org/wiki/比企能員の変
+    - title: 日文維基百科：牧氏事件
+      url: https://ja.wikipedia.org/wiki/牧氏事件
+    - title: 日文維基百科：和田合戦
+      url: https://ja.wikipedia.org/wiki/和田合戦
+
 - id: jp-jokyu-kamakura
   year: 1221
   title: 承久之亂，幕府擊敗朝廷確立政治優勢
@@ -1171,6 +1188,7 @@
   title: 弘安之役，元軍再敗於颱風
   category: war
   importance: 5
+  desc: 元軍第二次來襲，兵力較文永之役增至逾十萬，卻在博多灣遭颱風重創、船艦盡毀。這場颱風被視為神明庇佑日本的證據，「神國」思想從此深植人心——六百多年後太平洋戰爭末期的「神風特攻隊」之名，正是取自這場颱風的典故。
   sources:
     - title: 維基百科：元日戰爭
       url: https://zh.wikipedia.org/wiki/元日戰爭
