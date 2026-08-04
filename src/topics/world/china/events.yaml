@@ -278,6 +278,29 @@
     - title: 維基百科：殷墟
       url: https://zh.wikipedia.org/wiki/殷墟
 
+- id: cn-sanxingdui
+  year: -1200
+  endYear: -1000
+  title: 三星堆祭祀坑，古蜀的獨立文明
+  category: culture
+  importance: 3
+  desc: 四川廣漢的兩座祭祀坑，埋藏青銅縱目面具、青銅神樹、金杖與大量象牙，風格與中原商文明迥異，卻與其同期並存。傳世文獻幾乎未提及這個文明，直到 1986 年祭祀坑出土才確認：商代的中國不只有中原一支，長江上游同時存在著另一套自成體系的青銅傳統。
+  sources:
+    - title: 維基百科：三星堆遺址
+      url: https://zh.wikipedia.org/wiki/三星堆遺址
+
+- id: cn-dixin-tyranny
+  year: -1047
+  title: 帝辛「暴政」的記載，隨時代層累增生
+  category: politics
+  importance: 3
+  desc: 西周初的《尚書．牧誓》數落帝辛只有六條罪狀，酒池肉林、炮烙之刑、比干剖心這些情節，是戰國以降的文獻才逐漸添上的——史學界稱為「層累造成的古史」。同一時期的考古發現，商代晚期人牲人殉比例其實在下降；反而是滅商後的西周初期，人祭一度增多。帝辛的「暴虐」多少是勝者對敗者的追加定罪，多少是真實，至今無法截然分開。
+  sources:
+    - title: 維基百科：帝辛
+      url: https://zh.wikipedia.org/wiki/帝辛
+    - title: 維基百科：牧誓
+      url: https://zh.wikipedia.org/wiki/牧誓
+
 - id: cn-zhou-founding
   year: -1046
   title: 牧野之戰，武王克商；西周建立
