@@ -333,6 +333,29 @@
     - title: 維基百科：西周
       url: https://zh.wikipedia.org/wiki/西周
 
+- id: cn-chengkang-rule
+  year: -1042
+  endYear: -1021
+  title: 成康之治，刑錯四十年不用
+  category: politics
+  importance: 3
+  desc: 成王、康王相繼在位近四十年，周公東征後底定的分封體制運作平穩，天下少有戰事。《史記》稱這段時期「刑錯四十年不用」——刑罰擱置不必動用，是後世歌頌盛世最早的一則範例，也是宗周國力的頂點。
+  sources:
+    - title: 維基百科：成康之治
+      url: https://zh.wikipedia.org/wiki/成康之治
+
+- id: cn-zhaowang-south
+  year: -977
+  title: 周昭王南征，喪六師於漢水
+  category: war
+  importance: 3
+  desc: 昭王三度南征荊楚，前兩次頗有斬獲；第三次渡漢水時，當地船夫痛恨周人擾邊，以膠黏接舟船報復，船行至中流解體，昭王與六師精銳一同葬身漢水。周人諱言此事，史書幾乎不記，卻是西周由盛轉衰的轉捩點。
+  sources:
+    - title: 維基百科：周昭王南征
+      url: https://zh.wikipedia.org/wiki/周昭王南征
+    - title: 維基百科：周昭王
+      url: https://zh.wikipedia.org/wiki/周昭王
+
 - id: cn-gonghe
   year: -841
   title: 國人暴動，共和行政
@@ -344,6 +367,19 @@
       url: https://zh.wikipedia.org/wiki/國人暴動
     - title: 維基百科：共和 (西周)
       url: https://zh.wikipedia.org/wiki/共和_(西周)
+
+- id: cn-xuanwang-restoration
+  year: -827
+  endYear: -789
+  title: 宣王中興，晚年復衰
+  category: politics
+  importance: 3
+  desc: 宣王任尹吉甫、召穆公等討伐西戎、玁狁、淮夷，一度扭轉厲王以來的頹勢，史稱「宣王中興」。中興未能持久：晚年怠於政事，三十九年千畝之戰南國之師盡喪，國力再度下滑，也為其子幽王一朝的覆亡埋下伏筆。
+  sources:
+    - title: 維基百科：宣王中興
+      url: https://zh.wikipedia.org/wiki/宣王中興
+    - title: 維基百科：周宣王
+      url: https://zh.wikipedia.org/wiki/周宣王
 
 - id: cn-zhou-east
   year: -771
@@ -406,6 +442,16 @@
       url: https://zh.wikipedia.org/wiki/城濮之戰
     - title: 維基百科：晉文公
       url: https://zh.wikipedia.org/wiki/晉文公
+
+- id: cn-chu-ask-tripods
+  year: -606
+  title: 楚莊王問鼎中原
+  category: politics
+  importance: 3
+  desc: 楚莊王伐陸渾之戎，陳兵於周天子都城郊外，向周室使者王孫滿詢問九鼎輕重大小。王孫滿以「在德不在鼎」回應，楚莊王雖未真正僭越，此問已公然挑戰周室權威——「問鼎」自此成為覬覦天下、意圖取而代之的代稱。
+  sources:
+    - title: 維基百科：楚莊王
+      url: https://zh.wikipedia.org/wiki/楚莊王
 
 - id: cn-first-land-tax
   year: -594
@@ -487,6 +533,18 @@
     - title: 維基百科：三家分晉
       url: https://zh.wikipedia.org/wiki/三家分晉
 
+- id: cn-li-kui-reform
+  year: -422
+  title: 李悝變法，戰國變法的先聲
+  category: politics
+  importance: 4
+  desc: 魏文侯任李悝為相，廢世卿世祿、按才能選官；推行「盡地力之教」獎勵精耕，行平糴法豐年收糧、災年平糶以穩定糧價；並編成《法經》六篇，是中國第一部有系統的成文法典。商鞅入秦後即以《法經》為藍本立秦律。李悝變法早商鞅變法六十餘年，才是戰國變法風潮真正的起點。
+  sources:
+    - title: 維基百科：李悝變法
+      url: https://zh.wikipedia.org/wiki/李悝變法
+    - title: 維基百科：李悝
+      url: https://zh.wikipedia.org/wiki/李悝
+
 - id: cn-shang-yang
   year: -356
   title: 商鞅變法
@@ -508,6 +566,18 @@
       url: https://zh.wikipedia.org/wiki/馬陵之戰
     - title: 維基百科：孫臏
       url: https://zh.wikipedia.org/wiki/孫臏
+
+- id: cn-su-qin-zhang-yi
+  year: -333
+  title: 蘇秦合縱、張儀連橫
+  category: politics
+  importance: 3
+  desc: 蘇秦說服韓、趙、魏、齊、楚、燕六國合縱抗秦，佩六國相印，一度使秦十五年不敢出函谷關；張儀則入秦為相，以連橫策略遊說六國各自與秦結盟，逐一瓦解合縱。兩人的對峙後來成為戰國外交的基本模式，但《史記》所記蘇秦、張儀同代交鋒的情節，與馬王堆出土《戰國縱橫家書》多有出入——兩人是否真為對手，學界至今仍有爭議。
+  sources:
+    - title: 維基百科：蘇秦
+      url: https://zh.wikipedia.org/wiki/蘇秦
+    - title: 維基百科：張儀
+      url: https://zh.wikipedia.org/wiki/張儀
 
 - id: cn-hufu-cavalry
   year: -307
