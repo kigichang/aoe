@@ -732,6 +732,7 @@
   title: 陳勝吳廣起義
   category: war
   importance: 3
+  desc: 陳勝、吳廣等九百戍卒因大雨誤期，依秦法當斬，遂在大澤鄉揭竿而起，詐稱公子扶蘇與項燕之名以聚眾，旬月間關東響應者眾。這是中國史上第一次大規模平民武裝起事，「王侯將相寧有種乎」一語成為此後歷代起義共通的口號；陳勝本人不久兵敗被殺，但六國舊貴族與各路豪傑已隨之並起，秦朝自此再無寧日。
   sources:
     - title: 維基百科：陳勝吳廣起義
       url: https://zh.wikipedia.org/wiki/陳勝吳廣起義
@@ -754,7 +755,7 @@
   title: 楚漢相爭
   category: war
   importance: 3
-  desc: 秦亡後項羽分封十八諸侯、自號西楚霸王，劉邦受封漢中。四年拉鋸以垓下決戰告終 —— 分封制最後一次被認真嘗試，隨即敗給郡縣的中央集權。
+  desc: 秦亡後項羽分封十八諸侯、自號西楚霸王，劉邦受封漢中。鴻門宴上項羽一度可除劉邦而未除——「項莊舞劍，意在沛公」的典故即出於此——埋下日後反噬的伏筆。四年拉鋸以垓下決戰告終，項羽兵敗烏江自刎 —— 分封制最後一次被認真嘗試，隨即敗給郡縣的中央集權。
   sources:
     - title: 維基百科：楚漢戰爭
       url: https://zh.wikipedia.org/wiki/楚漢戰爭
@@ -766,11 +767,25 @@
   title: 劉邦稱帝，西漢建立
   category: politics
   importance: 5
+  desc: 垓下決戰項羽敗亡後，劉邦於氾水之陽即皇帝位，國號漢，都長安。承秦制而稍作寬緩：郡縣與同姓封國並行，輕徭薄賦、與民休息，為文景之治鋪路——秦留下的中央集權骨架被原樣接收，統治手法卻換了一套。
   sources:
     - title: 維基百科：漢高祖
       url: https://zh.wikipedia.org/wiki/漢高祖
     - title: 維基百科：西漢
       url: https://zh.wikipedia.org/wiki/西漢
+
+- id: cn-empress-lu
+  year: -195
+  endYear: -180
+  title: 呂后專權，人彘與諸呂封王
+  category: politics
+  importance: 3
+  desc: 高祖死後呂后專擅朝政，先將情敵戚夫人截去手足、燻聾雙目做成「人彘」，令惠帝終日飲酒不理政事；又違背高祖「非劉氏不得王，天下共擊之」的白馬之盟，大封呂氏子弟為王。呂后死後，周勃、陳平等元老誅滅諸呂，改立代王劉恆，是為漢文帝——文景之治的起點，某種意義上正是清算呂后專權的結果。
+  sources:
+    - title: 維基百科：呂雉
+      url: https://zh.wikipedia.org/wiki/呂雉
+    - title: 維基百科：白馬之盟
+      url: https://zh.wikipedia.org/wiki/白馬之盟
 
 - id: cn-baideng
   year: -200
@@ -814,6 +829,7 @@
   title: 漢武帝即位
   category: politics
   importance: 4
+  desc: 十六歲的劉徹繼位，在位五十四年，是西漢在位最久的皇帝。此後半個世紀，罷黜百家獨尊儒術、鹽鐵官營、開拓西域、北擊匈奴、改曆易服，幾乎每一項西漢盛世的招牌政策都出自這一朝——本站收錄的多則前 141 年之後的事件，都是他在位期間的作為。
   sources:
     - title: 維基百科：漢武帝
       url: https://zh.wikipedia.org/wiki/漢武帝
@@ -921,6 +937,7 @@
   title: 司馬遷開始撰寫《史記》
   category: culture
   importance: 4
+  desc: 司馬遷承父司馬談遺志，以太史令之身撰成中國第一部紀傳體通史，上起黃帝下至漢武，開創本紀、世家、列傳、表、書的體例，此後歷代正史悉數沿用。前 99 年司馬遷因替李陵辯護觸怒武帝，受宮刑而未輟筆，「究天人之際，通古今之變，成一家之言」是他自述的抱負。
   sources:
     - title: 維基百科：史記
       url: https://zh.wikipedia.org/wiki/史記
@@ -936,6 +953,16 @@
   sources:
     - title: 維基百科：太初曆
       url: https://zh.wikipedia.org/wiki/太初曆
+
+- id: cn-witchcraft-case
+  year: -91
+  title: 巫蠱之禍，太子劉據之死
+  category: politics
+  importance: 4
+  desc: 佞臣江充與太子劉據有隙，誣稱東宮埋有巫蠱詛咒之物；太子被迫起兵誅江充，武帝誤信謀反之說派兵鎮壓，雙方在長安激戰五日，皇后衛子夫自殺，太子兵敗自縊，牽連近十萬人。武帝事後追悔，頒〈輪台詔〉罪己，轉向與民休息——為其後昭宣中興預先鋪路，也是西漢由盛轉衰的關鍵轉折。
+  sources:
+    - title: 維基百科：巫蠱之禍
+      url: https://zh.wikipedia.org/wiki/巫蠱之禍
 
 - id: cn-salt-iron-debate
   year: -81
@@ -1030,6 +1057,7 @@
   title: 光武中興，東漢建立
   category: politics
   importance: 4
+  desc: 劉秀在昆陽之戰後聲望大盛，25年於鄗地稱帝，年號建武，仍以「漢」為國號；此後十餘年次第平定關東、隴、蜀群雄，直到36年方告統一。輕徭薄賦、退功臣進文吏，恢復並調整西漢舊制，史稱「光武中興」——王朝亡而復續，新舊兩漢因此合稱一朝，正是因為光武仍打著漢的旗號延續正統。
   sources:
     - title: 維基百科：漢光武帝
       url: https://zh.wikipedia.org/wiki/漢光武帝
@@ -1053,6 +1081,7 @@
   title: 洛陽白馬寺興建，佛教東傳
   category: religion
   importance: 3
+  desc: 相傳漢明帝夜夢金人，遣使西行求法，以白馬馱經迎印度僧人攝摩騰、竺法蘭至洛陽建寺譯經，「白馬寺」之名即由此而來，是中國第一座官方興建的佛寺。佛教自此正式在中原立足，往後兩千年與本土的儒、道長期互相滲透、也互相競爭。
   sources:
     - title: 維基百科：白馬寺
       url: https://zh.wikipedia.org/wiki/白馬寺
@@ -1110,6 +1139,7 @@
   title: 張衡製候風地動儀
   category: science
   importance: 3
+  desc: 張衡以精銅鑄造，內置都柱與八道機關，八方各銜一龍口含銅丸，何方地震便由對應的龍口吐丸落入下方蟾蜍口中，藉此測知震源方位。史載曾測得隴西地震而洛陽全然無感，比歐洲出現類似的地震儀早了一千七百多年。原器已佚，今日所見皆為後世依文獻復原。
   sources:
     - title: 維基百科：地動儀
       url: https://zh.wikipedia.org/wiki/地動儀
@@ -1146,6 +1176,7 @@
   title: 黃巾之亂
   category: war
   importance: 4
+  desc: 太平道首領張角以「蒼天已死，黃天當立」為口號，號召信眾頭裹黃巾同時在八州起事，旬日之間天下響應。東漢朝廷雖平定黃巾主力，卻因此讓各地州郡自行募兵、州牧坐大，中央威信自此蕩然無存——黃巾之亂本身很快被撲滅，它撬開的地方軍閥割據局面，才是通向三國的真正起點。
   sources:
     - title: 維基百科：黃巾之亂
       url: https://zh.wikipedia.org/wiki/黃巾之亂
@@ -1201,6 +1232,7 @@
   title: 赤壁之戰
   category: war
   importance: 4
+  desc: 曹操南下荊州，孫權、劉備聯軍以火攻大破曹軍於赤壁，曹操北還，此後再無力南下統一。此戰奠定其後數十年天下三分的基本格局——曹魏據北方、孫吳據江東、劉備得以在荊益站穩腳跟，三國鼎立的雛形自此確立。
   sources:
     - title: 維基百科：赤壁之戰
       url: https://zh.wikipedia.org/wiki/赤壁之戰
