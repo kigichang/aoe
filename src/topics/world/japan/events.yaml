@@ -2822,9 +2822,20 @@
   title: 昭和結束，進入平成
   category: politics
   importance: 3
+  desc: 昭和天皇駕崩，皇太子明仁即位改元平成——日本首次以「新天皇即位」而非戰爭或政變劃分時代分界。年號取自《史記》「內平外成」與《書經》「地平天成」，象徵內外皆能太平。
   sources:
     - title: 維基百科：平成
       url: https://zh.wikipedia.org/wiki/平成
+
+- id: jp-consumption-tax-1989
+  year: 1989
+  title: 日本首次課徵消費稅，稅率3%
+  category: economy
+  importance: 3
+  desc: 竹下登內閣力排眾議通過消費稅法，4月起開徵日本史上第一種一般消費稅，初期稅率僅3%。稅制改革衝擊龐大，同年參議院選舉自民黨慘敗，是稅率調升史上第一次政治震盪。此後稅率歷經多次調高——1997年橋本內閣升至5%、2014年安倍內閣升至8%、2019年再升至10%——消費稅至今仍是日本政壇最敏感的財政議題之一。
+  sources:
+    - title: 日文維基百科：消費税
+      url: https://ja.wikipedia.org/wiki/消費税
 
 - id: jp-bubble-burst
   year: 1991
