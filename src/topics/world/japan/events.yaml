@@ -878,6 +878,18 @@
     - title: 維基百科：安和之變
       url: https://zh.wikipedia.org/wiki/安和之變
 
+- id: jp-toi-invasion
+  year: 1019
+  title: 刀伊入寇，女真海盜襲擊北九州
+  category: war
+  importance: 3
+  desc: 女真族一支「刀伊」以約五十艘船、三千餘人突襲對馬、壹岐與北九州沿海，對馬十八人遇害、三百餘人被擄；壹岐災情最慘，148人遭屠殺、239名婦女被擄走，全島僅剩35人倖存。大宰權帥藤原隆家罕見地親自領兵禦敵，擊退來犯者，卻下令「不得越境入新羅」以免節外生枝。這是白江口之戰以來三百五十多年，日本本土首度遭外敵大規模武力入侵，讓承平日久的攝關政治貴族一時震動。
+  sources:
+    - title: 日文維基百科：刀伊の入寇
+      url: https://ja.wikipedia.org/wiki/刀伊の入寇
+    - title: 日文維基百科：藤原隆家
+      url: https://ja.wikipedia.org/wiki/藤原隆家
+
 - id: jp-genji
   year: 1008
   title: 紫式部《源氏物語》
