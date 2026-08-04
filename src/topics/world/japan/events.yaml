@@ -2233,6 +2233,16 @@
     - title: 維基百科：江戶開城
       url: https://zh.wikipedia.org/wiki/江戶開城
 
+- id: jp-haihan-chiken
+  year: 1871
+  title: 廢藩置縣，約三百藩改制為府縣
+  category: politics
+  importance: 5
+  desc: 薩長要人在木戶孝允宅邸密議定案，一舉廢除全國約三百個藩，改設由中央直轄的府縣，是明治維新中央集權化最關鍵的一步。舊藩主（知藩事）失去統治權須遷居東京，但仍獲舊藩收入一成作為俸祿，藩兵與藩債務則一併由新政府接收，以懷柔手段換取和平轉制。廢藩置縣後府縣數目歷經多次合併，直到1889年才穩定在三府四十二縣的格局。
+  sources:
+    - title: 日文維基百科：廃藩置県
+      url: https://ja.wikipedia.org/wiki/廃藩置県
+
 - id: jp-iwakura-mission
   year: 1871
   endYear: 1873
