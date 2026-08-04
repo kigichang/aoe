@@ -1935,6 +1935,17 @@
     - title: 維基百科：澀川春海
       url: https://zh.wikipedia.org/wiki/澀川春海
 
+- id: jp-shorui-awaremi
+  year: 1685
+  endYear: 1709
+  title: 生類憐憫令，德川綱吉的「天下惡法」
+  category: politics
+  importance: 3
+  desc: 篤信儒教的第五代將軍德川綱吉為培養仁心，陸續頒布保護犬、貓、鳥、魚等生物的法令，禁止鷹狩、遺棄病牛病馬，並保護棄嬰與病人，違者最重可處死刑，江戶市中因此屢有處刑紀錄。政策持續二十餘年，百姓怨聲載道，被稱為「天下惡法」。綱吉一死，嗣子德川家宣立即宣布廢止大半規定，包括拆除著名的犬小屋。
+  sources:
+    - title: 日文維基百科：生類憐れみの令
+      url: https://ja.wikipedia.org/wiki/生類憐れみの令
+
 - id: jp-genroku
   year: 1688
   title: 元祿文化，町人文化興盛
@@ -1993,6 +2004,7 @@
   title: 《解體新書》出版，蘭學興起
   category: science
   importance: 4
+  desc: 杉田玄白、前野良澤等人以荷蘭文解剖學譯本《Ontleedkundige Tafelen》為底本，對照解剖實況逐字翻譯，耗時近四年譯成《解體新書》，是日本第一部系統翻譯的西方醫學著作。譯詞多為自創，「神經」「軟骨」「動脈」等詞至今仍在使用。此書出版標誌著蘭學正式成為獨立於儒學、國學之外的知識體系，後續解體新書系譜的蘭學者陸續投入西方科學各領域的翻譯與研究。
   sources:
     - title: 維基百科：解體新書
       url: https://zh.wikipedia.org/wiki/解體新書
@@ -2051,6 +2063,16 @@
   sources:
     - title: 維基百科：大鹽平八郎
       url: https://zh.wikipedia.org/wiki/大鹽平八郎
+
+- id: jp-bansha-goku
+  year: 1839
+  title: 蠻社之獄，蘭學者遭幕府整肅
+  category: politics
+  importance: 3
+  desc: 渡邊崋山、高野長英等蘭學者因批評幕府對外政策——高野長英匿名撰《戊戌夢物語》、渡邊崋山著《慎機論》——遭幕府以誹謗幕政之名逮捕。崋山被判蟄居，兩年後自盡；長英判終身監禁，後越獄逃亡，1850年遭捕吏格殺。這是莫里森號事件後幕府為壓制西學言論、重申鎖國立場的整肅行動，也成為幕末思想箝制的象徵。
+  sources:
+    - title: 日文維基百科：蛮社の獄
+      url: https://ja.wikipedia.org/wiki/蛮社の獄
 
 - id: jp-tempo-reforms
   year: 1841
