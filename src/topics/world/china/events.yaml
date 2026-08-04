@@ -1507,6 +1507,19 @@
     - title: 維基百科：南北朝
       url: https://zh.wikipedia.org/wiki/南北朝
 
+- id: cn-taiwu-abolish-buddhism
+  year: 446
+  endYear: 452
+  title: 太武帝滅佛，三武滅佛之首
+  category: religion
+  importance: 3
+  desc: 太武帝本崇佛，後受司徒崔浩與道士寇謙之影響改奉道教；西征長安時又在寺院搜出兵器、釀酒器具與僧人私通貴族婦女的證據，怒而下詔誅殺長安沙門，令太子在全國焚毀佛寺、擊碎佛像、坑殺沙門。太子拓跋晃陽奉陰違，暗中放走僧人、藏匿部分經像，佛教才未斷絕。452年太武帝遇弒，文成帝繼位即復法——一年後動工的雲岡石窟，正是這場劫難後的補償。這是後世「三武一宗滅佛」中的第一次。
+  sources:
+    - title: 維基百科：北魏太武帝滅佛
+      url: https://zh.wikipedia.org/wiki/北魏太武帝滅佛
+    - title: 維基百科：三武滅佛
+      url: https://zh.wikipedia.org/wiki/三武滅佛
+
 - id: cn-yungang-grottoes
   year: 453
   title: 詔開鑿雲岡石窟
@@ -1546,6 +1559,7 @@
   title: 北魏推行均田制
   category: economy
   importance: 3
+  desc: 戰亂使大片土地荒蕪，世家大族卻兼併不止；孝文帝採漢臣李安世之議，由官府按人口授田：露田（口分田）男四十畝、女二十畝，死後歸還；桑田二十畝為永業，可傳子孫但不得買賣。均田制意在抑制豪強兼併、保障國家稅源與兵源，隋唐承其骨架並與府兵制結合，是初唐盛世的制度基礎。
   sources:
     - title: 維基百科：均田制
       url: https://zh.wikipedia.org/wiki/均田制
@@ -1573,6 +1587,18 @@
       url: https://zh.wikipedia.org/wiki/南梁
     - title: 維基百科：梁武帝
       url: https://zh.wikipedia.org/wiki/梁武帝
+
+- id: cn-fan-zhen-shenmielun
+  year: 507
+  title: 范縝《神滅論》，形神之辯
+  category: culture
+  importance: 3
+  desc: 范縝早年在竟陵王蕭子良座上，當眾以風吹落花為喻反駁佛教因果報應之說——貴賤如落花隨風飄墜，偶然而已，與前世今生無關。天監六年（507年）他正式著成《神滅論》，主張「形者神之質，神者形之用」，形神猶如刀刃與鋒利，形亡則神滅，並無獨立靈魂持續輪迴。篤信佛法的梁武帝親撰〈敕答臣下神滅論〉，號召六十餘名僧俗圍攻其說，范縝始終不屈——皇帝雖不悅，也未加罪於他。
+  sources:
+    - title: 維基百科：神滅論論戰
+      url: https://zh.wikipedia.org/wiki/神滅論論戰
+    - title: 維基百科：范縝
+      url: https://zh.wikipedia.org/wiki/范縝
 
 - id: cn-wei-split
   year: 534
