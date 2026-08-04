@@ -733,6 +733,21 @@
     - title: 日文維基百科：道鏡
       url: https://ja.wikipedia.org/wiki/道鏡
 
+- id: jp-nagaoka-kyo
+  year: 784
+  endYear: 794
+  title: 長岡京遷都與早良親王之死，平安遷都的真正伏筆
+  category: politics
+  importance: 3
+  desc: 桓武天皇為擺脫平城京佛教勢力遷都長岡京，隔年營建負責人藤原種繼遇刺身亡，皇太弟早良親王被指涉案而遭幽禁流放，在途中含恨而死。此後乾旱飢荒、瘟疫連年，皇后與近親接連病故，792年朝廷認定是早良親王的怨靈作祟。加上水患不斷，長岡京僅使用十年即遭放棄，794年桓武天皇再遷都平安京——這才是遷都平安京的直接導火線，不只是佛教勢力干政那麼單純。
+  sources:
+    - title: 日文維基百科：長岡京
+      url: https://ja.wikipedia.org/wiki/長岡京
+    - title: 日文維基百科：早良親王
+      url: https://ja.wikipedia.org/wiki/早良親王
+    - title: 日文維基百科：藤原種継
+      url: https://ja.wikipedia.org/wiki/藤原種継
+
 - id: jp-heian-kyo
   year: 794
   title: 桓武天皇遷都平安京，平安時代開幕
