@@ -409,6 +409,16 @@
     - title: 維基百科：物部氏
       url: https://zh.wikipedia.org/wiki/物部氏
 
+- id: jp-mimana-fall
+  year: 562
+  title: 任那滅亡，倭國失去朝鮮半島據點
+  category: politics
+  importance: 3
+  desc: 新羅相繼併吞加羅、安羅等任那諸國，倭國經營逾二十年的「任那日本府」隨之瓦解——這是倭國在朝鮮半島僅存的實質據點。喪失後倭國仍長期向新羅索取「任那之調」作為象徵性補償，直到646年才停止，改採人質外交，新羅王子金春秋（後為武烈王）曾以人質身分赴日。任那的喪失，是其後白村江之戰倭國介入百濟復國運動的遠因之一。
+  sources:
+    - title: 日文維基百科：任那
+      url: https://ja.wikipedia.org/wiki/任那
+
 - id: jp-teibi-rebellion
   year: 587
   title: 丁未之亂，蘇我氏滅物部氏獨掌朝政
@@ -420,6 +430,17 @@
       url: https://zh.wikipedia.org/wiki/丁未之亂
     - title: 維基百科：物部守屋
       url: https://zh.wikipedia.org/wiki/物部守屋
+
+- id: jp-asukadera
+  year: 588
+  endYear: 609
+  title: 飛鳥寺（法興寺）與飛鳥大佛，日本第一座正式伽藍
+  category: religion
+  importance: 4
+  desc: 蘇我馬子在滅物部氏之戰中發願建寺還願，588年動工，是日本第一座具備正式伽藍配置的佛寺。寺內銅造本尊「飛鳥大佛」於609年完成，是現存日本最古的佛像，歷代修補嚴重，僅頭部下半與右手部分指節可能保留原貌。飛鳥寺此後成為渡來僧傳授三論宗等教義的學問中心，奠定日本佛教教學傳統的基礎。
+  sources:
+    - title: 日文維基百科：飛鳥寺
+      url: https://ja.wikipedia.org/wiki/飛鳥寺
 
 - id: jp-sushun-assassination
   year: 592
