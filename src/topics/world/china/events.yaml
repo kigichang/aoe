@@ -84,6 +84,19 @@
     - title: 維基百科：倉頡
       url: https://zh.wikipedia.org/wiki/倉頡
 
+- id: cn-juediantiantong
+  year: -2500
+  title: 顓頊「絕地天通」，禁絕民間通神
+  category: religion
+  importance: 3
+  legendary: true
+  desc: 顓頊敗共工於黃河中游，命重司天、黎司地，「絕地天通」——禁止民間私自占卜祭祀，通神之權收歸王室所命之官。傳說中政教分離、王權壟斷祭祀解釋權的起點。共工戰敗觸不周山、「天傾西北、地陷東南」的神話即附著於這場戰事之後。
+  sources:
+    - title: 維基百科：顓頊
+      url: https://zh.wikipedia.org/wiki/顓頊
+    - title: 維基百科：共工氏
+      url: https://zh.wikipedia.org/wiki/共工氏
+
 - id: cn-yao
   year: -2357
   title: 堯命羲和觀象授時，定四時成歲
@@ -140,7 +153,7 @@
   category: economy
   importance: 4
   legendary: true
-  desc: 以疏導取代堵塞，傳說治水十三年三過家門不入。
+  desc: 以疏導取代其父鯀的堵塞法，傳說治水十三年、三過家門不入。水患平息後劃天下為九州，依遠近定甸、侯、綏、要、荒五服朝貢等級——後世「九州」作為中國代稱，即源出於此。
   sources:
     - title: 維基百科：大禹治水
       url: https://zh.wikipedia.org/wiki/大禹治水
