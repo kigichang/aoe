@@ -2569,9 +2569,12 @@
   title: 九一八事變
   category: war
   importance: 4
+  desc: 關東軍參謀策劃炸毀南滿鐵路柳條湖段，反誣中國軍隊所為，藉此發動突襲並迅速占領東北全境。日本政府原欲抑制事態擴大，但關東軍先斬後奏、既成事實步步進逼，隔年扶植清廢帝溥儀成立滿洲國傀儡政權。國際聯盟依李頓調查團報告認定日本侵略，日本則於1933年憤而退出國聯，自此走上國際孤立與軍部主導對外擴張的不歸路。
   sources:
     - title: 維基百科：九一八事變
       url: https://zh.wikipedia.org/wiki/九一八事變
+    - title: 日文維基百科：満洲国
+      url: https://ja.wikipedia.org/wiki/満洲国
 
 - id: jp-yamanouchi-zoku-jomon
   year: 1936
@@ -2622,11 +2625,25 @@
   title: 廣島長崎原爆；日本投降
   category: war
   importance: 5
+  desc: 美軍先後在廣島、長崎投下原子彈，兩市瞬間夷平，加上蘇聯對日宣戰出兵滿洲，昭和天皇透過廣播發表《終戰詔書》宣布接受《波茨坦宣言》無條件投降。9月2日在東京灣密蘇里號戰艦上簽署降伏文書，長達十五年的對外戰爭正式結束，日本隨即進入盟軍占領時期。
   sources:
     - title: 維基百科：日本投降
       url: https://zh.wikipedia.org/wiki/日本投降
     - title: 維基百科：廣島與長崎原子彈爆炸
       url: https://zh.wikipedia.org/wiki/廣島與長崎原子彈爆炸
+
+- id: jp-zaibatsu-land-reform
+  year: 1945
+  endYear: 1952
+  title: 財閥解體與農地改革，GHQ的經濟民主化
+  category: economy
+  importance: 4
+  desc: 盟軍占領當局認定三井、三菱、住友、安田等財閥曾是軍國主義的制度支柱，下令解散持股公司，將股票分散賣給員工與一般投資人，先後指定百餘家企業分割，財閥家族成員並遭公職追放。同時推行的農地改革強制地主釋出土地，由政府低價收購轉賣佃農，大幅消滅地主階層。兩項改革徹底重塑戰後日本的財富結構，但1949年後美方轉向扶植日本經濟復興的「逆進路」政策，解體規模隨之縮小，財閥系企業戰後仍以「系列」形式重新集結。
+  sources:
+    - title: 日文維基百科：財閥解体
+      url: https://ja.wikipedia.org/wiki/財閥解体
+    - title: 日文維基百科：農地改革
+      url: https://ja.wikipedia.org/wiki/農地改革
 
 - id: jp-tokyo-trials
   year: 1946
@@ -2644,6 +2661,7 @@
   title: 日本國憲法施行
   category: politics
   importance: 4
+  desc: 取代明治憲法的新憲法由盟軍總部主導起草，確立主權在民、象徵天皇制與基本人權保障三大原則，第九條更明文放棄以武力解決國際爭端、不保有軍隊——史稱「和平憲法」。這部憲法施行至今從未修正過一字，是全世界現行憲法中最長壽的不曾修憲紀錄之一，「自衛隊是否違憲」的爭論也因此延續超過七十年。
   sources:
     - title: 維基百科：日本國憲法
       url: https://zh.wikipedia.org/wiki/日本國憲法
@@ -2701,11 +2719,23 @@
     - title: 維基百科：安保鬥爭
       url: https://zh.wikipedia.org/wiki/安保鬥爭
 
+- id: jp-minamata-disease
+  year: 1956
+  endYear: 1968
+  title: 水俁病確認，四大公害病之首
+  category: economy
+  importance: 4
+  desc: 熊本水俁的窒素工廠將含甲基汞的廢水排入水俁灣，經食物鏈累積後，居民因食用受污染魚貝而集體中毒，1956年首度確診「原因不明奇病」，直到1968年厚生省才正式認定病因為甲基汞中毒——工廠持續排放污水的十二年間，政府與企業始終未正視問題。官方認定患者近三千人，自訴受害者逾七萬。與新潟水俁病、四日市哮喘、痛痛病並稱「四大公害病」，是日本高度經濟成長陰暗面的代名詞，也直接催生了其後的公害對策立法與環境規制。
+  sources:
+    - title: 日文維基百科：水俣病
+      url: https://ja.wikipedia.org/wiki/水俣病
+
 - id: jp-tokyo-olympics
   year: 1964
   title: 東京奧運；東海道新幹線通車
   category: economy
   importance: 4
+  desc: 亞洲首次舉辦夏季奧運，也是日本重返國際社會的象徵性時刻。開幕前夕通車的東海道新幹線以時速210公里刷新陸上運輸紀錄，連結東京與大阪僅需四小時，「新幹線」自此成為日本高速鐵路與技術實力的代名詞，兩者共同宣告日本正式脫離戰後復興、邁入高度經濟成長的新階段。
   sources:
     - title: 維基百科：1964年夏季奧林匹克運動會
       url: https://zh.wikipedia.org/wiki/1964年夏季奧林匹克運動會
@@ -2753,6 +2783,17 @@
   sources:
     - title: 維基百科：1973年石油危機
       url: https://zh.wikipedia.org/wiki/1973年石油危機
+
+- id: jp-lockheed-scandal
+  year: 1976
+  endYear: 1983
+  title: 洛克希德事件，前首相田中角榮遭起訴
+  category: politics
+  importance: 4
+  desc: 美國參議院調查委員會揭發洛克希德公司透過丸紅商社行賄各國政要促銷客機，前首相田中角榮被查出經由丸紅收受五億日圓賄款，1976年遭東京地檢署以受賄罪起訴。案件審理長達七年，1983年一審判處有期徒刑四年，田中終身上訴至1993年病逝、公訴才不了了之。事件重創自民黨形象，直接導致三木武夫內閣垮台，成為戰後日本政商勾結最著名的象徵性醜聞。
+  sources:
+    - title: 日文維基百科：ロッキード事件
+      url: https://ja.wikipedia.org/wiki/ロッキード事件
 
 - id: jp-plaza-accord
   year: 1985
