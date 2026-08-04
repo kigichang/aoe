@@ -116,7 +116,7 @@
   title: 彌生文化，稻作與金屬器傳入
   category: culture
   importance: 4
-  desc: 稻作農耕由大陸經朝鮮半島傳入，聚落與階層社會自此成形。
+  desc: 稻作農耕經朝鮮半島傳入九州北部，數百年間由西向東擴散，直到前3世紀才抵達關東；與稻作同時或稍後傳入的青銅器與鐵器，武器與農具並用，聚落與階層社會自此成形。近畿一帶盛行鑄造銅鐸等大型青銅祭器，用途至今未有定論，一般認為與農耕祭祀有關。
   sources:
     - title: 維基百科：彌生時代
       url: https://zh.wikipedia.org/wiki/彌生時代
@@ -140,6 +140,17 @@
   sources:
     - title: 日文維基百科：須玖岡本遺跡
       url: https://ja.wikipedia.org/wiki/須玖岡本遺跡
+
+- id: jp-yoshinogari
+  year: -100
+  endYear: 250
+  title: 吉野之里遺跡，最大規模的彌生環濠聚落
+  category: culture
+  importance: 4
+  desc: 佐賀縣吉野之里遺跡是已知規模最大的彌生環濠聚落，全盛期占地約117公頃，估計住有一千兩百人。聚落外圍以總長約2.5公里的V字形壕溝雙重環繞，並設有多座瞭望櫓，防禦色彩濃厚；出土人骨中不乏無頭或插著箭鏃者，被視為呼應《後漢書》所載「倭國大亂」的實物證據。1986年正式發掘後一度被聯想為邪馬台國所在，但年代對不上，如今普遍視為彌生中期典型的環濠聚落。
+  sources:
+    - title: 日文維基百科：吉野ヶ里遺跡
+      url: https://ja.wikipedia.org/wiki/吉野ヶ里遺跡
 
 - id: jp-sujin
   year: -97
