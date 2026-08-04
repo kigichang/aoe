@@ -1464,6 +1464,17 @@
     - title: 維基百科：戰國時代 (日本)
       url: https://zh.wikipedia.org/wiki/戰國時代_(日本)
 
+- id: jp-kaga-ikko-ikki
+  year: 1488
+  endYear: 1580
+  title: 加賀一向一揆，「百姓持有的國家」
+  category: religion
+  importance: 4
+  desc: 本願寺門徒與國人聯合起兵，攻滅守護富樫政親，此後近百年由本願寺教團實質統治加賀國，時人稱之為「百姓之持國」——武士守護制度在此完全被架空，是日本史上絕無僅有的宗教自治政權。1580年織田信長家臣柴田勝家、佐久間盛政攻陷據點尾山御坊，兩年後徹底鎮壓，一向一揆自此瓦解。
+  sources:
+    - title: 日文維基百科：加賀一向一揆
+      url: https://ja.wikipedia.org/wiki/加賀一向一揆
+
 - id: jp-higashiyama-culture
   year: 1489
   title: 足利義政建立銀閣寺，東山文化與侘寂美學
