@@ -7,16 +7,6 @@
 
 
 
-- id: jp-kikai-eruption
-  year: -5300
-  title: 鬼界カルデラ大噴火，重創九州繩文文化
-  category: economy
-  importance: 3
-  desc: 鬼界カルデラ發生全新世以來規模最大的火山噴發之一，總噴出量超過170立方公里。火碎流跨海抵達九州南部與屋久島，一度重創當地繩文文化，數百年至千年後才逐漸恢復——這是繩文早期最劇烈的一次自然浩劫，也是日本史上規模數一數二的火山災難。
-  sources:
-    - title: 日文維基百科：鬼界カルデラ
-      url: https://ja.wikipedia.org/wiki/鬼界カルデラ
-
 - id: jp-sannai-maruyama
   year: -2600
   title: 三內丸山遺跡，繩文中期大型定居聚落
