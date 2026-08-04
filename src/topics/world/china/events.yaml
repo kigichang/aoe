@@ -1311,6 +1311,20 @@
     - title: 維基百科：曹魏
       url: https://zh.wikipedia.org/wiki/曹魏
 
+- id: cn-ji-kang-death
+  year: 262
+  title: 嵇康之死，竹林七賢的抉擇
+  category: culture
+  importance: 3
+  desc: 嵇康、阮籍、劉伶等竹林七賢崇尚老莊，「越名教而任自然」，以縱酒清談回避司馬氏篡魏前後的政治高壓；同屬七賢的山濤、王戎卻選擇出仕司馬氏。嵇康始終不與司馬昭合作，終因得罪權臣被下獄處死，刑場索琴彈奏一曲《廣陵散》，三千太學生請以其為師而不得——魏晉之際名士能否全身而退，往往只在合作與否一念之間。
+  sources:
+    - title: 維基百科：竹林七賢
+      url: https://zh.wikipedia.org/wiki/竹林七賢
+    - title: 維基百科：嵇康
+      url: https://zh.wikipedia.org/wiki/嵇康
+    - title: 維基百科：廣陵散
+      url: https://zh.wikipedia.org/wiki/廣陵散
+
 - id: cn-wei-conquer-shu
   year: 263
   title: 魏滅蜀漢
@@ -1340,6 +1354,7 @@
   title: 西晉統一
   category: politics
   importance: 3
+  desc: 晉軍分六路南下，王濬率水師順江東下直取建業，孫皓出降，孫吳滅亡。自220年曹丕篡漢分裂以來六十年的三國局面至此重歸一統，但這場統一只維持了十一年——八王之亂隨即而起，統一的果實幾乎沒有機會被真正享用。
   sources:
     - title: 維基百科：西晉
       url: https://zh.wikipedia.org/wiki/西晉
@@ -1393,6 +1408,16 @@
     - title: 維基百科：司馬睿
       url: https://zh.wikipedia.org/wiki/司馬睿
 
+- id: cn-lanting
+  year: 353
+  title: 蘭亭集序，天下第一行書
+  category: culture
+  importance: 4
+  desc: 王羲之與謝安等四十餘位文人在會稽蘭亭修禊雅集，行「曲水流觴」——酒杯順水漂流，停在誰面前誰就賦詩，作不出便罰酒。王羲之乘興為詩集作序，324字中21個「之」字寫法各不相同，後世譽為「天下第一行書」。唐太宗酷愛此帖，死後以真跡殉葬昭陵，今日所見皆是唐人摹本，最著者為馮承素「神龍本」。
+  sources:
+    - title: 維基百科：蘭亭集序
+      url: https://zh.wikipedia.org/wiki/蘭亭集序
+
 - id: cn-huan-wen-north
   year: 354
   title: 桓溫北伐，一度收復洛陽
@@ -1438,6 +1463,7 @@
   title: 法顯西行求法
   category: religion
   importance: 3
+  desc: 已年過六旬的法顯自長安出發，經敦煌、塔克拉瑪干沙漠、于闐越蔥嶺入天竺，只為求取當時中土殘缺不全的戒律經典。十餘年間走遍中天竺、東天竺，412年由海路經斯里蘭卡返國，帶回《摩訶僧祇律》等經律並譯出。所撰《佛國記》記下沿途各國的地理風俗，是研究五世紀中亞、南亞與絲路最早的第一手漢文史料——比玄奘西行早了兩百多年。
   sources:
     - title: 維基百科：法顯
       url: https://zh.wikipedia.org/wiki/法顯
