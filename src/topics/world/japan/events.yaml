@@ -659,6 +659,28 @@
     - title: 維基百科：日本書紀
       url: https://zh.wikipedia.org/wiki/日本書紀
 
+- id: jp-nagayao-incident
+  year: 729
+  title: 長屋王之變，藤原氏排除政敵
+  category: politics
+  importance: 3
+  desc: 藤原氏兄弟誣告皇族重臣長屋王私習左道、圖謀不軌，派兵包圍其宅邸，長屋王與妻兒被迫自盡。政變掃除了藤原氏在朝中最大的政治對手，卻在八年後招來近乎報應的巧合——四兄弟同年相繼死於天花大流行，時人多視為長屋王怨靈作祟。
+  sources:
+    - title: 日文維基百科：長屋王の変
+      url: https://ja.wikipedia.org/wiki/長屋王の変
+
+- id: jp-tenpyo-smallpox
+  year: 737
+  title: 天平天花大流行，藤原四兄弟相繼病歿
+  category: politics
+  importance: 4
+  desc: 天花經遣唐使與新羅使節傳入，兩年間奪走近三成人口，掌權的藤原四兄弟（武智麻呂、房前、宇合、麻呂）也相繼病歿，藤原氏一時失勢。皇族出身的橘諸兄趁勢掌權，起用吉備真備、玄昉等留唐學問僧為顧問。這場瘟疫與隨後的政局動盪，是聖武天皇日後大興土木、廣建東大寺大佛以「鎮護國家」的直接背景。
+  sources:
+    - title: 日文維基百科：天平の疫病大流行
+      url: https://ja.wikipedia.org/wiki/天平の疫病大流行
+    - title: 日文維基百科：藤原四兄弟
+      url: https://ja.wikipedia.org/wiki/藤原四兄弟
+
 - id: jp-konden-einen
   year: 743
   title: 頒布墾田永年私財法，莊園制萌芽
@@ -688,6 +710,38 @@
   sources:
     - title: 維基百科：鑑真
       url: https://zh.wikipedia.org/wiki/鑑真
+
+- id: jp-manyoshu
+  year: 759
+  title: 《萬葉集》編纂完成，日本現存最早的詩歌總集
+  category: culture
+  importance: 4
+  desc: 收錄上起五世紀、下至759年間約四千五百首和歌，作者上至天皇、下至無名戍卒與農民，以漢字表音書寫日語的「萬葉假名」寫成，是日本現存最早的詩歌總集。相傳由大伴家持主持編定，題材涵蓋戀歌、輓歌與東國方言的「東歌」，為後世和歌傳統奠定基礎。
+  sources:
+    - title: 日文維基百科：万葉集
+      url: https://ja.wikipedia.org/wiki/万葉集
+
+- id: jp-fujiwara-nakamaro-rebellion
+  year: 764
+  title: 藤原仲麻呂之亂（惠美押勝之亂）
+  category: politics
+  importance: 3
+  desc: 權傾一時的藤原仲麻呂（惠美押勝）因與稱德天皇寵信的僧人道鏡爭權失勢，起兵叛亂旋即兵敗被殺；廢帝淳仁天皇被廢黜流放淡路，稱德天皇（原孝謙天皇）重祚。這是奈良時代規模最大的一場宮廷政變，也讓道鏡自此權勢更盛。
+  sources:
+    - title: 日文維基百科：藤原仲麻呂の乱
+      url: https://ja.wikipedia.org/wiki/藤原仲麻呂の乱
+
+- id: jp-dokyo-incident
+  year: 770
+  title: 宇佐八幡宮神託事件，道鏡奪位未遂
+  category: religion
+  importance: 4
+  desc: 僧人道鏡深受稱德天皇寵信，官拜法王，權勢近乎人臣之極；769年更傳出九州宇佐八幡宮神諭「道鏡即位則天下太平」的說法，一度逼近皇位。和氣清麻呂奉命赴宇佐求證神意，回報神諭實為「必立皇緒，無道之人宜早清除」，道鏡奪位計畫因此告吹。稱德天皇隔年駕崩，道鏡隨即失勢遭貶，天智天皇一系的光仁天皇繼位——此後日本再無僧侶染指皇位的嘗試。
+  sources:
+    - title: 日文維基百科：宇佐八幡宮神託事件
+      url: https://ja.wikipedia.org/wiki/宇佐八幡宮神託事件
+    - title: 日文維基百科：道鏡
+      url: https://ja.wikipedia.org/wiki/道鏡
 
 - id: jp-heian-kyo
   year: 794
