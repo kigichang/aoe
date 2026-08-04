@@ -7,6 +7,16 @@
 
 
 
+- id: jp-kikai-eruption
+  year: -5300
+  title: 鬼界カルデラ大噴火，重創九州繩文文化
+  category: economy
+  importance: 3
+  desc: 鬼界カルデラ發生全新世以來規模最大的火山噴發之一，總噴出量超過170立方公里。火碎流跨海抵達九州南部與屋久島，一度重創當地繩文文化，數百年至千年後才逐漸恢復——這是繩文早期最劇烈的一次自然浩劫，也是日本史上規模數一數二的火山災難。
+  sources:
+    - title: 日文維基百科：鬼界カルデラ
+      url: https://ja.wikipedia.org/wiki/鬼界カルデラ
+
 - id: jp-sannai-maruyama
   year: -2600
   title: 三內丸山遺跡，繩文中期大型定居聚落
@@ -26,6 +36,16 @@
   sources:
     - title: 維基百科：加曾利貝塚
       url: https://zh.wikipedia.org/wiki/加曾利貝塚
+
+- id: jp-oyu-stone-circles
+  year: -2000
+  title: 大湯環狀列石，繩文後期的巨石遺構
+  category: religion
+  importance: 3
+  desc: 秋田縣的萬座、野中堂兩座環狀列石相距約130公尺東西並列，萬座直徑52公尺，是日本已知最大的環狀列石。放射狀排列的石塊下方發現伴隨副葬品的土坑，最有力的說法是共同墓地兼舉行葬送儀式的場所；也有學者提出日時計（日晷）說，但後來遭到反駁。2021年隨「北海道・北東北繩文遺跡群」列入世界遺產。
+  sources:
+    - title: 日文維基百科：大湯環状列石
+      url: https://ja.wikipedia.org/wiki/大湯環状列石
 
 - id: jp-jomon-cooling
   year: -1000
@@ -48,6 +68,17 @@
       url: https://zh.wikipedia.org/wiki/菜畑遺跡
     - title: 維基百科：板付遺跡
       url: https://zh.wikipedia.org/wiki/板付遺跡
+
+- id: jp-kamegaoka
+  year: -1000
+  endYear: -300
+  title: 龜岡文化，遮光器土偶與繩文晚期貿易網
+  category: culture
+  importance: 4
+  desc: 青森龜岡遺跡是繩文晚期最具代表性的遺址，出土的「遮光器土偶」因雙眼造型似護目鏡而得名，已成為繩文文化最廣為人知的圖像。龜岡風格的陶器與器物遠銷北海道到中部、近畿一帶，顯示繩文晚期已存在跨區域的交流網絡。遺址早在1622年即因築城工程出土文物，江戶時代「龜岡物」曾遠銷至荷蘭。
+  sources:
+    - title: 日文維基百科：亀ヶ岡遺跡
+      url: https://ja.wikipedia.org/wiki/亀ヶ岡遺跡
 
 - id: jp-jimmu
   year: -660
