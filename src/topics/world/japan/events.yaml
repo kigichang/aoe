@@ -1928,6 +1928,16 @@
     - title: 維基百科：荷蘭東印度公司
       url: https://zh.wikipedia.org/wiki/荷蘭東印度公司
 
+- id: jp-meireki-fire
+  year: 1657
+  title: 明曆大火，江戶城天守自此不再重建
+  category: economy
+  importance: 4
+  desc: 江戶城與市街大半付之一炬，死者估計三萬至十萬人，光是淺草橋一地就有逾兩萬人喪生。重臣保科正之主張把重建天守閣的預算移作市街復興之用，江戶城天守自此再未重建，成為日本史上唯一「刻意不重建」的城郭主體建築。災後江戶展開大規模都市改造：設置火除地與延燒阻隔用的廣小路，獎勵土藏造與瓦葺屋頂，並在隅田川架設兩國橋等新橋，市街東擴至深川一帶。這場大火重塑了江戶的城市防災邏輯，此後兩百年一直是幕府都市規劃的基準。
+  sources:
+    - title: 日文維基百科：明暦の大火
+      url: https://ja.wikipedia.org/wiki/明暦の大火
+
 - id: jp-shakushain-revolt-1669
   year: 1669
   title: 沙庫沙英之亂，阿伊努人起義反抗松前藩
