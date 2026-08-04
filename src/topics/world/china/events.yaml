@@ -1242,6 +1242,7 @@
   title: 曹丕篡漢，三國鼎立
   category: politics
   importance: 4
+  desc: 曹操死後，曹丕以「禪讓」之名逼漢獻帝退位，改國號魏，都洛陽——形式上重演堯舜禹的禪讓典故，實質是東漢名存實亡多年後的最後一步。次年劉備在成都稱帝延續漢祚，孫權則遲至229年才稱帝，三國鼎立的局面到那時才真正齊備。
   sources:
     - title: 維基百科：曹丕
       url: https://zh.wikipedia.org/wiki/曹丕
@@ -1273,6 +1274,17 @@
       url: https://zh.wikipedia.org/wiki/蜀漢
     - title: 維基百科：孫吳
       url: https://zh.wikipedia.org/wiki/孫吳
+
+- id: cn-yiling
+  year: 221
+  endYear: 222
+  title: 夷陵之戰，蜀吳決裂
+  category: war
+  importance: 4
+  desc: 關羽219年北伐樊城時，孫權趁機襲取荊州並將其斬殺；劉備為報仇奪回荊州，親率大軍東征孫吳。陸遜堅守不戰半年後，趁蜀軍連營紮寨於林木之間縱火，蜀軍舟船器械盡毀，劉備敗退白帝城，隔年病逝。此戰與官渡、赤壁並稱三國三大戰役，蜀漢元氣大傷、此後再無力東顧，三分疆域自此大致底定，直到263年魏滅蜀前再無重大變動。
+  sources:
+    - title: 維基百科：夷陵之戰
+      url: https://zh.wikipedia.org/wiki/夷陵之戰
 
 - id: cn-zhuge-north
   year: 227
