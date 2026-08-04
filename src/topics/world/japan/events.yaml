@@ -878,6 +878,7 @@
   title: 紫式部《源氏物語》
   category: culture
   importance: 5
+  desc: 以光源氏一生為主軸，五十四帖、近百萬字，被視為世界最早的長篇寫實小說。紫式部身為中宮彰子的女房，取材宮廷生活寫成，細膩描寫平安貴族的戀愛、政爭與無常人生觀，「物哀」美學也由此確立，成為日後日本文學反覆回望的原點。
   sources:
     - title: 維基百科：源氏物語
       url: https://zh.wikipedia.org/wiki/源氏物語
@@ -911,6 +912,21 @@
       url: https://zh.wikipedia.org/wiki/攝關政治
     - title: 維基百科：藤原道長
       url: https://zh.wikipedia.org/wiki/藤原道長
+
+- id: jp-zenkunen-gosannen
+  year: 1051
+  endYear: 1087
+  title: 前九年、後三年之役，奧州藤原氏興起
+  category: war
+  importance: 4
+  desc: 源賴義、義家父子受命平定陸奧安倍氏，苦戰十餘年，靠出羽清原氏援軍才在1062年攻陷厨川柵取勝（前九年之役）；二十年後清原氏內鬥，源義家介入干預，最終由藤原經清遺孤藤原清衡勝出，建立奧州藤原氏（後三年之役，1083–1087）。兩場戰爭讓源氏在東國武士間建立主從情誼，是日後鎌倉幕府武家政權的遠源；奧州藤原氏則以平泉為據點，統治奧羽近百年，直到源賴朝將其滅亡。
+  sources:
+    - title: 日文維基百科：前九年の役
+      url: https://ja.wikipedia.org/wiki/前九年の役
+    - title: 日文維基百科：後三年の役
+      url: https://ja.wikipedia.org/wiki/後三年の役
+    - title: 日文維基百科：奥州藤原氏
+      url: https://ja.wikipedia.org/wiki/奥州藤原氏
 
 - id: jp-gosanjo-emperor
   year: 1068
@@ -1017,12 +1033,22 @@
   title: 鹿谷陰謀，後白河法皇企圖推翻平氏失敗
   category: politics
   importance: 3
-  desc: 面對平氏政權的專橫，後白河法皇的近臣在京都東山的鹿谷別墅密謀打倒平氏。陰謀敗露後，平清盛流放了參與者，並將後白河法皇幽禁，平氏的獨裁統治達到頂峰。
+  desc: 面對平氏政權的專橫，後白河法皇的近臣在京都東山的鹿谷別墅密謀打倒平氏。陰謀敗露後，平清盛流放了藤原成親等參與者，後白河法皇本人雖未被追究，但雙方關係從此劍拔弩張——兩年後的治承三年政變，正是這場失敗政變的延續與清算。
   sources:
     - title: 維基百科：鹿谷陰謀
       url: https://zh.wikipedia.org/wiki/鹿谷陰謀
     - title: 維基百科：平清盛
       url: https://zh.wikipedia.org/wiki/平清盛
+
+- id: jp-jisho-coup
+  year: 1179
+  title: 治承三年政變，平清盛幽禁後白河法皇
+  category: politics
+  importance: 4
+  desc: 平清盛率數千騎自福原上洛，一舉解除關白以下逾五十名官員職務，並將後白河法皇幽禁於鳥羽殿、停止院政，平氏知行國從十七國暴增至三十二國。這場政變徹底激化反平氏勢力：以仁王因所領被沒收憤而舉兵，隨即引爆源平合戰，也是隔年平清盛強行遷都福原的直接背景。
+  sources:
+    - title: 日文維基百科：治承三年の政変
+      url: https://ja.wikipedia.org/wiki/治承三年の政変
 
 - id: jp-fukuhara-kyo
   year: 1180
