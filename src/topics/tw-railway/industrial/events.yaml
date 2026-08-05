@@ -22,6 +22,16 @@
     - title: 維基百科：阿里山林業鐵路
       url: https://zh.wikipedia.org/wiki/阿里山林業鐵路
 
+- id: baxianshan-1916-established
+  year: 1916
+  title: 八仙山出張所成立，台灣三大林場格局確立
+  category: institution
+  importance: 3
+  desc: 1914年總督府技師綱島正吉前往八仙山勘查，1915年八仙山事業區脫離阿里山作業所、直屬營林局，1916年八仙山出張所成立，與阿里山、太平山並列「台灣三大林場」。1927年鋪設平地鐵道運出木材，運材系統結合山地軌道、平地鐵道與流籠索道，較另兩處林場更為複雜；1942年伐木事業轉由台灣拓殖株式會社接管，隔年產材量達到高峰。戰後資源枯竭，伐木事業逐漸停止，林場現已轉型為國家森林遊樂區。
+  sources:
+    - title: 維基百科：八仙山林場
+      url: https://zh.wikipedia.org/wiki/八仙山林場
+
 - id: pingxi-1921-opening
   year: 1921
   title: 台陽礦業石底線（今平溪線）完工
@@ -32,6 +42,16 @@
     - title: 維基百科：平溪線
       url: https://zh.wikipedia.org/wiki/平溪線
 
+- id: jiji-line-1921-opening
+  year: 1921
+  title: 集集線完工通車，因日月潭發電工程而生
+  category: construction
+  importance: 3
+  desc: 台灣電力株式會社為運送日月潭水力發電工程物資，1919年動工興建集集線，1921年10月完工，1922年1月14日起兼辦客運業務。1927年4月由總督府買收，正式納入鐵道部管轄，成為官營鐵路的一段支線。
+  sources:
+    - title: 維基百科：集集線
+      url: https://zh.wikipedia.org/wiki/集集線
+
 - id: pingxi-1929-acquired
   year: 1929
   title: 總督府鐵道部收購石底線
@@ -41,6 +61,17 @@
   sources:
     - title: 維基百科：平溪線
       url: https://zh.wikipedia.org/wiki/平溪線
+
+- id: houtong-1934-ruisan-coal
+  year: 1934
+  endYear: 1990
+  title: 瑞三煤礦成立，猴硐站成運煤轉運樞紐
+  category: institution
+  importance: 3
+  desc: 猴硐一帶採煤始於1914年，1920年宜蘭線猴硐站設站、1922年選煤場完工後，煤礦開採與鐵路運輸緊密結合。1934年李建興向三井會社承租礦權、成立瑞三煤礦，全盛時期雇用逾千名礦工，1946至1980年間總產量超過674萬公噸，是台灣最大民營煤礦之一。隨著石油取代煤炭與鐵路電氣化，1990年5月1日正式停止開採，猴硐現已轉型為煤礦博物園區，選煤場亦於2022年修復開放參觀。
+  sources:
+    - title: 維基百科：瑞三煤礦
+      url: https://zh.wikipedia.org/wiki/瑞三煤礦
 
 - id: taipingshan-1937-maoxing
   year: 1937
@@ -92,6 +123,17 @@
   sources:
     - title: 維基百科：阿里山林業鐵路
       url: https://zh.wikipedia.org/wiki/阿里山林業鐵路
+
+- id: jiji-line-1999-earthquake
+  year: 1999
+  endYear: 2001
+  title: 921大地震重創集集線，2001年修復通車
+  category: accident
+  importance: 3
+  desc: 1999年9月21日集集大地震震央即在集集線沿線，集集車站傾斜、多處鐵軌扭曲變形，全線停駛。歷經整建，2001年1月21日修復通車，此後集集線逐漸轉型為兼具運輸與觀光價值的鐵道路線。
+  sources:
+    - title: 維基百科：集集線
+      url: https://zh.wikipedia.org/wiki/集集線
 
 - id: alishan-2024-restoration
   year: 2024
