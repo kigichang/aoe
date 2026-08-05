@@ -3487,6 +3487,17 @@
     - title: 維基百科：澎湖海戰
       url: https://zh.wikipedia.org/wiki/澎湖海戰
 
+- id: cn-literary-inquisition
+  year: 1663
+  endYear: 1781
+  title: 清代文字獄
+  category: culture
+  importance: 4
+  desc: 康熙年間的明史案，因書中沿用南明年號被舉發，牽連七十餘人處死；雍正年間的呂留良案，人已去世多年仍被剖棺戮屍，門生故舊連坐流放。乾隆一朝案件暴增至一百三十餘起，達到頂峰，禁毀書籍的種類是明代的十餘倍。文網之密，讓讀書人不敢輕議時政，轉而埋首考據訓詁——清代考據學的興盛，某種程度上正是文字獄逼出來的產物：寫詩論政有殺身之禍，校勘古書總安全得多。
+  sources:
+    - title: 維基百科：文字獄
+      url: https://zh.wikipedia.org/wiki/文字獄
+
 - id: cn-nerchinsk
   year: 1689
   title: 尼布楚條約，中俄劃定東段邊界
@@ -3519,6 +3530,17 @@
   sources:
     - title: 維基百科：攤丁入畝
       url: https://zh.wikipedia.org/wiki/攤丁入畝
+
+- id: cn-jiuzi-duodi
+  year: 1708
+  endYear: 1722
+  title: 九子奪嫡
+  category: politics
+  importance: 3
+  desc: 太子胤礽兩度被廢，康熙其餘諸子分裂成大千歲黨、三爺黨、四爺黨、八爺黨等陣營，明爭暗鬥長達十四年。最終四子胤禛在九門提督隆科多支持下繼位，是為雍正帝；繼位過程眾說紛紜，野史盛傳詔書「傳位十四子」被改為「傳位于四子」，正史雖不採信，卻反映了這場鬥爭在民間留下的疑雲有多深。雍正鑑於兄弟鬩牆之禍，此後改行秘密立儲——傳位詔書密封藏於乾清宮「正大光明」匾後，皇帝駕崩才當眾開啟，終清一代沿用不改。
+  sources:
+    - title: 維基百科：九子奪嫡
+      url: https://zh.wikipedia.org/wiki/九子奪嫡
 
 - id: cn-rites-controversy
   year: 1724
@@ -3764,11 +3786,22 @@
     - title: 維基百科：馬關條約
       url: https://zh.wikipedia.org/wiki/馬關條約
 
+- id: cn-gongche-shangshu
+  year: 1895
+  title: 公車上書
+  category: politics
+  importance: 3
+  desc: 馬關條約割台議和的消息傳到北京，正在應試的各省舉人群情激憤，康有為、梁啟超聯合近千名舉人聯名上書光緒帝，提出拒和、遷都、練兵、變法四項主張——梁啟超後來認為「變法」才是真正的根本之計。這是讀書人第一次以群眾連署的方式介入國家大政，被視為近代中國群眾政治運動的開端，也揭開了三年後戊戌變法的序幕。
+  sources:
+    - title: 維基百科：公車上書
+      url: https://zh.wikipedia.org/wiki/公車上書
+
 - id: cn-hundred-days
   year: 1898
   title: 戊戌變法
   category: politics
   importance: 4
+  desc: 光緒帝頒布「明定國是詔」，推行設京師大學堂、廢八股、改練新軍、裁減冗官等新政，前後僅維持一百零三天。變法觸動了滿人統治根基與慈禧的實權，慈禧發動政變重新訓政，光緒被幽禁於瀛台，除京師大學堂外新政盡數廢止，譚嗣同等「戊戌六君子」遭處決，康有為、梁啟超分別逃亡香港與日本。體制內改革這條路徹底堵死，此後主張激進革命的聲音才逐漸壓過主張漸進改良的一派，為十三年後的辛亥革命鋪路。
   sources:
     - title: 維基百科：戊戌變法
       url: https://zh.wikipedia.org/wiki/戊戌變法
