@@ -15,6 +15,18 @@
     - title: 維基百科：蘇美爾
       url: https://zh.wikipedia.org/wiki/蘇美爾
 
+- id: me-egypt-unified
+  year: -3000
+  title: 埃及第一王朝，上下埃及統一
+  category: politics
+  importance: 5
+  desc: 已知最早的領土型國家。實際約在西元前 3100 年，此處為時間軸起點所截。
+  sources:
+    - title: 維基百科：埃及第一王朝
+      url: https://zh.wikipedia.org/wiki/埃及第一王朝
+    - title: 維基百科：那爾邁
+      url: https://zh.wikipedia.org/wiki/那爾邁
+
 - id: sa-indus
   year: -2600
   title: 印度河流域文明進入成熟期
