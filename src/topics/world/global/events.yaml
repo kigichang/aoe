@@ -1723,6 +1723,16 @@
     - title: 維基百科：工業革命
       url: https://zh.wikipedia.org/wiki/工業革命
 
+- id: am-lexington-concord
+  year: 1775
+  title: 列克星敦與康科德戰役，美國獨立戰爭爆發
+  category: war
+  importance: 3
+  desc: 英軍與麻薩諸塞民兵在波士頓郊外交火，「打響全世界都聽到的一槍」，獨立戰爭自此開打，比隔年的獨立宣言早了一年多。
+  sources:
+    - title: 維基百科：列克星敦和康科德戰役
+      url: https://zh.wikipedia.org/wiki/列克星敦和康科德戰役
+
 - id: eu-wealth-of-nations
   year: 1776
   title: 亞當斯密《國富論》
@@ -1740,6 +1750,16 @@
   sources:
     - title: 維基百科：美國獨立宣言
       url: https://zh.wikipedia.org/wiki/美國獨立宣言
+
+- id: am-treaty-paris-1783
+  year: 1783
+  title: 巴黎條約，英國承認美國獨立
+  category: politics
+  importance: 3
+  desc: 歷時八年的獨立戰爭正式落幕，英國承認美國主權並劃定密西西比河以東為其疆界。
+  sources:
+    - title: 維基百科：巴黎條約 (1783年)
+      url: https://zh.wikipedia.org/wiki/巴黎條約 (1783年)
 
 - id: am-us-constitution
   year: 1787
@@ -1769,6 +1789,16 @@
   sources:
     - title: 英文維基百科：French invasion of Egypt and Syria
       url: https://en.wikipedia.org/wiki/French_invasion_of_Egypt_and_Syria
+
+- id: am-louisiana-purchase
+  year: 1803
+  title: 路易斯安那購地，美國國土倍增
+  category: politics
+  importance: 4
+  desc: 傑佛遜總統以低價向拿破崙的法國買下密西西比河以西的廣大領土，國土面積一舉倍增，也讓法國徹底退出北美大陸的角逐。
+  sources:
+    - title: 維基百科：路易斯安那購地
+      url: https://zh.wikipedia.org/wiki/路易斯安那購地
 
 - id: eu-napoleon
   year: 1804
@@ -1830,6 +1860,17 @@
     - title: 維基百科：門羅主義
       url: https://zh.wikipedia.org/wiki/門羅主義
 
+- id: am-mexican-american-war
+  year: 1846
+  title: 美墨戰爭，美國取得西南部領土
+  category: war
+  importance: 4
+  endYear: 1848
+  desc: 戰後簽訂的瓜達盧佩伊達爾戈條約讓美國取得加州、內華達、猶他與新墨西哥等地；隔年恰逢加州發現金礦，這片新領土立刻湧入大批淘金移民。
+  sources:
+    - title: 維基百科：美墨戰爭
+      url: https://zh.wikipedia.org/wiki/美墨戰爭
+
 - id: eu-1848
   year: 1848
   title: 歐洲革命之年；《共產黨宣言》
@@ -1885,9 +1926,21 @@
   category: war
   importance: 4
   endYear: 1865
+  desc: 蓋茨堡之役是雙方傷亡最慘重、也是扭轉戰局的一役；北方雖然獲勝，主導戰後重建的林肯卻在戰爭結束五天後遇刺身亡。
   sources:
     - title: 維基百科：南北戰爭
       url: https://zh.wikipedia.org/wiki/南北戰爭
+
+- id: am-reconstruction
+  year: 1865
+  title: 重建時期，南方政治秩序重整
+  category: politics
+  importance: 3
+  endYear: 1877
+  desc: 聯邦軍隊駐守南方監督黑人公民權的落實，但隨著駐軍在1877年撤出，白人民主黨人重新掌權，種族隔離制度逐漸成形，直到近百年後的民權運動才被撼動。
+  sources:
+    - title: 維基百科：美國重建時期
+      url: https://zh.wikipedia.org/wiki/美國重建時期
 
 - id: am-transcontinental
   year: 1869
@@ -2037,6 +2090,16 @@
     - title: 維基百科：貝爾福宣言
       url: https://zh.wikipedia.org/wiki/貝爾福宣言
 
+- id: am-wwi-entry
+  year: 1917
+  title: 美國參戰第一次世界大戰
+  category: war
+  importance: 4
+  desc: 德國無限制潛艇戰與齊默曼電報曝光後，美國放棄長期的孤立主義加入協約國一方，充裕的兵源與物資是壓垮同盟國的關鍵。
+  sources:
+    - title: 英文維基百科：United States in World War I
+      url: https://en.wikipedia.org/wiki/United_States_in_World_War_I
+
 - id: sa-amritsar
   year: 1919
   title: 阿姆利則慘案
@@ -2075,6 +2138,7 @@
   title: 華爾街股災
   category: economy
   importance: 4
+  desc: 股市重挫引爆長達十年的經濟大蕭條，失業率一度逼近四分之一，是資本主義世界最嚴重的一次系統性危機。
   sources:
     - title: 維基百科：1929年華爾街股災
       url: https://zh.wikipedia.org/wiki/1929年華爾街股災
@@ -2089,6 +2153,16 @@
     - title: 維基百科：食鹽進軍
       url: https://zh.wikipedia.org/wiki/食鹽進軍
 
+- id: am-new-deal
+  year: 1933
+  title: 羅斯福推行新政
+  category: economy
+  importance: 4
+  desc: 一連串公共工程、金融改革與社會福利立法試圖挽救大蕭條，聯邦政府對經濟的角色自此徹底改變，社會安全制度的雛型也在這時建立。
+  sources:
+    - title: 維基百科：羅斯福新政
+      url: https://zh.wikipedia.org/wiki/羅斯福新政
+
 - id: eu-ww2
   year: 1939
   title: 第二次世界大戰爆發
@@ -2098,6 +2172,16 @@
   sources:
     - title: 維基百科：第二次世界大戰
       url: https://zh.wikipedia.org/wiki/第二次世界大戰
+
+- id: am-pearl-harbor
+  year: 1941
+  title: 珍珠港事件，美國參戰第二次世界大戰
+  category: war
+  importance: 4
+  desc: 日本偷襲美國太平洋艦隊基地，隔日美國對日宣戰，原本主張不介入歐洲戰事的美國自此全面投入二戰。
+  sources:
+    - title: 維基百科：珍珠港事件
+      url: https://zh.wikipedia.org/wiki/珍珠港事件
 
 - id: eu-un
   year: 1945
@@ -2191,6 +2275,29 @@
     - title: 維基百科：羅馬條約
       url: https://zh.wikipedia.org/wiki/羅馬條約
 
+- id: am-civil-rights-act
+  year: 1964
+  title: 民權法案通過，種族隔離制度終結
+  category: politics
+  importance: 4
+  desc: 金恩博士領導的非暴力抗爭與民權運動促成國會立法，禁止依種族、膚色、宗教或性別的公共場所歧視，正式終結吉姆·克勞法時代的種族隔離制度。
+  sources:
+    - title: 維基百科：1964年民權法案
+      url: https://zh.wikipedia.org/wiki/1964年民權法案
+
+- id: am-vietnam-war
+  year: 1964
+  title: 東京灣事件，美國升級介入越南戰爭
+  category: war
+  importance: 4
+  endYear: 1975
+  desc: 東京灣事件後美國國會授權總統擴大軍事行動，數十萬美軍投入這場代理人戰爭；1975年西貢淪陷，是美國自建國以來首次戰爭失利。
+  sources:
+    - title: 維基百科：越南戰爭
+      url: https://zh.wikipedia.org/wiki/越南戰爭
+    - title: 英文維基百科：Gulf of Tonkin incident
+      url: https://en.wikipedia.org/wiki/Gulf_of_Tonkin_incident
+
 - id: am-apollo-11
   year: 1969
   title: 阿波羅十一號登月
@@ -2259,6 +2366,16 @@
   sources:
     - title: 維基百科：馬斯垂克條約
       url: https://zh.wikipedia.org/wiki/馬斯垂克條約
+
+- id: am-9-11
+  year: 2001
+  title: 九一一襲擊事件
+  category: war
+  importance: 5
+  desc: 蓋達組織劫持四架客機撞擊世貿中心與五角大廈，近三千人罹難；美國隨後發動反恐戰爭，全球安全體制與國際政治格局自此改寫。
+  sources:
+    - title: 維基百科：九一一襲擊事件
+      url: https://zh.wikipedia.org/wiki/九一一襲擊事件
 
 - id: eu-euro-cash
   year: 2002
