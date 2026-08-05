@@ -5,6 +5,56 @@
 # 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
 
 
+- id: me-sumer
+  year: -3000
+  title: 蘇美城邦與楔形文字
+  category: culture
+  importance: 5
+  desc: 已知最早的文字系統。實際起源早於西元前 3000 年，此處為時間軸起點所截。
+  sources:
+    - title: 維基百科：蘇美爾
+      url: https://zh.wikipedia.org/wiki/蘇美爾
+
+- id: sa-indus
+  year: -2600
+  title: 印度河流域文明進入成熟期
+  category: culture
+  importance: 4
+  desc: 摩亨佐-達羅與哈拉帕的城市規劃與排水系統同期世界罕見，文字至今未能解讀。
+  sources:
+    - title: 維基百科：印度河流域文明
+      url: https://zh.wikipedia.org/wiki/印度河流域文明
+
+- id: me-giza
+  year: -2560
+  title: 吉薩大金字塔完工
+  category: culture
+  importance: 4
+  sources:
+    - title: 維基百科：胡夫金字塔
+      url: https://zh.wikipedia.org/wiki/胡夫金字塔
+
+- id: me-akkad
+  year: -2334
+  title: 薩爾貢建立阿卡德帝國
+  category: politics
+  importance: 4
+  desc: 兩河流域第一個把眾多城邦統合起來的帝國。
+  sources:
+    - title: 維基百科：阿卡德帝國
+      url: https://zh.wikipedia.org/wiki/阿卡德帝國
+    - title: 維基百科：薩爾貢大帝
+      url: https://zh.wikipedia.org/wiki/薩爾貢大帝
+
+- id: me-hammurabi
+  year: -1754
+  title: 漢摩拉比法典
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：漢摩拉比法典
+      url: https://zh.wikipedia.org/wiki/漢摩拉比法典
+
 - id: eu-mycenae-rise
   year: -1600
   title: 邁錫尼文明興起
@@ -13,6 +63,34 @@
   sources:
     - title: 維基百科：邁錫尼文明
       url: https://zh.wikipedia.org/wiki/邁錫尼文明
+
+- id: sa-vedic
+  year: -1500
+  title: 吠陀時代開始
+  category: religion
+  importance: 3
+  sources:
+    - title: 維基百科：吠陀文化
+      url: https://zh.wikipedia.org/wiki/吠陀文化
+
+- id: me-akhenaten
+  year: -1350
+  title: 阿肯那頓推行阿頓崇拜
+  category: religion
+  importance: 3
+  sources:
+    - title: 維基百科：阿肯那頓
+      url: https://zh.wikipedia.org/wiki/阿肯那頓
+
+- id: me-kadesh
+  year: -1274
+  title: 卡迭石戰役
+  category: war
+  importance: 3
+  desc: 埃及與西臺兩大強權對決，戰後締結已知最早的國際和約。
+  sources:
+    - title: 維基百科：卡迭石戰役
+      url: https://zh.wikipedia.org/wiki/卡迭石戰役
 
 - id: eu-bronze-collapse
   year: -1200
@@ -23,6 +101,16 @@
   sources:
     - title: 維基百科：青銅時代晚期崩潰
       url: https://zh.wikipedia.org/wiki/青銅時代晚期崩潰
+
+- id: am-olmec
+  year: -1200
+  title: 奧爾梅克文明興起
+  category: culture
+  importance: 3
+  desc: 中美洲最早的複雜社會，巨石人頭像與曆法傳統為後世馬雅、阿茲特克所承襲。
+  sources:
+    - title: 維基百科：奧爾梅克文明
+      url: https://zh.wikipedia.org/wiki/奧爾梅克文明
 
 - id: eu-trojan-war
   year: -1184
@@ -36,6 +124,18 @@
       url: https://zh.wikipedia.org/wiki/特洛伊戰爭
     - title: 維基百科：特洛伊
       url: https://zh.wikipedia.org/wiki/特洛伊
+
+- id: am-chavin
+  year: -900
+  title: 查文文化興起於安地斯
+  category: culture
+  importance: 3
+  desc: 秘魯高地的宗教中心，安地斯地區第一次出現跨區域的文化整合。
+  sources:
+    - title: 維基百科：查文文化
+      url: https://zh.wikipedia.org/wiki/查文文化
+    - title: 英文維基百科：查文文化
+      url: https://en.wikipedia.org/wiki/Chavín_culture
 
 - id: eu-olympics
   year: -776
@@ -58,6 +158,15 @@
     - title: 維基百科：羅慕路斯
       url: https://zh.wikipedia.org/wiki/羅慕路斯
 
+- id: me-assyria-israel
+  year: -722
+  title: 亞述滅以色列王國
+  category: war
+  importance: 3
+  sources:
+    - title: 維基百科：亞述
+      url: https://zh.wikipedia.org/wiki/亞述
+
 - id: eu-solon
   year: -594
   title: 梭倫改革
@@ -67,11 +176,61 @@
     - title: 維基百科：梭倫
       url: https://zh.wikipedia.org/wiki/梭倫
 
+- id: me-babylonian-exile
+  year: -586
+  title: 巴比倫之囚
+  category: religion
+  importance: 4
+  desc: 猶大王國覆滅、聖殿被毀，猶太教在流亡中走上經典化的道路。
+  sources:
+    - title: 維基百科：巴比倫囚虜
+      url: https://zh.wikipedia.org/wiki/巴比倫囚虜
+
+- id: me-cyrus
+  year: -550
+  title: 居魯士建立波斯帝國
+  category: politics
+  importance: 5
+  desc: 疆域橫跨小亞細亞到印度河，是當時世界上最大的帝國。
+  sources:
+    - title: 維基百科：阿契美尼德王朝
+      url: https://zh.wikipedia.org/wiki/阿契美尼德王朝
+    - title: 維基百科：居魯士二世
+      url: https://zh.wikipedia.org/wiki/居魯士二世
+
+- id: me-babylon-fall
+  year: -539
+  title: 波斯滅新巴比倫
+  category: war
+  importance: 3
+  sources:
+    - title: 維基百科：新巴比倫帝國
+      url: https://zh.wikipedia.org/wiki/新巴比倫帝國
+
+- id: sa-buddha
+  year: -528
+  title: 佛陀成道
+  category: religion
+  importance: 5
+  desc: 年代諸說並存，此處採南傳系統的推定。
+  sources:
+    - title: 維基百科：釋迦牟尼
+      url: https://zh.wikipedia.org/wiki/釋迦牟尼
+
+- id: sa-mahavira
+  year: -527
+  title: 大雄創立耆那教教團
+  category: religion
+  importance: 3
+  sources:
+    - title: 維基百科：筏馱摩那
+      url: https://zh.wikipedia.org/wiki/筏馱摩那
+
 - id: eu-republic
   year: -509
   title: 羅馬共和國建立
   category: politics
-  importance: 5
+  importance: 4
   sources:
     - title: 維基百科：羅馬共和國
       url: https://zh.wikipedia.org/wiki/羅馬共和國
@@ -80,7 +239,7 @@
   year: -508
   title: 克里斯提尼改革，雅典民主制成形
   category: politics
-  importance: 5
+  importance: 4
   sources:
     - title: 維基百科：克里斯提尼
       url: https://zh.wikipedia.org/wiki/克里斯提尼
@@ -100,7 +259,7 @@
   year: -480
   title: 溫泉關與薩拉米斯海戰
   category: war
-  importance: 5
+  importance: 4
   sources:
     - title: 維基百科：溫泉關戰役
       url: https://zh.wikipedia.org/wiki/溫泉關戰役
@@ -130,7 +289,7 @@
   year: -399
   title: 蘇格拉底之死
   category: culture
-  importance: 5
+  importance: 4
   sources:
     - title: 維基百科：蘇格拉底
       url: https://zh.wikipedia.org/wiki/蘇格拉底
@@ -172,16 +331,35 @@
     - title: 維基百科：希臘化時代
       url: https://zh.wikipedia.org/wiki/希臘化時代
 
+- id: sa-maurya
+  year: -321
+  title: 孔雀王朝建立
+  category: politics
+  importance: 4
+  desc: 印度史上第一個統一次大陸大部分地區的政權。
+  sources:
+    - title: 維基百科：孔雀王朝
+      url: https://zh.wikipedia.org/wiki/孔雀王朝
+
 - id: eu-euclid
   year: -300
   title: 歐幾里得《幾何原本》
   category: science
-  importance: 5
+  importance: 4
   sources:
     - title: 維基百科：歐幾里得
       url: https://zh.wikipedia.org/wiki/歐幾里得
     - title: 維基百科：幾何原本
       url: https://zh.wikipedia.org/wiki/幾何原本
+
+- id: sa-ashoka
+  year: -268
+  title: 阿育王即位
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：阿育王
+      url: https://zh.wikipedia.org/wiki/阿育王
 
 - id: eu-punic-1
   year: -264
@@ -191,6 +369,35 @@
   sources:
     - title: 維基百科：第一次布匿戰爭
       url: https://zh.wikipedia.org/wiki/第一次布匿戰爭
+
+- id: sa-kalinga
+  year: -261
+  title: 羯陵伽戰爭與阿育王皈依佛教
+  category: religion
+  importance: 5
+  desc: 戰後阿育王轉奉佛法，立石柱詔書並遣使外傳，佛教自此走出印度。
+  sources:
+    - title: 維基百科：羯陵伽戰爭
+      url: https://zh.wikipedia.org/wiki/羯陵伽戰爭
+
+- id: sa-third-council
+  year: -250
+  title: 第三次結集，佛教向外傳布
+  category: religion
+  importance: 3
+  sources:
+    - title: 維基百科：第三次結集
+      url: https://zh.wikipedia.org/wiki/第三次結集
+
+- id: me-parthia
+  year: -247
+  title: 帕提亞帝國興起
+  category: politics
+  importance: 3
+  desc: 卡在絲路中段，同時與羅馬和漢朝打交道。
+  sources:
+    - title: 維基百科：安息帝國
+      url: https://zh.wikipedia.org/wiki/安息帝國
 
 - id: eu-hannibal
   year: -218
@@ -212,11 +419,21 @@
     - title: 維基百科：亞該亞同盟
       url: https://zh.wikipedia.org/wiki/亞該亞同盟
 
+- id: am-teotihuacan
+  year: -100
+  title: 特奧蒂瓦坎建城
+  category: politics
+  importance: 3
+  desc: 全盛期人口逾十萬，是當時美洲最大的城市。
+  sources:
+    - title: 維基百科：特奧蒂瓦坎
+      url: https://zh.wikipedia.org/wiki/特奧蒂瓦坎
+
 - id: eu-caesar
   year: -44
   title: 凱撒遇刺
   category: politics
-  importance: 5
+  importance: 4
   sources:
     - title: 維基百科：尤利烏斯·凱撒
       url: https://zh.wikipedia.org/wiki/尤利烏斯·凱撒
@@ -241,6 +458,18 @@
     - title: 維基百科：耶穌
       url: https://zh.wikipedia.org/wiki/耶穌
 
+- id: sa-kushan
+  year: 78
+  title: 貴霜王朝迦膩色伽即位
+  category: politics
+  importance: 3
+  desc: 控制絲路南段，犍陀羅佛像藝術在此時成形。
+  sources:
+    - title: 維基百科：貴霜帝國
+      url: https://zh.wikipedia.org/wiki/貴霜帝國
+    - title: 維基百科：迦膩色伽一世
+      url: https://zh.wikipedia.org/wiki/迦膩色伽一世
+
 - id: eu-pompeii
   year: 79
   title: 維蘇威火山爆發，龐貝城覆滅
@@ -261,6 +490,25 @@
     - title: 維基百科：哈德良長城
       url: https://zh.wikipedia.org/wiki/哈德良長城
 
+- id: me-sassanid
+  year: 224
+  title: 薩珊王朝建立
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：薩珊王朝
+      url: https://zh.wikipedia.org/wiki/薩珊王朝
+
+- id: am-maya-classic
+  year: 250
+  title: 馬雅文明進入古典期
+  category: culture
+  importance: 4
+  desc: 城邦林立，發展出完整的文字、長紀曆與零的概念。
+  sources:
+    - title: 維基百科：瑪雅文明
+      url: https://zh.wikipedia.org/wiki/瑪雅文明
+
 - id: eu-milan-edict
   year: 313
   title: 米蘭敕令，基督教合法化
@@ -269,6 +517,16 @@
   sources:
     - title: 維基百科：米蘭敕令 (君士坦丁)
       url: https://zh.wikipedia.org/wiki/米蘭敕令_(君士坦丁)
+
+- id: sa-gupta
+  year: 320
+  title: 笈多王朝建立
+  category: politics
+  importance: 4
+  desc: 梵語文學、天文與數學的高峰，常被稱為印度的古典時代。
+  sources:
+    - title: 維基百科：笈多王朝
+      url: https://zh.wikipedia.org/wiki/笈多王朝
 
 - id: eu-constantinople
   year: 330
@@ -303,6 +561,15 @@
     - title: 英文維基百科：羅馬之劫（410年）
       url: https://en.wikipedia.org/wiki/Sack_of_Rome_(410)
 
+- id: sa-nalanda
+  year: 427
+  title: 那爛陀寺創建
+  category: culture
+  importance: 3
+  sources:
+    - title: 維基百科：那爛陀寺
+      url: https://zh.wikipedia.org/wiki/那爛陀寺
+
 - id: eu-west-rome-fall
   year: 476
   title: 西羅馬帝國滅亡
@@ -311,6 +578,16 @@
   sources:
     - title: 維基百科：西羅馬帝國
       url: https://zh.wikipedia.org/wiki/西羅馬帝國
+
+- id: sa-aryabhata
+  year: 499
+  title: 阿耶波多與十進位記數
+  category: science
+  importance: 4
+  desc: 位值制與零的用法後經阿拉伯世界傳入歐洲，成為今日通用的數字系統。
+  sources:
+    - title: 維基百科：阿耶波多
+      url: https://zh.wikipedia.org/wiki/阿耶波多
 
 - id: eu-justinian
   year: 527
@@ -398,6 +675,71 @@
     - title: 維基百科：坎特伯雷的奧古斯丁
       url: https://zh.wikipedia.org/wiki/坎特伯雷的奧古斯丁
 
+- id: am-tiwanaku
+  year: 600
+  title: 蒂亞瓦納科進入盛期
+  category: politics
+  importance: 3
+  sources:
+    - title: 維基百科：蒂亞瓦納科
+      url: https://zh.wikipedia.org/wiki/蒂亞瓦納科
+
+- id: me-muhammad
+  year: 610
+  title: 穆罕默德受啟示
+  category: religion
+  importance: 4
+  sources:
+    - title: 維基百科：穆罕默德
+      url: https://zh.wikipedia.org/wiki/穆罕默德
+
+- id: me-hijra
+  year: 622
+  title: 希吉拉，伊斯蘭曆元年
+  category: religion
+  importance: 5
+  desc: 遷徙至麥地那建立穆斯林社群，伊斯蘭曆從這一年起算。
+  sources:
+    - title: 維基百科：希吉拉
+      url: https://zh.wikipedia.org/wiki/希吉拉
+
+- id: sa-xuanzang
+  year: 629
+  title: 玄奘西行抵印度
+  category: religion
+  importance: 4
+  desc: 在那爛陀寺求法十餘年，帶回的經卷與《大唐西域記》是印度中古史的重要史料。
+  sources:
+    - title: 維基百科：玄奘
+      url: https://zh.wikipedia.org/wiki/玄奘
+
+- id: me-yarmuk
+  year: 636
+  title: 雅爾穆克戰役，阿拉伯取得敘利亞
+  category: war
+  importance: 4
+  sources:
+    - title: 維基百科：雅爾穆克戰役
+      url: https://zh.wikipedia.org/wiki/雅爾穆克戰役
+
+- id: me-qadisiyyah
+  year: 637
+  title: 卡迪西亞戰役，薩珊崩解
+  category: war
+  importance: 3
+  sources:
+    - title: 維基百科：卡迪西亞戰役
+      url: https://zh.wikipedia.org/wiki/卡迪西亞戰役
+
+- id: me-umayyad
+  year: 661
+  title: 倭馬亞王朝定都大馬士革
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：奧瑪亞王朝
+      url: https://zh.wikipedia.org/wiki/奧瑪亞王朝
+
 - id: eu-greek-fire
   year: 674
   title: 希臘火守住君士坦丁堡
@@ -425,6 +767,16 @@
     - title: 維基百科：西哥德王國
       url: https://zh.wikipedia.org/wiki/西哥德王國
 
+- id: sa-sindh
+  year: 712
+  title: 阿拉伯征服信德
+  category: war
+  importance: 3
+  desc: 伊斯蘭勢力首次在南亞取得立足點。
+  sources:
+    - title: 英文維基百科：阿拉伯征服信德
+      url: https://en.wikipedia.org/wiki/Arab_conquest_of_Sindh
+
 - id: eu-iconoclasm
   year: 726
   title: 拜占庭破壞聖像運動
@@ -443,6 +795,15 @@
   sources:
     - title: 維基百科：圖爾戰役
       url: https://zh.wikipedia.org/wiki/圖爾戰役
+
+- id: me-abbasid
+  year: 750
+  title: 阿拔斯王朝取代倭馬亞
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：阿拔斯王朝
+      url: https://zh.wikipedia.org/wiki/阿拔斯王朝
 
 - id: eu-pepin-king
   year: 751
@@ -465,6 +826,15 @@
   sources:
     - title: 維基百科：教宗國
       url: https://zh.wikipedia.org/wiki/教宗國
+
+- id: me-baghdad
+  year: 762
+  title: 巴格達建城
+  category: politics
+  importance: 3
+  sources:
+    - title: 維基百科：巴格達
+      url: https://zh.wikipedia.org/wiki/巴格達
 
 - id: eu-lindisfarne
   year: 793
@@ -499,6 +869,18 @@
       url: https://zh.wikipedia.org/wiki/三圃制
     - title: 英文維基百科：三圃制
       url: https://en.wikipedia.org/wiki/Three-field_system
+
+- id: me-house-of-wisdom
+  year: 830
+  title: 智慧宮與翻譯運動
+  category: science
+  importance: 4
+  desc: 大量希臘、波斯、印度典籍譯成阿拉伯文，數世紀後又經此回流歐洲。
+  sources:
+    - title: 維基百科：智慧之家
+      url: https://zh.wikipedia.org/wiki/智慧之家
+    - title: 英文維基百科：智慧宮
+      url: https://en.wikipedia.org/wiki/House_of_Wisdom
 
 - id: eu-verdun
   year: 843
@@ -540,6 +922,18 @@
   sources:
     - title: 維基百科：基輔羅斯
       url: https://zh.wikipedia.org/wiki/基輔羅斯
+
+- id: am-maya-collapse
+  year: 900
+  title: 馬雅古典期城邦崩潰
+  category: politics
+  importance: 4
+  desc: 南部低地諸城邦在一世紀內接連廢棄，成因仍有爭論，乾旱與長期戰爭都是候選。
+  sources:
+    - title: 維基百科：瑪雅文明
+      url: https://zh.wikipedia.org/wiki/瑪雅文明
+    - title: 英文維基百科：馬雅古典期崩潰
+      url: https://en.wikipedia.org/wiki/Classic_Maya_collapse
 
 - id: eu-cluny
   year: 910
@@ -584,6 +978,16 @@
     - title: 英文維基百科：基輔羅斯的基督教化
       url: https://en.wikipedia.org/wiki/Christianization_of_Kievan_Rus'
 
+- id: am-vinland
+  year: 1000
+  title: 諾斯人抵達北美洲文蘭
+  category: politics
+  importance: 3
+  desc: 紐芬蘭的蘭塞奧茲牧草地遺址證實歐洲人早於哥倫布近五百年到過美洲。
+  sources:
+    - title: 維基百科：蘭塞奧茲牧草地
+      url: https://zh.wikipedia.org/wiki/蘭塞奧茲牧草地
+
 - id: eu-schism
   year: 1054
   title: 東西教會大分裂
@@ -597,7 +1001,7 @@
   year: 1066
   title: 諾曼征服英格蘭
   category: war
-  importance: 5
+  importance: 4
   sources:
     - title: 維基百科：諾曼征服英格蘭
       url: https://zh.wikipedia.org/wiki/諾曼征服英格蘭
@@ -620,11 +1024,20 @@
     - title: 維基百科：第一次十字軍東征
       url: https://zh.wikipedia.org/wiki/第一次十字軍東征
 
+- id: sa-delhi-sultanate
+  year: 1206
+  title: 德里蘇丹國建立
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：德里蘇丹國
+      url: https://zh.wikipedia.org/wiki/德里蘇丹國
+
 - id: eu-magna-carta
   year: 1215
   title: 英格蘭大憲章
   category: politics
-  importance: 5
+  importance: 4
   sources:
     - title: 維基百科：大憲章
       url: https://zh.wikipedia.org/wiki/大憲章
@@ -639,6 +1052,18 @@
     - title: 維基百科：弗羅林
       url: https://zh.wikipedia.org/wiki/弗羅林
 
+- id: me-baghdad-fall
+  year: 1258
+  title: 蒙古滅巴格達
+  category: war
+  importance: 4
+  desc: 旭烈兀攻陷巴格達，延續五百年的阿拔斯哈里發政權終結。
+  sources:
+    - title: 維基百科：巴格達之戰（1258年）
+      url: https://zh.wikipedia.org/wiki/巴格達之戰_(1258年)
+    - title: 維基百科：旭烈兀
+      url: https://zh.wikipedia.org/wiki/旭烈兀
+
 - id: eu-dante
   year: 1265
   title: 但丁誕生
@@ -647,6 +1072,35 @@
   sources:
     - title: 維基百科：但丁·阿利吉耶里
       url: https://zh.wikipedia.org/wiki/但丁·阿利吉耶里
+
+- id: me-ottoman-founded
+  year: 1299
+  title: 鄂圖曼建國
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：鄂圖曼帝國
+      url: https://zh.wikipedia.org/wiki/鄂圖曼帝國
+
+- id: am-tenochtitlan
+  year: 1325
+  title: 阿茲特克人建特諾奇提特蘭
+  category: politics
+  importance: 3
+  sources:
+    - title: 維基百科：特諾奇提特蘭
+      url: https://zh.wikipedia.org/wiki/特諾奇提特蘭
+    - title: 維基百科：阿茲特克
+      url: https://zh.wikipedia.org/wiki/阿茲特克
+
+- id: sa-vijayanagara
+  year: 1336
+  title: 毗奢耶那伽羅王國建立
+  category: politics
+  importance: 3
+  sources:
+    - title: 維基百科：毗奢耶那伽羅帝國
+      url: https://zh.wikipedia.org/wiki/毗奢耶那伽羅帝國
 
 - id: eu-black-death
   year: 1347
@@ -668,6 +1122,25 @@
   sources:
     - title: 維基百科：漢薩同盟
       url: https://zh.wikipedia.org/wiki/漢薩同盟
+
+- id: sa-timur-delhi
+  year: 1398
+  title: 帖木兒洗劫德里
+  category: war
+  importance: 3
+  sources:
+    - title: 維基百科：帖木兒
+      url: https://zh.wikipedia.org/wiki/帖木兒
+
+- id: am-inca-expansion
+  year: 1438
+  title: 印加帝國進入擴張期
+  category: politics
+  importance: 4
+  desc: 從庫斯科向外擴張，最盛時沿安地斯山綿延四千公里。
+  sources:
+    - title: 維基百科：印加帝國
+      url: https://zh.wikipedia.org/wiki/印加帝國
 
 - id: eu-constantinople-fall
   year: 1453
@@ -700,6 +1173,26 @@
     - title: 維基百科：收復失地運動
       url: https://zh.wikipedia.org/wiki/收復失地運動
 
+- id: sa-da-gama
+  year: 1498
+  title: 達伽馬抵達卡利卡特
+  category: economy
+  importance: 4
+  desc: 繞過好望角的直航路線打通，歐洲自此直接介入印度洋貿易。
+  sources:
+    - title: 維基百科：瓦斯科·達伽馬
+      url: https://zh.wikipedia.org/wiki/瓦斯科·達伽馬
+
+- id: me-safavid
+  year: 1501
+  title: 薩非王朝建立
+  category: politics
+  importance: 3
+  desc: 定什葉派為國教，伊朗與周邊遜尼派世界的分野自此定型。
+  sources:
+    - title: 維基百科：薩非王朝
+      url: https://zh.wikipedia.org/wiki/薩非王朝
+
 - id: eu-luther
   year: 1517
   title: 馬丁路德發表《九十五條論綱》
@@ -710,6 +1203,45 @@
       url: https://zh.wikipedia.org/wiki/馬丁·路德
     - title: 維基百科：九十五條論綱
       url: https://zh.wikipedia.org/wiki/九十五條論綱
+
+- id: me-ottoman-caliphate
+  year: 1517
+  title: 鄂圖曼滅馬木留克，取得哈里發名分
+  category: politics
+  importance: 3
+  sources:
+    - title: 維基百科：馬木留克蘇丹國
+      url: https://zh.wikipedia.org/wiki/馬木留克蘇丹國
+
+- id: am-aztec-fall
+  year: 1521
+  title: 西班牙征服阿茲特克帝國
+  category: war
+  importance: 5
+  desc: 科爾特斯以數百人結合當地反阿茲特克勢力，加上天花疫情，攻陷特諾奇提特蘭。
+  sources:
+    - title: 維基百科：西班牙征服阿茲特克帝國
+      url: https://zh.wikipedia.org/wiki/西班牙征服阿茲特克帝國
+
+- id: sa-panipat-1
+  year: 1526
+  title: 第一次帕尼帕特戰役，蒙兀兒帝國建立
+  category: war
+  importance: 4
+  sources:
+    - title: 維基百科：第一次帕尼帕特之戰
+      url: https://zh.wikipedia.org/wiki/第一次帕尼帕特之戰
+    - title: 維基百科：蒙兀兒帝國
+      url: https://zh.wikipedia.org/wiki/蒙兀兒帝國
+
+- id: am-inca-fall
+  year: 1533
+  title: 西班牙征服印加帝國
+  category: war
+  importance: 5
+  sources:
+    - title: 維基百科：西班牙征服印加帝國
+      url: https://zh.wikipedia.org/wiki/西班牙征服印加帝國
 
 - id: eu-copernicus
   year: 1543
@@ -733,6 +1265,16 @@
     - title: 維基百科：特倫托會議
       url: https://zh.wikipedia.org/wiki/特倫托會議
 
+- id: am-potosi
+  year: 1545
+  title: 波托西銀礦開採
+  category: economy
+  importance: 4
+  desc: 白銀經馬尼拉大帆船流入明代中國，把美洲、歐洲與東亞綁進同一個貨幣循環。
+  sources:
+    - title: 維基百科：波托西
+      url: https://zh.wikipedia.org/wiki/波托西
+
 - id: eu-augsburg
   year: 1555
   title: 奧格斯堡和約，教隨國定
@@ -742,6 +1284,16 @@
   sources:
     - title: 維基百科：奧格斯堡和約
       url: https://zh.wikipedia.org/wiki/奧格斯堡和約
+
+- id: sa-akbar
+  year: 1556
+  title: 阿克巴即位
+  category: politics
+  importance: 4
+  desc: 廢除非穆斯林人頭稅、廣納印度教貴族，蒙兀兒的統治基礎由此奠定。
+  sources:
+    - title: 維基百科：阿克巴
+      url: https://zh.wikipedia.org/wiki/阿克巴
 
 - id: eu-armada
   year: 1588
@@ -764,6 +1316,16 @@
     - title: 維基百科：荷蘭東印度公司
       url: https://zh.wikipedia.org/wiki/荷蘭東印度公司
 
+- id: am-jamestown
+  year: 1607
+  title: 詹姆斯敦建立
+  category: politics
+  importance: 3
+  desc: 英格蘭在北美的第一個永久殖民地。
+  sources:
+    - title: 維基百科：詹姆斯敦（維吉尼亞州）
+      url: https://zh.wikipedia.org/wiki/詹姆斯敦_(維吉尼亞州)
+
 - id: eu-galileo-telescope
   year: 1609
   title: 伽利略以望遠鏡觀測天體
@@ -784,6 +1346,24 @@
     - title: 維基百科：三十年戰爭
       url: https://zh.wikipedia.org/wiki/三十年戰爭
 
+- id: am-mayflower
+  year: 1620
+  title: 五月花號抵達新英格蘭
+  category: politics
+  importance: 3
+  sources:
+    - title: 維基百科：五月花號
+      url: https://zh.wikipedia.org/wiki/五月花號
+
+- id: sa-taj-mahal
+  year: 1632
+  title: 泰姬瑪哈陵動工
+  category: culture
+  importance: 3
+  sources:
+    - title: 維基百科：泰姬瑪哈陵
+      url: https://zh.wikipedia.org/wiki/泰姬瑪哈陵
+
 - id: eu-westphalia
   year: 1648
   title: 西發里亞和約
@@ -793,6 +1373,16 @@
   sources:
     - title: 維基百科：西發里亞和約
       url: https://zh.wikipedia.org/wiki/西發里亞和約
+
+- id: me-vienna-1683
+  year: 1683
+  title: 維也納之圍失敗
+  category: war
+  importance: 4
+  desc: 鄂圖曼在中歐的擴張到此為止，此後轉為守勢。
+  sources:
+    - title: 維基百科：維也納之戰
+      url: https://zh.wikipedia.org/wiki/維也納之戰
 
 - id: eu-newton
   year: 1687
@@ -814,6 +1404,16 @@
     - title: 維基百科：1689年權利法案
       url: https://zh.wikipedia.org/wiki/1689年權利法案
 
+- id: am-slave-trade
+  year: 1690
+  title: 大西洋奴隸貿易進入高峰
+  category: economy
+  importance: 4
+  desc: 三角貿易把非洲勞動力、美洲作物與歐洲資本連成一體，前後約一千兩百萬人被販運。
+  sources:
+    - title: 維基百科：大西洋奴隸貿易
+      url: https://zh.wikipedia.org/wiki/大西洋奴隸貿易
+
 - id: eu-bank-of-england
   year: 1694
   title: 英格蘭銀行成立
@@ -823,6 +1423,15 @@
   sources:
     - title: 維基百科：英格蘭銀行
       url: https://zh.wikipedia.org/wiki/英格蘭銀行
+
+- id: sa-aurangzeb
+  year: 1707
+  title: 奧朗則布去世，蒙兀兒衰落
+  category: politics
+  importance: 3
+  sources:
+    - title: 維基百科：奧朗則布
+      url: https://zh.wikipedia.org/wiki/奧朗則布
 
 - id: eu-newcomen
   year: 1712
@@ -848,6 +1457,16 @@
     - title: 維基百科：啟蒙時代
       url: https://zh.wikipedia.org/wiki/啟蒙時代
 
+- id: sa-plassey
+  year: 1757
+  title: 普拉西戰役
+  category: war
+  importance: 4
+  desc: 英國東印度公司取得孟加拉的稅收權，從貿易公司變成統治者。
+  sources:
+    - title: 維基百科：普拉西之戰
+      url: https://zh.wikipedia.org/wiki/普拉西之戰
+
 - id: eu-watt
   year: 1769
   title: 瓦特改良蒸汽機，工業革命
@@ -868,6 +1487,24 @@
     - title: 維基百科：國富論
       url: https://zh.wikipedia.org/wiki/國富論
 
+- id: am-us-independence
+  year: 1776
+  title: 美國獨立宣言
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：美國獨立宣言
+      url: https://zh.wikipedia.org/wiki/美國獨立宣言
+
+- id: am-us-constitution
+  year: 1787
+  title: 美國憲法制定
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：美國憲法
+      url: https://zh.wikipedia.org/wiki/美國憲法
+
 - id: eu-french-revolution
   year: 1789
   title: 法國大革命
@@ -886,6 +1523,27 @@
     - title: 維基百科：拿破崙一世
       url: https://zh.wikipedia.org/wiki/拿破崙一世
 
+- id: am-haiti
+  year: 1804
+  title: 海地獨立
+  category: politics
+  importance: 4
+  desc: 史上唯一由奴隸起義建立的國家，也是拉丁美洲第一個獨立國。
+  sources:
+    - title: 維基百科：海地革命
+      url: https://zh.wikipedia.org/wiki/海地革命
+
+- id: am-latin-independence
+  year: 1810
+  title: 西班牙美洲獨立戰爭
+  category: war
+  importance: 4
+  endYear: 1825
+  desc: 西屬美洲各地接連獨立，一個橫跨三百年的殖民帝國在十餘年間瓦解。
+  sources:
+    - title: 維基百科：西班牙美洲獨立戰爭
+      url: https://zh.wikipedia.org/wiki/西班牙美洲獨立戰爭
+
 - id: eu-waterloo
   year: 1815
   title: 滑鐵盧戰役，維也納體系成形
@@ -896,6 +1554,25 @@
       url: https://zh.wikipedia.org/wiki/滑鐵盧戰役
     - title: 維基百科：維也納會議
       url: https://zh.wikipedia.org/wiki/維也納會議
+
+- id: am-mexico
+  year: 1821
+  title: 墨西哥獨立
+  category: politics
+  importance: 3
+  sources:
+    - title: 維基百科：墨西哥獨立戰爭
+      url: https://zh.wikipedia.org/wiki/墨西哥獨立戰爭
+
+- id: am-monroe
+  year: 1823
+  title: 門羅主義
+  category: politics
+  importance: 3
+  desc: 宣告歐洲不應再介入美洲事務，成為此後百餘年美國外交的基調。
+  sources:
+    - title: 維基百科：門羅主義
+      url: https://zh.wikipedia.org/wiki/門羅主義
 
 - id: eu-1848
   year: 1848
@@ -908,6 +1585,33 @@
     - title: 維基百科：共產黨宣言
       url: https://zh.wikipedia.org/wiki/共產黨宣言
 
+- id: am-gold-rush
+  year: 1848
+  title: 加利福尼亞淘金熱
+  category: economy
+  importance: 3
+  sources:
+    - title: 維基百科：加利福尼亞淘金潮
+      url: https://zh.wikipedia.org/wiki/加利福尼亞淘金潮
+
+- id: sa-rebellion-1857
+  year: 1857
+  title: 印度民族起義
+  category: war
+  importance: 4
+  sources:
+    - title: 維基百科：印度民族起義
+      url: https://zh.wikipedia.org/wiki/印度民族起義
+
+- id: sa-british-raj
+  year: 1858
+  title: 英國直轄印度
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：英屬印度
+      url: https://zh.wikipedia.org/wiki/英屬印度
+
 - id: eu-darwin
   year: 1859
   title: 達爾文《物種起源》
@@ -919,14 +1623,72 @@
     - title: 維基百科：查爾斯·達爾文
       url: https://zh.wikipedia.org/wiki/查爾斯·達爾文
 
+- id: am-civil-war
+  year: 1861
+  title: 美國南北戰爭
+  category: war
+  importance: 4
+  endYear: 1865
+  sources:
+    - title: 維基百科：南北戰爭
+      url: https://zh.wikipedia.org/wiki/南北戰爭
+
+- id: am-transcontinental
+  year: 1869
+  title: 第一條橫貫大陸鐵路通車
+  category: economy
+  importance: 3
+  sources:
+    - title: 維基百科：第一條橫貫大陸鐵路
+      url: https://zh.wikipedia.org/wiki/第一條橫貫大陸鐵路
+
+- id: me-suez
+  year: 1869
+  title: 蘇伊士運河通航
+  category: economy
+  importance: 4
+  sources:
+    - title: 維基百科：蘇伊士運河
+      url: https://zh.wikipedia.org/wiki/蘇伊士運河
+
 - id: eu-german-unification
   year: 1871
   title: 德意志帝國統一
   category: politics
-  importance: 5
+  importance: 4
   sources:
     - title: 維基百科：德意志統一
       url: https://zh.wikipedia.org/wiki/德意志統一
+
+- id: sa-congress
+  year: 1885
+  title: 印度國民大會黨成立
+  category: politics
+  importance: 3
+  sources:
+    - title: 維基百科：印度國民大會黨
+      url: https://zh.wikipedia.org/wiki/印度國民大會黨
+
+- id: am-brazil-abolition
+  year: 1888
+  title: 巴西廢除奴隸制
+  category: politics
+  importance: 3
+  desc: 美洲最後一個廢奴的國家，隔年帝制即告終結。
+  sources:
+    - title: 維基百科：巴西帝國
+      url: https://zh.wikipedia.org/wiki/巴西帝國
+    - title: 英文維基百科：黃金法
+      url: https://en.wikipedia.org/wiki/Lei_Áurea
+
+- id: am-spanish-american-war
+  year: 1898
+  title: 美西戰爭
+  category: war
+  importance: 3
+  sources:
+    - title: 維基百科：美西戰爭
+      url: https://zh.wikipedia.org/wiki/美西戰爭
 
 - id: eu-einstein
   year: 1905
@@ -939,6 +1701,18 @@
     - title: 維基百科：狹義相對論
       url: https://zh.wikipedia.org/wiki/狹義相對論
 
+- id: me-persian-oil
+  year: 1908
+  title: 波斯發現石油
+  category: economy
+  importance: 4
+  desc: 中東第一口商業油井，英波石油公司隨後成立，石油自此成為此地的地緣核心。
+  sources:
+    - title: 維基百科：英伊石油公司
+      url: https://zh.wikipedia.org/wiki/英伊石油公司
+    - title: 英文維基百科：馬斯吉德蘇萊曼
+      url: https://en.wikipedia.org/wiki/Masjed_Soleyman
+
 - id: eu-ww1
   year: 1914
   title: 第一次世界大戰爆發
@@ -949,14 +1723,54 @@
     - title: 維基百科：第一次世界大戰
       url: https://zh.wikipedia.org/wiki/第一次世界大戰
 
+- id: am-panama
+  year: 1914
+  title: 巴拿馬運河通航
+  category: economy
+  importance: 4
+  sources:
+    - title: 維基百科：巴拿馬運河
+      url: https://zh.wikipedia.org/wiki/巴拿馬運河
+
+- id: me-sykes-picot
+  year: 1916
+  title: 賽克斯-皮科協定
+  category: politics
+  importance: 4
+  desc: 英法私下劃分鄂圖曼的阿拉伯屬地，今日中東的國界大致由此而來。
+  sources:
+    - title: 維基百科：賽克斯-皮科協定
+      url: https://zh.wikipedia.org/wiki/賽克斯-皮科協定
+
 - id: eu-october-revolution
   year: 1917
   title: 俄國十月革命
   category: politics
-  importance: 5
+  importance: 4
   sources:
     - title: 維基百科：十月革命
       url: https://zh.wikipedia.org/wiki/十月革命
+
+- id: sa-amritsar
+  year: 1919
+  title: 阿姆利則慘案
+  category: politics
+  importance: 3
+  sources:
+    - title: 維基百科：阿姆利則慘案
+      url: https://zh.wikipedia.org/wiki/阿姆利則慘案
+
+- id: me-turkey
+  year: 1923
+  title: 土耳其共和國成立
+  category: politics
+  importance: 4
+  desc: 洛桑條約確立疆界，凱末爾隨即推動政教分離的世俗化改革。
+  sources:
+    - title: 維基百科：洛桑條約
+      url: https://zh.wikipedia.org/wiki/洛桑條約
+    - title: 維基百科：穆斯塔法·凱末爾·阿塔圖爾克
+      url: https://zh.wikipedia.org/wiki/穆斯塔法·凱末爾·阿塔圖爾克
 
 - id: eu-penicillin
   year: 1928
@@ -969,6 +1783,25 @@
       url: https://zh.wikipedia.org/wiki/青黴素
     - title: 維基百科：亞歷山大·弗萊明
       url: https://zh.wikipedia.org/wiki/亞歷山大·弗萊明
+
+- id: am-wall-street-1929
+  year: 1929
+  title: 華爾街股災
+  category: economy
+  importance: 4
+  sources:
+    - title: 維基百科：1929年華爾街股災
+      url: https://zh.wikipedia.org/wiki/1929年華爾街股災
+
+- id: sa-salt-march
+  year: 1930
+  title: 食鹽長征
+  category: politics
+  importance: 4
+  desc: 甘地徒步兩百餘英里到海邊製鹽，非暴力不合作運動的代表事件。
+  sources:
+    - title: 維基百科：食鹽進軍
+      url: https://zh.wikipedia.org/wiki/食鹽進軍
 
 - id: eu-ww2
   year: 1939
@@ -991,6 +1824,35 @@
     - title: 維基百科：第二次世界大戰
       url: https://zh.wikipedia.org/wiki/第二次世界大戰
 
+- id: am-trinity
+  year: 1945
+  title: 三位一體核試
+  category: science
+  importance: 4
+  desc: 人類第一次核爆試驗。
+  sources:
+    - title: 維基百科：三位一體（核試驗）
+      url: https://zh.wikipedia.org/wiki/三位一體_(核試驗)
+
+- id: sa-partition
+  year: 1947
+  title: 印巴分治與印度獨立
+  category: politics
+  importance: 5
+  desc: 一千多萬人在數月內跨界遷徙，是二十世紀規模最大的一次人口流動。
+  sources:
+    - title: 維基百科：印巴分治
+      url: https://zh.wikipedia.org/wiki/印巴分治
+
+- id: me-israel
+  year: 1948
+  title: 以色列建國
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：以色列獨立宣言
+      url: https://zh.wikipedia.org/wiki/以色列獨立宣言
+
 - id: eu-dna
   year: 1953
   title: 華生與克里克提出 DNA 雙螺旋結構
@@ -1008,6 +1870,33 @@
   sources:
     - title: 維基百科：羅馬條約
       url: https://zh.wikipedia.org/wiki/羅馬條約
+
+- id: am-apollo-11
+  year: 1969
+  title: 阿波羅十一號登月
+  category: science
+  importance: 5
+  sources:
+    - title: 維基百科：阿波羅11號
+      url: https://zh.wikipedia.org/wiki/阿波羅11號
+
+- id: sa-bangladesh
+  year: 1971
+  title: 孟加拉獨立
+  category: politics
+  importance: 3
+  sources:
+    - title: 維基百科：孟加拉國解放戰爭
+      url: https://zh.wikipedia.org/wiki/孟加拉國解放戰爭
+
+- id: me-iran-revolution
+  year: 1979
+  title: 伊朗伊斯蘭革命
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：伊朗伊斯蘭革命
+      url: https://zh.wikipedia.org/wiki/伊朗伊斯蘭革命
 
 - id: eu-berlin-wall
   year: 1989

@@ -2,7 +2,7 @@
 # （0=藍 1=橘 2=青 3=黃 4=洋紅 5=綠 6=紫 7=紅）。
 # 新增地區：在這裡加一筆，然後建 src/topics/world/<id>/periods.yaml 與 events.yaml。
 #
-# 由近而遠排列：台灣 → 日本 → 中國 → 歐洲。
+# 由近而遠排列：台灣 → 日本 → 中國 → 世界（台日中以外的其餘各地）。
 # 調整 order 會連帶換色，而且相鄰欄的顏色必須通過色盲安全距離，
 # 所以每次調整順序都要重新驗證配色（見 CLAUDE.md）。
 - id: taiwan
@@ -20,7 +20,7 @@
   subtitle: 東亞大陸
   order: 2
 
-- id: europe
-  name: 歐洲
-  subtitle: 地中海與西歐
+- id: global
+  name: 世界
+  subtitle: 歐美與亞非
   order: 3
