@@ -97,6 +97,17 @@
     - title: 維基百科：桃園機場捷運
       url: https://zh.wikipedia.org/wiki/桃園機場捷運
 
+- id: lrt-2018-tamsui
+  year: 2018
+  endYear: 2020
+  title: 淡海輕軌通車，新北首座輕軌系統
+  category: opening
+  importance: 3
+  desc: 綠山線於2018年12月23日通車，藍海線第一期於2020年11月15日跟進營運，是新北市第一套輕軌系統，全線14站，採高架與平面混合形式建置，於紅樹林、淡水兩站與台北捷運淡水信義線轉乘，服務淡海新市鎮發展需求。
+  sources:
+    - title: 維基百科：淡海輕軌
+      url: https://zh.wikipedia.org/wiki/淡海輕軌
+
 - id: mrt-2020-circular-line
   year: 2020
   title: 台北捷運環狀線第一階段通車

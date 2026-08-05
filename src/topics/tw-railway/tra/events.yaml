@@ -99,6 +99,17 @@
     - title: 維基百科：臺灣鐵路管理局
       url: https://zh.wikipedia.org/wiki/臺灣鐵路管理局
 
+- id: tra-1951-neiwan-line
+  year: 1944
+  endYear: 1951
+  title: 內灣線通車，戰後首條新建支線
+  category: opening
+  importance: 3
+  desc: 為開發新竹內山的煤礦、石灰石與林業資源，台灣電力株式會社於1944年奉命興建竹東支線，因二戰資金短缺而中止。戰後1947年新竹至竹東段重新通車，是台灣戰後第一條興建的支線鐵路；1950年延伸至合興，1951年9月11日全線通車定名內灣線。2011年新竹至竹中段完成高架電氣化，使內灣線成為台鐵唯一同時擁有電氣化與非電氣化區間的路線。
+  sources:
+    - title: 維基百科：內灣線
+      url: https://zh.wikipedia.org/wiki/內灣線
+
 - id: tra-1961-minxiong-accident
   year: 1961
   title: 民雄平交道事故，太魯閣事故前死傷最慘重的一次
@@ -110,6 +121,17 @@
       url: https://zh.wikipedia.org/wiki/平交道
     - title: 維基百科：臺鐵重大死傷事故列表
       url: https://zh.wikipedia.org/wiki/臺鐵重大死傷事故列表
+
+- id: tra-1965-shenao-line
+  year: 1965
+  endYear: 2014
+  title: 深澳線通車，貨運轉型海科館觀光線
+  category: opening
+  importance: 3
+  desc: 台鐵1965年4月8日開通瑞芳至深澳貨運線，1967年延伸至水湳洞並兼辦客運，主要運送深澳發電廠所需煤炭；其路廊部分源自日治時期運送金瓜石礦砂的金瓜石線。隨後客運業績衰退，1989年8月客貨運全面停駛，僅存的運煤業務也在2007年結束。停用多年後，為銜接國立海洋科技博物館，2014年1月9日恢復客運，同年7月與平溪線直通運行，是台灣少見「先廢後復」的成功案例。
+  sources:
+    - title: 維基百科：深澳線
+      url: https://zh.wikipedia.org/wiki/深澳線
 
 - id: tra-1979-electrification
   year: 1979
@@ -222,6 +244,16 @@
   sources:
     - title: 維基百科：普悠瑪號列車出軌事故
       url: https://zh.wikipedia.org/wiki/普悠瑪號列車出軌事故
+
+- id: tra-2020-south-link-electrification
+  year: 2020
+  title: 南迴線電氣化通車，環島鐵路電氣化最後一哩路
+  category: construction
+  importance: 4
+  desc: 2017年9月動工，2020年12月20日首航、23日正式通車，普悠瑪號與推拉式自強號等電氣化列車投入南迴線營運。至此，自1979年西部幹線電氣化以來歷經逾四十年，台灣環島鐵路網終於全線電氣化完成，柴油機車正式退出主線營運。
+  sources:
+    - title: 維基百科：南迴線
+      url: https://zh.wikipedia.org/wiki/南迴線
 
 - id: tra-2021-taroko
   year: 2021

@@ -62,6 +62,17 @@
     - title: 維基百科：平溪線
       url: https://zh.wikipedia.org/wiki/平溪線
 
+- id: jinguashi-1936-mining-line
+  year: 1933
+  endYear: 1962
+  title: 金瓜石線通車，運送金銅礦砂的輕便鐵道
+  category: opening
+  importance: 3
+  desc: 1933年日本礦業株式會社購入金瓜石礦區，興建762公釐軌距輕便鐵道運送金銅礦砂，1936年全線完工，連接水湳洞與基隆八尺門，礦砂經駁船轉運至基隆牛稠港裝船運往日本提煉，同時兼營客運。戰後由台灣金屬鑛業公司接手，1962年8月26日因路線老舊停止客運，這條台灣少見的貴金屬礦業鐵道自此走入歷史；其中瑞芳至深澳一段路廊，後來成為台鐵深澳線的雛形。
+  sources:
+    - title: 維基百科：金瓜石線
+      url: https://zh.wikipedia.org/wiki/金瓜石線
+
 - id: houtong-1934-ruisan-coal
   year: 1934
   endYear: 1990
