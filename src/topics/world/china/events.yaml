@@ -4088,6 +4088,41 @@
     - title: 維基百科：三年困難時期
       url: https://zh.wikipedia.org/wiki/三年困難時期
 
+- id: cn-lushan-conference-1959
+  year: 1959
+  title: 廬山會議，彭德懷被打成反黨集團
+  category: politics
+  importance: 4
+  desc: 大躍進造成的浮誇與饑荒已現端倪，會議原意在糾正左傾錯誤。國防部長彭德懷上「萬言書」，坦言大方向沒錯但執行躁進、比例失調，語氣其實相當節制。毛澤東卻在會議中途把調性從「糾左」轉為「反右」，認定這封信是「資產階級動搖性」與「右傾機會主義進攻」，彭德懷與黃克誠、張聞天、周小舟一併被打成「反黨集團」，彭本人直到1978年才獲平反。此後黨內再無人敢當面指出大躍進的錯誤，饑荒因此又延續了三年——一封語氣克制的諫言換來的教訓，比信件本身更長遠：講真話的成本，從此高得沒有人再想付。
+  sources:
+    - title: 維基百科：廬山會議 (1959年)
+      url: https://zh.wikipedia.org/wiki/廬山會議_(1959年)
+    - title: 維基百科：彭德懷
+      url: https://zh.wikipedia.org/wiki/彭德懷
+
+- id: cn-sino-soviet-split
+  year: 1960
+  endYear: 1969
+  title: 中蘇交惡，珍寶島事件
+  category: politics
+  importance: 4
+  desc: 赫魯曉夫的去史達林化與對美緩和路線，讓毛澤東認定蘇聯背離了革命初衷；1960年蘇聯片面撤回全部在華專家、廢止六百餘項合作合同，兩黨關係公開破裂。1969年3月，雙方軍隊在烏蘇里江珍寶島爆發武裝衝突，蘇聯戰後陳兵百萬於中蘇邊境，一度考慮對中國實施核打擊。「社會主義陣營」內部兵戎相見，逼得中國轉向尋求與美國關係正常化——三年後尼克森訪華，正是這場交惡逼出來的外交轉向。
+  sources:
+    - title: 維基百科：中蘇交惡
+      url: https://zh.wikipedia.org/wiki/中蘇交惡
+    - title: 維基百科：珍寶島事件
+      url: https://zh.wikipedia.org/wiki/珍寶島事件
+
+- id: cn-atomic-bomb
+  year: 1964
+  title: 中國第一顆原子彈試爆成功
+  category: science
+  importance: 4
+  desc: 代號「596工程」——取自1959年6月蘇聯以核裁軍談判為由中止對中國核技術援助的那個月分，中國決定自力更生研製核武器。1964年10月16日，第一顆原子彈在羅布泊試驗場成功引爆，中國成為繼美、蘇、英、法之後第五個擁有核武器的國家，也是亞洲第一個。這項成就完全是在蘇聯撤走專家、切斷技術支援之後獨力完成的——「蘇聯不給，我們自己造」，這句話後來也成了中國核工業的立業敘事。
+  sources:
+    - title: 維基百科：596工程
+      url: https://zh.wikipedia.org/wiki/596工程
+
 - id: cn-cultural-revolution
   year: 1966
   title: 文化大革命
@@ -4098,6 +4133,18 @@
   sources:
     - title: 維基百科：文化大革命
       url: https://zh.wikipedia.org/wiki/文化大革命
+
+- id: cn-lin-biao-incident
+  year: 1971
+  title: 九一三事件，林彪座機墜毀
+  category: politics
+  importance: 4
+  desc: 林彪身兼中共副主席、軍委副主席與國防部長，1969年更被寫入黨章，正式確立為毛澤東的接班人。毛澤東南巡期間暗批軍委辦事組「有人急於想當國家主席」，林彪一系警覺大禍臨頭，倉皇搭乘三叉戟專機出逃，飛越中蒙邊境後於蒙古溫都爾汗墜毀，機上九人全數罹難。官方欽定的接班人竟以叛逃墜機收場，「終身接班人」的說法從此再無人敢輕信；林彪集團隨即遭清算，客觀上也宣告了文革理論的破產，是文革由盛轉衰的轉捩點。
+  sources:
+    - title: 維基百科：九一三事件
+      url: https://zh.wikipedia.org/wiki/九一三事件
+    - title: 維基百科：林彪
+      url: https://zh.wikipedia.org/wiki/林彪
 
 - id: cn-un-seat
   year: 1971
