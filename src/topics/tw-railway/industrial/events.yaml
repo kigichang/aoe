@@ -12,6 +12,16 @@
     - title: 維基百科：阿里山林業鐵路
       url: https://zh.wikipedia.org/wiki/阿里山林業鐵路
 
+- id: alishan-1914-zhaoping
+  year: 1914
+  title: 阿里山鐵路延伸至沼平，主線全線通車
+  category: opening
+  importance: 4
+  desc: 1914年3月14日，鐵路自二萬平延伸至沼平（阿里山），主線正式竣工，至此才真正抵達阿里山林場核心，得以大規模運出檜木等珍貴林木。1918年起鐵路開始兼辦客運業務，逐漸從純粹的運材鐵道轉為兼具旅客運輸功能。
+  sources:
+    - title: 維基百科：阿里山林業鐵路
+      url: https://zh.wikipedia.org/wiki/阿里山林業鐵路
+
 - id: pingxi-1921-opening
   year: 1921
   title: 台陽礦業石底線（今平溪線）完工
@@ -32,12 +42,63 @@
     - title: 維基百科：平溪線
       url: https://zh.wikipedia.org/wiki/平溪線
 
+- id: taipingshan-1937-maoxing
+  year: 1937
+  title: 太平山林鐵生產中心遷至新太平山，索道—軌道運材系統成熟
+  category: construction
+  importance: 3
+  desc: 太平山是繼阿里山、八仙山之後台灣另一處重要林場，運材方式獨具特色：以輕便軌道銜接高山索道，交替運送木材下山。1935年仁澤、白嶺、白系等索道相繼完工，1937年生產中心由舊太平山遷至新太平山，茂興線啟用出材，運材系統自此臻於成熟。
+  sources:
+    - title: 維基百科：太平山森林鐵路
+      url: https://zh.wikipedia.org/wiki/太平山森林鐵路
+
+- id: alishan-1978-logging-end
+  year: 1978
+  title: 阿里山林場停止伐木，鐵路轉型觀光路線
+  category: closure
+  importance: 4
+  desc: 隨著森林資源枯竭與保育意識抬頭，阿里山林場伐木作業陸續停止，1978年林場專用路線停駛，鐵路的運材任務走入歷史。此後鐵路逐漸轉型為純粹服務旅客的觀光鐵道，1982年阿里山公路通車後，鐵路客運業績更是大幅萎縮。
+  sources:
+    - title: 維基百科：阿里山林業鐵路
+      url: https://zh.wikipedia.org/wiki/阿里山林業鐵路
+
+- id: taipingshan-1982-closure
+  year: 1982
+  title: 太平山林場停產，運材鐵路走入歷史
+  category: closure
+  importance: 3
+  desc: 太平山林場1982年正式停產，索道與軌道構成的運材系統隨之全面停用。1991年廢棄多年的茂興線著手修復，轉型為俗稱「蹦蹦車」的觀光小火車路線，成為太平山僅存可供遊客體驗的鐵道遺跡。
+  sources:
+    - title: 維基百科：太平山森林鐵路
+      url: https://zh.wikipedia.org/wiki/太平山森林鐵路
+
 - id: alishan-1986-zhushan
   year: 1986
   title: 阿里山林鐵祝山線通車
   category: opening
   importance: 3
   desc: 台灣海拔最高的鐵路支線，功能從運木材完全轉向看日出。
+  sources:
+    - title: 維基百科：阿里山林業鐵路
+      url: https://zh.wikipedia.org/wiki/阿里山林業鐵路
+
+- id: alishan-1999-2009-disasters
+  year: 1999
+  endYear: 2009
+  title: 921大地震與莫拉克風災接連重創阿里山林鐵
+  category: accident
+  importance: 4
+  desc: 1999年921大地震重創阿里山車站與眠月線，多處路基坍方；2009年8月莫拉克風災再度重創路網，全線出現421處毀損。天災接連侵襲讓這條百年林鐵長期柔腸寸斷，部分路段（如眠月線）此後長年無法修復，僅能分段局部通車。
+  sources:
+    - title: 維基百科：阿里山林業鐵路
+      url: https://zh.wikipedia.org/wiki/阿里山林業鐵路
+
+- id: alishan-2024-restoration
+  year: 2024
+  title: 阿里山林鐵本線歷經15年修復，全線直通復駛
+  category: opening
+  importance: 4
+  desc: 莫拉克風災重創後，嘉義至阿里山的本線分段修復：2012年嘉義—竹崎段先復駛，2014年竹崎—奮起湖段跟進，最陡峭險峻的上段工程延宕多年，直到2024年7月6日全線終於直通復駛，前後歷時15年，是阿里山林鐵有史以來最漫長的一次修復工程。
   sources:
     - title: 維基百科：阿里山林業鐵路
       url: https://zh.wikipedia.org/wiki/阿里山林業鐵路
