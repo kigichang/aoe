@@ -27,6 +27,17 @@
     - title: 維基百科：鹽水港製糖
       url: https://zh.wikipedia.org/wiki/鹽水港製糖
 
+- id: sugar-1910-qiwei-line
+  year: 1910
+  endYear: 1978
+  title: 旗尾線通車，載運旗山香蕉的百年產業鐵道
+  category: opening
+  importance: 3
+  desc: 高砂製糖會社興建的旗尾線1910年8月20日核准營業，自九曲堂通往旗尾，初設七站，1912年再延伸至竹頭角。除了運送甘蔗，也是旗山香蕉等農產品外銷的重要運輸管道，全盛時期每年載客量約30萬人次。產權歷經高砂製糖、鹽水港製糖、台灣製糖數度轉手，戰後由台糖經營，1978年全線停駛，鐵軌於1982年拆除走入歷史。
+  sources:
+    - title: 維基百科：旗尾線
+      url: https://zh.wikipedia.org/wiki/旗尾線
+
 - id: sugar-1946-taisugar
   year: 1946
   title: 台灣糖業公司成立，接收各製糖會社鐵道
