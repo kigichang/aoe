@@ -20,20 +20,64 @@
   title: 基隆至台北段通車
   category: opening
   importance: 4
-  desc: 台灣第一段實際營運的鐵路。清代這條路線坡度大、彎道急，日治初期幾乎全線改線重建。
+  desc: 台灣第一段實際營運的鐵路。1893年再延伸至新竹，清代的鐵路建設至此告一段落。這段路線坡度大、彎道急，日治初期幾乎全線改線重建。
   sources:
     - title: 維基百科：台灣鐵路
       url: https://zh.wikipedia.org/wiki/台灣鐵路
+
+- id: tra-1899-railway-bureau
+  year: 1899
+  title: 台灣總督府鐵道部成立，縱貫線南北同時開工
+  category: institution
+  importance: 4
+  desc: 民間募款興建鐵路的嘗試接連失敗後，總督府於1899年11月8日成立鐵道部，改由官方主導興建縱貫鐵路，自基隆、打狗兩端同時開工。隔年打狗至台南段率先通車，是日本統治後開通的第一條新路線，往後八年由南北兩端逐步向中部推進。
+  sources:
+    - title: 維基百科：台灣鐵路
+      url: https://zh.wikipedia.org/wiki/台灣鐵路
+    - title: 維基百科：臺灣總督府交通局鐵道部
+      url: https://zh.wikipedia.org/wiki/臺灣總督府交通局鐵道部
 
 - id: tra-1908-trunk-line
   year: 1908
   title: 縱貫線全線通車
   category: opening
   importance: 5
-  desc: 基隆到打狗（高雄）連成一氣，南北往來從數日縮短到一日之內。台灣西部的城市軸線自此定型。
+  desc: 1908年4月20日，縱貫線在台灣中部接軌全線貫通，同年10月24日於台中公園舉行「全通式」通車典禮，由日本皇族閑院宮載仁親王主持。基隆到打狗（高雄）自此連成一氣，南北往來從數日縮短到一日之內，台灣西部的城市軸線自此定型。
   sources:
     - title: 維基百科：縱貫線 (臺鐵)
       url: https://zh.wikipedia.org/wiki/縱貫線_(臺鐵)
+
+- id: tra-1922-coastal-line
+  year: 1922
+  title: 海岸線（海線）通車，縱貫線雙線紓解坡度瓶頸
+  category: opening
+  importance: 3
+  desc: 縱貫線山線（今臺中線）坡度陡峭，貨運班次一直受限於瓶頸路段。總督府另闢一條沿海岸而行、坡度平緩的「海岸線」，自竹南通往彰化，1920年12月25日先通中段至清水，1922年10月全線通車，山、海兩線自此並行紓解縱貫線運能，也構成今日縱貫線的路網雛形。
+  sources:
+    - title: 維基百科：海岸線 (臺鐵)
+      url: https://zh.wikipedia.org/wiki/海岸線_(臺鐵)
+    - title: 維基百科：臺中線
+      url: https://zh.wikipedia.org/wiki/臺中線
+
+- id: tra-1924-yilan-line
+  year: 1924
+  title: 宜蘭線全線通車，北部首度以鐵路連通東部
+  category: opening
+  importance: 4
+  desc: 1917年起自八堵、蘇澳兩端同時興建，歷經七年、克服草嶺隧道等艱鉅工程，1924年12月1日全線通車，全長93.6公里、共25座隧道。這是台灣鐵路首度將東部納入路網，往後北迴線、南迴線相繼通車，才逐步串成環島鐵路。
+  sources:
+    - title: 維基百科：宜蘭線
+      url: https://zh.wikipedia.org/wiki/宜蘭線
+
+- id: tra-1926-taitung-line
+  year: 1926
+  title: 台東線全線通車，東部自成一套762公釐窄軌路網
+  category: opening
+  importance: 4
+  desc: 花蓮港至玉里段由總督府興建，1917年完工；台東至關山段原為民營台東開拓會社所建，1919年通車。1921年官方收購民營段並接軌，1926年3月25日全線通車，全長171.8公里，採762公釐窄軌，與西部縱貫線規格不同，形成東部獨立的鐵路系統。
+  sources:
+    - title: 維基百科：臺東線
+      url: https://zh.wikipedia.org/wiki/臺東線
 
 - id: tra-1948-tra-founded
   year: 1948
@@ -67,6 +111,16 @@
     - title: 維基百科：北迴線
       url: https://zh.wikipedia.org/wiki/北迴線
 
+- id: tra-1982-taitung-widening
+  year: 1982
+  title: 台東線拓寬為1067公釐軌距，銜接北迴線
+  category: construction
+  importance: 3
+  desc: 為與1980年通車的北迴線銜接，台東線自1978年起展開拓寬工程，將原本762公釐窄軌全面改建為與西部相同的1067公釐軌距，1982年6月完工通車。東部鐵路自此可與西部列車直通行駛，不必再於花蓮換車換裝。
+  sources:
+    - title: 維基百科：臺東線
+      url: https://zh.wikipedia.org/wiki/臺東線
+
 - id: tra-1991-south-link
   year: 1991
   title: 南迴線通車，環島鐵路網成形
@@ -76,6 +130,16 @@
   sources:
     - title: 維基百科：南迴線
       url: https://zh.wikipedia.org/wiki/南迴線
+
+- id: tra-2014-electrification-east
+  year: 2014
+  title: 花東線電氣化通車
+  category: construction
+  importance: 3
+  desc: 台鐵自2009年起於花蓮、台東間展開電氣化工程，2014年6月28日於台東站舉行通車典禮，完成交流25KV電氣化。東部幹線自此大幅提升行車效率與運能，也為傾斜式電聯車普悠瑪號投入東部營運鋪路。
+  sources:
+    - title: 維基百科：臺東線
+      url: https://zh.wikipedia.org/wiki/臺東線
 
 - id: tra-2018-puyuma
   year: 2018
