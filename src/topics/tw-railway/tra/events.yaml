@@ -37,6 +37,16 @@
     - title: 維基百科：臺灣總督府交通局鐵道部
       url: https://zh.wikipedia.org/wiki/臺灣總督府交通局鐵道部
 
+- id: tra-1901-tamsui-line
+  year: 1901
+  title: 淡水線通車，台灣第一條鐵路支線
+  category: opening
+  importance: 3
+  desc: 1900年動工，1901年8月25日通車，自台北站分歧北上至淡水，全長21.2公里，是台灣第一條鐵路支線；1916年再闢新北投支線。這條路線陪伴大台北通勤與觀光近九十年，直到1988年才走入歷史。
+  sources:
+    - title: 維基百科：淡水線 (臺鐵)
+      url: https://zh.wikipedia.org/wiki/淡水線_(臺鐵)
+
 - id: tra-1908-trunk-line
   year: 1908
   title: 縱貫線全線通車
@@ -89,6 +99,18 @@
     - title: 維基百科：臺灣鐵路管理局
       url: https://zh.wikipedia.org/wiki/臺灣鐵路管理局
 
+- id: tra-1961-minxiong-accident
+  year: 1961
+  title: 民雄平交道事故，太魯閣事故前死傷最慘重的一次
+  category: accident
+  importance: 4
+  desc: 1961年7月9日，台中開往高雄的11次對號特快車，在民雄站南方平交道撞上闖越的嘉義客運班車，車上48人罹難、28人受傷。這是2021年太魯閣號事故發生前，台灣鐵路史上死傷最慘重的一次事故。事後這處平交道永久封閉，另建陸橋改道。
+  sources:
+    - title: 維基百科：平交道
+      url: https://zh.wikipedia.org/wiki/平交道
+    - title: 維基百科：臺鐵重大死傷事故列表
+      url: https://zh.wikipedia.org/wiki/臺鐵重大死傷事故列表
+
 - id: tra-1979-electrification
   year: 1979
   title: 西部幹線電氣化完成
@@ -121,6 +143,26 @@
     - title: 維基百科：臺東線
       url: https://zh.wikipedia.org/wiki/臺東線
 
+- id: tra-1988-tamsui-closure
+  year: 1988
+  title: 淡水線走入歷史，路廊改建為捷運
+  category: closure
+  importance: 4
+  desc: 1988年7月15日深夜11點20分，末班往淡水的列車自台北車站第六月台發車，翌日再加開一班紀念列車後，經營87年的淡水線正式停駛。原有路廊隨後改建為台北捷運，1997年通車的淡水線是台灣第一條由傳統鐵路直接改建而成的捷運路線。
+  sources:
+    - title: 維基百科：淡水線 (臺鐵)
+      url: https://zh.wikipedia.org/wiki/淡水線_(臺鐵)
+
+- id: tra-1991-zaoqiao-collision
+  year: 1991
+  title: 造橋列車追撞事故，山線全面雙軌化的導火線
+  category: accident
+  importance: 4
+  desc: 1991年11月15日下午，苗栗造橋鄉山線134號誌站，北上自強號因ATS/ATW安全系統故障、號誌疑似誤判，加上彎道視線受阻，煞車不及追撞上正轉轍進入副正線的南下莒光號，兩車多節車廂出軌翻覆，造成30人死亡、112人受傷。134號誌站已隨後續山線雙軌工程於1996年廢止，這起事故也加速了1998年新山線通車、舊山線走入歷史的腳步。
+  sources:
+    - title: 維基百科：造橋列車追撞事故
+      url: https://zh.wikipedia.org/wiki/造橋列車追撞事故
+
 - id: tra-1991-south-link
   year: 1991
   title: 南迴線通車，環島鐵路網成形
@@ -130,6 +172,36 @@
   sources:
     - title: 維基百科：南迴線
       url: https://zh.wikipedia.org/wiki/南迴線
+
+- id: tra-1998-old-mountain-line-closure
+  year: 1998
+  title: 舊山線廢止，新山線雙軌通車
+  category: closure
+  importance: 4
+  desc: 三義至豐原間的原臺中線（山線）坡度陡峭、單軌行車瓶頸嚴重，加上1991年造橋事故的教訓，台鐵另闢一條複線化的「新山線」。1998年9月24日最後一班列車駛過勝興車站後，行車路線正式切換至新山線，這段全長23.6公里、經勝興車站與魚藤坪斷橋等著名地標的舊山線走入歷史。
+  sources:
+    - title: 維基百科：舊山線
+      url: https://zh.wikipedia.org/wiki/舊山線
+
+- id: tra-2007-taroko-express
+  year: 2007
+  title: 太魯閣號傾斜式列車正式營運，台灣首款擺式列車
+  category: rolling-stock
+  importance: 3
+  desc: 台鐵向日立製作所採購的TEMU1000型電聯車，以「太魯閣號」之名於2007年5月8日正式營運，主跑宜蘭線、北迴線與台東線。這是台灣第一款引進的傾斜式（擺式）列車，最大可傾斜5度，過彎速度比一般車種快，大幅縮短東部幹線行車時間。
+  sources:
+    - title: 維基百科：台鐵TEMU1000型電聯車
+      url: https://zh.wikipedia.org/wiki/台鐵TEMU1000型電聯車
+
+- id: tra-2010-old-mountain-line-revival
+  year: 2010
+  title: 舊山線復駛，轉型觀光鐵道
+  category: opening
+  importance: 3
+  desc: 停用十二年後，舊山線於2010年6月5日以觀光列車形式復駛，勝興車站、魚藤坪斷橋（龍騰斷橋）等日治工程遺跡自此成為熱門鐵道旅遊景點。2015年起復駛班次縮減，僅不定期加開特定活動列車。
+  sources:
+    - title: 維基百科：舊山線
+      url: https://zh.wikipedia.org/wiki/舊山線
 
 - id: tra-2014-electrification-east
   year: 2014
@@ -170,3 +242,13 @@
   sources:
     - title: 維基百科：臺灣鐵路公司
       url: https://zh.wikipedia.org/wiki/臺灣鐵路公司
+
+- id: tra-2025-railway-museum
+  year: 2025
+  title: 國家鐵道博物館開館，舊台北機廠重生
+  category: opening
+  importance: 3
+  desc: 停用的台北機廠2015年整區指定為國定古蹟，2019年成立國家鐵道博物館籌備處，歷經數年古蹟修復工程，2025年7月31日啟動第一階段開館，開放六處古蹟建築，典藏日本JR東日本捐贈的583系電聯車等重要車輛，是台灣第一座國家級鐵道博物館。
+  sources:
+    - title: 維基百科：國家鐵道博物館
+      url: https://zh.wikipedia.org/wiki/國家鐵道博物館
