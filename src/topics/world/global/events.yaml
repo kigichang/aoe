@@ -58,6 +58,16 @@
     - title: 維基百科：薩爾貢大帝
       url: https://zh.wikipedia.org/wiki/薩爾貢大帝
 
+- id: me-ur-nammu-code
+  year: -2100
+  title: 烏爾納姆法典，現存最古老的成文法典
+  category: politics
+  importance: 3
+  desc: 比漢摩拉比法典早了三百多年，是目前已知最古老的成文法典殘篇，只留下序言與部分條文，但奠定了「以法律明文規範刑罰」的先例。
+  sources:
+    - title: 維基百科：烏爾納姆法典
+      url: https://zh.wikipedia.org/wiki/烏爾納姆法典
+
 - id: me-hammurabi
   year: -1754
   title: 漢摩拉比法典
@@ -178,6 +188,18 @@
   sources:
     - title: 維基百科：亞述
       url: https://zh.wikipedia.org/wiki/亞述
+
+- id: me-assyria-fall
+  year: -612
+  title: 尼尼微陷落，亞述帝國滅亡
+  category: war
+  importance: 3
+  desc: 米底與新巴比倫聯軍攻陷亞述首都尼尼微，稱霸兩河流域三百年的亞述帝國隨之瓦解；亞述巴尼拔畢生蒐羅的泥板圖書館意外被大火保存至今，成為後世重建兩河流域文明最重要的史料庫。
+  sources:
+    - title: 維基百科：尼尼微
+      url: https://zh.wikipedia.org/wiki/尼尼微
+    - title: 維基百科：亞述巴尼拔
+      url: https://zh.wikipedia.org/wiki/亞述巴尼拔
 
 - id: eu-solon
   year: -594
@@ -752,6 +774,16 @@
   sources:
     - title: 維基百科：卡迪西亞戰役
       url: https://zh.wikipedia.org/wiki/卡迪西亞戰役
+
+- id: me-egypt-arab-conquest
+  year: 641
+  title: 阿拉伯征服埃及
+  category: war
+  importance: 4
+  desc: 阿姆爾·伊本·阿斯率軍攻克亞歷山卓，結束近千年的希臘化與羅馬統治，埃及自此併入阿拉伯帝國版圖，逐漸伊斯蘭化與阿拉伯化。
+  sources:
+    - title: 維基百科：阿拉伯征服埃及
+      url: https://zh.wikipedia.org/wiki/阿拉伯征服埃及
 
 - id: me-umayyad
   year: 661
@@ -1654,6 +1686,17 @@
     - title: 維基百科：法國大革命
       url: https://zh.wikipedia.org/wiki/法國大革命
 
+- id: me-egypt-napoleon
+  year: 1798
+  title: 拿破崙遠征埃及
+  category: war
+  importance: 4
+  endYear: 1801
+  desc: 隨軍學者發現羅塞塔石碑，日後成為破解古埃及象形文字的關鍵；這場遠征也讓埃及第一次直接暴露在歐洲列強的競逐之下。
+  sources:
+    - title: 英文維基百科：French invasion of Egypt and Syria
+      url: https://en.wikipedia.org/wiki/French_invasion_of_Egypt_and_Syria
+
 - id: eu-napoleon
   year: 1804
   title: 拿破崙稱帝
@@ -1799,6 +1842,16 @@
   sources:
     - title: 維基百科：德意志統一
       url: https://zh.wikipedia.org/wiki/德意志統一
+
+- id: me-egypt-britain-occupation
+  year: 1882
+  title: 英國佔領埃及
+  category: politics
+  importance: 3
+  desc: 英軍鎮壓阿拉比領導的民族起義後長期駐軍，名義上埃及仍是鄂圖曼屬國，實權卻已落入英國手中；蘇伊士運河的戰略地位是背後主要動機。
+  sources:
+    - title: 英文維基百科：Anglo-Egyptian War
+      url: https://en.wikipedia.org/wiki/Anglo-Egyptian_War
 
 - id: sa-congress
   year: 1885
@@ -2013,6 +2066,18 @@
     - title: 維基百科：以色列獨立宣言
       url: https://zh.wikipedia.org/wiki/以色列獨立宣言
 
+- id: me-egypt-1952
+  year: 1952
+  title: 七月革命，納賽爾推翻埃及王室
+  category: politics
+  importance: 4
+  desc: 自由軍官組織發動政變推翻法魯克國王，隔年宣布共和；納賽爾其後掌權，成為阿拉伯民族主義的代表人物。
+  sources:
+    - title: 維基百科：7月23日革命
+      url: https://zh.wikipedia.org/wiki/7月23日革命
+    - title: 維基百科：加麥爾·阿卜杜勒·納賽爾
+      url: https://zh.wikipedia.org/wiki/加麥爾·阿卜杜勒·納賽爾
+
 - id: eu-dna
   year: 1953
   title: 華生與克里克提出 DNA 雙螺旋結構
@@ -2033,6 +2098,16 @@
       url: https://zh.wikipedia.org/wiki/穆罕默德·摩薩台
     - title: 維基百科：1953年伊朗政變
       url: https://zh.wikipedia.org/wiki/1953年伊朗政變
+
+- id: me-suez-crisis
+  year: 1956
+  title: 蘇伊士運河危機
+  category: war
+  importance: 4
+  desc: 埃及將運河收歸國有，英法出兵奪回卻在美蘇雙重壓力下撤軍，象徵英法傳統殖民強權的終結與美蘇兩強主導中東局勢的開始。
+  sources:
+    - title: 維基百科：第二次中東戰爭
+      url: https://zh.wikipedia.org/wiki/第二次中東戰爭
 
 - id: eu-rome-treaty
   year: 1957
@@ -2060,6 +2135,19 @@
   sources:
     - title: 維基百科：孟加拉國解放戰爭
       url: https://zh.wikipedia.org/wiki/孟加拉國解放戰爭
+
+- id: me-egypt-israel-peace
+  year: 1978
+  title: 戴維營協議與埃以和約，首個承認以色列的阿拉伯國家
+  category: politics
+  importance: 4
+  endYear: 1979
+  desc: 美國居中斡旋，埃及成為第一個與以色列締結和平的阿拉伯國家，換回西奈半島；沙達特因此遭阿拉伯世界孤立，1981年遇刺身亡。
+  sources:
+    - title: 維基百科：戴維營協議
+      url: https://zh.wikipedia.org/wiki/戴維營協議
+    - title: 維基百科：埃以和約
+      url: https://zh.wikipedia.org/wiki/埃以和約
 
 - id: me-iran-revolution
   year: 1979
