@@ -8,19 +8,41 @@
   title: 台灣製糖鋪設橋仔頭糖廠專用線
   category: construction
   importance: 5
-  desc: 台灣糖業鐵道之始。762 公釐軌距，原本只為運甘蔗進廠，後來長成遍布嘉南平原的路網。
+  desc: 台灣糖業鐵道之始。1906年橋仔頭糖廠先鋪設762公釐軌距的台車軌道，以水牛或人力牽引，1907年11月改用蒸汽機車牽引，原本只為運甘蔗進廠，後來長成遍布嘉南平原的路網。
   sources:
     - title: 維基百科：臺灣糖業鐵路
       url: https://zh.wikipedia.org/wiki/臺灣糖業鐵路
     - title: 維基百科：橋頭糖廠
       url: https://zh.wikipedia.org/wiki/橋頭糖廠
 
+- id: sugar-1909-passenger-start
+  year: 1909
+  title: 鹽水港製糖新營—岸內線開辦客運，糖鐵首度載客
+  category: opening
+  importance: 3
+  desc: 1909年5月20日，鹽水港製糖的新營至岸內線開始營運定期客運，是糖業鐵路最早長期經營的載客路線。原本純為運蔗而生的產業軌道，自此兼營起沿線居民的日常交通，往後數十年間陸續有其他會社跟進開辦客運。
+  sources:
+    - title: 維基百科：臺灣糖業鐵路
+      url: https://zh.wikipedia.org/wiki/臺灣糖業鐵路
+    - title: 維基百科：鹽水港製糖
+      url: https://zh.wikipedia.org/wiki/鹽水港製糖
+
 - id: sugar-1946-taisugar
   year: 1946
   title: 台灣糖業公司成立，接收各製糖會社鐵道
   category: institution
   importance: 4
-  desc: 戰前分屬台灣製糖、明治製糖等會社的路線收歸一家，糖鐵成為單一經營者的系統。
+  desc: 戰前分屬台灣製糖、明治製糖等會社的路線收歸一家，糖鐵成為單一經營者的系統。日治末期糖鐵路網一度長達近2965公里，是同期台鐵正線的十餘倍，堪稱台灣最龐大的鐵道系統。
+  sources:
+    - title: 維基百科：臺灣糖業鐵路
+      url: https://zh.wikipedia.org/wiki/臺灣糖業鐵路
+
+- id: sugar-1957-passenger-peak
+  year: 1957
+  title: 糖鐵客運全盛期，每日約六萬人次
+  category: economy
+  importance: 3
+  desc: 戰後糖鐵客運路線一度多達41條、里程約675公里，1950年代末達到全盛，每日搭乘旅客約六萬人次，是許多鄉鎮居民往返市街唯一的公共運輸。隨後公路客運興起，路線快速萎縮：1961年剩25條、1971年剩17條、1981年只剩3條。
   sources:
     - title: 維基百科：臺灣糖業鐵路
       url: https://zh.wikipedia.org/wiki/臺灣糖業鐵路
@@ -30,7 +52,7 @@
   title: 糖鐵營業線客運全面停駛
   category: closure
   importance: 4
-  desc: 公路運輸取代之後，兼營客運的糖鐵路線陸續收掉，最後一條北港線停駛。此後只剩原料線與觀光路段。
+  desc: 公路運輸取代之後，兼營客運的糖鐵路線陸續收掉，1982年8月17日最後一條北港線停駛，宣告糖鐵客運全面終止。此後糖鐵只剩原料運蔗的專用線與少數觀光路段，如今僅虎尾糖廠馬公厝線仍在運蔗。
   sources:
     - title: 維基百科：臺灣糖業鐵路
       url: https://zh.wikipedia.org/wiki/臺灣糖業鐵路
