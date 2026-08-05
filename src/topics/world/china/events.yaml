@@ -3082,6 +3082,17 @@
     - title: 維基百科：明成祖
       url: https://zh.wikipedia.org/wiki/明成祖
 
+- id: cn-renxuan-golden-age
+  year: 1425
+  endYear: 1435
+  title: 仁宣之治
+  category: politics
+  importance: 4
+  desc: 仁宗在位僅十個月即崩逝，宣宗接續其政策：停辦下西洋、減免災區租稅、裁汰冗官，又設庶吉士制度培養新進士人才，科舉並分南北卷錄取以兼顧地域公平。清修《明史》稱這段時期「官吏稱職，政治清平，倉庫常滿」，史家谷應泰更將它與周代成康之治、漢代文景之治並列，視為明朝立國六十年後的一段盛世——只是宣宗一死，繼位的英宗年僅九歲，土木堡之變的種子已在此埋下。
+  sources:
+    - title: 維基百科：仁宣之治
+      url: https://zh.wikipedia.org/wiki/仁宣之治
+
 - id: cn-tumu-crisis
   year: 1449
   title: 土木堡之變，明朝由盛轉衰
@@ -3232,6 +3243,17 @@
   sources:
     - title: 維基百科：利瑪竇
       url: https://zh.wikipedia.org/wiki/利瑪竇
+
+- id: cn-mingmo-sanan
+  year: 1615
+  endYear: 1620
+  title: 明末三大案，梃擊、紅丸、移宮
+  category: politics
+  importance: 3
+  desc: 梃擊案：萬曆四十三年，一名男子持棗木棍闖入太子朱常洛所居的慈慶宮行凶，供稱受鄭貴妃指使，牽出立儲之爭多年的恩怨；紅丸案：光宗即位僅一個月，服下鴻臚寺丞所獻的紅色藥丸後暴斃；移宮案：熹宗即位，東林黨人以李選侍不宜與新君同居宮中為由，逼其遷出乾清宮。三案表面各自獨立，骨子裡都是東林黨與宮廷、閹黨勢力角力的延伸——國本之爭打的是皇位繼承的名分，這三案打的是繼承之後誰能貼身把持皇帝。
+  sources:
+    - title: 維基百科：明末三大案
+      url: https://zh.wikipedia.org/wiki/明末三大案
 
 - id: cn-eight-banners
   year: 1615
