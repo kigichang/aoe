@@ -2159,6 +2159,28 @@
     - title: 維基百科：兩稅法
       url: https://zh.wikipedia.org/wiki/兩稅法
 
+- id: cn-jingyuan-mutiny
+  year: 783
+  endYear: 784
+  title: 涇原兵變，奉天之難
+  category: war
+  importance: 3
+  desc: 涇原節度使姚令言率五千士卒赴長安勤王，途經長安時卻只獲賞粗劣飯食，士兵譁變，擁立閒居京師的舊將朱泚為主，攻入宮城稱帝。德宗倉皇出逃奉天，僅宦官隨行護駕，被叛軍圍困月餘，史稱「奉天之難」。安史之亂結束才二十年，中央威信又一次被自家的勤王軍打得潰不成軍；平亂雖靠李晟等將領收復長安，代價卻是往後更倚重宦官掌兵——第二波宦官專權，根子就在這場兵變裡種下。
+  sources:
+    - title: 維基百科：涇原兵變
+      url: https://zh.wikipedia.org/wiki/涇原兵變
+
+- id: cn-niuli-factionalism
+  year: 808
+  endYear: 846
+  title: 牛李黨爭
+  category: politics
+  importance: 3
+  desc: 進士出身的牛僧孺、李宗閔一黨，與山東士族出身的李德裕一黨，因821年科舉舞弊案的糾紛結怨，此後近四十年輪流藉宦官與皇帝更替鬥垮對方，你上我下、你下我上。文宗嘆道「去河北賊易，去朝廷朋黨難」——藩鎮好歹能打，朝廷內部的黨爭卻無兵可平。杜牧、李商隱等一代文人被捲入其中，仕途多受牽連。這場鬥爭沒有留下一場戰役、一次政變，卻用四十年時間慢慢磨掉了中央還剩下的行政效率。
+  sources:
+    - title: 維基百科：牛李黨爭
+      url: https://zh.wikipedia.org/wiki/牛李黨爭
+
 - id: cn-yuanhe-restoration
   year: 806
   endYear: 819
