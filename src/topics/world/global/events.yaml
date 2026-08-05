@@ -635,6 +635,16 @@
     - title: 維基百科：柏拉圖學院
       url: https://zh.wikipedia.org/wiki/柏拉圖學院
 
+- id: sa-gupta-huna
+  year: 533
+  title: 嚈噠入侵敗退，笈多王朝隨後衰亡
+  category: war
+  importance: 3
+  desc: 遊牧的嚈噠人（白匈奴）一度深入北印度腹地，雖在此役被擊退，但長期戰爭掏空了帝國財政，笈多王朝此後迅速分裂為地方政權。
+  sources:
+    - title: 維基百科：嚈噠
+      url: https://zh.wikipedia.org/wiki/嚈噠
+
 - id: eu-hagia-sophia
   year: 537
   title: 聖索菲亞大教堂落成
@@ -828,6 +838,16 @@
       url: https://zh.wikipedia.org/wiki/丕平三世
     - title: 維基百科：加洛林王朝
       url: https://zh.wikipedia.org/wiki/加洛林王朝
+
+- id: me-talas
+  year: 751
+  title: 怛羅斯戰役
+  category: war
+  importance: 4
+  desc: 阿拔斯軍隊在中亞擊敗唐軍，是兩大帝國唯一一次直接交手。被俘的唐軍工匠據傳把造紙術帶進伊斯蘭世界，此後數百年間再傳入歐洲。
+  sources:
+    - title: 維基百科：怛羅斯戰役
+      url: https://zh.wikipedia.org/wiki/怛羅斯戰役
 
 - id: eu-papal-states
   year: 756
@@ -1144,6 +1164,16 @@
     - title: 維基百科：帖木兒
       url: https://zh.wikipedia.org/wiki/帖木兒
 
+- id: am-aztec-triple-alliance
+  year: 1427
+  title: 阿茲特克三邦同盟成立
+  category: politics
+  importance: 4
+  desc: 特諾奇提特蘭、特斯科科與特拉科潘三個城邦擊敗阿斯卡波察爾科後結盟，這個同盟才是後世所稱「阿茲特克帝國」的政治實體，比特諾奇提特蘭建城晚了約一百年。
+  sources:
+    - title: 維基百科：阿茲特克帝國
+      url: https://zh.wikipedia.org/wiki/阿茲特克帝國
+
 - id: am-inca-expansion
   year: 1438
   title: 印加帝國進入擴張期
@@ -1205,6 +1235,16 @@
     - title: 維基百科：薩非王朝
       url: https://zh.wikipedia.org/wiki/薩非王朝
 
+- id: me-chaldiran
+  year: 1514
+  title: 查爾迪蘭戰役，鄂圖曼擊敗薩非
+  category: war
+  importance: 3
+  desc: 鄂圖曼火器優勢擊敗薩非騎兵，戰後大致劃定遜尼與什葉兩大陣營在中東的地理分界，這條線至今仍隱約可辨。
+  sources:
+    - title: 維基百科：查爾迪蘭戰役
+      url: https://zh.wikipedia.org/wiki/查爾迪蘭戰役
+
 - id: eu-luther
   year: 1517
   title: 馬丁路德發表《九十五條論綱》
@@ -1245,6 +1285,21 @@
       url: https://zh.wikipedia.org/wiki/第一次帕尼帕特之戰
     - title: 維基百科：蒙兀兒帝國
       url: https://zh.wikipedia.org/wiki/蒙兀兒帝國
+
+- id: am-inca-civil-war
+  year: 1529
+  title: 瓦斯卡爾與阿塔瓦爾帕內戰，印加分裂
+  category: war
+  importance: 4
+  endYear: 1532
+  desc: 瓦伊納·卡帕克死後兩子爭位，內戰打了三年才由阿塔瓦爾帕勝出；隔年皮薩羅登陸時，帝國早已被戰爭掏空，無力抵抗數百名西班牙人。
+  sources:
+    - title: 維基百科：印加內戰
+      url: https://zh.wikipedia.org/wiki/印加內戰
+    - title: 維基百科：瓦斯卡爾
+      url: https://zh.wikipedia.org/wiki/瓦斯卡爾
+    - title: 維基百科：阿塔瓦爾帕
+      url: https://zh.wikipedia.org/wiki/阿塔瓦爾帕
 
 - id: am-inca-fall
   year: 1533
@@ -1306,6 +1361,16 @@
   sources:
     - title: 維基百科：阿克巴
       url: https://zh.wikipedia.org/wiki/阿克巴
+
+- id: me-lepanto
+  year: 1571
+  title: 勒班陀海戰
+  category: war
+  importance: 4
+  desc: 基督教聯合艦隊擊潰鄂圖曼海軍，終結鄂圖曼在地中海的海上優勢；但鄂圖曼半年內重建艦隊，戰略格局並未真正逆轉。
+  sources:
+    - title: 維基百科：勒班陀海戰
+      url: https://zh.wikipedia.org/wiki/勒班陀海戰
 
 - id: eu-armada
   year: 1588
@@ -1458,6 +1523,16 @@
     - title: 維基百科：蒸汽機
       url: https://zh.wikipedia.org/wiki/蒸汽機
 
+- id: sa-nadir-shah-delhi
+  year: 1739
+  title: 納迪爾沙洗劫德里，奪走孔雀寶座
+  category: war
+  importance: 4
+  desc: 這位滅了薩非王朝的波斯征服者揮軍南下，德里遭屠城，象徵蒙兀兒國力的孔雀寶座自此留在伊朗。蒙兀兒帝國的實質統治力自此再未恢復。
+  sources:
+    - title: 維基百科：納迪爾沙
+      url: https://zh.wikipedia.org/wiki/納迪爾沙
+
 - id: eu-encyclopedie
   year: 1751
   title: 《百科全書》開始出版，啟蒙運動
@@ -1478,6 +1553,16 @@
   sources:
     - title: 維基百科：普拉西之戰
       url: https://zh.wikipedia.org/wiki/普拉西之戰
+
+- id: sa-allahabad-treaty
+  year: 1765
+  title: 阿拉哈巴德條約，東印度公司取得孟加拉徵稅權
+  category: politics
+  importance: 4
+  desc: 蒙兀兒皇帝授予東印度公司孟加拉、比哈爾與奧里薩的徵稅權（迪瓦尼），公司自此從貿易商行變成實質統治者，常被視為英屬印度的真正起點。
+  sources:
+    - title: 維基百科：阿拉哈巴德條約
+      url: https://zh.wikipedia.org/wiki/阿拉哈巴德條約
 
 - id: eu-watt
   year: 1769
@@ -1744,6 +1829,16 @@
     - title: 維基百科：巴拿馬運河
       url: https://zh.wikipedia.org/wiki/巴拿馬運河
 
+- id: me-armenian-genocide
+  year: 1915
+  title: 亞美尼亞種族滅絕
+  category: war
+  importance: 4
+  desc: 鄂圖曼政府以戰爭為由，系統性驅逐並屠殺境內亞美尼亞人，估計奪走約一百五十萬人性命，是二十世紀第一場獲得「種族滅絕」定名的暴行。
+  sources:
+    - title: 維基百科：亞美尼亞種族滅絕
+      url: https://zh.wikipedia.org/wiki/亞美尼亞種族滅絕
+
 - id: me-sykes-picot
   year: 1916
   title: 賽克斯-皮科協定
@@ -1762,6 +1857,16 @@
   sources:
     - title: 維基百科：十月革命
       url: https://zh.wikipedia.org/wiki/十月革命
+
+- id: me-balfour
+  year: 1917
+  title: 貝爾福宣言
+  category: politics
+  importance: 4
+  desc: 英國政府表態支持在巴勒斯坦建立猶太人的民族家園，與英國同時對阿拉伯人的獨立承諾互相矛盾，日後以色列建國與巴勒斯坦問題的根源可回溯至此。
+  sources:
+    - title: 維基百科：貝爾福宣言
+      url: https://zh.wikipedia.org/wiki/貝爾福宣言
 
 - id: sa-amritsar
   year: 1919
@@ -1873,6 +1978,18 @@
   sources:
     - title: 維基百科：脫氧核糖核酸
       url: https://zh.wikipedia.org/wiki/脫氧核糖核酸
+
+- id: me-iran-coup
+  year: 1953
+  title: 摩薩台將石油國有化，被政變推翻
+  category: politics
+  importance: 4
+  desc: 伊朗首相摩薩台將英伊石油公司收歸國有，兩年後美英情報機構策動政變將他推翻，扶植巴列維國王親政，是冷戰期間西方介入中東政局的代表案例。
+  sources:
+    - title: 維基百科：穆罕默德·摩薩台
+      url: https://zh.wikipedia.org/wiki/穆罕默德·摩薩台
+    - title: 維基百科：1953年伊朗政變
+      url: https://zh.wikipedia.org/wiki/1953年伊朗政變
 
 - id: eu-rome-treaty
   year: 1957
