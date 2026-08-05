@@ -917,6 +917,18 @@
     - title: 維基百科：西漢
       url: https://zh.wikipedia.org/wiki/西漢
 
+- id: cn-han-xin-death
+  year: -196
+  title: 韓信之死，「成也蕭何，敗也蕭何」
+  category: politics
+  importance: 4
+  desc: 井陘之戰後不過八年，韓信便以謀反罪名被呂后誘殺於長樂宮，夷滅三族。當初月下追回這位無名小卒、力薦劉邦拜他為大將的是蕭何；如今騙他入宮受死的，同樣是蕭何——「成也蕭何，敗也蕭何」的成語即由此而來。韓信是否真有反意，後世史家多存疑，臨死前只嘆當初沒聽蒯徹勸他自立為王的話。與他同列的異姓功臣彭越、英布此後也相繼被剪除，劉邦立國時分封的異姓諸侯王，至此所剩無幾。
+  sources:
+    - title: 維基百科：韓信
+      url: https://zh.wikipedia.org/wiki/韓信
+    - title: 維基百科：彭越
+      url: https://zh.wikipedia.org/wiki/彭越
+
 - id: cn-empress-lu
   year: -195
   endYear: -180
@@ -1060,6 +1072,18 @@
   sources:
     - title: 維基百科：五銖
       url: https://zh.wikipedia.org/wiki/五銖
+
+- id: cn-nanyue-fall
+  year: -111
+  title: 南越國滅亡，百年基業歸漢
+  category: war
+  importance: 3
+  desc: 前203年，原秦將趙佗趁天下大亂於嶺南自立，建南越國，與漢維持了近百年若即若離的臣屬關係。第四代王趙興想歸附漢朝內屬，丞相呂嘉宗族在朝為官者七十餘人、深得越人信服，堅決反對，發兵殺趙興與漢使自立新君。武帝隨即發兵十萬、分五路南下，攻破番禺，南越亡，存續九十三年。趙佗當年隨蒙恬南征百越、鑿靈渠運糧的那批秦軍，繞了一整個世紀，終究還是併入了中原王朝的版圖。
+  sources:
+    - title: 維基百科：南越國
+      url: https://zh.wikipedia.org/wiki/南越國
+    - title: 維基百科：趙佗
+      url: https://zh.wikipedia.org/wiki/趙佗
 
 - id: cn-han-four-commanderies
   year: -108
@@ -1240,6 +1264,16 @@
       url: https://zh.wikipedia.org/wiki/班超
     - title: 維基百科：西域都護府
       url: https://zh.wikipedia.org/wiki/西域都護府
+
+- id: cn-baihuguan
+  year: 79
+  title: 白虎觀會議，《白虎通義》定經學正統
+  category: culture
+  importance: 3
+  desc: 章帝召集諸儒於洛陽北宮白虎觀，一連辯論一個多月，要把今文經與古文經、乃至讖緯之說整合成一套官方公認的說法——武帝獨尊儒術定的是儒學的地位，這次要定的是「儒學該怎麼解釋」。班固奉命把會議結論整理成《白虎通義》，讖緯自此與經義並列為具有法律效力的官方學說。距石渠閣會議一百多年後，這是東漢版本的「用皇帝的名義統一經義」。
+  sources:
+    - title: 維基百科：白虎觀會議
+      url: https://zh.wikipedia.org/wiki/白虎觀會議
 
 - id: cn-yanran
   year: 89
