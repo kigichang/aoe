@@ -1204,6 +1204,16 @@
     - title: 維基百科：古騰堡聖經
       url: https://zh.wikipedia.org/wiki/古騰堡聖經
 
+- id: eu-dias-cape
+  year: 1488
+  title: 迪亞士繞過好望角，找出通往印度洋的航路
+  category: science
+  importance: 3
+  desc: 葡萄牙船隊首次繞過非洲最南端，證實印度洋與大西洋相通；十年後達伽馬才真正循此航線抵達印度。
+  sources:
+    - title: 維基百科：巴爾托洛梅烏·迪亞士
+      url: https://zh.wikipedia.org/wiki/巴爾托洛梅烏·迪亞士
+
 - id: eu-columbus
   year: 1492
   title: 哥倫布抵達美洲；收復失地運動完成
@@ -1215,6 +1225,16 @@
     - title: 維基百科：收復失地運動
       url: https://zh.wikipedia.org/wiki/收復失地運動
 
+- id: eu-tordesillas
+  year: 1494
+  title: 托爾德西里亞斯條約，西葡瓜分新世界
+  category: politics
+  importance: 4
+  desc: 教宗調停下，西班牙與葡萄牙以一條子午線劃分新發現土地的勢力範圍；這條線後來讓巴西落入葡萄牙版圖，成為南美洲說葡萄牙語的由來。
+  sources:
+    - title: 維基百科：托爾德西里亞斯條約
+      url: https://zh.wikipedia.org/wiki/托爾德西里亞斯條約
+
 - id: sa-da-gama
   year: 1498
   title: 達伽馬抵達卡利卡特
@@ -1224,6 +1244,16 @@
   sources:
     - title: 維基百科：瓦斯科·達伽馬
       url: https://zh.wikipedia.org/wiki/瓦斯科·達伽馬
+
+- id: am-cabral-brazil
+  year: 1500
+  title: 卡布拉爾抵達巴西，葡萄牙宣示主權
+  category: politics
+  importance: 3
+  desc: 卡布拉爾原欲循達伽馬航線前往印度，船隊西偏意外觸及南美洲海岸；托爾德西里亞斯條約劃定的界線正好讓這塊土地歸屬葡萄牙。
+  sources:
+    - title: 維基百科：佩德羅·阿爾瓦雷斯·卡布拉爾
+      url: https://zh.wikipedia.org/wiki/佩德羅·阿爾瓦雷斯·卡布拉爾
 
 - id: me-safavid
   year: 1501
@@ -1264,6 +1294,19 @@
   sources:
     - title: 維基百科：馬木留克蘇丹國
       url: https://zh.wikipedia.org/wiki/馬木留克蘇丹國
+
+- id: eu-magellan-circumnavigation
+  year: 1519
+  title: 麥哲倫船隊完成首次環球航行
+  category: science
+  importance: 5
+  endYear: 1522
+  desc: 麥哲倫本人在菲律賓身亡，船隊由埃爾卡諾帶領完成剩餘航程，首度以實際航行證明地球是連續的海洋球體，也打通了橫越太平洋的航路。
+  sources:
+    - title: 維基百科：斐迪南·麥哲倫
+      url: https://zh.wikipedia.org/wiki/斐迪南·麥哲倫
+    - title: 維基百科：胡安·塞巴斯蒂安·埃爾卡諾
+      url: https://zh.wikipedia.org/wiki/胡安·塞巴斯蒂安·埃爾卡諾
 
 - id: am-aztec-fall
   year: 1521
