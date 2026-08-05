@@ -1392,6 +1392,19 @@
     - title: 維基百科：傷寒雜病論
       url: https://zh.wikipedia.org/wiki/傷寒雜病論
 
+- id: cn-jianan-literature
+  year: 196
+  endYear: 220
+  title: 建安文學，「建安風骨」
+  category: culture
+  importance: 3
+  desc: 曹操、曹丕、曹植父子與孔融、王粲、劉楨等「建安七子」聚於鄴下，亂世中寫下大量慷慨悲涼的詩篇——戰亂流離、生民疾苦、壯志難酬，題材直面現實而不迴避。曹丕在《典論．論文》裡把寫文章提升到「經國之大業，不朽之盛事」的高度，是中國最早的一篇文學批評專論。五言詩自此從樂府民歌轉為文人自覺的創作，後世稱這股剛健蒼涼的氣質為「建安風骨」，是唐宋詩人反覆追摹的典範之一。
+  sources:
+    - title: 維基百科：建安文學
+      url: https://zh.wikipedia.org/wiki/建安文學
+    - title: 維基百科：建安七子
+      url: https://zh.wikipedia.org/wiki/建安七子
+
 - id: cn-guandu
   year: 200
   title: 官渡之戰，曹操大破袁紹
@@ -1403,6 +1416,18 @@
       url: https://zh.wikipedia.org/wiki/官渡之戰
     - title: 維基百科：曹魏
       url: https://zh.wikipedia.org/wiki/曹魏
+
+- id: cn-bailangshan
+  year: 207
+  title: 白狼山之戰，曹操平定烏桓
+  category: war
+  importance: 3
+  desc: 烏桓在蹋頓率領下屢屢侵擾漢邊，還收留了兵敗逃亡的袁氏兄弟，威脅曹操的後方。謀士郭嘉建議趁虛遠襲，曹操從嚮導田疇帶路，繞過烏桓重兵防守的正面通道，穿越荒廢多年的西漢舊塞小徑，在白狼山與毫無防備的烏桓聯軍遭遇，張遼率先突擊，一舉斬殺蹋頓。袁尚、袁熙逃奔遼東，旋即被公孫康所殺，首級送到曹操面前——北方最後一塊心腹大患自此清除，曹操隔年便專心南下，赤壁之戰的舞台就此搭好。
+  sources:
+    - title: 維基百科：白狼山之戰
+      url: https://zh.wikipedia.org/wiki/白狼山之戰
+    - title: 維基百科：曹操
+      url: https://zh.wikipedia.org/wiki/曹操
 
 - id: cn-red-cliffs
   year: 208
@@ -1829,6 +1854,16 @@
       url: https://zh.wikipedia.org/wiki/南陳
     - title: 維基百科：陳霸先
       url: https://zh.wikipedia.org/wiki/陳霸先
+
+- id: cn-northern-zhou-buddhism-suppression
+  year: 574
+  title: 北周武帝滅佛，三武滅佛的第二次
+  category: religion
+  importance: 3
+  desc: 佛寺廣占田產、僧尼不事生產又不納賦稅，周武帝下令毀盡境內佛像經卷，勒令僧尼還俗，寺產充公分賜王公，一舉逼退約三百萬僧尼，北方寺院幾近絕跡。這是繼北魏太武帝之後第二次「滅佛」，此後唐武宗會昌年間還有第三次——三次滅佛的理由如出一轍：寺院經濟坐大到威脅國家財政與皇權，才招來鐵腕鎮壓。武帝死後繼位者隨即恢復佛教，法難並未能真正斷絕其香火。
+  sources:
+    - title: 維基百科：北周武帝滅佛
+      url: https://zh.wikipedia.org/wiki/北周武帝滅佛
 
 - id: cn-zhou-unify-north
   year: 577
