@@ -58,6 +58,19 @@
     - title: 維基百科：三皇五帝
       url: https://zh.wikipedia.org/wiki/三皇五帝
 
+- id: cn-banquan
+  year: -2700
+  title: 阪泉之戰，黃帝合炎帝部落
+  category: war
+  importance: 4
+  legendary: true
+  desc: 傳說黃帝三戰而後降服炎帝於阪泉，兩部落自此合流，才有餘力再對付東方的蚩尤——涿鹿之戰的勝利，其實是先靠這一戰把後方鞏固好。「炎黃子孫」的自稱源頭正在這裡：華夏並非單一部落憑空而來，而是兩個敵對集團合併後的產物。地點與年代和涿鹿之戰一樣眾說紛紜，未有定論。
+  sources:
+    - title: 維基百科：阪泉之戰
+      url: https://zh.wikipedia.org/wiki/阪泉之戰
+    - title: 維基百科：黃帝
+      url: https://zh.wikipedia.org/wiki/黃帝
+
 - id: cn-zhuolu
   year: -2698
   title: 黃帝敗蚩尤於涿鹿
@@ -203,6 +216,21 @@
     - title: 維基百科：少康
       url: https://zh.wikipedia.org/wiki/少康
 
+- id: cn-wanghai
+  year: -1800
+  title: 王亥服牛經商，甲骨文証其人非虛構
+  category: economy
+  importance: 3
+  legendary: true
+  desc: 商人的先祖王亥馴牛服牛，帶著牲畜到有易氏部落交易，卻被貪心的部落君主綿臣殺害奪貨；其子上甲微借河伯氏之兵復仇，滅有易而商部落自此強盛。這段先商傳說原本疑點重重——《史記》所記商王世系一度被疑古派視為後人編造，直到殷墟甲骨卜辭裡真的出現「王亥」「上甲微」受商王隆重致祭的記載，才證實這些人物確有其人，並非向壁虛構。年代難以確考，此處依夏王世系推算約略繫年。
+  sources:
+    - title: 維基百科：王亥
+      url: https://zh.wikipedia.org/wiki/王亥
+    - title: 維基百科：上甲微
+      url: https://zh.wikipedia.org/wiki/上甲微
+    - title: 維基百科：二重證據法
+      url: https://zh.wikipedia.org/wiki/二重證據法
+
 - id: cn-erlitou
   year: -1800
   endYear: -1500
@@ -288,6 +316,18 @@
   sources:
     - title: 維基百科：三星堆遺址
       url: https://zh.wikipedia.org/wiki/三星堆遺址
+
+- id: cn-wenwang-youli
+  year: -1050
+  title: 周文王被囚羑里，演周易
+  category: culture
+  importance: 4
+  desc: 西伯姬昌治岐日益強盛，為紂王所忌，囚於羑里。相傳他在獄中將八卦推演為六十四卦，成書《周易》——這部占卜之書後來被儒家奉為五經之首，注解與義理歷代累加，早已遠遠超出占卜本身。獲釋後文王獻寶疏通朝臣脫身，此後諸侯多歸附，滅商的準備工作在他手上已大致底定，武王只是完成了最後一擊。確切年代已不可考，此處約略繫於紂王在位末期、牧野之戰前數年。
+  sources:
+    - title: 維基百科：周文王
+      url: https://zh.wikipedia.org/wiki/周文王
+    - title: 維基百科：羑里城遺址
+      url: https://zh.wikipedia.org/wiki/羑里城遺址
 
 - id: cn-dixin-tyranny
   year: -1047
@@ -405,6 +445,16 @@
     - title: 維基百科：東周
       url: https://zh.wikipedia.org/wiki/東周
 
+- id: cn-zhouzheng-jiaozhi
+  year: -720
+  title: 周鄭交質，周王室與諸侯互換人質
+  category: politics
+  importance: 3
+  desc: 平王偏信虢公，鄭莊公不滿，雙方互不信任，索性交換王子與公子為質以示誠意——天子與臣屬的界線，第一次被公開拉平。犬戎破鎬京、平王東遷不過五十年，周室的權威早已名存實亡，這件事只是把大家心照不宣的事實攤在檯面上。此後鄭莊公更進一步，繻葛之戰射傷桓王，把最後一層遮羞布也扯掉了。
+  sources:
+    - title: 維基百科：周鄭交質
+      url: https://zh.wikipedia.org/wiki/周鄭交質
+
 - id: cn-xuge
   year: -707
   title: 繻葛之戰，周天子威信掃地
@@ -430,6 +480,18 @@
       url: https://zh.wikipedia.org/wiki/管仲
     - title: 維基百科：葵丘之會
       url: https://zh.wikipedia.org/wiki/葵丘之會
+
+- id: cn-hongshui
+  year: -638
+  title: 泓水之戰，宋襄公「仁義之師」慘敗
+  category: war
+  importance: 3
+  desc: 宋襄公與楚軍隔泓水對峙，屬下勸他趁楚軍渡河未畢或列陣未成時出擊，襄公兩次拒絕，堅持等楚軍從容列陣完畢才正面交戰，理由是「不鼓不成列」的古禮不可廢——結果宋軍大敗，襄公自己也傷重不治。這場敗仗後來被寫成教科書式的反面教材，「宋襄之仁」成為食古不化的代稱；楚國自此勢力直逼中原，直到晉文公崛起才被遏止。
+  sources:
+    - title: 維基百科：泓水之戰
+      url: https://zh.wikipedia.org/wiki/泓水之戰
+    - title: 維基百科：宋襄公
+      url: https://zh.wikipedia.org/wiki/宋襄公
 
 - id: cn-chengpu
   year: -632
@@ -475,6 +537,18 @@
     - title: 維基百科：孔子
       url: https://zh.wikipedia.org/wiki/孔子
 
+- id: cn-mixing
+  year: -546
+  title: 向戌弭兵，晉楚均勢下的和平會盟
+  category: politics
+  importance: 3
+  desc: 宋國大夫向戌奔走晉楚之間促成弭兵，十四國會於宋都西門外，約定「晉楚之從，交相見」——原本依附晉國或楚國的中小諸侯，此後要同時朝貢兩個霸主。會場一度殺氣騰騰，楚人甚至衣內藏甲準備動武，最終仍勉強締約。晉楚爭霸打了近百年，第一次有國家出面把戰爭談成了分贓，代價卻是由夾在中間的小國一起承擔。
+  sources:
+    - title: 維基百科：弭兵之盟
+      url: https://zh.wikipedia.org/wiki/弭兵之盟
+    - title: 維基百科：向戌
+      url: https://zh.wikipedia.org/wiki/向戌
+
 - id: cn-zichan-code
   year: -536
   title: 子產鑄刑書，成文法公布
@@ -498,6 +572,18 @@
       url: https://zh.wikipedia.org/wiki/孫武
     - title: 維基百科：孫子兵法
       url: https://zh.wikipedia.org/wiki/孫子兵法
+
+- id: cn-boju
+  year: -506
+  title: 柏舉之戰，吳軍破郢
+  category: war
+  importance: 3
+  desc: 吳王闔閭以孫武、伍子胥為將，繞道奇襲，在柏舉大破楚軍主力，隨即長驅直入攻陷楚都郢城。伍子胥的父兄多年前被楚平王所殺，相傳他入郢後掘墓鞭屍以雪恨——但這段情節不見於較早的史料，學者多疑為後世渲染。楚國雖賴秦國出兵相救而復國，但一度亡國的震撼讓中原第一次見識到孫武兵法的威力，也讓吳國躍居春秋末期的新強權。
+  sources:
+    - title: 維基百科：柏舉之戰
+      url: https://zh.wikipedia.org/wiki/柏舉之戰
+    - title: 維基百科：伍子胥
+      url: https://zh.wikipedia.org/wiki/伍子胥
 
 - id: cn-laozi
   year: -500
@@ -545,6 +631,30 @@
     - title: 維基百科：李悝
       url: https://zh.wikipedia.org/wiki/李悝
 
+- id: cn-wuqi-reform
+  year: -386
+  endYear: -381
+  title: 吳起變法
+  category: politics
+  importance: 3
+  desc: 吳起相楚，廢除貴族三代以上的世襲爵祿、把疏遠宗室遷去邊地開墾，裁汰冗官、把省下的俸祿用於練兵，短短數年間讓楚國國力大振。楚悼王一死，被削權的貴族們立刻發難，吳起逃無可逃，撲在悼王遺體上求庇，行刺者亂箭齊發，連屍體也一併射穿——楚肅王繼位後依「傷王屍者夷三族」的法辦了七十餘家，變法的成果卻沒能保住多久。李悝變法在魏、商鞅變法在秦，吳起這一次在楚，是戰國前期第三場、也是最早夭折的一場變法。
+  sources:
+    - title: 維基百科：吳起變法
+      url: https://zh.wikipedia.org/wiki/吳起變法
+    - title: 維基百科：吳起
+      url: https://zh.wikipedia.org/wiki/吳起
+
+- id: cn-jixia
+  year: -374
+  endYear: -284
+  title: 稷下學宮，百家爭鳴的學術中心
+  category: culture
+  importance: 4
+  desc: 田齊桓公在國都臨淄稷門外設館養士，宣王時期擴充到極盛，鄒衍、淳于髡、田駢、慎到、荀子等各家學者齊聚一堂，「不治而議論」——不必任官治事，專職講學辯論。儒、道、法、名、陰陽諸家在此交鋒論辯，是諸子百家真正碰撞、互相激盪的地方，也是中國最早具規模的官辦高等學府。五國伐齊後齊國元氣大傷，學宮隨之衰落，但它留下的論辯風氣早已滲進了整個戰國思想界。
+  sources:
+    - title: 維基百科：稷下學宮
+      url: https://zh.wikipedia.org/wiki/稷下學宮
+
 - id: cn-shang-yang
   year: -356
   title: 商鞅變法
@@ -554,6 +664,18 @@
   sources:
     - title: 維基百科：商鞅變法
       url: https://zh.wikipedia.org/wiki/商鞅變法
+
+- id: cn-guiling
+  year: -353
+  title: 桂陵之戰，圍魏救趙
+  category: war
+  importance: 3
+  desc: 魏軍圍攻趙都邯鄲，齊將田忌採孫臏之策，不直接救趙，反而進攻防務空虛的魏都大梁，魏將龐涓被迫回師，齊軍在桂陵設伏截擊，大破魏軍。「批亢搗虛」——避實擊虛、攻其必救——自此成為兵法裡的經典戰略，「圍魏救趙」也成了此後兩千多年反覆被引用的成語。孫臏與龐涓這對同門的較量還沒完，十一年後的馬陵之戰才是真正的了結。
+  sources:
+    - title: 維基百科：桂陵之戰
+      url: https://zh.wikipedia.org/wiki/桂陵之戰
+    - title: 維基百科：孫臏
+      url: https://zh.wikipedia.org/wiki/孫臏
 
 - id: cn-maling
   year: -341
