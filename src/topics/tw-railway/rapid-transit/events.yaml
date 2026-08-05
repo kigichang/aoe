@@ -14,35 +14,98 @@
     - title: 維基百科：文湖線
       url: https://zh.wikipedia.org/wiki/文湖線
 
+- id: mrt-1997-tamsui-line
+  year: 1997
+  title: 淡水線通車，首條高運量捷運路線
+  category: opening
+  importance: 4
+  desc: 1997年3月28日淡水線通車，是台北捷運第一條高運量系統路線，運能遠高於木柵線採用的中運量膠輪系統。往後陸續與新店線、信義線串連為今日的淡水信義線，是全台使用人次最高的捷運路線之一。
+  sources:
+    - title: 維基百科：淡水信義線
+      url: https://zh.wikipedia.org/wiki/淡水信義線
+
+- id: mrt-2000-bannan-line
+  year: 2000
+  title: 板南線全線通車，台北捷運形成十字路網
+  category: opening
+  importance: 4
+  desc: 1999年12月龍山寺至市政府段先行通車，2000年12月30日板南線全線貫通，與同日通車的南港線相接，加上先前的淡水線、新店線，台北捷運路網首度連成貫穿東西、南北的十字骨幹，路網總長增至約56公里。
+  sources:
+    - title: 維基百科：板南線
+      url: https://zh.wikipedia.org/wiki/板南線
+
 - id: hsr-2007-opening
   year: 2007
   title: 台灣高鐵通車
   category: opening
   importance: 5
-  desc: 台北到高雄縮短到一個半小時，西部走廊變成一日生活圈。這是縱貫線通車之後對城際移動影響最大的一次。
+  desc: 1998年政府與台灣高速鐵路聯盟簽約，採BOT模式興建，1999年動工，2007年1月5日板橋—左營段先行通車，同年3月2日全線通車，台北到高雄縮短到一個半小時，西部走廊變成一日生活圈，這是縱貫線通車之後對城際移動影響最大的一次；通車後西部國內航線急遽萎縮，2012年起台北—高雄航線一度成為僅存的西部幹線航班。
   sources:
     - title: 維基百科：台灣高鐵
       url: https://zh.wikipedia.org/wiki/台灣高鐵
 
 - id: mrt-2008-kaohsiung
   year: 2008
-  title: 高雄捷運紅線通車
+  title: 高雄捷運紅線、橘線通車
   category: opening
   importance: 4
-  desc: 台北以外的第一套捷運系統，南台灣的都會軌道網自此起步。
+  desc: 台北以外的第一套捷運系統。2008年3月9日紅線（橋頭火車站—小港）先行通車，同年9月14日橘線（哈瑪星—大寮）跟進通車，兩線在美麗島站交會成十字路網，南台灣的都會軌道網自此起步。
   sources:
     - title: 維基百科：高雄捷運紅線
       url: https://zh.wikipedia.org/wiki/高雄捷運紅線
+    - title: 維基百科：高雄捷運橘線
+      url: https://zh.wikipedia.org/wiki/高雄捷運橘線
+
+- id: mrt-2014-songshan-line
+  year: 2014
+  title: 松山線通車，台北捷運原始路網完成
+  category: opening
+  importance: 4
+  desc: 繼2013年信義線通車後，2014年11月15日松山線通車，銜接新店線成為松山新店線，台北捷運自1996年首條路線通車以來規劃的「原始設計路網」至此全數完成，路線總長突破130公里。
+  sources:
+    - title: 維基百科：松山新店線
+      url: https://zh.wikipedia.org/wiki/松山新店線
+
+- id: lrt-2015-kaohsiung
+  year: 2015
+  endYear: 2024
+  title: 高雄輕軌通車，全台第一條現代輕軌
+  category: opening
+  importance: 3
+  desc: 2013年6月動工，2015年10月16日第一階段（籬仔內—哈瑪星）通車，是全台最早營運的現代輕軌系統。2024年1月1日第二階段完工，全線繞成一個環狀路網，全長22.1公里、38站，並在哈瑪星站接橘線、於籬仔內、愛河之心站可轉乘紅線。
+  sources:
+    - title: 維基百科：高雄環狀輕軌
+      url: https://zh.wikipedia.org/wiki/高雄環狀輕軌
+
+- id: hsr-2015-restructuring
+  year: 2015
+  title: 台灣高鐵公司改革，BOT時代告終
+  category: institution
+  importance: 3
+  desc: 高鐵通車後長期虧損，實際運量遠低於當初BOT財務規劃預期的每日24萬人次，公司財務瀕臨破產。2015年立法院通過改革方案，政府大舉注資成為最大股東，同年7月完成合約修訂，正式終結長達17年的BOT民間興建營運模式，轉為「國有民營」。
+  sources:
+    - title: 維基百科：台灣高鐵
+      url: https://zh.wikipedia.org/wiki/台灣高鐵
 
 - id: mrt-2017-airport
   year: 2017
   title: 桃園機場捷運通車
   category: opening
   importance: 3
-  desc: 台北車站直達桃園機場，籌備超過二十年。
+  desc: 1996年起規劃以BOT模式興建，2002年民間特許業者長生國際與政府終止合約，BOT模式失敗，政府收回改為公務預算自建，2006年動工。原訂2010年通車，因林口台地坡度陡峭、隧道與高架橋工程複雜，六度延宕，直到2017年3月2日才正式通車，總經費暴增至新台幣1,277億元，台北車站終於能直達桃園機場，籌備超過二十年。
   sources:
     - title: 維基百科：桃園機場捷運
       url: https://zh.wikipedia.org/wiki/桃園機場捷運
+
+- id: mrt-2020-circular-line
+  year: 2020
+  title: 台北捷運環狀線第一階段通車
+  category: opening
+  importance: 3
+  desc: 2020年1月31日環狀線大坪林至新北產業園區段通車，是台北捷運路網首度跳脫市中心放射狀路線、改採環繞新北市郊區串連既有路線的骨幹，也是台灣第一條中運量環狀捷運系統。
+  sources:
+    - title: 維基百科：環狀線 (台北都會區)
+      url: https://zh.wikipedia.org/wiki/環狀線_(台北都會區)
 
 - id: mrt-2021-taichung
   year: 2021
