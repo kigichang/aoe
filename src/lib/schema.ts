@@ -134,6 +134,17 @@ export const eventSchema = z
      * 圖釘畫在精確的 y 上，本身就是在宣稱一個資料撐不起的精度。
      */
     legendary: z.boolean().optional(),
+    /**
+     * 真實估計年代早於時間軸起點（`MIN_YEAR`）時使用。`year` 欄位一律維持
+     * 夾住後的值（世界史目前是 -3000），縱軸位置的不變式不受影響 ——
+     * `actualYear` 純粹是給顯示層多帶一個更精確的數字，不參與任何座標計算。
+     *
+     * 只在真的被時間軸起點截斷時才填。像龍山文化雖然也卡在 -3000，
+     * 但那是它本來的分期就從西元前 3000 年算起，不是被截斷，就不該填這個欄位——
+     * `data.ts` 的 `assertActualYearBeforeMinYear` 會擋住 `actualYear >= MIN_YEAR`
+     * 這種填錯的情況。
+     */
+    actualYear: year.optional(),
     /** 這筆資料的依據，供讀者查證 */
     sources: z.array(sourceSchema).min(1).optional(),
     /** 延伸閱讀。跟 sources 語意不同，UI 也分開呈現 */

@@ -7,20 +7,24 @@
 
 - id: me-sumer
   year: -3000
+  actualYear: -3200
   title: 蘇美城邦與楔形文字
   category: culture
   importance: 5
-  desc: 已知最早的文字系統。實際起源早於西元前 3000 年，此處為時間軸起點所截。
+  desc: 已知最早的文字系統，最早的楔形文字泥版出土於烏魯克古城。
   sources:
     - title: 維基百科：蘇美爾
       url: https://zh.wikipedia.org/wiki/蘇美爾
+    - title: 維基百科：楔形文字
+      url: https://zh.wikipedia.org/wiki/楔形文字
 
 - id: me-egypt-unified
   year: -3000
+  actualYear: -3100
   title: 埃及第一王朝，上下埃及統一
   category: politics
   importance: 5
-  desc: 已知最早的領土型國家。實際約在西元前 3100 年，此處為時間軸起點所截。
+  desc: 已知最早的領土型國家。
   sources:
     - title: 維基百科：埃及第一王朝
       url: https://zh.wikipedia.org/wiki/埃及第一王朝

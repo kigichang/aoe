@@ -272,6 +272,25 @@ function assertInRange(items: { id: string; from: number; to: number }[], where:
 }
 
 /**
+ * `actualYear`（真實估計年代）只有在事件真的被時間軸起點截斷時才有意義，
+ * 也就是必須早於 `MIN_YEAR`。沒有這道防護的話，日後有人手滑填了一個
+ * 不早於起點的 `actualYear`，DetailPanel 會印出一句自相矛盾的提示
+ * （「實際約西元前 2000 年，此處為時間軸起點所截」但起點是 -3000），
+ * 而且不會有任何報錯。
+ */
+function assertActualYearBeforeMinYear(events: HistEvent[], where: string) {
+  const { minYear } = TIMELINE
+  for (const e of events) {
+    if (e.actualYear !== undefined && e.actualYear >= minYear) {
+      throw new Error(
+        `${where}："${e.id}" 的 actualYear (${e.actualYear}) 沒有早於時間軸起點 ` +
+          `${minYear}，不需要（或不應該）填這個欄位。`,
+      )
+    }
+  }
+}
+
+/**
  * 事件的 category 必須在當前主題的類別表裡。
  *
  * 類別是主題自訂的，schema 那邊只能驗到 string，所以合法性在這裡擋。
@@ -300,6 +319,7 @@ export const REGIONS: Region[] = parse(regionSchema, regionEntry[1], regionEntry
     assertUniqueIds(events, `${where}/events.yaml`)
     assertNoOverlap(periods, where)
     assertKnownCategory(events, `${where}/events.yaml`)
+    assertActualYearBeforeMinYear(events, `${where}/events.yaml`)
     assertInRange(
       periods.map((p) => ({ id: p.id, from: p.start, to: p.end })),
       `${where}/periods.yaml`,

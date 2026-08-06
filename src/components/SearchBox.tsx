@@ -100,6 +100,11 @@ export function SearchBox({ all, onPick }: Props) {
                 className={`search-hit r${hit.slot % 8}${i === active ? ' is-active' : ''}`}
                 onMouseEnter={() => setActive(i)}
                 onClick={() => pick(hit)}
+                title={
+                  hit.event.actualYear !== undefined
+                    ? `${fmtYear(hit.event.year)}（實際約${fmtYear(hit.event.actualYear)}）`
+                    : undefined
+                }
               >
                 <span className="glyph" aria-hidden="true">
                   {CATEGORIES[hit.event.category].glyph}

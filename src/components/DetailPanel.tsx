@@ -1,6 +1,6 @@
 import { CATEGORIES } from '../lib/data'
 import type { HistEvent, Region } from '../lib/schema'
-import { fmtRange } from '../lib/scale'
+import { fmtRange, fmtYearLong } from '../lib/scale'
 
 interface Props {
   event: HistEvent
@@ -25,7 +25,15 @@ export function DetailPanel({ event, region, slot, concurrent, onClose, onSelect
         {region.name}・{CATEGORIES[event.category].label}
       </div>
       <h2>{event.title}</h2>
-      <p className="detail-date">{fmtRange(event.year, event.endYear)}</p>
+      <p className="detail-date">
+        {fmtRange(event.year, event.endYear)}
+        {event.actualYear !== undefined && (
+          <span className="detail-date-note">
+            {' '}
+            （實際約{fmtYearLong(event.actualYear)}，此處為時間軸起點所截）
+          </span>
+        )}
+      </p>
       {event.desc && <p className="detail-desc">{event.desc}</p>}
       {event.links && (
         <p className="detail-links">
