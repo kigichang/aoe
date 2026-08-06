@@ -1,5 +1,5 @@
 import { CATEGORIES } from '../lib/data'
-import { fmtYear, yearToY } from '../lib/scale'
+import { displayYear, fmtYear, yearToY } from '../lib/scale'
 import type { PlacedEvent } from '../lib/layout'
 
 /** 圖釘中心距離事件欄左緣的距離，引線要對齊到這裡 */
@@ -20,12 +20,9 @@ export function EventMark({ placed, ppy, selected, onSelect }: Props) {
   const shifted = labelY - y > 2
   // 傳說事件的年份是後世追記的，畫成虛線半透明，讓人不必點開就看得出來
   const soft = event.legendary ? ' is-legendary' : ''
-  // 年份被時間軸起點截斷時，圖釘本身不變（避免影響 layout.ts 的寬度計算），
-  // 只在 tooltip／螢幕閱讀器文字裡多帶一句真實年代
-  const yearLabel =
-    event.actualYear !== undefined
-      ? `${fmtYear(event.year)}（實際約${fmtYear(event.actualYear)}）`
-      : fmtYear(event.year)
+  // 圖釘畫在哪裡（y）永遠是 event.year 算的，跟這裡的文字顯示無關 ——
+  // 文字一律用 actualYear（若有），讀者看到的數字才是真實年代
+  const yearLabel = fmtYear(displayYear(event))
 
   // 只畫圖釘：標籤被擠掉了，但年份位置還是要標出來
   if (dotOnly) {
@@ -61,17 +58,15 @@ export function EventMark({ placed, ppy, selected, onSelect }: Props) {
         style={{ top: labelY - HALF_ROW }}
         onClick={() => onSelect(event.id)}
         aria-current={selected || undefined}
-        title={event.actualYear !== undefined ? yearLabel : undefined}
       >
         <span className="glyph" aria-hidden="true">
           {cat.glyph}
         </span>
-        <span className="mark-year">{fmtYear(event.year)}</span>
+        <span className="mark-year">{yearLabel}</span>
         <span className="mark-title">{event.title}</span>
         <span className="sr-only">
           （{cat.label}
-          {event.legendary ? '，傳說年代' : ''}
-          {event.actualYear !== undefined ? `，實際約${fmtYear(event.actualYear)}` : ''}）
+          {event.legendary ? '，傳說年代' : ''}）
         </span>
       </button>
     </>

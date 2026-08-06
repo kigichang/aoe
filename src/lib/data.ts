@@ -273,10 +273,11 @@ function assertInRange(items: { id: string; from: number; to: number }[], where:
 
 /**
  * `actualYear`（真實估計年代）只有在事件真的被時間軸起點截斷時才有意義，
- * 也就是必須早於 `MIN_YEAR`。沒有這道防護的話，日後有人手滑填了一個
- * 不早於起點的 `actualYear`，DetailPanel 會印出一句自相矛盾的提示
- * （「實際約西元前 2000 年，此處為時間軸起點所截」但起點是 -3000），
- * 而且不會有任何報錯。
+ * 也就是必須早於 `MIN_YEAR`。`displayYear()` 只要看到 `actualYear` 就會
+ * 拿它取代 `year` 印在畫面上，但圖釘的 y 座標永遠是照 `year` 算的 ——
+ * 沒有這道防護的話，日後有人手滑填了一個不早於起點的 `actualYear`
+ * （例如 -2000），圖釘會畫在 `year`（-3000）的位置，文字卻印著 -2000，
+ * 兩者對不上而且不會有任何報錯，比截斷本身更誤導。
  */
 function assertActualYearBeforeMinYear(events: HistEvent[], where: string) {
   const { minYear } = TIMELINE
@@ -337,3 +338,12 @@ export const REGIONS: Region[] = parse(regionSchema, regionEntry[1], regionEntry
   })
 
 assertUniqueIds(REGIONS, `${TOPIC_ID}/regions.yaml`)
+
+/**
+ * 當前主題裡有沒有任何事件被時間軸起點截斷（見 `actualYear`）。
+ * `Axis.tsx` 用來決定要不要在 `MIN_YEAR` 那一格刻度加 `~`——
+ * 沒有任何事件被截斷的主題（例如 tw-railway）不該無緣無故冒出一個 `~`。
+ */
+export const HAS_TRUNCATED_EVENTS = REGIONS.some((r) =>
+  r.events.some((e) => e.actualYear !== undefined),
+)

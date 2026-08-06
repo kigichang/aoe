@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { CATEGORIES } from '../lib/data'
-import { fmtYear } from '../lib/scale'
+import { displayYear, fmtYear } from '../lib/scale'
 import { search, type Hit, type Indexed } from '../lib/search'
 
 interface Props {
@@ -100,16 +100,11 @@ export function SearchBox({ all, onPick }: Props) {
                 className={`search-hit r${hit.slot % 8}${i === active ? ' is-active' : ''}`}
                 onMouseEnter={() => setActive(i)}
                 onClick={() => pick(hit)}
-                title={
-                  hit.event.actualYear !== undefined
-                    ? `${fmtYear(hit.event.year)}（實際約${fmtYear(hit.event.actualYear)}）`
-                    : undefined
-                }
               >
                 <span className="glyph" aria-hidden="true">
                   {CATEGORIES[hit.event.category].glyph}
                 </span>
-                <span className="search-hit-year">{fmtYear(hit.event.year)}</span>
+                <span className="search-hit-year">{fmtYear(displayYear(hit.event))}</span>
                 <span className="search-hit-title">{hit.event.title}</span>
                 <span className="search-hit-meta">
                   {hit.region.name}

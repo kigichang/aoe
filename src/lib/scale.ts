@@ -51,6 +51,14 @@ export const fmtRange = (start: number, end?: number) =>
     ? fmtYearLong(start)
     : `${fmtYearLong(start)} – ${fmtYear(end)}`
 
+/**
+ * 顯示一律用 `actualYear`（若有），`year` 只留給 `yearToY` 之類的座標計算 ——
+ * 兩者分工：一個決定畫在哪裡，一個決定文字寫什麼，讀者看到的數字永遠是
+ * 真實年代，不會在同一行看到兩個不同的年份互相打架。
+ */
+export const displayYear = (event: { year: number; actualYear?: number }) =>
+  event.actualYear ?? event.year
+
 const TICK_STEPS = [1, 5, 10, 25, 50, 100, 250, 500, 1000]
 
 /** 挑一個讓刻度間距至少 targetPx 的最小級距。 */

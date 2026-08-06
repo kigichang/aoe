@@ -652,11 +652,6 @@ button {
   color: var(--muted);
   font-variant-numeric: tabular-nums;
 }
-/* 年份被時間軸起點截斷時的真實年代提示，斜體與 legendary 的年份呼應，
-   但不共用 class —— 兩者語意不同（截斷 vs 傳說），沒必要疊在一起判斷。 */
-.detail-date-note {
-  font-style: italic;
-}
 .detail-desc {
   margin: 10px 0 0;
   font-size: 13px;
