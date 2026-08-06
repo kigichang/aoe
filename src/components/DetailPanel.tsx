@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import { CATEGORIES } from '../lib/data'
 import type { HistEvent, Region } from '../lib/schema'
 import { displayYear, fmtRange } from '../lib/scale'
@@ -13,8 +14,16 @@ interface Props {
 }
 
 export function DetailPanel({ event, region, slot, concurrent, onClose, onSelect }: Props) {
+  const detailRef = useRef<HTMLElement>(null)
+
+  // 換一則事件時面板整個內容都變了，捲動位置卻是舊的 —— 尤其從「同時期」清單
+  // 點下去時，使用者本來就捲到清單那段，不重置的話新事件的標題與描述會被卡在畫面外。
+  useEffect(() => {
+    detailRef.current?.scrollTo({ top: 0 })
+  }, [event.id])
+
   return (
-    <aside className="detail" aria-label="事件詳情">
+    <aside className="detail" aria-label="事件詳情" ref={detailRef}>
       <div className="detail-header">
         <button type="button" className="detail-close" onClick={onClose} aria-label="關閉">
           ×

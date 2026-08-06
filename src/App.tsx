@@ -167,6 +167,45 @@ export default function App() {
     return { canvasWidth: width, columnWidth: (width - AXIS_W) / count }
   }, [viewportWidth, shownRegions.length])
 
+  /**
+   * 「同時期」清單點的事件本來就在資料裡，不用像搜尋那樣調 ppy／解篩選 ——
+   * 只是它的地區欄或年份可能被捲到目前的可視範圍外（凍結的年代軸／欄位標題
+   * 各自佔掉一塊，可視範圍不是整個 .scroller）。只在真的看不到時才捲，
+   * 捲動幅度取最小必要距離，不用 scrollToYear 那種置中對齊。
+   */
+  const selectConcurrent = useCallback(
+    (id: string) => {
+      const el = scrollRef.current
+      const found = ALL_EVENTS.find((x) => x.event.id === id)
+      if (el && found) {
+        const { event, region } = found
+        const index = shownRegions.findIndex((x) => x.region.id === region.id)
+        let nextLeft = el.scrollLeft
+        if (index !== -1) {
+          const colLeft = AXIS_W + index * columnWidth
+          const colRight = colLeft + columnWidth
+          const viewLeft = el.scrollLeft + AXIS_W
+          const viewRight = el.scrollLeft + el.clientWidth
+          if (colLeft < viewLeft) nextLeft = colLeft - AXIS_W
+          else if (colRight > viewRight) nextLeft = colRight - el.clientWidth
+        }
+
+        const y = yearToY(event.year, ppy)
+        const viewTop = el.scrollTop + HEAD_H
+        const viewBottom = el.scrollTop + el.clientHeight
+        let nextTop = el.scrollTop
+        if (y < viewTop) nextTop = y - HEAD_H
+        else if (y > viewBottom) nextTop = y - el.clientHeight
+
+        if (nextLeft !== el.scrollLeft || nextTop !== el.scrollTop) {
+          el.scrollTo({ left: nextLeft, top: nextTop, behavior: 'smooth' })
+        }
+      }
+      setSelectedId(id)
+    },
+    [shownRegions, columnWidth, ppy],
+  )
+
   // 欄位夠寬就把標籤排成兩欄。單欄放不下時標籤會被往下推，
   // 推擠一累積就會讓事件順序看起來是錯的，多開一欄比縮小位移上限有效得多。
   const laneCount = Math.min(MAX_LANES, Math.max(1, Math.floor(columnWidth / MIN_LANE_W)))
@@ -423,7 +462,7 @@ export default function App() {
             slot={selected.slot}
             concurrent={concurrent}
             onClose={() => setSelectedId(null)}
-            onSelect={setSelectedId}
+            onSelect={selectConcurrent}
           />
         )}
       </div>
