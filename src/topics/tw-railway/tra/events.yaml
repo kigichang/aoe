@@ -133,6 +133,30 @@
     - title: 維基百科：深澳線
       url: https://zh.wikipedia.org/wiki/深澳線
 
+- id: tra-1966-dr2700-guanghua
+  year: 1966
+  endYear: 2014
+  title: 光華號登場，DR2700型柴聯車服役近半世紀
+  category: rolling-stock
+  importance: 3
+  desc: 1966年10月31日，DR2700型柴聯車以「光華號」之名在西部幹線正式營運，台北到高雄僅需4小時45分，是自強號推出前台灣陸上最快的交通工具。隨後地位陸續被自強號、莒光號取代，逐漸轉為對號快車、普通車，晚年主要行駛花東線；2014年7月15日隨花東線電氣化完工，最後一班普快車抵達花蓮，結束近48年的服役生涯。
+  sources:
+    - title: 維基百科：光華號列車
+      url: https://zh.wikipedia.org/wiki/光華號列車
+    - title: 維基百科：台鐵DR2700型柴油車
+      url: https://zh.wikipedia.org/wiki/台鐵DR2700型柴油車
+
+- id: tra-1978-emu100
+  year: 1978
+  endYear: 2010
+  title: EMU100型電聯車服役，台鐵首款電聯自強號
+  category: rolling-stock
+  importance: 4
+  desc: 從英國引進的交流電聯車，1978年8月15日起以「自強號」之名投入營運，是台鐵首度採用電聯車，也是「自強號」這個品牌的起點；隔年西部幹線電氣化完工，電聯車才有全線用武之地。服役逾三十年後零件停產、故障頻傳，2010年7月4日一列自強號故障後台鐵不再排班，全數走入歷史。
+  sources:
+    - title: 維基百科：台鐵EMU100型電聯車
+      url: https://zh.wikipedia.org/wiki/台鐵EMU100型電聯車
+
 - id: tra-1979-electrification
   year: 1979
   title: 西部幹線電氣化完成
@@ -254,6 +278,16 @@
   sources:
     - title: 維基百科：南迴線
       url: https://zh.wikipedia.org/wiki/南迴線
+
+- id: tra-2021-emu3000
+  year: 2021
+  title: EMU3000型電聯車加入營運，全面汰換老舊城際車隊
+  category: rolling-stock
+  importance: 3
+  desc: 台鐵向日立製作所採購的城際電聯車，以「新自強號」之名於2021年12月29日正式加入營運，計畫2021至2024年間分批交付50列共600輛，是台鐵單一車型採購數量最多的電聯車，用來汰換車況不佳、故障頻傳的自強號與莒光號老舊車隊。
+  sources:
+    - title: 維基百科：台鐵EMU3000型電聯車
+      url: https://zh.wikipedia.org/wiki/台鐵EMU3000型電聯車
 
 - id: tra-2021-taroko
   year: 2021

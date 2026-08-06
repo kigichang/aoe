@@ -48,6 +48,17 @@
     - title: 維基百科：臺灣糖業鐵路
       url: https://zh.wikipedia.org/wiki/臺灣糖業鐵路
 
+- id: sugar-1948-fengshun-diesel
+  year: 1948
+  endYear: 1991
+  title: 順風牌內燃機車引進，糖鐵柴油化起步
+  category: rolling-stock
+  importance: 3
+  desc: 台灣糖業公司1948年向美國Plymouth機車廠購入15輛順風牌內燃機車（編號40至54號），原用汽油引擎，1966年改裝為柴油引擎，是糖業鐵路現存最早的內燃機車之一，標誌著糖鐵動力從蒸汽機車轉向內燃機車的開端。1991年全數停用退役，晚年集中配屬新營糖廠。
+  sources:
+    - title: 維基百科：台糖順風牌內燃機車
+      url: https://zh.wikipedia.org/wiki/台糖順風牌內燃機車
+
 - id: sugar-1982-passenger-end
   year: 1982
   title: 糖鐵營業線客運全面停駛

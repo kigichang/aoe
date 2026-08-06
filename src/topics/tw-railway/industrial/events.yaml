@@ -2,6 +2,17 @@
 #
 # ⚠️ 多主題機制的驗證用種子資料，尚未走完 README 的完整查證流程。
 
+- id: alishan-1907-shay-steam
+  year: 1907
+  endYear: 1976
+  title: Shay式蒸汽機車引進阿里山，登山鐵路動力之始
+  category: rolling-stock
+  importance: 3
+  desc: 阿里山林業鐵路主線興建期間，1907年引進第一輛13噸級Shay式蒸汽機車，其齒輪傳動設計適合克服登山鐵路的陡坡與急彎；通車後陸續增購18噸級（1910至1913年）與28噸級（1912至1917年）機車，成為運材與載客的主力車型。1970年代中期起陸續停駛（如SL-24號於1976年12月公告停駛），部分機車以動態或靜態方式保存至今。
+  sources:
+    - title: 維基百科：阿里山林業鐵路蒸汽機車
+      url: https://zh.wikipedia.org/wiki/阿里山林業鐵路蒸汽機車
+
 - id: alishan-1912-opening
   year: 1912
   title: 阿里山林業鐵路嘉義至二萬平通車
