@@ -315,13 +315,19 @@ export default function App() {
     if (!selected) return []
     const { year } = selected.event
     return shownRegions
-      .map(({ region, slot }) => ({
-        region,
-        slot,
-        events: region.events.filter(
+      .map(({ region, slot }) => {
+        const events = region.events.filter(
           (e) => e.id !== selected.event.id && Math.abs(e.year - year) <= CONCURRENT_WINDOW,
-        ),
-      }))
+        )
+        // 清單維持原有的年份範圍與排序，只挑出真正最接近的兩則加深顯示
+        const nearestIds = new Set(
+          [...events]
+            .sort((a, b) => Math.abs(a.year - year) - Math.abs(b.year - year))
+            .slice(0, 2)
+            .map((e) => e.id),
+        )
+        return { region, slot, events, nearestIds }
+      })
       .filter((g) => g.events.length > 0)
   }, [selected, shownRegions])
 
