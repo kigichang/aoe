@@ -1,0 +1,48 @@
+# 這一欄裝了三條各自獨立的線，所以用三條 track（同 track 內不重疊）：
+#   track 0 = 埃及
+#   track 1 = 兩河與伊朗
+#   track 2 = 希臘與羅馬
+#
+# CLAUDE.md 對加 track 的門檻是「那條 track 從頭到尾都填得滿」——三條都通過：
+# 埃及 -3000…-30 連續、兩河—伊朗 -3000…651 連續、希臘—羅馬 -800…392 連續。
+# 三條 track 吃掉 84px，340px 的欄寬剩約 256px 給標籤（兩條 track 是 284px），
+# 標題截斷會略多，換來的是這一欄真的有尺規可對。
+#
+# 651 年之後整欄空白是刻意的：古代宗教到這裡就結束了。美洲那幾則事件
+# 也沒有色帶——斷代在這裡的作用是尺規而不是覆蓋率（同世界史 global 欄的處理）。
+
+- id: anc-p-egypt
+  name: 古埃及宗教
+  track: 0
+  start: -3000
+  end: -30
+
+- id: anc-p-sumer
+  name: 蘇美與阿卡德
+  track: 1
+  start: -3000
+  end: -2001
+
+- id: anc-p-babylon
+  name: 巴比倫與亞述
+  track: 1
+  start: -2000
+  end: -540
+
+- id: anc-p-iran
+  name: 瑣羅亞斯德的伊朗
+  track: 1
+  start: -539
+  end: 651
+
+- id: anc-p-greek
+  name: 希臘多神教
+  track: 2
+  start: -800
+  end: -31
+
+- id: anc-p-roman
+  name: 羅馬國家宗教
+  track: 2
+  start: -30
+  end: 392

@@ -1,0 +1,67 @@
+# 兩條 track（同 track 內不重疊）：
+#   track 0 = 婆羅門教與印度教
+#   track 1 = 印度本土的沙門傳統（佛教與耆那教）
+#
+# track 1 到 1200 年為止就停了，這不是缺漏——印度佛教在那爛陀寺被毀之後
+# 確實中斷了七百年。空白本身是這一欄最重要的訊息之一，補一條假的色帶
+# 反而會掩蓋它。1956 年安貝德卡的集體皈依那則事件因此站在空白上，
+# 那正是它的意思。
+#
+# 錫克教（1499 起）與藏傳佛教沒有色帶，同世界史 global 欄的處理：
+# 斷代在這裡的作用是尺規，不是覆蓋率。
+
+# --- 婆羅門教與印度教 ---
+- id: ind-p-vedic
+  name: 吠陀時代
+  track: 0
+  start: -1500
+  end: -501
+
+- id: ind-p-epic
+  name: 史詩與法論時期
+  track: 0
+  start: -500
+  end: 300
+
+- id: ind-p-purana
+  name: 往世書與六派哲學
+  track: 0
+  start: 301
+  end: 1200
+
+- id: ind-p-bhakti
+  name: 虔信運動時期
+  track: 0
+  start: 1201
+  end: 1757
+
+- id: ind-p-modern-hindu
+  name: 近現代印度教
+  track: 0
+  start: 1758
+  end: 2026
+
+# --- 佛教與耆那教（印度本土） ---
+- id: ind-p-sramana
+  name: 沙門思潮與初期佛教
+  track: 1
+  start: -528
+  end: -251
+
+- id: ind-p-nikaya
+  name: 部派佛教
+  track: 1
+  start: -250
+  end: 100
+
+- id: ind-p-mahayana
+  name: 大乘興起
+  track: 1
+  start: 101
+  end: 600
+
+- id: ind-p-vajrayana
+  name: 金剛乘與那爛陀
+  track: 1
+  start: 601
+  end: 1200

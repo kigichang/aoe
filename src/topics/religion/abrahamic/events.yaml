@@ -1,0 +1,1095 @@
+# 亞伯拉罕欄：猶太教、基督宗教、伊斯蘭。
+#
+# 三個傳統共用一欄而不是各佔一欄，是因為它們的因果鏈互相咬合——第二聖殿
+# 被毀才有拉比猶太教、尼西亞的三位一體是後來《古蘭經》明確否定的對象、
+# 十字軍與哈里發是同一場戰爭的兩邊。拆成三欄會把這些對話變成跨欄比對，
+# 而欄位總數只有四個（配色只驗證過四欄相鄰）。
+#
+# 族長與出埃及掛 legendary 旗標：那些年代是後世追記的傳統紀年，
+# 不是同代紀錄，把圖釘釘在精確的 y 上會宣稱一個資料撐不起的精度。
+#
+# id 前綴 abr-。category: founding | scripture | doctrine | order | spread | conflict
+# 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
+
+- id: abr-abraham
+  year: -1800
+  title: 亞伯拉罕與立約傳統（傳說）
+  category: founding
+  importance: 5
+  legendary: true
+  desc: 三個傳統都把自己接到同一位族長身上，但敘事各自不同。年代出自後世
+    依經文世系回推，沒有同代文獻或考古證據可以定年。
+  sources:
+    - title: 維基百科：亞伯拉罕
+      url: https://zh.wikipedia.org/wiki/亞伯拉罕
+
+- id: abr-exodus
+  year: -1250
+  title: 出埃及與西奈立約（傳說）
+  category: founding
+  importance: 5
+  legendary: true
+  desc: 猶太教的核心敘事：一群奴隸被領出埃及，在西奈山接受律法而成為一個
+    民族。年代由後世比對埃及史推定，學界對事件的史實性仍有爭議。
+  sources:
+    - title: 維基百科：出埃及記
+      url: https://zh.wikipedia.org/wiki/出埃及記
+
+- id: abr-first-temple
+  year: -960
+  title: 所羅門建第一聖殿
+  category: order
+  importance: 5
+  desc: 獻祭集中到耶路撒冷一處，地方祭壇失去正當性。宗教因此有了固定的
+    中心與專職祭司集團，也讓王權與祭祀綁在一起。
+  sources:
+    - title: 維基百科：所羅門聖殿
+      url: https://zh.wikipedia.org/wiki/所羅門聖殿
+
+- id: abr-israel-fall
+  year: -722
+  title: 亞述滅北國以色列
+  category: conflict
+  importance: 3
+  desc: 十個支派被遷走後不再有紀錄，留下的南國猶大成為這個傳統唯一的
+    繼承者。「以色列十支派下落」此後成為長期的宗教想像題材。
+  sources:
+    - title: 維基百科：亞述
+      url: https://zh.wikipedia.org/wiki/亞述
+    - title: 維基百科：猶太教
+      url: https://zh.wikipedia.org/wiki/猶太教
+
+- id: abr-josiah
+  year: -622
+  title: 約西亞宗教改革
+  category: doctrine
+  importance: 4
+  desc: 聖殿整修時「發現」一卷律法書，王據此拆毀地方祭壇、獨尊耶和華。
+    學界多認為那卷書與《申命記》有關，一神信仰的排他性在此定型。
+  sources:
+    - title: 維基百科：約西亞
+      url: https://zh.wikipedia.org/wiki/約西亞
+
+- id: abr-temple-destroyed
+  year: -586
+  title: 巴比倫毀第一聖殿，猶太人被擄
+  category: conflict
+  importance: 5
+  desc: 沒有聖殿就無法獻祭，宗教被迫改成靠讀經、守安息日與割禮維繫。
+    「離散仍是同一個民族」這個模式就是在這裡被逼出來的。
+  sources:
+    - title: 維基百科：巴比倫囚虜
+      url: https://zh.wikipedia.org/wiki/巴比倫囚虜
+
+- id: abr-cyrus
+  year: -538
+  title: 居魯士准許猶太人返鄉重建聖殿
+  category: spread
+  importance: 4
+  desc: 波斯的宗教寬容政策讓流亡者得以歸返。經文因此把一位外邦君王稱為
+    「受膏者」，是這個傳統少見的一次。
+  sources:
+    - title: 維基百科：居魯士文書
+      url: https://zh.wikipedia.org/wiki/居魯士文書
+
+- id: abr-second-temple
+  year: -515
+  title: 第二聖殿落成
+  category: order
+  importance: 4
+  desc: 規模不如前殿，但祭司集團重新掌握中心。此後五百多年，聖殿祭祀與
+    地方會堂讀經並行，兩套制度的張力貫穿整個第二聖殿時期。
+  sources:
+    - title: 維基百科：第二聖殿
+      url: https://zh.wikipedia.org/wiki/第二聖殿
+
+- id: abr-ezra
+  year: -444
+  title: 以斯拉當眾宣讀律法書
+  category: scripture
+  importance: 4
+  desc: 文本被公開誦讀並逐句講解，權威從祭壇轉向書卷。
+    「宗教是一部大家都要讀的書」這個形態自此成形。
+  sources:
+    - title: 維基百科：以斯拉
+      url: https://zh.wikipedia.org/wiki/以斯拉
+
+- id: abr-septuagint
+  year: -250
+  title: 《七十士譯本》開始翻譯
+  category: scripture
+  importance: 4
+  desc: 希伯來經文譯成希臘文，讓不懂希伯來語的離散猶太人讀得到，
+    也讓後來的希臘語基督徒直接繼承了這部經。
+  sources:
+    - title: 維基百科：七十士譯本
+      url: https://zh.wikipedia.org/wiki/七十士譯本
+
+- id: abr-maccabees
+  year: -167
+  title: 馬加比起義
+  category: conflict
+  importance: 4
+  desc: 塞琉古王在聖殿設宙斯像、禁行割禮，引爆武裝反抗。這是有紀錄以來
+    最早一場為了信仰而非領土打的戰爭。
+  sources:
+    - title: 維基百科：馬加比起義
+      url: https://zh.wikipedia.org/wiki/馬加比起義
+
+- id: abr-qumran
+  year: -150
+  title: 艾賽尼派在昆蘭抄經
+  category: order
+  importance: 3
+  desc: 一群人退出聖殿體制，到曠野過共產、獨身、嚴守潔淨的團體生活。
+    他們留下的死海古卷是現存最早的希伯來聖經抄本。
+  sources:
+    - title: 維基百科：死海古卷
+      url: https://zh.wikipedia.org/wiki/死海古卷
+    - title: 維基百科：艾賽尼派
+      url: https://zh.wikipedia.org/wiki/艾賽尼派
+
+- id: abr-crucifixion
+  year: 30
+  title: 耶穌被釘十字架
+  category: founding
+  importance: 5
+  desc: 一次羅馬的政治處決，被追隨者解釋成救贖事件。整個基督宗教是從
+    「這個人死了又復活」這個宣稱長出來的。
+  sources:
+    - title: 維基百科：耶穌受難
+      url: https://zh.wikipedia.org/wiki/耶穌受難
+    - title: 維基百科：耶穌
+      url: https://zh.wikipedia.org/wiki/耶穌
+
+- id: abr-paul
+  year: 34
+  title: 保羅歸信並轉向外邦人傳教
+  category: spread
+  importance: 5
+  desc: 原本是迫害者，改宗後把信息帶出猶太社群。沒有這一步，這場運動
+    很可能只是猶太教內部的一個支派。
+  sources:
+    - title: 維基百科：保羅 (使徒)
+      url: https://zh.wikipedia.org/wiki/保羅_(使徒)
+
+- id: abr-jerusalem-council
+  year: 49
+  title: 耶路撒冷會議裁定外邦人不必受割禮
+  category: doctrine
+  importance: 5
+  desc: 這一裁定切斷了與猶太律法的綁定，讓基督宗教得以成為不分族群的
+    普世宗教。也是它與猶太教正式分家的起點。
+  sources:
+    - title: 維基百科：耶路撒冷會議
+      url: https://zh.wikipedia.org/wiki/耶路撒冷會議
+
+- id: abr-nero
+  year: 64
+  title: 尼祿以基督徒為羅馬大火代罪羊
+  category: conflict
+  importance: 4
+  desc: 有紀錄的第一次官方迫害，範圍限於羅馬城。此後兩百多年，迫害多半
+    是地方性、間歇性的，直到三世紀才變成全帝國政策。
+  sources:
+    - title: 維基百科：尼祿
+      url: https://zh.wikipedia.org/wiki/尼祿
+
+- id: abr-second-temple-destroyed
+  year: 70
+  title: 羅馬毀第二聖殿
+  category: conflict
+  importance: 5
+  desc: 祭司、獻祭與朝聖一次全部終止。猶太教靠會堂、律法研究與拉比重建
+    自己，這個轉向決定了此後近兩千年的形態。
+  sources:
+    - title: 維基百科：耶路撒冷圍城戰 (70年)
+      url: https://zh.wikipedia.org/wiki/耶路撒冷圍城戰_(70年)
+
+- id: abr-gospel-mark
+  year: 70
+  title: 最早的福音書成書
+  category: scripture
+  importance: 4
+  desc: 口傳的耶穌事蹟開始被寫成連貫的敘事。《馬可福音》一般被認為最早，
+    其餘三卷在其後數十年間陸續成篇。
+  sources:
+    - title: 維基百科：馬可福音
+      url: https://zh.wikipedia.org/wiki/馬可福音
+
+- id: abr-bar-kokhba
+  year: 135
+  title: 巴爾科赫巴起義失敗
+  category: conflict
+  importance: 4
+  desc: 最後一次大規模武裝復國嘗試，失敗後猶太人被禁止進入耶路撒冷。
+    彌賽亞從此在拉比傳統中被推向遙遠的未來，不再是眼前的軍事計畫。
+  sources:
+    - title: 維基百科：巴爾科赫巴起義
+      url: https://zh.wikipedia.org/wiki/巴爾科赫巴起義
+
+- id: abr-marcion
+  year: 144
+  title: 馬吉安被逐，正典之爭浮上檯面
+  category: doctrine
+  importance: 3
+  desc: 他主張舊約的神與耶穌的父不是同一位，並自行編了一份刪節版經目。
+    教會為了反駁他，才被迫認真回答「哪些書算數」。
+  sources:
+    - title: 維基百科：馬吉安
+      url: https://zh.wikipedia.org/wiki/馬吉安
+
+- id: abr-irenaeus
+  year: 180
+  title: 愛任紐撰《駁異端》
+  category: doctrine
+  importance: 3
+  desc: 針對諾斯底各派提出三件武器：正典、信經、主教的傳承。
+    「正統」這個概念的操作定義大致在這裡成形。
+  sources:
+    - title: 維基百科：愛任紐
+      url: https://zh.wikipedia.org/wiki/愛任紐
+
+- id: abr-mishnah
+  year: 200
+  title: 《米書拿》編成
+  category: scripture
+  importance: 5
+  desc: 把口傳律法整理成六部、依主題編排的法典。聖殿沒了之後，
+    猶太教的重心正式從獻祭轉到對律法的討論本身。
+  sources:
+    - title: 維基百科：米書拿
+      url: https://zh.wikipedia.org/wiki/米書拿
+
+- id: abr-decius
+  year: 250
+  title: 德西烏斯下令全帝國獻祭
+  category: conflict
+  importance: 3
+  desc: 每個居民都要獻祭並取得證明書。這不是專門針對基督徒的法令，
+    卻讓拒絕獻祭的人第一次在整個帝國範圍內無所遁形。
+  sources:
+    - title: 維基百科：德西烏斯
+      url: https://zh.wikipedia.org/wiki/德西烏斯
+
+- id: abr-diocletian
+  year: 303
+  title: 戴克里先大迫害
+  category: conflict
+  importance: 4
+  desc: 拆教堂、焚經書、禁聚會、革除公職。規模最大也最後一次的全帝國
+    迫害，十年後政策整個反轉。
+  sources:
+    - title: 維基百科：戴克里先迫害
+      url: https://zh.wikipedia.org/wiki/戴克里先迫害
+
+- id: abr-milan
+  year: 313
+  title: 米蘭敕令給予基督宗教合法地位
+  category: spread
+  importance: 5
+  desc: 歸還沒收的財產、承認信仰自由。從被查禁到受國家保護只隔了十年，
+    這個轉折改變了教會與權力的關係，此後一千五百年都在處理它的後果。
+  sources:
+    - title: 維基百科：米蘭敕令 (君士坦丁)
+      url: https://zh.wikipedia.org/wiki/米蘭敕令_(君士坦丁)
+    - title: 維基百科：君士坦丁大帝
+      url: https://zh.wikipedia.org/wiki/君士坦丁大帝
+
+- id: abr-nicaea
+  year: 325
+  title: 第一次尼西亞大公會議
+  category: doctrine
+  importance: 5
+  desc: 由皇帝召集，裁定聖子與聖父「同質」，判亞流派為異端。
+    第一次由一場會議、而不是由某位老師，決定什麼是正統。
+  sources:
+    - title: 維基百科：第一次尼西亞大公會議
+      url: https://zh.wikipedia.org/wiki/第一次尼西亞大公會議
+
+- id: abr-nt-canon
+  year: 367
+  title: 亞他那修列出新約二十七卷
+  category: scripture
+  importance: 5
+  desc: 現存最早一份與今日新約完全相同的書目，寫在一封復活節牧函裡。
+    正典不是一次頒布的，而是用了三百年才在使用中收斂成這個清單。
+  sources:
+    - title: 維基百科：亞他那修
+      url: https://zh.wikipedia.org/wiki/亞他那修
+    - title: 維基百科：新約聖經
+      url: https://zh.wikipedia.org/wiki/新約聖經
+
+- id: abr-thessalonica
+  year: 380
+  title: 薩洛尼卡敕令定基督宗教為國教
+  category: spread
+  importance: 5
+  desc: 尼西亞信經版本的基督宗教成為帝國唯一合法信仰，其餘一律稱為異端。
+    受迫害者成為執法者，只花了六十七年。
+  sources:
+    - title: 維基百科：薩洛尼卡敕令
+      url: https://zh.wikipedia.org/wiki/薩洛尼卡敕令
+
+- id: abr-constantinople-i
+  year: 381
+  title: 第一次君士坦丁堡公會議
+  category: doctrine
+  importance: 4
+  desc: 補上聖靈的地位，三位一體的表述至此完整。今日各教會誦念的
+    「尼西亞信經」實際上是這次會議的版本。
+  sources:
+    - title: 維基百科：第一次君士坦丁堡公會議
+      url: https://zh.wikipedia.org/wiki/第一次君士坦丁堡公會議
+
+- id: abr-vulgate
+  year: 405
+  title: 耶柔米完成《武加大譯本》
+  category: scripture
+  importance: 5
+  desc: 直接從希伯來文與希臘文譯成拉丁文。此後一千年，西歐所有的神學、
+    講道與爭論都建立在這個譯本的字句上。
+  sources:
+    - title: 維基百科：武加大譯本
+      url: https://zh.wikipedia.org/wiki/武加大譯本
+    - title: 維基百科：耶柔米
+      url: https://zh.wikipedia.org/wiki/耶柔米
+
+- id: abr-city-of-god
+  year: 426
+  title: 奧古斯丁完成《上帝之城》
+  category: doctrine
+  importance: 5
+  desc: 回應「羅馬陷落是因為背棄舊神」的指控，區分地上之城與上帝之城。
+    原罪、恩典與預定的論述框架也在他手上定型，主導西方神學至今。
+  sources:
+    - title: 維基百科：上帝之城
+      url: https://zh.wikipedia.org/wiki/上帝之城
+    - title: 維基百科：希波的奧古斯丁
+      url: https://zh.wikipedia.org/wiki/希波的奧古斯丁
+
+- id: abr-ephesus
+  year: 431
+  title: 以弗所公會議判聶斯脫里為異端
+  category: doctrine
+  importance: 4
+  desc: 爭點是馬利亞能不能稱為「神之母」。落敗的一方向東發展，
+    形成獨立的東方教會，七世紀時已傳到中國。
+  sources:
+    - title: 維基百科：以弗所公會議
+      url: https://zh.wikipedia.org/wiki/以弗所公會議
+
+- id: abr-chalcedon
+  year: 451
+  title: 迦克墩公會議
+  category: doctrine
+  importance: 5
+  desc: 裁定基督兼具神人二性、不混不分。不接受的埃及、敘利亞、亞美尼亞
+    教會就此分出，是基督宗教第一次不可逆的大分裂。
+  sources:
+    - title: 維基百科：迦克墩公會議
+      url: https://zh.wikipedia.org/wiki/迦克墩公會議
+
+- id: abr-talmud
+  year: 500
+  title: 《巴比倫塔木德》大致編成
+  category: scripture
+  importance: 5
+  desc: 在《米書拿》之上疊了數百年的辯論記錄，連被否決的意見都保留下來。
+    此後猶太教的權威形態就是「持續的討論」，而不是最終的定論。
+  sources:
+    - title: 維基百科：塔木德
+      url: https://zh.wikipedia.org/wiki/塔木德
+
+- id: abr-benedict
+  year: 529
+  title: 本篤在卡西諾山立會規
+  category: order
+  importance: 5
+  desc: 祈禱與勞動並重、院長制、財產共有。西歐修道院制度從此有了可複製的
+    章程，而修道院在往後五百年是西歐幾乎唯一的識字與抄書機構。
+  sources:
+    - title: 維基百科：本篤會
+      url: https://zh.wikipedia.org/wiki/本篤會
+    - title: 維基百科：努西亞的本篤
+      url: https://zh.wikipedia.org/wiki/努西亞的本篤
+
+- id: abr-augustine-canterbury
+  year: 597
+  title: 奧古斯丁受教宗差遣抵達英格蘭
+  category: spread
+  importance: 4
+  desc: 羅馬教會第一次主動派出的傳教團。此後「向未信之地派人」成為建制
+    化的做法，而不再只是個別傳道人的行動。
+  sources:
+    - title: 維基百科：坎特伯雷的奧古斯丁
+      url: https://zh.wikipedia.org/wiki/坎特伯雷的奧古斯丁
+
+- id: abr-revelation
+  year: 610
+  title: 穆罕默德開始接受啟示
+  category: founding
+  importance: 5
+  desc: 在麥加郊外的山洞中領受第一段經文。此後二十三年陸續降示的內容，
+    後來集成《古蘭經》。
+  sources:
+    - title: 維基百科：穆罕默德
+      url: https://zh.wikipedia.org/wiki/穆罕默德
+
+- id: abr-hijra
+  year: 622
+  title: 希吉拉：遷徙麥地那
+  category: founding
+  importance: 5
+  desc: 從被迫害的小團體變成掌握一座城的共同體，宗教同時成了法律與政治
+    秩序。伊斯蘭曆以這一年為元年，而不是以先知誕生或受啟示那年。
+  sources:
+    - title: 維基百科：希吉拉
+      url: https://zh.wikipedia.org/wiki/希吉拉
+
+- id: abr-mecca
+  year: 630
+  title: 攻取麥加，清除卡巴的偶像
+  category: spread
+  importance: 5
+  desc: 阿拉伯半島最重要的聖所被改為一神信仰的中心。朝覲的路線與儀式
+    大體保留，內容整個換掉。
+  sources:
+    - title: 英文維基百科：Conquest of Mecca
+      url: https://en.wikipedia.org/wiki/Conquest_of_Mecca
+
+- id: abr-succession
+  year: 632
+  title: 穆罕默德逝世，繼承之爭開始
+  category: order
+  importance: 5
+  desc: 該由公議推舉，還是該由先知的血親繼承？這個問題沒有解決，
+    後來長成遜尼與什葉兩大傳統。
+  sources:
+    - title: 維基百科：遜尼派
+      url: https://zh.wikipedia.org/wiki/遜尼派
+    - title: 維基百科：什葉派
+      url: https://zh.wikipedia.org/wiki/什葉派
+
+- id: abr-quran-canon
+  year: 650
+  title: 《古蘭經》奧斯曼定本
+  category: scripture
+  importance: 5
+  desc: 統一抄本、銷毀異文本，避免各地誦讀分歧。成典速度遠快於前兩個
+    傳統——距先知去世不到二十年，而福音書的正典用了三百年。
+  sources:
+    - title: 維基百科：古蘭經
+      url: https://zh.wikipedia.org/wiki/古蘭經
+
+- id: abr-karbala
+  year: 680
+  title: 卡爾巴拉之役，侯賽因殉難
+  category: order
+  importance: 5
+  desc: 先知的外孫與少數隨從被倭馬亞軍隊圍殺。什葉派的認同從此建立在
+    這場失敗之上，每年的阿舒拉紀念也源於此。
+  sources:
+    - title: 維基百科：卡爾巴拉戰役
+      url: https://zh.wikipedia.org/wiki/卡爾巴拉戰役
+    - title: 維基百科：侯賽因·本·阿里
+      url: https://zh.wikipedia.org/wiki/侯賽因·本·阿里
+
+- id: abr-dome-of-rock
+  year: 691
+  title: 岩石圓頂落成
+  category: order
+  importance: 3
+  desc: 蓋在猶太聖殿舊址上，牆上的銘文明確否定三位一體。伊斯蘭第一座
+    紀念性建築，同時也是一份對另外兩個傳統的公開聲明。
+  sources:
+    - title: 維基百科：岩石圓頂
+      url: https://zh.wikipedia.org/wiki/岩石圓頂
+
+- id: abr-iconoclasm
+  year: 726
+  title: 拜占庭聖像破壞運動
+  category: conflict
+  importance: 4
+  desc: 皇帝下令毀除聖像，爭論持續一個多世紀。表面是「敬像算不算拜偶像」，
+    底下是帝國與修道院爭奪宗教權威，也受到鄰近伊斯蘭的刺激。
+  sources:
+    - title: 英文維基百科：Byzantine Iconoclasm
+      url: https://en.wikipedia.org/wiki/Byzantine_Iconoclasm
+
+- id: abr-charlemagne
+  year: 800
+  title: 教宗為查理曼加冕
+  category: order
+  importance: 4
+  desc: 教宗替一位國王戴上皇冠，等於宣稱世俗權力需要教會認可。
+    此後數百年皇帝與教宗的鬥爭，起點就在這個先例。
+  sources:
+    - title: 維基百科：查理曼
+      url: https://zh.wikipedia.org/wiki/查理曼
+
+- id: abr-madhhab
+  year: 850
+  title: 遜尼派四大法學派成形
+  category: doctrine
+  importance: 4
+  desc: 哈乃斐、馬立克、沙斐儀、罕百里各自發展出推導教法的方法論。
+    彼此承認為合法，這種「多套正統並存」的結構在一神教中相當少見。
+  sources:
+    - title: 英文維基百科：Madhhab
+      url: https://en.wikipedia.org/wiki/Madhhab
+    - title: 維基百科：沙斐儀派
+      url: https://zh.wikipedia.org/wiki/沙斐儀派
+    - title: 維基百科：艾哈邁德·伊本·罕百里
+      url: https://zh.wikipedia.org/wiki/艾哈邁德·伊本·罕百里
+
+- id: abr-bukhari
+  year: 870
+  title: 布哈里編成《聖訓實錄》
+  category: scripture
+  importance: 5
+  desc: 從數十萬則傳述中依傳承鏈的可靠度篩出數千則。經文之外的第二個
+    權威來源自此有了公認的形態，也發展出一整套審核傳述人的學問。
+  sources:
+    - title: 維基百科：布哈里聖訓
+      url: https://zh.wikipedia.org/wiki/布哈里聖訓
+
+- id: abr-fatimid
+  year: 909
+  title: 法蒂瑪王朝建立
+  category: order
+  importance: 4
+  desc: 伊斯瑪儀派什葉建立與巴格達分庭抗禮的哈里發國。伊斯蘭世界同時
+    出現兩個以上的哈里發，統一的政教權威從此不再存在。
+  sources:
+    - title: 維基百科：法蒂瑪王朝
+      url: https://zh.wikipedia.org/wiki/法蒂瑪王朝
+
+- id: abr-hallaj
+  year: 922
+  title: 哈拉智因「我即真理」被處死
+  category: conflict
+  importance: 3
+  desc: 蘇非行者宣稱與神合一，被法學家判為僭妄。神秘體驗與教法權威的
+    界線問題，此後在伊斯蘭世界爭論了兩百年。
+  sources:
+    - title: 英文維基百科：Al-Hallaj
+      url: https://en.wikipedia.org/wiki/Al-Hallaj
+    - title: 維基百科：蘇非主義
+      url: https://zh.wikipedia.org/wiki/蘇非主義
+
+- id: abr-rus
+  year: 988
+  title: 基輔羅斯受洗
+  category: spread
+  importance: 4
+  desc: 大公選擇拜占庭而非拉丁教會，斯拉夫世界因此進入東正教文化圈。
+    這一次選擇的影響延續到今天的東歐宗教版圖。
+  sources:
+    - title: 維基百科：基輔羅斯的基督教化
+      url: https://zh.wikipedia.org/wiki/基輔羅斯的基督教化
+
+- id: abr-great-schism
+  year: 1054
+  title: 東西教會大分裂
+  category: order
+  importance: 5
+  desc: 互相絕罰的直接爭點是信經措辭與教宗首席權。累積數百年的語言、
+    禮儀與政治分歧在此攤牌，此後再無共同的最高權威。
+  sources:
+    - title: 維基百科：東西教會大分裂
+      url: https://zh.wikipedia.org/wiki/東西教會大分裂
+
+- id: abr-crusade
+  year: 1095
+  title: 克萊芒會議號召第一次十字軍
+  category: conflict
+  importance: 5
+  desc: 教宗承諾參戰者赦罪，把武裝遠征說成朝聖。「為信仰而戰可以得救」
+    這個組合此後主導了西歐兩百年的對外行動。
+  sources:
+    - title: 維基百科：克萊芒會議
+      url: https://zh.wikipedia.org/wiki/克萊芒會議
+    - title: 維基百科：第一次十字軍東征
+      url: https://zh.wikipedia.org/wiki/第一次十字軍東征
+
+- id: abr-ghazali
+  year: 1111
+  title: 安薩里逝世，蘇非與正統教法調和
+  category: doctrine
+  importance: 5
+  desc: 他先以法學家身分批判哲學，再把蘇非的內在修行納入正統框架。
+    此後神秘主義不再是可疑的邊緣，而是遜尼派宗教生活的一部分。
+  sources:
+    - title: 維基百科：安薩里
+      url: https://zh.wikipedia.org/wiki/安薩里
+
+- id: abr-maimonides
+  year: 1190
+  title: 邁蒙尼德著《迷途指津》
+  category: doctrine
+  importance: 4
+  desc: 用亞里斯多德的語言重述猶太信仰，主張只能說神「不是什麼」。
+    這本書在猶太社群內爭議極大，卻被阿奎那等基督宗教學者仔細研讀。
+  sources:
+    - title: 英文維基百科：The Guide for the Perplexed
+      url: https://en.wikipedia.org/wiki/The_Guide_for_the_Perplexed
+    - title: 維基百科：邁蒙尼德
+      url: https://zh.wikipedia.org/wiki/邁蒙尼德
+
+- id: abr-albigensian
+  year: 1209
+  title: 阿爾比十字軍
+  category: conflict
+  importance: 4
+  desc: 教宗把十字軍轉向法國南部的清潔派。第一次把「聖戰」用在基督宗教
+    自己的地盤上，異端從此與外敵同等對待。
+  sources:
+    - title: 維基百科：阿爾比十字軍
+      url: https://zh.wikipedia.org/wiki/阿爾比十字軍
+
+- id: abr-franciscan
+  year: 1209
+  title: 方濟會獲教宗口頭認可
+  category: order
+  importance: 4
+  desc: 托缽、不置產、在城市中傳道，與擁有大量地產的修道院形成對比。
+    教會用接納的方式吸收了原本可能走向異端的清貧運動。
+  sources:
+    - title: 維基百科：方濟會
+      url: https://zh.wikipedia.org/wiki/方濟會
+    - title: 維基百科：道明會
+      url: https://zh.wikipedia.org/wiki/道明會
+
+- id: abr-lateran-iv
+  year: 1215
+  title: 第四次拉特朗公會議
+  category: doctrine
+  importance: 4
+  desc: 確立變質說、規定信徒每年至少告解與領聖體一次。教義與日常生活
+    第一次被綁在一套可稽核的制度上。
+  sources:
+    - title: 維基百科：第四次拉特朗公會議
+      url: https://zh.wikipedia.org/wiki/第四次拉特朗公會議
+
+- id: abr-inquisition
+  year: 1231
+  title: 教廷設立宗教裁判所
+  category: conflict
+  importance: 4
+  desc: 追查異端的權力從地方主教收歸教宗直屬，並委由道明會執行。
+    偵訊、認罪與量刑有了常設機構與固定程序。
+  sources:
+    - title: 維基百科：宗教裁判所
+      url: https://zh.wikipedia.org/wiki/宗教裁判所
+
+- id: abr-baghdad-fall
+  year: 1258
+  title: 蒙古滅巴格達，阿拔斯哈里發終結
+  category: conflict
+  importance: 5
+  desc: 城破、哈里發被殺、藏書被毀。名義上統合遜尼世界五百年的中心
+    消失，此後權威分散到各地的蘇丹與法學家手上。
+  sources:
+    - title: 維基百科：巴格達之戰 (1258年)
+      url: https://zh.wikipedia.org/wiki/巴格達之戰_(1258年)
+    - title: 維基百科：哈里發
+      url: https://zh.wikipedia.org/wiki/哈里發
+
+- id: abr-aquinas
+  year: 1265
+  title: 阿奎那開始撰寫《神學大全》
+  category: doctrine
+  importance: 5
+  desc: 用剛從阿拉伯文譯回的亞里斯多德重建整套神學，主張理性與啟示
+    不相衝突。此後成為天主教神學的標準框架。
+  sources:
+    - title: 維基百科：神學大全
+      url: https://zh.wikipedia.org/wiki/神學大全
+    - title: 維基百科：托馬斯·阿奎那
+      url: https://zh.wikipedia.org/wiki/托馬斯·阿奎那
+
+- id: abr-england-expulsion
+  year: 1290
+  title: 英格蘭驅逐猶太人
+  category: conflict
+  importance: 3
+  desc: 全境猶太人被限期離境，是中世紀西歐第一次全國規模的驅逐。
+    此後法國、西班牙陸續仿效。
+  sources:
+    - title: 英文維基百科：Edict of Expulsion
+      url: https://en.wikipedia.org/wiki/Edict_of_Expulsion
+
+- id: abr-avignon
+  year: 1309
+  title: 教廷遷往亞維農
+  category: order
+  importance: 3
+  desc: 教宗離開羅馬、長期居於法王影響範圍內近七十年。教宗權威的
+    普世性受到嚴重質疑，為隨後的大分裂鋪路。
+  sources:
+    - title: 維基百科：亞維農教廷
+      url: https://zh.wikipedia.org/wiki/亞維農教廷
+
+- id: abr-western-schism
+  year: 1378
+  title: 天主教會大分裂，同時出現兩位教宗
+  category: order
+  importance: 4
+  desc: 各國按政治利益選邊，一度並存三位教宗。「誰有權裁定誰是真教宗」
+    這個問題催生了公會議至上論，也削弱了教宗制的正當性。
+  sources:
+    - title: 維基百科：天主教會大分裂
+      url: https://zh.wikipedia.org/wiki/天主教會大分裂
+
+- id: abr-hus
+  year: 1415
+  title: 揚·胡斯被處火刑
+  category: conflict
+  importance: 4
+  desc: 他持安全通行證前往會議，仍被判為異端燒死。此事在波希米亞引發
+    長達十餘年的戰爭，也讓一百年後的路德知道什麼在等著他。
+  sources:
+    - title: 維基百科：揚·胡斯
+      url: https://zh.wikipedia.org/wiki/揚·胡斯
+
+- id: abr-spanish-inquisition
+  year: 1478
+  title: 西班牙宗教裁判所設立
+  category: conflict
+  importance: 4
+  desc: 由王室而非教廷掌控，主要對象是被懷疑暗中維持原信仰的改宗猶太人
+    與穆斯林。宗教審查成為國家整合的工具。
+  sources:
+    - title: 維基百科：西班牙宗教裁判所
+      url: https://zh.wikipedia.org/wiki/西班牙宗教裁判所
+
+- id: abr-alhambra
+  year: 1492
+  title: 西班牙驅逐猶太人
+  category: conflict
+  importance: 4
+  desc: 限期改宗或離境，數萬人流散至鄂圖曼、北非與尼德蘭。
+    塞法迪猶太文化的離散版圖由此形成。
+  sources:
+    - title: 英文維基百科：Alhambra Decree
+      url: https://en.wikipedia.org/wiki/Alhambra_Decree
+
+- id: abr-safavid
+  year: 1501
+  title: 薩非王朝定十二伊瑪目什葉派為國教
+  category: spread
+  importance: 5
+  desc: 以國家力量在一個原本以遜尼為主的地區推行什葉派。今日伊朗的
+    宗教面貌與遜尼—什葉的地緣分界，源頭在這裡。
+  sources:
+    - title: 維基百科：薩非王朝
+      url: https://zh.wikipedia.org/wiki/薩非王朝
+
+- id: abr-95-theses
+  year: 1517
+  title: 路德發表《九十五條論綱》
+  category: order
+  importance: 5
+  desc: 原是針對贖罪券的學術辯論提綱，經印刷術擴散後演成全面決裂。
+    唯獨聖經、唯獨信心的主張最終分裂了西方基督宗教。
+  sources:
+    - title: 維基百科：九十五條論綱
+      url: https://zh.wikipedia.org/wiki/九十五條論綱
+    - title: 維基百科：馬丁·路德
+      url: https://zh.wikipedia.org/wiki/馬丁·路德
+
+- id: abr-supremacy
+  year: 1534
+  title: 英格蘭《至尊法案》
+  category: order
+  importance: 5
+  desc: 國王取代教宗成為英格蘭教會的最高元首。起因是婚姻問題，
+    結果是一個在教義上介於天主教與新教之間的獨立教會。
+  sources:
+    - title: 維基百科：最高權威法令
+      url: https://zh.wikipedia.org/wiki/最高權威法令
+
+- id: abr-institutes
+  year: 1536
+  title: 加爾文出版《基督教要義》
+  category: doctrine
+  importance: 5
+  desc: 把新教信仰整理成一套完整體系，預定論是其核心。日內瓦成為模範
+    城市，其影響經由蘇格蘭、尼德蘭與北美一路擴散。
+  sources:
+    - title: 維基百科：基督教要義
+      url: https://zh.wikipedia.org/wiki/基督教要義
+    - title: 維基百科：約翰·加爾文
+      url: https://zh.wikipedia.org/wiki/約翰·加爾文
+
+- id: abr-jesuits
+  year: 1540
+  title: 耶穌會獲准成立
+  category: order
+  importance: 5
+  desc: 強調服從、教育與海外傳教。此後兩百年，從巴西到日本的天主教
+    擴張幾乎都有它的身影，也把歐洲的天文與數學帶進中國宮廷。
+  sources:
+    - title: 維基百科：耶穌會
+      url: https://zh.wikipedia.org/wiki/耶穌會
+
+- id: abr-trent
+  year: 1545
+  title: 特倫托大公會議召開
+  category: doctrine
+  importance: 5
+  desc: 逐條回應新教的指控，同時整頓神職紀律與神學院制度。
+    天主教的教義與體制此後四百年基本按這次會議的決議運作。
+  sources:
+    - title: 維基百科：特利騰大公會議
+      url: https://zh.wikipedia.org/wiki/特利騰大公會議
+
+- id: abr-augsburg
+  year: 1555
+  title: 奧格斯堡和約
+  category: conflict
+  importance: 4
+  desc: 「教隨君定」——諸侯決定領地的信仰，臣民不同意就搬家。
+    這是歐洲第一次用法律承認一個以上的基督宗教可以並存。
+  sources:
+    - title: 維基百科：奧格斯堡和約
+      url: https://zh.wikipedia.org/wiki/奧格斯堡和約
+
+- id: abr-st-bartholomew
+  year: 1572
+  title: 聖巴多羅買大屠殺
+  category: conflict
+  importance: 4
+  desc: 巴黎的婚禮變成對胡格諾派的屠殺，並蔓延至各省。
+    法國宗教戰爭中最血腥的一夜，也讓和解的希望倒退數十年。
+  sources:
+    - title: 維基百科：聖巴多羅買大屠殺
+      url: https://zh.wikipedia.org/wiki/聖巴多羅買大屠殺
+
+- id: abr-din-i-ilahi
+  year: 1582
+  title: 阿克巴推行「丁伊拉希」
+  category: doctrine
+  importance: 3
+  desc: 蒙兀兒皇帝廢除非穆斯林人頭稅、召集各教辯論，並提出一套折衷的
+    宮廷信仰。追隨者始終極少，但那套宗教寬容政策影響深遠。
+  sources:
+    - title: 英文維基百科：Din-i Ilahi
+      url: https://en.wikipedia.org/wiki/Din-i_Ilahi
+    - title: 維基百科：阿克巴
+      url: https://zh.wikipedia.org/wiki/阿克巴
+
+- id: abr-thirty-years
+  year: 1618
+  endYear: 1648
+  title: 三十年戰爭
+  category: conflict
+  importance: 5
+  desc: 起於波希米亞的宗教衝突，演成全歐洲的權力鬥爭；到後期天主教的
+    法國與新教諸侯結盟。宗教作為戰爭理由的可信度在這三十年裡耗盡。
+  sources:
+    - title: 維基百科：三十年戰爭
+      url: https://zh.wikipedia.org/wiki/三十年戰爭
+
+- id: abr-westphalia
+  year: 1648
+  title: 西發里亞和約
+  category: conflict
+  importance: 5
+  desc: 承認喀爾文派、確立各國內政互不干涉。歐洲政治秩序的基礎從
+    「共同的信仰」換成「主權國家」，教宗的抗議被完全忽略。
+  sources:
+    - title: 維基百科：威斯特伐利亞和約
+      url: https://zh.wikipedia.org/wiki/威斯特伐利亞和約
+
+- id: abr-sabbatai
+  year: 1665
+  title: 沙巴泰·澤維被擁為彌賽亞
+  category: order
+  importance: 3
+  desc: 從葉門到波蘭的猶太社群大規模響應，翌年他在鄂圖曼壓力下改宗
+    伊斯蘭。這場幻滅深刻改變了此後猶太教對彌賽亞運動的態度。
+  sources:
+    - title: 維基百科：沙巴泰·澤維
+      url: https://zh.wikipedia.org/wiki/沙巴泰·澤維
+
+- id: abr-methodism
+  year: 1738
+  title: 衛斯理的奧德斯門經驗，循道運動興起
+  category: order
+  importance: 4
+  desc: 強調個人重生的經驗、戶外佈道與小組互勉。這套模式後來成為
+    英美福音派的原型，也帶動了廢奴與工人教育。
+  sources:
+    - title: 維基百科：循道宗
+      url: https://zh.wikipedia.org/wiki/循道宗
+    - title: 維基百科：約翰·衛斯理
+      url: https://zh.wikipedia.org/wiki/約翰·衛斯理
+
+- id: abr-hasidism
+  year: 1740
+  title: 巴爾·謝姆·托夫與哈西迪運動
+  category: order
+  importance: 4
+  desc: 主張虔誠的喜樂與祈禱勝過艱深的律法研究，讓不識字的平民也能
+    參與。東歐猶太社群因此分裂成哈西迪與反對派兩大陣營。
+  sources:
+    - title: 維基百科：哈西迪猶太教
+      url: https://zh.wikipedia.org/wiki/哈西迪猶太教
+    - title: 維基百科：巴爾·謝姆·托夫
+      url: https://zh.wikipedia.org/wiki/巴爾·謝姆·托夫
+
+- id: abr-wahhabi
+  year: 1744
+  title: 瓦哈比派與紹德家族結盟
+  category: order
+  importance: 5
+  desc: 宗教改革者與地方統治者互相支持：一方提供正當性，一方提供刀劍。
+    這個組合最終建立沙烏地阿拉伯，也形塑了現代伊斯蘭復興運動的形態。
+  sources:
+    - title: 維基百科：瓦哈比派
+      url: https://zh.wikipedia.org/wiki/瓦哈比派
+    - title: 維基百科：穆罕默德·伊本·阿卜杜勒·瓦哈卜
+      url: https://zh.wikipedia.org/wiki/穆罕默德·伊本·阿卜杜勒·瓦哈卜
+
+- id: abr-reform-judaism
+  year: 1810
+  title: 改革派猶太教興起
+  category: order
+  importance: 4
+  desc: 用德語講道、加入管風琴、刪去回歸錫安的祈禱。回應的是解放後
+    「如何同時當德國人與猶太人」的問題，也直接催生了正統派的自我定義。
+  sources:
+    - title: 維基百科：猶太教改革派
+      url: https://zh.wikipedia.org/wiki/猶太教改革派
+
+- id: abr-mormon
+  year: 1830
+  title: 《摩爾門經》出版，後期聖徒運動開始
+  category: order
+  importance: 4
+  desc: 宣稱有一部關於古代美洲的新經典。在一個聖經被視為已完結的傳統裡
+    提出新的正典，這是它一開始就遭遇強烈敵意的原因。
+  sources:
+    - title: 維基百科：摩爾門經
+      url: https://zh.wikipedia.org/wiki/摩爾門經
+    - title: 維基百科：耶穌基督後期聖徒教會
+      url: https://zh.wikipedia.org/wiki/耶穌基督後期聖徒教會
+
+- id: abr-bab
+  year: 1844
+  title: 巴布在設拉子宣示
+  category: founding
+  importance: 3
+  desc: 自稱是通往應許者的門，六年後被處決，追隨者遭大規模鎮壓。
+    這場運動是巴哈伊信仰的前身。
+  sources:
+    - title: 英文維基百科：Báb
+      url: https://en.wikipedia.org/wiki/B%C3%A1b
+
+- id: abr-bahaullah
+  year: 1863
+  title: 巴哈歐拉宣告使命，巴哈伊信仰成立
+  category: founding
+  importance: 4
+  desc: 主張各大宗教出自同一源頭、人類終將合一。是最後一個從亞伯拉罕
+    傳統中長出、並發展成獨立世界宗教的例子。
+  sources:
+    - title: 維基百科：巴哈伊信仰
+      url: https://zh.wikipedia.org/wiki/巴哈伊信仰
+    - title: 維基百科：巴哈歐拉
+      url: https://zh.wikipedia.org/wiki/巴哈歐拉
+
+- id: abr-vatican-i
+  year: 1870
+  title: 梵蒂岡第一屆大公會議定教宗無誤
+  category: doctrine
+  importance: 4
+  desc: 在教宗國即將被義大利併吞的前夕，把權威從領土改押在教義上。
+    部分神職因此出走，另組舊天主教會。
+  sources:
+    - title: 維基百科：梵蒂岡第一屆大公會議
+      url: https://zh.wikipedia.org/wiki/梵蒂岡第一屆大公會議
+
+- id: abr-zionist-congress
+  year: 1897
+  title: 第一屆錫安主義代表大會
+  category: order
+  importance: 4
+  desc: 把「回到錫安」從每年逾越節的祈願改成具體的政治綱領。
+    這在當時同時遭到正統派與改革派反對，理由恰好相反。
+  sources:
+    - title: 維基百科：第一次錫安主義代表大會
+      url: https://zh.wikipedia.org/wiki/第一次錫安主義代表大會
+
+- id: abr-azusa
+  year: 1906
+  title: 阿蘇薩街復興，五旬節運動興起
+  category: order
+  importance: 4
+  desc: 洛杉磯一間跨種族的小教會，以說方言與神醫為特徵。
+    它衍生的靈恩傳統是二十世紀成長最快的基督宗教支系。
+  sources:
+    - title: 英文維基百科：Azusa Street Revival
+      url: https://en.wikipedia.org/wiki/Azusa_Street_Revival
+    - title: 維基百科：五旬節運動
+      url: https://zh.wikipedia.org/wiki/五旬節運動
+
+- id: abr-caliphate-abolished
+  year: 1924
+  title: 土耳其廢除哈里發
+  category: conflict
+  importance: 5
+  desc: 存續一千三百年的名義最高職位由議會表決取消。伊斯蘭世界失去
+    共同的象徵中心，此後各種「重建哈里發」的主張都源於這個空缺。
+  sources:
+    - title: 維基百科：哈里發
+      url: https://zh.wikipedia.org/wiki/哈里發
+    - title: 維基百科：土耳其大國民議會
+      url: https://zh.wikipedia.org/wiki/土耳其大國民議會
+
+- id: abr-muslim-brotherhood
+  year: 1928
+  title: 穆斯林兄弟會成立
+  category: order
+  importance: 4
+  desc: 以社會服務、教育與組織動員推動伊斯蘭在公共生活中的角色。
+    現代伊斯蘭主義的組織原型，影響遍及整個阿拉伯世界。
+  sources:
+    - title: 維基百科：穆斯林兄弟會
+      url: https://zh.wikipedia.org/wiki/穆斯林兄弟會
+
+- id: abr-israel
+  year: 1948
+  title: 以色列建國
+  category: order
+  importance: 4
+  desc: 一個以宗教身分定義、但由世俗運動建立的國家。宗教與國族的關係
+    自此成為猶太教內部最持久的爭論，正統派內部至今仍有反對者。
+  sources:
+    - title: 維基百科：以色列獨立宣言
+      url: https://zh.wikipedia.org/wiki/以色列獨立宣言
+
+- id: abr-vatican-ii
+  year: 1962
+  endYear: 1965
+  title: 梵蒂岡第二屆大公會議
+  category: doctrine
+  importance: 5
+  desc: 允許以各地語言舉行彌撒、承認宗教自由、放棄對猶太人的集體歸罪。
+    天主教與現代世界的關係在四年內整個重寫。
+  sources:
+    - title: 維基百科：梵蒂岡第二屆大公會議
+      url: https://zh.wikipedia.org/wiki/梵蒂岡第二屆大公會議
+
+- id: abr-iran-revolution
+  year: 1979
+  title: 伊朗伊斯蘭革命
+  category: conflict
+  importance: 5
+  desc: 由宗教學者直接掌握國家最高權力，是二十世紀唯一成功的神權革命。
+    它證明了世俗化並非單向不可逆，也重新點燃各地的政治伊斯蘭。
+  sources:
+    - title: 維基百科：伊朗伊斯蘭革命
+      url: https://zh.wikipedia.org/wiki/伊朗伊斯蘭革命

@@ -1,0 +1,114 @@
+# 三個傳統各一條 track（同 track 內不重疊）：
+#   track 0 = 猶太教
+#   track 1 = 基督宗教
+#   track 2 = 伊斯蘭
+#
+# 三條都通過「從頭到尾填得滿」的檢驗：猶太 -960…2026、基督 30…2026、
+# 伊斯蘭 610…2026，各自開始之後就沒有中斷。開始之前的空白不是缺口，
+# 是「這個傳統還不存在」——而那正好是這一欄最該讓人看到的東西
+# （伊斯蘭那條 610 才開始，前面六百年整片空白）。
+
+# --- 猶太教 ---
+- id: abr-p-first-temple
+  name: 第一聖殿時期
+  track: 0
+  start: -960
+  end: -587
+
+- id: abr-p-exile
+  name: 囚虜與波斯統治
+  track: 0
+  start: -586
+  end: -333
+
+- id: abr-p-second-temple
+  name: 第二聖殿時期
+  track: 0
+  start: -332
+  end: 70
+
+- id: abr-p-rabbinic
+  name: 拉比猶太教與塔木德
+  track: 0
+  start: 71
+  end: 640
+
+- id: abr-p-medieval-jewish
+  name: 中世紀猶太教
+  track: 0
+  start: 641
+  end: 1780
+
+- id: abr-p-modern-jewish
+  name: 近現代猶太教
+  track: 0
+  start: 1781
+  end: 2026
+
+# --- 基督宗教 ---
+- id: abr-p-apostolic
+  name: 使徒時代
+  track: 1
+  start: 30
+  end: 99
+
+- id: abr-p-patristic
+  name: 教父時代
+  track: 1
+  start: 100
+  end: 450
+
+- id: abr-p-medieval-christian
+  name: 中世紀基督宗教
+  track: 1
+  start: 451
+  end: 1516
+
+- id: abr-p-reformation
+  name: 宗教改革與教派分立
+  track: 1
+  start: 1517
+  end: 1789
+
+- id: abr-p-modern-christian
+  name: 現代基督宗教
+  track: 1
+  start: 1790
+  end: 2026
+
+# --- 伊斯蘭 ---
+- id: abr-p-prophet
+  name: 先知時代
+  track: 2
+  start: 610
+  end: 632
+
+- id: abr-p-rashidun
+  name: 正統哈里發
+  track: 2
+  start: 633
+  end: 661
+
+- id: abr-p-umayyad
+  name: 倭馬亞哈里發
+  track: 2
+  start: 662
+  end: 750
+
+- id: abr-p-abbasid
+  name: 阿拔斯哈里發
+  track: 2
+  start: 751
+  end: 1258
+
+- id: abr-p-gunpowder
+  name: 鄂圖曼・薩非・蒙兀兒
+  track: 2
+  start: 1259
+  end: 1798
+
+- id: abr-p-modern-islam
+  name: 現代伊斯蘭
+  track: 2
+  start: 1799
+  end: 2026

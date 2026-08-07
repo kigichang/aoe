@@ -1,0 +1,488 @@
+# 印度欄：婆羅門教與印度教、佛教、耆那教、錫克教，以及它們向外走出去的
+# 分支（斯里蘭卡與東南亞的上座部、西藏的金剛乘）。
+#
+# **藏傳佛教放在這一欄而不是東亞欄**，理由是傳承譜系：它接的是那爛陀寺的
+# 印度後期大乘與密教，經典直接譯自梵文；漢傳佛教則是另一條路線。
+# 照地理放進東亞欄的話，桑耶寺與那爛陀之間的因果就被剪斷了。
+#
+# 佛陀與大雄的年代用傳統紀年，學界估計普遍晚一到兩個世紀，desc 有註明。
+#
+# id 前綴 ind-。category: founding | scripture | doctrine | order | spread | conflict
+# 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
+
+- id: ind-rigveda
+  year: -1500
+  title: 《梨俱吠陀》成篇
+  category: scripture
+  importance: 5
+  desc: 一千餘首獻給諸神的讚歌，靠口傳精確保存了三千年才被寫下。
+    印度所有後續傳統都必須表態接不接受它的權威，連拒絕的也一樣。
+  sources:
+    - title: 維基百科：梨俱吠陀
+      url: https://zh.wikipedia.org/wiki/梨俱吠陀
+    - title: 維基百科：吠陀
+      url: https://zh.wikipedia.org/wiki/吠陀
+
+- id: ind-brahmanic-order
+  year: -1000
+  title: 婆羅門祭祀體系與四種姓
+  category: doctrine
+  importance: 4
+  desc: 祭祀的效力被說成取決於儀軌是否精確，而只有婆羅門懂得儀軌。
+    宗教權威與社會位階綁在一起，後來每一場印度宗教運動都在回應這一點。
+  sources:
+    - title: 維基百科：吠陀
+      url: https://zh.wikipedia.org/wiki/吠陀
+
+- id: ind-upanishads
+  year: -800
+  title: 《奧義書》出現，梵我一如
+  category: scripture
+  importance: 5
+  desc: 重點從獻祭轉向認識：宇宙的本體（梵）與個體的自我（我）本是一個。
+    印度哲學的核心命題在此提出，此後兩千五百年都在註解它。
+  sources:
+    - title: 維基百科：奧義書
+      url: https://zh.wikipedia.org/wiki/奧義書
+
+- id: ind-karma
+  year: -700
+  title: 業與輪迴觀念成形
+  category: doctrine
+  importance: 4
+  desc: 行為決定來世，解脫是跳出這個循環。這組概念成為印度各派共同的
+    前提——分歧只在於怎麼跳出去，而不在於要不要跳。
+  sources:
+    - title: 維基百科：輪迴
+      url: https://zh.wikipedia.org/wiki/輪迴
+
+- id: ind-buddha
+  year: -528
+  title: 釋迦牟尼成道，開始說法
+  category: founding
+  importance: 5
+  desc: 不談梵、不靠祭祀，只講苦、集、滅、道。年份為南傳的傳統紀年，
+    現代學界多把佛陀的年代下修一到兩個世紀。
+  sources:
+    - title: 維基百科：釋迦牟尼
+      url: https://zh.wikipedia.org/wiki/釋迦牟尼
+
+- id: ind-mahavira
+  year: -527
+  title: 大雄入滅，耆那教定型
+  category: founding
+  importance: 5
+  desc: 把不殺生推到極致：連無心之殺也要償還。與佛教同時期、同樣拒斥
+    吠陀權威，但選了苦行而非中道，兩者的分歧此後從未彌合。
+  sources:
+    - title: 維基百科：筏馱摩那
+      url: https://zh.wikipedia.org/wiki/筏馱摩那
+    - title: 維基百科：耆那教
+      url: https://zh.wikipedia.org/wiki/耆那教
+
+- id: ind-first-council
+  year: -483
+  title: 王舍城結集
+  category: scripture
+  importance: 5
+  desc: 佛陀入滅後，僧團合誦以確認教說與戒律。沒有文字紀錄，
+    靠集體記誦校準——這是佛典最初的「出版」形式。
+  sources:
+    - title: 維基百科：王舍城結集
+      url: https://zh.wikipedia.org/wiki/王舍城結集
+
+- id: ind-second-council
+  year: -383
+  title: 第二次結集，僧團初分
+  category: order
+  importance: 4
+  desc: 爭點是戒律的鬆緊（例如僧人能否收受金錢）。分成上座部與大眾部，
+    此後部派持續增生，為大乘的出現準備了土壤。
+  sources:
+    - title: 維基百科：第二次結集
+      url: https://zh.wikipedia.org/wiki/第二次結集
+
+- id: ind-ashoka
+  year: -250
+  title: 阿育王結集並派遣傳教師
+  category: spread
+  importance: 5
+  desc: 一個帝國第一次以國家資源推廣佛教：刻石柱、立醫院、派使團到
+    斯里蘭卡與希臘化諸國。佛教從此不再只是恆河流域的一個沙門團體。
+  sources:
+    - title: 維基百科：阿育王
+      url: https://zh.wikipedia.org/wiki/阿育王
+
+- id: ind-mahinda
+  year: -240
+  title: 摩哂陀將佛教傳入錫蘭
+  category: spread
+  importance: 4
+  desc: 上座部在此扎根，並保存了此後兩千年最完整的巴利語傳統。
+    印度本土佛教消亡後，這條線成為南傳佛教的母體。
+  sources:
+    - title: 維基百科：摩哂陀
+      url: https://zh.wikipedia.org/wiki/摩哂陀
+
+- id: ind-gita
+  year: -200
+  title: 《薄伽梵歌》成篇
+  category: scripture
+  importance: 5
+  desc: 戰場上的對話：履行本分而不執著結果，也是一種瑜伽。
+    它把出世的解脫與入世的責任接在一起，成為印度教流傳最廣的一部經。
+  sources:
+    - title: 維基百科：薄伽梵歌
+      url: https://zh.wikipedia.org/wiki/薄伽梵歌
+
+- id: ind-mahayana
+  year: -100
+  title: 大乘佛教興起
+  category: order
+  importance: 5
+  desc: 目標從個人解脫改成普度眾生，菩薩取代阿羅漢成為理想人格。
+    新的經典大量出現，佛教因此有能力吸收各地的既有信仰而向外擴散。
+  sources:
+    - title: 維基百科：大乘佛教
+      url: https://zh.wikipedia.org/wiki/大乘佛教
+
+- id: ind-pali-canon
+  year: -29
+  title: 巴利三藏在斯里蘭卡寫成文字
+  category: scripture
+  importance: 5
+  desc: 饑荒與戰亂讓僧團擔心口傳斷絕，因此決定寫下來。
+    現存最完整的早期佛教經典就是這一次的成果。
+  sources:
+    - title: 維基百科：巴利三藏
+      url: https://zh.wikipedia.org/wiki/巴利三藏
+
+- id: ind-jain-schism
+  year: 79
+  title: 耆那教分為天衣派與白衣派
+  category: order
+  importance: 3
+  desc: 爭點是僧人該不該穿衣、女性能否此生解脫。兩派至今並存，
+    是少數分裂之後雙方都完整存續至今的例子。
+  sources:
+    - title: 維基百科：天衣派
+      url: https://zh.wikipedia.org/wiki/天衣派
+    - title: 維基百科：白衣派
+      url: https://zh.wikipedia.org/wiki/白衣派
+
+- id: ind-kanishka
+  year: 127
+  title: 迦膩色伽護持佛教，第四次結集
+  category: order
+  importance: 3
+  desc: 貴霜帝國橫跨中亞，佛教因此沿絲路東傳。
+    最早的佛像也大致在這個時期出現於犍陀羅與秣菟羅。
+  sources:
+    - title: 維基百科：迦膩色伽一世
+      url: https://zh.wikipedia.org/wiki/迦膩色伽一世
+    - title: 維基百科：第四次結集
+      url: https://zh.wikipedia.org/wiki/第四次結集
+
+- id: ind-nagarjuna
+  year: 150
+  title: 龍樹與中觀學派
+  category: doctrine
+  importance: 5
+  desc: 以嚴密的論證推出「一切法無自性」，連「空」本身也不可執。
+    大乘因此有了哲學骨架，漢傳與藏傳的義理都從這裡分枝。
+  sources:
+    - title: 維基百科：龍樹
+      url: https://zh.wikipedia.org/wiki/龍樹
+    - title: 維基百科：中觀學派
+      url: https://zh.wikipedia.org/wiki/中觀學派
+
+- id: ind-yogacara
+  year: 350
+  title: 無著、世親與唯識學派
+  category: doctrine
+  importance: 4
+  desc: 主張所經驗的世界不離識的變現，並細密分析心的層次。
+    與中觀並列為大乘兩大體系，玄奘西行主要就是為了取這一系的論典。
+  sources:
+    - title: 維基百科：世親
+      url: https://zh.wikipedia.org/wiki/世親
+    - title: 維基百科：瑜伽行唯識學派
+      url: https://zh.wikipedia.org/wiki/瑜伽行唯識學派
+
+- id: ind-mahabharata
+  year: 400
+  title: 《摩訶婆羅多》定型
+  category: scripture
+  importance: 4
+  desc: 十萬頌的巨作，在戰爭敘事中夾帶法（dharma）的討論。
+    印度教的倫理觀主要不是靠論典、而是靠這類史詩傳給一般人的。
+  sources:
+    - title: 維基百科：摩訶婆羅多
+      url: https://zh.wikipedia.org/wiki/摩訶婆羅多
+
+- id: ind-yogasutra
+  year: 400
+  title: 《瑜伽經》編成
+  category: scripture
+  importance: 4
+  desc: 把散在各處的修行方法整理成八支體系。今日全球流行的瑜伽多半
+    只取其中的體位與呼吸兩支，原本的目標是止息心的波動。
+  sources:
+    - title: 維基百科：瑜伽經
+      url: https://zh.wikipedia.org/wiki/瑜伽經
+
+- id: ind-bhakti
+  year: 600
+  title: 南印度的虔信運動
+  category: spread
+  importance: 4
+  desc: 以泰米爾語而非梵語唱詩，主張只要虔敬就能親近神，不論種姓性別。
+    這是印度教第一次出現繞過婆羅門中介的大眾路線。
+  sources:
+    - title: 維基百科：巴克蒂
+      url: https://zh.wikipedia.org/wiki/巴克蒂
+
+- id: ind-vajrayana
+  year: 650
+  title: 金剛乘興起
+  category: order
+  importance: 4
+  desc: 引入密續、咒語、壇城與上師傳承，主張即身可以成就。
+    這是印度佛教最後一個大階段，也是後來傳入西藏的主體。
+  sources:
+    - title: 維基百科：密宗
+      url: https://zh.wikipedia.org/wiki/密宗
+
+- id: ind-samye
+  year: 779
+  title: 桑耶寺建成，佛教成為吐蕃國教
+  category: spread
+  importance: 4
+  desc: 西藏第一座剃度僧人的寺院。當時曾就「頓悟或漸修」舉行辯論，
+    結果選了印度一系的漸修路線，決定了藏傳佛教此後的方向。
+  sources:
+    - title: 維基百科：桑耶寺
+      url: https://zh.wikipedia.org/wiki/桑耶寺
+
+- id: ind-shankara
+  year: 800
+  title: 商羯羅與不二一元論
+  category: doctrine
+  importance: 5
+  desc: 主張梵我不二、現象世界為幻，並建立四大寺院組織僧團。
+    他以佛教的論辯方法反駁佛教，被視為印度教復興的關鍵人物。
+  sources:
+    - title: 維基百科：阿迪·商羯羅
+      url: https://zh.wikipedia.org/wiki/阿迪·商羯羅
+    - title: 英文維基百科：Advaita Vedanta
+      url: https://en.wikipedia.org/wiki/Advaita_Vedanta
+
+- id: ind-atisha
+  year: 1042
+  title: 阿底峽入藏，藏傳佛教後弘期
+  category: spread
+  importance: 3
+  desc: 這位那爛陀寺出身的學者整頓戒律、釐清修行次第。
+    印度佛教在本土衰亡前的最後一波輸出，正好接上西藏的重建。
+  sources:
+    - title: 維基百科：阿底峽
+      url: https://zh.wikipedia.org/wiki/阿底峽
+
+- id: ind-anawrahta
+  year: 1057
+  title: 蒲甘王朝奉上座部佛教
+  category: spread
+  importance: 4
+  desc: 緬甸王取得三藏並推行上座部，取代原有的密教與精靈信仰。
+    今日東南亞大陸的佛教版圖大致由這次選擇奠定。
+  sources:
+    - title: 維基百科：蒲甘王國
+      url: https://zh.wikipedia.org/wiki/蒲甘王國
+    - title: 維基百科：阿奴律陀
+      url: https://zh.wikipedia.org/wiki/阿奴律陀
+
+- id: ind-ramanuja
+  year: 1100
+  title: 羅摩奴闍提出制限不二論
+  category: doctrine
+  importance: 4
+  desc: 反對商羯羅的「世界是幻」，主張個體靈魂真實存在、與神有分有合。
+    這給了虔信運動一套哲學辯護，讓它不再只是民間的熱情。
+  sources:
+    - title: 維基百科：羅摩奴闍
+      url: https://zh.wikipedia.org/wiki/羅摩奴闍
+
+- id: ind-angkor
+  year: 1113
+  title: 吳哥窟興建
+  category: order
+  importance: 4
+  desc: 最初是獻給毘濕奴的神廟，後改為佛寺。高棉的神王觀念把國王
+    等同於神在人間的化身，這座建築就是那套神學的具體形式。
+  sources:
+    - title: 維基百科：吳哥窟
+      url: https://zh.wikipedia.org/wiki/吳哥窟
+
+- id: ind-nalanda
+  year: 1193
+  title: 那爛陀寺被毀，印度佛教衰亡
+  category: conflict
+  importance: 5
+  desc: 藏書被焚、僧眾星散。佛教在誕生地消失了近七百年，
+    它的經典此後靠漢文、藏文與巴利文譯本才得以保存。
+  sources:
+    - title: 維基百科：那爛陀寺
+      url: https://zh.wikipedia.org/wiki/那爛陀寺
+
+- id: ind-sukhothai
+  year: 1287
+  title: 素可泰王朝奉上座部為國教
+  category: spread
+  importance: 3
+  desc: 泰國佛教的制度框架由此確立，僧團由國家認可並管理。
+    這個政教配置延續至今。
+  sources:
+    - title: 維基百科：素可泰王國
+      url: https://zh.wikipedia.org/wiki/素可泰王國
+
+- id: ind-tsongkhapa
+  year: 1409
+  title: 宗喀巴創立格魯派
+  category: order
+  importance: 4
+  desc: 嚴格戒律、重視經院式的辯經訓練。此後成為西藏影響力最大的
+    教派，達賴與班禪兩個轉世系統都屬於它。
+  sources:
+    - title: 維基百科：宗喀巴
+      url: https://zh.wikipedia.org/wiki/宗喀巴
+    - title: 維基百科：格魯派
+      url: https://zh.wikipedia.org/wiki/格魯派
+
+- id: ind-nanak
+  year: 1499
+  title: 古魯那納克開始傳道，錫克教興起
+  category: founding
+  importance: 5
+  desc: 主張唯一神、反對種姓與偶像，同時拒絕印度教與伊斯蘭的儀式外殼。
+    在兩大傳統的交界處長出的第三條路。
+  sources:
+    - title: 維基百科：古魯那納克
+      url: https://zh.wikipedia.org/wiki/古魯那納克
+    - title: 維基百科：錫克教
+      url: https://zh.wikipedia.org/wiki/錫克教
+
+- id: ind-dalai-lama-title
+  year: 1578
+  title: 俺答汗贈予「達賴喇嘛」尊號
+  category: order
+  importance: 4
+  desc: 蒙古可汗與格魯派互相加持：一方取得宗教正當性，一方取得軍事
+    保護。這個「施主與福田」的關係模式影響了此後四百年的西藏政治。
+  sources:
+    - title: 維基百科：第三世達賴喇嘛
+      url: https://zh.wikipedia.org/wiki/第三世達賴喇嘛
+
+- id: ind-guru-granth
+  year: 1604
+  title: 《古魯格蘭特薩希卜》首次編成
+  category: scripture
+  importance: 5
+  desc: 收錄歷代古魯的詩篇，也收錄印度教與穆斯林聖者的作品。
+    後來這部經本身被立為永久的古魯，取代了活人的傳承。
+  sources:
+    - title: 英文維基百科：Guru Granth Sahib
+      url: https://en.wikipedia.org/wiki/Guru_Granth_Sahib
+
+- id: ind-ganden-phodrang
+  year: 1642
+  title: 五世達賴建立甘丹頗章政權
+  category: order
+  importance: 4
+  desc: 在蒙古軍事支持下統一西藏，宗教領袖同時是政治統治者。
+    這個政教合一的體制運作到 1959 年。
+  sources:
+    - title: 維基百科：第五世達賴喇嘛
+      url: https://zh.wikipedia.org/wiki/第五世達賴喇嘛
+
+- id: ind-khalsa
+  year: 1699
+  title: 卡爾薩教團成立
+  category: order
+  importance: 5
+  desc: 第十位古魯建立受洗的武裝兄弟會，規定五項標記與統一的姓氏。
+    錫克教從此有了鮮明的外部識別與軍事傳統。
+  sources:
+    - title: 英文維基百科：Khalsa
+      url: https://en.wikipedia.org/wiki/Khalsa
+    - title: 維基百科：戈賓德·辛格
+      url: https://zh.wikipedia.org/wiki/戈賓德·辛格
+
+- id: ind-brahmo
+  year: 1828
+  title: 梵社成立
+  category: order
+  importance: 4
+  desc: 主張一神、反對偶像與寡婦殉葬，用《奧義書》為自己辯護。
+    印度教面對殖民與傳教壓力時的第一次系統性自我改革。
+  sources:
+    - title: 維基百科：梵社
+      url: https://zh.wikipedia.org/wiki/梵社
+    - title: 英文維基百科：Raja Ram Mohan Roy
+      url: https://en.wikipedia.org/wiki/Raja_Ram_Mohan_Roy
+
+- id: ind-arya-samaj
+  year: 1875
+  title: 雅利安社成立
+  category: order
+  importance: 3
+  desc: 主張回到吠陀本身，拒斥後世的往世書與偶像崇拜，並首開改宗
+    回歸印度教的先例。改革路線比梵社更強硬。
+  sources:
+    - title: 維基百科：雅利安社
+      url: https://zh.wikipedia.org/wiki/雅利安社
+
+- id: ind-maha-bodhi
+  year: 1891
+  title: 摩訶菩提協會成立
+  category: spread
+  importance: 3
+  desc: 斯里蘭卡僧人發起，目標是取回菩提伽耶並復興印度佛教。
+    佛教在誕生地消失七百年後重新有了組織。
+  sources:
+    - title: 英文維基百科：Anagarika Dharmapala
+      url: https://en.wikipedia.org/wiki/Anagarika_Dharmapala
+
+- id: ind-vivekananda
+  year: 1893
+  title: 辨喜在芝加哥世界宗教議會演講
+  category: spread
+  importance: 4
+  desc: 第一次有印度教代表在西方的公開場合陳述自己的傳統。
+    此後吠檀多與瑜伽開始以「普世靈性」的形式進入歐美。
+  sources:
+    - title: 維基百科：辨喜
+      url: https://zh.wikipedia.org/wiki/辨喜
+    - title: 英文維基百科：Parliament of the World's Religions
+      url: https://en.wikipedia.org/wiki/Parliament_of_the_World%27s_Religions
+
+- id: ind-ambedkar
+  year: 1956
+  title: 安貝德卡與數十萬人集體皈依佛教
+  category: spread
+  importance: 5
+  desc: 印度憲法起草人帶領達利特群眾脫離印度教。這是以改宗作為對
+    種姓制度的公開拒絕，也讓佛教在印度重新有了信眾基礎。
+  sources:
+    - title: 維基百科：比姆拉奧·拉姆吉·安貝德卡
+      url: https://zh.wikipedia.org/wiki/比姆拉奧·拉姆吉·安貝德卡
+
+- id: ind-dalai-exile
+  year: 1959
+  title: 達賴喇嘛流亡印度
+  category: conflict
+  importance: 4
+  desc: 甘丹頗章政權終結，僧團與典籍隨之外移。
+    藏傳佛教因此從高原上的地方傳統變成全球性的宗教。
+  sources:
+    - title: 維基百科：1959年藏區騷亂
+      url: https://zh.wikipedia.org/wiki/1959年藏區騷亂

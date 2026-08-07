@@ -1,0 +1,477 @@
+# 古代欄：兩河、埃及、希臘羅馬、伊朗，以及美洲的原生宗教。
+#
+# 這一欄是另外三欄的底土——瑣羅亞斯德的末世論與二元論進了猶太教與基督宗教、
+# 希臘哲學進了教父神學、埃及的來世信仰形塑了整個地中海世界對死亡的想像。
+# 事件收到 1533 年印加覆滅為止；再往後這些傳統要嘛已經消失，要嘛只剩
+# 少數社群（帕西人、曼達安人），不足以撐起獨立的敘事線。
+#
+# id 前綴 anc-。category: founding | scripture | doctrine | order | spread | conflict
+# 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
+
+- id: anc-sumer-temple
+  year: -3000
+  title: 蘇美城邦以神廟為中心
+  category: founding
+  importance: 5
+  desc: 每座城邦有自己的守護神與神廟，神廟同時是糧倉、作坊與帳房。已知最早
+    被制度化的宗教——祭司管的不只是儀式，還有整座城的經濟。
+  sources:
+    - title: 維基百科：蘇美爾宗教
+      url: https://zh.wikipedia.org/wiki/蘇美爾宗教
+
+- id: anc-djoser-pyramid
+  year: -2650
+  title: 左塞爾階梯金字塔
+  category: doctrine
+  importance: 4
+  desc: 已知最早的大型石造陵墓。法老的來世不再只是信念，而是舉全國之力
+    蓋出來的工程，來世觀從此有了看得見的形狀。
+  sources:
+    - title: 維基百科：左塞爾金字塔
+      url: https://zh.wikipedia.org/wiki/左塞爾金字塔
+
+- id: anc-pyramid-texts
+  year: -2350
+  title: 金字塔銘文，已知最早的宗教文獻
+  category: scripture
+  importance: 5
+  desc: 刻在烏尼斯金字塔內壁的咒語，指引法老的靈魂穿過來世。比任何一部
+    現存經典都早，也是研究古埃及神學唯一的第一手材料。
+  sources:
+    - title: 英文維基百科：Pyramid Texts
+      url: https://en.wikipedia.org/wiki/Pyramid_Texts
+    - title: 維基百科：烏尼斯
+      url: https://zh.wikipedia.org/wiki/烏尼斯
+
+- id: anc-gilgamesh
+  year: -2100
+  title: 《吉爾伽美什史詩》的蘇美原型
+  category: scripture
+  importance: 4
+  desc: 從追求永生到接受必死，是已知最早把「人為什麼會死」寫成故事的文本。
+    其中的大洪水情節與後來希伯來聖經的敘述高度相似。
+  sources:
+    - title: 維基百科：吉爾伽美什史詩
+      url: https://zh.wikipedia.org/wiki/吉爾伽美什史詩
+
+- id: anc-ugarit-baal
+  year: -1400
+  title: 烏加里特文獻與迦南的巴力信仰
+  category: scripture
+  importance: 3
+  desc: 出土泥版讓迦南諸神的名字與神話首次有了第一手紀錄。希伯來聖經裡
+    反覆譴責的「拜巴力」，對象就是這一套。
+  sources:
+    - title: 維基百科：迦南宗教
+      url: https://zh.wikipedia.org/wiki/迦南宗教
+    - title: 維基百科：巴力
+      url: https://zh.wikipedia.org/wiki/巴力
+
+- id: anc-akhenaten
+  year: -1353
+  title: 阿肯那頓推行阿頓崇拜
+  category: doctrine
+  importance: 5
+  desc: 法老下令只敬拜日輪阿頓，關閉其他神廟、遷都。這是有紀錄可考最早的
+    一神崇拜嘗試，但在他死後隨即被推翻，名字也遭抹除。
+  sources:
+    - title: 維基百科：阿肯那頓
+      url: https://zh.wikipedia.org/wiki/阿肯那頓
+    - title: 維基百科：阿頓
+      url: https://zh.wikipedia.org/wiki/阿頓
+
+- id: anc-olmec
+  year: -1200
+  title: 奧爾梅克的美洲豹神祇
+  category: founding
+  importance: 3
+  desc: 中美洲最早的複雜宗教圖像系統，美洲豹、羽蛇與雨神的形象被後來的
+    瑪雅與阿茲特克沿用了兩千多年。
+  sources:
+    - title: 維基百科：奧爾梅克文明
+      url: https://zh.wikipedia.org/wiki/奧爾梅克文明
+
+- id: anc-enuma-elish
+  year: -1150
+  title: 《埃努瑪·埃利什》確立馬爾杜克的地位
+  category: scripture
+  importance: 4
+  desc: 巴比倫的創世史詩，講馬爾杜克擊敗原始海神提阿瑪特、用她的身體造出
+    天地。政治上的意思是：巴比倫的城神現在是眾神之王。
+  sources:
+    - title: 維基百科：埃努瑪·埃利什
+      url: https://zh.wikipedia.org/wiki/埃努瑪·埃利什
+
+- id: anc-zoroaster
+  year: -1000
+  title: 瑣羅亞斯德傳教
+  category: founding
+  importance: 5
+  desc: 主張善惡二元、末日審判與死後賞罰。生卒年爭議極大（學界估計介於
+    前 1500 至前 600 年之間），此處取常見的中間值。其末世論後來大幅
+    影響了猶太教、基督宗教與伊斯蘭。
+  legendary: true
+  sources:
+    - title: 維基百科：瑣羅亞斯德
+      url: https://zh.wikipedia.org/wiki/瑣羅亞斯德
+    - title: 維基百科：祆教
+      url: https://zh.wikipedia.org/wiki/祆教
+
+- id: anc-homer
+  year: -750
+  title: 荷馬史詩定型
+  category: scripture
+  importance: 4
+  desc: 希臘人沒有經典、沒有教會、也沒有教條，關於神的知識主要來自史詩。
+    奧林匹斯諸神的性格與譜系就是在這裡定下來的。
+  sources:
+    - title: 維基百科：荷馬史詩
+      url: https://zh.wikipedia.org/wiki/荷馬史詩
+    - title: 維基百科：希臘神話
+      url: https://zh.wikipedia.org/wiki/希臘神話
+
+- id: anc-theogony
+  year: -700
+  title: 赫西俄德《神譜》
+  category: scripture
+  importance: 4
+  desc: 把散落的神話整理成一套從混沌到宙斯的世代更替系譜。希臘宗教因此
+    有了近似「創世說」的東西，儘管仍不是任何教團的正典。
+  sources:
+    - title: 維基百科：神譜
+      url: https://zh.wikipedia.org/wiki/神譜
+    - title: 維基百科：赫西俄德
+      url: https://zh.wikipedia.org/wiki/赫西俄德
+
+- id: anc-eleusis
+  year: -600
+  title: 厄琉息斯秘儀成為泛希臘節慶
+  category: order
+  importance: 3
+  desc: 入教者要發誓終身保密，換來的是關於死後命運的承諾。與公開的城邦
+    祭祀不同，秘儀處理的是個人的救贖，這條線後來一直延伸到諾斯底派。
+  sources:
+    - title: 維基百科：厄琉息斯秘儀
+      url: https://zh.wikipedia.org/wiki/厄琉息斯秘儀
+
+- id: anc-pythagoras
+  year: -530
+  title: 畢達哥拉斯在克羅頓建立教團
+  category: order
+  importance: 4
+  desc: 共有財產、素食、禁忌與靈魂輪迴的信條，加上「萬物皆數」的宇宙論。
+    宗教團體與研究團體在這裡是同一件事，這個模式後來被柏拉圖學院繼承。
+  sources:
+    - title: 維基百科：畢達哥拉斯
+      url: https://zh.wikipedia.org/wiki/畢達哥拉斯
+
+- id: anc-behistun
+  year: -520
+  title: 貝希斯敦銘文把王權歸給阿胡拉·馬茲達
+  category: spread
+  importance: 4
+  desc: 大流士一世在崖壁上以三種文字宣告，他的王位出於阿胡拉·馬茲達的
+    意旨。祆教自此與波斯帝國的統治正當性綁在一起。
+  sources:
+    - title: 維基百科：貝希斯敦銘文
+      url: https://zh.wikipedia.org/wiki/貝希斯敦銘文
+    - title: 維基百科：大流士一世
+      url: https://zh.wikipedia.org/wiki/大流士一世
+
+- id: anc-socrates
+  year: -399
+  title: 蘇格拉底以瀆神罪被處死
+  category: conflict
+  importance: 4
+  desc: 罪名是不敬城邦諸神、引進新神、敗壞青年。城邦宗教是公共義務而非
+    個人信仰，質疑它就等於背叛城邦——這是希臘世界少見的宗教審判。
+  sources:
+    - title: 維基百科：蘇格拉底之死
+      url: https://zh.wikipedia.org/wiki/蘇格拉底之死
+
+- id: anc-plato-academy
+  year: -387
+  title: 柏拉圖創立學院
+  category: doctrine
+  importance: 3
+  desc: 理型論、不朽的靈魂、造物者依理型塑造世界——這些後來全部被教父
+    神學吸收，成為基督宗教談論上帝時的現成語言。
+  sources:
+    - title: 維基百科：柏拉圖學院
+      url: https://zh.wikipedia.org/wiki/柏拉圖學院
+
+- id: anc-stoicism
+  year: -301
+  title: 斯多葛學派創立
+  category: doctrine
+  importance: 3
+  desc: 主張宇宙由內在的理性（邏各斯）貫穿，人的責任是順應它。
+    「神即是自然的理性」這個提法讓一神論在希臘化世界有了哲學版本。
+  sources:
+    - title: 維基百科：斯多葛主義
+      url: https://zh.wikipedia.org/wiki/斯多葛主義
+
+- id: anc-bacchanalia
+  year: -186
+  title: 羅馬元老院鎮壓酒神秘儀
+  category: conflict
+  importance: 3
+  desc: 以敗壞風俗與密謀為由，大規模搜捕入教者、限制集會人數。羅馬對
+    外來宗教的容忍是有條件的：只要看起來像個獨立於城邦之外的組織就不行。
+  sources:
+    - title: 英文維基百科：Bacchanalia
+      url: https://en.wikipedia.org/wiki/Bacchanalia
+    - title: 維基百科：狄俄倪索斯
+      url: https://zh.wikipedia.org/wiki/狄俄倪索斯
+
+- id: anc-isis-rome
+  year: -30
+  title: 伊西斯崇拜隨埃及併入羅馬而擴散
+  category: spread
+  importance: 3
+  desc: 母神、亡夫復活、入教儀式與來世承諾，是羅馬境內最受歡迎的東方
+    信仰之一。與帝國的政治宗教並行，滿足的是後者不處理的個人救贖。
+  sources:
+    - title: 維基百科：伊西斯
+      url: https://zh.wikipedia.org/wiki/伊西斯
+    - title: 維基百科：希臘化時代
+      url: https://zh.wikipedia.org/wiki/希臘化時代
+
+- id: anc-imperial-cult
+  year: 14
+  title: 奧古斯都死後被列入神譜，皇帝崇拜制度化
+  category: doctrine
+  importance: 4
+  desc: 向皇帝像獻祭成為效忠的公開檢驗。拒絕獻祭在羅馬人眼中不是信仰
+    問題而是政治問題——後來基督徒與猶太人受迫害的直接導火線就在這裡。
+  sources:
+    - title: 英文維基百科：Roman imperial cult
+      url: https://en.wikipedia.org/wiki/Roman_imperial_cult
+    - title: 維基百科：古羅馬宗教
+      url: https://zh.wikipedia.org/wiki/古羅馬宗教
+
+- id: anc-mithraism
+  year: 100
+  title: 密特拉教在羅馬軍團中流行
+  category: spread
+  importance: 3
+  desc: 只收男性、分七個等級、聚會在地下石窟。從不列顛到幼發拉底河都
+    有遺址，一度是基督宗教在帝國內最主要的競爭者。
+  sources:
+    - title: 維基百科：密特拉教
+      url: https://zh.wikipedia.org/wiki/密特拉教
+
+- id: anc-sasanian-zoroastrian
+  year: 224
+  title: 薩珊王朝奉祆教為國教
+  category: spread
+  importance: 4
+  desc: 祭司集團取得國家地位，經典被整理、教義被統一。祆教因此第一次
+    有了近似「正統」的東西，代價是與波斯政權綁死。
+  sources:
+    - title: 維基百科：薩珊王朝
+      url: https://zh.wikipedia.org/wiki/薩珊王朝
+    - title: 維基百科：祆教
+      url: https://zh.wikipedia.org/wiki/祆教
+
+- id: anc-mani
+  year: 240
+  title: 摩尼開始傳教
+  category: founding
+  importance: 5
+  desc: 自稱最後的先知，把祆教的二元論、基督宗教的救主與佛教的輪迴熔成
+    一套。刻意設計成可翻譯、可傳播的世界宗教，一度從北非傳到中國。
+  sources:
+    - title: 維基百科：摩尼
+      url: https://zh.wikipedia.org/wiki/摩尼
+    - title: 維基百科：摩尼教
+      url: https://zh.wikipedia.org/wiki/摩尼教
+
+- id: anc-plotinus
+  year: 245
+  title: 普羅提諾在羅馬講學，新柏拉圖主義成形
+  category: doctrine
+  importance: 4
+  desc: 一切從不可名狀的「太一」流出，靈魂的任務是回歸。這套語言後來
+    被奧古斯丁、偽狄奧尼修斯與蘇非派各自借去講自己的神。
+  sources:
+    - title: 維基百科：普羅提諾
+      url: https://zh.wikipedia.org/wiki/普羅提諾
+    - title: 維基百科：新柏拉圖主義
+      url: https://zh.wikipedia.org/wiki/新柏拉圖主義
+
+- id: anc-maya-classic
+  year: 250
+  title: 瑪雅古典期的王權與曆法神學
+  category: doctrine
+  importance: 4
+  desc: 國王是人神之間的通道，放血與獻祭維持宇宙運轉。長紀曆把王朝事件
+    嵌進以千年為單位的時間框架，曆法本身就是神學。
+  sources:
+    - title: 維基百科：瑪雅文明
+      url: https://zh.wikipedia.org/wiki/瑪雅文明
+    - title: 維基百科：瑪雅曆
+      url: https://zh.wikipedia.org/wiki/瑪雅曆
+
+- id: anc-mani-executed
+  year: 276
+  title: 摩尼死於薩珊獄中
+  category: conflict
+  importance: 3
+  desc: 祆教祭司集團視其為異端，說服國王將他下獄。摩尼教此後轉入地下，
+    向東的傳播反而比向西順利。
+  sources:
+    - title: 維基百科：摩尼
+      url: https://zh.wikipedia.org/wiki/摩尼
+
+- id: anc-julian
+  year: 361
+  title: 尤利安試圖復興傳統多神教
+  category: conflict
+  importance: 4
+  desc: 這位受過基督教教育的皇帝即位後重開神廟、仿照教會建立異教慈善
+    組織、禁止基督徒教授古典文學。在位僅兩年，計畫隨他戰死而終止。
+  sources:
+    - title: 維基百科：尤利安
+      url: https://zh.wikipedia.org/wiki/尤利安
+
+- id: anc-theodosius-ban
+  year: 392
+  title: 狄奧多西全面禁止異教祭祀
+  category: conflict
+  importance: 5
+  desc: 連在家中獻酒、掛花圈都在禁列。地中海世界延續三千年的公開多神
+    祭祀就此在法律上結束，神廟或被拆毀或改建為教堂。
+  sources:
+    - title: 維基百科：狄奧多西一世
+      url: https://zh.wikipedia.org/wiki/狄奧多西一世
+
+- id: anc-olympics-end
+  year: 393
+  title: 古代奧林匹克競技停辦
+  category: conflict
+  importance: 3
+  desc: 競技本是獻給宙斯的宗教節慶，禁異教祭祀等於取消它存在的理由。
+    一場辦了一千一百年的儀式因此消失。
+  sources:
+    - title: 維基百科：古代奧林匹克運動會
+      url: https://zh.wikipedia.org/wiki/古代奧林匹克運動會
+
+- id: anc-hypatia
+  year: 415
+  title: 希帕提婭在亞歷山卓遇害
+  category: conflict
+  importance: 3
+  desc: 數學家與新柏拉圖主義教師，捲入主教與總督的政爭後被群眾殺害。
+    此事後來成為「宗教狂熱扼殺古典學術」這個敘事的定型象徵。
+  sources:
+    - title: 維基百科：希帕提婭
+      url: https://zh.wikipedia.org/wiki/希帕提婭
+
+- id: anc-academy-closed
+  year: 529
+  title: 查士丁尼關閉雅典的柏拉圖學院
+  category: conflict
+  importance: 4
+  desc: 禁止異教徒教書，一所辦了九百年的學校關門，教師流亡波斯。
+    古典哲學的建制傳承到此中斷，要等阿拉伯譯本才重新接上。
+  sources:
+    - title: 維基百科：柏拉圖學院
+      url: https://zh.wikipedia.org/wiki/柏拉圖學院
+
+- id: anc-sasanian-fall
+  year: 651
+  title: 薩珊波斯亡國，祆教失去國家支持
+  category: conflict
+  importance: 5
+  desc: 祭司集團與國家綁得太緊，國家一垮就沒有替代的組織可以承接。
+    信徒逐代改宗伊斯蘭，兩百年內從國教退成少數社群。
+  sources:
+    - title: 維基百科：薩珊王朝
+      url: https://zh.wikipedia.org/wiki/薩珊王朝
+    - title: 維基百科：祆教
+      url: https://zh.wikipedia.org/wiki/祆教
+
+- id: anc-uyghur-manichaeism
+  year: 762
+  title: 回鶻可汗奉摩尼教為國教
+  category: spread
+  importance: 4
+  desc: 一個發源於美索不達米亞的宗教，成了草原帝國的官方信仰。
+    這是摩尼教唯一一次取得國教地位，也是它向東走得最遠的一步。
+  sources:
+    - title: 維基百科：摩尼教
+      url: https://zh.wikipedia.org/wiki/摩尼教
+
+- id: anc-tang-ban-manichaeism
+  year: 843
+  title: 唐朝查禁摩尼教
+  category: conflict
+  importance: 3
+  desc: 回鶻汗國崩潰後失去靠山，寺院被沒收、經像被焚。此後摩尼教在中國
+    轉入民間，以「明教」之名續存數百年。
+  sources:
+    - title: 維基百科：摩尼教
+      url: https://zh.wikipedia.org/wiki/摩尼教
+    - title: 維基百科：會昌毀佛
+      url: https://zh.wikipedia.org/wiki/會昌毀佛
+
+- id: anc-parsi-migration
+  year: 936
+  title: 帕西人東遷印度（傳統紀年）
+  category: spread
+  importance: 3
+  desc: 一批祆教徒渡海到古吉拉特定居，成為今日的帕西社群。年份出自數百年
+    後才寫成的敘事詩，屬於傳統紀年而非同代紀錄。
+  legendary: true
+  sources:
+    - title: 維基百科：帕西人
+      url: https://zh.wikipedia.org/wiki/帕西人
+
+- id: anc-norse-end
+  year: 1000
+  title: 冰島議會決議接受基督教
+  category: conflict
+  importance: 3
+  desc: 為避免內戰，議會裁定全島受洗，但允許私下沿用舊俗一段時間。
+    北歐舊神信仰的公開實踐在此後一個世紀內結束。
+  sources:
+    - title: 維基百科：北歐神話
+      url: https://zh.wikipedia.org/wiki/北歐神話
+
+- id: anc-aztec-sacrifice
+  year: 1428
+  title: 阿茲特克三國同盟與人祭制度
+  category: doctrine
+  importance: 4
+  desc: 太陽神需要人血才能每天升起，戰爭因此帶有取得祭品的宗教目的。
+    這是宗教與國家機器結合得最徹底的例子之一。
+  sources:
+    - title: 維基百科：阿茲特克神話
+      url: https://zh.wikipedia.org/wiki/阿茲特克神話
+
+- id: anc-tenochtitlan-fall
+  year: 1521
+  title: 特諾奇提特蘭陷落，阿茲特克神殿被毀
+  category: conflict
+  importance: 5
+  desc: 大神廟被拆，石材用來蓋主教座堂。一個仍在運作的宗教體系在數年內
+    被整體取代，是宗教史上規模最大的一次強制改宗。
+  sources:
+    - title: 維基百科：西班牙征服阿茲特克帝國
+      url: https://zh.wikipedia.org/wiki/西班牙征服阿茲特克帝國
+    - title: 維基百科：特諾奇提特蘭
+      url: https://zh.wikipedia.org/wiki/特諾奇提特蘭
+
+- id: anc-inca-fall
+  year: 1533
+  title: 印加太陽崇拜隨帝國覆滅
+  category: conflict
+  importance: 4
+  desc: 印加王被視為太陽神之子，處決他等於斬斷整套宗教的核心。
+    山巔的聖所與木乃伊祖先崇拜轉入地下，以民間形式殘存至今。
+  sources:
+    - title: 維基百科：印加神話
+      url: https://zh.wikipedia.org/wiki/印加神話
+    - title: 維基百科：維拉科查
+      url: https://zh.wikipedia.org/wiki/維拉科查

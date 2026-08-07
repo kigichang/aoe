@@ -1,0 +1,744 @@
+# 東亞欄：儒、道、神道，以及漢傳佛教與外來宗教在東亞的遭遇。
+#
+# 這一欄有個其他三欄沒有的特色：**信仰不是排他的**。同一個人可以在祖廟
+# 行儒禮、去道觀求籤、到寺院超度，「你信哪一教」這個問題在多數時候
+# 沒有意義。收錄時因此偏重「制度上發生了什麼」（立為官學、下令毀佛、
+# 頒布分離令），而不是個人歸屬。
+#
+# 藏傳佛教不在這一欄，見 indic/events.yaml 開頭的說明。
+#
+# id 前綴 eas-。category: founding | scripture | doctrine | order | spread | conflict
+# 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
+
+- id: eas-oracle-bones
+  year: -1600
+  title: 商代甲骨占卜與祖先崇拜
+  category: founding
+  importance: 5
+  desc: 王透過灼骨向「帝」與歷代先王請示，答案刻在骨上存檔。
+    祖先在死後仍能干預人間——這個前提此後三千年沒有動搖過。
+  sources:
+    - title: 維基百科：甲骨文
+      url: https://zh.wikipedia.org/wiki/甲骨文
+
+- id: eas-mandate
+  year: -1046
+  title: 周人提出天命觀
+  category: doctrine
+  importance: 5
+  desc: 政權的正當性來自天，而天會因統治者失德而收回。這是把宗教與
+    政治責任綁在一起的說法，也是東亞王朝更替的標準論述。
+  sources:
+    - title: 維基百科：天命
+      url: https://zh.wikipedia.org/wiki/天命
+
+- id: eas-confucius
+  year: -551
+  title: 孔子誕生
+  category: founding
+  importance: 5
+  desc: 把「禮」從貴族儀節重新解釋成人格修養的途徑，並主張教育不分階級。
+    他自認只是整理舊制，實際上開出了一個新傳統。
+  sources:
+    - title: 維基百科：孔子
+      url: https://zh.wikipedia.org/wiki/孔子
+    - title: 維基百科：儒教
+      url: https://zh.wikipedia.org/wiki/儒教
+
+- id: eas-mencius
+  year: -310
+  title: 孟子提出性善說
+  category: doctrine
+  importance: 3
+  desc: 人本來就有向善的端緒，修養是把它擴充出來。這個立場後來成為
+    儒學的主流，也是宋明理學整套工夫論的起點。
+  sources:
+    - title: 維基百科：孟子
+      url: https://zh.wikipedia.org/wiki/孟子
+
+- id: eas-laozi
+  year: -350
+  title: 《老子》成書
+  category: scripture
+  importance: 5
+  desc: 五千言講「道」與「無為」，與儒家的禮制取向針鋒相對。
+    後來被道教奉為根本經典，老子本人也被神格化為太上老君。
+  sources:
+    - title: 維基百科：老子 (書)
+      url: https://zh.wikipedia.org/wiki/老子_(書)
+    - title: 維基百科：道教
+      url: https://zh.wikipedia.org/wiki/道教
+
+- id: eas-zhuangzi
+  year: -300
+  title: 《莊子》成篇
+  category: scripture
+  importance: 4
+  desc: 以寓言消解是非、生死與物我的界線。它提供的語彙後來被中國佛教
+    大量借用，禪宗的語言風格尤其看得出痕跡。
+  sources:
+    - title: 維基百科：莊子 (書)
+      url: https://zh.wikipedia.org/wiki/莊子_(書)
+
+- id: eas-book-burning
+  year: -213
+  title: 秦焚書
+  category: conflict
+  importance: 4
+  desc: 除醫藥卜筮農書外，民間藏書一律焚毀。經典的傳承因此中斷，
+    漢代重建時只能靠記誦與殘簡，後來的今古文之爭由此而起。
+  sources:
+    - title: 維基百科：焚書坑儒
+      url: https://zh.wikipedia.org/wiki/焚書坑儒
+
+- id: eas-confucian-state
+  year: -136
+  title: 漢武帝獨尊儒術
+  category: spread
+  importance: 5
+  desc: 設五經博士、以儒經取士。儒學從諸子之一變成國家意識形態，
+    此後兩千年的考試、禮制與官僚倫理都建立在這一步上。
+  sources:
+    - title: 維基百科：獨尊儒術
+      url: https://zh.wikipedia.org/wiki/獨尊儒術
+
+- id: eas-fengshan
+  year: -110
+  title: 漢武帝封禪泰山
+  category: order
+  importance: 3
+  desc: 帝王親自向天地報告功業，同時大量任用方士求仙。
+    國家祭典與神仙方術在此並行，是後來道教的重要來源之一。
+  sources:
+    - title: 維基百科：封禪
+      url: https://zh.wikipedia.org/wiki/封禪
+
+- id: eas-buddhism-china
+  year: -2
+  title: 佛教傳入中國的最早紀錄
+  category: spread
+  importance: 4
+  desc: 有紀錄的第一次是大月氏使者向漢朝博士口授浮屠經。
+    此後兩百年佛教一直被當成方術的一種，與黃老並祀。
+  sources:
+    - title: 維基百科：漢傳佛教
+      url: https://zh.wikipedia.org/wiki/漢傳佛教
+
+- id: eas-zhang-daoling
+  year: 142
+  title: 張道陵創五斗米道
+  category: founding
+  importance: 5
+  desc: 有教團、有戒律、有入教規費（五斗米）、有治病與懺悔儀式。
+    道教作為一個有組織的宗教（而非哲學）從這裡開始。
+  sources:
+    - title: 維基百科：張道陵
+      url: https://zh.wikipedia.org/wiki/張道陵
+    - title: 維基百科：五斗米道
+      url: https://zh.wikipedia.org/wiki/五斗米道
+
+- id: eas-an-shigao
+  year: 148
+  title: 安世高到洛陽譯經
+  category: scripture
+  importance: 4
+  desc: 已知最早的系統性漢譯佛典。用「無為」「本無」等既有詞彙轉譯
+    印度概念，這種格義的做法決定了中國佛教最初三百年的理解方式。
+  sources:
+    - title: 維基百科：安世高
+      url: https://zh.wikipedia.org/wiki/安世高
+
+- id: eas-yellow-turban
+  year: 184
+  title: 黃巾之亂
+  category: conflict
+  importance: 4
+  desc: 太平道以符水治病聚眾數十萬，起事後動搖東漢政權。
+    這是中國第一場由宗教組織發動的大規模叛亂，也是往後歷代防範的原型。
+  sources:
+    - title: 維基百科：黃巾之亂
+      url: https://zh.wikipedia.org/wiki/黃巾之亂
+
+- id: eas-goguryeo-buddhism
+  year: 372
+  title: 佛教傳入高句麗
+  category: spread
+  importance: 3
+  desc: 前秦遣僧送經像至高句麗，朝鮮半島的佛教自此開始。
+    百濟、新羅陸續跟進，並成為佛教再傳日本的中繼。
+  sources:
+    - title: 維基百科：高句麗
+      url: https://zh.wikipedia.org/wiki/高句麗
+
+- id: eas-kumarajiva
+  year: 401
+  title: 鳩摩羅什入長安主持譯場
+  category: scripture
+  importance: 5
+  desc: 國家出資的大型譯場，數百人分工校訂。他的譯本文辭流暢，
+    《金剛經》《法華經》《阿彌陀經》至今仍以他的版本流通。
+  sources:
+    - title: 維基百科：鳩摩羅什
+      url: https://zh.wikipedia.org/wiki/鳩摩羅什
+
+- id: eas-huiyuan
+  year: 402
+  title: 慧遠在廬山結社念佛
+  category: order
+  importance: 4
+  desc: 以往生淨土為共同目標的結社。修行門檻低到不識字的人也做得到，
+    淨土信仰因此成為東亞流傳最廣的佛教形態。
+  sources:
+    - title: 維基百科：慧遠
+      url: https://zh.wikipedia.org/wiki/慧遠
+    - title: 維基百科：白蓮社
+      url: https://zh.wikipedia.org/wiki/白蓮社
+
+- id: eas-kou-qianzhi
+  year: 425
+  title: 寇謙之改革天師道
+  category: doctrine
+  importance: 3
+  desc: 廢除入教繳米與男女合氣之術，改採齋醮儀軌，並取得北魏朝廷支持。
+    道教因此第一次成為官方認可的宗教。
+  sources:
+    - title: 維基百科：寇謙之
+      url: https://zh.wikipedia.org/wiki/寇謙之
+
+- id: eas-wu-of-wei
+  year: 446
+  title: 北魏太武帝滅佛
+  category: conflict
+  importance: 4
+  desc: 下令坑殺沙門、毀經像。動機混合了道教方面的進言與對寺院經濟與
+    免役人口的忌憚——後來三次滅佛的理由大同小異。
+  sources:
+    - title: 維基百科：魏太武帝
+      url: https://zh.wikipedia.org/wiki/魏太武帝
+    - title: 維基百科：三武滅佛
+      url: https://zh.wikipedia.org/wiki/三武滅佛
+
+- id: eas-yungang
+  year: 460
+  title: 雲岡石窟開鑿
+  category: order
+  importance: 4
+  desc: 滅佛之後由國家出資補償性地大興造像，其中幾尊佛像被比附為
+    北魏歷代皇帝。政權與佛教的關係在此定型：既依賴也管控。
+  sources:
+    - title: 維基百科：雲岡石窟
+      url: https://zh.wikipedia.org/wiki/雲岡石窟
+
+- id: eas-silla-buddhism
+  year: 527
+  title: 異次頓殉教，新羅接受佛教
+  category: spread
+  importance: 3
+  desc: 據記載他自請處死以證佛法靈驗，貴族因此改變態度。
+    佛教隨後成為新羅統一半島時的意識形態支柱。
+  sources:
+    - title: 維基百科：異次頓
+      url: https://zh.wikipedia.org/wiki/異次頓
+
+- id: eas-buddhism-japan
+  year: 538
+  title: 佛教傳入日本
+  category: spread
+  importance: 5
+  desc: 百濟王贈送佛像與經論。朝廷隨即分成崇佛與排佛兩派，
+    爭點不是教義而是「拜外國的神會不會觸怒本國的神」。
+  sources:
+    - title: 維基百科：日本佛教
+      url: https://zh.wikipedia.org/wiki/日本佛教
+
+- id: eas-zhou-wu
+  year: 574
+  title: 北周武帝滅佛
+  category: conflict
+  importance: 3
+  desc: 佛道二教同時被廢，僧道還俗數百萬人，寺產充公。
+    這一次的理由最明白：國家要人力與財力。
+  sources:
+    - title: 維基百科：北周武帝滅佛
+      url: https://zh.wikipedia.org/wiki/北周武帝滅佛
+
+- id: eas-soga
+  year: 587
+  title: 丁未之亂，崇佛派勝出
+  category: conflict
+  importance: 3
+  desc: 蘇我氏擊敗主張排佛的物部氏。日本的宗教路線由一場政爭決定，
+    此後佛教與朝廷正式結合。
+  sources:
+    - title: 維基百科：丁未之亂
+      url: https://zh.wikipedia.org/wiki/丁未之亂
+
+- id: eas-shotoku
+  year: 594
+  title: 聖德太子詔興隆三寶
+  category: spread
+  importance: 4
+  desc: 以國家名義推動佛教，建寺、遣使入隋求法。
+    佛教在日本從此不只是氏族信仰，而是統治體制的一部分。
+  sources:
+    - title: 維基百科：聖德太子
+      url: https://zh.wikipedia.org/wiki/聖德太子
+
+- id: eas-zhiyi
+  year: 597
+  title: 智顗圓寂，天台宗成立
+  category: order
+  importance: 4
+  desc: 以《法華經》為中心，用判教把互相矛盾的經典排成一個體系。
+    這是中國佛教第一次建立自己的宗派，不再只是翻譯與註解印度典籍。
+  sources:
+    - title: 維基百科：智顗
+      url: https://zh.wikipedia.org/wiki/智顗
+    - title: 維基百科：天台宗
+      url: https://zh.wikipedia.org/wiki/天台宗
+
+- id: eas-xuanzang
+  year: 629
+  title: 玄奘西行求法
+  category: scripture
+  importance: 5
+  desc: 為了解決唯識經典譯文的分歧而私自出境，十七年後帶回大批梵本並
+    主持翻譯。這是東亞佛教第一次直接校準印度的原典。
+  sources:
+    - title: 維基百科：玄奘
+      url: https://zh.wikipedia.org/wiki/玄奘
+
+- id: eas-nestorian
+  year: 635
+  title: 景教傳入長安
+  category: spread
+  importance: 4
+  desc: 東方教會的傳教士抵達唐都並獲准建寺。以佛道詞彙翻譯教義，
+    在中國存在了兩百年，隨會昌毀佛一併衰亡。
+  sources:
+    - title: 維基百科：大秦景教流行中國碑
+      url: https://zh.wikipedia.org/wiki/大秦景教流行中国碑
+
+- id: eas-huineng
+  year: 675
+  title: 惠能與禪宗南宗
+  category: order
+  importance: 5
+  desc: 主張頓悟、不立文字，並以一個不識字的樵夫為祖師。
+    禪宗因此擺脫了對經典與寺院體制的依賴，成為中國佛教最有生命力的一支。
+  sources:
+    - title: 維基百科：惠能
+      url: https://zh.wikipedia.org/wiki/惠能
+    - title: 維基百科：禪宗
+      url: https://zh.wikipedia.org/wiki/禪宗
+
+- id: eas-kojiki
+  year: 712
+  title: 《古事記》成書
+  category: scripture
+  importance: 5
+  desc: 把各氏族的神話整理成一條從天照大神到天皇的世系。
+    日本的神祇信仰因此第一次有了成文的權威版本，也直接支撐皇統的正當性。
+  sources:
+    - title: 維基百科：古事記
+      url: https://zh.wikipedia.org/wiki/古事記
+    - title: 維基百科：神道
+      url: https://zh.wikipedia.org/wiki/神道
+
+- id: eas-esoteric-tang
+  year: 716
+  title: 開元三大士傳入密教
+  category: order
+  importance: 3
+  desc: 善無畏、金剛智、不空先後入唐傳授密法與灌頂。
+    這一系在中國影響有限，卻經空海帶回日本後開出真言宗。
+  sources:
+    - title: 維基百科：開元三大士
+      url: https://zh.wikipedia.org/wiki/開元三大士
+
+- id: eas-nihon-shoki
+  year: 720
+  title: 《日本書紀》成書
+  category: scripture
+  importance: 4
+  desc: 官修正史，體例仿中國並以漢文寫成。與《古事記》並列為神道的
+    根本文獻，兩者的神話細節不同，反映了不同氏族的說法。
+  sources:
+    - title: 維基百科：日本書紀
+      url: https://zh.wikipedia.org/wiki/日本書紀
+
+- id: eas-todaiji
+  year: 752
+  title: 東大寺大佛開眼
+  category: order
+  importance: 5
+  desc: 傾全國之力鑄造盧舍那佛，並在各國設國分寺。
+    這是「鎮護國家」佛教的頂點——寺院體系本身就是統治網絡。
+  sources:
+    - title: 維基百科：東大寺
+      url: https://zh.wikipedia.org/wiki/東大寺
+
+- id: eas-kukai
+  year: 806
+  title: 空海自唐返國，開創真言宗
+  category: order
+  importance: 5
+  desc: 帶回完整的密教傳承與灌頂法脈。他同時把佛與日本神祇的關係
+    系統化，神佛習合此後成為日本宗教生活的常態。
+  sources:
+    - title: 維基百科：空海
+      url: https://zh.wikipedia.org/wiki/空海
+    - title: 維基百科：最澄
+      url: https://zh.wikipedia.org/wiki/最澄
+
+- id: eas-huichang
+  year: 845
+  title: 會昌毀佛
+  category: conflict
+  importance: 5
+  desc: 拆寺四千餘所、僧尼還俗二十六萬。中國佛教的義學傳統從此一蹶不振，
+    只有不依賴經院與寺產的禪宗與淨土延續下來。
+  sources:
+    - title: 維基百科：會昌毀佛
+      url: https://zh.wikipedia.org/wiki/會昌毀佛
+
+- id: eas-wang-chongyang
+  year: 1167
+  title: 王重陽創全真道
+  category: order
+  importance: 4
+  desc: 要求出家、獨身、住觀，並主張三教合一。道教因此第一次有了
+    類似佛教叢林的組織形態，也讓它在元代得以與佛教競爭朝廷支持。
+  sources:
+    - title: 維基百科：王重陽
+      url: https://zh.wikipedia.org/wiki/王重陽
+    - title: 維基百科：全真道
+      url: https://zh.wikipedia.org/wiki/全真道
+
+- id: eas-honen
+  year: 1175
+  title: 法然創立淨土宗
+  category: order
+  importance: 5
+  desc: 主張只要專念佛號就能往生，其餘修行一概不必。
+    在末法意識瀰漫的年代，這個極簡的方案讓佛教真正走進了平民。
+  sources:
+    - title: 維基百科：法然
+      url: https://zh.wikipedia.org/wiki/法然
+    - title: 維基百科：淨土宗
+      url: https://zh.wikipedia.org/wiki/淨土宗
+
+- id: eas-zhu-xi
+  year: 1190
+  title: 朱熹編定《四書章句集注》
+  category: doctrine
+  importance: 5
+  desc: 以理氣論重建儒學的形上學，並把《四書》抬到《五經》之上。
+    這套注解後來成為東亞科舉的標準答案，影響及於朝鮮與日本。
+  sources:
+    - title: 維基百科：四書章句集注
+      url: https://zh.wikipedia.org/wiki/四書章句集注
+    - title: 維基百科：朱熹
+      url: https://zh.wikipedia.org/wiki/朱熹
+
+- id: eas-shinran
+  year: 1224
+  title: 親鸞創立淨土真宗
+  category: order
+  importance: 4
+  desc: 更進一步：連念佛都是佛力所賜，凡人無法靠自力得救。
+    他公開娶妻食肉，僧俗界線自此在日本被實質取消。
+  sources:
+    - title: 維基百科：親鸞
+      url: https://zh.wikipedia.org/wiki/親鸞
+    - title: 維基百科：淨土真宗
+      url: https://zh.wikipedia.org/wiki/淨土真宗
+
+- id: eas-dogen
+  year: 1227
+  title: 道元自宋返國，傳曹洞禪
+  category: order
+  importance: 4
+  desc: 主張只管打坐、修證一如。與同期強調公案的臨濟宗形成對照，
+    兩者分別在武士與地方社會扎根。
+  sources:
+    - title: 維基百科：道元
+      url: https://zh.wikipedia.org/wiki/道元
+    - title: 維基百科：曹洞宗
+      url: https://zh.wikipedia.org/wiki/曹洞宗
+
+- id: eas-nichiren
+  year: 1253
+  title: 日蓮開宗
+  category: order
+  importance: 4
+  desc: 主張唯《法華經》為真，公開批判其他各宗並上書幕府，因此屢遭
+    流放。這是日本佛教史上少見的排他性主張。
+  sources:
+    - title: 維基百科：日蓮
+      url: https://zh.wikipedia.org/wiki/日蓮
+
+- id: eas-exam-zhu
+  year: 1313
+  title: 元朝以朱熹注本取士
+  category: spread
+  importance: 4
+  desc: 科舉指定四書並以朱注為準。一套哲學解釋被寫進國家考試，
+    此後六百年讀書人的思想框架就由它決定。
+  sources:
+    - title: 維基百科：四書章句集注
+      url: https://zh.wikipedia.org/wiki/四書章句集注
+
+- id: eas-joseon
+  year: 1392
+  title: 朝鮮王朝以性理學立國並抑佛
+  category: spread
+  importance: 4
+  desc: 沒收寺產、限制僧人進城、以書院與鄉約重整社會。
+    一個佛教長期主導的社會被有意識地改造成儒教社會。
+  sources:
+    - title: 維基百科：朝鮮王朝
+      url: https://zh.wikipedia.org/wiki/朝鮮王朝
+    - title: 維基百科：程朱理學
+      url: https://zh.wikipedia.org/wiki/程朱理學
+
+- id: eas-wang-yangming
+  year: 1521
+  title: 王陽明揭致良知
+  category: doctrine
+  importance: 5
+  desc: 主張心即理、知行合一，人人本具的良知就是判準。
+    這條路線繞過經典權威，在明末與德川日本都激發出強烈的實踐傾向。
+  sources:
+    - title: 維基百科：王陽明
+      url: https://zh.wikipedia.org/wiki/王陽明
+
+- id: eas-xavier
+  year: 1549
+  title: 沙勿略抵達鹿兒島
+  category: spread
+  importance: 5
+  desc: 天主教第一次進入日本。初期借用佛教詞彙傳教，數十年間信徒
+    增至數十萬，也因此引來幕府的警戒。
+  sources:
+    - title: 維基百科：方濟·沙勿略
+      url: https://zh.wikipedia.org/wiki/方濟·沙勿略
+
+- id: eas-ricci
+  year: 1583
+  title: 利瑪竇入華
+  category: spread
+  importance: 5
+  desc: 穿儒服、譯西學、以「補儒易佛」自我定位。傳教與知識輸入綁在
+    一起，明清之際的天文、曆法與數學因此有了另一個來源。
+  sources:
+    - title: 維基百科：利瑪竇
+      url: https://zh.wikipedia.org/wiki/利玛窦
+
+- id: eas-bateren
+  year: 1587
+  title: 豐臣秀吉頒伴天連追放令
+  category: conflict
+  importance: 4
+  desc: 下令傳教士離境，理由是外國宗教會分裂人心、危及統治。
+    執行一開始並不徹底，但政策方向自此確立。
+  sources:
+    - title: 日文維基百科：伴天連追放令
+      url: https://ja.wikipedia.org/wiki/伴天連追放令
+
+- id: eas-shimabara
+  year: 1637
+  title: 島原之亂
+  category: conflict
+  importance: 4
+  desc: 以天主教農民為主的大規模起事，遭幕府徹底鎮壓。
+    此後禁教全面強化，日本進入兩百多年的地下信仰時期。
+  sources:
+    - title: 維基百科：島原之亂
+      url: https://zh.wikipedia.org/wiki/島原之亂
+
+- id: eas-terauke
+  year: 1640
+  title: 幕府確立寺請制度
+  category: order
+  importance: 4
+  desc: 每個人都必須登記在某座寺院名下，由寺院出具非教徒的證明。
+    佛教因此成為戶籍與監控機構，代價是失去了傳教的動力。
+  sources:
+    - title: 日文維基百科：寺請制度
+      url: https://ja.wikipedia.org/wiki/寺請制度
+
+- id: eas-calendar-case
+  year: 1664
+  title: 康熙曆獄
+  category: conflict
+  importance: 3
+  desc: 保守派官員控告耶穌會士的曆法與傳教意圖，湯若望下獄。
+    數年後西法在日食預測上勝出，傳教士重掌欽天監。
+  sources:
+    - title: 維基百科：康熙曆獄
+      url: https://zh.wikipedia.org/wiki/康熙历狱
+
+- id: eas-rites-controversy
+  year: 1704
+  title: 教廷禁止中國禮儀
+  category: conflict
+  importance: 5
+  desc: 判定祭祖祭孔屬偶像崇拜，康熙隨後下令禁教。爭點是「這是宗教
+    還是風俗」——雙方都堅持自己有權定義，結果是傳教事業中斷百年。
+  sources:
+    - title: 維基百科：中國禮儀之爭
+      url: https://zh.wikipedia.org/wiki/中国礼仪之争
+
+- id: eas-motoori
+  year: 1798
+  title: 本居宣長完成《古事記傳》
+  category: scripture
+  importance: 4
+  desc: 花三十五年逐句注解《古事記》，主張要剝掉儒佛的影響才見得到
+    日本固有的心。國學因此成形，並在七十年後轉化為政治力量。
+  sources:
+    - title: 日文維基百科：本居宣長
+      url: https://ja.wikipedia.org/wiki/本居宣長
+
+- id: eas-tenrikyo
+  year: 1838
+  title: 天理教創立
+  category: founding
+  importance: 3
+  desc: 一位農婦自稱神附體並開始傳教。幕末至明治間出現的一批新宗教
+    中最具規模者，也是「教派神道」這個範疇的由來。
+  sources:
+    - title: 日文維基百科：天理教
+      url: https://ja.wikipedia.org/wiki/天理教
+
+- id: eas-taiping
+  year: 1851
+  title: 太平天國起事
+  category: conflict
+  importance: 5
+  desc: 洪秀全自稱耶穌之弟，以拜上帝會動員數十萬人，搗毀沿途的孔廟
+    與佛寺。一場基督宗教在地變形所引發的內戰，死亡數以千萬計。
+  sources:
+    - title: 維基百科：太平天國
+      url: https://zh.wikipedia.org/wiki/太平天国
+    - title: 維基百科：拜上帝會
+      url: https://zh.wikipedia.org/wiki/拜上帝會
+
+- id: eas-donghak
+  year: 1860
+  title: 崔濟愚創立東學
+  category: founding
+  importance: 4
+  desc: 主張「人即天」，融合儒釋道與民間信仰以對抗西學。
+    創教者四年後被處死，運動仍延續並在 1894 年引發大規模農民戰爭。
+  sources:
+    - title: 維基百科：東學
+      url: https://zh.wikipedia.org/wiki/東學
+    - title: 維基百科：崔濟愚
+      url: https://zh.wikipedia.org/wiki/崔濟愚
+
+- id: eas-byeongin
+  year: 1866
+  title: 丙寅迫害
+  category: conflict
+  importance: 3
+  desc: 朝鮮政府大規模處決天主教徒與法籍傳教士。天主教自 18 世紀末由
+    朝鮮士人自行引入，此前已歷經多次教難。
+  sources:
+    - title: 維基百科：丙寅迫害
+      url: https://zh.wikipedia.org/wiki/丙寅迫害
+
+- id: eas-shinbutsu
+  year: 1868
+  title: 神佛分離令與廢佛毀釋
+  category: conflict
+  importance: 5
+  desc: 明治政府下令拆解千年來的神佛習合，各地隨即出現毀佛像、燒經卷
+    的行動。政策目標是政治的，衝擊卻落在整個佛教教團身上。
+  sources:
+    - title: 維基百科：神佛分離
+      url: https://zh.wikipedia.org/wiki/神佛分離
+    - title: 維基百科：廢佛毀釋
+      url: https://zh.wikipedia.org/wiki/廢佛毀釋
+
+- id: eas-imperial-rescript
+  year: 1890
+  title: 頒布教育敕語
+  category: doctrine
+  importance: 3
+  desc: 以儒家德目包裝天皇崇拜，各校須恭讀並禮拜。
+    國家神道被說成「不是宗教而是國民道德」，因此不受信教自由的限制。
+  sources:
+    - title: 維基百科：教育敕語
+      url: https://zh.wikipedia.org/wiki/教育敕語
+    - title: 維基百科：國家神道
+      url: https://zh.wikipedia.org/wiki/國家神道
+
+- id: eas-boxer
+  year: 1900
+  title: 義和團事件
+  category: conflict
+  importance: 4
+  desc: 以刀槍不入的信仰動員，攻擊教堂與教民。傳教活動與不平等條約
+    綁在一起，使宗教衝突與反帝情緒難以分割。
+  sources:
+    - title: 維基百科：義和團運動
+      url: https://zh.wikipedia.org/wiki/义和团运动
+
+- id: eas-anti-christian
+  year: 1922
+  title: 非基督教運動
+  category: conflict
+  importance: 3
+  desc: 知識界以科學與民族主義為由發起抵制，要求收回教育權。
+    這是東亞第一次由世俗知識分子而非官方主導的反宗教運動。
+  sources:
+    - title: 維基百科：非基督教運動
+      url: https://zh.wikipedia.org/wiki/非基督教运动
+
+- id: eas-soka
+  year: 1930
+  title: 創價學會前身成立
+  category: order
+  importance: 3
+  desc: 從日蓮系統中長出的在家信徒組織，戰時領導人因拒絕神社參拜
+    入獄。戰後急速擴張，並延伸出政黨。
+  sources:
+    - title: 維基百科：創價學會
+      url: https://zh.wikipedia.org/wiki/創價學會
+
+- id: eas-shinto-directive
+  year: 1945
+  title: 神道指令，國家神道解體
+  category: conflict
+  importance: 5
+  desc: 占領當局下令政教分離、停止對神社的公費支持，翌年天皇發表
+    人間宣言。一套運作七十七年的國家宗教在數月內被拆除。
+  sources:
+    - title: 維基百科：神道指令
+      url: https://zh.wikipedia.org/wiki/神道指令
+
+- id: eas-cultural-revolution
+  year: 1966
+  title: 破四舊，宗教場所全面關閉
+  category: conflict
+  importance: 5
+  desc: 寺觀教堂被砸、經像被焚、僧道神職被迫還俗。這是東亞歷史上
+    規模最大也最徹底的一次宗教壓制，直到 1980 年代才逐步鬆綁。
+  sources:
+    - title: 維基百科：破四舊
+      url: https://zh.wikipedia.org/wiki/破四旧
+
+- id: eas-aum
+  year: 1995
+  title: 東京地鐵沙林事件
+  category: conflict
+  importance: 4
+  desc: 奧姆真理教在早班電車上施放毒氣。此後日本社會對新興宗教的態度
+    急轉，也促成宗教法人法的修訂。
+  sources:
+    - title: 維基百科：東京地鐵沙林毒氣事件
+      url: https://zh.wikipedia.org/wiki/東京地鐵沙林毒氣事件
+    - title: 維基百科：奧姆真理教
+      url: https://zh.wikipedia.org/wiki/奧姆真理教

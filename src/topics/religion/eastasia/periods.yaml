@@ -1,0 +1,84 @@
+# 兩條 track（同 track 內不重疊）：
+#   track 0 = 中國
+#   track 1 = 日本
+#
+# 朝鮮半島沒有自己的 track。它的分期與中國高度重疊（三國佛教、高麗佛教、
+# 朝鮮性理學），再開一條色帶只會多吃 26px 卻沒有新資訊；那幾則事件
+# 靠標題自帶的地名辨識（同世界史 global 欄不做 subregion 欄位的理由）。
+#
+# 中國那條在秦（-221…-207）與五代（908…959）有兩個缺口，是刻意的：
+# 那兩段本來就沒有穩定的官方宗教格局，硬拉一條連續色帶會編出不存在的秩序。
+
+# --- 中國 ---
+- id: eas-p-shang-zhou
+  name: 商周祭祀與天命
+  track: 0
+  start: -1600
+  end: -772
+
+- id: eas-p-hundred-schools
+  name: 諸子百家
+  track: 0
+  start: -771
+  end: -222
+
+- id: eas-p-han-confucian
+  name: 漢代經學與方術
+  track: 0
+  start: -206
+  end: 220
+
+- id: eas-p-buddhist-tang
+  name: 佛道盛世（六朝隋唐）
+  track: 0
+  start: 221
+  end: 907
+
+- id: eas-p-neoconfucian
+  name: 三教合流與理學
+  track: 0
+  start: 960
+  end: 1643
+
+- id: eas-p-modern-china
+  name: 清代至近現代
+  track: 0
+  start: 1644
+  end: 2026
+
+# --- 日本 ---
+- id: eas-p-ancient-shinto
+  name: 古神道
+  track: 1
+  start: -300
+  end: 537
+
+- id: eas-p-shinbutsu
+  name: 神佛習合
+  track: 1
+  start: 538
+  end: 1191
+
+- id: eas-p-kamakura
+  name: 鎌倉新佛教
+  track: 1
+  start: 1192
+  end: 1602
+
+- id: eas-p-edo
+  name: 江戶的寺請與國學
+  track: 1
+  start: 1603
+  end: 1867
+
+- id: eas-p-state-shinto
+  name: 國家神道
+  track: 1
+  start: 1868
+  end: 1945
+
+- id: eas-p-postwar-japan
+  name: 戰後政教分離
+  track: 1
+  start: 1946
+  end: 2026
