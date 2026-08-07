@@ -621,6 +621,18 @@
     - title: 維基百科：特奧蒂瓦坎
       url: https://zh.wikipedia.org/wiki/特奧蒂瓦坎
 
+- id: eu-vercingetorix
+  year: -52
+  title: 凱撒平定高盧，維欽托利兵敗阿萊西亞
+  category: war
+  importance: 4
+  desc: 高盧各部落在阿維爾尼酋長維欽托利號召下聯合抗羅馬，一度重挫凱撒軍團，但最終在阿萊西亞遭凱撒的內外雙重壕溝圍困、彈盡援絕投降；高盧自此併入羅馬版圖，凱撒也藉此役累積的軍功與財富為日後跨越盧比孔河鋪路。
+  sources:
+    - title: 維基百科：維欽托利
+      url: https://zh.wikipedia.org/wiki/維欽托利
+    - title: 維基百科：阿萊西亞之戰
+      url: https://zh.wikipedia.org/wiki/阿萊西亞之戰
+
 - id: eu-caesar
   year: -44
   title: 凱撒遇刺
@@ -837,6 +849,16 @@
   sources:
     - title: 維基百科：西羅馬帝國
       url: https://zh.wikipedia.org/wiki/西羅馬帝國
+
+- id: eu-clovis
+  year: 496
+  title: 克洛維皈依天主教，法蘭克王國奠基
+  category: religion
+  importance: 4
+  desc: 法蘭克國王克洛維一世統一薩利安法蘭克諸部並擊敗高盧最後的羅馬總督，其後接受天主教洗禮，成為第一位改宗正統基督教（而非亞流派）的日耳曼君主；法蘭克王權自此與羅馬教會結盟，往後墨洛溫、加洛林兩朝均由此奠基，法國歷史常以此年作為國家起點。
+  sources:
+    - title: 維基百科：克洛維一世
+      url: https://zh.wikipedia.org/wiki/克洛維一世
 
 - id: sa-aryabhata
   year: 499
@@ -1414,6 +1436,19 @@
     - title: 維基百科：毗奢耶那伽羅帝國
       url: https://zh.wikipedia.org/wiki/毗奢耶那伽羅帝國
 
+- id: eu-hundred-years-war
+  year: 1337
+  endYear: 1453
+  title: 百年戰爭與聖女貞德
+  category: war
+  importance: 5
+  desc: 英法兩國王室為爭奪法國王位斷續交戰超過一世紀，法國一度瀕臨亡國；十七歲的農家女聖女貞德自稱受神啟示，說服王儲查理七世出兵解奧爾良之圍，扭轉戰局，卻在戰後被俘、以異端罪名處以火刑，戰爭最終以法國逐出英軍收場，也催生了法蘭西的民族意識。
+  sources:
+    - title: 維基百科：百年戰爭
+      url: https://zh.wikipedia.org/wiki/百年戰爭
+    - title: 維基百科：聖女貞德
+      url: https://zh.wikipedia.org/wiki/聖女貞德
+
 - id: eu-black-death
   year: 1347
   title: 黑死病席捲歐洲
@@ -1780,6 +1815,16 @@
     - title: 維基百科：英西戰爭 (1585年—1604年)
       url: https://zh.wikipedia.org/wiki/英西戰爭_(1585年—1604年)
 
+- id: eu-edict-of-nantes
+  year: 1598
+  title: 南特敕令，宗教戰爭落幕
+  category: religion
+  importance: 4
+  desc: 亨利四世結束長達三十餘年的天主教與新教內戰，頒布南特敕令承認胡格諾派的信仰自由與部分政治權利，是歐洲最早的宗教寬容立法之一；但這項讓步僅維持八十七年，路易十四於1685年廢除敕令，迫使大批胡格諾教徒出走。
+  sources:
+    - title: 維基百科：南特敕令
+      url: https://zh.wikipedia.org/wiki/南特敕令
+
 - id: eu-voc
   year: 1602
   title: 荷蘭東印度公司成立，首家股份公司
@@ -1847,6 +1892,18 @@
   sources:
     - title: 維基百科：西發里亞和約
       url: https://zh.wikipedia.org/wiki/西發里亞和約
+
+- id: eu-louis-xiv
+  year: 1661
+  title: 路易十四親政，法國絕對君權巔峰
+  category: politics
+  importance: 4
+  desc: 首相馬薩林去世後，路易十四不再任命首相、親自掌理國政，將貴族集中到新建的凡爾賽宮供養、削弱其地方勢力；「朕即國家」的絕對王權模式使法國成為當時歐洲最強盛的君主國，也為往後的宮廷奢華與財政危機埋下種子。
+  sources:
+    - title: 維基百科：路易十四
+      url: https://zh.wikipedia.org/wiki/路易十四
+    - title: 維基百科：凡爾賽宮
+      url: https://zh.wikipedia.org/wiki/凡爾賽宮
 
 - id: me-vienna-1683
   year: 1683
@@ -2024,6 +2081,7 @@
   title: 法國大革命
   category: politics
   importance: 5
+  desc: 財政破產與三級會議召開觸發民怨，攻陷巴士底獄後革命迅速激進化，廢除封建特權、頒布《人權宣言》，國王路易十六終被送上斷頭台；舊制度崩解，「自由、平等、博愛」的理念自此傳遍歐洲，也開啟了長達數十年的動盪與戰爭。
   sources:
     - title: 維基百科：法國大革命
       url: https://zh.wikipedia.org/wiki/法國大革命
@@ -2054,6 +2112,7 @@
   title: 拿破崙稱帝
   category: politics
   importance: 5
+  desc: 拿破崙以公投確認終身執政後加冕稱帝，建立法蘭西第一帝國；他隨後席捲歐陸大部分地區、輸出《拿破崙法典》重塑歐洲的法律體系，卻在1812年遠征俄羅斯慘敗，1815年滑鐵盧一役徹底終結其統治。
   sources:
     - title: 維基百科：拿破崙一世
       url: https://zh.wikipedia.org/wiki/拿破崙一世
@@ -2156,6 +2215,7 @@
   title: 歐洲革命之年；《共產黨宣言》
   category: politics
   importance: 4
+  desc: 法國二月革命推翻七月王朝、建立第二共和，革命浪潮隨即擴散至德意志、奧地利、義大利諸邦，訴求立憲、民族統一與勞工權益；多數起義最終遭鎮壓收場，但同年出版的《共產黨宣言》預示了此後一世紀階級鬥爭將成為歐洲政治的核心主題。
   sources:
     - title: 維基百科：1848年革命
       url: https://zh.wikipedia.org/wiki/1848年革命
@@ -2170,6 +2230,18 @@
   sources:
     - title: 維基百科：加利福尼亞淘金潮
       url: https://zh.wikipedia.org/wiki/加利福尼亞淘金潮
+
+- id: eu-second-empire
+  year: 1852
+  title: 拿破崙三世稱帝，法蘭西第二帝國
+  category: politics
+  importance: 3
+  desc: 拿破崙一世之姪路易·拿破崙以公民投票確認總統任期後發動政變，隔年稱帝建立第二帝國；在位期間主導巴黎大改造、擴張殖民版圖，卻在1870年普法戰爭中兵敗色當被俘，帝國隨即崩潰。
+  sources:
+    - title: 維基百科：拿破崙三世
+      url: https://zh.wikipedia.org/wiki/拿破崙三世
+    - title: 維基百科：法蘭西第二帝國
+      url: https://zh.wikipedia.org/wiki/法蘭西第二帝國
 
 - id: sa-rebellion-1857
   year: 1857
@@ -2250,6 +2322,16 @@
     - title: 維基百科：德意志統一
       url: https://zh.wikipedia.org/wiki/德意志統一
 
+- id: eu-paris-commune
+  year: 1871
+  title: 巴黎公社
+  category: politics
+  importance: 4
+  desc: 普法戰爭戰敗、臨時政府對德求和後，巴黎市民組成自治政府抵制中央，短暫實施工人自治、政教分離等激進政策，兩個月後遭凡爾賽政府軍血腥鎮壓；儘管壽命短暫，巴黎公社日後被馬克思主義者奉為第一個無產階級政權的先例。
+  sources:
+    - title: 維基百科：巴黎公社
+      url: https://zh.wikipedia.org/wiki/巴黎公社
+
 - id: me-egypt-britain-occupation
   year: 1882
   title: 英國佔領埃及
@@ -2280,6 +2362,17 @@
       url: https://zh.wikipedia.org/wiki/巴西帝國
     - title: 英文維基百科：黃金法
       url: https://en.wikipedia.org/wiki/Lei_Áurea
+
+- id: eu-dreyfus-affair
+  year: 1894
+  endYear: 1906
+  title: 德雷福斯事件
+  category: politics
+  importance: 4
+  desc: 猶太裔軍官德雷福斯遭誣陷叛國定罪，作家左拉發表《我控訴》揭露軍方偽造證據、聲援平反，社會因此分裂為擁德雷福斯與反猶陣營兩派；事件最終促成法國政教分離立法，也被視為現代反猶主義與錫安主義興起的重要案例。
+  sources:
+    - title: 維基百科：德雷福斯事件
+      url: https://zh.wikipedia.org/wiki/德雷福斯事件
 
 - id: am-spanish-american-war
   year: 1898
@@ -2481,6 +2574,19 @@
     - title: 維基百科：第二次世界大戰
       url: https://zh.wikipedia.org/wiki/第二次世界大戰
 
+- id: eu-vichy-france
+  year: 1940
+  endYear: 1944
+  title: 維希法國成立，戴高樂領導自由法國
+  category: war
+  importance: 4
+  desc: 德國擊敗法國後，貝當元帥在維希建立與納粹合作的傀儡政權，配合逮捕猶太人與異議份子；流亡英國的戴高樂將軍則號召「自由法國」堅持抵抗，成為法國光復後政治正當性的來源，1944年盟軍解放巴黎，戴高樂返國主政。
+  sources:
+    - title: 維基百科：維希法國
+      url: https://zh.wikipedia.org/wiki/維希法國
+    - title: 維基百科：自由法國
+      url: https://zh.wikipedia.org/wiki/自由法國
+
 - id: am-pearl-harbor
   year: 1941
   title: 珍珠港事件，美國參戰第二次世界大戰
@@ -2606,6 +2712,18 @@
     - title: 維基百科：羅馬條約
       url: https://zh.wikipedia.org/wiki/羅馬條約
 
+- id: eu-fifth-republic
+  year: 1958
+  title: 戴高樂建立法蘭西第五共和
+  category: politics
+  importance: 4
+  desc: 阿爾及利亞獨立戰爭引爆的政治危機讓第四共和瀕臨崩潰，戴高樂在軍方支持下復出，主導制定賦予總統更大實權的新憲法，建立至今仍在運作的第五共和；阿爾及利亞其後於1962年獨立，法國也逐步結束大部分殖民統治。
+  sources:
+    - title: 維基百科：夏爾·戴高樂
+      url: https://zh.wikipedia.org/wiki/夏爾·戴高樂
+    - title: 維基百科：法蘭西第五共和國
+      url: https://zh.wikipedia.org/wiki/法蘭西第五共和國
+
 - id: me-egypt-aswan-dam
   year: 1960
   endYear: 1970
@@ -2649,6 +2767,16 @@
   sources:
     - title: 維基百科：第三次中東戰爭
       url: https://zh.wikipedia.org/wiki/第三次中東戰爭
+
+- id: eu-may-1968
+  year: 1968
+  title: 五月風暴
+  category: politics
+  importance: 4
+  desc: 學生占領大學校園抗議教育體制與社會保守氛圍，工人隨後響應發動全國大罷工，一度癱瘓法國經濟、動搖戴高樂政府；雖未能立即改朝換代，卻深刻改變法國的社會文化與勞動權益，也啟發了同時期全球各地的學生運動。
+  sources:
+    - title: 維基百科：五月風暴
+      url: https://zh.wikipedia.org/wiki/五月風暴
 
 - id: am-apollo-11
   year: 1969
