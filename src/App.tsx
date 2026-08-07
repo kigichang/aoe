@@ -23,6 +23,8 @@ import { DetailPanel } from './components/DetailPanel'
 import { ThemeToggle } from './components/ThemeToggle'
 import { HelpOverlay } from './components/HelpOverlay'
 import { SearchBox } from './components/SearchBox'
+import { TopicSwitcher } from './components/TopicSwitcher'
+import { SITE_NAME } from './lib/site'
 import { useTheme } from './lib/theme'
 import { readUrlState, writeUrlState } from './lib/urlState'
 
@@ -455,10 +457,14 @@ export default function App() {
     <div className="app">
       <header className="masthead">
         <div>
-          <h1>{TOPIC.name}</h1>
+          {/* 站名是站的屬性，主題名才來自 topic.yaml —— 兩者刻意分開，見 site.ts */}
+          <h1>
+            {SITE_NAME} · {TOPIC.name}
+          </h1>
           <p>{TOPIC.description}</p>
         </div>
         <div className="masthead-actions">
+          <TopicSwitcher />
           <button
             type="button"
             className="theme-toggle"

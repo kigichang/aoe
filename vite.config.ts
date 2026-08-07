@@ -4,6 +4,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import yaml from '@rollup/plugin-yaml'
 import * as jsyaml from 'js-yaml'
+// 站名同時給 <title> 與標題列的 h1 用。抄成兩份遲早會分岔，見 src/lib/site.ts。
+import { SITE_NAME } from './src/lib/site'
 
 // GitHub Pages 專案頁面掛在 https://<user>.github.io/<repo>/ 底下，
 // 所以 CI 上必須把 base 設成 /<repo>/，本機開發則是 '/'。
@@ -96,7 +98,12 @@ const topicMeta = {
     const meta = topicOf(ctx.path)
     if (!meta) return html
     return html
-      .replace(/<title>[^<]*<\/title>/, `<title>${escapeHtml(meta.title ?? meta.name)}</title>`)
+      // topic.yaml 的 name 只填主題名，站名由這裡前綴 —— 跟標題列的 h1 同一個規則。
+      // 想要別的分頁標題就在 topic.yaml 填 title 覆寫。
+      .replace(
+        /<title>[^<]*<\/title>/,
+        `<title>${escapeHtml(meta.title ?? `${SITE_NAME} · ${meta.name}`)}</title>`,
+      )
       .replace(
         /(<meta name="description" content=")[^"]*(")/,
         `$1${escapeHtml(meta.description)}$2`,

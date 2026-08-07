@@ -50,14 +50,19 @@ src/topics/<主題>/
 ### `topic.yaml`
 
 ```yaml
-name: 台灣鐵道史                  # 標題列的 h1
-title: 台灣鐵道史 — 並排比較…      # 選填，瀏覽器分頁標題。沒填就用 name
+name: 台灣鐵道史                  # 主題名。**不要帶站名**，見下
+title: 台灣鐵道史 — 並排比較…      # 選填，瀏覽器分頁標題。沒填就是「AoE · <name>」
 description: 把台灣各家鐵道…      # 標題列副標，同時是 HTML 的 meta description
 columnLabel: 營運者               # 選填，欄位在這個主題叫什麼。預設「地區」
 defaultPpy: 12                   # 選填，開場縮放（px/年）。沒填取「整條軸約兩屏」
 jumps: [1890, 1910, 1930]        # 選填，年代跳轉按鈕。沒填依範圍自動產生
+order: 2                         # 選填，主題切換清單的排序。沒填排在有填的後面
 root: true                       # 掛在根網址。**恰好一個主題可以設**
 ```
+
+`name` **只填主題名**（`世界史`、`台灣鐵道史`）。站名來自 `src/lib/site.ts` 的
+`SITE_NAME`，由程式前綴上去 —— 標題列的 h1 是 `AoE · 世界史`，分頁標題同理，
+主題切換清單則只印 `name` 本身。站名是站的屬性，不是每個主題各填一次的東西。
 
 `root: true` 是「哪個主題掛在根網址」的唯一來源，`vite.config.ts` 與 `data.ts`
 都讀它。沒設或設兩個都會在建置期與載入期直接報錯。
@@ -75,6 +80,9 @@ root: true                       # 掛在根網址。**恰好一個主題可以�
 `vite.config.ts` 依 `topic.yaml` 產生（`/<目錄名>/index.html`，gitignored）。
 GitHub Pages 沒有 server-side rewrite，所以那份實體檔案是必要的 ——
 靠前端 router 接不到子路徑。
+
+新主題也會**自動出現在標題列的主題切換選單**，同樣不必改程式。想指定它排第幾個
+就填 `order`。
 
 ### `categories.yaml`
 

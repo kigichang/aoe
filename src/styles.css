@@ -157,6 +157,73 @@ button {
   flex: none;
 }
 
+/* ---------------- 主題切換器 ---------------- */
+
+/* 選單的定位基準 */
+.topic-switcher { position: relative; flex: none; }
+
+.topic-trigger { padding-right: 7px; }
+.topic-trigger svg { width: 13px; height: 13px; }
+.topic-trigger[aria-expanded='true'] {
+  border-color: var(--baseline);
+  color: var(--text-primary);
+}
+
+/*
+ * 靠右對齊觸發鈕：切換器在標題列右側，往左展開才不會溢出視窗右緣。
+ *
+ * z-index 12 —— 既有階梯是畫布 0–7、詳情面板 10、說明覆蓋層 20。
+ * 要蓋得過詳情面板，又不能蓋到說明覆蓋層。
+ */
+.topic-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 12;
+  min-width: 190px;
+  max-width: min(280px, calc(100vw - 32px));
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-1);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.18);
+}
+
+.topic-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 6px 10px 7px;
+  border-radius: 7px;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+.topic-item:hover { background: var(--page); }
+/* 當前主題靠勾記與 aria-current 標示，不另外換色 —— 顏色在這個站上是留給地區的 */
+.topic-item.is-current .topic-item-name { font-weight: 600; }
+
+.topic-item-name {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  font-size: 13px;
+}
+/* 固定寬度，沒打勾的主題名才會跟打勾的對齊 */
+.topic-check {
+  width: 11px;
+  flex: none;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+.topic-item-range {
+  padding-left: 16px;
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
 .toolbar {
   padding: 6px 20px 10px;
   border-bottom: 1px solid var(--border);

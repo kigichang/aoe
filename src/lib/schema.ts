@@ -61,9 +61,15 @@ export const DEFAULT_CATEGORIES: CategoryDef[] = [
  * `data.ts` 都讀它，不要在程式裡另寫一個預設主題常數。
  */
 export const topicSchema = z.object({
-  /** 標題列的 h1 */
+  /**
+   * **只填主題名**（`世界史`、`台灣鐵道史`），不要帶站名。
+   *
+   * 站名由 `site.ts` 的 `SITE_NAME` 自動前綴：標題列的 h1 是 `AoE · 世界史`，
+   * 主題切換清單裡則只印 `name` 本身。曾經 world 這份填 `AoE`、鐵道史那份填
+   * `台灣鐵道史` —— 同一個欄位裝了兩種不同的東西，切換清單一並列就讀不通了。
+   */
   name: z.string().min(1),
-  /** 瀏覽器分頁的標題。沒填就用 `name` */
+  /** 瀏覽器分頁的標題。沒填就是 `${SITE_NAME} · ${name}` */
   title: z.string().min(1).optional(),
   /** 標題列的副標，同時也是 HTML 的 meta description */
   description: z.string().min(1),
@@ -86,6 +92,13 @@ export const topicSchema = z.object({
    * 不是 `minImportance()` 的門檻，也不是資料的 importance（CLAUDE.md 有實測）。
    */
   defaultPpy: z.number().positive().optional(),
+  /**
+   * 主題切換清單裡的排序。沒填的排在有填的後面，同組再依目錄名。
+   *
+   * 跟 `regionSchema` 的 `order` 同一個慣例：清單順序是編輯決定的，
+   * 不該取決於目錄名的字母序（`tw-railway` 會排在 `world` 前面）。
+   */
+  order: z.number().optional(),
   root: z.boolean().optional(),
 })
 

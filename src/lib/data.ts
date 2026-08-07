@@ -144,6 +144,56 @@ if (!activeTopic) {
 /** 當前主題的設定。`columnLabel` 決定 UI 上「地區」那個詞怎麼稱呼。 */
 export const TOPIC: TopicMeta = activeTopic
 
+/* ------------------------------------------------------------------ *
+ * 主題清單（給切換器用）
+ * ------------------------------------------------------------------ */
+
+export interface TopicEntry {
+  slug: string
+  meta: TopicMeta
+  /** 這個主題的網址（含 base）。root 主題就是 base 本身。 */
+  href: string
+  isCurrent: boolean
+  /**
+   * 年代範圍，給清單當副標。**格式化留給元件做**（`scale.ts` 的 `fmtYear`）——
+   * `scale.ts` 已經 import 這支，反過來 import 會是循環，而且 `MIN_YEAR`
+   * 是模組層常數，載入期就會踩到 TDZ。
+   *
+   * 讀不到就 `null`（見下方 `safeParse` 的理由）。
+   */
+  timeline: Timeline | null
+}
+
+/**
+ * 全部主題，已排序。切換器靠這個列清單。
+ *
+ * 成本是零：`topicFiles` 本來就把所有主題的 `topic.yaml` eager glob 進來了
+ * （`ALL_TOPICS` 早就在解析全部），這裡只是把既有的東西露出去。
+ *
+ * **非當前主題的 `timeline.yaml` 一律 `safeParse`，失敗就給 `null`。**
+ * 當前主題有嚴格檢查（下面的 `assertInRange` 那一整套），但別的主題打錯字
+ * 不該害這一頁整片白 —— 那是新增的跨主題失敗耦合，換來的只是清單上一行副標。
+ * 全主題的嚴格檢查本來就有 `npm run lint:data` 在把關。
+ */
+export const TOPICS: TopicEntry[] = [...ALL_TOPICS]
+  .map(([slug, meta]) => {
+    const entry = Object.entries(timelineFiles).find(([p]) => topicSlugFromPath(p) === slug)
+    const parsed = entry ? timelineSchema.safeParse(entry[1]) : null
+    return {
+      slug,
+      meta,
+      // BASE_URL 一定以 '/' 結尾（本機 '/'、GitHub Pages '/<repo>/'）。
+      // 寫死 '/' 的話本機完全正常，部署到 Pages 才會 404。
+      href: import.meta.env.BASE_URL + (meta.root ? '' : `${slug}/`),
+      isCurrent: slug === TOPIC_ID,
+      timeline: parsed?.success ? parsed.data : null,
+    }
+  })
+  .sort(
+    (a, b) =>
+      (a.meta.order ?? Infinity) - (b.meta.order ?? Infinity) || a.slug.localeCompare(b.slug),
+  )
+
 /** 只挑出屬於當前主題的檔案，其餘丟掉。 */
 function ofActiveTopic(files: Record<string, unknown>, slugOf: (p: string) => string) {
   return Object.entries(files).filter(([path]) => slugOf(path) === TOPIC_ID)
