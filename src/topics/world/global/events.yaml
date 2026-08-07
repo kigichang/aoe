@@ -1448,6 +1448,19 @@
     - title: 維基百科：大憲章
       url: https://zh.wikipedia.org/wiki/大憲章
 
+- id: eu-mongol-invasion-rus
+  year: 1237
+  endYear: 1240
+  title: 蒙古入侵羅斯，欽察汗國統治開始
+  category: war
+  importance: 5
+  desc: 拔都率蒙古大軍長子西征，接連攻陷基輔羅斯境內的弗拉基米爾、基輔等公國，羅斯諸公國自此臣服於欽察汗國長達兩個多世紀，須向蒙古大汗納貢並接受冊封；史稱「韃靼之軛」，深刻形塑了俄羅斯日後中央集權、與西歐疏離的政治文化。
+  sources:
+    - title: 維基百科：長子西征
+      url: https://zh.wikipedia.org/wiki/長子西征
+    - title: 維基百科：欽察汗國
+      url: https://zh.wikipedia.org/wiki/欽察汗國
+
 - id: me-egypt-mamluk
   year: 1250
   title: 馬木留克蘇丹國建立
@@ -1551,6 +1564,16 @@
   sources:
     - title: 維基百科：漢薩同盟
       url: https://zh.wikipedia.org/wiki/漢薩同盟
+
+- id: eu-kulikovo
+  year: 1380
+  title: 庫里科沃之戰，莫斯科首挫欽察汗國
+  category: war
+  importance: 4
+  desc: 莫斯科大公德米特里率羅斯聯軍在頓河畔的庫里科沃平原擊敗欽察汗國大軍，是羅斯諸公國百餘年來首次重挫蒙古統治者；儘管蒙古統治又延續一個世紀才真正終結，此役仍被視為莫斯科崛起為羅斯領導核心的關鍵轉捩點。
+  sources:
+    - title: 維基百科：庫里科沃之戰
+      url: https://zh.wikipedia.org/wiki/庫里科沃之戰
 
 - id: eu-chrysoloras-greek
   year: 1397
@@ -1864,6 +1887,16 @@
     - title: 維基百科：天體運行論
       url: https://zh.wikipedia.org/wiki/天體運行論
 
+- id: eu-ivan-tsar
+  year: 1547
+  title: 伊凡四世加冕沙皇，俄羅斯沙皇國建立
+  category: politics
+  importance: 4
+  desc: 莫斯科大公伊凡四世自行加冕為「沙皇」，建立俄羅斯沙皇國，頒布新法典並設立首個代議機構縉紳會議；晚年因猜忌大肆屠殺貴族、性格暴虐而得「恐怖伊凡」之名，其子費奧多爾去世後留里克王朝絕嗣，引爆日後的動亂時代。
+  sources:
+    - title: 維基百科：伊凡四世
+      url: https://zh.wikipedia.org/wiki/伊凡四世
+
 - id: eu-trent
   year: 1545
   title: 特倫托會議，天主教改革
@@ -1935,6 +1968,19 @@
   sources:
     - title: 維基百科：南特敕令
       url: https://zh.wikipedia.org/wiki/南特敕令
+
+- id: eu-romanov-dynasty
+  year: 1598
+  endYear: 1613
+  title: 動亂時代，羅曼諾夫王朝建立
+  category: politics
+  importance: 4
+  desc: 留里克王朝絕嗣後俄國陷入王位爭奪、饑荒與波蘭立陶宛聯邦入侵的動亂時代，一度連莫斯科都被外國軍隊占領；縉紳會議其後推舉米哈伊爾·羅曼諾夫為新沙皇，開啟統治俄國長達三百餘年的羅曼諾夫王朝。
+  sources:
+    - title: 維基百科：混亂時期
+      url: https://zh.wikipedia.org/wiki/混亂時期
+    - title: 維基百科：羅曼諾夫王朝
+      url: https://zh.wikipedia.org/wiki/羅曼諾夫王朝
 
 - id: eu-voc
   year: 1602
@@ -2126,6 +2172,18 @@
       url: https://en.wikipedia.org/wiki/Thomas_Newcomen
     - title: 維基百科：蒸汽機
       url: https://zh.wikipedia.org/wiki/蒸汽機
+
+- id: eu-peter-great-empire
+  year: 1721
+  title: 彼得大帝建立俄羅斯帝國
+  category: politics
+  importance: 5
+  desc: 彼得大帝在大北方戰爭擊敗瑞典、奪得波羅的海出海口後，宣布俄國由沙皇國升格為帝國並自稱皇帝；他早年微服赴西歐考察造船與軍事技術，返國後大力推動西化改革、建立新都聖彼得堡，將俄國改造為歐洲列強之一。
+  sources:
+    - title: 維基百科：彼得大帝
+      url: https://zh.wikipedia.org/wiki/彼得大帝
+    - title: 維基百科：俄羅斯帝國
+      url: https://zh.wikipedia.org/wiki/俄羅斯帝國
 
 - id: sa-nadir-shah-delhi
   year: 1739
@@ -2324,6 +2382,16 @@
     - title: 維基百科：西班牙美洲獨立戰爭
       url: https://zh.wikipedia.org/wiki/西班牙美洲獨立戰爭
 
+- id: eu-napoleon-russia
+  year: 1812
+  title: 拿破崙入侵俄國潰敗
+  category: war
+  importance: 5
+  desc: 拿破崙率六十萬大軍入侵俄國，一路挺進攻陷莫斯科，但俄軍堅壁清野、縱火焦土，法軍補給斷絕又遇嚴冬，被迫撤退時遭俄軍窮追猛打，數十萬人死於飢寒與戰事；這場慘敗重創法軍主力，是拿破崙帝國由盛轉衰的關鍵一役。
+  sources:
+    - title: 維基百科：俄法戰爭
+      url: https://zh.wikipedia.org/wiki/俄法戰爭
+
 - id: eu-waterloo
   year: 1815
   title: 滑鐵盧戰役，維也納體系成形
@@ -2462,6 +2530,18 @@
       url: https://zh.wikipedia.org/wiki/物種起源
     - title: 維基百科：查爾斯·達爾文
       url: https://zh.wikipedia.org/wiki/查爾斯·達爾文
+
+- id: eu-serf-emancipation
+  year: 1861
+  title: 亞歷山大二世廢除農奴制
+  category: politics
+  importance: 4
+  desc: 俄國在克里米亞戰爭敗於已完成工業化的英法後，亞歷山大二世頒布敕令解放兩千三百餘萬名農奴，是俄國近代史上規模最大的社會改革；但農民須向地主付出高額贖金才能取得土地，改革未能化解積怨，反而助長了日後的革命情緒。
+  sources:
+    - title: 維基百科：農奴制
+      url: https://zh.wikipedia.org/wiki/農奴制
+    - title: 維基百科：俄羅斯帝國
+      url: https://zh.wikipedia.org/wiki/俄羅斯帝國
 
 - id: eu-italian-unification
   year: 1861
@@ -2682,9 +2762,23 @@
   title: 俄國十月革命
   category: politics
   importance: 4
+  desc: 1905年日俄戰爭戰敗引發的革命已讓沙皇被迫讓步、成立杜馬，卻未能化解積怨；一戰的慘重傷亡與物資短缺終於在1917年二月引爆革命，尼古拉二世被迫退位，羅曼諾夫王朝覆滅。臨時政府堅持繼續參戰、遲遲不解決土地問題，列寧領導的布爾什維克黨隨後在十月發動政變奪取政權，建立世界第一個共產黨執政的國家。
   sources:
     - title: 維基百科：十月革命
       url: https://zh.wikipedia.org/wiki/十月革命
+    - title: 維基百科：俄國二月革命
+      url: https://zh.wikipedia.org/wiki/俄國二月革命
+
+- id: eu-russian-civil-war
+  year: 1917
+  endYear: 1922
+  title: 俄國內戰，紅軍白軍對峙
+  category: war
+  importance: 4
+  desc: 布爾什維克奪權後，保皇派、社會主義溫和派與外國干涉軍組成的白軍與托洛斯基領導的紅軍在俄國各地混戰近五年，戰爭與伴隨的饑荒奪走逾七百萬條性命；紅軍最終勝出，鞏固了布爾什維克政權，也為隔年蘇聯的成立掃清障礙。
+  sources:
+    - title: 維基百科：俄國內戰
+      url: https://zh.wikipedia.org/wiki/俄國內戰
 
 - id: me-balfour
   year: 1917
@@ -2762,6 +2856,16 @@
     - title: 維基百科：國家法西斯黨
       url: https://zh.wikipedia.org/wiki/國家法西斯黨
 
+- id: eu-ussr-founded
+  year: 1922
+  title: 蘇維埃社會主義共和國聯盟成立
+  category: politics
+  importance: 5
+  desc: 俄國內戰結束後，俄羅斯、烏克蘭、白俄羅斯與外高加索四個蘇維埃共和國簽約組成蘇聯；史達林其後在列寧去世的權力鬥爭中勝出掌權，推動強制農業集體化與重工業化，蘇聯迅速崛起為與美國分庭抗禮的超級強權。
+  sources:
+    - title: 維基百科：蘇聯
+      url: https://zh.wikipedia.org/wiki/蘇聯
+
 - id: me-turkey
   year: 1923
   title: 土耳其共和國成立
@@ -2828,6 +2932,17 @@
     - title: 維基百科：羅斯福新政
       url: https://zh.wikipedia.org/wiki/羅斯福新政
 
+- id: eu-great-purge
+  year: 1936
+  endYear: 1938
+  title: 史達林大整肅
+  category: politics
+  importance: 4
+  desc: 史達林以肅清「人民公敵」為名發動大規模政治清洗，將黨政軍高層、知識分子與尋常百姓大批處決或送往古拉格勞改營，估計奪走逾七十萬條人命；恐怖統治滲透蘇聯社會各層面，也讓紅軍高層在二戰爆發前遭到嚴重削弱。
+  sources:
+    - title: 維基百科：大清洗
+      url: https://zh.wikipedia.org/wiki/大清洗
+
 - id: eu-ww2
   year: 1939
   title: 第二次世界大戰爆發
@@ -2863,6 +2978,17 @@
       url: https://zh.wikipedia.org/wiki/不列顛戰役
     - title: 維基百科：溫斯頓·邱吉爾
       url: https://zh.wikipedia.org/wiki/溫斯頓·邱吉爾
+
+- id: eu-barbarossa
+  year: 1941
+  endYear: 1945
+  title: 巴巴羅薩行動，蘇德戰爭爆發
+  category: war
+  importance: 5
+  desc: 納粹德國撕毀互不侵犯條約，出動三百萬大軍突襲蘇聯，一度兵臨莫斯科與列寧格勒城下；史達林格勒戰役扭轉戰局後，蘇聯紅軍逐步反攻直搗柏林，蘇聯在這場「衛國戰爭」中付出逾兩千萬人性命的慘痛代價，卻也奠定戰後與美國並列超級強權的地位。
+  sources:
+    - title: 維基百科：巴巴羅薩行動
+      url: https://zh.wikipedia.org/wiki/巴巴羅薩行動
 
 - id: am-pearl-harbor
   year: 1941
@@ -3232,6 +3358,16 @@
   sources:
     - title: 維基百科：兩德統一
       url: https://zh.wikipedia.org/wiki/兩德統一
+
+- id: eu-ussr-collapse
+  year: 1991
+  title: 蘇聯解體
+  category: politics
+  importance: 5
+  desc: 戈巴契夫的開放與改革政策鬆動了蘇聯的政治控制，卻未能挽救停滯的經濟，反而加速了各加盟共和國的獨立浪潮；保守派發動政變失敗後，戈巴契夫辭去蘇共總書記，蘇聯正式解體為十五個獨立國家，冷戰時代兩極對抗的格局就此終結。
+  sources:
+    - title: 維基百科：蘇聯解體
+      url: https://zh.wikipedia.org/wiki/蘇聯解體
 
 - id: sa-economic-liberalization
   year: 1991
