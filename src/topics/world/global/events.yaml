@@ -77,9 +77,20 @@
   title: 漢摩拉比法典
   category: politics
   importance: 4
+  desc: 巴比倫王漢摩拉比統一兩河流域南部，頒布現存最完整的古代法典，以「以眼還眼」的同態復仇原則聞名，刻於黑色玄武岩石碑上公開展示；法典內容涵蓋商業、婚姻與刑罰，反映當時嚴格的階級劃分。
   sources:
     - title: 維基百科：漢摩拉比法典
       url: https://zh.wikipedia.org/wiki/漢摩拉比法典
+
+- id: me-gilgamesh-epic
+  year: -1200
+  title: 吉爾伽美什史詩定本成形
+  category: culture
+  importance: 4
+  desc: 巴比倫祭司辛雷奇烏尼尼將流傳已久的蘇美吉爾伽美什傳說整理成標準十二塊泥板版本，敘述烏魯克王吉爾伽美什尋求永生的旅程，其中的大洪水情節與後世《聖經》挪亞方舟故事高度相似；這是已知人類最早的長篇敘事文學作品之一。
+  sources:
+    - title: 維基百科：吉爾伽美什史詩
+      url: https://zh.wikipedia.org/wiki/吉爾伽美什史詩
 
 - id: eu-mycenae-rise
   year: -1600
@@ -216,6 +227,7 @@
   title: 亞述滅以色列王國
   category: war
   importance: 3
+  desc: 亞述帝國攻陷以色列王國首都撒馬利亞，滅其國祚，並將大批以色列人強制遷徙至帝國各地、以外族移入取代；此後這些北國十支派下落成謎，史稱「以色列失落的十支派」。
   sources:
     - title: 維基百科：亞述
       url: https://zh.wikipedia.org/wiki/亞述
@@ -241,6 +253,19 @@
   sources:
     - title: 維基百科：德拉古
       url: https://zh.wikipedia.org/wiki/德拉古
+
+- id: me-nebuchadnezzar-babylon
+  year: -605
+  endYear: -562
+  title: 尼布甲尼撒二世在位，新巴比倫帝國極盛
+  category: culture
+  importance: 4
+  desc: 尼布甲尼撒二世擊敗埃及、征服猶大王國，將巴比倫城重建為當時世界最宏偉的都城，藍色琉璃磚砌成的城門與傳說中的空中花園（古代世界七大奇蹟之一）皆傳為他所建；新巴比倫帝國在他死後迅速衰落，二十餘年後即亡於波斯。
+  sources:
+    - title: 維基百科：尼布甲尼撒二世
+      url: https://zh.wikipedia.org/wiki/尼布甲尼撒二世
+    - title: 維基百科：巴比倫空中花園
+      url: https://zh.wikipedia.org/wiki/巴比倫空中花園
 
 - id: eu-solon
   year: -594
@@ -300,6 +325,7 @@
   title: 波斯滅新巴比倫
   category: war
   importance: 3
+  desc: 波斯王居魯士二世率軍不戰而下巴比倫城，新巴比倫帝國滅亡；居魯士隨後頒布敕令，准許被擄的猶太人返回耶路撒冷重建聖殿，巴比倫之囚自此告終。
   sources:
     - title: 維基百科：新巴比倫帝國
       url: https://zh.wikipedia.org/wiki/新巴比倫帝國
