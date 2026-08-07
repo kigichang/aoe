@@ -322,6 +322,18 @@
     - title: 維基百科：筏馱摩那
       url: https://zh.wikipedia.org/wiki/筏馱摩那
 
+- id: me-egypt-persian-conquest
+  year: -525
+  title: 波斯征服埃及，第二十七王朝開始
+  category: war
+  importance: 3
+  desc: 波斯王岡比西斯二世擊敗埃及末代法老，將埃及納入阿契美尼德帝國版圖，本土王權自此中斷；波斯統治期間屢遭反抗，直到亞歷山大東征才徹底終結。
+  sources:
+    - title: 維基百科：岡比西斯二世
+      url: https://zh.wikipedia.org/wiki/岡比西斯二世
+    - title: 維基百科：埃及第二十七王朝
+      url: https://zh.wikipedia.org/wiki/埃及第二十七王朝
+
 - id: eu-republic
   year: -509
   title: 羅馬共和國建立
@@ -508,6 +520,18 @@
     - title: 維基百科：孔雀王朝
       url: https://zh.wikipedia.org/wiki/孔雀王朝
 
+- id: me-egypt-ptolemaic
+  year: -305
+  title: 托勒密王朝建立
+  category: politics
+  importance: 4
+  desc: 亞歷山大大帝的部將托勒密一世在其死後的繼業者戰爭中取得埃及，自立為王；以亞歷山卓為首都，融合希臘與埃及傳統，亞歷山大圖書館與燈塔的興建都在此王朝之下展開，直到克麗奧佩托拉一系於羅馬征服後告終。
+  sources:
+    - title: 維基百科：托勒密一世
+      url: https://zh.wikipedia.org/wiki/托勒密一世
+    - title: 維基百科：托勒密王朝
+      url: https://zh.wikipedia.org/wiki/托勒密王朝
+
 - id: eu-euclid
   year: -300
   title: 歐幾里得《幾何原本》
@@ -606,6 +630,19 @@
     - title: 維基百科：尤利烏斯·凱撒
       url: https://zh.wikipedia.org/wiki/尤利烏斯·凱撒
 
+- id: eu-actium
+  year: -31
+  endYear: -30
+  title: 亞克興海戰，托勒密王朝滅亡
+  category: war
+  importance: 5
+  desc: 屋大維在亞克興海戰擊敗馬克·安東尼與埃及女王克婁巴特拉七世的聯合艦隊，隔年攻入亞歷山卓，兩人相繼自盡，托勒密王朝滅亡，埃及淪為羅馬行省；屋大維從此再無對手，四年後便受封奧古斯都之號。
+  sources:
+    - title: 維基百科：亞克興海戰
+      url: https://zh.wikipedia.org/wiki/亞克興海戰
+    - title: 維基百科：克婁巴特拉七世
+      url: https://zh.wikipedia.org/wiki/克婁巴特拉七世
+
 - id: eu-augustus
   year: -27
   title: 屋大維成為奧古斯都，羅馬帝國建立
@@ -649,6 +686,17 @@
     - title: 維基百科：維蘇威火山
       url: https://zh.wikipedia.org/wiki/維蘇威火山
 
+- id: eu-trajan
+  year: 98
+  endYear: 117
+  title: 圖拉真在位，羅馬帝國疆域極盛
+  category: politics
+  importance: 4
+  desc: 圖拉真在位期間東征美索不達米亞、征服達契亞，羅馬版圖擴張至史上最大；他與涅爾瓦、哈德良、安敦寧·畢尤、馬可·奧理略並稱「五賢帝」，帝國進入政局穩定的黃金時期。
+  sources:
+    - title: 維基百科：圖拉真
+      url: https://zh.wikipedia.org/wiki/圖拉真
+
 - id: eu-hadrian-wall
   year: 122
   title: 哈德良長城動工
@@ -657,6 +705,27 @@
   sources:
     - title: 維基百科：哈德良長城
       url: https://zh.wikipedia.org/wiki/哈德良長城
+
+- id: eu-bar-kokhba
+  year: 132
+  endYear: 135
+  title: 巴爾科赫巴起義
+  category: war
+  importance: 4
+  desc: 猶太人在西門·巴爾科赫巴領導下反抗羅馬統治，一度光復耶路撒冷，哈德良調集大軍鎮壓後，禁止猶太人進入耶路撒冷、將猶太行省改名為敘利亞巴勒斯坦；這是猶太人在羅馬時代最後一次大規模起義，此後大規模流散成為常態。
+  sources:
+    - title: 維基百科：巴爾科赫巴起義
+      url: https://zh.wikipedia.org/wiki/巴爾科赫巴起義
+
+- id: eu-caracalla-edict
+  year: 212
+  title: 安東尼努斯敕令，羅馬公民權普及全帝國
+  category: politics
+  importance: 3
+  desc: 皇帝卡拉卡拉頒布敕令，將羅馬公民權授予帝國境內幾乎所有自由民，稅收與兵源基礎大幅擴張，也象徵羅馬「公民」與「行省居民」的界線正式消融。
+  sources:
+    - title: 維基百科：安東尼努斯敕令
+      url: https://zh.wikipedia.org/wiki/安東尼努斯敕令
 
 - id: me-sassanid
   year: 224
@@ -667,6 +736,17 @@
     - title: 維基百科：薩珊王朝
       url: https://zh.wikipedia.org/wiki/薩珊王朝
 
+- id: eu-crisis-3rd-century
+  year: 235
+  endYear: 284
+  title: 三世紀危機
+  category: war
+  importance: 4
+  desc: 半世紀間軍隊擁立多位皇帝彼此混戰，瘟疫與通貨膨脹交相侵襲，高盧與帕邁拉一度自立為獨立帝國，羅馬幾近解體；奧勒良其後重新統一帝國版圖，戴克里先的改革才真正終結亂局。
+  sources:
+    - title: 維基百科：三世紀危機
+      url: https://zh.wikipedia.org/wiki/三世紀危機
+
 - id: am-maya-classic
   year: 250
   title: 馬雅文明進入古典期
@@ -676,6 +756,17 @@
   sources:
     - title: 維基百科：瑪雅文明
       url: https://zh.wikipedia.org/wiki/瑪雅文明
+
+- id: eu-tetrarchy
+  year: 284
+  endYear: 305
+  title: 戴克里先建立四帝共治制
+  category: politics
+  importance: 4
+  desc: 戴克里先為挽救三世紀危機後的統治困境，將帝國分由兩位正帝與兩位副帝共治，並徹底改造稅制與行政區劃；帝國自此常態性地分區治理，為日後君士坦丁遷都與帝國東西分裂埋下體制基礎。
+  sources:
+    - title: 維基百科：四帝共治制
+      url: https://zh.wikipedia.org/wiki/四帝共治制
 
 - id: eu-milan-edict
   year: 313
@@ -1154,6 +1245,18 @@
     - title: 維基百科：神聖羅馬帝國
       url: https://zh.wikipedia.org/wiki/神聖羅馬帝國
 
+- id: me-egypt-cairo-founded
+  year: 969
+  title: 法蒂瑪王朝建立開羅
+  category: politics
+  importance: 3
+  desc: 什葉派法蒂瑪王朝征服埃及後，在舊都福斯塔特北方新建都城開羅，此後千餘年間開羅始終是埃及的政治與文化中心。
+  sources:
+    - title: 維基百科：開羅
+      url: https://zh.wikipedia.org/wiki/開羅
+    - title: 維基百科：法蒂瑪王朝
+      url: https://zh.wikipedia.org/wiki/法蒂瑪王朝
+
 - id: eu-capet
   year: 987
   title: 卡佩王朝取代加洛林王朝
@@ -1239,6 +1342,16 @@
   sources:
     - title: 維基百科：大憲章
       url: https://zh.wikipedia.org/wiki/大憲章
+
+- id: me-egypt-mamluk
+  year: 1250
+  title: 馬木留克蘇丹國建立
+  category: politics
+  importance: 3
+  desc: 出身奴隸軍人的馬木留克將領推翻埃宥比王朝末代蘇丹，建立馬木留克蘇丹國，其後兩百餘年統治埃及與敘利亞，曾擊退蒙古西征軍，直到1517年被鄂圖曼帝國征服。
+  sources:
+    - title: 維基百科：馬木留克蘇丹國
+      url: https://zh.wikipedia.org/wiki/馬木留克蘇丹國
 
 - id: eu-florin
   year: 1252
@@ -1953,6 +2066,16 @@
     - title: 維基百科：海地革命
       url: https://zh.wikipedia.org/wiki/海地革命
 
+- id: me-egypt-muhammad-ali
+  year: 1805
+  title: 穆罕默德·阿里掌權，埃及現代化改革
+  category: politics
+  importance: 4
+  desc: 阿爾巴尼亞裔軍官穆罕默德·阿里趁鄂圖曼與馬木留克勢力真空崛起掌權，隨後屠殺殘餘馬木留克貴族，推行軍事與經濟現代化；他建立的王朝統治埃及直到1952年被推翻。
+  sources:
+    - title: 維基百科：穆罕默德·阿里
+      url: https://zh.wikipedia.org/wiki/穆罕默德·阿里
+
 - id: am-latin-independence
   year: 1810
   title: 西班牙美洲獨立戰爭
@@ -2420,6 +2543,17 @@
     - title: 維基百科：羅馬條約
       url: https://zh.wikipedia.org/wiki/羅馬條約
 
+- id: me-egypt-aswan-dam
+  year: 1960
+  endYear: 1970
+  title: 阿斯旺高壩興建
+  category: economy
+  importance: 3
+  desc: 蘇伊士運河危機後西方撤資，蘇聯出資協助興建阿斯旺高壩，攔蓄尼羅河水以擴大灌溉並發電，但也淹沒努比亞古蹟與大量農地；這是納賽爾時代最具代表性的建設，也是冷戰時期蘇聯拉攏埃及的象徵。
+  sources:
+    - title: 維基百科：阿斯旺水壩
+      url: https://zh.wikipedia.org/wiki/阿斯旺水壩
+
 - id: am-civil-rights-act
   year: 1964
   title: 民權法案通過，種族隔離制度終結
@@ -2442,6 +2576,16 @@
       url: https://zh.wikipedia.org/wiki/越南戰爭
     - title: 英文維基百科：Gulf of Tonkin incident
       url: https://en.wikipedia.org/wiki/Gulf_of_Tonkin_incident
+
+- id: me-egypt-six-day-war
+  year: 1967
+  title: 六日戰爭，埃及失去西奈半島
+  category: war
+  importance: 4
+  desc: 埃及、敘利亞與約旦聯手備戰，以色列先發制人，在六天內重創三國軍隊並占領西奈半島、加薩走廊、約旦河西岸與戈蘭高地；埃及的慘敗重挫納賽爾的威望，也埋下六年後贖罪日戰爭的遠因。
+  sources:
+    - title: 維基百科：第三次中東戰爭
+      url: https://zh.wikipedia.org/wiki/第三次中東戰爭
 
 - id: am-apollo-11
   year: 1969
@@ -2530,3 +2674,13 @@
   sources:
     - title: 維基百科：歐元
       url: https://zh.wikipedia.org/wiki/歐元
+
+- id: me-egypt-2011-revolution
+  year: 2011
+  title: 埃及革命，穆巴拉克下台
+  category: politics
+  importance: 4
+  desc: 突尼西亞茉莉花革命引發連鎖效應，開羅解放廣場爆發大規模示威，執政近三十年的穆巴拉克在十八天後辭職下台；埃及其後歷經穆爾西當選、軍事政變與塞西掌權，是「阿拉伯之春」中規模最大、對區域政局影響最深遠的一場革命。
+  sources:
+    - title: 維基百科：2011年埃及革命
+      url: https://zh.wikipedia.org/wiki/2011年埃及革命
