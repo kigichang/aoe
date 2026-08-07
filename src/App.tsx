@@ -1,18 +1,21 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { CATEGORY_IDS, REGIONS, TOPIC } from './lib/data'
-import type { Category } from './lib/schema'
+import type { Category, HistEvent, Region } from './lib/schema'
 import {
+  MAX_PPY,
   MAX_YEAR,
   MIN_YEAR,
   clampPpy,
   defaultPpy,
   fmtYear,
+  minImportance,
   ppyForImportance,
   ticks,
   totalHeight,
   yToYear,
   yearToY,
 } from './lib/scale'
+import { placeEvents } from './lib/layout'
 import { Axis } from './components/Axis'
 import { RegionColumn } from './components/RegionColumn'
 import { Toolbar } from './components/Toolbar'
@@ -167,11 +170,85 @@ export default function App() {
     return { canvasWidth: width, columnWidth: (width - AXIS_W) / count }
   }, [viewportWidth, shownRegions.length])
 
+  // 欄位夠寬就把標籤排成兩欄。單欄放不下時標籤會被往下推，
+  // 推擠一累積就會讓事件順序看起來是錯的，多開一欄比縮小位移上限有效得多。
+  //
+  // 宣告要放在 resolvePpyForEvent 前面：它的 useCallback 依賴陣列裡有
+  // laneCount，依賴陣列是渲染當下就求值的，不是等回呼真的被呼叫才求值，
+  // 寫在 laneCount 宣告之前會踩到 TDZ（暫時性死區）。
+  const laneCount = Math.min(MAX_LANES, Math.max(1, Math.floor(columnWidth / MIN_LANE_W)))
+
   /**
-   * 「同時期」清單點的事件本來就在資料裡，不用像搜尋那樣調 ppy／解篩選 ——
-   * 只是它的地區欄或年份可能被捲到目前的可視範圍外（凍結的年代軸／欄位標題
-   * 各自佔掉一塊，可視範圍不是整個 .scroller）。只在真的看不到時才捲，
-   * 捲動幅度取最小必要距離，不用 scrollToYear 那種置中對齊。
+   * 「同時期」清單與搜尋跳轉共用的保證：點下去之前，先確保目標事件在目前的
+   * 篩選（類別／傳說旗標／地區）下畫得出來。縮放層級不在這裡處理 ——
+   * 需不需要調 ppy 會影響「怎麼捲」，兩個呼叫端各自決定。
+   */
+  const ensureFiltersOpen = useCallback((event: HistEvent, region: Region) => {
+    setVisibleRegions((prev) => (prev.has(region.id) ? prev : new Set(prev).add(region.id)))
+    setCategories((prev) => (prev.has(event.category) ? prev : new Set(prev).add(event.category)))
+    if (event.legendary) setShowLegendary(true)
+  }, [])
+
+  /**
+   * 「這則事件要放大到多少才『排得下標籤』」，不是只看重要度門檻。
+   *
+   * `minImportance` 只保證圖釘會被畫出來，不保證排得下標籤 —— dotOnly 的
+   * 圖釘不佔標籤欄空間（layout.ts 的設計），會直接疊在鄰居的圖釘或標籤
+   * 底下。同時期清單／搜尋跳過去時，選中的圖釘因此可能被鄰居完全蓋住，
+   * 使用者只會覺得「跳過去了但什麼都沒發生」。
+   *
+   * 從 `fromPpy`（呼叫端目前的縮放層級，若已經比重要度門檻高就從這裡
+   * 開始，不必繞回去比較低的門檻重找一次）開始，重新跑一次真正的排版
+   * 演算法（跟 RegionColumn 用的是同一個 placeEvents），檢查這則事件是否
+   * dotOnly；不是就直接用這個 ppy，是的話逐步放大再試，直到排得下或到
+   * 縮放上限為止。
+   *
+   * 不讀 ppy／ppyRef 這兩個 state ——由呼叫端決定要傳目前的哪一個，
+   * 這樣 revealEvent 才能繼續維持「identity 不隨 ppy 變動」的既有設計
+   * （搜尋框的 onPick 不用因為使用者滾動、縮放就整個換一個函式）。
+   */
+  const resolvePpyForEvent = useCallback(
+    (event: HistEvent, region: Region, fromPpy: number) => {
+      const effCategories = categories.has(event.category)
+        ? categories
+        : new Set(categories).add(event.category)
+      const effShowLegendary = event.legendary || showLegendary
+
+      const fitsAt = (candidate: number) => {
+        const floor = minImportance(candidate)
+        const visible = region.events.filter(
+          (e) =>
+            e.importance >= floor &&
+            effCategories.has(e.category) &&
+            (effShowLegendary || !e.legendary),
+        )
+        const placed = placeEvents(visible, (year) => yearToY(year, candidate), laneCount, candidate)
+        return placed.find((p) => p.event.id === event.id)?.dotOnly === false
+      }
+
+      let target = Math.max(ppyForImportance(event.importance), fromPpy)
+      for (let i = 0; i < 20 && target < MAX_PPY && !fitsAt(target); i++) {
+        target = clampPpy(target * 1.4)
+      }
+      return target
+    },
+    [categories, showLegendary, laneCount],
+  )
+
+  /**
+   * 「同時期」清單點的事件本來就在資料裡，但不保證目前畫得出來 ——
+   * 重要度可能低於目前縮放層級的門檻、標籤可能因為鄰近事件太多排不下
+   * （issue #4 與其追蹤問題），類別或傳說旗標也可能被關掉。這些跟搜尋跳轉
+   * （見下面 revealEvent）要處理的完全一樣，用 ensureFiltersOpen／
+   * resolvePpyForEvent 共用。
+   *
+   * 需要放大時，不能沿用「只在捲動範圍外才捲」那套算法：那是用
+   * **捲動前**的 ppy 算年份對應的像素位置，ppy 一變位置就全錯了。
+   * 這種情況改成跟 revealEvent 一樣借用 anchorRef，讓 ppy 更新後的
+   * layout effect 負責垂直定位；水平（地區欄）跟 ppy 無關，仍可以馬上算。
+   *
+   * 不需要放大的話，維持原本「只在真的看不到時才捲、取最小必要距離」
+   * 的行為，不用 scrollToYear 那種置中對齊。
    */
   const selectConcurrent = useCallback(
     (id: string) => {
@@ -179,6 +256,8 @@ export default function App() {
       const found = ALL_EVENTS.find((x) => x.event.id === id)
       if (el && found) {
         const { event, region } = found
+        ensureFiltersOpen(event, region)
+
         const index = shownRegions.findIndex((x) => x.region.id === region.id)
         let nextLeft = el.scrollLeft
         if (index !== -1) {
@@ -190,25 +269,28 @@ export default function App() {
           else if (colRight > viewRight) nextLeft = colRight - el.clientWidth
         }
 
-        const y = yearToY(event.year, ppy)
-        const viewTop = el.scrollTop + HEAD_H
-        const viewBottom = el.scrollTop + el.clientHeight
-        let nextTop = el.scrollTop
-        if (y < viewTop) nextTop = y - HEAD_H
-        else if (y > viewBottom) nextTop = y - el.clientHeight
+        const target = resolvePpyForEvent(event, region, ppy)
+        if (target > ppy) {
+          if (nextLeft !== el.scrollLeft) el.scrollTo({ left: nextLeft, behavior: 'smooth' })
+          anchorRef.current = { year: event.year, offset: el.clientHeight * VIEW_ANCHOR }
+          setPpy(target)
+        } else {
+          const y = yearToY(event.year, ppy)
+          const viewTop = el.scrollTop + HEAD_H
+          const viewBottom = el.scrollTop + el.clientHeight
+          let nextTop = el.scrollTop
+          if (y < viewTop) nextTop = y - HEAD_H
+          else if (y > viewBottom) nextTop = y - el.clientHeight
 
-        if (nextLeft !== el.scrollLeft || nextTop !== el.scrollTop) {
-          el.scrollTo({ left: nextLeft, top: nextTop, behavior: 'smooth' })
+          if (nextLeft !== el.scrollLeft || nextTop !== el.scrollTop) {
+            el.scrollTo({ left: nextLeft, top: nextTop, behavior: 'smooth' })
+          }
         }
       }
       setSelectedId(id)
     },
-    [shownRegions, columnWidth, ppy],
+    [shownRegions, columnWidth, ppy, ensureFiltersOpen, resolvePpyForEvent],
   )
-
-  // 欄位夠寬就把標籤排成兩欄。單欄放不下時標籤會被往下推，
-  // 推擠一累積就會讓事件順序看起來是錯的，多開一欄比縮小位移上限有效得多。
-  const laneCount = Math.min(MAX_LANES, Math.max(1, Math.floor(columnWidth / MIN_LANE_W)))
 
   // 網址帶了年份就聽網址的；否則開場停在西元前後，一眼看到秦漢對上羅馬
   useEffect(() => {
@@ -298,22 +380,19 @@ export default function App() {
       const el = scrollRef.current
       if (!found || !el) return
       const { event, region } = found
+      ensureFiltersOpen(event, region)
 
-      setVisibleRegions((prev) => (prev.has(region.id) ? prev : new Set(prev).add(region.id)))
-      setCategories((prev) => (prev.has(event.category) ? prev : new Set(prev).add(event.category)))
-      if (event.legendary) setShowLegendary(true)
-
-      const needed = ppyForImportance(event.importance)
-      if (needed > ppyRef.current) {
+      const target = resolvePpyForEvent(event, region, ppyRef.current)
+      if (target > ppyRef.current) {
         // 借用縮放錨定：ppy 更新後由 layout effect 把該年份對到視窗錨點
         anchorRef.current = { year: event.year, offset: el.clientHeight * VIEW_ANCHOR }
-        setPpy(needed)
+        setPpy(target)
       } else {
         scrollToYear(event.year)
       }
       setSelectedId(id)
     },
-    [scrollToYear],
+    [scrollToYear, ensureFiltersOpen, resolvePpyForEvent],
   )
 
   const onPointerMove = (e: React.MouseEvent) => {
