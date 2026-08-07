@@ -1,7 +1,7 @@
 # 台鐵（清代鐵路 → 台灣總督府鐵道部 → 台灣鐵路管理局 → 台灣鐵路公司）
 #
-# ⚠️ 這是多主題機制的驗證用種子資料，尚未走完 README 的完整查證流程。
-# 補到正式規模時請照 README：先用維基 API 批次查證標題，再寫入。
+# 已走完 README 的查證流程（維基 API 批次驗證標題 → 寫入 → --check-pages 複查）。
+# 補新資料時照同一套流程，不要憑記憶寫網址。
 
 - id: tra-1887-start
   year: 1887
@@ -15,12 +15,44 @@
     - title: 維基百科：劉銘傳
       url: https://zh.wikipedia.org/wiki/劉銘傳
 
+- id: tra-1888-xikou-trial
+  year: 1888
+  title: 大稻埕至錫口試營運，台灣第一列載客火車
+  category: opening
+  importance: 4
+  desc: 1888年8月25日，台北大稻埕至錫口（今松山）段開始試營運，是台灣土地上第一次有火車載客；同年12月18日頒布台灣鐵路章程，台北至錫口正式開辦客運。此前一年淡水河上的大木橋（今台北大橋前身）先行竣工，鐵路才得以跨河北上。
+  sources:
+    - title: 維基百科：台灣鐵路
+      url: https://zh.wikipedia.org/wiki/台灣鐵路
+
+- id: tra-1888-tengyun
+  year: 1888
+  endYear: 1924
+  title: 騰雲號抵台，台灣第一輛蒸汽機車
+  category: rolling-stock
+  importance: 4
+  desc: 劉銘傳向德國霍亨索機車製造廠購入兩輛蒸汽機車，其中一輛正式名稱為「騰雲一號」，四輪水櫃式、重16公噸、牽引力2300公斤。1891年起與其他七輛新購機車一同行駛基隆至台北間，進入日治時期後仍留用於縱貫線，直到1924年才退休，是台灣現存最老的鐵路機車。清代另有六輛英國山楂萊斯利廠製的機車，日治後編為3型，1931年悉數報廢，無一保存。
+  sources:
+    - title: 維基百科：騰雲號
+      url: https://zh.wikipedia.org/wiki/騰雲號
+
+- id: tra-1888-shiqiuling-tunnel
+  year: 1888
+  endYear: 1890
+  title: 獅球嶺隧道貫通，台灣第一座鐵路隧道
+  category: construction
+  importance: 3
+  desc: 基隆端的獅球嶺是清代鐵路最難啃的一段。隧道自1888年春動工，1890年8月才鑿通，全長235公尺，費時三十個月，是台灣第一座鐵路隧道。日治時期改線後停用，卻也因此原封保存下來，成為目前唯一僅存的清代鐵路隧道，今列為基隆市定古蹟「劉銘傳隧道」。
+  sources:
+    - title: 維基百科：獅球嶺隧道
+      url: https://zh.wikipedia.org/wiki/獅球嶺隧道
+
 - id: tra-1891-keelung-taipei
   year: 1891
   title: 基隆至台北段通車
   category: opening
   importance: 4
-  desc: 台灣第一段實際營運的鐵路。1893年再延伸至新竹，清代的鐵路建設至此告一段落。這段路線坡度大、彎道急，日治初期幾乎全線改線重建。
+  desc: 基隆到台北全段正式營運，是台灣第一條完整通車的鐵路。1893年再延伸至新竹，清代的鐵路建設至此告一段落，新竹以南僅築成路堤便告中止。這段路線鐵軌偏輕、坡度大、彎道急，橋樑又屢遭洪水沖毀，日治初期幾乎全線改線重建。
   sources:
     - title: 維基百科：台灣鐵路
       url: https://zh.wikipedia.org/wiki/台灣鐵路
@@ -46,6 +78,16 @@
   sources:
     - title: 維基百科：淡水線 (臺鐵)
       url: https://zh.wikipedia.org/wiki/淡水線_(臺鐵)
+
+- id: tra-1901-guilun-abandoned
+  year: 1901
+  title: 台北至桃園改線經板橋、鶯歌，清代龜崙嶺舊線廢棄改作公路
+  category: closure
+  importance: 3
+  desc: 日治初期的改線工程以台北至桃仔園（今桃園）之間變動最大。清代舊線取道海山口（今新莊）、翻越龜崙嶺（今龜山），坡度陡到難以行車，1901年改為繞經枋橋（今板橋）、鶯歌石（今鶯歌）的新線。被放棄的舊路廊改鋪成「台北台南道路」，即日後省道台1線舊線的前身——鐵路換了路廊，也換掉了沿線市鎮的命運，新莊、龜山自此衰微，板橋、鶯歌則因鐵路而起。
+  sources:
+    - title: 維基百科：台灣鐵路
+      url: https://zh.wikipedia.org/wiki/台灣鐵路
 
 - id: tra-1908-trunk-line
   year: 1908
@@ -146,6 +188,16 @@
     - title: 維基百科：台鐵DR2700型柴油車
       url: https://zh.wikipedia.org/wiki/台鐵DR2700型柴油車
 
+- id: tra-1970-juguang
+  year: 1970
+  title: 莒光號開行，台鐵最高等級客車的世代交替
+  category: rolling-stock
+  importance: 3
+  desc: 1970年2月3日，首批27輛客車由R100型柴電機車牽引，以台北至台中的1011至1014次投入營運，同月20日擴展到高雄線。車廂由日本車輛、日立製作所合作生產，取代前一世代的觀光號成為台鐵最高等級的客車，觀光號車廂也在1970年代陸續改造為莒光號。1986年起引進車頂冷氣型（10200系列），1995年後的新造與改造車改配自動門；2022年6月29日摺疊門車廂全數退役。隨EMU3000型接手城際運用，莒光號規劃在2028年底前全數退場。
+  sources:
+    - title: 維基百科：莒光號列車
+      url: https://zh.wikipedia.org/wiki/莒光號列車
+
 - id: tra-1978-emu100
   year: 1978
   endYear: 2010
@@ -189,6 +241,17 @@
     - title: 維基百科：臺東線
       url: https://zh.wikipedia.org/wiki/臺東線
 
+- id: tra-1983-taipei-underground
+  year: 1983
+  endYear: 2011
+  title: 台北鐵路地下化動工，市區平交道與地面幹線陸續消失
+  category: construction
+  importance: 4
+  desc: 1979年行政院核准台北車站段地下化，1983年7月12日動土，1989年9月2日主體完工通車，台北車站一併改建為地下車站。後續分三期東西延伸：松山專案1989年動工，1992至1994年南北隧道分階段啟用，騰出的地面路廊改成市民大道；萬華板橋專案1992年動工，1999與2002年兩座隧道先後啟用；松山南港專案1998年動工，2008年9月21日切換啟用，2011年全案竣工。四期合計新台幣1,741億元，台北市自此沒有平交道，也沒有走在地面上的城際鐵路，同一條路廊還順帶為日後的高鐵台北段預留了空間。
+  sources:
+    - title: 維基百科：臺北鐵路地下化專案
+      url: https://zh.wikipedia.org/wiki/臺北鐵路地下化專案
+
 - id: tra-1988-tamsui-closure
   year: 1988
   title: 淡水線走入歷史，路廊改建為捷運
@@ -218,6 +281,16 @@
   sources:
     - title: 維基百科：南迴線
       url: https://zh.wikipedia.org/wiki/南迴線
+
+- id: tra-1996-push-pull
+  year: 1996
+  title: 推拉式自強號登場，台鐵城際主力換了一個世代
+  category: rolling-stock
+  importance: 3
+  desc: 台鐵1990年代中期的「810購車計畫」訂購400輛車，E1000型電力機車由南非UCW製造，客車由韓國現代精工承造，首列1996年4月運抵台灣，同年中秋連假投入服務，11月1日起接手EMU100型的直達自強號班次。兩輛機車一前一後夾住客車編組，省去終點站調頭的工序，是台鐵第一款推拉式列車，共64輛機車、349輛客車，此後二十餘年都是西部幹線的門面。2026年7月1日改點後轉為備用車，定期運用告終。
+  sources:
+    - title: 維基百科：推拉式自強號
+      url: https://zh.wikipedia.org/wiki/推拉式自強號
 
 - id: tra-1998-old-mountain-line-closure
   year: 1998
@@ -249,6 +322,16 @@
     - title: 維基百科：舊山線
       url: https://zh.wikipedia.org/wiki/舊山線
 
+- id: tra-2013-puyuma
+  year: 2013
+  title: 普悠瑪號服役，第二款傾斜式列車跑遍全島
+  category: rolling-stock
+  importance: 3
+  desc: 台鐵2012年自日本車輛引進的TEMU2000型傾斜式電聯車，2013年2月6日投入營運，車名取自卑南族自稱。初期專跑東部幹線的特快班次，與太魯閣號一同壓縮台北往花東的行車時間；不同於太魯閣號長期受限於編組與月台，普悠瑪後來擴及台鐵主要路網。2018年新馬站出軌事故後，全面加裝與檢討列車速限自動控制系統。
+  sources:
+    - title: 維基百科：普悠瑪列車
+      url: https://zh.wikipedia.org/wiki/普悠瑪列車
+
 - id: tra-2014-electrification-east
   year: 2014
   title: 花東線電氣化通車
@@ -258,6 +341,16 @@
   sources:
     - title: 維基百科：臺東線
       url: https://zh.wikipedia.org/wiki/臺東線
+
+- id: tra-2018-kaohsiung-underground
+  year: 2018
+  title: 高雄市區鐵路地下化切換通車，帝冠式舊站走了十九年才回家
+  category: construction
+  importance: 3
+  desc: 2006年1月行政院核定，2009年6月26日愛河段隧道開工，2018年10月14日新舊軌道切換通車，高雄市區的地面鐵路與平交道自此消失，路廊改闢為綠園道。1941年落成的帝冠式舊高雄車站為了讓出施工空間，2002年8月整棟遷移；直到2021年7月至9月間才移回永久位置，成為地下化新站的一部分。
+  sources:
+    - title: 維基百科：高雄市區鐵路地下化計畫
+      url: https://zh.wikipedia.org/wiki/高雄市區鐵路地下化計畫
 
 - id: tra-2018-puyuma
   year: 2018
@@ -284,7 +377,7 @@
   title: EMU3000型電聯車加入營運，全面汰換老舊城際車隊
   category: rolling-stock
   importance: 3
-  desc: 台鐵向日立製作所採購的城際電聯車，以「新自強號」之名於2021年12月29日正式加入營運，計畫2021至2024年間分批交付50列共600輛，是台鐵單一車型採購數量最多的電聯車，用來汰換車況不佳、故障頻傳的自強號與莒光號老舊車隊。
+  desc: 2018年12月由日立製作所以新台幣442.9億元得標、隔年1月簽約，首列原訂2021年6月交車、因疫情延至7月30日抵台，12月29日以「新自強號」之名正式加入營運。2021至2024年間分批交付50列共600輛，是台鐵單一車型採購數量最多的電聯車，用來汰換車況不佳、故障頻傳的自強號與莒光號老舊車隊；同年4月EMU300型已先退出定期運用。
   sources:
     - title: 維基百科：台鐵EMU3000型電聯車
       url: https://zh.wikipedia.org/wiki/台鐵EMU3000型電聯車
@@ -298,6 +391,16 @@
   sources:
     - title: 維基百科：北迴線太魯閣號列車出軌事故
       url: https://zh.wikipedia.org/wiki/北迴線太魯閣號列車出軌事故
+
+- id: tra-2023-diesel-emu-farewell
+  year: 2023
+  title: 柴聯自強號告別，非電氣化時代的最後一批城際車退場
+  category: rolling-stock
+  importance: 3
+  desc: DR2800型1982年6月1日上路，是台鐵第一款冷氣柴聯車，專為當時尚未電氣化的東部幹線而生；DR2900型1986年12月、DR3000型1990年5月接續加入。三型合稱「柴聯自強號」，在北迴線與台東線跑了四十年。隨著花東線與南迴線先後電氣化、EMU3000型大量到位，2023年4月26日最後一趟商業運轉後全數退出定期運用。
+  sources:
+    - title: 維基百科：自強號列車
+      url: https://zh.wikipedia.org/wiki/自強號列車
 
 - id: tra-2024-corporatization
   year: 2024
