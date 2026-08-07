@@ -2359,6 +2359,20 @@
     - title: 維基百科：查爾斯·達爾文
       url: https://zh.wikipedia.org/wiki/查爾斯·達爾文
 
+- id: eu-italian-unification
+  year: 1861
+  title: 加富爾與加里波第完成義大利統一，義大利王國建立
+  category: politics
+  importance: 4
+  desc: 薩丁尼亞王國首相加富爾聯合法國擊敗奧地利、解放倫巴底，加里波第則率領「千人遠征隊」南下推翻兩西西里王國，雙方在那不勒斯會師後將征服的土地獻給薩丁尼亞國王維克多·艾曼紐二世；義大利王國宣告成立，但威尼西亞與羅馬仍待收復，統一尚未完全。
+  sources:
+    - title: 維基百科：加富爾伯爵卡米洛·奔索
+      url: https://zh.wikipedia.org/wiki/加富爾伯爵卡米洛·奔索
+    - title: 維基百科：朱塞佩·加里波第
+      url: https://zh.wikipedia.org/wiki/朱塞佩·加里波第
+    - title: 維基百科：義大利王國
+      url: https://zh.wikipedia.org/wiki/義大利王國
+
 - id: am-civil-war
   year: 1861
   title: 美國南北戰爭
@@ -2398,6 +2412,18 @@
   sources:
     - title: 維基百科：蘇伊士運河
       url: https://zh.wikipedia.org/wiki/蘇伊士運河
+
+- id: eu-rome-annexation
+  year: 1870
+  title: 義大利併吞羅馬，教宗國滅亡，統一完成
+  category: politics
+  importance: 4
+  desc: 普法戰爭爆發、法軍撤離羅馬後，義大利軍隊攻入教宗國首都，教宗庇護九世宣布自囚梵蒂岡以示抗議；羅馬隨即成為義大利新首都，延續逾千年的教宗世俗統治至此終結，「羅馬問題」的政教爭議持續近六十年，直到1929年拉特朗條約才告解決。
+  sources:
+    - title: 維基百科：羅馬問題
+      url: https://zh.wikipedia.org/wiki/羅馬問題
+    - title: 維基百科：義大利統一
+      url: https://zh.wikipedia.org/wiki/義大利統一
 
 - id: eu-german-unification
   year: 1871
@@ -2594,6 +2620,20 @@
     - title: 維基百科：愛爾蘭自由邦
       url: https://zh.wikipedia.org/wiki/愛爾蘭自由邦
 
+- id: eu-mussolini-fascism
+  year: 1922
+  title: 墨索里尼向羅馬進軍，法西斯黨掌權
+  category: politics
+  importance: 5
+  desc: 國家法西斯黨動員黑衫軍向羅馬進軍施壓，國王維托里奧·艾曼紐三世任命墨索里尼組閣；墨索里尼隨後逐步剷除反對黨、集大權於一身，建立史上第一個法西斯獨裁政權，其統治模式與意識形態日後成為納粹德國效法的樣板。
+  sources:
+    - title: 維基百科：貝尼托·墨索里尼
+      url: https://zh.wikipedia.org/wiki/貝尼托·墨索里尼
+    - title: 維基百科：向羅馬進軍
+      url: https://zh.wikipedia.org/wiki/向羅馬進軍
+    - title: 維基百科：國家法西斯黨
+      url: https://zh.wikipedia.org/wiki/國家法西斯黨
+
 - id: me-turkey
   year: 1923
   title: 土耳其共和國成立
@@ -2717,6 +2757,18 @@
     - title: 維基百科：納粹大屠殺
       url: https://zh.wikipedia.org/wiki/納粹大屠殺
 
+- id: eu-italy-armistice
+  year: 1943
+  title: 義大利向盟軍投降，墨索里尼垮台
+  category: war
+  importance: 4
+  desc: 盟軍登陸西西里後，義大利國會與國王聯手罷黜墨索里尼，新政府與盟軍簽署卡西比爾停戰協定；德軍隨即占領義大利北部，救出墨索里尼扶植傀儡的「義大利社會共和國」，義大利自此陷入內戰與雙重統治，直到1945年才全境解放。
+  sources:
+    - title: 維基百科：卡西比爾停戰協定
+      url: https://zh.wikipedia.org/wiki/卡西比爾停戰協定
+    - title: 維基百科：義大利社會共和國
+      url: https://zh.wikipedia.org/wiki/義大利社會共和國
+
 - id: eu-un
   year: 1945
   title: 二戰結束，聯合國成立
@@ -2737,6 +2789,16 @@
   sources:
     - title: 維基百科：三位一體（核試驗）
       url: https://zh.wikipedia.org/wiki/三位一體_(核試驗)
+
+- id: eu-italian-republic
+  year: 1946
+  title: 公投廢除君主制，義大利共和國成立
+  category: politics
+  importance: 4
+  desc: 戰後公投中過半數選民選擇廢除延續八十餘年的薩伏依王室，改行共和；新憲法翌年生效，確立多黨議會民主體制，義大利也在此後展開被稱為「經濟奇蹟」的快速工業化與成長期。
+  sources:
+    - title: 維基百科：1946年義大利國體公投
+      url: https://zh.wikipedia.org/wiki/1946年義大利國體公投
 
 - id: sa-partition
   year: 1947
