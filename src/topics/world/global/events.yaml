@@ -86,6 +86,7 @@
   title: 邁錫尼文明興起
   category: culture
   importance: 3
+  desc: 希臘本土第一個以宮殿、王權與線形文字B行政紀錄為特徵的青銅時代文明，其武士貴族與宮廷生活後來成為荷馬史詩的原型。
   sources:
     - title: 維基百科：邁錫尼文明
       url: https://zh.wikipedia.org/wiki/邁錫尼文明
@@ -168,6 +169,7 @@
   title: 第一屆古代奧林匹克運動會
   category: culture
   importance: 4
+  desc: 每四年於奧林匹亞舉行、只限自由男性公民參賽，比賽期間各城邦休戰，是分裂的希臘城邦世界少數共通的宗教與文化盛事，古希臘人也常以此紀年。
   sources:
     - title: 維基百科：古代奧林匹克運動會
       url: https://zh.wikipedia.org/wiki/古代奧林匹克運動會
@@ -205,11 +207,22 @@
     - title: 維基百科：亞述巴尼拔
       url: https://zh.wikipedia.org/wiki/亞述巴尼拔
 
+- id: eu-draco
+  year: -621
+  title: 德拉古法典，雅典首部成文法
+  category: politics
+  importance: 3
+  desc: 德拉古受命將原本由貴族口耳相傳、恣意裁量的習慣法寫成文字，刑罰極其嚴苛，連偷竊蔬果都可判死刑，後世「德拉古式」（draconian）一詞即由此而來，但成文法本身已限制了貴族司法的任意性。
+  sources:
+    - title: 維基百科：德拉古
+      url: https://zh.wikipedia.org/wiki/德拉古
+
 - id: eu-solon
   year: -594
   title: 梭倫改革
   category: politics
   importance: 3
+  desc: 廢除以人身抵債的債務奴役，依財產多寡劃分公民等級並開放參政資格，試圖化解貴族與平民的衝突，但未能根除紛爭，數十年後庇西特拉圖便趁勢奪權。
   sources:
     - title: 維基百科：梭倫
       url: https://zh.wikipedia.org/wiki/梭倫
@@ -235,6 +248,17 @@
       url: https://zh.wikipedia.org/wiki/阿契美尼德王朝
     - title: 維基百科：居魯士二世
       url: https://zh.wikipedia.org/wiki/居魯士二世
+
+- id: eu-pisistratus
+  year: -546
+  title: 庇西特拉圖建立僭主統治
+  category: politics
+  importance: 3
+  endYear: -510
+  desc: 庇西特拉圖三度奪權後終於穩固僭主統治，扶植農業與公共建設、削弱舊貴族勢力，客觀上為日後的民主化鋪路；其子希庇亞斯於前510年被逐出雅典，僭主政治告終。
+  sources:
+    - title: 維基百科：庇西特拉圖
+      url: https://zh.wikipedia.org/wiki/庇西特拉圖
 
 - id: me-babylon-fall
   year: -539
@@ -278,6 +302,7 @@
   title: 克里斯提尼改革，雅典民主制成形
   category: politics
   importance: 4
+  desc: 以地域劃分的十個新部落取代舊有的血緣氏族，設立五百人會議並創立「陶片放逐制」防止僭主再起，一般視為雅典民主政體正式成形的起點。
   sources:
     - title: 維基百科：克里斯提尼
       url: https://zh.wikipedia.org/wiki/克里斯提尼
@@ -289,6 +314,7 @@
   title: 馬拉松戰役
   category: war
   importance: 4
+  desc: 波斯王大流士一世首次入侵希臘，雅典聯合普拉提亞在馬拉松平原以寡擊眾擊退波斯大軍，穩住新生的民主政體，馬拉松長跑的名稱即源於此役傳訊的傳說。
   sources:
     - title: 維基百科：馬拉松戰役
       url: https://zh.wikipedia.org/wiki/馬拉松戰役
@@ -298,17 +324,29 @@
   title: 溫泉關與薩拉米斯海戰
   category: war
   importance: 4
+  desc: 波斯王薛西斯一世率大軍再度入侵，斯巴達王列奧尼達率三百勇士在溫泉關死守拖延波斯軍，雅典其後在薩拉米斯海峽以海軍重創波斯艦隊，扭轉了波希戰爭的戰局。
   sources:
     - title: 維基百科：溫泉關戰役
       url: https://zh.wikipedia.org/wiki/溫泉關戰役
     - title: 維基百科：薩拉米斯戰役
       url: https://zh.wikipedia.org/wiki/薩拉米斯戰役
 
+- id: eu-delian-league
+  year: -478
+  title: 提洛同盟成立，雅典建立海上聯盟
+  category: politics
+  importance: 4
+  desc: 波希戰爭後，雅典號召愛琴海周邊城邦組成同盟共同防禦波斯，以提洛島為公庫，但雅典逐漸把盟邦貢金挪為己用、將同盟蛻變為雅典帝國，種下與斯巴達對立的遠因。
+  sources:
+    - title: 維基百科：提洛同盟
+      url: https://zh.wikipedia.org/wiki/提洛同盟
+
 - id: eu-parthenon
   year: -447
   title: 帕德嫩神廟動工
   category: culture
   importance: 4
+  desc: 雅典政治家伯里克利動用提洛同盟的公款，在衛城重建供奉守護神雅典娜的神廟，是古典希臘建築與雕刻藝術的代表作，也招致盟邦對雅典挪用同盟資金的不滿。
   sources:
     - title: 維基百科：帕德嫩神廟
       url: https://zh.wikipedia.org/wiki/帕德嫩神廟
@@ -319,6 +357,7 @@
   category: war
   importance: 4
   endYear: -404
+  desc: 以雅典為首的提洛同盟與斯巴達為首的伯羅奔尼撒同盟爭霸希臘世界，戰事拖延近三十年，雅典最終戰敗、一度失去民主政體，希臘城邦體系元氣大傷、由盛轉衰。
   sources:
     - title: 維基百科：伯羅奔尼撒戰爭
       url: https://zh.wikipedia.org/wiki/伯羅奔尼撒戰爭
@@ -328,6 +367,7 @@
   title: 蘇格拉底之死
   category: culture
   importance: 4
+  desc: 雅典法庭以「腐化青年、不敬城邦諸神」判處蘇格拉底死刑，他拒絕逃亡、飲下毒芹汁而死，其詰問式教學經弟子柏拉圖記錄下來，奠定西方哲學的傳統。
   sources:
     - title: 維基百科：蘇格拉底
       url: https://zh.wikipedia.org/wiki/蘇格拉底
@@ -337,17 +377,31 @@
   title: 柏拉圖創立學院
   category: culture
   importance: 4
+  desc: 柏拉圖在雅典城外的阿卡德摩斯聖林設立學院，教授數學、哲學與政治學，是歐洲史上第一所有制度的高等學府，一直運作到西元529年才被查士丁尼下令關閉。
   sources:
     - title: 維基百科：柏拉圖學院
       url: https://zh.wikipedia.org/wiki/柏拉圖學院
     - title: 英文維基百科：柏拉圖學院
       url: https://en.wikipedia.org/wiki/Platonic_Academy
 
+- id: eu-chaeronea
+  year: -338
+  title: 喀羅尼亞戰役，腓力二世稱霸希臘
+  category: war
+  importance: 4
+  desc: 馬其頓王腓力二世在喀羅尼亞擊潰雅典與底比斯聯軍，隔年成立科林斯同盟迫使希臘城邦承認其霸權，城邦自主的古典時代自此終結，也為其子亞歷山大的東征鋪路。
+  sources:
+    - title: 維基百科：喀羅尼亞戰役
+      url: https://zh.wikipedia.org/wiki/喀羅尼亞戰役
+    - title: 維基百科：科林斯同盟
+      url: https://zh.wikipedia.org/wiki/科林斯同盟
+
 - id: eu-lyceum
   year: -335
   title: 亞里斯多德創立呂克昂學園
   category: culture
   importance: 4
+  desc: 曾就讀柏拉圖學院的亞里斯多德在雅典另立學園，師生常在迴廊間漫步講學，因而得「逍遙學派」之稱，研究範圍橫跨邏輯、生物、政治與詩學。
   sources:
     - title: 維基百科：呂克昂
       url: https://zh.wikipedia.org/wiki/呂克昂
@@ -384,6 +438,7 @@
   title: 歐幾里得《幾何原本》
   category: science
   importance: 4
+  desc: 歐幾里得在托勒密王朝治下的亞歷山卓城，以公理演繹法將前人零散的幾何知識系統化寫成《幾何原本》，成為往後兩千年數學教育的基礎教材。
   sources:
     - title: 維基百科：歐幾里得
       url: https://zh.wikipedia.org/wiki/歐幾里得
@@ -1853,6 +1908,17 @@
   sources:
     - title: 維基百科：墨西哥獨立戰爭
       url: https://zh.wikipedia.org/wiki/墨西哥獨立戰爭
+
+- id: eu-greek-independence
+  year: 1821
+  title: 希臘獨立戰爭
+  category: war
+  importance: 4
+  endYear: 1830
+  desc: 希臘人反抗鄂圖曼統治爆發起義，英法俄三國介入、在納瓦里諾海戰重創鄂圖曼艦隊，1830年倫敦議定書承認希臘獨立，結束近四百年的鄂圖曼統治，是十九世紀歐洲民族主義浪潮的先聲。
+  sources:
+    - title: 維基百科：希臘獨立戰爭
+      url: https://zh.wikipedia.org/wiki/希臘獨立戰爭
 
 - id: am-monroe
   year: 1823
