@@ -84,7 +84,11 @@ export function HelpOverlay({ onClose }: Props) {
     restoreTo.current = document.activeElement as HTMLElement | null
     closeRef.current?.focus()
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
+      if (e.key !== 'Escape') return
+      // 標記這次 Esc 已被吃掉，否則詳情面板（掛在 window，比這裡晚跑）
+      // 會跟著一起關掉 —— 一次 Esc 只該關最上面那一層。見 DetailPanel。
+      e.preventDefault()
+      onClose()
     }
     document.addEventListener('keydown', onKey)
     return () => {
@@ -131,7 +135,10 @@ export function HelpOverlay({ onClose }: Props) {
             上排的圓角標籤是<strong>開關</strong>：{col}、類別{SAMPLES.legendary ? '、傳說' : ''}
             都可以個別關掉。
           </li>
-          <li>點任何一則事件，右下角會顯示詳情、出處，以及其他{col}的同時期事件。</li>
+          <li>
+            點任何一則事件，右下角會顯示詳情、出處，以及其他{col}的同時期事件。
+            按 <kbd>Esc</kbd> 或右上角的 <kbd>×</kbd> 關閉。
+          </li>
           <li>
             <strong>網址會跟著你走</strong> —— 捲到哪、縮放多少、選了哪則事件都記在網址列，
             直接複製就能把「這個年代」分享給別人。

@@ -415,6 +415,10 @@ export default function App() {
     })
   }, [])
 
+  // 身分要穩定：DetailPanel 拿它當 Esc 監聽器的相依，每次 render 換一個新的
+  // 函式會讓那個 effect 白白拆掉重掛。
+  const clearSelection = useCallback(() => setSelectedId(null), [])
+
   const toggleCategory = useCallback((c: Category) => {
     setCategories((prev) => {
       const next = new Set(prev)
@@ -546,7 +550,7 @@ export default function App() {
             region={selected.region}
             slot={selected.slot}
             concurrent={concurrent}
-            onClose={() => setSelectedId(null)}
+            onClose={clearSelection}
             onSelect={selectConcurrent}
           />
         )}

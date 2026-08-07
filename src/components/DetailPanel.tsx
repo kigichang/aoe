@@ -22,6 +22,30 @@ export function DetailPanel({ event, region, slot, concurrent, onClose, onSelect
     detailRef.current?.scrollTo({ top: 0 })
   }, [event.id])
 
+  /**
+   * Esc 關閉面板。
+   *
+   * **掛在 `window` 而不是 `document`，這是刻意的。** 畫面上同時可能開著說明
+   * 覆蓋層、主題選單或搜尋結果，那三個也都在聽 Esc（前兩者在 `document`，
+   * 搜尋是 React 綁在 root 容器上）。同一個節點上的監聽器照**註冊順序**跑，
+   * 誰先掛誰先跑 —— 那個順序取決於元件何時開啟，不穩定。
+   *
+   * 冒泡的終點是 `window`，掛在這裡保證比它們全部都晚，`defaultPrevented`
+   * 才真的能拿來判斷「上層已經處理掉這次 Esc 了」。
+   *
+   * 詳情面板是最外層（它不是 modal，不擋任何操作），所以本來就該最後才輪到：
+   * **按一次 Esc 只關掉最上面那一層**，不會連著把面板一起收掉。
+   * 對應地，任何消費 Esc 的地方都要記得 `preventDefault()` 標記已處理。
+   */
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape' || e.defaultPrevented) return
+      onClose()
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [onClose])
+
   return (
     <aside className="detail" aria-label="事件詳情" ref={detailRef}>
       <div className="detail-header">

@@ -37,6 +37,8 @@ export function TopicSwitcher() {
     if (!open) return
     const onKey = (e: KeyboardEvent) => {
       if (e.key !== 'Escape') return
+      // 標記已處理，詳情面板才不會跟著一起關掉。見 DetailPanel 的 Esc 那段。
+      e.preventDefault()
       setOpen(false)
       btnRef.current?.focus()
     }

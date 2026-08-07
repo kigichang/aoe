@@ -50,6 +50,9 @@ export function SearchBox({ all, onPick }: Props) {
 
   const onKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Escape') {
+      // 焦點在搜尋框時 Esc 一律歸這裡：收起結果並失焦。標記已處理，
+      // 詳情面板才不會跟著關掉。見 DetailPanel 的 Esc 那段。
+      e.preventDefault()
       setOpen(false)
       inputRef.current?.blur()
       return

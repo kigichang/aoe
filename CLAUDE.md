@@ -652,6 +652,27 @@ flex item 的預設 `min-size` 是 `auto`，不給 0 的話 `.scroller` 不會�
 
 窄螢幕（`max-width: 1099px`）沒有並排的空間，改成貼底的抽屜。
 
+### Esc 的分層規則（新增任何 Esc 處理時請先看這裡）
+
+畫面上會聽 Esc 的有四處：**說明覆蓋層、主題選單、搜尋框、詳情面板**。
+規則是**按一次 Esc 只關掉最上面那一層**。
+
+作法是一套 `defaultPrevented` 協定：
+
+- **任何消費 Esc 的地方都要 `e.preventDefault()`**，代表「這次按鍵我吃掉了」。
+- **詳情面板是最後一層**（它不是 modal，不擋任何操作），只在 `defaultPrevented`
+  為 false 時才關閉。
+
+**詳情面板的監聽器掛在 `window`，其餘掛在 `document`（搜尋是 React 綁在 root
+容器上）—— 這個差別是刻意的。** 同一個節點上的監聽器照**註冊順序**跑，而註冊
+順序取決於各元件何時開啟，不穩定；冒泡的終點是 `window`，掛在那裡才保證比所有
+`document` 上的監聽器都晚，`defaultPrevented` 也才真的讀得到結果。
+
+**新增第五個 Esc 消費者時，忘了 `preventDefault()` 不會報錯** —— 只會變成
+按一次 Esc 同時關掉那一層與詳情面板，而且要兩個都開著才看得出來。
+這跟 `HEAD_H` / `--head-h` 那組常數是同一類「沒有共用來源，改一邊要記得改另一邊」
+的東西。
+
 ---
 
 ## 搜尋（`search.ts` / `SearchBox.tsx`）
