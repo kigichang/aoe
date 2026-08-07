@@ -1894,6 +1894,7 @@
   title: 五月花號抵達新英格蘭
   category: politics
   importance: 3
+  desc: 清教徒為逃避英國國教迫害，搭乘五月花號橫渡大西洋，登陸前簽署《五月花號公約》，以多數同意的方式訂立自治規範；這份公約常被視為北美殖民地自治傳統與日後憲政精神的早期雛形。
   sources:
     - title: 維基百科：五月花號
       url: https://zh.wikipedia.org/wiki/五月花號
@@ -2116,6 +2117,7 @@
   title: 美國獨立宣言
   category: politics
   importance: 5
+  desc: 十三個北美殖民地代表在費城召開大陸會議，通過傑佛遜起草的獨立宣言，宣告脫離英國統治、成立獨立國家；宣言揭示「人人生而平等」與天賦人權的理念，成為往後兩百多年民主革命反覆援引的範本。
   sources:
     - title: 維基百科：美國獨立宣言
       url: https://zh.wikipedia.org/wiki/美國獨立宣言
@@ -2135,6 +2137,7 @@
   title: 美國憲法制定
   category: politics
   importance: 4
+  desc: 費城制憲會議在《邦聯條例》運作失靈後重新設計聯邦體制，確立三權分立與聯邦制的架構，是史上第一部成文的國家憲法；隨後通過的權利法案十條修正案進一步保障言論、宗教等基本公民權利。
   sources:
     - title: 維基百科：美國憲法
       url: https://zh.wikipedia.org/wiki/美國憲法
@@ -2275,6 +2278,19 @@
     - title: 維基百科：門羅主義
       url: https://zh.wikipedia.org/wiki/門羅主義
 
+- id: am-indian-removal
+  year: 1830
+  endYear: 1838
+  title: 印第安人遷移法，眼淚之路
+  category: politics
+  importance: 4
+  desc: 總統安德魯·傑克森簽署印第安人遷移法，強制切羅基等東南部原住民部族遷往密西西比河以西；被迫徒步遷徙的路途飢寒交迫，數千人死於途中，史稱「眼淚之路」，是美國原住民史上最慘痛的創傷之一。
+  sources:
+    - title: 維基百科：印第安人遷移法案
+      url: https://zh.wikipedia.org/wiki/印第安人遷移法案
+    - title: 維基百科：眼淚之路
+      url: https://zh.wikipedia.org/wiki/眼淚之路
+
 - id: eu-irish-famine
   year: 1845
   endYear: 1852
@@ -2314,6 +2330,7 @@
   title: 加利福尼亞淘金熱
   category: economy
   importance: 3
+  desc: 加州發現金礦的消息傳開後，數十萬人從美國各地與海外湧入西部淘金，加州人口暴增、迅速建州；這波移民潮加速美國西部開發，卻也加劇對原住民土地的侵占。
   sources:
     - title: 維基百科：加利福尼亞淘金潮
       url: https://zh.wikipedia.org/wiki/加利福尼亞淘金潮
@@ -2384,6 +2401,16 @@
     - title: 維基百科：南北戰爭
       url: https://zh.wikipedia.org/wiki/南北戰爭
 
+- id: am-emancipation-proclamation
+  year: 1863
+  title: 林肯發布解放奴隸宣言
+  category: politics
+  importance: 4
+  desc: 林肯總統宣布南方邦聯控制區內的奴隸自由，雖無法立即執行、也未涵蓋邊境蓄奴州，卻讓廢除奴隸制度成為北方戰爭目標的核心，並開放黑人從軍；戰後通過的憲法第十三條修正案才正式在全國廢除奴隸制。
+  sources:
+    - title: 維基百科：解放奴隸宣言
+      url: https://zh.wikipedia.org/wiki/解放奴隸宣言
+
 - id: am-reconstruction
   year: 1865
   title: 重建時期，南方政治秩序重整
@@ -2400,6 +2427,7 @@
   title: 第一條橫貫大陸鐵路通車
   category: economy
   importance: 3
+  desc: 聯合太平洋與中央太平洋鐵路公司分別從東西兩端施工，在猶他州普若蒙特里會合完工，橫貫北美大陸的鐵路首度貫通；原本需時數月的東西岸往返縮短至一週內，大批華工是築路的主力勞動力。
   sources:
     - title: 維基百科：第一條橫貫大陸鐵路
       url: https://zh.wikipedia.org/wiki/第一條橫貫大陸鐵路
@@ -2492,6 +2520,7 @@
   title: 美西戰爭
   category: war
   importance: 3
+  desc: 美國以緬因號軍艦爆炸為由對西班牙宣戰，數月內擊敗西班牙艦隊，取得波多黎各、關島與菲律賓，古巴則名義獨立、實際受美國控制；這場戰爭標誌美國正式躋身殖民帝國之列，美西兩國的全球地位自此互換。
   sources:
     - title: 維基百科：美西戰爭
       url: https://zh.wikipedia.org/wiki/美西戰爭
@@ -2535,6 +2564,7 @@
   title: 巴拿馬運河通航
   category: economy
   importance: 4
+  desc: 巴拿馬運河貫通太平洋與大西洋，大幅縮短兩洋間的航運距離；美國藉扶植巴拿馬獨立取得運河區的控制權，運河直到1999年才依條約交還巴拿馬。
   sources:
     - title: 維基百科：巴拿馬運河
       url: https://zh.wikipedia.org/wiki/巴拿馬運河
@@ -2609,6 +2639,16 @@
   sources:
     - title: 維基百科：阿姆利則慘案
       url: https://zh.wikipedia.org/wiki/阿姆利則慘案
+
+- id: am-womens-suffrage
+  year: 1920
+  title: 美國憲法第十九修正案，女性取得投票權
+  category: politics
+  importance: 4
+  desc: 歷經數十年遊說與抗爭，國會通過憲法第十九條修正案，禁止以性別為由剝奪公民投票權，數百萬美國女性首度取得參政權；這場運動也啟發同時期其他國家的婦女參政權立法。
+  sources:
+    - title: 維基百科：美國憲法第十九修正案
+      url: https://zh.wikipedia.org/wiki/美國憲法第十九修正案
 
 - id: eu-irish-free-state
   year: 1922
@@ -2906,6 +2946,26 @@
     - title: 維基百科：阿斯旺水壩
       url: https://zh.wikipedia.org/wiki/阿斯旺水壩
 
+- id: am-cuban-missile-crisis
+  year: 1962
+  title: 古巴飛彈危機
+  category: politics
+  importance: 5
+  desc: 美國發現蘇聯在古巴部署核彈頭飛彈，甘迺迪下令海上封鎖並公開對峙，雙方一度瀕臨核戰邊緣，最終蘇聯同意撤彈、美國則暗中承諾撤除土耳其的飛彈才化解危機；這是冷戰期間美蘇最接近直接核武衝突的一次對峙。
+  sources:
+    - title: 維基百科：古巴導彈危機
+      url: https://zh.wikipedia.org/wiki/古巴導彈危機
+
+- id: am-jfk-assassination
+  year: 1963
+  title: 甘迺迪遇刺
+  category: politics
+  importance: 4
+  desc: 甘迺迪總統在德州達拉斯遇刺身亡，兇手身分與動機至今仍有陰謀論爭議，副總統詹森隨即繼任；這起事件震撼全美社會，也常被視為戰後美國社會信任崩解的起點之一。
+  sources:
+    - title: 維基百科：約翰·F·甘迺迪遇刺案
+      url: https://zh.wikipedia.org/wiki/約翰·F·甘迺迪遇刺案
+
 - id: am-civil-rights-act
   year: 1964
   title: 民權法案通過，種族隔離制度終結
@@ -2954,6 +3014,7 @@
   title: 阿波羅十一號登月
   category: science
   importance: 5
+  desc: 阿姆斯壯與艾德林搭乘阿波羅十一號登陸月球，成為首度踏上地球以外天體的人類；這是美蘇太空競賽的高潮，也讓美國在冷戰的科技競爭中取得指標性的勝利。
   sources:
     - title: 維基百科：阿波羅11號
       url: https://zh.wikipedia.org/wiki/阿波羅11號
@@ -2966,6 +3027,17 @@
   sources:
     - title: 維基百科：孟加拉國解放戰爭
       url: https://zh.wikipedia.org/wiki/孟加拉國解放戰爭
+
+- id: am-watergate
+  year: 1972
+  endYear: 1974
+  title: 水門事件，尼克森辭職
+  category: politics
+  importance: 4
+  desc: 尼克森競選團隊涉嫌闖入民主黨全國委員會總部竊聽，總統本人隨後被查出試圖掩蓋案情；國會彈劾程序啟動後，尼克森搶先宣布辭職，是美國史上唯一在任內辭職的總統，也重創民眾對政府的信任。
+  sources:
+    - title: 維基百科：水門事件
+      url: https://zh.wikipedia.org/wiki/水門事件
 
 - id: me-egypt-israel-peace
   year: 1978
@@ -3046,6 +3118,16 @@
   sources:
     - title: 維基百科：歐元
       url: https://zh.wikipedia.org/wiki/歐元
+
+- id: am-2008-financial-crisis
+  year: 2008
+  title: 2008年環球金融危機
+  category: economy
+  importance: 4
+  desc: 美國次級房貸違約潮引爆雷曼兄弟倒閉，金融體系信用凍結，恐慌迅速蔓延全球，觸發二戰以來最嚴重的經濟衰退；各國政府隨後推出大規模紓困與寬鬆貨幣政策因應，也重塑了金融監理制度的框架。
+  sources:
+    - title: 維基百科：2008年環球金融危機
+      url: https://zh.wikipedia.org/wiki/2008年環球金融危機
 
 - id: me-egypt-2011-revolution
   year: 2011
