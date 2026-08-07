@@ -1359,6 +1359,19 @@
     - title: 維基百科：第一次十字軍東征
       url: https://zh.wikipedia.org/wiki/第一次十字軍東征
 
+- id: am-cusco-founding
+  year: 1200
+  title: 曼科·卡帕克建立庫斯科王國
+  category: politics
+  importance: 3
+  legendary: true
+  desc: 傳說中的印加開國君主曼科·卡帕克自的的喀喀湖一帶率族人遷至庫斯科河谷，建立庫斯科王國並興建太陽神殿；起源故事摻雜大量神話色彩，信史與傳說的界線難以釐清，但庫斯科自此成為印加文明兩百多年的權力核心。
+  sources:
+    - title: 維基百科：曼科·卡帕克
+      url: https://zh.wikipedia.org/wiki/曼科·卡帕克
+    - title: 維基百科：庫斯科王國
+      url: https://zh.wikipedia.org/wiki/庫斯科王國
+
 - id: sa-delhi-sultanate
   year: 1206
   title: 德里蘇丹國建立
@@ -1538,7 +1551,7 @@
   title: 印加帝國進入擴張期
   category: politics
   importance: 4
-  desc: 從庫斯科向外擴張，最盛時沿安地斯山綿延四千公里。
+  desc: 第九代印加王帕查庫特克擊敗強敵昌卡人後展開大規模擴張，將王國改造為劃分四大行政區的「四方之地」，並鋪設綿密的印加道路網串連全境；子孫圖帕克·印卡與瓦伊納·卡帕克接續擴張，最盛時沿安地斯山綿延四千公里。
   sources:
     - title: 維基百科：印加帝國
       url: https://zh.wikipedia.org/wiki/印加帝國
@@ -1750,6 +1763,7 @@
   title: 西班牙征服印加帝國
   category: war
   importance: 5
+  desc: 皮薩羅在卡哈馬卡設伏誘捕已贏得內戰的阿塔瓦爾帕，阿塔瓦爾帕提出以滿室黃金、兩倍白銀贖命，印加人如期交付贖金，皮薩羅卻仍以叛亂與弒兄罪名將他處死；帝國群龍無首，數百名西班牙人得以長驅直入庫斯科。
   sources:
     - title: 維基百科：西班牙征服印加帝國
       url: https://zh.wikipedia.org/wiki/西班牙征服印加帝國
@@ -1765,6 +1779,21 @@
       url: https://zh.wikipedia.org/wiki/亨利八世
     - title: 維基百科：英格蘭宗教改革
       url: https://zh.wikipedia.org/wiki/英格蘭宗教改革
+
+- id: am-vilcabamba
+  year: 1536
+  endYear: 1572
+  title: 曼科·印卡起兵抗西，比爾卡班巴新印加國覆滅
+  category: war
+  importance: 4
+  desc: 西班牙人扶植的傀儡印加王曼科·印卡·尤潘基趁機起兵圍攻庫斯科，失敗後退入安地斯山區的比爾卡班巴，建立延續近四十年的新印加國，時而突襲西班牙人、時而談判周旋；1572年西班牙軍隊攻破最後據點，末代印加王圖帕克·阿馬魯被俘處死，印加人有組織的政治抵抗自此終結。
+  sources:
+    - title: 維基百科：曼科·印卡·尤潘基
+      url: https://zh.wikipedia.org/wiki/曼科·印卡·尤潘基
+    - title: 維基百科：新印加國
+      url: https://zh.wikipedia.org/wiki/新印加國
+    - title: 維基百科：比爾卡班巴
+      url: https://zh.wikipedia.org/wiki/比爾卡班巴
 
 - id: eu-copernicus
   year: 1543
