@@ -96,6 +96,7 @@
   title: 吠陀時代開始
   category: religion
   importance: 3
+  desc: 印度-雅利安人自西北方遷入次大陸，帶來梵語與吠陀經典，種姓制度與婆羅門教的雛形在此時期逐漸成形；吠陀文獻是研究早期印度社會、宗教與語言最重要的史料。
   sources:
     - title: 維基百科：吠陀文化
       url: https://zh.wikipedia.org/wiki/吠陀文化
@@ -577,6 +578,7 @@
   title: 第三次結集，佛教向外傳布
   category: religion
   importance: 3
+  desc: 阿育王在華氏城召集第三次佛教結集，整理教義並派遣傳教師前往斯里蘭卡、中亞乃至希臘化世界弘法；佛教自此從恆河流域的地方信仰逐漸發展為跨區域的世界性宗教。
   sources:
     - title: 維基百科：第三次結集
       url: https://zh.wikipedia.org/wiki/第三次結集
@@ -847,6 +849,7 @@
   title: 那爛陀寺創建
   category: culture
   importance: 3
+  desc: 笈多王朝君主在摩揭陀創立那爛陀寺，集講學、藏經與辯經於一體，鼎盛時期學僧逾萬人，玄奘、義淨等中國求法僧都曾在此留學；十二世紀末遭德里蘇丹國軍隊焚毀，藏書付之一炬。
   sources:
     - title: 維基百科：那爛陀寺
       url: https://zh.wikipedia.org/wiki/那爛陀寺
@@ -1510,6 +1513,7 @@
   title: 帖木兒洗劫德里
   category: war
   importance: 3
+  desc: 突厥化蒙古征服者帖木兒揮軍南下，在德里城外擊潰蘇丹國守軍後縱兵屠城劫掠，德里蘇丹國元氣大傷、陷入長期分裂；帖木兒的後裔巴布爾一個多世紀後南下印度，建立蒙兀兒帝國。
   sources:
     - title: 維基百科：帖木兒
       url: https://zh.wikipedia.org/wiki/帖木兒
@@ -2517,6 +2521,7 @@
   title: 印度國民大會黨成立
   category: politics
   importance: 3
+  desc: 英屬印度知識分子與地方精英在孟買創立印度國民大會黨，最初訴求溫和的政治參與權，二十世紀後逐漸轉型為領導獨立運動的主要政黨，甘地與尼赫魯皆出身其中。
   sources:
     - title: 維基百科：印度國民大會黨
       url: https://zh.wikipedia.org/wiki/印度國民大會黨
@@ -2879,6 +2884,16 @@
     - title: 維基百科：印巴分治
       url: https://zh.wikipedia.org/wiki/印巴分治
 
+- id: sa-gandhi-assassination
+  year: 1948
+  title: 聖雄甘地遇刺
+  category: politics
+  importance: 5
+  desc: 印度獨立僅五個多月，甘地在新德里的祈禱會上遭印度教民族主義者槍殺身亡，兇手不滿甘地主張印度教徒與穆斯林和解；甘地畢生倡導的非暴力抗爭哲學深遠影響後世曼德拉、金恩博士等民權運動領袖。
+  sources:
+    - title: 維基百科：聖雄甘地
+      url: https://zh.wikipedia.org/wiki/聖雄甘地
+
 - id: me-israel
   year: 1948
   title: 以色列建國
@@ -2899,6 +2914,16 @@
       url: https://zh.wikipedia.org/wiki/西德
     - title: 維基百科：東德
       url: https://zh.wikipedia.org/wiki/東德
+
+- id: sa-india-republic
+  year: 1950
+  title: 印度共和國憲法生效
+  category: politics
+  importance: 4
+  desc: 印度憲法正式生效，取代英國殖民時期的政府法，確立主權民主共和國體制，並廢除賤民制度、保障成年公民普選權；這部全球篇幅最長的成文憲法奠定了印度往後的政治框架。
+  sources:
+    - title: 維基百科：印度憲法
+      url: https://zh.wikipedia.org/wiki/印度憲法
 
 - id: me-egypt-1952
   year: 1952
@@ -2974,6 +2999,16 @@
   sources:
     - title: 維基百科：阿斯旺水壩
       url: https://zh.wikipedia.org/wiki/阿斯旺水壩
+
+- id: sa-sino-indian-war
+  year: 1962
+  title: 中印邊境戰爭
+  category: war
+  importance: 4
+  desc: 中印兩國因喜馬拉雅邊界劃分爭議爆發戰爭，解放軍在西段與東段戰線皆重挫印度軍隊，隨後單方面宣布停火並撤回實際控制線；戰敗重創印度的國際威望，也讓中印邊界爭議延續至今未解。
+  sources:
+    - title: 維基百科：中印邊境戰爭
+      url: https://zh.wikipedia.org/wiki/中印邊境戰爭
 
 - id: am-cuban-missile-crisis
   year: 1962
@@ -3053,6 +3088,7 @@
   title: 孟加拉獨立
   category: politics
   importance: 3
+  desc: 東巴基斯坦因語言、文化與經濟長期遭西巴基斯坦壓制爆發獨立運動，印度出兵介入第三次印巴戰爭助其獨立建國；孟加拉的分離重創了巴基斯坦「兩個地理區塊、一個國家」的立國基礎。
   sources:
     - title: 維基百科：孟加拉國解放戰爭
       url: https://zh.wikipedia.org/wiki/孟加拉國解放戰爭
@@ -3067,6 +3103,29 @@
   sources:
     - title: 維基百科：水門事件
       url: https://zh.wikipedia.org/wiki/水門事件
+
+- id: sa-pokhran-1
+  year: 1974
+  title: 印度首次核試驗
+  category: science
+  importance: 4
+  desc: 印度在拉賈斯坦沙漠引爆代號「微笑佛陀」的核裝置，成為第六個掌握核武技術的國家，也是首個在《核不擴散條約》體制外試爆的國家；1998年印度再度於波卡蘭進行五次核試並正式宣布為核武國家，巴基斯坦隨即跟進試爆。
+  sources:
+    - title: 維基百科：波卡蘭-I
+      url: https://zh.wikipedia.org/wiki/波卡蘭-I
+
+- id: sa-emergency
+  year: 1975
+  endYear: 1977
+  title: 英迪拉·甘地宣布緊急狀態
+  category: politics
+  importance: 4
+  desc: 總理英迪拉·甘地因選舉舞弊判決與國內動盪，宣布全國進入緊急狀態，中止公民自由、大規模逮捕反對派並實施新聞審查；近兩年後她主動解除緊急狀態、舉行大選卻意外落敗，是印度獨立以來民主體制最嚴重的一次中斷。
+  sources:
+    - title: 維基百科：緊急狀態 (印度)
+      url: https://zh.wikipedia.org/wiki/緊急狀態_(印度)
+    - title: 維基百科：英迪拉·甘地
+      url: https://zh.wikipedia.org/wiki/英迪拉·甘地
 
 - id: me-egypt-israel-peace
   year: 1978
@@ -3119,6 +3178,16 @@
   sources:
     - title: 維基百科：兩德統一
       url: https://zh.wikipedia.org/wiki/兩德統一
+
+- id: sa-economic-liberalization
+  year: 1991
+  title: 印度經濟自由化改革
+  category: economy
+  importance: 5
+  desc: 面臨外匯存底幾近枯竭的國際收支危機，總理拉奧與財政部長曼莫漢·辛格推動大幅開放市場、鬆綁管制與吸引外資的改革，一舉扭轉印度獨立以來奉行的計畫經濟路線；此後三十年印度經濟持續高速成長，逐漸成為全球資訊科技產業重鎮。
+  sources:
+    - title: 維基百科：印度的經濟自由化
+      url: https://zh.wikipedia.org/wiki/印度的經濟自由化
 
 - id: eu-maastricht
   year: 1993
