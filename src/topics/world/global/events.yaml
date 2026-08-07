@@ -164,6 +164,17 @@
     - title: 英文維基百科：查文文化
       url: https://en.wikipedia.org/wiki/Chavín_culture
 
+- id: eu-lycurgus
+  year: -820
+  title: 來古格士立法，斯巴達軍國體制成形
+  category: politics
+  importance: 3
+  legendary: true
+  desc: 傳說中的斯巴達立法者來古格士制定嚴苛的軍事化教育「阿哥革」，確立雙王共治與監察官制度，其真實年代與是否確有其人連古代史家自己都莫衷一是，但後世崇尚紀律、公民皆兵的「斯巴達式」形象即由此而來。
+  sources:
+    - title: 維基百科：來古格士
+      url: https://zh.wikipedia.org/wiki/來古格士
+
 - id: eu-olympics
   year: -776
   title: 第一屆古代奧林匹克運動會
@@ -185,6 +196,19 @@
       url: https://zh.wikipedia.org/wiki/羅馬王政時代
     - title: 維基百科：羅慕路斯
       url: https://zh.wikipedia.org/wiki/羅慕路斯
+
+- id: eu-messenian-wars
+  year: -743
+  endYear: -650
+  title: 麥西尼亞戰爭，斯巴達征服拉科尼亞與美塞尼亞
+  category: war
+  importance: 4
+  desc: 斯巴達經兩次麥西尼亞戰爭吞併鄰近的美塞尼亞平原，將戰敗的美塞尼亞人貶為世代束縛於土地的黑勞士，供養斯巴達全民皆兵的軍事化社會；此後黑勞士人數始終數倍於斯巴達公民，也是斯巴達實行嚴密軍國統治的根本原因。
+  sources:
+    - title: 維基百科：麥西尼亞戰爭
+      url: https://zh.wikipedia.org/wiki/麥西尼亞戰爭
+    - title: 維基百科：黑勞士
+      url: https://zh.wikipedia.org/wiki/黑勞士
 
 - id: me-assyria-israel
   year: -722
@@ -248,6 +272,16 @@
       url: https://zh.wikipedia.org/wiki/阿契美尼德王朝
     - title: 維基百科：居魯士二世
       url: https://zh.wikipedia.org/wiki/居魯士二世
+
+- id: eu-peloponnesian-league
+  year: -550
+  title: 伯羅奔尼撒聯盟成立，斯巴達確立地區霸權
+  category: politics
+  importance: 4
+  desc: 斯巴達以軍事實力為後盾，與伯羅奔尼撒半島上多數城邦（阿爾戈斯除外）結成同盟，各邦保有內政自主但戰時須出兵支援，是雅典提洛同盟出現前希臘最穩定的城邦聯盟，也是日後對抗雅典的基本班底。
+  sources:
+    - title: 維基百科：伯羅奔尼撒聯盟
+      url: https://zh.wikipedia.org/wiki/伯羅奔尼撒聯盟
 
 - id: eu-pisistratus
   year: -546
@@ -362,6 +396,37 @@
     - title: 維基百科：伯羅奔尼撒戰爭
       url: https://zh.wikipedia.org/wiki/伯羅奔尼撒戰爭
 
+- id: eu-athens-plague
+  year: -430
+  title: 雅典大瘟疫
+  category: war
+  importance: 4
+  desc: 伯羅奔尼撒戰爭爆發隔年，鄉間人口為避戰事湧入雅典城牆內，疫病隨之大規模擴散，奪走包括伯里克利在內近三分之一雅典人口，重創雅典的戰爭領導與士氣；史家修昔底德留下的病徵紀錄至今仍被醫學史引用。
+  sources:
+    - title: 維基百科：雅典大瘟疫
+      url: https://zh.wikipedia.org/wiki/雅典大瘟疫
+
+- id: eu-sicilian-expedition
+  year: -415
+  endYear: -413
+  title: 西西里遠征，雅典遠征軍全軍覆沒
+  category: war
+  importance: 4
+  desc: 雅典應盟邦之請出兵西西里島攻打錫拉庫薩，統帥尼西亞斯猶豫不決、貽誤戰機，斯巴達援軍趕到後扭轉戰局，雅典艦隊與陸軍最終在撤退途中幾乎全滅，是雅典在整場戰爭中最慘重的一敗，元氣從此一蹶不振。
+  sources:
+    - title: 維基百科：西西里遠征
+      url: https://zh.wikipedia.org/wiki/西西里遠征
+
+- id: eu-aegospotami
+  year: -405
+  title: 伊哥斯波塔米戰役，雅典海軍覆滅
+  category: war
+  importance: 4
+  desc: 斯巴達將領呂山德奇襲毫無戒備的雅典艦隊，一舉殲滅其絕大部分戰艦，雅典從此失去制海權、糧食補給線遭切斷，翌年被迫向斯巴達投降，伯羅奔尼撒戰爭至此落幕。
+  sources:
+    - title: 維基百科：伊哥斯波塔米戰役
+      url: https://zh.wikipedia.org/wiki/伊哥斯波塔米戰役
+
 - id: eu-socrates
   year: -399
   title: 蘇格拉底之死
@@ -383,6 +448,16 @@
       url: https://zh.wikipedia.org/wiki/柏拉圖學院
     - title: 英文維基百科：柏拉圖學院
       url: https://en.wikipedia.org/wiki/Platonic_Academy
+
+- id: eu-leuctra
+  year: -371
+  title: 留克特拉戰役，斯巴達霸權終結
+  category: war
+  importance: 4
+  desc: 底比斯將領伊巴密濃達以創新的斜線陣型擊潰向來不可一世的斯巴達重裝步兵，斯巴達自此一蹶不振；底比斯隨後揮軍解放世代為奴的美塞尼亞黑勞士，斯巴達失去近半數的糧食產區與人力基礎，再也無力恢復昔日霸權。
+  sources:
+    - title: 維基百科：留克特拉戰役
+      url: https://zh.wikipedia.org/wiki/留克特拉戰役
 
 - id: eu-chaeronea
   year: -338
