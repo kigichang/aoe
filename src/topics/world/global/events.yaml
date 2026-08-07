@@ -1239,6 +1239,7 @@
   title: 鄂圖一世加冕，神聖羅馬帝國成形
   category: politics
   importance: 4
+  desc: 東法蘭克國王鄂圖一世擊敗馬扎爾人、加冕為皇帝，重建查理曼之後中斷的西方帝統；此後歷代德意志國王須經教宗加冕才稱皇帝，帝國實權長期分散在眾多諸侯手中，選帝制度日後由金璽詔書明文化。
   sources:
     - title: 維基百科：奧托一世 (神聖羅馬帝國)
       url: https://zh.wikipedia.org/wiki/奧托一世_(神聖羅馬帝國)
@@ -1622,6 +1623,7 @@
   title: 馬丁路德發表《九十五條論綱》
   category: religion
   importance: 5
+  desc: 馬丁路德不滿教會販售贖罪券，在維滕貝格教堂張貼《九十五條論綱》，主張因信稱義，點燃宗教改革；印刷術讓論綱迅速傳遍歐洲，天主教會就此分裂出新教陣營，也埋下往後一世紀宗教戰爭的種子。
   sources:
     - title: 維基百科：馬丁·路德
       url: https://zh.wikipedia.org/wiki/馬丁·路德
@@ -2076,6 +2078,16 @@
     - title: 維基百科：穆罕默德·阿里
       url: https://zh.wikipedia.org/wiki/穆罕默德·阿里
 
+- id: eu-hre-dissolution
+  year: 1806
+  title: 神聖羅馬帝國解散
+  category: politics
+  importance: 4
+  desc: 拿破崙在奧斯特里茲擊敗奧俄聯軍後成立萊茵邦聯，末代皇帝法蘭茲二世被迫放棄帝號，延續八百多年的神聖羅馬帝國正式解體；德意志地區自此陷入邦國林立、缺乏統一政治中心的局面，直到俾斯麥完成統一。
+  sources:
+    - title: 維基百科：神聖羅馬帝國解體
+      url: https://zh.wikipedia.org/wiki/神聖羅馬帝國解體
+
 - id: am-latin-independence
   year: 1810
   title: 西班牙美洲獨立戰爭
@@ -2233,6 +2245,7 @@
   title: 德意志帝國統一
   category: politics
   importance: 4
+  desc: 普魯士首相俾斯麥接連在普丹、普奧、普法三場戰爭中取勝，最終在凡爾賽宮鏡廳為普魯士國王威廉一世加冕德意志皇帝；統一後的德意志帝國迅速躍居歐陸最強的工業與軍事強權，也打破了原有的歐洲均勢。
   sources:
     - title: 維基百科：德意志統一
       url: https://zh.wikipedia.org/wiki/德意志統一
@@ -2306,6 +2319,7 @@
   category: war
   importance: 5
   endYear: 1918
+  desc: 奧匈帝國皇儲遇刺引爆歐洲兩大同盟體系連環宣戰，塹壕戰讓戰線陷入長期僵持，化學武器與坦克等新式兵器首度大規模投入戰場；四年戰事奪走近千萬條性命，德、奧匈、鄂圖曼、俄羅斯四大帝國相繼崩解。
   sources:
     - title: 維基百科：第一次世界大戰
       url: https://zh.wikipedia.org/wiki/第一次世界大戰
@@ -2368,6 +2382,19 @@
     - title: 英文維基百科：United States in World War I
       url: https://en.wikipedia.org/wiki/United_States_in_World_War_I
 
+- id: eu-weimar-republic
+  year: 1918
+  endYear: 1919
+  title: 威瑪共和國成立，德意志帝國瓦解
+  category: politics
+  importance: 4
+  desc: 德國戰敗前夕爆發基爾水兵譁變，威廉二世退位流亡荷蘭，德意志帝國瓦解；隔年簽署的《凡爾賽條約》要求德國承擔戰爭罪責、割地並限縮軍備，新成立的威瑪共和國背負鉅額賠款與戰敗屈辱起步，種下日後極端政治勢力崛起的遠因。
+  sources:
+    - title: 維基百科：魏瑪共和國
+      url: https://zh.wikipedia.org/wiki/魏瑪共和國
+    - title: 維基百科：凡爾賽條約
+      url: https://zh.wikipedia.org/wiki/凡爾賽條約
+
 - id: sa-amritsar
   year: 1919
   title: 阿姆利則慘案
@@ -2421,6 +2448,18 @@
     - title: 維基百科：食鹽進軍
       url: https://zh.wikipedia.org/wiki/食鹽進軍
 
+- id: eu-nazi-power
+  year: 1933
+  title: 希特勒掌權，納粹德國建立
+  category: politics
+  importance: 5
+  desc: 納粹黨在國會選舉中成為最大黨，興登堡總統任命希特勒為總理；國會縱火案後政府援引《1933年授權法》取得無限立法權，一黨專政的納粹德國就此成形，威瑪民主在合法程序下被架空瓦解。
+  sources:
+    - title: 維基百科：阿道夫·希特勒
+      url: https://zh.wikipedia.org/wiki/阿道夫·希特勒
+    - title: 維基百科：德國1933年授權法
+      url: https://zh.wikipedia.org/wiki/德國1933年授權法
+
 - id: am-new-deal
   year: 1933
   title: 羅斯福推行新政
@@ -2437,6 +2476,7 @@
   category: war
   importance: 5
   endYear: 1945
+  desc: 德國以閃擊戰入侵波蘭，英法隨即對德宣戰，戰火迅速席捲歐、亞、非三洲；這是人類史上規模最大的戰爭，造成七千萬人以上死亡，也直接催生了聯合國與冷戰兩極格局。
   sources:
     - title: 維基百科：第二次世界大戰
       url: https://zh.wikipedia.org/wiki/第二次世界大戰
@@ -2450,6 +2490,17 @@
   sources:
     - title: 維基百科：珍珠港事件
       url: https://zh.wikipedia.org/wiki/珍珠港事件
+
+- id: eu-holocaust
+  year: 1941
+  endYear: 1945
+  title: 猶太人大屠殺
+  category: war
+  importance: 5
+  desc: 納粹德國以「最終解決方案」為名，在奧斯威辛等集中營以工業化手段系統屠殺約六百萬猶太人，另有大量羅姆人、身心障礙者與政治犯遭殺害；戰後紐倫堡大審首度確立「危害人類罪」的國際法概念，這場浩劫也成為以色列建國訴求的重要背景。
+  sources:
+    - title: 維基百科：納粹大屠殺
+      url: https://zh.wikipedia.org/wiki/納粹大屠殺
 
 - id: eu-un
   year: 1945
@@ -2490,6 +2541,18 @@
   sources:
     - title: 維基百科：以色列獨立宣言
       url: https://zh.wikipedia.org/wiki/以色列獨立宣言
+
+- id: eu-germany-divided
+  year: 1949
+  title: 東西德建國，德國正式分裂
+  category: politics
+  importance: 4
+  desc: 美英法佔領區合併為西德（德意志聯邦共和國），蘇聯佔領區隨後成立東德（德意志民主共和國），首都柏林同樣一分為二；分裂的德國成為冷戰兩大陣營在歐洲對峙的第一線，直到1990年才重新統一。
+  sources:
+    - title: 維基百科：西德
+      url: https://zh.wikipedia.org/wiki/西德
+    - title: 維基百科：東德
+      url: https://zh.wikipedia.org/wiki/東德
 
 - id: me-egypt-1952
   year: 1952
@@ -2646,6 +2709,16 @@
       url: https://zh.wikipedia.org/wiki/全球資訊網
     - title: 維基百科：提姆·柏內茲-李
       url: https://zh.wikipedia.org/wiki/提姆·柏內茲-李
+
+- id: eu-german-reunification
+  year: 1990
+  title: 兩德統一，冷戰在歐洲落幕
+  category: politics
+  importance: 5
+  desc: 柏林圍牆倒塌後東德局勢迅速失控，東西德在《兩加四條約》下完成統一，五個東德邦併入聯邦德國體制；德國統一象徵冷戰在歐洲正式終結，也讓德國重新成為歐陸人口最多、經濟實力最強的國家。
+  sources:
+    - title: 維基百科：兩德統一
+      url: https://zh.wikipedia.org/wiki/兩德統一
 
 - id: eu-maastricht
   year: 1993
