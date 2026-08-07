@@ -292,12 +292,14 @@
   title: 居魯士建立波斯帝國
   category: politics
   importance: 5
-  desc: 疆域橫跨小亞細亞到印度河，是當時世界上最大的帝國。
+  desc: 居魯士二世推翻米底亞帝國、征服呂底亞王國，建立橫跨小亞細亞到印度河、當時世界上最大的帝國；他善待被征服民族信仰與習俗的統治風格，透過記載於居魯士文書的敕令流傳後世，也讓他在猶太傳統中被尊為解放者。
   sources:
     - title: 維基百科：阿契美尼德王朝
       url: https://zh.wikipedia.org/wiki/阿契美尼德王朝
     - title: 維基百科：居魯士二世
       url: https://zh.wikipedia.org/wiki/居魯士二世
+    - title: 維基百科：居魯士文書
+      url: https://zh.wikipedia.org/wiki/居魯士文書
 
 - id: eu-peloponnesian-league
   year: -550
@@ -329,6 +331,20 @@
   sources:
     - title: 維基百科：新巴比倫帝國
       url: https://zh.wikipedia.org/wiki/新巴比倫帝國
+
+- id: me-darius-administration
+  year: -522
+  title: 大流士一世即位，建立行省制與波斯御道
+  category: politics
+  importance: 4
+  desc: 大流士一世平定篡位者高馬塔後奪得王位，將帝國劃分為二十餘個行省、各設總督統轄並派密探監督，鑄造統一的達里克金幣，修築連接蘇薩與薩第斯的波斯御道與驛站系統加速文書傳遞；他在貝希斯敦峭壁刻下三種楔形文字銘文記述奪位經過，是解讀古波斯文的關鍵史料。
+  sources:
+    - title: 維基百科：大流士一世
+      url: https://zh.wikipedia.org/wiki/大流士一世
+    - title: 維基百科：貝希斯敦銘文
+      url: https://zh.wikipedia.org/wiki/貝希斯敦銘文
+    - title: 維基百科：波斯御道
+      url: https://zh.wikipedia.org/wiki/波斯御道
 
 - id: sa-buddha
   year: -528
@@ -536,6 +552,18 @@
       url: https://zh.wikipedia.org/wiki/亞歷山大大帝
     - title: 維基百科：希臘化時代
       url: https://zh.wikipedia.org/wiki/希臘化時代
+
+- id: me-persia-fall
+  year: -330
+  title: 大流士三世兵敗，阿契美尼德帝國滅亡
+  category: war
+  importance: 4
+  desc: 大流士三世在高加米拉戰役敗於亞歷山大大帝後倉皇東逃，卻遭部下巴克特里亞總督貝蘇斯弒殺篡位；波斯波利斯的王宮隨後遭亞歷山大縱火焚毀，居魯士建立近兩百二十年的阿契美尼德帝國就此滅亡。
+  sources:
+    - title: 維基百科：大流士三世
+      url: https://zh.wikipedia.org/wiki/大流士三世
+    - title: 維基百科：高加米拉戰役
+      url: https://zh.wikipedia.org/wiki/高加米拉戰役
 
 - id: sa-maurya
   year: -321
