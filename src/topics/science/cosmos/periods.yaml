@@ -1,0 +1,35 @@
+# 一條 track，理由同 math/periods.yaml。
+#
+# 這一欄的前半段填得最滿——曆法是農業與國家的剛需，所以巴比倫、埃及、
+# 中國各自都有長期的官方觀測。與旁邊物理欄那一大格「自然哲學」對照，
+# 就看得出資源會流向哪裡。
+
+- id: cos-p-calendar
+  name: 曆法與長期觀測
+  track: 0
+  start: -3000
+  end: -601
+
+- id: cos-p-greek
+  name: 希臘的幾何宇宙
+  track: 0
+  start: -600
+  end: 400
+
+- id: cos-p-islamic-eastasian
+  name: 伊斯蘭與東亞的觀測傳統
+  track: 0
+  start: 401
+  end: 1542
+
+- id: cos-p-telescope
+  name: 望遠鏡時代
+  track: 0
+  start: 1543
+  end: 1899
+
+- id: cos-p-astrophysics
+  name: 天文物理與太空時代
+  track: 0
+  start: 1900
+  end: 2026

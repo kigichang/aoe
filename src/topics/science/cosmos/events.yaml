@@ -1,0 +1,574 @@
+# 天文與地球欄。
+#
+# 兩者合為一欄，因為它們共用同一個方法論處境：**對象都不能放進實驗室**。
+# 不能對恆星做實驗，也不能重做一次造山運動，只能觀測、比對、推論。
+# 這一欄的事件因此高度集中在「看見了什麼」與「用什麼看」，
+# 而不是「做了什麼實驗」。
+#
+# 這也是四欄中唯一在古代就有大量成果的一欄——曆法是農業與國家的剛需，
+# 所以巴比倫、埃及、中國、瑪雅各自都累積了長期觀測紀錄。對照物理欄
+# 同期的空白，就看得出資源會流向哪裡。
+#
+# id 前綴 cos-。category: discovery | theory | work | instrument | institution | application
+# 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
+
+- id: cos-egyptian-calendar
+  year: -2700
+  title: 埃及採用 365 日太陽曆
+  category: theory
+  importance: 5
+  desc: 十二個月各三十日再加五日。誤差每四年約一日，累積千年後節氣
+    整個錯位，但這是第一套脫離月相、直接以太陽年為準的曆法。
+  sources:
+    - title: 維基百科：古埃及曆法
+      url: https://zh.wikipedia.org/wiki/埃及曆法
+
+- id: cos-babylonian-venus
+  year: -1600
+  title: 巴比倫記錄金星的出沒週期
+  category: work
+  importance: 4
+  desc: 逐年記下金星在晨昏出現與消失的日期。天文學從「看星象占卜」
+    轉向「累積可查核的數列」，這是它成為量化學科的第一步。
+  sources:
+    - title: 維基百科：巴比倫天文學
+      url: https://zh.wikipedia.org/wiki/巴比倫天文學
+
+- id: cos-babylonian-diaries
+  year: -700
+  title: 巴比倫天文日誌
+  category: work
+  importance: 4
+  desc: 連續數百年逐夜記錄月相、行星位置、氣象與物價。已知最長的
+    單一觀測資料集，後來的希臘與伊斯蘭天文學都直接建立在它之上。
+  sources:
+    - title: 維基百科：巴比倫天文學
+      url: https://zh.wikipedia.org/wiki/巴比倫天文學
+
+- id: cos-thales
+  year: -585
+  title: 泰勒斯預測日食
+  category: discovery
+  importance: 4
+  desc: 傳說他成功預告了一次日食，很可能是借用巴比倫的週期紀錄。
+    重點不在準不準，而在於天象第一次被當成可推算的自然現象。
+  sources:
+    - title: 維基百科：泰勒斯
+      url: https://zh.wikipedia.org/wiki/泰勒斯
+
+- id: cos-aristotle-cosmos
+  year: -350
+  title: 亞里斯多德《論天》確立地心宇宙
+  category: theory
+  importance: 5
+  desc: 地球居中不動，天體嵌在同心的水晶球層上作完美圓周運動。
+    這套模型解釋力強、與日常經驗相符，因此穩坐了將近兩千年。
+  sources:
+    - title: 英文維基百科：On the Heavens
+      url: https://en.wikipedia.org/wiki/On_the_Heavens
+
+- id: cos-aristarchus
+  year: -260
+  title: 阿里斯塔克提出日心說
+  category: theory
+  importance: 4
+  desc: 主張地球繞太陽轉，並試圖估算日地距離。因為觀測不到恆星視差
+    而被否決——那個推論在邏輯上完全正確，只是恆星比想像中遠太多。
+  sources:
+    - title: 維基百科：阿里斯塔克斯
+      url: https://zh.wikipedia.org/wiki/阿里斯塔克
+
+- id: cos-eratosthenes
+  year: -240
+  title: 埃拉托斯特尼測出地球周長
+  category: discovery
+  importance: 5
+  desc: 靠兩地正午日影的角度差與商隊步測的距離，算出的數值與實際
+    相差不到百分之幾。用最少的工具做出最漂亮的一次測量。
+  sources:
+    - title: 維基百科：埃拉托斯特尼
+      url: https://zh.wikipedia.org/wiki/埃拉托色尼
+
+- id: cos-hipparchus
+  year: -130
+  title: 依巴谷編星表並發現歲差
+  category: discovery
+  importance: 4
+  desc: 記錄近千顆恆星的位置與亮度，並比對古紀錄發現春分點在緩慢移動。
+    今日的星等制度就源自他的分級。
+  sources:
+    - title: 維基百科：喜帕恰斯
+      url: https://zh.wikipedia.org/wiki/依巴谷
+
+- id: cos-almagest
+  year: 150
+  title: 托勒密《天文學大成》
+  category: work
+  importance: 5
+  desc: 用本輪與均輪把地心模型調校到能實際預測行星位置。
+    它管用，這正是後來哥白尼難以撼動它的原因。
+  sources:
+    - title: 維基百科：天文學大成
+      url: https://zh.wikipedia.org/wiki/天文學大成
+    - title: 維基百科：克勞狄烏斯·托勒密
+      url: https://zh.wikipedia.org/wiki/克勞狄烏斯·托勒密
+
+- id: cos-yixing
+  year: 725
+  title: 一行主持子午線實測
+  category: discovery
+  importance: 4
+  desc: 在南北數地同時測日影長度與北極星高度，推算緯度一度對應的
+    地面距離。世界上第一次有組織的大地測量。
+  sources:
+    - title: 維基百科：一行
+      url: https://zh.wikipedia.org/wiki/一行
+
+- id: cos-al-sufi
+  year: 964
+  title: 蘇菲《恆星之書》
+  category: work
+  importance: 4
+  desc: 校訂托勒密星表並補上自己的觀測，其中包含仙女座「小雲」的
+    最早記載——那是人類第一次看見另一個星系。
+  sources:
+    - title: 維基百科：恆星之書
+      url: https://zh.wikipedia.org/wiki/恆星之書
+    - title: 英文維基百科：Abd al-Rahman al-Sufi
+      url: https://en.wikipedia.org/wiki/Abd_al-Rahman_al-Sufi
+
+- id: cos-sn1054
+  year: 1054
+  title: 中國記錄天關客星
+  category: discovery
+  importance: 4
+  desc: 白晝可見、持續二十三天的新星。歐洲同期幾乎沒有紀錄，
+    因為天界被認為不變。今日的蟹狀星雲就是它的殘骸。
+  sources:
+    - title: 維基百科：SN 1054
+      url: https://zh.wikipedia.org/wiki/SN_1054
+
+- id: cos-shen-kuo
+  year: 1088
+  title: 沈括《夢溪筆談》
+  category: work
+  importance: 5
+  desc: 記下磁針偏角、以陸上化石推斷海陸變遷、解釋虹的成因。
+    以筆記體寫成，卻是中國古代最接近現代自然觀察的一部作品。
+  sources:
+    - title: 維基百科：夢溪筆談
+      url: https://zh.wikipedia.org/wiki/梦溪笔谈
+    - title: 維基百科：沈括
+      url: https://zh.wikipedia.org/wiki/沈括
+
+- id: cos-shoushi
+  year: 1280
+  title: 郭守敬編成《授時曆》
+  category: work
+  importance: 4
+  desc: 定回歸年為 365.2425 日，與今日格里曆的數值相同，卻早了三百年。
+    背後是全國二十七處觀測站的大規模實測。
+  sources:
+    - title: 維基百科：授時曆
+      url: https://zh.wikipedia.org/wiki/授时历
+    - title: 維基百科：郭守敬
+      url: https://zh.wikipedia.org/wiki/郭守敬
+
+- id: cos-copernicus
+  year: 1543
+  title: 哥白尼《天體運行論》
+  category: work
+  importance: 5
+  desc: 把太陽放到中心。精度其實沒有勝過托勒密（他仍用圓形軌道），
+    真正的衝擊是宇宙不再以人所在的地方為中心。
+  sources:
+    - title: 維基百科：天體運行論
+      url: https://zh.wikipedia.org/wiki/天體運行論
+    - title: 維基百科：尼古拉·哥白尼
+      url: https://zh.wikipedia.org/wiki/尼古拉·哥白尼
+
+- id: cos-tycho-sn
+  year: 1572
+  title: 第谷觀測到新星
+  category: discovery
+  importance: 4
+  desc: 測不到視差，代表這顆突然出現的星遠在月球之外。
+    「月上世界永恆不變」的教條被一次觀測擊破。
+  sources:
+    - title: 維基百科：SN 1572
+      url: https://zh.wikipedia.org/wiki/SN_1572
+    - title: 維基百科：第谷·布拉赫
+      url: https://zh.wikipedia.org/wiki/第谷·布拉厄
+
+- id: cos-galileo-telescope
+  year: 1609
+  title: 伽利略以望遠鏡觀天
+  category: instrument
+  importance: 5
+  desc: 木星有衛星、金星有盈虧、月球表面凹凸不平、銀河由無數恆星組成。
+    一件工具在一年內推翻了數條沿用兩千年的斷言。
+  sources:
+    - title: 維基百科：望遠鏡
+      url: https://zh.wikipedia.org/wiki/望远镜
+    - title: 維基百科：伽利略·伽利萊
+      url: https://zh.wikipedia.org/wiki/伽利略·伽利萊
+
+- id: cos-kepler
+  year: 1609
+  title: 克卜勒行星運動定律
+  category: theory
+  importance: 5
+  desc: 軌道是橢圓、面積速度不變。他花了多年試圖用圓形擬合第谷的
+    火星數據都差了八角分，最後選擇相信數據而放棄了完美的圓。
+  sources:
+    - title: 維基百科：克卜勒定律
+      url: https://zh.wikipedia.org/wiki/开普勒定律
+    - title: 維基百科：約翰內斯·克卜勒
+      url: https://zh.wikipedia.org/wiki/约翰内斯·开普勒
+
+- id: cos-galileo-trial
+  year: 1633
+  title: 伽利略受審
+  category: institution
+  importance: 5
+  desc: 被判「強烈涉嫌異端」並終身軟禁。爭點與其說是日心說本身，
+    不如說是誰有權決定自然的解釋——這是研究的建制條件被公開裁定的一次。
+  sources:
+    - title: 維基百科：伽利略事件
+      url: https://zh.wikipedia.org/wiki/伽利略事件
+
+- id: cos-steno
+  year: 1669
+  title: 斯坦諾提出地層疊置律
+  category: theory
+  importance: 5
+  desc: 下層比上層老。有了這條規則，岩層就成為一部可以讀的年代記錄，
+    地質學從此有了時間軸。
+  sources:
+    - title: 維基百科：尼古拉斯·斯泰諾
+      url: https://zh.wikipedia.org/wiki/尼古拉斯·斯坦诺
+    - title: 維基百科：地層學
+      url: https://zh.wikipedia.org/wiki/地層學
+
+- id: cos-greenwich
+  year: 1675
+  title: 格林尼治皇家天文台設立
+  category: institution
+  importance: 4
+  desc: 成立目的是為航海解決經度問題。天文觀測第一次被當成國家基礎
+    建設持續投資，而不是個別學者的興趣。
+  sources:
+    - title: 維基百科：格林尼治皇家天文台
+      url: https://zh.wikipedia.org/wiki/格林尼治皇家天文台
+
+- id: cos-roemer
+  year: 1676
+  title: 羅默由木衛食推算光速
+  category: discovery
+  importance: 4
+  desc: 木衛一的食在地球遠離木星時延遲出現。光速是有限的——這是
+    第一次有人測出一個當時多數人認為無限大的量。
+  sources:
+    - title: 維基百科：奧勒·羅默
+      url: https://zh.wikipedia.org/wiki/奧勒·羅默
+
+- id: cos-halley
+  year: 1705
+  title: 哈雷預測彗星回歸
+  category: theory
+  importance: 4
+  desc: 比對歷史紀錄後主張數次彗星是同一顆，並預告下次出現的時間。
+    他去世十六年後彗星如期而至，是牛頓力學最戲劇性的一次驗證。
+  sources:
+    - title: 維基百科：愛德蒙·哈雷
+      url: https://zh.wikipedia.org/wiki/愛德蒙·哈雷
+    - title: 維基百科：哈雷彗星
+      url: https://zh.wikipedia.org/wiki/哈雷彗星
+
+- id: cos-nebular
+  year: 1755
+  title: 康德提出星雲假說
+  category: theory
+  importance: 3
+  desc: 太陽系由旋轉收縮的氣體雲形成。四十年後拉普拉斯獨立提出類似
+    構想並加以數學化，天體從此有了「起源」而不只是「存在」。
+  sources:
+    - title: 維基百科：星雲假說
+      url: https://zh.wikipedia.org/wiki/星雲假說
+    - title: 維基百科：皮埃爾-西蒙·拉普拉斯
+      url: https://zh.wikipedia.org/wiki/皮埃尔-西蒙·拉普拉斯
+
+- id: cos-uranus
+  year: 1781
+  title: 赫歇爾發現天王星
+  category: discovery
+  importance: 4
+  desc: 有史以來第一顆用望遠鏡發現的行星。太陽系的邊界原來不是
+    古人所知的那樣，這件事本身就改變了對「已知」的信心。
+  sources:
+    - title: 維基百科：威廉·赫歇爾
+      url: https://zh.wikipedia.org/wiki/威廉·赫歇爾
+    - title: 維基百科：天王星
+      url: https://zh.wikipedia.org/wiki/天王星
+
+- id: cos-hutton
+  year: 1785
+  title: 赫頓提出均變論
+  category: theory
+  importance: 5
+  desc: 塑造地貌的是今天仍在運作的緩慢作用，因此地球必須非常古老。
+    這給了後來的演化論一個必要的前提：足夠長的時間。
+  sources:
+    - title: 維基百科：詹姆斯·赫頓
+      url: https://zh.wikipedia.org/wiki/詹姆斯·赫頓
+    - title: 維基百科：均變論
+      url: https://zh.wikipedia.org/wiki/均變論
+
+- id: cos-smith-map
+  year: 1815
+  title: 史密斯繪製英格蘭地質圖
+  category: work
+  importance: 4
+  desc: 一個運河測量員發現同一層岩石總含有同一組化石，據此可以跨區
+    對比地層。生物化石從此成為地質定年的工具。
+  sources:
+    - title: 維基百科：威廉·史密斯 (地質學家)
+      url: https://zh.wikipedia.org/wiki/威廉·史密斯_(地質學家)
+
+- id: cos-lyell
+  year: 1830
+  title: 萊爾《地質學原理》
+  category: work
+  importance: 5
+  desc: 把均變論整理成完整體系並廣為傳播。達爾文在小獵犬號上讀的
+    就是這本書，深時間的概念因此直接進入了生物學。
+  sources:
+    - title: 維基百科：地質學原理
+      url: https://zh.wikipedia.org/wiki/地質學原理
+    - title: 維基百科：查爾斯·萊爾
+      url: https://zh.wikipedia.org/wiki/查爾斯·萊爾
+
+- id: cos-neptune
+  year: 1846
+  title: 以計算預測並找到海王星
+  category: discovery
+  importance: 5
+  desc: 天王星軌道的異常被歸因於未知行星，勒維耶算出位置，柏林天文台
+    當晚就找到了。理論預測直接指出望遠鏡該指向哪裡。
+  sources:
+    - title: 維基百科：海王星
+      url: https://zh.wikipedia.org/wiki/海王星
+    - title: 維基百科：奧本·勒維耶
+      url: https://zh.wikipedia.org/wiki/于尔班·勒威耶
+
+- id: cos-helium
+  year: 1868
+  title: 氦在太陽光譜中被發現
+  category: discovery
+  importance: 4
+  desc: 日食觀測到一條不屬於任何已知元素的譜線。一種元素先在
+    九千三百萬英里外被找到，二十七年後才在地球上分離出來。
+  sources:
+    - title: 維基百科：氦
+      url: https://zh.wikipedia.org/wiki/氦
+
+- id: cos-leavitt
+  year: 1912
+  title: 勒維特發現造父變星的週光關係
+  category: discovery
+  importance: 5
+  desc: 亮度變化的週期直接對應真實光度，因此可以反推距離。
+    這把宇宙尺規延伸到銀河系之外，哈伯後來的工作全靠它。
+  sources:
+    - title: 維基百科：勒維特
+      url: https://zh.wikipedia.org/wiki/亨丽爱塔·斯万·勒维特
+    - title: 維基百科：造父變星
+      url: https://zh.wikipedia.org/wiki/造父变星
+
+- id: cos-wegener
+  year: 1912
+  title: 韋格納提出大陸漂移說
+  category: theory
+  importance: 5
+  desc: 海岸線、化石與地層在跨洋兩側對得上。因為說不出大陸靠什麼力量
+    移動而被主流否決近五十年，直到海底擴張的證據出現。
+  sources:
+    - title: 維基百科：大陸漂移學說
+      url: https://zh.wikipedia.org/wiki/大陸漂移學說
+    - title: 維基百科：阿爾弗雷德·魏格納
+      url: https://zh.wikipedia.org/wiki/阿尔弗雷德·魏格纳
+
+- id: cos-hubble-galaxies
+  year: 1925
+  title: 哈伯證實銀河系之外還有星系
+  category: discovery
+  importance: 5
+  desc: 在仙女座「星雲」中找到造父變星，算出它遠在銀河系之外。
+    宇宙的尺度在一篇論文之間放大了好幾個數量級。
+  sources:
+    - title: 維基百科：愛德溫·哈伯
+      url: https://zh.wikipedia.org/wiki/愛德文·哈勃
+
+- id: cos-hubble-law
+  year: 1929
+  title: 哈伯定律，宇宙正在膨脹
+  category: discovery
+  importance: 5
+  desc: 星系退行速度與距離成正比。靜態宇宙的圖像瓦解，
+    往回推就得到一個有起點的宇宙。
+  sources:
+    - title: 維基百科：哈伯定律
+      url: https://zh.wikipedia.org/wiki/哈勃–勒梅特定律
+
+- id: cos-richter
+  year: 1935
+  title: 芮氏地震規模
+  category: instrument
+  importance: 3
+  desc: 用對數尺度把地震能量化為單一數字。地震從此可以跨地區、
+    跨年代比較，防災與地體構造研究才有共同的量尺。
+  sources:
+    - title: 維基百科：芮氏地震規模
+      url: https://zh.wikipedia.org/wiki/里氏地震規模
+
+- id: cos-big-bang
+  year: 1948
+  title: 大霹靂理論成形
+  category: theory
+  importance: 5
+  desc: 伽莫夫等人主張宇宙由極高溫緻密狀態膨脹而來，並預言應殘留
+    背景輻射。「大霹靂」這個名字原是反對者的譏諷用語。
+  sources:
+    - title: 維基百科：大霹靂
+      url: https://zh.wikipedia.org/wiki/大爆炸
+    - title: 維基百科：喬治·伽莫夫
+      url: https://zh.wikipedia.org/wiki/喬治·伽莫夫
+
+- id: cos-sputnik
+  year: 1957
+  title: 史普尼克一號進入軌道
+  category: application
+  importance: 5
+  desc: 第一顆人造衛星。觀測平台第一次離開大氣層，
+    此後 X 射線、紫外線與紅外天文學才成為可能。
+  sources:
+    - title: 維基百科：史普尼克1號
+      url: https://zh.wikipedia.org/wiki/史普尼克1號
+
+- id: cos-cmb
+  year: 1964
+  title: 發現宇宙微波背景輻射
+  category: discovery
+  importance: 5
+  desc: 兩位工程師以為天線雜訊來自鴿糞，清乾淨後訊號仍在。
+    那正是大霹靂十六年前預言的殘餘輻射，穩態宇宙論就此出局。
+  sources:
+    - title: 維基百科：宇宙微波背景
+      url: https://zh.wikipedia.org/wiki/宇宙微波背景
+
+- id: cos-pulsar
+  year: 1967
+  title: 貝爾發現脈衝星
+  category: discovery
+  importance: 4
+  desc: 週期精確到秒以下的無線電脈衝，起初被戲稱為「小綠人」訊號。
+    後證實是高速自轉的中子星，恆星死亡的終點終於被直接觀測到。
+  sources:
+    - title: 維基百科：脈衝星
+      url: https://zh.wikipedia.org/wiki/脉冲星
+    - title: 維基百科：約瑟琳·貝爾·伯奈爾
+      url: https://zh.wikipedia.org/wiki/約瑟琳·貝爾·伯奈爾
+
+- id: cos-plate-tectonics
+  year: 1968
+  title: 板塊構造學說確立
+  category: theory
+  importance: 5
+  desc: 海底磁條紋、地震帶分布與洋脊擴張速率互相吻合。
+    地質學各分支在數年內被一套模型統合，是這門學科唯一一次整體革命。
+  sources:
+    - title: 維基百科：板塊構造論
+      url: https://zh.wikipedia.org/wiki/板块构造论
+
+- id: cos-apollo11
+  year: 1969
+  title: 阿波羅十一號登月
+  category: application
+  importance: 5
+  desc: 帶回的月岩樣本讓月球起源之爭有了實物依據。
+    動員規模與冷戰動機都遠超科學需求，這本身也是科學史的一部分。
+  sources:
+    - title: 維基百科：阿波羅11號
+      url: https://zh.wikipedia.org/wiki/阿波罗11号
+    - title: 維基百科：阿波羅計劃
+      url: https://zh.wikipedia.org/wiki/阿波罗计划
+
+- id: cos-ozone-hole
+  year: 1985
+  title: 發現南極臭氧洞
+  category: discovery
+  importance: 5
+  desc: 資料其實早已存在，只是被自動程式當成異常值濾掉了。
+    確認之後兩年即簽署蒙特婁議定書，是環境科學罕見的快速見效案例。
+  sources:
+    - title: 維基百科：臭氧層空洞
+      url: https://zh.wikipedia.org/wiki/臭氧層空洞
+
+- id: cos-hst
+  year: 1990
+  title: 哈伯太空望遠鏡升空
+  category: instrument
+  importance: 4
+  desc: 升空後才發現主鏡磨錯，三年後由太空人加裝校正光學才恢復。
+    大科學計畫的脆弱與可修復性在這件事上同時展現。
+  sources:
+    - title: 維基百科：哈伯太空望遠鏡
+      url: https://zh.wikipedia.org/wiki/哈勃空间望远镜
+
+- id: cos-exoplanet
+  year: 1995
+  title: 發現首顆繞主序星的系外行星
+  category: discovery
+  importance: 5
+  desc: 飛馬座 51b 是一顆貼著恆星公轉的巨行星，完全不符當時的行星
+    形成理論。「太陽系是宇宙的常態」這個假設就此被推翻。
+  sources:
+    - title: 維基百科：飛馬座51b
+      url: https://zh.wikipedia.org/wiki/飛馬座51b
+
+- id: cos-dark-energy
+  year: 1998
+  title: 發現宇宙加速膨脹
+  category: discovery
+  importance: 5
+  desc: 兩個團隊各自用遠方超新星測距，都得到膨脹在加快的結果。
+    這意味著宇宙有約七成是我們完全不了解的東西。
+  sources:
+    - title: 維基百科：宇宙加速膨脹
+      url: https://zh.wikipedia.org/wiki/宇宙加速膨脹
+    - title: 維基百科：暗能量
+      url: https://zh.wikipedia.org/wiki/暗能量
+
+- id: cos-gravitational-waves
+  year: 2015
+  title: 首次直接偵測到重力波
+  category: discovery
+  importance: 5
+  desc: 兩座相距三千公里的干涉儀同時測到十億分之一原子核大小的長度
+    變化。廣義相對論一百年前的預言得到最後一項驗證。
+  sources:
+    - title: 維基百科：重力波
+      url: https://zh.wikipedia.org/wiki/引力波
+    - title: 維基百科：LIGO
+      url: https://zh.wikipedia.org/wiki/激光干涉引力波天文台
+
+- id: cos-black-hole-image
+  year: 2019
+  title: 首張黑洞影像發布
+  category: discovery
+  importance: 4
+  desc: 八座電波望遠鏡組成地球大小的虛擬陣列，累積數 PB 資料才合成
+    出一張圖。觀測的極限已經受限於地球本身的尺寸。
+  sources:
+    - title: 維基百科：事件視界望遠鏡
+      url: https://zh.wikipedia.org/wiki/事件視界望遠鏡

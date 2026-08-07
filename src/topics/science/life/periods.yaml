@@ -1,0 +1,35 @@
+# 一條 track，理由同 math/periods.yaml。
+#
+# 起點是 -1600 而不是 -3000：這一欄最早的事件是前 1550 年的埃伯斯紙草書，
+# 再往前只有骨骼創傷與顱骨鑽孔的考古遺存，沒有可引用的文獻。
+# 欄位頂端那段空白是誠實的，不必為了對齊其他欄而編一條色帶出來。
+
+- id: lif-p-ancient
+  name: 古代醫學傳統
+  track: 0
+  start: -1600
+  end: 500
+
+- id: lif-p-medieval
+  name: 中世紀的體系整合
+  track: 0
+  start: 501
+  end: 1542
+
+- id: lif-p-anatomy
+  name: 解剖與生理學
+  track: 0
+  start: 1543
+  end: 1799
+
+- id: lif-p-cell-evolution
+  name: 細胞、演化與病原
+  track: 0
+  start: 1800
+  end: 1899
+
+- id: lif-p-molecular
+  name: 分子生物學
+  track: 0
+  start: 1900
+  end: 2026

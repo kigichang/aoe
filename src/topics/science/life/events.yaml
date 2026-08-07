@@ -1,0 +1,595 @@
+# 生命與醫學欄。
+#
+# 這一欄的特色是**錯誤的理論存活得特別久**：體液說主導了兩千年、
+# 蓋倫的解剖錯誤到維薩里才被更正、自然發生說撐到巴斯德。原因不難理解——
+# 人體與生物太複雜，變因太多，一個錯的模型也常常「看起來有效」。
+# 所以這裡收了不少「證明某件事不成立」的事件（林德的對照試驗、
+# 斯諾的水泵、巴斯德的曲頸瓶），那正是這門學科學會怎麼排除干擾的過程。
+#
+# 中醫與阿育吠陀的典籍依同一套判準收錄：它們在當時是有體系、可傳授、
+# 能累積的醫學知識，不因為後來被實證醫學取代就排除（見 topic.yaml
+# 關於不做輝格史觀的說明）。
+#
+# id 前綴 lif-。category: discovery | theory | work | instrument | institution | application
+# 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
+
+- id: lif-ebers
+  year: -1550
+  title: 埃伯斯紙草書
+  category: work
+  importance: 4
+  desc: 七百餘則藥方與病症描述，其中夾雜咒語。已知最早的成篇醫學文獻，
+    也顯示醫療與巫術在當時是同一件事。
+  sources:
+    - title: 英文維基百科：Ebers Papyrus
+      url: https://en.wikipedia.org/wiki/Ebers_Papyrus
+
+- id: lif-hippocrates
+  year: -400
+  title: 希波克拉底學派與體液說
+  category: theory
+  importance: 5
+  desc: 主張疾病有自然原因而非神譴，這一步至關重要；但用來取代的
+    四體液理論是錯的，而且統治西方醫學兩千年。
+  sources:
+    - title: 維基百科：希波克拉底
+      url: https://zh.wikipedia.org/wiki/希波克拉底
+    - title: 維基百科：體液學說
+      url: https://zh.wikipedia.org/wiki/體液學說
+
+- id: lif-theophrastus
+  year: -300
+  title: 泰奧弗拉斯托斯的植物研究
+  category: work
+  importance: 3
+  desc: 描述五百餘種植物的形態、產地與用途並嘗試分類。
+    植物學此後一千八百年幾乎沒有超出他的框架。
+  sources:
+    - title: 維基百科：泰奧弗拉斯托斯
+      url: https://zh.wikipedia.org/wiki/泰奧弗拉斯托斯
+
+- id: lif-herophilus
+  year: -280
+  title: 希羅菲盧斯在亞歷山卓進行人體解剖
+  category: discovery
+  importance: 4
+  desc: 區分神經與肌腱、確認腦是神經系統中心。這是古代唯一一段
+    公開解剖人體的時期，數十年後即因宗教與風俗禁忌而中止。
+  sources:
+    - title: 維基百科：希羅菲盧斯
+      url: https://zh.wikipedia.org/wiki/希羅菲盧斯
+    - title: 維基百科：亞歷山卓圖書館
+      url: https://zh.wikipedia.org/wiki/亚历山大图书馆
+
+- id: lif-shennong
+  year: 100
+  title: 《神農本草經》成書
+  category: work
+  importance: 4
+  desc: 收三百六十五種藥物並依毒性分上中下三品。中國藥物學第一次有了
+    分類體系，此後歷代本草都在它的架構上增補。
+  sources:
+    - title: 維基百科：神農本草經
+      url: https://zh.wikipedia.org/wiki/神农本草经
+
+- id: lif-galen
+  year: 170
+  title: 蓋倫建立解剖與生理體系
+  category: work
+  importance: 5
+  desc: 靠解剖動物推論人體，錯誤不少（例如認為心室中隔有孔）。
+    但體系完整、文字權威，此後一千三百年沒有人敢直接否定他。
+  sources:
+    - title: 維基百科：蓋倫
+      url: https://zh.wikipedia.org/wiki/盖伦
+
+- id: lif-shanghan
+  year: 200
+  title: 張仲景《傷寒雜病論》
+  category: work
+  importance: 5
+  desc: 依症候分型再對應處方，建立「辨證論治」的操作程序。
+    中醫從經驗方書轉為有推理結構的臨床體系。
+  sources:
+    - title: 維基百科：傷寒雜病論
+      url: https://zh.wikipedia.org/wiki/傷寒雜病論
+    - title: 維基百科：張仲景
+      url: https://zh.wikipedia.org/wiki/張仲景
+
+- id: lif-canon-of-medicine
+  year: 1025
+  title: 伊本·西那《醫典》
+  category: work
+  importance: 5
+  desc: 整合希臘、波斯與印度醫學，並提出藥物試驗應有的條件。
+    十二世紀譯成拉丁文後，成為歐洲醫學院的標準教科書達六百年。
+  sources:
+    - title: 維基百科：醫典
+      url: https://zh.wikipedia.org/wiki/醫典
+    - title: 維基百科：伊本·西那
+      url: https://zh.wikipedia.org/wiki/伊本·西那
+
+- id: lif-ibn-nafis
+  year: 1242
+  title: 伊本·納菲斯描述肺循環
+  category: discovery
+  importance: 4
+  desc: 指出血液必須經肺才能從右心到左心，直接否定蓋倫的心室中隔孔。
+    這份手稿到 1924 年才重見天日，比哈維早了近四百年。
+  sources:
+    - title: 英文維基百科：Ibn al-Nafis
+      url: https://en.wikipedia.org/wiki/Ibn_al-Nafis
+
+- id: lif-vesalius
+  year: 1543
+  title: 維薩里《人體的構造》
+  category: work
+  importance: 5
+  desc: 親手解剖並請畫家精確描繪，逐項列出蓋倫的錯誤。
+    與哥白尼的書同年出版，兩者都以「親自檢查」推翻了一千多年的權威。
+  sources:
+    - title: 維基百科：人體的構造
+      url: https://zh.wikipedia.org/wiki/人體的構造
+    - title: 維基百科：安德雷亞斯·維薩里
+      url: https://zh.wikipedia.org/wiki/安德烈亚斯·维萨留斯
+
+- id: lif-bencao
+  year: 1596
+  title: 李時珍《本草綱目》
+  category: work
+  importance: 5
+  desc: 費時二十七年，收錄近一千九百種藥物並重訂分類，也糾正了
+    前代本草的多處錯誤。東亞規模最大的一次博物學整理。
+  sources:
+    - title: 維基百科：本草綱目
+      url: https://zh.wikipedia.org/wiki/本草纲目
+    - title: 維基百科：李時珍
+      url: https://zh.wikipedia.org/wiki/李时珍
+
+- id: lif-harvey
+  year: 1628
+  title: 哈維《心血運動論》
+  category: theory
+  importance: 5
+  desc: 量出心臟每小時打出的血量遠超過人體所能製造，因此血必然是
+    循環的。用定量論證推翻定性教條，方法上是醫學的分水嶺。
+  sources:
+    - title: 維基百科：心血運動論
+      url: https://zh.wikipedia.org/wiki/心血運動論
+    - title: 維基百科：威廉·哈維
+      url: https://zh.wikipedia.org/wiki/威廉·哈維
+
+- id: lif-micrographia
+  year: 1665
+  title: 虎克《顯微圖譜》，命名「細胞」
+  category: instrument
+  importance: 5
+  desc: 觀察軟木切片時看到蜂巢般的小格，借修道院小房間的字稱之為 cell。
+    書中精細的插圖讓顯微鏡從新奇玩具變成研究工具。
+  sources:
+    - title: 維基百科：顯微圖譜
+      url: https://zh.wikipedia.org/wiki/顯微圖譜
+    - title: 維基百科：羅伯特·虎克
+      url: https://zh.wikipedia.org/wiki/罗伯特·胡克
+
+- id: lif-leeuwenhoek
+  year: 1676
+  title: 雷文霍克觀察到微生物
+  category: discovery
+  importance: 5
+  desc: 用自製的單透鏡顯微鏡在池水與齒垢中看見會動的「微動物」。
+    一整個生物層級被發現，但它與疾病的關聯還要兩百年才建立。
+  sources:
+    - title: 維基百科：安東尼·范·雷文霍克
+      url: https://zh.wikipedia.org/wiki/安東尼·范·列文虎克
+    - title: 維基百科：顯微鏡
+      url: https://zh.wikipedia.org/wiki/顯微鏡
+
+- id: lif-linnaeus
+  year: 1735
+  title: 林奈《自然系統》與二名法
+  category: work
+  importance: 5
+  desc: 每個物種用屬名加種小名兩個拉丁字命名，並建立階層分類。
+    全世界的博物學家從此有了共同的指稱方式，這比任何單一發現都關鍵。
+  sources:
+    - title: 維基百科：自然系統
+      url: https://zh.wikipedia.org/wiki/自然系統
+    - title: 維基百科：卡爾·林奈
+      url: https://zh.wikipedia.org/wiki/卡尔·林奈
+
+- id: lif-lind
+  year: 1747
+  title: 林德的壞血病對照試驗
+  category: discovery
+  importance: 5
+  desc: 把十二名水手分成六組，分別給予不同療法，只有吃柑橘的兩人好轉。
+    已知最早的臨床對照試驗，而海軍過了四十年才採納結論。
+  sources:
+    - title: 維基百科：詹姆斯·林德
+      url: https://zh.wikipedia.org/wiki/詹姆斯·林德
+    - title: 維基百科：隨機對照試驗
+      url: https://zh.wikipedia.org/wiki/隨機對照試驗
+
+- id: lif-jenner
+  year: 1796
+  title: 詹納的牛痘接種
+  category: application
+  importance: 5
+  desc: 從擠奶女工手上的牛痘取材接種男童，再證明其對天花免疫。
+    在完全不知道病毒是什麼的情況下，人類有了第一支疫苗。
+  sources:
+    - title: 維基百科：愛德華·詹納
+      url: https://zh.wikipedia.org/wiki/愛德華·詹納
+    - title: 維基百科：牛痘
+      url: https://zh.wikipedia.org/wiki/牛痘
+
+- id: lif-lamarck
+  year: 1809
+  title: 拉馬克提出演化學說
+  category: theory
+  importance: 4
+  desc: 主張生物會演變，而後天獲得的性狀能遺傳給後代。
+    機制是錯的，但「物種不是固定不變的」這個命題第一次被系統地提出。
+  sources:
+    - title: 維基百科：拉馬克學說
+      url: https://zh.wikipedia.org/wiki/拉馬克主義
+    - title: 維基百科：讓-巴蒂斯特·拉馬克
+      url: https://zh.wikipedia.org/wiki/讓-巴蒂斯特·拉馬克
+
+- id: lif-cell-theory
+  year: 1838
+  title: 細胞學說
+  category: theory
+  importance: 5
+  desc: 施萊登與許旺主張一切動植物都由細胞構成。生物學第一次有了
+    跨越動植物界的統一單位，此後的生理學與病理學都以它為基礎。
+  sources:
+    - title: 維基百科：細胞學說
+      url: https://zh.wikipedia.org/wiki/细胞学说
+    - title: 維基百科：特奧多爾·施旺
+      url: https://zh.wikipedia.org/wiki/特奧多爾·施旺
+
+- id: lif-anesthesia
+  year: 1846
+  title: 乙醚麻醉公開示範成功
+  category: application
+  importance: 5
+  desc: 在波士頓的手術室當眾完成無痛手術。在此之前外科的首要考量是
+    速度，此後才可能發展需要時間的精細術式。
+  sources:
+    - title: 維基百科：麻醉
+      url: https://zh.wikipedia.org/wiki/麻醉
+    - title: 維基百科：乙醚
+      url: https://zh.wikipedia.org/wiki/乙醚
+
+- id: lif-semmelweis
+  year: 1847
+  title: 塞麥爾維斯以洗手降低產褥熱
+  category: discovery
+  importance: 4
+  desc: 統計顯示醫師接生的產婦死亡率遠高於助產士，因為醫師剛解剖完
+    屍體。他提出的措施有效卻遭同行排斥，本人最後死於精神病院。
+  sources:
+    - title: 維基百科：伊格納茲·塞麥爾維斯
+      url: https://zh.wikipedia.org/wiki/伊格纳茨·塞麦尔维斯
+
+- id: lif-snow
+  year: 1854
+  title: 斯諾追查倫敦霍亂的水源
+  category: discovery
+  importance: 5
+  desc: 把病例標在地圖上，指向同一口水泵。在細菌尚未被發現的年代，
+    靠空間分佈的證據就推翻了瘴氣說，流行病學自此成立。
+  sources:
+    - title: 英文維基百科：John Snow
+      url: https://en.wikipedia.org/wiki/John_Snow
+    - title: 維基百科：流行病學
+      url: https://zh.wikipedia.org/wiki/流行病学
+
+- id: lif-origin
+  year: 1859
+  title: 達爾文《物種起源》
+  category: work
+  importance: 5
+  desc: 天擇作為機制，加上地質學提供的深時間，讓演化第一次有了
+    不需要目的與設計的解釋。它同時改寫了生物學與人對自身的定位。
+  sources:
+    - title: 維基百科：物種起源
+      url: https://zh.wikipedia.org/wiki/物種起源
+    - title: 維基百科：查爾斯·達爾文
+      url: https://zh.wikipedia.org/wiki/查爾斯·達爾文
+
+- id: lif-pasteur
+  year: 1861
+  title: 巴斯德否證自然發生說
+  category: discovery
+  importance: 5
+  desc: 曲頸瓶讓空氣進得去、塵埃進不來，湯就不會腐敗。
+    一個設計精巧的實驗結束了延續兩千年的爭論。
+  sources:
+    - title: 維基百科：路易·巴斯德
+      url: https://zh.wikipedia.org/wiki/路易·巴斯德
+    - title: 維基百科：自然發生說
+      url: https://zh.wikipedia.org/wiki/自然發生
+
+- id: lif-mendel
+  year: 1865
+  title: 孟德爾發表遺傳定律
+  category: theory
+  importance: 5
+  desc: 用豌豆的數萬次雜交統計出分離與自由組合。遺傳是離散的顆粒而
+    非混合——論文發表後被忽略三十五年，直到 1900 年才被重新發現。
+  sources:
+    - title: 維基百科：孟德爾定律
+      url: https://zh.wikipedia.org/wiki/孟德爾定律
+    - title: 維基百科：格里哥·孟德爾
+      url: https://zh.wikipedia.org/wiki/格雷戈爾·孟德爾
+
+- id: lif-lister
+  year: 1867
+  title: 李斯特推行外科消毒
+  category: application
+  importance: 4
+  desc: 以石炭酸處理傷口與器械，術後感染率大幅下降。
+    他的依據正是巴斯德的微生物研究，基礎與臨床第一次直接接軌。
+  sources:
+    - title: 維基百科：約瑟夫·李斯特
+      url: https://zh.wikipedia.org/wiki/约瑟夫·李斯特
+    - title: 維基百科：消毒
+      url: https://zh.wikipedia.org/wiki/消毒
+
+- id: lif-koch
+  year: 1876
+  title: 柯霍證明細菌致病
+  category: theory
+  importance: 5
+  desc: 分離炭疽桿菌、接種健康動物、再從病體分離出同一種菌。
+    這套「柯霍法則」把「哪個微生物造成哪個病」變成可判定的問題。
+  sources:
+    - title: 維基百科：細菌致病論
+      url: https://zh.wikipedia.org/wiki/疾病细菌说
+    - title: 維基百科：羅伯·柯霍
+      url: https://zh.wikipedia.org/wiki/罗伯特·科赫
+
+- id: lif-tuberculosis
+  year: 1882
+  title: 柯霍發現結核桿菌
+  category: discovery
+  importance: 4
+  desc: 找出當時歐洲每七人就有一人死於其手的病原。
+    此後二十年間，霍亂、白喉、鼠疫的病原陸續被分離出來。
+  sources:
+    - title: 維基百科：結核桿菌
+      url: https://zh.wikipedia.org/wiki/結核分枝桿菌
+
+- id: lif-rabies
+  year: 1885
+  title: 巴斯德的狂犬病疫苗
+  category: application
+  importance: 4
+  desc: 用減毒的病原製成疫苗，在被咬男童身上成功。
+    當時連病毒都還看不見，這是第一支針對未知病原研製的疫苗。
+  sources:
+    - title: 維基百科：狂犬病疫苗
+      url: https://zh.wikipedia.org/wiki/狂犬病疫苗
+
+- id: lif-mendel-rediscovery
+  year: 1900
+  title: 孟德爾定律被重新發現
+  category: discovery
+  importance: 4
+  desc: 三位植物學家各自得到同樣的結果，翻查文獻才發現三十五年前
+    已有人做過。遺傳學正式起步，與演化論的整合則還要三十年。
+  sources:
+    - title: 維基百科：孟德爾定律
+      url: https://zh.wikipedia.org/wiki/孟德爾定律
+
+- id: lif-blood-types
+  year: 1901
+  title: 蘭德施泰納發現 ABO 血型
+  category: discovery
+  importance: 4
+  desc: 解釋了為何有些輸血救人、有些致命。輸血從高風險的賭博變成
+    可依規則執行的常規醫療。
+  sources:
+    - title: 維基百科：ABO血型系統
+      url: https://zh.wikipedia.org/wiki/ABO血型系統
+    - title: 維基百科：卡爾·蘭德施泰納
+      url: https://zh.wikipedia.org/wiki/卡爾·蘭德施泰納
+
+- id: lif-penicillin
+  year: 1928
+  title: 弗萊明發現青黴素
+  category: discovery
+  importance: 5
+  desc: 培養皿被黴菌污染，周圍的葡萄球菌卻死光了。他無法純化，
+    這個觀察擱置了十年才被牛津團隊接手。
+  sources:
+    - title: 維基百科：青黴素
+      url: https://zh.wikipedia.org/wiki/青霉素
+    - title: 維基百科：亞歷山大·弗萊明
+      url: https://zh.wikipedia.org/wiki/亞歷山大·弗萊明
+
+- id: lif-krebs
+  year: 1937
+  title: 克雷布斯循環
+  category: theory
+  importance: 4
+  desc: 描出細胞把養分氧化成能量的核心反應鏈。生物化學從此能以
+    具體的分子路徑解釋「活著」這件事。
+  sources:
+    - title: 維基百科：檸檬酸循環
+      url: https://zh.wikipedia.org/wiki/三羧酸循环
+    - title: 維基百科：漢斯·克雷布斯
+      url: https://zh.wikipedia.org/wiki/漢斯·克雷布斯
+
+- id: lif-penicillin-mass
+  year: 1942
+  title: 青黴素量產
+  category: application
+  importance: 5
+  desc: 深槽發酵技術讓產量在兩年內提高數萬倍，趕上諾曼第登陸。
+    細菌感染從主要死因變成可治之症，人均壽命因此躍升。
+  sources:
+    - title: 維基百科：青黴素
+      url: https://zh.wikipedia.org/wiki/青霉素
+
+- id: lif-avery
+  year: 1944
+  title: 艾弗里證明 DNA 是遺傳物質
+  category: discovery
+  importance: 5
+  desc: 破壞肺炎雙球菌的蛋白質不影響轉化，破壞 DNA 才會。
+    當時多數人認為結構單調的 DNA 不可能攜帶資訊，因此廣受懷疑。
+  sources:
+    - title: 維基百科：奧斯瓦爾德·埃弗里
+      url: https://zh.wikipedia.org/wiki/奧斯瓦爾德·埃弗里
+    - title: 維基百科：DNA
+      url: https://zh.wikipedia.org/wiki/脱氧核糖核酸
+
+- id: lif-lysenko
+  year: 1948
+  title: 李森科主義成為蘇聯官方學說
+  category: institution
+  importance: 4
+  desc: 遺傳學被判為資產階級偽科學，研究者遭解職或入獄。
+    政治決定科學結論的後果，是蘇聯生物學倒退了二十年。
+  sources:
+    - title: 維基百科：李森科主義
+      url: https://zh.wikipedia.org/wiki/李森科主義
+    - title: 維基百科：特羅菲姆·李森科
+      url: https://zh.wikipedia.org/wiki/特羅菲姆·李森科
+
+- id: lif-double-helix
+  year: 1953
+  title: DNA 雙螺旋結構
+  category: discovery
+  importance: 5
+  desc: 華生與克里克依據富蘭克林的 X 光繞射照片建構出模型。
+    互補配對的結構本身就說明了複製如何進行——結構直接解釋了功能。
+  sources:
+    - title: 維基百科：DNA
+      url: https://zh.wikipedia.org/wiki/脱氧核糖核酸
+    - title: 維基百科：詹姆斯·沃森
+      url: https://zh.wikipedia.org/wiki/詹姆斯·杜威·沃森
+    - title: 維基百科：弗朗西斯·克里克
+      url: https://zh.wikipedia.org/wiki/弗朗西斯·克里克
+
+- id: lif-polio-vaccine
+  year: 1955
+  title: 沙克小兒麻痺疫苗通過大規模試驗
+  category: application
+  importance: 5
+  desc: 一百八十萬名兒童參與的雙盲試驗，是史上規模最大的醫學試驗之一。
+    發明人放棄專利，疫苗因此得以迅速普及。
+  sources:
+    - title: 維基百科：脊髓灰質炎疫苗
+      url: https://zh.wikipedia.org/wiki/脊髓灰質炎疫苗
+    - title: 維基百科：喬納斯·索爾克
+      url: https://zh.wikipedia.org/wiki/喬納斯·索爾克
+
+- id: lif-genetic-code
+  year: 1961
+  title: 遺傳密碼被破解
+  category: discovery
+  importance: 5
+  desc: 三個鹼基對應一個胺基酸，而且這套對應表在所有生物中幾乎相同。
+    後者是共同祖先最有力的證據之一。
+  sources:
+    - title: 維基百科：遺傳密碼
+      url: https://zh.wikipedia.org/wiki/遗传密码
+
+- id: lif-heart-transplant
+  year: 1967
+  title: 首例人類心臟移植
+  category: application
+  importance: 4
+  desc: 病人存活十八天。技術上可行、免疫排斥未解，也迫使醫學界重新
+    定義死亡——腦死標準就是在這股壓力下形成的。
+  sources:
+    - title: 維基百科：心臟移植
+      url: https://zh.wikipedia.org/wiki/心臟移植
+    - title: 維基百科：克里斯蒂安·巴納德
+      url: https://zh.wikipedia.org/wiki/克里斯蒂安·巴納德
+
+- id: lif-recombinant-dna
+  year: 1973
+  title: 重組 DNA 技術
+  category: application
+  importance: 5
+  desc: 把不同生物的基因接在一起並放進細菌表現。兩年後研究者自行召開
+    會議訂定安全規範，是科學界少見的主動自我約束。
+  sources:
+    - title: 維基百科：重組DNA
+      url: https://zh.wikipedia.org/wiki/重組DNA
+
+- id: lif-ivf
+  year: 1978
+  title: 首例試管嬰兒誕生
+  category: application
+  importance: 4
+  desc: 受精在體外完成。生殖第一次可以與性行為分離，
+    隨之而來的倫理與法律爭議至今未止。
+  sources:
+    - title: 維基百科：體外人工受精
+      url: https://zh.wikipedia.org/wiki/體外人工受精
+
+- id: lif-smallpox
+  year: 1980
+  title: 世衛宣告天花根除
+  category: application
+  importance: 5
+  desc: 靠環狀接種而非全面接種：找到病例就替周圍所有人接種。
+    唯一一種被人類徹底消滅的人類傳染病。
+  sources:
+    - title: 維基百科：天花
+      url: https://zh.wikipedia.org/wiki/天花
+
+- id: lif-dolly
+  year: 1996
+  title: 桃莉羊誕生
+  category: application
+  importance: 5
+  desc: 用成年體細胞的核複製出完整個體。已分化的細胞仍保有全套指令
+    並且可以被重設——這個發現後來直接通往誘導性多能幹細胞。
+  sources:
+    - title: 維基百科：桃莉羊
+      url: https://zh.wikipedia.org/wiki/多利
+
+- id: lif-hgp
+  year: 2003
+  title: 人類基因體計畫完成
+  category: institution
+  importance: 5
+  desc: 六國團隊耗時十三年、三十億美元。中途與民間公司的競賽反而
+    加速了進度，也促成了「序列資料應否公開」的規範之爭。
+  sources:
+    - title: 維基百科：人類基因組計劃
+      url: https://zh.wikipedia.org/wiki/人類基因組計劃
+    - title: 維基百科：DNA定序
+      url: https://zh.wikipedia.org/wiki/DNA測序
+
+- id: lif-crispr
+  year: 2012
+  title: CRISPR 基因編輯技術
+  category: application
+  importance: 5
+  desc: 源自細菌的免疫機制，被改造成可精確定位的基因剪刀。
+    成本低到一般實驗室都做得起，倫理問題也因此變得急迫。
+  sources:
+    - title: 維基百科：CRISPR
+      url: https://zh.wikipedia.org/wiki/CRISPR
+
+- id: lif-mrna-vaccine
+  year: 2020
+  title: mRNA 疫苗大規模投入使用
+  category: application
+  importance: 5
+  desc: 從病毒序列公布到疫苗獲准不到一年。三十年的基礎研究累積
+    加上前所未見的資源投入，把疫苗開發的時間尺度整個改寫。
+  sources:
+    - title: 維基百科：mRNA疫苗
+      url: https://zh.wikipedia.org/wiki/RNA疫苗
+    - title: 維基百科：2019冠狀病毒病疫苗
+      url: https://zh.wikipedia.org/wiki/2019冠狀病毒病疫苗

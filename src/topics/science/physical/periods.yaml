@@ -1,0 +1,35 @@
+# 一條 track，理由同 math/periods.yaml。
+#
+# 這一欄的分期特別能說明問題：從 -600 到 1542 是同一格，
+# 兩千一百年只算一個階段——因為在能測量之前，關於物質與運動的說法
+# 換來換去都還是自然哲學。真正的斷點在儀器出現的地方。
+
+- id: phy-p-craft
+  name: 冶金與工藝知識
+  track: 0
+  start: -3000
+  end: -601
+
+- id: phy-p-natural-philosophy
+  name: 自然哲學與煉金術
+  track: 0
+  start: -600
+  end: 1542
+
+- id: phy-p-revolution
+  name: 科學革命
+  track: 0
+  start: 1543
+  end: 1799
+
+- id: phy-p-classical
+  name: 古典物理與近代化學
+  track: 0
+  start: 1800
+  end: 1899
+
+- id: phy-p-modern
+  name: 相對論與量子時代
+  track: 0
+  start: 1900
+  end: 2026

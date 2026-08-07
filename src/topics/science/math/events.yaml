@@ -1,0 +1,515 @@
+# 數學欄。
+#
+# 這一欄有個其他三欄沒有的性質：**成果不會過時**。歐幾里得的證明今天仍然
+# 成立，而蓋倫的生理學早已被推翻。所以這裡幾乎沒有「某某學說被否證」這種
+# 事件，取而代之的是「某個原本被認為不可能／不存在的東西被證明出來」——
+# 無理數、非歐幾何、不可數集合、不可判定命題。
+#
+# 非歐洲的成果依同一套判準收錄：《九章算術》、婆羅摩笈多的零與負數、
+# 花拉子米的代數，都不因為「後來由歐洲接手」而降級。
+#
+# id 前綴 mth-。category: discovery | theory | work | instrument | institution | application
+# 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
+
+- id: mth-sexagesimal
+  year: -3000
+  title: 蘇美的六十進位記數
+  category: theory
+  importance: 5
+  desc: 以 60 為基底，因子多、分數好處理。這套系統至今仍活在時鐘與角度裡，
+    是人類使用時間最長的一項數學約定。
+  sources:
+    - title: 維基百科：六十進制
+      url: https://zh.wikipedia.org/wiki/六十進制
+
+- id: mth-plimpton
+  year: -1800
+  title: 普林頓 322 泥板
+  category: work
+  importance: 4
+  desc: 一塊列出十五組整數邊直角三角形的泥板。比畢達哥拉斯早一千多年，
+    說明「勾股數」是被算出來的，不是被某個人一次想出來的。
+  sources:
+    - title: 英文維基百科：Plimpton 322
+      url: https://en.wikipedia.org/wiki/Plimpton_322
+
+- id: mth-rhind
+  year: -1650
+  title: 萊因德數學紙草書
+  category: work
+  importance: 4
+  desc: 八十餘道實用題：分麵包、算糧倉、換算單位。埃及數學是為了辦事，
+    沒有證明的概念——這正是後來希臘人做的那件事的對照組。
+  sources:
+    - title: 維基百科：萊因德數學紙草書
+      url: https://zh.wikipedia.org/wiki/萊因德數學紙草書
+
+- id: mth-irrational
+  year: -530
+  title: 畢達哥拉斯學派發現無理數
+  category: discovery
+  importance: 5
+  desc: 正方形的對角線與邊長無法用整數比表示。這對一個相信「萬物皆數」的
+    教團是災難，卻逼出了數學史上第一次的嚴謹危機。
+  sources:
+    - title: 維基百科：無理數
+      url: https://zh.wikipedia.org/wiki/無理數
+    - title: 維基百科：勾股定理
+      url: https://zh.wikipedia.org/wiki/勾股定理
+
+- id: mth-zeno
+  year: -450
+  title: 芝諾悖論
+  category: theory
+  importance: 3
+  desc: 阿基里斯追不上烏龜、飛矢不動。用來質疑無限可分性，
+    真正的解答要等到十九世紀的極限理論。
+  sources:
+    - title: 維基百科：芝諾悖論
+      url: https://zh.wikipedia.org/wiki/芝諾悖論
+
+- id: mth-elements
+  year: -300
+  title: 歐幾里得《幾何原本》
+  category: work
+  importance: 5
+  desc: 從五條公設推出四百多個命題。重點不是那些幾何結論，而是示範了
+    「知識可以由少數約定嚴格推導出來」——這個形式此後被所有學科模仿。
+  sources:
+    - title: 維基百科：幾何原本
+      url: https://zh.wikipedia.org/wiki/幾何原本
+    - title: 維基百科：歐幾里得
+      url: https://zh.wikipedia.org/wiki/歐幾里得
+
+- id: mth-archimedes-pi
+  year: -250
+  title: 阿基米德以窮竭法逼近圓周率
+  category: theory
+  importance: 5
+  desc: 用內接與外切的九十六邊形把圓周率夾在 3.1408 與 3.1429 之間。
+    「用可算的東西逼近算不出的東西」，這是積分思想的雛形。
+  sources:
+    - title: 維基百科：阿基米德
+      url: https://zh.wikipedia.org/wiki/阿基米德
+    - title: 維基百科：圓周率
+      url: https://zh.wikipedia.org/wiki/圓周率
+
+- id: mth-conics
+  year: -200
+  title: 阿波羅尼奧斯研究圓錐曲線
+  category: work
+  importance: 4
+  desc: 橢圓、拋物線、雙曲線的名稱與性質出自這裡。當時純屬幾何興趣，
+    一千八百年後克卜勒發現行星就走橢圓。
+  sources:
+    - title: 維基百科：阿波羅尼奧斯
+      url: https://zh.wikipedia.org/wiki/阿波罗尼奥斯
+
+- id: mth-jiuzhang
+  year: 50
+  title: 《九章算術》成書
+  category: work
+  importance: 5
+  desc: 兩百多道題分九類，含聯立方程的消元解法與負數運算。
+    體例是問題與演算法，不走公理推導——與《幾何原本》剛好是兩條路。
+  sources:
+    - title: 維基百科：九章算術
+      url: https://zh.wikipedia.org/wiki/九章算术
+
+- id: mth-diophantus
+  year: 250
+  title: 丟番圖《算術》
+  category: work
+  importance: 4
+  desc: 只求整數解的方程問題，並開始使用符號縮寫。一千四百年後費馬
+    就是在這本書的頁邊寫下那句著名的批註。
+  sources:
+    - title: 維基百科：丟番圖
+      url: https://zh.wikipedia.org/wiki/丟番圖
+
+- id: mth-liuhui
+  year: 263
+  title: 劉徽注《九章算術》
+  category: work
+  importance: 4
+  desc: 為原書補上證明，並用割圓術逼近圓周率。中國數學少見的
+    「說明為什麼」的作品，方法與阿基米德的窮竭法異曲同工。
+  sources:
+    - title: 維基百科：劉徽
+      url: https://zh.wikipedia.org/wiki/刘徽
+
+- id: mth-zu-chongzhi
+  year: 480
+  title: 祖沖之算出圓周率七位小數
+  category: discovery
+  importance: 4
+  desc: 定出 3.1415926 與 3.1415927 之間，並給出密率 355/113。
+    這個精度紀錄保持了將近一千年。
+  sources:
+    - title: 維基百科：祖沖之
+      url: https://zh.wikipedia.org/wiki/祖冲之
+
+- id: mth-aryabhata
+  year: 499
+  title: 阿耶波多的數學天文論著
+  category: work
+  importance: 4
+  desc: 給出正弦表、二次方程解法與圓周率近似值 3.1416，並主張地球自轉。
+    印度數學此後三百年的發展大多接在這本書之後。
+  sources:
+    - title: 維基百科：阿耶波多
+      url: https://zh.wikipedia.org/wiki/阿耶波多
+
+- id: mth-brahmagupta
+  year: 628
+  title: 婆羅摩笈多為零與負數立下運算規則
+  category: theory
+  importance: 5
+  desc: 明確寫出零的加減乘性質，並用「財產與債務」解釋負數。
+    零從一個佔位符號變成可以參與運算的數，這一步走了兩千年。
+  sources:
+    - title: 維基百科：婆羅摩笈多
+      url: https://zh.wikipedia.org/wiki/婆羅摩笈多
+
+- id: mth-al-khwarizmi
+  year: 820
+  title: 花拉子米《代數學》
+  category: work
+  importance: 5
+  desc: 系統性地把方程化約成幾種標準形式再求解，不依賴幾何圖形。
+    algebra 一詞出自書名，algorithm 出自作者的名字。
+  sources:
+    - title: 維基百科：花拉子米
+      url: https://zh.wikipedia.org/wiki/花拉子米
+    - title: 維基百科：代數學 (花拉子米)
+      url: https://zh.wikipedia.org/wiki/代數學_(花拉子米)
+
+- id: mth-fibonacci
+  year: 1202
+  title: 斐波那契《計算之書》
+  category: work
+  importance: 5
+  desc: 把印度—阿拉伯數字與位值制帶進歐洲商業計算。羅馬數字做不了直式
+    運算，這個換算工具的改變讓後來的一切計算成為可能。
+  sources:
+    - title: 維基百科：計算之書
+      url: https://zh.wikipedia.org/wiki/計算之書
+    - title: 維基百科：斐波那契
+      url: https://zh.wikipedia.org/wiki/斐波那契
+
+- id: mth-qin-jiushao
+  year: 1247
+  title: 秦九韶《數書九章》
+  category: work
+  importance: 4
+  desc: 提出高次方程的數值解法與「大衍求一術」，後者即今日所稱的
+    中國剩餘定理。宋元數學的高峰，此後中國傳統數學長期停滯。
+  sources:
+    - title: 維基百科：數書九章
+      url: https://zh.wikipedia.org/wiki/數書九章
+    - title: 維基百科：秦九韶
+      url: https://zh.wikipedia.org/wiki/秦九韶
+
+- id: mth-zhu-shijie
+  year: 1303
+  title: 朱世傑《四元玉鑑》
+  category: work
+  importance: 3
+  desc: 處理四個未知數的方程組，並列出二項式係數三角表（比帕斯卡早
+    三百多年）。這是中國傳統代數所能達到的最遠處。
+  sources:
+    - title: 維基百科：四元玉鑑
+      url: https://zh.wikipedia.org/wiki/四元玉鑑
+    - title: 維基百科：朱世傑
+      url: https://zh.wikipedia.org/wiki/朱世傑
+
+- id: mth-cardano
+  year: 1545
+  title: 卡爾達諾公開三次方程解法
+  category: theory
+  importance: 4
+  desc: 求解過程中必須經過負數的平方根，虛數因此第一次被迫上場。
+    書中解法的來源引發了數學史上最著名的一場優先權糾紛。
+  sources:
+    - title: 維基百科：吉羅拉莫·卡爾達諾
+      url: https://zh.wikipedia.org/wiki/吉罗拉莫·卡尔达诺
+    - title: 維基百科：三次方程
+      url: https://zh.wikipedia.org/wiki/三次方程
+
+- id: mth-logarithm
+  year: 1614
+  title: 納皮爾發表對數
+  category: theory
+  importance: 4
+  desc: 把乘除化成加減。天文與航海的計算量因此驟降，
+    在計算機出現之前，這是提升算力最有效的一次發明。
+  sources:
+    - title: 維基百科：約翰·納皮爾
+      url: https://zh.wikipedia.org/wiki/約翰·納皮爾
+    - title: 維基百科：對數
+      url: https://zh.wikipedia.org/wiki/对数
+
+- id: mth-analytic-geometry
+  year: 1637
+  title: 笛卡兒《幾何學》建立解析幾何
+  category: work
+  importance: 5
+  desc: 用座標把幾何問題翻譯成代數問題。圖形與方程從此可以互換，
+    這是微積分得以出現的前提。
+  sources:
+    - title: 維基百科：解析幾何
+      url: https://zh.wikipedia.org/wiki/解析几何
+    - title: 維基百科：笛卡兒
+      url: https://zh.wikipedia.org/wiki/勒内·笛卡儿
+
+- id: mth-probability
+  year: 1654
+  title: 帕斯卡與費馬的機率通信
+  category: theory
+  importance: 4
+  desc: 起因是一個賭金分配的問題。「不確定的事也能算」這個想法從此成立，
+    後來成為統計、保險與統計力學的基礎。
+  sources:
+    - title: 維基百科：機率論
+      url: https://zh.wikipedia.org/wiki/概率论
+    - title: 維基百科：布萊茲·帕斯卡
+      url: https://zh.wikipedia.org/wiki/布莱斯·帕斯卡
+
+- id: mth-newton-fluxions
+  year: 1665
+  title: 牛頓發展流數術
+  category: theory
+  importance: 5
+  desc: 為了處理變速運動而發明的方法，當時並未發表。
+    這個延遲後來釀成他與萊布尼茲之間長達數十年的優先權之爭。
+  sources:
+    - title: 維基百科：微積分
+      url: https://zh.wikipedia.org/wiki/微积分学
+    - title: 維基百科：艾薩克·牛頓
+      url: https://zh.wikipedia.org/wiki/艾萨克·牛顿
+
+- id: mth-leibniz-calculus
+  year: 1684
+  title: 萊布尼茲發表微積分及其符號
+  category: theory
+  importance: 5
+  desc: dy/dx 與積分號都出自他手。今日通用的是這一套記法，
+    因為它把運算規則直接寫在符號的形狀裡。
+  sources:
+    - title: 維基百科：戈特弗里德·萊布尼茨
+      url: https://zh.wikipedia.org/wiki/戈特弗里德·莱布尼茨
+
+- id: mth-konigsberg
+  year: 1736
+  title: 歐拉解決柯尼斯堡七橋問題
+  category: theory
+  importance: 4
+  desc: 證明那樣的走法不存在，關鍵是把地圖抽象成點與線。
+    圖論從這裡開始，也是拓樸學最早的先聲。
+  sources:
+    - title: 維基百科：柯尼斯堡七橋問題
+      url: https://zh.wikipedia.org/wiki/柯尼斯堡七橋問題
+    - title: 維基百科：萊昂哈德·歐拉
+      url: https://zh.wikipedia.org/wiki/萊昂哈德·歐拉
+
+- id: mth-gauss-da
+  year: 1801
+  title: 高斯《算術研究》
+  category: work
+  importance: 5
+  desc: 用同餘符號重整數論，並證明了二次互反律。
+    數論從一堆零散的巧妙結果變成一門有結構的學科。
+  sources:
+    - title: 維基百科：算術研究
+      url: https://zh.wikipedia.org/wiki/算術研究
+    - title: 維基百科：卡爾·弗里德里希·高斯
+      url: https://zh.wikipedia.org/wiki/卡爾·弗里德里希·高斯
+
+- id: mth-fourier
+  year: 1822
+  title: 傅立葉級數
+  category: theory
+  importance: 4
+  desc: 主張任何週期函數都能拆成三角函數之和。當時被質疑不夠嚴謹，
+    卻逼出了「函數到底是什麼」「收斂是什麼」這些後續的基礎工作。
+  sources:
+    - title: 維基百科：傅立葉級數
+      url: https://zh.wikipedia.org/wiki/傅里叶级数
+    - title: 維基百科：約瑟夫·傅立葉
+      url: https://zh.wikipedia.org/wiki/约瑟夫·傅里叶
+
+- id: mth-non-euclidean
+  year: 1829
+  title: 羅巴切夫斯基發表非歐幾何
+  category: theory
+  importance: 5
+  desc: 否定平行公設之後，得到的仍是一套無矛盾的幾何。
+    兩千年來被當成「關於真實空間的真理」的歐氏幾何，降級成眾多選項之一。
+  sources:
+    - title: 維基百科：非歐幾里得幾何
+      url: https://zh.wikipedia.org/wiki/非欧几里得几何
+    - title: 維基百科：尼古拉·羅巴切夫斯基
+      url: https://zh.wikipedia.org/wiki/尼古拉·羅巴切夫斯基
+
+- id: mth-galois
+  year: 1832
+  title: 伽羅瓦以群論解決方程可解性
+  category: theory
+  importance: 5
+  desc: 證明五次以上的方程沒有根式解，方法是研究解的對稱性。
+    他二十歲死於決鬥，手稿數十年後才被理解，而群論成為現代代數的核心。
+  sources:
+    - title: 維基百科：群論
+      url: https://zh.wikipedia.org/wiki/群论
+    - title: 維基百科：埃瓦里斯特·伽羅瓦
+      url: https://zh.wikipedia.org/wiki/埃瓦里斯特·伽羅瓦
+
+- id: mth-riemann
+  year: 1854
+  title: 黎曼提出流形上的幾何
+  category: theory
+  importance: 5
+  desc: 把幾何從特定空間中解放出來，容許任意維度與彎曲。
+    六十年後愛因斯坦正好需要這套語言來寫廣義相對論。
+  sources:
+    - title: 維基百科：黎曼幾何
+      url: https://zh.wikipedia.org/wiki/黎曼几何
+    - title: 維基百科：波恩哈德·黎曼
+      url: https://zh.wikipedia.org/wiki/伯恩哈德·黎曼
+
+- id: mth-cantor
+  year: 1874
+  title: 康托爾證明實數不可數
+  category: theory
+  importance: 5
+  desc: 無限有大小之分，而且不只一種。當時招致強烈反對，
+    如今整個數學建立在他開創的集合論之上。
+  sources:
+    - title: 維基百科：集合論
+      url: https://zh.wikipedia.org/wiki/集合论
+    - title: 維基百科：格奧爾格·康托爾
+      url: https://zh.wikipedia.org/wiki/格奧爾格·康托爾
+
+- id: mth-peano
+  year: 1889
+  title: 皮亞諾公理
+  category: theory
+  importance: 3
+  desc: 用五條公理定義自然數。連「1、2、3」都要重新奠基，
+    反映的是十九世紀末數學對自身基礎的不安。
+  sources:
+    - title: 維基百科：皮亞諾公理
+      url: https://zh.wikipedia.org/wiki/皮亚诺公理
+
+- id: mth-hilbert-problems
+  year: 1900
+  title: 希爾伯特提出二十三個問題
+  category: work
+  importance: 5
+  desc: 在國際數學家大會上列出一份待解清單，等於為整個世紀設定議程。
+    其中幾題至今未解，而第二題的命運由三十一年後的哥德爾決定。
+  sources:
+    - title: 維基百科：希爾伯特的23個問題
+      url: https://zh.wikipedia.org/wiki/希爾伯特的23個問題
+    - title: 維基百科：國際數學家大會
+      url: https://zh.wikipedia.org/wiki/国际数学家大会
+
+- id: mth-lebesgue
+  year: 1902
+  title: 勒貝格積分
+  category: theory
+  importance: 4
+  desc: 改從函數值的角度切分，能積的函數大幅擴充。
+    現代機率論與泛函分析都建立在這個新的積分概念上。
+  sources:
+    - title: 維基百科：勒貝格積分
+      url: https://zh.wikipedia.org/wiki/勒貝格積分
+
+- id: mth-godel
+  year: 1931
+  title: 哥德爾不完備定理
+  category: theory
+  importance: 5
+  desc: 任何夠強的形式系統，都存在它證明不了也否證不了的真命題，
+    而且無法在系統內證明自身無矛盾。希爾伯特的奠基計畫就此終結。
+  sources:
+    - title: 維基百科：哥德爾不完備定理
+      url: https://zh.wikipedia.org/wiki/哥德爾不完備定理
+    - title: 維基百科：庫爾特·哥德爾
+      url: https://zh.wikipedia.org/wiki/库尔特·哥德尔
+
+- id: mth-turing
+  year: 1936
+  title: 圖靈提出可計算性與圖靈機
+  category: theory
+  importance: 5
+  desc: 為了回答「有沒有機械程序能判定任意命題」而設計的抽象機器，
+    答案是否定的。副產品是通用計算機的理論藍圖。
+  sources:
+    - title: 維基百科：圖靈機
+      url: https://zh.wikipedia.org/wiki/图灵机
+    - title: 維基百科：艾倫·圖靈
+      url: https://zh.wikipedia.org/wiki/艾伦·图灵
+
+- id: mth-shannon
+  year: 1948
+  title: 夏農建立資訊理論
+  category: theory
+  importance: 5
+  desc: 把「資訊量」定義成可測量的物理量，並給出通道容量的上限。
+    通訊、壓縮與加密自此有了共同的理論基礎。
+  sources:
+    - title: 維基百科：資訊理論
+      url: https://zh.wikipedia.org/wiki/信息论
+    - title: 維基百科：克勞德·夏農
+      url: https://zh.wikipedia.org/wiki/克劳德·香农
+
+- id: mth-cohen
+  year: 1963
+  title: 科恩證明連續統假設獨立於公理系統
+  category: theory
+  importance: 4
+  desc: 加上它或否定它，集合論都不會矛盾。希爾伯特的第一題因此得到一個
+    當初沒人預期的答案：這個問題不是「還沒解決」，而是無解可言。
+  sources:
+    - title: 維基百科：連續統假設
+      url: https://zh.wikipedia.org/wiki/连续统假设
+    - title: 維基百科：保羅·柯恩
+      url: https://zh.wikipedia.org/wiki/保罗·寇恩
+
+- id: mth-four-color
+  year: 1976
+  title: 四色定理的電腦輔助證明
+  category: theory
+  importance: 4
+  desc: 分成一千多種情形交由電腦逐一檢查。第一個沒有人能完整讀完的證明，
+    也因此引發「這算不算證明」的長期爭論。
+  sources:
+    - title: 維基百科：四色定理
+      url: https://zh.wikipedia.org/wiki/四色定理
+
+- id: mth-fermat
+  year: 1994
+  title: 懷爾斯證明費馬最後定理
+  category: theory
+  importance: 5
+  desc: 一個三百五十年前寫在書頁邊的猜想，最後靠橢圓曲線與模形式的
+    深層關聯解決。證明用到的工具在費馬的時代完全不存在。
+  sources:
+    - title: 維基百科：費馬大定理
+      url: https://zh.wikipedia.org/wiki/费马大定理
+    - title: 維基百科：安德魯·懷爾斯
+      url: https://zh.wikipedia.org/wiki/安德魯·懷爾斯
+
+- id: mth-poincare
+  year: 2003
+  title: 佩雷爾曼證明龐加萊猜想
+  category: theory
+  importance: 5
+  desc: 論文貼在預印本網站上，沒有投稿期刊。作者隨後拒領菲爾茲獎與
+    百萬美元獎金並退出數學界，是這門學科最不尋常的一則事件。
+  sources:
+    - title: 維基百科：龐加萊猜想
+      url: https://zh.wikipedia.org/wiki/庞加莱猜想
+    - title: 維基百科：格里戈里·佩雷爾曼
+      url: https://zh.wikipedia.org/wiki/格里戈里·佩雷爾曼
