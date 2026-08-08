@@ -200,6 +200,20 @@
     - title: 維基百科：萬神廟
       url: https://zh.wikipedia.org/wiki/萬神廟
 
+- id: arc-basilica
+  year: 330
+  title: 舊聖伯多祿大殿確立巴西利卡形制
+  category: technique
+  importance: 4
+  desc: 基督教合法後急需大型集會空間，於是借用羅馬的公共會堂而非神廟——
+    神廟是給神住的，教堂要裝得下人。長方形大廳、兩側柱列、盡端半圓室，
+    西方教堂的基本平面此後一千五百年沒有換過。
+  sources:
+    - title: 維基百科：舊聖伯多祿大殿
+      url: https://zh.wikipedia.org/wiki/舊聖伯多祿大殿
+    - title: 維基百科：巴西利卡
+      url: https://zh.wikipedia.org/wiki/巴西利卡
+
 - id: arc-hagia-sophia
   year: 537
   title: 聖索菲亞大教堂
@@ -236,18 +250,6 @@
     - title: 維基百科：岩石圓頂
       url: https://zh.wikipedia.org/wiki/岩石圓頂
 
-- id: arc-cordoba
-  year: 785
-  title: 科爾多瓦大清真寺
-  category: technique
-  importance: 4
-  desc: 回收羅馬與西哥德的舊柱，上面再疊一層拱以爭取高度，
-    紅白相間的雙層馬蹄拱一路延伸成柱林。限制（柱子不夠高）
-    被轉化成這棟建築最被記住的特徵。
-  sources:
-    - title: 維基百科：科爾多瓦主教座堂
-      url: https://zh.wikipedia.org/wiki/科爾多瓦主教座堂
-
 - id: arc-todaiji
   year: 752
   title: 東大寺大佛殿
@@ -259,6 +261,18 @@
   sources:
     - title: 維基百科：東大寺
       url: https://zh.wikipedia.org/wiki/東大寺
+
+- id: arc-cordoba
+  year: 785
+  title: 科爾多瓦大清真寺
+  category: technique
+  importance: 4
+  desc: 回收羅馬與西哥德的舊柱，上面再疊一層拱以爭取高度，
+    紅白相間的雙層馬蹄拱一路延伸成柱林。限制（柱子不夠高）
+    被轉化成這棟建築最被記住的特徵。
+  sources:
+    - title: 維基百科：科爾多瓦主教座堂
+      url: https://zh.wikipedia.org/wiki/科爾多瓦主教座堂
 
 - id: arc-foguang
   year: 857
@@ -295,6 +309,32 @@
   sources:
     - title: 維基百科：應縣木塔
       url: https://zh.wikipedia.org/wiki/應縣木塔
+
+- id: arc-cluny
+  year: 1088
+  title: 克呂尼第三期教堂與羅曼式的高峰
+  category: work
+  importance: 3
+  desc: 石造筒形拱頂取代易燃的木屋頂，牆因此得加厚、窗因此得縮小，
+    內部厚重而昏暗。它是哥德式出現前歐洲最大的教堂，
+    也正好標出了「不用飛扶壁能做到哪裡」的極限。
+  sources:
+    - title: 維基百科：克呂尼修道院
+      url: https://zh.wikipedia.org/wiki/克呂尼修道院
+    - title: 維基百科：羅曼式建築
+      url: https://zh.wikipedia.org/wiki/羅曼式建築
+
+- id: arc-yingzao-fashi
+  year: 1103
+  title: 李誡《營造法式》頒行
+  category: work
+  importance: 5
+  desc: 以「材」為基本模數，各級構件的尺寸都由它換算，還附工料定額。
+    官方頒布的建築規範，目的是防止工程浮報——比帕拉迪奧的範本書早
+    四百六十年，而它管的是施工與預算，不是樣式。
+  sources:
+    - title: 維基百科：營造法式
+      url: https://zh.wikipedia.org/wiki/營造法式
 
 - id: arc-angkor-wat
   year: 1113
@@ -347,6 +387,18 @@
     - title: 維基百科：沙特爾主教座堂
       url: https://zh.wikipedia.org/wiki/沙特爾主教座堂
 
+- id: arc-alhambra
+  year: 1370
+  title: 阿爾罕布拉宮的獅子中庭
+  category: work
+  importance: 4
+  desc: 鐘乳石般的灰泥穹頂、細如筆畫的柱列、把庭園切成四塊的水渠。
+    伊斯蘭建築不比高也不比大，而是把牆面化為幾何與光影的織物；
+    水在這裡既是聲音、鏡面，也是空調。
+  sources:
+    - title: 維基百科：阿爾罕布拉宮
+      url: https://zh.wikipedia.org/wiki/阿爾罕布拉宮
+
 - id: arc-forbidden-city
   year: 1420
   title: 紫禁城落成
@@ -373,18 +425,6 @@
     - title: 維基百科：菲利波·布魯內萊斯基
       url: https://zh.wikipedia.org/wiki/菲利波·布魯內萊斯基
 
-- id: arc-alberti-treatise
-  year: 1452
-  title: 阿爾伯蒂《論建築》
-  category: work
-  importance: 4
-  desc: 仿維特魯威體例寫成十書，主張美是各部分之間的和諧比例，
-    增一分減一分都會壞掉。建築第一次被論述成一門有理論可談的學問，
-    而不只是工地上的手藝。
-  sources:
-    - title: 英文維基百科：De re aedificatoria
-      url: https://en.wikipedia.org/wiki/De_re_aedificatoria
-
 - id: arc-machu-picchu
   year: 1450
   title: 馬丘比丘
@@ -396,6 +436,18 @@
   sources:
     - title: 維基百科：馬丘比丘
       url: https://zh.wikipedia.org/wiki/馬丘比丘
+
+- id: arc-alberti-treatise
+  year: 1452
+  title: 阿爾伯蒂《論建築》
+  category: work
+  importance: 4
+  desc: 仿維特魯威體例寫成十書，主張美是各部分之間的和諧比例，
+    增一分減一分都會壞掉。建築第一次被論述成一門有理論可談的學問，
+    而不只是工地上的手藝。
+  sources:
+    - title: 英文維基百科：De re aedificatoria
+      url: https://en.wikipedia.org/wiki/De_re_aedificatoria
 
 - id: arc-sinan
   year: 1557
@@ -425,6 +477,18 @@
     - title: 維基百科：安德烈亞·帕拉迪奧
       url: https://zh.wikipedia.org/wiki/安德烈亞·帕拉迪奧
 
+- id: arc-katsura
+  year: 1620
+  title: 桂離宮
+  category: work
+  importance: 4
+  desc: 素木不上漆、格線分割的障子、依步行序列展開的庭園，
+    刻意避開一切炫耀性的裝飾。三百年後陶特與葛羅培斯把它讀成
+    現代主義的先聲——一座江戶初期的別墅，成了二十世紀的論據。
+  sources:
+    - title: 英文維基百科：Katsura Imperial Villa
+      url: https://en.wikipedia.org/wiki/Katsura_Imperial_Villa
+
 - id: arc-st-peters
   year: 1626
   title: 聖伯多祿大殿完工
@@ -437,17 +501,17 @@
     - title: 維基百科：聖伯多祿大殿
       url: https://zh.wikipedia.org/wiki/聖伯多祿大殿
 
-- id: arc-katsura
-  year: 1620
-  title: 桂離宮
+- id: arc-nikko
+  year: 1636
+  title: 日光東照宮
   category: work
-  importance: 4
-  desc: 素木不上漆、格線分割的障子、依步行序列展開的庭園，
-    刻意避開一切炫耀性的裝飾。三百年後陶特與葛羅培斯把它讀成
-    現代主義的先聲——一座江戶初期的別墅，成了二十世紀的論據。
+  importance: 3
+  desc: 漆金、彩繪與密佈的雕刻鋪滿每一寸表面，與同期落成的桂離宮
+    幾乎是兩個極端。同一個時代、同一個國家，一邊極盡裝飾以彰顯權威，
+    一邊素木不漆以標榜品味——風格從來不只是審美。
   sources:
-    - title: 英文維基百科：Katsura Imperial Villa
-      url: https://en.wikipedia.org/wiki/Katsura_Imperial_Villa
+    - title: 維基百科：日光東照宮
+      url: https://zh.wikipedia.org/wiki/日光東照宮
 
 - id: arc-taj-mahal
   year: 1653
@@ -461,6 +525,18 @@
     - title: 維基百科：泰姬陵
       url: https://zh.wikipedia.org/wiki/泰姬陵
 
+- id: arc-st-peters-square
+  year: 1667
+  title: 貝尼尼的聖伯多祿廣場柱廊
+  category: work
+  importance: 3
+  desc: 兩道弧形柱廊像手臂一樣抱住廣場，他自己說那是教會擁抱信眾。
+    建築不只圍出室內，也負責安排室外的人群、視線與行進——
+    都市尺度的空間設計在此有了最有力的一個示範。
+  sources:
+    - title: 維基百科：聖伯多祿廣場
+      url: https://zh.wikipedia.org/wiki/聖伯多祿廣場
+
 - id: arc-versailles
   year: 1682
   title: 路易十四遷入凡爾賽宮
@@ -473,6 +549,48 @@
     - title: 維基百科：凡爾賽宮
       url: https://zh.wikipedia.org/wiki/凡爾賽宮
 
+- id: arc-st-pauls
+  year: 1710
+  title: 雷恩重建聖保羅座堂
+  category: work
+  importance: 4
+  desc: 倫敦大火燒掉八成城區，他一口氣主持五十餘座教堂的重建。
+    三層殼的穹頂靠內部鏈條箍住，外觀卻做成古典樣式——
+    災後重建第一次成為一個有整體構想的建築工程，而非各自修各自的。
+  sources:
+    - title: 維基百科：克里斯多佛·雷恩
+      url: https://zh.wikipedia.org/wiki/克里斯多佛·雷恩
+    - title: 維基百科：聖保羅座堂
+      url: https://zh.wikipedia.org/wiki/聖保羅座堂
+
+- id: arc-revolutionary
+  year: 1784
+  title: 布雷與勒杜的「革命建築」
+  category: movement
+  importance: 3
+  desc: 直徑一百五十公尺的球形牛頓紀念堂、光禿禿的巨大幾何量體，
+    幾乎全都蓋不出來也沒打算蓋。建築第一次以圖面而非房子的形式提出主張——
+    「紙上建築」這個現代建築師常用的手段由此開始。
+  sources:
+    - title: 英文維基百科：Étienne-Louis Boullée
+      url: https://en.wikipedia.org/wiki/Étienne-Louis_Boullée
+    - title: 英文維基百科：Claude Nicolas Ledoux
+      url: https://en.wikipedia.org/wiki/Claude_Nicolas_Ledoux
+
+- id: arc-altes-museum
+  year: 1830
+  title: 辛克爾的柏林老博物館
+  category: institution
+  importance: 4
+  desc: 十八根愛奧尼柱撐起一道長廊，中央是仿萬神廟的圓廳。
+    羅浮宮是把宮殿改成美術館，這一棟是為了展示而從頭設計的——
+    「美術館」從此是一種建築類型，並且刻意長得像神廟。
+  sources:
+    - title: 英文維基百科：Altes Museum
+      url: https://en.wikipedia.org/wiki/Altes_Museum
+    - title: 英文維基百科：Karl Friedrich Schinkel
+      url: https://en.wikipedia.org/wiki/Karl_Friedrich_Schinkel
+
 - id: arc-crystal-palace
   year: 1851
   title: 水晶宮
@@ -484,6 +602,21 @@
   sources:
     - title: 維基百科：水晶宮
       url: https://zh.wikipedia.org/wiki/水晶宮
+
+- id: arc-sagrada-familia
+  year: 1883
+  endYear: 2026
+  title: 高迪接手聖家堂，至今仍在興建
+  category: movement
+  importance: 4
+  desc: 用倒吊鍊條模型算出受力最合理的曲線，再翻轉過來當作柱與拱的形狀。
+    新藝術把裝飾從歷史樣式解放出來，他更進一步讓形式直接由結構力學
+    決定——工程與有機造形在此不是妥協而是同一件事。
+  sources:
+    - title: 維基百科：聖家堂
+      url: https://zh.wikipedia.org/wiki/聖家堂
+    - title: 維基百科：安東尼·高迪
+      url: https://zh.wikipedia.org/wiki/安東尼·高迪
 
 - id: arc-skyscraper
   year: 1885
@@ -521,20 +654,43 @@
     - title: 英文維基百科：Louis Sullivan
       url: https://en.wikipedia.org/wiki/Louis_Sullivan
 
-- id: arc-sagrada-familia
-  year: 1883
-  endYear: 2026
-  title: 高迪接手聖家堂，至今仍在興建
-  category: movement
-  importance: 4
-  desc: 用倒吊鍊條模型算出受力最合理的曲線，再翻轉過來當作柱與拱的形狀。
-    新藝術把裝飾從歷史樣式解放出來，他更進一步讓形式直接由結構力學
-    決定——工程與有機造形在此不是妥協而是同一件事。
+- id: arc-reinforced-concrete
+  year: 1903
+  title: 佩雷用鋼筋混凝土蓋公寓
+  category: technique
+  importance: 5
+  desc: 巴黎富蘭克林路的公寓把混凝土框架直接外露，不再包成石造的樣子。
+    這種材料能澆成任意形狀又能大跨距，且比鋼便宜——
+    二十世紀絕大多數的房子是它蓋的，柯布西耶正是在他的事務所學會用它。
   sources:
-    - title: 維基百科：聖家堂
-      url: https://zh.wikipedia.org/wiki/聖家堂
-    - title: 維基百科：安東尼·高迪
-      url: https://zh.wikipedia.org/wiki/安東尼·高迪
+    - title: 英文維基百科：Auguste Perret
+      url: https://en.wikipedia.org/wiki/Auguste_Perret
+    - title: 維基百科：鋼筋混凝土
+      url: https://zh.wikipedia.org/wiki/鋼筋混凝土
+
+- id: arc-werkbund
+  year: 1907
+  title: 德意志工藝聯盟成立
+  category: institution
+  importance: 4
+  desc: 藝術家、工匠與製造商合組，主張量產的東西也應該做得好。
+    「設計」作為一種獨立於裝飾的工作在此被提出，
+    十二年後包浩斯把它變成一套教學法。
+  sources:
+    - title: 維基百科：德意志製造聯盟
+      url: https://zh.wikipedia.org/wiki/德意志製造聯盟
+
+- id: arc-robie-house
+  year: 1910
+  title: 萊特的羅比之家與草原式
+  category: work
+  importance: 4
+  desc: 深遠的水平挑簷、通透的起居空間、把壁爐當成核心。
+    他要的是與美國中西部平原呼應的住宅，而不是歐洲樣式的縮小版；
+    圖面經德國出版後，反過來啟發了歐洲的現代主義者。
+  sources:
+    - title: 英文維基百科：Robie House
+      url: https://en.wikipedia.org/wiki/Robie_House
 
 - id: arc-bauhaus
   year: 1919
@@ -586,6 +742,20 @@
     - title: 維基百科：帝國大廈
       url: https://zh.wikipedia.org/wiki/帝國大廈
 
+- id: arc-athens-charter
+  year: 1933
+  title: 國際現代建築協會提出《雅典憲章》
+  category: institution
+  importance: 4
+  desc: 主張把城市依居住、工作、遊憩、交通四種機能分區規劃。
+    戰後各國照著它重建，也照著它蓋出大批高層國宅——
+    三十九年後普魯伊特—艾戈的爆破，炸的正是這套教條。
+  sources:
+    - title: 維基百科：國際現代建築協會
+      url: https://zh.wikipedia.org/wiki/國際現代建築協會
+    - title: 維基百科：雅典憲章
+      url: https://zh.wikipedia.org/wiki/雅典憲章
+
 - id: arc-fallingwater
   year: 1937
   title: 萊特的落水山莊
@@ -635,6 +805,18 @@
   sources:
     - title: 維基百科：所羅門·古根漢美術館
       url: https://zh.wikipedia.org/wiki/所羅門·古根漢美術館
+
+- id: arc-metabolism
+  year: 1960
+  title: 日本新陳代謝派提出可生長的城市
+  category: movement
+  importance: 3
+  desc: 主張建築該像生物一樣汰換：主結構長期存在，居住單元可以隨時抽換。
+    中銀膠囊塔是最著名的實作。這是非西方國家第一次向現代主義的
+    國際論壇提出自己的整套主張，而不是接收。
+  sources:
+    - title: 英文維基百科：Metabolism (architecture)
+      url: https://en.wikipedia.org/wiki/Metabolism_(architecture)
 
 - id: arc-venturi
   year: 1966
@@ -686,6 +868,18 @@
     - title: 維基百科：龐畢度中心
       url: https://zh.wikipedia.org/wiki/龐畢度中心
 
+- id: arc-att-building
+  year: 1984
+  title: 強生的 AT&T 大樓
+  category: movement
+  importance: 3
+  desc: 摩天樓頂上放一個齊本德爾式家具的斷山牆，被戲稱為「大衣櫃」。
+    後現代從論述變成企業總部的實際樣貌，也因此招來大量嘲諷——
+    引用歷史一旦成為賣點，就很難再是批判。
+  sources:
+    - title: 英文維基百科：550 Madison Avenue
+      url: https://en.wikipedia.org/wiki/550_Madison_Avenue
+
 - id: arc-bilbao
   year: 1997
   title: 畢爾包古根漢美術館
@@ -697,3 +891,15 @@
   sources:
     - title: 維基百科：畢爾包古根漢美術館
       url: https://zh.wikipedia.org/wiki/畢爾包古根漢美術館
+
+- id: arc-bird-nest
+  year: 2008
+  title: 北京國家體育場
+  category: work
+  importance: 3
+  desc: 交錯的鋼構外殼把結構、外牆與裝飾合為一體，只能靠參數化軟體
+    才算得出來。它同時是一次國家形象工程——當代的地標建築
+    幾乎都同時是技術展示與政治展示。
+  sources:
+    - title: 維基百科：北京國家體育場
+      url: https://zh.wikipedia.org/wiki/北京國家體育場

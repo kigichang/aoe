@@ -325,6 +325,32 @@
     - title: 維基百科：早春圖
       url: https://zh.wikipedia.org/wiki/早春圖
 
+- id: vis-su-shi
+  year: 1080
+  title: 蘇軾提出士人畫
+  category: movement
+  importance: 5
+  desc: 主張「論畫以形似，見與兒童鄰」——畫得像不是重點，畫的人是誰、
+    胸中有什麼才是。繪畫的評價標準從技術轉向作者的修養與人格，
+    文人畫這條與職業畫工分道的路，在此有了它的綱領。
+  sources:
+    - title: 維基百科：蘇軾
+      url: https://zh.wikipedia.org/wiki/蘇軾
+    - title: 維基百科：文人畫
+      url: https://zh.wikipedia.org/wiki/文人畫
+
+- id: vis-huizong-academy
+  year: 1104
+  title: 宋徽宗設畫學，繪畫進入科舉
+  category: institution
+  importance: 5
+  desc: 畫院納入官學，考題出自詩句（「踏花歸去馬蹄香」），錄取者授官品。
+    這是世界上最早由國家設立、有課程與考試的繪畫機構，
+    比佛羅倫斯的設計學院早四百五十年。
+  sources:
+    - title: 維基百科：宋徽宗
+      url: https://zh.wikipedia.org/wiki/宋徽宗
+
 - id: vis-qingming
   year: 1120
   title: 張擇端《清明上河圖》
@@ -350,6 +376,20 @@
       url: https://zh.wikipedia.org/wiki/喬托·迪·邦多納
     - title: 維基百科：斯克羅威尼禮拜堂
       url: https://zh.wikipedia.org/wiki/斯克羅威尼禮拜堂
+
+- id: vis-ni-zan
+  year: 1370
+  title: 倪瓚與元四家
+  category: movement
+  importance: 4
+  desc: 蒙古統治下士人不出仕，繪畫從宮廷委製轉為朋友之間的贈答。
+    倪瓚的山水枯淡疏簡、幾乎不畫人，還題上詩與印章——
+    詩書畫印合為一體的形式，就是在這種沒有贊助人的條件下長成的。
+  sources:
+    - title: 維基百科：倪瓚
+      url: https://zh.wikipedia.org/wiki/倪瓚
+    - title: 維基百科：元四家
+      url: https://zh.wikipedia.org/wiki/元四家
 
 - id: vis-linear-perspective
   year: 1425
@@ -403,6 +443,20 @@
     - title: 維基百科：春 (波提切利)
       url: https://zh.wikipedia.org/wiki/春_(波提切利)
 
+- id: vis-persian-miniature
+  year: 1490
+  title: 比赫扎德與波斯細密畫的高峰
+  category: work
+  importance: 4
+  desc: 書頁大小的畫面塞進數十個人物，不用陰影也不用單一滅點，
+    而是用鮮豔的平塗與斜上方的視角展開空間。伊斯蘭世界避開巨幅人像，
+    造形的精力因此集中到手抄本裡——限制決定了這個傳統的尺寸與精細度。
+  sources:
+    - title: 英文維基百科：Kamāl ud-Dīn Behzād
+      url: https://en.wikipedia.org/wiki/Kamāl_ud-Dīn_Behzād
+    - title: 英文維基百科：Persian miniature
+      url: https://en.wikipedia.org/wiki/Persian_miniature
+
 - id: vis-last-supper
   year: 1498
   title: 達文西《最後的晚餐》
@@ -414,6 +468,20 @@
   sources:
     - title: 維基百科：最後的晚餐 (達文西)
       url: https://zh.wikipedia.org/wiki/最後的晚餐_(達文西)
+
+- id: vis-durer
+  year: 1498
+  title: 丟勒自資出版《啟示錄》木刻組畫
+  category: technique
+  importance: 5
+  desc: 不接委託、自己出版、自己銷售，還在每張畫上壓了個人字母標記。
+    版畫讓藝術家第一次能靠複製品而非單一買主維生，「藝術家的簽名」
+    也才有了經濟意義——他同時是最早大量畫自畫像的人。
+  sources:
+    - title: 維基百科：阿爾布雷希特·杜勒
+      url: https://zh.wikipedia.org/wiki/阿爾布雷希特·杜勒
+    - title: 維基百科：木刻版畫
+      url: https://zh.wikipedia.org/wiki/木刻版畫
 
 - id: vis-david
   year: 1504
@@ -478,6 +546,18 @@
     - title: 維基百科：卡拉瓦喬
       url: https://zh.wikipedia.org/wiki/卡拉瓦喬
 
+- id: vis-dong-qichang
+  year: 1610
+  title: 董其昌提出南北宗論
+  category: movement
+  importance: 5
+  desc: 把歷代山水分成「南宗」文人與「北宗」職業兩系，並斷言南宗才是正脈。
+    這是一套帶著明確立場的分期史觀，此後三百年中國畫論幾乎都在它的框架裡
+    爭論——與瓦薩里在歐洲做的事性質相同，時間只差六十年。
+  sources:
+    - title: 維基百科：董其昌
+      url: https://zh.wikipedia.org/wiki/董其昌
+
 - id: vis-night-watch
   year: 1642
   title: 林布蘭《夜巡》
@@ -501,6 +581,20 @@
   sources:
     - title: 維基百科：法蘭西藝術院
       url: https://zh.wikipedia.org/wiki/法蘭西藝術院
+
+- id: vis-bernini
+  year: 1652
+  title: 貝尼尼《聖女大德蘭的神魂超拔》
+  category: work
+  importance: 4
+  desc: 大理石做出翻捲的衣褶與癱軟的身體，上方藏窗引下自然光，
+    兩側牆上還雕了包廂裡觀看的贊助人。雕塑、建築與採光被整合成一齣戲，
+    而觀眾被指定了座位——巴洛克把作品變成一個要人走進去的場面。
+  sources:
+    - title: 維基百科：吉安·洛倫佐·貝尼尼
+      url: https://zh.wikipedia.org/wiki/吉安·洛倫佐·貝尼尼
+    - title: 維基百科：聖女大德蘭的神魂超拔
+      url: https://zh.wikipedia.org/wiki/聖女大德蘭的神魂超拔
 
 - id: vis-las-meninas
   year: 1656
@@ -588,6 +682,32 @@
     - title: 維基百科：德尼·狄德羅
       url: https://zh.wikipedia.org/wiki/德尼·狄德羅
 
+- id: vis-winckelmann
+  year: 1764
+  title: 溫克爾曼《古代藝術史》
+  category: work
+  importance: 4
+  desc: 不按藝術家立傳，而是把作品排成生長、成熟、衰敗的階段，
+    並主張風格會隨氣候與政體變化。藝術史從此是一門處理「風格如何演變」
+    的學問，而不是名家軼事的合集——現代藝術史學由這本書起算。
+  sources:
+    - title: 維基百科：約翰·約阿希姆·溫克爾曼
+      url: https://zh.wikipedia.org/wiki/約翰·約阿希姆·溫克爾曼
+
+- id: vis-nishikie
+  year: 1765
+  title: 鈴木春信與錦繪：多色套印
+  category: technique
+  importance: 5
+  desc: 每種顏色刻一塊版，靠「見當」記號讓十幾版精準對齊。
+    浮世繪從墨色單印變成滿版彩色，價格仍然低廉——
+    北齋、廣重與後來輸出歐洲的那批圖像，全部建立在這個技術上。
+  sources:
+    - title: 維基百科：鈴木春信
+      url: https://zh.wikipedia.org/wiki/鈴木春信
+    - title: 維基百科：浮世繪
+      url: https://zh.wikipedia.org/wiki/浮世繪
+
 - id: vis-oath-horatii
   year: 1784
   title: 大衛《荷拉斯兄弟之誓》
@@ -660,6 +780,30 @@
     - title: 維基百科：銀版攝影法
       url: https://zh.wikipedia.org/wiki/銀版攝影法
 
+- id: vis-calotype
+  year: 1841
+  title: 塔爾博特的負片法
+  category: technique
+  importance: 4
+  desc: 銀版法一次只得一張獨版，他先做負片再洗成任意張數的正片。
+    照片從獨一無二的物件變成可複製的圖像，今日整套底片沖印
+    乃至數位影像的邏輯，都是這個「負—正」流程的後裔。
+  sources:
+    - title: 維基百科：卡羅法
+      url: https://zh.wikipedia.org/wiki/卡羅法
+
+- id: vis-turner
+  year: 1844
+  title: 透納《雨、蒸汽與速度》
+  category: movement
+  importance: 4
+  desc: 火車衝出雨霧，形體幾乎溶解在光與色裡。風景畫此前只是歷史畫的背景，
+    他把它推到能單獨承載崇高與速度感的位置；當時被譏為「一團肥皂泡」，
+    三十年後印象派把這條路走了下去。
+  sources:
+    - title: 維基百科：威廉·透納
+      url: https://zh.wikipedia.org/wiki/威廉·透納
+
 - id: vis-realism
   year: 1855
   title: 庫爾貝辦個展打出寫實主義
@@ -710,6 +854,32 @@
     - title: 維基百科：印象派
       url: https://zh.wikipedia.org/wiki/印象派
 
+- id: vis-muybridge
+  year: 1878
+  title: 邁布里奇拍下奔馬的分解動作
+  category: technique
+  importance: 4
+  desc: 沿跑道排下二十四台相機，證明馬奔跑時四蹄確有同時離地的一刻——
+    此前所有畫家都畫錯了。攝影第一次告訴繪畫它看漏了什麼，
+    而這串連續照片也直接通往電影。
+  sources:
+    - title: 維基百科：埃德沃德·邁布里奇
+      url: https://zh.wikipedia.org/wiki/埃德沃德·邁布里奇
+
+- id: vis-rodin
+  year: 1880
+  title: 羅丹受託製作《地獄之門》
+  category: work
+  importance: 5
+  desc: 三十七年沒有完成，卻從中拆出《沉思者》《吻》等獨立作品。
+    表面留著指痕與未修的刀口，殘缺的軀體也可以是完成品——
+    雕塑不再以光滑與完整為目標，現代雕塑從這扇沒裝上的門開始。
+  sources:
+    - title: 維基百科：奧古斯特·羅丹
+      url: https://zh.wikipedia.org/wiki/奧古斯特·羅丹
+    - title: 維基百科：地獄之門 (雕塑)
+      url: https://zh.wikipedia.org/wiki/地獄之門_(雕塑)
+
 - id: vis-seurat
   year: 1886
   title: 秀拉《大碗島的星期天下午》
@@ -734,6 +904,18 @@
     - title: 維基百科：文森·梵谷
       url: https://zh.wikipedia.org/wiki/文森·梵谷
 
+- id: vis-gauguin
+  year: 1891
+  title: 高更前往大溪地
+  category: transmission
+  importance: 4
+  desc: 為了逃離他所謂虛偽的歐洲文明而遠赴殖民地，畫平塗的色塊與粗黑輪廓。
+    「原始」被當成解方的想像由此成形，二十年後直接餵養了立體派與表現主義——
+    也留下這條路徑至今仍被追問的殖民問題。
+  sources:
+    - title: 維基百科：保羅·高更
+      url: https://zh.wikipedia.org/wiki/保羅·高更
+
 - id: vis-the-scream
   year: 1893
   title: 孟克《吶喊》
@@ -745,6 +927,30 @@
   sources:
     - title: 維基百科：吶喊 (繪畫)
       url: https://zh.wikipedia.org/wiki/吶喊_(繪畫)
+
+- id: vis-cezanne
+  year: 1895
+  title: 塞尚首次個展
+  category: movement
+  importance: 5
+  desc: 隱居二十年後由畫商伏拉爾辦展，年輕一代才見到他的作品。
+    他用色塊而非線條建構體積，同一張靜物裡桌沿對不齊、
+    蘋果各有各的視角——立體派與二十世紀的整套空間實驗都由此接手。
+  sources:
+    - title: 維基百科：保羅·塞尚
+      url: https://zh.wikipedia.org/wiki/保羅·塞尚
+
+- id: vis-venice-biennale
+  year: 1895
+  title: 首屆威尼斯雙年展
+  category: institution
+  importance: 5
+  desc: 各國自建展館、自選代表，作品在國家名義下並置競賽。
+    它把展覽從單一城市的沙龍變成國際賽事，此後全球數百個雙年展
+    都照這個模式辦——當代藝術的地圖，很大一部分是它畫出來的。
+  sources:
+    - title: 維基百科：威尼斯雙年展
+      url: https://zh.wikipedia.org/wiki/威尼斯雙年展
 
 - id: vis-secession
   year: 1897
@@ -796,6 +1002,20 @@
     - title: 維基百科：瓦西里·康丁斯基
       url: https://zh.wikipedia.org/wiki/瓦西里·康丁斯基
 
+- id: vis-collage
+  year: 1912
+  title: 立體派把現成物貼上畫面
+  category: technique
+  importance: 4
+  desc: 畢卡索與布拉克把報紙、壁紙與藤椅圖案直接黏在畫布上。
+    顏料以外的東西進入作品，畫面同時是再現也是實物——
+    往後的拼貼、集合、裝置乃至數位取樣，都可以追到這一步。
+  sources:
+    - title: 英文維基百科：Collage
+      url: https://en.wikipedia.org/wiki/Collage
+    - title: 維基百科：喬治·布拉克
+      url: https://zh.wikipedia.org/wiki/喬治·布拉克
+
 - id: vis-armory-show
   year: 1913
   title: 紐約軍械庫展覽會
@@ -807,6 +1027,20 @@
   sources:
     - title: 維基百科：軍械庫展覽會
       url: https://zh.wikipedia.org/wiki/軍械庫展覽會
+
+- id: vis-black-square
+  year: 1915
+  title: 馬列維奇展出《黑方塊》
+  category: work
+  importance: 5
+  desc: 白底上一個黑方塊，掛在展場角落——俄羅斯人家中供聖像的位置。
+    康丁斯基的抽象還保有情緒與音樂性，這裡連那個也被清空，
+    只剩下形狀本身。繪畫能減到什麼程度，在此被試到底。
+  sources:
+    - title: 維基百科：卡濟米爾·馬列維奇
+      url: https://zh.wikipedia.org/wiki/卡濟米爾·馬列維奇
+    - title: 維基百科：黑方塊
+      url: https://zh.wikipedia.org/wiki/黑方塊
 
 - id: vis-fountain
   year: 1917
@@ -821,6 +1055,20 @@
       url: https://zh.wikipedia.org/wiki/噴泉_(杜象)
     - title: 維基百科：馬塞爾·杜象
       url: https://zh.wikipedia.org/wiki/馬塞爾·杜象
+
+- id: vis-mexican-muralism
+  year: 1922
+  title: 墨西哥壁畫運動
+  category: movement
+  importance: 4
+  desc: 革命後的政府請里維拉等人在公共建築牆上作畫，題材是原住民歷史
+    與勞動者，看畫不必買票也不必識字。藝術繞過畫廊與收藏家直接面對群眾，
+    這條路線後來影響了美國的公共藝術與整個拉丁美洲。
+  sources:
+    - title: 英文維基百科：Mexican muralism
+      url: https://en.wikipedia.org/wiki/Mexican_muralism
+    - title: 維基百科：迪亞哥·里維拉
+      url: https://zh.wikipedia.org/wiki/迪亞哥·里維拉
 
 - id: vis-surrealism
   year: 1924
@@ -897,6 +1145,20 @@
       url: https://zh.wikipedia.org/wiki/金寶湯罐頭_(藝術作品)
     - title: 維基百科：安迪·沃荷
       url: https://zh.wikipedia.org/wiki/安迪·沃荷
+
+- id: vis-dinner-party
+  year: 1979
+  title: 茱蒂·芝加哥《晚宴》
+  category: work
+  importance: 4
+  desc: 三角餐桌擺出三十九副餐具，各紀念一位被寫掉的女性；
+    刺繡與彩瓷這些被歸為「女紅」的技術被抬到大型裝置的規模。
+    藝術史缺了哪半邊、什麼才算得上「藝術媒材」，被同一件作品一起問。
+  sources:
+    - title: 英文維基百科：The Dinner Party
+      url: https://en.wikipedia.org/wiki/The_Dinner_Party
+    - title: 英文維基百科：Judy Chicago
+      url: https://en.wikipedia.org/wiki/Judy_Chicago
 
 - id: vis-magiciens
   year: 1989

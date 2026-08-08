@@ -167,6 +167,20 @@
     - title: 維基百科：沙恭達羅
       url: https://zh.wikipedia.org/wiki/沙恭達羅
 
+- id: lit-wenxin
+  year: 501
+  title: 劉勰《文心雕龍》
+  category: work
+  importance: 4
+  desc: 五十篇，從文體分類、寫作方法一路談到批評的態度，體系嚴密。
+    中國第一部成系統的文學理論專著，比它早的多是零星評點——
+    與亞里斯多德《詩學》遙相對照，一邊分析情節，一邊分析文體與風格。
+  sources:
+    - title: 維基百科：文心雕龍
+      url: https://zh.wikipedia.org/wiki/文心雕龍
+    - title: 維基百科：劉勰
+      url: https://zh.wikipedia.org/wiki/劉勰
+
 - id: lit-tang-poetry
   year: 750
   title: 盛唐詩：李白與杜甫
@@ -233,6 +247,18 @@
     - title: 維基百科：活字印刷術
       url: https://zh.wikipedia.org/wiki/活字印刷術
 
+- id: lit-roland
+  year: 1100
+  title: 《羅蘭之歌》
+  category: work
+  importance: 3
+  desc: 現存最早的法語文學作品，唱的是查理曼麾下騎士戰死隘口。
+    忠誠、榮譽與寧死不退的價值觀被寫成範本，
+    往後整套騎士文學——以及五百年後被塞萬提斯拿來嘲弄的那些——都由此展開。
+  sources:
+    - title: 維基百科：羅蘭之歌
+      url: https://zh.wikipedia.org/wiki/羅蘭之歌
+
 - id: lit-heike
   year: 1240
   title: 《平家物語》
@@ -272,6 +298,20 @@
       url: https://zh.wikipedia.org/wiki/神曲
     - title: 維基百科：但丁·阿利吉耶里
       url: https://zh.wikipedia.org/wiki/但丁·阿利吉耶里
+
+- id: lit-petrarch
+  year: 1350
+  title: 佩脫拉克與十四行詩
+  category: movement
+  importance: 4
+  desc: 用固定的十四行格律反覆寫同一位女性，寫的卻是自己起伏的內心。
+    這個形式被譯進西班牙、法國與英國，四百年間歐洲詩人幾乎人人寫過；
+    他四處搜羅古代抄本的做法，也開啟了人文主義的文獻工作。
+  sources:
+    - title: 維基百科：弗朗切斯科·彼特拉克
+      url: https://zh.wikipedia.org/wiki/弗朗切斯科·彼特拉克
+    - title: 維基百科：十四行詩
+      url: https://zh.wikipedia.org/wiki/十四行詩
 
 - id: lit-decameron
   year: 1353
@@ -339,6 +379,18 @@
     - title: 維基百科：巨人傳
       url: https://zh.wikipedia.org/wiki/巨人傳
 
+- id: lit-index
+  year: 1559
+  title: 教廷頒布《禁書目錄》
+  category: controversy
+  importance: 5
+  desc: 印刷術讓書散得太快太便宜，教會於是列出一份不得印行、
+    販售與閱讀的清單，一直維持到 1966 年才廢止。
+    大規模複製一出現，系統性的審查就跟著出現——兩者是同一件事的兩面。
+  sources:
+    - title: 維基百科：禁書目錄
+      url: https://zh.wikipedia.org/wiki/禁書目錄
+
 - id: lit-essais
   year: 1580
   title: 蒙田《隨筆集》
@@ -353,18 +405,6 @@
     - title: 維基百科：米歇爾·德·蒙田
       url: https://zh.wikipedia.org/wiki/米歇爾·德·蒙田
 
-- id: lit-mudan-ting
-  year: 1598
-  title: 湯顯祖《牡丹亭》
-  category: work
-  importance: 4
-  desc: 少女因夢生情、傷情而死、又為情復生，五十五齣。
-    「情」被抬到能穿透生死的位置，直接對抗程朱理學的天理人欲之辨——
-    崑曲從此有了它最被搬演的劇目。
-  sources:
-    - title: 維基百科：牡丹亭
-      url: https://zh.wikipedia.org/wiki/牡丹亭
-
 - id: lit-journey-west
   year: 1592
   title: 《西遊記》刊行
@@ -376,6 +416,18 @@
   sources:
     - title: 維基百科：西遊記
       url: https://zh.wikipedia.org/wiki/西遊記
+
+- id: lit-mudan-ting
+  year: 1598
+  title: 湯顯祖《牡丹亭》
+  category: work
+  importance: 4
+  desc: 少女因夢生情、傷情而死、又為情復生，五十五齣。
+    「情」被抬到能穿透生死的位置，直接對抗程朱理學的天理人欲之辨——
+    崑曲從此有了它最被搬演的劇目。
+  sources:
+    - title: 維基百科：牡丹亭
+      url: https://zh.wikipedia.org/wiki/牡丹亭
 
 - id: lit-hamlet
   year: 1601
@@ -390,6 +442,20 @@
       url: https://zh.wikipedia.org/wiki/哈姆雷特
     - title: 維基百科：威廉·莎士比亞
       url: https://zh.wikipedia.org/wiki/威廉·莎士比亞
+
+- id: lit-kabuki
+  year: 1603
+  title: 阿國在京都演出，歌舞伎誕生
+  category: movement
+  importance: 4
+  desc: 女性扮男裝在河原搭台演出，大受歡迎也屢遭幕府取締，
+    最後演變成全部由男性擔綱。它從一開始就是面向市民收費的娛樂，
+    與能劇的武家庇護走的是完全相反的路。
+  sources:
+    - title: 維基百科：出雲阿國
+      url: https://zh.wikipedia.org/wiki/出雲阿國
+    - title: 維基百科：歌舞伎
+      url: https://zh.wikipedia.org/wiki/歌舞伎
 
 - id: lit-quixote
   year: 1605
@@ -416,6 +482,58 @@
   sources:
     - title: 維基百科：偽君子 (喜劇)
       url: https://zh.wikipedia.org/wiki/偽君子_(喜劇)
+
+- id: lit-paradise-lost
+  year: 1667
+  title: 米爾頓《失樂園》
+  category: work
+  importance: 3
+  desc: 用無韻詩寫墮天使反叛與人的失樂，而撒旦寫得比上帝有魅力得多。
+    他在王政復辟後失勢、雙目失明，全書靠口述完成——
+    英語史詩的高峰，也是浪漫派後來反覆援引的叛逆原型。
+  sources:
+    - title: 維基百科：失樂園
+      url: https://zh.wikipedia.org/wiki/失樂園
+
+- id: lit-basho
+  year: 1689
+  title: 松尾芭蕉的奧之細道之旅
+  category: movement
+  importance: 4
+  desc: 徒步兩千四百公里，沿途寫成俳文與發句。他把俳諧從連歌的
+    詼諧開場提升為能獨立成立的短詩，十七音要同時放進季節、
+    景物與剎那的感受——世界上最短的成熟詩體由此定型。
+  sources:
+    - title: 維基百科：松尾芭蕉
+      url: https://zh.wikipedia.org/wiki/松尾芭蕉
+    - title: 維基百科：奧之細道
+      url: https://zh.wikipedia.org/wiki/奧之細道
+
+- id: lit-chikamatsu
+  year: 1703
+  title: 近松門左衛門《曾根崎心中》
+  category: work
+  importance: 4
+  desc: 取材前一個月才發生的殉情事件，主角是店員與妓女。
+    人形淨琉璃的戲第一次寫當代小人物的處境，而且賣座到
+    真的引發模仿自殺、幕府下令禁演——他被稱作日本的莎士比亞。
+  sources:
+    - title: 維基百科：近松門左衛門
+      url: https://zh.wikipedia.org/wiki/近松門左衛門
+    - title: 維基百科：人形淨琉璃
+      url: https://zh.wikipedia.org/wiki/人形淨琉璃
+
+- id: lit-statute-of-anne
+  year: 1710
+  title: 英國《安妮法令》，最早的著作權法
+  category: institution
+  importance: 5
+  desc: 版權從出版商行會的永久特權，改成授予作者、且有年限的權利。
+    「作者是作品的所有人」這個今日視為當然的觀念是法律造出來的，
+    而它要處理的問題正是印刷讓複製變得太容易。
+  sources:
+    - title: 維基百科：安娜法令
+      url: https://zh.wikipedia.org/wiki/安娜法令
 
 - id: lit-robinson
   year: 1719
@@ -503,6 +621,46 @@
     - title: 維基百科：漢斯·安徒生
       url: https://zh.wikipedia.org/wiki/漢斯·安徒生
 
+- id: lit-dickens-serial
+  year: 1836
+  title: 狄更斯以分期連載賣小說
+  category: institution
+  importance: 5
+  desc: 《匹克威克外傳》每月一先令一冊，讀者買得起、作者邊寫邊看反應調整。
+    小說因此變長、多線、每一回結尾都要留鉤子——連載這個發行方式
+    直接塑造了維多利亞小說的形狀，也預告了後來的電視影集。
+  sources:
+    - title: 維基百科：查爾斯·狄更斯
+      url: https://zh.wikipedia.org/wiki/查爾斯·狄更斯
+    - title: 維基百科：匹克威克外傳
+      url: https://zh.wikipedia.org/wiki/匹克威克外傳
+
+- id: lit-uncle-toms-cabin
+  year: 1852
+  title: 《湯姆叔叔的小屋》
+  category: work
+  importance: 4
+  desc: 首年在美國賣出三十萬冊，讓奴隸制不再是抽象的政治議題
+    而是有名字有臉的人的遭遇。同時也留下扁平化的黑人形象，
+    「湯姆叔叔」後來變成貶詞——小說改變社會，代價常常也一起帶來。
+  sources:
+    - title: 維基百科：湯姆叔叔的小屋
+      url: https://zh.wikipedia.org/wiki/湯姆叔叔的小屋
+
+- id: lit-leaves-of-grass
+  year: 1855
+  title: 惠特曼《草葉集》與自由詩
+  category: movement
+  importance: 4
+  desc: 自費出版、封面不印作者名，詩不押韻也不守音步，長句像說話一樣鋪開。
+    格律是詩之所以為詩的條件——這個延續兩千年的前提在此被拆掉，
+    二十世紀的現代詩都走這條路。
+  sources:
+    - title: 維基百科：草葉集
+      url: https://zh.wikipedia.org/wiki/草葉集
+    - title: 維基百科：華特·惠特曼
+      url: https://zh.wikipedia.org/wiki/華特·惠特曼
+
 - id: lit-obscenity-trials
   year: 1857
   title: 《惡之花》與《包法利夫人》同年受審
@@ -581,6 +739,18 @@
     - title: 維基百科：海鷗 (戲劇)
       url: https://zh.wikipedia.org/wiki/海鷗_(戲劇)
 
+- id: lit-nobel-literature
+  year: 1901
+  title: 首度頒發諾貝爾文學獎
+  category: institution
+  importance: 4
+  desc: 一個國際性、有巨額獎金、由瑞典學院評定的文學獎。
+    它創造出「世界文學」這個排行榜，也讓翻譯、譯介與是否被
+    歐洲讀到，成為決定一位作家能否被看見的關鍵條件。
+  sources:
+    - title: 維基百科：諾貝爾文學獎
+      url: https://zh.wikipedia.org/wiki/諾貝爾文學獎
+
 - id: lit-proust
   year: 1913
   endYear: 1927
@@ -605,6 +775,18 @@
   sources:
     - title: 維基百科：一個國家的誕生
       url: https://zh.wikipedia.org/wiki/一個國家的誕生
+
+- id: lit-kafka
+  year: 1915
+  title: 卡夫卡《變形記》
+  category: work
+  importance: 4
+  desc: 第一句就變成蟲，之後全篇用平靜的公文腔敘述。荒謬被當成
+    不需要解釋的前提，主角煩惱的是趕不上火車與房租——
+    「卡夫卡式」後來成為描述現代官僚與異化的通用形容詞。
+  sources:
+    - title: 維基百科：變形記 (卡夫卡)
+      url: https://zh.wikipedia.org/wiki/變形記_(卡夫卡)
 
 - id: lit-kuangren
   year: 1918
@@ -633,6 +815,20 @@
       url: https://zh.wikipedia.org/wiki/尤利西斯
     - title: 維基百科：荒原 (詩)
       url: https://zh.wikipedia.org/wiki/荒原_(詩)
+
+- id: lit-eisenstein
+  year: 1925
+  title: 愛森斯坦《戰艦波將金號》與蒙太奇
+  category: technique
+  importance: 5
+  desc: 敖德薩階梯那場戲把互不連續的鏡頭剪在一起，撞出鏡頭本身沒有的意義。
+    美國人用剪接說故事，他用剪接說論點——電影從此有了一套
+    可以教、可以分析的語法，而不只是把舞台拍下來。
+  sources:
+    - title: 維基百科：謝爾蓋·愛森斯坦
+      url: https://zh.wikipedia.org/wiki/謝爾蓋·愛森斯坦
+    - title: 維基百科：戰艦波將金號
+      url: https://zh.wikipedia.org/wiki/戰艦波將金號
 
 - id: lit-talkies
   year: 1927
@@ -673,6 +869,20 @@
       url: https://zh.wikipedia.org/wiki/自己的房間
     - title: 維基百科：維吉尼亞·吳爾芙
       url: https://zh.wikipedia.org/wiki/維吉尼亞·吳爾芙
+
+- id: lit-penguin
+  year: 1935
+  title: 企鵝叢書開創平裝本
+  category: institution
+  importance: 4
+  desc: 一本六便士，跟一包菸同價，在車站與雜貨店而非書店賣。
+    嚴肅文學第一次以廉價、可拋棄的形式大量流通，
+    「讀書是有錢有閒的人的事」這個前提被一個定價策略打掉。
+  sources:
+    - title: 維基百科：企鵝出版集團
+      url: https://zh.wikipedia.org/wiki/企鵝出版集團
+    - title: 維基百科：平裝本
+      url: https://zh.wikipedia.org/wiki/平裝本
 
 - id: lit-citizen-kane
   year: 1941
@@ -741,6 +951,20 @@
       url: https://en.wikipedia.org/wiki/Things_Fall_Apart
     - title: 維基百科：欽努阿·阿契貝
       url: https://zh.wikipedia.org/wiki/欽努阿·阿契貝
+
+- id: lit-nouvelle-vague
+  year: 1959
+  title: 法國新浪潮
+  category: movement
+  importance: 4
+  desc: 一群影評人改行拍片，用輕便攝影機上街實景拍攝，跳接、
+    對鏡頭說話都不避諱。他們主張導演才是作品的作者，
+    這套「作者論」此後成為全世界談論電影的預設方式。
+  sources:
+    - title: 維基百科：法國新浪潮
+      url: https://zh.wikipedia.org/wiki/法國新浪潮
+    - title: 維基百科：四百擊
+      url: https://zh.wikipedia.org/wiki/四百擊
 
 - id: lit-cien-anos
   year: 1967

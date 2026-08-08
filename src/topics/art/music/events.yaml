@@ -182,6 +182,18 @@
     - title: 維基百科：紀堯姆·德·馬肖
       url: https://zh.wikipedia.org/wiki/紀堯姆·德·馬肖
 
+- id: mus-josquin
+  year: 1500
+  title: 若斯坎讓各聲部平等
+  category: work
+  importance: 4
+  desc: 不再讓其他聲部繞著一條既有的聖歌旋律轉，而是四部輪流模仿同一個樂想，
+    並且開始讓音樂配合歌詞的重音與情緒。他是第一位作品因印刷而暢銷全歐、
+    死後仍持續再版的作曲家。
+  sources:
+    - title: 維基百科：若斯坎·德普雷
+      url: https://zh.wikipedia.org/wiki/若斯坎·德普雷
+
 - id: mus-petrucci
   year: 1501
   title: 佩特魯奇印出第一本活字樂譜
@@ -246,6 +258,30 @@
     - title: 維基百科：歌劇
       url: https://zh.wikipedia.org/wiki/歌劇
 
+- id: mus-lully
+  year: 1673
+  title: 呂利確立法國歌劇並壟斷演出權
+  category: institution
+  importance: 3
+  desc: 他從國王手上拿到全法國歌劇演出的專營特許，別人辦一場都得經他同意。
+    法國式的抒情悲劇、序曲形制與芭蕾插段由他定型——
+    音樂史上第一個靠獨佔許可經營的產業案例。
+  sources:
+    - title: 維基百科：讓-巴普蒂斯特·呂利
+      url: https://zh.wikipedia.org/wiki/讓-巴普蒂斯特·呂利
+
+- id: mus-stradivari
+  year: 1700
+  title: 史特拉底瓦里的小提琴
+  category: technique
+  importance: 4
+  desc: 琴身比例、弧度與漆料在他手上定於一尊，此後三百年的製琴都在模仿。
+    樂器一旦定型，作曲家才敢為它寫愈來愈難的曲子——
+    小提琴協奏曲與弦樂四重奏的整個曲目，是站在這批琴上長出來的。
+  sources:
+    - title: 英文維基百科：Antonio Stradivari
+      url: https://en.wikipedia.org/wiki/Antonio_Stradivari
+
 - id: mus-wtc
   year: 1722
   title: 巴哈《平均律鍵盤曲集》
@@ -269,6 +305,20 @@
   sources:
     - title: 維基百科：讓-菲利普·拉莫
       url: https://zh.wikipedia.org/wiki/讓-菲利普·拉莫
+
+- id: mus-vivaldi-seasons
+  year: 1725
+  title: 韋瓦第《四季》與獨奏協奏曲
+  category: work
+  importance: 4
+  desc: 快—慢—快三樂章、獨奏與合奏交替，還附上十四行詩描寫鳥鳴、
+    暴風與凍腳。器樂第一次被要求「描寫」具體的東西，
+    協奏曲的形制也在此定案，巴哈抄過他不少譜來研究。
+  sources:
+    - title: 維基百科：四季 (韋瓦第)
+      url: https://zh.wikipedia.org/wiki/四季_(韋瓦第)
+    - title: 維基百科：安東尼奧·韋瓦第
+      url: https://zh.wikipedia.org/wiki/安東尼奧·韋瓦第
 
 - id: mus-messiah
   year: 1742
@@ -306,6 +356,18 @@
     - title: 維基百科：費加洛的婚禮
       url: https://zh.wikipedia.org/wiki/費加洛的婚禮
 
+- id: mus-haydn-london
+  year: 1791
+  title: 海頓的倫敦音樂會
+  category: institution
+  importance: 4
+  desc: 離開埃斯特哈齊家族的僕役職位，到倫敦為售票的商業音樂會寫交響曲，
+    收入是宮廷薪俸的數十倍。作曲家可以不依附貴族而靠買票的公眾維生——
+    貝多芬之所以能擺出那種姿態，前提是他先走過這條路。
+  sources:
+    - title: 維基百科：約瑟夫·海頓
+      url: https://zh.wikipedia.org/wiki/約瑟夫·海頓
+
 - id: mus-eroica
   year: 1804
   title: 貝多芬《英雄》交響曲
@@ -317,6 +379,20 @@
   sources:
     - title: 維基百科：第3號交響曲 (貝多芬)
       url: https://zh.wikipedia.org/wiki/第3號交響曲_(貝多芬)
+
+- id: mus-freischutz
+  year: 1821
+  title: 韋伯《自由射手》開出德國浪漫歌劇
+  category: work
+  importance: 3
+  desc: 唱德語、取材德意志民間傳說，狼谷那場用樂團音響堆出恐怖氣氛。
+    義大利與法國之外第一次有了自成一格的歌劇傳統，
+    華格納後來整套接收並推到極端。
+  sources:
+    - title: 維基百科：魔彈射手
+      url: https://zh.wikipedia.org/wiki/魔彈射手
+    - title: 維基百科：卡爾·馬利亞·馮·韋伯
+      url: https://zh.wikipedia.org/wiki/卡爾·馬利亞·馮·韋伯
 
 - id: mus-beethoven-9
   year: 1824
@@ -330,6 +406,18 @@
     - title: 維基百科：第9號交響曲 (貝多芬)
       url: https://zh.wikipedia.org/wiki/第9號交響曲_(貝多芬)
 
+- id: mus-iron-frame-piano
+  year: 1825
+  title: 鑄鐵框架讓鋼琴變響
+  category: technique
+  importance: 4
+  desc: 木框撐不住高張力的弦，換成整塊鑄鐵之後音量、音域與延音全部拉開。
+    鋼琴同時開始工業量產、進入中產家庭客廳，成為十九世紀
+    最普及的樂器——李斯特那種轟炸式的演奏，是這個框架給的。
+  sources:
+    - title: 維基百科：鋼琴
+      url: https://zh.wikipedia.org/wiki/鋼琴
+
 - id: mus-symphonie-fantastique
   year: 1830
   title: 白遼士《幻想交響曲》
@@ -341,6 +429,30 @@
   sources:
     - title: 維基百科：幻想交響曲
       url: https://zh.wikipedia.org/wiki/幻想交響曲
+
+- id: mus-chopin
+  year: 1835
+  title: 蕭邦把鋼琴寫成私密的樂器
+  category: movement
+  importance: 4
+  desc: 夜曲、馬厝卡與敘事曲多半只有幾分鐘，寫給沙龍而非大廳，
+    踏板與裝飾音撐起近乎說話的語氣。同一件樂器在他與李斯特手上
+    分岔成兩種路線：一種向內收，一種向外炸。
+  sources:
+    - title: 維基百科：弗雷德里克·蕭邦
+      url: https://zh.wikipedia.org/wiki/弗雷德里克·蕭邦
+
+- id: mus-liszt-recital
+  year: 1840
+  title: 李斯特發明「獨奏會」
+  category: institution
+  importance: 4
+  desc: 整場只有一個人、全部背譜、鋼琴側身擺放讓觀眾看得到手與側臉。
+    此前音樂會是多人拼盤，他把它變成一個人的展演，
+    連帶造出了樂迷瘋狂與明星演奏家這兩樣現代產物。
+  sources:
+    - title: 維基百科：弗朗茨·李斯特
+      url: https://zh.wikipedia.org/wiki/弗朗茨·李斯特
 
 - id: mus-philharmonic
   year: 1842
@@ -442,6 +554,18 @@
     - title: 維基百科：春之祭
       url: https://zh.wikipedia.org/wiki/春之祭
 
+- id: mus-noise-art
+  year: 1913
+  title: 魯索洛主張噪音也是音樂
+  category: technique
+  importance: 3
+  desc: 未來主義者宣稱工業時代的耳朵已經習慣機械聲，於是自製一批
+    會發出爆裂、嘶吼與摩擦聲的「噪音機」上台演出，觀眾動手打人。
+    音樂的素材可以是任何聲響——三十五年後具象音樂接手這個主張。
+  sources:
+    - title: 維基百科：路易吉·魯索洛
+      url: https://zh.wikipedia.org/wiki/路易吉·魯索洛
+
 - id: mus-jazz-record
   year: 1917
   title: 第一張爵士唱片發行
@@ -465,6 +589,44 @@
   sources:
     - title: 維基百科：十二音技法
       url: https://zh.wikipedia.org/wiki/十二音技法
+
+- id: mus-rhapsody-in-blue
+  year: 1924
+  title: 蓋希文《藍色狂想曲》
+  category: transmission
+  importance: 4
+  desc: 開頭那道單簧管滑音來自爵士，形式卻是鋼琴協奏曲，在音樂廳裡首演。
+    被視為低俗的黑人音樂語彙進入正式曲目，兩邊都不太滿意，
+    但此後古典與流行之間的來回借用再也沒有停過。
+  sources:
+    - title: 維基百科：藍色狂想曲
+      url: https://zh.wikipedia.org/wiki/藍色狂想曲
+    - title: 維基百科：喬治·蓋希文
+      url: https://zh.wikipedia.org/wiki/喬治·蓋希文
+
+- id: mus-magnetic-tape
+  year: 1935
+  title: 磁帶錄音機問世
+  category: technique
+  importance: 5
+  desc: 錄下來的聲音可以剪、可以接、可以疊、可以倒放，而且能重複洗掉重錄。
+    唱片只能記錄一次演奏，磁帶卻讓錄音本身變成一種創作行為——
+    具象音樂、多軌錄音與整個錄音室美學的前提都在這裡。
+  sources:
+    - title: 維基百科：磁帶錄音機
+      url: https://zh.wikipedia.org/wiki/磁帶錄音機
+
+- id: mus-electric-guitar
+  year: 1936
+  title: 電吉他開始量產
+  category: technique
+  importance: 4
+  desc: 拾音器把弦振轉成電訊號，音量不再受琴身共鳴限制，
+    吉他因此能在大樂團裡當獨奏樂器。二十年後失真、回授這些
+    原本算故障的現象被當成音色來用，搖滾樂的聲音就是這麼來的。
+  sources:
+    - title: 維基百科：電吉他
+      url: https://zh.wikipedia.org/wiki/電吉他
 
 - id: mus-musique-concrete
   year: 1948
@@ -490,6 +652,18 @@
     - title: 維基百科：密紋唱片
       url: https://zh.wikipedia.org/wiki/密紋唱片
 
+- id: mus-zhdanov
+  year: 1948
+  title: 蘇聯批判「形式主義」音樂
+  category: controversy
+  importance: 4
+  desc: 日丹諾夫點名蕭士塔高維契、普羅高菲夫等人脫離人民，作品遭禁演、
+    職位被撤。國家不只審查內容，還直接規定音樂該用什麼語言寫——
+    與同時期西方作曲家爭論十二音技法，形成刺眼的對照。
+  sources:
+    - title: 維基百科：日丹諾夫主義
+      url: https://zh.wikipedia.org/wiki/日丹諾夫主義
+
 - id: mus-4-33
   year: 1952
   title: 凱吉《4分33秒》
@@ -514,6 +688,18 @@
     - title: 維基百科：搖滾樂
       url: https://zh.wikipedia.org/wiki/搖滾樂
 
+- id: mus-moog
+  year: 1964
+  title: 穆格合成器問世
+  category: technique
+  importance: 4
+  desc: 用電壓控制振盪器與濾波器，聲音第一次可以從零開始「設計」
+    而不是從樂器上取得。1968 年一張全合成器的巴哈專輯成為暢銷唱片，
+    此後流行、電影配樂與電子舞曲全部依賴它的後代。
+  sources:
+    - title: 英文維基百科：Moog synthesizer
+      url: https://en.wikipedia.org/wiki/Moog_synthesizer
+
 - id: mus-sgt-pepper
   year: 1967
   title: 披頭四《比伯軍曹》
@@ -526,6 +712,32 @@
     - title: 維基百科：比伯軍曹寂寞芳心俱樂部
       url: https://zh.wikipedia.org/wiki/比伯軍曹寂寞芳心俱樂部
 
+- id: mus-hiphop
+  year: 1973
+  title: 嘻哈在南布朗克斯成形
+  category: movement
+  importance: 5
+  desc: DJ 用兩台唱盤把同一段鼓點來回接成不斷的循環，旁邊有人對著麥克風喊話。
+    現成的唱片變成樂器、別人的錄音變成素材——這套作法後來長成
+    取樣文化與全球最主流的流行音樂，也帶來至今未解的版權爭議。
+  sources:
+    - title: 維基百科：嘻哈音樂
+      url: https://zh.wikipedia.org/wiki/嘻哈音樂
+
+- id: mus-minimalism
+  year: 1976
+  title: 《沙灘上的愛因斯坦》與簡約音樂
+  category: movement
+  importance: 4
+  desc: 五小時無中場、沒有劇情，短句反覆數十次再微微位移。
+    序列主義把音樂寫得沒人聽得下去之後，這一派反過來
+    用最少的材料與最慢的變化重新取得聽眾——戰後前衛的另一條出路。
+  sources:
+    - title: 英文維基百科：Einstein on the Beach
+      url: https://en.wikipedia.org/wiki/Einstein_on_the_Beach
+    - title: 維基百科：極簡音樂
+      url: https://zh.wikipedia.org/wiki/極簡音樂
+
 - id: mus-walkman
   year: 1979
   title: 隨身聽上市
@@ -537,6 +749,18 @@
   sources:
     - title: 維基百科：隨身聽
       url: https://zh.wikipedia.org/wiki/隨身聽
+
+- id: mus-mtv
+  year: 1981
+  title: MTV 開播
+  category: transmission
+  importance: 4
+  desc: 二十四小時播音樂錄影帶，一首歌要能被「看」才賣得動。
+    音樂的成敗從此與影像綁在一起，形象、舞蹈與造型成為
+    作品的一部分，唱片公司的預算也整批重新分配。
+  sources:
+    - title: 維基百科：MTV
+      url: https://zh.wikipedia.org/wiki/MTV
 
 - id: mus-cd
   year: 1982
