@@ -42,8 +42,8 @@
   title: 泰奧弗拉斯托斯的植物研究
   category: work
   importance: 3
-  desc: 描述五百餘種植物的形態、產地與用途並嘗試分類。
-    植物學此後一千八百年幾乎沒有超出他的框架。
+  desc: 亞里斯多德的學生接手呂克昂，描述五百餘種植物的形態、產地與用途並嘗試分類。植
+    物學此後一千八百年幾乎沒有超出他的框架，直到林奈才被整套改寫。
   sources:
     - title: 維基百科：泰奧弗拉斯托斯
       url: https://zh.wikipedia.org/wiki/泰奧弗拉斯托斯
@@ -224,6 +224,17 @@
     - title: 維基百科：牛痘
       url: https://zh.wikipedia.org/wiki/牛痘
 
+- id: lif-cuvier-extinction
+  year: 1796
+  title: 居維葉證明物種會滅絕
+  category: discovery
+  importance: 4
+  desc: 比對長毛象與現生象的骨骼，斷定那是一種已經不存在的動物。
+    在此之前「上帝造的物種不會消失」是共識；滅絕成立之後，地球的歷史才需要一部生命的年表。
+  sources:
+    - title: 維基百科：喬治·居維葉
+      url: https://zh.wikipedia.org/wiki/喬治·居維葉
+
 - id: lif-lamarck
   year: 1809
   title: 拉馬克提出演化學說
@@ -305,8 +316,8 @@
   title: 巴斯德否證自然發生說
   category: discovery
   importance: 5
-  desc: 曲頸瓶讓空氣進得去、塵埃進不來，湯就不會腐敗。
-    一個設計精巧的實驗結束了延續兩千年的爭論。
+  desc: 曲頸瓶讓空氣進得去、塵埃進不來，湯就不會腐敗；把瓶頸打斷，隔天就長滿了。一個
+    設計精巧的實驗結束了延續兩千年的爭論，也替消毒、滅菌與細菌致病說鋪好了路。
   sources:
     - title: 維基百科：路易·巴斯德
       url: https://zh.wikipedia.org/wiki/路易·巴斯德
@@ -338,6 +349,17 @@
       url: https://zh.wikipedia.org/wiki/约瑟夫·李斯特
     - title: 維基百科：消毒
       url: https://zh.wikipedia.org/wiki/消毒
+
+- id: lif-miescher
+  year: 1869
+  title: 米舍爾從膿細胞分離出「核素」
+  category: discovery
+  importance: 4
+  desc: 從繃帶上的膿液取細胞核，得到一種含磷的酸性物質，也就是後來的 DNA。
+    他甚至猜過它可能與遺傳有關，但當時所有人都認定遺傳物質是蛋白質，線索擱置了七十五年。
+  sources:
+    - title: 維基百科：弗里德里希·米舍爾
+      url: https://zh.wikipedia.org/wiki/弗里德里希·米舍爾
 
 - id: lif-koch
   year: 1876
@@ -374,6 +396,32 @@
     - title: 維基百科：狂犬病疫苗
       url: https://zh.wikipedia.org/wiki/狂犬病疫苗
 
+- id: lif-neuron-doctrine
+  year: 1891
+  title: 神經元學說確立
+  category: theory
+  importance: 4
+  desc: 卡哈爾用高基的銀染法逐一描繪神經細胞，主張神經系統由彼此獨立的細胞組成，
+    而非連成一張網。訊息在細胞之間單向傳遞的圖像成立，神經科學才有了基本單位。
+  sources:
+    - title: 維基百科：聖地牙哥·拉蒙-卡哈爾
+      url: https://zh.wikipedia.org/wiki/聖地牙哥·拉蒙-卡哈爾
+    - title: 英文維基百科：Neuron doctrine
+      url: https://en.wikipedia.org/wiki/Neuron_doctrine
+
+- id: lif-virus
+  year: 1892
+  title: 伊凡諾夫斯基發現濾過性病原
+  category: discovery
+  importance: 4
+  desc: 菸草花葉病的汁液通過能濾掉所有細菌的陶瓷濾器後仍會致病。
+    比細菌更小的病原體就此被推論出來，但要到電子顯微鏡問世才真的被看見。
+  sources:
+    - title: 維基百科：德米特里·伊凡諾夫斯基
+      url: https://zh.wikipedia.org/wiki/德米特里·伊凡諾夫斯基
+    - title: 維基百科：菸草鑲嵌病毒
+      url: https://zh.wikipedia.org/wiki/菸草鑲嵌病毒
+
 - id: lif-mendel-rediscovery
   year: 1900
   title: 孟德爾定律被重新發現
@@ -390,13 +438,35 @@
   title: 蘭德施泰納發現 ABO 血型
   category: discovery
   importance: 4
-  desc: 解釋了為何有些輸血救人、有些致命。輸血從高風險的賭博變成
-    可依規則執行的常規醫療。
+  desc: 血清凝集試驗分出 A、B、O 三型，解釋了為何有些輸血救人、有些致命。輸血從
+    高風險的賭博變成可依規則執行的常規醫療，大型外科手術與戰場急救也才有了前提。
   sources:
     - title: 維基百科：ABO血型系統
       url: https://zh.wikipedia.org/wiki/ABO血型系統
     - title: 維基百科：卡爾·蘭德施泰納
       url: https://zh.wikipedia.org/wiki/卡爾·蘭德施泰納
+
+- id: lif-salvarsan
+  year: 1909
+  title: 灑爾佛散問世，化學療法之始
+  category: application
+  importance: 4
+  desc: 埃爾利希與秦佐八郎系統試遍六百多種砷化合物，找到能殺梅毒螺旋體而不殺人的一種。
+    以「魔術子彈」為目標篩選化合物，成了此後整個製藥業的作法。
+  sources:
+    - title: 維基百科：灑爾佛散
+      url: https://zh.wikipedia.org/wiki/灑爾佛散
+
+- id: lif-insulin
+  year: 1921
+  title: 班廷與貝斯特分離出胰島素
+  category: application
+  importance: 5
+  desc: 從狗的胰臟取得萃取物，隔年救回一名瀕死的糖尿病少年。
+    一種必死的病變成可控的慢性病，發明人以一美元讓出專利，開啟了荷爾蒙治療的時代。
+  sources:
+    - title: 維基百科：胰島素
+      url: https://zh.wikipedia.org/wiki/胰島素
 
 - id: lif-penicillin
   year: 1928
@@ -416,8 +486,9 @@
   title: 克雷布斯循環
   category: theory
   importance: 4
-  desc: 描出細胞把養分氧化成能量的核心反應鏈。生物化學從此能以
-    具體的分子路徑解釋「活著」這件事。
+  desc: 描出細胞把養分氧化成能量的核心反應鏈，八步一圈、首尾相接。生物化學從此能以具
+    體的分子路徑解釋「活著」這件事；這條循環在動物、植物與多數細菌體內幾乎一樣，
+    本身就是共同祖先的證據。
   sources:
     - title: 維基百科：檸檬酸循環
       url: https://zh.wikipedia.org/wiki/三羧酸循环
@@ -434,6 +505,17 @@
   sources:
     - title: 維基百科：青黴素
       url: https://zh.wikipedia.org/wiki/青霉素
+
+- id: lif-modern-synthesis
+  year: 1942
+  title: 現代演化綜論成形
+  category: theory
+  importance: 5
+  desc: 天擇與孟德爾遺傳曾被視為互斥，統計遺傳學證明兩者相容，
+    赫胥黎等人再把古生物學與分類學一併接上。演化論從一個主張變成整個生物學的共同框架。
+  sources:
+    - title: 維基百科：現代演化綜論
+      url: https://zh.wikipedia.org/wiki/現代演化綜論
 
 - id: lif-avery
   year: 1944
@@ -476,6 +558,17 @@
     - title: 維基百科：弗朗西斯·克里克
       url: https://zh.wikipedia.org/wiki/弗朗西斯·克里克
 
+- id: lif-miller-urey
+  year: 1953
+  title: 米勒—尤列實驗合成出胺基酸
+  category: discovery
+  importance: 4
+  desc: 在密閉玻璃管裡模擬早期大氣並通電火花，一週後測到多種胺基酸。
+    生命起源第一次成為可以在實驗檯上操作的問題，而不只是哲學或神學的爭論。
+  sources:
+    - title: 維基百科：米勒-尤里實驗
+      url: https://zh.wikipedia.org/wiki/米勒-尤里實驗
+
 - id: lif-polio-vaccine
   year: 1955
   title: 沙克小兒麻痺疫苗通過大規模試驗
@@ -500,6 +593,17 @@
     - title: 維基百科：遺傳密碼
       url: https://zh.wikipedia.org/wiki/遗传密码
 
+- id: lif-silent-spring
+  year: 1962
+  title: 卡森《寂靜的春天》出版
+  category: work
+  importance: 5
+  desc: 把 DDT 如何沿食物鏈累積、殺死鳥類寫給一般讀者看，遭化工業界全力反擊。
+    生態學從學院走進政治，美國環保署與各國的農藥管制都由這本書引出。
+  sources:
+    - title: 維基百科：寂靜的春天
+      url: https://zh.wikipedia.org/wiki/寂靜的春天
+
 - id: lif-heart-transplant
   year: 1967
   title: 首例人類心臟移植
@@ -513,6 +617,19 @@
     - title: 維基百科：克里斯蒂安·巴納德
       url: https://zh.wikipedia.org/wiki/克里斯蒂安·巴納德
 
+- id: lif-endosymbiosis
+  year: 1967
+  title: 馬古利斯提出內共生學說
+  category: theory
+  importance: 4
+  desc: 粒線體與葉綠體原本是被吞噬而沒被消化的細菌。論文被退了十幾次，
+    後來由這兩種胞器自帶的 DNA 證實。真核細胞的來歷，靠的是合作而不只是競爭。
+  sources:
+    - title: 維基百科：琳·馬古利斯
+      url: https://zh.wikipedia.org/wiki/琳·馬古利斯
+    - title: 維基百科：共生體學說
+      url: https://zh.wikipedia.org/wiki/共生體學說
+
 - id: lif-recombinant-dna
   year: 1973
   title: 重組 DNA 技術
@@ -524,13 +641,35 @@
     - title: 維基百科：重組DNA
       url: https://zh.wikipedia.org/wiki/重組DNA
 
+- id: lif-asilomar
+  year: 1975
+  title: 阿西洛馬會議為基因工程自訂規範
+  category: institution
+  importance: 4
+  desc: 重組 DNA 技術問世兩年後，科學家自行暫停相關實驗並開會訂出安全等級與圍堵措施。
+    研究社群主動替自己畫界線，此後每逢新技術爭議都會被拿出來當作先例。
+  sources:
+    - title: 維基百科：阿西洛馬會議
+      url: https://zh.wikipedia.org/wiki/阿西洛馬會議
+
+- id: lif-sanger-sequencing
+  year: 1977
+  title: 桑格發明 DNA 定序法
+  category: instrument
+  importance: 5
+  desc: 用會中斷合成的雙脫氧核苷酸，把序列讀成膠片上一階階的條帶。
+    遺傳訊息第一次能被逐字讀出，往後三十年的分子生物學與人類基因體計畫都建在這項技術上。
+  sources:
+    - title: 維基百科：桑格測序
+      url: https://zh.wikipedia.org/wiki/桑格測序
+
 - id: lif-ivf
   year: 1978
   title: 首例試管嬰兒誕生
   category: application
   importance: 4
-  desc: 受精在體外完成。生殖第一次可以與性行為分離，
-    隨之而來的倫理與法律爭議至今未止。
+  desc: 英國的路易絲·布朗誕生，受精在體外完成。生殖第一次可以與性行為分離，隨之而來
+    的倫理與法律爭議至今未止；主持的愛德華茲三十二年後才獲頒諾貝爾獎。
   sources:
     - title: 維基百科：體外人工受精
       url: https://zh.wikipedia.org/wiki/體外人工受精
@@ -540,11 +679,22 @@
   title: 世衛宣告天花根除
   category: application
   importance: 5
-  desc: 靠環狀接種而非全面接種：找到病例就替周圍所有人接種。
-    唯一一種被人類徹底消滅的人類傳染病。
+  desc: 靠環狀接種而非全面接種：找到病例就替周圍所有人接種，切斷傳播鏈。最後一例自然
+    感染出現在三年前的索馬利亞，天花至今仍是唯一被人類徹底消滅的人類傳染病。
   sources:
     - title: 維基百科：天花
       url: https://zh.wikipedia.org/wiki/天花
+
+- id: lif-hiv
+  year: 1983
+  title: 分離出愛滋病的病原體 HIV
+  category: discovery
+  importance: 4
+  desc: 巴黎與美國的實驗室先後從患者身上分離出反轉錄病毒，兩年內做出血液篩檢。
+    一場全球疫病促成病毒學、免疫學與抗病毒藥物的快速推進，也改寫了病人參與醫學決策的方式。
+  sources:
+    - title: 維基百科：人類免疫缺陷病毒
+      url: https://zh.wikipedia.org/wiki/人類免疫缺陷病毒
 
 - id: lif-dolly
   year: 1996

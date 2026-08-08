@@ -62,8 +62,8 @@
   title: 芝諾悖論
   category: theory
   importance: 3
-  desc: 阿基里斯追不上烏龜、飛矢不動。用來質疑無限可分性，
-    真正的解答要等到十九世紀的極限理論。
+  desc: 阿基里斯追不上烏龜、飛矢不動。他是替老師巴門尼德辯護，主張運動與無限可分性根
+    本說不通；真正的解答要等到十九世紀的極限理論。
   sources:
     - title: 維基百科：芝諾悖論
       url: https://zh.wikipedia.org/wiki/芝諾悖論
@@ -184,6 +184,17 @@
     - title: 維基百科：代數學 (花拉子米)
       url: https://zh.wikipedia.org/wiki/代數學_(花拉子米)
 
+- id: mth-bhaskara
+  year: 1150
+  title: 婆什迦羅第二《莉拉沃蒂》與《根之演算》
+  category: work
+  importance: 3
+  desc: 把算術與代數編成韻文習題，還處理了不定方程與正負號規則，
+    並且已經用到「除以零得無窮」與近似的微分概念。這是印度古典數學的集大成之作。
+  sources:
+    - title: 維基百科：婆什迦羅第二
+      url: https://zh.wikipedia.org/wiki/婆什迦羅第二
+
 - id: mth-fibonacci
   year: 1202
   title: 斐波那契《計算之書》
@@ -223,6 +234,17 @@
     - title: 維基百科：朱世傑
       url: https://zh.wikipedia.org/wiki/朱世傑
 
+- id: mth-kerala
+  year: 1400
+  title: 喀拉拉學派算出三角函數的無窮級數
+  category: theory
+  importance: 4
+  desc: 馬德哈瓦一系得到正弦、餘弦與反正切的級數展開，並用它算到圓周率十一位。
+    比歐洲同樣的結果早了兩百多年，卻沒有接上後來的微積分，是知識傳播斷裂的典型例子。
+  sources:
+    - title: 英文維基百科：Kerala school of astronomy and mathematics
+      url: https://en.wikipedia.org/wiki/Kerala_school_of_astronomy_and_mathematics
+
 - id: mth-cardano
   year: 1545
   title: 卡爾達諾公開三次方程解法
@@ -235,6 +257,17 @@
       url: https://zh.wikipedia.org/wiki/吉罗拉莫·卡尔达诺
     - title: 維基百科：三次方程
       url: https://zh.wikipedia.org/wiki/三次方程
+
+- id: mth-viete
+  year: 1591
+  title: 韋達用字母表示未知數與已知數
+  category: theory
+  importance: 4
+  desc: 在《分析方法入門》中以母音代未知量、子音代已知量。此前代數只能一題一解地
+    敘述，有了符號才談得上「一般解法」——方程式從此可以被當成對象來操作。
+  sources:
+    - title: 維基百科：弗朗索瓦·韋達
+      url: https://zh.wikipedia.org/wiki/弗朗索瓦·韋達
 
 - id: mth-logarithm
   year: 1614
@@ -254,8 +287,9 @@
   title: 笛卡兒《幾何學》建立解析幾何
   category: work
   importance: 5
-  desc: 用座標把幾何問題翻譯成代數問題。圖形與方程從此可以互換，
-    這是微積分得以出現的前提。
+  desc: 用座標把幾何問題翻譯成代數問題。圖形與方程從此可以互換，這是微積分得以出現的
+    前提。它原本只是《方法論》的附錄之一，用來示範書中那套化繁為簡的方法真的管用。
+    
   sources:
     - title: 維基百科：解析幾何
       url: https://zh.wikipedia.org/wiki/解析几何
@@ -312,13 +346,24 @@
     - title: 維基百科：萊昂哈德·歐拉
       url: https://zh.wikipedia.org/wiki/萊昂哈德·歐拉
 
+- id: mth-euler-introductio
+  year: 1748
+  title: 歐拉《無窮小分析引論》
+  category: work
+  importance: 5
+  desc: 把「函數」立為分析學的核心對象，整理指數、對數與三角函數的級數，
+    並寫下連結 e、i 與圓周率的公式。牛頓與萊布尼茲的微積分，是在這本書裡變成一門學科的。
+  sources:
+    - title: 維基百科：無窮小分析引論
+      url: https://zh.wikipedia.org/wiki/無窮小分析引論
+
 - id: mth-gauss-da
   year: 1801
   title: 高斯《算術研究》
   category: work
   importance: 5
-  desc: 用同餘符號重整數論，並證明了二次互反律。
-    數論從一堆零散的巧妙結果變成一門有結構的學科。
+  desc: 用同餘符號重整數論，並給出二次互反律的第一個完整證明。數論從一堆零散的巧妙結
+    果變成一門有結構的學科；書中來不及發表的想法，後人挖了整個十九世紀。
   sources:
     - title: 維基百科：算術研究
       url: https://zh.wikipedia.org/wiki/算術研究
@@ -337,6 +382,19 @@
       url: https://zh.wikipedia.org/wiki/傅里叶级数
     - title: 維基百科：約瑟夫·傅立葉
       url: https://zh.wikipedia.org/wiki/约瑟夫·傅里叶
+
+- id: mth-abel
+  year: 1824
+  title: 阿貝爾證明五次方程無根式解
+  category: theory
+  importance: 4
+  desc: 三百年來人人在找五次方程的公式，他證明的是這個公式不存在。
+    數學第一次以「不可能」作為結果，而不是失敗——這條路八年後由伽羅瓦走到底。
+  sources:
+    - title: 維基百科：尼爾斯·阿貝爾
+      url: https://zh.wikipedia.org/wiki/尼爾斯·阿貝爾
+    - title: 維基百科：阿貝爾-魯菲尼定理
+      url: https://zh.wikipedia.org/wiki/阿貝爾-魯菲尼定理
 
 - id: mth-non-euclidean
   year: 1829
@@ -377,18 +435,42 @@
     - title: 維基百科：波恩哈德·黎曼
       url: https://zh.wikipedia.org/wiki/伯恩哈德·黎曼
 
+- id: mth-boole
+  year: 1854
+  title: 布爾《思維規律的研究》
+  category: work
+  importance: 5
+  desc: 把「且、或、非」寫成只有 0 與 1 的代數運算，讓推理變成可計算的東西。
+    當時被視為邏輯學的旁支，八十年後成了每一顆處理器裡開關線路的理論基礎。
+  sources:
+    - title: 維基百科：喬治·布爾
+      url: https://zh.wikipedia.org/wiki/喬治·布爾
+    - title: 維基百科：布爾代數
+      url: https://zh.wikipedia.org/wiki/布爾代數
+
 - id: mth-cantor
   year: 1874
   title: 康托爾證明實數不可數
   category: theory
   importance: 5
-  desc: 無限有大小之分，而且不只一種。當時招致強烈反對，
-    如今整個數學建立在他開創的集合論之上。
+  desc: 對角線論證顯示實數比自然數「更多」：無限有大小之分，而且不只一種。當時招致克
+    羅內克等人強烈反對，如今整個數學建立在他開創的集合論之上。
   sources:
     - title: 維基百科：集合論
       url: https://zh.wikipedia.org/wiki/集合论
     - title: 維基百科：格奧爾格·康托爾
       url: https://zh.wikipedia.org/wiki/格奧爾格·康托爾
+
+- id: mth-frege
+  year: 1879
+  title: 弗雷格《概念文字》建立謂詞邏輯
+  category: work
+  importance: 4
+  desc: 引進量詞與變元，第一次能形式化「所有」與「存在」交錯的敘述。
+    亞里斯多德的三段論兩千年沒動過，這本薄冊子讓邏輯終於追得上數學的表達力。
+  sources:
+    - title: 維基百科：概念文字
+      url: https://zh.wikipedia.org/wiki/概念文字
 
 - id: mth-peano
   year: 1889
@@ -414,6 +496,17 @@
     - title: 維基百科：國際數學家大會
       url: https://zh.wikipedia.org/wiki/国际数学家大会
 
+- id: mth-russell-paradox
+  year: 1901
+  title: 羅素悖論動搖集合論的地基
+  category: theory
+  importance: 4
+  desc: 「所有不包含自己的集合所成的集合」既不能包含自己也不能不包含自己。
+    一句話就讓弗雷格剛完成的體系失效，此後數學基礎必須靠公理化來自保。
+  sources:
+    - title: 維基百科：羅素悖論
+      url: https://zh.wikipedia.org/wiki/羅素悖論
+
 - id: mth-lebesgue
   year: 1902
   title: 勒貝格積分
@@ -424,6 +517,17 @@
   sources:
     - title: 維基百科：勒貝格積分
       url: https://zh.wikipedia.org/wiki/勒貝格積分
+
+- id: mth-noether
+  year: 1921
+  title: 諾特《環中的理想論》確立抽象代數
+  category: theory
+  importance: 4
+  desc: 不問對象是數、多項式還是矩陣，只問運算滿足哪些條件。
+    現代代數改以結構而非計算為主軸，就是從這篇論文開始；她同名的守恆定理則成了物理的支柱。
+  sources:
+    - title: 維基百科：埃米·諾特
+      url: https://zh.wikipedia.org/wiki/埃米·諾特
 
 - id: mth-godel
   year: 1931
@@ -450,6 +554,17 @@
       url: https://zh.wikipedia.org/wiki/图灵机
     - title: 維基百科：艾倫·圖靈
       url: https://zh.wikipedia.org/wiki/艾伦·图灵
+
+- id: mth-game-theory
+  year: 1944
+  title: 《賽局論與經濟行為》出版
+  category: work
+  importance: 4
+  desc: 馮諾伊曼與摩根斯坦把「對手也會盤算」寫成可解的數學問題。
+    數學從描述自然轉向描述決策，經濟學、演化生物學與冷戰核戰略後來都用同一套語言。
+  sources:
+    - title: 維基百科：博弈論與經濟行為
+      url: https://zh.wikipedia.org/wiki/博弈論與經濟行為
 
 - id: mth-shannon
   year: 1948
@@ -487,6 +602,17 @@
   sources:
     - title: 維基百科：四色定理
       url: https://zh.wikipedia.org/wiki/四色定理
+
+- id: mth-rsa
+  year: 1977
+  title: RSA 公鑰密碼問世
+  category: application
+  importance: 4
+  desc: 加密與解密用不同的鑰匙，安全性押在「大數分解很難」這個尚未被證明的信念上。
+    數論從最無用的純數變成網路交易的底層設施，也把「計算難度」變成一種資源。
+  sources:
+    - title: 維基百科：RSA加密演算法
+      url: https://zh.wikipedia.org/wiki/RSA加密演算法
 
 - id: mth-fermat
   year: 1994

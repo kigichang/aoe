@@ -78,8 +78,8 @@
   title: 葛洪《抱朴子》記載煉丹術
   category: work
   importance: 3
-  desc: 詳載丹砂、汞、鉛的燒煉方法與器具。目的是求長生，
-    留下的卻是中國最早的系統性化學操作紀錄。
+  desc: 詳載丹砂、汞、鉛的燒煉方法與器具，記下「丹砂燒之成水銀，積變又還成丹砂」這類
+    可逆反應。目的是求長生，留下的卻是中國最早的系統性化學操作紀錄。
   sources:
     - title: 維基百科：抱朴子
       url: https://zh.wikipedia.org/wiki/抱朴子
@@ -109,6 +109,17 @@
       url: https://zh.wikipedia.org/wiki/伊本·海什木
     - title: 英文維基百科：Book of Optics
       url: https://en.wikipedia.org/wiki/Book_of_Optics
+
+- id: phy-impetus
+  year: 1340
+  title: 布里丹提出衝力說
+  category: theory
+  importance: 3
+  desc: 亞里斯多德說物體要有東西推才會動，他改主張投擲時已把「衝力」交給物體。
+    這是對抗當時通說的第一步，三百年後被伽利略與牛頓改寫成慣性。
+  sources:
+    - title: 維基百科：讓·布里丹
+      url: https://zh.wikipedia.org/wiki/讓·布里丹
 
 - id: phy-gilbert
   year: 1600
@@ -180,8 +191,8 @@
   title: 波以耳定律
   category: theory
   importance: 4
-  desc: 定溫下氣體的體積與壓力成反比。第一條用實驗數據建立的
-    定量物質定律，也是氣體動理論的起點。
+  desc: 定溫下氣體的體積與壓力成反比。第一條用實驗數據建立的定量物質定律，也是氣體動
+    理論的起點——空氣具有「彈簧般的性質」這件事，成了原子論最早的實驗支撐之一。
   sources:
     - title: 維基百科：波以耳定律
       url: https://zh.wikipedia.org/wiki/玻意耳-马略特定律
@@ -220,6 +231,17 @@
       url: https://zh.wikipedia.org/wiki/自然哲学的数学原理
     - title: 維基百科：艾薩克·牛頓
       url: https://zh.wikipedia.org/wiki/艾萨克·牛顿
+
+- id: phy-huygens-light
+  year: 1690
+  title: 惠更斯《光論》提出波動說
+  category: theory
+  importance: 4
+  desc: 把光看成介質中傳開的波前，用它解釋折射與雙折射。與牛頓的微粒說對峙一個世紀，
+    看似落敗，卻在楊格的干涉實驗後翻案——這是同一個問題兩套解釋並存的經典案例。
+  sources:
+    - title: 維基百科：克里斯蒂安·惠更斯
+      url: https://zh.wikipedia.org/wiki/克里斯蒂安·惠更斯
 
 - id: phy-opticks
   year: 1704
@@ -278,6 +300,19 @@
     - title: 維基百科：伏打電堆
       url: https://zh.wikipedia.org/wiki/伏打電堆
 
+- id: phy-young-double-slit
+  year: 1801
+  title: 楊格的雙縫干涉實驗
+  category: discovery
+  importance: 5
+  desc: 兩道光疊起來竟出現暗紋——粒子不會互相抵消，波才會。牛頓的微粒說自此讓位，
+    而同一個實驗一百多年後又被拿來展示量子力學最違反直覺的那一面。
+  sources:
+    - title: 維基百科：雙縫實驗
+      url: https://zh.wikipedia.org/wiki/雙縫實驗
+    - title: 維基百科：托馬斯·楊
+      url: https://zh.wikipedia.org/wiki/托馬斯·楊
+
 - id: phy-dalton
   year: 1803
   title: 道爾頓的化學原子論
@@ -290,6 +325,17 @@
       url: https://zh.wikipedia.org/wiki/约翰·道尔顿
     - title: 維基百科：原子論
       url: https://zh.wikipedia.org/wiki/原子論
+
+- id: phy-avogadro
+  year: 1811
+  title: 亞佛加厥提出等體積等分子數
+  category: theory
+  importance: 4
+  desc: 同溫同壓下相同體積的氣體含相同數目的分子，並區分原子與分子。
+    化學界擱置了半世紀才接受，接受之後原子量與分子式才第一次能被一致地定出來。
+  sources:
+    - title: 維基百科：阿梅代奧·阿伏伽德羅
+      url: https://zh.wikipedia.org/wiki/阿梅代奧·阿伏伽德羅
 
 - id: phy-oersted
   year: 1820
@@ -315,13 +361,26 @@
     - title: 維基百科：蒸汽機
       url: https://zh.wikipedia.org/wiki/蒸汽机
 
+- id: phy-wohler-urea
+  year: 1828
+  title: 維勒由無機物合成尿素
+  category: discovery
+  importance: 4
+  desc: 當時認為有機物只有生物體內的「生命力」造得出來。他用氰酸銨加熱就得到尿素，
+    有機與無機之間那道界線被抹掉，有機化學才成為一門可以動手做的學科。
+  sources:
+    - title: 維基百科：弗里德里希·維勒
+      url: https://zh.wikipedia.org/wiki/弗里德里希·維勒
+    - title: 維基百科：尿素
+      url: https://zh.wikipedia.org/wiki/尿素
+
 - id: phy-faraday
   year: 1831
   title: 法拉第發現電磁感應
   category: discovery
   importance: 5
-  desc: 變動的磁場能生電。發電機與變壓器的原理在此確立，
-    他提出的「力線」概念也是場論的雛形。
+  desc: 變動的磁場能生電。發電機與變壓器的原理在此確立，他提出的「力線」概念也是場論
+    的雛形——三十多年後馬克士威把這位鐵匠之子的圖像直覺，寫成了四條方程式。
   sources:
     - title: 維基百科：麥可·法拉第
       url: https://zh.wikipedia.org/wiki/麥可·法拉第
@@ -354,6 +413,17 @@
     - title: 維基百科：熵
       url: https://zh.wikipedia.org/wiki/熵
 
+- id: phy-perkin-mauveine
+  year: 1856
+  title: 珀金合成苯胺紫
+  category: application
+  importance: 4
+  desc: 十八歲學生想從煤焦油合成奎寧，失敗後得到一種紫色染料。
+    這是第一種人工合成染料，也是化學第一次直接長出一個產業——德國化工的崛起由此起步。
+  sources:
+    - title: 維基百科：威廉·珀金
+      url: https://zh.wikipedia.org/wiki/威廉·珀金
+
 - id: phy-spectroscopy
   year: 1859
   title: 本生與克希荷夫建立光譜分析
@@ -379,6 +449,17 @@
       url: https://zh.wikipedia.org/wiki/馬克士威方程組
     - title: 維基百科：詹姆斯·克拉克·馬克士威
       url: https://zh.wikipedia.org/wiki/詹姆斯·克拉克·麦克斯韦
+
+- id: phy-kekule-benzene
+  year: 1865
+  title: 凱庫勒提出苯的環狀結構
+  category: theory
+  importance: 4
+  desc: 六個碳首尾相接成環，解開了苯為何不照一般碳鏈的規則反應。
+    分子從此被想成有立體形狀的東西，而不只是一串元素比例。
+  sources:
+    - title: 維基百科：奧古斯特·凱庫勒
+      url: https://zh.wikipedia.org/wiki/奧古斯特·凱庫勒
 
 - id: phy-periodic-table
   year: 1869
@@ -448,8 +529,9 @@
   title: 居禮夫婦分離出鐳與釙
   category: discovery
   importance: 4
-  desc: 從數噸瀝青鈾礦中提煉出零點一克的鐳。放射性被確認為原子本身的
-    性質，而不是化合物的性質。
+  desc: 從數噸瀝青鈾礦中反覆結晶，提煉出零點一克的鐳。放射性被確認為原子本身的性質，
+    而不是化合物的性質——原子不可分割的觀念，在原子結構被看見之前就已經先被撬開。
+    
   sources:
     - title: 維基百科：鐳
       url: https://zh.wikipedia.org/wiki/镭
@@ -495,6 +577,17 @@
     - title: 維基百科：阿爾伯特·愛因斯坦
       url: https://zh.wikipedia.org/wiki/阿尔伯特·爱因斯坦
 
+- id: phy-haber
+  year: 1909
+  title: 哈柏法固定空氣中的氮
+  category: application
+  importance: 5
+  desc: 高溫高壓下讓氮氣與氫氣直接合成氨，肥料不再受制於智利硝石與鳥糞。
+    今日世界近半人口的糧食依賴這道反應，同一批氨也造出了兩次大戰的炸藥。
+  sources:
+    - title: 維基百科：哈柏法
+      url: https://zh.wikipedia.org/wiki/哈柏法
+
 - id: phy-rutherford
   year: 1911
   title: 拉塞福提出原子核模型
@@ -507,6 +600,19 @@
       url: https://zh.wikipedia.org/wiki/拉塞福模型
     - title: 維基百科：歐尼斯特·拉塞福
       url: https://zh.wikipedia.org/wiki/欧内斯特·卢瑟福
+
+- id: phy-superconductivity
+  year: 1911
+  title: 昂內斯發現超導現象
+  category: discovery
+  importance: 4
+  desc: 汞冷到 4.2 K 時電阻突然歸零，不是變小而是消失。
+    這是低溫技術把一個誰也沒預料到的相態逼出來的例子，理論要等四十六年才追上。
+  sources:
+    - title: 維基百科：海克·卡末林·昂內斯
+      url: https://zh.wikipedia.org/wiki/海克·卡末林·昂內斯
+    - title: 維基百科：超導現象
+      url: https://zh.wikipedia.org/wiki/超導現象
 
 - id: phy-bohr
   year: 1913
@@ -531,6 +637,19 @@
   sources:
     - title: 維基百科：廣義相對論
       url: https://zh.wikipedia.org/wiki/廣義相對論
+
+- id: phy-de-broglie
+  year: 1924
+  title: 德布羅意提出物質波
+  category: theory
+  importance: 4
+  desc: 光既是波又是粒子，他反過來主張電子這類粒子也該有波長。
+    三年後電子繞射實驗證實了它，薛丁格的波動方程也是照這個想法寫出來的。
+  sources:
+    - title: 維基百科：路易·德布羅意
+      url: https://zh.wikipedia.org/wiki/路易·德布羅意
+    - title: 維基百科：物質波
+      url: https://zh.wikipedia.org/wiki/物質波
 
 - id: phy-quantum-mechanics
   year: 1925
@@ -557,6 +676,17 @@
   sources:
     - title: 維基百科：不確定性原理
       url: https://zh.wikipedia.org/wiki/不确定性原理
+
+- id: phy-pauling-bond
+  year: 1931
+  title: 鮑林用量子力學解釋化學鍵
+  category: theory
+  importance: 4
+  desc: 以軌域混成與共振說明分子為什麼是那個形狀、那個鍵長。
+    化學不再只是實驗歸納出來的規則，而能從物理原理推得——兩門學科在此接上。
+  sources:
+    - title: 維基百科：萊納斯·鮑林
+      url: https://zh.wikipedia.org/wiki/萊納斯·鮑林
 
 - id: phy-neutron
   year: 1932
@@ -589,8 +719,9 @@
   title: 芝加哥 1 號堆達成可控鏈式反應
   category: application
   importance: 5
-  desc: 在大學球場看台下用石墨與鈾塊堆成的裝置。人類第一次啟動並
-    控制住核反應，時間點在戰爭中央。
+  desc: 費米在大學球場看台下用石墨與鈾塊堆成的裝置，控制棒一抽出來就自持運轉。人類第
+    一次啟動並控制住核反應，時間點在戰爭中央，結果以一通「義大利航海家已抵達新世
+    界」的電話上報。
   sources:
     - title: 維基百科：芝加哥1號堆
       url: https://zh.wikipedia.org/wiki/芝加哥1號堆
@@ -639,6 +770,17 @@
     - title: 維基百科：歐洲核子研究組織
       url: https://zh.wikipedia.org/wiki/歐洲核子研究組織
 
+- id: phy-bcs
+  year: 1957
+  title: BCS 理論解釋超導
+  category: theory
+  importance: 4
+  desc: 電子在晶格中兩兩配對，整批凝聚成同一個量子態，所以不再與雜質碰撞。
+    發現後懸了四十六年的謎題終於有解，也示範了量子效應能放大到肉眼可見的尺度。
+  sources:
+    - title: 維基百科：BCS理論
+      url: https://zh.wikipedia.org/wiki/BCS理論
+
 - id: phy-laser
   year: 1960
   title: 梅曼造出第一台雷射
@@ -665,16 +807,38 @@
     - title: 維基百科：默里·蓋爾曼
       url: https://zh.wikipedia.org/wiki/默里·盖尔曼
 
+- id: phy-electroweak
+  year: 1967
+  title: 電弱統一理論提出
+  category: theory
+  importance: 5
+  desc: 溫伯格與薩拉姆證明電磁力與弱作用力本是同一種力，只因對稱性自發破缺才看起來不同。
+    這套框架預言了 W、Z 玻色子與希格斯機制，構成標準模型的骨幹。
+  sources:
+    - title: 維基百科：電弱交互作用
+      url: https://zh.wikipedia.org/wiki/電弱交互作用
+
 - id: phy-wz-boson
   year: 1983
   title: W 與 Z 玻色子被發現
   category: discovery
   importance: 4
-  desc: 電弱統一理論預言的傳遞粒子在對撞機中現身。
-    標準模型的預測能力自此不再有爭議。
+  desc: 歐洲核子研究組織讓質子與反質子對撞，兩個實驗組先後測到這兩種傳遞粒子，質量與
+    十六年前電弱統一理論的預言相符。標準模型的預測能力自此不再有爭議。
   sources:
     - title: 維基百科：W及Z玻色子
       url: https://zh.wikipedia.org/wiki/W及Z玻色子
+
+- id: phy-high-tc
+  year: 1986
+  title: 發現高溫超導體
+  category: discovery
+  importance: 3
+  desc: 柏諾茲與繆勒在銅氧化物陶瓷中測到 35 K 的超導，隨後一年被推到 90 K 以上，
+    液態氮就冷得動。BCS 理論解釋不了它，這個機制至今仍是凝態物理的未解問題。
+  sources:
+    - title: 維基百科：高溫超導
+      url: https://zh.wikipedia.org/wiki/高溫超導
 
 - id: phy-higgs
   year: 2012

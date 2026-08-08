@@ -161,6 +161,17 @@
     - title: 維基百科：沈括
       url: https://zh.wikipedia.org/wiki/沈括
 
+- id: cos-maragheh
+  year: 1259
+  title: 馬拉蓋天文台落成
+  category: institution
+  importance: 4
+  desc: 旭烈兀出資、圖西主持，聚集各地學者與大型儀器長期觀測。
+    在此發展的「圖西雙輪」用以取代托勒密的偏心勻速點，兩百多年後出現在哥白尼的模型裡。
+  sources:
+    - title: 維基百科：馬拉蓋天文台
+      url: https://zh.wikipedia.org/wiki/馬拉蓋天文台
+
 - id: cos-shoushi
   year: 1280
   title: 郭守敬編成《授時曆》
@@ -173,6 +184,17 @@
       url: https://zh.wikipedia.org/wiki/授时历
     - title: 維基百科：郭守敬
       url: https://zh.wikipedia.org/wiki/郭守敬
+
+- id: cos-ulugh-beg
+  year: 1437
+  title: 兀魯伯在撒馬爾罕編成星表
+  category: work
+  importance: 4
+  desc: 帖木兒的孫子親自主持觀測，用四十公尺高的六分儀重測近千顆恆星的位置。
+    這是望遠鏡發明前精度最高的一份星表，一年長度的誤差只有幾十秒。
+  sources:
+    - title: 維基百科：兀魯伯
+      url: https://zh.wikipedia.org/wiki/兀魯伯
 
 - id: cos-copernicus
   year: 1543
@@ -192,8 +214,8 @@
   title: 第谷觀測到新星
   category: discovery
   importance: 4
-  desc: 測不到視差，代表這顆突然出現的星遠在月球之外。
-    「月上世界永恆不變」的教條被一次觀測擊破。
+  desc: 連續追蹤十六個月都測不到視差，代表這顆突然出現的星遠在月球之外。「月上世界永
+    恆不變」的教條被一次觀測擊破，他也因此獲丹麥國王贈島建台。
   sources:
     - title: 維基百科：SN 1572
       url: https://zh.wikipedia.org/wiki/SN_1572
@@ -242,8 +264,9 @@
   title: 斯坦諾提出地層疊置律
   category: theory
   importance: 5
-  desc: 下層比上層老。有了這條規則，岩層就成為一部可以讀的年代記錄，
-    地質學從此有了時間軸。
+  desc: 下層比上層老，地層原本水平沉積。有了這幾條規則，岩層就成為一部可以讀的年代記
+    錄，地質學從此有了時間軸。同一本書裡他也論證化石是生物遺骸，不是石頭裡自己長
+    出來的花紋。
   sources:
     - title: 維基百科：尼古拉斯·斯泰諾
       url: https://zh.wikipedia.org/wiki/尼古拉斯·斯坦诺
@@ -284,6 +307,19 @@
       url: https://zh.wikipedia.org/wiki/愛德蒙·哈雷
     - title: 維基百科：哈雷彗星
       url: https://zh.wikipedia.org/wiki/哈雷彗星
+
+- id: cos-bradley
+  year: 1728
+  title: 布拉德利發現光行差
+  category: discovery
+  importance: 4
+  desc: 恆星位置隨季節畫出小橢圓，原因是地球的公轉速度與光速疊加。
+    他本來要找的是恆星視差，卻意外拿到地球確實在動的第一個直接觀測證據。
+  sources:
+    - title: 維基百科：詹姆斯·布拉德雷
+      url: https://zh.wikipedia.org/wiki/詹姆斯·布拉德雷
+    - title: 維基百科：光行差
+      url: https://zh.wikipedia.org/wiki/光行差
 
 - id: cos-nebular
   year: 1755
@@ -348,6 +384,19 @@
     - title: 維基百科：查爾斯·萊爾
       url: https://zh.wikipedia.org/wiki/查爾斯·萊爾
 
+- id: cos-bessel-parallax
+  year: 1838
+  title: 貝塞爾測出恆星視差
+  category: discovery
+  importance: 5
+  desc: 天鵝座 61 半年間位移三分之一角秒，換算約十一光年。
+    哥白尼之後三百年，星星到底有多遠終於量得出來——宇宙的尺度第一次有了實測的第一級。
+  sources:
+    - title: 維基百科：弗里德里希·威廉·貝塞爾
+      url: https://zh.wikipedia.org/wiki/弗里德里希·威廉·貝塞爾
+    - title: 維基百科：恆星視差
+      url: https://zh.wikipedia.org/wiki/恆星視差
+
 - id: cos-neptune
   year: 1846
   title: 以計算預測並找到海王星
@@ -371,6 +420,19 @@
   sources:
     - title: 維基百科：氦
       url: https://zh.wikipedia.org/wiki/氦
+
+- id: cos-arrhenius
+  year: 1896
+  title: 阿瑞尼士算出二氧化碳的暖化效應
+  category: theory
+  importance: 4
+  desc: 手算逐緯度的輻射平衡，估出大氣二氧化碳加倍會讓地表升溫數度。
+    他以為那要幾千年、而且對北歐是好事；一個世紀後這篇論文成了氣候科學的起點。
+  sources:
+    - title: 維基百科：斯萬特·阿瑞尼斯
+      url: https://zh.wikipedia.org/wiki/斯萬特·阿瑞尼斯
+    - title: 維基百科：溫室效應
+      url: https://zh.wikipedia.org/wiki/溫室效應
 
 - id: cos-leavitt
   year: 1912
@@ -398,6 +460,17 @@
     - title: 維基百科：阿爾弗雷德·魏格納
       url: https://zh.wikipedia.org/wiki/阿尔弗雷德·魏格纳
 
+- id: cos-great-debate
+  year: 1920
+  title: 沙普利與柯蒂斯的「大辯論」
+  category: theory
+  importance: 4
+  desc: 螺旋星雲是銀河系內的雲氣，還是銀河系外的另一個星系？兩人在華府當眾各執一詞。
+    誰也沒說服誰，但它把問題釐清成一個可以用觀測裁決的形式，五年後哈伯給出答案。
+  sources:
+    - title: 英文維基百科：Great Debate (astronomy)
+      url: https://en.wikipedia.org/wiki/Great_Debate_(astronomy)
+
 - id: cos-hubble-galaxies
   year: 1925
   title: 哈伯證實銀河系之外還有星系
@@ -414,11 +487,24 @@
   title: 哈伯定律，宇宙正在膨脹
   category: discovery
   importance: 5
-  desc: 星系退行速度與距離成正比。靜態宇宙的圖像瓦解，
-    往回推就得到一個有起點的宇宙。
+  desc: 星系退行速度與距離成正比。靜態宇宙的圖像瓦解，往回推就得到一個有起點的宇宙。
+    勒梅特兩年前已由廣義相對論推出同樣的關係，只是發表在少人閱讀的比利時期刊上。
   sources:
     - title: 維基百科：哈伯定律
       url: https://zh.wikipedia.org/wiki/哈勃–勒梅特定律
+
+- id: cos-jansky
+  year: 1932
+  title: 央斯基收到來自銀河的無線電波
+  category: discovery
+  importance: 4
+  desc: 貝爾實驗室的工程師在追查越洋電話的雜訊，發現有一種每 23 小時 56 分重複一次，
+    來源是銀河中心。天文學從此不再只靠可見光，電波、紅外線與 X 射線陸續加入。
+  sources:
+    - title: 維基百科：卡爾·央斯基
+      url: https://zh.wikipedia.org/wiki/卡爾·央斯基
+    - title: 維基百科：射電天文學
+      url: https://zh.wikipedia.org/wiki/射電天文學
 
 - id: cos-richter
   year: 1935
@@ -430,6 +516,19 @@
   sources:
     - title: 維基百科：芮氏地震規模
       url: https://zh.wikipedia.org/wiki/里氏地震規模
+
+- id: cos-bethe
+  year: 1939
+  title: 貝特解出恆星的能量來源
+  category: theory
+  importance: 5
+  desc: 碳氮氧循環與質子鏈把氫燒成氦，太陽因此能亮上百億年。
+    恆星為什麼發光、元素從哪裡來，兩個問題在此合為一個——後來的核合成理論都由此展開。
+  sources:
+    - title: 維基百科：漢斯·貝特
+      url: https://zh.wikipedia.org/wiki/漢斯·貝特
+    - title: 維基百科：恆星核合成
+      url: https://zh.wikipedia.org/wiki/恆星核合成
 
 - id: cos-big-bang
   year: 1948
@@ -444,16 +543,41 @@
     - title: 維基百科：喬治·伽莫夫
       url: https://zh.wikipedia.org/wiki/喬治·伽莫夫
 
+- id: cos-patterson-age
+  year: 1956
+  title: 帕特森測定地球年齡為 45.5 億年
+  category: discovery
+  importance: 5
+  desc: 用隕石的鉛同位素比值定年，誤差控制在百分之一。
+    地球有多老爭了兩百年，這個數字至今沒被推翻；他為了排除污染而追查鉛，也促成後來的無鉛汽油。
+  sources:
+    - title: 維基百科：地球的年齡
+      url: https://zh.wikipedia.org/wiki/地球的年齡
+    - title: 英文維基百科：Clair Patterson
+      url: https://en.wikipedia.org/wiki/Clair_Patterson
+
 - id: cos-sputnik
   year: 1957
   title: 史普尼克一號進入軌道
   category: application
   importance: 5
-  desc: 第一顆人造衛星。觀測平台第一次離開大氣層，
-    此後 X 射線、紫外線與紅外天文學才成為可能。
+  desc: 第一顆人造衛星，每 96 分鐘繞地球一圈並持續發出嗶聲。觀測平台第一次離開大
+    氣層，此後 X 射線、紫外線與紅外天文學才成為可能；美國隔年成立太空總署作為
+    回應。
   sources:
     - title: 維基百科：史普尼克1號
       url: https://zh.wikipedia.org/wiki/史普尼克1號
+
+- id: cos-keeling
+  year: 1958
+  title: 基林開始在夏威夷連續量測二氧化碳
+  category: discovery
+  importance: 5
+  desc: 冒納羅亞山上逐月記錄，畫出一條隨季節鋸齒起伏、卻年年墊高的曲線。
+    人為排放正在改變全球大氣，第一次不是推算而是量出來的。
+  sources:
+    - title: 維基百科：基林曲線
+      url: https://zh.wikipedia.org/wiki/基林曲線
 
 - id: cos-cmb
   year: 1964
@@ -513,6 +637,17 @@
   sources:
     - title: 維基百科：臭氧層空洞
       url: https://zh.wikipedia.org/wiki/臭氧層空洞
+
+- id: cos-ipcc
+  year: 1988
+  title: 政府間氣候變化專門委員會成立
+  category: institution
+  importance: 4
+  desc: 不自己做研究，只負責把各國文獻評估成一份各國政府都得面對的共同報告。
+    科學共識要怎麼進入國際談判，這是至今規模最大的一次制度實驗。
+  sources:
+    - title: 維基百科：政府間氣候變化專門委員會
+      url: https://zh.wikipedia.org/wiki/政府間氣候變化專門委員會
 
 - id: cos-hst
   year: 1990
