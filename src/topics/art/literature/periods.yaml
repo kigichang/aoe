@@ -1,0 +1,110 @@
+# 兩條 track：
+#   track 0 = 西方
+#   track 1 = 東亞
+#
+# 這一欄的東亞線特別值得畫，因為它的分期是照**文體**切的
+# （賦、詩、詞、曲、小說），與西方照**時代**切完全不同。
+# 兩條線並排就看得出這個差異本身——「唐詩宋詞元曲」是一種
+# 「每個朝代有一種當令文體」的史觀，西方沒有對應的說法。
+
+# ---- track 0：西方 ----
+
+- id: lit-p-ancient-near-east
+  name: 古代近東
+  track: 0
+  start: -3000
+  end: -801
+
+- id: lit-p-classical
+  name: 希臘羅馬
+  track: 0
+  start: -800
+  end: 499
+
+- id: lit-p-medieval
+  name: 中世紀
+  track: 0
+  start: 500
+  end: 1299
+
+- id: lit-p-renaissance
+  name: 文藝復興與人文主義
+  track: 0
+  start: 1300
+  end: 1659
+
+- id: lit-p-enlightenment
+  name: 古典主義與啟蒙
+  track: 0
+  start: 1660
+  end: 1789
+
+- id: lit-p-romantic
+  name: 浪漫主義
+  track: 0
+  start: 1790
+  end: 1847
+
+- id: lit-p-realism
+  name: 寫實與自然主義
+  track: 0
+  start: 1848
+  end: 1899
+
+- id: lit-p-modernism
+  name: 現代主義
+  track: 0
+  start: 1900
+  end: 1944
+
+- id: lit-p-postwar
+  name: 戰後與後殖民
+  track: 0
+  start: 1945
+  end: 2026
+
+# ---- track 1：東亞 ----
+
+- id: lit-p-shijing
+  name: 詩經與楚辭
+  track: 1
+  start: -1100
+  end: -222
+
+- id: lit-p-fu
+  name: 漢賦與樂府
+  track: 1
+  start: -221
+  end: 580
+
+- id: lit-p-tang-shi
+  name: 唐詩
+  track: 1
+  start: 581
+  end: 959
+
+- id: lit-p-song-ci
+  name: 宋詞
+  track: 1
+  start: 960
+  end: 1279
+  note: 日本的《源氏物語》與《平家物語》也落在這一段。
+
+- id: lit-p-yuan-qu
+  name: 元曲
+  track: 1
+  start: 1280
+  end: 1367
+
+- id: lit-p-ming-qing-fiction
+  name: 明清小說與戲曲
+  track: 1
+  start: 1368
+  end: 1911
+  note: 商業出版興盛，白話章回小說與崑曲、能與歌舞伎同屬這一段。
+
+- id: lit-p-eastasia-modern
+  name: 東亞近現代
+  track: 1
+  start: 1912
+  end: 2026

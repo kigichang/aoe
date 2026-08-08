@@ -1,0 +1,699 @@
+# 建築欄：空間與構造。
+#
+# 收的是「這之後蓋得出來的東西不一樣了」，不是「這棟很有名」。
+# 所以拱券、飛扶壁、鑄鐵框架、鋼骨、鋼筋混凝土這些技術節點與名作等量齊觀——
+# 沒有它們，後面那一整批建築在物理上立不起來。
+#
+# id 前綴 arc-。category: work | technique | movement | institution | transmission | controversy
+# 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
+
+- id: arc-gobekli-tepe
+  year: -3000
+  actualYear: -9600
+  title: 哥貝克力石陣
+  category: work
+  importance: 5
+  desc: 數十根 T 形巨石立成圓陣，柱身刻著野獸浮雕，重達十餘噸。
+    它比農業、比陶器、比文字都早——原本以為要先有城市才蓋得起神廟，
+    這裡卻是一群狩獵採集者先蓋了它。
+  sources:
+    - title: 維基百科：哥貝克力石陣
+      url: https://zh.wikipedia.org/wiki/哥貝克力石陣
+
+- id: arc-djoser
+  year: -2650
+  title: 左塞爾階梯金字塔
+  category: technique
+  importance: 5
+  desc: 印和闐把泥磚墓室的形制整個換成石材，六層平台疊起來六十公尺高。
+    石頭第一次被當成大規模建築的主材料，而不只是門檻與柱基——
+    此後埃及、希臘、羅馬的紀念性建築都建立在這個選擇上。
+  sources:
+    - title: 維基百科：左塞爾金字塔
+      url: https://zh.wikipedia.org/wiki/左塞爾金字塔
+
+- id: arc-giza
+  year: -2560
+  title: 吉薩大金字塔
+  category: work
+  importance: 5
+  desc: 兩百三十萬塊石灰岩，底邊誤差不到二十公分，四面正對方位。
+    在沒有滑輪與鐵器的條件下完成，靠的是測量、組織與後勤——
+    此後三千八百年，地表上沒有比它更高的人造物。
+  sources:
+    - title: 維基百科：胡夫金字塔
+      url: https://zh.wikipedia.org/wiki/胡夫金字塔
+
+- id: arc-stonehenge
+  year: -2500
+  title: 巨石陣立起三石牌坊
+  category: work
+  importance: 4
+  desc: 數十噸的砂岩豎立成環，上方壓著橫楣，接合處還做了榫卯。
+    石材來自兩百多公里外，整體對準夏至日出——它同時是建築、
+    是天文儀器，也是一個沒有文字的社會能動員多少人力的證據。
+  sources:
+    - title: 維基百科：巨石陣
+      url: https://zh.wikipedia.org/wiki/巨石陣
+
+- id: arc-ziggurat-ur
+  year: -2100
+  title: 烏爾廟塔
+  category: work
+  importance: 4
+  desc: 泥磚砌成的階梯高台，頂上是神廟，三道長階直通而上。
+    兩河沒有石材也沒有木材，只能用曬乾的泥磚往上疊——
+    材料的匱乏反而長出一種完全不同於埃及的紀念性形式。
+  sources:
+    - title: 英文維基百科：Ziggurat of Ur
+      url: https://en.wikipedia.org/wiki/Ziggurat_of_Ur
+
+- id: arc-knossos
+  year: -1700
+  title: 克諾索斯宮
+  category: work
+  importance: 3
+  desc: 上千個房間繞著中央庭院層層展開，有樓梯井採光、陶管排水與沖水廁所。
+    它不對稱、不設防、沒有中軸——與同期埃及和兩河的軸線秩序相比，
+    幾乎是另一種對「宮殿該長什麼樣」的想像。
+  sources:
+    - title: 維基百科：克諾索斯
+      url: https://zh.wikipedia.org/wiki/克諾索斯
+
+- id: arc-abu-simbel
+  year: -1264
+  title: 阿布辛拜勒神廟
+  category: work
+  importance: 3
+  desc: 不是蓋起來的，是從整面山壁鑿進去的：四尊二十公尺高的坐像守著入口，
+    內部深入六十公尺。一年兩次陽光正好射到最深處的神龕，
+    把天文計算直接寫進了岩體。
+  sources:
+    - title: 維基百科：阿布·辛拜勒神廟
+      url: https://zh.wikipedia.org/wiki/阿布·辛拜勒神廟
+
+- id: arc-orders
+  year: -600
+  title: 希臘確立柱式
+  category: technique
+  importance: 5
+  desc: 多立克、愛奧尼與後起的科林斯，各自規定柱身比例、柱頭形制與上方
+    橫飾的作法。建築第一次有了可以文字化、可以傳授、可以照著蓋的規則系統——
+    西方建築往後兩千五百年都在這三套語彙裡增刪。
+  sources:
+    - title: 維基百科：柱式
+      url: https://zh.wikipedia.org/wiki/柱式
+
+- id: arc-ishtar-gate
+  year: -575
+  title: 巴比倫伊什塔爾城門
+  category: technique
+  importance: 3
+  desc: 藍色琉璃磚砌成的門洞，浮雕的公牛與神獸一頭頭排開。
+    泥磚不耐看也不耐久，上釉之後既防風化又能顯色——
+    這條路線後來被伊斯蘭建築整套接收，成為清真寺磁磚的源頭。
+  sources:
+    - title: 維基百科：伊什塔爾城門
+      url: https://zh.wikipedia.org/wiki/伊什塔爾城門
+
+- id: arc-persepolis
+  year: -515
+  title: 波斯波利斯的萬國之門
+  category: transmission
+  importance: 4
+  desc: 大流士徵集帝國各地的工匠：愛奧尼亞的石工、埃及的雕刻、
+    米底與亞述的形制，蓋出一座刻意混血的宮殿群。建築被自覺地當成
+    「這個帝國包含多少種人」的展示，是已知最早一次。
+  sources:
+    - title: 維基百科：波斯波利斯
+      url: https://zh.wikipedia.org/wiki/波斯波利斯
+
+- id: arc-parthenon
+  year: -447
+  title: 帕德嫩神廟
+  category: work
+  importance: 5
+  desc: 柱子中段微凸、基座中央微拱、角柱略微內傾——全是為了修正眼睛
+    會看到的變形而故意做出的偏差。這棟建築的名聲不在尺度，
+    而在於它把「看起來對」擺在「量起來對」之前。
+  sources:
+    - title: 維基百科：帕德嫩神廟
+      url: https://zh.wikipedia.org/wiki/帕德嫩神廟
+
+- id: arc-sanchi
+  year: -250
+  title: 桑吉大塔
+  category: work
+  importance: 4
+  desc: 半球形覆缽外繞一圈石欄與四座塔門，門柱上刻滿本生故事。
+    佛塔從埋放遺骨的土堆變成可以繞行禮拜的建築類型，
+    之後往東變成中國的樓閣式塔、日本的五重塔，形貌全變而功能不變。
+  sources:
+    - title: 維基百科：桑吉
+      url: https://zh.wikipedia.org/wiki/桑吉
+
+- id: arc-great-wall
+  year: -214
+  title: 秦連接北方長城
+  category: work
+  importance: 4
+  desc: 把戰國各國既有的牆連成一線，以夯土為主、就地取材。
+    它不是一棟建築而是一條線性工程，處理的問題也不是遮蔽而是控制——
+    建築在此被用來劃定一個文明認為自己到哪裡為止。
+  sources:
+    - title: 維基百科：長城
+      url: https://zh.wikipedia.org/wiki/長城
+
+- id: arc-roman-concrete
+  year: -100
+  title: 羅馬混凝土成熟
+  category: technique
+  importance: 5
+  desc: 火山灰、石灰與碎石拌成的漿體可以灌進模板，凝固後承壓力驚人，
+    還能在水中硬化。牆不必再靠一塊塊石頭堆疊，拱、拱頂與穹頂因此
+    變得便宜——羅馬能蓋出的空間尺度，是這種材料給的。
+  sources:
+    - title: 維基百科：羅馬混凝土
+      url: https://zh.wikipedia.org/wiki/羅馬混凝土
+
+- id: arc-colosseum
+  year: 80
+  title: 羅馬競技場落成
+  category: work
+  importance: 4
+  desc: 四層拱廊、八十個入口，五萬人能在數分鐘內散場。
+    看台結構、動線設計與地下機關全部服務於一件事——讓大量的人
+    有效率地進出並看見中央。現代體育場的原型在此定案。
+  sources:
+    - title: 維基百科：古羅馬競技場
+      url: https://zh.wikipedia.org/wiki/古羅馬競技場
+
+- id: arc-pantheon
+  year: 126
+  title: 萬神廟的混凝土穹頂
+  category: technique
+  importance: 5
+  desc: 內徑四十三公尺，往上逐層減薄、換用輕質骨材，頂心開一個圓洞採光。
+    這個跨距一千三百年無人超越，而它示範的是：建築的主角可以是
+    被圍出來的那團空氣，不是圍它的那些牆。
+  sources:
+    - title: 維基百科：萬神廟
+      url: https://zh.wikipedia.org/wiki/萬神廟
+
+- id: arc-hagia-sophia
+  year: 537
+  title: 聖索菲亞大教堂
+  category: technique
+  importance: 5
+  desc: 用帆拱把圓形穹頂架到方形平面上，底部再開一圈窗，
+    使三十一公尺的大穹頂看起來像懸在光上。方與圓的接合問題在此解決，
+    此後拜占庭、俄羅斯與鄂圖曼的清真寺都沿用這套作法。
+  sources:
+    - title: 維基百科：阿亞索菲亞
+      url: https://zh.wikipedia.org/wiki/阿亞索菲亞
+
+- id: arc-horyuji
+  year: 607
+  title: 法隆寺
+  category: work
+  importance: 4
+  desc: 現存最古老的木造建築群，斗栱與柱頭的作法保留了中國南北朝的樣式，
+    而中國本土同期的木構早已無存。東亞木構建築最早的實物證據，
+    留在它的邊緣而不是核心。
+  sources:
+    - title: 維基百科：法隆寺
+      url: https://zh.wikipedia.org/wiki/法隆寺
+
+- id: arc-dome-of-rock
+  year: 691
+  title: 岩石圓頂
+  category: work
+  importance: 4
+  desc: 伊斯蘭第一座紀念性建築，八角平面與鍍金穹頂直接沿用拜占庭作法，
+    但牆面改用幾何紋與銘文而不放人像。新宗教先借用既有的建築語言，
+    再把其中不能用的部分抽掉——這是文化移植最典型的一種作法。
+  sources:
+    - title: 維基百科：岩石圓頂
+      url: https://zh.wikipedia.org/wiki/岩石圓頂
+
+- id: arc-cordoba
+  year: 785
+  title: 科爾多瓦大清真寺
+  category: technique
+  importance: 4
+  desc: 回收羅馬與西哥德的舊柱，上面再疊一層拱以爭取高度，
+    紅白相間的雙層馬蹄拱一路延伸成柱林。限制（柱子不夠高）
+    被轉化成這棟建築最被記住的特徵。
+  sources:
+    - title: 維基百科：科爾多瓦主教座堂
+      url: https://zh.wikipedia.org/wiki/科爾多瓦主教座堂
+
+- id: arc-todaiji
+  year: 752
+  title: 東大寺大佛殿
+  category: work
+  importance: 4
+  desc: 為容納十六公尺高的銅佛而建，是當時世界最大的木造建築，
+    幾乎耗盡日本的銅料與國庫。木構建築的跨度極限在此被試出來，
+    後來兩度燒毀重建，規模一次比一次縮小。
+  sources:
+    - title: 維基百科：東大寺
+      url: https://zh.wikipedia.org/wiki/東大寺
+
+- id: arc-foguang
+  year: 857
+  title: 五台山佛光寺東大殿
+  category: work
+  importance: 4
+  desc: 現存極少數的唐代木構之一，1937 年由梁思成、林徽因找到。
+    在此之前日本學者主張中國已無唐代木建築；這次發現讓中國建築史
+    第一次有了自己的實物起點，而不只是文獻與日本的旁證。
+  sources:
+    - title: 維基百科：佛光寺 (五台)
+      url: https://zh.wikipedia.org/wiki/佛光寺_(五台)
+
+- id: arc-chichen-itza
+  year: 900
+  title: 奇琴伊察的羽蛇神金字塔
+  category: work
+  importance: 3
+  desc: 四面各九十一階、加頂台恰好三百六十五，春秋分時階梯側緣的
+    陰影會連成一條蛇身滑下。曆法被直接砌進量體，
+    建築同時是紀念物、儀式場所與一台每年校正兩次的日曆。
+  sources:
+    - title: 維基百科：奇琴伊察
+      url: https://zh.wikipedia.org/wiki/奇琴伊察
+
+- id: arc-yingxian-pagoda
+  year: 1056
+  title: 應縣木塔
+  category: technique
+  importance: 4
+  desc: 六十七公尺高、全部靠榫卯接合，不用一根釘子，明五暗四共九層，
+    歷經多次強震仍立。斗栱在此不只是裝飾，而是把地震能量吃掉的
+    彈性節點——東亞木構的抗震邏輯與西方的剛性砌體正好相反。
+  sources:
+    - title: 維基百科：應縣木塔
+      url: https://zh.wikipedia.org/wiki/應縣木塔
+
+- id: arc-angkor-wat
+  year: 1113
+  title: 吳哥窟
+  category: work
+  importance: 5
+  desc: 五座塔象徵須彌山，三重迴廊與護城河構成宇宙圖式，
+    佔地超過一百六十公頃。它把一整套宇宙觀翻譯成可以走進去的空間，
+    是前現代世界規模最大的宗教建築群。
+  sources:
+    - title: 維基百科：吳哥窟
+      url: https://zh.wikipedia.org/wiki/吳哥窟
+
+- id: arc-gothic
+  year: 1144
+  title: 聖但尼修道院開啟哥德式
+  category: technique
+  importance: 5
+  desc: 尖拱、肋筋拱頂與飛扶壁三件事合用，牆壁不再需要承重，
+    整面可以換成彩色玻璃。院長蘇傑要的是「神就是光」的神學，
+    工匠給的是一套結構方案——理念與技術在此互相成全。
+  sources:
+    - title: 維基百科：聖但尼聖殿
+      url: https://zh.wikipedia.org/wiki/聖但尼聖殿
+    - title: 維基百科：哥德式建築
+      url: https://zh.wikipedia.org/wiki/哥德式建築
+
+- id: arc-notre-dame
+  year: 1163
+  endYear: 1345
+  title: 巴黎聖母院興建
+  category: work
+  importance: 4
+  desc: 首批大規模使用飛扶壁的主教座堂之一，工期橫跨近兩百年。
+    這種工程需要常設的石工營、跨代的圖紙傳承與整座城市的長期財政——
+    大教堂改變的不只是天際線，還有中世紀城市的組織方式。
+  sources:
+    - title: 維基百科：巴黎聖母院
+      url: https://zh.wikipedia.org/wiki/巴黎聖母院
+
+- id: arc-chartres
+  year: 1194
+  title: 沙特爾主教座堂重建
+  category: work
+  importance: 4
+  desc: 火災後二十餘年內重建完成，因此風格罕見地統一，
+    一百七十餘扇原始彩繪玻璃留存至今。哥德式在這裡從實驗變成
+    成熟的類型——後來的每一座大教堂都是在跟它比。
+  sources:
+    - title: 維基百科：沙特爾主教座堂
+      url: https://zh.wikipedia.org/wiki/沙特爾主教座堂
+
+- id: arc-forbidden-city
+  year: 1420
+  title: 紫禁城落成
+  category: work
+  importance: 5
+  desc: 一條中軸貫穿南北，殿宇依等級決定開間、屋頂形式與台基層數，
+    連瓦的顏色都是制度。它不是一棟建築而是一部用空間寫成的禮制，
+    東亞都城規劃的完成型態。
+  sources:
+    - title: 維基百科：故宮
+      url: https://zh.wikipedia.org/wiki/故宮
+
+- id: arc-brunelleschi-dome
+  year: 1436
+  title: 布魯內萊斯基完成佛羅倫斯圓頂
+  category: technique
+  importance: 5
+  desc: 四十二公尺的跨距、沒有可用的滿堂鷹架，他用內外雙層殼、
+    魚骨式砌磚與自製吊車一層層自撐上去。工程難題由一個人以
+    設計者身分獨力解決——現代意義的「建築師」從這件事開始成形。
+  sources:
+    - title: 維基百科：聖母百花大教堂
+      url: https://zh.wikipedia.org/wiki/聖母百花大教堂
+    - title: 維基百科：菲利波·布魯內萊斯基
+      url: https://zh.wikipedia.org/wiki/菲利波·布魯內萊斯基
+
+- id: arc-alberti-treatise
+  year: 1452
+  title: 阿爾伯蒂《論建築》
+  category: work
+  importance: 4
+  desc: 仿維特魯威體例寫成十書，主張美是各部分之間的和諧比例，
+    增一分減一分都會壞掉。建築第一次被論述成一門有理論可談的學問，
+    而不只是工地上的手藝。
+  sources:
+    - title: 英文維基百科：De re aedificatoria
+      url: https://en.wikipedia.org/wiki/De_re_aedificatoria
+
+- id: arc-machu-picchu
+  year: 1450
+  title: 馬丘比丘
+  category: technique
+  importance: 3
+  desc: 沒有灰漿，全靠石塊互相咬合的乾砌工法，接縫塞不進刀刃；
+    梯田與排水系統讓整座山城在陡坡與多雨中站了五百年。
+    沒有鐵器、輪子與拱券的條件下，另一條結構路線走到了極致。
+  sources:
+    - title: 維基百科：馬丘比丘
+      url: https://zh.wikipedia.org/wiki/馬丘比丘
+
+- id: arc-sinan
+  year: 1557
+  title: 希南建成蘇萊曼尼耶清真寺
+  category: work
+  importance: 4
+  desc: 他一生主持過三百餘項工程，把聖索菲亞的穹頂結構拆解重組，
+    改成主穹頂與半穹頂層層下降的系統，內部因此毫無遮擋。
+    鄂圖曼清真寺的標準形制由他定案。
+  sources:
+    - title: 維基百科：米馬爾·希南
+      url: https://zh.wikipedia.org/wiki/米馬爾·希南
+    - title: 維基百科：蘇萊曼尼耶清真寺
+      url: https://zh.wikipedia.org/wiki/蘇萊曼尼耶清真寺
+
+- id: arc-palladio
+  year: 1570
+  title: 帕拉迪奧《建築四書》
+  category: work
+  importance: 5
+  desc: 把自己的作品連同古代遺構全部畫成有尺寸的平立剖面。
+    書比房子傳得遠——英國、俄國與美國的鄉間宅邸與國會建築照著它蓋，
+    是史上第一本真正意義上的建築範本書。
+  sources:
+    - title: 維基百科：建築四書
+      url: https://zh.wikipedia.org/wiki/建築四書
+    - title: 維基百科：安德烈亞·帕拉迪奧
+      url: https://zh.wikipedia.org/wiki/安德烈亞·帕拉迪奧
+
+- id: arc-st-peters
+  year: 1626
+  title: 聖伯多祿大殿完工
+  category: work
+  importance: 4
+  desc: 前後一百二十年、換過十餘位建築師，米開朗基羅設計的穹頂
+    直徑逼近萬神廟。為籌措工程款而擴大販售贖罪券，直接點燃宗教改革——
+    一棟建築把歐洲炸成兩半。
+  sources:
+    - title: 維基百科：聖伯多祿大殿
+      url: https://zh.wikipedia.org/wiki/聖伯多祿大殿
+
+- id: arc-katsura
+  year: 1620
+  title: 桂離宮
+  category: work
+  importance: 4
+  desc: 素木不上漆、格線分割的障子、依步行序列展開的庭園，
+    刻意避開一切炫耀性的裝飾。三百年後陶特與葛羅培斯把它讀成
+    現代主義的先聲——一座江戶初期的別墅，成了二十世紀的論據。
+  sources:
+    - title: 英文維基百科：Katsura Imperial Villa
+      url: https://en.wikipedia.org/wiki/Katsura_Imperial_Villa
+
+- id: arc-taj-mahal
+  year: 1653
+  title: 泰姬陵
+  category: work
+  importance: 4
+  desc: 完全對稱的白色大理石陵墓，四座尖塔刻意外傾以防倒塌時壓到主體，
+    表面鑲嵌半寶石花紋。波斯的形制、印度的工藝與伊斯蘭的幾何在此合為一體，
+    是蒙兀兒建築的終點也是頂點。
+  sources:
+    - title: 維基百科：泰姬陵
+      url: https://zh.wikipedia.org/wiki/泰姬陵
+
+- id: arc-versailles
+  year: 1682
+  title: 路易十四遷入凡爾賽宮
+  category: institution
+  importance: 4
+  desc: 花園的軸線一路延伸到地平線，貴族被集中安置在宮中依禮儀作息。
+    建築與造園被當成統治工具使用，歐洲各國君主爭相仿效，
+    「宮殿即權力的展示裝置」在此定型。
+  sources:
+    - title: 維基百科：凡爾賽宮
+      url: https://zh.wikipedia.org/wiki/凡爾賽宮
+
+- id: arc-crystal-palace
+  year: 1851
+  title: 水晶宮
+  category: technique
+  importance: 5
+  desc: 鑄鐵框架加平板玻璃，全部構件工廠預製、現場組裝，
+    九萬平方公尺只花了九個月。建築第一次是被「生產」出來而不是砌出來的，
+    預製、模距與工期的概念自此進入這一行。
+  sources:
+    - title: 維基百科：水晶宮
+      url: https://zh.wikipedia.org/wiki/水晶宮
+
+- id: arc-skyscraper
+  year: 1885
+  title: 芝加哥家庭保險大樓，首棟鋼骨高層
+  category: technique
+  importance: 5
+  desc: 重量改由金屬骨架承擔，外牆退化成掛上去的皮。
+    配上安全電梯與電話，城市第一次能往上長——建築的高度限制
+    從此不再由材料決定，而由電梯與地價決定。
+  sources:
+    - title: 英文維基百科：Home Insurance Building
+      url: https://en.wikipedia.org/wiki/Home_Insurance_Building
+
+- id: arc-eiffel
+  year: 1889
+  title: 艾菲爾鐵塔
+  category: controversy
+  importance: 4
+  desc: 三百公尺高的鍛鐵格構，落成前就有大批文人聯署抗議它醜化巴黎。
+    它原訂二十年後拆除，靠著能架設無線電天線而留下——
+    「工程物算不算建築」這場爭論，被它用高度直接壓過去。
+  sources:
+    - title: 維基百科：艾菲爾鐵塔
+      url: https://zh.wikipedia.org/wiki/艾菲爾鐵塔
+
+- id: arc-form-follows-function
+  year: 1896
+  title: 蘇利文提出「形隨機能」
+  category: movement
+  importance: 5
+  desc: 高層辦公樓沒有先例可循，他主張形式應該從用途長出來而非套用古典柱式。
+    這句話後來被現代主義簡化成教條，但它最初要處理的是一個
+    非常具體的問題：一棟十層樓的房子外面該長什麼樣。
+  sources:
+    - title: 英文維基百科：Louis Sullivan
+      url: https://en.wikipedia.org/wiki/Louis_Sullivan
+
+- id: arc-sagrada-familia
+  year: 1883
+  endYear: 2026
+  title: 高迪接手聖家堂，至今仍在興建
+  category: movement
+  importance: 4
+  desc: 用倒吊鍊條模型算出受力最合理的曲線，再翻轉過來當作柱與拱的形狀。
+    新藝術把裝飾從歷史樣式解放出來，他更進一步讓形式直接由結構力學
+    決定——工程與有機造形在此不是妥協而是同一件事。
+  sources:
+    - title: 維基百科：聖家堂
+      url: https://zh.wikipedia.org/wiki/聖家堂
+    - title: 維基百科：安東尼·高迪
+      url: https://zh.wikipedia.org/wiki/安東尼·高迪
+
+- id: arc-bauhaus
+  year: 1919
+  title: 包浩斯創校
+  category: institution
+  importance: 5
+  desc: 葛羅培斯要求學生同時受藝術家與工匠指導，從基礎課、工坊
+    一路做到量產設計。它把「藝術」與「工業生產」接在一起，
+    十四年後被納粹關閉，師生流散各國反而讓這套教學法傳遍世界。
+  sources:
+    - title: 維基百科：包浩斯
+      url: https://zh.wikipedia.org/wiki/包浩斯
+
+- id: arc-vers-une-architecture
+  year: 1923
+  title: 柯布西耶《邁向建築》
+  category: work
+  importance: 5
+  desc: 把郵輪、汽車與飛機與帕德嫩並置，主張住宅是「居住的機器」。
+    書裡那套底層架空、水平長窗、自由平面的原則被抄成全球通則，
+    也讓後來半個世紀的城市規劃跟著他一起走進困境。
+  sources:
+    - title: 英文維基百科：Toward an Architecture
+      url: https://en.wikipedia.org/wiki/Toward_an_Architecture
+    - title: 維基百科：勒·柯布西耶
+      url: https://zh.wikipedia.org/wiki/勒·柯布西耶
+
+- id: arc-barcelona-pavilion
+  year: 1929
+  title: 密斯的巴塞隆納德國館
+  category: work
+  importance: 4
+  desc: 承重全交給細鋼柱，牆縮成幾片自由站立的大理石與玻璃，
+    空間因此不再被隔成房間而是連續流動。「少即是多」在這裡不是口號，
+    而是一份可以量出來的施工圖。
+  sources:
+    - title: 維基百科：路德維希·密斯·凡德羅
+      url: https://zh.wikipedia.org/wiki/路德維希·密斯·凡德羅
+
+- id: arc-empire-state
+  year: 1931
+  title: 帝國大廈落成
+  category: work
+  importance: 3
+  desc: 一百零二層，從動工到完工只花了一年又四十五天。
+    它落成時正值大蕭條，空置多年被戲稱為「空大廈」——
+    摩天樓從此也是一種金融產品，蓋不蓋得起來取決於景氣而非技術。
+  sources:
+    - title: 維基百科：帝國大廈
+      url: https://zh.wikipedia.org/wiki/帝國大廈
+
+- id: arc-fallingwater
+  year: 1937
+  title: 萊特的落水山莊
+  category: work
+  importance: 4
+  desc: 鋼筋混凝土懸臂直接挑在瀑布上方，室內保留原地的岩盤當地板。
+    在歐洲現代主義追求脫離基地的純粹量體時，他反過來把房子
+    長進地形裡——「有機建築」有了最有名的一個例子。
+  sources:
+    - title: 維基百科：落水山莊
+      url: https://zh.wikipedia.org/wiki/落水山莊
+    - title: 維基百科：法蘭克·洛伊·萊特
+      url: https://zh.wikipedia.org/wiki/法蘭克·洛伊·萊特
+
+- id: arc-unite-habitation
+  year: 1952
+  title: 馬賽公寓
+  category: work
+  importance: 4
+  desc: 三百多戶連同商店街與屋頂幼稚園疊成一棟，粗獷的清水混凝土
+    留著模板痕跡。戰後歐洲缺屋，這個垂直社區模型被大量複製，
+    也因此背負了往後半世紀關於高層國宅的所有爭議。
+  sources:
+    - title: 維基百科：馬賽公寓
+      url: https://zh.wikipedia.org/wiki/馬賽公寓
+
+- id: arc-seagram
+  year: 1958
+  title: 西格拉姆大廈
+  category: movement
+  importance: 4
+  desc: 青銅色玻璃帷幕、退縮出前廣場、外露的工字鋼只是裝飾。
+    它把國際樣式的辦公大樓定型，此後全球商業區的天際線
+    幾乎都是這一棟的變體。
+  sources:
+    - title: 維基百科：西格拉姆大廈
+      url: https://zh.wikipedia.org/wiki/西格拉姆大廈
+
+- id: arc-guggenheim-ny
+  year: 1959
+  title: 紐約古根漢美術館
+  category: work
+  importance: 4
+  desc: 觀眾搭電梯上頂層，再沿著一道連續螺旋緩坡走下來看展。
+    美術館的動線第一次被建築強制決定，也因此與策展人爭執不休——
+    容器與內容誰服從誰的問題，從這棟開始被反覆提出。
+  sources:
+    - title: 維基百科：所羅門·古根漢美術館
+      url: https://zh.wikipedia.org/wiki/所羅門·古根漢美術館
+
+- id: arc-venturi
+  year: 1966
+  title: 文丘里《建築的複雜與矛盾》
+  category: movement
+  importance: 5
+  desc: 針對「少即是多」回了一句「少即是無聊」，主張建築該容納
+    曖昧、歷史引用與日常的雜亂。現代主義的正統第一次被
+    系統性地反駁，後現代建築由此起算。
+  sources:
+    - title: 英文維基百科：Complexity and Contradiction in Architecture
+      url: https://en.wikipedia.org/wiki/Complexity_and_Contradiction_in_Architecture
+    - title: 維基百科：羅伯特·文丘里
+      url: https://zh.wikipedia.org/wiki/羅伯特·文丘里
+
+- id: arc-pruitt-igoe
+  year: 1972
+  title: 普魯伊特—艾戈國宅被爆破
+  category: controversy
+  importance: 4
+  desc: 三十三棟得過獎的現代主義國宅落成不到二十年即拆除。
+    建築評論家詹克斯把爆破的那一刻稱作「現代建築死亡的時刻」，
+    這個說法未必公允，卻精準指出了一整套規劃信念的破產。
+  sources:
+    - title: 英文維基百科：Pruitt–Igoe
+      url: https://en.wikipedia.org/wiki/Pruitt–Igoe
+
+- id: arc-sydney-opera
+  year: 1973
+  title: 雪梨歌劇院落成
+  category: technique
+  importance: 4
+  desc: 帆狀屋殼在設計階段算不出來，最後靠「全部取自同一顆球面」
+    的解法才蓋得成，工期超支十四年、預算超支十四倍。
+    複雜曲面建築要等電腦輔助設計成熟才不再是這種代價。
+  sources:
+    - title: 維基百科：雪梨歌劇院
+      url: https://zh.wikipedia.org/wiki/雪梨歌劇院
+
+- id: arc-pompidou
+  year: 1977
+  title: 龐畢度中心
+  category: work
+  importance: 4
+  desc: 結構、電梯、管線全部翻到外面並漆上顏色，內部因此空無一柱。
+    把建築的內臟當成立面，既是挑釁也是務實——樓層可以隨展覽
+    任意重組，美術館第一次被當成一台可改裝的機器。
+  sources:
+    - title: 維基百科：龐畢度中心
+      url: https://zh.wikipedia.org/wiki/龐畢度中心
+
+- id: arc-bilbao
+  year: 1997
+  title: 畢爾包古根漢美術館
+  category: institution
+  importance: 4
+  desc: 蓋瑞用航太軟體算出鈦金屬曲面，一座衰敗的工業城因此變成觀光目的地。
+    此後各地爭相委託明星建築師蓋地標以圖翻身，成效不一，
+    但「建築能不能救一座城」自此成為公共政策的問題。
+  sources:
+    - title: 維基百科：畢爾包古根漢美術館
+      url: https://zh.wikipedia.org/wiki/畢爾包古根漢美術館

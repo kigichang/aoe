@@ -1,0 +1,117 @@
+# 兩條 track，理由同 visual/periods.yaml：
+#   track 0 = 西方
+#   track 1 = 東亞木構
+#
+# 東亞這條刻意用「木構」而非朝代來命名——建築史上東亞與西方最根本的
+# 分歧不是風格而是材料：一邊用石砌與拱券解決跨距，一邊用榫卯與斗栱。
+# 這條線因此不跟著改朝換代切，而是照木構技術本身的階段切。
+
+# ---- track 0：西方 ----
+
+- id: arc-p-megalith
+  name: 巨石與泥磚
+  track: 0
+  start: -3000
+  end: -801
+
+- id: arc-p-classical
+  name: 希臘柱式
+  track: 0
+  start: -800
+  end: -151
+
+- id: arc-p-roman
+  name: 羅馬拱券與混凝土
+  track: 0
+  start: -150
+  end: 476
+
+- id: arc-p-byzantine
+  name: 拜占庭與早期基督教
+  track: 0
+  start: 477
+  end: 999
+
+- id: arc-p-romanesque
+  name: 羅馬式
+  track: 0
+  start: 1000
+  end: 1143
+
+- id: arc-p-gothic
+  name: 哥德
+  track: 0
+  start: 1144
+  end: 1419
+
+- id: arc-p-renaissance
+  name: 文藝復興
+  track: 0
+  start: 1420
+  end: 1599
+
+- id: arc-p-baroque
+  name: 巴洛克與古典主義
+  track: 0
+  start: 1600
+  end: 1749
+
+- id: arc-p-revival
+  name: 復古樣式
+  track: 0
+  start: 1750
+  end: 1850
+  note: 新古典、新哥德並行；同一個時期可以同時仿好幾個過去。
+
+- id: arc-p-iron-steel
+  name: 鐵、玻璃與鋼骨
+  track: 0
+  start: 1851
+  end: 1918
+
+- id: arc-p-modernism
+  name: 現代主義
+  track: 0
+  start: 1919
+  end: 1965
+
+- id: arc-p-post
+  name: 後現代與當代
+  track: 0
+  start: 1966
+  end: 2026
+
+# ---- track 1：東亞木構 ----
+
+- id: arc-p-early-timber
+  name: 早期木構與夯土
+  track: 1
+  start: -1600
+  end: 219
+
+- id: arc-p-buddhist-timber
+  name: 佛寺木構成形
+  track: 1
+  start: 220
+  end: 617
+  note: 塔與殿堂的形制隨佛教傳入而確立，法隆寺是現存最早的實物。
+
+- id: arc-p-tang-song
+  name: 唐宋斗栱
+  track: 1
+  start: 618
+  end: 1279
+  note: 斗栱是結構主體，《營造法式》把作法標準化。
+
+- id: arc-p-ming-qing-timber
+  name: 明清官式
+  track: 1
+  start: 1280
+  end: 1911
+  note: 斗栱縮小為裝飾，改由樑柱直接承重，形制全面制度化。
+
+- id: arc-p-eastasia-modern
+  name: 東亞近現代
+  track: 1
+  start: 1912
+  end: 2026
