@@ -42,8 +42,26 @@ npm run check    # 只跑型別檢查
 推到 `main` 就會經由 `.github/workflows/deploy.yml` 自動部署。第一次要先到
 **Settings → Pages → Build and deployment → Source** 選 **GitHub Actions**。
 
-`vite.config.ts` 會從 `GITHUB_REPOSITORY` 自動推出 `base`，所以專案頁面
-（`<user>.github.io/<repo>/`）不需要手動改設定。
+### `base` 與自訂網域
+
+`base` 設錯就是 assets 全部 404、整頁空白，而正確的值取決於站台掛在哪裡：
+
+| 情況 | 網址 | `base` |
+|---|---|---|
+| 有自訂網域 | `https://aoe.kigi.tw/` | `/` |
+| 專案頁面 | `https://<user>.github.io/<repo>/` | `/<repo>/` |
+
+`vite.config.ts` 靠 **`public/CNAME` 在不在**來分辨這兩種情況，其餘則從
+`GITHUB_REPOSITORY` 推出 `/<repo>/`。**要換自訂網域就改 `public/CNAME`
+那一行，不要改 `vite.config.ts`**；不用自訂網域就整個檔案刪掉，
+fork 出去的專案頁面會自動回到 `/<repo>/`。
+
+用這個檔案而不是另開設定值，是因為它本來就是 GitHub Pages 用來認網域的
+那份檔案（會被複製進 `dist/`）—— 同一件事只宣告一次就不會分岔。
+Settings → Pages 的 Custom domain 欄位仍要填同一個網域，
+兩邊不一致時 Pages 會以送上去的 CNAME 檔為準。
+
+設了自訂網域之後，`<user>.github.io/<repo>/` 會 301 導到該網域。
 
 ## 主題
 
@@ -51,8 +69,8 @@ npm run check    # 只跑型別檢查
 `/<目錄名>/`：
 
 ```
-https://kigichang.github.io/aoe/              → src/topics/world/
-https://kigichang.github.io/aoe/tw-railway/   → src/topics/tw-railway/
+https://aoe.kigi.tw/              → src/topics/world/
+https://aoe.kigi.tw/tw-railway/   → src/topics/tw-railway/
 ```
 
 ```
@@ -264,9 +282,9 @@ maxYear: 2026
 網址會跟著目前的檢視走，複製網址列就能分享：
 
 ```
-https://kigichang.github.io/aoe/#y=-221&z=2&e=cn-qin-unification
-                                   \____/ \__/ \__________________/
-                                    年份  縮放      選中的事件
+https://aoe.kigi.tw/#y=-221&z=2&e=cn-qin-unification
+                       \____/ \__/ \__________________/
+                        年份  縮放      選中的事件
 ```
 
 `y` 是視窗高度 40% 處對應的年份，`z` 是 px/年。三個參數都可以省略。

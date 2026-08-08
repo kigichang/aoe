@@ -190,7 +190,7 @@ src/topics/<主題>/
 
 ### 主題是 per-document 的常數，不要改成 state
 
-每個主題有自己的 HTML entry（`/aoe/` 與 `/aoe/tw-railway/` 是兩份不同的
+每個主題有自己的 HTML entry（`/` 與 `/tw-railway/` 是兩份不同的
 index.html），所以瀏覽器一載入，「現在在看哪個主題」就已經定了。
 
 這是多主題能做得很輕的關鍵：`MIN_YEAR`、`REGIONS`、`CATEGORIES` 全部維持
@@ -203,7 +203,7 @@ index.html），所以瀏覽器一載入，「現在在看哪個主題」就已�
 
 ### 為什麼每個主題要有實體的 index.html
 
-**GitHub Pages 沒有 server-side rewrite。** `/aoe/tw-railway/` 這個路徑上
+**GitHub Pages 沒有 server-side rewrite。** `/tw-railway/` 這個路徑上
 必須真的存在一份 HTML，否則直接 404 —— 前端 router 根本沒有機會執行。
 
 非 root 主題的那份是 `vite.config.ts` 從根目錄的 `index.html` 複製產生的
@@ -782,8 +782,20 @@ README 已經有完整的一份，站上再寫一份就是兩份會各自腐化�
 **`importance` 驅動縮放分層。** 全域視角只顯示 5，放大逐層釋出。
 這是密度問題的主要解法。補資料時 importance 給得隨便，畫面就會糊掉。
 
-**`base` 從 `GITHUB_REPOSITORY` 自動推導**（`vite.config.ts`）。
-GitHub Pages 專案頁面掛在 `/<repo>/` 底下，`base` 設錯是整頁空白最常見的原因。
+**`base` 由 `public/CNAME` 在不在決定**（`vite.config.ts`）。
+`base` 設錯是 Pages 部署後整頁空白／assets 全部 404 最常見的原因，
+而正確的值取決於站台掛在哪裡：有自訂網域（`aoe.kigi.tw`）就是掛在網域根目錄，
+`base` 必須是 `/`；沒有的話是專案頁面 `<user>.github.io/<repo>/`，`base` 是 `/<repo>/`。
+
+**判斷依據刻意是那個 CNAME 檔本身，不是另開一個環境變數或設定值。**
+它本來就是 GitHub Pages 用來認網域的檔案（會被複製進 `dist/`），
+拿它當唯一來源，「這個站有沒有自訂網域」就只宣告一次。
+換網域改那一行、不用自訂網域就刪掉整個檔案，`vite.config.ts` 一個字都不必動。
+
+這條原本寫成「從 `GITHUB_REPOSITORY` 自動推導」，那是加自訂網域之前的規則。
+**症狀很有辨識度：HTML 載得進來（所以不是白畫面），但 console 一排
+`GET https://aoe.kigi.tw/aoe/assets/main-*.js 404`** —— 路徑裡多了一層 repo 名。
+看到多一層就是這裡。
 
 ---
 

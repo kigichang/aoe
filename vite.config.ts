@@ -7,14 +7,24 @@ import * as jsyaml from 'js-yaml'
 // 站名同時給 <title> 與標題列的 h1 用。抄成兩份遲早會分岔，見 src/lib/site.ts。
 import { SITE_NAME } from './src/lib/site'
 
-// GitHub Pages 專案頁面掛在 https://<user>.github.io/<repo>/ 底下，
-// 所以 CI 上必須把 base 設成 /<repo>/，本機開發則是 '/'。
-// 這是 Pages 部署後整頁空白最常見的原因。
-const repo = process.env.GITHUB_REPOSITORY?.split('/')[1]
-const base = process.env.GITHUB_ACTIONS && repo ? `/${repo}/` : '/'
-
 const root = resolve(import.meta.dirname)
 const TOPICS_DIR = join(root, 'src', 'topics')
+
+// base 設錯就是 assets 全部 404、整頁空白 —— Pages 部署最常見的死法。
+// 而正確的值取決於站台掛在哪裡，有兩種情況：
+//
+//   有自訂網域   https://aoe.kigi.tw/          → base '/'
+//   專案頁面     https://<user>.github.io/<repo>/ → base '/<repo>/'
+//
+// `public/CNAME` 是「這個站有沒有自訂網域」的**唯一來源**：它會被複製進
+// dist/，而那正是 GitHub Pages 用來認網域的那個檔案。所以這裡直接看它在不在，
+// 不另外開一個環境變數或設定值 —— 同一件事宣告兩次，遲早會各自改壞一邊。
+//
+// 設了自訂網域之後，`<user>.github.io/<repo>/` 會 301 導到該網域，
+// 不再是實際的服務路徑，所以那條路不必再保留 base。
+const hasCustomDomain = existsSync(join(root, 'public', 'CNAME'))
+const repo = process.env.GITHUB_REPOSITORY?.split('/')[1]
+const base = !hasCustomDomain && process.env.GITHUB_ACTIONS && repo ? `/${repo}/` : '/'
 
 interface TopicMeta {
   name: string

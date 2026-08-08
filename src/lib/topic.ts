@@ -2,7 +2,7 @@
  * 從網址推出「現在在看哪一個主題」。
  *
  * **主題是 per-document 的常數，不是 React state。** 每個主題有自己的 HTML entry
- * （`/aoe/` 與 `/aoe/tw-railway/` 是兩份不同的 index.html），所以瀏覽器一載入
+ * （`/` 與 `/tw-railway/` 是兩份不同的 index.html），所以瀏覽器一載入
  * 這件事就已經定了，不會在執行期改變。
  *
  * 這是整個多主題設計能做得很輕的關鍵：`MIN_YEAR`、`REGIONS`、`CATEGORIES`
@@ -17,12 +17,15 @@
  */
 
 /**
- * `import.meta.env.BASE_URL` 是 `/aoe/`（GitHub Pages）或 `/`（本機）。
- * 把它從 pathname 前面剝掉，剩下的第一段就是主題目錄名。
+ * `import.meta.env.BASE_URL` 目前是 `/`（本機，以及自訂網域下的 Pages），
+ * 但沒有自訂網域的專案頁面會是 `/<repo>/`（見 vite.config.ts 的 base 推導）。
+ * 兩種都要能處理，所以一律把 base 從 pathname 前面剝掉，
+ * 剩下的第一段就是主題目錄名。
  *
- *   /aoe/tw-railway/  → 'tw-railway'
- *   /aoe/             → null（＝ 掛在根網址的那個主題）
- *   /aoe/index.html   → null
+ *   base '/'      /tw-railway/      → 'tw-railway'
+ *                 /                 → null（＝ 掛在根網址的那個主題）
+ *   base '/aoe/'  /aoe/tw-railway/  → 'tw-railway'
+ *                 /aoe/index.html   → null
  */
 export function slugFromPath(pathname: string, base: string): string | null {
   let rest = pathname
