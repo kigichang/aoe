@@ -45,17 +45,6 @@
     - title: 維基百科：儒教
       url: https://zh.wikipedia.org/wiki/儒教
 
-- id: eas-mencius
-  year: -310
-  title: 孟子提出性善說
-  category: doctrine
-  importance: 3
-  desc: 人本來就有向善的端緒，修養是把它擴充出來。這個立場後來成為
-    儒學的主流，也是宋明理學整套工夫論的起點。
-  sources:
-    - title: 維基百科：孟子
-      url: https://zh.wikipedia.org/wiki/孟子
-
 - id: eas-laozi
   year: -350
   title: 《老子》成書
@@ -68,6 +57,17 @@
       url: https://zh.wikipedia.org/wiki/老子_(書)
     - title: 維基百科：道教
       url: https://zh.wikipedia.org/wiki/道教
+
+- id: eas-mencius
+  year: -310
+  title: 孟子提出性善說
+  category: doctrine
+  importance: 3
+  desc: 人本來就有向善的端緒，修養是把它擴充出來。這個立場後來成為
+    儒學的主流，也是宋明理學整套工夫論的起點。
+  sources:
+    - title: 維基百科：孟子
+      url: https://zh.wikipedia.org/wiki/孟子
 
 - id: eas-zhuangzi
   year: -300
@@ -256,8 +256,8 @@
   title: 北周武帝滅佛
   category: conflict
   importance: 3
-  desc: 佛道二教同時被廢，僧道還俗數百萬人，寺產充公。
-    這一次的理由最明白：國家要人力與財力。
+  desc: 佛道二教同時被廢，僧道還俗數百萬人，寺產充公。這一次的理由最明白：國家要人力
+    與財力。它與北魏太武帝、唐武宗、後周世宗的四次法難合稱「三武一宗」。
   sources:
     - title: 維基百科：北周武帝滅佛
       url: https://zh.wikipedia.org/wiki/北周武帝滅佛
@@ -267,8 +267,8 @@
   title: 丁未之亂，崇佛派勝出
   category: conflict
   importance: 3
-  desc: 蘇我氏擊敗主張排佛的物部氏。日本的宗教路線由一場政爭決定，
-    此後佛教與朝廷正式結合。
+  desc: 蘇我馬子擊敗主張排佛的物部守屋。日本的宗教路線由一場政爭決定，此後佛教與朝廷
+    正式結合，勝方扶植的推古天皇與聖德太子接手把它推成國家事業。
   sources:
     - title: 維基百科：丁未之亂
       url: https://zh.wikipedia.org/wiki/丁未之亂
@@ -378,6 +378,17 @@
     - title: 維基百科：東大寺
       url: https://zh.wikipedia.org/wiki/東大寺
 
+- id: eas-nestorian-stele
+  year: 781
+  title: 立《大秦景教流行中國碑》
+  category: spread
+  importance: 3
+  desc: 碑文用漢文與敘利亞文並刻，記述景教入唐一百四十餘年的經過，還借佛道詞彙
+    講三位一體。明末出土後成為歐洲人第一次確知基督宗教曾抵達唐代中國的證據。
+  sources:
+    - title: 維基百科：大秦景教流行中國碑
+      url: https://zh.wikipedia.org/wiki/大秦景教流行中國碑
+
 - id: eas-kukai
   year: 806
   title: 空海自唐返國，開創真言宗
@@ -401,6 +412,17 @@
   sources:
     - title: 維基百科：會昌毀佛
       url: https://zh.wikipedia.org/wiki/會昌毀佛
+
+- id: eas-kaibao-canon
+  year: 971
+  title: 開雕《開寶藏》，首部印刷大藏經
+  category: scripture
+  importance: 5
+  desc: 宋太祖敕令在益州雕版，十三萬塊經板刻了十二年。佛典從此不必靠手抄流通，
+    高麗、日本的官版藏經都以它為底本——這是雕版印刷第一次被用在超大部頭的典籍上。
+  sources:
+    - title: 維基百科：開寶藏
+      url: https://zh.wikipedia.org/wiki/開寶藏
 
 - id: eas-wang-chongyang
   year: 1167
@@ -459,13 +481,24 @@
   title: 道元自宋返國，傳曹洞禪
   category: order
   importance: 4
-  desc: 主張只管打坐、修證一如。與同期強調公案的臨濟宗形成對照，
-    兩者分別在武士與地方社會扎根。
+  desc: 主張只管打坐、修證一如，不假公案也不求開悟。與同期強調公案的臨濟宗形成對照，
+    兩者分別在地方社會與武士階層扎根；他後來遠離京都，在越前山中開永平寺。
   sources:
     - title: 維基百科：道元
       url: https://zh.wikipedia.org/wiki/道元
     - title: 維基百科：曹洞宗
       url: https://zh.wikipedia.org/wiki/曹洞宗
+
+- id: eas-tripitaka-koreana
+  year: 1251
+  title: 高麗再雕大藏經完成
+  category: scripture
+  importance: 4
+  desc: 初雕版毀於蒙古兵燹，高麗朝廷避難江華島仍舉國重刻，八萬餘塊經板耗時十六年。
+    校勘之精使它成為現存最完整可靠的漢文藏經，今日仍存於海印寺。
+  sources:
+    - title: 維基百科：高麗大藏經
+      url: https://zh.wikipedia.org/wiki/高麗大藏經
 
 - id: eas-nichiren
   year: 1253
@@ -502,6 +535,28 @@
     - title: 維基百科：程朱理學
       url: https://zh.wikipedia.org/wiki/程朱理學
 
+- id: eas-daozang
+  year: 1445
+  title: 《正統道藏》刊行
+  category: scripture
+  importance: 4
+  desc: 明英宗敕修，收書五千三百餘卷，是現存唯一完整的道教總集。
+    宋元的道藏都毀於戰火與元廷焚經，今日談道教史所依據的文本幾乎都出自這一部。
+  sources:
+    - title: 維基百科：道藏
+      url: https://zh.wikipedia.org/wiki/道藏
+
+- id: eas-kaga-ikko
+  year: 1488
+  title: 加賀一向一揆，門徒治國近百年
+  category: conflict
+  importance: 4
+  desc: 本願寺門徒趕走守護大名，自行治理加賀國。一個以念佛結社為骨幹的教團
+    能取代武家統治，是日本史上僅有的一次，也讓後來的天下人把本願寺視為必除的對手。
+  sources:
+    - title: 維基百科：加賀一向一揆
+      url: https://zh.wikipedia.org/wiki/加賀一向一揆
+
 - id: eas-wang-yangming
   year: 1521
   title: 王陽明揭致良知
@@ -523,6 +578,17 @@
   sources:
     - title: 維基百科：方濟·沙勿略
       url: https://zh.wikipedia.org/wiki/方濟·沙勿略
+
+- id: eas-hieizan
+  year: 1571
+  title: 織田信長火燒比叡山
+  category: conflict
+  importance: 4
+  desc: 延曆寺蓄僧兵、干預朝政數百年，一日之間堂塔盡焚。此後寺院不再是能與武家
+    討價還價的政治勢力，日本佛教被收編進世俗政權底下的路，從這把火開始。
+  sources:
+    - title: 日文維基百科：比叡山焼き討ち (1571年)
+      url: https://ja.wikipedia.org/wiki/比叡山焼き討ち_(1571年)
 
 - id: eas-ricci
   year: 1583
@@ -662,6 +728,17 @@
     - title: 維基百科：廢佛毀釋
       url: https://zh.wikipedia.org/wiki/廢佛毀釋
 
+- id: eas-yasukuni
+  year: 1869
+  title: 東京招魂社創建，後改稱靖國神社
+  category: order
+  importance: 3
+  desc: 明治政府為戊辰戰爭的官軍陣亡者立社，由陸海軍而非神社廳管轄。
+    把為國戰死者奉為神祇，是國家神道最具體的一項發明，也是至今東亞外交的爭點。
+  sources:
+    - title: 維基百科：靖國神社
+      url: https://zh.wikipedia.org/wiki/靖國神社
+
 - id: eas-imperial-rescript
   year: 1890
   title: 頒布教育敕語
@@ -686,6 +763,30 @@
     - title: 維基百科：義和團運動
       url: https://zh.wikipedia.org/wiki/义和团运动
 
+- id: eas-exam-abolished
+  year: 1905
+  title: 清廷廢除科舉
+  category: order
+  importance: 5
+  desc: 一千三百年來讀經是入仕的唯一正途，廢考等於抽掉儒學的制度支柱。
+    儒家從此不再是官方的知識體系，只剩下學術與家庭倫理兩個沒有國家撐腰的立足點。
+  sources:
+    - title: 維基百科：科舉
+      url: https://zh.wikipedia.org/wiki/科舉
+
+- id: eas-taixu
+  year: 1913
+  title: 太虛提出佛教三大革命
+  category: doctrine
+  importance: 4
+  desc: 在寄禪追悼會上主張教理、教產、教制都要改，佛教應面向人生而非度亡。
+    這條「人間佛教」的路線後來由印順接續，成為兩岸與海外華人佛教的主流方向。
+  sources:
+    - title: 維基百科：釋太虛
+      url: https://zh.wikipedia.org/wiki/釋太虛
+    - title: 維基百科：人間佛教
+      url: https://zh.wikipedia.org/wiki/人間佛教
+
 - id: eas-anti-christian
   year: 1922
   title: 非基督教運動
@@ -696,6 +797,17 @@
   sources:
     - title: 維基百科：非基督教運動
       url: https://zh.wikipedia.org/wiki/非基督教运动
+
+- id: eas-caodai
+  year: 1926
+  title: 高臺教在越南成立
+  category: founding
+  importance: 3
+  desc: 明言要綜合儒釋道與天主教，奉老子、釋迦、耶穌乃至雨果為神。
+    短短數年吸收上百萬信徒並擁有自己的武裝，是東亞近代少見的新興綜合教派。
+  sources:
+    - title: 維基百科：高臺教
+      url: https://zh.wikipedia.org/wiki/高臺教
 
 - id: eas-soka
   year: 1930
@@ -729,6 +841,17 @@
   sources:
     - title: 維基百科：破四舊
       url: https://zh.wikipedia.org/wiki/破四旧
+
+- id: eas-tzuchi
+  year: 1966
+  title: 證嚴在花蓮創辦慈濟
+  category: order
+  importance: 4
+  desc: 三十位家庭主婦每天存五毛錢買菜錢起家，後來擴及醫院、大學與跨國賑災。
+    人間佛教從主張變成一套可運作的組織，也讓台灣佛教在戰後長成國際性的慈善網絡。
+  sources:
+    - title: 維基百科：慈濟基金會
+      url: https://zh.wikipedia.org/wiki/慈濟基金會
 
 - id: eas-aum
   year: 1995

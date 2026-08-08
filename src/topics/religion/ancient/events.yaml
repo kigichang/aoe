@@ -54,6 +54,17 @@
     - title: 維基百科：吉爾伽美什史詩
       url: https://zh.wikipedia.org/wiki/吉爾伽美什史詩
 
+- id: anc-book-of-dead
+  year: -1550
+  title: 《死者之書》成為隨葬標準
+  category: scripture
+  importance: 4
+  desc: 新王國時期起，寫在莎草紙上的咒語隨死者下葬。金字塔銘文只有法老用得起，
+    這套抄本則按頁計價，來世第一次向付得起錢的平民開放。
+  sources:
+    - title: 維基百科：死者之書
+      url: https://zh.wikipedia.org/wiki/死者之書
+
 - id: anc-ugarit-baal
   year: -1400
   title: 烏加里特文獻與迦南的巴力信仰
@@ -117,6 +128,17 @@
     - title: 維基百科：祆教
       url: https://zh.wikipedia.org/wiki/祆教
 
+- id: anc-delphi
+  year: -800
+  title: 德爾斐神諭成為泛希臘的裁決者
+  category: order
+  importance: 4
+  desc: 城邦要建殖民地、要開戰、要立法，先派人去問阿波羅。神諭所超然於各城邦之上，
+    是分裂的希臘世界少數共同承認的權威。
+  sources:
+    - title: 維基百科：德爾斐
+      url: https://zh.wikipedia.org/wiki/德爾斐
+
 - id: anc-homer
   year: -750
   title: 荷馬史詩定型
@@ -142,6 +164,17 @@
       url: https://zh.wikipedia.org/wiki/神譜
     - title: 維基百科：赫西俄德
       url: https://zh.wikipedia.org/wiki/赫西俄德
+
+- id: anc-ashurbanipal-library
+  year: -650
+  title: 亞述巴尼拔在尼尼微建藏書庫
+  category: scripture
+  importance: 4
+  desc: 國王下令蒐羅兩河各地的泥板，抄錄成一批系統性的收藏。三千年後的人能讀到
+    《吉爾伽美什史詩》與《埃努瑪·埃利什》，靠的正是這批被焚城餘燼烤硬的泥板。
+  sources:
+    - title: 維基百科：亞述巴尼拔圖書館
+      url: https://zh.wikipedia.org/wiki/亞述巴尼拔圖書館
 
 - id: anc-eleusis
   year: -600
@@ -199,6 +232,17 @@
   sources:
     - title: 維基百科：柏拉圖學院
       url: https://zh.wikipedia.org/wiki/柏拉圖學院
+
+- id: anc-epicurus
+  year: -307
+  title: 伊比鳩魯在雅典開設「花園」
+  category: doctrine
+  importance: 3
+  desc: 主張神存在但不干預人世，靈魂隨肉體消散，因此不必畏懼死亡與神罰。
+    這是古代世界最徹底的一套「宗教不必要」的論證，也因此被後世反覆當成無神論的代名詞。
+  sources:
+    - title: 維基百科：伊比鳩魯學派
+      url: https://zh.wikipedia.org/wiki/伊比鳩魯學派
 
 - id: anc-stoicism
   year: -301
@@ -261,6 +305,19 @@
     - title: 維基百科：密特拉教
       url: https://zh.wikipedia.org/wiki/密特拉教
 
+- id: anc-teotihuacan
+  year: 200
+  title: 特奧蒂瓦坎的羽蛇神金字塔
+  category: doctrine
+  importance: 3
+  desc: 中美洲最大的都市以三座金字塔為軸線，羽蛇神廟基座下埋著上百具犧牲者遺骸。
+    這座城的神祇與曆法後來被托爾特克與阿茲特克整套接收。
+  sources:
+    - title: 維基百科：特奧蒂瓦坎
+      url: https://zh.wikipedia.org/wiki/特奧蒂瓦坎
+    - title: 維基百科：羽蛇神
+      url: https://zh.wikipedia.org/wiki/羽蛇神
+
 - id: anc-sasanian-zoroastrian
   year: 224
   title: 薩珊王朝奉祆教為國教
@@ -313,13 +370,25 @@
     - title: 維基百科：瑪雅曆
       url: https://zh.wikipedia.org/wiki/瑪雅曆
 
+- id: anc-avesta-written
+  year: 250
+  title: 《阿維斯陀》輯成薩珊定本
+  category: scripture
+  importance: 4
+  desc: 祆教經典口傳了上千年，亞歷山大東征時散失大半，安息朝開始重新蒐集，
+    薩珊朝輯為二十一卷。有了定本，祭司集團才有辦法界定什麼是正統。
+  sources:
+    - title: 維基百科：波斯古經
+      url: https://zh.wikipedia.org/wiki/波斯古經
+
 - id: anc-mani-executed
   year: 276
   title: 摩尼死於薩珊獄中
   category: conflict
   importance: 3
-  desc: 祆教祭司集團視其為異端，說服國王將他下獄。摩尼教此後轉入地下，
-    向東的傳播反而比向西順利。
+  desc: 祆教祭司集團視其為異端，說服國王將他下獄。摩尼教此後轉入地下，向東的傳播反而
+    比向西順利——中亞、回鶻乃至泉州都留下痕跡，向西則被羅馬帝國與基督教會同時查
+    禁。
   sources:
     - title: 維基百科：摩尼
       url: https://zh.wikipedia.org/wiki/摩尼

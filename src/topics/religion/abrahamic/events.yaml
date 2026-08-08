@@ -277,8 +277,9 @@
   title: 戴克里先大迫害
   category: conflict
   importance: 4
-  desc: 拆教堂、焚經書、禁聚會、革除公職。規模最大也最後一次的全帝國
-    迫害，十年後政策整個反轉。
+  desc: 拆教堂、焚經書、禁聚會、革除公職，東部尤其慘烈。規模最大也最後一次的全帝國迫
+    害，十年後政策整個反轉——而交出經書的神職人員算不算叛教，還在北非留下延燒百
+    年的分裂。
   sources:
     - title: 維基百科：戴克里先迫害
       url: https://zh.wikipedia.org/wiki/戴克里先迫害
@@ -430,8 +431,8 @@
   title: 穆罕默德開始接受啟示
   category: founding
   importance: 5
-  desc: 在麥加郊外的山洞中領受第一段經文。此後二十三年陸續降示的內容，
-    後來集成《古蘭經》。
+  desc: 四十歲那年在麥加郊外的希拉山洞領受第一段經文，此後三年只在親族與親信間私下傳
+    布。二十三年間陸續降示的內容，後來集成《古蘭經》。
   sources:
     - title: 維基百科：穆罕默德
       url: https://zh.wikipedia.org/wiki/穆罕默德
@@ -452,8 +453,8 @@
   title: 攻取麥加，清除卡巴的偶像
   category: spread
   importance: 5
-  desc: 阿拉伯半島最重要的聖所被改為一神信仰的中心。朝覲的路線與儀式
-    大體保留，內容整個換掉。
+  desc: 阿拉伯半島最重要的聖所被改為一神信仰的中心，三百餘尊偶像被清除，黑石與繞行儀
+    式則留下。朝覲的路線與動作大體保留，內容整個換掉。
   sources:
     - title: 英文維基百科：Conquest of Mecca
       url: https://en.wikipedia.org/wiki/Conquest_of_Mecca
@@ -463,8 +464,8 @@
   title: 穆罕默德逝世，繼承之爭開始
   category: order
   importance: 5
-  desc: 該由公議推舉，還是該由先知的血親繼承？這個問題沒有解決，
-    後來長成遜尼與什葉兩大傳統。
+  desc: 該由公議推舉，還是該由先知的血親繼承？阿布·伯克爾當場被推為哈里發，主張阿里
+    的一方始終不服。這個問題沒有解決，後來長成遜尼與什葉兩大傳統。
   sources:
     - title: 維基百科：遜尼派
       url: https://zh.wikipedia.org/wiki/遜尼派
@@ -528,6 +529,19 @@
     - title: 維基百科：查理曼
       url: https://zh.wikipedia.org/wiki/查理曼
 
+- id: abr-mihna
+  year: 833
+  title: 米哈納：哈里發下令審查教義
+  category: doctrine
+  importance: 4
+  desc: 馬蒙要求法官與學者公開承認《古蘭經》是受造的。伊本·罕百勒拒絕受刑不改口，
+    十五年後審查廢止。此後教義的裁定權落在烏理瑪手上，哈里發再沒能拿回來。
+  sources:
+    - title: 英文維基百科：Mihna
+      url: https://en.wikipedia.org/wiki/Mihna
+    - title: 維基百科：穆爾太齊賴派
+      url: https://zh.wikipedia.org/wiki/穆爾太齊賴派
+
 - id: abr-madhhab
   year: 850
   title: 遜尼派四大法學派成形
@@ -553,6 +567,19 @@
   sources:
     - title: 維基百科：布哈里聖訓
       url: https://zh.wikipedia.org/wiki/布哈里聖訓
+
+- id: abr-occultation
+  year: 874
+  title: 第十二伊瑪目隱遁
+  category: doctrine
+  importance: 4
+  desc: 什葉派主流認定末代伊瑪目並未死去，只是隱身，末世將再臨。等待期間誰能代行
+    他的權威，成了十二伊瑪目派往後千年的核心問題，也是霍梅尼「教法學家監國」的源頭。
+  sources:
+    - title: 維基百科：隱遁 (伊斯蘭教)
+      url: https://zh.wikipedia.org/wiki/隱遁_(伊斯蘭教)
+    - title: 維基百科：十二伊瑪目派
+      url: https://zh.wikipedia.org/wiki/十二伊瑪目派
 
 - id: abr-fatimid
   year: 909
@@ -613,6 +640,17 @@
     - title: 維基百科：第一次十字軍東征
       url: https://zh.wikipedia.org/wiki/第一次十字軍東征
 
+- id: abr-jerusalem-1099
+  year: 1099
+  title: 第一次十字軍攻陷耶路撒冷
+  category: conflict
+  importance: 4
+  desc: 圍城五週後破城，城內穆斯林與猶太人遭大規模屠殺。號召開戰四年後真的打下聖城，
+    讓十字軍在此後兩個世紀成為西歐反覆重演的模式。
+  sources:
+    - title: 維基百科：耶路撒冷圍城戰 (1099年)
+      url: https://zh.wikipedia.org/wiki/耶路撒冷圍城戰_(1099年)
+
 - id: abr-ghazali
   year: 1111
   title: 安薩里逝世，蘇非與正統教法調和
@@ -623,6 +661,17 @@
   sources:
     - title: 維基百科：安薩里
       url: https://zh.wikipedia.org/wiki/安薩里
+
+- id: abr-hattin
+  year: 1187
+  title: 哈丁之戰，薩拉丁收復耶路撒冷
+  category: conflict
+  importance: 4
+  desc: 十字軍主力在加利利的無水高地被殲滅，聖城三個月後不戰而降。薩拉丁未行屠城，
+    准許基督徒贖身離去——這個對比讓他成為兩邊史料都推崇的少數人物。
+  sources:
+    - title: 維基百科：哈丁戰役
+      url: https://zh.wikipedia.org/wiki/哈丁戰役
 
 - id: abr-maimonides
   year: 1190
@@ -636,6 +685,17 @@
       url: https://en.wikipedia.org/wiki/The_Guide_for_the_Perplexed
     - title: 維基百科：邁蒙尼德
       url: https://zh.wikipedia.org/wiki/邁蒙尼德
+
+- id: abr-fourth-crusade
+  year: 1204
+  title: 第四次十字軍洗劫君士坦丁堡
+  category: conflict
+  importance: 5
+  desc: 出征埃及的隊伍轉向攻打同為基督徒的拜占庭首都，聖索菲亞大教堂遭劫，
+    聖髑被運回西歐。1054 年的分裂本來還有修補餘地，這一次之後就沒有了。
+  sources:
+    - title: 維基百科：第四次十字軍東征
+      url: https://zh.wikipedia.org/wiki/第四次十字軍東征
 
 - id: abr-albigensian
   year: 1209
@@ -709,16 +769,42 @@
     - title: 維基百科：托馬斯·阿奎那
       url: https://zh.wikipedia.org/wiki/托馬斯·阿奎那
 
+- id: abr-rumi
+  year: 1273
+  title: 魯米逝世，梅夫拉維教團成形
+  category: order
+  importance: 4
+  desc: 波斯語長詩《瑪斯納維》被稱作「波斯文的古蘭經」。他的追隨者以旋轉舞為修行，
+    組成教團——蘇非從個人的神祕體驗，變成有師承、有道堂、有產業的組織。
+  sources:
+    - title: 維基百科：魯米
+      url: https://zh.wikipedia.org/wiki/魯米
+    - title: 英文維基百科：Mevlevi Order
+      url: https://en.wikipedia.org/wiki/Mevlevi_Order
+
 - id: abr-england-expulsion
   year: 1290
   title: 英格蘭驅逐猶太人
   category: conflict
   importance: 3
-  desc: 全境猶太人被限期離境，是中世紀西歐第一次全國規模的驅逐。
-    此後法國、西班牙陸續仿效。
+  desc: 愛德華一世下令全境猶太人限期離境，是中世紀西歐第一次全國規模的驅逐。此後法國、
+    西班牙陸續仿效；英格蘭要到三百六十六年後才重新准許猶太人定居。
   sources:
     - title: 英文維基百科：Edict of Expulsion
       url: https://en.wikipedia.org/wiki/Edict_of_Expulsion
+
+- id: abr-pasai
+  year: 1297
+  title: 蘇木都剌—巴賽的蘇丹墓碑，伊斯蘭在群島扎根
+  category: spread
+  importance: 4
+  desc: 蘇門答臘北端的統治者改信伊斯蘭，留下群島已知最早的穆斯林君主墓碑。
+    伊斯蘭靠商路而非軍隊走進東南亞，今日全球最多穆斯林的國家由此開始。
+  sources:
+    - title: 英文維基百科：Samudera Pasai Sultanate
+      url: https://en.wikipedia.org/wiki/Samudera_Pasai_Sultanate
+    - title: 英文維基百科：Islam in Southeast Asia
+      url: https://en.wikipedia.org/wiki/Islam_in_Southeast_Asia
 
 - id: abr-avignon
   year: 1309
@@ -731,6 +817,28 @@
     - title: 維基百科：亞維農教廷
       url: https://zh.wikipedia.org/wiki/亞維農教廷
 
+- id: abr-mansa-musa
+  year: 1324
+  title: 曼薩·穆薩朝覲麥加
+  category: spread
+  importance: 4
+  desc: 馬利國王帶著龐大商隊與黃金東行，沿途散財到開羅金價下跌。回程延攬學者建清真寺，
+    廷巴克圖成為西非的伊斯蘭學術中心，撒哈拉以南從此進入伊斯蘭世界的版圖。
+  sources:
+    - title: 維基百科：曼薩·穆薩
+      url: https://zh.wikipedia.org/wiki/曼薩·穆薩
+
+- id: abr-ibn-taymiyya
+  year: 1328
+  title: 伊本·泰米葉在獄中逝世
+  category: doctrine
+  importance: 4
+  desc: 主張回到《古蘭經》與聖訓的字面理解，反對聖徒崇拜、掃墓與哲學思辨，
+    因此屢遭下獄。四百年後瓦哈比派奉他為先驅，當代薩拉菲思潮也從這裡取材。
+  sources:
+    - title: 維基百科：伊本·泰米葉
+      url: https://zh.wikipedia.org/wiki/伊本·泰米葉
+
 - id: abr-western-schism
   year: 1378
   title: 天主教會大分裂，同時出現兩位教宗
@@ -741,6 +849,18 @@
   sources:
     - title: 維基百科：天主教會大分裂
       url: https://zh.wikipedia.org/wiki/天主教會大分裂
+
+- id: abr-constance
+  year: 1414
+  endYear: 1418
+  title: 康士坦斯大公會議收拾大分裂
+  category: order
+  importance: 4
+  desc: 三位教宗並立的局面靠一場會議解決：兩位被廢、一位退位，另選新教宗。
+    代價是「大公會議高於教宗」的主張被寫進決議，往後一個世紀教廷都在設法把它抹掉。
+  sources:
+    - title: 維基百科：康士坦斯大公會議
+      url: https://zh.wikipedia.org/wiki/康士坦斯大公會議
 
 - id: abr-hus
   year: 1415
@@ -769,8 +889,8 @@
   title: 西班牙驅逐猶太人
   category: conflict
   importance: 4
-  desc: 限期改宗或離境，數萬人流散至鄂圖曼、北非與尼德蘭。
-    塞法迪猶太文化的離散版圖由此形成。
+  desc: 限期改宗或離境，數萬人流散至鄂圖曼、北非與尼德蘭，同一年哥倫布正好啟航。塞法
+    迪猶太文化的離散版圖由此形成，拉迪諾語也隨之散布到地中海各港。
   sources:
     - title: 英文維基百科：Alhambra Decree
       url: https://en.wikipedia.org/wiki/Alhambra_Decree
@@ -798,6 +918,28 @@
       url: https://zh.wikipedia.org/wiki/九十五條論綱
     - title: 維基百科：馬丁·路德
       url: https://zh.wikipedia.org/wiki/馬丁·路德
+
+- id: abr-luther-bible
+  year: 1522
+  title: 路德把新約譯成德文
+  category: scripture
+  importance: 4
+  desc: 在瓦特堡避難期間譯出，十一週完成。搭上印刷術，一般信徒第一次能繞過神職人員
+    自己讀經——「唯獨聖經」從口號變成做得到的事，也順手定下了現代德語的書面標準。
+  sources:
+    - title: 維基百科：路德版聖經
+      url: https://zh.wikipedia.org/wiki/路德版聖經
+
+- id: abr-anabaptist
+  year: 1525
+  title: 重浸派在蘇黎世舉行成人洗禮
+  category: order
+  importance: 4
+  desc: 一群人認為嬰兒洗無效，彼此重新施洗。這等於否定「生在基督教國家就是基督徒」，
+    天主教與新教都判他們死罪。政教分離、拒服兵役的傳統從這條被追殺的支線長出來。
+  sources:
+    - title: 維基百科：重浸派
+      url: https://zh.wikipedia.org/wiki/重浸派
 
 - id: abr-supremacy
   year: 1534
@@ -880,6 +1022,28 @@
     - title: 維基百科：阿克巴
       url: https://zh.wikipedia.org/wiki/阿克巴
 
+- id: abr-moscow-patriarchate
+  year: 1589
+  title: 莫斯科牧首區設立
+  category: order
+  importance: 4
+  desc: 君士坦丁堡陷落後，俄羅斯自認是唯一還在的東正教帝國。牧首區一立，
+    「第三羅馬」就有了教會建制，正教的重心自此由地中海北移。
+  sources:
+    - title: 維基百科：莫斯科及全羅斯牧首
+      url: https://zh.wikipedia.org/wiki/莫斯科及全羅斯牧首
+
+- id: abr-kjv
+  year: 1611
+  title: 《欽定版聖經》出版
+  category: scripture
+  importance: 5
+  desc: 詹姆士一世召集四十七位學者分組譯校，用來收束英格蘭各派互不相讓的譯本。
+    它成了往後三百年英語世界唯一的共同經文，對英語的形塑不亞於莎士比亞。
+  sources:
+    - title: 維基百科：欽定版聖經
+      url: https://zh.wikipedia.org/wiki/欽定版聖經
+
 - id: abr-thirty-years
   year: 1618
   endYear: 1648
@@ -913,6 +1077,17 @@
   sources:
     - title: 維基百科：沙巴泰·澤維
       url: https://zh.wikipedia.org/wiki/沙巴泰·澤維
+
+- id: abr-raskol
+  year: 1666
+  title: 俄羅斯教會分裂，舊禮儀派出走
+  category: order
+  importance: 4
+  desc: 尼康牧首照希臘原本改動儀軌，畫十字改用三指。反對者被絕罰，寧可自焚也不從。
+    爭的是手勢與拼寫，底下是「俄羅斯還是不是最純正的正教」這個問題。
+  sources:
+    - title: 維基百科：舊禮儀派
+      url: https://zh.wikipedia.org/wiki/舊禮儀派
 
 - id: abr-methodism
   year: 1738
@@ -953,6 +1128,17 @@
     - title: 維基百科：穆罕默德·伊本·阿卜杜勒·瓦哈卜
       url: https://zh.wikipedia.org/wiki/穆罕默德·伊本·阿卜杜勒·瓦哈卜
 
+- id: abr-second-awakening
+  year: 1801
+  title: 第二次大覺醒的營地佈道
+  category: order
+  importance: 3
+  desc: 肯塔基州凱恩嶺的野外聚會湧入上萬人。得救與否交給個人的決志，不由教會安排，
+    浸信會與循道會因此在拓荒地區暴增，美國新教的重心從東岸舊宗派轉向福音派。
+  sources:
+    - title: 維基百科：第二次大覺醒
+      url: https://zh.wikipedia.org/wiki/第二次大覺醒
+
 - id: abr-reform-judaism
   year: 1810
   title: 改革派猶太教興起
@@ -982,8 +1168,8 @@
   title: 巴布在設拉子宣示
   category: founding
   importance: 3
-  desc: 自稱是通往應許者的門，六年後被處決，追隨者遭大規模鎮壓。
-    這場運動是巴哈伊信仰的前身。
+  desc: 自稱是通往應許者的門，六年後被處決，追隨者遭大規模鎮壓。這場運動是巴哈伊信仰
+    的前身——十九年後獄中的巴哈歐拉宣告自己就是他預言的那一位。
   sources:
     - title: 英文維基百科：Báb
       url: https://en.wikipedia.org/wiki/B%C3%A1b
@@ -1060,6 +1246,17 @@
     - title: 維基百科：穆斯林兄弟會
       url: https://zh.wikipedia.org/wiki/穆斯林兄弟會
 
+- id: abr-dead-sea-scrolls
+  year: 1947
+  title: 死海古卷出土
+  category: scripture
+  importance: 4
+  desc: 牧羊人在昆蘭洞穴找到成批皮卷，其中的《以賽亞書》比當時最早的希伯來抄本
+    早了一千年，文字卻幾乎相同。經文傳抄的可靠程度第一次有了實物可以檢驗。
+  sources:
+    - title: 維基百科：死海古卷
+      url: https://zh.wikipedia.org/wiki/死海古卷
+
 - id: abr-israel
   year: 1948
   title: 以色列建國
@@ -1082,6 +1279,17 @@
   sources:
     - title: 維基百科：梵蒂岡第二屆大公會議
       url: https://zh.wikipedia.org/wiki/梵蒂岡第二屆大公會議
+
+- id: abr-liberation-theology
+  year: 1968
+  title: 麥德林會議與解放神學
+  category: doctrine
+  importance: 4
+  desc: 拉丁美洲主教團宣示教會「優先選擇窮人」。救恩被讀成也包含現世的社會解放，
+    基層團體遍地開花，也讓教會與軍政府正面衝突，數十年間有神父與主教遇害。
+  sources:
+    - title: 維基百科：解放神學
+      url: https://zh.wikipedia.org/wiki/解放神學
 
 - id: abr-iran-revolution
   year: 1979

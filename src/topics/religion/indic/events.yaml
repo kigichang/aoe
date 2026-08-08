@@ -102,6 +102,17 @@
     - title: 維基百科：第二次結集
       url: https://zh.wikipedia.org/wiki/第二次結集
 
+- id: ind-ramayana
+  year: -300
+  title: 《羅摩衍那》成篇
+  category: scripture
+  importance: 5
+  desc: 羅摩流放、悉多被擄、猴神哈努曼相助的故事，核心部分約成於此時，
+    至三世紀才定稿。它同時是敘事詩與行為典範，後來一路傳到爪哇、暹羅與柬埔寨。
+  sources:
+    - title: 維基百科：羅摩衍那
+      url: https://zh.wikipedia.org/wiki/羅摩衍那
+
 - id: ind-ashoka
   year: -250
   title: 阿育王結集並派遣傳教師
@@ -135,6 +146,17 @@
     - title: 維基百科：薄伽梵歌
       url: https://zh.wikipedia.org/wiki/薄伽梵歌
 
+- id: ind-milinda
+  year: -150
+  title: 《彌蘭王問經》：希臘國王問法
+  category: scripture
+  importance: 3
+  desc: 記錄印度—希臘王國的彌蘭陀王與比丘那先的對答，用馬車的比喻論證「無我」。
+    亞歷山大東征留下的希臘人在此與佛法正面對話，是兩大思想傳統少見的直接交鋒紀錄。
+  sources:
+    - title: 維基百科：彌蘭王問經
+      url: https://zh.wikipedia.org/wiki/彌蘭王問經
+
 - id: ind-mahayana
   year: -100
   title: 大乘佛教興起
@@ -151,8 +173,8 @@
   title: 巴利三藏在斯里蘭卡寫成文字
   category: scripture
   importance: 5
-  desc: 饑荒與戰亂讓僧團擔心口傳斷絕，因此決定寫下來。
-    現存最完整的早期佛教經典就是這一次的成果。
+  desc: 饑荒與戰亂讓僧團擔心口傳斷絕，五百比丘集會於馬特勒，把三藏刻上貝葉。現存最完
+    整的早期佛教經典就是這一次的成果，也是上座部與後起大乘各自論述時的文本基準。
   sources:
     - title: 維基百科：巴利三藏
       url: https://zh.wikipedia.org/wiki/巴利三藏
@@ -170,12 +192,23 @@
     - title: 維基百科：白衣派
       url: https://zh.wikipedia.org/wiki/白衣派
 
+- id: ind-gandhara-buddha
+  year: 100
+  title: 犍陀羅開始造佛陀像
+  category: doctrine
+  importance: 4
+  desc: 此前佛陀只以足印、法輪、空座象徵，不作人形。犍陀羅工匠以希臘化的衣褶與面容
+    塑出人身佛陀，禮拜的對象從教義變成看得見的形象——東亞所有佛像都是這一支的後裔。
+  sources:
+    - title: 維基百科：希臘式佛教藝術
+      url: https://zh.wikipedia.org/wiki/希臘式佛教藝術
+
 - id: ind-kanishka
   year: 127
   title: 迦膩色伽護持佛教，第四次結集
   category: order
   importance: 3
-  desc: 貴霜帝國橫跨中亞，佛教因此沿絲路東傳。
+  desc: 貴霜帝國橫跨中亞，佛教因此沿絲路東傳，其錢幣上同時鑄有佛陀與希臘、伊朗諸神。
     最早的佛像也大致在這個時期出現於犍陀羅與秣菟羅。
   sources:
     - title: 維基百科：迦膩色伽一世
@@ -195,6 +228,17 @@
       url: https://zh.wikipedia.org/wiki/龍樹
     - title: 維基百科：中觀學派
       url: https://zh.wikipedia.org/wiki/中觀學派
+
+- id: ind-manusmriti
+  year: 150
+  title: 《摩奴法論》編成
+  category: scripture
+  importance: 4
+  desc: 把種姓的權利義務、人生四階段與婚喪規範寫成條文。它讓婆羅門秩序從習俗變成
+    成文法，英國殖民者又據它編纂「印度教法」，兩千年後仍是種姓爭議繞不開的文本。
+  sources:
+    - title: 維基百科：摩奴法論
+      url: https://zh.wikipedia.org/wiki/摩奴法論
 
 - id: ind-yogacara
   year: 350
@@ -230,6 +274,28 @@
   sources:
     - title: 維基百科：瑜伽經
       url: https://zh.wikipedia.org/wiki/瑜伽經
+
+- id: ind-nalanda-founded
+  year: 427
+  title: 那爛陀寺創建
+  category: order
+  importance: 4
+  desc: 笈多王朝護持的巨型僧院，鼎盛時上萬僧眾、講堂與藏書樓成群，
+    入學還得先過門辯。玄奘、義淨都在此留學多年，它等於是佛教世界的最高學府。
+  sources:
+    - title: 維基百科：那爛陀寺
+      url: https://zh.wikipedia.org/wiki/那爛陀寺
+
+- id: ind-puranas
+  year: 500
+  title: 往世書體系成形
+  category: scripture
+  importance: 4
+  desc: 以創世、族譜與神話故事講毗濕奴、濕婆與女神。吠陀只有婆羅門能誦，
+    往世書卻是講給所有人聽的，今日印度教徒實際信奉的神譜多半出自這裡而非吠陀。
+  sources:
+    - title: 維基百科：往世書
+      url: https://zh.wikipedia.org/wiki/往世書
 
 - id: ind-bhakti
   year: 600
@@ -276,6 +342,41 @@
       url: https://zh.wikipedia.org/wiki/阿迪·商羯羅
     - title: 英文維基百科：Advaita Vedanta
       url: https://en.wikipedia.org/wiki/Advaita_Vedanta
+
+- id: ind-borobudur
+  year: 800
+  title: 婆羅浮屠興建
+  category: spread
+  importance: 4
+  desc: 爪哇夏連特拉王朝所建，方壇迴廊刻滿本生故事，繞行而上即是修行的次第。
+    它是印度以外規模最大的佛教建築，見證大乘曾經一路傳到南洋島嶼。
+  sources:
+    - title: 維基百科：婆羅浮屠
+      url: https://zh.wikipedia.org/wiki/婆羅浮屠
+
+- id: ind-brihadeeswarar
+  year: 1010
+  title: 朱羅王朝建成坦賈武爾大廟
+  category: order
+  importance: 3
+  desc: 六十餘公尺的花崗岩塔廟，附設田產、樂舞與千名職事。南印度的神廟不只是禮拜場所，
+    而是掌管土地與稅收的經濟體，濕婆信仰因此有了自我維持的制度基礎。
+  sources:
+    - title: 維基百科：布里哈迪希瓦拉神廟
+      url: https://zh.wikipedia.org/wiki/布里哈迪希瓦拉神廟
+
+- id: ind-somnath
+  year: 1026
+  title: 加茲尼的馬哈茂德劫掠索姆納特
+  category: conflict
+  importance: 4
+  desc: 濕婆神廟被破壞、林伽被砸，財寶運回阿富汗。十七次侵入北印度中最著名的一次，
+    也成為往後千年被反覆援引的創傷記憶——1947 年後重建此廟仍是高度政治性的舉動。
+  sources:
+    - title: 維基百科：索姆納特寺
+      url: https://zh.wikipedia.org/wiki/索姆納特寺
+    - title: 維基百科：加茲尼的馬哈茂德
+      url: https://zh.wikipedia.org/wiki/加茲尼的馬哈茂德
 
 - id: ind-atisha
   year: 1042
@@ -339,8 +440,8 @@
   title: 素可泰王朝奉上座部為國教
   category: spread
   importance: 3
-  desc: 泰國佛教的制度框架由此確立，僧團由國家認可並管理。
-    這個政教配置延續至今。
+  desc: 蘭甘亨自錫蘭延請僧人，改奉上座部並以國王為僧團的護持者。泰國佛教的制度框架由
+    此確立——僧團由國家認可、編制與管理，這個政教配置延續至今。
   sources:
     - title: 維基百科：素可泰王國
       url: https://zh.wikipedia.org/wiki/素可泰王國
@@ -371,6 +472,19 @@
     - title: 維基百科：錫克教
       url: https://zh.wikipedia.org/wiki/錫克教
 
+- id: ind-ramcharitmanas
+  year: 1574
+  title: 圖爾西達斯以方言重寫《羅摩衍那》
+  category: scripture
+  importance: 4
+  desc: 《羅摩功行錄》用阿瓦提語寫成，不識梵文的人也能誦讀。北印度的虔信運動
+    自此有了自己的經典，羅摩信仰從文人的史詩變成村莊裡年年搬演的活傳統。
+  sources:
+    - title: 維基百科：羅摩功行錄
+      url: https://zh.wikipedia.org/wiki/羅摩功行錄
+    - title: 維基百科：虔信運動
+      url: https://zh.wikipedia.org/wiki/虔信運動
+
 - id: ind-dalai-lama-title
   year: 1578
   title: 俺答汗贈予「達賴喇嘛」尊號
@@ -393,13 +507,24 @@
     - title: 英文維基百科：Guru Granth Sahib
       url: https://en.wikipedia.org/wiki/Guru_Granth_Sahib
 
+- id: ind-guru-arjan
+  year: 1606
+  title: 第五代古魯阿爾瓊殉教
+  category: conflict
+  importance: 4
+  desc: 編定錫克經典、建成金廟的古魯，被蒙兀兒朝廷處死。繼任者開始佩劍、
+    築堡、練兵——錫克教從一個講內在修持的教團，轉向兼具武裝的自衛共同體。
+  sources:
+    - title: 英文維基百科：Guru Arjan
+      url: https://en.wikipedia.org/wiki/Guru_Arjan
+
 - id: ind-ganden-phodrang
   year: 1642
   title: 五世達賴建立甘丹頗章政權
   category: order
   importance: 4
-  desc: 在蒙古軍事支持下統一西藏，宗教領袖同時是政治統治者。
-    這個政教合一的體制運作到 1959 年。
+  desc: 在和碩特蒙古的軍事支持下統一西藏，宗教領袖同時是政治統治者，布達拉宮也在此時
+    擴建成宮堡。這個政教合一的體制運作到 1959 年。
   sources:
     - title: 維基百科：第五世達賴喇嘛
       url: https://zh.wikipedia.org/wiki/第五世達賴喇嘛
@@ -465,6 +590,17 @@
     - title: 英文維基百科：Parliament of the World's Religions
       url: https://en.wikipedia.org/wiki/Parliament_of_the_World%27s_Religions
 
+- id: ind-partition
+  year: 1947
+  title: 印巴分治與宗教大遷徙
+  category: conflict
+  importance: 5
+  desc: 依宗教多數劃界建國，約一千五百萬人在數月內反向遷徙，死亡以百萬計。
+    南亞的宗教認同從此與國界綁在一起，喀什米爾爭議與教派暴力都由此延續至今。
+  sources:
+    - title: 維基百科：印巴分治
+      url: https://zh.wikipedia.org/wiki/印巴分治
+
 - id: ind-ambedkar
   year: 1956
   title: 安貝德卡與數十萬人集體皈依佛教
@@ -481,8 +617,19 @@
   title: 達賴喇嘛流亡印度
   category: conflict
   importance: 4
-  desc: 甘丹頗章政權終結，僧團與典籍隨之外移。
-    藏傳佛教因此從高原上的地方傳統變成全球性的宗教。
+  desc: 拉薩抗暴失敗後翻越喜馬拉雅山南下，甘丹頗章政權終結，僧團與典籍隨之外移，在達
+    蘭薩拉重建寺院與學制。藏傳佛教因此從高原上的地方傳統變成全球性的宗教。
   sources:
     - title: 維基百科：1959年藏區騷亂
       url: https://zh.wikipedia.org/wiki/1959年藏區騷亂
+
+- id: ind-ayodhya
+  year: 1992
+  title: 巴布里清真寺被拆毀
+  category: conflict
+  importance: 4
+  desc: 群眾拆掉阿約提亞的十六世紀清真寺，主張該地是羅摩誕生處，隨後全印爆發教派暴亂。
+    印度教民族主義由邊緣議題走上政治中心，世俗國家的定位自此被反覆挑戰。
+  sources:
+    - title: 維基百科：巴布里清真寺
+      url: https://zh.wikipedia.org/wiki/巴布里清真寺
