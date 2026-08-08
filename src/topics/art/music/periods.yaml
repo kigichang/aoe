@@ -1,0 +1,62 @@
+# 只有一條 track，而且明確標成「西方音樂」。
+#
+# 這不是因為別的地方沒有音樂，而是因為別的地方沒有留下夠密的
+# 可定年材料來畫成連續色帶——中國的樂律有文獻但演奏實務失傳，
+# 印度的拉格體系是師徒口傳，兩者都無法切出「從哪一年到哪一年」的段落。
+# 硬畫一條「東亞音樂」的色帶，中間會有上千年的空白，
+# 而空白的色帶比沒有色帶更難讀（同 CLAUDE.md 對 global 欄的判斷）。
+#
+# 名稱一律冠上「西方」，讓讀者一眼看出這把尺量的是誰。
+# 這一欄的非西方事件（曾侯乙編鐘、法拉比、朱載堉、散拍與爵士）
+# 因此沒有色帶可靠，是已知的取捨。
+
+- id: mus-p-ancient
+  name: 西方・古代
+  track: 0
+  start: -3000
+  end: 499
+
+- id: mus-p-medieval
+  name: 西方・中世紀
+  track: 0
+  start: 500
+  end: 1399
+  note: 單聲部聖歌到複音，記譜法在這一段從無到有。
+
+- id: mus-p-renaissance
+  name: 西方・文藝復興
+  track: 0
+  start: 1400
+  end: 1599
+
+- id: mus-p-baroque
+  name: 西方・巴洛克
+  track: 0
+  start: 1600
+  end: 1750
+  note: 起於歌劇誕生，止於巴哈之死——與美術的巴洛克差了三十年。
+
+- id: mus-p-classical
+  name: 西方・古典
+  track: 0
+  start: 1751
+  end: 1820
+
+- id: mus-p-romantic
+  name: 西方・浪漫
+  track: 0
+  start: 1821
+  end: 1899
+
+- id: mus-p-modern
+  name: 西方・現代
+  track: 0
+  start: 1900
+  end: 1944
+
+- id: mus-p-postwar
+  name: 西方・戰後與流行
+  track: 0
+  start: 1945
+  end: 2026
+  note: 從這一段起，古典與流行分屬兩套完全不同的生產與流通體系。

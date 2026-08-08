@@ -1,0 +1,129 @@
+# 兩條 track：
+#   track 0 = 西方（地中海—歐洲—大西洋兩岸）
+#   track 1 = 東亞（中國—日本）
+#
+# **為什麼分區而不是只畫一條「世界造形藝術分期」**：那條線不存在。
+# 「文藝復興」對中國毫無意義，「宋代文人畫」對歐洲也一樣。
+# 硬合成一條的話，色帶會變成一個沒有任何人使用過的分期，
+# 讀者反而更難把圖釘對回自己知道的框架。
+#
+# **色帶在這裡的作用是尺規，不是覆蓋率**（同 CLAUDE.md 對世界史「global」
+# 欄的說明）。伊斯蘭、印度、美洲的事件沒有對應的色帶可靠，
+# 這是已知的取捨——兩條線已經足夠讓人判斷「阿茲特克覆滅那年，
+# 歐洲正在盛期文藝復興、中國正在明代中期」。要加第三條之前先確認
+# 那條線從頭到尾填得滿，空白的色帶比沒有色帶更難讀。
+
+# ---- track 0：西方 ----
+
+- id: vis-p-ancient-near-east
+  name: 古代近東與埃及
+  track: 0
+  start: -3000
+  end: -801
+
+- id: vis-p-greek
+  name: 希臘
+  track: 0
+  start: -800
+  end: -31
+
+- id: vis-p-roman
+  name: 羅馬
+  track: 0
+  start: -30
+  end: 313
+
+- id: vis-p-early-christian
+  name: 早期基督教與拜占庭
+  track: 0
+  start: 314
+  end: 1149
+
+- id: vis-p-gothic
+  name: 哥德
+  track: 0
+  start: 1150
+  end: 1399
+
+- id: vis-p-renaissance
+  name: 文藝復興
+  track: 0
+  start: 1400
+  end: 1599
+
+- id: vis-p-baroque
+  name: 巴洛克與洛可可
+  track: 0
+  start: 1600
+  end: 1769
+
+- id: vis-p-neoclassic
+  name: 新古典與浪漫
+  track: 0
+  start: 1770
+  end: 1847
+
+- id: vis-p-modern-19c
+  name: 寫實到後印象派
+  track: 0
+  start: 1848
+  end: 1904
+
+- id: vis-p-avant-garde
+  name: 前衛
+  track: 0
+  start: 1905
+  end: 1944
+
+- id: vis-p-postwar
+  name: 戰後與當代
+  track: 0
+  start: 1945
+  end: 2026
+
+# ---- track 1：東亞 ----
+
+- id: vis-p-shang-zhou
+  name: 商周青銅
+  track: 1
+  start: -1600
+  end: -222
+
+- id: vis-p-qin-han
+  name: 秦漢
+  track: 1
+  start: -221
+  end: 220
+
+- id: vis-p-six-dynasties
+  name: 魏晉南北朝
+  track: 1
+  start: 221
+  end: 580
+  note: 佛教造像與捲軸畫同時在這一段成形。
+
+- id: vis-p-sui-tang
+  name: 隋唐
+  track: 1
+  start: 581
+  end: 906
+
+- id: vis-p-song-yuan
+  name: 宋元
+  track: 1
+  start: 907
+  end: 1367
+  note: 文人畫與院體畫並立，日本鎌倉、室町的水墨由此輸入。
+
+- id: vis-p-ming-qing
+  name: 明清
+  track: 1
+  start: 1368
+  end: 1911
+  note: 江戶的浮世繪與琳派也落在這一段，同屬東亞版畫與裝飾畫的高峰。
+
+- id: vis-p-eastasia-modern
+  name: 東亞近現代
+  track: 1
+  start: 1912
+  end: 2026

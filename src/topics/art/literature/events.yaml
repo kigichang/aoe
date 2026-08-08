@@ -1,0 +1,993 @@
+# 文學與表演欄：敘事、戲劇、電影。
+#
+# 為什麼三者同欄：它們共用同一套流通機制（抄本、印刷、劇場、影院、著作權），
+# 而且彼此不斷互換內容——戲劇是被演出來的文本，電影一出現就整批
+# 改編小說與舞台劇。分成兩欄的話，《哈姆雷特》要放哪一邊每次都得重判。
+#
+# 收的是「這之後說故事的方式不一樣了」：一種文體被做出來、
+# 一種複製技術改變了誰讀得到、一個作品因為內容被告上法庭。
+# 不收「這本很有名」——名氣是後世的事，缺口才是這條軸要標的東西。
+#
+# id 前綴 lit-。category: work | technique | movement | institution | transmission | controversy
+# 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
+
+- id: lit-gilgamesh
+  year: -2100
+  title: 《吉爾伽美什史詩》
+  category: work
+  importance: 5
+  desc: 已知最早的長篇敘事文學。主角追求永生、失去摯友、最後接受自己會死——
+    一個有起點、有轉折、有內在變化的主角，這個結構此後
+    四千年幾乎沒有被替換過。
+  sources:
+    - title: 維基百科：吉爾伽美什史詩
+      url: https://zh.wikipedia.org/wiki/吉爾伽美什史詩
+
+- id: lit-shijing
+  year: -1000
+  title: 《詩經》最早的篇章
+  category: work
+  importance: 5
+  desc: 三百餘篇，從祭祀樂歌到民間情歌都收。它原本是唱的，
+    樂譜失傳後只剩文字，卻因此成為中國詩歌的源頭與此後兩千年
+    士人共同的語彙庫——引一句《詩》就是一種論證方式。
+  sources:
+    - title: 維基百科：詩經
+      url: https://zh.wikipedia.org/wiki/詩經
+
+- id: lit-homer
+  year: -750
+  title: 荷馬史詩定型為文字
+  category: technique
+  importance: 5
+  desc: 口傳吟誦的內容在希臘字母普及後被寫定。程式化的套語與重複段落
+    是口傳時代留下的指紋，而寫定的那一刻，一部作品第一次
+    可以在作者不在場、也不被記憶改動的情況下傳下去。
+  sources:
+    - title: 維基百科：荷馬史詩
+      url: https://zh.wikipedia.org/wiki/荷馬史詩
+
+- id: lit-sappho
+  year: -600
+  title: 莎孚的抒情詩
+  category: movement
+  importance: 3
+  desc: 史詩講的是眾人的事，她寫的是一個人此刻的感受——嫉妒、心跳、
+    無法呼吸。第一人稱的主觀經驗成為值得寫下來的東西，
+    西方抒情詩的傳統從她開始。
+  sources:
+    - title: 維基百科：莎孚
+      url: https://zh.wikipedia.org/wiki/莎孚
+
+- id: lit-tragedy-contest
+  year: -534
+  title: 雅典在酒神節設立悲劇競賽
+  category: institution
+  importance: 5
+  desc: 城邦出錢、公民擔任評審、劇作家報名參賽。戲劇不是娛樂而是
+    公共制度的一部分，一年一度全城停下來看同一批新戲——
+    戲劇這個類型是被一個具體的政治安排催生出來的。
+  sources:
+    - title: 維基百科：古希臘戲劇
+      url: https://zh.wikipedia.org/wiki/古希臘戲劇
+
+- id: lit-oresteia
+  year: -458
+  title: 埃斯庫羅斯《奧瑞斯提亞》
+  category: work
+  importance: 4
+  desc: 現存唯一完整的希臘三聯劇。血債相報的循環最後不是靠復仇解決，
+    而是靠雅典娜設立法庭來審判——戲劇被拿來論證一個城邦
+    為什麼需要司法制度。
+  sources:
+    - title: 英文維基百科：Oresteia
+      url: https://en.wikipedia.org/wiki/Oresteia
+
+- id: lit-antigone
+  year: -441
+  title: 索福克勒斯《安提戈涅》
+  category: work
+  importance: 4
+  desc: 城邦的法令與親人的葬儀之責正面衝突，兩邊都有道理，
+    所以兩邊都得毀掉。悲劇的核心從此不是好人遇上壞人，
+    而是兩種正當性互不相容——這個模型後來被黑格爾拿去講辯證法。
+  sources:
+    - title: 維基百科：安提戈涅
+      url: https://zh.wikipedia.org/wiki/安提戈涅
+
+- id: lit-aristophanes
+  year: -425
+  title: 阿里斯托芬的舊喜劇
+  category: movement
+  importance: 3
+  desc: 台上直接指名嘲笑在世的將軍、政客與哲學家，還讓合唱隊
+    對觀眾發表政見。喜劇在雅典是言論自由的一種形式，
+    而蘇格拉底被他刻劃的形象，據說也影響了後來對他的審判。
+  sources:
+    - title: 維基百科：阿里斯托芬
+      url: https://zh.wikipedia.org/wiki/阿里斯托芬
+
+- id: lit-poetics
+  year: -335
+  title: 亞里斯多德《詩學》
+  category: work
+  importance: 5
+  desc: 分析悲劇為何有效：情節重於性格、須有逆轉與發現、
+    目的是引發憐憫與恐懼再加以宣洩。第一部把作品當成
+    可拆解的機制來研究的著作，兩千三百年來的編劇教學仍在用它。
+  sources:
+    - title: 維基百科：詩學
+      url: https://zh.wikipedia.org/wiki/詩學
+
+- id: lit-aeneid
+  year: -19
+  title: 維吉爾《埃涅阿斯紀》
+  category: work
+  importance: 4
+  desc: 奉命為羅馬寫一部媲美荷馬的史詩，把帝國的起源接到特洛伊。
+    這是文學第一次被自覺地當成國族認同的建構工程，
+    而作者臨終要求燒掉它，奧古斯都沒有答應。
+  sources:
+    - title: 維基百科：埃涅阿斯紀
+      url: https://zh.wikipedia.org/wiki/埃涅阿斯紀
+
+- id: lit-metamorphoses
+  year: 8
+  title: 奧維德《變形記》
+  category: work
+  importance: 4
+  desc: 兩百五十個變形故事串成一部連續長詩，不靠單一主角而靠主題接續。
+    它成為後世歐洲最常被取材的神話總集——文藝復興以後的繪畫、
+    歌劇與詩若不引荷馬，多半就是引它。
+  sources:
+    - title: 維基百科：變形記 (奧維德)
+      url: https://zh.wikipedia.org/wiki/變形記_(奧維德)
+
+- id: lit-natyashastra
+  year: 200
+  title: 《樂舞論》
+  category: work
+  importance: 4
+  desc: 印度的表演總綱：劇場形制、角色類型、手勢、韻律，
+    以及「味」的理論——作品的目的是在觀眾心裡喚起特定的情感狀態。
+    與亞里斯多德的情節中心論分屬兩套完全不同的戲劇觀。
+  sources:
+    - title: 維基百科：樂舞論
+      url: https://zh.wikipedia.org/wiki/樂舞論
+
+- id: lit-shakuntala
+  year: 400
+  title: 迦梨陀娑《沙恭達羅》
+  category: work
+  importance: 3
+  desc: 梵語古典戲劇的代表作，愛情、遺忘與相認的結構寫得極精緻。
+    十八世紀末譯成英文與德文後，歌德為之驚嘆——
+    這是歐洲第一次認真意識到印度有自己的古典文學傳統。
+  sources:
+    - title: 維基百科：沙恭達羅
+      url: https://zh.wikipedia.org/wiki/沙恭達羅
+
+- id: lit-wenxin
+  year: 501
+  title: 劉勰《文心雕龍》
+  category: work
+  importance: 4
+  desc: 五十篇，從文體分類、寫作方法一路談到批評的態度，體系嚴密。
+    中國第一部成系統的文學理論專著，比它早的多是零星評點——
+    與亞里斯多德《詩學》遙相對照，一邊分析情節，一邊分析文體與風格。
+  sources:
+    - title: 維基百科：文心雕龍
+      url: https://zh.wikipedia.org/wiki/文心雕龍
+    - title: 維基百科：劉勰
+      url: https://zh.wikipedia.org/wiki/劉勰
+
+- id: lit-tang-poetry
+  year: 750
+  title: 盛唐詩：李白與杜甫
+  category: movement
+  importance: 5
+  desc: 格律詩在此定型，題材從邊塞、山水到戰亂流離無所不包。
+    詩同時是科舉的考科、官場的社交工具與私人的抒情——
+    一種文體同時承擔這三件事，是漢字文化圈獨有的狀況。
+  sources:
+    - title: 維基百科：李白
+      url: https://zh.wikipedia.org/wiki/李白
+    - title: 維基百科：杜甫
+      url: https://zh.wikipedia.org/wiki/杜甫
+
+- id: lit-diamond-sutra
+  year: 868
+  title: 現存最早的印刷書：《金剛經》
+  category: technique
+  importance: 5
+  desc: 敦煌出土的雕版卷子，末尾明記年月與施印者。
+    文字第一次能被機械複製，比古騰堡早近六百年；
+    而它最早的用途是佈施功德，不是販售。
+  sources:
+    - title: 維基百科：金剛經
+      url: https://zh.wikipedia.org/wiki/金剛經
+
+- id: lit-arabian-nights
+  year: 900
+  title: 《一千零一夜》開始成形
+  category: work
+  importance: 4
+  desc: 波斯、印度、阿拉伯的故事被套進「說故事以延命」的框架，
+    故事裡再生故事。這套嵌套結構後來反覆出現在《十日談》、
+    《坎特伯雷故事集》乃至現代小說裡。
+  sources:
+    - title: 維基百科：一千零一夜
+      url: https://zh.wikipedia.org/wiki/一千零一夜
+
+- id: lit-genji
+  year: 1008
+  title: 紫式部《源氏物語》
+  category: work
+  importance: 5
+  desc: 五十四帖、四百多個人物，寫的是心理而非事件：嫉妒、厭倦、
+    對時間流逝的敏感。常被視為世界上最早的長篇小說，
+    而它出自一位不被允許正式學漢文的宮廷女性之手。
+  sources:
+    - title: 維基百科：源氏物語
+      url: https://zh.wikipedia.org/wiki/源氏物語
+    - title: 維基百科：紫式部
+      url: https://zh.wikipedia.org/wiki/紫式部
+
+- id: lit-movable-type
+  year: 1045
+  title: 畢昇發明泥活字
+  category: technique
+  importance: 4
+  desc: 膠泥刻字燒硬，排版後以鐵板固定，用完拆下重排。
+    比古騰堡早四百年，但漢字動輒數千個字模，效率反而不如整版雕刻——
+    同一個發明在不同的文字系統裡，價值可以完全不同。
+  sources:
+    - title: 維基百科：畢昇
+      url: https://zh.wikipedia.org/wiki/畢昇
+    - title: 維基百科：活字印刷術
+      url: https://zh.wikipedia.org/wiki/活字印刷術
+
+- id: lit-roland
+  year: 1100
+  title: 《羅蘭之歌》
+  category: work
+  importance: 3
+  desc: 現存最早的法語文學作品，唱的是查理曼麾下騎士戰死隘口。
+    忠誠、榮譽與寧死不退的價值觀被寫成範本，
+    往後整套騎士文學——以及五百年後被塞萬提斯拿來嘲弄的那些——都由此展開。
+  sources:
+    - title: 維基百科：羅蘭之歌
+      url: https://zh.wikipedia.org/wiki/羅蘭之歌
+
+- id: lit-heike
+  year: 1240
+  title: 《平家物語》
+  category: work
+  importance: 4
+  desc: 由盲眼琵琶法師彈唱流傳，數十年後才寫定。開篇即言盛者必衰，
+    武士的興亡被寫成佛教無常觀的例證——日本敘事文學的
+    基本調性在此定下。
+  sources:
+    - title: 維基百科：平家物語
+      url: https://zh.wikipedia.org/wiki/平家物語
+
+- id: lit-zaju
+  year: 1291
+  title: 關漢卿《竇娥冤》與元雜劇
+  category: movement
+  importance: 4
+  desc: 科舉停辦，文人轉而為勾欄瓦舍寫戲。四折一楔子的體制、
+    曲白相生的寫法，讓白話第一次成為書面創作的主力語言——
+    中國戲曲與後來的白話小說都由此得到養分。
+  sources:
+    - title: 維基百科：竇娥冤
+      url: https://zh.wikipedia.org/wiki/竇娥冤
+    - title: 維基百科：元雜劇
+      url: https://zh.wikipedia.org/wiki/元雜劇
+
+- id: lit-divine-comedy
+  year: 1308
+  title: 但丁開始寫《神曲》
+  category: work
+  importance: 5
+  desc: 用托斯卡尼方言而非拉丁文寫成，把整套中世紀宇宙觀、
+    神學與同時代的政敵一併寫進地獄與天堂。
+    義大利文因這部作品而成為文學語言，歐洲各國隨後跟進。
+  sources:
+    - title: 維基百科：神曲
+      url: https://zh.wikipedia.org/wiki/神曲
+    - title: 維基百科：但丁·阿利吉耶里
+      url: https://zh.wikipedia.org/wiki/但丁·阿利吉耶里
+
+- id: lit-petrarch
+  year: 1350
+  title: 佩脫拉克與十四行詩
+  category: movement
+  importance: 4
+  desc: 用固定的十四行格律反覆寫同一位女性，寫的卻是自己起伏的內心。
+    這個形式被譯進西班牙、法國與英國，四百年間歐洲詩人幾乎人人寫過；
+    他四處搜羅古代抄本的做法，也開啟了人文主義的文獻工作。
+  sources:
+    - title: 維基百科：弗朗切斯科·彼特拉克
+      url: https://zh.wikipedia.org/wiki/弗朗切斯科·彼特拉克
+    - title: 維基百科：十四行詩
+      url: https://zh.wikipedia.org/wiki/十四行詩
+
+- id: lit-decameron
+  year: 1353
+  title: 薄伽丘《十日談》
+  category: work
+  importance: 4
+  desc: 十個人避黑死病躲進郊外別墅，十天講一百個故事。
+    主角是商人、修女與市井小民，情慾與機智取代聖徒事蹟——
+    散文敘事第一次以世俗生活為主體。
+  sources:
+    - title: 維基百科：十日談
+      url: https://zh.wikipedia.org/wiki/十日談
+
+- id: lit-noh
+  year: 1374
+  title: 觀阿彌、世阿彌確立能劇
+  category: movement
+  importance: 4
+  desc: 在將軍面前演出後獲得庇護，猿樂由雜藝提升為武家的正式藝能。
+    世阿彌寫下的《風姿花傳》談的是表演者一生的技藝階段與
+    如何維持觀眾的新鮮感，是世界上最早的表演理論之一。
+  sources:
+    - title: 維基百科：能劇
+      url: https://zh.wikipedia.org/wiki/能劇
+    - title: 維基百科：世阿彌
+      url: https://zh.wikipedia.org/wiki/世阿彌
+
+- id: lit-canterbury
+  year: 1387
+  title: 喬叟《坎特伯雷故事集》
+  category: work
+  importance: 4
+  desc: 一群身分各異的朝聖者在路上輪流說故事，每個人的語氣與
+    價值觀都不同。英語當時被視為粗鄙的口語，他用它寫出
+    一部可與拉丁文並列的作品，英國文學的起點自此算起。
+  sources:
+    - title: 維基百科：坎特伯雷故事集
+      url: https://zh.wikipedia.org/wiki/坎特伯雷故事集
+    - title: 維基百科：傑弗里·喬叟
+      url: https://zh.wikipedia.org/wiki/傑弗里·喬叟
+
+- id: lit-gutenberg
+  year: 1455
+  title: 古騰堡以金屬活字印出聖經
+  category: technique
+  importance: 5
+  desc: 字母只有幾十個，鉛合金字模可重複使用，配上壓印機與油性墨。
+    書的價格在數十年內掉到抄本的零頭，五十年間歐洲印出上千萬冊——
+    宗教改革、科學革命與現代讀者都由這台機器接生。
+  sources:
+    - title: 維基百科：古騰堡聖經
+      url: https://zh.wikipedia.org/wiki/古騰堡聖經
+    - title: 維基百科：約翰內斯·谷登堡
+      url: https://zh.wikipedia.org/wiki/約翰內斯·谷登堡
+
+- id: lit-gargantua
+  year: 1532
+  title: 拉伯雷《巨人傳》
+  category: work
+  importance: 3
+  desc: 粗鄙的笑話、生造的長串詞彙與對經院學問的嘲弄混在一起，
+    多次被巴黎大學神學院查禁。它示範了小說可以是一種
+    無所不包、也無所敬畏的容器。
+  sources:
+    - title: 維基百科：巨人傳
+      url: https://zh.wikipedia.org/wiki/巨人傳
+
+- id: lit-index
+  year: 1559
+  title: 教廷頒布《禁書目錄》
+  category: controversy
+  importance: 5
+  desc: 印刷術讓書散得太快太便宜，教會於是列出一份不得印行、
+    販售與閱讀的清單，一直維持到 1966 年才廢止。
+    大規模複製一出現，系統性的審查就跟著出現——兩者是同一件事的兩面。
+  sources:
+    - title: 維基百科：禁書目錄
+      url: https://zh.wikipedia.org/wiki/禁書目錄
+
+- id: lit-essais
+  year: 1580
+  title: 蒙田《隨筆集》
+  category: movement
+  importance: 5
+  desc: 以「我」為題材，邊寫邊改變主意，並且承認自己不確定。
+    他發明了一種新文體，也發明了一種新的寫作姿態——
+    現代散文與第一人稱的自我探究都從這裡開始。
+  sources:
+    - title: 維基百科：隨筆集
+      url: https://zh.wikipedia.org/wiki/隨筆集
+    - title: 維基百科：米歇爾·德·蒙田
+      url: https://zh.wikipedia.org/wiki/米歇爾·德·蒙田
+
+- id: lit-journey-west
+  year: 1592
+  title: 《西遊記》刊行
+  category: work
+  importance: 4
+  desc: 取經的故事說書說了數百年，最後被寫定成百回長篇。
+    商業出版興盛讓白話章回小說成為賺錢的產品，
+    《三國》《水滸》《金瓶梅》同期問世，中國小說的黃金期由此展開。
+  sources:
+    - title: 維基百科：西遊記
+      url: https://zh.wikipedia.org/wiki/西遊記
+
+- id: lit-mudan-ting
+  year: 1598
+  title: 湯顯祖《牡丹亭》
+  category: work
+  importance: 4
+  desc: 少女因夢生情、傷情而死、又為情復生，五十五齣。
+    「情」被抬到能穿透生死的位置，直接對抗程朱理學的天理人欲之辨——
+    崑曲從此有了它最被搬演的劇目。
+  sources:
+    - title: 維基百科：牡丹亭
+      url: https://zh.wikipedia.org/wiki/牡丹亭
+
+- id: lit-hamlet
+  year: 1601
+  title: 莎士比亞《哈姆雷特》
+  category: work
+  importance: 5
+  desc: 主角的獨白不是向觀眾說明劇情，而是他在自己面前猶豫。
+    戲劇第一次把「一個人如何思考」當成情節本身，
+    現代文學裡那種內向、分裂、拿不定主意的主體從此有了原型。
+  sources:
+    - title: 維基百科：哈姆雷特
+      url: https://zh.wikipedia.org/wiki/哈姆雷特
+    - title: 維基百科：威廉·莎士比亞
+      url: https://zh.wikipedia.org/wiki/威廉·莎士比亞
+
+- id: lit-kabuki
+  year: 1603
+  title: 阿國在京都演出，歌舞伎誕生
+  category: movement
+  importance: 4
+  desc: 女性扮男裝在河原搭台演出，大受歡迎也屢遭幕府取締，
+    最後演變成全部由男性擔綱。它從一開始就是面向市民收費的娛樂，
+    與能劇的武家庇護走的是完全相反的路。
+  sources:
+    - title: 維基百科：出雲阿國
+      url: https://zh.wikipedia.org/wiki/出雲阿國
+    - title: 維基百科：歌舞伎
+      url: https://zh.wikipedia.org/wiki/歌舞伎
+
+- id: lit-quixote
+  year: 1605
+  title: 塞萬提斯《堂吉訶德》
+  category: work
+  importance: 5
+  desc: 主角讀騎士小說讀到分不清書與現實，作者又不斷跳出來
+    嘲弄自己這本書。它同時是小說也是對小說的評論，
+    現代長篇小說的起點幾乎公認在此。
+  sources:
+    - title: 維基百科：堂吉訶德
+      url: https://zh.wikipedia.org/wiki/堂吉訶德
+    - title: 維基百科：米格爾·德·塞萬提斯
+      url: https://zh.wikipedia.org/wiki/米格爾·德·塞萬提斯
+
+- id: lit-tartuffe
+  year: 1664
+  title: 莫里哀《偽君子》遭禁演
+  category: controversy
+  importance: 4
+  desc: 諷刺假虔誠的教徒，教會強力施壓，全面禁演五年。
+    喜劇被認定為足以動搖宗教權威而遭封殺，
+    這是近代劇場審查最著名的案例，也讓國王的庇護成為劇作家的命脈。
+  sources:
+    - title: 維基百科：偽君子 (喜劇)
+      url: https://zh.wikipedia.org/wiki/偽君子_(喜劇)
+
+- id: lit-paradise-lost
+  year: 1667
+  title: 米爾頓《失樂園》
+  category: work
+  importance: 3
+  desc: 用無韻詩寫墮天使反叛與人的失樂，而撒旦寫得比上帝有魅力得多。
+    他在王政復辟後失勢、雙目失明，全書靠口述完成——
+    英語史詩的高峰，也是浪漫派後來反覆援引的叛逆原型。
+  sources:
+    - title: 維基百科：失樂園
+      url: https://zh.wikipedia.org/wiki/失樂園
+
+- id: lit-basho
+  year: 1689
+  title: 松尾芭蕉的奧之細道之旅
+  category: movement
+  importance: 4
+  desc: 徒步兩千四百公里，沿途寫成俳文與發句。他把俳諧從連歌的
+    詼諧開場提升為能獨立成立的短詩，十七音要同時放進季節、
+    景物與剎那的感受——世界上最短的成熟詩體由此定型。
+  sources:
+    - title: 維基百科：松尾芭蕉
+      url: https://zh.wikipedia.org/wiki/松尾芭蕉
+    - title: 維基百科：奧之細道
+      url: https://zh.wikipedia.org/wiki/奧之細道
+
+- id: lit-chikamatsu
+  year: 1703
+  title: 近松門左衛門《曾根崎心中》
+  category: work
+  importance: 4
+  desc: 取材前一個月才發生的殉情事件，主角是店員與妓女。
+    人形淨琉璃的戲第一次寫當代小人物的處境，而且賣座到
+    真的引發模仿自殺、幕府下令禁演——他被稱作日本的莎士比亞。
+  sources:
+    - title: 維基百科：近松門左衛門
+      url: https://zh.wikipedia.org/wiki/近松門左衛門
+    - title: 維基百科：人形淨琉璃
+      url: https://zh.wikipedia.org/wiki/人形淨琉璃
+
+- id: lit-statute-of-anne
+  year: 1710
+  title: 英國《安妮法令》，最早的著作權法
+  category: institution
+  importance: 5
+  desc: 版權從出版商行會的永久特權，改成授予作者、且有年限的權利。
+    「作者是作品的所有人」這個今日視為當然的觀念是法律造出來的，
+    而它要處理的問題正是印刷讓複製變得太容易。
+  sources:
+    - title: 維基百科：安娜法令
+      url: https://zh.wikipedia.org/wiki/安娜法令
+
+- id: lit-robinson
+  year: 1719
+  title: 笛福《魯賓遜漂流記》
+  category: movement
+  importance: 4
+  desc: 用第一人稱、日期、清單與收支計算寫成，像是真的日誌。
+    小說開始追求「讀起來像真的」而非「像寓言」，
+    英國式的寫實小說由此起步，讀者也第一次成為可經營的市場。
+  sources:
+    - title: 維基百科：魯賓遜漂流記
+      url: https://zh.wikipedia.org/wiki/魯賓遜漂流記
+
+- id: lit-pamela
+  year: 1740
+  title: 理查森《帕梅拉》引發書信體熱潮
+  category: movement
+  importance: 3
+  desc: 全書由女僕的書信構成，讀者因此直接進入她的內心與當下。
+    它引來大量續作、仿作與惡搞，還帶動了周邊商品——
+    第一次有一本小說成為社會現象。
+  sources:
+    - title: 維基百科：帕梅拉
+      url: https://zh.wikipedia.org/wiki/帕梅拉
+
+- id: lit-werther
+  year: 1774
+  title: 歌德《少年維特的煩惱》
+  category: movement
+  importance: 4
+  desc: 年輕人熱烈、絕望、自殺。歐洲讀者穿起主角的服裝，
+    甚至傳出模仿自盡的風潮，部分城市因而查禁。
+    作品能直接改變讀者的行為，浪漫主義的第一次示範。
+  sources:
+    - title: 維基百科：少年維特的煩惱
+      url: https://zh.wikipedia.org/wiki/少年維特的煩惱
+
+- id: lit-hongloumeng
+  year: 1791
+  title: 《紅樓夢》程甲本刊行
+  category: work
+  importance: 5
+  desc: 家族由盛而衰，數百個人物各有口吻與命運，日常細節綿密到近乎冗長。
+    它把中國小說從說書體的故事推向對人物內在與時間流逝的描寫，
+    此後兩百年被視為不可逾越的高峰。
+  sources:
+    - title: 維基百科：紅樓夢
+      url: https://zh.wikipedia.org/wiki/紅樓夢
+    - title: 維基百科：曹雪芹
+      url: https://zh.wikipedia.org/wiki/曹雪芹
+
+- id: lit-faust
+  year: 1808
+  title: 歌德《浮士德》第一部
+  category: work
+  importance: 4
+  desc: 學者出賣靈魂換取體驗世界的機會，全劇跨越街市、書齋、
+    魔宴與牢獄，形式上根本不打算上演。文學作品可以大到
+    容納一整個時代對知識與慾望的疑問。
+  sources:
+    - title: 維基百科：浮士德 (歌德)
+      url: https://zh.wikipedia.org/wiki/浮士德_(歌德)
+
+- id: lit-hernani
+  year: 1830
+  title: 《愛爾那尼》首演之戰
+  category: controversy
+  importance: 4
+  desc: 雨果打破古典戲劇的三一律，支持與反對的觀眾在劇場裡對罵扭打，
+    連演數十場場場如此。浪漫派對古典派的勝負在這幾個晚上分曉，
+    也讓「首演暴動」成為前衛運動的標準劇碼。
+  sources:
+    - title: 維基百科：維克多·雨果
+      url: https://zh.wikipedia.org/wiki/維克多·雨果
+
+- id: lit-andersen
+  year: 1835
+  title: 安徒生開始發表童話
+  category: movement
+  importance: 3
+  desc: 不改寫民間故事而是自己創作，語氣像是說給孩子聽，
+    結局卻常常不圓滿。兒童文學從教訓工具變成一個
+    可以寫得很好、也寫給大人看的文類。
+  sources:
+    - title: 維基百科：漢斯·安徒生
+      url: https://zh.wikipedia.org/wiki/漢斯·安徒生
+
+- id: lit-dickens-serial
+  year: 1836
+  title: 狄更斯以分期連載賣小說
+  category: institution
+  importance: 5
+  desc: 《匹克威克外傳》每月一先令一冊，讀者買得起、作者邊寫邊看反應調整。
+    小說因此變長、多線、每一回結尾都要留鉤子——連載這個發行方式
+    直接塑造了維多利亞小說的形狀，也預告了後來的電視影集。
+  sources:
+    - title: 維基百科：查爾斯·狄更斯
+      url: https://zh.wikipedia.org/wiki/查爾斯·狄更斯
+    - title: 維基百科：匹克威克外傳
+      url: https://zh.wikipedia.org/wiki/匹克威克外傳
+
+- id: lit-uncle-toms-cabin
+  year: 1852
+  title: 《湯姆叔叔的小屋》
+  category: work
+  importance: 4
+  desc: 首年在美國賣出三十萬冊，讓奴隸制不再是抽象的政治議題
+    而是有名字有臉的人的遭遇。同時也留下扁平化的黑人形象，
+    「湯姆叔叔」後來變成貶詞——小說改變社會，代價常常也一起帶來。
+  sources:
+    - title: 維基百科：湯姆叔叔的小屋
+      url: https://zh.wikipedia.org/wiki/湯姆叔叔的小屋
+
+- id: lit-leaves-of-grass
+  year: 1855
+  title: 惠特曼《草葉集》與自由詩
+  category: movement
+  importance: 4
+  desc: 自費出版、封面不印作者名，詩不押韻也不守音步，長句像說話一樣鋪開。
+    格律是詩之所以為詩的條件——這個延續兩千年的前提在此被拆掉，
+    二十世紀的現代詩都走這條路。
+  sources:
+    - title: 維基百科：草葉集
+      url: https://zh.wikipedia.org/wiki/草葉集
+    - title: 維基百科：華特·惠特曼
+      url: https://zh.wikipedia.org/wiki/華特·惠特曼
+
+- id: lit-obscenity-trials
+  year: 1857
+  title: 《惡之花》與《包法利夫人》同年受審
+  category: controversy
+  importance: 5
+  desc: 波特萊爾被判刪去六首詩，福樓拜獲判無罪。
+    國家以妨害風化為由審判文學作品，反而確認了作品可以
+    描寫而不等於贊同——現代文學的表達界線由這兩場官司劃出。
+  sources:
+    - title: 維基百科：惡之花
+      url: https://zh.wikipedia.org/wiki/惡之花
+    - title: 維基百科：包法利夫人
+      url: https://zh.wikipedia.org/wiki/包法利夫人
+
+- id: lit-crime-punishment
+  year: 1866
+  title: 杜斯妥也夫斯基《罪與罰》
+  category: work
+  importance: 4
+  desc: 大半篇幅發生在主角的意識裡：辯解、推翻、再辯解。
+    小說被用來追蹤一個念頭如何長成行動再反噬其人，
+    二十世紀的心理小說與存在主義都在這條線上。
+  sources:
+    - title: 維基百科：罪與罰
+      url: https://zh.wikipedia.org/wiki/罪與罰
+
+- id: lit-war-and-peace
+  year: 1869
+  title: 托爾斯泰《戰爭與和平》
+  category: work
+  importance: 4
+  desc: 五百多個人物、兩個家族、一場戰爭，還夾雜作者對歷史因果的論辯。
+    小說被撐大到足以承載一整個社會與一套歷史哲學，
+    「長篇」的上限在此被重新定義。
+  sources:
+    - title: 維基百科：戰爭與和平
+      url: https://zh.wikipedia.org/wiki/戰爭與和平
+
+- id: lit-dolls-house
+  year: 1879
+  title: 易卜生《玩偶之家》
+  category: work
+  importance: 5
+  desc: 結尾娜拉關門離家，留下丈夫與孩子。當時的德國演出被迫改成
+    她留下來，作者稱之為野蠻的暴行。戲劇開始處理當下的社會問題
+    而非歷史或神話，現代劇場由此起算。
+  sources:
+    - title: 維基百科：玩偶之家
+      url: https://zh.wikipedia.org/wiki/玩偶之家
+
+- id: lit-cinema
+  year: 1895
+  title: 盧米埃兄弟首次售票放映
+  category: technique
+  importance: 5
+  desc: 巴黎地下室，三十餘名觀眾，幾段各不到一分鐘的短片。
+    活動影像加上售票放映，一個全新的敘事類型在幾年內成形——
+    這是自劇場之後，說故事的方式第一次出現根本的新選項。
+  sources:
+    - title: 維基百科：盧米埃兄弟
+      url: https://zh.wikipedia.org/wiki/盧米埃兄弟
+    - title: 維基百科：電影
+      url: https://zh.wikipedia.org/wiki/電影
+
+- id: lit-stanislavski
+  year: 1898
+  title: 莫斯科藝術劇院與史坦尼斯拉夫斯基體系
+  category: institution
+  importance: 4
+  desc: 演員不再依程式化的手勢表演，而要從角色的動機與自身記憶去建構。
+    《海鷗》在此起死回生，而這套訓練法後來經由美國的
+    「方法演技」，成為現代電影表演的主流。
+  sources:
+    - title: 維基百科：康斯坦丁·斯坦尼斯拉夫斯基
+      url: https://zh.wikipedia.org/wiki/康斯坦丁·斯坦尼斯拉夫斯基
+    - title: 維基百科：海鷗 (戲劇)
+      url: https://zh.wikipedia.org/wiki/海鷗_(戲劇)
+
+- id: lit-nobel-literature
+  year: 1901
+  title: 首度頒發諾貝爾文學獎
+  category: institution
+  importance: 4
+  desc: 一個國際性、有巨額獎金、由瑞典學院評定的文學獎。
+    它創造出「世界文學」這個排行榜，也讓翻譯、譯介與是否被
+    歐洲讀到，成為決定一位作家能否被看見的關鍵條件。
+  sources:
+    - title: 維基百科：諾貝爾文學獎
+      url: https://zh.wikipedia.org/wiki/諾貝爾文學獎
+
+- id: lit-proust
+  year: 1913
+  endYear: 1927
+  title: 普魯斯特《追憶似水年華》陸續出版
+  category: work
+  importance: 4
+  desc: 一塊沾了茶的瑪德蓮引出數十萬字的回憶。時間不再是
+    敘事的骨架而是敘事的對象，句子長到需要自己的呼吸——
+    現代主義小說對「意識怎麼運作」的探索由此展開。
+  sources:
+    - title: 維基百科：追憶似水年華
+      url: https://zh.wikipedia.org/wiki/追憶似水年華
+
+- id: lit-birth-of-nation
+  year: 1915
+  title: 《一個國家的誕生》
+  category: controversy
+  importance: 4
+  desc: 交叉剪接、特寫與平行敘事在此被整合成一套成熟的電影語言，
+    內容卻美化三K黨、醜化黑人，引發全美抗議。
+    電影的敘事力量與它的宣傳危險，同一部作品同時證明了兩件事。
+  sources:
+    - title: 維基百科：一個國家的誕生
+      url: https://zh.wikipedia.org/wiki/一個國家的誕生
+
+- id: lit-kafka
+  year: 1915
+  title: 卡夫卡《變形記》
+  category: work
+  importance: 4
+  desc: 第一句就變成蟲，之後全篇用平靜的公文腔敘述。荒謬被當成
+    不需要解釋的前提，主角煩惱的是趕不上火車與房租——
+    「卡夫卡式」後來成為描述現代官僚與異化的通用形容詞。
+  sources:
+    - title: 維基百科：變形記 (卡夫卡)
+      url: https://zh.wikipedia.org/wiki/變形記_(卡夫卡)
+
+- id: lit-kuangren
+  year: 1918
+  title: 魯迅《狂人日記》
+  category: movement
+  importance: 5
+  desc: 中國第一篇現代白話短篇小說，用一個「被害妄想者」的日記
+    指認吃人的禮教。文言與白話之爭在此有了作品層次的證明，
+    新文學運動不再只是主張。
+  sources:
+    - title: 維基百科：狂人日記
+      url: https://zh.wikipedia.org/wiki/狂人日記
+    - title: 維基百科：魯迅
+      url: https://zh.wikipedia.org/wiki/魯迅
+
+- id: lit-ulysses
+  year: 1922
+  title: 《尤利西斯》與《荒原》同年問世
+  category: movement
+  importance: 5
+  desc: 一部把《奧德賽》壓縮進都柏林的一天並讓語言隨意識流動，
+    一首用拼貼與典故寫戰後歐洲的殘破。現代主義在這一年
+    交出兩件標竿；《尤利西斯》還因猥褻罪在美國被禁十一年。
+  sources:
+    - title: 維基百科：尤利西斯
+      url: https://zh.wikipedia.org/wiki/尤利西斯
+    - title: 維基百科：荒原 (詩)
+      url: https://zh.wikipedia.org/wiki/荒原_(詩)
+
+- id: lit-eisenstein
+  year: 1925
+  title: 愛森斯坦《戰艦波將金號》與蒙太奇
+  category: technique
+  importance: 5
+  desc: 敖德薩階梯那場戲把互不連續的鏡頭剪在一起，撞出鏡頭本身沒有的意義。
+    美國人用剪接說故事，他用剪接說論點——電影從此有了一套
+    可以教、可以分析的語法，而不只是把舞台拍下來。
+  sources:
+    - title: 維基百科：謝爾蓋·愛森斯坦
+      url: https://zh.wikipedia.org/wiki/謝爾蓋·愛森斯坦
+    - title: 維基百科：戰艦波將金號
+      url: https://zh.wikipedia.org/wiki/戰艦波將金號
+
+- id: lit-talkies
+  year: 1927
+  title: 《爵士歌手》開啟有聲電影
+  category: technique
+  importance: 5
+  desc: 幾句同步的台詞與歌唱，三年內讓默片產業整個報廢。
+    許多明星因為聲音不合而消失，各國電影也因語言隔閡
+    退回自己的市場——技術一變，整個產業的地圖跟著重畫。
+  sources:
+    - title: 維基百科：爵士歌手
+      url: https://zh.wikipedia.org/wiki/爵士歌手
+
+- id: lit-brecht
+  year: 1928
+  title: 布萊希特《三便士歌劇》與敘事劇
+  category: movement
+  importance: 4
+  desc: 刻意提醒觀眾這是在演戲：歌曲打斷劇情、字幕預告結局、
+    演員不假裝入戲。他要的不是共鳴而是判斷——
+    與史坦尼斯拉夫斯基的方向正好相反，二十世紀劇場的兩極由此確立。
+  sources:
+    - title: 維基百科：三便士歌劇
+      url: https://zh.wikipedia.org/wiki/三便士歌劇
+    - title: 維基百科：貝托爾特·布萊希特
+      url: https://zh.wikipedia.org/wiki/貝托爾特·布萊希特
+
+- id: lit-room-of-ones-own
+  year: 1929
+  title: 吳爾芙《自己的房間》
+  category: work
+  importance: 4
+  desc: 追問莎士比亞若有個同樣有才華的妹妹會怎樣，答案是她寫不成。
+    創作條件——收入、空間、受教育的權利——被指認為
+    文學史缺了半邊的原因，此後的文學批評再也繞不開這個提問。
+  sources:
+    - title: 維基百科：自己的房間
+      url: https://zh.wikipedia.org/wiki/自己的房間
+    - title: 維基百科：維吉尼亞·吳爾芙
+      url: https://zh.wikipedia.org/wiki/維吉尼亞·吳爾芙
+
+- id: lit-penguin
+  year: 1935
+  title: 企鵝叢書開創平裝本
+  category: institution
+  importance: 4
+  desc: 一本六便士，跟一包菸同價，在車站與雜貨店而非書店賣。
+    嚴肅文學第一次以廉價、可拋棄的形式大量流通，
+    「讀書是有錢有閒的人的事」這個前提被一個定價策略打掉。
+  sources:
+    - title: 維基百科：企鵝出版集團
+      url: https://zh.wikipedia.org/wiki/企鵝出版集團
+    - title: 維基百科：平裝本
+      url: https://zh.wikipedia.org/wiki/平裝本
+
+- id: lit-citizen-kane
+  year: 1941
+  title: 《大國民》
+  category: work
+  importance: 4
+  desc: 深焦攝影、低角度鏡頭、非線性的多重敘述，一個人的一生
+    由五個互相矛盾的說法拼出來。電影從此被承認可以像小說一樣
+    處理記憶與觀點的不可靠。
+  sources:
+    - title: 維基百科：公民凱恩
+      url: https://zh.wikipedia.org/wiki/公民凱恩
+
+- id: lit-1984
+  year: 1949
+  title: 歐威爾《一九八四》
+  category: work
+  importance: 4
+  desc: 監視、改寫檔案與縮減詞彙以縮減思想。它把一整套政治運作
+    寫成可以指認的具體機制，「老大哥」與「新語」進入日常用語——
+    小說直接提供了一套批判現實的詞彙。
+  sources:
+    - title: 維基百科：一九八四
+      url: https://zh.wikipedia.org/wiki/一九八四
+    - title: 維基百科：喬治·歐威爾
+      url: https://zh.wikipedia.org/wiki/喬治·歐威爾
+
+- id: lit-godot
+  year: 1953
+  title: 貝克特《等待果陀》
+  category: movement
+  importance: 5
+  desc: 兩個人在路邊等一個不會來的人，第二幕重複第一幕。
+    情節、性格與結局全部被抽掉，戲劇還是成立——
+    亞里斯多德以來的規則在此被證明不是必要條件。
+  sources:
+    - title: 維基百科：等待果陀
+      url: https://zh.wikipedia.org/wiki/等待果陀
+    - title: 維基百科：薩繆爾·貝克特
+      url: https://zh.wikipedia.org/wiki/薩繆爾·貝克特
+
+- id: lit-seven-samurai
+  year: 1954
+  title: 黑澤明《七武士》
+  category: transmission
+  importance: 4
+  desc: 多機拍攝、長焦壓縮與雨中決戰的剪接方式被好萊塢整套學走，
+    劇本結構更被反覆翻拍。這是非西方電影第一次大規模
+    反向輸出敘事與技術，而非只是被當成異國情調。
+  sources:
+    - title: 維基百科：七武士
+      url: https://zh.wikipedia.org/wiki/七武士
+    - title: 維基百科：黑澤明
+      url: https://zh.wikipedia.org/wiki/黑澤明
+
+- id: lit-things-fall-apart
+  year: 1958
+  title: 阿契貝《分崩離析》
+  category: transmission
+  importance: 5
+  desc: 用英語寫伊博社會如何被殖民瓦解，但敘事者站在被寫的那一邊。
+    非洲文學不再是歐洲小說裡的背景，而是自己執筆——
+    後殖民文學由此成為一條獨立的線。
+  sources:
+    - title: 英文維基百科：Things Fall Apart
+      url: https://en.wikipedia.org/wiki/Things_Fall_Apart
+    - title: 維基百科：欽努阿·阿契貝
+      url: https://zh.wikipedia.org/wiki/欽努阿·阿契貝
+
+- id: lit-nouvelle-vague
+  year: 1959
+  title: 法國新浪潮
+  category: movement
+  importance: 4
+  desc: 一群影評人改行拍片，用輕便攝影機上街實景拍攝，跳接、
+    對鏡頭說話都不避諱。他們主張導演才是作品的作者，
+    這套「作者論」此後成為全世界談論電影的預設方式。
+  sources:
+    - title: 維基百科：法國新浪潮
+      url: https://zh.wikipedia.org/wiki/法國新浪潮
+    - title: 維基百科：四百擊
+      url: https://zh.wikipedia.org/wiki/四百擊
+
+- id: lit-cien-anos
+  year: 1967
+  title: 馬奎斯《百年孤寂》
+  category: movement
+  importance: 5
+  desc: 升天、下不停的雨與活著的鬼魂，全部以平常語氣敘述。
+    魔幻寫實讓拉丁美洲文學一舉進入世界文學的中心，
+    也提供了一種不必照歐洲寫實主義規則說故事的方法。
+  sources:
+    - title: 維基百科：百年孤寂
+      url: https://zh.wikipedia.org/wiki/百年孤寂
+    - title: 維基百科：加夫列爾·加西亞·馬爾克斯
+      url: https://zh.wikipedia.org/wiki/加夫列爾·加西亞·馬爾克斯
+
+- id: lit-satanic-verses
+  year: 1988
+  title: 《撒旦詩篇》引發全球風波
+  category: controversy
+  importance: 4
+  desc: 多國查禁、書店遭攻擊，作者被下追殺令而藏匿十年，
+    譯者遇害。文學審查第一次跨越國界成為國際事件，
+    「寫作自由的界線由誰決定」自此不再只是一國之內的問題。
+  sources:
+    - title: 維基百科：撒旦詩篇
+      url: https://zh.wikipedia.org/wiki/撒旦詩篇

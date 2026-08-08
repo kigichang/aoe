@@ -1,0 +1,799 @@
+# 音樂欄：聲音與時間。
+#
+# 音樂在錄音發明之前不留下實物，只留下譜、樂器與制度。
+# 所以這一欄的重心特別偏向「怎麼把聲音記下來、傳出去、賣出去」——
+# 記譜法、樂譜印刷、公共音樂會、留聲機、唱片、串流，每一項都直接
+# 決定了作曲家能為誰寫、寫多長、寫給多少人。
+#
+# 1600 之後的事件明顯偏歐洲，這是史料形態造成的（西方有連續的樂譜傳統，
+# 其他地區多為口傳），不是價值判斷。能定年的非西方節點一律照同一套判準收錄：
+# 曾侯乙編鐘、法拉比的樂律論、朱載堉的十二平均律、散拍與爵士都在這條軸上。
+#
+# id 前綴 mus-。category: work | technique | movement | institution | transmission | controversy
+# 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
+
+- id: mus-hurrian
+  year: -1400
+  title: 胡里安讚歌，已知最早的記譜旋律
+  category: technique
+  importance: 5
+  desc: 烏加里特出土的泥板用楔形文字記下弦名與音程，還附了調弦說明。
+    在此之前音樂只能靠人傳人，這塊泥板是聲音第一次被寫成
+    可以離開演奏者而獨立存在的東西。
+  sources:
+    - title: 英文維基百科：Hurrian songs
+      url: https://en.wikipedia.org/wiki/Hurrian_songs
+
+- id: mus-pythagoras
+  year: -530
+  title: 畢達哥拉斯學派把音程算成比例
+  category: technique
+  importance: 5
+  desc: 弦長二比一是八度、三比二是五度、四比三是四度——好聽的音程對應
+    簡單的整數比。音樂被納入數學，此後兩千年西方都把它與算術、幾何、
+    天文並列為四藝之一，而不是當成一種手藝。
+  sources:
+    - title: 維基百科：畢達哥拉斯
+      url: https://zh.wikipedia.org/wiki/畢達哥拉斯
+
+- id: mus-zenghouyi
+  year: -433
+  title: 曾侯乙編鐘
+  category: technique
+  importance: 5
+  desc: 六十五件青銅鐘，每件敲正鼓與側鼓可發兩個相差三度的音，
+    音域跨五個八度且十二律齊備。鐘上銘文還記錄了各國律名的對照——
+    這是一整套已經理論化的樂律系統，比希臘的同類文獻更完整。
+  sources:
+    - title: 維基百科：曾侯乙編鐘
+      url: https://zh.wikipedia.org/wiki/曾侯乙編鐘
+
+- id: mus-sanfen
+  year: -239
+  title: 《呂氏春秋》記載三分損益法
+  category: technique
+  importance: 4
+  desc: 律管長度依次減三分之一、再增三分之一，如此生出十二律。
+    與畢達哥拉斯的作法在數學上其實同源，卻各自獨立得出——
+    兩個互不相通的文明從同一個物理事實推出了同一套算法。
+  sources:
+    - title: 維基百科：呂氏春秋
+      url: https://zh.wikipedia.org/wiki/呂氏春秋
+    - title: 維基百科：十二律
+      url: https://zh.wikipedia.org/wiki/十二律
+
+- id: mus-yueji
+  year: -100
+  title: 《樂記》確立中國的樂論
+  category: work
+  importance: 4
+  desc: 主張音樂由人心生、又反過來調理人心，因此治世之音安以樂、
+    亂世之音怨以怒。音樂在此被定位成政治與倫理的工具，
+    而不是自足的藝術——這個立場支配了東亞兩千年的音樂觀。
+  sources:
+    - title: 維基百科：樂記
+      url: https://zh.wikipedia.org/wiki/樂記
+
+- id: mus-boethius
+  year: 500
+  title: 波愛修斯《論音樂》
+  category: work
+  importance: 4
+  desc: 把希臘的音程數學譯成拉丁文，並區分宇宙的、人的與器樂的音樂三層。
+    此後一千年歐洲大學教的音樂就是這本書——教的是比例與宇宙秩序，
+    幾乎不談怎麼唱、怎麼彈。
+  sources:
+    - title: 維基百科：波愛修斯
+      url: https://zh.wikipedia.org/wiki/波愛修斯
+
+- id: mus-gregorian
+  year: 590
+  title: 額我略聖歌被整理成統一曲目
+  category: institution
+  importance: 4
+  desc: 各地教會唱法不一，羅馬藉行政力量推行單一套單聲部拉丁聖歌。
+    為了讓遠方的教會唱得一樣，記譜的需求才真正浮現——
+    西方記譜法是被統一儀式的行政需要逼出來的。
+  sources:
+    - title: 維基百科：額我略聖歌
+      url: https://zh.wikipedia.org/wiki/額我略聖歌
+
+- id: mus-neumes
+  year: 850
+  title: 紐姆譜出現
+  category: technique
+  importance: 4
+  desc: 在歌詞上方畫小記號提示旋律走向，但不標明確切音高與音程——
+    只能提醒已經會唱的人，不能教會不會唱的人。
+    這是記譜法的第一步，也暴露了它還差什麼。
+  sources:
+    - title: 維基百科：紐姆記譜法
+      url: https://zh.wikipedia.org/wiki/紐姆記譜法
+
+- id: mus-organum
+  year: 900
+  title: 奧爾加農：兩個聲部同時唱
+  category: technique
+  importance: 5
+  desc: 在聖歌旋律下方加一條平行五度的聲部。聽起來簡單，
+    但「同時響起的兩個音之間有好壞之分」這個問題一旦被提出，
+    西方音樂往後一千年的和聲發展就全部由它展開。
+  sources:
+    - title: 維基百科：奧爾加農
+      url: https://zh.wikipedia.org/wiki/奧爾加農
+
+- id: mus-al-farabi
+  year: 950
+  title: 法拉比《音樂大書》
+  category: work
+  importance: 4
+  desc: 以希臘的數學樂律為基礎，系統整理阿拉伯的樂器、音階與演奏實務，
+    並討論音樂對情緒的作用。中世紀關於音樂的最完整論著之一，
+    拉丁世界後來也透過譯本讀它。
+  sources:
+    - title: 維基百科：法拉比
+      url: https://zh.wikipedia.org/wiki/法拉比
+
+- id: mus-guido
+  year: 1025
+  title: 圭多發明四線譜與唱名
+  category: technique
+  importance: 5
+  desc: 用線的高低固定音高，再以 ut-re-mi-fa-sol-la 教人視唱。
+    他說原本要十年才教得會的東西，現在一年就夠。
+    音樂第一次可以被準確寫下來並傳給沒聽過它的人——這是這一欄的分水嶺。
+  sources:
+    - title: 英文維基百科：Guido of Arezzo
+      url: https://en.wikipedia.org/wiki/Guido_of_Arezzo
+
+- id: mus-notre-dame-school
+  year: 1160
+  title: 聖母院樂派與節奏記譜
+  category: technique
+  importance: 4
+  desc: 雷奧南與佩羅坦寫出三、四聲部的複音，也逼出了新問題：
+    多個聲部要對齊，就必須把「每個音多長」也寫下來。
+    音高解決之後，時間的記譜在這裡被解決。
+  sources:
+    - title: 維基百科：聖母院樂派
+      url: https://zh.wikipedia.org/wiki/聖母院樂派
+
+- id: mus-ars-nova
+  year: 1322
+  title: 《新藝術》主張更自由的節奏
+  category: movement
+  importance: 4
+  desc: 維特里提出以二分法細分拍子（此前只承認象徵三位一體的三分法），
+    節奏因此複雜得多。教宗曾下詔斥責這種新音樂敗壞虔敬——
+    「新音樂太前衛」的爭論，第一次留下白紙黑字。
+  sources:
+    - title: 英文維基百科：Ars nova
+      url: https://en.wikipedia.org/wiki/Ars_nova
+
+- id: mus-machaut
+  year: 1364
+  title: 馬肖《聖母彌撒曲》
+  category: work
+  importance: 4
+  desc: 已知第一部由單一作曲家寫成完整套曲的彌撒，四個聲部從頭統一構思。
+    此前彌撒各段是不同人不同時期的拼湊，這裡開始有了
+    「一部作品由一個人負責到底」的觀念。
+  sources:
+    - title: 維基百科：紀堯姆·德·馬肖
+      url: https://zh.wikipedia.org/wiki/紀堯姆·德·馬肖
+
+- id: mus-josquin
+  year: 1500
+  title: 若斯坎讓各聲部平等
+  category: work
+  importance: 4
+  desc: 不再讓其他聲部繞著一條既有的聖歌旋律轉，而是四部輪流模仿同一個樂想，
+    並且開始讓音樂配合歌詞的重音與情緒。他是第一位作品因印刷而暢銷全歐、
+    死後仍持續再版的作曲家。
+  sources:
+    - title: 維基百科：若斯坎·德普雷
+      url: https://zh.wikipedia.org/wiki/若斯坎·德普雷
+
+- id: mus-petrucci
+  year: 1501
+  title: 佩特魯奇印出第一本活字樂譜
+  category: technique
+  importance: 5
+  desc: 三次套印才做得出線與音符對齊的頁面，成本高但可以量產。
+    樂譜從修道院的手抄本變成買得到的商品，作曲家的名字
+    隨著印刷品跨越國界——音樂出版業與「作曲家」這個職業同時誕生。
+  sources:
+    - title: 英文維基百科：Ottaviano Petrucci
+      url: https://en.wikipedia.org/wiki/Ottaviano_Petrucci
+
+- id: mus-palestrina
+  year: 1567
+  title: 帕萊斯特里納《馬爾切利教宗彌撒》
+  category: work
+  importance: 4
+  desc: 特倫托會議嫌複音把歌詞唱糊了，一度考慮全面禁用。
+    他示範了聲部再多也能讓字字清楚，複音音樂因此保住。
+    這是教會審查與作曲技術正面交手而後者取勝的少數例子。
+  sources:
+    - title: 維基百科：帕萊斯特里納
+      url: https://zh.wikipedia.org/wiki/帕萊斯特里納
+
+- id: mus-zhu-zaiyu
+  year: 1584
+  title: 朱載堉算出十二平均律
+  category: technique
+  importance: 5
+  desc: 用開十二次方根求出每個半音的精確比例，比歐洲任何人都早半世紀，
+    還做了三十六根律管驗證。明廷未予採用，這套算法也沒接上
+    後來的鍵盤實務——正確的答案不一定會被自己的時代接住。
+  sources:
+    - title: 維基百科：朱載堉
+      url: https://zh.wikipedia.org/wiki/朱載堉
+    - title: 維基百科：十二平均律
+      url: https://zh.wikipedia.org/wiki/十二平均律
+
+- id: mus-opera
+  year: 1607
+  title: 蒙台威爾第《奧菲歐》
+  category: work
+  importance: 5
+  desc: 佛羅倫斯一群人想復原希臘悲劇的唱法，做出來的卻是全新的東西。
+    他把獨唱宣敘、合唱、器樂與舞台整合成一部完整作品，
+    歌劇從實驗變成一個成立的類型，音樂與戲劇從此接在一起。
+  sources:
+    - title: 維基百科：奧菲歐
+      url: https://zh.wikipedia.org/wiki/奧菲歐
+    - title: 維基百科：克勞迪奧·蒙特威爾第
+      url: https://zh.wikipedia.org/wiki/克勞迪奧·蒙特威爾第
+
+- id: mus-public-opera
+  year: 1637
+  title: 威尼斯開設售票歌劇院
+  category: institution
+  importance: 5
+  desc: 此前歌劇是宮廷婚宴的餘興，只演給受邀的人看。
+    改成賣票之後，作品必須讓一般市民願意掏錢——詠嘆調變多、
+    劇情變刺激、明星歌手身價暴漲。音樂第一次面對市場。
+  sources:
+    - title: 維基百科：歌劇
+      url: https://zh.wikipedia.org/wiki/歌劇
+
+- id: mus-lully
+  year: 1673
+  title: 呂利確立法國歌劇並壟斷演出權
+  category: institution
+  importance: 3
+  desc: 他從國王手上拿到全法國歌劇演出的專營特許，別人辦一場都得經他同意。
+    法國式的抒情悲劇、序曲形制與芭蕾插段由他定型——
+    音樂史上第一個靠獨佔許可經營的產業案例。
+  sources:
+    - title: 維基百科：讓-巴普蒂斯特·呂利
+      url: https://zh.wikipedia.org/wiki/讓-巴普蒂斯特·呂利
+
+- id: mus-stradivari
+  year: 1700
+  title: 史特拉底瓦里的小提琴
+  category: technique
+  importance: 4
+  desc: 琴身比例、弧度與漆料在他手上定於一尊，此後三百年的製琴都在模仿。
+    樂器一旦定型，作曲家才敢為它寫愈來愈難的曲子——
+    小提琴協奏曲與弦樂四重奏的整個曲目，是站在這批琴上長出來的。
+  sources:
+    - title: 英文維基百科：Antonio Stradivari
+      url: https://en.wikipedia.org/wiki/Antonio_Stradivari
+
+- id: mus-wtc
+  year: 1722
+  title: 巴哈《平均律鍵盤曲集》
+  category: work
+  importance: 5
+  desc: 二十四個大小調各寫一組前奏曲與賦格，示範同一件鍵盤樂器
+    調過音之後可以彈遍所有調而不刺耳。轉調從此毫無限制，
+    往後兩百年的和聲語言就建在這個前提上。
+  sources:
+    - title: 維基百科：平均律鍵盤曲集
+      url: https://zh.wikipedia.org/wiki/平均律鍵盤曲集
+
+- id: mus-rameau
+  year: 1722
+  title: 拉摩《和聲學》
+  category: technique
+  importance: 4
+  desc: 主張和弦有「根音」，轉位之後仍是同一個和弦，並據此解釋
+    為什麼某些進行聽起來像是在回家。作曲從師徒相傳的手藝
+    變成有理論可教的體系，樂理課本的骨架自此定案。
+  sources:
+    - title: 維基百科：讓-菲利普·拉莫
+      url: https://zh.wikipedia.org/wiki/讓-菲利普·拉莫
+
+- id: mus-vivaldi-seasons
+  year: 1725
+  title: 韋瓦第《四季》與獨奏協奏曲
+  category: work
+  importance: 4
+  desc: 快—慢—快三樂章、獨奏與合奏交替，還附上十四行詩描寫鳥鳴、
+    暴風與凍腳。器樂第一次被要求「描寫」具體的東西，
+    協奏曲的形制也在此定案，巴哈抄過他不少譜來研究。
+  sources:
+    - title: 維基百科：四季 (韋瓦第)
+      url: https://zh.wikipedia.org/wiki/四季_(韋瓦第)
+    - title: 維基百科：安東尼奧·韋瓦第
+      url: https://zh.wikipedia.org/wiki/安東尼奧·韋瓦第
+
+- id: mus-messiah
+  year: 1742
+  title: 韓德爾《彌賽亞》首演
+  category: work
+  importance: 4
+  desc: 在都柏林的音樂廳而非教堂首演，收入捐給醫院與債務人監獄。
+    宗教題材的大型作品可以在世俗場所售票演出，
+    合唱曲目從此有了教會之外的舞台與觀眾。
+  sources:
+    - title: 維基百科：彌賽亞 (神劇)
+      url: https://zh.wikipedia.org/wiki/彌賽亞_(神劇)
+
+- id: mus-gluck-reform
+  year: 1762
+  title: 葛路克推動歌劇改革
+  category: movement
+  importance: 3
+  desc: 削減炫技的花腔與返始詠嘆調，要求音樂服從劇情而非歌手。
+    這是歌劇史上第一次有人明白主張「作品大於表演者」，
+    往後莫札特、華格納的路都從這個立場延伸出去。
+  sources:
+    - title: 維基百科：克里斯托夫·維利巴爾德·格魯克
+      url: https://zh.wikipedia.org/wiki/克里斯托夫·維利巴爾德·格魯克
+
+- id: mus-figaro
+  year: 1786
+  title: 莫札特《費加洛的婚禮》
+  category: work
+  importance: 4
+  desc: 原著劇本因為僕人戲弄主人而在維也納被禁，改成歌劇才過關。
+    重唱段落讓數個角色同時各懷心事地唱，音樂因此能承載
+    比台詞更複雜的社會關係——喜歌劇不再只是輕鬆的娛樂。
+  sources:
+    - title: 維基百科：費加洛的婚禮
+      url: https://zh.wikipedia.org/wiki/費加洛的婚禮
+
+- id: mus-haydn-london
+  year: 1791
+  title: 海頓的倫敦音樂會
+  category: institution
+  importance: 4
+  desc: 離開埃斯特哈齊家族的僕役職位，到倫敦為售票的商業音樂會寫交響曲，
+    收入是宮廷薪俸的數十倍。作曲家可以不依附貴族而靠買票的公眾維生——
+    貝多芬之所以能擺出那種姿態，前提是他先走過這條路。
+  sources:
+    - title: 維基百科：約瑟夫·海頓
+      url: https://zh.wikipedia.org/wiki/約瑟夫·海頓
+
+- id: mus-eroica
+  year: 1804
+  title: 貝多芬《英雄》交響曲
+  category: work
+  importance: 5
+  desc: 長度是當時交響曲的兩倍，第二樂章是送葬進行曲。
+    他原本題獻拿破崙，得知其稱帝後憤而塗掉。作曲家不再是
+    受雇供職的樂師，而是有話要說的個人——這個形象由此定型。
+  sources:
+    - title: 維基百科：第3號交響曲 (貝多芬)
+      url: https://zh.wikipedia.org/wiki/第3號交響曲_(貝多芬)
+
+- id: mus-freischutz
+  year: 1821
+  title: 韋伯《自由射手》開出德國浪漫歌劇
+  category: work
+  importance: 3
+  desc: 唱德語、取材德意志民間傳說，狼谷那場用樂團音響堆出恐怖氣氛。
+    義大利與法國之外第一次有了自成一格的歌劇傳統，
+    華格納後來整套接收並推到極端。
+  sources:
+    - title: 維基百科：魔彈射手
+      url: https://zh.wikipedia.org/wiki/魔彈射手
+    - title: 維基百科：卡爾·馬利亞·馮·韋伯
+      url: https://zh.wikipedia.org/wiki/卡爾·馬利亞·馮·韋伯
+
+- id: mus-beethoven-9
+  year: 1824
+  title: 貝多芬第九號交響曲
+  category: work
+  importance: 5
+  desc: 末樂章把合唱與獨唱放進交響曲，唱席勒的《歡樂頌》。
+    純器樂的形式被撐破以容納文字與訊息，後世的作曲家
+    因此都得回答一個問題：第九之後還能怎麼寫交響曲。
+  sources:
+    - title: 維基百科：第9號交響曲 (貝多芬)
+      url: https://zh.wikipedia.org/wiki/第9號交響曲_(貝多芬)
+
+- id: mus-iron-frame-piano
+  year: 1825
+  title: 鑄鐵框架讓鋼琴變響
+  category: technique
+  importance: 4
+  desc: 木框撐不住高張力的弦，換成整塊鑄鐵之後音量、音域與延音全部拉開。
+    鋼琴同時開始工業量產、進入中產家庭客廳，成為十九世紀
+    最普及的樂器——李斯特那種轟炸式的演奏，是這個框架給的。
+  sources:
+    - title: 維基百科：鋼琴
+      url: https://zh.wikipedia.org/wiki/鋼琴
+
+- id: mus-symphonie-fantastique
+  year: 1830
+  title: 白遼士《幻想交響曲》
+  category: movement
+  importance: 4
+  desc: 附上情節說明，用一個反覆出現的「固定樂思」代表意中人，
+    末樂章寫成女巫的安息日。音樂被要求敘事而非只是展開形式，
+    標題音樂與後來的交響詩都從這裡出發。
+  sources:
+    - title: 維基百科：幻想交響曲
+      url: https://zh.wikipedia.org/wiki/幻想交響曲
+
+- id: mus-chopin
+  year: 1835
+  title: 蕭邦把鋼琴寫成私密的樂器
+  category: movement
+  importance: 4
+  desc: 夜曲、馬厝卡與敘事曲多半只有幾分鐘，寫給沙龍而非大廳，
+    踏板與裝飾音撐起近乎說話的語氣。同一件樂器在他與李斯特手上
+    分岔成兩種路線：一種向內收，一種向外炸。
+  sources:
+    - title: 維基百科：弗雷德里克·蕭邦
+      url: https://zh.wikipedia.org/wiki/弗雷德里克·蕭邦
+
+- id: mus-liszt-recital
+  year: 1840
+  title: 李斯特發明「獨奏會」
+  category: institution
+  importance: 4
+  desc: 整場只有一個人、全部背譜、鋼琴側身擺放讓觀眾看得到手與側臉。
+    此前音樂會是多人拼盤，他把它變成一個人的展演，
+    連帶造出了樂迷瘋狂與明星演奏家這兩樣現代產物。
+  sources:
+    - title: 維基百科：弗朗茨·李斯特
+      url: https://zh.wikipedia.org/wiki/弗朗茨·李斯特
+
+- id: mus-philharmonic
+  year: 1842
+  title: 維也納愛樂與紐約愛樂同年成立
+  category: institution
+  importance: 4
+  desc: 常設樂團、固定樂季、售票給市民，曲目開始重演已故作曲家的作品。
+    音樂會從一次性的新作發表變成「經典曲目」的反覆演出，
+    古典音樂這個概念也才有了容器。
+  sources:
+    - title: 維基百科：維也納愛樂樂團
+      url: https://zh.wikipedia.org/wiki/維也納愛樂樂團
+
+- id: mus-tristan
+  year: 1859
+  title: 華格納《崔斯坦與伊索德》
+  category: technique
+  importance: 5
+  desc: 開頭那個和弦懸而不決，整部歌劇幾乎四小時不給明確的終止。
+    調性的引力被刻意懸置，半音進行取代和弦功能成為推進力——
+    往後五十年的瓦解都由這一個和弦開始鬆動。
+  sources:
+    - title: 維基百科：崔斯坦與伊索德
+      url: https://zh.wikipedia.org/wiki/崔斯坦與伊索德
+
+- id: mus-bayreuth
+  year: 1876
+  title: 拜羅伊特音樂節開幕
+  category: institution
+  importance: 4
+  desc: 華格納為自己的作品蓋專用劇院：樂池沉入地下、觀眾席全暗、
+    座位不分等級。聽眾被要求安靜專注而非社交，
+    現代音樂廳與電影院的觀看規矩，是從這裡定下來的。
+  sources:
+    - title: 維基百科：拜羅伊特音樂節
+      url: https://zh.wikipedia.org/wiki/拜羅伊特音樂節
+
+- id: mus-phonograph
+  year: 1877
+  title: 愛迪生做出留聲機
+  category: technique
+  importance: 5
+  desc: 聲音第一次能被保存下來重播。音樂從「只在被演奏的那一刻存在」
+    變成可以擁有的物件，記譜法之外終於有了第二種保存方式——
+    口傳的音樂傳統也因此第一次被記錄下來。
+  sources:
+    - title: 維基百科：留聲機
+      url: https://zh.wikipedia.org/wiki/留聲機
+
+- id: mus-faune
+  year: 1894
+  title: 德布西《牧神的午後前奏曲》
+  category: movement
+  importance: 4
+  desc: 和弦不再往下一個解決，只是並排出現；旋律在全音階上游移。
+    德國式的動機發展被換成對音色與氛圍的經營，
+    法國音樂終於從華格納的陰影下走出自己的路。
+  sources:
+    - title: 英文維基百科：Prélude à l'après-midi d'un faune
+      url: https://en.wikipedia.org/wiki/Prélude_à_l'après-midi_d'un_faune
+    - title: 維基百科：克洛德·德彪西
+      url: https://zh.wikipedia.org/wiki/克洛德·德彪西
+
+- id: mus-ragtime
+  year: 1899
+  title: 喬普林《楓葉散拍》
+  category: movement
+  importance: 4
+  desc: 左手規律、右手切分，樂譜賣出數十萬份。
+    非裔美國人的音樂第一次以印刷品的形式進入白人家庭的鋼琴上，
+    往後爵士、藍調與搖滾走的都是同一條通道。
+  sources:
+    - title: 維基百科：斯科特·喬普林
+      url: https://zh.wikipedia.org/wiki/斯科特·喬普林
+    - title: 維基百科：拉格泰姆
+      url: https://zh.wikipedia.org/wiki/拉格泰姆
+
+- id: mus-pierrot
+  year: 1912
+  title: 荀白克《月光小丑》
+  category: movement
+  importance: 4
+  desc: 人聲介於說與唱之間，樂器編制小而尖銳，完全不設調中心。
+    無調性從理論走到成品，也把二十世紀作曲家分成兩邊：
+    接著往下走的，與轉身回頭找別的路的。
+  sources:
+    - title: 英文維基百科：Pierrot lunaire
+      url: https://en.wikipedia.org/wiki/Pierrot_lunaire
+
+- id: mus-rite-of-spring
+  year: 1913
+  title: 《春之祭》首演騷動
+  category: controversy
+  importance: 5
+  desc: 不規則的重音、刺耳的和弦與內八字的舞步，觀眾當場叫罵動手，
+    樂團幾乎聽不見自己在演什麼。它此後成為現代主義最著名的
+    一場醜聞，也讓「首演被噓」變成前衛作品的某種勳章。
+  sources:
+    - title: 維基百科：春之祭
+      url: https://zh.wikipedia.org/wiki/春之祭
+
+- id: mus-noise-art
+  year: 1913
+  title: 魯索洛主張噪音也是音樂
+  category: technique
+  importance: 3
+  desc: 未來主義者宣稱工業時代的耳朵已經習慣機械聲，於是自製一批
+    會發出爆裂、嘶吼與摩擦聲的「噪音機」上台演出，觀眾動手打人。
+    音樂的素材可以是任何聲響——三十五年後具象音樂接手這個主張。
+  sources:
+    - title: 維基百科：路易吉·魯索洛
+      url: https://zh.wikipedia.org/wiki/路易吉·魯索洛
+
+- id: mus-jazz-record
+  year: 1917
+  title: 第一張爵士唱片發行
+  category: transmission
+  importance: 5
+  desc: 紐奧良的音樂被壓成蟲膠唱片賣到全國。這是音樂史上第一次
+    一種風格靠複製品而非樂譜或現場擴散，一種即興為主、
+    幾乎沒有樂譜的音樂因此得以跨越大陸——錄音改變了誰能被聽見。
+  sources:
+    - title: 維基百科：爵士樂
+      url: https://zh.wikipedia.org/wiki/爵士樂
+
+- id: mus-twelve-tone
+  year: 1923
+  title: 荀白克提出十二音技法
+  category: technique
+  importance: 4
+  desc: 把十二個半音排成一個序列，全部用過才能重來，
+    藉此在沒有調性的情況下維持結構。它是為了解決
+    「調性沒了之後靠什麼組織長篇作品」而發明的工具，不是美學宣言。
+  sources:
+    - title: 維基百科：十二音技法
+      url: https://zh.wikipedia.org/wiki/十二音技法
+
+- id: mus-rhapsody-in-blue
+  year: 1924
+  title: 蓋希文《藍色狂想曲》
+  category: transmission
+  importance: 4
+  desc: 開頭那道單簧管滑音來自爵士，形式卻是鋼琴協奏曲，在音樂廳裡首演。
+    被視為低俗的黑人音樂語彙進入正式曲目，兩邊都不太滿意，
+    但此後古典與流行之間的來回借用再也沒有停過。
+  sources:
+    - title: 維基百科：藍色狂想曲
+      url: https://zh.wikipedia.org/wiki/藍色狂想曲
+    - title: 維基百科：喬治·蓋希文
+      url: https://zh.wikipedia.org/wiki/喬治·蓋希文
+
+- id: mus-magnetic-tape
+  year: 1935
+  title: 磁帶錄音機問世
+  category: technique
+  importance: 5
+  desc: 錄下來的聲音可以剪、可以接、可以疊、可以倒放，而且能重複洗掉重錄。
+    唱片只能記錄一次演奏，磁帶卻讓錄音本身變成一種創作行為——
+    具象音樂、多軌錄音與整個錄音室美學的前提都在這裡。
+  sources:
+    - title: 維基百科：磁帶錄音機
+      url: https://zh.wikipedia.org/wiki/磁帶錄音機
+
+- id: mus-electric-guitar
+  year: 1936
+  title: 電吉他開始量產
+  category: technique
+  importance: 4
+  desc: 拾音器把弦振轉成電訊號，音量不再受琴身共鳴限制，
+    吉他因此能在大樂團裡當獨奏樂器。二十年後失真、回授這些
+    原本算故障的現象被當成音色來用，搖滾樂的聲音就是這麼來的。
+  sources:
+    - title: 維基百科：電吉他
+      url: https://zh.wikipedia.org/wiki/電吉他
+
+- id: mus-musique-concrete
+  year: 1948
+  title: 謝弗做出具象音樂
+  category: technique
+  importance: 4
+  desc: 把火車、鍋碗與人聲錄下來，剪接、倒放、變速後組成作品。
+    素材不再是樂器發出的音，而是任何被錄下的聲響——
+    錄音機從記錄工具變成樂器，取樣與電子音樂由此起步。
+  sources:
+    - title: 維基百科：具象音樂
+      url: https://zh.wikipedia.org/wiki/具象音樂
+
+- id: mus-lp
+  year: 1948
+  title: 密紋唱片上市
+  category: technique
+  importance: 4
+  desc: 單面二十餘分鐘，交響曲不必再中途翻面。
+    作品的長度第一次由載體決定：古典曲目得以完整發行，
+    二十年後流行樂也開始以「一張專輯」而非單曲為創作單位。
+  sources:
+    - title: 維基百科：密紋唱片
+      url: https://zh.wikipedia.org/wiki/密紋唱片
+
+- id: mus-zhdanov
+  year: 1948
+  title: 蘇聯批判「形式主義」音樂
+  category: controversy
+  importance: 4
+  desc: 日丹諾夫點名蕭士塔高維契、普羅高菲夫等人脫離人民，作品遭禁演、
+    職位被撤。國家不只審查內容，還直接規定音樂該用什麼語言寫——
+    與同時期西方作曲家爭論十二音技法，形成刺眼的對照。
+  sources:
+    - title: 維基百科：日丹諾夫主義
+      url: https://zh.wikipedia.org/wiki/日丹諾夫主義
+
+- id: mus-4-33
+  year: 1952
+  title: 凱吉《4分33秒》
+  category: controversy
+  importance: 5
+  desc: 演奏者坐著不彈，聽眾聽到的是現場的一切雜音。
+    它把問題從「什麼聲音好聽」推到「什麼算是音樂」，
+    也把作曲家的角色從產生聲音改成劃定一段被聆聽的時間。
+  sources:
+    - title: 維基百科：4分33秒
+      url: https://zh.wikipedia.org/wiki/4分33秒
+
+- id: mus-rock
+  year: 1955
+  title: 搖滾樂成為全國性風潮
+  category: movement
+  importance: 5
+  desc: 節奏藍調、鄉村與福音混成一種以電吉他與鼓為主的音樂，
+    靠電台與唱片賣給剛出現的「青少年」市場。
+    流行音樂第一次以世代而非階級或地域劃分聽眾。
+  sources:
+    - title: 維基百科：搖滾樂
+      url: https://zh.wikipedia.org/wiki/搖滾樂
+
+- id: mus-moog
+  year: 1964
+  title: 穆格合成器問世
+  category: technique
+  importance: 4
+  desc: 用電壓控制振盪器與濾波器，聲音第一次可以從零開始「設計」
+    而不是從樂器上取得。1968 年一張全合成器的巴哈專輯成為暢銷唱片，
+    此後流行、電影配樂與電子舞曲全部依賴它的後代。
+  sources:
+    - title: 英文維基百科：Moog synthesizer
+      url: https://en.wikipedia.org/wiki/Moog_synthesizer
+
+- id: mus-sgt-pepper
+  year: 1967
+  title: 披頭四《比伯軍曹》
+  category: work
+  importance: 4
+  desc: 為錄音室而非演出而做：多軌疊錄、變速、倒放、拼貼，
+    現場根本重現不了。專輯被當成一個整體構思，
+    流行音樂從此可以是不打算被演出的作品。
+  sources:
+    - title: 維基百科：比伯軍曹寂寞芳心俱樂部
+      url: https://zh.wikipedia.org/wiki/比伯軍曹寂寞芳心俱樂部
+
+- id: mus-hiphop
+  year: 1973
+  title: 嘻哈在南布朗克斯成形
+  category: movement
+  importance: 5
+  desc: DJ 用兩台唱盤把同一段鼓點來回接成不斷的循環，旁邊有人對著麥克風喊話。
+    現成的唱片變成樂器、別人的錄音變成素材——這套作法後來長成
+    取樣文化與全球最主流的流行音樂，也帶來至今未解的版權爭議。
+  sources:
+    - title: 維基百科：嘻哈音樂
+      url: https://zh.wikipedia.org/wiki/嘻哈音樂
+
+- id: mus-minimalism
+  year: 1976
+  title: 《沙灘上的愛因斯坦》與簡約音樂
+  category: movement
+  importance: 4
+  desc: 五小時無中場、沒有劇情，短句反覆數十次再微微位移。
+    序列主義把音樂寫得沒人聽得下去之後，這一派反過來
+    用最少的材料與最慢的變化重新取得聽眾——戰後前衛的另一條出路。
+  sources:
+    - title: 英文維基百科：Einstein on the Beach
+      url: https://en.wikipedia.org/wiki/Einstein_on_the_Beach
+    - title: 維基百科：極簡音樂
+      url: https://zh.wikipedia.org/wiki/極簡音樂
+
+- id: mus-walkman
+  year: 1979
+  title: 隨身聽上市
+  category: technique
+  importance: 4
+  desc: 聽音樂第一次可以完全私密而且隨身：走路、通勤、跑步時
+    自己配一套背景音。音樂從共同的場合脫離，
+    變成個人隨時攜帶的環境，此後所有耳機文化都由此延伸。
+  sources:
+    - title: 維基百科：隨身聽
+      url: https://zh.wikipedia.org/wiki/隨身聽
+
+- id: mus-mtv
+  year: 1981
+  title: MTV 開播
+  category: transmission
+  importance: 4
+  desc: 二十四小時播音樂錄影帶，一首歌要能被「看」才賣得動。
+    音樂的成敗從此與影像綁在一起，形象、舞蹈與造型成為
+    作品的一部分，唱片公司的預算也整批重新分配。
+  sources:
+    - title: 維基百科：MTV
+      url: https://zh.wikipedia.org/wiki/MTV
+
+- id: mus-cd
+  year: 1982
+  title: 雷射唱片上市
+  category: technique
+  importance: 3
+  desc: 音樂被存成 0 與 1，複製不再衰減。這既救活了唱片業
+    （所有人重買一次收藏），也埋下十五年後的危機——
+    可以無損複製的東西，遲早會脫離它的載體。
+  sources:
+    - title: 維基百科：雷射唱片
+      url: https://zh.wikipedia.org/wiki/雷射唱片
+
+- id: mus-midi
+  year: 1983
+  title: MIDI 標準公布
+  category: technique
+  importance: 4
+  desc: 各廠牌的合成器、鼓機與電腦第一次能互通指令。
+    音樂被編碼成「哪個音、何時、多大力」的資料而非聲波，
+    往後電子舞曲、遊戲音樂與整個音樂軟體產業都建在這個協定上。
+  sources:
+    - title: 維基百科：MIDI
+      url: https://zh.wikipedia.org/wiki/MIDI
+
+- id: mus-napster
+  year: 1999
+  title: Napster 讓音樂脫離載體
+  category: controversy
+  importance: 5
+  desc: 壓縮檔加上點對點傳輸，複製與散布的成本歸零。
+    官司打贏了、服務關掉了，但唱片銷售再也沒回來——
+    音樂的經濟基礎在二十年內從賣拷貝變成賣使用權。
+  sources:
+    - title: 維基百科：Napster
+      url: https://zh.wikipedia.org/wiki/Napster
