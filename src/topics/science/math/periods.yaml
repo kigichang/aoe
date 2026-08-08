@@ -1,0 +1,38 @@
+# 一條 track 就夠：一個學科同一時間只有一個主流階段，不像世界史那一欄
+# 得同時容納希臘與羅馬兩條政治線。單條 track 只吃 28px，340px 的欄寬
+# 還剩約 312px 給標籤，是四欄裡最寬鬆的配置。
+#
+# **這些分期比朝代粗，而且邊界是後人劃的。** 它們在這裡的作用是尺規
+# ——讓讀者知道「這一格大概是什麼氛圍」——不是斷言某年某月風格突變。
+# 取的邊界都對應一件具體的事：-600 泰利斯前後、501 印度數學接手、
+# 1201 斐波那契把位值制帶進歐洲、1800 前後基礎危機開始。
+
+- id: mth-p-ancient
+  name: 古代的實用計算
+  track: 0
+  start: -3000
+  end: -601
+
+- id: mth-p-greek
+  name: 希臘的演繹傳統
+  track: 0
+  start: -600
+  end: 500
+
+- id: mth-p-indo-islamic
+  name: 印度與伊斯蘭的代數
+  track: 0
+  start: 501
+  end: 1200
+
+- id: mth-p-early-modern
+  name: 符號代數與分析
+  track: 0
+  start: 1201
+  end: 1799
+
+- id: mth-p-modern
+  name: 抽象化與基礎反省
+  track: 0
+  start: 1800
+  end: 2026

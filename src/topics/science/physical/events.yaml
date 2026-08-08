@@ -1,0 +1,690 @@
+# 物理與化學欄。
+#
+# 這一欄在前兩千年幾乎沒有東西——阿基米德之後到伽利略之間隔了將近兩千年，
+# 中間只有煉金術與少數光學、磁學的觀察。**這片空白是刻意留著的**：
+# 對照同一時期天文與醫學欄的密度，就看得出「為什麼近代科學革命發生在
+# 物理學，而不是別的地方」——那是一門長期缺乏可測量對象的學科，
+# 直到儀器跟上來為止。
+#
+# 燃素說、以太、熱質說這類後來被推翻的理論，提出時是當時最好的解釋，
+# 因此與推翻它們的事件同樣收錄（見 topic.yaml 關於不做輝格史觀的說明）。
+#
+# id 前綴 phy-。category: discovery | theory | work | instrument | institution | application
+# 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
+
+- id: phy-bronze
+  year: -3000
+  title: 青銅冶煉術成熟
+  category: application
+  importance: 4
+  desc: 銅錫合金的配比、熔點與鑄造技術被穩定掌握。這是人類第一次
+    有系統地改變物質的性質，儘管當時沒有任何關於「為什麼」的理論。
+  sources:
+    - title: 維基百科：青銅時代
+      url: https://zh.wikipedia.org/wiki/青铜时代
+
+- id: phy-four-elements
+  year: -450
+  title: 恩培多克勒提出四元素說
+  category: theory
+  importance: 4
+  desc: 土水火風四者組合出萬物。這套說法後來經亞里斯多德接手，
+    主導西方對物質的理解兩千年，直到拉瓦節才被拆掉。
+  sources:
+    - title: 維基百科：恩培多克勒
+      url: https://zh.wikipedia.org/wiki/恩培多克勒
+
+- id: phy-atomism
+  year: -440
+  title: 德謨克利特的原子論
+  category: theory
+  importance: 5
+  desc: 主張物質由不可再分的微粒與虛空構成。純屬哲學推想，沒有任何
+    實驗依據，卻在兩千兩百年後被道爾頓以化學數據重新提出。
+  sources:
+    - title: 維基百科：原子論
+      url: https://zh.wikipedia.org/wiki/原子論
+    - title: 維基百科：德謨克利特
+      url: https://zh.wikipedia.org/wiki/德謨克利特
+
+- id: phy-archimedes
+  year: -250
+  title: 阿基米德的浮力與槓桿原理
+  category: theory
+  importance: 5
+  desc: 把靜力學寫成可以計算的命題，而不只是經驗法則。
+    這是古代唯一一段真正稱得上「數理物理」的工作。
+  sources:
+    - title: 維基百科：阿基米德
+      url: https://zh.wikipedia.org/wiki/阿基米德
+    - title: 維基百科：浮力
+      url: https://zh.wikipedia.org/wiki/浮力
+
+- id: phy-alchemy
+  year: 100
+  title: 煉金術在亞歷山卓成形
+  category: theory
+  importance: 4
+  desc: 目標是把賤金屬變成黃金，順帶發展出蒸餾、昇華、結晶等操作。
+    理論全錯，實驗方法卻是化學的直接前身。
+  sources:
+    - title: 維基百科：煉金術
+      url: https://zh.wikipedia.org/wiki/炼金术
+    - title: 維基百科：亞歷山大圖書館
+      url: https://zh.wikipedia.org/wiki/亚历山大图书馆
+
+- id: phy-baopuzi
+  year: 317
+  title: 葛洪《抱朴子》記載煉丹術
+  category: work
+  importance: 3
+  desc: 詳載丹砂、汞、鉛的燒煉方法與器具。目的是求長生，
+    留下的卻是中國最早的系統性化學操作紀錄。
+  sources:
+    - title: 維基百科：抱朴子
+      url: https://zh.wikipedia.org/wiki/抱朴子
+    - title: 維基百科：葛洪
+      url: https://zh.wikipedia.org/wiki/葛洪
+
+- id: phy-gunpowder
+  year: 850
+  title: 中國煉丹家發現黑火藥
+  category: discovery
+  importance: 5
+  desc: 硝石、硫磺與木炭的配方原是煉丹的副產品。這是第一種被大規模
+    應用的人工化學反應，四百年後傳到歐洲並改寫了戰爭與採礦。
+  sources:
+    - title: 維基百科：黑火藥
+      url: https://zh.wikipedia.org/wiki/黑火药
+
+- id: phy-ibn-haytham
+  year: 1021
+  title: 伊本·海什木《光學書》
+  category: work
+  importance: 5
+  desc: 以實驗證明視覺來自物體反射的光進入眼睛，而非眼睛發出射線。
+    書中明確主張要用實驗檢驗假說，被視為實驗方法最早的完整陳述。
+  sources:
+    - title: 維基百科：伊本·海什木
+      url: https://zh.wikipedia.org/wiki/伊本·海什木
+    - title: 英文維基百科：Book of Optics
+      url: https://en.wikipedia.org/wiki/Book_of_Optics
+
+- id: phy-gilbert
+  year: 1600
+  title: 吉爾伯特《論磁石》
+  category: work
+  importance: 4
+  desc: 以大量實驗研究磁性，並主張地球本身是一塊巨大的磁石。
+    近代第一本靠實驗而非古籍立論的物理著作。
+  sources:
+    - title: 維基百科：威廉·吉爾伯特
+      url: https://zh.wikipedia.org/wiki/威廉·吉爾伯特
+    - title: 英文維基百科：De Magnete
+      url: https://en.wikipedia.org/wiki/De_Magnete
+
+- id: phy-two-sciences
+  year: 1638
+  title: 伽利略《關於兩門新科學的對話》
+  category: work
+  importance: 5
+  desc: 落體加速度與慣性運動被寫成數學關係並以實驗檢證。
+    「自然這本書是用數學寫的」從口號變成可操作的方法。
+  sources:
+    - title: 維基百科：關於兩門新科學的對話
+      url: https://zh.wikipedia.org/wiki/關於兩門新科學的對話
+    - title: 維基百科：伽利略·伽利萊
+      url: https://zh.wikipedia.org/wiki/伽利略·伽利萊
+
+- id: phy-torricelli
+  year: 1643
+  title: 托里切利做出水銀氣壓計
+  category: instrument
+  importance: 4
+  desc: 管頂那段空隙證明真空可以存在，柱高的變化則證明空氣有重量。
+    亞里斯多德「自然厭惡真空」的教條被一根玻璃管推翻。
+  sources:
+    - title: 維基百科：埃萬傑利斯塔·托里拆利
+      url: https://zh.wikipedia.org/wiki/埃萬傑利斯塔·托里切利
+    - title: 維基百科：氣壓計
+      url: https://zh.wikipedia.org/wiki/气压表
+
+- id: phy-royal-society
+  year: 1660
+  title: 倫敦皇家學會成立
+  category: institution
+  importance: 5
+  desc: 定期集會、公開演示實驗、審查後發表。研究從個人通信變成一項
+    有制度的公共事業，五年後創辦的會刊是世界最早的科學期刊之一。
+  sources:
+    - title: 維基百科：皇家學會
+      url: https://zh.wikipedia.org/wiki/皇家学会
+    - title: 維基百科：自然科學會報
+      url: https://zh.wikipedia.org/wiki/自然科學會報
+
+- id: phy-sceptical-chymist
+  year: 1661
+  title: 波義耳《懷疑派化學家》
+  category: work
+  importance: 5
+  desc: 拒絕四元素與煉金術的三要素，主張元素是無法再分解的物質。
+    化學開始與煉金術切割，判準從權威轉為實驗。
+  sources:
+    - title: 維基百科：懷疑派化學家
+      url: https://zh.wikipedia.org/wiki/懷疑派化學家
+    - title: 維基百科：羅伯特·波義耳
+      url: https://zh.wikipedia.org/wiki/罗伯特·波义耳
+
+- id: phy-boyle-law
+  year: 1662
+  title: 波以耳定律
+  category: theory
+  importance: 4
+  desc: 定溫下氣體的體積與壓力成反比。第一條用實驗數據建立的
+    定量物質定律，也是氣體動理論的起點。
+  sources:
+    - title: 維基百科：波以耳定律
+      url: https://zh.wikipedia.org/wiki/玻意耳-马略特定律
+
+- id: phy-french-academy
+  year: 1666
+  title: 法國科學院成立
+  category: institution
+  importance: 4
+  desc: 與皇家學會不同，成員由國王支薪、任務由國家指派。
+    科學研究第一次成為一種受雇的職業，此後歐陸各國陸續仿效。
+  sources:
+    - title: 維基百科：法國科學院
+      url: https://zh.wikipedia.org/wiki/法國科學院
+
+- id: phy-hooke-law
+  year: 1678
+  title: 虎克定律
+  category: theory
+  importance: 3
+  desc: 彈簧的形變與外力成正比。材料力學的第一條定量規律，
+    今日從地震工程到原子鍵結的模型仍以它為起點。
+  sources:
+    - title: 維基百科：虎克定律
+      url: https://zh.wikipedia.org/wiki/胡克定律
+
+- id: phy-principia
+  year: 1687
+  title: 牛頓《自然哲學的數學原理》
+  category: work
+  importance: 5
+  desc: 三大運動定律加萬有引力，一套方程同時解釋蘋果落地與行星運行。
+    天上與地上遵守同樣的規律——這是近代科學最關鍵的一次統一。
+  sources:
+    - title: 維基百科：自然哲學的數學原理
+      url: https://zh.wikipedia.org/wiki/自然哲学的数学原理
+    - title: 維基百科：艾薩克·牛頓
+      url: https://zh.wikipedia.org/wiki/艾萨克·牛顿
+
+- id: phy-opticks
+  year: 1704
+  title: 牛頓《光學》
+  category: work
+  importance: 4
+  desc: 以稜鏡實驗證明白光由各色光組成，並主張光是微粒。
+    微粒說壓過波動說整整一百年，直到楊氏的干涉實驗才翻案。
+  sources:
+    - title: 英文維基百科：Opticks
+      url: https://en.wikipedia.org/wiki/Opticks
+
+- id: phy-bernoulli
+  year: 1738
+  title: 白努利《流體力學》與氣體動理論
+  category: theory
+  importance: 4
+  desc: 把氣體壓力解釋成大量微粒撞擊器壁的結果。這是原子論第一次
+    被用來做定量預測，但當時幾乎沒有人接受。
+  sources:
+    - title: 維基百科：丹尼爾·白努利
+      url: https://zh.wikipedia.org/wiki/丹尼尔·伯努利
+
+- id: phy-oxygen
+  year: 1774
+  title: 氧的發現
+  category: discovery
+  importance: 5
+  desc: 普利斯特里與舍勒各自分離出這種助燃氣體，但都以燃素說解釋它。
+    同一批實驗數據，換一個理論框架就得到完全不同的結論。
+  sources:
+    - title: 維基百科：氧氣
+      url: https://zh.wikipedia.org/wiki/氧气
+
+- id: phy-lavoisier
+  year: 1789
+  title: 拉瓦節《化學基本論述》與質量守恆
+  category: work
+  importance: 5
+  desc: 用精密天秤證明反應前後總質量不變，據此推翻燃素說並重訂元素表
+    與命名法。化學從此有了定量的基礎與共通的語言。
+  sources:
+    - title: 維基百科：安東萬·拉瓦節
+      url: https://zh.wikipedia.org/wiki/安托万·拉瓦锡
+    - title: 維基百科：質量守恆定律
+      url: https://zh.wikipedia.org/wiki/质量守恒定律
+
+- id: phy-volta
+  year: 1800
+  title: 伏打電堆
+  category: instrument
+  importance: 4
+  desc: 第一個能持續供電的裝置。在此之前電只能以靜電火花的形式研究，
+    有了穩定電流之後，電化學與電磁學才可能展開。
+  sources:
+    - title: 維基百科：伏打電堆
+      url: https://zh.wikipedia.org/wiki/伏打電堆
+
+- id: phy-dalton
+  year: 1803
+  title: 道爾頓的化學原子論
+  category: theory
+  importance: 5
+  desc: 用定比與倍比定律論證原子存在，並首次給出相對原子量表。
+    原子從哲學猜想變成能算出數字的科學假說。
+  sources:
+    - title: 維基百科：約翰·道爾頓
+      url: https://zh.wikipedia.org/wiki/约翰·道尔顿
+    - title: 維基百科：原子論
+      url: https://zh.wikipedia.org/wiki/原子論
+
+- id: phy-oersted
+  year: 1820
+  title: 厄斯特發現電流的磁效應
+  category: discovery
+  importance: 5
+  desc: 通電導線讓旁邊的指南針偏轉。電與磁原本被當成兩回事，
+    這個課堂上的偶然觀察開啟了整個電磁學。
+  sources:
+    - title: 維基百科：漢斯·克里斯蒂安·奧斯特
+      url: https://zh.wikipedia.org/wiki/漢斯·克里斯蒂安·奧斯特
+
+- id: phy-carnot
+  year: 1824
+  title: 卡諾分析熱機效率
+  category: theory
+  importance: 5
+  desc: 證明效率只取決於兩端溫差，與工作物質無關。從蒸汽機這個
+    工程問題出發，卻推出了一條後來成為熱力學第二定律的普遍限制。
+  sources:
+    - title: 維基百科：尼古拉·卡諾
+      url: https://zh.wikipedia.org/wiki/尼古拉·卡諾
+    - title: 維基百科：蒸汽機
+      url: https://zh.wikipedia.org/wiki/蒸汽机
+
+- id: phy-faraday
+  year: 1831
+  title: 法拉第發現電磁感應
+  category: discovery
+  importance: 5
+  desc: 變動的磁場能生電。發電機與變壓器的原理在此確立，
+    他提出的「力線」概念也是場論的雛形。
+  sources:
+    - title: 維基百科：麥可·法拉第
+      url: https://zh.wikipedia.org/wiki/麥可·法拉第
+    - title: 維基百科：電磁感應
+      url: https://zh.wikipedia.org/wiki/電磁感應
+
+- id: phy-joule
+  year: 1847
+  title: 焦耳測定熱功當量，能量守恆成立
+  category: theory
+  importance: 4
+  desc: 攪動水使其升溫，量出機械功與熱的換算比。熱不是一種物質，
+    而是能量的一種形式——熱質說就此退場。
+  sources:
+    - title: 維基百科：詹姆斯·焦耳
+      url: https://zh.wikipedia.org/wiki/詹姆斯·焦耳
+    - title: 維基百科：能量守恆定律
+      url: https://zh.wikipedia.org/wiki/能量守恒定律
+
+- id: phy-entropy
+  year: 1850
+  title: 克勞修斯提出熱力學第二定律與熵
+  category: theory
+  importance: 5
+  desc: 熱不會自動從冷處流向熱處。物理定律第一次帶有方向性，
+    「時間為什麼有先後」這個問題從此有了物理版本。
+  sources:
+    - title: 維基百科：魯道夫·克勞修斯
+      url: https://zh.wikipedia.org/wiki/魯道夫·克勞修斯
+    - title: 維基百科：熵
+      url: https://zh.wikipedia.org/wiki/熵
+
+- id: phy-spectroscopy
+  year: 1859
+  title: 本生與克希荷夫建立光譜分析
+  category: instrument
+  importance: 4
+  desc: 每種元素燒起來有固定的譜線。這讓化學分析可以隔空進行，
+    也讓天文學家第一次得知恆星是由什麼組成的。
+  sources:
+    - title: 維基百科：光譜學
+      url: https://zh.wikipedia.org/wiki/光谱学
+    - title: 維基百科：羅伯特·本生
+      url: https://zh.wikipedia.org/wiki/罗伯特·威廉·本生
+
+- id: phy-maxwell
+  year: 1865
+  title: 馬克士威方程組
+  category: theory
+  importance: 5
+  desc: 四條方程統一電、磁與光，並預言電磁波以光速傳播。
+    理論先於實驗二十餘年，是物理學「用數學預言未知現象」最早的範例。
+  sources:
+    - title: 維基百科：馬克士威方程組
+      url: https://zh.wikipedia.org/wiki/馬克士威方程組
+    - title: 維基百科：詹姆斯·克拉克·馬克士威
+      url: https://zh.wikipedia.org/wiki/詹姆斯·克拉克·麦克斯韦
+
+- id: phy-periodic-table
+  year: 1869
+  title: 門得列夫發表元素週期表
+  category: theory
+  importance: 5
+  desc: 依原子量排列時性質會週期性重現，據此為未知元素預留空位並
+    預測其性質。空位在往後十五年內陸續被填滿，是理論預測的經典勝利。
+  sources:
+    - title: 維基百科：元素週期表
+      url: https://zh.wikipedia.org/wiki/元素周期表
+    - title: 維基百科：德米特里·門捷列夫
+      url: https://zh.wikipedia.org/wiki/德米特里·門捷列夫
+
+- id: phy-michelson-morley
+  year: 1887
+  title: 邁克生—莫立實驗測不到以太
+  category: discovery
+  importance: 4
+  desc: 不論地球往哪個方向運動，光速都一樣。這個「失敗的實驗」
+    否證了以太假說，也為十八年後的狹義相對論清出了場地。
+  sources:
+    - title: 維基百科：邁克生-莫立實驗
+      url: https://zh.wikipedia.org/wiki/迈克耳孙-莫雷实验
+
+- id: phy-xray
+  year: 1895
+  title: 倫琴發現 X 射線
+  category: discovery
+  importance: 5
+  desc: 一種能穿透人體、讓底片感光的未知射線。數週內就被用於臨床
+    診斷，是史上從發現到應用最快的一項物理成果。
+  sources:
+    - title: 維基百科：X射線
+      url: https://zh.wikipedia.org/wiki/X射线
+    - title: 維基百科：威廉·倫琴
+      url: https://zh.wikipedia.org/wiki/威廉·伦琴
+
+- id: phy-radioactivity
+  year: 1896
+  title: 貝克勒發現放射性
+  category: discovery
+  importance: 4
+  desc: 鈾鹽在完全沒有外界激發的情況下持續放出射線。
+    原子不再是不可分割也不可改變的東西，這是第一道裂縫。
+  sources:
+    - title: 維基百科：放射性
+      url: https://zh.wikipedia.org/wiki/放射性
+    - title: 維基百科：亨利·貝克勒
+      url: https://zh.wikipedia.org/wiki/亨利·貝克勒
+
+- id: phy-electron
+  year: 1897
+  title: 湯姆森發現電子
+  category: discovery
+  importance: 5
+  desc: 陰極射線是質量遠小於原子的帶電粒子。原子有內部結構，
+    「不可分割」這個兩千三百年的定義正式失效。
+  sources:
+    - title: 維基百科：電子
+      url: https://zh.wikipedia.org/wiki/电子
+    - title: 維基百科：約瑟夫·湯姆孫
+      url: https://zh.wikipedia.org/wiki/J·J·湯姆森
+
+- id: phy-radium
+  year: 1898
+  title: 居禮夫婦分離出鐳與釙
+  category: discovery
+  importance: 4
+  desc: 從數噸瀝青鈾礦中提煉出零點一克的鐳。放射性被確認為原子本身的
+    性質，而不是化合物的性質。
+  sources:
+    - title: 維基百科：鐳
+      url: https://zh.wikipedia.org/wiki/镭
+    - title: 維基百科：瑪麗·居禮
+      url: https://zh.wikipedia.org/wiki/玛丽·居里
+
+- id: phy-planck
+  year: 1900
+  title: 普朗克提出能量量子假說
+  category: theory
+  importance: 5
+  desc: 為了湊出黑體輻射的公式，被迫假設能量只能一份一份地交換。
+    他自己視之為權宜之計，結果那是量子力學的起點。
+  sources:
+    - title: 維基百科：馬克斯·普朗克
+      url: https://zh.wikipedia.org/wiki/马克斯·普朗克
+    - title: 維基百科：量子力學
+      url: https://zh.wikipedia.org/wiki/量子力学
+
+- id: phy-nobel
+  year: 1901
+  title: 首屆諾貝爾獎頒發
+  category: institution
+  importance: 4
+  desc: 科學成就第一次有了全球性的公開排序機制。它同時塑造了
+    「科學家是少數天才」的公眾形象，儘管實際研究早已是團體工作。
+  sources:
+    - title: 維基百科：諾貝爾獎
+      url: https://zh.wikipedia.org/wiki/诺贝尔奖
+
+- id: phy-special-relativity
+  year: 1905
+  title: 愛因斯坦提出狹義相對論與光量子
+  category: theory
+  importance: 5
+  desc: 同一年還解釋了光電效應與布朗運動。放棄絕對時間之後，
+    同時性變成相對的，而質量與能量是同一件事的兩種寫法。
+  sources:
+    - title: 維基百科：狹義相對論
+      url: https://zh.wikipedia.org/wiki/狭义相对论
+    - title: 維基百科：光電效應
+      url: https://zh.wikipedia.org/wiki/光电效应
+    - title: 維基百科：阿爾伯特·愛因斯坦
+      url: https://zh.wikipedia.org/wiki/阿尔伯特·爱因斯坦
+
+- id: phy-rutherford
+  year: 1911
+  title: 拉塞福提出原子核模型
+  category: theory
+  importance: 5
+  desc: 用 α 粒子轟擊金箔，發現極少數被反彈回來。質量幾乎全集中在
+    一個極小的核上，原子內部其實是空的。
+  sources:
+    - title: 維基百科：盧瑟福模型
+      url: https://zh.wikipedia.org/wiki/拉塞福模型
+    - title: 維基百科：歐尼斯特·拉塞福
+      url: https://zh.wikipedia.org/wiki/欧内斯特·卢瑟福
+
+- id: phy-bohr
+  year: 1913
+  title: 波耳的量子化原子模型
+  category: theory
+  importance: 4
+  desc: 電子只能待在特定軌道，跳躍時吸放固定能量的光。
+    它成功算出氫的譜線，卻對稍複雜的原子就失效——一個必要的過渡。
+  sources:
+    - title: 維基百科：波耳模型
+      url: https://zh.wikipedia.org/wiki/玻尔模型
+    - title: 維基百科：尼爾斯·波耳
+      url: https://zh.wikipedia.org/wiki/尼尔斯·玻尔
+
+- id: phy-general-relativity
+  year: 1915
+  title: 廣義相對論
+  category: theory
+  importance: 5
+  desc: 重力不是力，而是時空的彎曲。所用的數學正是黎曼六十年前為了
+    純粹興趣建立的，是「無用的數學後來變得有用」最常被引用的例子。
+  sources:
+    - title: 維基百科：廣義相對論
+      url: https://zh.wikipedia.org/wiki/廣義相對論
+
+- id: phy-quantum-mechanics
+  year: 1925
+  title: 量子力學成形
+  category: theory
+  importance: 5
+  desc: 海森堡的矩陣力學與薛丁格的波動方程在一年內相繼提出，
+    隨後被證明等價。古典的軌道圖像被機率幅取代。
+  sources:
+    - title: 維基百科：量子力學
+      url: https://zh.wikipedia.org/wiki/量子力学
+    - title: 維基百科：維爾納·海森堡
+      url: https://zh.wikipedia.org/wiki/维尔纳·海森堡
+    - title: 維基百科：埃爾溫·薛丁格
+      url: https://zh.wikipedia.org/wiki/埃尔温·薛定谔
+
+- id: phy-uncertainty
+  year: 1927
+  title: 不確定性原理
+  category: theory
+  importance: 5
+  desc: 位置與動量無法同時被精確確定，這是自然的限制而非儀器的不足。
+    「原則上可以完全預測未來」的古典理想至此結束。
+  sources:
+    - title: 維基百科：不確定性原理
+      url: https://zh.wikipedia.org/wiki/不确定性原理
+
+- id: phy-neutron
+  year: 1932
+  title: 查德威克發現中子
+  category: discovery
+  importance: 4
+  desc: 一種不帶電、質量與質子相當的粒子。因為不帶電而能輕易進入
+    原子核，六年後的核分裂實驗正是靠它。
+  sources:
+    - title: 維基百科：中子
+      url: https://zh.wikipedia.org/wiki/中子
+    - title: 維基百科：詹姆斯·查德威克
+      url: https://zh.wikipedia.org/wiki/詹姆斯·查德威克
+
+- id: phy-fission
+  year: 1938
+  title: 核分裂被發現
+  category: discovery
+  importance: 5
+  desc: 哈恩測出鈾被中子撞擊後產生了鋇，邁特納在流亡途中算出這是
+    原子核裂成兩半並釋出巨大能量。發現與詮釋分屬兩地兩人。
+  sources:
+    - title: 維基百科：核分裂
+      url: https://zh.wikipedia.org/wiki/核裂变
+    - title: 維基百科：莉澤·邁特納
+      url: https://zh.wikipedia.org/wiki/莉泽·迈特纳
+
+- id: phy-chicago-pile
+  year: 1942
+  title: 芝加哥 1 號堆達成可控鏈式反應
+  category: application
+  importance: 5
+  desc: 在大學球場看台下用石墨與鈾塊堆成的裝置。人類第一次啟動並
+    控制住核反應，時間點在戰爭中央。
+  sources:
+    - title: 維基百科：芝加哥1號堆
+      url: https://zh.wikipedia.org/wiki/芝加哥1號堆
+
+- id: phy-manhattan
+  year: 1945
+  title: 曼哈頓計畫與首次核爆
+  category: application
+  importance: 5
+  desc: 動員十餘萬人、耗資數十億美元的國家級科研工程。
+    科學與國家安全的關係從此改變，科學家的道德處境也是。
+  sources:
+    - title: 維基百科：曼哈頓計劃
+      url: https://zh.wikipedia.org/wiki/曼哈顿计划
+
+- id: phy-transistor
+  year: 1947
+  title: 電晶體發明
+  category: application
+  importance: 5
+  desc: 用半導體取代真空管做開關與放大。量子力學這門看似最抽象的
+    理論，在二十年內變成了每個人口袋裡的東西。
+  sources:
+    - title: 維基百科：電晶體
+      url: https://zh.wikipedia.org/wiki/晶体管
+
+- id: phy-qed
+  year: 1948
+  title: 量子電動力學建立
+  category: theory
+  importance: 4
+  desc: 費曼、施溫格與朝永振一郎各自解決了發散問題。
+    預測值與實驗值吻合到小數點後十位，是物理學最精確的一套理論。
+  sources:
+    - title: 維基百科：量子電動力學
+      url: https://zh.wikipedia.org/wiki/量子電動力學
+
+- id: phy-cern
+  year: 1954
+  title: 歐洲核子研究組織成立
+  category: institution
+  importance: 5
+  desc: 十二個國家合資建造單一實驗室。粒子物理的規模已經超過任何一國
+    能單獨負擔，「大科學」的組織形態在此定型。
+  sources:
+    - title: 維基百科：歐洲核子研究組織
+      url: https://zh.wikipedia.org/wiki/歐洲核子研究組織
+
+- id: phy-laser
+  year: 1960
+  title: 梅曼造出第一台雷射
+  category: instrument
+  importance: 5
+  desc: 受激輻射的概念由愛因斯坦在 1917 年提出，四十三年後才做出裝置。
+    此後它成為光通訊、光碟、手術與精密測量共同的基礎工具。
+  sources:
+    - title: 維基百科：雷射
+      url: https://zh.wikipedia.org/wiki/激光
+    - title: 維基百科：西奧多·梅曼
+      url: https://zh.wikipedia.org/wiki/西奧多·梅曼
+
+- id: phy-quark
+  year: 1964
+  title: 夸克模型提出
+  category: theory
+  importance: 5
+  desc: 用三種帶分數電荷的基本粒子解釋大量新發現的強子。
+    提出時被視為數學技巧，數年後的深度非彈性散射實驗證實它們真的存在。
+  sources:
+    - title: 維基百科：夸克
+      url: https://zh.wikipedia.org/wiki/夸克
+    - title: 維基百科：默里·蓋爾曼
+      url: https://zh.wikipedia.org/wiki/默里·盖尔曼
+
+- id: phy-wz-boson
+  year: 1983
+  title: W 與 Z 玻色子被發現
+  category: discovery
+  importance: 4
+  desc: 電弱統一理論預言的傳遞粒子在對撞機中現身。
+    標準模型的預測能力自此不再有爭議。
+  sources:
+    - title: 維基百科：W及Z玻色子
+      url: https://zh.wikipedia.org/wiki/W及Z玻色子
+
+- id: phy-higgs
+  year: 2012
+  title: 希格斯玻色子被發現
+  category: discovery
+  importance: 5
+  desc: 從理論預言到實驗證實隔了四十八年，動用一座二十七公里的對撞機
+    與數千人的合作。標準模型的最後一塊拼上，代價也標示了這條路的極限。
+  sources:
+    - title: 維基百科：希格斯玻色子
+      url: https://zh.wikipedia.org/wiki/希格斯玻色子
+    - title: 維基百科：大型強子對撞機
+      url: https://zh.wikipedia.org/wiki/大型強子對撞機
