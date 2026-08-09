@@ -11,6 +11,15 @@
     -->
     <title>AoE</title>
     <meta name="description" content="把不同地區的歷史放在同一條時間軸上並排比較。" />
+    <!--
+      圖示三份都是 scripts/make-favicon.mjs 從同一份幾何定義產生的（npm run icons），
+      不要單獨手改其中一份。SVG 會跟著系統亮暗色切換，.ico 是舊瀏覽器的退路。
+      路徑一律寫絕對路徑：這份 HTML 會被複製到 /tw-railway/ 之類的子目錄，
+      相對路徑會變成去要 /tw-railway/favicon.svg。base 由 vite 補。
+    -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <script>
       // 在首次繪製前就套用存下來的主題，否則手動選亮色的人在暗色系統上會先閃一下暗底。
       // 必須跟 src/lib/theme.ts 的 THEME_KEY 一致。

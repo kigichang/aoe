@@ -35,7 +35,12 @@ npm install
 npm run dev      # http://localhost:5173
 npm run build    # 型別檢查 + 打包到 dist/
 npm run check    # 只跑型別檢查
+npm run icons    # 重新產生 public/ 的圖示（改了圖形才需要跑）
 ```
+
+`public/` 底下的 `favicon.svg`／`favicon.ico`／`apple-touch-icon.png` 三份都是
+`scripts/make-favicon.mjs` 從同一份幾何定義產生的，**不要單獨手改其中一份**。
+它們有進版控，平常建置不會重跑。
 
 ## 部署到 GitHub Pages
 
