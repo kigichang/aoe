@@ -480,6 +480,16 @@ export default function App() {
             <span>說明</span>
           </button>
           <ThemeToggle theme={theme} onToggle={toggleTheme} />
+          <a
+            className="theme-toggle"
+            href="https://official.junyiacademy.org/donate/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="贊助均一教育平台"
+          >
+            <span className="sponsor-heart" aria-hidden="true">♥</span>
+            <span>贊助均一</span>
+          </a>
         </div>
       </header>
 
