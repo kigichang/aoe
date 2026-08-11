@@ -28,6 +28,9 @@
 
 各自的取捨理由寫在 `src/topics/<主題>/topic.yaml` 的註解裡。
 
+如果你喜歡我的創作或者有幫助到你的學習，請贊助支持均一：
+https://official.junyiacademy.org/donate/
+
 ## 開發
 
 ```bash
