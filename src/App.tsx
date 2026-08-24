@@ -22,6 +22,7 @@ import { Toolbar } from './components/Toolbar'
 import { DetailPanel } from './components/DetailPanel'
 import { ThemeToggle } from './components/ThemeToggle'
 import { HelpOverlay } from './components/HelpOverlay'
+import { ReportOverlay } from './components/ReportOverlay'
 import { SearchBox } from './components/SearchBox'
 import { TopicSwitcher } from './components/TopicSwitcher'
 import { SITE_NAME } from './lib/site'
@@ -72,6 +73,7 @@ export default function App() {
   const [categories, setCategories] = useState(() => new Set<Category>(CATEGORY_IDS))
   const [showLegendary, setShowLegendary] = useState(true)
   const [helpOpen, setHelpOpen] = useState(false)
+  const [reportOpen, setReportOpen] = useState(false)
   const [visibleRegions, setVisibleRegions] = useState(
     () => new Set(REGIONS.map((r) => r.id)),
   )
@@ -490,10 +492,21 @@ export default function App() {
             <span className="sponsor-heart" aria-hidden="true">♥</span>
             <span>贊助均一</span>
           </a>
+          <button
+            type="button"
+            className="theme-toggle"
+            onClick={() => setReportOpen(true)}
+            title="問題回報與建議"
+            aria-label="問題回報與建議"
+          >
+            <span aria-hidden="true">✉</span>
+            <span>問題回報</span>
+          </button>
         </div>
       </header>
 
       {helpOpen && <HelpOverlay onClose={() => setHelpOpen(false)} />}
+      {reportOpen && <ReportOverlay onClose={() => setReportOpen(false)} />}
 
       <Toolbar
         ppy={ppy}

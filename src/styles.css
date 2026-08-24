@@ -836,6 +836,10 @@ button {
   background: var(--surface-1);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
 }
+/* 問題回報那種只有幾行字的對話框，680px 會空得離譜 */
+.help-narrow {
+  width: min(440px, 100%);
+}
 .help-head {
   position: sticky;
   top: -20px;                        /* 抵銷 .help 的上內距，捲動時標題不漏餡 */
