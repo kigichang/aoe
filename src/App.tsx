@@ -479,7 +479,7 @@ export default function App() {
             aria-label="怎麼讀這張圖"
           >
             <span aria-hidden="true">？</span>
-            <span>說明</span>
+            <span className="btn-label">說明</span>
           </button>
           <ThemeToggle theme={theme} onToggle={toggleTheme} />
           <a
@@ -488,9 +488,10 @@ export default function App() {
             target="_blank"
             rel="noopener noreferrer"
             title="贊助均一教育平台"
+            aria-label="贊助均一教育平台"
           >
             <span className="sponsor-heart" aria-hidden="true">♥</span>
-            <span>贊助均一</span>
+            <span className="btn-label">贊助均一</span>
           </a>
           <button
             type="button"
@@ -500,7 +501,7 @@ export default function App() {
             aria-label="問題回報與建議"
           >
             <span aria-hidden="true">✉</span>
-            <span>問題回報</span>
+            <span className="btn-label">問題回報</span>
           </button>
         </div>
       </header>

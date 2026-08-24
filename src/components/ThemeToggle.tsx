@@ -35,7 +35,7 @@ export function ThemeToggle({ theme, onToggle }: Props) {
       aria-label={`切換為${label}系主題`}
     >
       {next === 'dark' ? <MoonIcon /> : <SunIcon />}
-      <span>{label}</span>
+      <span className="btn-label">{label}</span>
     </button>
   )
 }
