@@ -128,6 +128,8 @@ button {
   margin: 0;
   font-size: 17px;
   letter-spacing: 0.02em;
+  /* 文楷只用在大字級的點綴處（這裡與 .period-name），載入見 index.html */
+  font-family: 'LXGW WenKai TC', var(--font);
 }
 .masthead p {
   margin: 3px 0 0;
@@ -482,6 +484,7 @@ button {
   letter-spacing: 0.14em;
   color: var(--text-secondary);
   white-space: nowrap;
+  font-family: 'LXGW WenKai TC', var(--font);
 }
 
 /* ---------------- 事件 ---------------- */
@@ -1043,14 +1046,4 @@ button {
   flex: none;
   font-size: 11px;
   color: var(--muted);
-}
-
-/* ═══════════════════════════════════════════════════════════════════
-   ⚠ 暫時：字型 A/B 測試（FontVariantToggle.tsx）。定案後整段刪除；
-   若 B 定案，改寫成不含 [data-font] 的永久規則。
-   B = 站名標題與朝代直排名稱改用 LXGW 文楷（載入見 index.html）。
-   ═══════════════════════════════════════════════════════════════════ */
-:root[data-font='b'] .masthead h1,
-:root[data-font='b'] .period-name {
-  font-family: 'LXGW WenKai TC', var(--font);
 }

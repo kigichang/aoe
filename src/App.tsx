@@ -21,7 +21,6 @@ import { RegionColumn } from './components/RegionColumn'
 import { Toolbar } from './components/Toolbar'
 import { DetailPanel } from './components/DetailPanel'
 import { ThemeToggle } from './components/ThemeToggle'
-import { FontVariantToggle } from './components/FontVariantToggle' // ⚠ 暫時：字型 A/B 測試
 import { HeartIcon, MailIcon, QuestionIcon } from './components/icons'
 import { HelpOverlay } from './components/HelpOverlay'
 import { ReportOverlay } from './components/ReportOverlay'
@@ -484,8 +483,6 @@ export default function App() {
             <span className="btn-label">說明</span>
           </button>
           <ThemeToggle theme={theme} onToggle={toggleTheme} />
-          {/* ⚠ 暫時：字型 A/B 測試 */}
-          <FontVariantToggle />
           <a
             className="theme-toggle"
             href="https://official.junyiacademy.org/donate/"

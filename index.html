@@ -42,19 +42,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600&display=swap"
     />
-    <!-- ⚠ 暫時：字型 B 方案（LXGW 文楷）的 A/B 測試。定案後這個 link 與下面的
-         data-font script 一併刪除，見 FontVariantToggle.tsx。 -->
+    <!-- 文楷只用在大字級的點綴處：站名標題（700）與朝代直排名稱（400），
+         見 styles.css 的 .masthead h1 / .period-name。 -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap"
     />
-    <script>
-      // ⚠ 暫時：A/B 測試防閃爍，同上面 theme script 的手法但完全獨立。
-      // key 必須跟 FontVariantToggle.tsx 的 FONT_KEY 一致。
-      try {
-        if (localStorage.getItem('aoe:font') === 'b') document.documentElement.dataset.font = 'b'
-      } catch (e) {}
-    </script>
   </head>
   <body>
     <div id="root"></div>
