@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { CATEGORIES, CATEGORY_IDS, REGIONS, TOPIC } from '../lib/data'
 import { fmtYear } from '../lib/scale'
 import type { HistEvent } from '../lib/schema'
+import { CloseIcon } from './icons'
 
 const REPO = 'https://github.com/kigichang/aoe'
 
@@ -110,7 +111,7 @@ export function HelpOverlay({ onClose }: Props) {
         <div className="help-head">
           <h2 id="help-title">怎麼讀這張圖</h2>
           <button type="button" className="help-close" onClick={onClose} ref={closeRef} aria-label="關閉說明">
-            ✕
+            <CloseIcon />
           </button>
         </div>
 

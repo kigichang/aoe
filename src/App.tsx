@@ -21,6 +21,8 @@ import { RegionColumn } from './components/RegionColumn'
 import { Toolbar } from './components/Toolbar'
 import { DetailPanel } from './components/DetailPanel'
 import { ThemeToggle } from './components/ThemeToggle'
+import { FontVariantToggle } from './components/FontVariantToggle' // ⚠ 暫時：字型 A/B 測試
+import { HeartIcon, MailIcon, QuestionIcon } from './components/icons'
 import { HelpOverlay } from './components/HelpOverlay'
 import { ReportOverlay } from './components/ReportOverlay'
 import { SearchBox } from './components/SearchBox'
@@ -478,10 +480,12 @@ export default function App() {
             title="怎麼讀這張圖"
             aria-label="怎麼讀這張圖"
           >
-            <span aria-hidden="true">？</span>
+            <QuestionIcon />
             <span className="btn-label">說明</span>
           </button>
           <ThemeToggle theme={theme} onToggle={toggleTheme} />
+          {/* ⚠ 暫時：字型 A/B 測試 */}
+          <FontVariantToggle />
           <a
             className="theme-toggle"
             href="https://official.junyiacademy.org/donate/"
@@ -490,7 +494,9 @@ export default function App() {
             title="贊助均一教育平台"
             aria-label="贊助均一教育平台"
           >
-            <span className="sponsor-heart" aria-hidden="true">♥</span>
+            <span className="sponsor-heart">
+              <HeartIcon />
+            </span>
             <span className="btn-label">贊助均一</span>
           </a>
           <button
@@ -500,7 +506,7 @@ export default function App() {
             title="問題回報與建議"
             aria-label="問題回報與建議"
           >
-            <span aria-hidden="true">✉</span>
+            <MailIcon />
             <span className="btn-label">問題回報</span>
           </button>
         </div>

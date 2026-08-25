@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { CATEGORIES } from '../lib/data'
 import type { HistEvent, Region } from '../lib/schema'
 import { displayYear, fmtRange } from '../lib/scale'
+import { CloseIcon } from './icons'
 
 interface Props {
   event: HistEvent
@@ -50,7 +51,7 @@ export function DetailPanel({ event, region, slot, concurrent, onClose, onSelect
     <aside className="detail" aria-label="事件詳情" ref={detailRef}>
       <div className="detail-header">
         <button type="button" className="detail-close" onClick={onClose} aria-label="關閉">
-          ×
+          <CloseIcon />
         </button>
         <div className={`detail-tag r${slot % 8}`}>
           <span className="glyph" aria-hidden="true">

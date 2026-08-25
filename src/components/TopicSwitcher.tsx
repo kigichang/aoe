@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { TOPIC, TOPICS } from '../lib/data'
 import { fmtYear } from '../lib/scale'
+import { CaretDownIcon, CheckIcon } from './icons'
 
 /**
  * 主題切換器。
@@ -17,14 +18,6 @@ import { fmtYear } from '../lib/scale'
  * 或指向一則不存在的事件 —— 看起來像跳錯地方，比乾脆從新主題的開場位置
  * 重新開始更難理解。
  */
-
-function CaretIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-      <path d="m6 9 6 6 6-6" />
-    </svg>
-  )
-}
 
 export function TopicSwitcher() {
   const [open, setOpen] = useState(false)
@@ -69,7 +62,7 @@ export function TopicSwitcher() {
         title="切換主題"
       >
         <span>{TOPIC.name}</span>
-        <CaretIcon />
+        <CaretDownIcon />
       </button>
 
       {open && (
@@ -84,7 +77,7 @@ export function TopicSwitcher() {
               <span className="topic-item-name">
                 {/* 固定寬度的勾記欄位，主題名才會對齊 */}
                 <span className="topic-check" aria-hidden="true">
-                  {t.isCurrent ? '✓' : ''}
+                  {t.isCurrent ? <CheckIcon /> : null}
                 </span>
                 {t.meta.name}
               </span>

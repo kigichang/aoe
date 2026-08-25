@@ -158,6 +158,7 @@ button {
   flex: none;
 }
 .sponsor-heart {
+  display: inline-flex;
   color: #e5484d;
 }
 
@@ -214,12 +215,19 @@ button {
   gap: 5px;
   font-size: 13px;
 }
-/* 固定寬度，沒打勾的主題名才會跟打勾的對齊 */
+/* 固定寬度，沒打勾的主題名才會跟打勾的對齊。
+   內容是 SVG 沒有文字 baseline，在 baseline 對齊的容器裡要自己 align-self，
+   否則會被當成 baseline = 盒底而往上跳。 */
 .topic-check {
   width: 11px;
   flex: none;
-  font-size: 11px;
+  display: inline-flex;
+  align-self: center;
   color: var(--text-secondary);
+}
+.topic-check svg {
+  width: 11px;
+  height: 11px;
 }
 .topic-item-range {
   padding-left: 16px;
@@ -246,12 +254,14 @@ button {
 .zoom { display: flex; align-items: center; gap: 6px; }
 .zoom button {
   width: 30px; height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--border);
   border-radius: 7px;
   background: var(--surface-1);
-  font-size: 15px;
-  line-height: 1;
 }
+.zoom button svg { width: 15px; height: 15px; }
 .zoom button:hover { border-color: var(--baseline); }
 .hint {
   font-size: 11.5px;
@@ -704,12 +714,14 @@ button {
   position: absolute;
   top: 8px; right: 10px;
   width: 26px; height: 26px;
+  display: grid;
+  place-items: center;
   border: none;
   border-radius: 6px;
   background: transparent;
-  font-size: 17px;
   color: var(--muted);
 }
+.detail-close svg { width: 16px; height: 16px; }
 .detail-close:hover { background: var(--page); }
 
 .detail-tag {
@@ -861,14 +873,18 @@ button {
 .help-head h2 { margin: 0; font-size: 16px; }
 .help-close {
   flex: none;
+  display: inline-flex;
+  align-items: center;
+  /* .help-head 是 baseline 對齊，SVG 沒有文字 baseline，要自己置中 */
+  align-self: center;
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 3px 9px;
-  font-size: 13px;
+  padding: 5px 9px;
   color: var(--text-secondary);
   background: transparent;
   cursor: pointer;
 }
+.help-close svg { width: 13px; height: 13px; }
 .help-close:hover { color: var(--text-primary); }
 
 .help h3 {
@@ -1027,4 +1043,14 @@ button {
   flex: none;
   font-size: 11px;
   color: var(--muted);
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   ⚠ 暫時：字型 A/B 測試（FontVariantToggle.tsx）。定案後整段刪除；
+   若 B 定案，改寫成不含 [data-font] 的永久規則。
+   B = 站名標題與朝代直排名稱改用 LXGW 文楷（載入見 index.html）。
+   ═══════════════════════════════════════════════════════════════════ */
+:root[data-font='b'] .masthead h1,
+:root[data-font='b'] .period-name {
+  font-family: 'LXGW WenKai TC', var(--font);
 }

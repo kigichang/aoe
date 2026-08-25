@@ -2,6 +2,7 @@ import type { ReactNode } from 'react'
 import { CATEGORIES, CATEGORY_IDS, REGIONS, TOPIC } from '../lib/data'
 import type { Category, Region } from '../lib/schema'
 import { defaultJumps, minImportance } from '../lib/scale'
+import { MinusIcon, PlusIcon } from './icons'
 
 /** 主題自己挑的年代按鈕；沒填就依軸的範圍自動產生（見 topicSchema 的 jumps） */
 const JUMPS = TOPIC.jumps ?? defaultJumps()
@@ -47,10 +48,10 @@ export function Toolbar({
       <div className="toolbar-row">
         <div className="zoom">
           <button type="button" onClick={() => onZoom(1 / 1.6)} aria-label="縮小">
-            −
+            <MinusIcon />
           </button>
           <button type="button" onClick={() => onZoom(1.6)} aria-label="放大">
-            ＋
+            <PlusIcon />
           </button>
           <span className="hint">
             重要度 {floor}+ ・ ⌘/Ctrl + 滾輪縮放

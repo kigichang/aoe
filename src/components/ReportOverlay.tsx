@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { CloseIcon } from './icons'
 
 const ISSUES = 'https://github.com/kigichang/aoe'
 const EMAIL = 'me@kigi.tw'
@@ -56,7 +57,7 @@ export function ReportOverlay({ onClose }: Props) {
             ref={closeRef}
             aria-label="關閉問題回報"
           >
-            ✕
+            <CloseIcon />
           </button>
         </div>
 

@@ -28,6 +28,33 @@
         if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t
       } catch (e) {}
     </script>
+    <!--
+      字型：把 --font stack（styles.css）裡本來就寫著的 'Noto Sans TC' 真的載進來。
+      stack 順序不變（system-ui 在前）—— 拉丁字與數字繼續走系統字型，
+      年份的 tabular-nums 不受 Google Fonts 剝 OpenType feature 的影響；
+      Noto Sans TC 只接住 CJK。只載 400;600，全站僅用這兩個字重。
+      這幾個 link 必須放在上面的 theme script 之後：外部 stylesheet 會阻擋
+      其後 inline script 執行，放前面會延遲主題套用、重現閃白問題。
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600&display=swap"
+    />
+    <!-- ⚠ 暫時：字型 B 方案（LXGW 文楷）的 A/B 測試。定案後這個 link 與下面的
+         data-font script 一併刪除，見 FontVariantToggle.tsx。 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap"
+    />
+    <script>
+      // ⚠ 暫時：A/B 測試防閃爍，同上面 theme script 的手法但完全獨立。
+      // key 必須跟 FontVariantToggle.tsx 的 FONT_KEY 一致。
+      try {
+        if (localStorage.getItem('aoe:font') === 'b') document.documentElement.dataset.font = 'b'
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>
