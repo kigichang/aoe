@@ -1,0 +1,63 @@
+# 農業的階段。時期是「面」，畫成欄位左側的背景色帶。
+# 同一條 track 上不可重疊 —— 所以前一段的 end 要比下一段的 start 早一年。
+#
+# 只用一條 track，而且從 1624 到 2026 填得滿，符合 CLAUDE.md 那條
+# 「要加 track 先確認它從頭到尾填得滿」。分期照「誰在決定種什麼、賣給誰」切，
+# 不照政權切 —— 政權更迭常常不等於產業階段更迭（1945 換了政權，
+# 米糖為主的結構卻一路撐到 1960 年代才鬆動）。
+
+- id: ag-voc
+  name: 荷治出口農業
+  track: 0
+  start: 1624
+  end: 1661
+  note: 鹿皮、蔗糖、稻米運往日本與中國，台灣第一次被納入以出口為目的的生產體系。
+
+- id: ag-koxinga
+  name: 明鄭屯田
+  track: 0
+  start: 1662
+  end: 1683
+  note: 軍隊就地開墾自給，營盤田與文武官田是漢人大規模水田化的起點。
+
+- id: ag-qing-reclaim
+  name: 清代拓墾與水利
+  track: 0
+  start: 1684
+  end: 1859
+  note: 墾號取得墾照、招佃開埠，埤圳把看天田變成兩熟水田。
+
+- id: ag-treaty-ports
+  name: 開港三大出口
+  track: 0
+  start: 1860
+  end: 1894
+  note: 茶、糖、樟腦成為出口主力，重心從南部稻作移向北部丘陵。
+
+- id: ag-japanese
+  name: 日治米糖經濟
+  track: 0
+  start: 1895
+  end: 1945
+  note: 育種、水利與檢驗制度把單位產量拉高，同時把台灣綁進日本的糧食與砂糖供應鏈。
+
+- id: ag-land-reform
+  name: 土地改革與以農養工
+  track: 0
+  start: 1946
+  end: 1971
+  note: 佃農變自耕農，同時透過肥料換穀與田賦徵實把農業剩餘抽去支撐工業化。
+
+- id: ag-rural-transition
+  name: 農村建設與轉型
+  track: 0
+  start: 1972
+  end: 1990
+  note: 農業佔比快速下滑，政策從抽取轉為補貼，勞動力大量流向工廠。
+
+- id: ag-liberalization
+  name: 貿易自由化
+  track: 0
+  start: 1991
+  end: 2026
+  note: 開放農產進口與加入 WTO 之後，方向轉往品質、品牌與離農補償。

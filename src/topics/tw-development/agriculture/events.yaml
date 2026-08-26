@@ -1,0 +1,632 @@
+# 農業。從荷治的出口導向農業一路到加入 WTO 之後的自由化。
+#
+# 已走完 README 的查證流程（維基 API 批次驗證標題 → 逐條核對年份 → 寫入）。
+# 補新資料時照同一套流程，不要憑記憶寫網址，也不要憑印象寫年份 ——
+# 這一欄的清代與日治段特別容易記錯（葫蘆墩圳是 1723 不是 1733，
+# 蓬萊米命名是 1926 而育種完成是 1929，肥料換穀開辦是 1950 不是 1948）。
+#
+# 維基沒有條目的幾則（原料採取區域制、加速農村建設、保價收購、農村再生）
+# 改掛官方頁面。那些網址只驗得到狀態碼（--check-pages 只查 wikipedia.org），
+# 所以一律挑法規資料庫與常設專題頁，不要挑新聞稿。
+
+# ── 荷治：台灣第一次被納入以出口為目的的生產體系 ──────────────────
+
+- id: ag-1624-voc
+  year: 1624
+  title: 荷蘭東印度公司據大員，台灣納入出口生產體系
+  category: trade
+  importance: 5
+  desc: 公司在一鯤鯓築城，以台灣作為對日本與中國的轉口據點，並就地生產鹿皮、蔗糖與稻米運出。這是台灣的土地第一次為了島外的市場而耕作，也是這條軸的起點。
+  sources:
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+    - title: 維基百科：安平古堡
+      url: https://zh.wikipedia.org/wiki/安平古堡
+
+- id: ag-1634-han-rice
+  year: 1634
+  title: 漢人開始在台種稻，鹿皮輸出達十萬張
+  category: labour
+  importance: 4
+  desc: 公司以「種滿指定數量就無償給地、並保證收購」招徠漢人開墾。同年鹿皮輸出十萬張，獵鹿與農耕是這個階段並行的兩條收入來源。
+  sources:
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+    - title: 維基百科：台灣梅花鹿
+      url: https://zh.wikipedia.org/wiki/台灣梅花鹿
+
+- id: ag-1637-deer-traps
+  year: 1637
+  title: 引進陷阱捕鹿，鹿皮輸出升至十五萬張
+  category: technology
+  importance: 3
+  desc: 捕獵效率提高之後產量衝上高點，但鹿群隨即枯竭 —— 到 1650 年代只剩五萬張。台灣第一項出口商品，也是第一個被採盡的資源。
+  sources:
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
+- id: ag-1643-rice-tax
+  year: 1643
+  title: 稻米取消免稅，改徵什一稅
+  category: policy
+  importance: 3
+  desc: 米作已經多到值得課稅，代表漢人農墾從招徠期進入了穩定生產期。
+  sources:
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
+- id: ag-1646-families
+  year: 1646
+  title: 免稅鼓勵漢人攜眷來台，永久聚落成形
+  category: labour
+  importance: 4
+  desc: 在此之前來台的漢人多是季節性的單身勞動力，隨作物往返。攜眷之後才有女性移民與定居的農村，開墾從一季的買賣變成幾代人的事。
+  sources:
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
+- id: ag-1652-cane-third
+  year: 1652
+  title: 蔗作面積達水田三分之一
+  category: trade
+  importance: 4
+  desc: 砂糖的利潤高過稻米，土地大量轉作甘蔗。米糖爭地從這一年就開始，此後三百年反覆出現。
+  sources:
+    - title: 維基百科：臺灣糖業史
+      url: https://zh.wikipedia.org/wiki/臺灣糖業史
+
+- id: ag-1657-sugar-output
+  year: 1657
+  title: 白糖年產升至一萬七千擔
+  category: trade
+  importance: 3
+  desc: 較 1640 年代後期的九千擔將近翻倍。糖成為台灣最穩定的外銷品，這個地位一直維持到二十世紀。
+  sources:
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+    - title: 維基百科：臺灣糖業史
+      url: https://zh.wikipedia.org/wiki/臺灣糖業史
+
+# ── 明鄭：屯田 ────────────────────────────────────────────────
+
+- id: ag-1661-tuntian
+  year: 1661
+  title: 鄭成功下令屯墾，寓兵於農
+  category: policy
+  importance: 4
+  desc: 數萬名隨行軍民必須就地取食，軍隊按鎮營分地開墾。台灣的漢人農業第一次不是為了出口而擴張，而是為了養活一支軍隊 —— 營盤田的地名至今還留在西部平原上。
+  sources:
+    - title: 維基百科：鄭成功
+      url: https://zh.wikipedia.org/wiki/鄭成功
+    - title: 維基百科：明鄭
+      url: https://zh.wikipedia.org/wiki/明鄭
+    - title: 維基百科：屯田制
+      url: https://zh.wikipedia.org/wiki/屯田制
+
+- id: ag-1662-chen-yonghua
+  year: 1662
+  title: 陳永華任諮議參軍，勸農課耕
+  category: policy
+  importance: 4
+  desc: 鄭成功死後由陳永華主持內政，親歷南北各社教民種五穀、插蔗煮糖。這是台灣第一次有人把農業技術當成一項要推廣的政務。
+  sources:
+    - title: 維基百科：陳永華 (明鄭)
+      url: https://zh.wikipedia.org/wiki/陳永華_(明鄭)
+
+- id: ag-1683-ming-zheng-ends
+  year: 1683
+  title: 明鄭降清，官田與營盤田轉為民業
+  category: policy
+  importance: 3
+  desc: 軍屯的土地改由原耕者納賦承領。政權換了，但田還是同一批人在種 —— 產業的階段與政權的更迭在這裡第一次脫鉤。
+  sources:
+    - title: 維基百科：明鄭
+      url: https://zh.wikipedia.org/wiki/明鄭
+
+# ── 清領：拓墾與水利 ──────────────────────────────────────────
+
+- id: ag-1684-crossing-ban
+  year: 1684
+  title: 頒渡臺禁令，限制攜眷來台
+  category: policy
+  importance: 4
+  desc: 清廷視台灣為難治之地，限制渡海並禁止攜眷。結果是大量無家室的單身男性移民（羅漢腳），村落結構與械鬥頻率都被這條規定塑造了近兩百年。
+  sources:
+    - title: 維基百科：渡臺禁令
+      url: https://zh.wikipedia.org/wiki/渡臺禁令
+
+- id: ag-1709-chen-lai-zhang
+  year: 1709
+  title: 陳賴章墾號取得大佳臘墾照
+  category: policy
+  importance: 4
+  desc: 由數人合資的墾號向官府請照、再招佃開墾，是清代拓墾的標準做法。台北盆地的開發從這張墾照開始。
+  sources:
+    - title: 維基百科：陳賴章
+      url: https://zh.wikipedia.org/wiki/陳賴章
+
+- id: ag-1709-bapao-canal
+  year: 1709
+  endYear: 1719
+  title: 施世榜築八堡圳，彰化平原水田化
+  category: infrastructure
+  importance: 4
+  desc: 引濁水溪灌溉，十年而成，是清代台灣規模最大的水利工程。看天田變成可以兩熟的水田，稻作的重心也因此往中部移。
+  sources:
+    - title: 維基百科：八堡圳
+      url: https://zh.wikipedia.org/wiki/八堡圳
+    - title: 維基百科：施世榜
+      url: https://zh.wikipedia.org/wiki/施世榜
+
+- id: ag-1723-huludun-canal
+  year: 1723
+  title: 張達京與岸裡社「割地換水」，開葫蘆墩圳
+  category: infrastructure
+  importance: 4
+  desc: 漢人出資築圳、原住民出地換取灌溉用水。水利工程同時是一套土地轉移的機制 —— 台中盆地的水田是這樣換來的。
+  sources:
+    - title: 維基百科：葫蘆墩圳
+      url: https://zh.wikipedia.org/wiki/葫蘆墩圳
+    - title: 維基百科：張達京
+      url: https://zh.wikipedia.org/wiki/張達京
+
+- id: ag-1740-liugong-canal
+  year: 1740
+  endYear: 1762
+  title: 郭錫瑠開瑠公圳
+  category: infrastructure
+  importance: 4
+  desc: 引新店溪水灌溉台北盆地東側，前後二十餘年才通水。台北從此有了穩定的稻作基礎。
+  sources:
+    - title: 維基百科：瑠公圳
+      url: https://zh.wikipedia.org/wiki/瑠公圳
+    - title: 維基百科：郭錫瑠
+      url: https://zh.wikipedia.org/wiki/郭錫瑠
+
+- id: ag-1740-dual-ownership
+  year: 1740
+  title: 一田二主的大小租制普及
+  category: labour
+  importance: 3
+  desc: 墾戶收大租、佃戶收小租，同一塊地上疊著兩層以上的權利。這套制度沒有單一的頒行年份，是十八世紀中葉隨拓墾逐漸長成的，也正是 1898 年土地調查要拆解的對象。
+  sources:
+    - title: 維基百科：一田二主
+      url: https://zh.wikipedia.org/wiki/一田二主
+
+- id: ag-1760-ban-relaxed
+  year: 1760
+  title: 渡臺禁令一度准許攜眷
+  category: policy
+  importance: 3
+  desc: 禁令時鬆時緊，這一次的開放讓不少單身移民得以成家。人口結構一變，開墾的方式也跟著從短期投機轉向長期經營。
+  sources:
+    - title: 維基百科：渡臺禁令
+      url: https://zh.wikipedia.org/wiki/渡臺禁令
+
+- id: ag-1784-lukang-port
+  year: 1784
+  title: 鹿港設正口，中部米糖直航泉州
+  category: trade
+  importance: 4
+  desc: 中部的稻米與砂糖不必再繞經府城出口。「一府二鹿三艋舺」的商業格局由此成形，郊商掌握了兩岸貿易的定價權。
+  sources:
+    - title: 維基百科：一府二鹿三艋舺
+      url: https://zh.wikipedia.org/wiki/一府二鹿三艋舺
+    - title: 維基百科：郊
+      url: https://zh.wikipedia.org/wiki/郊
+
+- id: ag-1837-caogong-canal
+  year: 1837
+  title: 曹謹開曹公圳，高雄平原水田化
+  category: infrastructure
+  importance: 4
+  desc: 引下淡水溪之水灌溉鳳山一帶，是清代南部最重要的水利工程。西部三大平原到此都有了圳路。
+  sources:
+    - title: 維基百科：曹公圳
+      url: https://zh.wikipedia.org/wiki/曹公圳
+    - title: 維基百科：曹謹
+      url: https://zh.wikipedia.org/wiki/曹謹
+
+# ── 開港：茶、糖、樟腦 ────────────────────────────────────────
+
+- id: ag-1860-treaty-ports
+  year: 1860
+  title: 天津條約開港，茶糖樟腦成為出口主力
+  category: trade
+  importance: 5
+  desc: 淡水、安平等口岸對外開放，台灣的農產第一次直接面對歐美市場而不必經過中國沿海。出口重心也從南部的糖，往北部丘陵的茶與樟腦移動 —— 這是台灣經濟重心北移的起點。
+  sources:
+    - title: 維基百科：天津條約
+      url: https://zh.wikipedia.org/wiki/天津條約
+    - title: 維基百科：臺灣清治時期
+      url: https://zh.wikipedia.org/wiki/臺灣清治時期
+
+- id: ag-1867-dodd-firm
+  year: 1867
+  title: 陶德設寶順洋行，收購並精製台灣茶
+  category: enterprise
+  importance: 4
+  desc: 陶德派李春生從福建安溪帶回茶苗，並貸款給農民種茶、再收購精製。資金、技術與通路一次到位，北台灣的丘陵地因此改種茶。
+  sources:
+    - title: 維基百科：約翰·陶德
+      url: https://zh.wikipedia.org/wiki/約翰·陶德
+    - title: 維基百科：宝顺洋行
+      url: https://zh.wikipedia.org/wiki/宝顺洋行
+
+- id: ag-1869-oolong-new-york
+  year: 1869
+  title: 兩千餘擔烏龍茶直運紐約
+  category: trade
+  importance: 4
+  desc: 蘇伊士運河開通那一年，陶德與李春生雇飛剪船把 2,131 擔茶直接運到紐約，掛上「福爾摩沙烏龍茶」的名號。台灣的農產第一次以自己的產地名在國際市場上被認得。
+  sources:
+    - title: 維基百科：約翰·陶德
+      url: https://zh.wikipedia.org/wiki/約翰·陶德
+    - title: 維基百科：臺灣茶
+      url: https://zh.wikipedia.org/wiki/臺灣茶
+
+- id: ag-1875-open-mountains
+  year: 1875
+  title: 開山撫番，廢除渡臺禁令
+  category: policy
+  importance: 4
+  desc: 牡丹社事件之後清廷改採積極治台，開山修路並取消渡海限制。實施近兩百年的移民管制結束，開墾範圍越過丘陵推向東部與山區。
+  sources:
+    - title: 維基百科：開山撫番
+      url: https://zh.wikipedia.org/wiki/開山撫番
+    - title: 維基百科：沈葆楨
+      url: https://zh.wikipedia.org/wiki/沈葆楨
+    - title: 維基百科：渡臺禁令
+      url: https://zh.wikipedia.org/wiki/渡臺禁令
+
+- id: ag-1880-sugar-peak
+  year: 1880
+  title: 糖產量達清代高峰
+  category: trade
+  importance: 3
+  desc: 全台年產約七萬二千公噸。四年後盛產反而使糖價從每擔 2.8 元跌到 1.5 元 —— 沒有加工與運銷體系的單一作物出口，豐收本身就是風險。
+  sources:
+    - title: 維基百科：臺灣糖業史
+      url: https://zh.wikipedia.org/wiki/臺灣糖業史
+
+- id: ag-1886-camphor-monopoly
+  year: 1886
+  title: 樟腦收歸官辦
+  category: policy
+  importance: 3
+  desc: 劉銘傳設腦務總局統一收購，把樟腦的利潤從民間腦戶手中收進官庫。台灣的天然資源第一次被國家獨佔經營，這套做法日治之後由專賣局全盤接收。
+  sources:
+    - title: 維基百科：樟腦
+      url: https://zh.wikipedia.org/wiki/樟腦
+    - title: 維基百科：劉銘傳
+      url: https://zh.wikipedia.org/wiki/劉銘傳
+
+# ── 日治：米糖經濟 ────────────────────────────────────────────
+
+- id: ag-1898-land-survey
+  year: 1898
+  endYear: 1905
+  title: 土地調查事業，廢大租戶確立單一業主權
+  category: policy
+  importance: 5
+  desc: 逐筆丈量全島土地、清查隱田，並以公債補償方式買斷大租權，讓一塊地只剩一個業主。田賦收入因此倍增，土地也第一次可以抵押、買賣、成為資本 —— 後來的糖業擴張與水利工程都要靠這個基礎。
+  sources:
+    - title: 維基百科：土地調查事業
+      url: https://zh.wikipedia.org/wiki/土地調查事業
+    - title: 維基百科：一田二主
+      url: https://zh.wikipedia.org/wiki/一田二主
+
+- id: ag-1901-nitobe-report
+  year: 1901
+  title: 新渡戶稻造提出糖業改良意見書
+  category: policy
+  importance: 4
+  desc: 主張改良蔗種、推廣灌溉施肥、並以新式工場取代糖廍。這份意見書是此後四十年台灣糖業政策的藍本，也把農民與製糖會社綁成一組。
+  sources:
+    - title: 維基百科：新渡戶稻造
+      url: https://zh.wikipedia.org/wiki/新渡戶稻造
+    - title: 維基百科：臺灣糖業史
+      url: https://zh.wikipedia.org/wiki/臺灣糖業史
+
+- id: ag-1905-raw-material-zone
+  year: 1905
+  title: 原料採取區域制，蔗農只能賣給指定會社
+  category: policy
+  importance: 5
+  desc: 全島劃成數十個區，區內的甘蔗只准賣給該區的製糖會社，價格由會社訂。這是台灣農業史上最徹底的一次生產關係重組：農民保有土地，卻失去了賣給誰、賣多少錢的權利，日後二林蔗農事件與農民組合都由此而來。
+  sources:
+    - title: 維基百科：臺灣糖業史
+      url: https://zh.wikipedia.org/wiki/臺灣糖業史
+    - title: 維基百科：臺灣製糖
+      url: https://zh.wikipedia.org/wiki/臺灣製糖
+    - title: 農業部：農業100年精華－臺灣農業百年紀實
+      url: https://www.moa.gov.tw/ws.php?id=2445335
+
+- id: ag-1921-nakamura-rice
+  year: 1921
+  title: 日本種稻在草山試作豐收
+  category: technology
+  importance: 4
+  desc: 農務主任平澤龜一郎發現先前自九州引進的「中村種」在草山適應良好，推廣後於秋天大豐收。台灣的氣候第一次被證明種得出日本人吃的粳米，米糖經濟的另一半自此成立。
+  sources:
+    - title: 維基百科：蓬萊米
+      url: https://zh.wikipedia.org/wiki/蓬萊米
+
+- id: ag-1923-zhuzihu-seed
+  year: 1923
+  title: 竹子湖原種田開始大量採種
+  category: technology
+  importance: 3
+  desc: 山谷四面環山、不易與在來稻雜交，成為理想的採種地。育種要成為產業，得先有能穩定供應純種的地方。
+  sources:
+    - title: 維基百科：蓬萊米
+      url: https://zh.wikipedia.org/wiki/蓬萊米
+
+- id: ag-1925-erlin-incident
+  year: 1925
+  title: 二林蔗農事件
+  category: labour
+  importance: 4
+  desc: 蔗農要求林本源製糖公布收購價、並在採收前議價，衝突後遭大規模逮捕。這是台灣第一次有農民為了價格決定權集體對抗會社，直接催生了隔年的農民組合。
+  sources:
+    - title: 維基百科：二林事件
+      url: https://zh.wikipedia.org/wiki/二林事件
+    - title: 維基百科：臺灣農民組合
+      url: https://zh.wikipedia.org/wiki/臺灣農民組合
+
+- id: ag-1926-horai-named
+  year: 1926
+  title: 「蓬萊米」正式命名
+  category: technology
+  importance: 4
+  desc: 總督伊澤多喜男在台灣鐵道飯店的日本米穀大會上為中村種定名。有了名字才有品牌與市場，台灣米從此以獨立品項進入日本的糧食體系。
+  sources:
+    - title: 維基百科：蓬萊米
+      url: https://zh.wikipedia.org/wiki/蓬萊米
+
+- id: ag-1926-farmers-union
+  year: 1926
+  title: 臺灣農民組合成立
+  category: labour
+  importance: 4
+  desc: 全島性的農民團體，處理蔗價、租佃與土地放領爭議。台灣的農民第一次有了跨地域的組織，而不只是一庄一次的抗爭。
+  sources:
+    - title: 維基百科：臺灣農民組合
+      url: https://zh.wikipedia.org/wiki/臺灣農民組合
+    - title: 維基百科：臺灣文化協會
+      url: https://zh.wikipedia.org/wiki/臺灣文化協會
+
+- id: ag-1929-taichung-65
+  year: 1929
+  title: 末永仁育成抗稻熱病的臺中六十五號
+  category: technology
+  importance: 4
+  desc: 以「龜治」與「神力」雜交，育出耐病且適應台灣風土的品種。這一步讓蓬萊米從「種得起來」變成「種得穩」，1936 年起大量推廣並取代中村種。
+  sources:
+    - title: 維基百科：蓬萊米
+      url: https://zh.wikipedia.org/wiki/蓬萊米
+    - title: 維基百科：末永仁
+      url: https://zh.wikipedia.org/wiki/末永仁
+    - title: 維基百科：磯永吉
+      url: https://zh.wikipedia.org/wiki/磯永吉
+
+- id: ag-1930-jianan-canal
+  year: 1930
+  title: 嘉南大圳完工，十五萬甲三年輪作
+  category: infrastructure
+  importance: 5
+  desc: 八田與一主持，以烏山頭水庫與濁幹線灌溉嘉南平原。水量不足以全區同時種稻，於是設計成稻、蔗、雜作三年輪灌 —— 一項水利工程直接決定了十五萬甲土地每一年種什麼，也讓米與糖的爭地變成排程問題。
+  sources:
+    - title: 維基百科：嘉南大圳
+      url: https://zh.wikipedia.org/wiki/嘉南大圳
+    - title: 維基百科：八田與一
+      url: https://zh.wikipedia.org/wiki/八田與一
+
+- id: ag-1936-taichung-65-spread
+  year: 1936
+  title: 臺中六十五號大量推廣
+  category: technology
+  importance: 3
+  desc: 逐步取代中村種成為蓬萊米的主力品種，也是戰後台灣稻作育種的母本。一個品種的血緣延續了半個世紀。
+  sources:
+    - title: 維基百科：蓬萊米
+      url: https://zh.wikipedia.org/wiki/蓬萊米
+
+- id: ag-1945-wartime-collapse
+  year: 1945
+  title: 戰爭結束時農業產出遠低於戰前
+  category: labour
+  importance: 3
+  desc: 肥料進口中斷、水利設施失修、壯年人力被徵調，稻米與砂糖的產量都掉回二十年前的水準。戰後的土地改革是從這個低點開始的。
+  sources:
+    - title: 維基百科：台灣農業
+      url: https://zh.wikipedia.org/wiki/台灣農業
+    - title: 維基百科：臺灣戰後時期
+      url: https://zh.wikipedia.org/wiki/臺灣戰後時期
+
+# ── 戰後：土地改革與以農養工 ──────────────────────────────────
+
+- id: ag-1946-taisugar
+  year: 1946
+  title: 台灣糖業公司成立，接收四大製糖會社
+  category: enterprise
+  importance: 4
+  desc: 日治時期的製糖會社全部收歸公營，台糖一度是全台最大的地主與雇主。砂糖也成為戰後初期最重要的外匯來源，撐住了進口替代所需的機器與原料。
+  sources:
+    - title: 維基百科：台灣糖業公司
+      url: https://zh.wikipedia.org/wiki/台灣糖業公司
+    - title: 維基百科：臺灣糖業史
+      url: https://zh.wikipedia.org/wiki/臺灣糖業史
+
+- id: ag-1948-jcrr
+  year: 1948
+  title: 中國農村復興聯合委員會成立
+  category: policy
+  importance: 4
+  desc: 中美合組、由美援支應的農業技術與推廣機構，後來遷台並主導土地改革的執行、品種改良與農會改組。台灣戰後農政的實際規劃者有很長一段時間是它，而不是省政府。
+  sources:
+    - title: 維基百科：中國農村復興聯合委員會
+      url: https://zh.wikipedia.org/wiki/中國農村復興聯合委員會
+    - title: 維基百科：美援
+      url: https://zh.wikipedia.org/wiki/美援
+
+- id: ag-1949-rent-reduction
+  year: 1949
+  title: 三七五減租
+  category: policy
+  importance: 4
+  desc: 佃租上限壓到全年收穫量的 37.5%，租約一律書面化並保障六年。佃農留下的餘糧變多，也是後兩階段土地改革的前置作業。
+  sources:
+    - title: 維基百科：三七五減租
+      url: https://zh.wikipedia.org/wiki/三七五減租
+
+- id: ag-1950-fertilizer-barter
+  year: 1950
+  endYear: 1973
+  title: 肥料換穀開辦，農業剩餘被抽去支撐工業
+  category: policy
+  importance: 5
+  desc: 農民必須以稻穀按官定比率向政府換化學肥料，比率長年對農民不利（1967 年是一公斤肥料換 0.85 公斤穀）。實質是一種看不見的實物稅：政府藉此掌握米價、壓低糧食與工資成本，把農業的剩餘轉去養工業。台灣工業化最關鍵的一筆資金，是從農村抽出來的。
+  sources:
+    - title: 維基百科：肥料換穀
+      url: https://zh.wikipedia.org/wiki/肥料換穀
+
+- id: ag-1951-public-land-sale
+  year: 1951
+  title: 公地放領
+  category: policy
+  importance: 4
+  desc: 接收自日產的公有耕地分批賣給現耕農民，地價以年收穫量的兩倍半分十年攤還。先拿政府自己的地試辦，再推向私有地。
+  sources:
+    - title: 維基百科：公地放領
+      url: https://zh.wikipedia.org/wiki/公地放領
+
+- id: ag-1953-land-to-tiller
+  year: 1953
+  title: 耕者有其田
+  category: policy
+  importance: 5
+  desc: 地主超額的出租耕地由政府徵收轉賣佃農，補償七成是實物土地債券、三成是四大公營公司的股票。一次動作同時做了三件事：佃農變自耕農、地主資本被推進工商業、公營事業部分民營化。台灣的地主階級與工業資本家的交班就在這一年。
+  sources:
+    - title: 維基百科：耕者有其田
+      url: https://zh.wikipedia.org/wiki/耕者有其田
+    - title: 維基百科：土地改革
+      url: https://zh.wikipedia.org/wiki/土地改革
+
+- id: ag-1959-flood
+  year: 1959
+  title: 八七水災重創中南部農田
+  category: infrastructure
+  importance: 4
+  desc: 中部連日豪雨潰堤，數十萬公頃農地泡水。災後的重建把水利設施的整建與水庫興建推上優先順位，石門水庫的進度也因此加快。
+  sources:
+    - title: 維基百科：八七水災
+      url: https://zh.wikipedia.org/wiki/八七水災
+
+- id: ag-1964-shimen-reservoir
+  year: 1964
+  title: 石門水庫完工
+  category: infrastructure
+  importance: 4
+  desc: 兼具灌溉、發電、給水與防洪的多目標水庫，桃園台地的看天田因此穩定供水。戰後第一座自建的大型水利工程，也是嘉南大圳之後最大的一座。
+  sources:
+    - title: 維基百科：石門水庫 (臺灣)
+      url: https://zh.wikipedia.org/wiki/石門水庫_(臺灣)
+
+- id: ag-1972-rural-measures
+  year: 1972
+  title: 加速農村建設重要措施九項
+  category: policy
+  importance: 4
+  desc: 行政院在九月宣布，第一項就是廢除肥料換穀，另有取消田賦附徵、放寬農貸、推廣農業機械化等。政策方向從「抽取農業剩餘」翻轉成「補貼農業」，因為此時工業已經養得起自己了。
+  sources:
+    - title: 農業部：農業100年精華－臺灣農業百年紀實
+      url: https://www.moa.gov.tw/ws.php?id=2445335
+    - title: 維基百科：肥料換穀
+      url: https://zh.wikipedia.org/wiki/肥料換穀
+
+- id: ag-1973-fertilizer-barter-ends
+  year: 1973
+  title: 廢止肥料換穀
+  category: policy
+  importance: 4
+  desc: 實施二十三年的隱藏稅結束。農業從此不再是工業化的財源，但農村人口外流已經定型，這一步來得太晚，救不回勞動力。
+  sources:
+    - title: 維基百科：肥料換穀
+      url: https://zh.wikipedia.org/wiki/肥料換穀
+
+- id: ag-1974-price-support
+  year: 1974
+  title: 稻穀保價收購開辦
+  category: policy
+  importance: 4
+  desc: 政府以高於市價的價格收購計畫產量內的稻穀，穩定農民收益也穩定糧價。從此稻米的價格不由市場決定，這套制度一直運作到今天。
+  sources:
+    - title: 農業部主管法規：收購公糧稻穀作業要點
+      url: https://law.moa.gov.tw/LawContent.aspx?id=FL020132
+    - title: 農業部：農業100年精華－臺灣農業百年紀實
+      url: https://www.moa.gov.tw/ws.php?id=2445335
+
+- id: ag-1984-crop-switching
+  year: 1984
+  title: 稻田轉作計畫
+  category: policy
+  importance: 3
+  desc: 保價收購造成公糧堆積，政府改以補貼鼓勵稻田改種雜糧與飼料作物。台灣農業的問題從「不夠吃」正式翻轉成「產太多」。
+  sources:
+    - title: 農業部：農業100年精華－臺灣農業百年紀實
+      url: https://www.moa.gov.tw/ws.php?id=2445335
+
+- id: ag-1988-farmers-movement
+  year: 1988
+  title: 五二〇農民運動
+  category: labour
+  importance: 4
+  desc: 農民北上抗議開放美國農產進口與農保、肥料等問題，是解嚴後規模最大、衝突最激烈的一次街頭運動。農業的處境第一次成為全國性的政治議題，農委會與農民健康保險的制度化都與這場運動有關。
+  sources:
+    - title: 維基百科：1988年臺灣農民運動
+      url: https://zh.wikipedia.org/wiki/1988年臺灣農民運動
+
+- id: ag-1997-fmd
+  year: 1997
+  title: 口蹄疫爆發，豬肉輸日中斷
+  category: trade
+  importance: 4
+  desc: 台灣當時年出口毛豬與豬肉價值上看新台幣數百億元，疫情一起全數停擺。單一市場、單一品項的出口結構有多脆弱，在這一年被示範了一次。
+  sources:
+    - title: 維基百科：口蹄疫
+      url: https://zh.wikipedia.org/wiki/口蹄疫
+
+- id: ag-2002-wto
+  year: 2002
+  title: 加入 WTO，農產品市場開放
+  category: trade
+  importance: 5
+  desc: 稻米改採限量進口、多數農產品的關稅與管制大幅鬆綁。三百多年來台灣農業第一次在沒有保護的條件下面對國際競爭，政策方向也從產量轉向品質、品牌與離農補償。
+  sources:
+    - title: 維基百科：世界貿易組織
+      url: https://zh.wikipedia.org/wiki/世界貿易組織
+    - title: 維基百科：台灣農業
+      url: https://zh.wikipedia.org/wiki/台灣農業
+
+- id: ag-2009-rural-regeneration
+  year: 2009
+  title: 農村再生條例通過
+  category: policy
+  importance: 3
+  desc: 設置基金，由農村居民自己提再生計畫來改善環境與活化產業。政策的單位從「一塊田」變成「一個社區」，處理的是農業以外的農村問題。
+  sources:
+    - title: 全國法規資料庫：農村再生條例
+      url: https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=M0110017
+
+- id: ag-2021-pineapple-ban
+  year: 2021
+  title: 中國禁止台灣鳳梨輸入
+  category: trade
+  importance: 3
+  desc: 當時台灣鳳梨出口有九成以上銷往中國，禁令一下就得在一季之內另尋市場。單一市場依賴的風險，在 1997 年的豬肉之後又演了一次。
+  sources:
+    - title: 維基百科：鳳梨
+      url: https://zh.wikipedia.org/wiki/鳳梨
+    - title: 維基百科：台灣農業
+      url: https://zh.wikipedia.org/wiki/台灣農業

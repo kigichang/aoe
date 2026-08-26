@@ -1,0 +1,473 @@
+# 科技業。範圍是**資通訊與半導體**的窄定義，起點 1973 年工研院成立。
+#
+# **這一欄在 1624–1972 之間完全空白，那是史實不是缺資料。**
+# 不要為了填滿它而把清代的機器局、日治的電力建設挪過來 ——
+# 那些是工業欄的東西，理由見 regions.yaml 的註解。
+#
+# 出處以英文維基為主：zh 的「台灣半導體產業」條目是小作品（掛著待擴充標記），
+# en 的 Semiconductor industry in Taiwan 與 TSMC 才有完整的年份。
+# 照 CLAUDE.md「中文版單薄就額外掛母語版」那條處理，title 一律寫繁體中文並標明語言。
+#
+# **1999 年 921 停電衝擊晶圓廠、2010 年富士康連續墜樓這兩則刻意沒有收** ——
+# 都是常被引用的事，但 zh 維基的 921 條目沒有寫產業影響，富士康那則也找不到
+# 可引的條目。寧可不寫，也不要在軸上釘一個沒有出處的年份。
+#
+# **「兩兆雙星」的出處找得很費事，不要順手換掉。** 維基沒有條目；
+# 國發會的官方說明頁（www.ndc.gov.tw）整站對 --check-urls 回 403，不是 UA 問題，
+# 掛上去就是一個永遠是紅的 lint 項目；行政院那一頁講得清楚但**沒有寫年份**
+# （只說「扁政府時代」），而且是尹啟銘批評前朝政策的評論文章。
+# 最後用的是**立法院法制局的研析報告**（編號 R00179），那份白紙黑字寫著
+# 「2002年的『兩兆雙星』計畫」，是目前唯一同時滿足「寫出年份」與「連得到」的官方來源；
+# 行政院那頁則留著補「兩兆指哪兩個產業、目標多少產值」。
+
+# ── 技術引進 ──────────────────────────────────────────────────
+
+- id: te-1973-itri
+  year: 1973
+  title: 工業技術研究院成立
+  category: policy
+  importance: 5
+  desc: 把分散的聯合工業、礦業與金屬研究所整併成一個法人，任務是把買不到、學不來的技術做出來再交給民間。台灣的科技業不是從市場裡自己長出來的，是從這個機構被推出來的 —— 此後聯電、台積電、世界先進都由它衍生。
+  sources:
+    - title: 維基百科：工業技術研究院
+      url: https://zh.wikipedia.org/wiki/工業技術研究院
+    - title: 英文維基百科：台灣半導體產業
+      url: https://en.wikipedia.org/wiki/Semiconductor_industry_in_Taiwan
+
+- id: te-1974-hon-hai
+  year: 1974
+  title: 鴻海塑膠成立
+  category: enterprise
+  importance: 3
+  desc: 郭台銘從電視機旋鈕做起，二十年後成為全球最大的電子代工廠。台灣科技業的另一半不是晶片而是組裝，而組裝這一半是從塑膠射出這種最不起眼的地方開始的。
+  sources:
+    - title: 維基百科：鴻海科技集團
+      url: https://zh.wikipedia.org/wiki/鴻海科技集團
+
+- id: te-1974-pan-wenyuan
+  year: 1974
+  title: 潘文淵受邀返台，積體電路計畫成形
+  category: policy
+  importance: 4
+  desc: 他早在 1968 年就與孫運璿、李國鼎等人組成以海外華人為主的電子技術顧問委員會。1974 年回台之後，「台灣要做積體電路」從一個構想變成一份可執行的計畫，台灣的半導體產業就從這一年起算。
+  sources:
+    - title: 維基百科：潘文淵
+      url: https://zh.wikipedia.org/wiki/潘文淵
+    - title: 維基百科：孫運璿
+      url: https://zh.wikipedia.org/wiki/孫運璿
+    - title: 英文維基百科：台灣半導體產業
+      url: https://en.wikipedia.org/wiki/Semiconductor_industry_in_Taiwan
+
+- id: te-1976-rca-transfer
+  year: 1976
+  title: 與 RCA 簽技術移轉，工程師赴美受訓
+  category: technology
+  importance: 5
+  desc: 政府說服 RCA 移轉 CMOS 製程，並派一批年輕工程師到美國實地學設計、製造與測試。這批人回來之後撐起了此後三十年的半導體業 —— 台灣買到的不只是一套製程，而是一群會用它的人。
+  sources:
+    - title: 英文維基百科：台灣半導體產業
+      url: https://en.wikipedia.org/wiki/Semiconductor_industry_in_Taiwan
+    - title: 維基百科：互補式金屬氧化物半導體
+      url: https://zh.wikipedia.org/wiki/互補式金屬氧化物半導體
+
+- id: te-1976-acer
+  year: 1976
+  title: 宏碁成立
+  category: enterprise
+  importance: 4
+  desc: 施振榮等人以極小的資本起家，從微處理器的教學與代理做起。台灣第一批做電腦而不是做零件的公司，走的是與半導體完全不同的另一條路。
+  sources:
+    - title: 維基百科：宏碁
+      url: https://zh.wikipedia.org/wiki/宏碁
+    - title: 維基百科：施振榮
+      url: https://zh.wikipedia.org/wiki/施振榮
+
+- id: te-1977-pilot-fab
+  year: 1977
+  title: 工研院三吋晶圓示範工廠落成
+  category: infrastructure
+  importance: 4
+  desc: 台灣第一條積體電路生產線。示範工廠的意思是它不為賺錢而設，只為證明這套製程在台灣做得起來 —— 證明完就把人與技術整批放出去開公司。
+  sources:
+    - title: 英文維基百科：台灣半導體產業
+      url: https://en.wikipedia.org/wiki/Semiconductor_industry_in_Taiwan
+    - title: 維基百科：工業技術研究院
+      url: https://zh.wikipedia.org/wiki/工業技術研究院
+
+- id: te-1979-iii
+  year: 1979
+  title: 資訊工業策進會成立
+  category: policy
+  importance: 4
+  desc: 李國鼎倡議設立，因應能源危機與貿易保護，把台灣從勞力密集推向技術密集。同年首度舉辦資訊週。半導體有工研院，資訊軟體與應用這一側則交給它。
+  sources:
+    - title: 維基百科：資訊工業策進會
+      url: https://zh.wikipedia.org/wiki/資訊工業策進會
+
+# ── 園區與 IC 先驅 ────────────────────────────────────────────
+
+- id: te-1980-hsinchu-park
+  year: 1980
+  title: 新竹科學園區設立
+  category: infrastructure
+  importance: 5
+  desc: 緊鄰工研院、清大與交大，園區內免關稅、減免所得稅、行政一站辦完。加工出口區把製造集中起來，科學園區則把研究、人才與製造集中在同一塊地上 —— 兩者相隔十四年，做的是同一件事的兩個版本。
+  sources:
+    - title: 維基百科：新竹科學園區
+      url: https://zh.wikipedia.org/wiki/新竹科學園區
+    - title: 英文維基百科：新竹科學園區
+      url: https://en.wikipedia.org/wiki/Hsinchu_Science_Park
+
+- id: te-1980-umc
+  year: 1980
+  title: 聯華電子成立，工研院示範工廠衍生
+  category: enterprise
+  importance: 4
+  desc: 台灣第一家半導體公司，把示範工廠的技術與人整批帶進市場。從國家實驗室裡分出一家公司去賺錢，這個模式此後被重複使用了好幾次。
+  sources:
+    - title: 維基百科：聯華電子
+      url: https://zh.wikipedia.org/wiki/聯華電子
+    - title: 英文維基百科：台灣半導體產業
+      url: https://en.wikipedia.org/wiki/Semiconductor_industry_in_Taiwan
+
+- id: te-1981-microprofessor
+  year: 1981
+  title: 宏碁推出小教授一號
+  category: technology
+  importance: 3
+  desc: 一台給人學微處理器的單板電腦，隔年推出小教授二號。台灣第一批自有設計的電腦產品，賣的是學習套件而不是零件代工。
+  sources:
+    - title: 維基百科：宏碁
+      url: https://zh.wikipedia.org/wiki/宏碁
+
+- id: te-1984-big5
+  year: 1984
+  title: 資策會制定大五碼，中文電腦有了共同編碼
+  category: technology
+  importance: 4
+  desc: 與十三家廠商合作開發「五大中文套裝軟體」，同時定出 Big5 字符編碼。在此之前每家廠商的中文碼各不相通，換一台電腦就換一套字。編碼統一之後，中文的個人電腦市場才真正成立。
+  sources:
+    - title: 維基百科：資訊工業策進會
+      url: https://zh.wikipedia.org/wiki/資訊工業策進會
+
+- id: te-1985-morris-chang-itri
+  year: 1985
+  title: 張忠謀返台出任工研院院長
+  category: policy
+  importance: 4
+  desc: 在德州儀器與通用器材待過二十餘年之後回台主持工研院。兩年後他提出的那個構想改寫了整個半導體業的分工方式。
+  sources:
+    - title: 英文維基百科：張忠謀
+      url: https://en.wikipedia.org/wiki/Morris_Chang
+    - title: 維基百科：張忠謀
+      url: https://zh.wikipedia.org/wiki/張忠謀
+
+- id: te-1987-acer-brand
+  year: 1987
+  title: 宏碁品牌從 Multitech 改為 Acer
+  category: enterprise
+  importance: 3
+  desc: 為了打國際市場而換掉沿用十一年的名字。台灣廠商第一次認真經營自有品牌，而不只是替別人做。
+  sources:
+    - title: 維基百科：宏碁
+      url: https://zh.wikipedia.org/wiki/宏碁
+
+# ── 晶圓代工成形 ──────────────────────────────────────────────
+
+- id: te-1987-tsmc
+  year: 1987
+  title: 台灣積體電路製造公司成立，晶圓代工模式誕生
+  category: enterprise
+  importance: 5
+  desc: 張忠謀主張只做製造、不做自有產品，也就不會跟客戶競爭。這一步同時創造了兩個產業：專做代工的晶圓廠，以及不必蓋廠就能設計晶片的 IC 設計公司。台灣不是在既有的分工裡找到位置，而是重新畫了那條分工線。
+  sources:
+    - title: 維基百科：台積電
+      url: https://zh.wikipedia.org/wiki/台積電
+    - title: 英文維基百科：台積電
+      url: https://en.wikipedia.org/wiki/TSMC
+    - title: 維基百科：晶圓代工
+      url: https://zh.wikipedia.org/wiki/晶圓代工
+
+- id: te-1988-foxconn-shenzhen
+  year: 1988
+  title: 鴻海赴深圳設廠
+  category: labour
+  importance: 4
+  desc: 台幣升值與工資上漲之後，勞力密集的組裝往外走。這一步替後來的 PC 與手機代工建立了「台灣接單、中國製造」的基本盤，也把數十萬名工人的工作搬到了海峽對岸。
+  sources:
+    - title: 維基百科：鴻海科技集團
+      url: https://zh.wikipedia.org/wiki/鴻海科技集團
+    - title: 英文維基百科：富士康
+      url: https://en.wikipedia.org/wiki/Foxconn
+
+- id: te-1993-tsmc-listed
+  year: 1993
+  title: 台積電在台灣證券交易所上市
+  category: enterprise
+  importance: 3
+  desc: 資本市場開始為晶圓廠的巨額投資買單。晶圓代工需要每隔幾年就蓋一座更貴的廠，沒有這條募資管道，製程競賽跟不下去。
+  sources:
+    - title: 英文維基百科：台積電
+      url: https://en.wikipedia.org/wiki/TSMC
+
+- id: te-1995-southern-park
+  year: 1995
+  title: 南部科學園區設置
+  category: infrastructure
+  importance: 4
+  desc: 竹科飽和之後往南開第二個園區，隔年台南園區動土。三十年後南科的產值反過來超越竹科加中科的總和 —— 半導體的重心在這一年開始南移。
+  sources:
+    - title: 維基百科：南部科學園區
+      url: https://zh.wikipedia.org/wiki/南部科學園區
+
+- id: te-1996-dacqi
+  year: 1996
+  title: 達碁科技成立，面板產業起步
+  category: enterprise
+  importance: 3
+  desc: 宏碁轉投資的 TFT-LCD 公司，五年後與聯友合併成友達。面板是台灣第二個押上巨額資本的產業，走的路子與半導體幾乎一樣 —— 只是結局不同。
+  sources:
+    - title: 維基百科：友達光電
+      url: https://zh.wikipedia.org/wiki/友達光電
+
+- id: te-1997-mediatek
+  year: 1997
+  title: 聯發科自聯電分割
+  category: enterprise
+  importance: 4
+  desc: 五月自聯電的設計部門獨立出來。有了晶圓代工，設計公司不必蓋廠也能出貨 —— 台積電創造出來的那個新產業，在這裡結出第一個大果實。
+  sources:
+    - title: 英文維基百科：台灣半導體產業
+      url: https://en.wikipedia.org/wiki/Semiconductor_industry_in_Taiwan
+
+- id: te-1997-tsmc-nyse
+  year: 1997
+  title: 台積電成為第一家在紐約證交所掛牌的台灣公司
+  category: trade
+  importance: 4
+  desc: 資金與治理標準同時對接國際市場。一家成立十年的代工廠，成了台灣在國際資本市場上的第一張名片。
+  sources:
+    - title: 英文維基百科：台積電
+      url: https://en.wikipedia.org/wiki/TSMC
+
+# ── 半導體與面板 ──────────────────────────────────────────────
+
+- id: te-2000-acer-split
+  year: 2000
+  title: 宏碁分家，品牌與代工切開
+  category: enterprise
+  importance: 4
+  desc: 施振榮把集團拆成品牌與製造兩邊，代工業務分出緯創。同一家公司既替客戶代工又賣自有品牌，遲早會撞在一起 —— 這一刀之後，台灣廠商大多選了代工那一邊。
+  sources:
+    - title: 維基百科：宏碁
+      url: https://zh.wikipedia.org/wiki/宏碁
+
+- id: te-2001-auo
+  year: 2001
+  title: 達碁與聯友合併為友達光電
+  category: enterprise
+  importance: 4
+  desc: 九月合併，成為當時台灣最大的面板廠。面板產業從此進入「誰能撐得住下一代廠房的投資」的競賽，而那正是它日後失守的原因。
+  sources:
+    - title: 維基百科：友達光電
+      url: https://zh.wikipedia.org/wiki/友達光電
+
+- id: te-2002-two-trillion
+  year: 2002
+  title: 兩兆雙星產業發展計畫
+  category: policy
+  importance: 5
+  desc: 把半導體與影像顯示兩個產業各自推上新台幣一兆元產值當成國家目標。國家第一次明確指定兩個產業重壓資源，而衡量的指標是產值也就是規模——半導體靠製程領先築起門檻而站穩，面板則因為規模擋不住中韓的擴產而失守。同一套政策兩個相反的結果，是台灣產業政策最常被拿來檢討的一次。
+  sources:
+    - title: 立法院法制局：「全國科學技術會議」科技業者出席率偏低問題之研析
+      url: https://www.ly.gov.tw/Pages/Detail.aspx?nodeid=6590&pid=85475
+    - title: 行政院：政務委員尹啟銘－DRAM產業的今日 兩個前因後果
+      url: https://www.ey.gov.tw/Page/9277F759E41CCD91/f97377b4-fcf4-4060-aff8-007fcb150482
+
+- id: te-2002-panel-five-tigers
+  year: 2002
+  title: 面板五虎成形，台灣押注影像顯示
+  category: enterprise
+  importance: 4
+  desc: 友達、奇美、廣輝、中華映管、瀚宇彩晶同時擴產 TFT-LCD，五家一起衝規模。這是兩兆雙星裡「影像顯示」那一兆的執行者，打法與半導體幾乎一樣：先砸錢蓋廠，再用規模壓低成本。
+  sources:
+    - title: 維基百科：面板五虎
+      url: https://zh.wikipedia.org/wiki/面板五虎
+    - title: 維基百科：友達光電
+      url: https://zh.wikipedia.org/wiki/友達光電
+    - title: 維基百科：薄膜電晶體液晶顯示器
+      url: https://zh.wikipedia.org/wiki/薄膜電晶體液晶顯示器
+
+- id: te-2002-central-park
+  year: 2002
+  title: 中部科學園區核定，為面板而開
+  category: infrastructure
+  importance: 4
+  desc: 友達要蓋新一代 TFT-LCD 廠而竹科已經飽和，行政院於是開第三個園區，隔年就開放進駐。一家公司的擴廠需求直接催生了一個科學園區。
+  sources:
+    - title: 維基百科：中部科學園區
+      url: https://zh.wikipedia.org/wiki/中部科學園區
+
+- id: te-2002-forty-fabs
+  year: 2002
+  title: 全台四十座晶圓廠運轉
+  category: technology
+  importance: 3
+  desc: 從 1977 年那一條示範產線算起，二十五年蓋出四十座廠。密度之高使得設備、化學品、光罩與封測廠全部聚在同一個島上，供應鏈的反應速度成為難以複製的優勢。
+  sources:
+    - title: 英文維基百科：台灣半導體產業
+      url: https://en.wikipedia.org/wiki/Semiconductor_industry_in_Taiwan
+
+- id: te-2005-foxconn-largest
+  year: 2005
+  title: 鴻海營收破兆，成為全球最大電子代工廠
+  category: enterprise
+  importance: 4
+  desc: 超越新加坡的偉創力。台灣科技業從此有兩根支柱：一根是晶片製造的技術領先，另一根是規模與速度做到極致的組裝代工，兩者的獲利模式完全不同。
+  sources:
+    - title: 維基百科：鴻海科技集團
+      url: https://zh.wikipedia.org/wiki/鴻海科技集團
+
+- id: te-2010-panel-consolidation
+  year: 2010
+  title: 奇美併入群創，面板五虎剩四家
+  category: enterprise
+  importance: 3
+  desc: 中國與韓國同時擴產，價格戰打到台灣廠商只能靠合併求生。同一套「砸錢蓋廠拚規模」的打法，在半導體贏了、在面板輸了 —— 差別在於製程領先能築起門檻，而面板不能。
+  sources:
+    - title: 維基百科：面板五虎
+      url: https://zh.wikipedia.org/wiki/面板五虎
+    - title: 維基百科：群創光電
+      url: https://zh.wikipedia.org/wiki/群創光電
+
+- id: te-2007-overtakes-us
+  year: 2007
+  title: 台灣半導體產值超越美國，僅次於日本
+  category: trade
+  importance: 5
+  desc: 從 1976 年向 RCA 買技術算起，三十一年。一個沒有自己的設計、設備與材料的後進者，靠著把「製造」這一段做到別人做不了的程度，站上了世界第二。
+  sources:
+    - title: 英文維基百科：台灣半導體產業
+      url: https://en.wikipedia.org/wiki/Semiconductor_industry_in_Taiwan
+
+- id: te-2009-output
+  year: 2009
+  title: 半導體產值達 390 億美元
+  category: trade
+  importance: 3
+  desc: 金融海嘯的谷底年份仍有這個規模。DRAM 廠在這一波倒了一批，晶圓代工卻幾乎沒有受傷 —— 押注記憶體與押注代工的差別在這一年結算。
+  sources:
+    - title: 英文維基百科：台灣半導體產業
+      url: https://en.wikipedia.org/wiki/Semiconductor_industry_in_Taiwan
+
+- id: te-2018-morris-chang-retires
+  year: 2018
+  title: 張忠謀退休，台積電交棒
+  category: enterprise
+  importance: 4
+  desc: 主持三十一年後退休，由劉德音任董事長、魏哲家任總裁。創辦人退場而公司持續領先，代表晶圓代工已經從一個人的構想變成一套制度。
+  sources:
+    - title: 英文維基百科：台積電
+      url: https://en.wikipedia.org/wiki/TSMC
+    - title: 英文維基百科：張忠謀
+      url: https://en.wikipedia.org/wiki/Morris_Chang
+
+# ── 先進製程與地緣政治 ────────────────────────────────────────
+
+- id: te-2020-5nm
+  year: 2020
+  title: 5 奈米量產，蘋果 A14 與 M1 採用
+  category: technology
+  importance: 4
+  desc: 製程領先從「便宜可靠」變成「只有這裡做得出來」。客戶的旗艦產品要等台積電的產能表，議價關係整個倒轉過來。
+  sources:
+    - title: 英文維基百科：台積電
+      url: https://en.wikipedia.org/wiki/TSMC
+
+- id: te-2020-global-share
+  year: 2020
+  title: 台積電佔全球晶圓代工過半
+  category: trade
+  importance: 4
+  desc: 一家公司拿下超過一半的市場。這個集中度後來被稱為「矽盾」——既是台灣在國際上的籌碼，也是全世界都想分散掉的風險。
+  sources:
+    - title: 英文維基百科：台灣半導體產業
+      url: https://en.wikipedia.org/wiki/Semiconductor_industry_in_Taiwan
+    - title: 英文維基百科：矽盾
+      url: https://en.wikipedia.org/wiki/Silicon_shield
+
+- id: te-2020-arizona
+  year: 2020
+  title: 台積電宣布赴亞利桑那設廠
+  category: policy
+  importance: 5
+  desc: 先進製程第一次離開台灣。決定的理由不是成本也不是市場，而是客戶國的政策壓力 —— 從這一年起，晶圓廠蓋在哪裡是地緣政治問題，不是工程問題。2022 年底投資額增為三倍，2024 年初則坦承量產要延到 2027 至 2028 年。
+  sources:
+    - title: 英文維基百科：台積電
+      url: https://en.wikipedia.org/wiki/TSMC
+    - title: 英文維基百科：矽盾
+      url: https://en.wikipedia.org/wiki/Silicon_shield
+
+- id: te-2021-jasm
+  year: 2021
+  title: 與索尼合資成立 JASM，赴熊本設廠
+  category: enterprise
+  importance: 4
+  desc: 十一月宣布，日本政府補貼過半建廠成本。與亞利桑那那一座不同，這裡做的是成熟製程，補的是車用與工業晶片的缺口。
+  sources:
+    - title: 英文維基百科：台積電
+      url: https://en.wikipedia.org/wiki/TSMC
+
+- id: te-2021-chip-shortage
+  year: 2021
+  title: 全球晶片荒
+  category: trade
+  importance: 5
+  desc: 疫情打亂需求預測，車廠減單後又搶不回產能，全球汽車生產線陸續停擺。各國政府這才發現最關鍵的零件幾乎全部來自同一個島 —— 此後的補貼法案、在地設廠要求與出口管制，都是從這一年的恐慌開始的。
+  sources:
+    - title: 維基百科：2020年—2023年全球晶片危機
+      url: https://zh.wikipedia.org/wiki/2020年—2023年全球晶片危機
+    - title: 英文維基百科：2020–2023 年全球晶片短缺
+      url: https://en.wikipedia.org/wiki/2020–2023_global_chip_shortage
+
+- id: te-2022-3nm
+  year: 2022
+  title: 3 奈米量產
+  category: technology
+  importance: 4
+  desc: 第四季進入量產。同期能做到同一節點的只剩兩家，其中一家還在追。製程競賽走到這裡，門檻已經高到新進者進不來。
+  sources:
+    - title: 英文維基百科：台積電
+      url: https://en.wikipedia.org/wiki/TSMC
+    - title: 維基百科：3奈米製程
+      url: https://zh.wikipedia.org/wiki/3奈米製程
+
+- id: te-2024-jasm-operation
+  year: 2024
+  title: 熊本廠開始商業運轉
+  category: enterprise
+  importance: 3
+  desc: 十二月投產，從宣布到量產只花了三年，比亞利桑那快得多。同一家公司在兩個國家蓋廠的落差，說明的是當地的供應鏈與工班有沒有跟上，而不是技術。
+  sources:
+    - title: 英文維基百科：台積電
+      url: https://en.wikipedia.org/wiki/TSMC
+
+- id: te-2025-2nm
+  year: 2025
+  title: 2 奈米進入量產
+  category: technology
+  importance: 4
+  desc: 年底轉入 N2 世代。從 1977 年那條三吋示範產線到這裡，四十八年 —— 這條軸上沒有第二個產業跑得這麼快。
+  sources:
+    - title: 英文維基百科：台積電
+      url: https://en.wikipedia.org/wiki/TSMC
+
+- id: te-2025-nanke-output
+  year: 2025
+  title: 南科產值 2.97 兆，首度超越竹科加中科
+  category: trade
+  importance: 3
+  desc: 三個園區裡最晚開的那個，三十年後成為最大的一個。先進製程的重心跟著台積電的新廠往南移，竹科則轉為研發與設計的聚落。
+  sources:
+    - title: 維基百科：南部科學園區
+      url: https://zh.wikipedia.org/wiki/南部科學園區

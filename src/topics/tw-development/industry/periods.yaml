@@ -1,0 +1,54 @@
+# 工業的階段。同一條 track 上不可重疊。
+#
+# **1624–1859 刻意沒有色帶。** 那段只有糖廍、腦寮這類分散的手工加工，
+# 沒有可稱為「時期」的共同結構 —— CLAUDE.md 說得明白：
+# 空白色帶比沒有色帶更難讀，寧可留白。事件本身照收。
+
+- id: in-treaty-ports
+  name: 開港與洋務工業
+  track: 0
+  start: 1860
+  end: 1894
+  note: 洋行帶進機器與資本，清末官辦的機器局、煤礦與電燈是最早的近代設施。
+
+- id: in-sugar-industrial
+  name: 製糖工業化
+  track: 0
+  start: 1895
+  end: 1930
+  note: 新式糖廠取代糖廍，原料採取區域制把甘蔗與農民一起綁進會社。
+
+- id: in-nanshin
+  name: 南進基地工業化
+  track: 0
+  start: 1931
+  end: 1945
+  note: 日月潭發電啟用後電力充足，金屬、化學、機械與軍需工業被推上台灣。
+
+- id: in-import-substitution
+  name: 進口替代
+  track: 0
+  start: 1946
+  end: 1959
+  note: 用高關稅與外匯管制保護紡織、水泥、肥料等內需工業，資金主要來自美援。
+
+- id: in-export-expansion
+  name: 出口擴張
+  track: 0
+  start: 1960
+  end: 1972
+  note: 獎勵投資與加工出口區把台灣接上國際代工鏈，紡織與電子裝配起飛。
+
+- id: in-heavy-industry
+  name: 重化工業
+  track: 0
+  start: 1973
+  end: 1985
+  note: 十大建設補上鋼鐵、石化、造船與電力，把上游原料留在島內。
+
+- id: in-relocation
+  name: 產業外移與升級
+  track: 0
+  start: 1986
+  end: 2026
+  note: 台幣升值與工資上漲後勞力密集產業西進南進，留下的走向自動化與高值化。
