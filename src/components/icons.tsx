@@ -69,15 +69,6 @@ export function QuestionIcon() {
   )
 }
 
-/** 實心：贊助鈕的紅心，空心會弱化語氣。紅色由外層 .sponsor-heart 的 color 繼承。 */
-export function HeartIcon() {
-  return (
-    <Icon fill="currentColor">
-      <path d="M12 20.2 5.3 13.4a4.4 4.4 0 1 1 6.7-5.6 4.4 4.4 0 1 1 6.7 5.6Z" />
-    </Icon>
-  )
-}
-
 export function MailIcon() {
   return (
     <Icon>

@@ -159,11 +159,6 @@ button {
   height: 15px;
   flex: none;
 }
-.sponsor-heart {
-  display: inline-flex;
-  color: #e5484d;
-}
-
 /* ---------------- 主題切換器 ---------------- */
 
 /* 選單的定位基準 */
@@ -823,9 +818,8 @@ button {
 @media (max-width: 640px) {
   :root { --axis-w: 56px; --rail-w: 20px; }
   .masthead p { display: none; }
-  /* 標題列的四顆按鈕只留 icon。文字消失後可及名稱只剩 aria-label／title，
-     所以那四個元素一定要各自帶 aria-label —— 贊助那顆是 <a>，原本靠文字
-     當名稱，補 aria-label 才不會變成一顆無名連結。
+  /* 標題列的三顆按鈕只留 icon。文字消失後可及名稱只剩 aria-label／title，
+     所以那三個元素一定要各自帶 aria-label。
      主題切換器不在此列：它的文字是「現在在看哪個主題」，換成 caret 就讀不出來了。 */
   .btn-label { display: none; }
   /* 只剩 icon 就不需要左右不對稱的內距。切換器排除在外，它的文字還在 */

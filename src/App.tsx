@@ -21,7 +21,7 @@ import { RegionColumn } from './components/RegionColumn'
 import { Toolbar } from './components/Toolbar'
 import { DetailPanel } from './components/DetailPanel'
 import { ThemeToggle } from './components/ThemeToggle'
-import { HeartIcon, MailIcon, QuestionIcon } from './components/icons'
+import { MailIcon, QuestionIcon } from './components/icons'
 import { HelpOverlay } from './components/HelpOverlay'
 import { ReportOverlay } from './components/ReportOverlay'
 import { SearchBox } from './components/SearchBox'
@@ -483,19 +483,6 @@ export default function App() {
             <span className="btn-label">說明</span>
           </button>
           <ThemeToggle theme={theme} onToggle={toggleTheme} />
-          <a
-            className="theme-toggle"
-            href="https://official.junyiacademy.org/donate/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="贊助均一教育平台"
-            aria-label="贊助均一教育平台"
-          >
-            <span className="sponsor-heart">
-              <HeartIcon />
-            </span>
-            <span className="btn-label">贊助均一</span>
-          </a>
           <button
             type="button"
             className="theme-toggle"

@@ -6,7 +6,6 @@ const EMAIL = 'me@kigi.tw'
 /** 預設信件標題。encodeURIComponent 是必要的：中括號與中文都得轉義 */
 const SUBJECT = '[AOE] 問題或建議標題'
 const MAILTO = `mailto:${EMAIL}?subject=${encodeURIComponent(SUBJECT)}`
-const DONATE = 'https://official.junyiacademy.org/donate/'
 
 interface Props {
   onClose: () => void
@@ -71,15 +70,6 @@ export function ReportOverlay({ onClose }: Props) {
             {EMAIL}
           </a>
           。
-        </p>
-
-        <p>
-          如果你喜歡我的創作或者有幫助到你的學習，請贊助支持均一：
-        </p>
-        <p>
-          <a className="help-link" href={DONATE} target="_blank" rel="noreferrer">
-            official.junyiacademy.org/donate →
-          </a>
         </p>
       </div>
     </div>
