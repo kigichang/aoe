@@ -1,0 +1,39 @@
+# 科技業的階段。同一條 track 上不可重疊。
+#
+# **1624–1972 沒有色帶，因為這一欄那段沒有任何東西。** 那片空白是史實，
+# 不是資料沒補完 —— 解釋寫在 regions.yaml 的 subtitle（「1973 年工研院成立起」）。
+
+- id: te-transfer
+  name: 技術引進
+  track: 0
+  start: 1973
+  end: 1979
+  note: 工研院成立並向 RCA 買下 CMOS 製程，台灣第一次擁有自己的積體電路產線。
+
+- id: te-park
+  name: 園區與 IC 先驅
+  track: 0
+  start: 1980
+  end: 1986
+  note: 新竹科學園區開幕，聯電與一批衍生公司把實驗室的技術帶進市場。
+
+- id: te-foundry
+  name: 晶圓代工成形
+  track: 0
+  start: 1987
+  end: 1999
+  note: 台積電把「只做代工、不做自有品牌」變成一種產業模式，PC 代工同時撐起另一半。
+
+- id: te-semiconductor-panel
+  name: 半導體與面板
+  track: 0
+  start: 2000
+  end: 2015
+  note: 兩兆雙星把資源押在半導體與面板，前者站穩、後者在紅色供應鏈下失守。
+
+- id: te-advanced-node
+  name: 先進製程
+  track: 0
+  start: 2016
+  end: 2026
+  note: 製程領先擴大成地緣政治籌碼，海外設廠與人才競爭成為新的變數。

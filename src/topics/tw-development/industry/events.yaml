@@ -1,0 +1,485 @@
+# 工業。從糖廍與鹽田這類分散的手工加工，到新式糖廠、電力、重化工業，
+# 再到產業外移之後留下的高值化製造。
+#
+# 已走完 README 的查證流程（維基 API 批次驗證標題 → 逐條核對年份 → 寫入）。
+#
+# **有三則常被引用的「事實」刻意沒有收**：1939 年與 1963 年「工業產值首度
+# 超過農業產值」，以及 1968 年通用儀器來台設廠。三者都查不到明確出處
+# （zh 維基的臺灣經濟條目只寫「農業佔 GDP 從 1952 年的 35% 降到不足 5%」），
+# 寧可不寫也不要在時間軸上釘一個撐不起來的年份。日後找到可靠出處再補。
+
+# ── 荷治到清末：分散的手工加工 ────────────────────────────────
+#
+# 這一段沒有斷代色帶（periods.yaml 從 1860 才開始），因為只有零星的
+# 糖廍與腦寮，沒有可稱為「時期」的共同結構。事件本身照收。
+
+- id: in-1644-sugar-mills
+  year: 1644
+  title: 糖廍遍布南部，全島年產糖約九十萬斤
+  category: technology
+  importance: 4
+  desc: 糖廍是牛拉石車壓蔗、再以土灶熬煮的作坊，由蔗農合股經營，就設在蔗園旁邊。台灣最早的加工業依附著農業長出來，而且此後兩百多年幾乎沒有改變過。
+  sources:
+    - title: 維基百科：糖廍
+      url: https://zh.wikipedia.org/wiki/糖廍
+    - title: 維基百科：臺灣糖業史
+      url: https://zh.wikipedia.org/wiki/臺灣糖業史
+
+- id: in-1665-salt-fields
+  year: 1665
+  title: 陳永華改採曬沙淋滷法，於瀨口修築鹽田
+  category: technology
+  importance: 4
+  desc: 以日曬取代煎煮，產量與品質都提高。台灣第一次有人為了改良一項製程而動工興建設施，而不只是把既有做法搬過來。
+  sources:
+    - title: 維基百科：陳永華 (明鄭)
+      url: https://zh.wikipedia.org/wiki/陳永華_(明鄭)
+    - title: 維基百科：鹽田
+      url: https://zh.wikipedia.org/wiki/鹽田
+
+- id: in-1682-sugar-nagasaki
+  year: 1682
+  title: 砂糖九千九百餘擔輸往長崎
+  category: trade
+  importance: 3
+  desc: 明鄭靠對日貿易換取軍需。糖是台灣手上唯一有議價能力的加工品，這個角色一直維持到二十世紀。
+  sources:
+    - title: 維基百科：臺灣糖業史
+      url: https://zh.wikipedia.org/wiki/臺灣糖業史
+
+- id: in-1860-treaty-ports-capital
+  year: 1860
+  title: 開港，洋行帶進資本、機器與加工技術
+  category: trade
+  importance: 4
+  desc: 洋行不只買賣，還貸款給生產者、設精製廠、引進新設備。台灣的加工業第一次接上島外的資本與技術，而不是只靠在地累積。
+  sources:
+    - title: 維基百科：天津條約
+      url: https://zh.wikipedia.org/wiki/天津條約
+    - title: 維基百科：臺灣清治時期
+      url: https://zh.wikipedia.org/wiki/臺灣清治時期
+
+- id: in-1876-badouzi-coal
+  year: 1876
+  title: 八斗子官營煤礦開坑，台灣第一個官營礦場
+  category: infrastructure
+  importance: 4
+  desc: 「清國井」由官方經營，供應輪船與機器所需的燃料。這是台灣第一次為了機器而開採能源，也是近代工業的第一個前提條件。
+  sources:
+    - title: 維基百科：八斗子
+      url: https://zh.wikipedia.org/wiki/八斗子
+
+- id: in-1884-sugar-price-crash
+  year: 1884
+  title: 糖價從每擔 2.8 元跌到 1.5 元
+  category: trade
+  importance: 3
+  desc: 四年前才創下產量高峰，一次盛產就把價格砍掉將近一半。沒有加工技術升級與運銷體系，產量本身救不了任何人 —— 這正是日治初期糖業改革要處理的問題。
+  sources:
+    - title: 維基百科：臺灣糖業史
+      url: https://zh.wikipedia.org/wiki/臺灣糖業史
+
+- id: in-1894-1275-mills
+  year: 1894
+  title: 全島一千二百七十五間糖廍
+  category: technology
+  importance: 3
+  desc: 數量龐大但每間規模都小、製程也還是舊法。日治之後新式製糖工場一間就能吃掉數十間糖廍的甘蔗，這一千多間在二十年內幾乎消失。
+  sources:
+    - title: 維基百科：臺灣糖業史
+      url: https://zh.wikipedia.org/wiki/臺灣糖業史
+
+# ── 日治：從製糖工業化到南進基地 ──────────────────────────────
+
+- id: in-1900-taiwan-sugar-corp
+  year: 1900
+  title: 臺灣製糖株式會社成立，橋仔頭新式糖廠開工
+  category: enterprise
+  importance: 5
+  desc: 台灣第一座機械化的新式製糖工場，用蒸汽壓榨與真空結晶取代牛車石磨。它同時是台灣第一家近代股份公司 —— 工業從此不再是農家的副業，而是有資本、有股東、有廠房的獨立事業。
+  sources:
+    - title: 維基百科：臺灣製糖
+      url: https://zh.wikipedia.org/wiki/臺灣製糖
+    - title: 維基百科：臺灣糖業史
+      url: https://zh.wikipedia.org/wiki/臺灣糖業史
+
+- id: in-1902-sugar-incentive-rules
+  year: 1902
+  title: 糖業獎勵規則公布，臨時臺灣糖務局設立
+  category: policy
+  importance: 4
+  desc: 補助新式工場的設備與蔗種改良，並派專責機構推動。國家出錢扶植特定產業的做法，在台灣是從這裡開始的，此後八十年反覆使用。
+  sources:
+    - title: 維基百科：臺灣糖業史
+      url: https://zh.wikipedia.org/wiki/臺灣糖業史
+
+- id: in-1905-taipei-electricity
+  year: 1905
+  title: 龜山發電所送電，台北成為台灣第一個有電燈的城市
+  category: infrastructure
+  importance: 4
+  desc: 引新店溪支流發電，隔年完成到台北市區的輸電網。電力是後來一切工業化的前提 —— 沒有它，製糖之外的任何加工都做不大。
+  sources:
+    - title: 維基百科：臺灣電力株式會社
+      url: https://zh.wikipedia.org/wiki/臺灣電力株式會社
+    - title: 維基百科：龜山發電廠
+      url: https://zh.wikipedia.org/wiki/龜山發電廠
+
+- id: in-1908-trunk-railway
+  year: 1908
+  title: 縱貫鐵路全線通車
+  category: infrastructure
+  importance: 4
+  desc: 基隆到打狗連成一線，原料與成品第一次能在一天之內跨越全島。新式糖廠的原料採取區域制之所以行得通，靠的就是這條線加上各廠自己的糖業鐵道。
+  sources:
+    - title: 維基百科：臺灣總督府交通局鐵道部
+      url: https://zh.wikipedia.org/wiki/臺灣總督府交通局鐵道部
+
+- id: in-1919-taipower
+  year: 1919
+  title: 臺灣電力株式會社成立
+  category: enterprise
+  importance: 4
+  desc: 官民合資，統一經營全島電力並負責興建日月潭工程。電力從各地零星的小型設施變成一套全島的系統，這家公司的骨架戰後由台電直接繼承。
+  sources:
+    - title: 維基百科：臺灣電力株式會社
+      url: https://zh.wikipedia.org/wiki/臺灣電力株式會社
+
+- id: in-1919-sun-moon-lake-start
+  year: 1919
+  endYear: 1934
+  title: 日月潭水力電氣工事開工，中途停工八年
+  category: infrastructure
+  importance: 3
+  desc: 1919 年動工，1923 年底因資金不繼停擺，直到 1931 年才復工。台灣最大的一項基礎建設在半路上躺了八年，工業化的時程也跟著往後推了同樣久。
+  sources:
+    - title: 維基百科：日月潭水力電氣工事
+      url: https://zh.wikipedia.org/wiki/日月潭水力電氣工事
+
+- id: in-1934-sun-moon-lake-done
+  year: 1934
+  title: 日月潭第一發電所完工，十一萬瓩
+  category: infrastructure
+  importance: 5
+  desc: 五部機組共十一萬瓩，從完工到 1950 年代都佔全台發電量七成以上。充足而低廉的電力一到位，金屬冶煉、化學與機械這些吃電的產業才可能被放到台灣來 —— 「工業日本、農業台灣」的分工就是在這之後鬆動的。
+  sources:
+    - title: 維基百科：日月潭水力電氣工事
+      url: https://zh.wikipedia.org/wiki/日月潭水力電氣工事
+    - title: 維基百科：大觀發電廠
+      url: https://zh.wikipedia.org/wiki/大觀發電廠
+
+- id: in-1935-expo
+  year: 1935
+  title: 始政四十周年記念臺灣博覽會
+  category: trade
+  importance: 3
+  desc: 以「南方的據點」為主題展示台灣的產業成果，同時向日本國內與南洋招商。一場博覽會就是一次產業盤點，也是一次對外的定位宣告。
+  sources:
+    - title: 維基百科：始政四十周年記念臺灣博覽會
+      url: https://zh.wikipedia.org/wiki/始政四十周年記念臺灣博覽會
+
+- id: in-1936-taitaku
+  year: 1936
+  title: 臺灣拓殖株式會社成立
+  category: enterprise
+  importance: 3
+  desc: 資本額三千萬日圓的國策會社，把台灣當成南進的據點，戰時轉向生產棉花、橡膠、奎寧等軍需物資。產業方向第一次完全由戰略而非市場決定。
+  sources:
+    - title: 維基百科：臺灣拓殖
+      url: https://zh.wikipedia.org/wiki/臺灣拓殖
+
+- id: in-1944-bombing
+  year: 1944
+  title: 盟軍空襲摧毀糖廠、電廠與港口
+  category: infrastructure
+  importance: 4
+  desc: 五十年累積的工業設施在一年多之內被打掉大半，電力、鐵路與港口都要重建。戰後的進口替代不是從零開始，而是從一堆待修的廢墟開始。
+  sources:
+    - title: 維基百科：臺灣戰後時期
+      url: https://zh.wikipedia.org/wiki/臺灣戰後時期
+    - title: 維基百科：高雄港
+      url: https://zh.wikipedia.org/wiki/高雄港
+
+# ── 戰後：進口替代到出口擴張 ──────────────────────────────────
+
+- id: in-1946-public-enterprises
+  year: 1946
+  title: 接收日產，公營事業成為工業的骨幹
+  category: enterprise
+  importance: 5
+  desc: 製糖、電力、肥料、石油、鋁業、造船等日資企業全部收歸公營，整併成台糖、台電、台肥、中油等公司。台灣的工業從一開始就是國家持有的，民間資本要等十年後才進得來 —— 這個結構影響了此後半世紀的產業政策。
+  sources:
+    - title: 維基百科：台灣糖業公司
+      url: https://zh.wikipedia.org/wiki/台灣糖業公司
+    - title: 維基百科：台灣中油
+      url: https://zh.wikipedia.org/wiki/台灣中油
+    - title: 維基百科：臺灣戰後時期
+      url: https://zh.wikipedia.org/wiki/臺灣戰後時期
+
+- id: in-1949-new-taiwan-dollar
+  year: 1949
+  title: 幣制改革，發行新臺幣
+  category: policy
+  importance: 4
+  desc: 舊台幣以四萬比一折換，止住惡性通膨。工業投資需要一個算得出成本的貨幣，這是所有後續計畫的前提。
+  sources:
+    - title: 維基百科：新臺幣
+      url: https://zh.wikipedia.org/wiki/新臺幣
+
+- id: in-1951-us-aid
+  year: 1951
+  endYear: 1965
+  title: 美援開始，基礎建設投資七成四靠它
+  category: policy
+  importance: 5
+  desc: 十五年間經濟援助約 14.8 億美元，電力、交通、港口、水利的總投資額平均有 74% 來自美援，民間工廠也靠美援貸款起家。台灣工業化的起步資金，一半來自農村的肥料換穀，一半來自這裡。
+  sources:
+    - title: 維基百科：美援
+      url: https://zh.wikipedia.org/wiki/美援
+
+- id: in-1953-four-year-plan
+  year: 1953
+  title: 第一期四年經建計畫，走進口替代
+  category: policy
+  importance: 4
+  desc: 以高關稅與外匯管制保護紡織、水泥、肥料等內需工業，先把進口貨換成自己做。策略明確：不求出口競爭力，只求省下外匯。
+  sources:
+    - title: 維基百科：臺灣經濟
+      url: https://zh.wikipedia.org/wiki/臺灣經濟
+
+- id: in-1954-formosa-plastics
+  year: 1954
+  title: 福懋塑膠獲准設立，用美援貸款蓋 PVC 廠
+  category: enterprise
+  importance: 4
+  desc: 王永慶以 79.8 萬美元的美援貸款投入當時沒人看好的塑膠原料。這是台灣民間資本第一次進入需要大額投資的化工業，也是日後石化體系的起點。
+  sources:
+    - title: 維基百科：台塑企業
+      url: https://zh.wikipedia.org/wiki/台塑企業
+    - title: 維基百科：王永慶
+      url: https://zh.wikipedia.org/wiki/王永慶
+
+- id: in-1957-pvc-production
+  year: 1957
+  title: 台灣塑膠開工，日產四公噸 PVC
+  category: technology
+  importance: 4
+  desc: 產量小到賣不掉，於是隔年自己成立南亞做下游加工來消化。「上游沒有市場就自己造一個」的垂直整合打法，就是從這個困境長出來的。
+  sources:
+    - title: 維基百科：台塑企業
+      url: https://zh.wikipedia.org/wiki/台塑企業
+
+- id: in-1958-nanya-plastics
+  year: 1958
+  title: 南亞塑膠成立，把 PVC 做成下游製品
+  category: enterprise
+  importance: 3
+  desc: 從原料一路做到膠布、管材與加工品。台灣的石化業從此是整條鏈一起長，而不是分段各做各的。
+  sources:
+    - title: 維基百科：南亞塑膠
+      url: https://zh.wikipedia.org/wiki/南亞塑膠
+
+- id: in-1960-investment-incentive-act
+  year: 1960
+  title: 獎勵投資條例公布
+  category: policy
+  importance: 5
+  desc: 以租稅減免、加速折舊與工業用地取得吸引投資，尤其是外資。政策方向從保護內需翻轉成鼓勵出口，台灣接上國際代工鏈的法源就是這一部；一直用到 1991 年才落日。
+  sources:
+    - title: 維基百科：獎勵投資條例
+      url: https://zh.wikipedia.org/wiki/獎勵投資條例
+
+- id: in-1965-us-aid-ends
+  year: 1965
+  title: 美援終止
+  category: policy
+  importance: 4
+  desc: 援助在六月底結束。此時進口替代已經做到內需飽和，非得靠出口賺外匯不可 —— 隔年的加工出口區就是這個壓力下的產物。
+  sources:
+    - title: 維基百科：美援
+      url: https://zh.wikipedia.org/wiki/美援
+
+- id: in-1966-export-processing-zone
+  year: 1966
+  title: 高雄加工出口區設立，全球第一個
+  category: infrastructure
+  importance: 5
+  desc: 把保稅倉庫、工業區與出口港整併在同一塊地上，原料免稅進、成品直接出，手續一次辦完。這個做法後來被許多開發中國家抄去，也是台灣製造業真正接上國際分工的那一步 —— 二十年後電子代工能起飛，靠的就是這裡練出來的產線管理能力。
+  sources:
+    - title: 維基百科：前鎮科技產業園區
+      url: https://zh.wikipedia.org/wiki/前鎮科技產業園區
+    - title: 維基百科：科技產業園區
+      url: https://zh.wikipedia.org/wiki/科技產業園區
+
+# ── 重化工業 ──────────────────────────────────────────────────
+
+- id: in-1971-china-steel
+  year: 1971
+  title: 中國鋼鐵公司成立
+  category: enterprise
+  importance: 4
+  desc: 台灣一直沒有自己的一貫作業大鋼廠，造船、機械與營建的鋼料全靠進口。這家公司要補的就是這個缺口，兩年後被列進十大建設。
+  sources:
+    - title: 維基百科：中國鋼鐵
+      url: https://zh.wikipedia.org/wiki/中國鋼鐵
+
+- id: in-1974-ten-major-projects
+  year: 1974
+  endYear: 1979
+  title: 十大建設推動
+  category: policy
+  importance: 5
+  desc: 六項交通建設（高速公路、鐵路電氣化、北迴鐵路、台中港、蘇澳港、桃園機場）加上鋼鐵、造船、石化與核電。因應第一次石油危機而擴大公共投資，同時把上游原料與能源留在島內 —— 台灣的產業結構從此不只是加工出口，而是有自己的重工業底盤。
+  sources:
+    - title: 維基百科：十大建設
+      url: https://zh.wikipedia.org/wiki/十大建設
+
+- id: in-1975-csbc
+  year: 1975
+  title: 中國造船公司建廠
+  category: enterprise
+  importance: 3
+  desc: 高雄大造船廠開建，目標是自製大型商船與軍艦。造船吃鋼、吃機械、吃焊接工，是把中鋼與機械業一起帶起來的火車頭。
+  sources:
+    - title: 維基百科：台灣國際造船
+      url: https://zh.wikipedia.org/wiki/台灣國際造船
+    - title: 維基百科：十大建設
+      url: https://zh.wikipedia.org/wiki/十大建設
+
+- id: in-1977-china-steel-phase-one
+  year: 1977
+  title: 中鋼第一階段完工，鋼料不必再全靠進口
+  category: infrastructure
+  importance: 4
+  desc: 從煉鐵、煉鋼到軋鋼一貫作業。下游的機械、造船、汽車與營建業終於有了穩定且不受匯率擺布的原料來源。
+  sources:
+    - title: 維基百科：中國鋼鐵
+      url: https://zh.wikipedia.org/wiki/中國鋼鐵
+
+- id: in-1978-freeway
+  year: 1978
+  title: 中山高速公路全線通車
+  category: infrastructure
+  importance: 4
+  desc: 十月全線通車，基隆到高雄的貨運時間大幅壓縮。工廠不必再擠在港口旁邊，中小企業的衛星工廠得以散布到中南部的鄉鎮 —— 台灣特有的中小企業聚落，是這條路撐起來的。
+  sources:
+    - title: 維基百科：中山高速公路
+      url: https://zh.wikipedia.org/wiki/中山高速公路
+    - title: 維基百科：十大建設
+      url: https://zh.wikipedia.org/wiki/十大建設
+
+- id: in-1979-fx-market
+  year: 1979
+  title: 外匯市場成立，廢除固定匯率
+  category: policy
+  importance: 4
+  desc: 台幣改由市場決定。出口商從此要自己承擔匯率風險，而八年後的急速升值正是靠這個機制傳導到每一家工廠的。
+  sources:
+    - title: 維基百科：臺灣經濟
+      url: https://zh.wikipedia.org/wiki/臺灣經濟
+
+- id: in-1984-labor-standards-act
+  year: 1984
+  title: 勞動基準法公布
+  category: labour
+  importance: 4
+  desc: 工時、加班費、退休金與資遣有了法定下限。廉價又不受規範的勞動力一直是加工出口的基礎，這部法律等於宣告那個階段該結束了 —— 三年後台幣升值，結束得比誰預期的都快。
+  sources:
+    - title: 維基百科：勞動基準法 (中華民國)
+      url: https://zh.wikipedia.org/wiki/勞動基準法_(中華民國)
+
+# ── 產業外移與升級 ────────────────────────────────────────────
+
+- id: in-1986-anti-dupont
+  year: 1986
+  title: 鹿港居民反杜邦設廠
+  category: labour
+  importance: 4
+  desc: 居民連署並上街反對美商杜邦在彰濱工業區設二氧化鈦廠，最後迫使投資案撤回。這是台灣第一次有地方社區成功擋下一項已核准的重大投資 —— 「要工作還是要環境」從此成為每一個廠址都要面對的問題。
+  sources:
+    - title: 維基百科：鹿港居民反杜邦設廠事件
+      url: https://zh.wikipedia.org/wiki/鹿港居民反杜邦設廠事件
+
+- id: in-1986-sixth-naphtha-approved
+  year: 1986
+  title: 六輕獲經濟部核准
+  category: policy
+  importance: 3
+  desc: 台塑申請自建輕油裂解廠，打破中油對上游原料的獨佔。從核准到真正動工卻花了八年，卡住的不是技術而是找不到願意接受的廠址。
+  sources:
+    - title: 維基百科：台塑企業
+      url: https://zh.wikipedia.org/wiki/台塑企業
+
+- id: in-1987-fx-liberalization
+  year: 1987
+  title: 新外匯條例，台幣急升與產業外移
+  category: policy
+  importance: 5
+  desc: 解嚴同一年放寬外匯管制，台幣對美元大幅升值。以廉價工資與固定匯率為前提的鞋類、成衣、雨傘、玩具產業在幾年之內整批遷往中國與東南亞。台灣的工業從此一分為二：走掉的那一半，與留下來被迫自動化、高值化的那一半。
+  sources:
+    - title: 維基百科：臺灣經濟
+      url: https://zh.wikipedia.org/wiki/臺灣經濟
+
+- id: in-1990-anti-fifth-naphtha
+  year: 1990
+  title: 後勁反五輕運動
+  category: labour
+  importance: 4
+  desc: 抗爭自 1987 年計畫曝光後持續三年，其間辦了台灣在《公民投票法》之前的第一次公民投票。最後五輕在鎮暴警察戒護下動工，政府則承諾撥十五億回饋金並在二十五年後遷廠 —— 期限落在 2015 年底。
+  sources:
+    - title: 維基百科：反五輕運動
+      url: https://zh.wikipedia.org/wiki/反五輕運動
+
+- id: in-1991-investment-act-sunset
+  year: 1991
+  title: 獎勵投資條例落日
+  category: policy
+  importance: 3
+  desc: 實施三十年後廢止，改以促進產業升級條例接手。獎勵的對象從「來投資就好」轉向研發、自動化與人才培訓，因為此時缺的已經不是資本而是技術。
+  sources:
+    - title: 維基百科：獎勵投資條例
+      url: https://zh.wikipedia.org/wiki/獎勵投資條例
+
+- id: in-1994-sixth-naphtha-construction
+  year: 1994
+  title: 六輕在麥寮動工
+  category: enterprise
+  importance: 4
+  desc: 填海造陸兩千餘公頃，把輕油裂解、發電、汽電共生與下游石化廠全部放在同一塊地上。民間資本第一次做到與國營中油同一量級的上游投資，代價是雲林海岸線與空污爭議至今未解。
+  sources:
+    - title: 維基百科：台塑企業
+      url: https://zh.wikipedia.org/wiki/台塑企業
+    - title: 維基百科：第六套輕油裂解廠
+      url: https://zh.wikipedia.org/wiki/第六套輕油裂解廠
+
+- id: in-2002-wto-industry
+  year: 2002
+  title: 加入 WTO，關稅保護全面鬆綁
+  category: trade
+  importance: 4
+  desc: 四十年來以關稅與管制養大的內需工業，一次面對進口競爭。汽車、家電與部分機械收縮，而早就以出口為生的電子與石化則幾乎不受影響 —— 保護到底養出了什麼，在這一年結算。
+  sources:
+    - title: 維基百科：世界貿易組織
+      url: https://zh.wikipedia.org/wiki/世界貿易組織
+    - title: 維基百科：臺灣經濟
+      url: https://zh.wikipedia.org/wiki/臺灣經濟
+
+- id: in-2007-sixth-naphtha-complete
+  year: 2007
+  title: 六輕四期全面完工
+  category: enterprise
+  importance: 3
+  desc: 從核准到全部完工歷時二十一年。這是台灣最後一座新建的大型輕油裂解廠 —— 此後石化業的擴張全部發生在海外。
+  sources:
+    - title: 維基百科：台塑企業
+      url: https://zh.wikipedia.org/wiki/台塑企業
+
+- id: in-2010-ecfa
+  year: 2010
+  title: 簽署海峽兩岸經濟合作架構協議
+  category: trade
+  importance: 4
+  desc: 早收清單讓部分石化、機械與紡織產品輸中降稅。爭論的焦點不在關稅本身，而在於把已經高度西移的產業鏈綁得更緊是不是好事 —— 這個問題在十年後的供應鏈重組裡又被問了一次。
+  sources:
+    - title: 維基百科：海峽兩岸經濟合作架構協議
+      url: https://zh.wikipedia.org/wiki/海峽兩岸經濟合作架構協議
