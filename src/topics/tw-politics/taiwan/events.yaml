@@ -1,0 +1,1140 @@
+# 台灣。從開港通商的條約體制一路到三次政黨輪替之後的憲政運作。
+#
+# 已走完 README 的查證流程（維基 API 批次驗證標題 → 逐條核對年份 → 寫入）。
+# 補新資料時照同一套流程，不要憑記憶寫網址，也不要憑印象寫年份 ——
+# 這一欄的日治政治結社段特別容易記錯（文協分裂是 1927 年 1 月的臨時大會，
+# 台灣民眾黨成立在同年 7 月；台灣共產黨 1928 年成立於上海法租界而不是島內；
+# 首次地方選舉是 1935 年 11 月 22 日而不是 1936）。
+#
+# **有幾則的維基標題是陷阱，改動出處前先看這裡：**
+# - 雷震那則要用 `雷震_(1897年)`，不加年份是消歧義頁。
+# - 1960 年的組黨要用 `中國民主黨_(1960年)`。**不加年份會導向 `中国民主党`，
+#   那是 1998 年在中國大陸組建的異議政黨，完全不是同一件事。**
+# - 《自由中國》要用 `自由中國_(雜誌)`，不加括號是消歧義頁。
+# - 「台灣團結聯盟」導向 `台聯黨`，「催台青」不是「吹台青」。
+#
+# 1987 年的《國家安全法》維基沒有條目，改掛全國法規資料庫。
+#
+# **1858–1894 這一段只有七則，比中國欄少了一半以上，那是史實不是資料沒補完。**
+# 台灣在 1885 年之前是福建的一個府，沒有政黨、沒有選舉、沒有自主的政治機構。
+# 不要為了填滿這一段而放寬判準 —— 這片空曠本身就是這條軸的第一個發現：
+# 台灣的政治史比中國的短了半個世紀。1937–1944 那一段只有四則同理，
+# 政治結社在 1937 年被整個禁掉了。
+
+# ── 清領後期：條約體制與晚清的積極治理 ──────────────────
+
+- id: twp-1860-treaty-ports
+  year: 1860
+  title: 台灣開港通商，條約體制進入台灣
+  category: regime
+  importance: 4
+  desc: 1858 年天津條約議定開放台灣通商口岸，1860 年北京條約確認，淡水於 1862 年、雞籠與安平打狗於 1863–1864 年陸續開關。外國領事與洋行進駐之後，台灣出現了不受地方官完全支配的商紳與教會網絡，也第一次被捲進條約體制的爭端裡。這條軸從這裡開始計時。
+  sources:
+    - title: 維基百科：天津條約
+      url: https://zh.wikipedia.org/wiki/天津條約
+    - title: 維基百科：臺灣清治時期
+      url: https://zh.wikipedia.org/wiki/臺灣清治時期
+
+- id: twp-1862-dai-chaochun
+  year: 1862
+  endYear: 1865
+  title: 戴潮春事件，清代台灣最後一次大規模民變
+  category: war
+  importance: 3
+  desc: 天地會系統的戴潮春以彰化為據點起事，前後延續三年，是清代台灣歷時最久的民變。官府最終倚靠地方士紳的團練平定，而那批出錢出力的家族此後在地方上取得了半官方的實力 —— 這是台灣「地方勢力與統治者交換資源」這條線的早期形態。
+  sources:
+    - title: 維基百科：戴潮春事件
+      url: https://zh.wikipedia.org/wiki/戴潮春事件
+
+- id: twp-1867-rover
+  year: 1867
+  title: 羅發號事件，李仙得與卓杞篤締結南岬之盟
+  category: regime
+  importance: 3
+  desc: 美國商船羅發號在恆春半島遇難、船員遭排灣族殺害後，美國駐廈門領事李仙得直接與瑯嶠十八社頭目卓杞篤談判並締約。清廷宣稱該地「化外之民、政教不及」，等於自承主權未及全島 —— 這句話七年後成了日本出兵的藉口。
+  sources:
+    - title: 維基百科：羅發號事件
+      url: https://zh.wikipedia.org/wiki/羅發號事件
+    - title: 維基百科：卓杞篤
+      url: https://zh.wikipedia.org/wiki/卓杞篤
+
+- id: twp-1874-mudan
+  year: 1874
+  title: 牡丹社事件，日本出兵台灣
+  category: war
+  importance: 4
+  desc: 日本以琉球漂民遇害為由出兵恆春半島，清廷被迫在北京專約中承認此舉為「保民義舉」。事件之後清廷對台灣的態度從消極的「為防台而治台」轉為積極經營，也讓日本取得了併吞琉球的著力點。
+  sources:
+    - title: 維基百科：牡丹社事件
+      url: https://zh.wikipedia.org/wiki/牡丹社事件
+
+- id: twp-1875-shen-baozhen
+  year: 1875
+  title: 沈葆楨開山撫番，解除渡臺禁令
+  category: regime
+  importance: 4
+  desc: 牡丹社事件後沈葆楨奏請廢除實施近兩百年的渡臺禁令與番界封禁，開闢北中南三路進入山地，並增設臺北府與恆春縣。清帝國第一次試圖把統治延伸到全島，而不只是西部平原。
+  sources:
+    - title: 維基百科：沈葆楨
+      url: https://zh.wikipedia.org/wiki/沈葆楨
+    - title: 維基百科：開山撫番
+      url: https://zh.wikipedia.org/wiki/開山撫番
+    - title: 維基百科：渡臺禁令
+      url: https://zh.wikipedia.org/wiki/渡臺禁令
+
+- id: twp-1884-sino-french
+  year: 1884
+  endYear: 1885
+  title: 清法戰爭波及台灣，法軍封鎖全島
+  category: war
+  importance: 3
+  desc: 法軍攻基隆、敗於滬尾，隨後封鎖台灣並佔領澎湖。戰事讓清廷確認台灣在海防上的地位，劉銘傳的戰時指揮權也成為隔年建省的伏筆。
+  sources:
+    - title: 維基百科：西仔反
+      url: https://zh.wikipedia.org/wiki/西仔反
+    - title: 維基百科：中法戰爭
+      url: https://zh.wikipedia.org/wiki/中法戰爭
+
+- id: twp-1885-province
+  year: 1885
+  title: 台灣建省，劉銘傳任首任巡撫
+  category: regime
+  importance: 5
+  desc: 清廷下詔台灣改設行省，1887 年正式與福建分治。台灣從福建的一個府升格為省級行政單位，第一次有了自己的最高行政長官與獨立的財政。清賦、郵傳、鐵路與電報都在這幾年推動，也第一次全面清查了地方豪族實際掌握的土地。
+  sources:
+    - title: 維基百科：福建臺灣省
+      url: https://zh.wikipedia.org/wiki/福建臺灣省
+    - title: 維基百科：劉銘傳
+      url: https://zh.wikipedia.org/wiki/劉銘傳
+
+# ── 武官總督期：律令統治與武裝抵抗 ──────────────────
+
+- id: twp-1895-shimonoseki
+  year: 1895
+  title: 馬關條約割讓台灣，台灣被排除在中國的政治進程之外
+  category: regime
+  importance: 5
+  desc: 甲午戰敗後清廷於 1895 年 4 月 17 日簽訂馬關條約，永久割讓台灣與澎湖。從這一年起到 1945 年，中國那一欄發生的立憲、革命、建立共和與政黨政治，台灣全都不在其中；台灣的政治史轉入另一套殖民地法制。這是這條軸上兩欄分岔得最徹底的五十年。
+  sources:
+    - title: 維基百科：馬關條約
+      url: https://zh.wikipedia.org/wiki/馬關條約
+
+- id: twp-1895-republic
+  year: 1895
+  title: 台灣民主國成立，乙未戰爭
+  category: war
+  importance: 5
+  desc: 5 月 25 日仕紳擁立唐景崧成立台灣民主國，年號永清、以藍地黃虎旗為國旗，宣稱獨立而仍奉清朝正朔，用意在引國際干涉。唐景崧十日後內渡，劉永福於台南續守至 10 月。抵抗自北而南持續五個月，日方稱之為乙未戰爭。這是亞洲最早出現的共和國體形式之一，也是台灣第一次出現以自身為單位的政治主張。
+  sources:
+    - title: 維基百科：臺灣民主國
+      url: https://zh.wikipedia.org/wiki/臺灣民主國
+    - title: 維基百科：乙未戰爭
+      url: https://zh.wikipedia.org/wiki/乙未戰爭
+
+- id: twp-1896-law-63
+  year: 1896
+  title: 六三法施行，總督兼掌立法權
+  category: regime
+  importance: 5
+  desc: 日本帝國議會通過法律第六十三號，授權台灣總督發布具有法律效力的律令。行政、立法與軍事指揮權集中於總督一人，台灣被劃為帝國憲法效力不完全及於的特別統治區域。此後二十餘年台灣人的政治訴求幾乎都繞著這條法律打轉，1920 年代的議會設置請願運動要求的正是把立法權拿回來。
+  sources:
+    - title: 維基百科：六三法
+      url: https://zh.wikipedia.org/wiki/六三法
+    - title: 維基百科：臺灣總督府
+      url: https://zh.wikipedia.org/wiki/臺灣總督府
+
+- id: twp-1898-goto-baojia
+  year: 1898
+  title: 後藤新平任民政長官，確立保甲與警察的治理骨架
+  category: repression
+  importance: 4
+  desc: 後藤新平於 3 月就任，同年公布保甲條例與匪徒刑罰令：前者把清代的保甲改造成連坐的戶政與治安末梢，後者對抗日者處以極重的刑罰並溯及既往。招降與掃蕩並行之下武裝抵抗逐步瓦解，而保甲與警察構成的監控網一直沿用到日治結束。
+  sources:
+    - title: 維基百科：後藤新平
+      url: https://zh.wikipedia.org/wiki/後藤新平
+    - title: 維基百科：保甲制度
+      url: https://zh.wikipedia.org/wiki/保甲制度
+
+- id: twp-1902-resistance-crushed
+  year: 1902
+  title: 武裝抗日勢力大致肅清
+  category: repression
+  importance: 3
+  desc: 歸順儀式與掃蕩並用，平地的武裝抵抗到這一年大致結束。此後十餘年台灣沒有任何合法的政治結社管道，抗爭轉為零星的地方起事，直到 1920 年代才改由留學生與士紳以體制內的請願接手。
+  sources:
+    - title: 維基百科：臺灣日治時期
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期
+
+- id: twp-1905-rihan
+  year: 1905
+  title: 理蕃政策與隘勇線推進
+  category: repression
+  importance: 3
+  desc: 總督府以隘勇線、通電鐵絲網與砲擊逐步壓縮原住民族的活動範圍，以取得樟腦與林野資源。原住民族在整個日治時期都被排除在「本島人」的政治權利討論之外，連 1935 年的地方選舉也沒有他們的份。
+  sources:
+    - title: 維基百科：理蕃政策
+      url: https://zh.wikipedia.org/wiki/理蕃政策
+
+- id: twp-1907-beipu
+  year: 1907
+  title: 北埔事件，武裝抗日再起
+  category: war
+  importance: 3
+  desc: 蔡清琳結合客家與賽夏族人襲擊北埔支廳，是 1902 年之後第一起較具規模的武裝事件。此後十年間陸續發生林圯埔、土庫、苗栗等案，規模都不大，但顯示歸順並不等於同意。
+  sources:
+    - title: 維基百科：北埔事件
+      url: https://zh.wikipedia.org/wiki/北埔事件
+
+- id: twp-1913-miaoli
+  year: 1913
+  title: 苗栗事件，羅福星等人以中國革命為號召起事
+  category: war
+  importance: 3
+  desc: 羅福星受辛亥革命鼓舞來台組織抗日，事洩後與同時期數起案件併案審理，二十餘人遭處死。這是台灣的抵抗第一次明確地與對岸的革命連上線，也是最後一批以推翻政權為目標的武裝行動之一。
+  sources:
+    - title: 維基百科：苗栗事件
+      url: https://zh.wikipedia.org/wiki/苗栗事件
+
+- id: twp-1914-assimilation-society
+  year: 1914
+  title: 台灣同化會成立，台灣第一個合法政治結社
+  category: movement
+  importance: 4
+  desc: 板垣退助來台，與林獻堂等人於 12 月成立台灣同化會，主張以同化換取與日本人同等的權利。會員逾三千人，總督府於隔年 1 月即以妨害公安為由勒令解散。存在不到兩個月，卻是台灣人第一次用結社而不是武力提出政治要求，也讓林獻堂那一代人確認了體制內路線的可能與極限。
+  sources:
+    - title: 維基百科：臺灣同化會
+      url: https://zh.wikipedia.org/wiki/臺灣同化會
+    - title: 維基百科：林獻堂
+      url: https://zh.wikipedia.org/wiki/林獻堂
+
+- id: twp-1915-xilaian
+  year: 1915
+  title: 西來庵事件，最後一次大規模武裝抗日
+  category: war
+  importance: 4
+  desc: 余清芳等人以齋教信仰動員，襲擊噍吧哖一帶的警察官吏派出所。事後被起訴者近兩千人、判死刑者八百餘人，後多數減刑。這是漢人最後一次大規模武裝抵抗；此後台灣人的政治行動全面轉向合法結社與請願。
+  sources:
+    - title: 維基百科：西來庵事件
+      url: https://zh.wikipedia.org/wiki/西來庵事件
+
+# ── 文官總督期：台灣第一波政黨政治 ──────────────────
+
+- id: twp-1919-civilian-governor
+  year: 1919
+  title: 田健治郎任首任文官總督，改行內地延長主義
+  category: regime
+  importance: 4
+  desc: 原敬內閣改派文官出任台灣總督，方針從特別統治改為內地延長主義，宣稱要逐步把日本本土的法制施行於台灣。統治的正當性論述一變，台灣人的政治要求也隨之改變 —— 既然說要一視同仁，那就要求真的一視同仁。此後十幾年的結社與請願都建立在這個轉折上。
+  sources:
+    - title: 維基百科：田健治郎
+      url: https://zh.wikipedia.org/wiki/田健治郎
+    - title: 維基百科：臺灣總督
+      url: https://zh.wikipedia.org/wiki/臺灣總督
+
+- id: twp-1920-shinminkai
+  year: 1920
+  title: 新民會成立於東京，《臺灣青年》創刊
+  category: movement
+  importance: 4
+  desc: 1 月旅日台灣留學生與林獻堂等人在東京組成新民會，是台灣人第一個以政治改革為目的的團體；7 月創辦《臺灣青年》作為喉舌，後來歷經《臺灣》《臺灣民報》《臺灣新民報》一路延續。台灣近代政治運動的組織與言論兩條線都從這一年起算，而且都是先在東京成形再回到島內。
+  sources:
+    - title: 維基百科：新民會 (臺灣)
+      url: https://zh.wikipedia.org/wiki/新民會_(臺灣)
+    - title: 維基百科：臺灣青年
+      url: https://zh.wikipedia.org/wiki/臺灣青年
+
+- id: twp-1921-petition
+  year: 1921
+  endYear: 1934
+  title: 台灣議會設置請願運動，要求設立有立法權的民選議會
+  category: movement
+  importance: 5
+  desc: 1921 年 1 月第一次向日本帝國議會提出請願，要求在台灣設置由住民選出、擁有立法權與預算審議權的台灣議會。前後十四年提出十五次，全數未獲通過，1934 年在總督府壓力下停止。訴求本身是對六三法體制的正面挑戰 —— 要的不是同化也不是獨立，而是自治。台灣往後所有關於「誰有權為台灣立法」的爭論，源頭都在這裡。
+  sources:
+    - title: 維基百科：臺灣議會設置請願運動
+      url: https://zh.wikipedia.org/wiki/臺灣議會設置請願運動
+
+- id: twp-1921-cultural-association
+  year: 1921
+  title: 台灣文化協會成立，島內政治運動的總平台
+  category: movement
+  importance: 5
+  desc: 10 月由蔣渭水、林獻堂等人在台北成立，以演講會、讀報社與文化劇進行啟蒙。名義上談文化，實際上是當時台灣唯一能合法動員群眾的政治組織，議會請願、農民組合與工運的骨幹幾乎都出自這裡。
+  sources:
+    - title: 維基百科：臺灣文化協會
+      url: https://zh.wikipedia.org/wiki/臺灣文化協會
+    - title: 維基百科：蔣渭水
+      url: https://zh.wikipedia.org/wiki/蔣渭水
+
+- id: twp-1922-law-3
+  year: 1922
+  title: 法三號施行，改以敕令將日本法律延伸來台
+  category: regime
+  importance: 3
+  desc: 原則改為施行日本本國法律、律令退居補充，形式上向內地延長主義靠攏。但總督的律令權並未廢除，重要的差別待遇（如台灣人不適用眾議院選舉法）也原封不動 —— 這正是議會請願運動持續下去的理由。
+  sources:
+    - title: 維基百科：法三號
+      url: https://zh.wikipedia.org/wiki/法三號
+
+- id: twp-1923-taiwan-minpao
+  year: 1923
+  title: 《臺灣民報》創刊，台灣人唯一的言論機關
+  category: movement
+  importance: 3
+  desc: 4 月在東京創刊，以白話文寫作，長期是台灣人自辦刊物中發行量最大的一份，1927 年才獲准在島內發行。政治運動的路線爭論幾乎都在它的版面上進行。
+  sources:
+    - title: 維基百科：臺灣民報
+      url: https://zh.wikipedia.org/wiki/臺灣民報
+
+- id: twp-1923-chikei-incident
+  year: 1923
+  title: 治警事件，議會請願的核心成員遭全面搜捕
+  category: repression
+  importance: 4
+  desc: 12 月 16 日總督府以違反治安警察法為由，在全台同步搜索並拘捕蔣渭水、蔡培火等台灣議會期成同盟會成員。三審定讞後十三人入獄。判決確立了「以結社推動議會設置即屬違法」的界線，但公開審判反而讓運動的主張傳播得更廣，被告出獄時受到群眾迎接。
+  sources:
+    - title: 維基百科：治警事件
+      url: https://zh.wikipedia.org/wiki/治警事件
+
+- id: twp-1927-tca-split
+  year: 1927
+  title: 台灣文化協會左右分裂
+  category: party
+  importance: 4
+  desc: 1 月的臨時大會上，連溫卿等左翼取得主導權，蔣渭水、林獻堂一系退出。單一平台就此裂成兩條路線：一邊走階級動員與農工組織，一邊走民族運動與體制內改革。台灣政治運動的左右分野從這一天開始，而分裂之後雙方都更容易被個別瓦解。
+  sources:
+    - title: 維基百科：臺灣文化協會
+      url: https://zh.wikipedia.org/wiki/臺灣文化協會
+    - title: 維基百科：連溫卿
+      url: https://zh.wikipedia.org/wiki/連溫卿
+
+- id: twp-1927-peoples-party
+  year: 1927
+  title: 台灣民眾黨成立，台灣第一個近代政黨
+  category: party
+  importance: 5
+  desc: 7 月 10 日由蔣渭水等退出文協者組成，是台灣史上第一個獲准成立的政黨。綱領要求確立民本政治、建設合理的經濟組織、改除社會制度的缺陷，並支持工農運動。它證明了台灣人有能力組織一個有綱領、有黨紀、有群眾基礎的政黨 —— 距離下一個由台灣人自組並長期存續的政黨，還要五十九年。
+  sources:
+    - title: 維基百科：臺灣民眾黨 (1927年)
+      url: https://zh.wikipedia.org/wiki/臺灣民眾黨_(1927年)
+
+- id: twp-1928-taiwan-cp
+  year: 1928
+  title: 台灣共產黨在上海成立
+  category: party
+  importance: 4
+  desc: 4 月 15 日於上海法租界成立，正式名稱為日本共產黨台灣民族支部，綱領明確提出台灣民族獨立與建立台灣共和國。這是「台灣獨立」第一次被寫進一個政黨的綱領。成員多在島內活動並取得文協的領導權，1931 年遭全面檢舉而瓦解。
+  sources:
+    - title: 維基百科：台灣共產黨
+      url: https://zh.wikipedia.org/wiki/台灣共產黨
+    - title: 維基百科：謝雪紅
+      url: https://zh.wikipedia.org/wiki/謝雪紅
+
+- id: twp-1928-labour-federation
+  year: 1928
+  title: 台灣工友總聯盟成立，政黨與工運結合
+  category: movement
+  importance: 3
+  desc: 2 月由台灣民眾黨主導成立，統合各地工會，成立時加盟團體約六十五個、會員近七千人。政黨開始擁有可動員的群眾組織，總督府對民眾黨的態度也自此轉硬。
+  sources:
+    - title: 維基百科：臺灣工友總聯盟
+      url: https://zh.wikipedia.org/wiki/臺灣工友總聯盟
+
+- id: twp-1930-wushe
+  year: 1930
+  title: 霧社事件
+  category: repression
+  importance: 5
+  desc: 10 月 27 日賽德克族馬赫坡社等六社襲擊霧社公學校運動會。總督府動員軍警並使用飛機與毒氣彈鎮壓，事後又縱容敵對部落進行第二次霧社事件。總督與總務長官引咎去職，理蕃政策轉向集團移住與「教化」。這是日治時期最嚴重的統治危機，也讓殖民地經營的宣傳說法在國際上破功。
+  sources:
+    - title: 維基百科：霧社事件
+      url: https://zh.wikipedia.org/wiki/霧社事件
+
+- id: twp-1930-autonomy-league
+  year: 1930
+  title: 台灣地方自治聯盟成立，唯一撐到戰時的政治團體
+  category: party
+  importance: 4
+  desc: 8 月由楊肇嘉、林獻堂等人成立，路線刻意收窄到單一訴求 —— 實施地方自治、開放民選。因為訴求溫和且不碰民族問題，它是同期政治團體中唯一沒有被強制解散的，並在 1935 年首次地方選舉中取得成果。代價是它得放棄議會設置那個更根本的要求。
+  sources:
+    - title: 維基百科：臺灣地方自治聯盟
+      url: https://zh.wikipedia.org/wiki/臺灣地方自治聯盟
+
+- id: twp-1931-crackdown
+  year: 1931
+  title: 台灣民眾黨遭解散，台共大檢舉
+  category: repression
+  importance: 5
+  desc: 2 月 18 日台灣民眾黨在黨員大會現場被總督府當場宣告解散，蔣渭水同年 8 月病逝；6 月起台灣共產黨遭全面檢舉，主要幹部悉數入獄；文協與農民組合同時瓦解。一年之內，除了訴求最溫和的地方自治聯盟，台灣的政治結社全部消失。1920 年代那一波政黨政治到此結束。
+  sources:
+    - title: 維基百科：臺灣民眾黨 (1927年)
+      url: https://zh.wikipedia.org/wiki/臺灣民眾黨_(1927年)
+    - title: 維基百科：台灣共產黨
+      url: https://zh.wikipedia.org/wiki/台灣共產黨
+
+- id: twp-1935-first-election
+  year: 1935
+  title: 首次地方選舉，台灣人第一次投票
+  category: election
+  importance: 5
+  desc: 11 月 22 日舉行市會及街庄協議會員選舉，是台灣土地上第一次選舉。但只選一半席次（另一半官派），選舉人限年滿二十五歲、年納稅額五圓以上的男子，全台合格選民約二萬八千人，佔人口不到千分之六。地方自治聯盟仍視之為成果並全力投入。既是起點也是刻意設計的天花板，兩面都要記著。
+  sources:
+    - title: 維基百科：1935年臺灣市會及街庄協議會員選舉
+      url: https://zh.wikipedia.org/wiki/1935年臺灣市會及街庄協議會員選舉
+
+- id: twp-1936-military-governor
+  year: 1936
+  title: 小林躋造就任，武官總督復歸
+  category: regime
+  importance: 3
+  desc: 9 月海軍大將小林躋造接任總督，結束十七年的文官總督期，提出皇民化、工業化、南進基地化三原則。內地延長主義的說詞讓位給戰爭動員，台灣人爭取平等權利的空間隨之關閉。
+  sources:
+    - title: 維基百科：小林躋造
+      url: https://zh.wikipedia.org/wiki/小林躋造
+
+# ── 皇民化與戰時體制：政治結社歸零 ──────────────────
+
+- id: twp-1937-kominka
+  year: 1937
+  endYear: 1945
+  title: 皇民化運動展開，地方自治聯盟解散
+  category: repression
+  importance: 5
+  desc: 中日戰爭爆發後總督府推行國語運動、改姓名、寺廟整理與志願兵制度，同時廢止報紙漢文欄。8 月台灣地方自治聯盟自行宣告解散 —— 最後一個政治團體消失，台灣進入近代史上唯一一段完全沒有任何政治結社的時期，前後八年。
+  sources:
+    - title: 維基百科：皇民化運動
+      url: https://zh.wikipedia.org/wiki/皇民化運動
+    - title: 維基百科：臺灣地方自治聯盟
+      url: https://zh.wikipedia.org/wiki/臺灣地方自治聯盟
+
+- id: twp-1941-hokokai
+  year: 1941
+  title: 皇民奉公會成立，由上而下的全民動員組織
+  category: regime
+  importance: 3
+  desc: 4 月成立，總督任總裁，由州廳一路編到部落與職域，把全島住民納入單一的動員體系。政治參與被「奉公」取代 —— 不是要人民表達意見，而是要人民出力。
+  sources:
+    - title: 維基百科：皇民奉公會
+      url: https://zh.wikipedia.org/wiki/皇民奉公會
+
+- id: twp-1942-volunteer-soldiers
+  year: 1942
+  title: 陸軍特別志願兵制度實施，台灣人被納入戰爭
+  category: regime
+  importance: 3
+  desc: 志願兵制自 1942 年實施，1945 年改為徵兵。戰爭期間約二十萬台灣人以軍人或軍屬身分投入日軍，逾三萬人死亡。戰後這批人的身分在兩個政權之間都難以安放，也是日後台灣認同爭論的根源之一。
+  sources:
+    - title: 維基百科：台籍日本兵
+      url: https://zh.wikipedia.org/wiki/台籍日本兵
+
+- id: twp-1943-cairo
+  year: 1943
+  title: 開羅宣言，聲明台灣戰後歸還中華民國
+  category: regime
+  importance: 4
+  desc: 11 月美英中三國領袖於開羅會談，會後新聞公報聲明日本竊取自中國的領土如東北、台灣、澎湖應歸還中華民國。宣言的法律性質（是新聞公報還是條約）與其效力至今仍是台灣地位爭論的核心文件之一。
+  sources:
+    - title: 維基百科：開羅宣言
+      url: https://zh.wikipedia.org/wiki/開羅宣言
+
+# ── 接收與二二八 ──────────────────
+
+- id: twp-1945-takeover
+  year: 1945
+  title: 台灣省行政長官公署接收台灣
+  category: regime
+  importance: 5
+  desc: 9 月 1 日設台灣省行政長官公署，10 月 25 日在台北公會堂舉行受降典禮。長官公署集行政、立法、司法與軍事指揮權於一身，是與其他各省不同的特殊體制 —— 在制度形式上與它剛取代的總督府高度相似，這一點在兩年後成為民怨的主要來源之一。
+  sources:
+    - title: 維基百科：臺灣省行政長官公署
+      url: https://zh.wikipedia.org/wiki/臺灣省行政長官公署
+    - title: 維基百科：臺灣光復
+      url: https://zh.wikipedia.org/wiki/臺灣光復
+
+- id: twp-1946-provincial-council
+  year: 1946
+  title: 台灣省參議會成立，戰後首次省級民意代表選舉
+  category: election
+  importance: 4
+  desc: 5 月 1 日成立，由各縣市參議會間接選出三十名參議員。候選人一千一百餘人競逐三十席，本地菁英一度視之為參政的開端。但參議會只有建議權而無實權，質詢與陳情多不獲回應，落差在隔年成為二二八的背景之一。
+  sources:
+    - title: 維基百科：臺灣省參議會
+      url: https://zh.wikipedia.org/wiki/臺灣省參議會
+
+- id: twp-1946-constitutional-assembly
+  year: 1946
+  title: 台灣代表出席制憲國民大會
+  category: regime
+  importance: 4
+  desc: 11 月至 12 月制憲國民大會在南京召開，台灣選出並派出代表參與。台灣人第一次參與制定一部涵蓋自身的憲法；這部憲法隔年施行，而它在台灣真正完整運作要等到 1991 年之後。
+  sources:
+    - title: 維基百科：制憲國民大會
+      url: https://zh.wikipedia.org/wiki/制憲國民大會
+    - title: 維基百科：中華民國憲法
+      url: https://zh.wikipedia.org/wiki/中華民國憲法
+
+- id: twp-1947-228
+  year: 1947
+  title: 二二八事件
+  category: repression
+  importance: 5
+  desc: 2 月 27 日查緝私菸衝突引發全島抗爭，各地成立二二八事件處理委員會並提出政治改革要求。陳儀一面談判一面請兵，整編第二十一師於 3 月 8 日抵台後展開鎮壓與清鄉。死亡人數眾說不一，行政院 1992 年的調查報告推估約一萬八千至二萬八千人，其他研究提出的數字更低或更高，至今無定論。受難者中有大量本地菁英、民意代表與知識分子，戰後第一代台灣人政治領導層幾乎被清空，此後四十年沒有再長出來。
+  sources:
+    - title: 維基百科：二二八事件
+      url: https://zh.wikipedia.org/wiki/二二八事件
+
+- id: twp-1947-provincial-government
+  year: 1947
+  title: 行政長官公署改組為台灣省政府
+  category: regime
+  importance: 3
+  desc: 5 月 16 日長官公署裁撤，改設台灣省政府，體制回到與其他各省一致。這是二二八之後中央做出的制度性回應，但主要是形式上的調整 —— 真正決定台灣政治走向的權力，兩年後隨中央政府一起搬了過來。
+  sources:
+    - title: 維基百科：臺灣省政府
+      url: https://zh.wikipedia.org/wiki/臺灣省政府
+
+- id: twp-1947-national-assembly-election
+  year: 1947
+  endYear: 1948
+  title: 行憲後首屆中央民代選舉，台灣選出國大代表與立委
+  category: election
+  importance: 4
+  desc: 1947 年底選出制憲後第一屆國民大會代表，1948 年初選出第一屆立法委員，台灣各縣市均有選出。這是台灣人第一次投票選出全國性的民意代表 —— 而這一屆代表因為次年的分裂而無法改選，一坐就是四十三年，成了「萬年國會」。
+  sources:
+    - title: 維基百科：1947年中華民國國民大會代表選舉
+      url: https://zh.wikipedia.org/wiki/1947年中華民國國民大會代表選舉
+
+- id: twp-1948-temporary-provisions
+  year: 1948
+  title: 動員戡亂時期臨時條款公布，憲法剛施行就被凍結
+  category: regime
+  importance: 5
+  desc: 5 月 10 日公布施行，授權總統在動員戡亂時期得為緊急處分而不受憲法程序限制。憲法 1947 年 12 月 25 日才施行，不到半年就被這部凌駕其上的條款架空。它是往後四十三年台灣威權體制的法源核心，1991 年才廢止。
+  sources:
+    - title: 維基百科：動員戡亂時期臨時條款
+      url: https://zh.wikipedia.org/wiki/動員戡亂時期臨時條款
+
+# ── 戒嚴與威權統治 ──────────────────
+
+- id: twp-1949-46-incident
+  year: 1949
+  title: 四六事件，校園整肅揭開白色恐怖
+  category: repression
+  importance: 4
+  desc: 4 月 6 日軍警進入台灣大學與台灣省立師範學院宿舍逮捕學生，師院一度停課整編。這是戰後第一起大規模的校園政治整肅，也被視為白色恐怖的起點。
+  sources:
+    - title: 維基百科：四六事件
+      url: https://zh.wikipedia.org/wiki/四六事件
+
+- id: twp-1949-martial-law
+  year: 1949
+  title: 台灣省戒嚴令施行
+  category: regime
+  importance: 5
+  desc: 5 月 19 日由台灣省警備總司令部公告，20 日零時生效，至 1987 年 7 月 15 日解除，歷時三十八年又五十六天。戒嚴期間集會、結社、言論、出版、罷工均受限制，平民犯特定罪名由軍事法庭審判。這是台灣威權體制的三根支柱之一，另外兩根是動員戡亂體制與中央民代不改選。
+  sources:
+    - title: 維基百科：臺灣省戒嚴令
+      url: https://zh.wikipedia.org/wiki/臺灣省戒嚴令
+
+- id: twp-1949-relocation
+  year: 1949
+  title: 中華民國政府遷台
+  category: regime
+  importance: 5
+  desc: 12 月 7 日行政院決議中央政府遷設台北。中華民國的中央政府自此在台灣運作，而它的憲法、國會與法統仍以整個中國為範圍 —— 這個落差是往後四十年台灣一切憲政爭議的源頭。在這條軸上，這一年中華民國從右邊那一欄搬到了左邊，兩欄的斷代色帶也在同一條線上一起換色。
+  sources:
+    - title: 維基百科：中華民國政府播遷臺灣
+      url: https://zh.wikipedia.org/wiki/中華民國政府播遷臺灣
+
+- id: twp-1949-white-terror
+  year: 1949
+  endYear: 1991
+  title: 白色恐怖，以懲治叛亂條例與檢肅匪諜條例為核心
+  category: repression
+  importance: 5
+  desc: 1949 年懲治叛亂條例、1950 年戡亂時期檢肅匪諜條例先後施行，政治案件由軍事審判。促進轉型正義委員會統計的政治受難者約一萬三千餘人，遭處死者逾千人；因史料散佚，實際數字仍在增補。1991 年懲治叛亂條例廢止、1992 年刑法一百條修正之後，言論與結社才不再構成叛亂罪。
+  sources:
+    - title: 維基百科：臺灣白色恐怖時期
+      url: https://zh.wikipedia.org/wiki/臺灣白色恐怖時期
+    - title: 維基百科：懲治叛亂條例
+      url: https://zh.wikipedia.org/wiki/懲治叛亂條例
+
+- id: twp-1950-korean-war
+  year: 1950
+  title: 韓戰爆發，第七艦隊協防台灣海峽
+  category: regime
+  importance: 4
+  desc: 6 月 25 日韓戰爆發，兩天後杜魯門宣布派第七艦隊巡弋台灣海峽並主張台灣地位未定。此前美國已準備放手，此後轉為明確支持。外部保障確立之後，在台灣的中華民國政府得以穩住陣腳，也讓它有餘裕在島內全面重整黨與國家機器。
+  sources:
+    - title: 維基百科：臺灣海峽中立化
+      url: https://zh.wikipedia.org/wiki/臺灣海峽中立化
+
+- id: twp-1950-kmt-reform
+  year: 1950
+  endYear: 1952
+  title: 中國國民黨改造，建立以黨領政的黨國體制
+  category: party
+  importance: 5
+  desc: 8 月成立中央改造委員會，重新登記黨員、整肅派系，仿列寧式政黨建立由中央到基層的組織系統，並在政府、軍隊、學校、媒體與社會團體內設置黨部。改造在 1952 年七全大會完成。這是台灣威權體制真正的引擎 —— 戒嚴令規定不能做什麼，黨的組織決定實際上由誰來做。
+  sources:
+    - title: 維基百科：中國國民黨
+      url: https://zh.wikipedia.org/wiki/中國國民黨
+
+- id: twp-1950-local-elections
+  year: 1950
+  endYear: 1951
+  title: 頒布地方自治綱要，首次縣市長與縣市議員民選
+  category: election
+  importance: 5
+  desc: 以行政命令而非法律頒布台灣省各縣市實施地方自治綱要，隨即舉行首屆縣市長與縣市議員選舉。威權時期地方選舉從未中斷，這既是政權向外展示民主的櫥窗，也是收編地方派系的機制 —— 兩派輪流執政、資源交換，換取地方對中央的服從。日後黨外的人才與票源也從這裡長出來，兩面都要記著。
+  sources:
+    - title: 維基百科：臺灣省各縣市實施地方自治綱要
+      url: https://zh.wikipedia.org/wiki/臺灣省各縣市實施地方自治綱要
+    - title: 維基百科：1950年—1951年中華民國縣市長選舉
+      url: https://zh.wikipedia.org/wiki/1950年—1951年中華民國縣市長選舉
+
+- id: twp-1952-youth-corps
+  year: 1952
+  title: 中國青年反共救國團成立
+  category: party
+  importance: 3
+  desc: 10 月成立，蔣經國任主任，透過學校與寒暑假活動把青年納入黨的組織網絡。它同時是蔣經國建立自身班底的起點，其人脈在往後三十年逐步進入黨政核心。
+  sources:
+    - title: 維基百科：中國青年救國團
+      url: https://zh.wikipedia.org/wiki/中國青年救國團
+
+- id: twp-1954-interpretation-31
+  year: 1954
+  title: 釋字第 31 號，第一屆中央民代不改選
+  category: regime
+  importance: 5
+  desc: 1 月大法官解釋，因大陸各省無法辦理選舉，第一屆立法委員與監察委員在次屆委員未能依法選出前得繼續行使職權。1947–48 年選出的中央民意代表因此無限期留任，是為「萬年國會」，直到 1991 年底才全體退職。這是威權體制的第三根支柱：不必改選，就不必對台灣選民負責。
+  sources:
+    - title: 維基百科：萬年國會
+      url: https://zh.wikipedia.org/wiki/萬年國會
+
+- id: twp-1954-mutual-defense
+  year: 1954
+  title: 中美共同防禦條約簽訂
+  category: regime
+  importance: 4
+  desc: 12 月 2 日簽訂，美國承諾協防台灣與澎湖，但適用範圍不含金門馬祖，並以換文限制中華民國不得片面對大陸用兵。反攻大陸自此在事實上被凍結，而條約也把「中華民國」的實際治理範圍具體化為台澎金馬。
+  sources:
+    - title: 維基百科：中美共同防禦條約
+      url: https://zh.wikipedia.org/wiki/中美共同防禦條約
+
+- id: twp-1958-823
+  year: 1958
+  title: 八二三砲戰，兩岸軍事對峙定型
+  category: war
+  importance: 4
+  desc: 8 月 23 日起解放軍砲擊金門，四十四天內落彈數十萬發，其後改為單日打雙日停，形式性砲擊延續到 1979 年。國軍守住金馬，兩岸就此形成長期的隔海分治而非決戰 —— 這場砲戰的政治結果，是把「暫時的分裂」變成了穩定的狀態。
+  sources:
+    - title: 維基百科：金門炮戰
+      url: https://zh.wikipedia.org/wiki/金門炮戰
+
+- id: twp-1960-third-term
+  year: 1960
+  title: 修訂臨時條款，總統連任限制解除
+  category: regime
+  importance: 4
+  desc: 3 月國民大會修訂動員戡亂時期臨時條款，規定動員戡亂時期總統副總統得連選連任、不受憲法連任一次的限制。蔣中正因此連任至第五任。憲法對權力的時間限制被拿掉，是強人體制在法制上的完成。
+  sources:
+    - title: 維基百科：動員戡亂時期臨時條款
+      url: https://zh.wikipedia.org/wiki/動員戡亂時期臨時條款
+
+- id: twp-1960-lei-chen
+  year: 1960
+  title: 雷震案，中國民主黨組黨失敗
+  category: repression
+  importance: 5
+  desc: 《自由中國》發行人雷震聯合本省地方政治人物籌組中國民主黨，9 月 4 日以涉嫌叛亂被捕，判刑十年，雜誌停刊，組黨中止。這是戒嚴時期最接近成功的一次組黨，失敗之後反對力量在體制外沉寂了十餘年，直到 1970 年代黨外以個別參選的方式重新出現。
+  sources:
+    - title: 維基百科：雷震 (1897年)
+      url: https://zh.wikipedia.org/wiki/雷震_(1897年)
+    - title: 維基百科：自由中國 (雜誌)
+      url: https://zh.wikipedia.org/wiki/自由中國_(雜誌)
+    - title: 維基百科：中國民主黨 (1960年)
+      url: https://zh.wikipedia.org/wiki/中國民主黨_(1960年)
+
+- id: twp-1964-self-salvation
+  year: 1964
+  title: 彭明敏等發表《台灣人民自救運動宣言》
+  category: movement
+  importance: 3
+  desc: 台大教授彭明敏與學生謝聰敏、魏廷朝起草宣言，主張「一個中國一個台灣」已是事實，要求制定新憲法、以自由地區人民的直接選舉產生政府。印製途中即被查獲，三人遭判刑。宣言把台灣前途問題從流亡海外的討論帶回島內，也是日後台獨主張在島內的文本源頭之一。
+  sources:
+    - title: 維基百科：台灣自救運動宣言
+      url: https://zh.wikipedia.org/wiki/台灣自救運動宣言
+    - title: 維基百科：彭明敏
+      url: https://zh.wikipedia.org/wiki/彭明敏
+
+- id: twp-1969-supplementary-election
+  year: 1969
+  title: 首次增額中央民意代表選舉
+  category: election
+  importance: 4
+  desc: 12 月舉行，在不改選第一屆代表的前提下，於自由地區增選少量立法委員與國大代表且不必改選。名額極少，卻是台灣選民三十年來第一次能對中央民意機關投票，也給了反對者一個全國性的舞台 —— 黨外從此有了進入中央的路徑。
+  sources:
+    - title: 維基百科：1969年中華民國立法委員選舉
+      url: https://zh.wikipedia.org/wiki/1969年中華民國立法委員選舉
+
+- id: twp-1971-un-withdrawal
+  year: 1971
+  title: 中華民國退出聯合國
+  category: regime
+  importance: 5
+  desc: 10 月 25 日聯合國大會通過第 2758 號決議，由中華人民共和國取得中國席位，中華民國代表團在表決前宣布退出。「代表全中國」這個法統主張失去了最主要的國際承認，執政者被迫轉向島內尋找正當性 —— 隔年的本土化與增額民代擴大，都是這一天的後果。
+  sources:
+    - title: 維基百科：聯合國大會第2758號決議
+      url: https://zh.wikipedia.org/wiki/聯合國大會第2758號決議
+
+- id: twp-1972-chiang-cabinet
+  year: 1972
+  title: 蔣經國組閣，推行本土化
+  category: regime
+  importance: 4
+  desc: 5 月蔣經國出任行政院長，大量拔擢台籍人士進入黨政體系，時人稱之為「催台青」，謝東閔、李登輝、林洋港等人都在這一波進入決策圈。外部承認流失之後，政權轉而向島內社會取得正當性。這條路線二十年後把李登輝送上了總統與黨主席的位置。
+  sources:
+    - title: 維基百科：蔣經國
+      url: https://zh.wikipedia.org/wiki/蔣經國
+    - title: 維基百科：催台青
+      url: https://zh.wikipedia.org/wiki/催台青
+
+- id: twp-1972-japan-break
+  year: 1972
+  title: 台日斷交
+  category: regime
+  importance: 4
+  desc: 9 月日本與中華人民共和國建交，同時宣告中日和約失效，台日改以民間機構維持往來。這是退出聯合國之後最重大的一次外交挫敗，也建立了日後台灣對外關係的基本模式：沒有正式邦交，但有實質關係。
+  sources:
+    - title: 維基百科：中日聯合聲明
+      url: https://zh.wikipedia.org/wiki/中日聯合聲明
+
+- id: twp-1975-chiang-death
+  year: 1975
+  title: 蔣中正逝世，嚴家淦繼任總統
+  category: regime
+  importance: 4
+  desc: 4 月 5 日蔣中正逝世，副總統嚴家淦依憲法繼任總統，蔣經國接任中國國民黨主席。權力實際上跟著黨主席走而非總統職位，三年後蔣經國才就任總統 —— 這個安排本身就說明了黨國體制中真正的權力所在。
+  sources:
+    - title: 維基百科：蔣中正
+      url: https://zh.wikipedia.org/wiki/蔣中正
+
+- id: twp-1977-zhongli
+  year: 1977
+  title: 中壢事件，黨外在地方選舉大有斬獲
+  category: movement
+  importance: 5
+  desc: 11 月 19 日五項地方公職選舉投票日，桃園縣長選舉傳出作票，群眾包圍並焚燒中壢分局。這是戒嚴後首次大規模的自發性群眾抗爭，而選舉結果黨外拿下四席縣市長與多席省議員。「黨外」自此從個別參選者變成有全島串連的政治力量。
+  sources:
+    - title: 維基百科：中壢事件
+      url: https://zh.wikipedia.org/wiki/中壢事件
+    - title: 維基百科：黨外運動
+      url: https://zh.wikipedia.org/wiki/黨外運動
+
+- id: twp-1978-ck-president
+  year: 1978
+  title: 蔣經國就任總統
+  category: regime
+  importance: 3
+  desc: 5 月 20 日就任第六任總統，黨主席與總統合一。本土化與有限度的政治鬆綁在他任內持續推進，而戒嚴與黨禁也在他任內維持到最後一年。
+  sources:
+    - title: 維基百科：蔣經國
+      url: https://zh.wikipedia.org/wiki/蔣經國
+
+- id: twp-1979-us-break
+  year: 1979
+  title: 台美斷交，美國制定《台灣關係法》
+  category: regime
+  importance: 5
+  desc: 1 月 1 日美國與中華人民共和國建交並終止中美共同防禦條約，4 月 10 日美國制定台灣關係法，以國內法規範對台關係並提供防禦性武器。最重要的邦交國轉向，而取代條約的是一部他國國內法 —— 台灣的安全保障自此建立在一個沒有承諾協防義務的框架上。同年年底的美麗島事件就發生在這股衝擊之中。
+  sources:
+    - title: 維基百科：臺灣關係法
+      url: https://zh.wikipedia.org/wiki/臺灣關係法
+    - title: 維基百科：中華民國與美國關係
+      url: https://zh.wikipedia.org/wiki/中華民國與美國關係
+
+- id: twp-1979-formosa
+  year: 1979
+  title: 美麗島事件與軍法大審
+  category: repression
+  importance: 5
+  desc: 12 月 10 日《美麗島》雜誌社在高雄舉辦世界人權日集會，演變成警民衝突，隨後黨外核心人物遭大規模逮捕，1980 年 3 月以叛亂罪付軍事法庭審判。當局首度開放媒體報導庭訊，被告在法庭上的政治陳述因此廣為流傳。八名被告與辯護律師群日後多成為民進黨的領導階層 —— 一次意在終結反對運動的整肅，反而替它培養了下一代的班底。
+  sources:
+    - title: 維基百科：美麗島事件
+      url: https://zh.wikipedia.org/wiki/美麗島事件
+    - title: 維基百科：美麗島雜誌
+      url: https://zh.wikipedia.org/wiki/美麗島雜誌
+
+- id: twp-1980-lin-murders
+  year: 1980
+  title: 林宅血案
+  category: repression
+  importance: 4
+  desc: 2 月 28 日美麗島事件被告林義雄位於台北的住處發生凶案，其母與雙胞胎女兒遇害、長女重傷，案發時住處在情治單位監視之下。至今未破案。案件與隔年的陳文成命案並列為威權時期最受質疑的兩起事件，也讓國際社會對台灣人權狀況的關注急速升高。
+  sources:
+    - title: 維基百科：林宅血案
+      url: https://zh.wikipedia.org/wiki/林宅血案
+
+- id: twp-1981-chen-wen-chen
+  year: 1981
+  title: 陳文成命案
+  category: repression
+  importance: 3
+  desc: 7 月旅美學者陳文成返台探親，被警備總部約談後隔日陳屍台灣大學校園。死因始終有爭議，案件未破。事件促使美國國會關注在美台灣人受監控的問題，並於數年後推動相關立法。
+  sources:
+    - title: 維基百科：陳文成
+      url: https://zh.wikipedia.org/wiki/陳文成
+
+- id: twp-1984-chiang-nan
+  year: 1984
+  title: 江南案，情治系統在美國境內涉案
+  category: repression
+  importance: 4
+  desc: 10 月作家劉宜良（筆名江南）在美國舊金山住處遇害，調查指向情報局透過黑道進行。美方施壓下情報局長遭判刑，情治系統大幅改組，蔣孝武外派。案件重創政權的國際形象，也被視為蔣經國決定不由家人接班的關鍵之一。
+  sources:
+    - title: 維基百科：江南案
+      url: https://zh.wikipedia.org/wiki/江南案
+
+- id: twp-1986-dpp
+  year: 1986
+  title: 民主進步黨成立，突破黨禁
+  category: party
+  importance: 5
+  desc: 9 月 28 日黨外人士在台北圓山大飯店宣布組黨，當時黨禁仍未解除。當局沒有取締，隔年即解嚴並於 1989 年修法承認政黨的合法地位。這是台灣自 1927 年台灣民眾黨以來，第一個由本地政治力量自組並長期存續的政黨，也是隔年一連串鬆綁的直接觸因。
+  sources:
+    - title: 維基百科：民主進步黨
+      url: https://zh.wikipedia.org/wiki/民主進步黨
+
+# ── 民主化：十三年拆掉三根支柱 ──────────────────
+
+- id: twp-1987-martial-law-lifted
+  year: 1987
+  title: 解除戒嚴，改以國家安全法銜接
+  category: regime
+  importance: 5
+  desc: 7 月 15 日解除實施三十八年的台灣省戒嚴令，集會結社與組黨組報的禁令陸續鬆開，軍事審判不再及於一般人民。同時制定的國家安全法保留了部分限制（如入出境管制與「不得主張分裂國土」的集會限制），戒嚴時期的判決也不得上訴 —— 解嚴是拆掉第一根支柱，但不是一次拆乾淨。
+  sources:
+    - title: 維基百科：臺灣省戒嚴令
+      url: https://zh.wikipedia.org/wiki/臺灣省戒嚴令
+    - title: 全國法規資料庫：國家安全法
+      url: https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030028
+
+- id: twp-1987-family-visits
+  year: 1987
+  title: 開放大陸探親，兩岸隔絕結束
+  category: regime
+  importance: 4
+  desc: 11 月 2 日起開放民眾赴大陸探親，結束三十八年的完全隔絕。人員往來一開，「兩岸關係」從一個純粹的軍事與法統問題，變成一個必須有制度、有機構、有協議去處理的日常問題 —— 海基會與辜汪會談都是這個轉變的延長線。
+  sources:
+    - title: 維基百科：兩岸關係
+      url: https://zh.wikipedia.org/wiki/海峽兩岸關係
+
+- id: twp-1988-press-ban-lifted
+  year: 1988
+  title: 報禁解除
+  category: regime
+  importance: 4
+  desc: 1 月 1 日起開放報紙登記與增張，結束自 1951 年起限證、限張、限印的管制。長期只有三十一家報紙的市場迅速擴張，政治論述第一次能在主流媒體上公開競爭。
+  sources:
+    - title: 維基百科：報禁
+      url: https://zh.wikipedia.org/wiki/报禁
+
+- id: twp-1988-lee-succession
+  year: 1988
+  title: 蔣經國逝世，李登輝繼任總統，首位台籍元首
+  category: regime
+  importance: 5
+  desc: 1 月 13 日蔣經國逝世，副總統李登輝依憲法繼任，同年 7 月當選中國國民黨主席。強人體制結束，最高權力第一次交到本省籍人士手上，而且是依憲法程序而非指定接班。此後十二年的憲政改革都由這個位置發動。
+  sources:
+    - title: 維基百科：李登輝
+      url: https://zh.wikipedia.org/wiki/李登輝
+
+- id: twp-1990-wild-lily
+  year: 1990
+  title: 野百合學運與國是會議
+  category: movement
+  importance: 5
+  desc: 3 月數千名學生靜坐中正紀念堂廣場，訴求解散國民大會、廢除臨時條款、召開國是會議、提出政經改革時間表。李登輝接見學生代表並承諾召開國是會議，6 月國是會議達成終止動員戡亂、國會全面改選、總統直選等共識。這是台灣的街頭運動第一次直接寫進了憲政改革的議程。
+  sources:
+    - title: 維基百科：野百合學運
+      url: https://zh.wikipedia.org/wiki/野百合學運
+    - title: 維基百科：國是會議
+      url: https://zh.wikipedia.org/wiki/國是會議
+
+- id: twp-1991-end-mobilization
+  year: 1991
+  title: 終止動員戡亂時期，廢止臨時條款與懲治叛亂條例
+  category: regime
+  importance: 5
+  desc: 5 月 1 日宣告終止動員戡亂時期、廢止臨時條款，同月廢止懲治叛亂條例，隔年修正刑法第一百條，言論與結社不再構成內亂罪。第二根支柱倒下：政府片面放棄了以「戡平叛亂」為由對中共採取的敵對狀態法制，也放棄了據此凍結憲法的依據。
+  sources:
+    - title: 維基百科：動員戡亂時期臨時條款
+      url: https://zh.wikipedia.org/wiki/動員戡亂時期臨時條款
+    - title: 維基百科：懲治叛亂條例
+      url: https://zh.wikipedia.org/wiki/懲治叛亂條例
+    - title: 維基百科：中華民國刑法第一百條
+      url: https://zh.wikipedia.org/wiki/中華民國刑法第一百條
+
+- id: twp-1991-first-amendment
+  year: 1991
+  title: 第一次修憲，資深中央民代全體退職
+  category: regime
+  importance: 5
+  desc: 4 月國民大會通過憲法增修條文，以「增修」而非重新制憲的方式處理憲法適用範圍的問題；12 月 31 日第一屆中央民意代表依大法官解釋全體退職。萬年國會結束，第三根支柱倒下。以增修條文附加於本文之後、暫不觸動本文的作法，成為此後歷次修憲一貫的模式。
+  sources:
+    - title: 維基百科：中華民國憲法增修條文
+      url: https://zh.wikipedia.org/wiki/中華民國憲法增修條文
+    - title: 維基百科：萬年國會
+      url: https://zh.wikipedia.org/wiki/萬年國會
+
+- id: twp-1992-legislative-election
+  year: 1992
+  title: 立法院全面改選，國會第一次完整代表台灣選民
+  category: election
+  importance: 5
+  desc: 12 月舉行第二屆立法委員選舉，全部席次由台澎金馬選民選出。從 1948 年那一屆算起，隔了四十四年國會才再一次改選。民進黨取得五十席，形成有實力的在野黨；立法院自此成為真正的政治角力場，而不是行政部門的橡皮圖章。
+  sources:
+    - title: 維基百科：1992年中華民國立法委員選舉
+      url: https://zh.wikipedia.org/wiki/1992年中華民國立法委員選舉
+
+- id: twp-1993-new-party
+  year: 1993
+  title: 新黨成立，國民黨第一次分裂
+  category: party
+  importance: 4
+  desc: 8 月中國國民黨內反對李登輝路線的新國民黨連線成員退黨另組新黨。這是本土化路線推到黨內之後的必然結果，也是往後三十年統獨分歧在政黨層面反覆分合的第一次 —— 親民黨、台聯、時代力量、民眾黨都循著類似的邏輯從兩大黨旁邊長出來。
+  sources:
+    - title: 維基百科：新黨
+      url: https://zh.wikipedia.org/wiki/新黨
+
+- id: twp-1993-koo-wang
+  year: 1993
+  title: 辜汪會談，兩岸首次制度化協商
+  category: regime
+  importance: 4
+  desc: 4 月海基會董事長辜振甫與海協會會長汪道涵在新加坡會談，簽署四項事務性協議。這是 1949 年以來雙方授權民間機構進行的第一次正式協商，也建立了「以民間名義處理官方事務」這個往後三十年反覆使用的模式。會談的前提是前一年兩會關於一個中國表述的往來函電，後來被稱為九二共識，其內容至今各說各話。
+  sources:
+    - title: 維基百科：辜汪會談
+      url: https://zh.wikipedia.org/wiki/辜汪會談
+    - title: 維基百科：九二共識
+      url: https://zh.wikipedia.org/wiki/九二共識
+
+- id: twp-1994-governor-election
+  year: 1994
+  title: 修憲確立總統直選，省市長首次民選
+  category: election
+  importance: 4
+  desc: 7 月第三次修憲明定總統副總統由自由地區全體人民直接選舉；12 月舉行首屆台灣省長與直轄市長選舉。地方最高首長全面民選，也讓省長與總統之間出現了民意基礎重疊的問題 —— 那正是四年後凍省的直接原因。
+  sources:
+    - title: 維基百科：1994年中華民國省市長暨省市議員選舉
+      url: https://zh.wikipedia.org/wiki/1994年中華民國省市長暨省市議員選舉
+    - title: 維基百科：中華民國憲法增修條文
+      url: https://zh.wikipedia.org/wiki/中華民國憲法增修條文
+
+- id: twp-1996-direct-election
+  year: 1996
+  title: 首次總統直選，台海飛彈危機
+  category: election
+  importance: 5
+  desc: 3 月 23 日首次由公民直接選舉總統，投票率約 76%，李登輝當選。選前中國人民解放軍於台灣海峽進行飛彈試射與軍事演習，美國派遣兩個航空母艦戰鬥群前往。台灣的統治者第一次由這塊土地上的人民直接授權產生 —— 民主轉型的最後一塊拼圖，而它是在軍事威嚇之下完成的。
+  sources:
+    - title: 維基百科：1996年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/1996年中華民國總統選舉
+    - title: 維基百科：台灣海峽飛彈危機
+      url: https://zh.wikipedia.org/wiki/台灣海峽飛彈危機
+
+- id: twp-1997-downsizing-province
+  year: 1997
+  endYear: 1998
+  title: 第四次修憲精省，台灣省虛級化
+  category: regime
+  importance: 4
+  desc: 1997 年修憲凍結省級選舉，1998 年底台灣省政府與省議會改為派任的非自治團體。中華民國的行政層級因此與其實際治理範圍重疊 —— 過去省與中央管轄範圍幾乎相同所造成的疊床架屋就此解決，但也等於在制度上承認了治理範圍就是台澎金馬。
+  sources:
+    - title: 維基百科：省 (中華民國)
+      url: https://zh.wikipedia.org/wiki/省_(中華民國)
+
+- id: twp-1999-two-states
+  year: 1999
+  title: 李登輝提出特殊的國與國關係
+  category: regime
+  importance: 4
+  desc: 7 月李登輝在接受德國媒體訪問時表示，1991 年修憲之後兩岸關係已是特殊的國與國關係。中方中止兩會協商，美方要求說明。這是在任的中華民國總統第一次公開對兩岸定位提出不同於一個中國框架的表述，也讓兩岸協商中斷了將近十年。
+  sources:
+    - title: 維基百科：特殊的國與國關係
+      url: https://zh.wikipedia.org/wiki/特殊的國與國關係
+
+# ── 政黨輪替 ──────────────────
+
+- id: twp-2000-transition
+  year: 2000
+  title: 首次政黨輪替，陳水扁當選總統
+  category: election
+  importance: 5
+  desc: 3 月 18 日陳水扁以約 39% 得票當選，中國國民黨在因宋楚瑜脫黨參選而分裂的情況下失去中央執政權。統治了台灣五十五年的政黨透過選票和平交出政權，行政權移轉未發生任何憲政危機。台灣的民主自此從「能不能選」進入「選完會不會換人」的階段。
+  sources:
+    - title: 維基百科：2000年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/2000年中華民國總統選舉
+
+- id: twp-2000-pfp
+  year: 2000
+  endYear: 2001
+  title: 親民黨與台灣團結聯盟相繼成立
+  category: party
+  importance: 3
+  desc: 2000 年 3 月宋楚瑜於總統選舉落敗後成立親民黨，2001 年 8 月李登輝支持者成立台灣團結聯盟。兩大黨各自再分出一塊，統獨光譜上出現四個政黨，台灣的政黨體系在輪替之後立刻進入多黨競爭的形態。
+  sources:
+    - title: 維基百科：親民黨
+      url: https://zh.wikipedia.org/wiki/親民黨
+    - title: 維基百科：台聯黨
+      url: https://zh.wikipedia.org/wiki/台聯黨
+
+- id: twp-2002-one-country-each-side
+  year: 2002
+  title: 陳水扁提出一邊一國
+  category: regime
+  importance: 3
+  desc: 8 月陳水扁在視訊演說中表示台灣與對岸中國「一邊一國」，並主張以公民投票決定台灣前途。與 1999 年的兩國論同屬對兩岸定位的表述，但把公投明確納入 —— 而公民投票法隔年就通過了。
+  sources:
+    - title: 維基百科：一邊一國
+      url: https://zh.wikipedia.org/wiki/一邊一國
+
+- id: twp-2003-referendum-act
+  year: 2003
+  title: 公民投票法通過
+  category: regime
+  importance: 4
+  desc: 11 月立法院通過公民投票法，首次為直接民權建立法定程序，但門檻高、且排除領土變更等事項。2017 年大幅降低門檻後，公投成為常態的政治動員工具。直接民主的入口就此打開，而它的門檻高低本身此後一直是政治攻防的主題。
+  sources:
+    - title: 維基百科：公民投票法
+      url: https://zh.wikipedia.org/wiki/公民投票法
+
+- id: twp-2005-constitutional-reform
+  year: 2005
+  title: 任務型國大複決修憲，立委席次減半、單一選區兩票制
+  category: regime
+  importance: 5
+  desc: 6 月由選舉產生的任務型國民大會複決通過第七次修憲：立委席次自 225 席減為 113 席、任期改為四年、選制改為單一選區兩票制，國民大會走入歷史，此後修憲須經公民複決。這是台灣憲政體制最後一次結構性的大改動，也把政黨競爭鎖進了不利於小黨的選制 —— 之後二十年的政治格局大致由這一次決定。
+  sources:
+    - title: 維基百科：2005年中華民國國民大會代表選舉
+      url: https://zh.wikipedia.org/wiki/2005年中華民國國民大會代表選舉
+    - title: 維基百科：單一選區兩票制
+      url: https://zh.wikipedia.org/wiki/單一選區兩票制
+
+- id: twp-2005-anti-secession-response
+  year: 2005
+  title: 中國通過反分裂國家法，連戰訪中
+  category: regime
+  importance: 4
+  desc: 3 月中國全國人大通過反分裂國家法，明定得採取非和平方式的三種情形；台灣舉行遊行抗議。4 月中國國民黨主席連戰訪問中國大陸，與中共總書記胡錦濤會面，是 1945 年重慶談判以來兩黨領導人首次會晤。同一年裡對岸把武力選項法制化，而台灣的最大在野黨與對岸執政黨建立了政黨對政黨的溝通管道。
+  sources:
+    - title: 維基百科：反分裂國家法
+      url: https://zh.wikipedia.org/wiki/反分裂國家法
+    - title: 維基百科：連戰
+      url: https://zh.wikipedia.org/wiki/連戰
+
+- id: twp-2008-second-transition
+  year: 2008
+  title: 二次政黨輪替，馬英九當選總統
+  category: election
+  importance: 5
+  desc: 3 月馬英九當選，中國國民黨重返執政並同時掌握立法院多數。第二次政權和平轉移，而且是輪替回原本的執政黨 —— 民主鞏固的一般判準（同一套規則下政權至少換手兩次）到此完成。
+  sources:
+    - title: 維基百科：2008年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/2008年中華民國總統選舉
+
+- id: twp-2010-ecfa
+  year: 2010
+  title: 簽署海峽兩岸經濟合作架構協議
+  category: regime
+  importance: 4
+  desc: 6 月兩會在重慶簽署 ECFA，並在此前後恢復協商、開放直航與陸客來台。兩岸關係從對峙轉為高密度的制度性往來，而協議審查程序的爭議累積成四年後的太陽花學運。
+  sources:
+    - title: 維基百科：海峽兩岸經濟合作架構協議
+      url: https://zh.wikipedia.org/wiki/海峽兩岸經濟合作架構協議
+
+- id: twp-2014-sunflower
+  year: 2014
+  title: 太陽花學運，佔領立法院二十四天
+  category: movement
+  importance: 5
+  desc: 3 月 18 日學生與公民團體因海峽兩岸服務貿易協議的審查程序爭議佔領立法院議場，持續二十四天，並於 3 月 30 日發動大規模遊行。服貿未通過，立法院其後推動兩岸協議監督機制的立法討論。運動之後兩岸經貿整合的步伐停下，年底地方選舉執政黨大敗，第三勢力政黨隨之出現。
+  sources:
+    - title: 維基百科：太陽花學運
+      url: https://zh.wikipedia.org/wiki/太陽花學運
+
+- id: twp-2014-local-elections
+  year: 2014
+  title: 九合一選舉，執政黨大敗
+  category: election
+  importance: 3
+  desc: 11 月首次將九項地方公職選舉合併舉行，中國國民黨僅保住六個縣市，台北市由無黨籍柯文哲當選。太陽花之後的民意在選票上具體呈現，也預告了兩年後的中央政權轉移。
+  sources:
+    - title: 維基百科：2014年中華民國地方公職人員選舉
+      url: https://zh.wikipedia.org/wiki/2014年中華民國地方公職人員選舉
+
+- id: twp-2015-npp-ma-xi
+  year: 2015
+  title: 時代力量成立；馬習會
+  category: party
+  importance: 4
+  desc: 1 月太陽花運動的參與者組成時代力量，隔年進入立法院成為第三大黨。11 月 7 日馬英九與習近平在新加坡會面，是 1949 年以來兩岸領導人首次會晤，雙方以「先生」互稱以迴避頭銜問題。同一年裡，街頭運動變成了政黨，而兩岸的最高層第一次坐上同一張桌子。
+  sources:
+    - title: 維基百科：時代力量
+      url: https://zh.wikipedia.org/wiki/時代力量
+    - title: 維基百科：馬習會
+      url: https://zh.wikipedia.org/wiki/馬習會
+
+- id: twp-2016-third-transition
+  year: 2016
+  title: 三次政黨輪替，首次國會政黨輪替
+  category: election
+  importance: 5
+  desc: 1 月 16 日蔡英文當選總統，同時民主進步黨首次取得立法院過半席次。這是第三次政權轉移，也是立法院自 1992 年全面改選以來第一次由中國國民黨以外的政黨掌握多數 —— 完整的行政與立法權第一次同時交到另一個政黨手上。
+  sources:
+    - title: 維基百科：2016年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/2016年中華民國總統選舉
+    - title: 維基百科：2016年中華民國立法委員選舉
+      url: https://zh.wikipedia.org/wiki/2016年中華民國立法委員選舉
+
+- id: twp-2016-party-assets
+  year: 2016
+  title: 政黨及其附隨組織不當取得財產處理條例
+  category: regime
+  importance: 4
+  desc: 7 月立法院通過，設不當黨產處理委員會，推定政黨於 1945 年至 1987 年間取得的財產除黨費、政治獻金等外均為不當取得。威權時期黨與國家財產混同的問題第一次被以專法處理，合憲性爭議一路打到憲法法庭。
+  sources:
+    - title: 維基百科：政黨及其附隨組織不當取得財產處理條例
+      url: https://zh.wikipedia.org/wiki/政黨及其附隨組織不當取得財產處理條例
+
+- id: twp-2018-transitional-justice
+  year: 2018
+  title: 促進轉型正義委員會成立
+  category: regime
+  importance: 4
+  desc: 5 月依促進轉型正義條例成立，任務包括開放政治檔案、清除威權象徵、平復司法不法與還原歷史真相，並撤銷威權時期的有罪判決。距離戒嚴解除已三十一年，國家第一次以專責機關系統性處理自身在威權時期的作為。
+  sources:
+    - title: 維基百科：促進轉型正義委員會
+      url: https://zh.wikipedia.org/wiki/促進轉型正義委員會
+
+- id: twp-2019-anti-infiltration
+  year: 2019
+  title: 反滲透法通過
+  category: regime
+  importance: 3
+  desc: 12 月 31 日立法院三讀通過，禁止受境外敵對勢力指示、委託或資助者從事政治獻金、助選、遊說與破壞集會等行為。制定的背景是香港反送中運動與選舉期間的資訊操作爭議；反對意見認為構成要件過於寬泛。民主防衛與言論自由之間的界線自此成為固定的政治爭點。
+  sources:
+    - title: 維基百科：反滲透法
+      url: https://zh.wikipedia.org/wiki/反渗透法
+
+- id: twp-2024-lai
+  year: 2024
+  title: 賴清德當選，同一政黨連續三任但國會三黨不過半
+  category: election
+  importance: 4
+  desc: 1 月 13 日賴清德以約 40% 得票當選，民主進步黨首次連續三屆執政；同日的立法委員選舉中民進黨失去多數，中國國民黨成為第一大黨，台灣民眾黨八席成為關鍵少數。行政與立法分屬不同政黨的分立政府再度出現，此後的憲政運作以院際爭議與釋憲為主軸。
+  sources:
+    - title: 維基百科：2024年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/2024年中華民國總統選舉
