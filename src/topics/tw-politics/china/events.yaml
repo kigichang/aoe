@@ -1,0 +1,1097 @@
+# 中國。從晚清的自強與立憲一路到中共二十大之後的集權。
+#
+# **1912–1949 的中華民國記在這一欄，1949 之後記在台灣欄。**
+# 兩欄在 1949 年交接同一個政權，斷代色帶也在同一條 y 上一起換色 ——
+# 那就是這個主題最想給的一組對照，不要因為覺得「中華民國怎麼跑掉了」
+# 而把 1949 之後的中華民國事件補回這一欄。
+#
+# 已走完 README 的查證流程（維基 API 批次驗證標題 → 逐條核對年份 → 寫入）。
+#
+# **維基標題的陷阱，改動出處前先看這裡：**
+# - 1946 年那個政治協商會議要用 `政治协商会议`。
+#   **寫成「重慶政治協商會議」會導向 `中国人民政治协商会议`，
+#   那是 1949 年之後中華人民共和國的政協，完全是另一個機構。**
+# - 「訓政」是消歧義頁，`中華民國訓政時期` 不存在；用
+#   `國民政府建國大綱`（1928 訓政綱領的依據）與 `中华民国训政时期约法`。
+# - 「皇族內閣」是消歧義頁，用 `慶親王內閣`。
+# - 「黃埔軍校」導向 `陸軍軍官學校`，「預備立憲」導向 `立憲運動`。
+# - 中共歷次黨代會、憲法與多數 1949 後的條目**只有簡體標題**，
+#   繁體形式在 API 上回報 missing。這些一律照簡體寫網址，
+#   顯示用的 `title` 仍寫繁體中文。
+#
+# **2013 年之後這一欄只有八則，比台灣欄的同期少，那不是資料沒補完。**
+# 一黨體制產生的「政治斷點」本來就比競爭性體制少 —— 沒有選舉結果、
+# 沒有政黨分合、沒有政權輪替。這個疏密差本身就是並排看得出來的東西之一。
+
+# ── 晚清：自強、變法、立憲與革命 ──────────────────
+
+- id: cnp-1860-beijing-treaty
+  year: 1860
+  title: 北京條約簽訂，條約體制確立
+  category: regime
+  importance: 4
+  desc: 第二次鴉片戰爭結束，公使駐京、開放通商口岸與內地傳教等條款確立。清帝國第一次被迫承認與外國的往來是「國與國」而非藩屬朝貢，也第一次必須設立專責的對外機構 —— 隔年的總理衙門就是這個結果。
+  sources:
+    - title: 維基百科：北京條約
+      url: https://zh.wikipedia.org/wiki/北京條約
+    - title: 維基百科：第二次鴉片戰爭
+      url: https://zh.wikipedia.org/wiki/第二次鴉片戰爭
+
+- id: cnp-1861-xinyou-coup
+  year: 1861
+  title: 辛酉政變，慈禧太后垂簾聽政
+  category: regime
+  importance: 5
+  desc: 咸豐帝去世後，慈禧與恭親王奕訢聯手推翻顧命八大臣，改元同治並實行兩宮垂簾。最高決策權移到皇帝之外的人手上，而且維持了近半個世紀 —— 此後晚清所有的改革與反改革，成敗都取決於這個位置上的人怎麼想。
+  sources:
+    - title: 維基百科：辛酉政變
+      url: https://zh.wikipedia.org/wiki/辛酉政變
+
+- id: cnp-1861-zongli-yamen
+  year: 1861
+  title: 總理各國事務衙門設立，洋務運動開始
+  category: regime
+  importance: 4
+  desc: 總理衙門成為近代中國第一個常設的外交機構，並實際主導了此後三十餘年的自強新政 —— 造船、製械、開礦、派遣留學生。改革限於器物與技術，政治體制不動，這條界線在甲午戰敗之後才被打破。
+  sources:
+    - title: 維基百科：洋務運動
+      url: https://zh.wikipedia.org/wiki/洋務運動
+
+- id: cnp-1894-xingzhonghui
+  year: 1894
+  title: 興中會成立，中國第一個革命團體
+  category: party
+  importance: 5
+  desc: 11 月孫中山在檀香山成立興中會，誓詞為「驅除韃虜，恢復中國，創立合眾政府」。第一次有組織明確地把推翻現政權並建立共和寫成綱領。此後十七年間它與其他革命團體發動十餘次起事，全部失敗，直到 1911 年。
+  sources:
+    - title: 維基百科：興中會
+      url: https://zh.wikipedia.org/wiki/興中會
+    - title: 維基百科：孫中山
+      url: https://zh.wikipedia.org/wiki/孫中山
+
+- id: cnp-1895-gongche
+  year: 1895
+  title: 公車上書，士人第一次集體干政
+  category: movement
+  importance: 4
+  desc: 馬關條約簽訂消息傳到北京，康有為、梁啟超聯合在京應試的舉人聯名上書，要求拒和、遷都、變法。上書是否真的送達至今有考證上的爭議，但數百名士人集體具名表達政治主張這件事本身是新的 —— 政治參與第一次溢出了科舉與官僚體系。
+  sources:
+    - title: 維基百科：公車上書
+      url: https://zh.wikipedia.org/wiki/公車上書
+
+- id: cnp-1898-hundred-days
+  year: 1898
+  title: 戊戌變法，體制內改革的一百零三天
+  category: regime
+  importance: 5
+  desc: 6 月至 9 月光緒帝連下數十道詔令，改科舉、設學堂、裁冗官、練新軍。慈禧發動政變，光緒被幽禁，六人遭處死，除京師大學堂外新政幾乎全數廢止。體制內由上而下的改革路線至此受挫，此後的改革力量分流成兩支：留在體制內的立憲派與體制外的革命派。
+  sources:
+    - title: 維基百科：戊戌變法
+      url: https://zh.wikipedia.org/wiki/戊戌變法
+
+- id: cnp-1900-boxer
+  year: 1900
+  title: 義和團與八國聯軍，東南互保
+  category: war
+  importance: 4
+  desc: 清廷對十一國宣戰，八國聯軍攻入北京，隔年簽訂辛丑條約賠款四億五千萬兩。東南各省督撫與列強另訂互保協議、拒不奉詔，中央對地方的控制力自此公開地打了折扣。戰敗的直接後果是清廷終於同意變法 —— 兩年前殺掉變法者的那批人，開始執行類似的方案。
+  sources:
+    - title: 維基百科：義和團運動
+      url: https://zh.wikipedia.org/wiki/義和團運動
+    - title: 維基百科：辛丑條約
+      url: https://zh.wikipedia.org/wiki/辛丑條約
+
+- id: cnp-1901-new-policies
+  year: 1901
+  endYear: 1911
+  title: 清末新政，晚清最後十年的體制改革
+  category: regime
+  importance: 4
+  desc: 改總理衙門為外務部、編練新軍、獎勵實業、改革官制與法律、派遣留學生。規模遠大於戊戌變法，但新軍與留學生後來成了革命的主力，各省諮議局成了立憲派的據點 —— 改革培養出來的人與機構，最後推翻了推動改革的政權。
+  sources:
+    - title: 維基百科：清末新政
+      url: https://zh.wikipedia.org/wiki/清末新政
+
+- id: cnp-1905-abolish-exam
+  year: 1905
+  title: 廢除科舉
+  category: regime
+  importance: 5
+  desc: 9 月諭令自隔年起停止科舉考試。實行一千三百年、把讀書人與朝廷綁在一起的晉身管道一夕消失，士紳階層與政權之間最穩固的那條紐帶就此斷裂。新式學堂與留學成為新的路徑，而它們培養出來的人不再天然效忠朝廷。
+  sources:
+    - title: 維基百科：科舉
+      url: https://zh.wikipedia.org/wiki/科舉
+    - title: 維基百科：清末新政
+      url: https://zh.wikipedia.org/wiki/清末新政
+
+- id: cnp-1905-tongmenghui
+  year: 1905
+  title: 中國同盟會成立，革命團體整合
+  category: party
+  importance: 5
+  desc: 8 月在東京由興中會、華興會、光復會等合組，孫中山任總理，綱領為「驅除韃虜、恢復中華、創立民國、平均地權」，並以《民報》宣傳。分散的革命團體第一次有了統一的組織與綱領；1912 年它改組為國民黨，是中國國民黨的直接前身。
+  sources:
+    - title: 維基百科：中國同盟會
+      url: https://zh.wikipedia.org/wiki/中國同盟會
+
+- id: cnp-1906-prepare-constitution
+  year: 1906
+  title: 宣示預備立憲
+  category: regime
+  importance: 4
+  desc: 五大臣出洋考察憲政後，9 月諭令仿行憲政、先行釐定官制。清廷第一次承認君主的權力應當受成文法限制。立憲派因此大受鼓舞並組織起來，但實際的時程一再拖延，這股力量五年後轉而支持革命。
+  sources:
+    - title: 維基百科：立憲運動
+      url: https://zh.wikipedia.org/wiki/立憲運動
+
+- id: cnp-1908-constitution-outline
+  year: 1908
+  title: 頒布《欽定憲法大綱》，光緒與慈禧相繼去世
+  category: regime
+  importance: 4
+  desc: 8 月頒布中國第一部憲法性文件，仿日本明治憲法，君上大權列十四條而臣民權利僅九條，並定九年後召開國會。11 月光緒與慈禧在兩日內相繼去世，三歲的溥儀繼位、載灃攝政 —— 改革最需要決斷的時刻，決策核心換成了缺乏威望的攝政王。
+  sources:
+    - title: 維基百科：欽定憲法大綱
+      url: https://zh.wikipedia.org/wiki/欽定憲法大綱
+
+- id: cnp-1909-provincial-assemblies
+  year: 1909
+  title: 各省諮議局成立，中國第一次代議選舉
+  category: election
+  importance: 4
+  desc: 10 月各省諮議局開議，議員由具財產、學歷或功名資格的男子選出，全國合格選民約一百七十萬人、佔人口不到 0.4%。這是中國歷史上第一次以選舉產生的代議機關。諮議局隨即成為立憲派要求速開國會的組織基地，兩年後多數省份的獨立宣告也由它們發出。
+  sources:
+    - title: 維基百科：諮議局
+      url: https://zh.wikipedia.org/wiki/諮議局
+
+- id: cnp-1910-zizhengyuan
+  year: 1910
+  title: 資政院開院，中央代議機關的雛形
+  category: election
+  importance: 3
+  desc: 10 月開院，議員半數欽選、半數由各省諮議局互選。它多次議決要求提前召開國會並彈劾軍機大臣，朝廷則以諭旨駁回 —— 民選代表與皇權的第一次正面衝突，也讓立憲派看清了體制內改革的上限。
+  sources:
+    - title: 維基百科：資政院
+      url: https://zh.wikipedia.org/wiki/資政院
+
+- id: cnp-1911-imperial-cabinet
+  year: 1911
+  title: 皇族內閣成立，立憲派轉向革命
+  category: regime
+  importance: 4
+  desc: 5 月清廷裁撤軍機處成立責任內閣，十三名閣員中滿人九名、皇族七名。立憲派原本期待的政治分權變成皇族集權，各省諮議局的請願落空。同月宣布鐵路幹線國有引發保路運動，四川調兵入川，武昌因此空虛 —— 五個月後革命爆發。
+  sources:
+    - title: 維基百科：慶親王內閣
+      url: https://zh.wikipedia.org/wiki/慶親王內閣
+
+- id: cnp-1911-xinhai
+  year: 1911
+  title: 辛亥革命，帝制終結
+  category: regime
+  importance: 5
+  desc: 10 月 10 日武昌新軍起事，兩個月內十餘省宣告獨立，多由諮議局與立憲派主導。隔年 2 月 12 日清帝退位，實行兩千一百餘年的帝制結束。共和成為中國唯一被公開主張的政體形式，此後所有政權都必須宣稱自己代表人民 —— 爭的不再是誰該當皇帝，而是誰有資格代表人民。
+  sources:
+    - title: 維基百科：辛亥革命
+      url: https://zh.wikipedia.org/wiki/辛亥革命
+
+# ── 北洋政府：共和的形式與軍閥的實質 ──────────────────
+
+- id: cnp-1912-roc-founding
+  year: 1912
+  title: 中華民國成立，《臨時約法》公布
+  category: regime
+  importance: 5
+  desc: 1 月 1 日孫中山就任臨時大總統，3 月公布中華民國臨時約法，採責任內閣制以限制即將接任的袁世凱，同月袁在北京就職。亞洲第一個共和國就此成立，而它的第一部憲法性文件是為了防範特定一個人而設計的 —— 這個「因人設制」的模式在往後一百年反覆出現。
+  sources:
+    - title: 維基百科：中華民國臨時政府
+      url: https://zh.wikipedia.org/wiki/中華民國臨時政府
+    - title: 維基百科：中華民國臨時約法
+      url: https://zh.wikipedia.org/wiki/中華民國臨時約法
+
+- id: cnp-1912-kmt-founded
+  year: 1912
+  title: 同盟會改組為國民黨
+  category: party
+  importance: 5
+  desc: 8 月同盟會聯合統一共和黨等團體改組為國民黨，宋教仁主導，路線從革命團體轉為議會政黨，目標是在國會選舉中取得多數並組織責任內閣。中國第一次出現以贏得選舉為目標的現代政黨。
+  sources:
+    - title: 維基百科：中國國民黨
+      url: https://zh.wikipedia.org/wiki/中國國民黨
+
+- id: cnp-1913-parliament-election
+  year: 1913
+  title: 首屆國會選舉，國民黨獲勝
+  category: election
+  importance: 4
+  desc: 1912 年底至 1913 年初舉行，選舉人須具財產、學歷或納稅資格，登記選民約四千萬人、佔人口約一成。國民黨在參眾兩院均取得最多席次。這是中國歷史上第一次全國性的國會選舉，也是此後三十五年間唯一一次由選舉決定中央權力歸屬的嘗試。
+  sources:
+    - title: 維基百科：中華民國第一屆國會議員選舉
+      url: https://zh.wikipedia.org/wiki/中华民国第一届国会议员选举
+
+- id: cnp-1913-song-assassination
+  year: 1913
+  title: 宋教仁遇刺，二次革命失敗
+  category: repression
+  importance: 5
+  desc: 3 月即將出任內閣總理的宋教仁在上海車站遇刺身亡，線索指向袁世凱政府高層。7 月國民黨發動二次革命，兩個月內失敗，11 月國民黨遭解散、議員資格被取消。中國以選舉和議會決定政權歸屬的第一次嘗試在此結束，往後的政權更迭再度回到武力途徑。
+  sources:
+    - title: 維基百科：宋教仁
+      url: https://zh.wikipedia.org/wiki/宋教仁
+    - title: 維基百科：二次革命
+      url: https://zh.wikipedia.org/wiki/二次革命
+
+- id: cnp-1914-yuan-constitution
+  year: 1914
+  title: 袁世凱解散國會，公布《中華民國約法》
+  category: regime
+  importance: 4
+  desc: 1 月解散國會，5 月公布中華民國約法取代臨時約法，改責任內閣制為總統制，總統任期十年且得無限連任、有權指定繼任人選。共和的形式保留，實質已是終身制。
+  sources:
+    - title: 維基百科：中華民國約法
+      url: https://zh.wikipedia.org/wiki/中华民国约法
+
+- id: cnp-1915-hongxian
+  year: 1915
+  endYear: 1916
+  title: 洪憲帝制與護國戰爭
+  category: regime
+  importance: 5
+  desc: 12 月袁世凱接受推戴稱帝、定隔年為洪憲元年，蔡鍔等在雲南起兵護國，多省響應。袁於 1916 年 3 月取消帝制、6 月去世。帝制復辟的路被徹底堵死，但北洋集團也失去了唯一能統合各方的人 —— 此後十餘年進入實質上的軍閥割據。
+  sources:
+    - title: 維基百科：中華帝國
+      url: https://zh.wikipedia.org/wiki/中華帝國
+    - title: 維基百科：護國戰爭
+      url: https://zh.wikipedia.org/wiki/護國戰爭
+
+- id: cnp-1917-restoration
+  year: 1917
+  title: 張勳復辟，十二天的帝制鬧劇
+  category: regime
+  importance: 3
+  desc: 7 月張勳擁溥儀復位，十二天後被段祺瑞討平。復辟本身無足輕重，後果卻很大：段祺瑞藉此掌權並拒絕恢復國會與臨時約法，孫中山因此南下護法，中國自此出現兩個中央政府。
+  sources:
+    - title: 維基百科：張勳復辟
+      url: https://zh.wikipedia.org/wiki/張勳復辟
+
+- id: cnp-1917-constitution-protection
+  year: 1917
+  endYear: 1922
+  title: 護法運動，廣州軍政府成立
+  category: regime
+  importance: 4
+  desc: 9 月孫中山在廣州組織中華民國軍政府，就任海陸軍大元帥，號召恢復臨時約法與國會。此後十一年中國同時存在北京與廣州兩個宣稱正統的中央政府。**這一欄只畫一條斷代色帶，並不表示當時只有一個政府** —— 理由寫在 periods.yaml。
+  sources:
+    - title: 維基百科：護法運動
+      url: https://zh.wikipedia.org/wiki/護法運動
+
+- id: cnp-1919-may-fourth
+  year: 1919
+  title: 五四運動
+  category: movement
+  importance: 5
+  desc: 5 月 4 日北京學生抗議巴黎和會將德國在山東的權益轉予日本，運動擴及全國並發展為罷課罷市罷工，政府最終拒簽和約。學生與新式知識分子第一次成為獨立的政治力量，而運動中傳播的思潮直接促成了兩年後中國共產黨的成立，也促成了國民黨的改組。
+  sources:
+    - title: 維基百科：五四運動
+      url: https://zh.wikipedia.org/wiki/五四運動
+
+- id: cnp-1919-kmt-renamed
+  year: 1919
+  title: 中華革命黨改組為中國國民黨
+  category: party
+  importance: 4
+  desc: 10 月孫中山將 1914 年成立、要求黨員按指模宣誓效忠個人的中華革命黨改組為中國國民黨，重新走向公開的群眾政黨。這個名稱沿用至今，是這條軸上存續最久的政黨。
+  sources:
+    - title: 維基百科：中華革命黨
+      url: https://zh.wikipedia.org/wiki/中華革命黨
+
+- id: cnp-1921-ccp-founding
+  year: 1921
+  title: 中國共產黨第一次全國代表大會
+  category: party
+  importance: 5
+  desc: 7 月十餘名代表在上海法租界召開一大，會期中途遭巡捕搜查而轉往嘉興南湖續會，通過黨綱並確立以無產階級革命為目標。成立時黨員僅五十餘人。這是這條軸上另一個影響力延續至今的政黨，而它與中國國民黨此後的合作與決裂，構成往後三十年中國政治的主軸。
+  sources:
+    - title: 維基百科：中國共產黨第一次全國代表大會
+      url: https://zh.wikipedia.org/wiki/中国共产党第一次全国代表大会
+
+- id: cnp-1924-first-united-front
+  year: 1924
+  title: 國民黨一大，第一次國共合作
+  category: party
+  importance: 5
+  desc: 1 月中國國民黨第一次全國代表大會在廣州召開，接受共產國際協助改組為列寧式政黨，建立由中央到基層的組織體系，並容許共產黨員以個人身分加入。「以黨領政、以黨領軍」的組織模式自此進入中國，兩個黨往後各自的統治形態都源於這一次改組。
+  sources:
+    - title: 維基百科：中國國民黨第一次全國代表大會
+      url: https://zh.wikipedia.org/wiki/中國國民黨第一次全國代表大會
+    - title: 維基百科：第一次國共合作
+      url: https://zh.wikipedia.org/wiki/第一次国共合作
+
+- id: cnp-1924-whampoa
+  year: 1924
+  title: 黃埔軍校創立，黨軍體制成形
+  category: party
+  importance: 4
+  desc: 6 月在廣州開學，蔣中正任校長，設黨代表與政治部負責思想工作。軍隊隸屬於黨而非國家，這個設計讓國民黨得以在兩年後北伐，也讓軍校出身的人脈成為此後數十年黨政軍的核心。中共同樣從這裡取得了最早的軍事幹部。
+  sources:
+    - title: 維基百科：陸軍軍官學校
+      url: https://zh.wikipedia.org/wiki/陸軍軍官學校
+
+- id: cnp-1925-sun-death
+  year: 1925
+  title: 孫中山逝世，國民黨進入權力重組
+  category: party
+  importance: 4
+  desc: 3 月 12 日孫中山在北京病逝，遺囑要求繼續革命。黨內失去唯一能統合各派的人物，汪精衛、胡漢民與蔣中正之間的競爭隨即展開，兩年後的分裂與清黨都與這場權力重組有關。
+  sources:
+    - title: 維基百科：孫中山
+      url: https://zh.wikipedia.org/wiki/孫中山
+
+- id: cnp-1925-may-thirtieth
+  year: 1925
+  title: 五卅運動，群眾動員全國化
+  category: movement
+  importance: 4
+  desc: 5 月 30 日上海租界巡捕向示威群眾開槍，引發全國性的罷工、罷課、罷市，持續數月。國共兩黨都藉此大幅擴張組織與黨員，工會與農會的群眾基礎在這一年建立起來 —— 隔年的北伐正是踩在這批組織上推進的。
+  sources:
+    - title: 維基百科：五卅運動
+      url: https://zh.wikipedia.org/wiki/五卅运动
+
+- id: cnp-1925-nationalist-government
+  year: 1925
+  title: 廣州國民政府成立
+  category: regime
+  importance: 4
+  desc: 7 月改組大元帥府為國民政府，採委員合議制，並將所屬部隊統一改編為國民革命軍。南方政權從一個以個人為中心的軍政府，變成有正式組織與常備軍的政府 —— 具備了北伐的條件。
+  sources:
+    - title: 維基百科：國民政府
+      url: https://zh.wikipedia.org/wiki/國民政府
+
+- id: cnp-1926-northern-expedition
+  year: 1926
+  endYear: 1928
+  title: 國民革命軍北伐
+  category: war
+  importance: 5
+  desc: 7 月自廣州誓師北上，兩年內擊敗吳佩孚、孫傳芳與張作霖勢力。北伐同時是軍事行動與政治動員，沿途以農會工會配合推進。它終結了北洋政府，也在中途因為對群眾運動的態度分歧而導致國共決裂。
+  sources:
+    - title: 維基百科：國民革命軍北伐
+      url: https://zh.wikipedia.org/wiki/國民革命軍北伐
+
+- id: cnp-1927-purge
+  year: 1927
+  title: 四一二清黨，寧漢分裂
+  category: repression
+  importance: 5
+  desc: 4 月 12 日蔣中正在上海對共產黨員與工會展開清除，隨後在南京另立國民政府，與汪精衛的武漢國民政府對立，7 月武漢方面亦分共。第一次國共合作破裂，兩黨此後二十二年間的敵對關係從這一天開始 —— 而 1949 年的結局，可以說是這一天的直接延長線。
+  sources:
+    - title: 維基百科：四一二事件
+      url: https://zh.wikipedia.org/wiki/四一二事件
+    - title: 維基百科：寧漢分裂
+      url: https://zh.wikipedia.org/wiki/寧漢分裂
+
+- id: cnp-1927-nanchang
+  year: 1927
+  title: 南昌起義，中共開始建立自己的武裝
+  category: war
+  importance: 4
+  desc: 8 月 1 日中共在南昌發動起事，隨後轉入農村建立根據地，同年秋收起義後上井岡山。中共從一個依附於國民黨組織的政黨，變成擁有獨立軍隊與地盤的政權雛形，此後二十二年的對抗因此成為可能。
+  sources:
+    - title: 維基百科：南昌起義
+      url: https://zh.wikipedia.org/wiki/南昌起義
+
+# ── 訓政時期：以黨治國 ──────────────────
+
+- id: cnp-1928-unification
+  year: 1928
+  title: 東北易幟，北伐完成
+  category: regime
+  importance: 4
+  desc: 12 月 29 日張學良通電服從國民政府，全國在形式上統一。實際上各地實力派保有軍隊與財政，中央的號令能否施行仍取決於協商 —— 兩年後的中原大戰就是這個問題的總清算。
+  sources:
+    - title: 維基百科：東北易幟
+      url: https://zh.wikipedia.org/wiki/东北易帜
+
+- id: cnp-1928-tutelage
+  year: 1928
+  title: 訓政綱領公布，中國國民黨代行政權
+  category: regime
+  importance: 5
+  desc: 10 月依孫中山的建國大綱進入訓政時期，由中國國民黨全國代表大會代表國民大會行使政權，中央執行委員會政治會議指導監督國民政府。政權明確歸屬於一個政黨，一黨統治在中國第一次取得了憲政理論上的正當性。訓政原訂六年，實際到 1947 年行憲才結束。
+  sources:
+    - title: 維基百科：國民政府建國大綱
+      url: https://zh.wikipedia.org/wiki/國民政府建國大綱
+
+- id: cnp-1930-central-plains-war
+  year: 1930
+  title: 中原大戰，國民黨內部的武力清算
+  category: war
+  importance: 4
+  desc: 蔣中正與馮玉祥、閻錫山、李宗仁等展開大規模內戰，動員逾百萬人，死傷約三十萬。蔣方勝出，中央的地位確立，但財政與軍力大耗，也給了中共在江西擴張根據地的空間。
+  sources:
+    - title: 維基百科：中原大戰
+      url: https://zh.wikipedia.org/wiki/中原大戰
+
+- id: cnp-1931-tutelage-constitution
+  year: 1931
+  title: 《訓政時期約法》公布
+  category: regime
+  importance: 4
+  desc: 6 月公布，把訓政體制寫成憲法性文件：訓政期間由中國國民黨全國代表大會代表國民大會行使中央統治權。它同時規定了人民的權利義務與五院制的政府架構，是 1947 年憲法之前中國實際適用的最高規範。
+  sources:
+    - title: 維基百科：中華民國訓政時期約法
+      url: https://zh.wikipedia.org/wiki/中华民国训政时期约法
+
+- id: cnp-1931-soviet-republic
+  year: 1931
+  endYear: 1937
+  title: 中華蘇維埃共和國成立，中共建立對抗性政權
+  category: regime
+  importance: 4
+  desc: 11 月在江西瑞金成立，設中央執行委員會，發行貨幣、頒布憲法大綱與土地法。中共第一次以「國家」的形式運作並累積治理經驗，那套制度在十八年後幾乎原樣放大到全國。
+  sources:
+    - title: 維基百科：中華蘇維埃共和國
+      url: https://zh.wikipedia.org/wiki/中华苏维埃共和国
+
+- id: cnp-1931-mukden
+  year: 1931
+  title: 九一八事變，日本佔領東北
+  category: war
+  importance: 5
+  desc: 9 月 18 日日本關東軍炸毀南滿鐵路並進佔瀋陽，四個月內佔領東北全境，隔年扶植滿洲國。國民政府採取不抵抗並訴諸國際聯盟，引發全國性的抗議浪潮。「攘外」與「安內」的優先順序自此成為中國政治最尖銳的爭點，五年後的西安事變就是這場爭論的結果。
+  sources:
+    - title: 維基百科：九一八事變
+      url: https://zh.wikipedia.org/wiki/九一八事變
+
+- id: cnp-1934-long-march
+  year: 1934
+  endYear: 1935
+  title: 長征與遵義會議
+  category: party
+  importance: 5
+  desc: 第五次圍剿之後中共主力撤離江西，一年間轉戰約兩萬五千華里抵達陝北，人員損失逾九成。途中 1935 年 1 月的遵義會議確立了毛澤東在軍事指揮上的領導地位。中共的領導權從共產國際指導下的留蘇派轉到本土派手上，這個轉折決定了此後四十年中國的統治者是誰。
+  sources:
+    - title: 維基百科：長征
+      url: https://zh.wikipedia.org/wiki/长征
+    - title: 維基百科：遵義會議
+      url: https://zh.wikipedia.org/wiki/遵义会议
+
+- id: cnp-1935-december-ninth
+  year: 1935
+  title: 一二九運動，學生要求停止內戰
+  category: movement
+  importance: 3
+  desc: 12 月 9 日北平學生遊行反對華北自治、要求一致抗日，運動迅速擴及全國。輿論壓力使「先安內後攘外」的政策難以維持，也為隔年的西安事變鋪了路。
+  sources:
+    - title: 維基百科：一二九運動
+      url: https://zh.wikipedia.org/wiki/一二·九运动
+
+- id: cnp-1936-xian-incident
+  year: 1936
+  title: 西安事變，兵諫促成第二次國共合作
+  category: regime
+  importance: 5
+  desc: 12 月 12 日張學良、楊虎城在西安扣留蔣中正，要求停止剿共、一致抗日。經多方調停後蔣獲釋，剿共實際上停止。一次軍事政變改變了整個國家的戰略方向，也讓瀕臨覆滅的中共取得喘息與合法地位 —— 十三年後的結局，很大程度上由這十四天決定。
+  sources:
+    - title: 維基百科：西安事變
+      url: https://zh.wikipedia.org/wiki/西安事变
+
+# ── 抗日戰爭 ──────────────────
+
+- id: cnp-1937-war
+  year: 1937
+  endYear: 1945
+  title: 七七事變，抗日戰爭全面爆發
+  category: war
+  importance: 5
+  desc: 7 月 7 日盧溝橋衝突後戰事全面展開，國民政府西遷重慶，戰爭持續八年。政治上的後果是中央權力空前集中於軍事委員會，同時淪陷區與敵後根據地並存，中央對地方的實際控制反而下降。
+  sources:
+    - title: 維基百科：七七事變
+      url: https://zh.wikipedia.org/wiki/七七事变
+
+- id: cnp-1937-second-united-front
+  year: 1937
+  title: 第二次國共合作，紅軍改編為國民革命軍
+  category: party
+  importance: 5
+  desc: 9 月國民政府承認中共的合法地位，紅軍改編為第八路軍與新編第四軍納入國軍序列，陝甘寧改設邊區政府。中共從被剿滅的對象變成合法政黨與合法武裝，得以在敵後公開發展 —— 抗戰八年間黨員從約四萬增至一百二十萬，軍隊從數萬增至近百萬。
+  sources:
+    - title: 維基百科：第二次國共合作
+      url: https://zh.wikipedia.org/wiki/第二次国共合作
+
+- id: cnp-1938-political-council
+  year: 1938
+  title: 國民參政會成立，戰時的準民意機關
+  category: regime
+  importance: 4
+  desc: 7 月成立，參政員由政府遴選，涵蓋各黨派與社會賢達，包括中共與青年黨、國社黨代表。它沒有立法權，只有建議與詢問權，但這是訓政以來各黨派第一次在同一個場合公開議政，戰後的政治協商會議即由此延伸而來。
+  sources:
+    - title: 維基百科：國民參政會
+      url: https://zh.wikipedia.org/wiki/国民参政会
+
+- id: cnp-1940-wang-regime
+  year: 1940
+  endYear: 1945
+  title: 汪精衛在南京另立國民政府
+  category: regime
+  importance: 4
+  desc: 3 月汪精衛在日本支持下於南京成立國民政府，沿用中華民國國號與青天白日滿地紅旗（加黃色標識），宣稱是正統。中國同時存在重慶、南京與延安三個各自運作的政治中心，「誰代表中國」的爭論在戰時達到最複雜的形態。
+  sources:
+    - title: 維基百科：汪精衛政權
+      url: https://zh.wikipedia.org/wiki/汪精卫国民政府
+
+- id: cnp-1941-wannan
+  year: 1941
+  title: 皖南事變，國共合作名存實亡
+  category: repression
+  importance: 4
+  desc: 1 月新四軍軍部在皖南遭國軍圍攻，軍長被俘，國民政府宣布取消新四軍番號，中共隨即自行重建。合作的形式維持到戰爭結束，實質的軍事衝突與地盤爭奪則從未停止。
+  sources:
+    - title: 維基百科：皖南事變
+      url: https://zh.wikipedia.org/wiki/皖南事变
+
+- id: cnp-1945-ccp-seventh
+  year: 1945
+  title: 中共七大，毛澤東思想寫入黨章
+  category: party
+  importance: 5
+  desc: 4 月至 6 月在延安召開，通過的黨章以毛澤東思想為一切工作的指針，確立了毛澤東在黨內不可挑戰的地位。以領導人的思想作為全黨指導原則，這個作法此後被反覆沿用（鄧小平理論、三個代表、科學發展觀、習近平新時代思想），是理解中共權力結構的一把鑰匙。
+  sources:
+    - title: 維基百科：中國共產黨第七次全國代表大會
+      url: https://zh.wikipedia.org/wiki/中国共产党第七次全国代表大会
+
+- id: cnp-1945-chongqing-talks
+  year: 1945
+  title: 重慶談判與雙十協定
+  category: regime
+  importance: 4
+  desc: 8 月至 10 月毛澤東赴重慶與蔣中正會談，簽署雙十會談紀要，同意和平建國、召開政治協商會議、避免內戰，但軍隊與解放區的歸屬未能解決。這是兩黨領導人唯一一次面對面談判，也是內戰爆發前最後一次可能避免它的機會。
+  sources:
+    - title: 維基百科：重慶談判
+      url: https://zh.wikipedia.org/wiki/重慶談判
+
+# ── 行憲與內戰 ──────────────────
+
+- id: cnp-1946-pcc
+  year: 1946
+  title: 政治協商會議召開，隨即破局
+  category: regime
+  importance: 4
+  desc: 1 月在重慶召開，國民黨、共產黨、民主同盟、青年黨與無黨派人士共三十八名代表出席，通過政府組織、施政綱領、軍事、國民大會與憲法草案五項決議，主張改組為聯合政府並實行內閣制。決議在後續執行中破裂，內戰全面爆發。這是中國最後一次由多個政黨共同協商政體的嘗試。
+  sources:
+    - title: 維基百科：政治協商會議
+      url: https://zh.wikipedia.org/wiki/政治协商会议
+
+- id: cnp-1946-constitution
+  year: 1946
+  title: 制憲國民大會通過《中華民國憲法》
+  category: regime
+  importance: 5
+  desc: 11 月至 12 月制憲國民大會在南京召開，中共與民主同盟拒絕出席，12 月 25 日通過憲法，採五權分立與修正式內閣制。這部憲法隔年施行，至今仍是中華民國的根本大法 —— 只是它真正完整運作的地方，最後是台灣。
+  sources:
+    - title: 維基百科：中華民國憲法
+      url: https://zh.wikipedia.org/wiki/中華民國憲法
+
+- id: cnp-1947-constitution-effective
+  year: 1947
+  title: 行憲，訓政時期結束
+  category: regime
+  importance: 5
+  desc: 12 月 25 日憲法施行，訓政時期結束、進入憲政時期，同年底舉行行憲後第一屆國民大會代表選舉。一黨代行政權在法律上結束了 —— 但同一時間內戰正在擴大，而不到半年後臨時條款就把憲法對權力的限制凍結了大半。
+  sources:
+    - title: 維基百科：行憲
+      url: https://zh.wikipedia.org/wiki/行憲
+    - title: 維基百科：1947年中華民國國民大會代表選舉
+      url: https://zh.wikipedia.org/wiki/1947年中華民國國民大會代表選舉
+
+- id: cnp-1948-temporary-provisions
+  year: 1948
+  title: 動員戡亂時期臨時條款公布
+  category: regime
+  importance: 5
+  desc: 5 月 10 日與行憲後首任總統就職同日施行，授權總統為緊急處分不受憲法程序限制。憲法施行未滿五個月即被凌駕其上的條款架空。這部條款隨政府遷台，在台灣一直施行到 1991 年，是威權體制最核心的法源。
+  sources:
+    - title: 維基百科：動員戡亂時期臨時條款
+      url: https://zh.wikipedia.org/wiki/動員戡亂時期臨時條款
+
+- id: cnp-1948-presidential-election
+  year: 1948
+  title: 行憲後首任總統選舉
+  category: election
+  importance: 4
+  desc: 4 月國民大會選出蔣中正為總統，副總統經四輪投票由李宗仁勝出。副總統選舉的結果違背黨中央屬意，是這套制度下唯一一次選舉真正產生了非預期的人選。
+  sources:
+    - title: 維基百科：1948年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/1948年中華民國總統選舉
+
+# ── 毛澤東時期 ──────────────────
+
+- id: cnp-1949-prc-founding
+  year: 1949
+  title: 中華人民共和國成立，《共同綱領》為臨時憲法
+  category: regime
+  importance: 5
+  desc: 9 月中國人民政治協商會議第一屆全體會議通過共同綱領，作為建國初期的臨時憲法，10 月 1 日中華人民共和國成立。政體定為人民民主專政、實行中國共產黨領導的多黨合作與政治協商制度。在這條軸上，同一年中華民國搬到了左邊那一欄，兩欄的斷代色帶在同一條 y 上一起換色。
+  sources:
+    - title: 維基百科：中華人民共和國開國大典
+      url: https://zh.wikipedia.org/wiki/中華人民共和國開國大典
+    - title: 維基百科：中國人民政治協商會議共同綱領
+      url: https://zh.wikipedia.org/wiki/中国人民政治协商会议共同纲领
+
+- id: cnp-1950-land-reform
+  year: 1950
+  endYear: 1953
+  title: 土地改革運動，農村權力結構重組
+  category: regime
+  importance: 4
+  desc: 6 月公布土地改革法，在新解放區沒收地主土地分配給農民，並以劃分階級成分、群眾批鬥的方式進行。地主階層作為一個社會群體消失，農村的權力全面轉入黨的基層組織手中 —— 這是新政權真正建立起對基層控制的過程，土地只是其中一環。
+  sources:
+    - title: 維基百科：土地改革運動
+      url: https://zh.wikipedia.org/wiki/土地改革運動
+
+- id: cnp-1951-counterrevolutionaries
+  year: 1951
+  endYear: 1953
+  title: 鎮壓反革命運動
+  category: repression
+  importance: 4
+  desc: 針對前政權軍政人員、會道門與地方勢力展開清查與處決，官方後來公布的處決人數約七十餘萬，另有大量判刑與管制。新政權在最短時間內清除了有組織的潛在反對力量，也建立了往後歷次運動的基本作法：定指標、下任務、群眾檢舉、公開處置。
+  sources:
+    - title: 維基百科：鎮壓反革命運動
+      url: https://zh.wikipedia.org/wiki/镇压反革命运动
+
+- id: cnp-1952-three-five-anti
+  year: 1952
+  title: 三反五反運動
+  category: repression
+  importance: 3
+  desc: 針對黨政幹部的貪污浪費官僚主義與針對私營工商業者的行賄偷稅等行為展開清查。運動之後民族資本家的社會地位與經濟能力大幅削弱，為隔年開始的社會主義改造清了路。
+  sources:
+    - title: 維基百科：三反五反
+      url: https://zh.wikipedia.org/wiki/三反五反运动
+
+- id: cnp-1954-constitution
+  year: 1954
+  title: 第一部憲法公布，人民代表大會制確立
+  category: regime
+  importance: 5
+  desc: 9 月第一屆全國人民代表大會通過中華人民共和國憲法，確立全國人民代表大會為最高國家權力機關，代表由下而上逐級間接選舉產生，並設國家主席。共同綱領時期的多黨協商形式讓位給單一的權力體系，中共的領導地位寫進了憲法序言。這套架構沿用至今。
+  sources:
+    - title: 維基百科：中華人民共和國憲法
+      url: https://zh.wikipedia.org/wiki/中华人民共和国宪法
+    - title: 維基百科：全國人民代表大會
+      url: https://zh.wikipedia.org/wiki/全国人民代表大会
+
+- id: cnp-1954-gao-rao
+  year: 1954
+  title: 高崗饒漱石事件，建政後首次高層清洗
+  category: party
+  importance: 3
+  desc: 政治局委員高崗與中央組織部長饒漱石被指控進行分裂黨的活動，遭撤職並開除黨籍，高崗自殺。這是建政後第一起最高層級的權力鬥爭，也確立了黨內處理路線分歧的方式 —— 不是表決，而是定性、批判與清除。
+  sources:
+    - title: 維基百科：高饒事件
+      url: https://zh.wikipedia.org/wiki/高岗饶漱石事件
+
+- id: cnp-1956-eighth-congress
+  year: 1956
+  title: 中共八大，一度取消個人崇拜的表述
+  category: party
+  importance: 3
+  desc: 9 月召開，黨章刪去七大關於毛澤東思想的提法，並提出主要矛盾已是人民日益增長的需要與落後生產力之間的矛盾、大規模階級鬥爭已基本結束。這條路線一年後被反右運動推翻，直到 1978 年三中全會才重新回到類似的判斷。
+  sources:
+    - title: 維基百科：中國共產黨第八次全國代表大會
+      url: https://zh.wikipedia.org/wiki/中国共产党第八次全国代表大会
+
+- id: cnp-1957-anti-rightist
+  year: 1957
+  title: 百花齊放與反右運動
+  category: repression
+  importance: 5
+  desc: 年初以「百花齊放、百家爭鳴」號召黨外人士提意見，6 月起轉為反右，官方認定的右派逾五十五萬人，遭撤職、勞動教養或下放。1978 年後絕大多數獲得改正。知識分子與民主黨派此後不再有公開表達異議的空間，黨內也失去了糾錯的機制 —— 隔年大躍進推行時沒有人敢說話，與此直接相關。
+  sources:
+    - title: 維基百科：反右運動
+      url: https://zh.wikipedia.org/wiki/反右運動
+    - title: 維基百科：百花齊放、百家爭鳴
+      url: https://zh.wikipedia.org/wiki/百花齐放、百家争鸣
+
+- id: cnp-1958-great-leap
+  year: 1958
+  endYear: 1962
+  title: 大躍進與人民公社
+  category: regime
+  importance: 5
+  desc: 推動全民大煉鋼與農村人民公社化，公社集生產、行政與軍事於一體，是基層政權與經濟組織的合一。虛報產量導致徵購過度，隨後發生大規模饑荒，非正常死亡人數各方估計差距極大，從官方學者的一千餘萬到境外研究的三千餘萬不等，至今無定論。
+  sources:
+    - title: 維基百科：大躍進
+      url: https://zh.wikipedia.org/wiki/大躍進
+    - title: 維基百科：三年困難時期
+      url: https://zh.wikipedia.org/wiki/三年困難時期
+
+- id: cnp-1959-lushan
+  year: 1959
+  title: 廬山會議，彭德懷被定為反黨集團
+  category: party
+  importance: 4
+  desc: 7 月國防部長彭德懷上書指出大躍進的問題，會議隨即從糾左轉為反右傾，彭等人被定性為反黨集團並撤職。黨內最後一個公開提出異議的高層被清除，糾正政策的可能就此關閉，饑荒因而延長。
+  sources:
+    - title: 維基百科：廬山會議 (1959年)
+      url: https://zh.wikipedia.org/wiki/廬山會議_(1959年)
+
+- id: cnp-1962-seven-thousand
+  year: 1962
+  title: 七千人大會，路線分歧浮上檯面
+  category: party
+  importance: 3
+  desc: 1 月召開擴大的中央工作會議，與會者逾七千人，總結大躍進的錯誤，毛澤東作自我批評，劉少奇、鄧小平等隨後主導調整政策。權力核心第一次出現實質的分工與分歧，四年後的文革在很大程度上是對這次會議結果的反撲。
+  sources:
+    - title: 維基百科：七千人大會
+      url: https://zh.wikipedia.org/wiki/七千人大会
+
+- id: cnp-1966-cultural-revolution
+  year: 1966
+  endYear: 1976
+  title: 文化大革命
+  category: repression
+  importance: 5
+  desc: 5 月起以「防止資本主義復辟」為名發動，紅衛兵運動、奪權與各級黨政機關癱瘓並行，國家主席劉少奇 1968 年被永遠開除黨籍、隔年病逝。1981 年中共中央的歷史決議定性為「使黨、國家和人民遭到建國以來最嚴重挫折和損失的內亂」。受衝擊人數與死亡人數至今沒有官方統計。
+  sources:
+    - title: 維基百科：文化大革命
+      url: https://zh.wikipedia.org/wiki/文化大革命
+    - title: 維基百科：劉少奇
+      url: https://zh.wikipedia.org/wiki/刘少奇
+
+- id: cnp-1969-ninth-congress
+  year: 1969
+  title: 中共九大，林彪的接班人地位寫入黨章
+  category: party
+  importance: 3
+  desc: 4 月召開，黨章明定林彪是毛澤東同志的親密戰友和接班人。以黨章指定接班人是這套體制中絕無僅有的一次，兩年後即以最難堪的方式收場。
+  sources:
+    - title: 維基百科：中國共產黨第九次全國代表大會
+      url: https://zh.wikipedia.org/wiki/中国共产党第九次全国代表大会
+
+- id: cnp-1971-lin-biao
+  year: 1971
+  title: 九一三事件，林彪出走墜機
+  category: party
+  importance: 4
+  desc: 9 月 13 日林彪一家所乘飛機在蒙古溫都爾汗墜毀。寫進黨章的接班人叛逃，對文革的正當性造成難以修補的打擊，社會上普遍的信念動搖從這一年開始，也讓周恩來得以在其後主持部分政策調整。
+  sources:
+    - title: 維基百科：九一三事件
+      url: https://zh.wikipedia.org/wiki/九一三事件
+
+- id: cnp-1971-un-seat
+  year: 1971
+  title: 取得聯合國中國代表權
+  category: regime
+  importance: 5
+  desc: 10 月 25 日聯合國大會通過第 2758 號決議，承認中華人民共和國政府的代表為中國在聯合國的唯一合法代表，並驅逐蔣介石的代表。「誰代表中國」這場自 1949 年起的爭奪在國際組織層面定案，此後各國陸續轉向承認北京。這一則與台灣欄同一年的那一則是同一件事的兩面。
+  sources:
+    - title: 維基百科：聯合國大會第2758號決議
+      url: https://zh.wikipedia.org/wiki/聯合國大會第2758號決議
+
+- id: cnp-1972-nixon
+  year: 1972
+  title: 尼克森訪華，《上海公報》
+  category: regime
+  importance: 5
+  desc: 2 月美國總統尼克森訪問中國，會後發表上海公報，美方表示「認識到」台灣海峽兩邊的中國人都認為只有一個中國、台灣是中國的一部分，對此不表異議。同年 9 月日本與中國建交。往後五十年美中台三方的所有爭論，用的都是這份公報留下的措辭。
+  sources:
+    - title: 維基百科：1972年尼克松訪華
+      url: https://zh.wikipedia.org/wiki/1972年尼克松訪華
+    - title: 維基百科：中日聯合聲明
+      url: https://zh.wikipedia.org/wiki/中日聯合聲明
+
+- id: cnp-1976-april-fifth
+  year: 1976
+  title: 四五運動，群眾自發的政治表態
+  category: movement
+  importance: 3
+  desc: 4 月清明期間民眾聚集天安門廣場悼念周恩來並含蓄批評當權者，遭定性為反革命事件並清場，鄧小平被撤除全部職務。這是建政後第一次大規模的自發性群眾政治行動，1978 年獲得平反。
+  sources:
+    - title: 維基百科：四五運動
+      url: https://zh.wikipedia.org/wiki/四五运动
+
+- id: cnp-1976-mao-death
+  year: 1976
+  title: 毛澤東逝世，四人幫被捕，文革結束
+  category: party
+  importance: 5
+  desc: 9 月 9 日毛澤東逝世，10 月華國鋒與葉劍英等拘捕江青等四人，文化大革命結束。權力交接以政變的方式完成，這也說明了這套體制在當時還沒有任何和平轉移權力的程序 —— 建立那套程序是往後十幾年的主要工作之一。
+  sources:
+    - title: 維基百科：四人幫
+      url: https://zh.wikipedia.org/wiki/四人幫
+
+# ── 改革開放 ──────────────────
+
+- id: cnp-1977-two-whatevers
+  year: 1977
+  title: 兩個凡是與華國鋒的過渡
+  category: regime
+  importance: 3
+  desc: 華國鋒提出凡是毛主席作出的決策都堅決維護、凡是毛主席的指示都始終不渝地遵循，以繼承的正當性維持地位。隔年的真理標準討論直接針對這個說法，路線之爭的結果決定了三中全會的走向。
+  sources:
+    - title: 維基百科：兩個凡是
+      url: https://zh.wikipedia.org/wiki/两个凡是
+    - title: 維基百科：華國鋒
+      url: https://zh.wikipedia.org/wiki/华国锋
+
+- id: cnp-1978-third-plenum
+  year: 1978
+  title: 十一屆三中全會，改革開放路線確立
+  category: regime
+  importance: 5
+  desc: 12 月召開，停止以階級鬥爭為綱、把工作重點轉向現代化建設，並提出健全社會主義民主與法制。鄧小平取得實際領導地位。**經濟鬆綁與政治體制不變是同一個決定的兩面**：三中全會同時確立了改革，也確立了改革不觸及黨的領導地位，這條界線在 1989 年被明確地劃出來。
+  sources:
+    - title: 維基百科：中國共產黨第十一屆中央委員會第三次全體會議
+      url: https://zh.wikipedia.org/wiki/中国共产党第十一届中央委员会第三次全体会议
+    - title: 維基百科：改革開放
+      url: https://zh.wikipedia.org/wiki/改革開放
+
+- id: cnp-1979-taiwan-message
+  year: 1979
+  title: 《告台灣同胞書》，中美建交
+  category: regime
+  importance: 5
+  desc: 1 月 1 日美國與中華人民共和國建交，同日全國人大常委會發表告台灣同胞書，宣告停止對金門砲擊，提出通航通郵通商與和平統一，取代此前的武力解放主張。對台政策從解放改為和平統一，而具體方案在五年後定名為一國兩制。
+  sources:
+    - title: 維基百科：告台灣同胞書
+      url: https://zh.wikipedia.org/wiki/告台湾同胞书
+    - title: 維基百科：中美建交
+      url: https://zh.wikipedia.org/wiki/中美建交谈判
+
+- id: cnp-1979-democracy-wall
+  year: 1979
+  title: 西單民主牆與魏京生被捕
+  category: movement
+  importance: 4
+  desc: 1978 年底起北京西單牆出現大量大字報討論政治改革，魏京生張貼〈第五個現代化〉主張民主。1979 年 3 月魏京生被捕判刑十五年，年底民主牆被取締，「四大」（大鳴大放大字報大辯論）隨後從憲法中刪除。改革的邊界第一次被明確劃出：經濟可以放，政治不行。
+  sources:
+    - title: 維基百科：西單民主牆
+      url: https://zh.wikipedia.org/wiki/西单民主墙
+
+- id: cnp-1981-historical-resolution
+  year: 1981
+  title: 《關於建國以來黨的若干歷史問題的決議》
+  category: party
+  importance: 4
+  desc: 6 月十一屆六中全會通過，定性文化大革命為內亂，同時維持對毛澤東的整體肯定（功績是主要的，錯誤是第二位的）。這份決議確立了此後四十年官方歷史敘述的框架，也讓黨得以否定一段歷史而不否定自己的正當性。
+  sources:
+    - title: 維基百科：關於建國以來黨的若干歷史問題的決議
+      url: https://zh.wikipedia.org/wiki/关于建国以来党的若干历史问题的决议
+
+- id: cnp-1982-constitution
+  year: 1982
+  title: 1982 年憲法，廢除領導職務終身制
+  category: regime
+  importance: 5
+  desc: 12 月通過現行憲法，恢復國家主席、規定國家主席與總理等職務連續任職不得超過兩屆，並廢除人民公社。針對的正是文革的教訓 —— 個人長期掌權且無程序可換人。任期限制此後成為權力交接制度化的基礎，一直到 2018 年被取消。
+  sources:
+    - title: 維基百科：中華人民共和國憲法
+      url: https://zh.wikipedia.org/wiki/中华人民共和国宪法
+
+- id: cnp-1984-one-country-two-systems
+  year: 1984
+  title: 一國兩制成形，《中英聯合聲明》簽署
+  category: regime
+  importance: 4
+  desc: 12 月中英簽署聯合聲明，確定 1997 年香港主權移交，並承諾現行制度五十年不變。鄧小平提出的一國兩制構想最初是為台灣設計的，先在香港落地。此後四十年，香港的實施狀況一直是台灣評估這個方案的主要參照。
+  sources:
+    - title: 維基百科：一國兩制
+      url: https://zh.wikipedia.org/wiki/一国两制
+    - title: 維基百科：中英聯合聲明
+      url: https://zh.wikipedia.org/wiki/中英聯合聲明
+
+- id: cnp-1987-hu-yaobang
+  year: 1987
+  title: 胡耀邦下台，中共十三大提出政治體制改革
+  category: party
+  importance: 4
+  desc: 1 月總書記胡耀邦因對學潮處置不力被迫辭職，由趙紫陽接任；10 月十三大提出黨政分開與政治體制改革方案。兩年後胡耀邦逝世成為六四的導火線，而十三大的政改方案也在同一年停止推行。
+  sources:
+    - title: 維基百科：胡耀邦
+      url: https://zh.wikipedia.org/wiki/胡耀邦
+    - title: 維基百科：中國共產黨第十三次全國代表大會
+      url: https://zh.wikipedia.org/wiki/中国共产党第十三次全国代表大会
+
+- id: cnp-1989-tiananmen
+  year: 1989
+  title: 六四事件，趙紫陽下台，江澤民接任總書記
+  category: repression
+  importance: 5
+  desc: 4 月胡耀邦逝世引發學生悼念與抗議，發展為持續數週的大規模示威；5 月 20 日北京部分地區戒嚴，6 月 3 日晚至 4 日軍隊進入市區清場。死亡人數各方估計差距極大，中國官方未公布完整名單。總書記趙紫陽因反對戒嚴被撤職並軟禁至死，江澤民接任。1978 年畫下的那條界線在這一年以最明確的方式執行，此後三十餘年政治體制改革不再列入議程。
+  sources:
+    - title: 維基百科：六四事件
+      url: https://zh.wikipedia.org/wiki/六四事件
+    - title: 維基百科：趙紫陽
+      url: https://zh.wikipedia.org/wiki/赵紫阳
+
+- id: cnp-1992-southern-tour
+  year: 1992
+  title: 鄧小平南巡，中共十四大確立社會主義市場經濟
+  category: regime
+  importance: 5
+  desc: 年初鄧小平視察南方並發表談話，主張改革不能停；10 月十四大確立社會主義市場經濟體制為改革目標，並確認江澤民為核心的領導集體。六四之後停滯的改革重新啟動，路線就此定型：經濟持續開放、政治體制維持不變。這個組合往後三十年沒有再變過。
+  sources:
+    - title: 維基百科：鄧小平南巡
+      url: https://zh.wikipedia.org/wiki/鄧小平南巡
+    - title: 維基百科：中國共產黨第十四次全國代表大會
+      url: https://zh.wikipedia.org/wiki/中国共产党第十四次全国代表大会
+
+# ── 江胡時期：接班制度化 ──────────────────
+
+- id: cnp-1993-koo-wang
+  year: 1993
+  title: 辜汪會談，兩岸首次制度化協商
+  category: regime
+  importance: 4
+  desc: 4 月海協會會長汪道涵與海基會董事長辜振甫在新加坡會談並簽署四項協議。雙方以授權的民間機構處理事務性議題，繞開了主權承認的問題。這個模式在此後三十年反覆使用，也反覆因為政治情勢而中斷。
+  sources:
+    - title: 維基百科：辜汪會談
+      url: https://zh.wikipedia.org/wiki/辜汪會談
+    - title: 維基百科：九二共識
+      url: https://zh.wikipedia.org/wiki/九二共識
+
+- id: cnp-1995-missile-crisis
+  year: 1995
+  endYear: 1996
+  title: 台灣海峽飛彈危機
+  category: war
+  importance: 4
+  desc: 因李登輝訪美，中國人民解放軍自 1995 年 7 月起多次在台灣海峽進行飛彈試射與軍事演習，1996 年 3 月台灣首次總統直選前夕再度演習，美國派遣兩個航空母艦戰鬥群前往。武力展示未能影響選舉結果，此後對台策略轉向經濟與社會層面的接觸。
+  sources:
+    - title: 維基百科：台灣海峽飛彈危機
+      url: https://zh.wikipedia.org/wiki/台灣海峽飛彈危機
+
+- id: cnp-1997-hk-handover
+  year: 1997
+  title: 鄧小平逝世，香港主權移交
+  category: regime
+  importance: 5
+  desc: 2 月鄧小平逝世，7 月 1 日香港主權移交並成立特別行政區，實施基本法，一國兩制第一次進入實作。1999 年澳門比照辦理。台灣此後對這個方案的評估，主要看的就是香港實際上發生了什麼。
+  sources:
+    - title: 維基百科：香港回歸
+      url: https://zh.wikipedia.org/wiki/香港回歸
+    - title: 維基百科：澳門回歸
+      url: https://zh.wikipedia.org/wiki/澳門回歸
+
+- id: cnp-2002-sixteenth-congress
+  year: 2002
+  endYear: 2003
+  title: 中共十六大，胡錦濤接班，三個代表入黨章
+  category: party
+  importance: 5
+  desc: 11 月十六大把三個代表重要思想寫入黨章，並由胡錦濤接任總書記，隔年出任國家主席。這是中共建政以來第一次在領導人在世、未發生政治鬥爭的情況下完成最高權力的交接。任期限制加上這次示範，讓「兩屆十年」在此後十年被普遍當成既定規則。
+  sources:
+    - title: 維基百科：中國共產黨第十六次全國代表大會
+      url: https://zh.wikipedia.org/wiki/中国共产党第十六次全国代表大会
+    - title: 維基百科：胡錦濤
+      url: https://zh.wikipedia.org/wiki/胡锦涛
+
+- id: cnp-2005-anti-secession
+  year: 2005
+  title: 通過《反分裂國家法》，連戰訪中
+  category: regime
+  importance: 5
+  desc: 3 月全國人大通過反分裂國家法，明定在台灣從中國分裂出去、發生將會導致分裂的重大事變、或和平統一的可能性完全喪失三種情形下，得採取非和平方式。4 月中國國民黨主席連戰訪中並與胡錦濤會面，是 1945 年重慶談判以來兩黨領導人首次會晤。同一年裡武力選項被寫進法律，而政黨對政黨的溝通管道同時建立起來 —— 硬法與軟交流兩手並行，是此後二十年對台政策的基本形態。
+  sources:
+    - title: 維基百科：反分裂國家法
+      url: https://zh.wikipedia.org/wiki/反分裂國家法
+    - title: 維基百科：連戰
+      url: https://zh.wikipedia.org/wiki/連戰
+
+- id: cnp-2008-three-links
+  year: 2008
+  title: 兩岸大三通，協商全面恢復
+  category: regime
+  importance: 3
+  desc: 台灣二次政黨輪替後兩會恢復協商，同年底實現海運直航、空運直航與直接通郵，1979 年告台灣同胞書提出的三通歷時二十九年落實。此後六年兩岸簽署二十餘項協議，往來密度達到 1949 年以來的高點。
+  sources:
+    - title: 維基百科：三通
+      url: https://zh.wikipedia.org/wiki/三通
+
+- id: cnp-2012-bo-xilai
+  year: 2012
+  title: 薄熙來事件，中共十八大習近平接任總書記
+  category: party
+  importance: 5
+  desc: 3 月政治局委員薄熙來被免職並移送司法，是十八大前最重大的高層變動；11 月十八大習近平接任總書記，隔年出任國家主席。這是第二次依循「兩屆十年」的交接，當時被普遍視為制度化已經完成 —— 六年後的修憲推翻了這個判斷。
+  sources:
+    - title: 維基百科：薄熙來
+      url: https://zh.wikipedia.org/wiki/薄熙来
+    - title: 維基百科：中國共產黨第十八次全國代表大會
+      url: https://zh.wikipedia.org/wiki/中国共产党第十八次全国代表大会
+
+# ── 習近平時期 ──────────────────
+
+- id: cnp-2013-anti-corruption
+  year: 2013
+  title: 反腐運動展開，權力重新集中
+  category: repression
+  importance: 4
+  desc: 中央紀律檢查委員會主導的查處大幅擴大，多名前政治局常委級與軍委副主席級官員落馬，同時設立多個由總書記親自主持的中央領導小組。反腐同時是清理吏治與重整權力結構的手段，此後決策權從國務院系統向黨的機構集中。
+  sources:
+    - title: 維基百科：習近平
+      url: https://zh.wikipedia.org/wiki/習近平
+
+- id: cnp-2015-ma-xi-meeting
+  year: 2015
+  title: 馬習會，兩岸領導人首次會晤
+  category: regime
+  importance: 5
+  desc: 11 月 7 日習近平與馬英九在新加坡會面，雙方以「先生」互稱以迴避官方頭銜的爭議。這是 1949 年分治以來兩岸最高領導人第一次見面，形式上刻意繞開了任何一方對主權的主張。兩個月後台灣政黨輪替，官方協商隨即中斷。
+  sources:
+    - title: 維基百科：馬習會
+      url: https://zh.wikipedia.org/wiki/馬習會
+
+- id: cnp-2018-term-limits
+  year: 2018
+  title: 修憲取消國家主席任期限制
+  category: regime
+  importance: 5
+  desc: 3 月全國人大通過憲法修正案，刪去國家主席副主席連續任職不得超過兩屆的規定，並將中國共產黨領導寫入憲法正文第一條。1982 年為防止個人長期掌權而設的限制被移除，1990 年代以來逐步建立的任期交接慣例失去憲法依據。
+  sources:
+    - title: 維基百科：中華人民共和國憲法修正案
+      url: https://zh.wikipedia.org/wiki/中华人民共和国宪法修正案
+
+- id: cnp-2019-two-systems-taiwan
+  year: 2019
+  title: 提出一國兩制台灣方案
+  category: regime
+  importance: 4
+  desc: 1 月 2 日習近平在告台灣同胞書發表四十週年的紀念會上提出探索一國兩制台灣方案，並表示不承諾放棄使用武力。台灣朝野普遍表態反對，同年香港爆發反送中運動，兩件事共同影響了隔年的台灣總統選舉。
+  sources:
+    - title: 維基百科：告台灣同胞書
+      url: https://zh.wikipedia.org/wiki/告台湾同胞书
+
+- id: cnp-2019-hk-nsl
+  year: 2019
+  endYear: 2020
+  title: 香港反送中運動與《港區國安法》
+  category: repression
+  importance: 5
+  desc: 2019 年 6 月起香港爆發反對逃犯條例修訂的大規模抗爭，持續逾半年；2020 年 6 月 30 日全國人大常委會制定港區國家安全法並列入基本法附件三直接實施，其後選舉制度改為「愛國者治港」。一國兩制在香港的實際運作方式改變，也讓這個方案在台灣的說服力大幅下降。
+  sources:
+    - title: 維基百科：反對逃犯條例修訂草案運動
+      url: https://zh.wikipedia.org/wiki/反對逃犯條例修訂草案運動
+    - title: 維基百科：中華人民共和國香港特別行政區維護國家安全法
+      url: https://zh.wikipedia.org/wiki/中華人民共和國香港特別行政區維護國家安全法
+
+- id: cnp-2022-twentieth-congress
+  year: 2022
+  title: 中共二十大，習近平三連任總書記
+  category: party
+  importance: 5
+  desc: 10 月二十大習近平連任總書記，政治局常委全數為其任內拔擢者，此前的年齡與屆數慣例不再適用。1982 年憲法與 2002 年交接建立起來的權力交接制度化，到此完整逆轉。
+  sources:
+    - title: 維基百科：中國共產黨第二十次全國代表大會
+      url: https://zh.wikipedia.org/wiki/中国共产党第二十次全国代表大会
+
+- id: cnp-2024-drills
+  year: 2024
+  title: 台灣新任總統就職後解放軍圍台演習
+  category: war
+  importance: 3
+  desc: 5 月賴清德就職三天後，解放軍在台灣周邊實施聯合演習，10 月再度演習。以軍事演習回應台灣的選舉結果與領導人談話，自 2022 年起成為常態化的手段，與 1995 年那一次的差別在於頻率與距離。
+  sources:
+    - title: 維基百科：2024年5月環台軍事演練
+      url: https://zh.wikipedia.org/wiki/2024年5月環台軍事演練
