@@ -2,6 +2,20 @@
 #
 # ⚠️ 多主題機制的驗證用種子資料，尚未走完 README 的完整查證流程。
 
+- id: badouzi-1876-coal-railway
+  year: 1876
+  title: 八斗子運煤軌道，台灣最早的鐵道
+  category: construction
+  importance: 5
+  desc: 沈葆楨開辦的基隆八斗子官營煤礦是台灣第一個官營礦場，也是亞洲第二座現代化煤礦，主井深九十公尺，由英國工程師摩利臣規劃了一條從礦場通到港口的輕便軌道。目前可知這是台灣最早興建的鐵道，比劉銘傳的台灣鐵路早十一年，只是最初用的是獸力，要到 1888 年才引進德製蒸汽機車。同一時期福建巡撫丁日昌另有一條安平到打狗的鐵路計畫，還把拆下來的吳淞鐵路鐵軌運來台灣，最後因經費不足停擺，鐵軌在安平港露天堆到生鏽，1883 年又運回上海。
+  sources:
+    - title: 維基百科：臺灣鐵道史
+      url: https://zh.wikipedia.org/wiki/臺灣鐵道史
+    - title: 維基百科：台灣煤礦
+      url: https://zh.wikipedia.org/wiki/台灣煤礦
+    - title: 維基百科：八斗子
+      url: https://zh.wikipedia.org/wiki/八斗子
+
 - id: alishan-1906-fujita
   year: 1906
   title: 藤田組動工興建阿里山鐵道，兩年後因財力不支中止
@@ -97,6 +111,19 @@
     - title: 維基百科：集集線
       url: https://zh.wikipedia.org/wiki/集集線
 
+- id: luodong-1924-forest-railway
+  year: 1924
+  endYear: 1979
+  title: 羅東森林鐵路通車，林鐵兼辦客運五十五年
+  category: opening
+  importance: 3
+  desc: 連接太平山林場與羅東貯木池的平地段鐵道，在土場接下山上索道運來的原木，運到竹林。它同時兼辦一般客運，是宜蘭山區居民出入的交通工具，這一點與純運材的林場線不同。1979 年 8 月結束營運，山上的林場線兩年後也全部停駛。它比阿里山林鐵短、名氣也小，卻是台灣少數真正載人的林業鐵道。
+  sources:
+    - title: 維基百科：羅東森林鐵路
+      url: https://zh.wikipedia.org/wiki/羅東森林鐵路
+    - title: 維基百科：太平山森林鐵路
+      url: https://zh.wikipedia.org/wiki/太平山森林鐵路
+
 - id: pingxi-1929-acquired
   year: 1929
   title: 總督府鐵道部收購石底線
@@ -144,7 +171,7 @@
   title: 阿里山林場停止伐木，鐵路轉型觀光路線
   category: closure
   importance: 4
-  desc: 隨著森林資源枯竭與保育意識抬頭，阿里山林場伐木作業陸續停止，1978年林場專用路線停駛，鐵路的運材任務走入歷史。此後鐵路逐漸轉型為純粹服務旅客的觀光鐵道，1982年阿里山公路通車後，鐵路客運業績更是大幅萎縮。
+  desc: 隨著森林資源枯竭與保育意識抬頭，阿里山1963年已停止砍伐天然林，伐木作業陸續收尾，1978年林場專用路線全部停駛，鐵路的運材任務走入歷史。此後鐵路逐漸轉型為純粹服務旅客的觀光鐵道，1982年阿里山公路通車後，鐵路客運業績更是大幅萎縮。
   sources:
     - title: 維基百科：阿里山林業鐵路
       url: https://zh.wikipedia.org/wiki/阿里山林業鐵路
@@ -169,6 +196,16 @@
     - title: 維基百科：阿里山林業鐵路
       url: https://zh.wikipedia.org/wiki/阿里山林業鐵路
 
+- id: salt-1995-railway-end
+  year: 1995
+  title: 鹽業鐵路走入歷史，三大產業鐵道剩兩支
+  category: closure
+  importance: 3
+  desc: 糖、林、鹽是台灣的三大產業鐵道。鹽鐵負責把鹽場裡的鹽搬運集中，多數路段與糖鐵相連，轉運後走台鐵運到高雄港出口；戰後初期鹽場還沒有自來水管線、公路也不普及時，它同時載水與載鹽工。公路運輸取代之後，1987 年七股鹽場的鐵路先被拆除，1995 年 8 月布袋鹽場鹽鐵停駛，這一支就此消失，只留下一些遺蹟。
+  sources:
+    - title: 維基百科：臺灣鹽業鐵路
+      url: https://zh.wikipedia.org/wiki/臺灣鹽業鐵路
+
 - id: alishan-1999-2009-disasters
   year: 1999
   endYear: 2009
@@ -190,6 +227,18 @@
   sources:
     - title: 維基百科：集集線
       url: https://zh.wikipedia.org/wiki/集集線
+
+- id: coal-2001-last-tram
+  year: 2001
+  title: 最後一台運煤台車拖出坑口
+  category: closure
+  importance: 4
+  desc: 2001 年 1 月裕豐煤礦把最後一台運煤台車拖出礦坑，台灣礦區裡的運煤軌道就此停止運轉。煤礦鐵道從 1876 年八斗子那條運煤軌道開始，一百二十多年間鋪滿了基隆、平溪、瑞芳與三峽的山谷，它是台灣鐵道最早的形態，也是最後退場的一種。2019 年新平溪煤礦放棄礦權，採礦業正式落幕；廢棄的路線後來有一部分以觀光名義復駛，台灣煤礦博物館就是用原新平溪煤礦的軌道在跑。
+  sources:
+    - title: 維基百科：臺灣鐵道史
+      url: https://zh.wikipedia.org/wiki/臺灣鐵道史
+    - title: 維基百科：台灣煤礦
+      url: https://zh.wikipedia.org/wiki/台灣煤礦
 
 - id: alishan-2024-restoration
   year: 2024

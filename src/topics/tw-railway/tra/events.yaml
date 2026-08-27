@@ -69,6 +69,18 @@
     - title: 維基百科：臺灣日治時期年表
       url: https://zh.wikipedia.org/wiki/臺灣日治時期年表
 
+- id: tra-1898-zhuziling-tunnel
+  year: 1898
+  title: 竹仔藔隧道貫通，清代獅球嶺線走入歷史
+  category: construction
+  importance: 3
+  desc: 日方接手後認定獅球嶺一帶坡度過大，1896 年 5 月另開竹仔藔隧道（今竹仔嶺隧道，三坑與八堵之間）改線，由有馬組與大倉組南北對開，1898 年 2 月貫通。隧道只鋪單線，但預留了第二條路線的空間。改線之後台北基隆間從每日往返兩班增為四班，清代那條穿過獅球嶺、坡陡彎急的路線就此廢棄。台灣鐵路的第一次大改良不是加長路線，而是把前朝鋪壞的地方重鋪一次。
+  sources:
+    - title: 維基百科：竹仔嶺隧道
+      url: https://zh.wikipedia.org/wiki/竹仔嶺隧道
+    - title: 維基百科：臺灣鐵道史
+      url: https://zh.wikipedia.org/wiki/臺灣鐵道史
+
 - id: tra-1899-railway-bureau
   year: 1899
   title: 台灣總督府鐵道部成立，縱貫線南北同時開工
@@ -80,6 +92,18 @@
       url: https://zh.wikipedia.org/wiki/台灣鐵路
     - title: 維基百科：臺灣總督府交通局鐵道部
       url: https://zh.wikipedia.org/wiki/臺灣總督府交通局鐵道部
+
+- id: tra-1900-takao-tainan
+  year: 1900
+  title: 打狗—台南通車，縱貫線南段開始營運
+  category: opening
+  importance: 3
+  desc: 縱貫線 1899 年 11 月自打狗（今高雄鼓山）往北鋪設，隔年 11 月 29 日打狗到台南段先行營運，是南部第一段正式運轉的鐵路。工程從南北兩端同時往中間推進，北段到 1904 年抵三叉河（今三義）、南段到彰化，剩下最難的中部山區與大安溪、大甲溪，要等到 1908 年九號隧道打通才接得起來。南段先通車的效果立刻反映在打狗港，此後高雄取代安平成為南台灣的門戶。
+  sources:
+    - title: 維基百科：臺灣鐵道史
+      url: https://zh.wikipedia.org/wiki/臺灣鐵道史
+    - title: 維基百科：高雄港車站
+      url: https://zh.wikipedia.org/wiki/高雄港車站
 
 - id: tra-1901-tamsui-line
   year: 1901
@@ -223,6 +247,40 @@
     - title: 維基百科：臺東線
       url: https://zh.wikipedia.org/wiki/臺東線
 
+- id: tra-1945-air-raids
+  year: 1945
+  title: 空襲把鐵道打成殘骸
+  category: accident
+  importance: 4
+  desc: 美軍第五航空隊動員五百四十架次攻擊台灣的鐵公路系統，五月中旬之後進入高峰，光是攻擊橋樑、車站與調車場的 B-25 就有兩百四十架次。濁水溪、大肚溪與曾文溪的鐵橋全數炸毀，機車與車廂被炸毀一千三百九十二輛，佔全部機車的四成八、車廂的兩成。護航戰鬥機返航時常沿著鐵路掃射，載客的列車也不放過，於是列車改成只在夜間行駛，山線每日往返只剩五班、支線只剩上下午各一班。
+  sources:
+    - title: 維基百科：臺灣鐵道史
+      url: https://zh.wikipedia.org/wiki/臺灣鐵道史
+
+- id: tra-1945-railway-committee
+  year: 1945
+  title: 鐵路管理委員會成立，接收鐵道部與各家私鐵
+  category: institution
+  importance: 3
+  desc: 11 月 1 日於台灣省行政長官公署交通處下成立，接收總督府鐵道部與各會社的私營鐵道。接收時的狀況是枕木腐朽過半、待修橋樑一千四百餘孔、四成八的機車停用，鐵道部長武部氏留下一句「台灣鐵路最多能維持六個月，必將癱瘓」。日籍員工陸續遣返，1947 年 6 月已送走五千三百餘人，只留十六名。委員會想引進中國制度改革，基層台籍員工則多半照舊沿用日治時期的作法，「外行人管內行人」的評語從這時開始流傳。
+  sources:
+    - title: 維基百科：臺灣鐵路管理局
+      url: https://zh.wikipedia.org/wiki/臺灣鐵路管理局
+    - title: 維基百科：臺灣鐵道史
+      url: https://zh.wikipedia.org/wiki/臺灣鐵道史
+
+- id: tra-1947-badu-incident
+  year: 1947
+  title: 八堵車站事件，站長與員工遭軍方殺害
+  category: accident
+  importance: 4
+  desc: 二二八事件期間車站成為各地民眾優先佔領的目標，列車停擺；板橋有民眾攔車、新竹有民眾阻擋軍用列車北上。3 月 8 日增援部隊抵台後局勢逆轉，11 日八堵車站站長李丹修與十餘名員工遭軍方殺害，是鐵路系統在這場事件中規模最大的一起。失蹤員工的家屬求助無門，鐵路局也未提供協助；代理主委徐鄂雲被以「私通流氓、袒護暴徒」檢舉後被迫交卸。此後台鐵內部本省籍與外省籍員工的隔閡加深，進行中的竹東線工程也受到影響。
+  sources:
+    - title: 維基百科：八堵車站
+      url: https://zh.wikipedia.org/wiki/八堵車站
+    - title: 維基百科：臺灣鐵道史
+      url: https://zh.wikipedia.org/wiki/臺灣鐵道史
+
 - id: tra-1948-tra-founded
   year: 1948
   title: 台灣鐵路管理局成立
@@ -244,6 +302,16 @@
     - title: 維基百科：內灣線
       url: https://zh.wikipedia.org/wiki/內灣線
 
+- id: tra-1958-dieselization
+  year: 1958
+  title: 幹線動力現代化選了柴電，不是電氣化
+  category: rolling-stock
+  importance: 3
+  desc: 台鐵開始研究幹線的動力現代化，電氣化的經費太高，台灣電力公司當時的供電量也還撐不起來，於是決定先走柴電化。這個選擇讓 1960 年代的光華號、莒光號都是柴油動力，也把縱貫線電氣化推遲了二十年 —— 等到 1979 年真正完工時，公路已經先一步把長途客源搶走了。
+  sources:
+    - title: 維基百科：臺灣鐵道史
+      url: https://zh.wikipedia.org/wiki/臺灣鐵道史
+
 - id: tra-1961-minxiong-accident
   year: 1961
   title: 民雄平交道事故，太魯閣事故前死傷最慘重的一次
@@ -255,6 +323,16 @@
       url: https://zh.wikipedia.org/wiki/平交道
     - title: 維基百科：臺鐵重大死傷事故列表
       url: https://zh.wikipedia.org/wiki/臺鐵重大死傷事故列表
+
+- id: tra-1962-automatic-block
+  year: 1962
+  title: 台北—竹南雙軌自動閉塞完成
+  category: institution
+  importance: 3
+  desc: 台北到竹南間完成雙軌與自動閉塞號誌，1960 年代前後又逐步把中央行車控制系統鋪到整條縱貫線。號誌與控制的升級不會出現在通車典禮的照片裡，但它決定了同一段軌道一小時能塞進幾班車 —— 在沒有新路線可蓋的年代，運能是從號誌系統裡擠出來的。
+  sources:
+    - title: 維基百科：臺灣鐵道史
+      url: https://zh.wikipedia.org/wiki/臺灣鐵道史
 
 - id: tra-1965-xindian-line-closed
   year: 1965
@@ -302,6 +380,18 @@
     - title: 維基百科：莒光號列車
       url: https://zh.wikipedia.org/wiki/莒光號列車
 
+- id: tra-1973-north-link-start
+  year: 1973
+  title: 北迴線動工，「大約翰」報銷在隧道裡
+  category: construction
+  importance: 3
+  desc: 12 月 25 日動工時路線還沒定線、工程單位還沒設、預算也還沒定案。最大的難關是隧道，為此從美國引進大型潛盾機「大約翰」，原本預計每天挖三十公尺、三年半挖完，實際地質比調查複雜得多，機器挖了一千多公尺就報銷，只能改從日本引進機具重來。永春隧道的地下水每分鐘湧出五、六十噸，颱風後可達一百五十噸，最後另挖引水隧道把水排進太平洋。工程 1979 年底完工，1980 年 2 月通車。
+  sources:
+    - title: 維基百科：北迴線
+      url: https://zh.wikipedia.org/wiki/北迴線
+    - title: 維基百科：臺灣鐵道史
+      url: https://zh.wikipedia.org/wiki/臺灣鐵道史
+
 - id: tra-1978-emu100
   year: 1978
   endYear: 2010
@@ -312,6 +402,18 @@
   sources:
     - title: 維基百科：台鐵EMU100型電聯車
       url: https://zh.wikipedia.org/wiki/台鐵EMU100型電聯車
+
+- id: tra-1978-deficit
+  year: 1978
+  title: 中山高通車，台鐵由盈轉虧
+  category: institution
+  importance: 4
+  desc: 高速公路全線通車後，公路局的國光號、中興號大幅搶走長途客源，而縱貫線電氣化正在施工，列車限速、誤點惡化，服務品質最差的時候剛好撞上最強的競爭者。台鐵的營運就在這一年由盈轉虧，此後虧損逐年擴大；電氣化的經費全由台鐵自籌、六成是外債，收入減少又背著還款，債務與人事成本此後成為台鐵所有改革繞不開的前提。這一年是台鐵財務體質的分水嶺。
+  sources:
+    - title: 維基百科：臺灣鐵道史
+      url: https://zh.wikipedia.org/wiki/臺灣鐵道史
+    - title: 維基百科：中山高速公路
+      url: https://zh.wikipedia.org/wiki/中山高速公路
 
 - id: tra-1979-electrification
   year: 1979
@@ -386,6 +488,20 @@
     - title: 維基百科：南迴線
       url: https://zh.wikipedia.org/wiki/南迴線
 
+- id: tra-1991-branch-closures
+  year: 1991
+  title: 東港線與東勢線相繼停駛，支線收攤潮
+  category: closure
+  importance: 3
+  desc: 2 月 28 日東港線開出最後一班客運列車，8 月 31 日東勢線末班車開完後隔日停業；前一年 9 月中和線已先停駛。這些支線多半在 1950 年代末的建設熱潮中誕生，東勢線還是 1958 年六大建設之一，1959 年通車、跑了三十二年。公路一條條開進山區與海邊之後，支線先失去貨運、再失去客運。東港線留下軍事運輸功能到 2002 年才正式廢止，東勢線的舊路基變成東豐自行車綠廊。
+  sources:
+    - title: 維基百科：東勢線
+      url: https://zh.wikipedia.org/wiki/東勢線
+    - title: 維基百科：東港線
+      url: https://zh.wikipedia.org/wiki/東港線
+    - title: 維基百科：中和線 (台鐵)
+      url: https://zh.wikipedia.org/wiki/中和線_(台鐵)
+
 - id: tra-1996-push-pull
   year: 1996
   title: 推拉式自強號登場，台鐵城際主力換了一個世代
@@ -405,6 +521,38 @@
   sources:
     - title: 維基百科：舊山線
       url: https://zh.wikipedia.org/wiki/舊山線
+
+- id: tra-1998-commuterization
+  year: 1998
+  title: 台鐵捷運化起步，第一座通勤車站
+  category: institution
+  importance: 3
+  desc: 面對捷運與規劃中的高鐵，台鐵改以既有路線當通勤走廊，在原本沒有車站的地方增設小站，台中的大慶車站是第一座。此後西部幹線一路增站、加開區間車，長途城際的角色逐漸讓給高鐵，都會通勤反而成為台鐵運量的主體。與捷運化同時推動的是都會區鐵路立體化 —— 平面鐵路阻隔市區、平交道又是主要的安全隱憂，台北之後高雄、台中、桃園陸續動工。
+  sources:
+    - title: 維基百科：臺鐵捷運化
+      url: https://zh.wikipedia.org/wiki/臺鐵捷運化
+    - title: 維基百科：大慶車站
+      url: https://zh.wikipedia.org/wiki/大慶車站
+
+- id: tra-2003-north-link-upgrade
+  year: 2003
+  title: 北迴線雙軌電氣化完工
+  category: construction
+  importance: 3
+  desc: 1980 年通車時因為不看好營運狀況只鋪了單線，結果客貨運量很快就超出單線的負荷，1992 年起動工改成雙軌並電氣化，過程中因改線又開挖了不少新隧道，2003 年 6 月底完工、7 月 4 日在花蓮舉行通車典禮。北迴線是台灣唯一運量大於平行公路的鐵路 —— 蘇花公路的路況決定了這件事，也決定了這條線非拓不可。
+  sources:
+    - title: 維基百科：北迴線
+      url: https://zh.wikipedia.org/wiki/北迴線
+
+- id: tra-2003-keelung-harbor-line
+  year: 2003
+  title: 基隆臨港線停駛，港與鐵路脫鉤
+  category: closure
+  importance: 3
+  desc: 基隆港西岸原有多條臨港線，是縱貫線通車以來煤、糖、米出口的最後一哩路。貨運量萎縮加上都市發展的需要，2003 年停止營運，只留西一到西四碼頭連絡線供台鐵車輛上下船，2015 年基隆車站新站啟用後完全斷軌。此後從國外進口的台鐵車輛改在台中港與花蓮港卸船。高雄臨港線也走上同一條路 —— 港埠與鐵路直連曾經是台灣運輸體系的骨幹，如今只剩觀光化的路廊。
+  sources:
+    - title: 維基百科：基隆臨港線
+      url: https://zh.wikipedia.org/wiki/基隆臨港線
 
 - id: tra-2007-taroko-express
   year: 2007

@@ -65,6 +65,18 @@
     - title: 維基百科：台糖虎尾總廠
       url: https://zh.wikipedia.org/wiki/台糖虎尾總廠
 
+- id: sugar-1929-private-rail-peak
+  year: 1929
+  title: 私營鐵道的頂點，公路運輸開始反噬
+  category: institution
+  importance: 3
+  desc: 日治時期的私鐵以糖鐵為主體，營業里程在 1929 年達到高峰的五百五十四公里，之後逐年下滑，1935 年只剩五百零五公里；靠人力獸力推的私設軌道（台車線）里程在 1931 年攀到最高的一千三百五十六公里，1936 年掉到一千一百八十二公里。壓垮它們的是自動車。業者的應對是與總督府鐵道聯運、或乾脆自己兼營公路客運 —— 1934 年九家私鐵有兩家、五十五家私軌業者有十家已經在跑巴士。
+  sources:
+    - title: 維基百科：臺灣鐵道史
+      url: https://zh.wikipedia.org/wiki/臺灣鐵道史
+    - title: 維基百科：臺灣糖業鐵路
+      url: https://zh.wikipedia.org/wiki/臺灣糖業鐵路
+
 - id: sugar-1946-taisugar
   year: 1946
   title: 台灣糖業公司成立，接收各製糖會社鐵道
@@ -98,6 +110,18 @@
   sources:
     - title: 維基百科：南北平行預備線
       url: https://zh.wikipedia.org/wiki/南北平行預備線
+
+- id: sugar-1953-network-peak
+  year: 1953
+  title: 糖鐵路網的頂點，四十一條營業線
+  category: institution
+  importance: 4
+  desc: 戰後復舊完成、南北平行預備線與玉左線相繼通車之後，台糖擁有四十一條營業線、營業里程六百七十五公里，是糖業鐵路涵蓋範圍最大的時候 —— 若把專用的原料線一併算進去，這套路網的總長度遠超過台鐵。對嘉南平原上的許多鄉鎮來說，五分車才是唯一的公共運輸。高峰只維持了五年，1958 年之後公路運輸再度興起，糖鐵客運開始一路衰退。
+  sources:
+    - title: 維基百科：臺灣鐵道史
+      url: https://zh.wikipedia.org/wiki/臺灣鐵道史
+    - title: 維基百科：臺灣糖業鐵路
+      url: https://zh.wikipedia.org/wiki/臺灣糖業鐵路
 
 - id: sugar-1977-diema
   year: 1977
