@@ -256,6 +256,18 @@
     - title: 維基百科：臺鐵重大死傷事故列表
       url: https://zh.wikipedia.org/wiki/臺鐵重大死傷事故列表
 
+- id: tra-1965-xindian-line-closed
+  year: 1965
+  title: 新店線停駛，台鐵第一條被廢掉的支線
+  category: closure
+  importance: 3
+  desc: 這條 1921 年由臺北鐵道株式會社興建通車的私營鐵道，戰後由臺灣鐵路管理局接手，自萬華分歧經公館、景美到新店，沿線曾是文山煤礦與新店溪砂石的運輸線。公路客運與汽車興起後客貨源流失，1965 年 3 月全線停止營運，是台鐵最早停駛的支線。大部分路基改建成公路，也就是今天的汀州路與羅斯福路一段路廊 —— 三十三年後台北捷運新店線沿著幾乎相同的方向重新通車，只是走在地下。
+  sources:
+    - title: 維基百科：新店線 (台鐵)
+      url: https://zh.wikipedia.org/wiki/新店線_(台鐵)
+    - title: 維基百科：臺北鐵道
+      url: https://zh.wikipedia.org/wiki/臺北鐵道
+
 - id: tra-1965-shenao-line
   year: 1965
   endYear: 2014

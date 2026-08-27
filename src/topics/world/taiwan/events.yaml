@@ -112,10 +112,12 @@
   title: 東吳船隊抵「夷洲」
   category: politics
   importance: 3
-  desc: 《三國志》所載的航行，夷洲是否即台灣至今仍有爭議。
+  desc: 《三國志》載孫權遣衛溫、諸葛直率軍萬人渡海求夷洲，行經一年，士卒病死八九成，俘數千人而返。夷洲是否即台灣至今仍有爭議。隋煬帝大業年間也兩度用兵於「流求」，先遣朱寬入海招撫，其後陳稜、張鎮周率軍破其都城、殺其王歡斯渴剌兜，俘萬餘人；這個流求同樣指不定是台灣還是琉球群島。中國史書裡這幾筆記載都太簡略，方位、航程與風俗都能各自解釋 —— 台灣要到十七世紀初的《東番記》才第一次被具體地寫下來。
   sources:
     - title: 維基百科：夷洲
       url: https://zh.wikipedia.org/wiki/夷洲
+    - title: 維基百科：流求國
+      url: https://zh.wikipedia.org/wiki/流求國
 
 - id: tw-tsiaosong
   year: 400
@@ -130,6 +132,16 @@
     - title: 維基百科：衛溫
       url: https://zh.wikipedia.org/wiki/衛溫
 
+- id: tw-penghu-inspectorate
+  year: 1281
+  title: 元朝設澎湖寨巡檢司
+  category: politics
+  importance: 3
+  desc: 中原政權第一次在澎湖正式設官署，隸屬福建同安縣。此前南宋泉州知州汪大猷已在澎湖造營房兩百間駐兵，但那是水師戍防，不是設治。明初實施封海政策時一度廢除並把居民遷回泉漳安置，1563 年為了沿海治安復設，一直維持到 1622 年荷蘭東印度公司佔領澎湖為止。台灣本島始終不在這套官署的管轄裡 —— 澎湖與台灣在帝國的行政地圖上分屬兩件事，要到 1684 年設台灣府才合流。
+  sources:
+    - title: 維基百科：澎湖寨巡檢司
+      url: https://zh.wikipedia.org/wiki/澎湖寨巡檢司
+
 - id: tw-formosa
   year: 1582
   title: 葡萄牙與西班牙船員因船難滯留台灣
@@ -138,6 +150,42 @@
   sources:
     - title: 維基百科：臺灣歷史
       url: https://zh.wikipedia.org/wiki/臺灣歷史
+
+- id: tw-takasago-summons
+  year: 1593
+  title: 豐臣秀吉遣使招諭「高山國」
+  category: politics
+  importance: 3
+  desc: 豐臣秀吉派家臣原田孫七郎攜文書前來，要求台灣向日本納貢。日本古籍稱台灣為高砂或高山國，語源與高雄的舊稱「打狗」有關。文書送不出去 —— 島上沒有可以接收國書的政權，使者找不到對象。1616 年德川家康再派村山等安率船隊來台，途中遇風浪只有三艘抵達北部，登陸的一兩百人被原住民包圍而死。日本對台灣的興趣比荷蘭與西班牙更早，但兩次都停在「找不到談判對手」這一關。
+  sources:
+    - title: 維基百科：高砂 (臺灣古名)
+      url: https://zh.wikipedia.org/wiki/高砂_(臺灣古名)
+    - title: 維基百科：豐臣秀吉
+      url: https://zh.wikipedia.org/wiki/豐臣秀吉
+
+- id: tw-dongfan-ji
+  year: 1603
+  title: 陳第著《東番記》，最早的台灣實地紀錄
+  category: culture
+  importance: 3
+  desc: 沈有容率明軍到台灣西南沿海剿倭時，福州連江人陳第隨行，回去後寫成這篇一千四百餘字的雜記。它記下西拉雅人的母系社會、服飾、飲食、建築、狩獵與貿易，是現存最早由漢人親自到台灣實地採訪留下的文獻 —— 在此之前的中文記載都是隔海轉述。這一篇之後，台灣才開始有具體的樣子，而不只是史書上一個位置不明的島名。
+  sources:
+    - title: 維基百科：東番記
+      url: https://zh.wikipedia.org/wiki/東番記
+    - title: 維基百科：沈有容
+      url: https://zh.wikipedia.org/wiki/沈有容
+
+- id: tw-yan-siqi
+  year: 1621
+  title: 顏思齊、鄭芝龍入北港
+  category: economy
+  importance: 3
+  desc: 武裝海商顏思齊率鄭芝龍等人在北港一帶登岸，把台灣當成走私與劫掠的基地。顏思齊 1625 年病故後鄭芝龍接手，其後受明朝招撫、成為福建沿海最大的海上勢力，也把大批閩南饑民載來台灣開墾。這條線一路連到 1661 年 —— 鄭成功來台的資本、船隊與人脈，都是從父親這個海商集團承接下來的。
+  sources:
+    - title: 維基百科：顏思齊
+      url: https://zh.wikipedia.org/wiki/顏思齊
+    - title: 維基百科：鄭芝龍
+      url: https://zh.wikipedia.org/wiki/鄭芝龍
 
 - id: tw-dutch-penghu
   year: 1622
@@ -498,6 +546,17 @@
     - title: 維基百科：藍鼎元
       url: https://zh.wikipedia.org/wiki/藍鼎元
 
+- id: tw-dajiaxi-uprising
+  year: 1731
+  endYear: 1732
+  title: 大甲西社事件，平埔族群最大規模的抗官
+  category: war
+  importance: 3
+  desc: 道卡斯族大甲西社的林武力等人因不堪勞役而起事，中部各社響應，前後延續一年才被平定，是平埔族群歷史上規模最大的一次抗官行動。清軍調鳳山總兵北上支援，南部守備因此空虛，朱一貴的舊部趁機再起，是為吳福生事件。事後清廷在平埔各社境內加強駐兵，中部的大肚王國也在此後瓦解 —— 一個從荷蘭時期存續下來、與三個政權都打過交道的跨部落聯盟，就這樣消失在文獻裡。
+  sources:
+    - title: 維基百科：大甲西社抗清事件
+      url: https://zh.wikipedia.org/wiki/大甲西社抗清事件
+
 - id: tw-family-migration
   year: 1733
   title: 開放移民攜眷渡臺
@@ -539,6 +598,18 @@
   sources:
     - title: 維基百科：林爽文事件
       url: https://zh.wikipedia.org/wiki/林爽文事件
+
+- id: tw-wu-sha
+  year: 1796
+  title: 吳沙入墾蛤仔難，漢人進入蘭陽平原
+  category: economy
+  importance: 3
+  desc: 吳沙率漳、泉、粵三籍墾民由烏石港一帶進入蛤仔難，築土圍據守，即今頭城。這是漢人成規模進入蘭陽平原的開端，也把噶瑪蘭族的生存空間往內壓縮。當時蛤仔難還在清朝版圖之外，官方既不保護也不承認；要到 1808 年吳化等人把已開墾的戶口造冊呈給閩浙總督，1812 年設噶瑪蘭廳，這片土地才被納進行政體系 —— 開墾走在治權前面，是清代台灣拓墾的常態。
+  sources:
+    - title: 維基百科：吳沙
+      url: https://zh.wikipedia.org/wiki/吳沙
+    - title: 維基百科：台灣歷史年表
+      url: https://zh.wikipedia.org/wiki/台灣歷史年表
 
 - id: tw-kavalan-prefecture
   year: 1811
@@ -670,6 +741,16 @@
     - title: 維基百科：渡臺禁令
       url: https://zh.wikipedia.org/wiki/渡臺禁令
 
+- id: tw-kaliawan
+  year: 1878
+  title: 加禮宛戰役，兩個族群幾乎滅絕
+  category: war
+  importance: 3
+  desc: 開山撫番推進到花蓮奇萊平原，噶瑪蘭族加禮宛社與撒奇萊雅族聯合抗清，戰敗後兩族幾乎滅絕，倖存者改說阿美語、藏身在阿美族部落之中，此後一百多年不再以自己的族名出現。協助清軍的七腳川社因此成為奇萊平原最大的部落。這兩族到 2002 年與 2007 年才分別獲得官方正名 —— 一場戰役讓兩個族群從族譜上消失了一個多世紀，是開山撫番這面「積極經營」旗幟下的另一面。
+  sources:
+    - title: 維基百科：加禮宛戰役
+      url: https://zh.wikipedia.org/wiki/加禮宛戰役
+
 - id: tw-sino-french-war
   year: 1884
   title: 清法戰爭波及臺灣，法軍攻基隆、佔澎湖
@@ -745,6 +826,16 @@
       url: https://zh.wikipedia.org/wiki/六三法
     - title: 維基百科：臺灣總督府
       url: https://zh.wikipedia.org/wiki/臺灣總督府
+
+- id: tw-nationality-deadline
+  year: 1897
+  title: 住民去就決定日，台灣人被自動變成日本國民
+  category: politics
+  importance: 4
+  desc: 《馬關條約》給了台灣住民兩年的猶豫期，1897 年 5 月 8 日是最後期限 —— 這一天之前離開的仍是大清子民，沒有離開的依「台灣人民國籍處分辦法」自動成為日本國民。實際離開的以官紳與商人為主，佔全島人口極小的比例，絕大多數人不是選擇留下，而是根本無處可去。台灣人的國籍第一次由一紙條約決定，而做決定的兩個政府都不在這座島上。
+  sources:
+    - title: 維基百科：住民去就決定日
+      url: https://zh.wikipedia.org/wiki/住民去就決定日
 
 - id: tw-goto
   year: 1898
@@ -848,6 +939,16 @@
     - title: 維基百科：臺灣總督
       url: https://zh.wikipedia.org/wiki/臺灣總督
 
+- id: tw-education-rescript
+  year: 1919
+  title: 頒布《臺灣教育令》，殖民地教育體系定型
+  category: culture
+  importance: 3
+  desc: 第一次《臺灣教育令》把台灣人的普通教育、實業教育、專門教育與師範教育整套規定下來，但與在台日本人的學校系統分立，年限與課程都不同。1922 年的第二次教育令改採「內台共學」，名義上取消差別，實際上以日語能力作為入學門檻，結果仍是分流。中等以上學校台灣人名額長期偏低，醫學與農林之外的路很窄 —— 這是日治時期台灣人專業階層以醫師為主的制度原因。
+  sources:
+    - title: 維基百科：臺灣教育令
+      url: https://zh.wikipedia.org/wiki/臺灣教育令
+
 - id: tw-admin-reform-1920
   year: 1920
   title: 地方制度改正，五州二廳；地名雅化
@@ -859,6 +960,16 @@
       url: https://zh.wikipedia.org/wiki/町名改正
     - title: 維基百科：臺灣日治時期
       url: https://zh.wikipedia.org/wiki/臺灣日治時期
+
+- id: tw-general-history
+  year: 1920
+  title: 連橫《臺灣通史》出版
+  category: culture
+  importance: 3
+  desc: 連橫以傳統紀傳體寫成的台灣史著，1920 年出上中冊、翌年出下冊，在台北大稻埕自設發行所。這是台灣人第一次替自己的島寫一部通史 —— 在此之前的台灣記載都出自方志、遊記或殖民者的調查報告，敘事的主體從來不是島上的人。書中史料考訂的疏漏後來屢遭學界指出，但它在殖民統治下宣告「台灣有自己的歷史」這件事，分量不在考據。
+  sources:
+    - title: 維基百科：臺灣通史
+      url: https://zh.wikipedia.org/wiki/臺灣通史
 
 - id: tw-cultural-association
   year: 1921
@@ -1002,6 +1113,28 @@
     - title: 維基百科：大觀發電廠
       url: https://zh.wikipedia.org/wiki/大觀發電廠
 
+- id: tw-atom-splitting
+  year: 1934
+  title: 台北帝大完成亞洲第一次人工撞擊原子核
+  category: science
+  importance: 3
+  desc: 台北帝國大學首任物理學講座教授荒勝文策帶領團隊自建考克饒夫—瓦耳頓型直線加速器，成功以人工方式擊破鋰原子核，是繼劍橋卡文迪西實驗室之後世界第二例、亞洲第一例。這件事發生在一個被當成農業殖民地經營的島上，距離帝大創校只有六年。荒勝 1936 年轉任京都帝大，戰後其研究室的迴旋加速器遭盟軍總部拆除，實驗紀錄與儀器大量流失。
+  sources:
+    - title: 維基百科：荒勝文策
+      url: https://zh.wikipedia.org/wiki/荒勝文策
+    - title: 維基百科：臺北帝國大學
+      url: https://zh.wikipedia.org/wiki/臺北帝國大學
+
+- id: tw-1935-earthquake
+  year: 1935
+  title: 新竹—台中大地震，台灣傷亡最慘重的天災
+  category: politics
+  importance: 4
+  desc: 4 月 21 日清晨規模 7.1 的地震，震央在大安溪中游，新竹州與台中州死亡 3276 人、受傷 12053 人，房屋全倒近一萬八千戶。這是台灣有紀錄以來傷亡最慘重的自然災害，至今仍未被超越 —— 一九九九年的 921 地震死亡兩千四百餘人。總督府設震災地復興委員會推動重建，並陸續在新竹、大武、新港、宜蘭設立地震觀測站，台灣的地震觀測網從這場災難之後才真正鋪開。
+  sources:
+    - title: 維基百科：1935年新竹-台中地震
+      url: https://zh.wikipedia.org/wiki/1935年新竹-台中地震
+
 - id: tw-first-election
   year: 1935
   title: 首次地方選舉
@@ -1111,6 +1244,16 @@
     - title: 維基百科：四六事件
       url: https://zh.wikipedia.org/wiki/四六事件
 
+- id: tw-guningtou
+  year: 1949
+  title: 古寧頭戰役，兩岸分治的軍事定局
+  category: war
+  importance: 4
+  desc: 10 月下旬解放軍第十兵團於攻佔廈門後渡海進攻大金門，因船隻不足、情報有誤與國軍及時增援，登陸部隊在島上苦戰三晝夜後全軍覆沒。這是國軍在內戰後期少有的一場勝仗，把戰線停在金門，也讓台灣本島暫時脫離立即被渡海攻擊的處境 —— 韓戰爆發、第七艦隊進入台灣海峽，還是八個月以後的事。此後兩岸的軍事對峙就沿著這條線固定下來。
+  sources:
+    - title: 維基百科：古寧頭戰役
+      url: https://zh.wikipedia.org/wiki/古寧頭戰役
+
 - id: tw-local-autonomy-1950
   year: 1950
   endYear: 1951
@@ -1199,6 +1342,16 @@
     - title: 維基百科：中美共同防禦條約
       url: https://zh.wikipedia.org/wiki/中美共同防禦條約
 
+- id: tw-dachen-evacuation
+  year: 1955
+  title: 大陳島撤退，浙江外海最後的據點放棄
+  category: war
+  importance: 3
+  desc: 一江山失守後，中華民國在美國第七艦隊護航下於 2 月分批撤離浙江外海的大陳、漁山、南麂各島，共運走 16053 名官兵與 17132 名居民，官方稱之為「大陳義胞」，安置於台灣各地的新村。這是第一次台海危機的一部分，也是中華民國實際控制範圍最後一次大幅收縮 —— 此後統治的範圍就固定為台澎金馬，一直到今天。
+  sources:
+    - title: 維基百科：大陳島撤退
+      url: https://zh.wikipedia.org/wiki/大陳島撤退
+
 - id: tw-823
   year: 1958
   title: 八二三砲戰
@@ -1220,6 +1373,16 @@
     - title: 維基百科：自由中國 (雜誌)
       url: https://zh.wikipedia.org/wiki/自由中國_(雜誌)
 
+- id: tw-ttv
+  year: 1962
+  title: 台灣電視公司開播，進入電視時代
+  category: culture
+  importance: 3
+  desc: 台灣第一家電視台，10 月 10 日開播，成立時由台灣省營機構與日本四家電視相關企業合資。其後中視（1969）、華視（1971）相繼開播，三家的股權分別握在省政府、中國國民黨與國防部及教育部手上，這個「老三台」格局維持了三十年 —— 在只有三個頻道且全部由黨政軍持股的年代，電視同時是新的大眾娛樂與最有效的宣傳工具。
+  sources:
+    - title: 維基百科：臺灣電視公司
+      url: https://zh.wikipedia.org/wiki/臺灣電視公司
+
 - id: tw-kaohsiung-epz
   year: 1966
   title: 高雄加工出口區啟用，出口導向工業化
@@ -1229,6 +1392,18 @@
   sources:
     - title: 維基百科：前鎮科技產業園區
       url: https://zh.wikipedia.org/wiki/前鎮科技產業園區
+
+- id: tw-hongye-baseball
+  year: 1968
+  title: 紅葉少棒擊敗日本明星隊，棒球熱席捲全島
+  category: culture
+  importance: 3
+  desc: 台東延平鄉紅葉國小的球隊以 7 比 0 擊敗來訪的日本關西少棒明星隊，全島轟動，隔年組成的金龍少棒隊遠征美國威廉波特奪下世界冠軍，開啟三級棒球的年代。紅葉的傳奇後來被查出以超齡與冒名球員參賽，教練等三人遭判刑 —— 這支球隊來自不足百人的偏遠山區小學，湊不出合乎資格的名單。棒球在外交處境急轉直下的七〇年代成了少數能讓台灣被看見的場域，這一點與紀錄上的瑕疵同樣是這段熱潮的一部分。
+  sources:
+    - title: 維基百科：紅葉少棒隊
+      url: https://zh.wikipedia.org/wiki/紅葉少棒隊
+    - title: 維基百科：金龍少棒隊
+      url: https://zh.wikipedia.org/wiki/金龍少棒隊
 
 - id: tw-nine-year-education
   year: 1968
@@ -1354,6 +1529,16 @@
       url: https://zh.wikipedia.org/wiki/臺灣原住民族運動
     - title: 維基百科：臺灣原住民族
       url: https://zh.wikipedia.org/wiki/臺灣原住民族
+
+- id: tw-lee-yuan-tseh-nobel
+  year: 1986
+  title: 李遠哲獲諾貝爾化學獎
+  category: science
+  importance: 3
+  desc: 新竹出身的李遠哲以交叉分子束方法研究化學反應動力學，與赫施巴赫、波拉尼共同獲獎，是第一位在台灣出生成長的諾貝爾獎得主。他 1994 年放棄美國籍返台出任中央研究院院長，此後十餘年深度介入台灣的教育改革與政治，從一個科學家的獎項變成一個公共人物的起點 —— 那段參與的評價至今分歧，但四百年來第一次有台灣長大的人站上那個位置這件事，當年的震撼是一致的。
+  sources:
+    - title: 維基百科：李遠哲
+      url: https://zh.wikipedia.org/wiki/李遠哲
 
 - id: tw-martial-law-lifted
   year: 1987

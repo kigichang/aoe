@@ -79,6 +79,18 @@
     - title: 維基百科：臺灣糖業史
       url: https://zh.wikipedia.org/wiki/臺灣糖業史
 
+- id: in-1888-first-electric-light
+  year: 1888
+  title: 台北點亮電燈，台灣發電之始
+  category: technology
+  importance: 3
+  desc: 劉銘傳在台北裝設小型蒸汽燃煤發電機供街燈與衙署照明，是台灣最早的發電紀錄，但只運轉了一個多月就因燃料與維護成本停擺。真正持續供電要等到 1905 年的龜山水力發電所。這一則短命的紀錄很能說明清末新政的處境 —— 設備買得到，撐住它的財政、技術人員與煤炭供應鏈都還不在。
+  sources:
+    - title: 維基百科：劉銘傳
+      url: https://zh.wikipedia.org/wiki/劉銘傳
+    - title: 維基百科：龜山發電廠
+      url: https://zh.wikipedia.org/wiki/龜山發電廠
+
 - id: in-1894-1275-mills
   year: 1894
   title: 全島一千二百七十五間糖廍
@@ -124,6 +136,18 @@
       url: https://zh.wikipedia.org/wiki/臺灣電力株式會社
     - title: 維基百科：龜山發電廠
       url: https://zh.wikipedia.org/wiki/龜山發電廠
+
+- id: in-1905-fiscal-independence
+  year: 1905
+  title: 總督府財政獨立，不再需要日本本國補助
+  category: policy
+  importance: 4
+  desc: 領台十年後，台灣總督府的歲入已足以支應歲出，日本中央政府停止補助 —— 比後藤新平上任時規劃的時程提早了不少。撐起這件事的三根柱子是地租（土地調查完成後課稅面積大增）、專賣（樟腦、食鹽，以及收入最高的鴉片）與糖業獎勵帶動的產業稅收。財政自立是此後大規模基礎建設的前提，縱貫鐵路、港口與水利都靠它；而其中一根柱子是把鴉片專賣制度化，這件事同時是殖民統治的財政成就與它的道德代價。
+  sources:
+    - title: 維基百科：後藤新平
+      url: https://zh.wikipedia.org/wiki/後藤新平
+    - title: 維基百科：台灣歷史年表
+      url: https://zh.wikipedia.org/wiki/台灣歷史年表
 
 - id: in-1908-trunk-railway
   year: 1908
@@ -378,6 +402,18 @@
     - title: 維基百科：臺灣經濟
       url: https://zh.wikipedia.org/wiki/臺灣經濟
 
+- id: in-1984-coal-disasters
+  year: 1984
+  title: 一年三場礦災，台灣煤礦業的喪鐘
+  category: labour
+  importance: 4
+  desc: 6 月 20 日土城海山煤礦煤塵爆炸 72 死，罹難者多為阿美族礦工；7 月 10 日瑞芳煤山煤礦大火 103 死，是戰後台灣最嚴重的礦災；12 月 5 日三峽海山一坑再炸，93 死。半年之內近三百條人命，把礦坑裡長年的低薪、深坑與敷衍的安全設備一次攤在檯面上。此後本地煤敵不過進口煤的價格，礦場陸續收坑，2000 年台灣全面停止採礦 —— 撐了一百多年的產業就此結束，而它是靠一連串災變被結束的。
+  sources:
+    - title: 維基百科：海山煤礦
+      url: https://zh.wikipedia.org/wiki/海山煤礦
+    - title: 維基百科：煤山煤礦礦災
+      url: https://zh.wikipedia.org/wiki/煤山煤礦礦災
+
 - id: in-1984-labor-standards-act
   year: 1984
   title: 勞動基準法公布
@@ -389,6 +425,16 @@
       url: https://zh.wikipedia.org/wiki/勞動基準法_(中華民國)
 
 # ── 產業外移與升級 ────────────────────────────────────────────
+
+- id: in-1985-tenth-credit-scandal
+  year: 1985
+  title: 十信案，戰後最大的金融弊案
+  category: enterprise
+  importance: 3
+  desc: 台北市第十信用合作社理事主席蔡辰洲同時是現任立法委員，以人頭超額貸款把存戶資金導入自家的國泰塑膠關係企業，東窗事發後引爆擠兌，由合作金庫接管，波及的關係企業接連倒閉。案件暴露的是基層金融長期由地方派系與家族把持、監理形同虛設，也讓「立委兼企業主」這種身分第一次成為公共問題。此後金融檢查制度被迫重整，但基層金融的結構性問題要到 1990 年代末的農漁會信用部整併才真正處理。
+  sources:
+    - title: 維基百科：十信案
+      url: https://zh.wikipedia.org/wiki/十信案
 
 - id: in-1986-anti-dupont
   year: 1986
@@ -451,6 +497,16 @@
       url: https://zh.wikipedia.org/wiki/台塑企業
     - title: 維基百科：第六套輕油裂解廠
       url: https://zh.wikipedia.org/wiki/第六套輕油裂解廠
+
+- id: in-2000-nuclear-four-halt
+  year: 2000
+  title: 停建核四又復工，能源路線的第一次攤牌
+  category: infrastructure
+  importance: 4
+  desc: 貢寮的第四核能發電廠 1999 年動工，新政府上任半年後於 10 月 27 日宣布停建，引發行政與立法的憲政對抗，四個多月後被迫復工。工程此後在停停走走中追加預算、延宕十餘年，2014 年封存，2021 年重啟商轉的公民投票未通過，台電轉而規劃拆除。台灣的電力結構因此長期卡在「核電退不掉也用不成」的狀態，而 2000 年這一次是這條斷層第一次浮上檯面 —— 它決定的不只是一座電廠，而是往後二十年供電規劃的前提。
+  sources:
+    - title: 維基百科：龍門核能發電廠
+      url: https://zh.wikipedia.org/wiki/龍門核能發電廠
 
 - id: in-2002-wto-industry
   year: 2002

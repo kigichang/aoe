@@ -65,6 +65,16 @@
     - title: 維基百科：臺灣荷蘭統治時期
       url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
 
+- id: ag-1649-water-buffalo
+  year: 1649
+  title: 荷蘭東印度公司引進水牛
+  category: technology
+  importance: 3
+  desc: 公司一次購入一百二十頭水牛運來台灣，配給漢人佃農使用。在此之前島上的農作靠人力與少量黃牛，水牛下田之後，一個勞動力能開的水田面積整個換了一級 —— 犁田、耙田、載運都靠牠，此後三百年台灣的稻作動力就是這種牲口，直到 1960 年代耕耘機普及才逐漸退場。這是荷蘭時期少數留下來、比政權本身活得更久的東西。
+  sources:
+    - title: 維基百科：台灣歷史年表
+      url: https://zh.wikipedia.org/wiki/台灣歷史年表
+
 - id: ag-1652-cane-third
   year: 1652
   title: 蔗作面積達水田三分之一
@@ -169,6 +179,16 @@
       url: https://zh.wikipedia.org/wiki/葫蘆墩圳
     - title: 維基百科：張達京
       url: https://zh.wikipedia.org/wiki/張達京
+
+- id: ag-1725-fucheng-sanjiao
+  year: 1725
+  title: 府城三郊成立，米糖出口有了自己的組織
+  category: trade
+  importance: 3
+  desc: 台南的一百多家郊商在 1720 年代先後結成北郊蘇萬利、南郊金永順與糖郊李勝興三個公會，合稱三郊，以安平港與台江為根據地，經手台灣輸往中國大陸的米、糖與回程的日用品。郊是清代台灣第一種跨商號的商業組織 —— 它評定商品規格、調解糾紛、興建廟宇、辦理公共事務，在地主之外形成另一股民間力量，也讓台灣府城長期維持首府地位，「一府二鹿三艋舺」的說法就是從這套郊商網絡來的。
+  sources:
+    - title: 維基百科：府城三郊
+      url: https://zh.wikipedia.org/wiki/府城三郊
 
 - id: ag-1740-liugong-canal
   year: 1740
@@ -303,6 +323,18 @@
 
 # ── 日治：米糖經濟 ────────────────────────────────────────────
 
+- id: ag-1886-liu-land-tax
+  year: 1886
+  title: 劉銘傳清賦，台灣第一次全面清丈田賦
+  category: policy
+  importance: 3
+  desc: 建省之後財政要自立，劉銘傳設清賦總局清丈全省田畝、整理隱田並改訂稅則，田賦收入因此大幅增加。但清丈觸動的是一田二主之下盤根錯節的大小租關係，執行中又有官員藉機需索，1888 年彰化就爆發施九緞率眾圍城的抗爭。這次清丈沒有動搖大租戶的地位，卻替十二年後日本人的土地調查事業留下了底冊與教訓 —— 同一件事，日本人做完了。
+  sources:
+    - title: 維基百科：劉銘傳
+      url: https://zh.wikipedia.org/wiki/劉銘傳
+    - title: 維基百科：施九緞事件
+      url: https://zh.wikipedia.org/wiki/施九緞事件
+
 - id: ag-1898-land-survey
   year: 1898
   endYear: 1905
@@ -361,6 +393,16 @@
   sources:
     - title: 維基百科：蓬萊米
       url: https://zh.wikipedia.org/wiki/蓬萊米
+
+- id: ag-1924-taoyuan-canal
+  year: 1924
+  title: 桃園大圳完工，台地的埤塘串成灌溉網
+  category: infrastructure
+  importance: 3
+  desc: 1913 年桃園大旱之後開工，由總督府技師張令紀設計，自大嵙崁溪取水，以幹線與十二條支線把桃園台地上原本各自為政的埤塘串聯起來，1924 年竣工、翌年舉行通水式。灌溉面積涵蓋今日桃園多數區域，看天田變成可以穩定兩期作的水田。這是嘉南大圳之前規模最大的水利工程，也是同一套思路的先行版 —— 台地與平原的旱作能不能改種水稻，決定的是水，不是土。
+  sources:
+    - title: 維基百科：桃園大圳
+      url: https://zh.wikipedia.org/wiki/桃園大圳
 
 - id: ag-1925-erlin-incident
   year: 1925
