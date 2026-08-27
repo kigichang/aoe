@@ -313,6 +313,18 @@
     - title: 維基百科：獎勵投資條例
       url: https://zh.wikipedia.org/wiki/獎勵投資條例
 
+- id: in-1963-industry-overtakes-agriculture
+  year: 1963
+  title: 工業產值超越農業
+  category: policy
+  importance: 4
+  desc: 以農養工推行十餘年後，工業在國民經濟中的比重第一次超過農業。撐起這一步的是進口替代時期累積的民生工業、日治留下的基礎建設、隨政府遷台的資金與技術人員，以及美援 —— 而支付這一切的是農業部門，透過肥料換穀與低糧價把剩餘轉出去。此後到第一次石油危機為止，台灣維持了十年以上的兩位數成長，農業則從主角變成被保護的部門。
+  sources:
+    - title: 維基百科：臺灣歷史
+      url: https://zh.wikipedia.org/wiki/臺灣歷史
+    - title: 維基百科：台灣經濟史
+      url: https://zh.wikipedia.org/wiki/台灣經濟史
+
 - id: in-1965-us-aid-ends
   year: 1965
   title: 美援終止
@@ -346,6 +358,18 @@
   sources:
     - title: 維基百科：中國鋼鐵
       url: https://zh.wikipedia.org/wiki/中國鋼鐵
+
+- id: in-1971-trade-surplus
+  year: 1971
+  title: 對外貿易轉為長期出超
+  category: trade
+  importance: 4
+  desc: 加工出口區與出口擴張政策推行數年後，這一年出口值超過進口值，此後長期維持出超，外匯開始累積 —— 1963 年雖曾短暫出超，但要到這時才穩定下來。結構上台灣同時是對美的大額出超國與對日的巨大入超國，機器設備與關鍵零組件向日本買、成品賣去美國，這個三角關係此後主導了台灣的貿易格局數十年，也是 1980 年代末台美貿易摩擦與台幣急升的伏筆。
+  sources:
+    - title: 維基百科：臺灣歷史
+      url: https://zh.wikipedia.org/wiki/臺灣歷史
+    - title: 維基百科：台灣經濟史
+      url: https://zh.wikipedia.org/wiki/台灣經濟史
 
 - id: in-1974-ten-major-projects
   year: 1974

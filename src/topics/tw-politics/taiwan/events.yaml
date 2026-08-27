@@ -655,6 +655,18 @@
     - title: 維基百科：孫立人兵變案
       url: https://zh.wikipedia.org/wiki/孫立人兵變案
 
+- id: twp-1956-provisional-government
+  year: 1956
+  title: 台灣共和國臨時政府在東京成立
+  category: party
+  importance: 3
+  desc: 廖文毅在東京主導成立，選在二二八事件九週年當天發布獨立宣言並就任大統領。這是海外台獨運動第一個以「政府」形式出現的組織，1950 年代中期到 1960 年代初期是最主要的一支。廖文毅 1965 年在家族產業與親屬遭施壓的情況下返台歸順，組織隨之衰落，1977 年解散，主導權轉到 1970 年成立的台灣獨立建國聯盟手上。在島內主張台獨仍是叛亂罪的年代，這條路線只能存在於境外。
+  sources:
+    - title: 維基百科：台灣共和國臨時政府
+      url: https://zh.wikipedia.org/wiki/台灣共和國臨時政府
+    - title: 維基百科：廖文毅
+      url: https://zh.wikipedia.org/wiki/廖文毅
+
 - id: twp-1957-524
   year: 1957
   title: 五二四事件，戒嚴下罕見的大規模群眾行動
@@ -1158,6 +1170,18 @@
   sources:
     - title: 維基百科：公民投票法
       url: https://zh.wikipedia.org/wiki/公民投票法
+
+- id: twp-2004-election-shooting
+  year: 2004
+  title: 三一九槍擊案與差距最小的一次總統選舉
+  category: election
+  importance: 3
+  desc: 投票前一天，尋求連任的陳水扁與呂秀蓮在台南掃街時遭槍擊受傷；隔日開票，兩組候選人得票率相差 0.23%、不到三萬票，廢票三十三萬張是上屆的三倍。落敗一方要求查封票箱驗票並提起當選無效之訴，最高法院判決敗訴定讞。槍擊案經調查後認定嫌犯為已自殺身亡的陳義雄，但質疑始終沒有平息。這是台灣民主化以來第一次有一方公開拒絕承認選舉結果，此後「選舉能不能被信任」成為政治對立的新戰場。
+  sources:
+    - title: 維基百科：2004年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/2004年中華民國總統選舉
+    - title: 維基百科：三一九槍擊事件
+      url: https://zh.wikipedia.org/wiki/三一九槍擊事件
 
 - id: twp-2005-constitutional-reform
   year: 2005

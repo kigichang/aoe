@@ -1352,6 +1352,17 @@
     - title: 維基百科：大陳島撤退
       url: https://zh.wikipedia.org/wiki/大陳島撤退
 
+- id: tw-taiyu-cinema
+  year: 1955
+  endYear: 1981
+  title: 台語片的興衰，二十六年一千餘部
+  category: culture
+  importance: 3
+  desc: 從歌仔戲電影起家，題材多取自民間故事與通俗劇，二十六年間拍出一千多部，是當時產量最大的一支 —— 因為多數台灣人的母語就是台語。1970 年代國語政策全面收緊，電視與電影的方言時段受限、輔導資源集中於國語片，台語片迅速沒落，1981 年楊麗花主演的歌仔戲電影《陳三五娘》是最後一部。現存於片庫的只剩約兩百部，其餘拷貝多半散佚。
+  sources:
+    - title: 維基百科：臺語電影
+      url: https://zh.wikipedia.org/wiki/臺語電影
+
 - id: tw-823
   year: 1958
   title: 八二三砲戰
@@ -1382,6 +1393,16 @@
   sources:
     - title: 維基百科：臺灣電視公司
       url: https://zh.wikipedia.org/wiki/臺灣電視公司
+
+- id: tw-cultural-renaissance
+  year: 1966
+  title: 中華文化復興運動，與對岸文革分庭抗禮
+  category: culture
+  importance: 4
+  desc: 對岸文化大革命展開的同一年，孫科、王雲五、陳立夫等一千五百人聯名建議發起中華文化復興運動，隔年成立推行委員會、蔣中正親任會長，訂國父誕辰為中華文化復興節。動機是宣示中華民國才是正統中華文化的代表 —— 兩岸在同一個時間點上，一邊拆廟砸碑、一邊修廟編書，做的其實是同一件事的兩面：用文化證明自己的正當性。代價是台灣本土的語言與民間文化被壓到檯面下，原住民族的文化傳承也在這套一元的文化政策裡斷了層。
+  sources:
+    - title: 維基百科：中華文化復興運動
+      url: https://zh.wikipedia.org/wiki/中華文化復興運動
 
 - id: tw-kaohsiung-epz
   year: 1966
@@ -1454,6 +1475,31 @@
     - title: 維基百科：蔣中正
       url: https://zh.wikipedia.org/wiki/蔣中正
 
+- id: tw-campus-folk
+  year: 1975
+  title: 校園民歌運動，「唱自己的歌」
+  category: culture
+  importance: 3
+  desc: 楊弦在台北中山堂舉辦現代民謠創作演唱會，把余光中的詩譜成曲並出版唱片，一般視為台灣現代民歌的起點。1976 年 12 月，李雙澤在淡江的西洋民謠演唱會上拎著可口可樂上台，質問台上台下為什麼唱的都是英文歌，改唱〈補破網〉—— 廣為流傳的「摔可樂瓶」其實是後人添上去的，當晚的主持人陶曉清否認有這一幕。李雙澤隔年因救人溺斃，他寫的〈美麗島〉由楊祖珺推廣開來。退出聯合國與台美斷交的年代裡，年輕人先問的是「我們自己的歌在哪裡」。
+  sources:
+    - title: 維基百科：校園民歌
+      url: https://zh.wikipedia.org/wiki/校園民歌
+    - title: 維基百科：李雙澤
+      url: https://zh.wikipedia.org/wiki/李雙澤
+
+- id: tw-nativist-literature-debate
+  year: 1977
+  endYear: 1978
+  title: 鄉土文學論戰
+  category: culture
+  importance: 3
+  desc: 表面上爭的是文學該不該寫台灣的現實社會，實際上是戰後第一次把政治、經濟與社會處境攤開來吵的總檢驗。一方主張文學要回到農民與勞工的真實生活，另一方指其為工農兵文藝、影射左傾，在戒嚴體制下這種指控隨時可能變成刑責。論戰沒有結論，但此後本土題材不再是次要的，1980 年代的新電影與本土意識都接在這條線上。1930 年代日治時期也有過一場性質相近的台灣話文論戰，兩次隔了四十年。
+  sources:
+    - title: 維基百科：台灣鄉土文學論戰
+      url: https://zh.wikipedia.org/wiki/台灣鄉土文學論戰
+    - title: 維基百科：台灣話文論戰
+      url: https://zh.wikipedia.org/wiki/台灣話文論戰
+
 - id: tw-ck-president
   year: 1978
   title: 蔣經國就任總統
@@ -1518,6 +1564,17 @@
     - title: 維基百科：北迴線
       url: https://zh.wikipedia.org/wiki/北迴線
 
+- id: tw-new-cinema
+  year: 1982
+  endYear: 1987
+  title: 台灣新電影，鏡頭轉向真實生活
+  category: culture
+  importance: 3
+  desc: 一批新生代導演以寫實風格拍攝身邊的社會與記憶，題材是小鎮、家庭、成長與城鄉遷徙，形式上放棄了官營片廠慣用的政宣與類型套路。1983 年改編自黃春明小說的《兒子的大玩偶》遭檢舉並要求剪片，引發輿論反彈而作罷，一般稱為削蘋果事件。這波運動在票房上並不成功，卻讓台灣電影第一次在國際影展被看見，也替解嚴後侯孝賢、楊德昌、李安、蔡明亮那一代鋪好了路。
+  sources:
+    - title: 維基百科：台灣新電影
+      url: https://zh.wikipedia.org/wiki/台灣新電影
+
 - id: tw-indigenous-movement
   year: 1984
   title: 原住民族運動興起
@@ -1572,6 +1629,16 @@
     - title: 維基百科：李登輝
       url: https://zh.wikipedia.org/wiki/李登輝
 
+- id: tw-snail-movement
+  year: 1989
+  title: 無殼蝸牛運動，五萬人夜宿忠孝東路
+  category: economy
+  importance: 3
+  desc: 1987 年國有財產局標售華航總部旁土地創下天價，帶動全台房價在兩年內狂飆，所得卻沒有跟上。無住屋者團結組織在 8 月 26 日號召民眾夜宿台北市忠孝東路，到場約五萬人，是台灣第一次以都市議題為主的社會運動。運動催出了往後的住宅法制與社會住宅倡議，但房價所得比在此後三十多年裡只有更高 —— 這是少數訴求沒有隨解嚴一起被滿足的社會運動。
+  sources:
+    - title: 維基百科：無殼蝸牛運動
+      url: https://zh.wikipedia.org/wiki/無殼蝸牛運動
+
 - id: tw-wild-lily
   year: 1990
   title: 野百合學運，要求國會全面改選
@@ -1581,6 +1648,16 @@
   sources:
     - title: 維基百科：野百合學運
       url: https://zh.wikipedia.org/wiki/野百合學運
+
+- id: tw-women-zhijian
+  year: 1990
+  title: 「我們之間」成立，台灣第一個同志團體
+  category: culture
+  importance: 3
+  desc: 解嚴三年後，台灣第一個女同志組織「我們之間」成立。1993 年台大出現第一個相關的大學社團，同年立法委員召開公聽會討論反歧視與同性戀人權，多個團體聯合發表聲明；1998 年台灣同志諮詢熱線協會申請立案時，內政部以「同志宜尊重但不宜鼓勵」為由退件，靠持續行文抗爭才獲准。從一個沒有辦公室的小團體到 2019 年同婚立法，這條線走了二十九年。
+  sources:
+    - title: 維基百科：台灣LGBT權益
+      url: https://zh.wikipedia.org/wiki/台灣LGBT權益
 
 - id: tw-end-mobilization
   year: 1991
@@ -1706,6 +1783,16 @@
       url: https://zh.wikipedia.org/wiki/2008年中華民國總統選舉
     - title: 維基百科：馬英九
       url: https://zh.wikipedia.org/wiki/馬英九
+
+- id: tw-cape-no-7
+  year: 2008
+  title: 《海角七號》賣座，國片熱潮回來了
+  category: culture
+  importance: 3
+  desc: 好萊塢片長期佔據市場、國片籌資困難的低迷年代，魏德聖的首部劇情長片以五千萬元成本拍成，宣傳幾乎只靠網路口碑，最後全台票房超過五億三千萬，是當時最賣座的國產電影。此後《艋舺》《賽德克·巴萊》《那些年》《KANO》接連出現，本土題材重新有了商業上的可行性 —— 這是自 1980 年代新電影以來，台灣電影第一次同時拿到票房與話題。
+  sources:
+    - title: 維基百科：海角七號
+      url: https://zh.wikipedia.org/wiki/海角七號
 
 - id: tw-sunflower-movement
   year: 2014
