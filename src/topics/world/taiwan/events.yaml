@@ -4,6 +4,23 @@
 #
 # 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
 
+- id: tw-changbin
+  year: -3000
+  actualYear: -28000
+  title: 長濱文化，台灣最早的人類遺留
+  category: culture
+  importance: 3
+  desc: 台東長濱鄉八仙洞的海蝕洞群，1969 年首度發現，依考古學慣例以所在地命名。年代距今約三萬至一萬五千年前，是舊石器時代的漁獵採集隊群，住在海邊洞穴與岩蔭下，只用礫石單面打製砍器與石片器，不製陶，也沒有農耕或畜牧的跡象。它與六千年前才登場的新石器文化之間隔著近萬年的空白，兩者是否有承續關係至今不明——換句話說，台灣最早的居民未必就是原住民族的祖先。台南左鎮人的化石曾號稱「台灣最古老的人類」，2015 年重新定年後修正為距今約三千年；年代更早的是澎湖水道撈起的澎湖1號顎骨，2025 年經蛋白質分析確認屬於丹尼索瓦人，那已是另一個人種。
+  sources:
+    - title: 維基百科：長濱文化
+      url: https://zh.wikipedia.org/wiki/長濱文化
+    - title: 維基百科：八仙洞遺址
+      url: https://zh.wikipedia.org/wiki/八仙洞遺址
+    - title: 維基百科：左鎮人
+      url: https://zh.wikipedia.org/wiki/左鎮人
+    - title: 維基百科：澎湖1號
+      url: https://zh.wikipedia.org/wiki/澎湖1號
+
 - id: tw-tapenkeng
   year: -3000
   actualYear: -4000
@@ -17,6 +34,32 @@
       url: https://zh.wikipedia.org/wiki/大坌坑文化
     - title: 維基百科：南島語系
       url: https://zh.wikipedia.org/wiki/南島語系
+
+- id: tw-niumatou
+  year: -2500
+  endYear: -1400
+  title: 牛罵頭文化，中部的農耕聚落
+  category: culture
+  importance: 3
+  desc: 台中清水鰲峰山的命名遺址，1943 年由日本學者國分直一在大肚台地西緣調查時正式發現。陶器以紅褐色為主、拍印繩紋，看得出承續大坌坑而來；石製農具數量很大，顯示這裡已是以農耕為主、兼行漁撈狩獵的定居聚落。同一座山丘由下而上疊著牛罵頭、營埔、番仔園三個文化層，等於一份中部史前序列的標準剖面。
+  sources:
+    - title: 維基百科：牛罵頭遺址
+      url: https://zh.wikipedia.org/wiki/牛罵頭遺址
+    - title: 維基百科：臺灣史前時期
+      url: https://zh.wikipedia.org/wiki/臺灣史前時期
+
+- id: tw-zhishanyan
+  year: -1600
+  endYear: -1000
+  title: 芝山岩文化，台灣考古學的起點
+  category: culture
+  importance: 3
+  desc: 1896 年，總督府國語學校教諭粟野傳之丞在台北士林芝山岩山麓撿到史前石器，這是台灣第一個被發現的史前遺址，島上的考古工作自此開始。文化本身的內涵要到 1979 年雨農國小施工挖到地下兩公尺的貝層才確認——出土物與台北盆地已知的文化都對不上，於是另立「芝山岩文化」之名。地下水位以下的環境保住了木器、繩索與帶穗稻穀等有機質遺物，在台灣極為罕見，證實當時已有成熟的稻作。這一支的來歷至今不明，與前後的圓山、植物園文化都接不上。
+  sources:
+    - title: 維基百科：芝山岩遺址
+      url: https://zh.wikipedia.org/wiki/芝山岩遺址
+    - title: 維基百科：臺灣史前時期
+      url: https://zh.wikipedia.org/wiki/臺灣史前時期
 
 - id: tw-beinan
   year: -1500
