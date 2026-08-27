@@ -57,6 +57,18 @@
     - title: 維基百科：台灣鐵路
       url: https://zh.wikipedia.org/wiki/台灣鐵路
 
+- id: tra-1895-army-railway-corps
+  year: 1895
+  title: 陸軍臨時台灣鐵道隊接收清代鐵路，日治鐵道的過渡期
+  category: institution
+  importance: 4
+  desc: 1895年日軍登陸後，基隆至新竹的清代鐵路由陸軍臨時台灣鐵道隊接管，先修復被戰事與洪水破壞的橋樑路段，勉強維持軍運與客運。1897年鐵道事務移交台灣總督府民政部，1899年才設立鐵道部改為專責機關。這四年間的營運全靠清代留下的舊線舊車，橋樑屢壞屢修，也讓總督府認定清代路線非改線重建不可。
+  sources:
+    - title: 維基百科：臺灣總督府交通局鐵道部
+      url: https://zh.wikipedia.org/wiki/臺灣總督府交通局鐵道部
+    - title: 維基百科：臺灣日治時期年表
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期年表
+
 - id: tra-1899-railway-bureau
   year: 1899
   title: 台灣總督府鐵道部成立，縱貫線南北同時開工
@@ -98,6 +110,86 @@
   sources:
     - title: 維基百科：縱貫線 (臺鐵)
       url: https://zh.wikipedia.org/wiki/縱貫線_(臺鐵)
+
+- id: tra-1908-railway-hotel
+  year: 1908
+  endYear: 1945
+  title: 台灣鐵道飯店開業，縱貫線通車配套的第一家西式旅館
+  category: institution
+  importance: 3
+  desc: 1907年夏動工，1908年10月落成、11月1日開業，位於台北車站對面，由鐵道部直營。三層樓、三十間客房與兩間餐廳，是台灣第一家也是當時唯一一家西式旅館，落成時間刻意配合縱貫線全通式，讓遠道而來的貴賓有地方落腳。1945年5月31日台北大空襲中被炸毀，戰後未在原址重建，舊址如今是新光摩天大樓一帶。
+  sources:
+    - title: 維基百科：臺灣鐵道飯店
+      url: https://zh.wikipedia.org/wiki/臺灣鐵道飯店
+
+- id: tra-1910-taitung-line-start
+  year: 1910
+  title: 台東線開工，東部有了第一條鐵路
+  category: construction
+  importance: 3
+  desc: 1910年2月1日自花蓮港動工，同年12月15日花蓮港至鯉魚尾（今壽豐）先行舉行開通式，是東部第一段通車的鐵路。全段採762公釐窄軌，但路基橋隧依1067公釐標準預留，為日後改軌接上西部路網留了餘地。花蓮港至璞石閣（今玉里）到1917年才完工，全線通到台東更要等到1926年。
+  sources:
+    - title: 維基百科：臺東線
+      url: https://zh.wikipedia.org/wiki/臺東線
+    - title: 維基百科：臺灣日治時期年表
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期年表
+
+- id: tra-1911-night-train
+  year: 1911
+  title: 基隆至打狗夜行列車開行，縱貫線進入長途運輸時代
+  category: institution
+  importance: 2
+  desc: 1911年12月1日開行基隆至打狗（今高雄）的夜行列車，旅客上車過一夜就到島的另一端。隔年6月1日起，直達與夜行列車的一、二等車廂加掛食堂車。縱貫線1908年才剛全通，這兩項服務標誌著它從「接起來了」進入「當長途幹線在經營」的階段。
+  sources:
+    - title: 維基百科：臺灣日治時期年表
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期年表
+
+- id: tra-1913-akau-line
+  year: 1913
+  title: 阿緱線通車，下淡水溪鐵橋是當時的東洋第一長橋
+  category: opening
+  importance: 3
+  desc: 縱貫線南端自九曲堂跨過下淡水溪（今高屏溪）延伸到阿緱（今屏東），1913年12月20日開始營運，1914年2月15日由總督佐久間左馬太主持通車典禮。全長1526公尺、二十四孔鋼桁架的下淡水溪鐵橋號稱東洋第一長橋，設計者飯田豐二在完工前的1913年6月積勞病逝。舊橋1992年除役，1997年指定為國定古蹟保存至今。
+  sources:
+    - title: 維基百科：下淡水溪鐵橋
+      url: https://zh.wikipedia.org/wiki/下淡水溪鐵橋
+    - title: 維基百科：屏東線
+      url: https://zh.wikipedia.org/wiki/屏東線
+
+- id: tra-1918-yingge-runaway
+  year: 1918
+  title: 鶯歌石列車溜逸事故，促成縱貫線盤山展線改良
+  category: accident
+  importance: 3
+  desc: 1918年6月21日晚間，台北開出的南下列車行經鶯歌石往桃園途中連結器斷裂，當時列車尚未裝設貫通式空氣煞車，脫離的車廂順著坡度倒溜後相撞，官方記為6人當場死亡（另有13人死亡之說），重傷五十餘人、輕傷百餘人。事故揭露了陡坡加上無貫通軔機的致命組合，鐵道部因此把該段改為繞行山腰的展線以減緩坡度，1922年完工，鶯歌車站也在同年遷至現址。
+  sources:
+    - title: 維基百科：鶯歌石列車溜逸事故
+      url: https://zh.wikipedia.org/wiki/鶯歌石列車溜逸事故
+    - title: 維基百科：鶯歌車站
+      url: https://zh.wikipedia.org/wiki/鶯歌車站
+
+- id: tra-1919-bureau-building
+  year: 1919
+  title: 鐵道部遷入台北新廳舍，此後七十年的鐵路行政中心
+  category: institution
+  importance: 3
+  desc: 森山松之助設計的鐵道部廳舍座落於台北城北門旁，分兩期於1919、1920年完工，1919年5月27日鐵道部遷入。一樓磚造、二樓木造的半木構造，樑柱外露，木料多取自阿里山檜木——用自家鐵路運下山的木材蓋自家的辦公廳。這裡一直是台灣鐵路的行政中心，直到1990年台鐵局本部遷入台北車站大樓。2007年指定為國定古蹟，2020年以國立台灣博物館鐵道部園區的身分開放。
+  sources:
+    - title: 維基百科：臺灣總督府交通局鐵道部 (文化資產)
+      url: https://zh.wikipedia.org/wiki/臺灣總督府交通局鐵道部_(文化資產)
+
+- id: tra-1921-xindian-line
+  year: 1921
+  endYear: 1965
+  title: 台北鐵道新店線通車，民營鐵道進入台北盆地
+  category: opening
+  importance: 3
+  desc: 台北鐵道株式會社1919年由總督府評議員古賀三千人籌組，1921年3月24日試運轉、4月17日舉行萬華至新店的開通式，全長10.4公里、採1067公釐軌距，運送文山一帶的煤炭與茶葉，兼營客貨運，1931年再延長至文山郡役所。戰後改組為台北鐵路公司，1949年連同路線由台灣鐵路管理局收購，1965年廢線；同一條路廊日後成為捷運新店線。
+  sources:
+    - title: 維基百科：臺北鐵道
+      url: https://zh.wikipedia.org/wiki/臺北鐵道
+    - title: 維基百科：臺灣日治時期年表
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期年表
 
 - id: tra-1922-coastal-line
   year: 1922

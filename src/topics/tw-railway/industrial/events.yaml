@@ -2,6 +2,16 @@
 #
 # ⚠️ 多主題機制的驗證用種子資料，尚未走完 README 的完整查證流程。
 
+- id: alishan-1906-fujita
+  year: 1906
+  title: 藤田組動工興建阿里山鐵道，兩年後因財力不支中止
+  category: construction
+  importance: 4
+  desc: 1899年小池三九郎發現阿里山檜木林，總督府1903年起展開森林調查，1906年把開發權交給大阪的藤田組，同年動工興建自嘉義上山的鐵道。1907年7月起分段完工，修到梨園寮一帶約30公里，1908年2月藤田組以財力不足為由宣布中止整個阿里山開發計畫。台灣第一條登山鐵路一開始是民營事業，而且是做不下去的民營事業。
+  sources:
+    - title: 維基百科：阿里山林業鐵路
+      url: https://zh.wikipedia.org/wiki/阿里山林業鐵路
+
 - id: alishan-1907-shay-steam
   year: 1907
   endYear: 1976
@@ -13,6 +23,18 @@
     - title: 維基百科：阿里山林業鐵路蒸汽機車
       url: https://zh.wikipedia.org/wiki/阿里山林業鐵路蒸汽機車
 
+- id: alishan-1910-government
+  year: 1910
+  title: 阿里山鐵道改為官營，阿里山作業所接手續建
+  category: institution
+  importance: 4
+  desc: 1910年2月官營案通過，以120萬圓補償藤田組已投入的工程，同年4月成立阿里山作業所（嘉義設出張所）重新開工。民營中止到官營續建之間停了兩年，正是這次轉手才讓鐵道得以在1912年通到二萬平、1914年抵達沼平。日治時期的林業鐵路自此定型為官營事業，與同時期多半由會社自建的糖鐵、礦鐵走上不同的路。
+  sources:
+    - title: 維基百科：阿里山林業鐵路
+      url: https://zh.wikipedia.org/wiki/阿里山林業鐵路
+    - title: 維基百科：臺灣日治時期年表
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期年表
+
 - id: alishan-1912-opening
   year: 1912
   title: 阿里山林業鐵路嘉義至二萬平通車
@@ -22,6 +44,18 @@
   sources:
     - title: 維基百科：阿里山林業鐵路
       url: https://zh.wikipedia.org/wiki/阿里山林業鐵路
+
+- id: keelung-1912-light-railway
+  year: 1912
+  title: 基隆輕鐵三爪子線通車，人力台車撐起北部運煤網
+  category: opening
+  importance: 3
+  desc: 基隆輕鐵株式會社1912年4月落腳基隆、11月30日舉行開業式，12月5日三爪子線（基隆至猴硐）通車，主要運送沿線煤炭，後續再闢金瓜石線、金山線。這類輕便軌道多以人力推送台車，是官設鐵道到不了的地方唯一的軌道運輸，但也極不安全——1920年12月5日基隆輕鐵一次台車翻覆就當場死了8人。宜蘭線通車與礦坑關閉後三爪子線盛況不再，會社1920年代轉向金瓜石礦山與肥料事業。
+  sources:
+    - title: 維基百科：基隆輕鐵株式會社
+      url: https://zh.wikipedia.org/wiki/基隆輕鐵株式會社
+    - title: 維基百科：臺灣日治時期年表
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期年表
 
 - id: alishan-1914-zhaoping
   year: 1914
