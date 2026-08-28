@@ -976,6 +976,16 @@
     - title: 維基百科：澳門回歸
       url: https://zh.wikipedia.org/wiki/澳門回歸
 
+- id: cnp-1999-falun-gong
+  year: 1999
+  title: 取締法輪功，六四之後最大規模的鎮壓
+  category: repression
+  importance: 4
+  desc: 4 月 25 日逾萬名法輪功學員無預警聚集中南海周邊上訪，是六四之後十年間規模最大的一次示威；6 月成立專責的「610 辦公室」，7 月 20 日民政部公告取締，全面查禁並展開大規模拘捕。官方估計此前修煉者達七千萬至一億人。這件事顯示改革開放二十年後，體制真正無法容忍的不是特定主張，而是任何能在全國範圍內自行動員起來、且不受黨掌握的組織——同一套邏輯此後反覆用在維權律師、NGO 與宗教團體上。
+  sources:
+    - title: 維基百科：法輪功
+      url: https://zh.wikipedia.org/wiki/法輪功
+
 - id: cnp-2002-sixteenth-congress
   year: 2002
   endYear: 2003
@@ -1010,6 +1020,18 @@
   sources:
     - title: 維基百科：三通
       url: https://zh.wikipedia.org/wiki/三通
+
+- id: cnp-2008-charter-08
+  year: 2008
+  title: 零八憲章，體制外最後一次成篇的憲政訴求
+  category: movement
+  importance: 4
+  desc: 12 月 9 日發表，張祖樺起草、劉曉波等人修改，首批三百零三人連署，其後累積逾萬人。內容以修憲、分權制衡、司法獨立與結社集會言論自由等十九項主張為骨幹，主張民主憲政而非推翻政權。劉曉波隔年 12 月 25 日以煽動顛覆國家政權罪判刑十一年，2010 年在獄中獲諾貝爾和平獎。此後中國境內再沒有出現同等規模、具名連署的憲政改革文本——這條由知識分子提出制度方案的路，從五四、七九民主牆一路延續下來，到這裡斷了。
+  sources:
+    - title: 維基百科：零八憲章
+      url: https://zh.wikipedia.org/wiki/零八憲章
+    - title: 維基百科：劉曉波
+      url: https://zh.wikipedia.org/wiki/劉曉波
 
 - id: cnp-2012-bo-xilai
   year: 2012

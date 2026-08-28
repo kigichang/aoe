@@ -1075,6 +1075,18 @@
     - title: 維基百科：中華民國刑法第一百條
       url: https://zh.wikipedia.org/wiki/中華民國刑法第一百條
 
+- id: twp-1991-tai-du-hui
+  year: 1991
+  title: 獨台會案，八天之內逼掉懲治叛亂條例
+  category: repression
+  importance: 4
+  desc: 5 月 9 日調查局以參加獨立台灣會為由，未經校方同意進入校園拘提廖偉程、陳正然、王秀惠、林銀福、安正光五人，罪名依懲治叛亂條例與刑法一百條。此時距離宣告終止動員戡亂才八天，社會發現威權法制其實原封不動。學生自 5 月 15 日罷課、靜坐台北車站到 20 日，5 月 17 日立法院即三讀廢止懲治叛亂條例，隔年刑法一百條也跟著修正，全案改判免訴。終止動員戡亂是由上而下宣告的，真正把配套的法制拆掉的是這一次由下而上的反彈。
+  sources:
+    - title: 維基百科：獨立台灣會案
+      url: https://zh.wikipedia.org/wiki/獨立台灣會案
+    - title: 維基百科：懲治叛亂條例
+      url: https://zh.wikipedia.org/wiki/懲治叛亂條例
+
 - id: twp-1991-first-amendment
   year: 1991
   title: 第一次修憲，資深中央民代全體退職
@@ -1311,6 +1323,17 @@
     - title: 維基百科：連戰
       url: https://zh.wikipedia.org/wiki/連戰
 
+- id: twp-2006-red-shirts
+  year: 2006
+  endYear: 2007
+  title: 百萬人民倒扁運動，街頭第一次由在野的一方發動
+  category: movement
+  importance: 4
+  desc: 8 月民主進步黨前主席施明德以國務機要費案與親信弊案為由，號召群眾要求陳水扁下台，十天內約一百三十萬人繳交承諾金；9 月 9 日起靜坐凱達格蘭大道，15 日的圍城行動警方估計三十六萬人。運動持續到 2007 年 9 月解散，陳水扁做滿任期。台灣的大規模街頭動員此前幾乎都是要求開放體制的一方發動的，這次反過來——由曾經的黨外領袖領著在野群眾要求民選總統下台。它沒有達成訴求，卻替兩年後的二次政黨輪替鋪好了路。
+  sources:
+    - title: 維基百科：百萬人民倒扁運動
+      url: https://zh.wikipedia.org/wiki/百萬人民倒扁運動
+
 - id: twp-2008-second-transition
   year: 2008
   title: 二次政黨輪替，馬英九當選總統
@@ -1394,6 +1417,18 @@
   sources:
     - title: 維基百科：促進轉型正義委員會
       url: https://zh.wikipedia.org/wiki/促進轉型正義委員會
+
+- id: twp-2018-local-elections-referendums
+  year: 2018
+  title: 地方選舉大敗，十案公投同日登場
+  category: election
+  importance: 4
+  desc: 11 月 24 日縣市長選舉中國國民黨拿下十五席、民主進步黨只剩六席，執政黨版圖比 2014 年整個翻轉回去。同日舉行十案全國性公民投票，是 2017 年門檻大幅降低後的第一次大規模適用，七案通過三案否決，議題涵蓋能源、核食、東奧正名與同婚。投開票所排隊過長、部分地區邊投票邊開票，中選會主委因此辭職。這一天同時示範了兩件事：地方選舉是中央執政的期中考，以及直接民權一旦門檻降低就會變成常態的動員工具——一年多後的總統大選，執政黨又以史上最高票翻了回來。
+  sources:
+    - title: 維基百科：2018年中華民國地方公職人員選舉
+      url: https://zh.wikipedia.org/wiki/2018年中華民國地方公職人員選舉
+    - title: 維基百科：2018年中華民國全國性公民投票
+      url: https://zh.wikipedia.org/wiki/2018年中華民國全國性公民投票
 
 - id: twp-2019-anti-infiltration
   year: 2019
