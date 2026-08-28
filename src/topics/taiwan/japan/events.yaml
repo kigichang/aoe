@@ -377,6 +377,18 @@
     - title: 維基百科：禁中並公家諸法度
       url: https://zh.wikipedia.org/wiki/禁中並公家諸法度
 
+- id: jp-murayama-taiwan
+  year: 1616
+  title: 村山等安遠征台灣失敗
+  category: war
+  importance: 2
+  desc: 長崎代官村山等安奉德川家康之命，派十三艘船、數千人遠征「高砂國」，是日本第一次對台灣的軍事行動。船隊在琉球海面遇風暴四散，只有一艘抵達台灣，登陸者遭原住民圍攻自盡；其餘船隻轉而劫掠福建沿海。此前有馬晴信在 1609 年也曾派人探查台灣。豐臣秀吉招諭高山國、德川初期的兩次遠征，顯示日本在鎖國之前對台灣的興趣不小；鎖國之後這條線中斷，兩個半世紀後以牡丹社事件重新接上。
+  sources:
+    - title: 維基百科：村山等安
+      url: https://zh.wikipedia.org/wiki/村山等安
+    - title: 日文維基百科：村山等安
+      url: https://ja.wikipedia.org/wiki/村山等安
+
 - id: jp-sankin-kotai
   year: 1635
   title: 武家諸法度改訂，參勤交代制度化
@@ -816,6 +828,18 @@
     - title: 維基百科：自由民權運動
       url: https://zh.wikipedia.org/wiki/自由民權運動
 
+- id: jp-taiwan-expedition-1874
+  year: 1874
+  title: 台灣出兵，明治日本第一次海外用兵
+  category: war
+  importance: 3
+  desc: 琉球宮古島民漂流到台灣南部遭牡丹社人殺害，日本以清廷宣稱「生番化外」為由，由西鄉從道率三千六百人登陸恆春，攻破牡丹社後駐紮半年。戰死僅十餘人，病死卻逾五百。清日在北京簽約，清朝付銀五十萬兩並承認出兵為「保民義舉」，日本藉此確立琉球歸屬，五年後廢藩置縣。這是明治政府第一次海外出兵，也是征韓論政變後安撫士族的出口；台灣則成為日本此後二十年始終盯著的目標。
+  sources:
+    - title: 維基百科：牡丹社事件
+      url: https://zh.wikipedia.org/wiki/牡丹社事件
+    - title: 日文維基百科：台湾出兵
+      url: https://ja.wikipedia.org/wiki/台湾出兵
+
 - id: jp-seinan-war
   year: 1877
   title: 西南戰爭，最後士族反亂平定
@@ -875,6 +899,18 @@
   sources:
     - title: 維基百科：甲午戰爭
       url: https://zh.wikipedia.org/wiki/甲午戰爭
+
+- id: jp-taiwan-government-general
+  year: 1895
+  title: 設臺灣總督府，日本取得第一個殖民地
+  category: politics
+  importance: 4
+  desc: 下關條約割讓台灣後，海軍大將樺山資紀出任首任台灣總督，六月在台北舉行始政式。總督府集行政、立法（六三法委任立法）、軍事於一身，前七任皆為武官。日本國內為「如何統治異民族」爭論不休：原敬主張內地延長、後藤新平主張依生物學原則另立特別統治，後者在 1898 年後主導了殖民地經營。台灣是日本帝國的第一個殖民地，五十年間的統治手法後來搬到朝鮮與滿洲。
+  sources:
+    - title: 維基百科：臺灣總督府
+      url: https://zh.wikipedia.org/wiki/臺灣總督府
+    - title: 日文維基百科：台湾総督府
+      url: https://ja.wikipedia.org/wiki/台湾総督府
 
 - id: jp-anglo-japanese-alliance-1902
   year: 1902
@@ -1124,6 +1160,18 @@
     - title: 維基百科：二二六事件
       url: https://zh.wikipedia.org/wiki/二二六事件
 
+- id: jp-nanshin-policy
+  year: 1936
+  title: 南進論成為國策，台灣定位為南進基地
+  category: politics
+  importance: 3
+  desc: 廣田弘毅內閣的「國策基準」把向南洋擴張與向北對抗蘇聯並列為國策，海軍主導的南進論從民間論述變成國家方針。台灣是南進的跳板：同年恢復武官總督，小林躋造提出皇民化、工業化、南進基地化三原則，成立台灣拓殖株式會社經營南洋，高雄擴建為軍港。1941 年日軍從台灣起飛轟炸菲律賓，南進論走到終點，台灣也因此在戰爭末期成為盟軍空襲的目標。
+  sources:
+    - title: 維基百科：南進論
+      url: https://zh.wikipedia.org/wiki/南進論
+    - title: 日文維基百科：南進論
+      url: https://ja.wikipedia.org/wiki/南進論
+
 - id: jp-marco-polo-bridge
   year: 1937
   title: 盧溝橋事變，日中戰爭全面爆發
@@ -1224,6 +1272,18 @@
       url: https://zh.wikipedia.org/wiki/舊金山和約
     - title: 維基百科：美日安保條約
       url: https://zh.wikipedia.org/wiki/美日安保條約
+
+- id: jp-japan-roc-peace-treaty
+  year: 1952
+  title: 日華和平條約，日本選擇與台北締約
+  category: politics
+  importance: 3
+  desc: 舊金山和約沒有邀請任何一個中國政府參加，日本要與哪個中國締約成為問題。在美國壓力下吉田茂以「吉田書簡」承諾與中華民國締約，和約在舊金山和約生效同一天在台北簽署，日本聲明放棄台灣、澎湖主權但未言明歸屬。這份條約讓日本在冷戰中站在台北一邊二十年，1972 年田中角榮與北京建交時宣布它「失去存在意義」，日台關係改由民間的交流協會維繫。
+  sources:
+    - title: 維基百科：中日和約
+      url: https://zh.wikipedia.org/wiki/中日和約
+    - title: 日文維基百科：日本国と中華民国との間の平和条約
+      url: https://ja.wikipedia.org/wiki/日本国と中華民国との間の平和条約
 
 - id: jp-high-growth
   year: 1955
@@ -1536,7 +1596,7 @@
   title: 東日本大震災，福島核電廠事故
   category: culture
   importance: 5
-  desc: 3 月 11 日東北地方太平洋沖發生芮氏規模 9.0 海溝型強震，引發巨大海嘯，造成近二萬人死亡與失蹤，並引發福島第一核電廠爐心融毀之核災事故。這是戰後日本遭逢最嚴重的複合型天災與人禍。
+  desc: 3 月 11 日東北地方太平洋沖發生芮氏規模 9.0 海溝型強震，引發巨大海嘯，造成近二萬人死亡與失蹤，並引發福島第一核電廠爐心融毀之核災事故。這是戰後日本遭逢最嚴重的複合型天災與人禍。台灣民間與政府捐款逾兩百億日圓，居各國之冠，日本政府與民間此後多年以「謝謝台灣」回應，成為日台民間關係的轉捩點。
   sources:
     - title: 維基百科：東日本大震災
       url: https://zh.wikipedia.org/wiki/東日本大震災
