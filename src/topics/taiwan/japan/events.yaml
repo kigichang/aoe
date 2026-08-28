@@ -1,0 +1,1736 @@
+# year: 負數 = 西元前，沒有西元 0 年。endYear 選填（有跨度的事件）。
+# category: politics | war | culture | science | religion | economy
+# importance: 1-5。縮放到全域視角時只會顯示 5，放大後才逐層釋出。
+#
+# 本欄由 world/japan/events.yaml 複製（year ≥ 1500），兩份獨立維護、不會自動同步；
+# id 與世界史相同只是為了日後 diff 方便。
+#
+# 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
+
+
+
+
+- id: jp-teppo-sengoku
+  year: 1543
+  title: 鐵砲傳來，火繩槍傳入徹底改變戰國戰術
+  category: science
+  importance: 5
+  desc: 一艘載有葡萄牙人的中國船隻漂流至種子島，將火繩槍（鐵砲）傳入日本。火器隨後在日本各地被迅速仿製並大量投入實戰，徹底改變了傳統的騎馬與弓矢戰術，加速了戰國時代的統一進程。
+  sources:
+    - title: 維基百科：战国时代 (日本)
+      url: https://zh.wikipedia.org/wiki/战国时代_(日本)
+    - title: 維基百科：鐵砲傳來
+      url: https://zh.wikipedia.org/wiki/鐵砲傳來
+
+- id: jp-xavier-sengoku
+  year: 1549
+  title: 天主教傳入日本，南蠻貿易與大航海時代的交會
+  category: religion
+  importance: 4
+  desc: 耶穌會傳教士方濟·沙勿略抵達鹿兒島，首次將天主教引入日本。隨著傳教活動的展開，葡萄牙與西班牙商船也帶來了歐洲的火器、絲綢與醫學，開啟了繁榮的「南蠻貿易」。
+  sources:
+    - title: 維基百科：战国时代 (日本)
+      url: https://zh.wikipedia.org/wiki/战国时代_(日本)
+    - title: 維基百科：方濟·沙勿略
+      url: https://zh.wikipedia.org/wiki/方濟·沙勿略
+
+- id: jp-okehazama
+  year: 1560
+  title: 桶狹間之戰，織田信長擊敗今川義元崛起
+  category: war
+  importance: 5
+  desc: 稱霸東海道的強大戰國大名今川義元率領大軍上洛，卻在尾張國桶狹間遭到織田信長率領的少數兵力奇襲並戰死。此戰使織田信長一躍成為戰國風雲人物，奠定其邁向天下布武的基礎。
+  sources:
+    - title: 維基百科：战国时代 (日本)
+      url: https://zh.wikipedia.org/wiki/战国时代_(日本)
+    - title: 維基百科：桶狹間之戰
+      url: https://zh.wikipedia.org/wiki/桶狹間之戰
+    - title: 維基百科：織田信長
+      url: https://zh.wikipedia.org/wiki/織田信長
+
+- id: jp-ane-gawa-1570
+  year: 1570
+  title: 姊川之戰，織田德川聯軍擊敗淺井朝倉聯軍
+  category: war
+  importance: 4
+  desc: 織田信長與德川家康聯軍於近江姊川與妹川河畔迎擊妹婿淺井長政與越前朝倉義景聯軍。雙方爆發激烈血戰，信長軍最終成功突破朝倉軍防線取得勝利，重創「第一期信長包圍網」的核心武力。
+  sources:
+    - title: 維基百科：姊川之戰
+      url: https://zh.wikipedia.org/wiki/姊川之戰
+
+- id: jp-hieizan-burn-1571
+  year: 1571
+  title: 比叡山延曆寺燒討，信長打擊天台宗寺社勢力
+  category: religion
+  importance: 4
+  desc: 織田信長因天台宗大本山比叡山延曆寺庇護淺井朝倉聯軍，率大軍包圍比叡山並下令將山中堂塔神社全數焚毀，萬餘名僧兵與平民遭殘酷屠戮。此舉震撼全國宗教界，奠定信長壓制割據寺社勢力的基礎。
+  sources:
+    - title: 日文維基百科：比叡山燒討 (1571年)
+      url: https://ja.wikipedia.org/wiki/比叡山焼き討ち_(1571年)
+
+- id: jp-mikatagahara-1572
+  year: 1572
+  title: 三方原之戰，武田信玄發動西上作戰大破德川軍
+  category: war
+  importance: 4
+  desc: 「戰國第一名將」武田信玄響應包圍網號召發動西上作戰，率精銳騎兵於遠江三方原台地奇襲並大破德川家康與織田援軍。家康倉皇逃回濱松城。然而信玄隨後於陣中病逝，信長危機得以化解。
+  sources:
+    - title: 維基百科：三方原之戰
+      url: https://zh.wikipedia.org/wiki/三方原之戰
+
+- id: jp-muromachi-fall
+  year: 1573
+  title: 織田信長驅逐將軍足利義昭，室町幕府實質滅亡
+  category: politics
+  importance: 5
+  desc: 擁立第15代將軍足利義昭上洛的織田信長，因與義昭理念不合而爆發衝突。信長擊敗義昭並將其流放逐出京都，延續了近 240 年的室町幕府至此實質上宣告滅亡，信長掌握畿內霸權。
+  sources:
+    - title: 維基百科：織田信長
+      url: https://zh.wikipedia.org/wiki/織田信長
+    - title: 維基百科：室町幕府
+      url: https://zh.wikipedia.org/wiki/室町幕府
+    - title: 維基百科：足利義昭
+      url: https://zh.wikipedia.org/wiki/足利義昭
+
+- id: jp-azuchi-castle-1576
+  year: 1576
+  endYear: 1579
+  title: 織田信長建造安土城，開創巨大高層天守閣建築
+  category: culture
+  importance: 4
+  desc: 織田信長於琵琶湖畔安土山興建巨大五重七階的高層城堡「安土城」。安土城擁有金碧輝煌的朱漆外觀與狩野派壁畫天守，兼具軍事防禦機能與政治權威象徵，開創了日本「城郭建築」與桃山文化的時代標誌。
+  sources:
+    - title: 維基百科：安土城
+      url: https://zh.wikipedia.org/wiki/安土城
+
+- id: jp-rakuichi-rakuza-1577
+  year: 1577
+  title: 織田信長頒布樂市樂座令，實施自由貿易與撤銷關所
+  category: economy
+  importance: 4
+  desc: 織田信長於安土城下町等領地全面頒布《樂市樂座令》，強制廢除獨佔交易特權的商業同業公會「座」與關所課稅。免除商稅與自由開市吸引了全日本商人與資本，大幅促進了商品經濟繁榮與城下町發展。
+  sources:
+    - title: 維基百科：樂市樂座
+      url: https://zh.wikipedia.org/wiki/樂市樂座
+
+- id: jp-tedorigawa-1577
+  year: 1577
+  title: 手取川之戰，「越後之龍」上杉謙信大破織田軍
+  category: war
+  importance: 3
+  desc: 上杉謙信南下加賀響應包圍網，於手取川大破柴田勝家與前田利家率領的織田大軍。手取川之戰為上杉謙信生涯最後大捷，然而翌年謙信暴斃，北陸戰線隨之動搖。
+  sources:
+    - title: 維基百科：手取川之戰
+      url: https://zh.wikipedia.org/wiki/手取川之戰
+
+- id: jp-ishiyama-honganji-1580
+  year: 1580
+  title: 石山合戰終結，本願寺顯如撤離石山城
+  category: religion
+  importance: 4
+  desc: 織田信長與淨土真宗本願寺顯如教團經歷長達十年之久的「石山合戰」。在朝廷敕命下雙方達成和睦，顯如率門徒退出石山本願寺（後之地改建為大坂城），信長徹底消滅了宗教武裝力量對政權的最後威脅。
+  sources:
+    - title: 維基百科：石山合戰
+      url: https://zh.wikipedia.org/wiki/石山合戰
+
+- id: jp-yasuke-1581
+  year: 1581
+  title: 織田信長召見黑人彌助，授予武士身分
+  category: culture
+  importance: 3
+  desc: 耶穌會巡視員范禮留帶同來自非洲的黑人僕從覲見織田信長。信長對其魁梧體格極感興趣，將其賜名「彌助」（Yasuke）並收為專屬近侍武士，成為日本史上首位非亞洲出身的武士。
+  sources:
+    - title: 維基百科：彌助
+      url: https://zh.wikipedia.org/wiki/彌助
+
+- id: jp-koshu-conquest-1582
+  year: 1582
+  title: 甲州征伐，織田德川聯軍消滅甲斐武田氏
+  category: war
+  importance: 4
+  desc: 織田信長與德川家康發動甲州征伐，聯軍大舉進攻甲斐與信濃，武田勝賴於天目山切腹，戰國威名赫赫的甲斐武田氏正式覆滅。
+  sources:
+    - title: 維基百科：甲州征伐
+      url: https://zh.wikipedia.org/wiki/甲州征伐
+
+- id: jp-honnoji
+  year: 1582
+  title: 本能寺之變
+  category: politics
+  importance: 5
+  desc: 天正十年六月二日（1582年6月21日），明智光秀突然舉兵包圍京都本能寺，織田信長猝不及防，望見敵軍「水色桔梗」家紋旗幟後知大勢已去，據傳留下「沒有辦法」一語後於殿內自盡，遺體隨大火下落不明。光秀起兵動機眾說紛紜，有怨恨說（遭解除接待德川家康之職、母親於丹波之戰遇害）、野心說、朝廷黑幕說與秀吉黑幕說等，至今未有定論。事變後光秀在山崎之戰敗於羽柴秀吉，倉皇逃亡途中遭落武者狩殺死，僅「三日天下」，秀吉則趁勢崛起，成為織田政權的實質繼承者。
+  sources:
+    - title: 維基百科：本能寺之變
+      url: https://zh.wikipedia.org/wiki/本能寺之變
+
+- id: jp-shizugatake-1583
+  year: 1583
+  title: 賤岳之戰，羽柴秀吉確立信長繼承人地位
+  category: war
+  importance: 4
+  desc: 本能寺之變後，羽柴秀吉與織田家首席家老柴田勝家爆發爭霸戰爭。秀吉於近江賤岳大破柴田軍，柴田勝家與阿市切腹自盡，秀吉實質掌握織田舊領並確立霸主地位。
+  sources:
+    - title: 維基百科：賤岳之戰
+      url: https://zh.wikipedia.org/wiki/賤岳之戰
+
+- id: jp-osaka-castle-1583
+  year: 1583
+  endYear: 1585
+  title: 豐臣秀吉興建大坂城，打造豐臣政權中心
+  category: culture
+  importance: 4
+  desc: 豐臣秀吉於石山本願寺舊址動用全日本大名人夫與財力興建巨大水陸要塞「大坂城」。金箔飾頂的五重天守閣與雄偉石垣成為豐臣政權最高權威象徵，水陸交通交會使大坂成為日本最大商業都市。
+  sources:
+    - title: 維基百科：大阪城
+      url: https://zh.wikipedia.org/wiki/大阪城
+
+- id: jp-komaki-nagakute-1584
+  year: 1584
+  title: 小牧・長久手之戰，羽柴秀吉與德川家康對峙和睦
+  category: war
+  importance: 4
+  desc: 織田信雄聯合德川家康起兵對抗羽柴秀吉。家康於長久手伏擊擊殺秀吉部將池田恆興與森長可，秀吉隨後運用外交策略單獨與信雄和睦，促使家康隨後向秀吉臣服並前往大坂客從。
+  sources:
+    - title: 維基百科：小牧、長久手之戰
+      url: https://zh.wikipedia.org/wiki/小牧、長久手之戰
+
+- id: jp-kanpaku-hidetsugu-1585
+  year: 1585
+  title: 羽柴秀吉就任關白，賜姓「豐臣」公家政權化
+  category: politics
+  importance: 4
+  desc: 朝廷任命武家出身的羽柴秀吉為「關白」（次年更兼任太政大臣並獲天皇賜姓「豐臣」）。秀吉打破平氏與源氏武家棟樑傳統，藉由公家最高官位確立對全日本大名的統裁法理。
+  sources:
+    - title: 維基百科：豐臣秀吉
+      url: https://zh.wikipedia.org/wiki/豐臣秀吉
+    - title: 維基百科：關白
+      url: https://zh.wikipedia.org/wiki/關白
+
+- id: jp-bateren-edict
+  year: 1587
+  title: 伴天連追放令，開始壓制基督教
+  category: religion
+  importance: 3
+  desc: 1587年7月24日，豐臣秀吉在九州征伐途中於筑前箱崎頒布《伴天連追放令》，勒令傳教士20日內離境，但仍允許南蠻商船繼續通商貿易。秀吉憂心基督教社群坐大恐如一向一揆般難以掌控，也不滿其教義與神佛信仰衝突，加上得知歐洲商人涉入日本人的奴隸買賣，遂下令禁教。此令執行並不徹底，僅將傳教與通商分離，基督教大名仍受限制；直到1596年聖費利佩號事件與1614年德川幕府全面禁教令，才逐步收緊，最終促成鎖國。原件現藏長崎縣平戶市松浦史料博物館。
+  sources:
+    - title: 維基百科：伴天連追放令
+      url: https://zh.wikipedia.org/wiki/伴天連追放令
+    - title: 日文維基百科：伴天連追放令
+      url: https://ja.wikipedia.org/wiki/バテレン追放令
+
+- id: jp-kyushu-conquest-1587
+  year: 1587
+  title: 九州征伐，豐臣秀吉大軍平定九州降伏島津氏
+  category: war
+  importance: 4
+  desc: 應大友宗麟求援，豐臣秀吉頒布《惣無事令》（禁止大名私鬥），並親率二十萬大軍遠征九州。豐臣大軍一路突破日向與薩摩，島津義久切腹出家降伏，九州納入豐臣政權版圖。
+  sources:
+    - title: 維基百科：九州征伐
+      url: https://zh.wikipedia.org/wiki/九州征伐
+
+- id: jp-katana-gari-1588
+  year: 1588
+  title: 豐臣秀吉頒布刀狩令，實施兵農分離
+  category: politics
+  importance: 4
+  desc: 豐臣秀吉頒布《刀狩令》，沒收農民與寺社所持刀劍弓槍等武器，並結合全日本「太閤檢地」統一石高計稅。此舉鞏固封建治安並徹底實施兵農分離與石高制。
+  sources:
+    - title: 維基百科：刀狩令
+      url: https://zh.wikipedia.org/wiki/刀狩令
+    - title: 維基百科：太閤檢地
+      url: https://zh.wikipedia.org/wiki/太閤檢地
+
+- id: jp-hideyoshi
+  year: 1590
+  title: 豐臣秀吉統一日本
+  category: politics
+  importance: 5
+  desc: 出身貧農、1537年生的豐臣秀吉，早年僅是織田信長的草履持，憑藉軍功與謀略一路崛起。1590年他親率大軍圍攻小田原城，北條氏政、氏照兄弟兵敗切腹，繼承人氏直流放高野山，「獨眼龍」伊達政宗亦於同年主動請降，日本本州、四國、九州自此重歸統一，是應仁之亂以來一個半世紀首度實現的全國一統。
+  sources:
+    - title: 維基百科：豐臣秀吉
+      url: https://zh.wikipedia.org/wiki/豐臣秀吉
+    - title: 維基百科：小田原之戰
+      url: https://zh.wikipedia.org/wiki/小田原之戰
+
+- id: jp-sen-no-rikyu-1591
+  year: 1591
+  title: 天下一茶人千利休賜死，侘茶文化全盛
+  category: culture
+  importance: 3
+  desc: 豐臣秀吉命令側近茶道大師千利休切腹自盡。千利休創立「侘茶」體系與黃金茶室/待庵茶室美學，集日本茶道美學之大成，深遠影響日本傳統審美與桃山文化。
+  sources:
+    - title: 維基百科：千利休
+      url: https://zh.wikipedia.org/wiki/千利休
+
+- id: jp-korea-campaign
+  year: 1592
+  title: 文祿・慶長之役，出兵朝鮮
+  category: war
+  importance: 4
+  endYear: 1598
+  desc: 秀吉懷抱「唐入り」野心，藉道朝鮮攻明遭拒後大舉出兵，文祿之役一度攻陷漢城、平壤，卻在明軍參戰與李舜臣水軍屢破日本艦隊（閑山島海戰）後陷入膠著，1593年休戰。1596年和議破裂，秀吉再度出兵（慶長之役），戰事同樣受阻於蔚山城久攻不下與鳴梁海戰的水軍慘敗。1598年秀吉病逝，各路大名以此為由決定撤兵，露梁海戰中李舜臣雖戰死卻重創撤退日軍。這場動員全國近半兵力的戰爭耗盡西國大名的財力軍力，也讓豐臣政權喪失出兵大義，是兩年後關原之戰豐臣勢力潰敗的遠因。
+  sources:
+    - title: 維基百科：萬曆朝鮮之役
+      url: https://zh.wikipedia.org/wiki/萬曆朝鮮之役
+    - title: 日文維基百科：文禄・慶長の役
+      url: https://ja.wikipedia.org/wiki/文禄・慶長の役
+    - title: 維基百科：李舜臣
+      url: https://zh.wikipedia.org/wiki/李舜臣
+
+- id: jp-hidetsugu-incident-1595
+  year: 1595
+  title: 豐臣秀次切腹事件，秀次一族遭誅滅
+  category: politics
+  importance: 4
+  desc: 秀吉親生子豐臣秀賴出生後，秀吉與外甥兼關白豐臣秀次產生嚴重猜忌。秀次被流放高野山並勒令切腹自盡，其妻妾子嗣三十餘人於京都三條河原遭公開處刑。此事重創豐臣宗家家臣團凝聚力。
+  sources:
+    - title: 維基百科：豐臣秀次
+      url: https://zh.wikipedia.org/wiki/豐臣秀次
+
+- id: jp-26-martyrs-1597
+  year: 1597
+  title: 長崎二十六聖人殉教事件，嚴厲處刑天主教徒
+  category: religion
+  importance: 3
+  desc: 聖費利佩號事件後秀吉大怒，下令於京都、大坂逮捕方濟各會傳教士與日本天主教徒共 26 人，押解徒步押送至長崎立石山十字架處死。此為日本史上首次由國家大規模公開處決基督教徒事件。
+  sources:
+    - title: 維基百科：日本二十六聖人
+      url: https://zh.wikipedia.org/wiki/日本二十六聖人
+
+- id: jp-go-tairo-go-bugyo-1598
+  year: 1598
+  title: 豐臣秀吉設立「五大老」與「五奉行」輔政體制
+  category: politics
+  importance: 4
+  desc: 豐臣秀吉於伏見城臨終前，為確保幼子秀賴順利繼位，設立由德川家康、前田利家等大名組成的「五大老」掌行政權，以及石田三成、增田長盛等臣組成的「五奉行」掌司法與行政，然而秀吉死後兩派隨即陷入嚴重對立。
+  sources:
+    - title: 維基百科：五大老
+      url: https://zh.wikipedia.org/wiki/五大老
+    - title: 維基百科：五奉行
+      url: https://zh.wikipedia.org/wiki/五奉行
+
+- id: jp-sekigahara
+  year: 1600
+  title: 關原之戰
+  category: war
+  importance: 5
+  desc: 豐臣秀吉死後，五大老之首德川家康與五奉行石田三成的矛盾白熱化，1600年9月15日兩軍在美濃關原對峙，東軍（德川方）約7萬4千至10萬4千人，西軍（石田方）約8萬餘人。戰事本呈膠著，午間小早川秀秋臨陣倒戈突襲西軍側翼，引發西軍陣營連鎖潰散，一日之內東軍即大獲全勝。石田三成、小西行長、安國寺惠瓊等西軍將領事後被俘處斬，豐臣家領地由222萬石驟減至65萬石，約90名大名喪失領地、105名獲得新封地，全國近660萬石領地重新分配。德川家康自此確立天下霸權，三年後開創江戶幕府。
+  sources:
+    - title: 維基百科：關原之戰
+      url: https://zh.wikipedia.org/wiki/關原之戰
+
+- id: jp-edo-bakufu
+  year: 1603
+  title: 德川家康開江戶幕府
+  category: politics
+  importance: 5
+  desc: 關原之戰後，德川家康於1603年3月24日受封征夷大將軍，正式開創江戶幕府，確立以將軍為頂點、直轄領約700萬石的「幕藩體制」，大名分為親藩、譜代、外樣三類。家康1605年迅速讓位給兒子秀忠，自己以「大御所」身分退居幕後掌控實權，藉此宣示將軍職世襲、豐臣氏已非天下共主。此時豐臣氏雖仍盤據大坂城，但幕府已透過階級制度層層壓制，直到1615年大坂之陣才徹底消滅其威脅。江戶幕府自此延續265年，直到1868年末代將軍德川慶喜大政奉還為止。
+  sources:
+    - title: 維基百科：江戶幕府
+      url: https://zh.wikipedia.org/wiki/江戶幕府
+    - title: 維基百科：德川家康
+      url: https://zh.wikipedia.org/wiki/德川家康
+
+- id: jp-shuin-sen-trade
+  year: 1604
+  endYear: 1635
+  title: 德川家康實施朱印船貿易
+  category: economy
+  importance: 3
+  desc: 德川家康發放加蓋將軍朱印的渡海執照（朱印狀），允許日本豪商與外國船隻前往安南、呂宋、暹羅等東南亞各地通商。無數日本商人遠渡重洋，並於東南亞港口形成「日本人町」。
+  sources:
+    - title: 維基百科：朱印船
+      url: https://zh.wikipedia.org/wiki/朱印船
+
+- id: jp-ryukyu-invasion-1609
+  year: 1609
+  title: 薩摩藩發動慶長琉球之役，琉球形成兩屬關係
+  category: war
+  importance: 4
+  desc: 薩摩藩主島津家久率軍入侵琉球王國俘虜尚寧王。戰後琉球被迫向薩摩藩稱臣割讓奄美群島，並定期向江戶幕府派遣使節，同時維持對中國朝貢，形成「兩屬」外交體制。
+  sources:
+    - title: 維基百科：慶長琉球之役
+      url: https://zh.wikipedia.org/wiki/慶長琉球之役
+    - title: 維基百科：琉球國
+      url: https://zh.wikipedia.org/wiki/琉球國
+
+- id: jp-osaka-campaign
+  year: 1614
+  endYear: 1615
+  title: 大坂之陣，德川家康消滅豐臣氏
+  category: war
+  importance: 5
+  desc: 德川家康發動大坂冬之陣與夏之陣圍攻大坂城，豐臣秀賴與淀殿切腹，真田信繁（幸村）戰死。大坂之陣終結了豐臣氏勢力，消滅戰國最後的反對武家，開啟「元和偃武」和平時期。
+  sources:
+    - title: 維基百科：大坂之陣
+      url: https://zh.wikipedia.org/wiki/大坂之陣
+
+- id: jp-buke-shohatto-1615
+  year: 1615
+  title: 《武家諸法度》與《禁中並公家諸法度》頒布
+  category: politics
+  importance: 4
+  desc: 德川家康與二代將軍德川秀忠頒布《武家諸法度》（限制大名私自修城築城與聯姻）與《禁中並公家諸法度》（限制天皇與公家僅專注學問藝術）。幕府對大名與朝廷的統制法律基礎宣告定型。
+  sources:
+    - title: 維基百科：武家諸法度
+      url: https://zh.wikipedia.org/wiki/武家諸法度
+    - title: 維基百科：禁中並公家諸法度
+      url: https://zh.wikipedia.org/wiki/禁中並公家諸法度
+
+- id: jp-murayama-taiwan
+  year: 1616
+  title: 村山等安遠征台灣失敗
+  category: war
+  importance: 2
+  desc: 長崎代官村山等安奉德川家康之命，派十三艘船、數千人遠征「高砂國」，是日本第一次對台灣的軍事行動。船隊在琉球海面遇風暴四散，只有一艘抵達台灣，登陸者遭原住民圍攻自盡；其餘船隻轉而劫掠福建沿海。此前有馬晴信在 1609 年也曾派人探查台灣。豐臣秀吉招諭高山國、德川初期的兩次遠征，顯示日本在鎖國之前對台灣的興趣不小；鎖國之後這條線中斷，兩個半世紀後以牡丹社事件重新接上。
+  sources:
+    - title: 維基百科：村山等安
+      url: https://zh.wikipedia.org/wiki/村山等安
+    - title: 日文維基百科：村山等安
+      url: https://ja.wikipedia.org/wiki/村山等安
+
+- id: jp-sankin-kotai
+  year: 1635
+  title: 武家諸法度改訂，參勤交代制度化
+  category: politics
+  importance: 4
+  desc: 三代將軍德川家光修訂《武家諸法度》（寬永令），規定全國大名必須隔年輪流前往江戶參勤侍奉，妻兒常駐江戶作為人質。參勤交代大削諸藩財力，並促成江戶街道交通與商品經濟繁榮。
+  sources:
+    - title: 維基百科：參勤交代
+      url: https://zh.wikipedia.org/wiki/參勤交代
+
+- id: jp-shimabara
+  year: 1637
+  title: 島原之亂
+  category: religion
+  importance: 4
+  endYear: 1638
+  desc: 苛稅、天災與禁教多重壓力下，1637年12月島原半島與天草諸島爆發大規模起事，由年僅16歲、教名傑洛尼莫的天草四郎時貞領導，起義軍約3萬7千人固守原城，幕府調動約12萬5千大軍圍攻，1638年4月始告平定，起義軍幾乎全數遭處決，僅一名內應者山田右衛門作倖存。平定後幕府徹底禁絕基督教、驅逐葡萄牙商人，信徒自此轉為地下的「隱匿基督徒」，鎖國體制隨之定型；此後日本本土再無大規模內亂，直到十九世紀中葉。
+  sources:
+    - title: 維基百科：島原之亂
+      url: https://zh.wikipedia.org/wiki/島原之亂
+
+- id: jp-sakoku
+  year: 1639
+  title: 鎖國體制完成
+  category: politics
+  importance: 5
+  desc: 1633年至1639年間，幕府連續頒布五道鎖國令，禁止奉書船以外船隻出海、日本人出境與大型船隻建造，並驅逐葡萄牙人，僅保留長崎（對荷蘭、中國）、對馬（對朝鮮）、薩摩（對琉球）、松前（對蝦夷）四個受管制的對外窗口。此後兩百餘年與西方近乎隔絕，直到1853年培里叩關才被迫開國。「鎖國」一詞遲至1801年才由蘭學者志筑忠雄譯自荷蘭文獻而創造，並非江戶時代人自稱的政策名稱。
+  sources:
+    - title: 維基百科：鎖國 (日本)
+      url: https://zh.wikipedia.org/wiki/鎖國_(日本)
+
+- id: jp-dejima-dutch-1641
+  year: 1641
+  title: 荷蘭商館遷至長崎出島，西洋貿易獨佔
+  category: economy
+  importance: 4
+  desc: 幕府將長崎港人工島出島上的葡萄牙人驅逐後，命令平戶的荷蘭東印度公司商館搬遷至出島。出島成為鎖國兩百年期間日本與西洋唯一的貿易與文化窗口。
+  sources:
+    - title: 維基百科：出島
+      url: https://zh.wikipedia.org/wiki/出島
+    - title: 維基百科：荷蘭東印度公司
+      url: https://zh.wikipedia.org/wiki/荷蘭東印度公司
+
+- id: jp-meireki-fire
+  year: 1657
+  title: 明曆大火，江戶城天守自此不再重建
+  category: economy
+  importance: 4
+  desc: 江戶城與市街大半付之一炬，死者估計三萬至十萬人，光是淺草橋一地就有逾兩萬人喪生。重臣保科正之主張把重建天守閣的預算移作市街復興之用，江戶城天守自此再未重建，成為日本史上唯一「刻意不重建」的城郭主體建築。災後江戶展開大規模都市改造：設置火除地與延燒阻隔用的廣小路，獎勵土藏造與瓦葺屋頂，並在隅田川架設兩國橋等新橋，市街東擴至深川一帶。這場大火重塑了江戶的城市防災邏輯，此後兩百年一直是幕府都市規劃的基準。
+  sources:
+    - title: 日文維基百科：明暦の大火
+      url: https://ja.wikipedia.org/wiki/明暦の大火
+
+- id: jp-shakushain-revolt-1669
+  year: 1669
+  title: 沙庫沙英之亂，阿伊努人起義反抗松前藩
+  category: war
+  importance: 3
+  desc: 因松前藩獨佔阿伊努貿易與掠奪，阿伊努首領沙庫沙英發動蝦夷地阿伊努人起兵抗爭。松前藩結合幕府軍將其鎮壓，松前藩對蝦夷地阿伊努人的服屬體制隨之定型。
+  sources:
+    - title: 日文維基百科：沙庫沙英之亂
+      url: https://ja.wikipedia.org/wiki/シャクシャインの戦い
+
+- id: jp-jokyo-calendar
+  year: 1684
+  title: 澀川春海編貞享曆，首部日本自製曆法
+  category: science
+  importance: 3
+  desc: 沿用八百年的中國宣明曆已累積約兩天的明顯誤差，澀川春海參考元朝授時曆並斟酌日中經度差異，多次上奏後終獲幕府採用，原訂改用明朝大統曆的計畫因此作罷。貞享曆推算一年為365.2417日，1685年正式頒行、沿用70年直到1755年寶曆曆取代為止；春海也因此獲任新設的「天文方」，享250石俸祿並世襲曆法大權，是日本天文學獨立於中國曆法體系的起點。
+  sources:
+    - title: 維基百科：貞享曆
+      url: https://zh.wikipedia.org/wiki/貞享曆
+    - title: 日文維基百科：貞享曆
+      url: https://ja.wikipedia.org/wiki/貞享暦
+    - title: 維基百科：澀川春海
+      url: https://zh.wikipedia.org/wiki/澀川春海
+
+- id: jp-shorui-awaremi
+  year: 1685
+  endYear: 1709
+  title: 生類憐憫令，德川綱吉的「天下惡法」
+  category: politics
+  importance: 3
+  desc: 篤信儒教的第五代將軍德川綱吉為培養仁心，陸續頒布保護犬、貓、鳥、魚等生物的法令，禁止鷹狩、遺棄病牛病馬，並保護棄嬰與病人，違者最重可處死刑，江戶市中因此屢有處刑紀錄。政策持續二十餘年，百姓怨聲載道，被稱為「天下惡法」。綱吉一死，嗣子德川家宣立即宣布廢止大半規定，包括拆除著名的犬小屋。
+  sources:
+    - title: 日文維基百科：生類憐れみの令
+      url: https://ja.wikipedia.org/wiki/生類憐れみの令
+
+- id: jp-genroku
+  year: 1688
+  title: 元祿文化，町人文化興盛
+  category: culture
+  importance: 3
+  desc: 元祿文化（1688～1707年）以京都、大坂等上方地區為中心興盛，雖帶有濃厚庶民色彩，參與者卻不乏武士階層。文學上，井原西鶴的浮世草子、松尾芭蕉的俳諧、近松門左衛門的淨琉璃與歌舞伎劇作齊放異彩；學術方面朱子學與關孝和的和算並進；工藝美術則有尾形光琳的琳派繪畫漆器與野野村仁清的陶藝，反映商品經濟發展下町人階層財富的累積。這股文化風潮隨1703年元祿地震、1707年寶永地震與同年富士山噴發而告終。
+  sources:
+    - title: 維基百科：元祿文化
+      url: https://zh.wikipedia.org/wiki/元祿文化
+
+- id: jp-ako-incident
+  year: 1702
+  title: 元祿赤穗事件（四十七浪士復仇）
+  category: culture
+  importance: 3
+  desc: 赤穗藩主淺野長矩於江戶城砍傷吉良義央遭切腹廢藩，其舊臣大石內藏助等四十七人隱忍兩年後於夜半襲擊吉良邸斬殺敵首復仇。赤穗浪士復仇震撼幕府與民間，被視為主臣忠義與武士道的精神象徵，後改編為《假名手本忠臣藏》風靡至今。
+  sources:
+    - title: 維基百科：赤穗浪士
+      url: https://zh.wikipedia.org/wiki/赤穗浪士
+
+- id: jp-kyoho-reforms
+  year: 1716
+  endYear: 1745
+  title: 德川吉宗推動享保改革
+  category: politics
+  importance: 4
+  desc: 八代將軍德川吉宗推行「享保改革」，實行節儉令、定免法（穩定稅收）、鼓勵開墾新田與甘藷栽培，並設立「公事方御定書」（裁判基準）與「投書箱」（目安箱）。為江戶三大改革之首。
+  sources:
+    - title: 維基百科：享保改革
+      url: https://zh.wikipedia.org/wiki/享保改革
+
+- id: jp-dojima-rice
+  year: 1730
+  title: 堂島米會所，米價期貨交易
+  category: economy
+  importance: 3
+  desc: 1730年9月24日，大坂堂島正式獲幕府承認設立米會所，被視為世界最早的期貨交易所之一，以「帳合米交易」制度買賣尚未收成的米價遠期契約，反映大坂身為「天下廚房」匯集全國米糧流通的樞紐地位，其定價機制甚至早於現代期貨理論數百年。明治政府一度因米價劇烈波動於1869年下令關閉，1871年重新開放，1893年改稱大阪堂島米穀交易所。
+  sources:
+    - title: 維基百科：堂島米會所
+      url: https://zh.wikipedia.org/wiki/堂島米會所
+    - title: 日文維基百科：堂島米會所
+      url: https://ja.wikipedia.org/wiki/堂島米会所
+
+- id: jp-tanuma-era
+  year: 1772
+  endYear: 1786
+  title: 田沼意次掌政，實施重商政策與獎勵株仲間
+  category: economy
+  importance: 3
+  desc: 老中田沼意次主導幕政，打破純農業立國傳統，積極承認商人特權組織「株仲間」徵收冥加金，開發蝦夷地與專賣制度。田沼時代促進了貨幣經濟與蘭學發展，但也衍生行賄風氣與米價動盪。
+  sources:
+    - title: 維基百科：田沼意次
+      url: https://zh.wikipedia.org/wiki/田沼意次
+
+- id: jp-kaitai
+  year: 1774
+  title: 《解體新書》出版，蘭學興起
+  category: science
+  importance: 4
+  desc: 杉田玄白、前野良澤等人以荷蘭文解剖學譯本《Ontleedkundige Tafelen》為底本，對照解剖實況逐字翻譯，耗時近四年譯成《解體新書》，是日本第一部系統翻譯的西方醫學著作。譯詞多為自創，「神經」「軟骨」「動脈」等詞至今仍在使用。此書出版標誌著蘭學正式成為獨立於儒學、國學之外的知識體系，後續解體新書系譜的蘭學者陸續投入西方科學各領域的翻譯與研究。
+  sources:
+    - title: 維基百科：解體新書
+      url: https://zh.wikipedia.org/wiki/解體新書
+    - title: 日文維基百科：解體新書
+      url: https://ja.wikipedia.org/wiki/解体新書
+    - title: 維基百科：蘭學
+      url: https://zh.wikipedia.org/wiki/蘭學
+
+- id: jp-kansei-reforms
+  year: 1787
+  endYear: 1793
+  title: 松平定信實施寬政改革
+  category: politics
+  importance: 3
+  desc: 老中松平定信推行「寬政改革」，發布棄金令（寬免旗本債務）、禁異學之禁（推崇朱子學）與出版取締。與此同時，喜多川歌麿、葛飾北齋之浮世繪與化政文化走向成熟巔峰。
+  sources:
+    - title: 維基百科：寬政改革
+      url: https://zh.wikipedia.org/wiki/寬政改革
+
+- id: jp-foreign-ship-repulsion-1825
+  year: 1825
+  title: 幕府頒布《異國船打拂令》
+  category: politics
+  importance: 4
+  desc: 為應對頻繁出沒日本沿海的歐美船隻，江戶幕府頒布《異國船打拂令》（無二念打拂令），下令全日本沿海各藩凡發現外國船隻接近，無須確認身分一律開砲擊退。
+  sources:
+    - title: 日文維基百科：異國船打拂令
+      url: https://ja.wikipedia.org/wiki/異国船打払令
+
+- id: jp-siebold-incident-1828
+  year: 1828
+  title: 西博德事件，精密日本地圖流出案
+  category: science
+  importance: 3
+  desc: 出島荷蘭館醫西博德歸國前夕，幕府發現其行李中帶有禁令出口的《大日本沿海輿地全圖》（伊能忠敬地圖複製本）。西博德遭永久驅逐出境，提供地圖的天文方高橋景保等蘭學者遭逮捕下獄。
+  sources:
+    - title: 維基百科：菲利普·弗朗茨·馮·西博爾德
+      url: https://zh.wikipedia.org/wiki/菲利普·弗朗茨·馮·西博爾德
+
+- id: jp-hokusai-wave
+  year: 1831
+  title: 葛飾北齋發表《富嶽三十六景》（神奈川沖浪裏）
+  category: culture
+  importance: 3
+  desc: 浮世繪大師葛飾北齋出版彩色木版畫集《富嶽三十六景》，其中《神奈川沖浪裏》與《凱風快晴》成為日本美術最著名的標誌。該作品後來深遠影響了歐洲印象派藝術家（如梵谷與莫內）。
+  sources:
+    - title: 維基百科：富嶽三十六景
+      url: https://zh.wikipedia.org/wiki/富嶽三十六景
+
+- id: jp-oshio-heihachiro
+  year: 1837
+  title: 天保大飢荒，大鹽平八郎於大坂起兵
+  category: politics
+  importance: 3
+  desc: 受天保大飢荒與富商囤米影響，大坂前町奉行所與陽明學者大鹽平八郎率領門人與貧民起兵反抗幕府官吏（救濟貧民）。事件雖當日遭平定，但前幕府官員在核心商業都市起事震撼了幕府威信。
+  sources:
+    - title: 維基百科：大鹽平八郎
+      url: https://zh.wikipedia.org/wiki/大鹽平八郎
+
+- id: jp-bansha-goku
+  year: 1839
+  title: 蠻社之獄，蘭學者遭幕府整肅
+  category: politics
+  importance: 3
+  desc: 渡邊崋山、高野長英等蘭學者因批評幕府對外政策——高野長英匿名撰《戊戌夢物語》、渡邊崋山著《慎機論》——遭幕府以誹謗幕政之名逮捕。崋山被判蟄居，兩年後自盡；長英判終身監禁，後越獄逃亡，1850年遭捕吏格殺。這是莫里森號事件後幕府為壓制西學言論、重申鎖國立場的整肅行動，也成為幕末思想箝制的象徵。
+  sources:
+    - title: 日文維基百科：蛮社の獄
+      url: https://ja.wikipedia.org/wiki/蛮社の獄
+
+- id: jp-tempo-reforms
+  year: 1841
+  endYear: 1843
+  title: 水野忠邦實施天保改革
+  category: politics
+  importance: 3
+  desc: 老中水野忠邦推動「天保改革」，實行強制節儉、解散株仲間（試圖抑止物價）、上知令（收回江戶大坂周邊大名領地）。改革因手段過於嚴苛且遭大名強烈反對而短命失敗，幕府統制力進一步衰退。
+  sources:
+    - title: 維基百科：天保改革
+      url: https://zh.wikipedia.org/wiki/天保改革
+
+- id: jp-perry
+  year: 1853
+  title: 黑船來航，培里叩關
+  category: politics
+  importance: 5
+  desc: 1853年7月8日（嘉永6年6月3日），美國海軍准將培里率四艘塗滿柏油的黑色軍艦（共63門砲）駛入浦賀，遞交美國總統費爾摩爾國書要求開國通商。臥病在床的十二代將軍德川家慶委由老中阿部正弘應對，幕府未敢斷然拒絕，僅以需時商議為由拖延。翌年（1854年）2月13日培里率九艘軍艦再度來航，幕府被迫簽署《神奈川條約》（美日和親條約），正式結束鎖國政策。此事也促使幕府解除「大船建造禁令」，中島三郎助等人更提出「嘉永上書」，建議打造三十艘軍艦強化海防。
+  sources:
+    - title: 維基百科：黑船來航
+      url: https://zh.wikipedia.org/wiki/黑船來航
+
+- id: jp-ansei-treaties
+  year: 1858
+  title: 安政五國條約
+  category: politics
+  importance: 3
+  desc: 1858年幕府與美、荷、俄、英、法五國陸續簽訂內容相近的通商條約，統稱「安政五國條約」。7月29日大老井伊直弼在未獲天皇敕許的情況下，率先與美國代表哈里斯簽署條約，其餘四國條約也在同年10月前陸續簽妥。條約除開放下田、箱館以外更多港口，還片面給予外國人領事裁判權、剝奪日本關稅自主權，是不折不扣的不平等條約。無敕許簽約一事引爆尊王攘夷派強烈反彈，直接導致安政大獄與翌年井伊直弼遇刺；修約更成為明治政府長期外交首要目標，直到1911年日俄戰後才完全恢復關稅自主權。
+  sources:
+    - title: 維基百科：安政五國條約
+      url: https://zh.wikipedia.org/wiki/安政五國條約
+
+- id: jp-ansei-purge
+  year: 1858
+  endYear: 1859
+  title: 大老井伊直弼發動安政大獄
+  category: politics
+  importance: 4
+  desc: 幕府大老井伊直弼為無敕許簽署《安政條約》及處理由將軍繼嗣問題（南紀派對一橋派），展開大規模政治鎮壓。吉田松陰、橋本左內等近百名尊王攘夷派志士與反對派公家遭處決或流放。
+  sources:
+    - title: 維基百科：安政大獄
+      url: https://zh.wikipedia.org/wiki/安政大獄
+
+- id: jp-sakuradamon-incident
+  year: 1860
+  title: 櫻田門外之變，大老井伊直弼遇刺
+  category: politics
+  importance: 4
+  desc: 3 月 24 日大雪之日，水戶藩與薩摩藩脫藩浪士於江戶城櫻田門外伏擊幕府大老井伊直弼之駕籠並斬首。大老於江戶城門口遇刺身亡震撼全日本，幕府專制威信崩解，幕末動亂全面開啟。
+  sources:
+    - title: 維基百科：櫻田門外之變
+      url: https://zh.wikipedia.org/wiki/櫻田門外之變
+
+- id: jp-namamugi-satsuei-war
+  year: 1862
+  endYear: 1863
+  title: 生麥事件與薩英戰爭爆發
+  category: war
+  importance: 4
+  desc: 薩摩藩主之父島津久光隊伍於生麥村砍殺橫越行列之英國商人（生麥事件）。談判破裂後英國艦隊砲擊鹿兒島（薩英戰爭）。薩摩藩體會西方軍力強大，轉而積極引進西洋軍事科技並與英國建立密切關係。
+  sources:
+    - title: 維基百科：生麥事件
+      url: https://zh.wikipedia.org/wiki/生麥事件
+    - title: 維基百科：薩英戰爭
+      url: https://zh.wikipedia.org/wiki/薩英戰爭
+
+- id: jp-shimonoseki-campaign-1864
+  year: 1863
+  endYear: 1864
+  title: 下關戰爭，英法美荷四國聯合艦隊砲擊下關
+  category: war
+  importance: 4
+  desc: 長州藩響應朝廷攘夷旨意，封鎖關門海峽砲擊外國船隻。英法美荷四國組成聯合艦隊派遣 17 艘戰艦砲擊並登陸佔領下關砲台。長州藩慘敗後認知攘夷不可行，促成高杉晉作組建奇兵隊與藩政轉向倒幕。
+  sources:
+    - title: 維基百科：下關戰爭
+      url: https://zh.wikipedia.org/wiki/下關戰爭
+
+- id: jp-ikedaya-incident-1864
+  year: 1864
+  title: 池田屋事件，新選組襲擊尊王攘夷派志士
+  category: politics
+  importance: 4
+  desc: 近藤勇、土方歲三帶領治安組織「新選組」襲擊京都池田屋旅館，突襲正在祕密開會計畫火燒京都、過激尊王攘夷派長州與土佐志士。事件重創尊攘派勢力，並成為禁門之變爆發的導火線。
+  sources:
+    - title: 維基百科：池田屋事件
+      url: https://zh.wikipedia.org/wiki/池田屋事件
+    - title: 維基百科：新選組
+      url: https://zh.wikipedia.org/wiki/新選組
+
+- id: jp-kinmon-incident
+  year: 1864
+  title: 禁門之變（蛤御門之變），長州軍進攻京都
+  category: war
+  importance: 4
+  desc: 長州藩尊皇攘夷派急進浪士進軍京都皇居，與會津藩、薩摩藩率領的守衛軍於蛤御門爆發激烈槍戰。長州軍敗退，京都三分之一市街遭火災化為灰燼，長州藩被朝廷定為「朝敵」，隨後引發第一次長州征討。
+  sources:
+    - title: 維基百科：禁門之變
+      url: https://zh.wikipedia.org/wiki/禁門之變
+
+- id: jp-satcho-alliance
+  year: 1866
+  title: 坂本龍馬仲介薩摩與長州締結薩長同盟
+  category: politics
+  importance: 5
+  desc: 在土佐藩脫藩浪士坂本龍馬與中岡慎太郎仲介下，薩摩藩代表西鄉隆盛、小松帶刀與長州藩代表木戶孝允（桂小五郎）於京都秘密締結軍事同盟。宿敵薩長聯手奠定了倒幕運動的核心武力。
+  sources:
+    - title: 維基百科：薩長同盟
+      url: https://zh.wikipedia.org/wiki/薩長同盟
+
+- id: jp-second-choshu-expedition-1866
+  year: 1866
+  title: 第二次長州征討，長州藩奇兵隊大破幕府軍
+  category: war
+  importance: 4
+  desc: 幕府發動第二次長州征討，長州藩在薩長同盟祕密軍火支援下，由高杉晉作率領不限身分的「奇兵隊」配合近代阿姆斯壯大砲在四方戰線全面大破幕府軍。幕府軍威掃地，將軍德川家茂死於大坂城，戰事以幕府實質撤軍告終。
+  sources:
+    - title: 維基百科：長州征討
+      url: https://zh.wikipedia.org/wiki/長州征討
+    - title: 維基百科：奇兵隊
+      url: https://zh.wikipedia.org/wiki/奇兵隊
+
+- id: jp-taisei-hokan
+  year: 1867
+  title: 德川慶喜實施大政奉還，結束264年江戶幕府
+  category: politics
+  importance: 5
+  desc: 十五代將軍德川慶喜接受土佐藩主山內豐信建議，於二條城向明治天皇提交大政奉還上表，將政權正式交還朝廷。統治日本 264 年的德川幕府與近七百年的武家政權正式終結。
+  sources:
+    - title: 維基百科：大政奉還
+      url: https://zh.wikipedia.org/wiki/大政奉還
+
+- id: jp-meiji-restoration
+  year: 1868
+  title: 明治維新
+  category: politics
+  importance: 5
+  desc: 1868年4月6日，明治天皇率文武百官宣誓《五條御誓文》，揭示廣興會議、破除舊習、求知識於世界等維新方針，是明治政府近代化改革的綱領性文件。此後政府陸續推行廢藩置縣、地租改正、徵兵令、廢刀令等三大改革，並改行陽曆、推動神佛分離、鋪設鐵路、創立日本銀行與貨幣制度，以「殖產興業」「文明開化」為兩大主軸。明治維新的終止年份學界看法不一，或以1871年廢藩置縣、或以1889年憲法頒布為分界，但公認是亞洲近代化改革中少數乃至唯一成功的案例，東亞第一個成功的近代化轉型。
+  sources:
+    - title: 維基百科：明治維新
+      url: https://zh.wikipedia.org/wiki/明治維新
+
+- id: jp-boshin-war
+  year: 1868
+  endYear: 1869
+  title: 戊辰戰爭，薩長同盟擊敗幕府軍
+  category: war
+  importance: 4
+  desc: 薩摩、長州等雄藩組成的官軍於鳥羽伏見之戰擊敗舊幕府軍，隨後經過會津戰爭與箱館戰爭徹底消滅舊幕府勢力。戊辰戰爭奠定了明治新政府的中央集權基礎。
+  sources:
+    - title: 維基百科：戊辰戰爭
+      url: https://zh.wikipedia.org/wiki/戊辰戰爭
+
+- id: jp-edo-castle-bloodless-surrender-1868
+  year: 1868
+  title: 西鄉隆盛與勝海舟會談，江戶城無血開城
+  category: politics
+  importance: 5
+  desc: 鳥羽伏見之戰後新政府軍大舉東征，幕府海軍奉行勝海舟與新政府軍參謀西鄉隆盛於江戶進行歷史性談判。雙方達成撤銷江戶總攻、德川家處分等協議，實現「無血開城」，使百萬江戶市民免於戰火浩劫。
+  sources:
+    - title: 維基百科：江戶開城
+      url: https://zh.wikipedia.org/wiki/江戶開城
+
+- id: jp-haihan-chiken
+  year: 1871
+  title: 廢藩置縣，約三百藩改制為府縣
+  category: politics
+  importance: 5
+  desc: 薩長要人在木戶孝允宅邸密議定案，一舉廢除全國約三百個藩，改設由中央直轄的府縣，是明治維新中央集權化最關鍵的一步。舊藩主（知藩事）失去統治權須遷居東京，但仍獲舊藩收入一成作為俸祿，藩兵與藩債務則一併由新政府接收，以懷柔手段換取和平轉制。廢藩置縣後府縣數目歷經多次合併，直到1889年才穩定在三府四十二縣的格局。
+  sources:
+    - title: 日文維基百科：廃藩置県
+      url: https://ja.wikipedia.org/wiki/廃藩置県
+
+- id: jp-iwakura-mission
+  year: 1871
+  endYear: 1873
+  title: 岩倉使節團出訪歐美，考察西方近代制度
+  category: politics
+  importance: 4
+  desc: 明治政府派出由岩倉具視、木戶孝允、大久保利通、伊藤博文等組成的使節團，費時一年半遍訪歐美 12 國。使節團試圖修約未果，但深切體驗西方工業與制度強盛，確立「殖產興業」與「文明開化」方針。
+  sources:
+    - title: 維基百科：岩倉使節團
+      url: https://zh.wikipedia.org/wiki/岩倉使節團
+
+- id: jp-railway
+  year: 1872
+  title: 新橋—橫濱鐵路通車
+  category: economy
+  importance: 3
+  desc: 1872年10月14日（明治5年9月12日），日本首條鐵路正式舉行通車典禮，翌日（10月15日）開始正式營運，連結東京新橋與橫濱。興建工程聘請英國工程師指導、進口10輛蒸汽機車，並採用1067公釐窄軌，此後成為日本鐵路的標準軌距，象徵日本邁入近代化交通的新紀元；10月14日後來也成為日本「鐵道紀念日」（今稱「鐵道の日」）的由來。
+  sources:
+    - title: 維基百科：日本鐵路運輸
+      url: https://zh.wikipedia.org/wiki/日本鐵路運輸
+
+- id: jp-tomioka-silk-mill
+  year: 1872
+  title: 官營富岡製絲場建立，引進西方機械蠶絲業
+  category: economy
+  importance: 3
+  desc: 明治政府於群馬縣富岡建立首座官營示範養蠶製絲廠，聘請法國技師引進西洋機械繰絲技術。生絲成為明治日本最主要的出口商品與外匯來源，推動近代輕工業起飛。
+  sources:
+    - title: 維基百科：富岡製絲場
+      url: https://zh.wikipedia.org/wiki/富岡製絲場
+
+- id: jp-land-tax-reform
+  year: 1873
+  title: 地租改正，確立近代土地所有權與地稅制度
+  category: economy
+  importance: 4
+  desc: 明治政府頒布《地租改正條例》，將依據年貢收取的實物米課稅改為頒發土地執照（地券），依據地價統一收取 3% 現金地租。此舉確立近代土地私有制，為新政府提供了穩定的財政收入來源。
+  sources:
+    - title: 維基百科：地租改正
+      url: https://zh.wikipedia.org/wiki/地租改正
+
+- id: jp-freedom-people-rights
+  year: 1874
+  title: 自由民權運動興起，板垣退助提交立憲民元請願書
+  category: politics
+  importance: 4
+  desc: 板垣退助、後藤象二郎等提交《設立民撰議院欽導書》，要求設立國會與實行憲政。自由民權運動風起雲湧，促使明治政府頒布詔書承諾設立國會與制定憲法。
+  sources:
+    - title: 維基百科：自由民權運動
+      url: https://zh.wikipedia.org/wiki/自由民權運動
+
+- id: jp-taiwan-expedition-1874
+  year: 1874
+  title: 台灣出兵，明治日本第一次海外用兵
+  category: war
+  importance: 3
+  desc: 琉球宮古島民漂流到台灣南部遭牡丹社人殺害，日本以清廷宣稱「生番化外」為由，由西鄉從道率三千六百人登陸恆春，攻破牡丹社後駐紮半年。戰死僅十餘人，病死卻逾五百。清日在北京簽約，清朝付銀五十萬兩並承認出兵為「保民義舉」，日本藉此確立琉球歸屬，五年後廢藩置縣。這是明治政府第一次海外出兵，也是征韓論政變後安撫士族的出口；台灣則成為日本此後二十年始終盯著的目標。
+  sources:
+    - title: 維基百科：牡丹社事件
+      url: https://zh.wikipedia.org/wiki/牡丹社事件
+    - title: 日文維基百科：台湾出兵
+      url: https://ja.wikipedia.org/wiki/台湾出兵
+
+- id: jp-seinan-war
+  year: 1877
+  title: 西南戰爭，最後士族反亂平定
+  category: war
+  importance: 4
+  desc: 明治維新元勳西鄉隆盛率鹿兒島士族起兵反抗新政府（廢刀令與徵兵令反彈）。新政府徵兵制平民軍隊於熊本城與城山之戰擊敗武士軍團，西鄉隆盛切腹自盡，終結士族武力反抗傳統。
+  sources:
+    - title: 維基百科：西南戰爭
+      url: https://zh.wikipedia.org/wiki/西南戰爭
+
+- id: jp-bank-of-japan
+  year: 1882
+  title: 日本銀行成立
+  category: economy
+  importance: 3
+  desc: 面對西南戰爭後政府濫發紙幣導致的嚴重通膨，大藏卿松方正義推行緊縮財政（松方財政），削減政府支出、整理舊紙幣，並依1882年6月頒布的《日本銀行條例》於同年10月10日成立日本銀行，賦予其發行可兌換銀行券的獨佔權，首任總裁為吉原重俊。三年內通膨即獲控制，但緊縮政策也造成農產品價格暴跌、農民負債破產的「松方通縮」；統一紙幣發行、終結通膨亂象，是明治財政改革的關鍵一步。
+  sources:
+    - title: 維基百科：日本銀行
+      url: https://zh.wikipedia.org/wiki/日本銀行
+
+- id: jp-meiji-constitution
+  year: 1889
+  title: 大日本帝國憲法
+  category: politics
+  importance: 4
+  desc: 伊藤博文參考普魯士憲法，主導起草《大日本帝國憲法》，於1889年2月11日（紀元節，傳說中的建國紀念日）由明治天皇頒布，1890年11月29日正式施行。憲法確立天皇總攬統治權、擁有獨立於內閣之外的統帥權，貴族院與眾議院組成的帝國議會則僅具協贊立法之權，法律仍須經天皇裁可與國務大臣副署。這是亞洲第一部近代成文憲法，施行57年間從未正式修訂，直到1947年為《日本國憲法》取代為止。
+  sources:
+    - title: 維基百科：大日本帝國憲法
+      url: https://zh.wikipedia.org/wiki/大日本帝國憲法
+
+- id: jp-imperial-diet-1890
+  year: 1890
+  title: 第一次帝國議會召開，亞洲首個近代議會運作
+  category: politics
+  importance: 4
+  desc: 依據《大日本帝國憲法》，第一屆眾議院大選後，貴族院與眾議院組成之帝國議會正式開會。這是亞洲首個運作的近代兩院制立憲國會，立憲政體正式走上軌道。
+  sources:
+    - title: 維基百科：帝國議會 (日本)
+      url: https://zh.wikipedia.org/wiki/帝國議會_(日本)
+
+- id: jp-treaty-revision-1894
+  year: 1894
+  title: 陸奧宗光簽署日英通商航海條約，廢除治外法權
+  category: politics
+  importance: 4
+  desc: 外務大臣陸奧宗光與英國簽署《日英通商航海條約》，率先廢除西方列強在日治外法權（領事裁判權）。這是明治日本修約外交的重大里程碑，擺脫黑船來航以來的半殖民不平等條約枷鎖。
+  sources:
+    - title: 維基百科：日英通商航海條約
+      url: https://zh.wikipedia.org/wiki/日英通商航海條約
+
+- id: jp-sino-japanese-war
+  year: 1894
+  title: 甲午戰爭
+  category: war
+  importance: 5
+  desc: 朝鮮東學黨起義引發清日兩國同時出兵，1894年7月25日豐島海戰爆發（清軍運兵船高升號遭擊沉，1200餘人罹難），戰爭正式開打。9月15日平壤之戰清軍總兵左寶貴戰死，9月17日黃海海戰北洋艦隊損失五艘巡洋艦（管帶鄧世昌戰死），日本取得制海權；11月旅順陷落後日軍隨即展開大屠殺，造成約兩萬人喪生。翌年2月威海衛之戰北洋艦隊全軍覆沒，提督丁汝昌自殺殉國。1895年4月17日簽訂《馬關條約》，清廷賠款白銀2億兩、割讓遼東半島（後因三國干涉還遼而未果）、台灣與澎湖，並承認朝鮮獨立。此戰宣告清朝洋務運動失敗、激發維新變法思潮；日本則躍居列強之列，鉅額賠款投入軍備擴張，為十年後的日俄戰爭奠定基礎。
+  sources:
+    - title: 維基百科：甲午戰爭
+      url: https://zh.wikipedia.org/wiki/甲午戰爭
+
+- id: jp-taiwan-government-general
+  year: 1895
+  title: 設臺灣總督府，日本取得第一個殖民地
+  category: politics
+  importance: 4
+  desc: 下關條約割讓台灣後，海軍大將樺山資紀出任首任台灣總督，六月在台北舉行始政式。總督府集行政、立法（六三法委任立法）、軍事於一身，前七任皆為武官。日本國內為「如何統治異民族」爭論不休：原敬主張內地延長、後藤新平主張依生物學原則另立特別統治，後者在 1898 年後主導了殖民地經營。台灣是日本帝國的第一個殖民地，五十年間的統治手法後來搬到朝鮮與滿洲。
+  sources:
+    - title: 維基百科：臺灣總督府
+      url: https://zh.wikipedia.org/wiki/臺灣總督府
+    - title: 日文維基百科：台湾総督府
+      url: https://ja.wikipedia.org/wiki/台湾総督府
+
+- id: jp-anglo-japanese-alliance-1902
+  year: 1902
+  title: 日英同盟條約簽署，確立列強同盟體系
+  category: politics
+  importance: 4
+  desc: 首相桂太郎與英國簽署《日英同盟條約》，共同牽制沙俄在遠東與滿洲的擴張。大英帝國首次與非歐美亞洲國家締結平等軍事同盟，大大提升了日本在國際外交舞台的地位。
+  sources:
+    - title: 維基百科：日英同盟
+      url: https://zh.wikipedia.org/wiki/日英同盟
+
+- id: jp-russo-japanese-war
+  year: 1904
+  title: 日俄戰爭
+  category: war
+  importance: 5
+  endYear: 1905
+  desc: 日俄兩國為爭奪滿洲與朝鮮控制權衝突加劇，1904年2月8日日本未宣而戰突襲旅順口俄國艦隊，戰爭正式爆發。旅順攻城戰為奪取203高地雙方死傷慘重，奉天會戰規模空前，俄軍損失逾兩萬人、日軍傷亡逾七萬人；1905年5月對馬海峽海戰，東鄉平八郎率聯合艦隊以壓倒性優勢殲滅俄國波羅的海艦隊，日方僅損失3艘水雷艇。同年9月5日簽訂《樸茨茅斯條約》，日本取得朝鮮控制權、遼東半島租借地、南滿鐵路與庫頁島南部。這場戰爭耗費日本17億圓軍費，導致國債激增與稅制永久加重；亞洲國家首次擊敗歐洲列強，震動整個殖民世界，激勵亞洲民族主義運動與中國立憲改革，也觸發了1905年俄國革命。
+  sources:
+    - title: 維基百科：日俄戰爭
+      url: https://zh.wikipedia.org/wiki/日俄戰爭
+
+- id: jp-natsume-soseki-1905
+  year: 1905
+  title: 夏目漱石發表《我是貓》，近代日本小說巔峰
+  category: culture
+  importance: 3
+  desc: 夏目漱石於《心靈》雜誌開始連載諷刺小說《我是貓》，以貓眼觀看明治近代化與知識分子心境。夏目漱石與森鷗外奠定了現代日語寫作與近代日本文學的經典典範。
+  sources:
+    - title: 維基百科：我是貓
+      url: https://zh.wikipedia.org/wiki/我是貓
+    - title: 維基百科：夏目漱石
+      url: https://zh.wikipedia.org/wiki/夏目漱石
+
+- id: jp-korea-annexation
+  year: 1910
+  title: 日韓合併
+  category: politics
+  importance: 3
+  desc: 歷經1904、1905、1907年三次日韓協約層層剝奪外交、內政自主權後，1910年8月22日統監寺內正毅與韓國總理李完用簽署《日韓合併條約》，正式將大韓帝國併入日本版圖，設朝鮮總督府展開殖民統治，直到1945年日本戰敗為止。1907年朝鮮軍隊遭解散後，各地爆發「義兵運動」武裝抗日；前統監伊藤博文也於1909年10月26日在哈爾濱遭朝鮮獨立運動者安重根刺殺身亡。韓國至今仍稱此為「庚戌國恥」。
+  sources:
+    - title: 維基百科：日韓合併
+      url: https://zh.wikipedia.org/wiki/日韓合併
+
+- id: jp-taisho-political-crisis
+  year: 1912
+  title: 大正政變，第一次護憲運動爆發
+  category: politics
+  importance: 4
+  desc: 桂太郎三度組閣引發輿論強烈反彈，尾崎行雄與犬養毅發起第一次護憲運動，號召「打倒閥族、擁護憲政」。數萬群眾包圍國會抗議迫使桂內閣成立 50 天即總辭，開啟「大正民主」時期。
+  sources:
+    - title: 維基百科：大正政變
+      url: https://zh.wikipedia.org/wiki/大正政變
+    - title: 維基百科：護憲運動
+      url: https://zh.wikipedia.org/wiki/護憲運動
+
+- id: jp-siege-of-tsingtao
+  year: 1914
+  title: 日本參戰一戰，攻佔德國租借地青島
+  category: war
+  importance: 4
+  desc: 第一次世界大戰爆發後日本依據《日英同盟》對德宣戰，派兵攻佔德國租借地青島及太平洋赤道以北之德屬諸島。戰後獲國際聯盟授權委任統治太平洋諸島，日本一躍成為遠東主要列強。
+  sources:
+    - title: 維基百科：青島戰役
+      url: https://zh.wikipedia.org/wiki/青島戰役
+
+- id: jp-takarazuka-1914
+  year: 1914
+  title: 寶塚歌劇團首演，大眾演劇新紀元
+  category: culture
+  importance: 3
+  desc: 阪急電鐵創辦人小林一三於兵庫縣寶塚市成立「寶塚少女歌劇團」並進行首次正式公演。全數由未婚女性飾演男角與女角的形式震撼演藝圈，成為日本大眾文化與洋風浪漫的代表象徵。
+  sources:
+    - title: 維基百科：寶塚歌劇團
+      url: https://zh.wikipedia.org/wiki/寶塚歌劇團
+
+- id: jp-21-demands
+  year: 1915
+  title: 對華二十一條要求提出
+  category: politics
+  importance: 4
+  desc: 大隈重信內閣利用列強忙於一戰之際，向袁世凱政府秘密提出擴大在華特權與掌控山東權益之《二十一條要求》。此舉引發中國反日浪潮，也加深了日本與美英列強間的矛盾。
+  sources:
+    - title: 維基百科：二十一條
+      url: https://zh.wikipedia.org/wiki/二十一條
+
+- id: jp-yoshino-minponism
+  year: 1916
+  title: 吉野作造發表《憲政之本義》，民本主義理論體系確立
+  category: culture
+  importance: 3
+  desc: 東京帝國大學教授吉野作造於《中央公論》發表《論憲政之本義其貫徹之道》，提出「民本主義」理論，將民主政治思想巧妙調和於帝國憲法體制下，成為「大正民主」運動的思想旗幟。
+  sources:
+    - title: 維基百科：吉野作造
+      url: https://zh.wikipedia.org/wiki/吉野作造
+
+- id: jp-rice-riots-1918
+  year: 1918
+  title: 米騷動爆發；原敬成立首個純政黨內閣
+  category: politics
+  importance: 4
+  desc: 富山縣漁婦引發的米價暴瀉抗議迅速擴散至全日本三十八個城市（米騷動），迫使寺內正毅內閣總辭。立憲政友會總裁「平民宰相」原敬就任首相，成立日本歷史上首個純政黨內閣。
+  sources:
+    - title: 維基百科：1918年米騷動
+      url: https://zh.wikipedia.org/wiki/1918年米騷動
+    - title: 維基百科：原敬
+      url: https://zh.wikipedia.org/wiki/原敬
+
+- id: jp-league-of-nations-permanent
+  year: 1920
+  title: 國際聯盟成立，日本成為常任理事國
+  category: politics
+  importance: 4
+  desc: 國際聯盟正式成立，日本作為一戰戰勝國，與英、法、義共同擔任四大常任理事國之一，新渡戶稻造出任國際聯盟副事務總長，標誌著日本外交與國際地位達到戰前巔峰。
+  sources:
+    - title: 維基百科：國際聯盟
+      url: https://zh.wikipedia.org/wiki/國際聯盟
+
+- id: jp-washington-conference
+  year: 1921
+  endYear: 1922
+  title: 華盛頓會議與海軍軍縮條約簽署
+  category: politics
+  importance: 4
+  desc: 美英日等國召開華盛頓會議，簽署《五國海軍條約》限制主力艦噸位比例（美 5：英 5：日 3），並簽署《四國條約》終結《日英同盟》。日本海軍內部隨之分裂為贊成派（條約派）與反對派（艦隊派）。
+  sources:
+    - title: 維基百科：華盛頓會議
+      url: https://zh.wikipedia.org/wiki/華盛頓會議
+
+- id: jp-jcp-suiheisha
+  year: 1922
+  title: 日本共產黨與全國水平社成立
+  category: culture
+  importance: 3
+  desc: 在俄國革命與大正民主思潮影響下，日本共產黨於東京秘密結黨；同年部落民解放運動組織「全國水平社」成立並發表宣言，標誌著戰前日本無產階級與人權社會運動的興起。
+  sources:
+    - title: 維基百科：日本共產黨
+      url: https://zh.wikipedia.org/wiki/日本共產黨
+    - title: 日文維基百科：全國水平社
+      url: https://ja.wikipedia.org/wiki/全国水平社
+
+- id: jp-kanto-earthquake
+  year: 1923
+  title: 關東大地震
+  category: culture
+  importance: 3
+  desc: 強震重創東京、橫濱一帶，死亡與失蹤者估計逾十萬人，是明治以來日本震災死傷最慘重的一次。震後謠傳朝鮮人趁亂縱火下毒，軍警與各地自警團展開屠殺，遇害的朝鮮人、中國人估計數百至數千人不等，社會主義者大杉榮、伊藤野枝也遭憲兵隊殺害（甘粕事件）——這是這場天災中最黑暗、也最常被輕描淡寫帶過的一頁。震後內務大臣後藤新平主導「帝都復興計畫」，重新規劃東京道路與公園綠地，奠定今日東京市容的基礎。
+  sources:
+    - title: 維基百科：關東大地震
+      url: https://zh.wikipedia.org/wiki/關東大地震
+
+- id: jp-toranomon-incident
+  year: 1923
+  title: 虎之門事件，刺殺攝政宮未遂
+  category: politics
+  importance: 3
+  desc: 無政府主義青年難波大助於東京虎之門交差點持杖槍企圖刺殺前往國會的攝政宮裕仁親王（昭和天皇）。刺殺雖告失敗，但震撼朝野，導致山本權兵衛內閣集體總辭以示政治責任。
+  sources:
+    - title: 維基百科：虎之門事件
+      url: https://zh.wikipedia.org/wiki/虎之門事件
+
+- id: jp-koshien-stadium-1924
+  year: 1924
+  title: 阪神甲子園球場竣工
+  category: culture
+  importance: 3
+  desc: 為承辦全日本中等學校棒球大會（高中棒球大賽），日本第一座鋼筋混凝土大型棒球場「阪神甲子園球場」於甲子年完工啟用。甲子園自此成為日本棒球文化與青春精神的聖地。
+  sources:
+    - title: 維基百科：阪神甲子園球場
+      url: https://zh.wikipedia.org/wiki/阪神甲子園球場
+
+- id: jp-universal-suffrage-1925
+  year: 1925
+  title: 普通選舉法與治安維持法制定
+  category: politics
+  importance: 4
+  desc: 加藤高明內閣通過《普通選舉法》，廢除納稅金額限制，賦予 25 歲以上成年男性參政權（選民擴增四倍）；同會期亦通過《治安維持法》嚴懲共產主義與變更國體者，展現大正民主的兩面性。
+  sources:
+    - title: 日文維基百科：普通選舉法
+      url: https://ja.wikipedia.org/wiki/普通選挙法
+    - title: 維基百科：治安維持法
+      url: https://zh.wikipedia.org/wiki/治安維持法
+
+- id: jp-nhk-radio-start
+  year: 1925
+  title: 日本無線電廣播開播
+  category: culture
+  importance: 3
+  desc: 社團法人東京放送局（今 NHK 日本放送協會前身）開始進行無線電廣播。廣播迅速融入大眾日常生活，成為新聞即時傳播、大眾文化娛樂與防災警報的關鍵媒介。
+  sources:
+    - title: 維基百科：日本放送協會
+      url: https://zh.wikipedia.org/wiki/日本放送協會
+
+- id: jp-end-of-taisho
+  year: 1926
+  title: 大正天皇駕崩，昭和天皇即位
+  category: politics
+  importance: 3
+  desc: 12 月 25 日大正天皇駕崩，皇太子裕仁（昭和天皇）即位，改元「昭和」，15 年的大正時代落幕。大正時期以政黨政治（大正民主）與西洋大眾文化（大正浪漫）為特色。
+  sources:
+    - title: 維基百科：大正
+      url: https://zh.wikipedia.org/wiki/大正
+
+- id: jp-showa-financial-crisis
+  year: 1927
+  title: 昭和金融恐慌爆發
+  category: economy
+  importance: 3
+  desc: 關東大地震震災手形壞帳問題引發擠兌潮，東京渡邊銀行倒閉，隨後引發全日本數十家銀行信用危機倒閉。若槻內閣總辭，高橋是清實施兩週存款凍結與緊急救市，促使金融業大規模合併集中。
+  sources:
+    - title: 維基百科：昭和金融恐慌
+      url: https://zh.wikipedia.org/wiki/昭和金融恐慌
+    - title: 日文維基百科：昭和金融恐慌
+      url: https://ja.wikipedia.org/wiki/昭和金融恐慌
+
+- id: jp-manchuria
+  year: 1931
+  title: 九一八事變
+  category: war
+  importance: 4
+  desc: 關東軍參謀策劃炸毀南滿鐵路柳條湖段，反誣中國軍隊所為，藉此發動突襲並迅速占領東北全境。日本政府原欲抑制事態擴大，但關東軍先斬後奏、既成事實步步進逼，隔年扶植清廢帝溥儀成立滿洲國傀儡政權。國際聯盟依李頓調查團報告認定日本侵略，日本則於1933年憤而退出國聯，自此走上國際孤立與軍部主導對外擴張的不歸路。
+  sources:
+    - title: 維基百科：九一八事變
+      url: https://zh.wikipedia.org/wiki/九一八事變
+    - title: 日文維基百科：満洲国
+      url: https://ja.wikipedia.org/wiki/満洲国
+
+- id: jp-yamanouchi-zoku-jomon
+  year: 1936
+  title: 山內清男提出「續繩文時代」分期概念
+  category: science
+  importance: 2
+  desc: 考古學家山內清男在《ミネルヴァ》期刊發表論文，正式提出「續繩文時代」一詞，用以區別北海道未隨本州轉入彌生農耕、延續狩獵採集生活的史前階段。此一分期概念確立了北海道與本州古代史各自獨立的時間框架，至今仍是日本考古學界的通用分期。
+  sources:
+    - title: 日文維基百科：続縄文時代
+      url: https://ja.wikipedia.org/wiki/続縄文時代
+    - title: 維基百科：山內清男
+      url: https://zh.wikipedia.org/wiki/山內清男
+
+- id: jp-226-incident
+  year: 1936
+  title: 二二六事件，軍國主義勢力抬頭
+  category: politics
+  importance: 4
+  desc: 陸軍皇道派青年將校率近千五百名士兵於東京發動政變，殺害內大臣齋藤實、大藏大臣高橋是清等重臣並佔領永田町。政變雖於四日內遭鎮壓，但統制派軍閥自此完全主導軍政大權，加速了日本走向軍國主義與對外侵略的步伐。
+  sources:
+    - title: 維基百科：二二六事件
+      url: https://zh.wikipedia.org/wiki/二二六事件
+
+- id: jp-nanshin-policy
+  year: 1936
+  title: 南進論成為國策，台灣定位為南進基地
+  category: politics
+  importance: 3
+  desc: 廣田弘毅內閣的「國策基準」把向南洋擴張與向北對抗蘇聯並列為國策，海軍主導的南進論從民間論述變成國家方針。台灣是南進的跳板：同年恢復武官總督，小林躋造提出皇民化、工業化、南進基地化三原則，成立台灣拓殖株式會社經營南洋，高雄擴建為軍港。1941 年日軍從台灣起飛轟炸菲律賓，南進論走到終點，台灣也因此在戰爭末期成為盟軍空襲的目標。
+  sources:
+    - title: 維基百科：南進論
+      url: https://zh.wikipedia.org/wiki/南進論
+    - title: 日文維基百科：南進論
+      url: https://ja.wikipedia.org/wiki/南進論
+
+- id: jp-marco-polo-bridge
+  year: 1937
+  title: 盧溝橋事變，日中戰爭全面爆發
+  category: war
+  importance: 5
+  endYear: 1945
+  desc: 1937年7月7日夜，日軍在盧溝橋附近夜間演習後，以士兵志村菊次郎「失蹤」為由要求進入宛平城搜查遭中國第29軍拒絕，翌日凌晨日軍砲擊宛平城，營長金振中率部奮起抵抗，史稱「盧溝橋事變」。雙方談判因日軍持續增兵而破裂，7月28至30日平津作戰中第29軍副軍長佟麟閣、師長趙登禹相繼陣亡，31日北平、天津相繼淪陷。事變隨後擴大成對中國的全面軍事侵略（日中戰爭/八年抗戰），是中國全民族抗戰的起點，也嚴重改變了東亞戰局與國際秩序。
+  sources:
+    - title: 維基百科：七七事變
+      url: https://zh.wikipedia.org/wiki/七七事變
+
+- id: jp-pearl-harbor
+  year: 1941
+  title: 偷襲珍珠港，太平洋戰爭爆發
+  category: war
+  importance: 5
+  desc: 日本聯合艦隊在未正式宣戰前，出動艦載機奇襲美國夏威夷珍珠港海軍基地，重創太平洋艦隊戰列艦群，美軍隔日對日宣戰。日本原本盤算以速戰速決逼美方妥協，卻反而促使長期主張孤立主義的美國舉國參戰，太平洋戰爭自此全面爆發——這場豪賭最終沒有為日本爭取到談判空間，反而引來四年後的徹底崩潰。
+  sources:
+    - title: 維基百科：珍珠港事件
+      url: https://zh.wikipedia.org/wiki/珍珠港事件
+    - title: 維基百科：太平洋戰爭
+      url: https://zh.wikipedia.org/wiki/太平洋戰爭
+
+- id: jp-tokyo-firebombing
+  year: 1945
+  title: 東京大空襲，單次空襲死傷最慘重的一夜
+  category: war
+  importance: 4
+  desc: 325架美軍B-29轟炸機夜間低空襲擊東京，投下逾38萬枚燃燒彈，深川、本所、淺草、日本橋等下町人口稠密區陷入大規模「火焰旋風」，民眾逃往橋樑、河岸與原以為防火的鋼筋混凝土校舍，卻仍難逃燒死或窒息。官方統計死亡逾八萬人，民間估計死亡與失蹤逾十萬人，燒毀約四十一平方公里、二十六萬餘戶——是人類戰爭史上單次空襲死傷最慘重的一夜。此役後美軍將燒夷彈戰術複製到名古屋、大阪、神戶等地，東京本身5月又再遭空襲，直到廣島、長崎的原子彈落下。
+  sources:
+    - title: 日文維基百科：東京大空襲
+      url: https://ja.wikipedia.org/wiki/東京大空襲
+
+- id: jp-surrender
+  year: 1945
+  title: 廣島長崎原爆；日本投降
+  category: war
+  importance: 5
+  desc: 美軍先後在廣島、長崎投下原子彈，兩市瞬間夷平，加上蘇聯對日宣戰出兵滿洲，昭和天皇透過廣播發表《終戰詔書》宣布接受《波茨坦宣言》無條件投降。9月2日在東京灣密蘇里號戰艦上簽署降伏文書，長達十五年的對外戰爭正式結束，日本隨即進入盟軍占領時期。
+  sources:
+    - title: 維基百科：日本投降
+      url: https://zh.wikipedia.org/wiki/日本投降
+    - title: 維基百科：廣島與長崎原子彈爆炸
+      url: https://zh.wikipedia.org/wiki/廣島與長崎原子彈爆炸
+
+- id: jp-zaibatsu-land-reform
+  year: 1945
+  endYear: 1952
+  title: 財閥解體與農地改革，GHQ的經濟民主化
+  category: economy
+  importance: 4
+  desc: 盟軍占領當局認定三井、三菱、住友、安田等財閥曾是軍國主義的制度支柱，下令解散持股公司，將股票分散賣給員工與一般投資人，先後指定百餘家企業分割，財閥家族成員並遭公職追放。同時推行的農地改革強制地主釋出土地，由政府低價收購轉賣佃農，大幅消滅地主階層。兩項改革徹底重塑戰後日本的財富結構，但1949年後美方轉向扶植日本經濟復興的「逆進路」政策，解體規模隨之縮小，財閥系企業戰後仍以「系列」形式重新集結。
+  sources:
+    - title: 日文維基百科：財閥解体
+      url: https://ja.wikipedia.org/wiki/財閥解体
+    - title: 日文維基百科：農地改革
+      url: https://ja.wikipedia.org/wiki/農地改革
+
+- id: jp-tokyo-trials
+  year: 1946
+  endYear: 1948
+  title: 遠東國際軍事法庭（東京審判）開庭
+  category: politics
+  importance: 4
+  desc: 同盟國於東京成立遠東國際軍事法庭，開庭審判日本二戰甲級戰犯。東條英機等七人被判處絞刑，法庭追究了日本對外侵略與戰爭罪責，確立戰後檢討與歷史責任框架。
+  sources:
+    - title: 維基百科：遠東國際軍事法庭
+      url: https://zh.wikipedia.org/wiki/遠東國際軍事法庭
+
+- id: jp-constitution
+  year: 1947
+  title: 日本國憲法施行
+  category: politics
+  importance: 4
+  desc: 取代明治憲法的新憲法由盟軍總部主導起草，確立主權在民、象徵天皇制與基本人權保障三大原則，第九條更明文放棄以武力解決國際爭端、不保有軍隊——史稱「和平憲法」。這部憲法施行至今從未修正過一字，是全世界現行憲法中最長壽的不曾修憲紀錄之一，「自衛隊是否違憲」的爭論也因此延續超過七十年。
+  sources:
+    - title: 維基百科：日本國憲法
+      url: https://zh.wikipedia.org/wiki/日本國憲法
+
+- id: jp-yukawa-nobel
+  year: 1949
+  title: 湯川秀樹獲諾貝爾物理獎
+  category: science
+  importance: 4
+  desc: 湯川秀樹1935年在《日本數學物理學會誌》發表論文，提出原子核內質子與中子間存在「介子」作用力的理論，1947年英國物理學家塞西爾·鮑威爾從宇宙射線中發現π介子，驗證了這項預測（鮑威爾本人也於1950年獲諾貝爾獎）。湯川因此於1949年獲頒諾貝爾物理學獎，時年42歲、任教於哥倫比亞大學，成為日本首位諾貝爾獎得主。在戰敗後的低潮裡，這件事的象徵意義遠超過學術本身，大大激勵了日本學界與社會的士氣。
+  sources:
+    - title: 維基百科：湯川秀樹
+      url: https://zh.wikipedia.org/wiki/湯川秀樹
+
+- id: jp-sf-peace-treaty
+  year: 1951
+  title: 舊金山和約與美日安保條約簽署
+  category: politics
+  importance: 4
+  desc: 49 國於舊金山簽署《對日和平條約》（舊金山和約），同盟國正式結束對日本的軍事佔領，日本恢復主權獨立；同日簽署《美日安保條約》，確立戰後美日同盟與美軍駐紮體制。
+  sources:
+    - title: 維基百科：舊金山和約
+      url: https://zh.wikipedia.org/wiki/舊金山和約
+    - title: 維基百科：美日安保條約
+      url: https://zh.wikipedia.org/wiki/美日安保條約
+
+- id: jp-japan-roc-peace-treaty
+  year: 1952
+  title: 日華和平條約，日本選擇與台北締約
+  category: politics
+  importance: 3
+  desc: 舊金山和約沒有邀請任何一個中國政府參加，日本要與哪個中國締約成為問題。在美國壓力下吉田茂以「吉田書簡」承諾與中華民國締約，和約在舊金山和約生效同一天在台北簽署，日本聲明放棄台灣、澎湖主權但未言明歸屬。這份條約讓日本在冷戰中站在台北一邊二十年，1972 年田中角榮與北京建交時宣布它「失去存在意義」，日台關係改由民間的交流協會維繫。
+  sources:
+    - title: 維基百科：中日和約
+      url: https://zh.wikipedia.org/wiki/中日和約
+    - title: 日文維基百科：日本国と中華民国との間の平和条約
+      url: https://ja.wikipedia.org/wiki/日本国と中華民国との間の平和条約
+
+- id: jp-high-growth
+  year: 1955
+  title: 高度經濟成長期開始
+  category: economy
+  importance: 4
+  endYear: 1973
+  desc: 韓戰期間日本成為美軍後勤補給基地，「特需」一度占1950年出口貿易的27%，帶動戰後復甦。此後歷經神武景氣（1956～57年）、岩戶景氣（1958年起，汽車、電視、鋼鐵為主力）、東京奧運景氣（1964年）與伊奘諾景氣（1965～70年，企業併購與消費品普及）等多波成長期，年均近一成的成長持續近二十年。池田勇人首相1960年提出「國民所得倍增計畫」，原訂十年內將國民生產毛額提高至26兆日圓，結果僅六年便提前達標。1968年日本GDP躍居資本主義世界第二，從戰敗國搖身變成經濟大國，直到1973年石油危機才終結這段高速成長期。
+  sources:
+    - title: 維基百科：日本戰後經濟奇蹟
+      url: https://zh.wikipedia.org/wiki/日本戰後經濟奇蹟
+
+- id: jp-conservative-merger
+  year: 1955
+  title: 自由民主黨成立，55年體制展開
+  category: politics
+  importance: 4
+  desc: 自由黨與日本民主黨合併成立自由民主黨（保守合同），同時日本社會黨完成左右統一。自民黨與社會黨形成一長一短的兩大黨對立結構（55年體制），自民黨自此長期執政。
+  sources:
+    - title: 維基百科：保守合同
+      url: https://zh.wikipedia.org/wiki/保守合同
+
+- id: jp-anpo-protests
+  year: 1960
+  title: 安保鬥爭爆發，岸信介內閣總辭
+  category: politics
+  importance: 4
+  desc: 岸信介政府強行於國會通過新《美日安保條約》，引發全日本數百萬工人、學生與市民爆發戰後最大規模的全國示威與罷工（安保鬥爭）。條約生效後岸信介被迫總辭，池田勇人接任並轉向「所得倍增計畫」。
+  sources:
+    - title: 維基百科：安保鬥爭
+      url: https://zh.wikipedia.org/wiki/安保鬥爭
+
+- id: jp-minamata-disease
+  year: 1956
+  endYear: 1968
+  title: 水俁病確認，四大公害病之首
+  category: economy
+  importance: 4
+  desc: 熊本水俁的窒素工廠將含甲基汞的廢水排入水俁灣，經食物鏈累積後，居民因食用受污染魚貝而集體中毒，1956年首度確診「原因不明奇病」，直到1968年厚生省才正式認定病因為甲基汞中毒——工廠持續排放污水的十二年間，政府與企業始終未正視問題。官方認定患者近三千人，自訴受害者逾七萬。與新潟水俁病、四日市哮喘、痛痛病並稱「四大公害病」，是日本高度經濟成長陰暗面的代名詞，也直接催生了其後的公害對策立法與環境規制。
+  sources:
+    - title: 日文維基百科：水俣病
+      url: https://ja.wikipedia.org/wiki/水俣病
+
+- id: jp-tokyo-olympics
+  year: 1964
+  title: 東京奧運；東海道新幹線通車
+  category: economy
+  importance: 4
+  desc: 亞洲首次舉辦夏季奧運，也是日本重返國際社會的象徵性時刻。開幕前夕通車的東海道新幹線以時速210公里刷新陸上運輸紀錄，連結東京與大阪僅需四小時，「新幹線」自此成為日本高速鐵路與技術實力的代名詞，兩者共同宣告日本正式脫離戰後復興、邁入高度經濟成長的新階段。
+  sources:
+    - title: 維基百科：1964年夏季奧林匹克運動會
+      url: https://zh.wikipedia.org/wiki/1964年夏季奧林匹克運動會
+    - title: 維基百科：東海道新幹線
+      url: https://zh.wikipedia.org/wiki/東海道新幹線
+
+- id: jp-kawabata-nobel
+  year: 1968
+  title: 川端康成獲諾貝爾文學獎
+  category: culture
+  importance: 3
+  desc: 川端康成憑《雪國》、《古都》、《千羽鶴》等作品榮獲諾貝爾文學獎，成為日本與東亞首位獲此殊榮的作家，彰顯日本傳統美學在現代文學的巔峰成就。
+  sources:
+    - title: 維基百科：川端康成
+      url: https://zh.wikipedia.org/wiki/川端康成
+
+- id: jp-expo-70
+  year: 1970
+  title: 大阪世界博覽會（Expo '70）舉辦
+  category: culture
+  importance: 3
+  desc: 亞洲首次主辦的世界博覽會（Expo '70）於大阪府吹田市登場，展期吸引超過 6,400 萬人次參觀，岡本太郎設計的「太陽之塔」成為象徵，集中展示日本戰後高度經濟成長與科技現代化成果。
+  sources:
+    - title: 維基百科：1970年世界博覽會
+      url: https://zh.wikipedia.org/wiki/1970年世界博覽會
+
+- id: jp-okinawa-reversion
+  year: 1972
+  title: 沖繩返還；中日聯合聲明簽署
+  category: politics
+  importance: 4
+  desc: 美國將受佔領二十七年的琉球群島（沖繩）施政權移交返還日本；同年首相田中角榮訪問北京簽署《中日聯合聲明》，實現日本與中華人民共和國邦交正常化，同時終結與中華民國的官方外交關係。
+  sources:
+    - title: 維基百科：沖繩返還
+      url: https://zh.wikipedia.org/wiki/沖繩返還
+    - title: 維基百科：中日聯合聲明
+      url: https://zh.wikipedia.org/wiki/中日聯合聲明
+
+- id: jp-oil-crisis-1973
+  year: 1973
+  title: 第一次石油危機，高度經濟成長期結束
+  category: economy
+  importance: 4
+  desc: 第四次中東戰爭爆發引發第一次石油危機，原油價格暴漲造成全日本物價飆升與社會慌亂。日本長達近二十年的高度經濟成長期正式告終，經濟轉向低速穩定成長體制。
+  sources:
+    - title: 維基百科：1973年石油危機
+      url: https://zh.wikipedia.org/wiki/1973年石油危機
+
+- id: jp-lockheed-scandal
+  year: 1976
+  endYear: 1983
+  title: 洛克希德事件，前首相田中角榮遭起訴
+  category: politics
+  importance: 4
+  desc: 美國參議院調查委員會揭發洛克希德公司透過丸紅商社行賄各國政要促銷客機，前首相田中角榮被查出經由丸紅收受五億日圓賄款，1976年遭東京地檢署以受賄罪起訴。案件審理長達七年，1983年一審判處有期徒刑四年，田中終身上訴至1993年病逝、公訴才不了了之。事件重創自民黨形象，直接導致三木武夫內閣垮台，成為戰後日本政商勾結最著名的象徵性醜聞。
+  sources:
+    - title: 日文維基百科：ロッキード事件
+      url: https://ja.wikipedia.org/wiki/ロッキード事件
+
+- id: jp-plaza-accord
+  year: 1985
+  title: 五國簽署廣場協定，日圓大幅升值
+  category: economy
+  importance: 4
+  desc: G5 五國財長於紐約廣場飯店簽署《廣場協定》，聯合干預外匯市場誘導美元貶值。日圓對美元匯率急劇升值，促進日企對外投資潮，卻也誘發熱錢湧入房市與股市，埋下泡沫經濟的種子。
+  sources:
+    - title: 維基百科：廣場協定
+      url: https://zh.wikipedia.org/wiki/廣場協定
+
+- id: jp-seikan-seto-bridges
+  year: 1988
+  title: 青函隧道與瀨戶大橋通車
+  category: economy
+  importance: 3
+  desc: 全球最長海底鐵路隧道「青函隧道」、以及跨海「瀨戶大橋」相繼通車。本州、北海道、九州與四國四大島首次全數透過陸路與軌道網路連結。
+  sources:
+    - title: 維基百科：青函隧道
+      url: https://zh.wikipedia.org/wiki/青函隧道
+    - title: 維基百科：瀨戶大橋
+      url: https://zh.wikipedia.org/wiki/瀨戶大橋
+
+- id: jp-heisei
+  year: 1989
+  title: 昭和結束，進入平成
+  category: politics
+  importance: 3
+  desc: 昭和天皇駕崩，皇太子明仁即位改元平成——日本首次以「新天皇即位」而非戰爭或政變劃分時代分界。年號取自《史記》「內平外成」與《書經》「地平天成」，象徵內外皆能太平。
+  sources:
+    - title: 維基百科：平成
+      url: https://zh.wikipedia.org/wiki/平成
+
+- id: jp-consumption-tax-1989
+  year: 1989
+  title: 日本首次課徵消費稅，稅率3%
+  category: economy
+  importance: 3
+  desc: 竹下登內閣力排眾議通過消費稅法，4月起開徵日本史上第一種一般消費稅，初期稅率僅3%。稅制改革衝擊龐大，同年參議院選舉自民黨慘敗，是稅率調升史上第一次政治震盪。此後稅率歷經多次調高——1997年橋本內閣升至5%、2014年安倍內閣升至8%、2019年再升至10%——消費稅至今仍是日本政壇最敏感的財政議題之一。
+  sources:
+    - title: 日文維基百科：消費税
+      url: https://ja.wikipedia.org/wiki/消費税
+
+- id: jp-bubble-burst
+  year: 1991
+  title: 泡沫經濟破滅，失落的十年
+  category: economy
+  importance: 4
+  desc: 廣場協定後日圓急遽升值，低利率環境催生大量熱錢湧入房市與股市，泡沫經濟高峰時東京都的地價總和一度等同全美國地價總和，日經225指數在1989年12月29日創下38,957.44點的歷史新高。1990年3月大藏省實施不動產貸款總量規制，加上央行升息緊縮銀根，泡沫應聲破滅，到1992年8月日經指數已腰斬至約1萬4千點。此後地價與股價同時崩跌，日本陷入長期低成長與通縮的「失落的十年」，甚至延伸為「失落的二十年」。
+  sources:
+    - title: 維基百科：日本泡沫經濟
+      url: https://zh.wikipedia.org/wiki/日本泡沫經濟
+
+- id: jp-55-system-collapse
+  year: 1993
+  title: 55年體制瓦解，細川護熙非自民聯合內閣成立
+  category: politics
+  importance: 4
+  desc: 自民黨因派系分裂與政治改革爭議遭倒閣，眾議院改選後細川護熙組建八黨派聯合內閣。自民黨自 1955 年成立以來連續 38 年的單獨執政終結，宣告「55年體制」正式瓦解。
+  sources:
+    - title: 維基百科：55年體制
+      url: https://zh.wikipedia.org/wiki/55年體制
+    - title: 維基百科：細川內閣
+      url: https://zh.wikipedia.org/wiki/細川內閣
+
+- id: jp-hanshin-sarin
+  year: 1995
+  title: 阪神大地震；東京地下鐵沙林毒氣事件
+  category: culture
+  importance: 4
+  desc: 1 月阪神・淡路大地震重創關西，釀逾六千人死傷；3 月奧姆真理教於東京地下鐵發動沙林毒氣襲擊，造成 14 死數千傷。兩起重大災難重創日本社會治安與安全神話，促使應變與安全防禦機制的變革。
+  sources:
+    - title: 維基百科：阪神大地震
+      url: https://zh.wikipedia.org/wiki/阪神大地震
+    - title: 維基百科：東京地下鐵沙林毒氣事件
+      url: https://zh.wikipedia.org/wiki/東京地下鐵沙林毒氣事件
+
+- id: jp-pokemon-1996
+  year: 1996
+  title: 《寶可夢》遊戲發售，動漫遊戲文化風靡全球
+  category: culture
+  importance: 4
+  desc: 任天堂發行《寶可夢 紅／綠》，帶動集換式卡牌與動畫潮流。日本動漫（Anime）與電子遊戲（JRPG）成為全球流行文化符號，「Cool Japan」軟實力發展里程碑。
+  sources:
+    - title: 維基百科：寶可夢系列
+      url: https://zh.wikipedia.org/wiki/寶可夢系列
+
+- id: jp-yamaichi-collapse
+  year: 1997
+  title: 山一證券自主廢業，平成金融危機爆發
+  category: economy
+  importance: 3
+  desc: 消費稅率調升至 5% 後，日本四大證券之一的山一證券因巨額隱匿壞帳爆發自主廢業倒閉，北海道拓殖銀行亦相繼破產。平成金融危機加劇信用緊縮與資產通縮，使日本陷入「失落的二十年」。
+  sources:
+    - title: 日文維基百科：山一證券
+      url: https://ja.wikipedia.org/wiki/山一證券
+
+- id: jp-kyoto-protocol-1997
+  year: 1997
+  title: 氣候變遷會議通過《京都議定書》
+  category: science
+  importance: 4
+  desc: 聯合國氣候變遷框架公約締約國會議（COP3）於京都召開，通過首份對先進國家溫室氣體減量設定具法律約束力目標的國際條約《京都議定書》。
+  sources:
+    - title: 維基百科：京都議定書
+      url: https://zh.wikipedia.org/wiki/京都議定書
+
+- id: jp-nagano-olympics-1998
+  year: 1998
+  title: 長野冬季奧運會舉辦
+  category: culture
+  importance: 3
+  desc: 第 18 屆冬季奧林匹克運動會於長野縣舉行，日本地主隊奪下 5 金 14 面獎牌佳績。這是日本時隔 26 年再度主辦冬季奧運，展示了高科技與山岳賽場設施。
+  sources:
+    - title: 維基百科：1998年冬季奧林匹克運動會
+      url: https://zh.wikipedia.org/wiki/1998年冬季奧林匹克運動會
+
+- id: jp-world-cup-2002
+  year: 2002
+  title: 日韓世界盃；小泉純一郎訪平壤簽署平壤宣言
+  category: culture
+  importance: 3
+  desc: 日韓兩國共同主辦第 17 屆世界盃足球賽，為世界盃首次在亞洲舉行；同年首相小泉純一郎首度出訪平壤與金正日會談並簽署《日朝平壤宣言》，北韓首度公開承認綁架日本國人事件並放還五名被害者。
+  sources:
+    - title: 維基百科：2002年國際足協世界盃
+      url: https://zh.wikipedia.org/wiki/2002年國際足協世界盃
+    - title: 維基百科：日朝平壤宣言
+      url: https://zh.wikipedia.org/wiki/日朝平壤宣言
+
+- id: jp-yayoi-dating-revision
+  year: 2003
+  title: 放射性碳定年將彌生時代起點上修至前十世紀
+  category: science
+  importance: 3
+  desc: 國立歷史民俗博物館發表以AMS放射性碳定年法重新測定九州北部彌生早期陶器附著碳化物的結果，將彌生時代的開始年代從傳統認知的前5、4世紀大幅提前約500年，推定至前10世紀左右。此一修正引發日本考古學界對彌生時代分期的廣泛論戰，至今仍未完全定論。
+  sources:
+    - title: 日文維基百科：弥生時代
+      url: https://ja.wikipedia.org/wiki/弥生時代
+
+- id: jp-spirited-away-oscar-2003
+  year: 2003
+  title: 宮崎駿《神隱少女》榮獲奧斯卡最佳動畫長片獎
+  category: culture
+  importance: 3
+  desc: 吉卜力工作室宮崎駿執導的《神隱少女》榮獲第 75 屆奧斯卡最佳動畫長片獎，並獲頒柏林影展金熊獎，改寫日本電影紀錄，將日本手繪動畫美學推向世界藝術殿堂巔峰。
+  sources:
+    - title: 維基百科：千與千尋
+      url: https://zh.wikipedia.org/wiki/千與千尋
+
+- id: jp-sdf-iraq-2004
+  year: 2004
+  endYear: 2008
+  title: 自衛隊派駐伊拉克，參與戰後人道復興
+  category: politics
+  importance: 4
+  desc: 小泉內閣依據《伊拉克復興特別措置法》，派遣陸上與航空自衛隊駐紮伊拉克薩馬瓦執行人道救援與重建。這是戰後日本自衛隊首次被派往尚處非安全狀態之異國戰地。
+  sources:
+    - title: 維基百科：自衛隊伊拉克復興支援群
+      url: https://zh.wikipedia.org/wiki/自衛隊伊拉克復興支援群
+
+- id: jp-postal-privatization
+  year: 2005
+  title: 郵政民營化大選，自民黨獲壓倒性大勝
+  category: politics
+  importance: 4
+  desc: 首相小泉純一郎核心政策「郵政民營化」法案遭參議院否決，小泉毅然解散眾議院進行「郵政解散」大選。自民黨以改革為訴求斬獲過半席次，順利通過法案，成為平成時代結構性改革的代表作。
+  sources:
+    - title: 維基百科：日本郵政民營化
+      url: https://zh.wikipedia.org/wiki/日本郵政民營化
+
+- id: jp-dpj-transition
+  year: 2009
+  title: 民主黨政權交代，結束自民黨半世紀主導
+  category: politics
+  importance: 4
+  desc: 民主黨於第 45 屆眾議院大選中狂攬 308 席擊敗自民黨，黨首鳩山由紀夫組閣就任首相。這是自民黨建黨五十四年來首次失去第一大黨地位的單純政黨輪替。
+  sources:
+    - title: 維基百科：2009年日本眾議院選舉
+      url: https://zh.wikipedia.org/wiki/2009年日本眾議院選舉
+
+- id: jp-lay-judge-system-2009
+  year: 2009
+  title: 裁判員制度正式上路，國民參與刑事審判
+  category: politics
+  importance: 3
+  desc: 為落實司法改革，日本正式實施「裁判員制度」，由隨機抽籤選出的普通國民與職業裁判官（法官）共同審理重大刑事案件並參與量刑，打破近百年僅由職業法官審判的傳統。
+  sources:
+    - title: 維基百科：裁判員制度
+      url: https://zh.wikipedia.org/wiki/裁判員制度
+
+- id: jp-hayabusa-sample-return-2010
+  year: 2010
+  title: 隼鳥號探測器成功攜帶小行星微粒返回地球
+  category: science
+  importance: 4
+  desc: 日本宇宙航空研究開發機構（JAXA）的「隼鳥號」（Hayabusa）探測器歷經七年艱難旅程與多次故障，成功從小行星「絲川」採樣並返回地球，實現人類首次小行星物質採樣返回。
+  sources:
+    - title: 維基百科：隼鳥號
+      url: https://zh.wikipedia.org/wiki/隼鳥號
+
+- id: jp-311-earthquake
+  year: 2011
+  title: 東日本大震災，福島核電廠事故
+  category: culture
+  importance: 5
+  desc: 3 月 11 日東北地方太平洋沖發生芮氏規模 9.0 海溝型強震，引發巨大海嘯，造成近二萬人死亡與失蹤，並引發福島第一核電廠爐心融毀之核災事故。這是戰後日本遭逢最嚴重的複合型天災與人禍。台灣民間與政府捐款逾兩百億日圓，居各國之冠，日本政府與民間此後多年以「謝謝台灣」回應，成為日台民間關係的轉捩點。
+  sources:
+    - title: 維基百科：東日本大震災
+      url: https://zh.wikipedia.org/wiki/東日本大震災
+    - title: 維基百科：福島第一核電廠事故
+      url: https://zh.wikipedia.org/wiki/福島第一核電廠事故
+
+- id: jp-abenomics
+  year: 2012
+  title: 第二次安倍內閣成立，推動「安倍經濟學」
+  category: economy
+  importance: 4
+  desc: 自民黨勝選重返執政，安倍晉三再度就任首相並推出「三支箭」政策（超寬鬆貨幣政策、機動財政政策與經濟結構成長戰略），嘗試帶領日本走出長達二十年的通貨緊縮與低迷。
+  sources:
+    - title: 維基百科：安倍經濟學
+      url: https://zh.wikipedia.org/wiki/安倍經濟學
+
+- id: jp-skytree-2012
+  year: 2012
+  title: 東京晴空塔完工啟用
+  category: science
+  importance: 3
+  desc: 高 634 公尺的世界最高自立式電波塔「東京晴空塔」（Tokyo Skytree）於墨田區完工通塔，接替東京鐵塔提供數位地面電視訊號，成為 21 世紀東京新地標與觀光名勝。
+  sources:
+    - title: 維基百科：東京晴空塔
+      url: https://zh.wikipedia.org/wiki/東京晴空塔
+
+- id: jp-security-legislation-2015
+  year: 2015
+  title: 平和安全法制通過，解禁集體自衛權
+  category: politics
+  importance: 4
+  desc: 安倍內閣於國會強行通過安保法案（平和安全法制），修改《自衛隊法》等 10 部法律，允許日本在密切同盟國遭襲擊時行使集體自衛權。此法案引發憲法學者與社會大規模示威與合憲性爭議。
+  sources:
+    - title: 維基百科：日本和平安全法制
+      url: https://zh.wikipedia.org/wiki/日本和平安全法制
+
+- id: jp-reiwa-era
+  year: 2019
+  title: 明仁天皇退位，改元「令和」
+  category: politics
+  importance: 4
+  desc: 明仁天皇退位，皇太子德仁即位，為日本時隔兩百年首度實現天皇生前退位。新年號「令和」典出日本古典文獻《萬葉集》，象徵日本開啟全新時代。
+  sources:
+    - title: 維基百科：令和
+      url: https://zh.wikipedia.org/wiki/令和
+    - title: 維基百科：明仁天皇退位
+      url: https://zh.wikipedia.org/wiki/明仁天皇退位
+
+- id: jp-covid19-emergency-2020
+  year: 2020
+  title: COVID-19 疫情爆發，發布首次緊急事態宣言
+  category: culture
+  importance: 4
+  desc: COVID-19 全球疫情擴散，首相安倍晉三發布日本史上首次緊急事態宣言。學校停課、產業遠距運作與民眾自肅（避免非必要外出）深層改變社會生活模式。
+  sources:
+    - title: 維基百科：2019冠狀病毒病日本疫情
+      url: https://zh.wikipedia.org/wiki/2019冠狀病毒病日本疫情
+
+- id: jp-hayabusa2-sample-return-2020
+  year: 2020
+  title: 隼鳥2號順利將小行星「龍宮」微粒樣品帶回地球
+  category: science
+  importance: 4
+  desc: JAXA「隼鳥2號」（Hayabusa2）探測器將裝有小行星「龍宮」地下岩石樣品的再突入艙成功降落於澳洲沙漠。科學家於樣品中發現胺基酸與水成分，為太陽系與生命起源研究取得突破。
+  sources:
+    - title: 維基百科：隼鳥2號
+      url: https://zh.wikipedia.org/wiki/隼鳥2號
+
+- id: jp-tokyo-2020
+  year: 2021
+  title: 2020 東京奧運會（因疫情延期）登場
+  category: culture
+  importance: 4
+  desc: 受 COVID-19 全球疫情影響延期一年後，第 32 屆奧林匹克運動會於東京登場。因應防疫大多數賽事採無觀眾閉門舉行，為現代奧運歷史上首次因全球大流行疫情延期舉辦之盛會。
+  sources:
+    - title: 維基百科：2020年夏季奧林匹克運動會
+      url: https://zh.wikipedia.org/wiki/2020年夏季奧林匹克運動會
+
+- id: jp-nishi-kyushu-shinkansen-2022
+  year: 2022
+  title: 西九州新幹線（武雄溫泉—長崎）通車
+  category: economy
+  importance: 3
+  desc: 連結佐賀縣武雄溫泉站與長崎站的「西九州新幹線」正式通車，採用 N700S 系列車「海鷗號」（Kamome）。這是時隔 7 年日本新幹線路線延伸，促進九州觀光與區域發展。
+  sources:
+    - title: 維基百科：西九州新幹線
+      url: https://zh.wikipedia.org/wiki/西九州新幹線
+
+- id: jp-abe-assassination
+  year: 2022
+  title: 前首相安倍晉三遇刺身亡
+  category: politics
+  importance: 4
+  desc: 日本執政時間最長的前首相安倍晉三於奈良市助選演講時遭槍擊身亡。事件震撼全球，並引發全日本對政治安全防護、槍械管制以及政治人物與統一教鏈結的強烈檢討。
+  sources:
+    - title: 維基百科：安倍晉三遇刺案
+      url: https://zh.wikipedia.org/wiki/安倍晉三遇刺案
+
+- id: jp-noto-earthquake-2024
+  year: 2024
+  title: 能登半島地震，強震與海嘯重創北陸
+  category: culture
+  importance: 3
+  desc: 元旦下午能登半島發生芮氏規模 7.6 淺層強震並引發海嘯與火災，造成逾二百人罹難，古建築與傳統漆器工藝重創。為令和時代以來日本傷亡最慘重的自然災害。
+  sources:
+    - title: 維基百科：2024年能登半島地震
+      url: https://zh.wikipedia.org/wiki/2024年能登半島地震
+
+- id: jp-new-banknotes-2024
+  year: 2024
+  title: 令和新紙幣全面發行，採用全息防偽新技術
+  category: economy
+  importance: 3
+  desc: 日本銀行時隔 20 年發行新版紙幣，一萬日圓肖像改為「日本資本主義之父」澀澤榮一、五千日圓改為女性教育先驅津田梅子、千日圓改為醫學家北里柴三郎，並導入全球首創 3D 全息防偽技術。
+  sources:
+    - title: 日文維基百科：日本銀行券
+      url: https://ja.wikipedia.org/wiki/日本銀行券
+
+- id: jp-slim-moon-landing-2024
+  year: 2024
+  title: SLIM 探測器成功精準登月，日本成為第五個登月國
+  category: science
+  importance: 4
+  desc: JAXA 的「SLIM」（智能月球探測器）於月球表面成功實現高精度著陸（目標地點誤差在 10 公尺內），日本成為繼前蘇聯、美國、中國與印度後，全球第 5 個成功將探測器送上月球的國家。
+  sources:
+    - title: 維基百科：智能月球探測器
+      url: https://zh.wikipedia.org/wiki/智能月球探測器
+
+- id: jp-gdp-fourth-2024
+  year: 2024
+  title: 名目GDP被德國超越，跌至全球第四
+  category: economy
+  importance: 3
+  desc: 受日圓大幅貶值影響，日本名目GDP以美元計算被德國超越，從戰後長期穩坐的世界第二、第三經濟體跌落至第四位——這是自1968年超越西德以來首次被反超。長期通貨緊縮、少子高齡化與製造業競爭力下滑是背後的結構性原因，「經濟大國」的長期敘事自此蒙上陰影。
+  sources:
+    - title: 日文維基百科：日本の経済
+      url: https://ja.wikipedia.org/wiki/日本の経済

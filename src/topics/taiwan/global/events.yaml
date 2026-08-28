@@ -1,0 +1,1788 @@
+# year: 負數 = 西元前，沒有西元 0 年。endYear 選填（有跨度的事件）。
+# category: politics | war | culture | science | religion | economy
+# importance: 1-5。縮放到全域視角時只會顯示 5，放大後才逐層釋出。
+#
+# 本欄由 world/global/events.yaml 複製（year ≥ 1500），兩份獨立維護、不會自動同步；
+# id 與世界史相同只是為了日後 diff 方便。
+#
+# 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
+
+
+- id: am-cabral-brazil
+  year: 1500
+  title: 卡布拉爾抵達巴西，葡萄牙宣示主權
+  category: politics
+  importance: 3
+  desc: 卡布拉爾原欲循達伽馬航線前往印度，船隊西偏意外觸及南美洲海岸；托爾德西里亞斯條約劃定的界線正好讓這塊土地歸屬葡萄牙。
+  sources:
+    - title: 維基百科：佩德羅·阿爾瓦雷斯·卡布拉爾
+      url: https://zh.wikipedia.org/wiki/佩德羅·阿爾瓦雷斯·卡布拉爾
+
+- id: me-safavid
+  year: 1501
+  title: 薩非王朝建立
+  category: politics
+  importance: 3
+  desc: 定什葉派為國教，伊朗與周邊遜尼派世界的分野自此定型。
+  sources:
+    - title: 維基百科：薩非王朝
+      url: https://zh.wikipedia.org/wiki/薩非王朝
+
+- id: eu-high-renaissance-masters
+  year: 1503
+  title: 達文西、米開朗基羅、拉斐爾同臺，盛期文藝復興顛峰
+  category: culture
+  importance: 5
+  endYear: 1512
+  desc: 達文西著手繪製《蒙娜麗莎》，米開朗基羅完成西斯汀禮拜堂天頂畫，三位大師幾乎同時在羅馬與佛羅倫斯創作巔峰之作，是文藝復興藝術公認的高峰期。
+  sources:
+    - title: 維基百科：列奧納多·達·芬奇
+      url: https://zh.wikipedia.org/wiki/列奧納多·達·芬奇
+    - title: 維基百科：米開朗基羅
+      url: https://zh.wikipedia.org/wiki/米開朗基羅
+    - title: 維基百科：拉斐爾
+      url: https://zh.wikipedia.org/wiki/拉斐爾
+    - title: 維基百科：蒙娜麗莎
+      url: https://zh.wikipedia.org/wiki/蒙娜麗莎
+    - title: 英文維基百科：Sistine Chapel ceiling
+      url: https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling
+
+- id: me-chaldiran
+  year: 1514
+  title: 查爾迪蘭戰役，鄂圖曼擊敗薩非
+  category: war
+  importance: 3
+  desc: 鄂圖曼火器優勢擊敗薩非騎兵，戰後大致劃定遜尼與什葉兩大陣營在中東的地理分界，這條線至今仍隱約可辨。
+  sources:
+    - title: 維基百科：查爾迪蘭戰役
+      url: https://zh.wikipedia.org/wiki/查爾迪蘭戰役
+
+- id: eu-luther
+  year: 1517
+  title: 馬丁路德發表《九十五條論綱》
+  category: religion
+  importance: 5
+  desc: 馬丁路德不滿教會販售贖罪券，在維滕貝格教堂張貼《九十五條論綱》，主張因信稱義，點燃宗教改革；印刷術讓論綱迅速傳遍歐洲，天主教會就此分裂出新教陣營，也埋下往後一世紀宗教戰爭的種子。
+  sources:
+    - title: 維基百科：馬丁·路德
+      url: https://zh.wikipedia.org/wiki/馬丁·路德
+    - title: 維基百科：九十五條論綱
+      url: https://zh.wikipedia.org/wiki/九十五條論綱
+
+- id: me-ottoman-caliphate
+  year: 1517
+  title: 鄂圖曼滅馬木留克，取得哈里發名分
+  category: politics
+  importance: 3
+  sources:
+    - title: 維基百科：馬木留克蘇丹國
+      url: https://zh.wikipedia.org/wiki/馬木留克蘇丹國
+
+- id: eu-magellan-circumnavigation
+  year: 1519
+  title: 麥哲倫船隊完成首次環球航行
+  category: science
+  importance: 5
+  endYear: 1522
+  desc: 麥哲倫本人在菲律賓身亡，船隊由埃爾卡諾帶領完成剩餘航程，首度以實際航行證明地球是連續的海洋球體，也打通了橫越太平洋的航路。
+  sources:
+    - title: 維基百科：斐迪南·麥哲倫
+      url: https://zh.wikipedia.org/wiki/斐迪南·麥哲倫
+    - title: 維基百科：胡安·塞巴斯蒂安·埃爾卡諾
+      url: https://zh.wikipedia.org/wiki/胡安·塞巴斯蒂安·埃爾卡諾
+
+- id: am-aztec-fall
+  year: 1521
+  title: 西班牙征服阿茲特克帝國
+  category: war
+  importance: 5
+  desc: 科爾特斯以數百人結合當地反阿茲特克勢力，加上天花疫情，攻陷特諾奇提特蘭。
+  sources:
+    - title: 維基百科：西班牙征服阿茲特克帝國
+      url: https://zh.wikipedia.org/wiki/西班牙征服阿茲特克帝國
+
+- id: sa-panipat-1
+  year: 1526
+  title: 第一次帕尼帕特戰役，蒙兀兒帝國建立
+  category: war
+  importance: 4
+  sources:
+    - title: 維基百科：第一次帕尼帕特之戰
+      url: https://zh.wikipedia.org/wiki/第一次帕尼帕特之戰
+    - title: 維基百科：蒙兀兒帝國
+      url: https://zh.wikipedia.org/wiki/蒙兀兒帝國
+
+- id: eu-sack-rome-1527
+  year: 1527
+  title: 羅馬之劫，義大利文藝復興由盛轉衰
+  category: war
+  importance: 4
+  desc: 神聖羅馬皇帝查理五世的軍隊洗劫羅馬，教廷贊助藝術的財力與威信一併重創，史家常以此年作為義大利文藝復興實質告終的分水嶺。
+  sources:
+    - title: 維基百科：羅馬之劫 (1527年)
+      url: https://zh.wikipedia.org/wiki/羅馬之劫 (1527年)
+
+- id: am-inca-civil-war
+  year: 1529
+  title: 瓦斯卡爾與阿塔瓦爾帕內戰，印加分裂
+  category: war
+  importance: 4
+  endYear: 1532
+  desc: 瓦伊納·卡帕克死後兩子爭位，內戰打了三年才由阿塔瓦爾帕勝出；隔年皮薩羅登陸時，帝國早已被戰爭掏空，無力抵抗數百名西班牙人。
+  sources:
+    - title: 維基百科：印加內戰
+      url: https://zh.wikipedia.org/wiki/印加內戰
+    - title: 維基百科：瓦斯卡爾
+      url: https://zh.wikipedia.org/wiki/瓦斯卡爾
+    - title: 維基百科：阿塔瓦爾帕
+      url: https://zh.wikipedia.org/wiki/阿塔瓦爾帕
+
+- id: am-inca-fall
+  year: 1533
+  title: 西班牙征服印加帝國
+  category: war
+  importance: 5
+  desc: 皮薩羅在卡哈馬卡設伏誘捕已贏得內戰的阿塔瓦爾帕，阿塔瓦爾帕提出以滿室黃金、兩倍白銀贖命，印加人如期交付贖金，皮薩羅卻仍以叛亂與弒兄罪名將他處死；帝國群龍無首，數百名西班牙人得以長驅直入庫斯科。
+  sources:
+    - title: 維基百科：西班牙征服印加帝國
+      url: https://zh.wikipedia.org/wiki/西班牙征服印加帝國
+
+- id: eu-english-reformation
+  year: 1534
+  title: 亨利八世宗教改革，英格蘭國教會成立
+  category: religion
+  importance: 4
+  desc: 教宗拒絕批准亨利八世與王后凱瑟琳離婚，亨利遂頒布《至尊法案》自立為英格蘭教會最高領袖，脫離羅馬天主教會管轄；宗教改革隨後在其子女統治下反覆拉鋸，最終確立以英格蘭國教會為主流的宗教格局。
+  sources:
+    - title: 維基百科：亨利八世
+      url: https://zh.wikipedia.org/wiki/亨利八世
+    - title: 維基百科：英格蘭宗教改革
+      url: https://zh.wikipedia.org/wiki/英格蘭宗教改革
+
+- id: am-vilcabamba
+  year: 1536
+  endYear: 1572
+  title: 曼科·印卡起兵抗西，比爾卡班巴新印加國覆滅
+  category: war
+  importance: 4
+  desc: 西班牙人扶植的傀儡印加王曼科·印卡·尤潘基趁機起兵圍攻庫斯科，失敗後退入安地斯山區的比爾卡班巴，建立延續近四十年的新印加國，時而突襲西班牙人、時而談判周旋；1572年西班牙軍隊攻破最後據點，末代印加王圖帕克·阿馬魯被俘處死，印加人有組織的政治抵抗自此終結。
+  sources:
+    - title: 維基百科：曼科·印卡·尤潘基
+      url: https://zh.wikipedia.org/wiki/曼科·印卡·尤潘基
+    - title: 維基百科：新印加國
+      url: https://zh.wikipedia.org/wiki/新印加國
+    - title: 維基百科：比爾卡班巴
+      url: https://zh.wikipedia.org/wiki/比爾卡班巴
+
+- id: eu-copernicus
+  year: 1543
+  title: 哥白尼《天體運行論》
+  category: science
+  importance: 5
+  sources:
+    - title: 維基百科：尼古拉·哥白尼
+      url: https://zh.wikipedia.org/wiki/尼古拉·哥白尼
+    - title: 維基百科：天體運行論
+      url: https://zh.wikipedia.org/wiki/天體運行論
+
+- id: eu-ivan-tsar
+  year: 1547
+  title: 伊凡四世加冕沙皇，俄羅斯沙皇國建立
+  category: politics
+  importance: 4
+  desc: 莫斯科大公伊凡四世自行加冕為「沙皇」，建立俄羅斯沙皇國，頒布新法典並設立首個代議機構縉紳會議；晚年因猜忌大肆屠殺貴族、性格暴虐而得「恐怖伊凡」之名，其子費奧多爾去世後留里克王朝絕嗣，引爆日後的動亂時代。
+  sources:
+    - title: 維基百科：伊凡四世
+      url: https://zh.wikipedia.org/wiki/伊凡四世
+
+- id: eu-trent
+  year: 1545
+  title: 特倫托會議，天主教改革
+  category: religion
+  importance: 3
+  endYear: 1563
+  desc: 對宗教改革的正面回應：整頓教會積弊，同時明確劃下與新教的教義界線。
+  sources:
+    - title: 維基百科：特倫托會議
+      url: https://zh.wikipedia.org/wiki/特倫托會議
+
+- id: am-potosi
+  year: 1545
+  title: 波托西銀礦開採
+  category: economy
+  importance: 4
+  desc: 白銀經馬尼拉大帆船流入明代中國，把美洲、歐洲與東亞綁進同一個貨幣循環。
+  sources:
+    - title: 維基百科：波托西
+      url: https://zh.wikipedia.org/wiki/波托西
+
+- id: eu-augsburg
+  year: 1555
+  title: 奧格斯堡和約，教隨國定
+  category: religion
+  importance: 3
+  desc: 由諸侯決定領地信仰。宗教衝突暫時止息，但未涵蓋喀爾文派，埋下三十年戰爭的伏筆。
+  sources:
+    - title: 維基百科：奧格斯堡和約
+      url: https://zh.wikipedia.org/wiki/奧格斯堡和約
+
+- id: sa-akbar
+  year: 1556
+  title: 阿克巴即位
+  category: politics
+  importance: 4
+  desc: 廢除非穆斯林人頭稅、廣納印度教貴族，蒙兀兒的統治基礎由此奠定。
+  sources:
+    - title: 維基百科：阿克巴
+      url: https://zh.wikipedia.org/wiki/阿克巴
+
+- id: me-lepanto
+  year: 1571
+  title: 勒班陀海戰
+  category: war
+  importance: 4
+  desc: 基督教聯合艦隊擊潰鄂圖曼海軍，終結鄂圖曼在地中海的海上優勢；但鄂圖曼半年內重建艦隊，戰略格局並未真正逆轉。
+  sources:
+    - title: 維基百科：勒班陀海戰
+      url: https://zh.wikipedia.org/wiki/勒班陀海戰
+
+- id: eu-armada
+  year: 1588
+  title: 英格蘭擊敗西班牙無敵艦隊
+  category: war
+  importance: 4
+  sources:
+    - title: 維基百科：西班牙無敵艦隊
+      url: https://zh.wikipedia.org/wiki/西班牙無敵艦隊
+    - title: 維基百科：英西戰爭 (1585年—1604年)
+      url: https://zh.wikipedia.org/wiki/英西戰爭_(1585年—1604年)
+
+- id: eu-edict-of-nantes
+  year: 1598
+  title: 南特敕令，宗教戰爭落幕
+  category: religion
+  importance: 4
+  desc: 亨利四世結束長達三十餘年的天主教與新教內戰，頒布南特敕令承認胡格諾派的信仰自由與部分政治權利，是歐洲最早的宗教寬容立法之一；但這項讓步僅維持八十七年，路易十四於1685年廢除敕令，迫使大批胡格諾教徒出走。
+  sources:
+    - title: 維基百科：南特敕令
+      url: https://zh.wikipedia.org/wiki/南特敕令
+
+- id: eu-romanov-dynasty
+  year: 1598
+  endYear: 1613
+  title: 動亂時代，羅曼諾夫王朝建立
+  category: politics
+  importance: 4
+  desc: 留里克王朝絕嗣後俄國陷入王位爭奪、饑荒與波蘭立陶宛聯邦入侵的動亂時代，一度連莫斯科都被外國軍隊占領；縉紳會議其後推舉米哈伊爾·羅曼諾夫為新沙皇，開啟統治俄國長達三百餘年的羅曼諾夫王朝。
+  sources:
+    - title: 維基百科：混亂時期
+      url: https://zh.wikipedia.org/wiki/混亂時期
+    - title: 維基百科：羅曼諾夫王朝
+      url: https://zh.wikipedia.org/wiki/羅曼諾夫王朝
+
+- id: eu-voc
+  year: 1602
+  title: 荷蘭東印度公司成立，首家股份公司
+  category: economy
+  importance: 4
+  desc: 可轉讓股份與常設交易所同時出現，現代資本市場的雛型。
+  sources:
+    - title: 維基百科：荷蘭東印度公司
+      url: https://zh.wikipedia.org/wiki/荷蘭東印度公司
+
+- id: am-jamestown
+  year: 1607
+  title: 詹姆斯敦建立
+  category: politics
+  importance: 3
+  desc: 英格蘭在北美的第一個永久殖民地。
+  sources:
+    - title: 維基百科：詹姆斯敦（維吉尼亞州）
+      url: https://zh.wikipedia.org/wiki/詹姆斯敦_(維吉尼亞州)
+
+- id: eu-galileo-telescope
+  year: 1609
+  title: 伽利略以望遠鏡觀測天體
+  category: science
+  importance: 4
+  desc: 木星的衛星與金星的盈虧，是地心說難以解釋的直接觀測證據。
+  sources:
+    - title: 維基百科：伽利略·伽利萊
+      url: https://zh.wikipedia.org/wiki/伽利略·伽利萊
+
+- id: eu-thirty-years
+  year: 1618
+  title: 三十年戰爭爆發
+  category: war
+  importance: 4
+  endYear: 1648
+  sources:
+    - title: 維基百科：三十年戰爭
+      url: https://zh.wikipedia.org/wiki/三十年戰爭
+
+- id: am-mayflower
+  year: 1620
+  title: 五月花號抵達新英格蘭
+  category: politics
+  importance: 3
+  desc: 清教徒為逃避英國國教迫害，搭乘五月花號橫渡大西洋，登陸前簽署《五月花號公約》，以多數同意的方式訂立自治規範；這份公約常被視為北美殖民地自治傳統與日後憲政精神的早期雛形。
+  sources:
+    - title: 維基百科：五月花號
+      url: https://zh.wikipedia.org/wiki/五月花號
+
+- id: sa-taj-mahal
+  year: 1632
+  title: 泰姬瑪哈陵動工
+  category: culture
+  importance: 3
+  sources:
+    - title: 維基百科：泰姬瑪哈陵
+      url: https://zh.wikipedia.org/wiki/泰姬瑪哈陵
+
+- id: eu-english-civil-war
+  year: 1642
+  endYear: 1649
+  title: 英格蘭內戰，查理一世被處決
+  category: war
+  importance: 5
+  desc: 國會派與保皇派因徵稅權與宗教政策爆發內戰，克倫威爾領導的新模範軍屢戰屢勝，查理一世兵敗被俘後以叛國罪遭公開處決，英格蘭首次也是唯一一次廢除君主制、改行共和；克倫威爾去世後王政於1660年復辟。
+  sources:
+    - title: 維基百科：英格蘭內戰
+      url: https://zh.wikipedia.org/wiki/英格蘭內戰
+    - title: 維基百科：奧利弗·克倫威爾
+      url: https://zh.wikipedia.org/wiki/奧利弗·克倫威爾
+    - title: 維基百科：查理一世 (英格蘭)
+      url: https://zh.wikipedia.org/wiki/查理一世_(英格蘭)
+
+- id: eu-westphalia
+  year: 1648
+  title: 西發里亞和約
+  category: politics
+  importance: 5
+  desc: 確立主權國家互不干涉的原則，近代國際體系的起點。
+  sources:
+    - title: 維基百科：西發里亞和約
+      url: https://zh.wikipedia.org/wiki/西發里亞和約
+
+- id: eu-louis-xiv
+  year: 1661
+  title: 路易十四親政，法國絕對君權巔峰
+  category: politics
+  importance: 4
+  desc: 首相馬薩林去世後，路易十四不再任命首相、親自掌理國政，將貴族集中到新建的凡爾賽宮供養、削弱其地方勢力；「朕即國家」的絕對王權模式使法國成為當時歐洲最強盛的君主國，也為往後的宮廷奢華與財政危機埋下種子。
+  sources:
+    - title: 維基百科：路易十四
+      url: https://zh.wikipedia.org/wiki/路易十四
+    - title: 維基百科：凡爾賽宮
+      url: https://zh.wikipedia.org/wiki/凡爾賽宮
+
+- id: me-vienna-1683
+  year: 1683
+  title: 維也納之圍失敗
+  category: war
+  importance: 4
+  desc: 鄂圖曼在中歐的擴張到此為止，此後轉為守勢。
+  sources:
+    - title: 維基百科：維也納之戰
+      url: https://zh.wikipedia.org/wiki/維也納之戰
+
+- id: eu-newton
+  year: 1687
+  title: 牛頓《自然哲學的數學原理》
+  category: science
+  importance: 5
+  sources:
+    - title: 維基百科：自然哲學的數學原理
+      url: https://zh.wikipedia.org/wiki/自然哲學的數學原理
+    - title: 維基百科：艾薩克·牛頓
+      url: https://zh.wikipedia.org/wiki/艾薩克·牛頓
+
+- id: eu-glorious-revolution
+  year: 1688
+  title: 光榮革命
+  category: politics
+  importance: 4
+  desc: 國會貴族不滿信奉天主教的詹姆斯二世集權，邀請荷蘭執政威廉三世率軍渡海登陸，詹姆斯二世不戰而逃亡法國；這場幾乎沒有流血的政變確立國會凌駕王權的原則，隔年頒布的權利法案便是這場革命的立法成果。
+  sources:
+    - title: 維基百科：光榮革命
+      url: https://zh.wikipedia.org/wiki/光榮革命
+
+- id: eu-bill-of-rights
+  year: 1689
+  title: 英國權利法案，君主立憲
+  category: politics
+  importance: 4
+  desc: 光榮革命後國會通過權利法案，明定國王不得未經國會同意徵稅或維持常備軍，臣民享有請願與言論自由；君主權力自此正式受法律節制，君主立憲的憲政框架就此確立，也成為日後美國權利法案等文件的藍本。
+  sources:
+    - title: 維基百科：1689年權利法案
+      url: https://zh.wikipedia.org/wiki/1689年權利法案
+
+- id: am-slave-trade
+  year: 1690
+  title: 大西洋奴隸貿易進入高峰
+  category: economy
+  importance: 4
+  desc: 三角貿易把非洲勞動力、美洲作物與歐洲資本連成一體，前後約一千兩百萬人被販運。
+  sources:
+    - title: 維基百科：大西洋奴隸貿易
+      url: https://zh.wikipedia.org/wiki/大西洋奴隸貿易
+
+- id: eu-bank-of-england
+  year: 1694
+  title: 英格蘭銀行成立
+  category: economy
+  importance: 3
+  desc: 以國家信用為基礎的長期借貸，讓英國得以用低利率支撐長期戰爭。
+  sources:
+    - title: 維基百科：英格蘭銀行
+      url: https://zh.wikipedia.org/wiki/英格蘭銀行
+
+- id: eu-acts-of-union-1707
+  year: 1707
+  title: 大不列顛王國成立，英格蘭與蘇格蘭合併
+  category: politics
+  importance: 4
+  desc: 兩國自1603年蘇格蘭王詹姆斯六世兼任英格蘭國王起便共戴一君，聯合法令進一步合併兩國議會，成立單一的大不列顛王國；蘇格蘭保留自己的法律體系與教會，這個折衷至今仍是英國憲政結構的特色。
+  sources:
+    - title: 維基百科：1707年聯合法令
+      url: https://zh.wikipedia.org/wiki/1707年聯合法令
+    - title: 維基百科：大不列顛王國
+      url: https://zh.wikipedia.org/wiki/大不列顛王國
+
+- id: sa-aurangzeb
+  year: 1707
+  title: 奧朗則布去世，蒙兀兒衰落
+  category: politics
+  importance: 3
+  sources:
+    - title: 維基百科：奧朗則布
+      url: https://zh.wikipedia.org/wiki/奧朗則布
+
+- id: eu-newcomen
+  year: 1712
+  title: 紐科門蒸汽機投入礦場
+  category: science
+  importance: 4
+  sources:
+    - title: 維基百科：托馬斯·紐科門
+      url: https://zh.wikipedia.org/wiki/托馬斯·紐科門
+    - title: 英文維基百科：托馬斯·紐科門
+      url: https://en.wikipedia.org/wiki/Thomas_Newcomen
+    - title: 維基百科：蒸汽機
+      url: https://zh.wikipedia.org/wiki/蒸汽機
+
+- id: eu-peter-great-empire
+  year: 1721
+  title: 彼得大帝建立俄羅斯帝國
+  category: politics
+  importance: 5
+  desc: 彼得大帝在大北方戰爭擊敗瑞典、奪得波羅的海出海口後，宣布俄國由沙皇國升格為帝國並自稱皇帝；他早年微服赴西歐考察造船與軍事技術，返國後大力推動西化改革、建立新都聖彼得堡，將俄國改造為歐洲列強之一。
+  sources:
+    - title: 維基百科：彼得大帝
+      url: https://zh.wikipedia.org/wiki/彼得大帝
+    - title: 維基百科：俄羅斯帝國
+      url: https://zh.wikipedia.org/wiki/俄羅斯帝國
+
+- id: sa-nadir-shah-delhi
+  year: 1739
+  title: 納迪爾沙洗劫德里，奪走孔雀寶座
+  category: war
+  importance: 4
+  desc: 這位滅了薩非王朝的波斯征服者揮軍南下，德里遭屠城，象徵蒙兀兒國力的孔雀寶座自此留在伊朗。蒙兀兒帝國的實質統治力自此再未恢復。
+  sources:
+    - title: 維基百科：納迪爾沙
+      url: https://zh.wikipedia.org/wiki/納迪爾沙
+
+- id: eu-encyclopedie
+  year: 1751
+  title: 《百科全書》開始出版，啟蒙運動
+  category: culture
+  importance: 4
+  sources:
+    - title: 維基百科：百科全書，或科學、藝術和工藝詳解詞典
+      url: https://zh.wikipedia.org/wiki/百科全書，或科學、藝術和工藝詳解詞典
+    - title: 維基百科：啟蒙時代
+      url: https://zh.wikipedia.org/wiki/啟蒙時代
+
+- id: sa-plassey
+  year: 1757
+  title: 普拉西戰役
+  category: war
+  importance: 4
+  desc: 英國東印度公司取得孟加拉的稅收權，從貿易公司變成統治者。
+  sources:
+    - title: 維基百科：普拉西之戰
+      url: https://zh.wikipedia.org/wiki/普拉西之戰
+
+- id: sa-allahabad-treaty
+  year: 1765
+  title: 阿拉哈巴德條約，東印度公司取得孟加拉徵稅權
+  category: politics
+  importance: 4
+  desc: 蒙兀兒皇帝授予東印度公司孟加拉、比哈爾與奧里薩的徵稅權（迪瓦尼），公司自此從貿易商行變成實質統治者，常被視為英屬印度的真正起點。
+  sources:
+    - title: 維基百科：阿拉哈巴德條約
+      url: https://zh.wikipedia.org/wiki/阿拉哈巴德條約
+
+- id: eu-watt
+  year: 1769
+  title: 瓦特改良蒸汽機，工業革命
+  category: science
+  importance: 5
+  desc: 瓦特大幅改良紐科門蒸汽機的效率，使其能廣泛應用於紡織廠、礦場與日後的鐵路運輸，動力來源不再受限於水力或人力；英國因此成為第一個工業化國家，生產方式與社會結構自此徹底改變。
+  sources:
+    - title: 維基百科：詹姆斯·瓦特
+      url: https://zh.wikipedia.org/wiki/詹姆斯·瓦特
+    - title: 維基百科：工業革命
+      url: https://zh.wikipedia.org/wiki/工業革命
+
+- id: am-lexington-concord
+  year: 1775
+  title: 列克星敦與康科德戰役，美國獨立戰爭爆發
+  category: war
+  importance: 3
+  desc: 英軍與麻薩諸塞民兵在波士頓郊外交火，「打響全世界都聽到的一槍」，獨立戰爭自此開打，比隔年的獨立宣言早了一年多。
+  sources:
+    - title: 維基百科：列克星敦和康科德戰役
+      url: https://zh.wikipedia.org/wiki/列克星敦和康科德戰役
+
+- id: eu-wealth-of-nations
+  year: 1776
+  title: 亞當斯密《國富論》
+  category: economy
+  importance: 4
+  sources:
+    - title: 維基百科：國富論
+      url: https://zh.wikipedia.org/wiki/國富論
+
+- id: am-us-independence
+  year: 1776
+  title: 美國獨立宣言
+  category: politics
+  importance: 5
+  desc: 十三個北美殖民地代表在費城召開大陸會議，通過傑佛遜起草的獨立宣言，宣告脫離英國統治、成立獨立國家；宣言揭示「人人生而平等」與天賦人權的理念，成為往後兩百多年民主革命反覆援引的範本。
+  sources:
+    - title: 維基百科：美國獨立宣言
+      url: https://zh.wikipedia.org/wiki/美國獨立宣言
+
+- id: am-treaty-paris-1783
+  year: 1783
+  title: 巴黎條約，英國承認美國獨立
+  category: politics
+  importance: 3
+  desc: 歷時八年的獨立戰爭正式落幕，英國承認美國主權並劃定密西西比河以東為其疆界。
+  sources:
+    - title: 維基百科：巴黎條約 (1783年)
+      url: https://zh.wikipedia.org/wiki/巴黎條約 (1783年)
+
+- id: am-us-constitution
+  year: 1787
+  title: 美國憲法制定
+  category: politics
+  importance: 4
+  desc: 費城制憲會議在《邦聯條例》運作失靈後重新設計聯邦體制，確立三權分立與聯邦制的架構，是史上第一部成文的國家憲法；隨後通過的權利法案十條修正案進一步保障言論、宗教等基本公民權利。
+  sources:
+    - title: 維基百科：美國憲法
+      url: https://zh.wikipedia.org/wiki/美國憲法
+
+- id: eu-french-revolution
+  year: 1789
+  title: 法國大革命
+  category: politics
+  importance: 5
+  desc: 財政破產與三級會議召開觸發民怨，攻陷巴士底獄後革命迅速激進化，廢除封建特權、頒布《人權宣言》，國王路易十六終被送上斷頭台；舊制度崩解，「自由、平等、博愛」的理念自此傳遍歐洲，也開啟了長達數十年的動盪與戰爭。
+  sources:
+    - title: 維基百科：法國大革命
+      url: https://zh.wikipedia.org/wiki/法國大革命
+
+- id: me-egypt-napoleon
+  year: 1798
+  title: 拿破崙遠征埃及
+  category: war
+  importance: 4
+  endYear: 1801
+  desc: 隨軍學者發現羅塞塔石碑，日後成為破解古埃及象形文字的關鍵；這場遠征也讓埃及第一次直接暴露在歐洲列強的競逐之下。
+  sources:
+    - title: 英文維基百科：French invasion of Egypt and Syria
+      url: https://en.wikipedia.org/wiki/French_invasion_of_Egypt_and_Syria
+
+- id: am-louisiana-purchase
+  year: 1803
+  title: 路易斯安那購地，美國國土倍增
+  category: politics
+  importance: 4
+  desc: 傑佛遜總統以低價向拿破崙的法國買下密西西比河以西的廣大領土，國土面積一舉倍增，也讓法國徹底退出北美大陸的角逐。
+  sources:
+    - title: 維基百科：路易斯安那購地
+      url: https://zh.wikipedia.org/wiki/路易斯安那購地
+
+- id: eu-napoleon
+  year: 1804
+  title: 拿破崙稱帝
+  category: politics
+  importance: 5
+  desc: 拿破崙以公投確認終身執政後加冕稱帝，建立法蘭西第一帝國；他隨後席捲歐陸大部分地區、輸出《拿破崙法典》重塑歐洲的法律體系，卻在1812年遠征俄羅斯慘敗，1815年滑鐵盧一役徹底終結其統治。
+  sources:
+    - title: 維基百科：拿破崙一世
+      url: https://zh.wikipedia.org/wiki/拿破崙一世
+
+- id: am-haiti
+  year: 1804
+  title: 海地獨立
+  category: politics
+  importance: 4
+  desc: 史上唯一由奴隸起義建立的國家，也是拉丁美洲第一個獨立國。
+  sources:
+    - title: 維基百科：海地革命
+      url: https://zh.wikipedia.org/wiki/海地革命
+
+- id: me-egypt-muhammad-ali
+  year: 1805
+  title: 穆罕默德·阿里掌權，埃及現代化改革
+  category: politics
+  importance: 4
+  desc: 阿爾巴尼亞裔軍官穆罕默德·阿里趁鄂圖曼與馬木留克勢力真空崛起掌權，隨後屠殺殘餘馬木留克貴族，推行軍事與經濟現代化；他建立的王朝統治埃及直到1952年被推翻。
+  sources:
+    - title: 維基百科：穆罕默德·阿里
+      url: https://zh.wikipedia.org/wiki/穆罕默德·阿里
+
+- id: eu-hre-dissolution
+  year: 1806
+  title: 神聖羅馬帝國解散
+  category: politics
+  importance: 4
+  desc: 拿破崙在奧斯特里茲擊敗奧俄聯軍後成立萊茵邦聯，末代皇帝法蘭茲二世被迫放棄帝號，延續八百多年的神聖羅馬帝國正式解體；德意志地區自此陷入邦國林立、缺乏統一政治中心的局面，直到俾斯麥完成統一。
+  sources:
+    - title: 維基百科：神聖羅馬帝國解體
+      url: https://zh.wikipedia.org/wiki/神聖羅馬帝國解體
+
+- id: eu-slave-trade-abolition
+  year: 1807
+  endYear: 1833
+  title: 英國廢除奴隸貿易與蓄奴制
+  category: economy
+  importance: 4
+  desc: 廢奴運動人士歷經二十年遊說促成國會通過法令，禁止英國船隻參與奴隸貿易；1833年國會進一步立法廢除大英帝國境內的蓄奴制本身，政府以鉅額公帑補償奴隸主。作為當時全球最大的奴隸貿易國，英國自此轉為出動皇家海軍在海上查緝奴隸船。
+  sources:
+    - title: 維基百科：1807年奴隸貿易法令
+      url: https://zh.wikipedia.org/wiki/1807年奴隸貿易法令
+    - title: 維基百科：廢奴主義
+      url: https://zh.wikipedia.org/wiki/廢奴主義
+
+- id: am-latin-independence
+  year: 1810
+  title: 西班牙美洲獨立戰爭
+  category: war
+  importance: 4
+  endYear: 1825
+  desc: 西屬美洲各地接連獨立，一個橫跨三百年的殖民帝國在十餘年間瓦解。
+  sources:
+    - title: 維基百科：西班牙美洲獨立戰爭
+      url: https://zh.wikipedia.org/wiki/西班牙美洲獨立戰爭
+
+- id: eu-napoleon-russia
+  year: 1812
+  title: 拿破崙入侵俄國潰敗
+  category: war
+  importance: 5
+  desc: 拿破崙率六十萬大軍入侵俄國，一路挺進攻陷莫斯科，但俄軍堅壁清野、縱火焦土，法軍補給斷絕又遇嚴冬，被迫撤退時遭俄軍窮追猛打，數十萬人死於飢寒與戰事；這場慘敗重創法軍主力，是拿破崙帝國由盛轉衰的關鍵一役。
+  sources:
+    - title: 維基百科：俄法戰爭
+      url: https://zh.wikipedia.org/wiki/俄法戰爭
+
+- id: eu-waterloo
+  year: 1815
+  title: 滑鐵盧戰役，維也納體系成形
+  category: war
+  importance: 4
+  sources:
+    - title: 維基百科：滑鐵盧戰役
+      url: https://zh.wikipedia.org/wiki/滑鐵盧戰役
+    - title: 維基百科：維也納會議
+      url: https://zh.wikipedia.org/wiki/維也納會議
+
+- id: am-mexico
+  year: 1821
+  title: 墨西哥獨立
+  category: politics
+  importance: 3
+  sources:
+    - title: 維基百科：墨西哥獨立戰爭
+      url: https://zh.wikipedia.org/wiki/墨西哥獨立戰爭
+
+- id: eu-greek-independence
+  year: 1821
+  title: 希臘獨立戰爭
+  category: war
+  importance: 4
+  endYear: 1830
+  desc: 希臘人反抗鄂圖曼統治爆發起義，英法俄三國介入、在納瓦里諾海戰重創鄂圖曼艦隊，1830年倫敦議定書承認希臘獨立，結束近四百年的鄂圖曼統治，是十九世紀歐洲民族主義浪潮的先聲。
+  sources:
+    - title: 維基百科：希臘獨立戰爭
+      url: https://zh.wikipedia.org/wiki/希臘獨立戰爭
+
+- id: am-monroe
+  year: 1823
+  title: 門羅主義
+  category: politics
+  importance: 3
+  desc: 宣告歐洲不應再介入美洲事務，成為此後百餘年美國外交的基調。
+  sources:
+    - title: 維基百科：門羅主義
+      url: https://zh.wikipedia.org/wiki/門羅主義
+
+- id: am-indian-removal
+  year: 1830
+  endYear: 1838
+  title: 印第安人遷移法，眼淚之路
+  category: politics
+  importance: 4
+  desc: 總統安德魯·傑克森簽署印第安人遷移法，強制切羅基等東南部原住民部族遷往密西西比河以西；被迫徒步遷徙的路途飢寒交迫，數千人死於途中，史稱「眼淚之路」，是美國原住民史上最慘痛的創傷之一。
+  sources:
+    - title: 維基百科：印第安人遷移法案
+      url: https://zh.wikipedia.org/wiki/印第安人遷移法案
+    - title: 維基百科：眼淚之路
+      url: https://zh.wikipedia.org/wiki/眼淚之路
+
+- id: eu-irish-famine
+  year: 1845
+  endYear: 1852
+  title: 愛爾蘭大饑荒
+  category: economy
+  importance: 4
+  desc: 馬鈴薯疫病連年摧毀愛爾蘭賴以維生的主要作物，英國政府救濟遲緩且政策失當，造成逾百萬人餓死、逾百萬人移民海外；愛爾蘭人口自此長期銳減，大規模移民潮也深刻改變美國等地的人口結構，是英愛關係中最深的歷史創傷之一。
+  sources:
+    - title: 維基百科：愛爾蘭大飢荒
+      url: https://zh.wikipedia.org/wiki/愛爾蘭大飢荒
+
+- id: am-mexican-american-war
+  year: 1846
+  title: 美墨戰爭，美國取得西南部領土
+  category: war
+  importance: 4
+  endYear: 1848
+  desc: 戰後簽訂的瓜達盧佩伊達爾戈條約讓美國取得加州、內華達、猶他與新墨西哥等地；隔年恰逢加州發現金礦，這片新領土立刻湧入大批淘金移民。
+  sources:
+    - title: 維基百科：美墨戰爭
+      url: https://zh.wikipedia.org/wiki/美墨戰爭
+
+- id: eu-1848
+  year: 1848
+  title: 歐洲革命之年；《共產黨宣言》
+  category: politics
+  importance: 4
+  desc: 法國二月革命推翻七月王朝、建立第二共和，革命浪潮隨即擴散至德意志、奧地利、義大利諸邦，訴求立憲、民族統一與勞工權益；多數起義最終遭鎮壓收場，但同年出版的《共產黨宣言》預示了此後一世紀階級鬥爭將成為歐洲政治的核心主題。
+  sources:
+    - title: 維基百科：1848年革命
+      url: https://zh.wikipedia.org/wiki/1848年革命
+    - title: 維基百科：共產黨宣言
+      url: https://zh.wikipedia.org/wiki/共產黨宣言
+
+- id: am-gold-rush
+  year: 1848
+  title: 加利福尼亞淘金熱
+  category: economy
+  importance: 3
+  desc: 加州發現金礦的消息傳開後，數十萬人從美國各地與海外湧入西部淘金，加州人口暴增、迅速建州；這波移民潮加速美國西部開發，卻也加劇對原住民土地的侵占。
+  sources:
+    - title: 維基百科：加利福尼亞淘金潮
+      url: https://zh.wikipedia.org/wiki/加利福尼亞淘金潮
+
+- id: eu-second-empire
+  year: 1852
+  title: 拿破崙三世稱帝，法蘭西第二帝國
+  category: politics
+  importance: 3
+  desc: 拿破崙一世之姪路易·拿破崙以公民投票確認總統任期後發動政變，隔年稱帝建立第二帝國；在位期間主導巴黎大改造、擴張殖民版圖，卻在1870年普法戰爭中兵敗色當被俘，帝國隨即崩潰。
+  sources:
+    - title: 維基百科：拿破崙三世
+      url: https://zh.wikipedia.org/wiki/拿破崙三世
+    - title: 維基百科：法蘭西第二帝國
+      url: https://zh.wikipedia.org/wiki/法蘭西第二帝國
+
+- id: sa-rebellion-1857
+  year: 1857
+  title: 印度民族起義
+  category: war
+  importance: 4
+  sources:
+    - title: 維基百科：印度民族起義
+      url: https://zh.wikipedia.org/wiki/印度民族起義
+
+- id: sa-british-raj
+  year: 1858
+  title: 英國直轄印度
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：英屬印度
+      url: https://zh.wikipedia.org/wiki/英屬印度
+
+- id: eu-darwin
+  year: 1859
+  title: 達爾文《物種起源》
+  category: science
+  importance: 5
+  sources:
+    - title: 維基百科：物種起源
+      url: https://zh.wikipedia.org/wiki/物種起源
+    - title: 維基百科：查爾斯·達爾文
+      url: https://zh.wikipedia.org/wiki/查爾斯·達爾文
+
+- id: eu-serf-emancipation
+  year: 1861
+  title: 亞歷山大二世廢除農奴制
+  category: politics
+  importance: 4
+  desc: 俄國在克里米亞戰爭敗於已完成工業化的英法後，亞歷山大二世頒布敕令解放兩千三百餘萬名農奴，是俄國近代史上規模最大的社會改革；但農民須向地主付出高額贖金才能取得土地，改革未能化解積怨，反而助長了日後的革命情緒。
+  sources:
+    - title: 維基百科：農奴制
+      url: https://zh.wikipedia.org/wiki/農奴制
+    - title: 維基百科：俄羅斯帝國
+      url: https://zh.wikipedia.org/wiki/俄羅斯帝國
+
+- id: eu-italian-unification
+  year: 1861
+  title: 加富爾與加里波第完成義大利統一，義大利王國建立
+  category: politics
+  importance: 4
+  desc: 薩丁尼亞王國首相加富爾聯合法國擊敗奧地利、解放倫巴底，加里波第則率領「千人遠征隊」南下推翻兩西西里王國，雙方在那不勒斯會師後將征服的土地獻給薩丁尼亞國王維克多·艾曼紐二世；義大利王國宣告成立，但威尼西亞與羅馬仍待收復，統一尚未完全。
+  sources:
+    - title: 維基百科：加富爾伯爵卡米洛·奔索
+      url: https://zh.wikipedia.org/wiki/加富爾伯爵卡米洛·奔索
+    - title: 維基百科：朱塞佩·加里波第
+      url: https://zh.wikipedia.org/wiki/朱塞佩·加里波第
+    - title: 維基百科：義大利王國
+      url: https://zh.wikipedia.org/wiki/義大利王國
+
+- id: am-civil-war
+  year: 1861
+  title: 美國南北戰爭
+  category: war
+  importance: 4
+  endYear: 1865
+  desc: 蓋茨堡之役是雙方傷亡最慘重、也是扭轉戰局的一役；北方雖然獲勝，主導戰後重建的林肯卻在戰爭結束五天後遇刺身亡。
+  sources:
+    - title: 維基百科：南北戰爭
+      url: https://zh.wikipedia.org/wiki/南北戰爭
+
+- id: am-emancipation-proclamation
+  year: 1863
+  title: 林肯發布解放奴隸宣言
+  category: politics
+  importance: 4
+  desc: 林肯總統宣布南方邦聯控制區內的奴隸自由，雖無法立即執行、也未涵蓋邊境蓄奴州，卻讓廢除奴隸制度成為北方戰爭目標的核心，並開放黑人從軍；戰後通過的憲法第十三條修正案才正式在全國廢除奴隸制。
+  sources:
+    - title: 維基百科：解放奴隸宣言
+      url: https://zh.wikipedia.org/wiki/解放奴隸宣言
+
+- id: am-reconstruction
+  year: 1865
+  title: 重建時期，南方政治秩序重整
+  category: politics
+  importance: 3
+  endYear: 1877
+  desc: 聯邦軍隊駐守南方監督黑人公民權的落實，但隨著駐軍在1877年撤出，白人民主黨人重新掌權，種族隔離制度逐漸成形，直到近百年後的民權運動才被撼動。
+  sources:
+    - title: 維基百科：美國重建時期
+      url: https://zh.wikipedia.org/wiki/美國重建時期
+
+- id: am-transcontinental
+  year: 1869
+  title: 第一條橫貫大陸鐵路通車
+  category: economy
+  importance: 3
+  desc: 聯合太平洋與中央太平洋鐵路公司分別從東西兩端施工，在猶他州普若蒙特里會合完工，橫貫北美大陸的鐵路首度貫通；原本需時數月的東西岸往返縮短至一週內，大批華工是築路的主力勞動力。
+  sources:
+    - title: 維基百科：第一條橫貫大陸鐵路
+      url: https://zh.wikipedia.org/wiki/第一條橫貫大陸鐵路
+
+- id: me-suez
+  year: 1869
+  title: 蘇伊士運河通航
+  category: economy
+  importance: 4
+  sources:
+    - title: 維基百科：蘇伊士運河
+      url: https://zh.wikipedia.org/wiki/蘇伊士運河
+
+- id: eu-rome-annexation
+  year: 1870
+  title: 義大利併吞羅馬，教宗國滅亡，統一完成
+  category: politics
+  importance: 4
+  desc: 普法戰爭爆發、法軍撤離羅馬後，義大利軍隊攻入教宗國首都，教宗庇護九世宣布自囚梵蒂岡以示抗議；羅馬隨即成為義大利新首都，延續逾千年的教宗世俗統治至此終結，「羅馬問題」的政教爭議持續近六十年，直到1929年拉特朗條約才告解決。
+  sources:
+    - title: 維基百科：羅馬問題
+      url: https://zh.wikipedia.org/wiki/羅馬問題
+    - title: 維基百科：義大利統一
+      url: https://zh.wikipedia.org/wiki/義大利統一
+
+- id: eu-german-unification
+  year: 1871
+  title: 德意志帝國統一
+  category: politics
+  importance: 4
+  desc: 普魯士首相俾斯麥接連在普丹、普奧、普法三場戰爭中取勝，最終在凡爾賽宮鏡廳為普魯士國王威廉一世加冕德意志皇帝；統一後的德意志帝國迅速躍居歐陸最強的工業與軍事強權，也打破了原有的歐洲均勢。
+  sources:
+    - title: 維基百科：德意志統一
+      url: https://zh.wikipedia.org/wiki/德意志統一
+
+- id: eu-paris-commune
+  year: 1871
+  title: 巴黎公社
+  category: politics
+  importance: 4
+  desc: 普法戰爭戰敗、臨時政府對德求和後，巴黎市民組成自治政府抵制中央，短暫實施工人自治、政教分離等激進政策，兩個月後遭凡爾賽政府軍血腥鎮壓；儘管壽命短暫，巴黎公社日後被馬克思主義者奉為第一個無產階級政權的先例。
+  sources:
+    - title: 維基百科：巴黎公社
+      url: https://zh.wikipedia.org/wiki/巴黎公社
+
+- id: me-egypt-britain-occupation
+  year: 1882
+  title: 英國佔領埃及
+  category: politics
+  importance: 3
+  desc: 英軍鎮壓阿拉比領導的民族起義後長期駐軍，名義上埃及仍是鄂圖曼屬國，實權卻已落入英國手中；蘇伊士運河的戰略地位是背後主要動機。
+  sources:
+    - title: 英文維基百科：Anglo-Egyptian War
+      url: https://en.wikipedia.org/wiki/Anglo-Egyptian_War
+
+- id: sa-congress
+  year: 1885
+  title: 印度國民大會黨成立
+  category: politics
+  importance: 3
+  desc: 英屬印度知識分子與地方精英在孟買創立印度國民大會黨，最初訴求溫和的政治參與權，二十世紀後逐漸轉型為領導獨立運動的主要政黨，甘地與尼赫魯皆出身其中。
+  sources:
+    - title: 維基百科：印度國民大會黨
+      url: https://zh.wikipedia.org/wiki/印度國民大會黨
+
+- id: am-brazil-abolition
+  year: 1888
+  title: 巴西廢除奴隸制
+  category: politics
+  importance: 3
+  desc: 美洲最後一個廢奴的國家，隔年帝制即告終結。
+  sources:
+    - title: 維基百科：巴西帝國
+      url: https://zh.wikipedia.org/wiki/巴西帝國
+    - title: 英文維基百科：黃金法
+      url: https://en.wikipedia.org/wiki/Lei_Áurea
+
+- id: eu-dreyfus-affair
+  year: 1894
+  endYear: 1906
+  title: 德雷福斯事件
+  category: politics
+  importance: 4
+  desc: 猶太裔軍官德雷福斯遭誣陷叛國定罪，作家左拉發表《我控訴》揭露軍方偽造證據、聲援平反，社會因此分裂為擁德雷福斯與反猶陣營兩派；事件最終促成法國政教分離立法，也被視為現代反猶主義與錫安主義興起的重要案例。
+  sources:
+    - title: 維基百科：德雷福斯事件
+      url: https://zh.wikipedia.org/wiki/德雷福斯事件
+
+- id: am-spanish-american-war
+  year: 1898
+  title: 美西戰爭
+  category: war
+  importance: 3
+  desc: 美國以緬因號軍艦爆炸為由對西班牙宣戰，數月內擊敗西班牙艦隊，取得波多黎各、關島與菲律賓，古巴則名義獨立、實際受美國控制；這場戰爭標誌美國正式躋身殖民帝國之列，美西兩國的全球地位自此互換。
+  sources:
+    - title: 維基百科：美西戰爭
+      url: https://zh.wikipedia.org/wiki/美西戰爭
+
+- id: eu-einstein
+  year: 1905
+  title: 愛因斯坦發表狹義相對論
+  category: science
+  importance: 5
+  sources:
+    - title: 維基百科：阿爾伯特·愛因斯坦
+      url: https://zh.wikipedia.org/wiki/阿爾伯特·愛因斯坦
+    - title: 維基百科：狹義相對論
+      url: https://zh.wikipedia.org/wiki/狹義相對論
+
+- id: me-persian-oil
+  year: 1908
+  title: 波斯發現石油
+  category: economy
+  importance: 4
+  desc: 中東第一口商業油井，英波石油公司隨後成立，石油自此成為此地的地緣核心。
+  sources:
+    - title: 維基百科：英伊石油公司
+      url: https://zh.wikipedia.org/wiki/英伊石油公司
+    - title: 英文維基百科：馬斯吉德蘇萊曼
+      url: https://en.wikipedia.org/wiki/Masjed_Soleyman
+
+- id: eu-ww1
+  year: 1914
+  title: 第一次世界大戰爆發
+  category: war
+  importance: 5
+  endYear: 1918
+  desc: 奧匈帝國皇儲遇刺引爆歐洲兩大同盟體系連環宣戰，塹壕戰讓戰線陷入長期僵持，化學武器與坦克等新式兵器首度大規模投入戰場；四年戰事奪走近千萬條性命，德、奧匈、鄂圖曼、俄羅斯四大帝國相繼崩解。
+  sources:
+    - title: 維基百科：第一次世界大戰
+      url: https://zh.wikipedia.org/wiki/第一次世界大戰
+
+- id: am-panama
+  year: 1914
+  title: 巴拿馬運河通航
+  category: economy
+  importance: 4
+  desc: 巴拿馬運河貫通太平洋與大西洋，大幅縮短兩洋間的航運距離；美國藉扶植巴拿馬獨立取得運河區的控制權，運河直到1999年才依條約交還巴拿馬。
+  sources:
+    - title: 維基百科：巴拿馬運河
+      url: https://zh.wikipedia.org/wiki/巴拿馬運河
+
+- id: me-armenian-genocide
+  year: 1915
+  title: 亞美尼亞種族滅絕
+  category: war
+  importance: 4
+  desc: 鄂圖曼政府以戰爭為由，系統性驅逐並屠殺境內亞美尼亞人，估計奪走約一百五十萬人性命，是二十世紀第一場獲得「種族滅絕」定名的暴行。
+  sources:
+    - title: 維基百科：亞美尼亞種族滅絕
+      url: https://zh.wikipedia.org/wiki/亞美尼亞種族滅絕
+
+- id: me-sykes-picot
+  year: 1916
+  title: 賽克斯-皮科協定
+  category: politics
+  importance: 4
+  desc: 英法私下劃分鄂圖曼的阿拉伯屬地，今日中東的國界大致由此而來。
+  sources:
+    - title: 維基百科：賽克斯-皮科協定
+      url: https://zh.wikipedia.org/wiki/賽克斯-皮科協定
+
+- id: eu-october-revolution
+  year: 1917
+  title: 俄國十月革命
+  category: politics
+  importance: 4
+  desc: 1905年日俄戰爭戰敗引發的革命已讓沙皇被迫讓步、成立杜馬，卻未能化解積怨；一戰的慘重傷亡與物資短缺終於在1917年二月引爆革命，尼古拉二世被迫退位，羅曼諾夫王朝覆滅。臨時政府堅持繼續參戰、遲遲不解決土地問題，列寧領導的布爾什維克黨隨後在十月發動政變奪取政權，建立世界第一個共產黨執政的國家。
+  sources:
+    - title: 維基百科：十月革命
+      url: https://zh.wikipedia.org/wiki/十月革命
+    - title: 維基百科：俄國二月革命
+      url: https://zh.wikipedia.org/wiki/俄國二月革命
+
+- id: eu-russian-civil-war
+  year: 1917
+  endYear: 1922
+  title: 俄國內戰，紅軍白軍對峙
+  category: war
+  importance: 4
+  desc: 布爾什維克奪權後，保皇派、社會主義溫和派與外國干涉軍組成的白軍與托洛斯基領導的紅軍在俄國各地混戰近五年，戰爭與伴隨的饑荒奪走逾七百萬條性命；紅軍最終勝出，鞏固了布爾什維克政權，也為隔年蘇聯的成立掃清障礙。
+  sources:
+    - title: 維基百科：俄國內戰
+      url: https://zh.wikipedia.org/wiki/俄國內戰
+
+- id: me-balfour
+  year: 1917
+  title: 貝爾福宣言
+  category: politics
+  importance: 4
+  desc: 英國政府表態支持在巴勒斯坦建立猶太人的民族家園，與英國同時對阿拉伯人的獨立承諾互相矛盾，日後以色列建國與巴勒斯坦問題的根源可回溯至此。
+  sources:
+    - title: 維基百科：貝爾福宣言
+      url: https://zh.wikipedia.org/wiki/貝爾福宣言
+
+- id: am-wwi-entry
+  year: 1917
+  title: 美國參戰第一次世界大戰
+  category: war
+  importance: 4
+  desc: 德國無限制潛艇戰與齊默曼電報曝光後，美國放棄長期的孤立主義加入協約國一方，充裕的兵源與物資是壓垮同盟國的關鍵。
+  sources:
+    - title: 英文維基百科：United States in World War I
+      url: https://en.wikipedia.org/wiki/United_States_in_World_War_I
+
+- id: eu-weimar-republic
+  year: 1918
+  endYear: 1919
+  title: 威瑪共和國成立，德意志帝國瓦解
+  category: politics
+  importance: 4
+  desc: 德國戰敗前夕爆發基爾水兵譁變，威廉二世退位流亡荷蘭，德意志帝國瓦解；隔年簽署的《凡爾賽條約》要求德國承擔戰爭罪責、割地並限縮軍備，新成立的威瑪共和國背負鉅額賠款與戰敗屈辱起步，種下日後極端政治勢力崛起的遠因。
+  sources:
+    - title: 維基百科：魏瑪共和國
+      url: https://zh.wikipedia.org/wiki/魏瑪共和國
+    - title: 維基百科：凡爾賽條約
+      url: https://zh.wikipedia.org/wiki/凡爾賽條約
+
+- id: sa-amritsar
+  year: 1919
+  title: 阿姆利則慘案
+  category: politics
+  importance: 3
+  sources:
+    - title: 維基百科：阿姆利則慘案
+      url: https://zh.wikipedia.org/wiki/阿姆利則慘案
+
+- id: am-womens-suffrage
+  year: 1920
+  title: 美國憲法第十九修正案，女性取得投票權
+  category: politics
+  importance: 4
+  desc: 歷經數十年遊說與抗爭，國會通過憲法第十九條修正案，禁止以性別為由剝奪公民投票權，數百萬美國女性首度取得參政權；這場運動也啟發同時期其他國家的婦女參政權立法。
+  sources:
+    - title: 維基百科：美國憲法第十九修正案
+      url: https://zh.wikipedia.org/wiki/美國憲法第十九修正案
+
+- id: eu-irish-free-state
+  year: 1922
+  title: 愛爾蘭自由邦獨立
+  category: politics
+  importance: 4
+  desc: 愛爾蘭獨立戰爭後英愛簽訂條約，愛爾蘭以自治領地位脫離聯合王國成立愛爾蘭自由邦，但北愛爾蘭六郡選擇留在聯合王國，種下日後北愛爾蘭問題的根源；愛爾蘭其後於1949年進一步宣布成立共和國，徹底切斷與大英國協的聯繫。
+  sources:
+    - title: 維基百科：愛爾蘭自由邦
+      url: https://zh.wikipedia.org/wiki/愛爾蘭自由邦
+
+- id: eu-mussolini-fascism
+  year: 1922
+  title: 墨索里尼向羅馬進軍，法西斯黨掌權
+  category: politics
+  importance: 5
+  desc: 國家法西斯黨動員黑衫軍向羅馬進軍施壓，國王維托里奧·艾曼紐三世任命墨索里尼組閣；墨索里尼隨後逐步剷除反對黨、集大權於一身，建立史上第一個法西斯獨裁政權，其統治模式與意識形態日後成為納粹德國效法的樣板。
+  sources:
+    - title: 維基百科：貝尼托·墨索里尼
+      url: https://zh.wikipedia.org/wiki/貝尼托·墨索里尼
+    - title: 維基百科：向羅馬進軍
+      url: https://zh.wikipedia.org/wiki/向羅馬進軍
+    - title: 維基百科：國家法西斯黨
+      url: https://zh.wikipedia.org/wiki/國家法西斯黨
+
+- id: eu-ussr-founded
+  year: 1922
+  title: 蘇維埃社會主義共和國聯盟成立
+  category: politics
+  importance: 5
+  desc: 俄國內戰結束後，俄羅斯、烏克蘭、白俄羅斯與外高加索四個蘇維埃共和國簽約組成蘇聯；史達林其後在列寧去世的權力鬥爭中勝出掌權，推動強制農業集體化與重工業化，蘇聯迅速崛起為與美國分庭抗禮的超級強權。
+  sources:
+    - title: 維基百科：蘇聯
+      url: https://zh.wikipedia.org/wiki/蘇聯
+
+- id: me-turkey
+  year: 1923
+  title: 土耳其共和國成立
+  category: politics
+  importance: 4
+  desc: 洛桑條約確立疆界，凱末爾隨即推動政教分離的世俗化改革。
+  sources:
+    - title: 維基百科：洛桑條約
+      url: https://zh.wikipedia.org/wiki/洛桑條約
+    - title: 維基百科：穆斯塔法·凱末爾·阿塔圖爾克
+      url: https://zh.wikipedia.org/wiki/穆斯塔法·凱末爾·阿塔圖爾克
+
+- id: eu-penicillin
+  year: 1928
+  title: 弗萊明發現青黴素
+  category: science
+  importance: 4
+  desc: 抗生素時代的開端，細菌感染從主要死因變成可治之症。
+  sources:
+    - title: 維基百科：青黴素
+      url: https://zh.wikipedia.org/wiki/青黴素
+    - title: 維基百科：亞歷山大·弗萊明
+      url: https://zh.wikipedia.org/wiki/亞歷山大·弗萊明
+
+- id: am-wall-street-1929
+  year: 1929
+  title: 華爾街股災
+  category: economy
+  importance: 4
+  desc: 股市重挫引爆長達十年的經濟大蕭條，失業率一度逼近四分之一，是資本主義世界最嚴重的一次系統性危機。
+  sources:
+    - title: 維基百科：1929年華爾街股災
+      url: https://zh.wikipedia.org/wiki/1929年華爾街股災
+
+- id: sa-salt-march
+  year: 1930
+  title: 食鹽長征
+  category: politics
+  importance: 4
+  desc: 甘地徒步兩百餘英里到海邊製鹽，非暴力不合作運動的代表事件。
+  sources:
+    - title: 維基百科：食鹽進軍
+      url: https://zh.wikipedia.org/wiki/食鹽進軍
+
+- id: eu-nazi-power
+  year: 1933
+  title: 希特勒掌權，納粹德國建立
+  category: politics
+  importance: 5
+  desc: 納粹黨在國會選舉中成為最大黨，興登堡總統任命希特勒為總理；國會縱火案後政府援引《1933年授權法》取得無限立法權，一黨專政的納粹德國就此成形，威瑪民主在合法程序下被架空瓦解。
+  sources:
+    - title: 維基百科：阿道夫·希特勒
+      url: https://zh.wikipedia.org/wiki/阿道夫·希特勒
+    - title: 維基百科：德國1933年授權法
+      url: https://zh.wikipedia.org/wiki/德國1933年授權法
+
+- id: am-new-deal
+  year: 1933
+  title: 羅斯福推行新政
+  category: economy
+  importance: 4
+  desc: 一連串公共工程、金融改革與社會福利立法試圖挽救大蕭條，聯邦政府對經濟的角色自此徹底改變，社會安全制度的雛型也在這時建立。
+  sources:
+    - title: 維基百科：羅斯福新政
+      url: https://zh.wikipedia.org/wiki/羅斯福新政
+
+- id: eu-great-purge
+  year: 1936
+  endYear: 1938
+  title: 史達林大整肅
+  category: politics
+  importance: 4
+  desc: 史達林以肅清「人民公敵」為名發動大規模政治清洗，將黨政軍高層、知識分子與尋常百姓大批處決或送往古拉格勞改營，估計奪走逾七十萬條人命；恐怖統治滲透蘇聯社會各層面，也讓紅軍高層在二戰爆發前遭到嚴重削弱。
+  sources:
+    - title: 維基百科：大清洗
+      url: https://zh.wikipedia.org/wiki/大清洗
+
+- id: eu-ww2
+  year: 1939
+  title: 第二次世界大戰爆發
+  category: war
+  importance: 5
+  endYear: 1945
+  desc: 德國以閃擊戰入侵波蘭，英法隨即對德宣戰，戰火迅速席捲歐、亞、非三洲；這是人類史上規模最大的戰爭，造成七千萬人以上死亡，也直接催生了聯合國與冷戰兩極格局。
+  sources:
+    - title: 維基百科：第二次世界大戰
+      url: https://zh.wikipedia.org/wiki/第二次世界大戰
+
+- id: eu-vichy-france
+  year: 1940
+  endYear: 1944
+  title: 維希法國成立，戴高樂領導自由法國
+  category: war
+  importance: 4
+  desc: 德國擊敗法國後，貝當元帥在維希建立與納粹合作的傀儡政權，配合逮捕猶太人與異議份子；流亡英國的戴高樂將軍則號召「自由法國」堅持抵抗，成為法國光復後政治正當性的來源，1944年盟軍解放巴黎，戴高樂返國主政。
+  sources:
+    - title: 維基百科：維希法國
+      url: https://zh.wikipedia.org/wiki/維希法國
+    - title: 維基百科：自由法國
+      url: https://zh.wikipedia.org/wiki/自由法國
+
+- id: eu-battle-of-britain
+  year: 1940
+  title: 不列顛戰役，邱吉爾領導抵抗
+  category: war
+  importance: 5
+  desc: 法國淪陷後德國企圖以空襲癱瘓英國皇家空軍、為登陸鋪路，皇家空軍憑藉雷達預警與噴火式戰機頑強抵抗，邱吉爾以強硬演說激勵士氣、拒絕求和；德軍最終放棄入侵計畫，這是二戰中納粹德國首次未能達成戰略目標的重大挫敗。
+  sources:
+    - title: 維基百科：不列顛戰役
+      url: https://zh.wikipedia.org/wiki/不列顛戰役
+    - title: 維基百科：溫斯頓·邱吉爾
+      url: https://zh.wikipedia.org/wiki/溫斯頓·邱吉爾
+
+- id: eu-barbarossa
+  year: 1941
+  endYear: 1945
+  title: 巴巴羅薩行動，蘇德戰爭爆發
+  category: war
+  importance: 5
+  desc: 納粹德國撕毀互不侵犯條約，出動三百萬大軍突襲蘇聯，一度兵臨莫斯科與列寧格勒城下；史達林格勒戰役扭轉戰局後，蘇聯紅軍逐步反攻直搗柏林，蘇聯在這場「衛國戰爭」中付出逾兩千萬人性命的慘痛代價，卻也奠定戰後與美國並列超級強權的地位。
+  sources:
+    - title: 維基百科：巴巴羅薩行動
+      url: https://zh.wikipedia.org/wiki/巴巴羅薩行動
+
+- id: am-pearl-harbor
+  year: 1941
+  title: 珍珠港事件，美國參戰第二次世界大戰
+  category: war
+  importance: 4
+  desc: 日本偷襲美國太平洋艦隊基地，隔日美國對日宣戰，原本主張不介入歐洲戰事的美國自此全面投入二戰。
+  sources:
+    - title: 維基百科：珍珠港事件
+      url: https://zh.wikipedia.org/wiki/珍珠港事件
+
+- id: eu-holocaust
+  year: 1941
+  endYear: 1945
+  title: 猶太人大屠殺
+  category: war
+  importance: 5
+  desc: 納粹德國以「最終解決方案」為名，在奧斯威辛等集中營以工業化手段系統屠殺約六百萬猶太人，另有大量羅姆人、身心障礙者與政治犯遭殺害；戰後紐倫堡大審首度確立「危害人類罪」的國際法概念，這場浩劫也成為以色列建國訴求的重要背景。
+  sources:
+    - title: 維基百科：納粹大屠殺
+      url: https://zh.wikipedia.org/wiki/納粹大屠殺
+
+- id: eu-italy-armistice
+  year: 1943
+  title: 義大利向盟軍投降，墨索里尼垮台
+  category: war
+  importance: 4
+  desc: 盟軍登陸西西里後，義大利國會與國王聯手罷黜墨索里尼，新政府與盟軍簽署卡西比爾停戰協定；德軍隨即占領義大利北部，救出墨索里尼扶植傀儡的「義大利社會共和國」，義大利自此陷入內戰與雙重統治，直到1945年才全境解放。
+  sources:
+    - title: 維基百科：卡西比爾停戰協定
+      url: https://zh.wikipedia.org/wiki/卡西比爾停戰協定
+    - title: 維基百科：義大利社會共和國
+      url: https://zh.wikipedia.org/wiki/義大利社會共和國
+
+- id: eu-un
+  year: 1945
+  title: 二戰結束，聯合國成立
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：聯合國
+      url: https://zh.wikipedia.org/wiki/聯合國
+    - title: 維基百科：第二次世界大戰
+      url: https://zh.wikipedia.org/wiki/第二次世界大戰
+
+- id: am-trinity
+  year: 1945
+  title: 三位一體核試
+  category: science
+  importance: 4
+  desc: 人類第一次核爆試驗。
+  sources:
+    - title: 維基百科：三位一體（核試驗）
+      url: https://zh.wikipedia.org/wiki/三位一體_(核試驗)
+
+- id: eu-italian-republic
+  year: 1946
+  title: 公投廢除君主制，義大利共和國成立
+  category: politics
+  importance: 4
+  desc: 戰後公投中過半數選民選擇廢除延續八十餘年的薩伏依王室，改行共和；新憲法翌年生效，確立多黨議會民主體制，義大利也在此後展開被稱為「經濟奇蹟」的快速工業化與成長期。
+  sources:
+    - title: 維基百科：1946年義大利國體公投
+      url: https://zh.wikipedia.org/wiki/1946年義大利國體公投
+
+- id: sa-partition
+  year: 1947
+  title: 印巴分治與印度獨立
+  category: politics
+  importance: 5
+  desc: 一千多萬人在數月內跨界遷徙，是二十世紀規模最大的一次人口流動。
+  sources:
+    - title: 維基百科：印巴分治
+      url: https://zh.wikipedia.org/wiki/印巴分治
+
+- id: sa-gandhi-assassination
+  year: 1948
+  title: 聖雄甘地遇刺
+  category: politics
+  importance: 5
+  desc: 印度獨立僅五個多月，甘地在新德里的祈禱會上遭印度教民族主義者槍殺身亡，兇手不滿甘地主張印度教徒與穆斯林和解；甘地畢生倡導的非暴力抗爭哲學深遠影響後世曼德拉、金恩博士等民權運動領袖。
+  sources:
+    - title: 維基百科：聖雄甘地
+      url: https://zh.wikipedia.org/wiki/聖雄甘地
+
+- id: me-israel
+  year: 1948
+  title: 以色列建國
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：以色列獨立宣言
+      url: https://zh.wikipedia.org/wiki/以色列獨立宣言
+
+- id: eu-germany-divided
+  year: 1949
+  title: 東西德建國，德國正式分裂
+  category: politics
+  importance: 4
+  desc: 美英法佔領區合併為西德（德意志聯邦共和國），蘇聯佔領區隨後成立東德（德意志民主共和國），首都柏林同樣一分為二；分裂的德國成為冷戰兩大陣營在歐洲對峙的第一線，直到1990年才重新統一。
+  sources:
+    - title: 維基百科：西德
+      url: https://zh.wikipedia.org/wiki/西德
+    - title: 維基百科：東德
+      url: https://zh.wikipedia.org/wiki/東德
+
+- id: sa-india-republic
+  year: 1950
+  title: 印度共和國憲法生效
+  category: politics
+  importance: 4
+  desc: 印度憲法正式生效，取代英國殖民時期的政府法，確立主權民主共和國體制，並廢除賤民制度、保障成年公民普選權；這部全球篇幅最長的成文憲法奠定了印度往後的政治框架。
+  sources:
+    - title: 維基百科：印度憲法
+      url: https://zh.wikipedia.org/wiki/印度憲法
+
+- id: me-egypt-1952
+  year: 1952
+  title: 七月革命，納賽爾推翻埃及王室
+  category: politics
+  importance: 4
+  desc: 自由軍官組織發動政變推翻法魯克國王，隔年宣布共和；納賽爾其後掌權，成為阿拉伯民族主義的代表人物。
+  sources:
+    - title: 維基百科：7月23日革命
+      url: https://zh.wikipedia.org/wiki/7月23日革命
+    - title: 維基百科：加麥爾·阿卜杜勒·納賽爾
+      url: https://zh.wikipedia.org/wiki/加麥爾·阿卜杜勒·納賽爾
+
+- id: eu-dna
+  year: 1953
+  title: 華生與克里克提出 DNA 雙螺旋結構
+  category: science
+  importance: 5
+  sources:
+    - title: 維基百科：脫氧核糖核酸
+      url: https://zh.wikipedia.org/wiki/脫氧核糖核酸
+
+- id: me-iran-coup
+  year: 1953
+  title: 摩薩台將石油國有化，被政變推翻
+  category: politics
+  importance: 4
+  desc: 伊朗首相摩薩台將英伊石油公司收歸國有，兩年後美英情報機構策動政變將他推翻，扶植巴列維國王親政，是冷戰期間西方介入中東政局的代表案例。
+  sources:
+    - title: 維基百科：穆罕默德·摩薩台
+      url: https://zh.wikipedia.org/wiki/穆罕默德·摩薩台
+    - title: 維基百科：1953年伊朗政變
+      url: https://zh.wikipedia.org/wiki/1953年伊朗政變
+
+- id: am-formosa-resolution
+  year: 1955
+  title: 台灣決議案，國會授權總統防衛台澎
+  category: politics
+  importance: 3
+  desc: 第一次台海危機期間，艾森豪要求國會授權他在必要時動用美軍防衛台灣與澎湖及「相關陣地」，參眾兩院以壓倒性票數通過。這是美國國會第一次事先給總統海外用兵的空白授權，後來的東京灣決議案沿用了這個模式。決議案刻意不寫明金門、馬祖，讓美國保留是否為外島而戰的模糊空間 —— 這種「戰略模糊」從此成為美國對台政策的基調。
+  sources:
+    - title: 維基百科：1955年台灣決議案
+      url: https://zh.wikipedia.org/wiki/1955年台灣決議案
+    - title: 英文維基百科：Formosa Resolution of 1955
+      url: https://en.wikipedia.org/wiki/Formosa_Resolution_of_1955
+
+- id: me-suez-crisis
+  year: 1956
+  title: 蘇伊士運河危機
+  category: war
+  importance: 4
+  desc: 埃及將運河收歸國有，英法出兵奪回卻在美蘇雙重壓力下撤軍，象徵英法傳統殖民強權的終結與美蘇兩強主導中東局勢的開始。
+  sources:
+    - title: 維基百科：第二次中東戰爭
+      url: https://zh.wikipedia.org/wiki/第二次中東戰爭
+
+- id: eu-rome-treaty
+  year: 1957
+  title: 羅馬條約，歐洲經濟共同體
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：羅馬條約
+      url: https://zh.wikipedia.org/wiki/羅馬條約
+
+- id: eu-fifth-republic
+  year: 1958
+  title: 戴高樂建立法蘭西第五共和
+  category: politics
+  importance: 4
+  desc: 阿爾及利亞獨立戰爭引爆的政治危機讓第四共和瀕臨崩潰，戴高樂在軍方支持下復出，主導制定賦予總統更大實權的新憲法，建立至今仍在運作的第五共和；阿爾及利亞其後於1962年獨立，法國也逐步結束大部分殖民統治。
+  sources:
+    - title: 維基百科：夏爾·戴高樂
+      url: https://zh.wikipedia.org/wiki/夏爾·戴高樂
+    - title: 維基百科：法蘭西第五共和國
+      url: https://zh.wikipedia.org/wiki/法蘭西第五共和國
+
+- id: me-egypt-aswan-dam
+  year: 1960
+  endYear: 1970
+  title: 阿斯旺高壩興建
+  category: economy
+  importance: 3
+  desc: 蘇伊士運河危機後西方撤資，蘇聯出資協助興建阿斯旺高壩，攔蓄尼羅河水以擴大灌溉並發電，但也淹沒努比亞古蹟與大量農地；這是納賽爾時代最具代表性的建設，也是冷戰時期蘇聯拉攏埃及的象徵。
+  sources:
+    - title: 維基百科：阿斯旺水壩
+      url: https://zh.wikipedia.org/wiki/阿斯旺水壩
+
+- id: sa-sino-indian-war
+  year: 1962
+  title: 中印邊境戰爭
+  category: war
+  importance: 4
+  desc: 中印兩國因喜馬拉雅邊界劃分爭議爆發戰爭，解放軍在西段與東段戰線皆重挫印度軍隊，隨後單方面宣布停火並撤回實際控制線；戰敗重創印度的國際威望，也讓中印邊界爭議延續至今未解。
+  sources:
+    - title: 維基百科：中印邊境戰爭
+      url: https://zh.wikipedia.org/wiki/中印邊境戰爭
+
+- id: am-cuban-missile-crisis
+  year: 1962
+  title: 古巴飛彈危機
+  category: politics
+  importance: 5
+  desc: 美國發現蘇聯在古巴部署核彈頭飛彈，甘迺迪下令海上封鎖並公開對峙，雙方一度瀕臨核戰邊緣，最終蘇聯同意撤彈、美國則暗中承諾撤除土耳其的飛彈才化解危機；這是冷戰期間美蘇最接近直接核武衝突的一次對峙。
+  sources:
+    - title: 維基百科：古巴導彈危機
+      url: https://zh.wikipedia.org/wiki/古巴導彈危機
+
+- id: am-jfk-assassination
+  year: 1963
+  title: 甘迺迪遇刺
+  category: politics
+  importance: 4
+  desc: 甘迺迪總統在德州達拉斯遇刺身亡，兇手身分與動機至今仍有陰謀論爭議，副總統詹森隨即繼任；這起事件震撼全美社會，也常被視為戰後美國社會信任崩解的起點之一。
+  sources:
+    - title: 維基百科：約翰·F·甘迺迪遇刺案
+      url: https://zh.wikipedia.org/wiki/約翰·F·甘迺迪遇刺案
+
+- id: am-civil-rights-act
+  year: 1964
+  title: 民權法案通過，種族隔離制度終結
+  category: politics
+  importance: 4
+  desc: 金恩博士領導的非暴力抗爭與民權運動促成國會立法，禁止依種族、膚色、宗教或性別的公共場所歧視，正式終結吉姆·克勞法時代的種族隔離制度。
+  sources:
+    - title: 維基百科：1964年民權法案
+      url: https://zh.wikipedia.org/wiki/1964年民權法案
+
+- id: am-vietnam-war
+  year: 1964
+  title: 東京灣事件，美國升級介入越南戰爭
+  category: war
+  importance: 4
+  endYear: 1975
+  desc: 東京灣事件後美國國會授權總統擴大軍事行動，數十萬美軍投入這場代理人戰爭；1975年西貢淪陷，是美國自建國以來首次戰爭失利。
+  sources:
+    - title: 維基百科：越南戰爭
+      url: https://zh.wikipedia.org/wiki/越南戰爭
+    - title: 英文維基百科：Gulf of Tonkin incident
+      url: https://en.wikipedia.org/wiki/Gulf_of_Tonkin_incident
+
+- id: me-egypt-six-day-war
+  year: 1967
+  title: 六日戰爭，埃及失去西奈半島
+  category: war
+  importance: 4
+  desc: 埃及、敘利亞與約旦聯手備戰，以色列先發制人，在六天內重創三國軍隊並占領西奈半島、加薩走廊、約旦河西岸與戈蘭高地；埃及的慘敗重挫納賽爾的威望，也埋下六年後贖罪日戰爭的遠因。
+  sources:
+    - title: 維基百科：第三次中東戰爭
+      url: https://zh.wikipedia.org/wiki/第三次中東戰爭
+
+- id: eu-may-1968
+  year: 1968
+  title: 五月風暴
+  category: politics
+  importance: 4
+  desc: 學生占領大學校園抗議教育體制與社會保守氛圍，工人隨後響應發動全國大罷工，一度癱瘓法國經濟、動搖戴高樂政府；雖未能立即改朝換代，卻深刻改變法國的社會文化與勞動權益，也啟發了同時期全球各地的學生運動。
+  sources:
+    - title: 維基百科：五月風暴
+      url: https://zh.wikipedia.org/wiki/五月風暴
+
+- id: am-apollo-11
+  year: 1969
+  title: 阿波羅十一號登月
+  category: science
+  importance: 5
+  desc: 阿姆斯壯與艾德林搭乘阿波羅十一號登陸月球，成為首度踏上地球以外天體的人類；這是美蘇太空競賽的高潮，也讓美國在冷戰的科技競爭中取得指標性的勝利。
+  sources:
+    - title: 維基百科：阿波羅11號
+      url: https://zh.wikipedia.org/wiki/阿波羅11號
+
+- id: sa-bangladesh
+  year: 1971
+  title: 孟加拉獨立
+  category: politics
+  importance: 3
+  desc: 東巴基斯坦因語言、文化與經濟長期遭西巴基斯坦壓制爆發獨立運動，印度出兵介入第三次印巴戰爭助其獨立建國；孟加拉的分離重創了巴基斯坦「兩個地理區塊、一個國家」的立國基礎。
+  sources:
+    - title: 維基百科：孟加拉國解放戰爭
+      url: https://zh.wikipedia.org/wiki/孟加拉國解放戰爭
+
+- id: am-watergate
+  year: 1972
+  endYear: 1974
+  title: 水門事件，尼克森辭職
+  category: politics
+  importance: 4
+  desc: 尼克森競選團隊涉嫌闖入民主黨全國委員會總部竊聽，總統本人隨後被查出試圖掩蓋案情；國會彈劾程序啟動後，尼克森搶先宣布辭職，是美國史上唯一在任內辭職的總統，也重創民眾對政府的信任。
+  sources:
+    - title: 維基百科：水門事件
+      url: https://zh.wikipedia.org/wiki/水門事件
+
+- id: am-shanghai-communique
+  year: 1972
+  title: 上海公報，美國「認知」台灣海峽兩岸都主張一個中國
+  category: politics
+  importance: 4
+  desc: 季辛吉前一年秘密訪問北京鋪路，尼克森訪華結束時雙方在上海發表聯合公報。台灣條款的措辭經過反覆推敲：美國「認知」（acknowledge）海峽兩岸的中國人都認為只有一個中國、台灣是中國的一部分，對此「不提出異議」，並表示將逐步減少駐台美軍。這句話刻意迴避美國自己的立場，為與北京建交留下七年的過渡期；同時也給了台灣一個訊號 —— 華府的優先順序已經改變，退出聯合國才一年，台北的處境從此更為孤立。
+  sources:
+    - title: 維基百科：中美三個聯合公報
+      url: https://zh.wikipedia.org/wiki/中美三個聯合公報
+    - title: 英文維基百科：Shanghai Communiqué
+      url: https://en.wikipedia.org/wiki/Shanghai_Communiqué
+
+- id: sa-pokhran-1
+  year: 1974
+  title: 印度首次核試驗
+  category: science
+  importance: 4
+  desc: 印度在拉賈斯坦沙漠引爆代號「微笑佛陀」的核裝置，成為第六個掌握核武技術的國家，也是首個在《核不擴散條約》體制外試爆的國家；1998年印度再度於波卡蘭進行五次核試並正式宣布為核武國家，巴基斯坦隨即跟進試爆。
+  sources:
+    - title: 維基百科：波卡蘭-I
+      url: https://zh.wikipedia.org/wiki/波卡蘭-I
+
+- id: sa-emergency
+  year: 1975
+  endYear: 1977
+  title: 英迪拉·甘地宣布緊急狀態
+  category: politics
+  importance: 4
+  desc: 總理英迪拉·甘地因選舉舞弊判決與國內動盪，宣布全國進入緊急狀態，中止公民自由、大規模逮捕反對派並實施新聞審查；近兩年後她主動解除緊急狀態、舉行大選卻意外落敗，是印度獨立以來民主體制最嚴重的一次中斷。
+  sources:
+    - title: 維基百科：緊急狀態 (印度)
+      url: https://zh.wikipedia.org/wiki/緊急狀態_(印度)
+    - title: 維基百科：英迪拉·甘地
+      url: https://zh.wikipedia.org/wiki/英迪拉·甘地
+
+- id: me-egypt-israel-peace
+  year: 1978
+  title: 戴維營協議與埃以和約，首個承認以色列的阿拉伯國家
+  category: politics
+  importance: 4
+  endYear: 1979
+  desc: 美國居中斡旋，埃及成為第一個與以色列締結和平的阿拉伯國家，換回西奈半島；沙達特因此遭阿拉伯世界孤立，1981年遇刺身亡。
+  sources:
+    - title: 維基百科：戴維營協議
+      url: https://zh.wikipedia.org/wiki/戴維營協議
+    - title: 維基百科：埃以和約
+      url: https://zh.wikipedia.org/wiki/埃以和約
+
+- id: me-iran-revolution
+  year: 1979
+  title: 伊朗伊斯蘭革命
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：伊朗伊斯蘭革命
+      url: https://zh.wikipedia.org/wiki/伊朗伊斯蘭革命
+
+- id: am-taiwan-relations-act
+  year: 1979
+  title: 《台灣關係法》，以國內法延續對台承諾
+  category: politics
+  importance: 4
+  desc: 卡特宣布與中華民國斷交、廢止共同防禦條約，國會不滿行政部門事先未諮詢，三個月內以近乎一致的票數通過台灣關係法。法案把台灣視同外國政府處理，承諾提供防禦性武器、視任何以非和平方式決定台灣前途的企圖為對西太平洋和平的威脅，並設美國在台協會維持非官方關係。一部國內法取代了一份條約，四十餘年來美國對台軍售與安全承諾的法律基礎都在這裡。
+  sources:
+    - title: 維基百科：臺灣關係法
+      url: https://zh.wikipedia.org/wiki/臺灣關係法
+    - title: 英文維基百科：Taiwan Relations Act
+      url: https://en.wikipedia.org/wiki/Taiwan_Relations_Act
+
+- id: am-817-communique
+  year: 1982
+  title: 八一七公報與六項保證，對台軍售的雙重承諾
+  category: politics
+  importance: 3
+  desc: 雷根政府為換取北京在對蘇聯問題上的合作，在八一七公報中承諾對台軍售在質與量上不超過建交後的水準並逐步減少。簽署前一個月，雷根透過在台協會向台北提出六項保證：不設軍售終止日期、不事先與北京磋商、不修改台灣關係法、不改變對台灣主權的立場、不逼台灣談判、不做調人。公報與保證互相牽制，「三個公報、一部法、六項保證」從此是美國一中政策的完整清單，雷根本人還留下備忘錄，把減少軍售的前提綁在北京承諾和平解決。
+  sources:
+    - title: 維基百科：中美三個聯合公報
+      url: https://zh.wikipedia.org/wiki/中美三個聯合公報
+    - title: 維基百科：六項保證
+      url: https://zh.wikipedia.org/wiki/六項保證
+    - title: 英文維基百科：Six Assurances
+      url: https://en.wikipedia.org/wiki/Six_Assurances
+
+- id: eu-berlin-wall
+  year: 1989
+  title: 柏林圍牆倒塌
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：柏林圍牆
+      url: https://zh.wikipedia.org/wiki/柏林圍牆
+
+- id: eu-www
+  year: 1989
+  title: 柏內茲-李在 CERN 提出全球資訊網
+  category: science
+  importance: 5
+  sources:
+    - title: 維基百科：全球資訊網
+      url: https://zh.wikipedia.org/wiki/全球資訊網
+    - title: 維基百科：提姆·柏內茲-李
+      url: https://zh.wikipedia.org/wiki/提姆·柏內茲-李
+
+- id: eu-german-reunification
+  year: 1990
+  title: 兩德統一，冷戰在歐洲落幕
+  category: politics
+  importance: 5
+  desc: 柏林圍牆倒塌後東德局勢迅速失控，東西德在《兩加四條約》下完成統一，五個東德邦併入聯邦德國體制；德國統一象徵冷戰在歐洲正式終結，也讓德國重新成為歐陸人口最多、經濟實力最強的國家。
+  sources:
+    - title: 維基百科：兩德統一
+      url: https://zh.wikipedia.org/wiki/兩德統一
+
+- id: eu-ussr-collapse
+  year: 1991
+  title: 蘇聯解體
+  category: politics
+  importance: 5
+  desc: 戈巴契夫的開放與改革政策鬆動了蘇聯的政治控制，卻未能挽救停滯的經濟，反而加速了各加盟共和國的獨立浪潮；保守派發動政變失敗後，戈巴契夫辭去蘇共總書記，蘇聯正式解體為十五個獨立國家，冷戰時代兩極對抗的格局就此終結。
+  sources:
+    - title: 維基百科：蘇聯解體
+      url: https://zh.wikipedia.org/wiki/蘇聯解體
+
+- id: sa-economic-liberalization
+  year: 1991
+  title: 印度經濟自由化改革
+  category: economy
+  importance: 5
+  desc: 面臨外匯存底幾近枯竭的國際收支危機，總理拉奧與財政部長曼莫漢·辛格推動大幅開放市場、鬆綁管制與吸引外資的改革，一舉扭轉印度獨立以來奉行的計畫經濟路線；此後三十年印度經濟持續高速成長，逐漸成為全球資訊科技產業重鎮。
+  sources:
+    - title: 維基百科：印度的經濟自由化
+      url: https://zh.wikipedia.org/wiki/印度的經濟自由化
+
+- id: eu-maastricht
+  year: 1993
+  title: 馬斯垂克條約，歐盟成立
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：馬斯垂克條約
+      url: https://zh.wikipedia.org/wiki/馬斯垂克條約
+
+- id: am-9-11
+  year: 2001
+  title: 九一一襲擊事件
+  category: war
+  importance: 5
+  desc: 蓋達組織劫持四架客機撞擊世貿中心與五角大廈，近三千人罹難；美國隨後發動反恐戰爭，全球安全體制與國際政治格局自此改寫。
+  sources:
+    - title: 維基百科：九一一襲擊事件
+      url: https://zh.wikipedia.org/wiki/九一一襲擊事件
+
+- id: eu-euro-cash
+  year: 2002
+  title: 歐元現鈔流通
+  category: economy
+  importance: 4
+  sources:
+    - title: 維基百科：歐元
+      url: https://zh.wikipedia.org/wiki/歐元
+
+- id: am-2008-financial-crisis
+  year: 2008
+  title: 2008年環球金融危機
+  category: economy
+  importance: 4
+  desc: 美國次級房貸違約潮引爆雷曼兄弟倒閉，金融體系信用凍結，恐慌迅速蔓延全球，觸發二戰以來最嚴重的經濟衰退；各國政府隨後推出大規模紓困與寬鬆貨幣政策因應，也重塑了金融監理制度的框架。
+  sources:
+    - title: 維基百科：2008年環球金融危機
+      url: https://zh.wikipedia.org/wiki/2008年環球金融危機
+
+- id: me-egypt-2011-revolution
+  year: 2011
+  title: 埃及革命，穆巴拉克下台
+  category: politics
+  importance: 4
+  desc: 突尼西亞茉莉花革命引發連鎖效應，開羅解放廣場爆發大規模示威，執政近三十年的穆巴拉克在十八天後辭職下台；埃及其後歷經穆爾西當選、軍事政變與塞西掌權，是「阿拉伯之春」中規模最大、對區域政局影響最深遠的一場革命。
+  sources:
+    - title: 維基百科：2011年埃及革命
+      url: https://zh.wikipedia.org/wiki/2011年埃及革命
+
+- id: am-taiwan-travel-act
+  year: 2018
+  title: 《台灣旅行法》，解除美台高層互訪限制
+  category: politics
+  importance: 2
+  desc: 川普簽署國會兩院無異議通過的台灣旅行法，鼓勵美國各級官員訪台、台灣高層官員訪美，解除 1979 年以來行政部門自我設限的往來規範。它是台灣關係法之後第一部專為台灣制定的美國法律，此後《台北法》、《台灣保證法》等接連立法，國會成為美台關係升溫的主要推手；2022 年眾議院議長裴洛西訪台就是在這條線上發生的。
+  sources:
+    - title: 維基百科：台灣旅行法
+      url: https://zh.wikipedia.org/wiki/台灣旅行法
+    - title: 英文維基百科：Taiwan Travel Act
+      url: https://en.wikipedia.org/wiki/Taiwan_Travel_Act

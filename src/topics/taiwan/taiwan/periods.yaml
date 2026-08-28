@@ -1,0 +1,35 @@
+# 採用台灣史學界通行的分期（史前／荷西／明鄭／清治／日治／戰後）。
+# 這份是從 world/taiwan/periods.yaml 複製來的，史前那條色帶被 minYear（1500）
+# 截到只剩 124 年 —— 在世界史那邊它橫跨四千多年。這裡的重點本來就是文字史，
+# 史前只留一小段當「1624 之前這裡不是空的」的提示。
+- id: tw-prehistoric
+  name: 史前時期
+  start: 1500
+  end: 1623
+  note: 南島語族原住民時期；實際起點遠早於西元前 3000 年，此處為時間軸起點所截
+
+- id: tw-dutch-spanish
+  name: 荷西時期
+  start: 1624
+  end: 1661
+  note: 荷蘭據南台灣；西班牙 1626-1642 據北台灣
+
+- id: tw-zheng
+  name: 明鄭時期
+  start: 1662
+  end: 1682
+
+- id: tw-qing
+  name: 清治時期
+  start: 1683
+  end: 1894
+
+- id: tw-japanese
+  name: 日治時期
+  start: 1895
+  end: 1944
+
+- id: tw-postwar
+  name: 戰後時期
+  start: 1945
+  end: 2026

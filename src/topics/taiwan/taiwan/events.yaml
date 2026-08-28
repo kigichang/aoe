@@ -1,0 +1,2603 @@
+# year: 負數 = 西元前，沒有西元 0 年。endYear 選填（有跨度的事件）。
+# category: politics | war | culture | science | religion | economy
+# importance: 1-5。縮放到全域視角時只會顯示 5，放大後才逐層釋出。
+#
+# 本欄由 world/taiwan/events.yaml 複製（year ≥ 1500），兩份獨立維護、不會自動同步；
+# id 與世界史相同只是為了日後 diff 方便。
+#
+# 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
+
+- id: tw-shihsanhang
+  year: 1500
+  actualYear: 200
+  endYear: 1600
+  title: 十三行文化，台灣進入鐵器時代
+  category: science
+  importance: 4
+  desc: 淡水河出海口南岸的聚落，出土煉鐵作坊與大量鐵器，是目前確定擁有煉鐵技術的台灣史前居民，很可能是凱達格蘭族的祖先。同層另有中國瓷器與玻璃器，顯示島外交易已成常態 —— 這一支一直延續到荷蘭人抵達前後，與有文字的歷史時期首尾相接。實際約始於西元 200 年，此處為時間軸起點所截。
+  sources:
+    - title: 維基百科：十三行遺址
+      url: https://zh.wikipedia.org/wiki/十三行遺址
+
+- id: tw-formosa
+  year: 1582
+  title: 葡萄牙與西班牙船員因船難滯留台灣
+  category: culture
+  importance: 3
+  sources:
+    - title: 維基百科：臺灣歷史
+      url: https://zh.wikipedia.org/wiki/臺灣歷史
+
+- id: tw-takasago-summons
+  year: 1593
+  title: 豐臣秀吉遣使招諭「高山國」
+  category: politics
+  importance: 3
+  desc: 豐臣秀吉派家臣原田孫七郎攜文書前來，要求台灣向日本納貢。日本古籍稱台灣為高砂或高山國，語源與高雄的舊稱「打狗」有關。文書送不出去 —— 島上沒有可以接收國書的政權，使者找不到對象。1616 年德川家康再派村山等安率船隊來台，途中遇風浪只有三艘抵達北部，登陸的一兩百人被原住民包圍而死。日本對台灣的興趣比荷蘭與西班牙更早，但兩次都停在「找不到談判對手」這一關。
+  sources:
+    - title: 維基百科：高砂 (臺灣古名)
+      url: https://zh.wikipedia.org/wiki/高砂_(臺灣古名)
+    - title: 維基百科：豐臣秀吉
+      url: https://zh.wikipedia.org/wiki/豐臣秀吉
+
+- id: tw-dongfan-ji
+  year: 1603
+  title: 陳第著《東番記》，最早的台灣實地紀錄
+  category: culture
+  importance: 3
+  desc: 沈有容率明軍到台灣西南沿海剿倭時，福州連江人陳第隨行，回去後寫成這篇一千四百餘字的雜記。它記下西拉雅人的母系社會、服飾、飲食、建築、狩獵與貿易，是現存最早由漢人親自到台灣實地採訪留下的文獻 —— 在此之前的中文記載都是隔海轉述。這一篇之後，台灣才開始有具體的樣子，而不只是史書上一個位置不明的島名。
+  sources:
+    - title: 維基百科：東番記
+      url: https://zh.wikipedia.org/wiki/東番記
+    - title: 維基百科：沈有容
+      url: https://zh.wikipedia.org/wiki/沈有容
+
+- id: tw-yan-siqi
+  year: 1621
+  title: 顏思齊、鄭芝龍入北港
+  category: economy
+  importance: 3
+  desc: 武裝海商顏思齊率鄭芝龍等人在北港一帶登岸，把台灣當成走私與劫掠的基地。顏思齊 1625 年病故後鄭芝龍接手，其後受明朝招撫、成為福建沿海最大的海上勢力，也把大批閩南饑民載來台灣開墾。這條線一路連到 1661 年 —— 鄭成功來台的資本、船隊與人脈，都是從父親這個海商集團承接下來的。
+  sources:
+    - title: 維基百科：顏思齊
+      url: https://zh.wikipedia.org/wiki/顏思齊
+    - title: 維基百科：鄭芝龍
+      url: https://zh.wikipedia.org/wiki/鄭芝龍
+
+- id: tw-dutch-penghu
+  year: 1622
+  title: 荷蘭佔領澎湖，兩年後轉進大員
+  category: politics
+  importance: 3
+  desc: 為打通與明朝、日本的貿易而奪澎湖築城。明軍圍城八個月後議和，荷蘭人拆城轉往不屬明朝版圖的臺灣。
+  sources:
+    - title: 維基百科：風櫃尾荷蘭城堡
+      url: https://zh.wikipedia.org/wiki/風櫃尾荷蘭城堡
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
+- id: tw-zeelandia
+  year: 1624
+  title: 荷蘭東印度公司築熱蘭遮城，據南台灣
+  category: politics
+  importance: 5
+  desc: 在澎湖被明軍逼退後轉進不屬明朝版圖的大員，由首任長官宋克在一鯤鯓沙洲築城。隔年再以十五匹花布向新港社取得赤崁的土地，開闢普羅民遮市街 —— 一座城守海口、一片街市管內陸，南台灣的統治骨架就此定下。台灣從這一年起進入有系統文字記載的年代，也被捲進東亞的海上貿易網。
+  sources:
+    - title: 維基百科：熱蘭遮城
+      url: https://zh.wikipedia.org/wiki/熱蘭遮城
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
+- id: tw-spanish-keelung
+  year: 1626
+  title: 西班牙人佔領雞籠，據北台灣
+  category: politics
+  importance: 4
+  desc: 荷蘭據大員之後扼住了馬尼拉北上中國與日本的航路，菲律賓總督決定在台灣北端設點反制。艦隊五月自馬尼拉出發，先到島的東北角命名 Santiago（今三貂角），再進雞籠港，於社寮島（今和平島）舉行佔領典禮、築聖薩爾瓦多城。駐軍常年只有兩三百人，靠馬尼拉一年兩班的補給船維持 —— 從頭到尾是一座靠外部輸血的據點，這也決定了它十六年後怎麼結束。
+  sources:
+    - title: 維基百科：西班牙統治時期 (台灣)
+      url: https://zh.wikipedia.org/wiki/西班牙統治時期_(台灣)
+    - title: 維基百科：聖薩爾瓦多城
+      url: https://zh.wikipedia.org/wiki/聖薩爾瓦多城
+
+- id: tw-dominican-mission
+  year: 1626
+  title: 道明會士隨軍抵雞籠，天主教首度傳入台灣
+  category: religion
+  importance: 3
+  desc: 六名道明會神父隨艦隊出征，這是天主教第一次進入台灣。他們在雞籠、淡水一帶向巴賽人傳教，艾斯奇維編出《淡水語辭彙》與《淡水語教理書》—— 兩本都已佚失，只剩書名留在文獻裡。荷蘭人在南部用羅馬字寫西拉雅語的同時，北部有人在做同一件事，只是成果沒能留下來。1642 年西班牙被逐，這條線整個斷掉，要等到 1859 年道明會士再從打狗登陸，天主教才重返台灣。
+  sources:
+    - title: 維基百科：臺灣西班牙統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣西班牙統治時期
+    - title: 維基百科：道明會
+      url: https://zh.wikipedia.org/wiki/道明會
+
+- id: tw-hamada-incident
+  year: 1628
+  title: 濱田彌兵衛事件，日荷貿易中斷
+  category: economy
+  importance: 3
+  desc: 荷蘭對日本商人課稅引發衝突，日方一度扣押臺灣長官。德川幕府隨即中止與荷蘭的貿易，至 1632 年才恢復。
+  sources:
+    - title: 維基百科：濱田彌兵衛事件
+      url: https://zh.wikipedia.org/wiki/濱田彌兵衛事件
+
+- id: tw-santo-domingo
+  year: 1628
+  title: 西班牙築聖多明哥城，據淡水
+  category: politics
+  importance: 3
+  desc: 佔領雞籠兩年後西進淡水。1637 年菲律賓當局為節省開支自行毀城，北臺防務空虛，終招來荷蘭進攻。
+  sources:
+    - title: 維基百科：聖多明哥城
+      url: https://zh.wikipedia.org/wiki/聖多明哥城
+    - title: 維基百科：臺灣西班牙統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣西班牙統治時期
+
+- id: tw-mattau-river
+  year: 1629
+  title: 麻豆溪事件，六十三名荷兵遭殺
+  category: war
+  importance: 3
+  desc: 西拉雅四大社中最強的麻豆社伏擊荷軍。荷蘭人在南臺灣的威望重挫，數年間無力報復。
+  sources:
+    - title: 維基百科：麻豆溪事件
+      url: https://zh.wikipedia.org/wiki/麻豆溪事件
+
+- id: tw-spanish-kavalan
+  year: 1632
+  title: 西班牙進兵蛤仔難，毀噶瑪蘭七社
+  category: war
+  importance: 3
+  desc: 一艘西班牙船漂到蘭陽平原，全船人遭噶瑪蘭人殺害。長官隨即派兵報復，摧毀七座村落，1635 年再打一次。同一批人也從淡水河、基隆河探出通往台北盆地的路線，把據點的影響力從海口往內陸推 —— 西班牙在台灣十六年，除了兩座城，留下的主要就是這幾次征討。漢人成規模進入蘭陽平原還要再等一百六十年的吳沙。
+  sources:
+    - title: 維基百科：臺灣西班牙統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣西班牙統治時期
+    - title: 維基百科：噶瑪蘭族
+      url: https://zh.wikipedia.org/wiki/噶瑪蘭族
+
+- id: tw-mattau-treaty
+  year: 1635
+  title: 麻豆協約，原住民村社臣服
+  category: politics
+  importance: 4
+  desc: 荷蘭聯合新港社擊破麻豆社後締約，確立領主與封臣的關係。到 1636 年底共五十七座村社服從，並以每年的地方會議維繫。
+  sources:
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+    - title: 維基百科：西拉雅族
+      url: https://zh.wikipedia.org/wiki/西拉雅族
+
+- id: tw-sinkang-school
+  year: 1636
+  title: 新港社設校，以羅馬字書寫西拉雅語
+  category: culture
+  importance: 4
+  desc: 臺灣史上第一所學校。傳教士用拉丁字母拼寫原住民語言，所留下的契約文書即新港文書，直到十九世紀仍在使用。
+  sources:
+    - title: 維基百科：新港文書
+      url: https://zh.wikipedia.org/wiki/新港文書
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
+- id: tw-deerskin-trade
+  year: 1637
+  title: 鹿皮出口達十五萬張
+  category: economy
+  importance: 3
+  desc: 漢人引進陷阱後產量大增，鹿皮主要銷往日本製甲冑。濫捕使鹿群銳減，1640 年起一度全面禁獵。
+  sources:
+    - title: 維基百科：臺灣梅花鹿
+      url: https://zh.wikipedia.org/wiki/臺灣梅花鹿
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
+- id: tw-siraya-shamans-exile
+  year: 1641
+  title: 荷蘭流放二百五十名尪姨，禁西拉雅祭儀
+  category: religion
+  importance: 3
+  desc: 尪姨是西拉雅村社裡主持祭儀、司掌祖靈信仰的女性祭司。傳教士把她們看成改宗最大的障礙，這一年將二百五十人集體流放到北方的諸羅山，村社原有的祭祀隨之中斷。新港社的學校與羅馬字書寫是同一套傳教工作的另一面 —— 台灣第一次的識字教育與第一次的信仰壓制出自同一批人，同一個十年裡。
+  sources:
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+    - title: 維基百科：尪姨
+      url: https://zh.wikipedia.org/wiki/尪姨
+
+- id: tw-dutch-expel-spanish
+  year: 1642
+  title: 荷蘭驅逐西班牙人
+  category: war
+  importance: 4
+  desc: 西班牙 1637 年自毀淡水的聖多明哥城、又把兵力抽回菲律賓之後，北台灣只剩雞籠一座孤城。荷蘭艦隊八月下旬北上登陸圍攻，守軍於 26 日開城，撤往馬尼拉，十六年的西班牙統治告終。西部沿海的南北兩端第一次握在同一個政權手上，荷蘭也才真正能把島當成一整塊來經營。
+  sources:
+    - title: 維基百科：西班牙統治時期 (台灣)
+      url: https://zh.wikipedia.org/wiki/西班牙統治時期_(台灣)
+    - title: 維基百科：雞籠之戰
+      url: https://zh.wikipedia.org/wiki/雞籠之戰
+
+- id: tw-pacht
+  year: 1644
+  title: 贌社，村社交易權公開招標
+  category: economy
+  importance: 3
+  desc: 荷蘭人把各原住民村社的交易權公開標售，得標商人獨佔該社所有買賣，以鹽、鐵鍋、布疋換取鹿皮鹿肉再轉售。「贌」是荷語 pacht 的台語音譯。清治延續此制而改以社餉徵稅，直到 1737 年乾隆稅制改革才逐漸消失 —— 一套荷蘭的承包制在台灣運作了近百年。
+  sources:
+    - title: 維基百科：贌社
+      url: https://zh.wikipedia.org/wiki/贌社
+
+- id: tw-middag-kingdom
+  year: 1645
+  title: 大肚王國與荷蘭締約
+  category: politics
+  importance: 3
+  desc: 中部跨部落的政治聯盟。荷蘭打通南北陸路時遭其攻擊，翌年進兵後締約，但大肚王仍保有相當自主，連年貢都獲豁免。
+  sources:
+    - title: 維基百科：大肚王國
+      url: https://zh.wikipedia.org/wiki/大肚王國
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
+- id: tw-guo-huaiyi
+  year: 1652
+  title: 郭懷一抗荷事件
+  category: war
+  importance: 3
+  desc: 1640 年代大員當局對漢人陸續加稅，其中人頭稅最受反彈，士兵又常藉查驗稅單勒索財物。郭懷一聚眾數千夜襲赤崁，隔日在荷軍與原住民兵夾擊下潰散，死傷數千。這是荷治時期規模最大的漢人反抗 —— 公司靠漢人開墾與納稅撐起財政，事後卻動工築城把他們當成必須設防的對象。
+  sources:
+    - title: 維基百科：郭懷一事件
+      url: https://zh.wikipedia.org/wiki/郭懷一事件
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
+- id: tw-shen-guangwen
+  year: 1652
+  title: 沈光文流寓台灣，漢語古典文學之始
+  category: culture
+  importance: 2
+  desc: 南明遺臣沈光文在浙閩沿海輾轉抗清，據傳於此時渡海途中遇颶風漂抵台灣（確切年份有 1651 到 1662 年之間的不同說法），此後定居近四十年，歷經荷蘭、明鄭到清初。他以詩文記錄台灣的風土與原住民生活，晚年在諸羅與流寓文人結成東吟社，是台灣第一個詩社。後人稱他「海東文獻初祖」，台灣的漢語古典文學史通常從他算起。
+  sources:
+    - title: 維基百科：沈光文
+      url: https://zh.wikipedia.org/wiki/沈光文
+
+- id: tw-provintia
+  year: 1653
+  endYear: 1655
+  title: 築普羅民遮城，赤崁設省城城塞
+  category: politics
+  importance: 3
+  desc: 郭懷一事件的直接產物。荷蘭人在赤崁市街北方動工興建磚石城塞，兩年後完工，作為赤崁省的行政中心，與海口對岸的熱蘭遮城分掌南台灣。1661 年鄭成功登陸後最先攻下的就是這一座，隨即在城裡設承天府衙門，成為明鄭的最高行政機構。城基就是今天的赤崁樓。
+  sources:
+    - title: 維基百科：赤崁樓
+      url: https://zh.wikipedia.org/wiki/赤崁樓
+    - title: 維基百科：郭懷一事件
+      url: https://zh.wikipedia.org/wiki/郭懷一事件
+
+- id: tw-siege-zeelandia
+  year: 1661
+  title: 鄭成功圍攻熱蘭遮城
+  category: war
+  importance: 4
+  endYear: 1662
+  desc: 鄭軍自鹿耳門進入台江，先取普羅民遮城，再圍熱蘭遮城。荷方守了將近九個月，巴達維亞派來的援軍無功而返，長官揆一於 1662 年 2 月 1 日開城投降，率殘餘人員撤離。三十八年的荷蘭統治到此結束；揆一回去後被公司問成失土之罪，流放海島十餘年。
+  sources:
+    - title: 維基百科：鄭成功攻臺之役
+      url: https://zh.wikipedia.org/wiki/鄭成功攻臺之役
+    - title: 維基百科：揆一
+      url: https://zh.wikipedia.org/wiki/揆一
+
+- id: tw-tuntian
+  year: 1661
+  title: 實施軍屯制，奠定漢人拓墾基礎
+  category: economy
+  importance: 4
+  desc: 鄭成功抵台後為解決糧食危機頒布屯田令，實施軍屯制度。官兵文封田、武屯墾，分駐中南部各地，此即今日新營、左營、柳營、前鎮等軍營地名的由來。軍屯奠定了台灣漢人開墾與聚落分布的基礎。
+  sources:
+    - title: 維基百科：臺灣明鄭時期
+      url: https://zh.wikipedia.org/wiki/臺灣明鄭時期
+    - title: 維基百科：屯田制
+      url: https://zh.wikipedia.org/wiki/屯田制
+
+- id: tw-qianjie
+  year: 1661
+  title: 清朝實施遷界令，封鎖明鄭經濟
+  category: politics
+  importance: 3
+  endYear: 1684
+  desc: 清朝為斷絕沿海居民對明鄭的物資支援，嚴令山東至廣東沿海居民內遷三十里並毀棄村莊。遷界令使沿海經濟受創，但也迫使明鄭轉向與日本、英國及東南亞展開國際走私與跨境貿易。
+  sources:
+    - title: 維基百科：遷界令
+      url: https://zh.wikipedia.org/wiki/遷界令
+    - title: 維基百科：臺灣明鄭時期
+      url: https://zh.wikipedia.org/wiki/臺灣明鄭時期
+
+- id: tw-tungning
+  year: 1662
+  title: 鄭成功驅逐荷蘭人，明鄭治台
+  category: politics
+  importance: 5
+  desc: 圍城還沒結束，鄭成功就已在赤崁設承天府與天興、萬年二縣，另在澎湖與南北兩路置安撫司 —— 明朝的一整套官制被原樣搬上島，台灣第一次有以漢人政權形式運作的行政體系。名義上仍奉南明永曆正朔，而南明其實早已無力，這座島成了明朝最後一塊招牌。荷蘭投降四個月後鄭成功病逝，體制留給了兒子。
+  sources:
+    - title: 維基百科：明鄭時期
+      url: https://zh.wikipedia.org/wiki/明鄭時期
+    - title: 維基百科：鄭成功
+      url: https://zh.wikipedia.org/wiki/鄭成功
+
+- id: tw-zheng-jing
+  year: 1662
+  title: 鄭成功歿，鄭經繼位
+  category: politics
+  importance: 3
+  desc: 鄭成功接收台灣後五個月即病逝，年僅三十八。明鄭二十一年的江山，其中十九年是鄭經在治 —— 他行陳永華之議屯田興學、通商日本與英國，也在 1674 年響應三藩之亂西征閩粵，耗盡實力而返。
+  sources:
+    - title: 維基百科：鄭經
+      url: https://zh.wikipedia.org/wiki/鄭經
+    - title: 維基百科：鄭成功
+      url: https://zh.wikipedia.org/wiki/鄭成功
+
+- id: tw-qingdutch-alliance
+  year: 1663
+  endYear: 1664
+  title: 清荷聯軍攻金廈，明鄭盡失大陸領土
+  category: war
+  importance: 4
+  desc: 康熙駁回鄭經開出的條件後，轉而拉攏剛被逐出台灣的荷蘭人組成聯軍。1663 年 11 月合攻金門、廈門，鄭軍棄守退往銅山，隔年連銅山也失，大將周全斌降清，鄭經率殘部全數退回台灣。荷蘭趁勢在 1664 年重佔雞籠，指望以此換回失去的島。鄭芝龍以來經營四十年的閩海根據地一次清空，明鄭從此只剩台澎 —— 東都改稱東寧、六部與州制的建立，都是在這個新現實下才發生的。
+  sources:
+    - title: 維基百科：鄭經
+      url: https://zh.wikipedia.org/wiki/鄭經
+    - title: 維基百科：臺灣明鄭時期
+      url: https://zh.wikipedia.org/wiki/臺灣明鄭時期
+
+- id: tw-dongning-regime
+  year: 1664
+  title: 鄭經改東都為東寧，升天興萬年為州
+  category: politics
+  importance: 3
+  desc: 鄭經退守台灣後，改「東都」為「東寧」，升天興、萬年二縣為州，劃分行政區劃並設澎湖安撫司。東寧成為明鄭統治體制的核心，並以「東寧國」或「東寧王」之名開展外交與貿易。
+  sources:
+    - title: 維基百科：東寧_(臺灣古名)
+      url: https://zh.wikipedia.org/wiki/東寧_(臺灣古名)
+    - title: 維基百科：臺灣明鄭時期
+      url: https://zh.wikipedia.org/wiki/臺灣明鄭時期
+
+- id: tw-confucius-temple
+  year: 1666
+  title: 陳永華建台南孔廟，設學校
+  category: culture
+  importance: 3
+  desc: 陳永華 1665 年 9 月奏請興建，同年先師聖廟落成，隔年再訂出州試、府試、院試三級考試，中選者入太學。科舉隨孔廟一起搬進台灣，讀書人第一次能在島上取得功名而不必渡海。明鄭在台灣只有二十二年，留下最久的東西之一就是這套考試 —— 這座廟至今仍稱「全臺首學」。
+  sources:
+    - title: 維基百科：臺南孔子廟
+      url: https://zh.wikipedia.org/wiki/臺南孔子廟
+    - title: 維基百科：陳永華 (明鄭)
+      url: https://zh.wikipedia.org/wiki/陳永華_(明鄭)
+
+- id: tw-zheng-qing-talks
+  year: 1667
+  endYear: 1679
+  title: 清鄭多次和談，鄭經求「照朝鮮事例」
+  category: politics
+  importance: 3
+  desc: 1667 年清廷派孔元章來台招撫，許以「八閩王」遭拒；1669 年明珠南下再談，已願讓鄭氏封藩、世守台灣，鄭經開的條件是比照朝鮮 —— 不剃髮、稱臣納貢即可。康熙駁回：朝鮮是本來就不屬版圖的外國，鄭經是中國之人。此後十年談了數回，鄭經一再主張台灣「遠在海外，與版圖渺不相涉」；1678 年清方甚至鬆口給朝鮮、日本那樣的地位，卻因鄭經索要海澄當互市口岸而破局。十二年反覆談的其實只有一件事：東寧是清朝的一個藩，還是一個外國。
+  sources:
+    - title: 維基百科：鄭經
+      url: https://zh.wikipedia.org/wiki/鄭經
+    - title: 維基百科：澎湖海戰
+      url: https://zh.wikipedia.org/wiki/澎湖海戰
+
+- id: tw-dutch-leave-keelung
+  year: 1668
+  title: 荷蘭放棄雞籠，徹底退出臺灣
+  category: politics
+  importance: 3
+  desc: 失去南部後，荷蘭於 1664 年重佔雞籠。但補給困難、與清朝的貿易也無進展，四年後撤回巴達維亞。
+  sources:
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
+- id: tw-shalu-battle
+  year: 1670
+  title: 劉國軒討沙轆社，大肚王國瓦解
+  category: war
+  importance: 3
+  desc: 明鄭在西部平原屯墾一萬八千餘甲，直接吃進大肚王國的生活領域。1661 年鄭軍北上屯墾時雙方已結怨，1670 年沙轆、大肚兩社武裝抵抗，劉國軒率兵討伐，沙轆社數百人被殺，全社只剩六人生還，大肚社則被迫往埔里方向遷走。1645 年跟荷蘭締約時還保得住自主、連年貢都獲豁免的政權，二十五年後被下一個政權連根拔掉 —— 軍屯要地，這是屯田令的另一面。
+  sources:
+    - title: 維基百科：沙轆社之役
+      url: https://zh.wikipedia.org/wiki/沙轆社之役
+    - title: 維基百科：大肚王國
+      url: https://zh.wikipedia.org/wiki/大肚王國
+
+- id: tw-zheng-british-treaty
+  year: 1670
+  title: 英國東印度公司與明鄭締結通商條約
+  category: economy
+  importance: 4
+  desc: 明鄭與英國東印度公司簽署《鄭英通商條約》，英商於安平設置商館，為臺灣史上首次與歐美強權建立正式貿易關係。明鄭出口蔗糖與鹿皮，換取英方的火砲、彈藥與洋貨。
+  sources:
+    - title: 維基百科：鄭英通商
+      url: https://zh.wikipedia.org/wiki/鄭英通商
+    - title: 維基百科：臺灣明鄭時期
+      url: https://zh.wikipedia.org/wiki/臺灣明鄭時期
+
+- id: tw-sanfan-zheng
+  year: 1674
+  title: 響應三藩之亂，鄭經率軍西征閩粵
+  category: war
+  importance: 4
+  endYear: 1680
+  desc: 靖南王耿精忠於福建響應三藩之亂，邀請鄭經出兵。鄭經率主力西征反清，一度攻佔泉州、漳州、潮州等地。後因與耿精忠內爭、清軍反攻與資源枯竭，於 1680 年敗退回臺，明鄭精銳盡失。
+  sources:
+    - title: 維基百科：三藩之亂
+      url: https://zh.wikipedia.org/wiki/三藩之亂
+    - title: 維基百科：臺灣明鄭時期
+      url: https://zh.wikipedia.org/wiki/臺灣明鄭時期
+
+- id: tw-dongning-coup
+  year: 1681
+  title: 鄭經病逝，東寧之變
+  category: politics
+  importance: 3
+  desc: 鄭經西征失敗返台後病逝，大臣馮錫範與鄭聰等發動政變，殺害監國世子鄭克𡛕，擁立十二歲的鄭克塽。明鄭內部政爭加劇，政局嚴重動盪，加速了兩年後明鄭的覆亡。
+  sources:
+    - title: 維基百科：東寧之變
+      url: https://zh.wikipedia.org/wiki/東寧之變
+    - title: 維基百科：鄭克塽
+      url: https://zh.wikipedia.org/wiki/鄭克塽
+
+- id: tw-penghu-battle
+  year: 1683
+  title: 澎湖海戰，明鄭降清
+  category: war
+  importance: 5
+  desc: 施琅率兩萬一千人、艦船兩百三十八艘攻澎湖，先敗後勝，明鄭統帥劉國軒從吼門水道脫逃。消息傳回台灣，島上再無抵抗意志：寧靖王朱術桂自縊，鄭克塽於 9 月 5 日出降、10 月 8 日剃髮易服，南明最後一個政權就此結束，鄭氏在台二十二年告終。施琅二十多年前因故被鄭成功誅殺父弟而降清，這一戰是他自己上疏請纓打的；入台之後他仍到延平郡王墓前跪拜。
+  sources:
+    - title: 維基百科：澎湖海戰
+      url: https://zh.wikipedia.org/wiki/澎湖海戰
+    - title: 維基百科：施琅
+      url: https://zh.wikipedia.org/wiki/施琅
+
+- id: tw-qing-prefecture
+  year: 1684
+  title: 設台灣府，隸屬福建省
+  category: politics
+  importance: 4
+  desc: 明鄭降清之後，朝中爭論了將近一年要不要留下這座島 —— 不少大臣認為孤懸海外、治守都費錢，主張遷走人口、棄其地。施琅上〈恭陳臺灣棄留疏〉力主保留，李光地也向康熙進言，最後設一府三縣隸福建省。台灣自此進入版圖，但定位是為了防海而守的邊區，渡臺禁令同年一併頒下 —— 留是留了，卻是防著留的。
+  sources:
+    - title: 維基百科：臺灣清治時期
+      url: https://zh.wikipedia.org/wiki/臺灣清治時期
+    - title: 維基百科：臺灣府
+      url: https://zh.wikipedia.org/wiki/臺灣府
+    - title: 維基百科：施琅
+      url: https://zh.wikipedia.org/wiki/施琅
+
+- id: tw-crossing-ban
+  year: 1684
+  title: 渡臺禁令，限制赴臺與攜眷
+  category: politics
+  importance: 3
+  endYear: 1875
+  desc: 意在防止臺灣再成為反抗基地。政策時緊時鬆，卻造成長期男女比例失衡與遊民問題，直到 1875 年才全面解除。
+  sources:
+    - title: 維基百科：渡臺禁令
+      url: https://zh.wikipedia.org/wiki/渡臺禁令
+    - title: 維基百科：臺灣清治時期
+      url: https://zh.wikipedia.org/wiki/臺灣清治時期
+
+- id: tw-yu-yonghe
+  year: 1697
+  title: 郁永河抵台採硫，著《裨海紀遊》
+  category: culture
+  importance: 3
+  desc: 福州鴉片庫火災失硫，郁永河自告奮勇前往臺灣採硫。他自府城陸路北上淡水，詳細記錄沿途原住民風貌與地理景物，所著《裨海紀遊》為清初臺灣最重要的遊記與人文地理文獻。
+  sources:
+    - title: 維基百科：裨海紀遊
+      url: https://zh.wikipedia.org/wiki/裨海紀遊
+    - title: 維基百科：郁永河
+      url: https://zh.wikipedia.org/wiki/郁永河
+
+- id: tw-chen-laizhang
+  year: 1709
+  title: 陳賴章墾號成立，台北盆地大開墾
+  category: economy
+  importance: 4
+  desc: 泉州商人陳天仕、陳賴章等申獲「陳賴章墾號」，獲准開墾大佳臘（今台北市艋舺、大稻埕至松山一帶）。這是漢人有系統開墾台北盆地的開端，奠定台北市街發展的基石。
+  sources:
+    - title: 維基百科：陳賴章
+      url: https://zh.wikipedia.org/wiki/陳賴章
+
+- id: tw-babao-canal
+  year: 1719
+  title: 八堡圳完工，水利灌溉彰化平原
+  category: economy
+  importance: 3
+  desc: 施世榜引濁水溪水開鑿八堡圳，耗時十年建成，灌溉彰化大部分農田。八堡圳為清代臺灣規模最大的水利工程，使彰化平原成為臺灣的中部糧倉。
+  sources:
+    - title: 維基百科：八堡圳
+      url: https://zh.wikipedia.org/wiki/八堡圳
+
+- id: tw-zhu-yigui
+  year: 1721
+  title: 朱一貴事件
+  category: war
+  importance: 3
+  desc: 清治台灣第一次大規模民變。鳳山養鴨人朱一貴以「反清復明」為號召，聯合粵籍的杜君英起事，半個月內攻下台灣府城，自稱中興王、建元永和，全台幾乎盡失。但閩粵兩籍的起事者旋即內鬨，清廷派施世驃、藍廷珍渡海，兩個月即收復府城，朱一貴被捕解京處死。下淡水溪以東的客家庄在事件中組成六堆鄉團自保，從此成為常備的地方武力；清廷也自此在要道立石劃界，隔離漢人與原住民。
+  sources:
+    - title: 維基百科：朱一貴
+      url: https://zh.wikipedia.org/wiki/朱一貴
+
+- id: tw-changhua-tamsui
+  year: 1723
+  title: 增設彰化縣與淡水廳，行政北擴
+  category: politics
+  importance: 3
+  desc: 朱一貴事件後，朝廷採藍鼎元之議分割幅員過廣的諸羅縣。漢人拓墾的重心自此正式北移。
+  sources:
+    - title: 維基百科：彰化縣 (清朝)
+      url: https://zh.wikipedia.org/wiki/彰化縣_(清朝)
+    - title: 維基百科：淡水廳
+      url: https://zh.wikipedia.org/wiki/淡水廳
+    - title: 維基百科：藍鼎元
+      url: https://zh.wikipedia.org/wiki/藍鼎元
+
+- id: tw-dajiaxi-uprising
+  year: 1731
+  endYear: 1732
+  title: 大甲西社事件，平埔族群最大規模的抗官
+  category: war
+  importance: 3
+  desc: 道卡斯族大甲西社的林武力等人因不堪勞役而起事，中部各社響應，前後延續一年才被平定，是平埔族群歷史上規模最大的一次抗官行動。清軍調鳳山總兵北上支援，南部守備因此空虛，朱一貴的舊部趁機再起，是為吳福生事件。事後清廷在平埔各社境內加強駐兵，中部的大肚王國也在此後瓦解 —— 一個從荷蘭時期存續下來、與三個政權都打過交道的跨部落聯盟，就這樣消失在文獻裡。
+  sources:
+    - title: 維基百科：大甲西社抗清事件
+      url: https://zh.wikipedia.org/wiki/大甲西社抗清事件
+
+- id: tw-wu-fusheng
+  year: 1732
+  title: 吳福生事件，趁大甲西社之亂起事
+  category: war
+  importance: 2
+  desc: 大甲西社事件爆發後，駐台清軍大半被調往中部，鳳山縣的吳福生趁南部兵力空虛聚眾起事，焚燒營盤與萬丹巡檢衙門，殺守備張玉。亂事兩個多月即被總兵王郡與地方義民合力平定，吳福生被捕處死。此役讓清廷體認到義民的作用，此後轉為主動提倡；下淡水溪以東的客家六堆自朱一貴事件以來的鄉團組織，也因此獲得默許成為常備武力。
+  sources:
+    - title: 維基百科：吳福生事件
+      url: https://zh.wikipedia.org/wiki/吳福生事件
+    - title: 維基百科：六堆
+      url: https://zh.wikipedia.org/wiki/六堆
+
+- id: tw-family-migration
+  year: 1733
+  title: 開放移民攜眷渡臺
+  category: politics
+  importance: 3
+  desc: 藍鼎元建言獲雍正採納。此前以單身男性為主的移墾社會，自此逐步轉為攜家帶眷的定居社會。
+  sources:
+    - title: 維基百科：渡臺禁令
+      url: https://zh.wikipedia.org/wiki/渡臺禁令
+    - title: 維基百科：藍鼎元
+      url: https://zh.wikipedia.org/wiki/藍鼎元
+
+- id: tw-longshan-temple
+  year: 1738
+  title: 艋舺龍山寺創建
+  category: religion
+  importance: 3
+  desc: 泉州移民的信仰中心，也是清代艋舺的公共議事場所。
+  sources:
+    - title: 維基百科：艋舺龍山寺
+      url: https://zh.wikipedia.org/wiki/艋舺龍山寺
+
+- id: tw-tuniu-line
+  year: 1750
+  title: 土牛紅線，劃定漢人與原住民的界線
+  category: politics
+  importance: 3
+  desc: 清廷治台採原漢隔離，朱一貴事件後（1722）先在要道立石為界，乾隆十五年起在地圖上以紅線標示界址，並沿線挖溝堆土，土堆狀似臥牛，故稱土牛。界線之外是「番地」，漢人不得越界墾殖，但實際上隨著移民壓力一再東移：1760 年藍線、1784 年紫線、1790 年綠線各重劃一次，同時以熟番屯丁與隘寮守界。番界既是清廷承認原住民土地權的證據，也記錄了漢人拓墾一步步侵入的軌跡；到了牡丹社事件後開山撫番，這條線才被正式廢止。
+  sources:
+    - title: 維基百科：台灣番界
+      url: https://zh.wikipedia.org/wiki/台灣番界
+
+- id: tw-liugong-canal
+  year: 1753
+  title: 瑠公圳完工，水利灌溉台北盆地
+  category: economy
+  importance: 3
+  desc: 郭錫瑠引新店溪水開鑿水圳，克服穿山引水等工程難關，水圳橫貫景美、公館至大安一帶。瑠公圳提供穩定水源，促進台北盆地農耕與聚落繁榮。
+  sources:
+    - title: 維基百科：瑠公圳
+      url: https://zh.wikipedia.org/wiki/瑠公圳
+
+- id: tw-huang-jiao
+  year: 1768
+  endYear: 1769
+  title: 黃教事件，南部山區的游擊抗官
+  category: war
+  importance: 2
+  desc: 定居台灣縣大目降山區的泉州人黃教，於乾隆三十三年九月起事，以大崗山為據點在鳳山、諸羅之間流竄，劫掠商家、襲擊軍營奪取軍火，也攻擊協助官府的客家庄。清廷調集千人與水師提督吳必達合圍，半年後黃教被捕殺。它介於朱一貴與林爽文兩次大民變之間，規模不大卻讓官府疲於奔命，暴露了駐台班兵對山區束手無策的弱點。
+  sources:
+    - title: 維基百科：黃教
+      url: https://zh.wikipedia.org/wiki/黃教
+
+- id: tw-lin-shuangwen
+  year: 1786
+  title: 林爽文事件
+  category: war
+  importance: 4
+  desc: 清治台灣規模最大、時間最長的民變。彰化大里杙的天地會首領林爽文因官府查拿會黨而起事，數日內攻陷彰化、諸羅，南路的莊大田也攻下鳳山縣城響應，全台除府城與鹿港外幾乎盡失，歷時一年餘。清廷先後動員福建、廣東、湖南等省兵力，最後由陝甘總督福康安率軍登陸鹿港才逐步平定，林爽文與莊大田皆被捕處死。乾隆將此役列入「十全武功」，並因諸羅縣民堅守而改其名為嘉義；事件中閩粵、漳泉互相攻殺，族群械鬥的格局由此加深。
+  endYear: 1788
+  sources:
+    - title: 維基百科：林爽文事件
+      url: https://zh.wikipedia.org/wiki/林爽文事件
+
+- id: tw-wu-sha
+  year: 1796
+  title: 吳沙入墾蛤仔難，漢人進入蘭陽平原
+  category: economy
+  importance: 3
+  desc: 吳沙率漳、泉、粵三籍墾民由烏石港一帶進入蛤仔難，築土圍據守，即今頭城。這是漢人成規模進入蘭陽平原的開端，也把噶瑪蘭族的生存空間往內壓縮。當時蛤仔難還在清朝版圖之外，官方既不保護也不承認；要到 1808 年吳化等人把已開墾的戶口造冊呈給閩浙總督，1812 年設噶瑪蘭廳，這片土地才被納進行政體系 —— 開墾走在治權前面，是清代台灣拓墾的常態。
+  sources:
+    - title: 維基百科：吳沙
+      url: https://zh.wikipedia.org/wiki/吳沙
+    - title: 維基百科：台灣歷史年表
+      url: https://zh.wikipedia.org/wiki/台灣歷史年表
+
+- id: tw-kavalan-prefecture
+  year: 1811
+  title: 增設噶瑪蘭廳，宜蘭納入版圖
+  category: politics
+  importance: 3
+  desc: 吳沙率漳泉粵移民入墾蘭陽平原後原漢糾紛頻仍，朝廷始設官治理。
+  sources:
+    - title: 維基百科：噶瑪蘭廳
+      url: https://zh.wikipedia.org/wiki/噶瑪蘭廳
+    - title: 維基百科：吳沙
+      url: https://zh.wikipedia.org/wiki/吳沙
+
+- id: tw-guo-bainian
+  year: 1814
+  endYear: 1816
+  title: 郭百年事件，漢人越界侵墾埔里
+  category: war
+  importance: 3
+  desc: 隘丁首黃林旺等人冒用已故通事、土目的名義向臺灣府請領墾照，取得水沙連埔地的開墾權，隨後帶千餘人一路侵墾社仔、水里、沈鹿諸社，最後進佔埔里社築土城，並假冒官方誘使埔社停止抵抗後焚殺。1817 年官方查辦，杖責郭百年、拆城逐佃，在集集與烏溪立碑禁越 —— 但埔社元氣已盡，只能招西部的平埔族群遷入依附自保，中部平埔各社大舉入埔就是從這裡開始。番界擋得住合法的墾照，擋不住一張假的。
+  sources:
+    - title: 維基百科：郭百年事件
+      url: https://zh.wikipedia.org/wiki/郭百年事件
+    - title: 維基百科：水沙連
+      url: https://zh.wikipedia.org/wiki/水沙連
+
+- id: tw-zhang-bing
+  year: 1832
+  title: 張丙事件，道光年間中南部的大民變
+  category: war
+  importance: 3
+  desc: 道光十二年台灣歉收，官府禁止米糧出境卻執行不公，店仔口（今台南白河）的張丙又被誣為強盜，遂於九月底起事。起事者連克佳里興等地，先後擊敗嘉義知縣邵用之與知府呂志恆，各地紛起響應，直到欽差馬濟勝率軍渡台，在鐵線橋一役獲勝才告平息，首謀解京凌遲。事件中閩粵兩籍互相攻殺，加深了族群裂痕，也讓清廷再度正視台灣的治理問題，與朱一貴、林爽文、戴潮春並列清治時期的大民變。
+  sources:
+    - title: 維基百科：張丙事件
+      url: https://zh.wikipedia.org/wiki/張丙事件
+
+- id: tw-dingxia-conflict
+  year: 1853
+  title: 頂下郊拚，同安人敗走大稻埕
+  category: war
+  importance: 3
+  desc: 艋舺的三邑人（頂郊）與同安人（下郊）因港口貿易利益與族群矛盾爆發大規模分類械鬥。同安人戰敗後背負霞海城隍神像避走大稻埕，帶動大稻埕商業與街肆興起。
+  sources:
+    - title: 維基百科：頂下郊拚
+      url: https://zh.wikipedia.org/wiki/頂下郊拚
+
+- id: tw-lin-gong
+  year: 1853
+  title: 林恭事件，太平天國波及下的南部民變
+  category: war
+  importance: 2
+  desc: 太平天國席捲閩南，小刀會在廈門起事，清廷對台灣的控制一時鬆動。四月，鳳山的小刀會首領林恭率眾攻入鳳山縣城，殺知縣王廷幹，自立為縣令，進而圍攻台南府城；北路的張古、羅阿沙同時響應。兩個月後林恭在二層行溪戰敗退往東港，七月遭部下綁縛交官，與佔據灣裡街的李石一同被斬。它與同年台北的頂下郊拚幾乎同時，顯示大陸動亂如何直接傳導到海峽這一側。
+  sources:
+    - title: 維基百科：林恭
+      url: https://zh.wikipedia.org/wiki/林恭
+
+- id: tw-perry-keelung
+  year: 1854
+  title: 培理艦隊勘查基隆煤礦
+  category: politics
+  importance: 3
+  desc: 前一年叩關日本的同一支艦隊北上，在基隆停泊十日。培理返國後主張佔領臺灣未獲採納，但其報告引起歐美各國對臺灣的注意。
+  sources:
+    - title: 維基百科：馬修·培里
+      url: https://zh.wikipedia.org/wiki/馬修·培里
+    - title: 維基百科：臺灣清治時期
+      url: https://zh.wikipedia.org/wiki/臺灣清治時期
+
+- id: tw-treaty-ports
+  year: 1858
+  title: 天津條約，台灣開港通商
+  category: economy
+  importance: 4
+  desc: 茶、糖、樟腦成為出口大宗，北部因茶業興起而快速發展。
+  sources:
+    - title: 維基百科：天津條約
+      url: https://zh.wikipedia.org/wiki/天津條約
+    - title: 維基百科：臺灣清治時期
+      url: https://zh.wikipedia.org/wiki/臺灣清治時期
+
+- id: tw-catholic-return
+  year: 1859
+  title: 道明會士抵打狗，天主教重返台灣
+  category: religion
+  importance: 3
+  desc: 距離荷西時期的傳教中斷已逾兩百年。
+  sources:
+    - title: 維基百科：玫瑰聖母聖殿主教座堂
+      url: https://zh.wikipedia.org/wiki/玫瑰聖母聖殿主教座堂
+
+- id: tw-dai-chaochun
+  year: 1862
+  title: 戴潮春事件
+  category: war
+  importance: 3
+  desc: 清代臺灣三大民變的最後一起，與朱一貴、林爽文事件並稱。
+  sources:
+    - title: 維基百科：戴潮春事件
+      url: https://zh.wikipedia.org/wiki/戴潮春事件
+
+- id: tw-maxwell
+  year: 1865
+  title: 馬雅各在台南行醫傳教
+  category: religion
+  importance: 3
+  sources:
+    - title: 維基百科：馬雅各
+      url: https://zh.wikipedia.org/wiki/馬雅各
+
+- id: tw-rover-incident
+  year: 1867
+  title: 羅發號事件，李仙得與卓杞篤締結南岬之盟
+  category: politics
+  importance: 4
+  desc: 美國商船羅發號於恆春遇難，船員登陸後遭原住民殺害。美軍派兵登陸攻擊未果，駐廈門領事李仙得隨後與排灣族十八社總頭目卓杞篤談判，簽署《南岬之盟》保護遇難外國船員，為臺灣原住民與外國簽署的首份國際協議。
+  sources:
+    - title: 維基百科：羅發號事件
+      url: https://zh.wikipedia.org/wiki/羅發號事件
+    - title: 維基百科：卓杞篤
+      url: https://zh.wikipedia.org/wiki/卓杞篤
+
+- id: tw-camphor-war
+  year: 1868
+  title: 樟腦戰爭，樟腦開放自由貿易
+  category: economy
+  importance: 3
+  desc: 英商因樟腦專賣與官府衝突，英艦砲擊安平。此後臺灣樟腦成為國際市場的主要來源。
+  sources:
+    - title: 維基百科：樟腦戰爭
+      url: https://zh.wikipedia.org/wiki/樟腦戰爭
+
+- id: tw-mackay
+  year: 1872
+  title: 馬偕抵淡水，行醫與辦學
+  category: religion
+  importance: 3
+  sources:
+    - title: 維基百科：馬偕
+      url: https://zh.wikipedia.org/wiki/馬偕
+
+- id: tw-mudan
+  year: 1874
+  title: 牡丹社事件，日本出兵台灣
+  category: war
+  importance: 4
+  desc: 促使清廷改變消極治台方針，轉向開山撫番與積極經營。
+  sources:
+    - title: 維基百科：牡丹社事件
+      url: https://zh.wikipedia.org/wiki/牡丹社事件
+
+- id: tw-shen-baozhen
+  year: 1875
+  title: 沈葆楨開山撫番，解除渡臺禁令
+  category: politics
+  importance: 4
+  desc: 牡丹社事件後治臺方針由消極轉為積極。增設臺北府與恆春縣，開闢通往後山的道路，並解除實行近兩百年的渡臺限制。
+  sources:
+    - title: 維基百科：沈葆楨
+      url: https://zh.wikipedia.org/wiki/沈葆楨
+    - title: 維基百科：開山撫番
+      url: https://zh.wikipedia.org/wiki/開山撫番
+    - title: 維基百科：渡臺禁令
+      url: https://zh.wikipedia.org/wiki/渡臺禁令
+
+- id: tw-shitou-she
+  year: 1875
+  title: 獅頭社之役，開山撫番南路的第一場硬仗
+  category: war
+  importance: 3
+  desc: 沈葆楨要打通往恆春與後山的道路，與屏東山區的排灣族大龜文酋邦正面衝突。前一年獅頭社人被刺桐腳庄民殺害、日軍又借牡丹社事件侵入原住民領地，雙方積怨已深。清軍以淮軍主力進攻內外獅頭社，王開俊中伏陣亡、所部全軍覆沒，戰事拖了三個月、動員數千人才勉強收場，是沈葆楨在台期間規模最大的一場戰爭。戰後清廷把竹坑、內外獅頭等社改成「永平」「永化」之類的名字，宣示教化，實際上是用地名蓋住一場慘勝。
+  sources:
+    - title: 維基百科：獅頭社之役
+      url: https://zh.wikipedia.org/wiki/獅頭社之役
+
+- id: tw-cepo
+  year: 1877
+  title: 大港口事件，阿美族壯丁遭設宴誘殺
+  category: war
+  importance: 3
+  desc: 開山撫番中路推進到花蓮秀姑巒溪口，總兵吳光亮要開闢水尾到大港口的道路，遭大港口、奇密等阿美族部落抵抗。清軍武力不能得手，改以宴請和解為名把部落壯丁集中起來，趁其酒醉一舉射殺。大港口一帶的青壯世代幾乎滅絕，倖存者逃入山區或投靠其他部落。它與次年的加禮宛戰役同為開山撫番在東部留下的血債；2022 年豐濱鄉公所將它正名為「Cepo' 戰役」。
+  sources:
+    - title: 維基百科：大港口事件
+      url: https://zh.wikipedia.org/wiki/大港口事件
+
+- id: tw-kaliawan
+  year: 1878
+  title: 加禮宛戰役，兩個族群幾乎滅絕
+  category: war
+  importance: 3
+  desc: 開山撫番推進到花蓮奇萊平原，噶瑪蘭族加禮宛社與撒奇萊雅族聯合抗清，戰敗後兩族幾乎滅絕，倖存者改說阿美語、藏身在阿美族部落之中，此後一百多年不再以自己的族名出現。協助清軍的七腳川社因此成為奇萊平原最大的部落。這兩族到 2002 年與 2007 年才分別獲得官方正名 —— 一場戰役讓兩個族群從族譜上消失了一個多世紀，是開山撫番這面「積極經營」旗幟下的另一面。
+  sources:
+    - title: 維基百科：加禮宛戰役
+      url: https://zh.wikipedia.org/wiki/加禮宛戰役
+
+- id: tw-sino-french-war
+  year: 1884
+  title: 清法戰爭波及臺灣，法軍攻基隆、佔澎湖
+  category: war
+  importance: 4
+  endYear: 1885
+  desc: 法軍封鎖臺灣、數度攻擊基隆與淡水，並一度佔領澎湖。此役凸顯臺灣的海防地位，直接促成隔年建省。
+  sources:
+    - title: 維基百科：西仔反
+      url: https://zh.wikipedia.org/wiki/西仔反
+    - title: 維基百科：滬尾之役
+      url: https://zh.wikipedia.org/wiki/滬尾之役
+    - title: 維基百科：中法戰爭
+      url: https://zh.wikipedia.org/wiki/中法戰爭
+
+- id: tw-province
+  year: 1885
+  title: 台灣建省，劉銘傳任首任巡撫
+  category: politics
+  importance: 5
+  desc: 清法戰爭讓清廷確認台灣的戰略地位，光緒十一年下詔建省，與福建分治，劉銘傳以巡撫身分主政，行政區擴為三府一州十一縣三廳，省會定在台北。建省後推動清賦、鐵路、郵政、電報、電燈、煤礦、新式學堂等一連串新政，是清治台灣最積極的六年；但財政壓力沉重，清賦又激起民變，劉銘傳 1891 年去職後多數事業轉趨保守，四年後台灣即割讓日本。
+  sources:
+    - title: 維基百科：福建臺灣省
+      url: https://zh.wikipedia.org/wiki/福建臺灣省
+    - title: 維基百科：劉銘傳
+      url: https://zh.wikipedia.org/wiki/劉銘傳
+
+- id: tw-qingfu
+  year: 1886
+  title: 清賦，全台土地清丈與稅制整理
+  category: economy
+  importance: 3
+  desc: 劉銘傳為了替建省後的新政籌錢，設清賦總局清查全台隱匿的田地，把清初以來大租戶、小租戶層層疊疊的權利關係重新登記，改以小租戶為納稅主體、大租減四留六。清出的田畝數倍於舊冊，稅收大增，卻也因丈量草率、官吏需索而民怨四起，兩年後在彰化激起施九緞事件、在後山激起大庄事件，清丈被迫中止。這份不完整的田冊後來成為日治初期土地調查的底本。
+  sources:
+    - title: 維基百科：劉銘傳
+      url: https://zh.wikipedia.org/wiki/劉銘傳
+    - title: 維基百科：施九緞事件
+      url: https://zh.wikipedia.org/wiki/施九緞事件
+
+- id: tw-railway-bureau-qing
+  year: 1887
+  title: 全臺鐵路商務總局成立，鐵路動工
+  category: economy
+  importance: 3
+  desc: 劉銘傳主導，原規劃基隆經台北、新竹通到台南。1891 年他去職後，繼任巡撫以財政困難奏請中止。
+  sources:
+    - title: 維基百科：全臺鐵路商務總局
+      url: https://zh.wikipedia.org/wiki/全臺鐵路商務總局
+    - title: 維基百科：劉銘傳
+      url: https://zh.wikipedia.org/wiki/劉銘傳
+
+- id: tw-shi-jiuduan
+  year: 1888
+  title: 施九緞事件，清丈激起建省後最大民變
+  category: war
+  importance: 3
+  desc: 淡水知縣李嘉棠奉派到彰化丈量土地，敷衍了事又藉機需索，地主施九緞以「索焚丈單」為號召率數千民眾圍彰化縣城，前來解圍的提督朱煥明戰死，全縣一度失序。林朝棟率棟軍一千八百人內外夾擊才解圍。事後李嘉棠革職，施九緞受民眾掩護始終未被捕，參與者也多從寬發落。這是建省以來規模最大的民變，直接讓劉銘傳的清賦停擺，新政財源斷絕，三年後他也去職。
+  sources:
+    - title: 維基百科：施九緞事件
+      url: https://zh.wikipedia.org/wiki/施九緞事件
+
+- id: tw-dazhuang
+  year: 1888
+  title: 大庄事件，北洋艦隊首次渡海登陸作戰
+  category: war
+  importance: 3
+  desc: 花東縱谷的大庄（今花蓮富里）以大武壠族為主的移民，因撫墾局委員雷福海藉清丈之便欺壓居民、凌辱婦女，六月殺雷福海等官吏起事，隨後阿美族、客家移民與卑南族呂家望社加入，北路打到花蓮港、南路圍攻卑南廳署，是清治時期東部最大的一場反抗。清廷從北洋調來致遠、靖遠兩艘巡洋艦以艦砲掩護登陸，這是中國近代海軍第一次對台灣的兩棲作戰；戰事到十月才平息，與同年西部的施九緞事件一東一西同源於清賦。
+  sources:
+    - title: 維基百科：大庄事件
+      url: https://zh.wikipedia.org/wiki/大庄事件
+
+- id: tw-taiwan-post
+  year: 1888
+  title: 臺灣郵政總局開辦，劉銘傳新政的高峰
+  category: science
+  importance: 3
+  desc: 劉銘傳在台北府城設臺灣郵政總局，兼收官方文書與民間信件並發行郵票，比大清郵政官局正式成立早了八年。同一時期他還鋪設台北到台南與跨海到福州的電報線、在台北點亮全台第一盞電燈、開辦教授外語與西學的西學堂與電報學堂、興建台北到基隆的鐵路。這些事業多集中在 1887 到 1888 年，是清治台灣近代化的頂點；但財政不堪負荷加上清賦引發民變，多數事業在他 1891 年去職後或停辦或縮減。
+  sources:
+    - title: 維基百科：臺灣郵政
+      url: https://zh.wikipedia.org/wiki/臺灣郵政
+    - title: 維基百科：劉銘傳
+      url: https://zh.wikipedia.org/wiki/劉銘傳
+
+- id: tw-railway-qing
+  year: 1891
+  title: 台北—基隆鐵路通車，台灣首條鐵路
+  category: economy
+  importance: 3
+  desc: 首段由大稻埕通至基隆，1893 年才延伸到新竹。清代的建設止步於此，原訂的台南段未及動工。
+  sources:
+    - title: 維基百科：劉銘傳
+      url: https://zh.wikipedia.org/wiki/劉銘傳
+    - title: 維基百科：臺灣鐵路
+      url: https://zh.wikipedia.org/wiki/臺灣鐵路
+
+- id: tw-shimonoseki
+  year: 1895
+  title: 馬關條約割台；台灣民主國與乙未戰爭
+  category: politics
+  importance: 5
+  desc: 割讓消息傳來後士紳宣布成立台灣民主國抵抗，數月內為日軍所平。
+  sources:
+    - title: 維基百科：馬關條約
+      url: https://zh.wikipedia.org/wiki/馬關條約
+    - title: 維基百科：臺灣民主國
+      url: https://zh.wikipedia.org/wiki/臺灣民主國
+    - title: 維基百科：乙未戰爭
+      url: https://zh.wikipedia.org/wiki/乙未戰爭
+
+- id: tw-law-63
+  year: 1896
+  title: 六三法，總督獨攬立法權
+  category: politics
+  importance: 3
+  desc: 授權總督在臺灣發布具法律效力的命令，行政、立法、司法與軍事大權集於一身。這是「特別統治」的法源。
+  sources:
+    - title: 維基百科：六三法
+      url: https://zh.wikipedia.org/wiki/六三法
+    - title: 維基百科：臺灣總督府
+      url: https://zh.wikipedia.org/wiki/臺灣總督府
+
+- id: tw-nationality-deadline
+  year: 1897
+  title: 住民去就決定日，台灣人被自動變成日本國民
+  category: politics
+  importance: 4
+  desc: 《馬關條約》給了台灣住民兩年的猶豫期，1897 年 5 月 8 日是最後期限 —— 這一天之前離開的仍是大清子民，沒有離開的依「台灣人民國籍處分辦法」自動成為日本國民。實際離開的以官紳與商人為主，佔全島人口極小的比例，絕大多數人不是選擇留下，而是根本無處可去。台灣人的國籍第一次由一紙條約決定，而做決定的兩個政府都不在這座島上。
+  sources:
+    - title: 維基百科：住民去就決定日
+      url: https://zh.wikipedia.org/wiki/住民去就決定日
+
+- id: tw-goto
+  year: 1898
+  title: 後藤新平任民政長官，展開殖民地經營
+  category: politics
+  importance: 4
+  desc: 以調查與統計為基礎推動土地、戶口、度量衡與衛生制度。
+  sources:
+    - title: 維基百科：後藤新平
+      url: https://zh.wikipedia.org/wiki/後藤新平
+
+- id: tw-land-survey
+  year: 1898
+  endYear: 1905
+  title: 土地調查事業，一塊地只留一個業主
+  category: economy
+  importance: 4
+  desc: 逐筆丈量全島田園、清查清代以來未曾課稅的隱田，並以公債買斷大租權，終結一田二主的舊慣。課稅面積增為原本的兩倍多，地租收入跟著大幅躍升，成為總督府 1905 年財政獨立的第一根柱子；土地也第一次可以抵押與買賣，後來的糖業擴張與大型水利工程都建立在這個基礎上。
+  sources:
+    - title: 維基百科：土地調查事業
+      url: https://zh.wikipedia.org/wiki/土地調查事業
+    - title: 維基百科：一田二主
+      url: https://zh.wikipedia.org/wiki/一田二主
+
+- id: tw-public-school
+  year: 1898
+  title: 公學校開辦，台灣人的初等教育體系成形
+  category: culture
+  importance: 3
+  desc: 總督府把各地國語傳習所改制為公學校，收台灣本島人子弟；在台日本人另讀小學校，原住民另讀蕃人公學校，一開始就是三軌並行。就學率從個位數逐年爬升，1941 年改制國民學校、1943 年實施義務教育之後突破七成。這是台灣識字率與日語普及的主要管道，也是差別待遇最具體的地方 —— 同一個島上三種學校、三套課程。
+  sources:
+    - title: 維基百科：公學校
+      url: https://zh.wikipedia.org/wiki/公學校
+
+- id: tw-medical-school
+  year: 1899
+  title: 台灣總督府醫學校成立
+  category: science
+  importance: 3
+  sources:
+    - title: 維基百科：臺灣總督府醫學校
+      url: https://zh.wikipedia.org/wiki/臺灣總督府醫學校
+
+- id: tw-railway-bureau-japan
+  year: 1899
+  title: 總督府鐵道部成立，縱貫線改為官辦
+  category: economy
+  importance: 3
+  desc: 民間業者募款接連失敗後改由官方主導，西部縱貫線的興建自此加速。
+  sources:
+    - title: 維基百科：臺灣總督府鐵道部
+      url: https://zh.wikipedia.org/wiki/臺灣總督府鐵道部
+
+- id: tw-bank-of-taiwan
+  year: 1899
+  title: 臺灣銀行成立，發行臺灣銀行券
+  category: economy
+  importance: 4
+  desc: 臺灣銀行作為日治時期的中央與商業銀行成立，發行獨立貨幣「臺灣銀行券」。臺灣銀行的創立統一了全臺貨幣與金融體系，為殖民地產業、交通建設與貿易提供資金支撐。
+  sources:
+    - title: 維基百科：臺灣銀行
+      url: https://zh.wikipedia.org/wiki/臺灣銀行
+    - title: 維基百科：臺灣銀行券
+      url: https://zh.wikipedia.org/wiki/臺灣銀行券
+
+- id: tw-taiwan-sugar
+  year: 1900
+  title: 臺灣製糖株式會社成立，新式糖業起步
+  category: economy
+  importance: 3
+  desc: 三井財閥在總督府扶植下成立臺灣製糖株式會社，隔年在橋仔頭建成台灣第一座新式機械糖廠。總督府隨後以原料採取區域制把蔗農綁在指定糖廠，日本資本的糖廠在十年內增至十餘座，糖取代茶成為台灣最大宗出口品，到 1930 年代年產二十餘億斤。「第一憨，種甘蔗給會社磅」這句俗諺說的就是這個體制：蔗農沒有議價權，1925 年的二林事件正是由此而起。
+  sources:
+    - title: 維基百科：臺灣製糖
+      url: https://zh.wikipedia.org/wiki/臺灣製糖
+
+- id: tw-monopoly-bureau
+  year: 1901
+  title: 專賣局成立，鴉片、樟腦、食鹽收歸官營
+  category: economy
+  importance: 4
+  desc: 總督府把先後開辦的鴉片（1897）、食鹽與樟腦（1899）三項專賣合併由專賣局經營，此後再加入菸草（1905）與酒（1922）。專賣收入長期佔歲入的三成到五成，是殖民地財政自立的關鍵；其中鴉片採「漸禁」而非嚴禁，靠特許牌照收稅，既是財政成就也是道德代價。這套機構戰後由臺灣省專賣局、公賣局一路承接下來。
+  sources:
+    - title: 維基百科：臺灣總督府專賣局
+      url: https://zh.wikipedia.org/wiki/臺灣總督府專賣局
+
+- id: tw-armed-resistance-crushed
+  year: 1902
+  title: 武裝抗日勢力大致肅清
+  category: war
+  importance: 3
+  desc: 據總督府自身的統計，統治前八年約三萬二千人遭殺害，超過當時總人口的百分之一。此後漢人抗日沉寂約五年。
+  sources:
+    - title: 維基百科：臺灣日治時期
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期
+
+- id: tw-census
+  year: 1905
+  title: 首次戶口普查，人口約三百萬
+  category: economy
+  importance: 3
+  sources:
+    - title: 維基百科：臨時臺灣戶口調查
+      url: https://zh.wikipedia.org/wiki/臨時臺灣戶口調查
+
+- id: tw-rihan-policy
+  year: 1905
+  title: 理蕃政策與隘勇線推進
+  category: politics
+  importance: 3
+  desc: 總督府為控有高山山林與樟腦資源，大規模實施「理蕃政策」並推進行政與軍事的「隘勇線」。透過武力封鎖與討伐戰事，強行將高山原住民部落與山地納入殖民統治網絡。
+  sources:
+    - title: 維基百科：理蕃政策
+      url: https://zh.wikipedia.org/wiki/理蕃政策
+    - title: 維基百科：隘勇
+      url: https://zh.wikipedia.org/wiki/隘勇
+
+- id: tw-meishan-quake
+  year: 1906
+  title: 梅山大地震，嘉義一帶死亡逾一千二百人
+  category: politics
+  importance: 2
+  desc: 3 月 17 日清晨梅山斷層錯動，規模 7.1，嘉義、斗六、鹽水港一帶房屋倒塌六千餘間，至少 1258 人罹難。震後嘉義市街依市區改正重建成棋盤格局，也促成總督府增設測候所 —— 台灣的地震測報，是被這一場與 1935 年新竹台中大地震先後推出來的。
+  sources:
+    - title: 維基百科：1906年梅山地震
+      url: https://zh.wikipedia.org/wiki/1906年梅山地震
+
+- id: tw-beipu-incident
+  year: 1907
+  title: 北埔事件，蔡清琳率眾襲擊日警
+  category: war
+  importance: 2
+  desc: 新竹北埔的蔡清琳以「復中興」為名號召隘勇與賽夏族人，十一月襲擊北埔支廳與各隘勇監督所，殺日籍官民五十餘人。總督府迅速鎮壓，蔡清琳被賽夏族人所殺，餘眾多遭處死。這是 1902 年武裝抗日勢力大致肅清之後，第一起再度爆發的漢人武裝反抗，開啟了苗栗事件、西來庵事件這一波以秘密結社為底的抗日。
+  sources:
+    - title: 維基百科：北埔事件
+      url: https://zh.wikipedia.org/wiki/北埔事件
+
+- id: tw-trunk-railway
+  year: 1908
+  title: 縱貫鐵路全線通車
+  category: economy
+  importance: 4
+  desc: 基隆到高雄一日可達，西部平原自此連成一個市場。
+  sources:
+    - title: 維基百科：縱貫線 (鐵路)
+      url: https://zh.wikipedia.org/wiki/縱貫線_(鐵路)
+
+- id: tw-miaoli-incident
+  year: 1913
+  title: 苗栗事件，羅福星等抗日組織遭破獲
+  category: war
+  importance: 3
+  desc: 曾參加辛亥革命的羅福星以同盟會名義回台秘密招募黨員，計畫以苗栗為據點起事，1913 年底事洩被捕。總督府把同一時期台中、南投、台南等地另外四起密謀併案，隔年二月在苗栗設臨時法庭集中審判，判死刑二十人，羅福星在台北刑務所處絞。辛亥革命成功後中國對台灣知識分子的號召力在這裡第一次具體顯現，而總督府的處置也讓武裝抗日走到尾聲，兩年後的西來庵是最後一次。
+  sources:
+    - title: 維基百科：苗栗事件
+      url: https://zh.wikipedia.org/wiki/苗栗事件
+
+- id: tw-truku-war
+  year: 1914
+  title: 太魯閣戰爭，二十世紀台灣本島最大的戰役
+  category: war
+  importance: 3
+  desc: 總督佐久間左馬太自 1910 年起推動「五年理蕃計畫」，以武力把隘勇線推進到山地深處，最後的目標是東部的太魯閣族。1914 年五月到八月，日軍與警察約兩萬人分東西兩路夾攻，對手是總人口不到萬人的太魯閣各部落；佐久間本人在戰場墜崖負傷，隔年去世。太魯閣族戰敗後被強制遷往山腳，槍枝全數沒收，山地全面納入警察駐在所的管理。五年理蕃計畫至此結束，往後的理蕃轉向「教化」，直到 1930 年霧社事件證明那套教化的底下是什麼。
+  sources:
+    - title: 維基百科：太魯閣戰爭
+      url: https://zh.wikipedia.org/wiki/太魯閣戰爭
+
+- id: tw-xilaian
+  year: 1915
+  title: 西來庵事件，最後一次大規模武裝抗日
+  category: war
+  importance: 4
+  desc: 余清芳以台南西來庵為據點，藉齋教信仰與符咒號召，宣稱建立「大明慈悲國」，聯合羅俊、江定在噍吧哖（今台南玉井）起事，襲擊南庄派出所後遭日軍圍剿。事後被判死刑者八百六十六人，實際處決九十五人，其餘因大正天皇即位減刑，是日治時期判刑最重的一案；日軍在噍吧哖一帶的報復性屠殺，民間估計死者數以千計。此後漢人的武裝抗日結束，反抗轉入政治與文化運動。
+  sources:
+    - title: 維基百科：西來庵事件
+      url: https://zh.wikipedia.org/wiki/西來庵事件
+
+- id: tw-dafen-incident
+  year: 1915
+  title: 大分事件，布農族襲擊駐在所
+  category: war
+  importance: 2
+  desc: 總督府在山地沒收原住民的槍枝，斷了布農族的狩獵生計。花蓮玉里郡大分的布農族人在拉荷阿雷兄弟率領下襲擊大分駐在所，殺警察十二人。此後拉荷阿雷退入荖濃溪上游的玉穗社，以游擊方式對抗近二十年，是台灣原住民抗日最持久的一支，直到 1933 年才與日方「和解」。它與同年的西來庵事件一在山地、一在平地，說明武裝反抗在漢人社會結束之後，山地還持續了很久。
+  sources:
+    - title: 維基百科：大分事件
+      url: https://zh.wikipedia.org/wiki/大分事件
+
+- id: tw-civilian-governor
+  year: 1919
+  title: 首任文官總督，推行內地延長主義
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：田健治郎
+      url: https://zh.wikipedia.org/wiki/田健治郎
+    - title: 維基百科：臺灣總督
+      url: https://zh.wikipedia.org/wiki/臺灣總督
+
+- id: tw-education-rescript
+  year: 1919
+  title: 頒布《臺灣教育令》，殖民地教育體系定型
+  category: culture
+  importance: 3
+  desc: 第一次《臺灣教育令》把台灣人的普通教育、實業教育、專門教育與師範教育整套規定下來，但與在台日本人的學校系統分立，年限與課程都不同。1922 年的第二次教育令改採「內台共學」，名義上取消差別，實際上以日語能力作為入學門檻，結果仍是分流。中等以上學校台灣人名額長期偏低，醫學與農林之外的路很窄 —— 這是日治時期台灣人專業階層以醫師為主的制度原因。
+  sources:
+    - title: 維基百科：臺灣教育令
+      url: https://zh.wikipedia.org/wiki/臺灣教育令
+
+- id: tw-admin-reform-1920
+  year: 1920
+  title: 地方制度改正，五州二廳；地名雅化
+  category: politics
+  importance: 4
+  desc: 今日臺灣的行政區界大致在此確立，此後變動極少。打狗改高雄、枋橋改板橋、噍吧哖改玉井，多數新地名沿用至今。
+  sources:
+    - title: 維基百科：町名改正
+      url: https://zh.wikipedia.org/wiki/町名改正
+    - title: 維基百科：臺灣日治時期
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期
+
+- id: tw-general-history
+  year: 1920
+  title: 連橫《臺灣通史》出版
+  category: culture
+  importance: 3
+  desc: 連橫以傳統紀傳體寫成的台灣史著，1920 年出上中冊、翌年出下冊，在台北大稻埕自設發行所。這是台灣人第一次替自己的島寫一部通史 —— 在此之前的台灣記載都出自方志、遊記或殖民者的調查報告，敘事的主體從來不是島上的人。書中史料考訂的疏漏後來屢遭學界指出，但它在殖民統治下宣告「台灣有自己的歷史」這件事，分量不在考據。
+  sources:
+    - title: 維基百科：臺灣通史
+      url: https://zh.wikipedia.org/wiki/臺灣通史
+
+- id: tw-shinminkai
+  year: 1920
+  title: 新民會成立、《臺灣青年》創刊，政治運動從東京起步
+  category: politics
+  importance: 3
+  desc: 在東京的台灣留學生以林獻堂為會長組成新民會，是日治時期台灣人第一個政治運動團體，同年七月創刊《臺灣青年》雜誌，鼓吹民族自決與白話文。留學生在日本看到大正民主與民族自決的風潮，把「以合法手段爭取台灣人權利」帶回島內：新民會催生了隔年的議會設置請願運動與台灣文化協會，《臺灣青年》幾經改名後成為《臺灣民報》。武裝抗日結束五年後，台灣人的抵抗以另一種形式重新開始。
+  sources:
+    - title: 維基百科：新民會 (臺灣)
+      url: https://zh.wikipedia.org/wiki/新民會_(臺灣)
+
+- id: tw-cultural-association
+  year: 1921
+  title: 台灣文化協會成立
+  category: culture
+  importance: 4
+  desc: 蔣渭水、林獻堂等人在台北成立台灣文化協會，以讀報社、文化講演、夏季學校、文化劇與電影巡迴放映向大眾啟蒙，會員以醫師、教師、地主為主，是日治時期最大的社會文化團體。抗爭手段從武裝轉向文化啟蒙與議會請願。1927 年左右派分裂：連溫卿、王敏川的左派掌握協會轉向階級路線，蔣渭水等舊幹部另組台灣民眾黨，林獻堂一系再分出地方自治聯盟。分裂後的協會受台共影響，1931 年隨大搜捕而瓦解。
+  sources:
+    - title: 維基百科：臺灣文化協會
+      url: https://zh.wikipedia.org/wiki/臺灣文化協會
+
+- id: tw-parliament-petition
+  year: 1921
+  title: 臺灣議會設置請願運動
+  category: politics
+  importance: 4
+  endYear: 1934
+  desc: 十四年間十五次向帝國議會請願，要求設置由臺灣人選出的議會。1923 年當局以治警事件大舉搜捕，運動終未成事。
+  sources:
+    - title: 維基百科：臺灣議會設置請願運動
+      url: https://zh.wikipedia.org/wiki/臺灣議會設置請願運動
+    - title: 維基百科：治警事件
+      url: https://zh.wikipedia.org/wiki/治警事件
+
+- id: tw-coast-line
+  year: 1922
+  title: 海線通車，取代山線成為縱貫線主線
+  category: economy
+  importance: 3
+  desc: 竹南經清水到彰化的新線，避開山線的坡度限制。中部西岸的沿海市街隨之發展起來。
+  sources:
+    - title: 維基百科：海岸線 (臺鐵)
+      url: https://zh.wikipedia.org/wiki/海岸線_(臺鐵)
+    - title: 維基百科：縱貫線 (鐵路)
+      url: https://zh.wikipedia.org/wiki/縱貫線_(鐵路)
+
+- id: tw-taiwan-minpao
+  year: 1923
+  title: 《臺灣民報》創刊，臺灣人的唯一言論機關
+  category: culture
+  importance: 3
+  desc: 蔣渭水、蔡培火等於東京創辦《臺灣民報》（前身為《臺灣青年》與《臺灣》），後獲准回臺發行。作為日治時期臺灣人唯一自治的言論機關，積極宣揚民主思想、漢文白話文與啟蒙運動。
+  sources:
+    - title: 維基百科：臺灣民報
+      url: https://zh.wikipedia.org/wiki/臺灣民報
+
+- id: tw-zhijiing-incident
+  year: 1923
+  title: 治警事件，蔣渭水等政治領袖遭逮捕
+  category: politics
+  importance: 4
+  desc: 蔣渭水、蔡培火等成立「臺灣議會期成同盟會」，總督府以違反《治安警察法》發動全臺大搜捕，起訴十八名政治運動領袖。治警事件引發全臺與日本國內輿論關注，成為日治政治運動的重要里程碑。
+  sources:
+    - title: 維基百科：治警事件
+      url: https://zh.wikipedia.org/wiki/治警事件
+    - title: 維基百科：蔣渭水
+      url: https://zh.wikipedia.org/wiki/蔣渭水
+
+- id: tw-yilan-line
+  year: 1924
+  title: 宜蘭線全線通車
+  category: economy
+  importance: 3
+  desc: 1917 年動工，因經費不足而延宕。蘭陽平原首次以公共運輸與台北相連。
+  sources:
+    - title: 維基百科：宜蘭線
+      url: https://zh.wikipedia.org/wiki/宜蘭線
+
+- id: tw-new-old-literature-debate
+  year: 1924
+  title: 新舊文學論戰，張我軍砲打舊詩壇
+  category: culture
+  importance: 3
+  desc: 在北京親歷五四文學革命的張我軍，在《臺灣民報》發表〈致台灣青年的一封信〉與〈糟糕的台灣文學界〉，痛批島內詩社擊缽吟詩、附庸風雅，主張以白話文寫台灣的現實。古典文人連橫等人撰文反擊，論戰持續兩三年，白話文與新文學自此站穩腳跟，賴和、楊逵這一代作家隨之登場。1930 年黃石輝、郭秋生再掀起台灣話文論戰，主張用漢字寫台語，「該用哪一種語言寫台灣」的問題從此一直延續到戰後。
+  sources:
+    - title: 維基百科：臺灣日治時期新舊文學論戰
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期新舊文學論戰
+
+- id: tw-erlin-incident
+  year: 1925
+  title: 二林事件，蔗農第一次集體對抗糖廠
+  category: economy
+  importance: 3
+  desc: 彰化二林的蔗農不滿林本源製糖收購價低於鄰近糖廠、秤量又不透明，在李應章醫師等人協助下組成蔗農組合，要求先公布價格再採收。十月糖廠強行收割，蔗農與前來護衛的警察衝突，九十餘人被捕、二十餘人判刑。這是台灣第一起有組織的農民運動，直接催生了隔年的臺灣農民組合，也讓文化協會的啟蒙路線開始往階級問題傾斜。
+  sources:
+    - title: 維基百科：二林事件
+      url: https://zh.wikipedia.org/wiki/二林事件
+
+- id: tw-taitung-line
+  year: 1926
+  title: 台東線花蓮—台東通車
+  category: economy
+  importance: 3
+  desc: 花東縱谷南北貫通。但軌距與西部不同，要到 1982 年拓寬後列車才能從台北直駛台東。
+  sources:
+    - title: 維基百科：臺東線
+      url: https://zh.wikipedia.org/wiki/臺東線
+
+- id: tw-horai-rice
+  year: 1926
+  title: 蓬萊米命名問世，臺灣農業重大轉型
+  category: science
+  importance: 4
+  desc: 磯永吉與末永仁在臺試種日本稻成功，1926 年總督伊澤多喜男正式命名為「蓬萊米」。蓬萊米口感符合日本市場需求且產量大增，成功取代在地在來米，成為臺灣外銷日本的核心農產品與農業現代化代表。
+  sources:
+    - title: 維基百科：蓬萊米
+      url: https://zh.wikipedia.org/wiki/蓬萊米
+    - title: 維基百科：磯永吉
+      url: https://zh.wikipedia.org/wiki/磯永吉
+
+- id: tw-farmers-union
+  year: 1926
+  title: 臺灣農民組合成立，農民運動全島化
+  category: politics
+  importance: 3
+  desc: 二林事件之後，鳳山的簡吉把各地為了土地與蔗價而起的農民組合整合成全島性的臺灣農民組合，兩年內支部遍及二十餘處、會員兩萬多人，是日治時期規模最大的社會運動團體，抗爭對象從糖廠擴及退職官員承墾與竹林放領。1927 年文化協會左傾後兩者合流，農組也逐漸受台灣共產黨影響；1929 年總督府發動「二一二大檢舉」全島搜捕，農組被迫轉入地下，簡吉入獄。戰後他再度投入農運，1951 年死於白色恐怖。
+  sources:
+    - title: 維基百科：臺灣農民組合
+      url: https://zh.wikipedia.org/wiki/臺灣農民組合
+
+- id: tw-peoples-party
+  year: 1927
+  title: 臺灣民眾黨成立，首個近代政黨
+  category: politics
+  importance: 3
+  desc: 文化協會左右分裂後，舊幹部另組民眾黨。1931 年遭總督府以結社禁止令解散。
+  sources:
+    - title: 維基百科：臺灣民眾黨 (1927年)
+      url: https://zh.wikipedia.org/wiki/臺灣民眾黨_(1927年)
+
+- id: tw-taihoku-imperial-univ
+  year: 1928
+  title: 臺北帝國大學創立
+  category: culture
+  importance: 4
+  desc: 台灣第一所大學，戰後改制為台灣大學。
+  sources:
+    - title: 維基百科：臺北帝國大學
+      url: https://zh.wikipedia.org/wiki/臺北帝國大學
+
+- id: tw-taiwan-communist-party
+  year: 1928
+  title: 台灣共產黨在上海成立
+  category: politics
+  importance: 3
+  desc: 謝雪紅、林木順等人在共產國際指導下於上海法租界成立「日本共產黨台灣民族支部」，綱領裡首次提出台灣民族與台灣獨立的主張。返台後台共透過農民組合與文化協會擴大影響，並主導工運。1931 年總督府大舉搜捕，全黨瓦解，前後只存在三年多；但它留下的組織與人脈在戰後重新浮現，謝雪紅在二二八事件中組織二七部隊，多位舊黨員在白色恐怖中被處決。
+  sources:
+    - title: 維基百科：台灣共產黨
+      url: https://zh.wikipedia.org/wiki/台灣共產黨
+
+- id: tw-jianan-canal
+  year: 1930
+  title: 嘉南大圳完工
+  category: economy
+  importance: 4
+  desc: 灌溉嘉南平原十五萬甲農地，稻米與甘蔗產量大增。
+  sources:
+    - title: 維基百科：嘉南大圳
+      url: https://zh.wikipedia.org/wiki/嘉南大圳
+    - title: 維基百科：八田與一
+      url: https://zh.wikipedia.org/wiki/八田與一
+
+- id: tw-wushe
+  year: 1930
+  title: 霧社事件
+  category: war
+  importance: 5
+  sources:
+    - title: 維基百科：霧社事件
+      url: https://zh.wikipedia.org/wiki/霧社事件
+
+- id: tw-local-autonomy-league
+  year: 1930
+  title: 臺灣地方自治聯盟成立，合法路線的最後一個團體
+  category: politics
+  importance: 2
+  desc: 民眾黨轉趨激進後，楊肇嘉、林獻堂等溫和派另組地方自治聯盟，只提一項訴求：地方議會由民選產生。它是日治時期台灣人最後一個獲准活動的政治團體 —— 民眾黨隔年即被解散，農組與台共已遭肅清。1935 年總督府開放半數州市街庄議員民選，算是對這個訴求的部分回應；聯盟在 1937 年中日開戰後自行解散，台灣人的政治運動至此全面停擺，直到戰後。
+  sources:
+    - title: 維基百科：臺灣地方自治聯盟
+      url: https://zh.wikipedia.org/wiki/臺灣地方自治聯盟
+
+- id: tw-sunmoonlake-power
+  year: 1934
+  title: 日月潭水力發電所完工
+  category: economy
+  importance: 4
+  desc: 1919 年動工，數度停工復工，歷十五年建成。十萬千瓦的電力是臺灣由農業轉向工業化的基礎。
+  sources:
+    - title: 維基百科：日月潭水力電氣工事
+      url: https://zh.wikipedia.org/wiki/日月潭水力電氣工事
+    - title: 維基百科：大觀發電廠
+      url: https://zh.wikipedia.org/wiki/大觀發電廠
+
+- id: tw-atom-splitting
+  year: 1934
+  title: 台北帝大完成亞洲第一次人工撞擊原子核
+  category: science
+  importance: 3
+  desc: 台北帝國大學首任物理學講座教授荒勝文策帶領團隊自建考克饒夫—瓦耳頓型直線加速器，成功以人工方式擊破鋰原子核，是繼劍橋卡文迪西實驗室之後世界第二例、亞洲第一例。這件事發生在一個被當成農業殖民地經營的島上，距離帝大創校只有六年。荒勝 1936 年轉任京都帝大，戰後其研究室的迴旋加速器遭盟軍總部拆除，實驗紀錄與儀器大量流失。
+  sources:
+    - title: 維基百科：荒勝文策
+      url: https://zh.wikipedia.org/wiki/荒勝文策
+    - title: 維基百科：臺北帝國大學
+      url: https://zh.wikipedia.org/wiki/臺北帝國大學
+
+- id: tw-literary-alliance
+  year: 1934
+  title: 臺灣文藝聯盟成立，政治運動轉進文學
+  category: culture
+  importance: 2
+  desc: 政治運動被壓制之後，全島各路作家在台中集結成立臺灣文藝聯盟，發行《臺灣文藝》，是日治時期最大的文學組織，賴和、張深切、楊逵、呂赫若都在其中。隔年楊逵因路線分歧出走，另辦《臺灣新文學》；1937 年總督府禁止報刊漢文欄，兩份刊物相繼停刊。文學在這幾年承接了政治運動的能量，也是日治時期台灣人用日文與漢文並行寫作最活躍的一段。
+  sources:
+    - title: 維基百科：臺灣文藝聯盟
+      url: https://zh.wikipedia.org/wiki/臺灣文藝聯盟
+
+- id: tw-formosan-classification
+  year: 1935
+  title: 《台灣高砂族系統所屬之研究》確立九族分類
+  category: culture
+  importance: 3
+  desc: 台北帝大的移川子之藏與宮本延人、馬淵東一以系譜與口傳調查寫成，把原住民分成九族。1898 年伊能嘉矩已提出「四群八族十一部」，這一份才成為定本 —— 戰後中華民國政府直接沿用，「九族」進了教科書與觀光地名，用了超過六十年。代價是被歸併進去的族群沒有自己的名字：邵、噶瑪蘭、太魯閣、撒奇萊雅、賽德克後來一個個要靠正名把自己從別族名下拆出來，2001 年起才陸續恢復。學術分類一旦被政府採用，就成了誰存在、誰不存在的行政事實。
+  sources:
+    - title: 維基百科：移川子之藏
+      url: https://zh.wikipedia.org/wiki/移川子之藏
+    - title: 維基百科：臺灣原住民族
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族
+
+- id: tw-1935-earthquake
+  year: 1935
+  title: 新竹—台中大地震，台灣傷亡最慘重的天災
+  category: politics
+  importance: 4
+  desc: 4 月 21 日清晨規模 7.1 的地震，震央在大安溪中游，新竹州與台中州死亡 3276 人、受傷 12053 人，房屋全倒近一萬八千戶。這是台灣有紀錄以來傷亡最慘重的自然災害，至今仍未被超越 —— 一九九九年的 921 地震死亡兩千四百餘人。總督府設震災地復興委員會推動重建，並陸續在新竹、大武、新港、宜蘭設立地震觀測站，台灣的地震觀測網從這場災難之後才真正鋪開。
+  sources:
+    - title: 維基百科：1935年新竹-台中地震
+      url: https://zh.wikipedia.org/wiki/1935年新竹-台中地震
+
+- id: tw-first-election
+  year: 1935
+  title: 首次地方選舉
+  category: politics
+  importance: 4
+  desc: 臺灣史上第一次選舉，選出半數的市會及街庄協議會員，另一半仍為官派；選舉權另有年齡、納稅額與性別的限制。
+  sources:
+    - title: 維基百科：1935年臺灣市會及街庄協議會員選舉
+      url: https://zh.wikipedia.org/wiki/1935年臺灣市會及街庄協議會員選舉
+
+- id: tw-expo-1935
+  year: 1935
+  title: 始政四十周年記念臺灣博覽會
+  category: culture
+  importance: 3
+  desc: 總督府為展示日治四十年的現代化建設成果，於臺北及全臺各地舉辦大型博覽會。五十日展期吸引三百萬人次參觀，展示近代產業、交通、衛生與都市計畫成就，為日治時期規模最大的文化展覽。
+  sources:
+    - title: 維基百科：始政四十周年記念臺灣博覽會
+      url: https://zh.wikipedia.org/wiki/始政四十周年記念臺灣博覽會
+
+- id: tw-kominka
+  year: 1937
+  title: 進入皇民化時期
+  category: culture
+  importance: 4
+  desc: 中日開戰後總督府全面推動皇民化：廢止報紙漢文欄、禁止使用台語與傳統戲曲、推行國語家庭、整理寺廟並鼓勵改信神道、1940 年開放改日本姓名。武官總督自 1936 年復設，台灣被定位為南進基地，工業化與軍需生產同步推進。皇民化到 1941 年成立皇民奉公會、1942 年實施志願兵而達到頂點，八年間改變了一整代台灣人的語言與認同。
+  endYear: 1945
+  sources:
+    - title: 維基百科：皇民化運動
+      url: https://zh.wikipedia.org/wiki/皇民化運動
+
+- id: tw-kominka-hokokai
+  year: 1941
+  title: 皇民奉公會成立，全島動員體制
+  category: politics
+  importance: 3
+  desc: 比照日本內地的大政翼贊會，總督府成立皇民奉公會，總督任總裁，從州廳到街庄部落逐級設支部，把全島居民納入戰時動員網。前一年已開放改日本姓名，這一年起又有奉公壯年團、青年團、產業奉公，隔年實施志願兵。皇民化從「鼓勵」變成「組織」，是日治末期統治最深入日常生活的一步；奉公會在 1945 年六月解散，只留下國民義勇隊準備本土決戰。
+  sources:
+    - title: 維基百科：皇民奉公會
+      url: https://zh.wikipedia.org/wiki/皇民奉公會
+
+- id: tw-takasago-volunteers
+  year: 1942
+  endYear: 1943
+  title: 高砂義勇隊派赴南洋
+  category: war
+  importance: 3
+  desc: 日軍看上原住民的叢林能力，在志願兵制度正式實施之前就先徵調原住民成軍，1942 至 1943 年間分七梯次約四千人送往菲律賓與新幾內亞，擔任開路、搬運與偵察。估計三千餘人戰死，執行特攻任務的「薰空挺隊」全軍覆沒。霧社事件之後被當成統治難題的那批人，十二年後成了帝國最倚重的叢林部隊；戰後他們既不算日本人也未獲任何補償，直到 1974 年阿美族的史尼育唔（中村輝夫）在印尼叢林被尋獲、仍以為戰爭沒有結束，這段歷史才重新被提起。
+  sources:
+    - title: 維基百科：高砂義勇隊
+      url: https://zh.wikipedia.org/wiki/高砂義勇隊
+    - title: 維基百科：臺灣原住民族
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族
+
+- id: tw-volunteer-soldiers
+  year: 1942
+  title: 實施陸軍特別志願兵，臺灣人投入戰場
+  category: war
+  importance: 3
+  desc: 太平洋戰爭擴大後，1943 年增設海軍特別志願兵，1945 年全面實施徵兵制。
+  sources:
+    - title: 維基百科：台籍日本兵
+      url: https://zh.wikipedia.org/wiki/台籍日本兵
+    - title: 維基百科：臺灣日治時期
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期
+
+- id: tw-compulsory-education
+  year: 1943
+  title: 實施六年義務教育，就學率突破七成
+  category: culture
+  importance: 3
+  desc: 1941 年小學校、公學校與蕃人公學校一律改稱國民學校，1943 年起實施六年制義務教育，台灣人學齡兒童就學率升到七成以上。時機並非偶然 —— 這是戰時動員的一環，義務教育與皇民化、志願兵制度是同一套政策的不同面向。戰後中華民國政府接手這套國民學校體制，直到 1968 年才延長為九年。
+  sources:
+    - title: 維基百科：國民學校
+      url: https://zh.wikipedia.org/wiki/國民學校
+    - title: 維基百科：臺灣教育令
+      url: https://zh.wikipedia.org/wiki/臺灣教育令
+
+- id: tw-cairo-declaration
+  year: 1943
+  title: 開羅宣言，聲明台灣戰後歸還中華民國
+  category: politics
+  importance: 4
+  desc: 羅斯福、蔣中正、邱吉爾會於開羅，會後公報聲明日本竊取自中國的領土（含台灣、澎湖）應歸還中華民國。這份文件是兩年後接收台灣的依據，其法律效力與地位至今仍是台灣主權論辯的核心爭點之一。
+  sources:
+    - title: 維基百科：開羅宣言
+      url: https://zh.wikipedia.org/wiki/開羅宣言
+
+- id: tw-allied-bombing
+  year: 1944
+  title: 盟軍空襲臺灣，農工生產崩跌
+  category: war
+  importance: 3
+  endYear: 1945
+  desc: 二十五次大空襲。到 1945 年，農業產值只剩 1937 年的一半，工業產值不到三分之一。
+  sources:
+    - title: 維基百科：臺北大空襲
+      url: https://zh.wikipedia.org/wiki/臺北大空襲
+    - title: 維基百科：臺灣日治時期
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期
+
+- id: tw-retrocession
+  year: 1945
+  title: 日本投降，中華民國接收台灣
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：臺灣光復
+      url: https://zh.wikipedia.org/wiki/臺灣光復
+
+- id: tw-taipei-air-raid
+  year: 1945
+  title: 臺北大空襲，總督府中彈
+  category: war
+  importance: 3
+  desc: 五月三十一日美軍第五航空隊出動百餘架轟炸機，對台北投彈三百餘噸，總督府、台北車站、龍山寺、台大醫院等皆遭命中，市區死亡約一千七百人，是台北史上最大規模的空襲。自 1944 年十月起到戰爭結束，全台空襲死亡五千餘人、罹災近二十八萬人。這場空襲在戰後長期不見於教科書，直到近年才重新被記憶。
+  sources:
+    - title: 維基百科：臺北大空襲
+      url: https://zh.wikipedia.org/wiki/臺北大空襲
+
+- id: tw-228
+  year: 1947
+  title: 二二八事件
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：二二八事件
+      url: https://zh.wikipedia.org/wiki/二二八事件
+
+- id: tw-relocation
+  year: 1949
+  title: 國民政府遷台；台灣省戒嚴
+  category: politics
+  importance: 5
+  desc: 國共內戰失利，中華民國政府於十二月七日宣布遷往台北；此前五月省主席陳誠已頒布戒嚴令，接著《懲治叛亂條例》、《檢肅匪諜條例》相繼施行，一百多萬軍民隨政府渡海。台灣自此成為中華民國實際統治的全部範圍，戒嚴持續三十八年，是世界上最長的戒嚴之一。
+  sources:
+    - title: 維基百科：中華民國政府遷臺
+      url: https://zh.wikipedia.org/wiki/中華民國政府遷臺
+    - title: 維基百科：臺灣省戒嚴令
+      url: https://zh.wikipedia.org/wiki/臺灣省戒嚴令
+
+- id: tw-white-terror
+  year: 1949
+  endYear: 1991
+  title: 白色恐怖
+  category: politics
+  importance: 5
+  desc: 起於 1949 年 5 月 20 日的戒嚴令，止於 1991 年廢止《戡亂時期檢肅匪諜條例》，歷時四十二年。以《懲治叛亂條例》等特別法整肅異議者，同年 4 月的四六事件已先一步在校園開始。這條軸線幾乎與戰後前半段等長 —— 二二八、雷震案、美麗島事件都落在它裡面。
+  sources:
+    - title: 維基百科：臺灣白色恐怖時期
+      url: https://zh.wikipedia.org/wiki/臺灣白色恐怖時期
+    - title: 維基百科：懲治叛亂條例
+      url: https://zh.wikipedia.org/wiki/懲治叛亂條例
+    - title: 維基百科：四六事件
+      url: https://zh.wikipedia.org/wiki/四六事件
+
+- id: tw-guningtou
+  year: 1949
+  title: 古寧頭戰役，兩岸分治的軍事定局
+  category: war
+  importance: 4
+  desc: 10 月下旬解放軍第十兵團於攻佔廈門後渡海進攻大金門，因船隻不足、情報有誤與國軍及時增援，登陸部隊在島上苦戰三晝夜後全軍覆沒。這是國軍在內戰後期少有的一場勝仗，把戰線停在金門，也讓台灣本島暫時脫離立即被渡海攻擊的處境 —— 韓戰爆發、第七艦隊進入台灣海峽，還是八個月以後的事。此後兩岸的軍事對峙就沿著這條線固定下來。
+  sources:
+    - title: 維基百科：古寧頭戰役
+      url: https://zh.wikipedia.org/wiki/古寧頭戰役
+
+- id: tw-april-6-incident
+  year: 1949
+  title: 四六事件，軍警進入台大與師院逮捕學生
+  category: politics
+  importance: 3
+  desc: 三月一起單車雙載的取締演成學生示威，四月六日凌晨軍警包圍台大與台灣省立師範學院宿舍，逮捕學生兩百餘人，師院隨即停課整頓、全體學生重新登記。這比五月的戒嚴令還早一個多月，是戰後校園肅清的起點，也被視為白色恐怖的序幕；台大校長傅斯年當時要求「不得在校園內開槍」的一句話，後來成為校園自治的象徵。
+  sources:
+    - title: 維基百科：四六事件
+      url: https://zh.wikipedia.org/wiki/四六事件
+
+- id: tw-new-taiwan-dollar
+  year: 1949
+  title: 幣制改革，四萬舊台幣換一元新台幣
+  category: economy
+  importance: 3
+  desc: 戰後台灣銀行券改為舊台幣，卻因對大陸匯兌與國共內戰的軍費而惡性通膨，四年間物價漲了數千倍。六月十五日省政府發行新台幣，以四萬比一收回舊幣，並以黃金與外匯準備限額發行，與大陸的法幣、金圓券切斷連動。這次改革在國民政府遷台之前半年完成，穩住了物價，也是台灣自成一個經濟體的起點；新台幣由台灣銀行發行到 2000 年才改由中央銀行接手。
+  sources:
+    - title: 維基百科：新臺幣
+      url: https://zh.wikipedia.org/wiki/新臺幣
+
+- id: tw-local-autonomy-1950
+  year: 1950
+  endYear: 1951
+  title: 頒布地方自治綱要，首次實施縣市長與議員選舉
+  category: politics
+  importance: 4
+  desc: 行政院頒布《臺灣省各縣市實施地方自治綱要》，劃分全臺十六縣五省轄市，並於 1950 至 1951 年間舉行戰後首次縣市長與縣市議員直接選舉（花蓮縣率先投開票）。開啟臺灣戰後地方自治與基層民主的制度實踐。
+  sources:
+    - title: 維基百科：1950年—1951年中華民國縣市長選舉
+      url: https://zh.wikipedia.org/wiki/1950年—1951年中華民國縣市長選舉
+    - title: 維基百科：臺灣省各縣市實施地方自治綱要
+      url: https://zh.wikipedia.org/wiki/臺灣省各縣市實施地方自治綱要
+
+- id: tw-korean-war-strait
+  year: 1950
+  title: 韓戰爆發，第七艦隊巡弋台灣海峽
+  category: war
+  importance: 4
+  desc: 北韓南侵，美國杜魯門總統宣布台灣海峽中立化，第七艦隊隨即進駐巡弋，阻止兩岸雙方互相攻擊。台灣自此獲得美國安全保護傘，為戰後經濟社會的穩定奠定基礎。
+  sources:
+    - title: 維基百科：韓戰
+      url: https://zh.wikipedia.org/wiki/朝鮮戰爭
+    - title: 維基百科：臺灣海峽中立化
+      url: https://zh.wikipedia.org/wiki/臺灣海峽中立化
+
+- id: tw-us-aid
+  year: 1951
+  endYear: 1965
+  title: 美援正式啟動，支撐戰後經濟重建
+  category: economy
+  importance: 4
+  desc: 韓戰爆發後美國重啟對臺經濟與軍事援助，美援於 1951 年正式啟動，至 1965 年累計達十五億美元。美援穩定了戰後劇烈的通貨膨脹，並為基礎設施建設、農業化肥與工業發展提供資金，支撐臺灣戰後經濟復甦。
+  sources:
+    - title: 維基百科：美援
+      url: https://zh.wikipedia.org/wiki/美援
+
+- id: tw-sf-treaty
+  year: 1951
+  title: 舊金山和約簽署，台灣主權歸屬未明載
+  category: politics
+  importance: 5
+  desc: 48國與日本在舊金山簽署對日和約，日本聲明放棄對台灣、澎湖的一切權利，但條文未指明歸屬何國——中華民國與中華人民共和國均未受邀與會。這段留白日後成為「台灣地位未定論」的起點。
+  sources:
+    - title: 維基百科：舊金山和約
+      url: https://zh.wikipedia.org/wiki/舊金山和約
+    - title: 維基百科：台灣地位未定論
+      url: https://zh.wikipedia.org/wiki/台灣地位未定論
+
+- id: tw-taipei-treaty
+  year: 1952
+  title: 中日和約（台北和約）簽訂
+  category: politics
+  importance: 4
+  desc: 舊金山和約生效前七小時，中華民國與日本在台北賓館另訂雙邊和約，日本同樣聲明放棄台灣、澎湖權利卻未載明歸屬，並約定台灣住民依中華民國國籍處理，日本並放棄對台戰爭賠償請求權。雙方批准書於同年8月5日互換，條約始正式生效。
+  sources:
+    - title: 維基百科：中日和約
+      url: https://zh.wikipedia.org/wiki/中日和約
+
+- id: tw-luku-incident
+  year: 1952
+  title: 鹿窟事件，白色恐怖初期最大的政治案
+  category: politics
+  importance: 3
+  desc: 十二月底軍警上萬人封鎖台北汐止、石碇交界的鹿窟山區，圍捕中共台灣省工作委員會的武裝基地，前後逮捕村民數百人，三十五人處死、近百人判刑，受牽連者包括不識字的農民與未成年人。它是 1950 年代肅清中共地下組織的最大一案，但多數被捕者只是被脅迫提供糧食的山村居民；2000 年才在原地立碑，是最早獲得官方紀念的白色恐怖案件之一。
+  sources:
+    - title: 維基百科：鹿窟基地案
+      url: https://zh.wikipedia.org/wiki/鹿窟基地案
+
+- id: tw-land-reform
+  year: 1953
+  title: 耕者有其田，土地改革完成
+  category: economy
+  importance: 4
+  desc: 土地改革分三步：1949 年三七五減租把佃租上限定在收穫的 37.5%，1951 年公地放領，1953 年耕者有其田強制徵收地主超額出租地轉售佃農，地主以實物債券與四大公營公司股票受償。自耕農比例從三成多升到六成，農村收入提高、農業增產支撐了 1950 年代的工業化；地主資本被引導進入工業，是戰後台灣土地與資本結構最大的一次重組。
+  sources:
+    - title: 維基百科：耕者有其田
+      url: https://zh.wikipedia.org/wiki/耕者有其田
+    - title: 維基百科：三七五減租
+      url: https://zh.wikipedia.org/wiki/三七五減租
+
+- id: tw-modern-poetry-quarterly
+  year: 1953
+  title: 紀弦創辦《現代詩》，現代派登場
+  category: culture
+  importance: 2
+  desc: 隨政府來台的詩人紀弦獨力創辦《現代詩》季刊，1956 年進一步與鄭愁予、林亨泰等人組成「現代派」，主張新詩是「橫的移植」而非「縱的繼承」，全面向西方現代主義取經。同一時期覃子豪的藍星詩社、洛夫與瘂弦的創世紀詩社相繼成立，三大詩社的論爭決定了戰後台灣新詩三十年的走向，也讓 1950 年代在反共文學之外留下了另一條線。
+  sources:
+    - title: 維基百科：現代詩社
+      url: https://zh.wikipedia.org/wiki/現代詩社
+
+- id: tw-first-strait-crisis
+  year: 1954
+  title: 第一次台海危機
+  category: war
+  importance: 4
+  sources:
+    - title: 維基百科：第一次臺灣海峽危機
+      url: https://zh.wikipedia.org/wiki/第一次臺灣海峽危機
+
+- id: tw-mutual-defense-treaty
+  year: 1954
+  title: 中美共同防禦條約簽訂
+  category: politics
+  importance: 4
+  desc: 第一次台海危機後，中華民國與美國簽署共同防禦條約，美軍協防台灣與澎湖正式法制化，直到 1979 年台美斷交後失效。
+  sources:
+    - title: 維基百科：中美共同防禦條約
+      url: https://zh.wikipedia.org/wiki/中美共同防禦條約
+
+- id: tw-dachen-evacuation
+  year: 1955
+  title: 大陳島撤退，浙江外海最後的據點放棄
+  category: war
+  importance: 3
+  desc: 一江山失守後，中華民國在美國第七艦隊護航下於 2 月分批撤離浙江外海的大陳、漁山、南麂各島，共運走 16053 名官兵與 17132 名居民，官方稱之為「大陳義胞」，安置於台灣各地的新村。這是第一次台海危機的一部分，也是中華民國實際控制範圍最後一次大幅收縮 —— 此後統治的範圍就固定為台澎金馬，一直到今天。
+  sources:
+    - title: 維基百科：大陳島撤退
+      url: https://zh.wikipedia.org/wiki/大陳島撤退
+
+- id: tw-taiyu-cinema
+  year: 1955
+  endYear: 1981
+  title: 台語片的興衰，二十六年一千餘部
+  category: culture
+  importance: 3
+  desc: 從歌仔戲電影起家，題材多取自民間故事與通俗劇，二十六年間拍出一千多部，是當時產量最大的一支 —— 因為多數台灣人的母語就是台語。1970 年代國語政策全面收緊，電視與電影的方言時段受限、輔導資源集中於國語片，台語片迅速沒落，1981 年楊麗花主演的歌仔戲電影《陳三五娘》是最後一部。現存於片庫的只剩約兩百部，其餘拷貝多半散佚。
+  sources:
+    - title: 維基百科：臺語電影
+      url: https://zh.wikipedia.org/wiki/臺語電影
+
+- id: tw-sun-liren-case
+  year: 1955
+  title: 孫立人案，陸軍總司令遭軟禁三十三年
+  category: politics
+  importance: 3
+  desc: 政府指控孫立人的部屬郭廷亮為匪諜、密謀兵變，以「縱容部屬」為由將這位留美出身、曾任陸軍總司令的上將免職軟禁，部屬三百餘人連坐入獄。案件的背景是孫立人與美軍關係密切、又不屬黃埔系統，在蔣經國掌握軍中政工之後成為被排除的對象。孫立人在台中住處被幽禁到 1988 年，2001 年監察院重新調查認定為誣陷。
+  sources:
+    - title: 維基百科：孫立人兵變案
+      url: https://zh.wikipedia.org/wiki/孫立人兵變案
+
+- id: tw-823
+  year: 1958
+  title: 八二三砲戰
+  category: war
+  importance: 4
+  sources:
+    - title: 維基百科：金門炮戰
+      url: https://zh.wikipedia.org/wiki/金門炮戰
+
+- id: tw-87-flood
+  year: 1959
+  title: 八七水災，中南部戰後最慘重的水患
+  category: economy
+  importance: 3
+  desc: 八月七日起熱帶低壓帶來連日豪雨，濁水溪、大肚溪、八掌溪同時氾濫，苗栗到台南十三縣市受災，死亡與失蹤逾千人、房屋全倒兩萬七千餘戶，是戰後台灣死亡人數僅次於九二一地震的天災。政府隨後開徵「水災復興建設捐」重建堤防與農田，美援也投入救災；這場水災促成日後的河川整治與石門、曾文等水庫工程加速推動。
+  sources:
+    - title: 維基百科：八七水災
+      url: https://zh.wikipedia.org/wiki/八七水災
+
+- id: tw-lei-chen
+  year: 1960
+  title: 雷震案，《自由中國》停刊
+  category: politics
+  importance: 3
+  desc: 雷震籌組「中國民主黨」，以叛亂罪判刑十年，發行近十一年的《自由中國》隨之停刊。那是 1950 年代檯面上幾乎唯一的異議聲音 —— 反對黨的嘗試自此中斷二十六年，直到 1986 年民進黨成立。
+  sources:
+    - title: 維基百科：雷震 (1897年)
+      url: https://zh.wikipedia.org/wiki/雷震_(1897年)
+    - title: 維基百科：自由中國 (雜誌)
+      url: https://zh.wikipedia.org/wiki/自由中國_(雜誌)
+
+- id: tw-modern-literature-magazine
+  year: 1960
+  title: 白先勇等創辦《現代文學》
+  category: culture
+  importance: 2
+  desc: 台大外文系學生白先勇、王文興、陳若曦、歐陽子等人創辦《現代文學》雜誌，系統譯介卡夫卡、喬伊斯、吳爾芙，並發表自己的小說。白先勇的《台北人》、王文興的《家變》都在這裡起步，現代主義小說自此成為 1960 年代台灣文學的主流，與紀弦一代的現代詩前後呼應。雜誌斷續出到 1984 年，共七十三期，是 1977 年鄉土文學論戰中被批評為「西化」的那一方。
+  sources:
+    - title: 維基百科：現代文學 (雜誌)
+      url: https://zh.wikipedia.org/wiki/現代文學_(雜誌)
+
+- id: tw-ttv
+  year: 1962
+  title: 台灣電視公司開播，進入電視時代
+  category: culture
+  importance: 3
+  desc: 台灣第一家電視台，10 月 10 日開播，成立時由台灣省營機構與日本四家電視相關企業合資。其後中視（1969）、華視（1971）相繼開播，三家的股權分別握在省政府、中國國民黨與國防部及教育部手上，這個「老三台」格局維持了三十年 —— 在只有三個頻道且全部由黨政軍持股的年代，電視同時是新的大眾娛樂與最有效的宣傳工具。
+  sources:
+    - title: 維基百科：臺灣電視公司
+      url: https://zh.wikipedia.org/wiki/臺灣電視公司
+
+- id: tw-golden-horse
+  year: 1962
+  title: 金馬獎創辦，華語電影最早的獎項
+  category: culture
+  importance: 2
+  desc: 行政院新聞局為獎勵國語片而創辦金馬獎，名稱取自金門、馬祖，寓意前線。初期只評國語片、帶有政策色彩，1990 年代起改由民間影人主辦、開放所有華語電影參賽，逐漸成為兩岸三地與海外華語電影共同的最高榮譽。它與台語片的興衰是同一時期的兩面：政府扶植國語片的同時，年產百部的台語片在 1970 年代消失。
+  sources:
+    - title: 維基百科：金馬獎
+      url: https://zh.wikipedia.org/wiki/金馬獎
+
+- id: tw-self-salvation-declaration
+  year: 1964
+  title: 彭明敏師生印製《台灣自救運動宣言》被捕
+  category: politics
+  importance: 3
+  desc: 台大政治系教授彭明敏與學生魏廷朝、謝聰敏印製宣言，主張「一個中國、一個台灣」已是事實，反攻大陸不可能，應制定新憲法、以新國家身分加入聯合國。傳單尚未散發三人即被捕，彭明敏判八年，後獲特赦軟禁，1970 年化裝逃出台灣。這是戒嚴時期島內知識分子第一次公開提出台灣獨立的政治綱領，宣言被海外台獨運動翻成英文登在《紐約時報》，彭明敏本人在 1996 年成為首次總統直選的候選人。
+  sources:
+    - title: 維基百科：台灣自救運動宣言
+      url: https://zh.wikipedia.org/wiki/台灣自救運動宣言
+
+- id: tw-cultural-renaissance
+  year: 1966
+  title: 中華文化復興運動，與對岸文革分庭抗禮
+  category: culture
+  importance: 4
+  desc: 對岸文化大革命展開的同一年，孫科、王雲五、陳立夫等一千五百人聯名建議發起中華文化復興運動，隔年成立推行委員會、蔣中正親任會長，訂國父誕辰為中華文化復興節。動機是宣示中華民國才是正統中華文化的代表 —— 兩岸在同一個時間點上，一邊拆廟砸碑、一邊修廟編書，做的其實是同一件事的兩面：用文化證明自己的正當性。代價是台灣本土的語言與民間文化被壓到檯面下，原住民族的文化傳承也在這套一元的文化政策裡斷了層。
+  sources:
+    - title: 維基百科：中華文化復興運動
+      url: https://zh.wikipedia.org/wiki/中華文化復興運動
+
+- id: tw-kaohsiung-epz
+  year: 1966
+  title: 高雄加工出口區啟用，出口導向工業化
+  category: economy
+  importance: 3
+  desc: 全球首座加工出口區，以租稅優惠與簡化通關吸引外資設廠。
+  sources:
+    - title: 維基百科：前鎮科技產業園區
+      url: https://zh.wikipedia.org/wiki/前鎮科技產業園區
+
+- id: tw-hongye-baseball
+  year: 1968
+  title: 紅葉少棒擊敗日本明星隊，棒球熱席捲全島
+  category: culture
+  importance: 3
+  desc: 台東延平鄉紅葉國小的球隊以 7 比 0 擊敗來訪的日本關西少棒明星隊，全島轟動，隔年組成的金龍少棒隊遠征美國威廉波特奪下世界冠軍，開啟三級棒球的年代。紅葉的傳奇後來被查出以超齡與冒名球員參賽，教練等三人遭判刑 —— 這支球隊來自不足百人的偏遠山區小學，湊不出合乎資格的名單。棒球在外交處境急轉直下的七〇年代成了少數能讓台灣被看見的場域，這一點與紀錄上的瑕疵同樣是這段熱潮的一部分。
+  sources:
+    - title: 維基百科：紅葉少棒隊
+      url: https://zh.wikipedia.org/wiki/紅葉少棒隊
+    - title: 維基百科：金龍少棒隊
+      url: https://zh.wikipedia.org/wiki/金龍少棒隊
+
+- id: tw-nine-year-education
+  year: 1968
+  title: 實施九年國民義務教育
+  category: culture
+  importance: 3
+  desc: 義務教育從六年延長為九年，國小畢業生免試進入國民中學，廢除持續二十年的初中入學考試。政策由蔣中正一年內拍板，全台一年內新設或改制國中四百餘所，教師嚴重不足；但升學壓力自此後移到高中聯考，國民教育普及則為 1970 年代的工業化提供了勞動力。
+  sources:
+    - title: 維基百科：九年國民義務教育
+      url: https://zh.wikipedia.org/wiki/九年國民義務教育
+
+- id: tw-bo-yang-case
+  year: 1968
+  title: 柏楊因翻譯《大力水手》漫畫入獄
+  category: culture
+  importance: 2
+  desc: 作家柏楊翻譯美國漫畫《大力水手》，其中父子流落荒島競選總統的對白被當局認定影射蔣氏父子，以「共諜」罪名判刑十二年，關押於綠島。他在獄中寫成《中國人史綱》，出獄後以《醜陋的中國人》聞名。此案是文字獄在戒嚴時期的典型：定罪不需要證據，只需要解讀。
+  sources:
+    - title: 維基百科：柏楊
+      url: https://zh.wikipedia.org/wiki/柏楊
+
+- id: tw-taiyuan-incident
+  year: 1970
+  title: 泰源事件，政治犯的武裝台獨行動
+  category: politics
+  importance: 2
+  desc: 台東泰源監獄的台獨政治犯江炳興等人聯合部分衛兵奪槍越獄，計畫佔領廣播電台宣布台灣獨立，行動失敗後逃入山區，十餘日內全數被捕，五人處決。官方稱「泰源暴動」，台獨運動者稱「泰源起義」。它與同年紐約的刺蔣案發生在同一年，顯示 1970 年前後台獨運動一度走向武裝路線，此後才轉回海外與島內的政治動員。
+  sources:
+    - title: 維基百科：泰源事件
+      url: https://zh.wikipedia.org/wiki/泰源事件
+
+- id: tw-un-withdrawal
+  year: 1971
+  title: 中華民國退出聯合國
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：聯合國大會第2758號決議
+      url: https://zh.wikipedia.org/wiki/聯合國大會第2758號決議
+
+- id: tw-japan-diplomatic-break
+  year: 1972
+  title: 台日斷交，中日和約失效
+  category: politics
+  importance: 4
+  desc: 日本與中華人民共和國建交，發表《中日聯合聲明》，宣布中日和約（台北和約）失去存在意義。台灣與日本自此僅維持非官方關係，格局延續至今。
+  sources:
+    - title: 維基百科：中日聯合聲明
+      url: https://zh.wikipedia.org/wiki/中日聯合聲明
+    - title: 維基百科：中日和約
+      url: https://zh.wikipedia.org/wiki/中日和約
+
+- id: tw-cloud-gate
+  year: 1973
+  title: 雲門舞集成立，台灣第一個職業現代舞團
+  category: culture
+  importance: 3
+  desc: 林懷民以「中國人作曲、中國人編舞、中國人跳給中國人看」創辦雲門舞集，是台灣第一個職業現代舞團，也是華語世界第一個。1978 年的《薪傳》在中美斷交當天首演，以台灣先民渡海的故事引起巨大共鳴；此後《九歌》《流浪者之歌》《水月》《行草》陸續巡演歐美，是台灣表演藝術在國際上最持久的名字。雲門的興起與校園民歌、鄉土文學同屬 1970 年代「回頭看自己」的一波。
+  sources:
+    - title: 維基百科：雲門舞集
+      url: https://zh.wikipedia.org/wiki/雲門舞集
+
+- id: tw-ten-projects
+  year: 1974
+  title: 十大建設
+  category: economy
+  importance: 4
+  sources:
+    - title: 維基百科：十大建設
+      url: https://zh.wikipedia.org/wiki/十大建設
+
+- id: tw-chiang-death
+  year: 1975
+  title: 蔣中正逝世，嚴家淦繼任總統
+  category: politics
+  importance: 4
+  desc: 蔣中正病逝，副總統嚴家淦依憲法繼任，實際權力則逐步移轉至行政院長蔣經國。
+  sources:
+    - title: 維基百科：蔣中正
+      url: https://zh.wikipedia.org/wiki/蔣中正
+
+- id: tw-campus-folk
+  year: 1975
+  title: 校園民歌運動，「唱自己的歌」
+  category: culture
+  importance: 3
+  desc: 楊弦在台北中山堂舉辦現代民謠創作演唱會，把余光中的詩譜成曲並出版唱片，一般視為台灣現代民歌的起點。1976 年 12 月，李雙澤在淡江的西洋民謠演唱會上拎著可口可樂上台，質問台上台下為什麼唱的都是英文歌，改唱〈補破網〉—— 廣為流傳的「摔可樂瓶」其實是後人添上去的，當晚的主持人陶曉清否認有這一幕。李雙澤隔年因救人溺斃，他寫的〈美麗島〉由楊祖珺推廣開來。退出聯合國與台美斷交的年代裡，年輕人先問的是「我們自己的歌在哪裡」。
+  sources:
+    - title: 維基百科：校園民歌
+      url: https://zh.wikipedia.org/wiki/校園民歌
+    - title: 維基百科：李雙澤
+      url: https://zh.wikipedia.org/wiki/李雙澤
+
+- id: tw-nativist-literature-debate
+  year: 1977
+  endYear: 1978
+  title: 鄉土文學論戰
+  category: culture
+  importance: 3
+  desc: 表面上爭的是文學該不該寫台灣的現實社會，實際上是戰後第一次把政治、經濟與社會處境攤開來吵的總檢驗。一方主張文學要回到農民與勞工的真實生活，另一方指其為工農兵文藝、影射左傾，在戒嚴體制下這種指控隨時可能變成刑責。論戰沒有結論，但此後本土題材不再是次要的，1980 年代的新電影與本土意識都接在這條線上。1930 年代日治時期也有過一場性質相近的台灣話文論戰，兩次隔了四十年。
+  sources:
+    - title: 維基百科：台灣鄉土文學論戰
+      url: https://zh.wikipedia.org/wiki/台灣鄉土文學論戰
+    - title: 維基百科：台灣話文論戰
+      url: https://zh.wikipedia.org/wiki/台灣話文論戰
+
+- id: tw-zhongli-incident
+  year: 1977
+  title: 中壢事件，群眾火燒分局抗議作票
+  category: politics
+  importance: 3
+  desc: 桃園縣長選舉開票時，中壢一處投開票所的監選主任被指控塗污選票，群眾包圍中壢分局，入夜後搗毀警車、放火燒分局，警方開槍打死兩名青年。脫黨參選的許信良最後高票當選。這是戒嚴以來第一次自發的大規模街頭抗議，也是黨外運動從選舉走向街頭的起點，兩年後的美麗島事件直接接續它。
+  sources:
+    - title: 維基百科：中壢事件
+      url: https://zh.wikipedia.org/wiki/中壢事件
+
+- id: tw-ck-president
+  year: 1978
+  title: 蔣經國就任總統
+  category: politics
+  importance: 4
+  desc: 蔣經國經國民大會選舉就任總統，延續其父蔣中正的威權體制，同時展開十大建設後續工程與政治革新。
+  sources:
+    - title: 維基百科：蔣經國
+      url: https://zh.wikipedia.org/wiki/蔣經國
+
+- id: tw-formosa-incident
+  year: 1979
+  title: 台美斷交；美麗島事件
+  category: politics
+  importance: 5
+  desc: 一月一日美國與中華民國斷交、與中華人民共和國建交，年底黨外人士以《美麗島》雜誌社名義在高雄舉辦國際人權日集會，與憲警爆發衝突，隨後黃信介、施明德、呂秀蓮、林義雄等數十人被捕，八人以叛亂罪交付軍法審判。隔年的公開審判與辯護律師團（陳水扁、謝長廷、蘇貞昌等）讓黨外的主張第一次完整傳到社會，被告與辯護人日後成為民進黨的核心。黨外運動遭大規模逮捕，卻也成為此後民主化的人才與動員基礎。
+  sources:
+    - title: 維基百科：美麗島事件
+      url: https://zh.wikipedia.org/wiki/美麗島事件
+    - title: 維基百科：中華民國與美國關係
+      url: https://zh.wikipedia.org/wiki/中華民國與美國關係
+
+- id: tw-taoyuan-airport
+  year: 1979
+  title: 中正國際機場通航啟用
+  category: economy
+  importance: 3
+  desc: 列入十大建設的「中正國際機場」（今臺灣桃園國際機場）正式通航啟用，取代容量飽和的松山機場，成為臺灣對外交通的核心門戶，帶動臺灣國際貿易與航空客貨運快速成長。
+  sources:
+    - title: 維基百科：臺灣桃園國際機場
+      url: https://zh.wikipedia.org/wiki/臺灣桃園國際機場
+
+- id: tw-west-electrification
+  year: 1979
+  title: 西部幹線電氣化完工
+  category: economy
+  importance: 3
+  desc: 十大建設之一。西部走廊的運能與速度同時提升。
+  sources:
+    - title: 維基百科：縱貫線 (鐵路)
+      url: https://zh.wikipedia.org/wiki/縱貫線_(鐵路)
+    - title: 維基百科：臺灣鐵路
+      url: https://zh.wikipedia.org/wiki/臺灣鐵路
+
+- id: tw-hsinchu-park
+  year: 1980
+  title: 新竹科學園區設立
+  category: economy
+  importance: 4
+  desc: 半導體與資訊產業的起點，日後成為台灣經濟的支柱。
+  sources:
+    - title: 維基百科：新竹科學園區
+      url: https://zh.wikipedia.org/wiki/新竹科學園區
+
+- id: tw-north-link-line
+  year: 1980
+  title: 北迴線通車，東部幹線接上西部
+  category: economy
+  importance: 3
+  desc: 蘇澳到花蓮打通，東部的對外運輸不再只能仰賴海運與公路。
+  sources:
+    - title: 維基百科：北迴線
+      url: https://zh.wikipedia.org/wiki/北迴線
+
+- id: tw-lin-family-murders
+  year: 1980
+  title: 林宅血案，美麗島被告家屬遭滅門
+  category: politics
+  importance: 3
+  desc: 美麗島軍法大審進行期間的二月二十八日，被告林義雄的母親與一對七歲雙胞胎女兒在台北住家遭刺殺身亡，九歲長女重傷。案發時林宅受情治單位全天監控，兇手卻至今未破。這起血案讓島內外對美麗島審判的觀感徹底改變，也是黨外運動最沉重的記憶之一；林宅後來改為義光教會。
+  sources:
+    - title: 維基百科：林宅血案
+      url: https://zh.wikipedia.org/wiki/林宅血案
+
+- id: tw-chen-wen-chen
+  year: 1981
+  title: 陳文成命案，返台學者陳屍台大校園
+  category: politics
+  importance: 3
+  desc: 在美國卡內基美隆大學任教的陳文成返台探親，因曾捐款給《美麗島》雜誌被警備總部約談，隔日清晨被發現陳屍台大研究生圖書館旁。官方宣稱「畏罪自殺」，美國國會為此舉行聽證，成為台美關係中的人權議題。它與林宅血案、江南案並列 1980 年代三大懸案，台大 2021 年在原地設立陳文成事件紀念廣場。
+  sources:
+    - title: 維基百科：陳文成事件
+      url: https://zh.wikipedia.org/wiki/陳文成事件
+
+- id: tw-new-cinema
+  year: 1982
+  endYear: 1987
+  title: 台灣新電影，鏡頭轉向真實生活
+  category: culture
+  importance: 3
+  desc: 一批新生代導演以寫實風格拍攝身邊的社會與記憶，題材是小鎮、家庭、成長與城鄉遷徙，形式上放棄了官營片廠慣用的政宣與類型套路。1983 年改編自黃春明小說的《兒子的大玩偶》遭檢舉並要求剪片，引發輿論反彈而作罷，一般稱為削蘋果事件。這波運動在票房上並不成功，卻讓台灣電影第一次在國際影展被看見，也替解嚴後侯孝賢、楊德昌、李安、蔡明亮那一代鋪好了路。
+  sources:
+    - title: 維基百科：台灣新電影
+      url: https://zh.wikipedia.org/wiki/台灣新電影
+
+- id: tw-indigenous-movement
+  year: 1984
+  title: 原住民族運動興起
+  category: politics
+  importance: 3
+  desc: 台灣原住民權利促進會成立，提出正名、還我土地與自治三大訴求。1988 年嘉義火車站前的吳鳳銅像被拆除，「吳鳳捨生取義感化生番」這則寫進教科書數十年的敘事就此退場 —— 運動要爭的不只是權利，還有誰來講述這座島的歷史。
+  sources:
+    - title: 維基百科：臺灣原住民族運動
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族運動
+    - title: 維基百科：臺灣原住民族
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族
+
+- id: tw-henry-liu-case
+  year: 1984
+  title: 江南案，情報局派黑道在美國殺害作家
+  category: politics
+  importance: 3
+  desc: 撰寫《蔣經國傳》的美籍作家劉宜良（筆名江南）在加州住家遭竹聯幫份子槍殺，追查後證實是國防部情報局主使。在美國領土上殺害美國公民讓台美關係陷入危機，美國國會通過決議譴責，政府被迫審判情報局長汪希苓與竹聯幫首領陳啟禮。此案重創政權的正當性，被認為是蔣經國晚年決定開放黨禁、解嚴的推力之一。
+  sources:
+    - title: 維基百科：江南案
+      url: https://zh.wikipedia.org/wiki/江南案
+
+- id: tw-lee-yuan-tseh-nobel
+  year: 1986
+  title: 李遠哲獲諾貝爾化學獎
+  category: science
+  importance: 3
+  desc: 新竹出身的李遠哲以交叉分子束方法研究化學反應動力學，與赫施巴赫、波拉尼共同獲獎，是第一位在台灣出生成長的諾貝爾獎得主。他 1994 年放棄美國籍返台出任中央研究院院長，此後十餘年深度介入台灣的教育改革與政治，從一個科學家的獎項變成一個公共人物的起點 —— 那段參與的評價至今分歧，但四百年來第一次有台灣長大的人站上那個位置這件事，當年的震撼是一致的。
+  sources:
+    - title: 維基百科：李遠哲
+      url: https://zh.wikipedia.org/wiki/李遠哲
+
+- id: tw-dpp-founded
+  year: 1986
+  title: 民主進步黨成立，戒嚴下的組黨
+  category: politics
+  importance: 4
+  desc: 九月二十八日黨外人士在台北圓山飯店集會，原本要推薦年底選舉的候選人，臨時決議直接組黨，成為戰後台灣第一個本土反對黨。當時黨禁仍在，蔣經國選擇不取締，十月即對外表示將解除戒嚴、開放組黨。民進黨在年底的立委與國代選舉中取得兩成多選票，從此台灣有了兩黨競爭；十四年後它贏得總統選舉。
+  sources:
+    - title: 維基百科：民主進步黨
+      url: https://zh.wikipedia.org/wiki/民主進步黨
+
+- id: tw-martial-law-lifted
+  year: 1987
+  title: 解除戒嚴
+  category: politics
+  importance: 5
+  desc: 歷時三十八年的戒嚴結束，報禁、黨禁隨後陸續解除。
+  sources:
+    - title: 維基百科：臺灣省戒嚴令
+      url: https://zh.wikipedia.org/wiki/臺灣省戒嚴令
+
+- id: tw-tsmc
+  year: 1987
+  title: 台積電成立，開創晶圓代工模式
+  category: science
+  importance: 4
+  desc: 只製造、不設計自有產品的分工，重塑了全球半導體產業的結構。
+  sources:
+    - title: 維基百科：台積電
+      url: https://zh.wikipedia.org/wiki/台積電
+
+- id: tw-national-theater
+  year: 1987
+  title: 國家兩廳院啟用
+  category: culture
+  importance: 2
+  desc: 中正紀念堂園區內的國家戲劇院與國家音樂廳落成啟用，是台灣第一座國家級的專業表演場館，也是解嚴那一年完成的文化建設。兩廳院讓國際樂團、歌劇與舞團得以來台演出，也給雲門、表演工作坊等本地團體一個標準舞台；2004 年改制為行政法人，是台灣文化機構法人化的第一例。
+  sources:
+    - title: 維基百科：國家兩廳院
+      url: https://zh.wikipedia.org/wiki/國家兩廳院
+
+- id: tw-mainland-visits
+  year: 1987
+  title: 開放赴大陸探親，隔絕三十八年後的第一道門
+  category: politics
+  importance: 3
+  desc: 解嚴後三個月，蔣經國宣布除現役軍人與公職人員外，民眾可經第三地赴大陸探親，紅十字會受理登記第一天就湧進上萬人。一九四九年隨軍來台的老兵四十年不能返鄉，前一年組成「外省人返鄉探親促進會」上街抗爭，是這項政策最直接的推力。探親打破「三不政策」的實際隔絕，隔年開始有台商赴大陸投資，兩岸的人員與資金往來自此再也關不回去。
+  sources:
+    - title: 維基百科：開放兩岸探親
+      url: https://zh.wikipedia.org/wiki/開放兩岸探親
+
+- id: tw-lee-succession
+  year: 1988
+  title: 蔣經國逝世，李登輝繼任總統，首位台籍元首
+  category: politics
+  importance: 5
+  desc: 蔣經國病逝，副總統李登輝依憲法繼任，成為中華民國史上首位台灣本省籍國家元首，後續主導修憲與民主化進程。
+  sources:
+    - title: 維基百科：蔣經國
+      url: https://zh.wikipedia.org/wiki/蔣經國
+    - title: 維基百科：李登輝
+      url: https://zh.wikipedia.org/wiki/李登輝
+
+- id: tw-520-farmers
+  year: 1988
+  title: 五二〇農民運動，解嚴後第一場流血衝突
+  category: economy
+  importance: 3
+  desc: 政府為與美國談判而準備開放水果與火雞進口，雲林農權會率數千農民北上，提出農保、肥料自由買賣、廢除水利會等七項訴求。遊行在立法院前與警方衝突，持續到隔日凌晨，百餘人受傷、九十餘人被捕，是解嚴後第一次激烈的警民衝突。此後農民健康保險提前全面開辦，農業在自由化下的處境也成為往後每次貿易談判的核心議題。
+  sources:
+    - title: 維基百科：1988年臺灣農民運動
+      url: https://zh.wikipedia.org/wiki/1988年臺灣農民運動
+
+- id: tw-snail-movement
+  year: 1989
+  title: 無殼蝸牛運動，五萬人夜宿忠孝東路
+  category: economy
+  importance: 3
+  desc: 1987 年國有財產局標售華航總部旁土地創下天價，帶動全台房價在兩年內狂飆，所得卻沒有跟上。無住屋者團結組織在 8 月 26 日號召民眾夜宿台北市忠孝東路，到場約五萬人，是台灣第一次以都市議題為主的社會運動。運動催出了往後的住宅法制與社會住宅倡議，但房價所得比在此後三十多年裡只有更高 —— 這是少數訴求沒有隨解嚴一起被滿足的社會運動。
+  sources:
+    - title: 維基百科：無殼蝸牛運動
+      url: https://zh.wikipedia.org/wiki/無殼蝸牛運動
+
+- id: tw-cheng-nan-jung
+  year: 1989
+  title: 鄭南榕自焚，爭取百分之百的言論自由
+  category: politics
+  importance: 3
+  desc: 《自由時代》週刊創辦人鄭南榕因刊登〈台灣共和國憲法草案〉被以叛亂罪傳訊，拒絕出庭，在雜誌社自囚七十一天，四月七日警方攻堅時引火自焚。他生前主張「爭取百分之百的言論自由」並公開支持台灣獨立；出殯當日詹益樺在總統府前跟著自焚。此後兩年內《懲治叛亂條例》廢止、刑法一百條修正，四月七日在 2016 年被訂為言論自由日。
+  sources:
+    - title: 維基百科：鄭南榕
+      url: https://zh.wikipedia.org/wiki/鄭南榕
+
+- id: tw-wild-lily
+  year: 1990
+  title: 野百合學運，要求國會全面改選
+  category: politics
+  importance: 4
+  desc: 三月間數千名學生靜坐於中正紀念堂廣場，要求解散萬年國會、廢除臨時條款、召開國是會議。這是政府遷台以來最大規模的學生行動，李登輝接見學生代表並允諾改革 —— 次年終止動員戡亂、資深中央民代全數退職，訴求幾乎都兌現了。
+  sources:
+    - title: 維基百科：野百合學運
+      url: https://zh.wikipedia.org/wiki/野百合學運
+
+- id: tw-women-zhijian
+  year: 1990
+  title: 「我們之間」成立，台灣第一個同志團體
+  category: culture
+  importance: 3
+  desc: 解嚴三年後，台灣第一個女同志組織「我們之間」成立。1993 年台大出現第一個相關的大學社團，同年立法委員召開公聽會討論反歧視與同性戀人權，多個團體聯合發表聲明；1998 年台灣同志諮詢熱線協會申請立案時，內政部以「同志宜尊重但不宜鼓勵」為由退件，靠持續行文抗爭才獲准。從一個沒有辦公室的小團體到 2019 年同婚立法，這條線走了二十九年。
+  sources:
+    - title: 維基百科：台灣LGBT權益
+      url: https://zh.wikipedia.org/wiki/台灣LGBT權益
+
+- id: tw-end-mobilization
+  year: 1991
+  title: 終止動員戡亂時期
+  category: politics
+  importance: 4
+  desc: 李登輝宣告終止 1948 年起實施的動員戡亂時期，《動員戡亂時期臨時條款》廢止，總統的緊急權力回歸憲法，中華民國不再視中共為叛亂團體。同時廢止《懲治叛亂條例》、以第一次憲法增修條文為資深民代退職與國會全面改選鋪路。這是憲政體制從內戰狀態回到常態的分水嶺，也是台灣民主化在法律層面的起點。
+  sources:
+    - title: 維基百科：動員戡亂時期臨時條款
+      url: https://zh.wikipedia.org/wiki/動員戡亂時期臨時條款
+
+- id: tw-round-island-rail
+  year: 1991
+  title: 南迴線通車，環島鐵路網完成
+  category: economy
+  importance: 4
+  desc: 距 1887 年動工已逾一世紀，鐵路終於繞行全島一周。
+  sources:
+    - title: 維基百科：南迴線
+      url: https://zh.wikipedia.org/wiki/南迴線
+    - title: 維基百科：臺灣鐵路
+      url: https://zh.wikipedia.org/wiki/臺灣鐵路
+
+- id: tw-senior-legislators-retire
+  year: 1991
+  title: 萬年國會終結，第一屆中央民代全部退職
+  category: politics
+  importance: 4
+  desc: 1947 到 1948 年在大陸選出的第一屆國大代表、立法委員與監察委員，以「大陸淪陷無法改選」為由在台灣延任四十餘年，被稱為萬年國會。野百合學運後大法官作出釋字 261 號解釋，要求資深民代於 1991 年底全部退職；同年底選出第二屆國民大會，隔年底選出第二屆立法院，國會自此完全由台灣選出。這是憲政改革的第一步，總統直選與精省都在之後幾次修憲中接續完成。
+  sources:
+    - title: 維基百科：萬年國會
+      url: https://zh.wikipedia.org/wiki/萬年國會
+
+- id: tw-article-100
+  year: 1992
+  title: 刑法第一百條修正，言論不再構成內亂罪
+  category: politics
+  importance: 3
+  desc: 舊刑法一百條把「意圖」顛覆政府就視為內亂罪，是戒嚴解除後仍能用來起訴台獨主張者的最後一部法律；前一年廢止《懲治叛亂條例》時，獨台會案仍以此條逮捕學生。學界與社運人士組成「一〇〇行動聯盟」靜坐抗爭，立法院五月修正條文，刪除「陰謀」內亂罪，只處罰以強暴脅迫著手實行者。海外黑名單人士得以返台，思想與言論的入罪至此在法律上終結。
+  sources:
+    - title: 維基百科：中華民國刑法第一百條
+      url: https://zh.wikipedia.org/wiki/中華民國刑法第一百條
+
+- id: tw-koo-wang-talks
+  year: 1993
+  title: 辜汪會談，兩岸分治後首次正式接觸
+  category: politics
+  importance: 3
+  desc: 海基會董事長辜振甫與海協會會長汪道涵在新加坡會談，簽署文書查證、掛號函件等四項事務性協議。這是 1949 年以來兩岸授權代表的第一次正式會面，建立在前一年「九二共識」的模糊基礎上。1995 年李登輝訪美後會談中斷，1998 年在上海再舉行一次，之後原訂在台北的第三次始終沒有實現。
+  sources:
+    - title: 維基百科：辜汪會談
+      url: https://zh.wikipedia.org/wiki/辜汪會談
+
+- id: tw-indigenous-renaming
+  year: 1994
+  title: 憲法增修條文改稱「原住民」
+  category: politics
+  importance: 4
+  desc: 沿用數十年的「山胞」正式改為「原住民」，1997 年再修為「原住民族」，承認其為集體的民族而非個別身分。名稱之爭表面上是用字，實際爭的是誰有權定義自己 —— 熟蕃、高砂族、山胞，歷來每個稱呼都是外來政權給的。
+  sources:
+    - title: 維基百科：中華民國憲法增修條文
+      url: https://zh.wikipedia.org/wiki/中華民國憲法增修條文
+    - title: 維基百科：臺灣原住民族運動
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族運動
+
+- id: tw-education-reform-1994
+  year: 1994
+  title: 四一〇教改大遊行，教育鬆綁啟動
+  category: culture
+  importance: 3
+  desc: 四月十日民間團體發起遊行，提出小班小校、廣設高中大學、教育現代化、制定教育基本法四大訴求，行政院隨即成立教育改革審議委員會，由李遠哲主持。此後十年是台灣教育變動最劇烈的階段：師資培育開放、教科書開放審定、大學從五十所增至一百六十餘所、2002 年廢除大學聯考改為多元入學。廣設大學帶來的學歷貶值與少子化下的退場問題，是教改至今最受爭議的遺產。
+  sources:
+    - title: 維基百科：臺灣教育改革
+      url: https://zh.wikipedia.org/wiki/臺灣教育改革
+    - title: 維基百科：大學聯合招生考試
+      url: https://zh.wikipedia.org/wiki/大學聯合招生考試
+
+- id: tw-national-health-insurance
+  year: 1995
+  title: 全民健康保險開辦
+  category: politics
+  importance: 4
+  desc: 政府整合公保、勞保與農保，正式開辦「全民健康保險」，實施全體國民強制納保與社會保險制度。全民健保極大地提高了醫療覆蓋率與醫療平等，成為臺灣戰後最標誌性的社會福利制度。
+  sources:
+    - title: 維基百科：全民健康保險
+      url: https://zh.wikipedia.org/wiki/全民健康保險
+
+- id: tw-direct-election
+  year: 1996
+  title: 首次總統直選
+  category: politics
+  importance: 5
+  desc: 第三次修憲決定總統由公民直選，三月二十三日在解放軍飛彈演習的陰影下投票，李登輝以 54% 當選，彭明敏、林洋港、陳履安分居其後。這是台灣人第一次直接選出國家元首，也是華人社會的第一次；此後每四年一次的大選成為政黨輪替與兩岸關係的主軸。
+  sources:
+    - title: 維基百科：1996年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/1996年中華民國總統選舉
+
+- id: tw-taipei-mrt
+  year: 1996
+  title: 臺北捷運木柵線通車，臺灣首條捷運
+  category: economy
+  importance: 3
+  desc: 臺北捷運木柵線（今文湖線）正式通車營運，為臺灣第一條大眾捷運系統（MRT）。捷運系統的興建重塑了臺北都會區的交通習慣、土地開發與公共運輸網絡。
+  sources:
+    - title: 維基百科：臺北捷運
+      url: https://zh.wikipedia.org/wiki/臺北捷運
+
+- id: tw-missile-crisis
+  year: 1996
+  title: 台海飛彈危機，美國航艦戰鬥群進入海峽
+  category: war
+  importance: 4
+  desc: 李登輝 1995 年訪問美國母校康乃爾大學，中華人民共和國視為走向獨立，自當年七月起在台灣外海試射飛彈、舉行登陸演習，1996 年三月總統選舉前夕更把彈著區設在基隆與高雄外海。美國派出兩個航空母艦戰鬥群到台灣附近，是越戰以來在亞洲最大的軍力部署。危機沒有阻止選舉，李登輝以過半票數當選；但它讓台灣的第一次總統直選從此與海峽安全綁在一起。
+  sources:
+    - title: 維基百科：台灣海峽飛彈危機
+      url: https://zh.wikipedia.org/wiki/台灣海峽飛彈危機
+
+- id: tw-province-downsized
+  year: 1998
+  title: 精省，台灣省政府虛級化
+  category: politics
+  importance: 3
+  desc: 1997 年第四次修憲凍結省長與省議會選舉，隔年台灣省政府改為行政院派出機關，人員與業務移交中央或縣市。省與中央的轄區重疊近九成，1994 年宋楚瑜當選唯一一任民選省長後這個「葉爾欽效應」更加明顯；精省一方面是行政效率，一方面也是憲政體制往「以台灣為範圍」調整的一步。省級機關的實體業務到 2019 年全部結束。
+  sources:
+    - title: 維基百科：臺灣省政府功能業務與組織調整
+      url: https://zh.wikipedia.org/wiki/臺灣省政府功能業務與組織調整
+
+- id: tw-921-earthquake
+  year: 1999
+  title: 921 大地震
+  category: culture
+  importance: 4
+  desc: 9 月 21 日凌晨車籠埔斷層錯動，芮氏規模 7.3，地表破裂帶長達八十五公里，二千四百餘人罹難、五萬餘戶房屋全倒。這是戰後台灣傷亡最重的天災，此後建築耐震規範全面翻修，也促成防災體系的重建。
+  sources:
+    - title: 維基百科：921大地震
+      url: https://zh.wikipedia.org/wiki/921大地震
+
+- id: tw-party-transition
+  year: 2000
+  title: 首次政黨輪替
+  category: politics
+  importance: 5
+  sources:
+    - title: 維基百科：2000年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/2000年中華民國總統選舉
+
+- id: tw-wto-accession
+  year: 2002
+  title: 以「臺澎金馬個別關稅領域」加入世界貿易組織
+  category: economy
+  importance: 3
+  desc: 申請十二年後，台灣在中華人民共和國入會的次日以「臺灣、澎湖、金門及馬祖個別關稅領域」名義成為 WTO 第 144 個會員，關稅、農產品進口與服務業全面開放。名稱是主權爭議下的妥協，實質上台灣自此在多邊貿易體系中擁有獨立席位；稻米開放進口與菸酒公賣廢止是入會最直接的國內衝擊。
+  sources:
+    - title: 維基百科：臺澎金馬個別關稅領域
+      url: https://zh.wikipedia.org/wiki/臺澎金馬個別關稅領域
+
+- id: tw-sars-2003
+  year: 2003
+  title: SARS 疫情爆發，和平醫院封院
+  category: science
+  importance: 4
+  desc: 嚴重急性呼吸道症候群（SARS）於全臺爆發，臺北市立和平醫院緊急封院，造成數位醫護人員與民眾犧牲。此事件促使政府全面體檢公共衛生與防疫體系，重建傳染病防治指揮體系（CDC）與防疫物資儲備。
+  sources:
+    - title: 維基百科：嚴重急性呼吸系統綜合症疫情
+      url: https://zh.wikipedia.org/wiki/嚴重急性呼吸系統綜合症疫情
+
+- id: tw-literature-museum
+  year: 2003
+  title: 國立臺灣文學館開館
+  category: culture
+  importance: 2
+  desc: 台灣第一座國家級文學博物館在台南的原台南州廳開館，蒐藏從原住民口傳、古典漢詩、日治新文學到當代作品的手稿與文物。它承接 1990 年代以來台灣文學系所設立、「台灣文學」被承認為獨立學門的過程，也是把日治時期的日文作品與戰後的台語文學一併納入的第一個官方機構。
+  sources:
+    - title: 維基百科：國立臺灣文學館
+      url: https://zh.wikipedia.org/wiki/國立臺灣文學館
+
+- id: tw-319-shooting
+  year: 2004
+  title: 三一九槍擊案，總統大選前夕的兩顆子彈
+  category: politics
+  importance: 3
+  desc: 選舉投票前一天，陳水扁與呂秀蓮在台南掃街時遭槍擊受輕傷，隔日以不到三萬票的差距連任。落選的連宋陣營質疑槍擊案影響選情、拒絕承認結果，發起長達數週的抗爭並提出選舉無效之訴。檢警最後認定嫌犯為已自殺的陳義雄，但真相之爭至今未平。此案讓 2000 年首次政黨輪替後的社會對立達到頂點，也是台灣選舉史上最接近的一次結果。
+  sources:
+    - title: 維基百科：三一九槍擊事件
+      url: https://zh.wikipedia.org/wiki/三一九槍擊事件
+
+- id: tw-indigenous-basic-law
+  year: 2005
+  title: 原住民族基本法公布
+  category: politics
+  importance: 3
+  desc: 確立原住民族的自治、土地與自然資源權利，並明定在原住民族地區的開發行為須經部落諮商同意。同年將 8 月 1 日訂為原住民族日，紀念 1994 年的正名。法律架構立起來了，落實的爭議至今未停。
+  sources:
+    - title: 維基百科：臺灣原住民族
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族
+    - title: 維基百科：中華民國原住民族委員會
+      url: https://zh.wikipedia.org/wiki/中華民國原住民族委員會
+
+- id: tw-red-shirt-movement
+  year: 2006
+  title: 紅衫軍倒扁運動
+  category: politics
+  importance: 3
+  desc: 民進黨前主席施明德以陳水扁家族與親信涉及國務機要費等弊案為由發起「百萬人民反貪倒扁」，號召每人捐一百元、穿紅衣靜坐，九月起在凱達格蘭大道持續集會，高峰時號稱數十萬人。運動沒有讓陳水扁下台，但重創民進黨的清廉形象，2008 年政黨再度輪替與陳水扁卸任後入獄都與此相連。
+  sources:
+    - title: 維基百科：百萬人民倒扁運動
+      url: https://zh.wikipedia.org/wiki/百萬人民倒扁運動
+
+- id: tw-hsr
+  year: 2007
+  title: 台灣高鐵通車
+  category: economy
+  importance: 4
+  desc: 台北到高雄縮短為約九十分鐘，西部走廊形成一日生活圈，長途客運與國內航線隨之萎縮。
+  sources:
+    - title: 維基百科：臺灣高速鐵路
+      url: https://zh.wikipedia.org/wiki/臺灣高速鐵路
+
+- id: tw-ma-president
+  year: 2008
+  title: 馬英九當選總統，二次政黨輪替
+  category: politics
+  importance: 3
+  desc: 馬英九當選總統，國民黨重新執政，是民主化以來的第二次政黨輪替。
+  sources:
+    - title: 維基百科：2008年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/2008年中華民國總統選舉
+    - title: 維基百科：馬英九
+      url: https://zh.wikipedia.org/wiki/馬英九
+
+- id: tw-cape-no-7
+  year: 2008
+  title: 《海角七號》賣座，國片熱潮回來了
+  category: culture
+  importance: 3
+  desc: 好萊塢片長期佔據市場、國片籌資困難的低迷年代，魏德聖的首部劇情長片以五千萬元成本拍成，宣傳幾乎只靠網路口碑，最後全台票房超過五億三千萬，是當時最賣座的國產電影。此後《艋舺》《賽德克·巴萊》《那些年》《KANO》接連出現，本土題材重新有了商業上的可行性 —— 這是自 1980 年代新電影以來，台灣電影第一次同時拿到票房與話題。
+  sources:
+    - title: 維基百科：海角七號
+      url: https://zh.wikipedia.org/wiki/海角七號
+
+- id: tw-morakot
+  year: 2009
+  title: 八八風災，小林村滅村
+  category: economy
+  importance: 3
+  desc: 莫拉克颱風在八月六日到十日間為南台灣帶來破紀錄的降雨，兩天雨量相當於一整年，高雄甲仙的小林村遭山崩掩埋，四百七十餘人罹難；全台死亡與失蹤近七百人，是八七水災以來最嚴重的水患。救災遲緩導致行政院長劉兆玄內閣總辭，災後重建把原住民部落遷離山區的做法引發長期爭議。
+  sources:
+    - title: 維基百科：八八水災
+      url: https://zh.wikipedia.org/wiki/八八水災
+
+- id: tw-ecfa
+  year: 2010
+  title: 簽署 ECFA，兩岸經濟合作架構協議
+  category: economy
+  importance: 3
+  desc: 馬英九政府與中華人民共和國在重慶簽署海峽兩岸經濟合作架構協議，先就數百項貨品降稅（早收清單），後續再談貨品貿易與服務貿易。支持者視為避免台灣在區域經濟整合中被邊緣化，反對者擔憂經濟依賴轉為政治籌碼。2014 年服貿協議在立法院的審查程序引爆太陽花學運，後續協議全部停擺，ECFA 至今停留在早收清單階段。
+  sources:
+    - title: 維基百科：海峽兩岸經濟合作架構協議
+      url: https://zh.wikipedia.org/wiki/海峽兩岸經濟合作架構協議
+
+- id: tw-hung-chung-chiu
+  year: 2013
+  title: 洪仲丘事件，二十五萬人白衫軍上街
+  category: politics
+  importance: 3
+  desc: 義務役下士洪仲丘在退伍前三天於禁閉室操練中熱衰竭死亡，軍方調查避重就輕，網友自發組成「公民 1985 行動聯盟」，八月三日在凱達格蘭大道集結二十五萬人要求真相。立法院隨即修法，承平時期軍人犯罪改由普通法院審判，軍事審判法實質停用。這是台灣第一次由網路動員、沒有政黨主導的大型集會，隔年的太陽花學運沿用了同一套方法。
+  sources:
+    - title: 維基百科：洪仲丘事件
+      url: https://zh.wikipedia.org/wiki/洪仲丘事件
+
+- id: tw-sunflower-movement
+  year: 2014
+  title: 太陽花學運，佔領立法院二十四天
+  category: politics
+  importance: 4
+  desc: 《海峽兩岸服務貿易協議》遭強行通過審查，學生與公民團體佔領立法院議場二十四天，要求退回協議並先立兩岸協議監督條例。服貿自此擱置，也重塑了此後十年的政黨版圖與兩岸議題攻防。
+  sources:
+    - title: 維基百科：太陽花學運
+      url: https://zh.wikipedia.org/wiki/太陽花學運
+
+- id: tw-kaohsiung-gas-explosions
+  year: 2014
+  title: 高雄氣爆，石化管線在市區連環爆炸
+  category: science
+  importance: 2
+  desc: 七月三十一日深夜高雄前鎮、苓雅區的道路連環爆炸，三十二人死亡、三百餘人受傷，數公里道路被炸開。事後查明是李長榮化工的丙烯管線被錯誤包覆在排水箱涵內，長年腐蝕洩漏。這場災難暴露了石化管線穿越市區而無人監管的問題，促成管線資訊公開與《石化管線管理自治條例》，也讓高雄的石化產業去留成為政治議題。
+  sources:
+    - title: 維基百科：2014年高雄氣爆事故
+      url: https://zh.wikipedia.org/wiki/2014年高雄氣爆事故
+
+- id: tw-12-year-education
+  year: 2014
+  title: 十二年國民基本教育上路
+  category: culture
+  importance: 2
+  desc: 九年國教實施四十六年後，高中職三年納入國民基本教育，以免試入學為主、高職免學費，但後三年不強制。2019 年配套的新課綱（一〇八課綱）以「素養」取代學科知識為核心，開設校訂必修與自主學習。制度的爭議集中在免試入學的超額比序與明星高中的存廢，反映的仍是 1994 年教改以來「升學壓力能不能靠制度解決」的老問題。
+  sources:
+    - title: 維基百科：十二年國民基本教育
+      url: https://zh.wikipedia.org/wiki/十二年國民基本教育
+
+- id: tw-female-president
+  year: 2016
+  title: 首位女性總統就任
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：2016年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/2016年中華民國總統選舉
+    - title: 維基百科：蔡英文
+      url: https://zh.wikipedia.org/wiki/蔡英文
+
+- id: tw-presidential-apology
+  year: 2016
+  title: 總統代表政府向原住民族道歉
+  category: politics
+  importance: 3
+  desc: 蔡英文於總統府向原住民族為四百年來的處境道歉，並設「總統府原住民族歷史正義與轉型正義委員會」。這是國家元首首次以政府名義為原住民政策致歉。
+  sources:
+    - title: 維基百科：臺灣原住民族
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族
+    - title: 維基百科：蔡英文
+      url: https://zh.wikipedia.org/wiki/蔡英文
+
+- id: tw-transitional-justice-act
+  year: 2017
+  title: 《促進轉型正義條例》通過，促轉會成立
+  category: politics
+  importance: 3
+  desc: 立法院三讀通過促轉條例，隔年成立促進轉型正義委員會，任務包括開放政治檔案、撤銷威權時期的有罪判決、清除威權象徵與處理不當黨產。促轉會在四年任期內撤銷五千餘件判決、公布中正紀念堂轉型方案，2022 年解散，業務移交行政院各部會。它承接 1998 年補償條例以來的路，但把重心從賠償受難者移向釐清加害體制，也因此爭議不斷。
+  sources:
+    - title: 維基百科：促進轉型正義委員會
+      url: https://zh.wikipedia.org/wiki/促進轉型正義委員會
+
+- id: tw-same-sex-marriage
+  year: 2019
+  title: 同性婚姻合法化，亞洲首例
+  category: politics
+  importance: 4
+  sources:
+    - title: 維基百科：臺灣同性婚姻
+      url: https://zh.wikipedia.org/wiki/臺灣同性婚姻
+
+- id: tw-covid-19
+  year: 2020
+  title: COVID-19 疫情，邊境管制與三級警戒
+  category: science
+  importance: 4
+  desc: 一月出現首例境外移入後，台灣以入境管制、居家檢疫、口罩實名制與疫調把疫情壓在極低水準，一年多內本土病例不到百例，成為國際上的例外。2021 年五月本土疫情爆發，全國進入三級警戒兩個半月，疫苗取得一度成為政治焦點；2022 年改採與病毒共存，累計確診逾千萬。三年間邊境幾乎關閉，是戰後台灣與外界隔絕最久的一段。
+  sources:
+    - title: 維基百科：2019冠狀病毒病臺灣疫情
+      url: https://zh.wikipedia.org/wiki/2019冠狀病毒病臺灣疫情
+
+- id: tw-pelosi-visit
+  year: 2022
+  title: 裴洛西訪台，解放軍環台軍演
+  category: politics
+  importance: 3
+  desc: 美國眾議院議長裴洛西八月二日抵台，是 1997 年以來訪台層級最高的美國官員。中華人民共和國隨即在台灣周邊六個海域進行實彈演習，飛彈飛越台灣上空、落入日本專屬經濟海域，並中斷多項對美對話。這次軍演把「跨越海峽中線」變成常態，台海此後被視為亞洲最危險的引爆點之一。
+  sources:
+    - title: 維基百科：南西·裴洛西訪問台灣
+      url: https://zh.wikipedia.org/wiki/南西·裴洛西訪問台灣
+
+- id: tw-2024-election
+  year: 2024
+  title: 賴清德當選總統，同一政黨首次三連任
+  category: politics
+  importance: 3
+  desc: 民進黨的賴清德以四成得票在三組人馬中勝出，是總統直選以來第一次有政黨連續執政第三任；但立法院沒有任何一黨過半，台灣民眾黨成為關鍵少數。此後行政與立法的對立持續升高，2025 年爆發大規模罷免立委的投票，是直選三十年來首次朝小野大局面下的全面對抗。
+  sources:
+    - title: 維基百科：2024年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/2024年中華民國總統選舉
+
+- id: tw-siraya-recognition
+  year: 2026
+  title: 西拉雅族獲認定，第 17 個原住民族
+  category: politics
+  importance: 4
+  desc: 行政院於 7 月 30 日核定西拉雅族為原住民族，是噶瑪蘭族之後第二個、也是《平埔原住民族群身分法》通過後第一個獲認定的平埔族群。三十年正名路的里程碑：2022 年憲法法庭判《原住民身分法》違憲，2025 年立法院三讀新法，此年核定 —— 而 1636 年荷蘭人在新港社教的羅馬字，寫的正是西拉雅語。
+  sources:
+    - title: 維基百科：西拉雅族
+      url: https://zh.wikipedia.org/wiki/西拉雅族
+    - title: 維基百科：臺灣原住民族
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族

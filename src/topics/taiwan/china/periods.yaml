@@ -1,0 +1,23 @@
+# 時期／朝代 = 欄位背景色帶。同一個 track 內不可重疊。
+# start 為起始年，end 為結束年（含）。負數 = 西元前，沒有西元 0 年。
+
+- id: cn-ming
+  name: 明
+  start: 1500
+  end: 1643
+  note: 實際始於 1368 年，此處為時間軸起點所截
+
+- id: cn-qing
+  name: 清
+  start: 1644
+  end: 1911
+
+- id: cn-roc
+  name: 中華民國
+  start: 1912
+  end: 1948
+
+- id: cn-prc
+  name: 現代
+  start: 1949
+  end: 2026
