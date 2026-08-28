@@ -348,6 +348,18 @@
     - title: 維基百科：一田二主
       url: https://zh.wikipedia.org/wiki/一田二主
 
+- id: ag-1899-camphor-monopoly
+  year: 1899
+  title: 樟腦專賣，台灣獨佔世界七成產量
+  category: policy
+  importance: 4
+  desc: 清末的官辦收購時斷時續，總督府這次做得徹底：民間仍可製腦，但成品只能賣給官方，收購價由官方訂。當時全世界的天然樟腦有七成以上出自台灣，賽璐珞與無煙火藥都靠它，專賣收入僅次於鴉片。代價落在山區 —— 樟樹長在原住民族的領域裡，此後十餘年的隘勇線推進與理蕃討伐，追的正是這條利潤。1920 年代人工合成樟腦問世後，這門生意迅速失去份量。
+  sources:
+    - title: 維基百科：樟腦
+      url: https://zh.wikipedia.org/wiki/樟腦
+    - title: 維基百科：臺灣總督府專賣局
+      url: https://zh.wikipedia.org/wiki/臺灣總督府專賣局
+
 - id: ag-1901-nitobe-report
   year: 1901
   title: 新渡戶稻造提出糖業改良意見書
@@ -359,6 +371,16 @@
       url: https://zh.wikipedia.org/wiki/新渡戶稻造
     - title: 維基百科：臺灣糖業史
       url: https://zh.wikipedia.org/wiki/臺灣糖業史
+
+- id: ag-1901-public-irrigation
+  year: 1901
+  title: 公共埤圳規則，水利從私人手中收歸公有
+  category: policy
+  importance: 3
+  desc: 清代的埤圳多由墾戶或圳主私有，收水租、自行維護，旱年爭水就是械鬥。律令第六號把有規模的埤圳指定為「公共埤圳」交官廳監督，1907 年再設聯合會、1908 年增訂官設埤圳規則由官方直接興建。誰能用水從此不再由地主決定，而是由行政體系決定 —— 桃園大圳與嘉南大圳這種跨越數郡、幾萬甲的工程，要有這套制度才做得起來。
+  sources:
+    - title: 維基百科：公共埤圳
+      url: https://zh.wikipedia.org/wiki/公共埤圳
 
 - id: ag-1905-raw-material-zone
   year: 1905
@@ -373,6 +395,19 @@
       url: https://zh.wikipedia.org/wiki/臺灣製糖
     - title: 農業部：農業100年精華－臺灣農業百年紀實
       url: https://www.moa.gov.tw/ws.php?id=2445335
+
+- id: ag-1910-forest-survey
+  year: 1910
+  endYear: 1914
+  title: 林野調查，拿不出地契的山林一律歸官有
+  category: policy
+  importance: 4
+  desc: 土地調查只查了平地的田園，山林在帳簿外。這次逐筆清查全島林野，凡拿不出所有權文書的一律認定為官有 —— 結果官有林野七十五萬餘甲、民有僅三萬一千餘甲。原住民族的傳統領域與漢人隘墾戶的山林多屬前者，因為那些權利本來就不是靠地契存在的。造林、製材與後來台拓的大規模開發都從這批官有地釋出，而山林權屬的爭議一路留到今天。
+  sources:
+    - title: 維基百科：林野調查
+      url: https://zh.wikipedia.org/wiki/林野調查
+    - title: 維基百科：土地調查事業
+      url: https://zh.wikipedia.org/wiki/土地調查事業
 
 - id: ag-1921-nakamura-rice
   year: 1921

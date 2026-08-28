@@ -146,6 +146,18 @@
     - title: 維基百科：臺灣鐵道飯店
       url: https://zh.wikipedia.org/wiki/臺灣鐵道飯店
 
+- id: tra-1908-private-railway-rules
+  year: 1908
+  title: 臺灣私設鐵道規則公布，官鐵之外的路網有了法源
+  category: institution
+  importance: 3
+  desc: 縱貫線全通的同一年年底發布，明訂民間敷設鐵道的許可、營業與監督辦法，並延續 1897 年起私鐵用地免地租的優惠。糖業會社的專用線得以兼營客貨運、台北鐵道與各家會社線得以掛牌營業，都靠這一紙規則；1912 年再發布私設軌道規則，把人力推送的台車線也納進來。此後三十年台灣的軌道分成三層——總督府的官設鐵道、依私設鐵道規則經營的私鐵，以及密布鄉間的台車軌道。
+  sources:
+    - title: 維基百科：臺灣鐵道史
+      url: https://zh.wikipedia.org/wiki/臺灣鐵道史
+    - title: 維基百科：台灣輕便鐵道
+      url: https://zh.wikipedia.org/wiki/台灣輕便鐵道
+
 - id: tra-1910-taitung-line-start
   year: 1910
   title: 台東線開工，東部有了第一條鐵路
@@ -180,6 +192,17 @@
     - title: 維基百科：屏東線
       url: https://zh.wikipedia.org/wiki/屏東線
 
+- id: tra-1916-xinbeitou-line
+  year: 1916
+  endYear: 1988
+  title: 新北投線通車，台灣第一條純為觀光而建的鐵路
+  category: opening
+  importance: 2
+  desc: 4 月 1 日自淡水線北投站分歧、延伸 1.2 公里到新北投站，全線只有兩站，俗稱「浴湯線」，目的單純是把泡湯客送進北投溫泉區。台灣的鐵路在此之前一律是為了運兵、運糖、運煤或運木材而建，這是第一條為了「去玩」而鋪的路線。1988 年隨淡水線一同停駛，路廊改建成今日的台北捷運新北投支線，功能倒是原封不動。
+  sources:
+    - title: 維基百科：新北投線 (台鐵)
+      url: https://zh.wikipedia.org/wiki/新北投線_(台鐵)
+
 - id: tra-1918-yingge-runaway
   year: 1918
   title: 鶯歌石列車溜逸事故，促成縱貫線盤山展線改良
@@ -191,6 +214,18 @@
       url: https://zh.wikipedia.org/wiki/鶯歌石列車溜逸事故
     - title: 維基百科：鶯歌車站
       url: https://zh.wikipedia.org/wiki/鶯歌車站
+
+- id: tra-1919-double-track
+  year: 1919
+  title: 基隆—台北開始雙軌化，縱貫線的第一段複線
+  category: construction
+  importance: 3
+  desc: 5 月 1 日舉行複線試運轉，這是縱貫線最早雙軌化的一段——基隆到台北既是基隆港的聯外通道，也是全線運量最重的區間，單線交會等待已經吃不下貨運。此後複線工程斷續往南推進，日治結束時仍未及全線；西部幹線真正全段雙軌，要一路等到 1998 年新山線通車。
+  sources:
+    - title: 維基百科：縱貫線 (臺鐵)
+      url: https://zh.wikipedia.org/wiki/縱貫線_(臺鐵)
+    - title: 維基百科：臺灣日治時期年表
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期年表
 
 - id: tra-1919-bureau-building
   year: 1919

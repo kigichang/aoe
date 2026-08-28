@@ -159,6 +159,19 @@
     - title: 維基百科：臺灣總督府交通局鐵道部
       url: https://zh.wikipedia.org/wiki/臺灣總督府交通局鐵道部
 
+- id: in-1908-takao-harbour
+  year: 1908
+  endYear: 1912
+  title: 打狗築港，一座漁村被造成工業港市
+  category: infrastructure
+  importance: 4
+  desc: 縱貫線南端終點的打狗原本只是潟湖漁村，港口淤淺。第一期築港浚深航道、填築港岸，並把挖出來的土砂填成今日的哈瑪星市街，1912 年完工後即可停靠三千噸級輪船。糖與米的出口自此有了南部門戶，高雄也從此走上與台南不同的路 —— 日治後期的煉鋁、製鹼與造船都設在這裡，戰後的重化工業與加工出口區也是。北部的基隆築港自 1899 年起分三期進行，1920 年完成，兩港一南一北撐起整個殖民地的進出口。
+  sources:
+    - title: 維基百科：高雄港
+      url: https://zh.wikipedia.org/wiki/高雄港
+    - title: 維基百科：基隆港
+      url: https://zh.wikipedia.org/wiki/基隆港
+
 - id: in-1919-taipower
   year: 1919
   title: 臺灣電力株式會社成立
@@ -179,6 +192,16 @@
   sources:
     - title: 維基百科：日月潭水力電氣工事
       url: https://zh.wikipedia.org/wiki/日月潭水力電氣工事
+
+- id: in-1922-liquor-monopoly
+  year: 1922
+  title: 酒類專賣，民間酒廠一夕收攤
+  category: policy
+  importance: 3
+  desc: 7 月 1 日施行，全島的私營酒廠或被收購改為專賣局工場、或直接關門，釀酒從一門生意變成一項稅收。酒很快超越鴉片與樟腦成為專賣收入之首，到 1930 年代專賣總收入已佔總督府歲入的四成以上。這是台灣近代第一次由政策直接消滅一整個民間產業，也讓「工業」的界線由官方畫定 —— 想釀酒的人不是競爭不過別人，是不被允許。
+  sources:
+    - title: 維基百科：臺灣總督府專賣局
+      url: https://zh.wikipedia.org/wiki/臺灣總督府專賣局
 
 - id: in-1934-sun-moon-lake-done
   year: 1934

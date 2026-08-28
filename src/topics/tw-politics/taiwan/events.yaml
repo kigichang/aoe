@@ -219,6 +219,18 @@
     - title: 維基百科：林獻堂
       url: https://zh.wikipedia.org/wiki/林獻堂
 
+- id: twp-1914-truku
+  year: 1914
+  title: 太魯閣戰爭，五年理蕃計畫的收尾
+  category: war
+  importance: 3
+  desc: 5 月至 8 月，佐久間左馬太以總督之尊親自督戰，動員軍警與人伕逾兩萬人進攻立霧溪流域的太魯閣族部落，是二十世紀台灣本島規模最大的一場戰役。經費由帝國議會另案批准，可見其規格。此役之後山地被完全納入行政體系，原住民族的武裝抵抗大致終止，也讓樟腦與林野資源的開採再無障礙 —— 但原住民族並未因此取得任何政治權利，1935 年的地方選舉同樣沒有他們的份。
+  sources:
+    - title: 維基百科：太魯閣戰爭
+      url: https://zh.wikipedia.org/wiki/太魯閣戰爭
+    - title: 維基百科：五年理蕃計畫
+      url: https://zh.wikipedia.org/wiki/五年理蕃計畫
+
 - id: twp-1915-xilaian
   year: 1915
   title: 西來庵事件，最後一次大規模武裝抗日
@@ -255,6 +267,18 @@
     - title: 維基百科：臺灣青年
       url: https://zh.wikipedia.org/wiki/臺灣青年
 
+- id: twp-1920-local-system
+  year: 1920
+  title: 地方制度改正，五州二廳與街庄協議會
+  category: regime
+  importance: 4
+  desc: 田健治郎把清代以來的廳制改成州、市、街庄三級，設台北、新竹、台中、台南、高雄五州與台東、花蓮港二廳，並在各級設置協議會。協議會是內地延長主義最具體的一步，卻只有諮詢權、會員全部由官方指派，台灣人名額也偏低 —— 有了形式上的地方議會，實質決定權仍在官派首長手上。此後十五年的政治要求都圍繞同一件事：把這些協議會改成有議決權的民選機關。1935 年的首次地方選舉，改的正是這套制度。
+  sources:
+    - title: 維基百科：臺灣日治時期行政區劃
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期行政區劃
+    - title: 維基百科：田健治郎
+      url: https://zh.wikipedia.org/wiki/田健治郎
+
 - id: twp-1921-petition
   year: 1921
   endYear: 1934
@@ -265,6 +289,16 @@
   sources:
     - title: 維基百科：臺灣議會設置請願運動
       url: https://zh.wikipedia.org/wiki/臺灣議會設置請願運動
+
+- id: twp-1921-consultative-council
+  year: 1921
+  title: 總督府評議會改組，官方版的「台灣議會」
+  category: regime
+  importance: 3
+  desc: 6 月公布新官制，評議會納入林獻堂、辜顯榮等台灣人委員。時機緊接在第一次議會設置請願之後 —— 面對「設一個有立法權的民選議會」的要求，總督府的回答是一個由總督指派、只能備詢的諮詢機關。請願運動因此沒有停下來，而是連續提了十五年；林獻堂本人同時是評議會委員與請願運動的領銜者，這個並置正是那十幾年台灣政治的處境。
+  sources:
+    - title: 維基百科：臺灣總督府評議會
+      url: https://zh.wikipedia.org/wiki/臺灣總督府評議會
 
 - id: twp-1921-cultural-association
   year: 1921
@@ -307,6 +341,18 @@
   sources:
     - title: 維基百科：治警事件
       url: https://zh.wikipedia.org/wiki/治警事件
+
+- id: twp-1926-farmers-union
+  year: 1926
+  title: 台灣農民組合成立，日治時期最大的群眾組織
+  category: movement
+  importance: 4
+  desc: 簡吉、趙港等人以前一年的鳳山農民組合為基礎，把大甲、虎尾、曾文、嘉義各地的土地與蔗價爭議團體串成全島組織，訴求集中在退官有地放領、蔗價與租佃條件。支部遍及全島、成員以萬計，規模遠超過同時期任何一個政黨。政治運動自此不再只是士紳與留學生的請願，而有了可以動員上街的群眾基礎；1929 年的全島大檢舉與 1931 年的全面掃蕩，針對的也正是這個基礎。
+  sources:
+    - title: 維基百科：臺灣農民組合
+      url: https://zh.wikipedia.org/wiki/臺灣農民組合
+    - title: 維基百科：簡吉
+      url: https://zh.wikipedia.org/wiki/簡吉
 
 - id: twp-1927-tca-split
   year: 1927

@@ -847,6 +847,29 @@
     - title: 維基百科：後藤新平
       url: https://zh.wikipedia.org/wiki/後藤新平
 
+- id: tw-land-survey
+  year: 1898
+  endYear: 1905
+  title: 土地調查事業，一塊地只留一個業主
+  category: economy
+  importance: 4
+  desc: 逐筆丈量全島田園、清查清代以來未曾課稅的隱田，並以公債買斷大租權，終結一田二主的舊慣。課稅面積增為原本的兩倍多，地租收入跟著大幅躍升，成為總督府 1905 年財政獨立的第一根柱子；土地也第一次可以抵押與買賣，後來的糖業擴張與大型水利工程都建立在這個基礎上。
+  sources:
+    - title: 維基百科：土地調查事業
+      url: https://zh.wikipedia.org/wiki/土地調查事業
+    - title: 維基百科：一田二主
+      url: https://zh.wikipedia.org/wiki/一田二主
+
+- id: tw-public-school
+  year: 1898
+  title: 公學校開辦，台灣人的初等教育體系成形
+  category: culture
+  importance: 3
+  desc: 總督府把各地國語傳習所改制為公學校，收台灣本島人子弟；在台日本人另讀小學校，原住民另讀蕃人公學校，一開始就是三軌並行。就學率從個位數逐年爬升，1941 年改制國民學校、1943 年實施義務教育之後突破七成。這是台灣識字率與日語普及的主要管道，也是差別待遇最具體的地方 —— 同一個島上三種學校、三套課程。
+  sources:
+    - title: 維基百科：公學校
+      url: https://zh.wikipedia.org/wiki/公學校
+
 - id: tw-medical-school
   year: 1899
   title: 台灣總督府醫學校成立
@@ -878,6 +901,16 @@
     - title: 維基百科：臺灣銀行券
       url: https://zh.wikipedia.org/wiki/臺灣銀行券
 
+- id: tw-monopoly-bureau
+  year: 1901
+  title: 專賣局成立，鴉片、樟腦、食鹽收歸官營
+  category: economy
+  importance: 4
+  desc: 總督府把先後開辦的鴉片（1897）、食鹽與樟腦（1899）三項專賣合併由專賣局經營，此後再加入菸草（1905）與酒（1922）。專賣收入長期佔歲入的三成到五成，是殖民地財政自立的關鍵；其中鴉片採「漸禁」而非嚴禁，靠特許牌照收稅，既是財政成就也是道德代價。這套機構戰後由臺灣省專賣局、公賣局一路承接下來。
+  sources:
+    - title: 維基百科：臺灣總督府專賣局
+      url: https://zh.wikipedia.org/wiki/臺灣總督府專賣局
+
 - id: tw-armed-resistance-crushed
   year: 1902
   title: 武裝抗日勢力大致肅清
@@ -908,6 +941,16 @@
       url: https://zh.wikipedia.org/wiki/理蕃政策
     - title: 維基百科：隘勇
       url: https://zh.wikipedia.org/wiki/隘勇
+
+- id: tw-meishan-quake
+  year: 1906
+  title: 梅山大地震，嘉義一帶死亡逾一千二百人
+  category: politics
+  importance: 2
+  desc: 3 月 17 日清晨梅山斷層錯動，規模 7.1，嘉義、斗六、鹽水港一帶房屋倒塌六千餘間，至少 1258 人罹難。震後嘉義市街依市區改正重建成棋盤格局，也促成總督府增設測候所 —— 台灣的地震測報，是被這一場與 1935 年新竹台中大地震先後推出來的。
+  sources:
+    - title: 維基百科：1906年梅山地震
+      url: https://zh.wikipedia.org/wiki/1906年梅山地震
 
 - id: tw-trunk-railway
   year: 1908
@@ -1176,6 +1219,18 @@
       url: https://zh.wikipedia.org/wiki/台籍日本兵
     - title: 維基百科：臺灣日治時期
       url: https://zh.wikipedia.org/wiki/臺灣日治時期
+
+- id: tw-compulsory-education
+  year: 1943
+  title: 實施六年義務教育，就學率突破七成
+  category: culture
+  importance: 3
+  desc: 1941 年小學校、公學校與蕃人公學校一律改稱國民學校，1943 年起實施六年制義務教育，台灣人學齡兒童就學率升到七成以上。時機並非偶然 —— 這是戰時動員的一環，義務教育與皇民化、志願兵制度是同一套政策的不同面向。戰後中華民國政府接手這套國民學校體制，直到 1968 年才延長為九年。
+  sources:
+    - title: 維基百科：國民學校
+      url: https://zh.wikipedia.org/wiki/國民學校
+    - title: 維基百科：臺灣教育令
+      url: https://zh.wikipedia.org/wiki/臺灣教育令
 
 - id: tw-cairo-declaration
   year: 1943
