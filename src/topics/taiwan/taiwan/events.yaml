@@ -1591,6 +1591,16 @@
     - title: 維基百科：古寧頭戰役
       url: https://zh.wikipedia.org/wiki/古寧頭戰役
 
+- id: tw-april-6-incident
+  year: 1949
+  title: 四六事件，軍警進入台大與師院逮捕學生
+  category: politics
+  importance: 3
+  desc: 三月一起單車雙載的取締演成學生示威，四月六日凌晨軍警包圍台大與台灣省立師範學院宿舍，逮捕學生兩百餘人，師院隨即停課整頓、全體學生重新登記。這比五月的戒嚴令還早一個多月，是戰後校園肅清的起點，也被視為白色恐怖的序幕；台大校長傅斯年當時要求「不得在校園內開槍」的一句話，後來成為校園自治的象徵。
+  sources:
+    - title: 維基百科：四六事件
+      url: https://zh.wikipedia.org/wiki/四六事件
+
 - id: tw-local-autonomy-1950
   year: 1950
   endYear: 1951
@@ -1649,6 +1659,16 @@
     - title: 維基百科：中日和約
       url: https://zh.wikipedia.org/wiki/中日和約
 
+- id: tw-luku-incident
+  year: 1952
+  title: 鹿窟事件，白色恐怖初期最大的政治案
+  category: politics
+  importance: 3
+  desc: 十二月底軍警上萬人封鎖台北汐止、石碇交界的鹿窟山區，圍捕中共台灣省工作委員會的武裝基地，前後逮捕村民數百人，三十五人處死、近百人判刑，受牽連者包括不識字的農民與未成年人。它是 1950 年代肅清中共地下組織的最大一案，但多數被捕者只是被脅迫提供糧食的山村居民；2000 年才在原地立碑，是最早獲得官方紀念的白色恐怖案件之一。
+  sources:
+    - title: 維基百科：鹿窟基地案
+      url: https://zh.wikipedia.org/wiki/鹿窟基地案
+
 - id: tw-land-reform
   year: 1953
   title: 耕者有其田，土地改革完成
@@ -1700,6 +1720,16 @@
     - title: 維基百科：臺語電影
       url: https://zh.wikipedia.org/wiki/臺語電影
 
+- id: tw-sun-liren-case
+  year: 1955
+  title: 孫立人案，陸軍總司令遭軟禁三十三年
+  category: politics
+  importance: 3
+  desc: 政府指控孫立人的部屬郭廷亮為匪諜、密謀兵變，以「縱容部屬」為由將這位留美出身、曾任陸軍總司令的上將免職軟禁，部屬三百餘人連坐入獄。案件的背景是孫立人與美軍關係密切、又不屬黃埔系統，在蔣經國掌握軍中政工之後成為被排除的對象。孫立人在台中住處被幽禁到 1988 年，2001 年監察院重新調查認定為誣陷。
+  sources:
+    - title: 維基百科：孫立人兵變案
+      url: https://zh.wikipedia.org/wiki/孫立人兵變案
+
 - id: tw-823
   year: 1958
   title: 八二三砲戰
@@ -1730,6 +1760,16 @@
   sources:
     - title: 維基百科：臺灣電視公司
       url: https://zh.wikipedia.org/wiki/臺灣電視公司
+
+- id: tw-self-salvation-declaration
+  year: 1964
+  title: 彭明敏師生印製《台灣自救運動宣言》被捕
+  category: politics
+  importance: 3
+  desc: 台大政治系教授彭明敏與學生魏廷朝、謝聰敏印製宣言，主張「一個中國、一個台灣」已是事實，反攻大陸不可能，應制定新憲法、以新國家身分加入聯合國。傳單尚未散發三人即被捕，彭明敏判八年，後獲特赦軟禁，1970 年化裝逃出台灣。這是戒嚴時期島內知識分子第一次公開提出台灣獨立的政治綱領，宣言被海外台獨運動翻成英文登在《紐約時報》，彭明敏本人在 1996 年成為首次總統直選的候選人。
+  sources:
+    - title: 維基百科：台灣自救運動宣言
+      url: https://zh.wikipedia.org/wiki/台灣自救運動宣言
 
 - id: tw-cultural-renaissance
   year: 1966
@@ -1771,6 +1811,26 @@
   sources:
     - title: 維基百科：九年國民義務教育
       url: https://zh.wikipedia.org/wiki/九年國民義務教育
+
+- id: tw-bo-yang-case
+  year: 1968
+  title: 柏楊因翻譯《大力水手》漫畫入獄
+  category: culture
+  importance: 2
+  desc: 作家柏楊翻譯美國漫畫《大力水手》，其中父子流落荒島競選總統的對白被當局認定影射蔣氏父子，以「共諜」罪名判刑十二年，關押於綠島。他在獄中寫成《中國人史綱》，出獄後以《醜陋的中國人》聞名。此案是文字獄在戒嚴時期的典型：定罪不需要證據，只需要解讀。
+  sources:
+    - title: 維基百科：柏楊
+      url: https://zh.wikipedia.org/wiki/柏楊
+
+- id: tw-taiyuan-incident
+  year: 1970
+  title: 泰源事件，政治犯的武裝台獨行動
+  category: politics
+  importance: 2
+  desc: 台東泰源監獄的台獨政治犯江炳興等人聯合部分衛兵奪槍越獄，計畫佔領廣播電台宣布台灣獨立，行動失敗後逃入山區，十餘日內全數被捕，五人處決。官方稱「泰源暴動」，台獨運動者稱「泰源起義」。它與同年紐約的刺蔣案發生在同一年，顯示 1970 年前後台獨運動一度走向武裝路線，此後才轉回海外與島內的政治動員。
+  sources:
+    - title: 維基百科：泰源事件
+      url: https://zh.wikipedia.org/wiki/泰源事件
 
 - id: tw-un-withdrawal
   year: 1971
@@ -1837,6 +1897,16 @@
     - title: 維基百科：台灣話文論戰
       url: https://zh.wikipedia.org/wiki/台灣話文論戰
 
+- id: tw-zhongli-incident
+  year: 1977
+  title: 中壢事件，群眾火燒分局抗議作票
+  category: politics
+  importance: 3
+  desc: 桃園縣長選舉開票時，中壢一處投開票所的監選主任被指控塗污選票，群眾包圍中壢分局，入夜後搗毀警車、放火燒分局，警方開槍打死兩名青年。脫黨參選的許信良最後高票當選。這是戒嚴以來第一次自發的大規模街頭抗議，也是黨外運動從選舉走向街頭的起點，兩年後的美麗島事件直接接續它。
+  sources:
+    - title: 維基百科：中壢事件
+      url: https://zh.wikipedia.org/wiki/中壢事件
+
 - id: tw-ck-president
   year: 1978
   title: 蔣經國就任總統
@@ -1852,7 +1922,7 @@
   title: 台美斷交；美麗島事件
   category: politics
   importance: 5
-  desc: 黨外運動遭大規模逮捕，卻也成為此後民主化的人才與動態動員基礎。
+  desc: 一月一日美國與中華民國斷交、與中華人民共和國建交，年底黨外人士以《美麗島》雜誌社名義在高雄舉辦國際人權日集會，與憲警爆發衝突，隨後黃信介、施明德、呂秀蓮、林義雄等數十人被捕，八人以叛亂罪交付軍法審判。隔年的公開審判與辯護律師團（陳水扁、謝長廷、蘇貞昌等）讓黨外的主張第一次完整傳到社會，被告與辯護人日後成為民進黨的核心。黨外運動遭大規模逮捕，卻也成為此後民主化的人才與動員基礎。
   sources:
     - title: 維基百科：美麗島事件
       url: https://zh.wikipedia.org/wiki/美麗島事件
@@ -1901,6 +1971,26 @@
     - title: 維基百科：北迴線
       url: https://zh.wikipedia.org/wiki/北迴線
 
+- id: tw-lin-family-murders
+  year: 1980
+  title: 林宅血案，美麗島被告家屬遭滅門
+  category: politics
+  importance: 3
+  desc: 美麗島軍法大審進行期間的二月二十八日，被告林義雄的母親與一對七歲雙胞胎女兒在台北住家遭刺殺身亡，九歲長女重傷。案發時林宅受情治單位全天監控，兇手卻至今未破。這起血案讓島內外對美麗島審判的觀感徹底改變，也是黨外運動最沉重的記憶之一；林宅後來改為義光教會。
+  sources:
+    - title: 維基百科：林宅血案
+      url: https://zh.wikipedia.org/wiki/林宅血案
+
+- id: tw-chen-wen-chen
+  year: 1981
+  title: 陳文成命案，返台學者陳屍台大校園
+  category: politics
+  importance: 3
+  desc: 在美國卡內基美隆大學任教的陳文成返台探親，因曾捐款給《美麗島》雜誌被警備總部約談，隔日清晨被發現陳屍台大研究生圖書館旁。官方宣稱「畏罪自殺」，美國國會為此舉行聽證，成為台美關係中的人權議題。它與林宅血案、江南案並列 1980 年代三大懸案，台大 2021 年在原地設立陳文成事件紀念廣場。
+  sources:
+    - title: 維基百科：陳文成事件
+      url: https://zh.wikipedia.org/wiki/陳文成事件
+
 - id: tw-new-cinema
   year: 1982
   endYear: 1987
@@ -1923,6 +2013,16 @@
       url: https://zh.wikipedia.org/wiki/臺灣原住民族運動
     - title: 維基百科：臺灣原住民族
       url: https://zh.wikipedia.org/wiki/臺灣原住民族
+
+- id: tw-henry-liu-case
+  year: 1984
+  title: 江南案，情報局派黑道在美國殺害作家
+  category: politics
+  importance: 3
+  desc: 撰寫《蔣經國傳》的美籍作家劉宜良（筆名江南）在加州住家遭竹聯幫份子槍殺，追查後證實是國防部情報局主使。在美國領土上殺害美國公民讓台美關係陷入危機，美國國會通過決議譴責，政府被迫審判情報局長汪希苓與竹聯幫首領陳啟禮。此案重創政權的正當性，被認為是蔣經國晚年決定開放黨禁、解嚴的推力之一。
+  sources:
+    - title: 維基百科：江南案
+      url: https://zh.wikipedia.org/wiki/江南案
 
 - id: tw-lee-yuan-tseh-nobel
   year: 1986
@@ -2016,6 +2116,16 @@
       url: https://zh.wikipedia.org/wiki/南迴線
     - title: 維基百科：臺灣鐵路
       url: https://zh.wikipedia.org/wiki/臺灣鐵路
+
+- id: tw-article-100
+  year: 1992
+  title: 刑法第一百條修正，言論不再構成內亂罪
+  category: politics
+  importance: 3
+  desc: 舊刑法一百條把「意圖」顛覆政府就視為內亂罪，是戒嚴解除後仍能用來起訴台獨主張者的最後一部法律；前一年廢止《懲治叛亂條例》時，獨台會案仍以此條逮捕學生。學界與社運人士組成「一〇〇行動聯盟」靜坐抗爭，立法院五月修正條文，刪除「陰謀」內亂罪，只處罰以強暴脅迫著手實行者。海外黑名單人士得以返台，思想與言論的入罪至此在法律上終結。
+  sources:
+    - title: 維基百科：中華民國刑法第一百條
+      url: https://zh.wikipedia.org/wiki/中華民國刑法第一百條
 
 - id: tw-indigenous-renaming
   year: 1994
@@ -2163,6 +2273,16 @@
       url: https://zh.wikipedia.org/wiki/臺灣原住民族
     - title: 維基百科：蔡英文
       url: https://zh.wikipedia.org/wiki/蔡英文
+
+- id: tw-transitional-justice-act
+  year: 2017
+  title: 《促進轉型正義條例》通過，促轉會成立
+  category: politics
+  importance: 3
+  desc: 立法院三讀通過促轉條例，隔年成立促進轉型正義委員會，任務包括開放政治檔案、撤銷威權時期的有罪判決、清除威權象徵與處理不當黨產。促轉會在四年任期內撤銷五千餘件判決、公布中正紀念堂轉型方案，2022 年解散，業務移交行政院各部會。它承接 1998 年補償條例以來的路，但把重心從賠償受難者移向釐清加害體制，也因此爭議不斷。
+  sources:
+    - title: 維基百科：促進轉型正義委員會
+      url: https://zh.wikipedia.org/wiki/促進轉型正義委員會
 
 - id: tw-same-sex-marriage
   year: 2019
