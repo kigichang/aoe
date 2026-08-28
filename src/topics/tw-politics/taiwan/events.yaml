@@ -691,6 +691,18 @@
     - title: 維基百科：中美共同防禦條約
       url: https://zh.wikipedia.org/wiki/中美共同防禦條約
 
+- id: twp-1955-dachen
+  year: 1955
+  title: 一江山戰役與大陳島撤退，實際統治範圍縮到台澎金馬
+  category: war
+  importance: 4
+  desc: 1 月 18 日解放軍攻佔浙江外海的一江山島，屏障盡失後，2 月 8 日至 26 日在美國第七艦隊護航下自大陳島撤走一萬六千餘名官兵與一萬七千餘名居民。前一年簽訂的中美共同防禦條約只涵蓋台灣與澎湖，大陳與金馬都不在內，撤守與固守的界線因此是被條約劃出來的。此後中華民國在大陸沿海只剩金門、馬祖，「台澎金馬」這個實際統治範圍就此固定下來，成為往後所有主權論述的地理前提。
+  sources:
+    - title: 維基百科：一江山島戰役
+      url: https://zh.wikipedia.org/wiki/一江山島戰役
+    - title: 維基百科：大陳島撤退
+      url: https://zh.wikipedia.org/wiki/大陳島撤退
+
 - id: twp-1955-sun-liren
   year: 1955
   title: 孫立人兵變案，軍中人事的整肅
@@ -1026,6 +1038,16 @@
   sources:
     - title: 維基百科：鄭南榕
       url: https://zh.wikipedia.org/wiki/鄭南榕
+
+- id: twp-1990-february-struggle
+  year: 1990
+  title: 二月政爭，國民黨主流與非主流攤牌
+  category: party
+  importance: 4
+  desc: 蔣經國逝世後累積兩年的黨內角力在這年 2 月白熱化。非主流派主張以票選方式產生總統候選人並推林洋港、蔣緯國搭檔，主流派主張沿用起立表決，最後以九十九票對七十票通過；3 月國民大會選出李登輝連任。強人不在之後，最高權力第一次是靠黨內計票決定的。落敗一方此後逐步邊緣化，其中生代三年後出走另組新黨，國民黨的第一次分裂就是從這裡開始的。
+  sources:
+    - title: 維基百科：二月政爭
+      url: https://zh.wikipedia.org/wiki/二月政爭
 
 - id: twp-1990-wild-lily
   year: 1990
@@ -1382,6 +1404,18 @@
   sources:
     - title: 維基百科：反滲透法
       url: https://zh.wikipedia.org/wiki/反渗透法
+
+- id: twp-2020-tsai-reelection
+  year: 2020
+  title: 蔡英文連任，得票數創直選以來新高
+  category: election
+  importance: 4
+  desc: 1 月 11 日以八百一十七萬票、57.13% 連任，投票率 74.90%，兩項都是 1996 年開放直選以來的最高；同日立法委員選舉民主進步黨續獲過半。選前一年香港的反送中運動與「一國兩制台灣方案」的提出，把兩岸定位重新推成選戰主軸——2018 年地方選舉才大敗的執政黨，一年多後以最高票連任。外部情勢能在一年之內翻轉島內的選舉結果，這是最清楚的一次。
+  sources:
+    - title: 維基百科：2020年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/2020年中華民國總統選舉
+    - title: 維基百科：2020年中華民國立法委員選舉
+      url: https://zh.wikipedia.org/wiki/2020年中華民國立法委員選舉
 
 - id: twp-2024-lai
   year: 2024
