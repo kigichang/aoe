@@ -429,6 +429,7 @@
   title: 鄭成功驅逐荷蘭人，明鄭治台
   category: politics
   importance: 5
+  desc: 圍城還沒結束，鄭成功就已在赤崁設承天府與天興、萬年二縣，另在澎湖與南北兩路置安撫司 —— 明朝的一整套官制被原樣搬上島，台灣第一次有以漢人政權形式運作的行政體系。名義上仍奉南明永曆正朔，而南明其實早已無力，這座島成了明朝最後一塊招牌。荷蘭投降四個月後鄭成功病逝，體制留給了兒子。
   sources:
     - title: 維基百科：明鄭時期
       url: https://zh.wikipedia.org/wiki/明鄭時期
@@ -447,6 +448,19 @@
     - title: 維基百科：鄭成功
       url: https://zh.wikipedia.org/wiki/鄭成功
 
+- id: tw-qingdutch-alliance
+  year: 1663
+  endYear: 1664
+  title: 清荷聯軍攻金廈，明鄭盡失大陸領土
+  category: war
+  importance: 4
+  desc: 康熙駁回鄭經開出的條件後，轉而拉攏剛被逐出台灣的荷蘭人組成聯軍。1663 年 11 月合攻金門、廈門，鄭軍棄守退往銅山，隔年連銅山也失，大將周全斌降清，鄭經率殘部全數退回台灣。荷蘭趁勢在 1664 年重佔雞籠，指望以此換回失去的島。鄭芝龍以來經營四十年的閩海根據地一次清空，明鄭從此只剩台澎 —— 東都改稱東寧、六部與州制的建立，都是在這個新現實下才發生的。
+  sources:
+    - title: 維基百科：鄭經
+      url: https://zh.wikipedia.org/wiki/鄭經
+    - title: 維基百科：臺灣明鄭時期
+      url: https://zh.wikipedia.org/wiki/臺灣明鄭時期
+
 - id: tw-dongning-regime
   year: 1664
   title: 鄭經改東都為東寧，升天興萬年為州
@@ -464,11 +478,25 @@
   title: 陳永華建台南孔廟，設學校
   category: culture
   importance: 3
+  desc: 陳永華 1665 年 9 月奏請興建，同年先師聖廟落成，隔年再訂出州試、府試、院試三級考試，中選者入太學。科舉隨孔廟一起搬進台灣，讀書人第一次能在島上取得功名而不必渡海。明鄭在台灣只有二十二年，留下最久的東西之一就是這套考試 —— 這座廟至今仍稱「全臺首學」。
   sources:
     - title: 維基百科：臺南孔子廟
       url: https://zh.wikipedia.org/wiki/臺南孔子廟
     - title: 維基百科：陳永華 (明鄭)
       url: https://zh.wikipedia.org/wiki/陳永華_(明鄭)
+
+- id: tw-zheng-qing-talks
+  year: 1667
+  endYear: 1679
+  title: 清鄭多次和談，鄭經求「照朝鮮事例」
+  category: politics
+  importance: 3
+  desc: 1667 年清廷派孔元章來台招撫，許以「八閩王」遭拒；1669 年明珠南下再談，已願讓鄭氏封藩、世守台灣，鄭經開的條件是比照朝鮮 —— 不剃髮、稱臣納貢即可。康熙駁回：朝鮮是本來就不屬版圖的外國，鄭經是中國之人。此後十年談了數回，鄭經一再主張台灣「遠在海外，與版圖渺不相涉」；1678 年清方甚至鬆口給朝鮮、日本那樣的地位，卻因鄭經索要海澄當互市口岸而破局。十二年反覆談的其實只有一件事：東寧是清朝的一個藩，還是一個外國。
+  sources:
+    - title: 維基百科：鄭經
+      url: https://zh.wikipedia.org/wiki/鄭經
+    - title: 維基百科：澎湖海戰
+      url: https://zh.wikipedia.org/wiki/澎湖海戰
 
 - id: tw-dutch-leave-keelung
   year: 1668
@@ -534,6 +562,7 @@
   title: 澎湖海戰，明鄭降清
   category: war
   importance: 5
+  desc: 施琅率兩萬一千人、艦船兩百三十八艘攻澎湖，先敗後勝，明鄭統帥劉國軒從吼門水道脫逃。消息傳回台灣，島上再無抵抗意志：寧靖王朱術桂自縊，鄭克塽於 9 月 5 日出降、10 月 8 日剃髮易服，南明最後一個政權就此結束，鄭氏在台二十二年告終。施琅二十多年前因故被鄭成功誅殺父弟而降清，這一戰是他自己上疏請纓打的；入台之後他仍到延平郡王墓前跪拜。
   sources:
     - title: 維基百科：澎湖海戰
       url: https://zh.wikipedia.org/wiki/澎湖海戰
@@ -545,11 +574,14 @@
   title: 設台灣府，隸屬福建省
   category: politics
   importance: 4
+  desc: 明鄭降清之後，朝中爭論了將近一年要不要留下這座島 —— 不少大臣認為孤懸海外、治守都費錢，主張遷走人口、棄其地。施琅上〈恭陳臺灣棄留疏〉力主保留，李光地也向康熙進言，最後設一府三縣隸福建省。台灣自此進入版圖，但定位是為了防海而守的邊區，渡臺禁令同年一併頒下 —— 留是留了，卻是防著留的。
   sources:
     - title: 維基百科：臺灣清治時期
       url: https://zh.wikipedia.org/wiki/臺灣清治時期
     - title: 維基百科：臺灣府
       url: https://zh.wikipedia.org/wiki/臺灣府
+    - title: 維基百科：施琅
+      url: https://zh.wikipedia.org/wiki/施琅
 
 - id: tw-crossing-ban
   year: 1684

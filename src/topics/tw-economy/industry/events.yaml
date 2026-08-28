@@ -55,10 +55,12 @@
   title: 砂糖九千九百餘擔輸往長崎
   category: trade
   importance: 3
-  desc: 明鄭靠對日貿易換取軍需。糖是台灣手上唯一有議價能力的加工品，這個角色一直維持到二十世紀。
+  desc: 明鄭靠對日貿易換取軍需：出口糖與鹿皮，換回日本的銀、銅、鉛與盔甲，貿易量在 1665 至 1672 年間達到高峰，鄭經還讓日本商人住在基隆。糖是台灣手上唯一有議價能力的加工品，這個角色一直維持到二十世紀。
   sources:
     - title: 維基百科：臺灣糖業史
       url: https://zh.wikipedia.org/wiki/臺灣糖業史
+    - title: 維基百科：鄭經
+      url: https://zh.wikipedia.org/wiki/鄭經
 
 - id: in-1860-treaty-ports-capital
   year: 1860
