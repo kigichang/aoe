@@ -1016,6 +1016,16 @@
     - title: 維基百科：臺灣銀行券
       url: https://zh.wikipedia.org/wiki/臺灣銀行券
 
+- id: tw-taiwan-sugar
+  year: 1900
+  title: 臺灣製糖株式會社成立，新式糖業起步
+  category: economy
+  importance: 3
+  desc: 三井財閥在總督府扶植下成立臺灣製糖株式會社，隔年在橋仔頭建成台灣第一座新式機械糖廠。總督府隨後以原料採取區域制把蔗農綁在指定糖廠，日本資本的糖廠在十年內增至十餘座，糖取代茶成為台灣最大宗出口品，到 1930 年代年產二十餘億斤。「第一憨，種甘蔗給會社磅」這句俗諺說的就是這個體制：蔗農沒有議價權，1925 年的二林事件正是由此而起。
+  sources:
+    - title: 維基百科：臺灣製糖
+      url: https://zh.wikipedia.org/wiki/臺灣製糖
+
 - id: tw-monopoly-bureau
   year: 1901
   title: 專賣局成立，鴉片、樟腦、食鹽收歸官營
@@ -1067,6 +1077,16 @@
     - title: 維基百科：1906年梅山地震
       url: https://zh.wikipedia.org/wiki/1906年梅山地震
 
+- id: tw-beipu-incident
+  year: 1907
+  title: 北埔事件，蔡清琳率眾襲擊日警
+  category: war
+  importance: 2
+  desc: 新竹北埔的蔡清琳以「復中興」為名號召隘勇與賽夏族人，十一月襲擊北埔支廳與各隘勇監督所，殺日籍官民五十餘人。總督府迅速鎮壓，蔡清琳被賽夏族人所殺，餘眾多遭處死。這是 1902 年武裝抗日勢力大致肅清之後，第一起再度爆發的漢人武裝反抗，開啟了苗栗事件、西來庵事件這一波以秘密結社為底的抗日。
+  sources:
+    - title: 維基百科：北埔事件
+      url: https://zh.wikipedia.org/wiki/北埔事件
+
 - id: tw-trunk-railway
   year: 1908
   title: 縱貫鐵路全線通車
@@ -1077,14 +1097,45 @@
     - title: 維基百科：縱貫線 (鐵路)
       url: https://zh.wikipedia.org/wiki/縱貫線_(鐵路)
 
+- id: tw-miaoli-incident
+  year: 1913
+  title: 苗栗事件，羅福星等抗日組織遭破獲
+  category: war
+  importance: 3
+  desc: 曾參加辛亥革命的羅福星以同盟會名義回台秘密招募黨員，計畫以苗栗為據點起事，1913 年底事洩被捕。總督府把同一時期台中、南投、台南等地另外四起密謀併案，隔年二月在苗栗設臨時法庭集中審判，判死刑二十人，羅福星在台北刑務所處絞。辛亥革命成功後中國對台灣知識分子的號召力在這裡第一次具體顯現，而總督府的處置也讓武裝抗日走到尾聲，兩年後的西來庵是最後一次。
+  sources:
+    - title: 維基百科：苗栗事件
+      url: https://zh.wikipedia.org/wiki/苗栗事件
+
+- id: tw-truku-war
+  year: 1914
+  title: 太魯閣戰爭，二十世紀台灣本島最大的戰役
+  category: war
+  importance: 3
+  desc: 總督佐久間左馬太自 1910 年起推動「五年理蕃計畫」，以武力把隘勇線推進到山地深處，最後的目標是東部的太魯閣族。1914 年五月到八月，日軍與警察約兩萬人分東西兩路夾攻，對手是總人口不到萬人的太魯閣各部落；佐久間本人在戰場墜崖負傷，隔年去世。太魯閣族戰敗後被強制遷往山腳，槍枝全數沒收，山地全面納入警察駐在所的管理。五年理蕃計畫至此結束，往後的理蕃轉向「教化」，直到 1930 年霧社事件證明那套教化的底下是什麼。
+  sources:
+    - title: 維基百科：太魯閣戰爭
+      url: https://zh.wikipedia.org/wiki/太魯閣戰爭
+
 - id: tw-xilaian
   year: 1915
   title: 西來庵事件，最後一次大規模武裝抗日
   category: war
   importance: 4
+  desc: 余清芳以台南西來庵為據點，藉齋教信仰與符咒號召，宣稱建立「大明慈悲國」，聯合羅俊、江定在噍吧哖（今台南玉井）起事，襲擊南庄派出所後遭日軍圍剿。事後被判死刑者八百六十六人，實際處決九十五人，其餘因大正天皇即位減刑，是日治時期判刑最重的一案；日軍在噍吧哖一帶的報復性屠殺，民間估計死者數以千計。此後漢人的武裝抗日結束，反抗轉入政治與文化運動。
   sources:
     - title: 維基百科：西來庵事件
       url: https://zh.wikipedia.org/wiki/西來庵事件
+
+- id: tw-dafen-incident
+  year: 1915
+  title: 大分事件，布農族襲擊駐在所
+  category: war
+  importance: 2
+  desc: 總督府在山地沒收原住民的槍枝，斷了布農族的狩獵生計。花蓮玉里郡大分的布農族人在拉荷阿雷兄弟率領下襲擊大分駐在所，殺警察十二人。此後拉荷阿雷退入荖濃溪上游的玉穗社，以游擊方式對抗近二十年，是台灣原住民抗日最持久的一支，直到 1933 年才與日方「和解」。它與同年的西來庵事件一在山地、一在平地，說明武裝反抗在漢人社會結束之後，山地還持續了很久。
+  sources:
+    - title: 維基百科：大分事件
+      url: https://zh.wikipedia.org/wiki/大分事件
 
 - id: tw-civilian-governor
   year: 1919
@@ -1129,12 +1180,22 @@
     - title: 維基百科：臺灣通史
       url: https://zh.wikipedia.org/wiki/臺灣通史
 
+- id: tw-shinminkai
+  year: 1920
+  title: 新民會成立、《臺灣青年》創刊，政治運動從東京起步
+  category: politics
+  importance: 3
+  desc: 在東京的台灣留學生以林獻堂為會長組成新民會，是日治時期台灣人第一個政治運動團體，同年七月創刊《臺灣青年》雜誌，鼓吹民族自決與白話文。留學生在日本看到大正民主與民族自決的風潮，把「以合法手段爭取台灣人權利」帶回島內：新民會催生了隔年的議會設置請願運動與台灣文化協會，《臺灣青年》幾經改名後成為《臺灣民報》。武裝抗日結束五年後，台灣人的抵抗以另一種形式重新開始。
+  sources:
+    - title: 維基百科：新民會 (臺灣)
+      url: https://zh.wikipedia.org/wiki/新民會_(臺灣)
+
 - id: tw-cultural-association
   year: 1921
   title: 台灣文化協會成立
   category: culture
   importance: 4
-  desc: 抗爭手段從武裝轉向文化啟蒙與議會請願。
+  desc: 蔣渭水、林獻堂等人在台北成立台灣文化協會，以讀報社、文化講演、夏季學校、文化劇與電影巡迴放映向大眾啟蒙，會員以醫師、教師、地主為主，是日治時期最大的社會文化團體。抗爭手段從武裝轉向文化啟蒙與議會請願。1927 年左右派分裂：連溫卿、王敏川的左派掌握協會轉向階級路線，蔣渭水等舊幹部另組台灣民眾黨，林獻堂一系再分出地方自治聯盟。分裂後的協會受台共影響，1931 年隨大搜捕而瓦解。
   sources:
     - title: 維基百科：臺灣文化協會
       url: https://zh.wikipedia.org/wiki/臺灣文化協會
@@ -1196,6 +1257,26 @@
     - title: 維基百科：宜蘭線
       url: https://zh.wikipedia.org/wiki/宜蘭線
 
+- id: tw-new-old-literature-debate
+  year: 1924
+  title: 新舊文學論戰，張我軍砲打舊詩壇
+  category: culture
+  importance: 3
+  desc: 在北京親歷五四文學革命的張我軍，在《臺灣民報》發表〈致台灣青年的一封信〉與〈糟糕的台灣文學界〉，痛批島內詩社擊缽吟詩、附庸風雅，主張以白話文寫台灣的現實。古典文人連橫等人撰文反擊，論戰持續兩三年，白話文與新文學自此站穩腳跟，賴和、楊逵這一代作家隨之登場。1930 年黃石輝、郭秋生再掀起台灣話文論戰，主張用漢字寫台語，「該用哪一種語言寫台灣」的問題從此一直延續到戰後。
+  sources:
+    - title: 維基百科：臺灣日治時期新舊文學論戰
+      url: https://zh.wikipedia.org/wiki/臺灣日治時期新舊文學論戰
+
+- id: tw-erlin-incident
+  year: 1925
+  title: 二林事件，蔗農第一次集體對抗糖廠
+  category: economy
+  importance: 3
+  desc: 彰化二林的蔗農不滿林本源製糖收購價低於鄰近糖廠、秤量又不透明，在李應章醫師等人協助下組成蔗農組合，要求先公布價格再採收。十月糖廠強行收割，蔗農與前來護衛的警察衝突，九十餘人被捕、二十餘人判刑。這是台灣第一起有組織的農民運動，直接催生了隔年的臺灣農民組合，也讓文化協會的啟蒙路線開始往階級問題傾斜。
+  sources:
+    - title: 維基百科：二林事件
+      url: https://zh.wikipedia.org/wiki/二林事件
+
 - id: tw-taitung-line
   year: 1926
   title: 台東線花蓮—台東通車
@@ -1218,6 +1299,16 @@
     - title: 維基百科：磯永吉
       url: https://zh.wikipedia.org/wiki/磯永吉
 
+- id: tw-farmers-union
+  year: 1926
+  title: 臺灣農民組合成立，農民運動全島化
+  category: politics
+  importance: 3
+  desc: 二林事件之後，鳳山的簡吉把各地為了土地與蔗價而起的農民組合整合成全島性的臺灣農民組合，兩年內支部遍及二十餘處、會員兩萬多人，是日治時期規模最大的社會運動團體，抗爭對象從糖廠擴及退職官員承墾與竹林放領。1927 年文化協會左傾後兩者合流，農組也逐漸受台灣共產黨影響；1929 年總督府發動「二一二大檢舉」全島搜捕，農組被迫轉入地下，簡吉入獄。戰後他再度投入農運，1951 年死於白色恐怖。
+  sources:
+    - title: 維基百科：臺灣農民組合
+      url: https://zh.wikipedia.org/wiki/臺灣農民組合
+
 - id: tw-peoples-party
   year: 1927
   title: 臺灣民眾黨成立，首個近代政黨
@@ -1237,6 +1328,16 @@
   sources:
     - title: 維基百科：臺北帝國大學
       url: https://zh.wikipedia.org/wiki/臺北帝國大學
+
+- id: tw-taiwan-communist-party
+  year: 1928
+  title: 台灣共產黨在上海成立
+  category: politics
+  importance: 3
+  desc: 謝雪紅、林木順等人在共產國際指導下於上海法租界成立「日本共產黨台灣民族支部」，綱領裡首次提出台灣民族與台灣獨立的主張。返台後台共透過農民組合與文化協會擴大影響，並主導工運。1931 年總督府大舉搜捕，全黨瓦解，前後只存在三年多；但它留下的組織與人脈在戰後重新浮現，謝雪紅在二二八事件中組織二七部隊，多位舊黨員在白色恐怖中被處決。
+  sources:
+    - title: 維基百科：台灣共產黨
+      url: https://zh.wikipedia.org/wiki/台灣共產黨
 
 - id: tw-jianan-canal
   year: 1930
@@ -1258,6 +1359,16 @@
   sources:
     - title: 維基百科：霧社事件
       url: https://zh.wikipedia.org/wiki/霧社事件
+
+- id: tw-local-autonomy-league
+  year: 1930
+  title: 臺灣地方自治聯盟成立，合法路線的最後一個團體
+  category: politics
+  importance: 2
+  desc: 民眾黨轉趨激進後，楊肇嘉、林獻堂等溫和派另組地方自治聯盟，只提一項訴求：地方議會由民選產生。它是日治時期台灣人最後一個獲准活動的政治團體 —— 民眾黨隔年即被解散，農組與台共已遭肅清。1935 年總督府開放半數州市街庄議員民選，算是對這個訴求的部分回應；聯盟在 1937 年中日開戰後自行解散，台灣人的政治運動至此全面停擺，直到戰後。
+  sources:
+    - title: 維基百科：臺灣地方自治聯盟
+      url: https://zh.wikipedia.org/wiki/臺灣地方自治聯盟
 
 - id: tw-sunmoonlake-power
   year: 1934
@@ -1282,6 +1393,16 @@
       url: https://zh.wikipedia.org/wiki/荒勝文策
     - title: 維基百科：臺北帝國大學
       url: https://zh.wikipedia.org/wiki/臺北帝國大學
+
+- id: tw-literary-alliance
+  year: 1934
+  title: 臺灣文藝聯盟成立，政治運動轉進文學
+  category: culture
+  importance: 2
+  desc: 政治運動被壓制之後，全島各路作家在台中集結成立臺灣文藝聯盟，發行《臺灣文藝》，是日治時期最大的文學組織，賴和、張深切、楊逵、呂赫若都在其中。隔年楊逵因路線分歧出走，另辦《臺灣新文學》；1937 年總督府禁止報刊漢文欄，兩份刊物相繼停刊。文學在這幾年承接了政治運動的能量，也是日治時期台灣人用日文與漢文並行寫作最活躍的一段。
+  sources:
+    - title: 維基百科：臺灣文藝聯盟
+      url: https://zh.wikipedia.org/wiki/臺灣文藝聯盟
 
 - id: tw-formosan-classification
   year: 1935
@@ -1330,10 +1451,21 @@
   title: 進入皇民化時期
   category: culture
   importance: 4
+  desc: 中日開戰後總督府全面推動皇民化：廢止報紙漢文欄、禁止使用台語與傳統戲曲、推行國語家庭、整理寺廟並鼓勵改信神道、1940 年開放改日本姓名。武官總督自 1936 年復設，台灣被定位為南進基地，工業化與軍需生產同步推進。皇民化到 1941 年成立皇民奉公會、1942 年實施志願兵而達到頂點，八年間改變了一整代台灣人的語言與認同。
   endYear: 1945
   sources:
     - title: 維基百科：皇民化運動
       url: https://zh.wikipedia.org/wiki/皇民化運動
+
+- id: tw-kominka-hokokai
+  year: 1941
+  title: 皇民奉公會成立，全島動員體制
+  category: politics
+  importance: 3
+  desc: 比照日本內地的大政翼贊會，總督府成立皇民奉公會，總督任總裁，從州廳到街庄部落逐級設支部，把全島居民納入戰時動員網。前一年已開放改日本姓名，這一年起又有奉公壯年團、青年團、產業奉公，隔年實施志願兵。皇民化從「鼓勵」變成「組織」，是日治末期統治最深入日常生活的一步；奉公會在 1945 年六月解散，只留下國民義勇隊準備本土決戰。
+  sources:
+    - title: 維基百科：皇民奉公會
+      url: https://zh.wikipedia.org/wiki/皇民奉公會
 
 - id: tw-takasago-volunteers
   year: 1942
@@ -1403,6 +1535,16 @@
   sources:
     - title: 維基百科：臺灣光復
       url: https://zh.wikipedia.org/wiki/臺灣光復
+
+- id: tw-taipei-air-raid
+  year: 1945
+  title: 臺北大空襲，總督府中彈
+  category: war
+  importance: 3
+  desc: 五月三十一日美軍第五航空隊出動百餘架轟炸機，對台北投彈三百餘噸，總督府、台北車站、龍山寺、台大醫院等皆遭命中，市區死亡約一千七百人，是台北史上最大規模的空襲。自 1944 年十月起到戰爭結束，全台空襲死亡五千餘人、罹災近二十八萬人。這場空襲在戰後長期不見於教科書，直到近年才重新被記憶。
+  sources:
+    - title: 維基百科：臺北大空襲
+      url: https://zh.wikipedia.org/wiki/臺北大空襲
 
 - id: tw-228
   year: 1947
