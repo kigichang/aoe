@@ -216,9 +216,24 @@
   title: 西班牙人佔領雞籠，據北台灣
   category: politics
   importance: 4
+  desc: 荷蘭據大員之後扼住了馬尼拉北上中國與日本的航路，菲律賓總督決定在台灣北端設點反制。艦隊五月自馬尼拉出發，先到島的東北角命名 Santiago（今三貂角），再進雞籠港，於社寮島（今和平島）舉行佔領典禮、築聖薩爾瓦多城。駐軍常年只有兩三百人，靠馬尼拉一年兩班的補給船維持 —— 從頭到尾是一座靠外部輸血的據點，這也決定了它十六年後怎麼結束。
   sources:
     - title: 維基百科：西班牙統治時期 (台灣)
       url: https://zh.wikipedia.org/wiki/西班牙統治時期_(台灣)
+    - title: 維基百科：聖薩爾瓦多城
+      url: https://zh.wikipedia.org/wiki/聖薩爾瓦多城
+
+- id: tw-dominican-mission
+  year: 1626
+  title: 道明會士隨軍抵雞籠，天主教首度傳入台灣
+  category: religion
+  importance: 3
+  desc: 六名道明會神父隨艦隊出征，這是天主教第一次進入台灣。他們在雞籠、淡水一帶向巴賽人傳教，艾斯奇維編出《淡水語辭彙》與《淡水語教理書》—— 兩本都已佚失，只剩書名留在文獻裡。荷蘭人在南部用羅馬字寫西拉雅語的同時，北部有人在做同一件事，只是成果沒能留下來。1642 年西班牙被逐，這條線整個斷掉，要等到 1859 年道明會士再從打狗登陸，天主教才重返台灣。
+  sources:
+    - title: 維基百科：臺灣西班牙統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣西班牙統治時期
+    - title: 維基百科：道明會
+      url: https://zh.wikipedia.org/wiki/道明會
 
 - id: tw-hamada-incident
   year: 1628
@@ -251,6 +266,18 @@
   sources:
     - title: 維基百科：麻豆溪事件
       url: https://zh.wikipedia.org/wiki/麻豆溪事件
+
+- id: tw-spanish-kavalan
+  year: 1632
+  title: 西班牙進兵蛤仔難，毀噶瑪蘭七社
+  category: war
+  importance: 3
+  desc: 一艘西班牙船漂到蘭陽平原，全船人遭噶瑪蘭人殺害。長官隨即派兵報復，摧毀七座村落，1635 年再打一次。同一批人也從淡水河、基隆河探出通往台北盆地的路線，把據點的影響力從海口往內陸推 —— 西班牙在台灣十六年，除了兩座城，留下的主要就是這幾次征討。漢人成規模進入蘭陽平原還要再等一百六十年的吳沙。
+  sources:
+    - title: 維基百科：臺灣西班牙統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣西班牙統治時期
+    - title: 維基百科：噶瑪蘭族
+      url: https://zh.wikipedia.org/wiki/噶瑪蘭族
 
 - id: tw-mattau-treaty
   year: 1635
@@ -305,7 +332,7 @@
   title: 荷蘭驅逐西班牙人
   category: war
   importance: 4
-  desc: 西班牙 1637 年自毀淡水的聖多明哥城、又把兵力抽回菲律賓之後，北台灣只剩雞籠一座孤城。荷蘭艦隊北上圍攻數日，守軍開城撤往馬尼拉，十六年的西班牙統治告終。西部沿海的南北兩端第一次握在同一個政權手上，荷蘭也才真正能把島當成一整塊來經營。
+  desc: 西班牙 1637 年自毀淡水的聖多明哥城、又把兵力抽回菲律賓之後，北台灣只剩雞籠一座孤城。荷蘭艦隊八月下旬北上登陸圍攻，守軍於 26 日開城，撤往馬尼拉，十六年的西班牙統治告終。西部沿海的南北兩端第一次握在同一個政權手上，荷蘭也才真正能把島當成一整塊來經營。
   sources:
     - title: 維基百科：西班牙統治時期 (台灣)
       url: https://zh.wikipedia.org/wiki/西班牙統治時期_(台灣)
