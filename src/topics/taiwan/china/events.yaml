@@ -395,6 +395,18 @@
     - title: 維基百科：文字獄
       url: https://zh.wikipedia.org/wiki/文字獄
 
+- id: cn-open-sea-1684
+  year: 1684
+  title: 展界開海，閩粵沿海移民渡台的閘門打開
+  category: economy
+  importance: 3
+  desc: 明鄭降清後，康熙廢除實施二十餘年的遷界令，沿海居民遷回原地，並開放海禁、設閩粵江浙四海關通商。台灣同時納入版圖卻另頒渡臺禁令：赴台須請照、不得攜眷、粵籍一度禁止。開海讓漳泉與粵東的人口壓力找到出口，禁令又擋不住偷渡，往後一個世紀「有唐山公、無唐山媽」的移民社會就是這兩道政策夾出來的。
+  sources:
+    - title: 維基百科：遷界令
+      url: https://zh.wikipedia.org/wiki/遷界令
+    - title: 維基百科：海禁
+      url: https://zh.wikipedia.org/wiki/海禁
+
 - id: cn-nerchinsk
   year: 1689
   title: 尼布楚條約，中俄劃定東段邊界
@@ -650,6 +662,16 @@
       url: https://zh.wikipedia.org/wiki/左宗棠
     - title: 維基百科：阿古柏
       url: https://zh.wikipedia.org/wiki/阿古柏
+
+- id: cn-beijing-convention-1874
+  year: 1874
+  title: 北京專約，清朝承認日本出兵台灣為「保民義舉」
+  category: politics
+  importance: 3
+  desc: 日本以琉球漂流民遭牡丹社殺害為由出兵台灣，清廷先以「生番化外」推諉，事後在英國公使調停下與日本簽約，付撫卹與購路銀五十萬兩換取日軍撤退，並在條文裡承認日本出兵是保護「屬民」。這句話等於默認琉球人是日本國民，五年後日本廢琉球藩置沖繩縣，清廷再無立場抗議。台灣方面則從此改弦更張，沈葆楨開山撫番、解除渡臺禁令，十一年後建省。
+  sources:
+    - title: 維基百科：北京專約
+      url: https://zh.wikipedia.org/wiki/北京專約
 
 - id: cn-dingwu-famine
   year: 1875
@@ -1078,6 +1100,26 @@
     - title: 維基百科：改革開放
       url: https://zh.wikipedia.org/wiki/改革開放
 
+- id: cn-message-to-taiwan
+  year: 1979
+  title: 《告台灣同胞書》，停止砲擊金門、提出三通
+  category: politics
+  importance: 3
+  desc: 中美建交當天，全國人大常委會發表《告台灣同胞書》，宣布停止自 1958 年以來對金門的單打雙不打砲擊，呼籲兩岸通郵、通商、通航與探親，把「解放台灣」改為「和平統一」。這是中華人民共和國對台政策從武力轉向政治爭取的起點；台灣以「不接觸、不談判、不妥協」回應，但八年後開放探親，三通則到 2008 年才全面實現。
+  sources:
+    - title: 維基百科：告台灣同胞書
+      url: https://zh.wikipedia.org/wiki/告台灣同胞書
+
+- id: cn-ye-nine-points
+  year: 1981
+  title: 葉九條，一國兩制的雛形
+  category: politics
+  importance: 3
+  desc: 人大委員長葉劍英向新華社提出對台九條方針：統一後台灣可作為特別行政區、保留軍隊、社會制度與生活方式不變，中央不派人干預。兩年後鄧小平把它概括為「一國兩制」，原本是為台灣設計的方案，卻先用在 1997 年的香港。台灣方面拒絕，蔣經國以「三民主義統一中國」回應；但這套框架至今仍是北京對台的基本主張。
+  sources:
+    - title: 維基百科：葉九條
+      url: https://zh.wikipedia.org/wiki/葉九條
+
 - id: cn-tiananmen-1989
   year: 1989
   title: 六四事件
@@ -1097,6 +1139,18 @@
   sources:
     - title: 維基百科：鄧小平南巡
       url: https://zh.wikipedia.org/wiki/鄧小平南巡
+
+- id: cn-1992-consensus
+  year: 1992
+  title: 九二香港會談，「一個中國」各自表述
+  category: politics
+  importance: 3
+  desc: 海協會與海基會在香港就文書查證等事務性協商，卡在如何表述「一個中國」；最後雙方以函電往來同意各自口頭表述，會談才得以進行，隔年促成辜汪會談。「九二共識」這個名稱是 2000 年才由台灣方面提出的，北京採用後成為兩岸接觸的前提；民進黨政府不承認有此共識，是 2016 年後兩岸官方管道中斷的直接原因。一場沒有簽署任何文件的會談，成了此後三十年兩岸政治的關鍵詞。
+  sources:
+    - title: 維基百科：九二共識
+      url: https://zh.wikipedia.org/wiki/九二共識
+    - title: 英文維基百科：1992 Consensus
+      url: https://en.wikipedia.org/wiki/1992_Consensus
 
 - id: cn-hk-handover
   year: 1997
@@ -1148,6 +1202,18 @@
     - title: 維基百科：神舟五號
       url: https://zh.wikipedia.org/wiki/神舟五号
 
+- id: cn-anti-secession-law
+  year: 2005
+  title: 《反分裂國家法》，以法律授權對台使用「非和平方式」
+  category: politics
+  importance: 4
+  desc: 第十屆全國人大通過反分裂國家法，是中華人民共和國唯一不冠國名的法律。條文列出三種情況 —— 台灣從中國分裂出去的事實、可能導致分裂的重大事變、和平統一的可能性完全喪失 —— 國家得採取非和平方式。它把對台動武從政策宣示變成法律授權，回應的是陳水扁政府的公投與正名；台灣當月發起百萬人遊行抗議，歐洲議會也決議譴責，但此法至今是北京處理台海問題的法律基礎。
+  sources:
+    - title: 維基百科：反分裂國家法
+      url: https://zh.wikipedia.org/wiki/反分裂國家法
+    - title: 英文維基百科：Anti-Secession Law
+      url: https://en.wikipedia.org/wiki/Anti-Secession_Law
+
 - id: cn-beijing-olympics
   year: 2008
   title: 北京奧運
@@ -1157,6 +1223,16 @@
   sources:
     - title: 維基百科：2008年夏季奧林匹克運動會
       url: https://zh.wikipedia.org/wiki/2008年夏季奧林匹克運動會
+
+- id: cn-three-links
+  year: 2008
+  title: 兩岸三通全面實現，海空直航
+  category: economy
+  importance: 3
+  desc: 馬英九就任後兩會恢復協商，十二月起兩岸海運直航、平日包機與直接通郵同時啟動，貨輪不必再繞經第三地，班機不必再經香港。《告台灣同胞書》提出三通整整三十年後才實現，背後是台商在大陸的投資已累積上千億美元。直航之後陸客來台、ECFA 相繼登場，兩岸經濟往來在 2008 到 2016 年間達到最密切的階段。
+  sources:
+    - title: 維基百科：三通
+      url: https://zh.wikipedia.org/wiki/三通
 
 - id: cn-gdp-second
   year: 2010
@@ -1188,6 +1264,16 @@
   sources:
     - title: 維基百科：一帶一路
       url: https://zh.wikipedia.org/wiki/一帶一路
+
+- id: cn-xi-ma-meeting
+  year: 2015
+  title: 習近平與馬英九在新加坡會面
+  category: politics
+  importance: 3
+  desc: 兩岸最高領導人自 1949 年分治以來第一次會面，互稱「先生」、不用官銜，會後沒有簽署任何文件。北京把它當作九二共識路線的成果，台灣的反對黨批評馬英九在卸任前六個月為兩岸關係定調。兩個月後民進黨勝選，兩岸官方接觸隨即中斷，這場會面成為此後十年沒有再出現過的高點。
+  sources:
+    - title: 維基百科：兩岸領導人會面
+      url: https://zh.wikipedia.org/wiki/兩岸領導人會面
 
 - id: cn-hk-protests-nsl
   year: 2019
