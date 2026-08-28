@@ -2147,6 +2147,16 @@
     - title: 維基百科：國家兩廳院
       url: https://zh.wikipedia.org/wiki/國家兩廳院
 
+- id: tw-mainland-visits
+  year: 1987
+  title: 開放赴大陸探親，隔絕三十八年後的第一道門
+  category: politics
+  importance: 3
+  desc: 解嚴後三個月，蔣經國宣布除現役軍人與公職人員外，民眾可經第三地赴大陸探親，紅十字會受理登記第一天就湧進上萬人。一九四九年隨軍來台的老兵四十年不能返鄉，前一年組成「外省人返鄉探親促進會」上街抗爭，是這項政策最直接的推力。探親打破「三不政策」的實際隔絕，隔年開始有台商赴大陸投資，兩岸的人員與資金往來自此再也關不回去。
+  sources:
+    - title: 維基百科：開放兩岸探親
+      url: https://zh.wikipedia.org/wiki/開放兩岸探親
+
 - id: tw-lee-succession
   year: 1988
   title: 蔣經國逝世，李登輝繼任總統，首位台籍元首
