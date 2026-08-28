@@ -480,6 +480,18 @@
     - title: 維基百科：臺灣荷蘭統治時期
       url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
 
+- id: tw-shalu-battle
+  year: 1670
+  title: 劉國軒討沙轆社，大肚王國瓦解
+  category: war
+  importance: 3
+  desc: 明鄭在西部平原屯墾一萬八千餘甲，直接吃進大肚王國的生活領域。1661 年鄭軍北上屯墾時雙方已結怨，1670 年沙轆、大肚兩社武裝抵抗，劉國軒率兵討伐，沙轆社數百人被殺，全社只剩六人生還，大肚社則被迫往埔里方向遷走。1645 年跟荷蘭締約時還保得住自主、連年貢都獲豁免的政權，二十五年後被下一個政權連根拔掉 —— 軍屯要地，這是屯田令的另一面。
+  sources:
+    - title: 維基百科：沙轆社之役
+      url: https://zh.wikipedia.org/wiki/沙轆社之役
+    - title: 維基百科：大肚王國
+      url: https://zh.wikipedia.org/wiki/大肚王國
+
 - id: tw-zheng-british-treaty
   year: 1670
   title: 英國東印度公司與明鄭締結通商條約
@@ -683,6 +695,19 @@
       url: https://zh.wikipedia.org/wiki/噶瑪蘭廳
     - title: 維基百科：吳沙
       url: https://zh.wikipedia.org/wiki/吳沙
+
+- id: tw-guo-bainian
+  year: 1814
+  endYear: 1816
+  title: 郭百年事件，漢人越界侵墾埔里
+  category: war
+  importance: 3
+  desc: 隘丁首黃林旺等人冒用已故通事、土目的名義向臺灣府請領墾照，取得水沙連埔地的開墾權，隨後帶千餘人一路侵墾社仔、水里、沈鹿諸社，最後進佔埔里社築土城，並假冒官方誘使埔社停止抵抗後焚殺。1817 年官方查辦，杖責郭百年、拆城逐佃，在集集與烏溪立碑禁越 —— 但埔社元氣已盡，只能招西部的平埔族群遷入依附自保，中部平埔各社大舉入埔就是從這裡開始。番界擋得住合法的墾照，擋不住一張假的。
+  sources:
+    - title: 維基百科：郭百年事件
+      url: https://zh.wikipedia.org/wiki/郭百年事件
+    - title: 維基百科：水沙連
+      url: https://zh.wikipedia.org/wiki/水沙連
 
 - id: tw-dingxia-conflict
   year: 1853
@@ -1229,6 +1254,18 @@
     - title: 維基百科：臺北帝國大學
       url: https://zh.wikipedia.org/wiki/臺北帝國大學
 
+- id: tw-formosan-classification
+  year: 1935
+  title: 《台灣高砂族系統所屬之研究》確立九族分類
+  category: culture
+  importance: 3
+  desc: 台北帝大的移川子之藏與宮本延人、馬淵東一以系譜與口傳調查寫成，把原住民分成九族。1898 年伊能嘉矩已提出「四群八族十一部」，這一份才成為定本 —— 戰後中華民國政府直接沿用，「九族」進了教科書與觀光地名，用了超過六十年。代價是被歸併進去的族群沒有自己的名字：邵、噶瑪蘭、太魯閣、撒奇萊雅、賽德克後來一個個要靠正名把自己從別族名下拆出來，2001 年起才陸續恢復。學術分類一旦被政府採用，就成了誰存在、誰不存在的行政事實。
+  sources:
+    - title: 維基百科：移川子之藏
+      url: https://zh.wikipedia.org/wiki/移川子之藏
+    - title: 維基百科：臺灣原住民族
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族
+
 - id: tw-1935-earthquake
   year: 1935
   title: 新竹—台中大地震，台灣傷亡最慘重的天災
@@ -1268,6 +1305,19 @@
   sources:
     - title: 維基百科：皇民化運動
       url: https://zh.wikipedia.org/wiki/皇民化運動
+
+- id: tw-takasago-volunteers
+  year: 1942
+  endYear: 1943
+  title: 高砂義勇隊派赴南洋
+  category: war
+  importance: 3
+  desc: 日軍看上原住民的叢林能力，在志願兵制度正式實施之前就先徵調原住民成軍，1942 至 1943 年間分七梯次約四千人送往菲律賓與新幾內亞，擔任開路、搬運與偵察。估計三千餘人戰死，執行特攻任務的「薰空挺隊」全軍覆沒。霧社事件之後被當成統治難題的那批人，十二年後成了帝國最倚重的叢林部隊；戰後他們既不算日本人也未獲任何補償，直到 1974 年阿美族的史尼育唔（中村輝夫）在印尼叢林被尋獲、仍以為戰爭沒有結束，這段歷史才重新被提起。
+  sources:
+    - title: 維基百科：高砂義勇隊
+      url: https://zh.wikipedia.org/wiki/高砂義勇隊
+    - title: 維基百科：臺灣原住民族
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族
 
 - id: tw-volunteer-soldiers
   year: 1942

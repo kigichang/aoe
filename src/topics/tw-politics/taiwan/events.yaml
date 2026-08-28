@@ -931,6 +931,18 @@
     - title: 維基百科：江南案
       url: https://zh.wikipedia.org/wiki/江南案
 
+- id: twp-1984-indigenous-rights
+  year: 1984
+  title: 台灣原住民族權利促進會成立
+  category: movement
+  importance: 3
+  desc: 12 月在戒嚴體制下成立，提出正名、還我土地與自治三大訴求，是第一個由原住民自己組織、直接向政府提政治要求的團體。在此之前原住民的參政管道只有官方安排的保障名額與地方選舉，議題由誰設定不在自己手上。1988 年起連辦三次「還我土地」遊行，同年嘉義火車站前的吳鳳銅像被拆除 —— 要爭的不只是權利，還有誰有資格講述這座島的歷史。
+  sources:
+    - title: 維基百科：臺灣原住民族運動
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族運動
+    - title: 維基百科：臺灣原住民族正名運動
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族正名運動
+
 - id: twp-1986-519
   year: 1986
   title: 519 綠色行動，公開要求解嚴
@@ -1117,6 +1129,18 @@
     - title: 維基百科：中華民國憲法增修條文
       url: https://zh.wikipedia.org/wiki/中華民國憲法增修條文
 
+- id: twp-1994-indigenous-constitution
+  year: 1994
+  title: 第三次修憲，「山胞」正名為「原住民」
+  category: regime
+  importance: 3
+  desc: 確立總統直選的同一次修憲，也把憲法增修條文裡的「山胞」改成「原住民」，8 月 1 日公布。爭的表面上是用詞：「山胞」預設一群住在山上、需要被輔導的同胞，「原住民」預設的是先於這個國家存在、因此有權利可主張的主體。1997 年再修憲改為「原住民族」，補上集體權的意涵，2005 年的原住民族基本法就是接著這三個字長出來的。原住民族日訂在 8 月 1 日，紀念的正是這一天。
+  sources:
+    - title: 維基百科：中華民國憲法增修條文
+      url: https://zh.wikipedia.org/wiki/中華民國憲法增修條文
+    - title: 維基百科：臺灣原住民族正名運動
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族正名運動
+
 - id: twp-1995-lee-cornell
   year: 1995
   title: 李登輝訪美，飛彈危機的導火線
@@ -1228,6 +1252,18 @@
       url: https://zh.wikipedia.org/wiki/2004年中華民國總統選舉
     - title: 維基百科：三一九槍擊事件
       url: https://zh.wikipedia.org/wiki/三一九槍擊事件
+
+- id: twp-2005-indigenous-basic-law
+  year: 2005
+  title: 原住民族基本法公布，部落取得諮商同意權
+  category: regime
+  importance: 3
+  desc: 2 月公布，明定原住民族的自治、土地與自然資源權利，並規定在原住民族地區的土地開發與資源利用須經部落諮商同意。這是法律第一次把部落當成有同意權的一方，而不只是被諮詢的對象 —— 開發案能不能做，多了一個不在行政體系裡的關卡。架構立起來之後，爭點就從「有沒有權利」變成「土地劃到哪裡」：2017 年的傳統領域劃設辦法把私有地排除在外，引來長達數年的凱道抗爭。
+  sources:
+    - title: 維基百科：臺灣原住民族
+      url: https://zh.wikipedia.org/wiki/臺灣原住民族
+    - title: 維基百科：中華民國原住民族委員會
+      url: https://zh.wikipedia.org/wiki/中華民國原住民族委員會
 
 - id: twp-2005-constitutional-reform
   year: 2005
