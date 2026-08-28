@@ -510,6 +510,7 @@
   title: 朱一貴事件
   category: war
   importance: 3
+  desc: 清治台灣第一次大規模民變。鳳山養鴨人朱一貴以「反清復明」為號召，聯合粵籍的杜君英起事，半個月內攻下台灣府城，自稱中興王、建元永和，全台幾乎盡失。但閩粵兩籍的起事者旋即內鬨，清廷派施世驃、藍廷珍渡海，兩個月即收復府城，朱一貴被捕解京處死。下淡水溪以東的客家庄在事件中組成六堆鄉團自保，從此成為常備的地方武力；清廷也自此在要道立石劃界，隔離漢人與原住民。
   sources:
     - title: 維基百科：朱一貴
       url: https://zh.wikipedia.org/wiki/朱一貴
@@ -539,6 +540,18 @@
     - title: 維基百科：大甲西社抗清事件
       url: https://zh.wikipedia.org/wiki/大甲西社抗清事件
 
+- id: tw-wu-fusheng
+  year: 1732
+  title: 吳福生事件，趁大甲西社之亂起事
+  category: war
+  importance: 2
+  desc: 大甲西社事件爆發後，駐台清軍大半被調往中部，鳳山縣的吳福生趁南部兵力空虛聚眾起事，焚燒營盤與萬丹巡檢衙門，殺守備張玉。亂事兩個多月即被總兵王郡與地方義民合力平定，吳福生被捕處死。此役讓清廷體認到義民的作用，此後轉為主動提倡；下淡水溪以東的客家六堆自朱一貴事件以來的鄉團組織，也因此獲得默許成為常備武力。
+  sources:
+    - title: 維基百科：吳福生事件
+      url: https://zh.wikipedia.org/wiki/吳福生事件
+    - title: 維基百科：六堆
+      url: https://zh.wikipedia.org/wiki/六堆
+
 - id: tw-family-migration
   year: 1733
   title: 開放移民攜眷渡臺
@@ -561,6 +574,16 @@
     - title: 維基百科：艋舺龍山寺
       url: https://zh.wikipedia.org/wiki/艋舺龍山寺
 
+- id: tw-tuniu-line
+  year: 1750
+  title: 土牛紅線，劃定漢人與原住民的界線
+  category: politics
+  importance: 3
+  desc: 清廷治台採原漢隔離，朱一貴事件後（1722）先在要道立石為界，乾隆十五年起在地圖上以紅線標示界址，並沿線挖溝堆土，土堆狀似臥牛，故稱土牛。界線之外是「番地」，漢人不得越界墾殖，但實際上隨著移民壓力一再東移：1760 年藍線、1784 年紫線、1790 年綠線各重劃一次，同時以熟番屯丁與隘寮守界。番界既是清廷承認原住民土地權的證據，也記錄了漢人拓墾一步步侵入的軌跡；到了牡丹社事件後開山撫番，這條線才被正式廢止。
+  sources:
+    - title: 維基百科：台灣番界
+      url: https://zh.wikipedia.org/wiki/台灣番界
+
 - id: tw-liugong-canal
   year: 1753
   title: 瑠公圳完工，水利灌溉台北盆地
@@ -571,11 +594,23 @@
     - title: 維基百科：瑠公圳
       url: https://zh.wikipedia.org/wiki/瑠公圳
 
+- id: tw-huang-jiao
+  year: 1768
+  endYear: 1769
+  title: 黃教事件，南部山區的游擊抗官
+  category: war
+  importance: 2
+  desc: 定居台灣縣大目降山區的泉州人黃教，於乾隆三十三年九月起事，以大崗山為據點在鳳山、諸羅之間流竄，劫掠商家、襲擊軍營奪取軍火，也攻擊協助官府的客家庄。清廷調集千人與水師提督吳必達合圍，半年後黃教被捕殺。它介於朱一貴與林爽文兩次大民變之間，規模不大卻讓官府疲於奔命，暴露了駐台班兵對山區束手無策的弱點。
+  sources:
+    - title: 維基百科：黃教
+      url: https://zh.wikipedia.org/wiki/黃教
+
 - id: tw-lin-shuangwen
   year: 1786
   title: 林爽文事件
   category: war
   importance: 4
+  desc: 清治台灣規模最大、時間最長的民變。彰化大里杙的天地會首領林爽文因官府查拿會黨而起事，數日內攻陷彰化、諸羅，南路的莊大田也攻下鳳山縣城響應，全台除府城與鹿港外幾乎盡失，歷時一年餘。清廷先後動員福建、廣東、湖南等省兵力，最後由陝甘總督福康安率軍登陸鹿港才逐步平定，林爽文與莊大田皆被捕處死。乾隆將此役列入「十全武功」，並因諸羅縣民堅守而改其名為嘉義；事件中閩粵、漳泉互相攻殺，族群械鬥的格局由此加深。
   endYear: 1788
   sources:
     - title: 維基百科：林爽文事件
@@ -618,6 +653,16 @@
     - title: 維基百科：水沙連
       url: https://zh.wikipedia.org/wiki/水沙連
 
+- id: tw-zhang-bing
+  year: 1832
+  title: 張丙事件，道光年間中南部的大民變
+  category: war
+  importance: 3
+  desc: 道光十二年台灣歉收，官府禁止米糧出境卻執行不公，店仔口（今台南白河）的張丙又被誣為強盜，遂於九月底起事。起事者連克佳里興等地，先後擊敗嘉義知縣邵用之與知府呂志恆，各地紛起響應，直到欽差馬濟勝率軍渡台，在鐵線橋一役獲勝才告平息，首謀解京凌遲。事件中閩粵兩籍互相攻殺，加深了族群裂痕，也讓清廷再度正視台灣的治理問題，與朱一貴、林爽文、戴潮春並列清治時期的大民變。
+  sources:
+    - title: 維基百科：張丙事件
+      url: https://zh.wikipedia.org/wiki/張丙事件
+
 - id: tw-dingxia-conflict
   year: 1853
   title: 頂下郊拚，同安人敗走大稻埕
@@ -627,6 +672,16 @@
   sources:
     - title: 維基百科：頂下郊拚
       url: https://zh.wikipedia.org/wiki/頂下郊拚
+
+- id: tw-lin-gong
+  year: 1853
+  title: 林恭事件，太平天國波及下的南部民變
+  category: war
+  importance: 2
+  desc: 太平天國席捲閩南，小刀會在廈門起事，清廷對台灣的控制一時鬆動。四月，鳳山的小刀會首領林恭率眾攻入鳳山縣城，殺知縣王廷幹，自立為縣令，進而圍攻台南府城；北路的張古、羅阿沙同時響應。兩個月後林恭在二層行溪戰敗退往東港，七月遭部下綁縛交官，與佔據灣裡街的李石一同被斬。它與同年台北的頂下郊拚幾乎同時，顯示大陸動亂如何直接傳導到海峽這一側。
+  sources:
+    - title: 維基百科：林恭
+      url: https://zh.wikipedia.org/wiki/林恭
 
 - id: tw-perry-keelung
   year: 1854
@@ -736,6 +791,26 @@
     - title: 維基百科：渡臺禁令
       url: https://zh.wikipedia.org/wiki/渡臺禁令
 
+- id: tw-shitou-she
+  year: 1875
+  title: 獅頭社之役，開山撫番南路的第一場硬仗
+  category: war
+  importance: 3
+  desc: 沈葆楨要打通往恆春與後山的道路，與屏東山區的排灣族大龜文酋邦正面衝突。前一年獅頭社人被刺桐腳庄民殺害、日軍又借牡丹社事件侵入原住民領地，雙方積怨已深。清軍以淮軍主力進攻內外獅頭社，王開俊中伏陣亡、所部全軍覆沒，戰事拖了三個月、動員數千人才勉強收場，是沈葆楨在台期間規模最大的一場戰爭。戰後清廷把竹坑、內外獅頭等社改成「永平」「永化」之類的名字，宣示教化，實際上是用地名蓋住一場慘勝。
+  sources:
+    - title: 維基百科：獅頭社之役
+      url: https://zh.wikipedia.org/wiki/獅頭社之役
+
+- id: tw-cepo
+  year: 1877
+  title: 大港口事件，阿美族壯丁遭設宴誘殺
+  category: war
+  importance: 3
+  desc: 開山撫番中路推進到花蓮秀姑巒溪口，總兵吳光亮要開闢水尾到大港口的道路，遭大港口、奇密等阿美族部落抵抗。清軍武力不能得手，改以宴請和解為名把部落壯丁集中起來，趁其酒醉一舉射殺。大港口一帶的青壯世代幾乎滅絕，倖存者逃入山區或投靠其他部落。它與次年的加禮宛戰役同為開山撫番在東部留下的血債；2022 年豐濱鄉公所將它正名為「Cepo' 戰役」。
+  sources:
+    - title: 維基百科：大港口事件
+      url: https://zh.wikipedia.org/wiki/大港口事件
+
 - id: tw-kaliawan
   year: 1878
   title: 加禮宛戰役，兩個族群幾乎滅絕
@@ -766,11 +841,24 @@
   title: 台灣建省，劉銘傳任首任巡撫
   category: politics
   importance: 5
+  desc: 清法戰爭讓清廷確認台灣的戰略地位，光緒十一年下詔建省，與福建分治，劉銘傳以巡撫身分主政，行政區擴為三府一州十一縣三廳，省會定在台北。建省後推動清賦、鐵路、郵政、電報、電燈、煤礦、新式學堂等一連串新政，是清治台灣最積極的六年；但財政壓力沉重，清賦又激起民變，劉銘傳 1891 年去職後多數事業轉趨保守，四年後台灣即割讓日本。
   sources:
     - title: 維基百科：福建臺灣省
       url: https://zh.wikipedia.org/wiki/福建臺灣省
     - title: 維基百科：劉銘傳
       url: https://zh.wikipedia.org/wiki/劉銘傳
+
+- id: tw-qingfu
+  year: 1886
+  title: 清賦，全台土地清丈與稅制整理
+  category: economy
+  importance: 3
+  desc: 劉銘傳為了替建省後的新政籌錢，設清賦總局清查全台隱匿的田地，把清初以來大租戶、小租戶層層疊疊的權利關係重新登記，改以小租戶為納稅主體、大租減四留六。清出的田畝數倍於舊冊，稅收大增，卻也因丈量草率、官吏需索而民怨四起，兩年後在彰化激起施九緞事件、在後山激起大庄事件，清丈被迫中止。這份不完整的田冊後來成為日治初期土地調查的底本。
+  sources:
+    - title: 維基百科：劉銘傳
+      url: https://zh.wikipedia.org/wiki/劉銘傳
+    - title: 維基百科：施九緞事件
+      url: https://zh.wikipedia.org/wiki/施九緞事件
 
 - id: tw-railway-bureau-qing
   year: 1887
@@ -781,6 +869,38 @@
   sources:
     - title: 維基百科：全臺鐵路商務總局
       url: https://zh.wikipedia.org/wiki/全臺鐵路商務總局
+    - title: 維基百科：劉銘傳
+      url: https://zh.wikipedia.org/wiki/劉銘傳
+
+- id: tw-shi-jiuduan
+  year: 1888
+  title: 施九緞事件，清丈激起建省後最大民變
+  category: war
+  importance: 3
+  desc: 淡水知縣李嘉棠奉派到彰化丈量土地，敷衍了事又藉機需索，地主施九緞以「索焚丈單」為號召率數千民眾圍彰化縣城，前來解圍的提督朱煥明戰死，全縣一度失序。林朝棟率棟軍一千八百人內外夾擊才解圍。事後李嘉棠革職，施九緞受民眾掩護始終未被捕，參與者也多從寬發落。這是建省以來規模最大的民變，直接讓劉銘傳的清賦停擺，新政財源斷絕，三年後他也去職。
+  sources:
+    - title: 維基百科：施九緞事件
+      url: https://zh.wikipedia.org/wiki/施九緞事件
+
+- id: tw-dazhuang
+  year: 1888
+  title: 大庄事件，北洋艦隊首次渡海登陸作戰
+  category: war
+  importance: 3
+  desc: 花東縱谷的大庄（今花蓮富里）以大武壠族為主的移民，因撫墾局委員雷福海藉清丈之便欺壓居民、凌辱婦女，六月殺雷福海等官吏起事，隨後阿美族、客家移民與卑南族呂家望社加入，北路打到花蓮港、南路圍攻卑南廳署，是清治時期東部最大的一場反抗。清廷從北洋調來致遠、靖遠兩艘巡洋艦以艦砲掩護登陸，這是中國近代海軍第一次對台灣的兩棲作戰；戰事到十月才平息，與同年西部的施九緞事件一東一西同源於清賦。
+  sources:
+    - title: 維基百科：大庄事件
+      url: https://zh.wikipedia.org/wiki/大庄事件
+
+- id: tw-taiwan-post
+  year: 1888
+  title: 臺灣郵政總局開辦，劉銘傳新政的高峰
+  category: science
+  importance: 3
+  desc: 劉銘傳在台北府城設臺灣郵政總局，兼收官方文書與民間信件並發行郵票，比大清郵政官局正式成立早了八年。同一時期他還鋪設台北到台南與跨海到福州的電報線、在台北點亮全台第一盞電燈、開辦教授外語與西學的西學堂與電報學堂、興建台北到基隆的鐵路。這些事業多集中在 1887 到 1888 年，是清治台灣近代化的頂點；但財政不堪負荷加上清賦引發民變，多數事業在他 1891 年去職後或停辦或縮減。
+  sources:
+    - title: 維基百科：臺灣郵政
+      url: https://zh.wikipedia.org/wiki/臺灣郵政
     - title: 維基百科：劉銘傳
       url: https://zh.wikipedia.org/wiki/劉銘傳
 
