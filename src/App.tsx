@@ -36,6 +36,12 @@ const HEAD_H = 58
 const AXIS_W = 88
 /** 一個地區欄至少要這麼寬。低於這個寬度標題會被切到讀不懂，寧可讓畫布橫向捲動 */
 const MIN_COL_W = 340
+/**
+ * 收合後的欄寬（固定值，不參與 MIN_COL_W 的橫向捲動判斷），
+ * 必須與 CSS 的 `--collapsed-col-w` 一致。收合後仍要排得下橫書的標題與副標，
+ * 所以不是「愈窄愈好」—— 取捨寫在 styles.css 的 `.region-lane.is-collapsed`。
+ */
+const COLLAPSED_COL_W = 140
 /** 一個標籤欄至少要這麼寬，事件標題才不會被切掉 */
 const MIN_LANE_W = 340
 /** 標籤欄再多下去，視線得之字形來回掃，反而比偶爾退化成圖釘更難讀 */
@@ -78,6 +84,10 @@ export default function App() {
   const [visibleRegions, setVisibleRegions] = useState(
     () => new Set(REGIONS.map((r) => r.id)),
   )
+  // 收合是純版面狀態，跟 visibleRegions（篩選）刻意分開：收合不影響「這一區
+  // 算不算被看見」，同時期清單、搜尋跳轉等既有邏輯都不必知道這件事。
+  // 同「篩選狀態刻意不放進網址」的理由，也不寫進網址。
+  const [collapsedRegions, setCollapsedRegions] = useState(() => new Set<string>())
   const [hoverYear, setHoverYear] = useState<number | null>(null)
   const [selectedId, setSelectedId] = useState<string | null>(INITIAL_URL.eventId)
   const { theme, toggle: toggleTheme } = useTheme()
@@ -168,12 +178,22 @@ export default function App() {
    * 地區欄不再硬擠進一個畫面。地區少時平分寬度，多到擠不下就讓畫布橫向捲動，
    * 每欄保住 MIN_COL_W。畫布寬度在這裡算好、直接寫進 .lanes，
    * 格線與時間游標（inset-inline: 0）才會跨滿整個可捲動寬度而不是只有一個畫面。
+   *
+   * 收合的欄固定吃 COLLAPSED_COL_W，不參與 MIN_COL_W 的橫向捲動判斷 ——
+   * 讓出來的寬度分給其餘展開的欄，這就是收合按鈕存在的意義：
+   * 暫時不想看的地區縮成一條窄欄，把畫面讓給還在看的那些。
    */
   const { canvasWidth, columnWidth } = useMemo(() => {
-    const count = Math.max(1, shownRegions.length)
-    const width = Math.max(viewportWidth, AXIS_W + count * MIN_COL_W)
-    return { canvasWidth: width, columnWidth: (width - AXIS_W) / count }
-  }, [viewportWidth, shownRegions.length])
+    const collapsedCount = shownRegions.filter((x) => collapsedRegions.has(x.region.id)).length
+    const expandedCount = shownRegions.length - collapsedCount
+    const width = Math.max(
+      viewportWidth,
+      AXIS_W + collapsedCount * COLLAPSED_COL_W + expandedCount * MIN_COL_W,
+    )
+    const columnWidth =
+      expandedCount > 0 ? (width - AXIS_W - collapsedCount * COLLAPSED_COL_W) / expandedCount : 0
+    return { canvasWidth: width, columnWidth }
+  }, [viewportWidth, shownRegions, collapsedRegions])
 
   // 欄位夠寬就把標籤排成兩欄。單欄放不下時標籤會被往下推，
   // 推擠一累積就會讓事件順序看起來是錯的，多開一欄比縮小位移上限有效得多。
@@ -184,12 +204,36 @@ export default function App() {
   const laneCount = Math.min(MAX_LANES, Math.max(1, Math.floor(columnWidth / MIN_LANE_W)))
 
   /**
+   * 每一欄實際畫在畫布上的左緣與寬度。收合後的欄跟展開的欄寬度不一樣，
+   * 「同時期」清單捲動到某一欄時（見下面 selectConcurrent）不能再假設所有欄
+   * 等寬去乘欄序 —— 收合的欄會讓後面所有欄的位置往左偏。
+   */
+  const colLayout = useMemo(() => {
+    let x = AXIS_W
+    return shownRegions.map(({ region }) => {
+      const width = collapsedRegions.has(region.id) ? COLLAPSED_COL_W : columnWidth
+      const left = x
+      x += width
+      return { left, width }
+    })
+  }, [shownRegions, collapsedRegions, columnWidth])
+
+  /**
    * 「同時期」清單與搜尋跳轉共用的保證：點下去之前，先確保目標事件在目前的
    * 篩選（類別／傳說旗標／地區）下畫得出來。縮放層級不在這裡處理 ——
    * 需不需要調 ppy 會影響「怎麼捲」，兩個呼叫端各自決定。
+   *
+   * 收合跟隱藏是同一類問題：收合的欄不畫事件（見 RegionColumn），
+   * 跳過去卻看不到會是同一種「什麼都沒發生」的體驗。
    */
   const ensureFiltersOpen = useCallback((event: HistEvent, region: Region) => {
     setVisibleRegions((prev) => (prev.has(region.id) ? prev : new Set(prev).add(region.id)))
+    setCollapsedRegions((prev) => {
+      if (!prev.has(region.id)) return prev
+      const next = new Set(prev)
+      next.delete(region.id)
+      return next
+    })
     setCategories((prev) => (prev.has(event.category) ? prev : new Set(prev).add(event.category)))
     if (event.legendary) setShowLegendary(true)
   }, [])
@@ -266,8 +310,8 @@ export default function App() {
         const index = shownRegions.findIndex((x) => x.region.id === region.id)
         let nextLeft = el.scrollLeft
         if (index !== -1) {
-          const colLeft = AXIS_W + index * columnWidth
-          const colRight = colLeft + columnWidth
+          const { left: colLeft, width: colW } = colLayout[index]
+          const colRight = colLeft + colW
           const viewLeft = el.scrollLeft + AXIS_W
           const viewRight = el.scrollLeft + el.clientWidth
           if (colLeft < viewLeft) nextLeft = colLeft - AXIS_W
@@ -294,7 +338,7 @@ export default function App() {
       }
       setSelectedId(id)
     },
-    [shownRegions, columnWidth, ppy, ensureFiltersOpen, resolvePpyForEvent],
+    [shownRegions, colLayout, ppy, ensureFiltersOpen, resolvePpyForEvent],
   )
 
   // 網址帶了年份就聽網址的；否則開場停在西元前後，一眼看到秦漢對上羅馬
@@ -413,6 +457,17 @@ export default function App() {
       const next = new Set(prev)
       // 全部關掉等於整個畫面空白，所以最後一個不給關
       if (next.has(id) && next.size > 1) next.delete(id)
+      else next.add(id)
+      return next
+    })
+  }, [])
+
+  // 收合跟隱藏不一樣：收合的欄還在畫面上（窄窄一條），不必留最後一欄不給收，
+  // 全部收合只是把畫面讓給年代軸，讀者隨時能點回展開。
+  const toggleCollapse = useCallback((id: string) => {
+    setCollapsedRegions((prev) => {
+      const next = new Set(prev)
+      if (next.has(id)) next.delete(id)
       else next.add(id)
       return next
     })
@@ -542,6 +597,8 @@ export default function App() {
                 laneCount={laneCount}
                 selectedId={selectedId}
                 onSelect={setSelectedId}
+                collapsed={collapsedRegions.has(region.id)}
+                onToggleCollapse={() => toggleCollapse(region.id)}
               />
             ))}
 

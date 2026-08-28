@@ -27,6 +27,7 @@
   --head-h: 58px;
   --axis-w: 88px;
   --rail-w: 26px;
+  --collapsed-col-w: 140px;
   --font: system-ui, -apple-system, 'Segoe UI', 'Noto Sans TC', sans-serif;
 }
 
@@ -414,7 +415,52 @@ button {
 
 .lane-name { font-size: 14px; font-weight: 600; }
 .lane-sub, .lane-count { font-size: 11px; color: var(--muted); }
-.lane-count { position: absolute; right: 10px; top: 10px; }
+
+/* 標題列右上角：則數與收合鈕放在同一列，取代原本 .lane-count 各自絕對定位 */
+.lane-head-actions {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lane-collapse-btn {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+.lane-collapse-btn:hover { background: var(--page); color: var(--text-primary); }
+.lane-collapse-btn svg { width: 13px; height: 13px; }
+/* CaretDownIcon 預設朝下：收合鈕轉成朝左（欄位要往左收），
+   展開鈕轉成朝右（欄位要往右撐開），與實際的視覺動作方向一致 */
+.lane-collapse-btn.is-collapse svg { transform: rotate(90deg); }
+.lane-collapse-btn.is-expand svg { transform: rotate(-90deg); }
+
+/* 收合後的窄欄：標題、副標與斷代色帶都留著（標題維持橫書），只有事件不畫。
+   寬度固定、不參與 flex 分配剩餘空間 —— 讓出來的寬度分給其餘展開的欄。
+
+   寬度是「標題排得下」決定的，不是「愈窄愈好」：最長的地區名有五個字
+   （天文與地球、高鐵與捷運），14px 就要 70px，加上展開鈕與內距是 116px。
+   140 留一點餘裕給副標。比起 MIN_COL_W 的 340 仍然省下 200px，收合是划算的。 */
+.region-lane.is-collapsed { flex: none; width: var(--collapsed-col-w); }
+/* 留出展開鈕的位置，長副標才不會鑽到鈕底下 */
+.region-lane.is-collapsed .lane-head-name { max-width: calc(100% - 26px); }
+.region-lane.is-collapsed .lane-name,
+.region-lane.is-collapsed .lane-sub {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 .lane-body {
   position: relative;

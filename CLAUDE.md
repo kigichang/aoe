@@ -655,10 +655,16 @@ URL 裡的空白一律寫成底線（`羅馬之劫_(410年)`、`Sack_of_Rome_(41
 |---|---|---|
 | `App.tsx` `HEAD_H` | `--head-h` | 58px |
 | `App.tsx` `AXIS_W` | `--axis-w` | 88px |
+| `App.tsx` `COLLAPSED_COL_W` | `--collapsed-col-w` | 140px |
 | — | `.lane-head-name` 的 `left` 偏移 | `calc(var(--axis-w) + 10px)` |
 | `layout.ts` `ROW_HEIGHT` / `EventMark.tsx` `HALF_ROW` | `.mark` height | 26 / 11 / 22px |
 
 `HEAD_H` 錯了會讓縮放錨定與時間游標整體偏移（sticky header 佔了捲動座標的前 58px）。
+
+`COLLAPSED_COL_W` 錯了不會報錯，只會讓 `colLayout`（`App.tsx`）算出來的欄位左緣
+跟實際畫面差一點 —— 症狀是「同時期」清單跳到收合欄右邊的欄位時，橫向捲動停在
+差幾十 px 的位置。**所以這個值刻意不做 media query 覆寫**：`--rail-w`／`--axis-w`
+在 640px 以下會縮，這個不縮，兩邊才不會分岔。
 
 還有一個跨檔案的字串常數：`theme.ts` 的 `THEME_KEY`（`aoe:theme`）與 `index.html`
 `<head>` 裡那段防閃爍的 inline script **必須一致**。那段 script 的用途是在首次繪製前
