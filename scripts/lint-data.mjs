@@ -132,10 +132,33 @@ if (has('--check-pages')) {
       // 少了這個參數，繁體標題會被大量誤報成 missing。
       if (host.startsWith('zh.')) params.set('converttitles', 'zh-hans')
 
-      const res = await fetch(`https://${host}/w/api.php?${params}`, {
-        headers: { 'User-Agent': 'aoe-data-lint (https://github.com/kigichang/aoe)' },
-      })
-      const { query } = await res.json()
+      /**
+       * 條目數上千之後，維基會對這串連續請求回 503
+       * （`upstream connect error … reset reason: overflow`）。那是暫時性的
+       * 負載保護，不是標題有問題 —— 退避重試幾次就會過。
+       *
+       * **一定要判斷回應裡有沒有 `query`。** 曾經直接解構就用，非 200 的回應
+       * 沒有這個欄位，整支腳本會以 `Cannot read properties of undefined`
+       * 中止在半路 —— 看起來像資料壞了，實際上只是被限流，而且已經檢查過的
+       * 那幾百個條目也一起白跑。
+       */
+      let query
+      for (let attempt = 0; attempt < 4 && !query; attempt++) {
+        if (attempt) await new Promise((r) => setTimeout(r, 3000 * attempt))
+        try {
+          const res = await fetch(`https://${host}/w/api.php?${params}`, {
+            headers: { 'User-Agent': 'aoe-data-lint (https://github.com/kigichang/aoe)' },
+          })
+          ;({ query } = await res.json())
+        } catch {
+          // 連線層的失敗與 503 同樣處理：重試，仍不行才報出來
+        }
+      }
+      if (!query) {
+        bad++
+        console.log(`  ✗ 維基 API 沒有回應（${host}，第 ${i + 1}–${i + 40} 個標題），這批沒驗到`)
+        continue
+      }
 
       // normalized / converted / redirects 逐層把回傳標題對回原始寫法
       const chain = new Map()
