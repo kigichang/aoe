@@ -204,7 +204,7 @@
   title: 荷蘭東印度公司築熱蘭遮城，據南台灣
   category: politics
   importance: 5
-  desc: 台灣進入有系統文字記載的開端，也被捲入東亞海上貿易網。
+  desc: 在澎湖被明軍逼退後轉進不屬明朝版圖的大員，由首任長官宋克在一鯤鯓沙洲築城。隔年再以十五匹花布向新港社取得赤崁的土地，開闢普羅民遮市街 —— 一座城守海口、一片街市管內陸，南台灣的統治骨架就此定下。台灣從這一年起進入有系統文字記載的年代，也被捲進東亞的海上貿易網。
   sources:
     - title: 維基百科：熱蘭遮城
       url: https://zh.wikipedia.org/wiki/熱蘭遮城
@@ -288,14 +288,29 @@
     - title: 維基百科：臺灣荷蘭統治時期
       url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
 
+- id: tw-siraya-shamans-exile
+  year: 1641
+  title: 荷蘭流放二百五十名尪姨，禁西拉雅祭儀
+  category: religion
+  importance: 3
+  desc: 尪姨是西拉雅村社裡主持祭儀、司掌祖靈信仰的女性祭司。傳教士把她們看成改宗最大的障礙，這一年將二百五十人集體流放到北方的諸羅山，村社原有的祭祀隨之中斷。新港社的學校與羅馬字書寫是同一套傳教工作的另一面 —— 台灣第一次的識字教育與第一次的信仰壓制出自同一批人，同一個十年裡。
+  sources:
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+    - title: 維基百科：尪姨
+      url: https://zh.wikipedia.org/wiki/尪姨
+
 - id: tw-dutch-expel-spanish
   year: 1642
   title: 荷蘭驅逐西班牙人
   category: war
   importance: 4
+  desc: 西班牙 1637 年自毀淡水的聖多明哥城、又把兵力抽回菲律賓之後，北台灣只剩雞籠一座孤城。荷蘭艦隊北上圍攻數日，守軍開城撤往馬尼拉，十六年的西班牙統治告終。西部沿海的南北兩端第一次握在同一個政權手上，荷蘭也才真正能把島當成一整塊來經營。
   sources:
     - title: 維基百科：西班牙統治時期 (台灣)
       url: https://zh.wikipedia.org/wiki/西班牙統治時期_(台灣)
+    - title: 維基百科：雞籠之戰
+      url: https://zh.wikipedia.org/wiki/雞籠之戰
 
 - id: tw-pacht
   year: 1644
@@ -324,7 +339,23 @@
   title: 郭懷一抗荷事件
   category: war
   importance: 3
+  desc: 1640 年代大員當局對漢人陸續加稅，其中人頭稅最受反彈，士兵又常藉查驗稅單勒索財物。郭懷一聚眾數千夜襲赤崁，隔日在荷軍與原住民兵夾擊下潰散，死傷數千。這是荷治時期規模最大的漢人反抗 —— 公司靠漢人開墾與納稅撐起財政，事後卻動工築城把他們當成必須設防的對象。
   sources:
+    - title: 維基百科：郭懷一事件
+      url: https://zh.wikipedia.org/wiki/郭懷一事件
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
+- id: tw-provintia
+  year: 1653
+  endYear: 1655
+  title: 築普羅民遮城，赤崁設省城城塞
+  category: politics
+  importance: 3
+  desc: 郭懷一事件的直接產物。荷蘭人在赤崁市街北方動工興建磚石城塞，兩年後完工，作為赤崁省的行政中心，與海口對岸的熱蘭遮城分掌南台灣。1661 年鄭成功登陸後最先攻下的就是這一座，隨即在城裡設承天府衙門，成為明鄭的最高行政機構。城基就是今天的赤崁樓。
+  sources:
+    - title: 維基百科：赤崁樓
+      url: https://zh.wikipedia.org/wiki/赤崁樓
     - title: 維基百科：郭懷一事件
       url: https://zh.wikipedia.org/wiki/郭懷一事件
 
@@ -334,9 +365,12 @@
   category: war
   importance: 4
   endYear: 1662
+  desc: 鄭軍自鹿耳門進入台江，先取普羅民遮城，再圍熱蘭遮城。荷方守了將近九個月，巴達維亞派來的援軍無功而返，長官揆一於 1662 年 2 月 1 日開城投降，率殘餘人員撤離。三十八年的荷蘭統治到此結束；揆一回去後被公司問成失土之罪，流放海島十餘年。
   sources:
     - title: 維基百科：鄭成功攻臺之役
       url: https://zh.wikipedia.org/wiki/鄭成功攻臺之役
+    - title: 維基百科：揆一
+      url: https://zh.wikipedia.org/wiki/揆一
 
 - id: tw-tuntian
   year: 1661

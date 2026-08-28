@@ -35,6 +35,16 @@
     - title: 維基百科：台灣梅花鹿
       url: https://zh.wikipedia.org/wiki/台灣梅花鹿
 
+- id: ag-1636-hunting-licence
+  year: 1636
+  title: 開辦狩獵執照，鹿製品貿易收歸管制
+  category: policy
+  importance: 3
+  desc: 漢人獵鹿必須先向大員當局買執照，出口鹿製品另外課稅。在此之前是誰下手誰得利，發照之後這門生意的門檻由公司來訂 —— 台灣第一次有政權用一紙許可決定誰能做哪一行，而且挑的正是當時最賺錢的那一行。
+  sources:
+    - title: 維基百科：臺灣荷蘭統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
 - id: ag-1637-deer-traps
   year: 1637
   title: 引進陷阱捕鹿，鹿皮輸出升至十五萬張
@@ -54,6 +64,16 @@
   sources:
     - title: 維基百科：臺灣荷蘭統治時期
       url: https://zh.wikipedia.org/wiki/臺灣荷蘭統治時期
+
+- id: ag-1644-pacht
+  year: 1644
+  title: 贌社開辦，村社交易權標售給商人
+  category: trade
+  importance: 4
+  desc: 公司把各原住民村社一年份的交易權公開招標，得標商人獨佔該社的所有買賣，以鹽、鐵鍋、布疋換鹿皮鹿肉再轉手出口。執照制之下人人買照可獵，贌社之後只有得標者能進場 —— 漢人與原住民之間的直接交易被一紙標單取代，公司則把不確定的稅收換成標金這種先收的固定收入。清治沿用此制改徵社餉，一直到 1737 年才逐漸廢除。
+  sources:
+    - title: 維基百科：贌社
+      url: https://zh.wikipedia.org/wiki/贌社
 
 - id: ag-1646-families
   year: 1646
