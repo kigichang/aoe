@@ -328,18 +328,6 @@
     - title: 維基百科：鴻海科技集團
       url: https://zh.wikipedia.org/wiki/鴻海科技集團
 
-- id: te-2010-panel-consolidation
-  year: 2010
-  title: 奇美併入群創，面板五虎剩四家
-  category: enterprise
-  importance: 3
-  desc: 中國與韓國同時擴產，價格戰打到台灣廠商只能靠合併求生。同一套「砸錢蓋廠拚規模」的打法，在半導體贏了、在面板輸了 —— 差別在於製程領先能築起門檻，而面板不能。
-  sources:
-    - title: 維基百科：面板五虎
-      url: https://zh.wikipedia.org/wiki/面板五虎
-    - title: 維基百科：群創光電
-      url: https://zh.wikipedia.org/wiki/群創光電
-
 - id: te-2007-overtakes-us
   year: 2007
   title: 台灣半導體產值超越美國，僅次於日本
@@ -359,6 +347,40 @@
   sources:
     - title: 英文維基百科：台灣半導體產業
       url: https://en.wikipedia.org/wiki/Semiconductor_industry_in_Taiwan
+
+- id: te-2010-panel-consolidation
+  year: 2010
+  title: 奇美併入群創，面板五虎剩四家
+  category: enterprise
+  importance: 3
+  desc: 中國與韓國同時擴產，價格戰打到台灣廠商只能靠合併求生。同一套「砸錢蓋廠拚規模」的打法，在半導體贏了、在面板輸了 —— 差別在於製程領先能築起門檻，而面板不能。
+  sources:
+    - title: 維基百科：面板五虎
+      url: https://zh.wikipedia.org/wiki/面板五虎
+    - title: 維基百科：群創光電
+      url: https://zh.wikipedia.org/wiki/群創光電
+
+- id: te-2012-dram-exit
+  year: 2012
+  title: 力晶下櫃，台灣退出標準型記憶體
+  category: enterprise
+  importance: 4
+  desc: 12 月因 DRAM 價格長期崩跌、累計虧損逾千億元、每股淨值轉為負數而被迫下櫃，隨即淡出標準型記憶體、轉做晶圓代工，2019 年以力積電重新上市。兩兆雙星押的兩個產業，面板靠合併苟延，DRAM 則是整個退場——標準型記憶體是規格統一的商品，除了比誰的成本低沒有別的差別，而台灣廠商的製程始終買自美日，沒有自己的技術可以築門檻。同一套「砸錢蓋廠拚規模」的打法，只有在製程能領先的晶圓代工上贏了。
+  sources:
+    - title: 維基百科：力積電
+      url: https://zh.wikipedia.org/wiki/力積電
+
+- id: te-2016-sharp
+  year: 2016
+  title: 鴻海收購夏普，代工廠買下品牌
+  category: enterprise
+  importance: 4
+  desc: 8 月以三千八百八十八億日圓取得夏普約六成六股權，是日本第一家被外資收購的大型電子廠。從 1976 年工研院向 RCA 買技術算起四十年，方向調轉了過來——當年出錢學別人怎麼做的一方，買下了教過整個亞洲怎麼做液晶的那一家。夏普 2017 年重返東京證交所一部，鴻海也藉此拿到面板與品牌，補上長年只做代工的缺口。
+  sources:
+    - title: 維基百科：夏普
+      url: https://zh.wikipedia.org/wiki/夏普
+    - title: 維基百科：鴻海精密
+      url: https://zh.wikipedia.org/wiki/鴻海精密
 
 - id: te-2018-morris-chang-retires
   year: 2018

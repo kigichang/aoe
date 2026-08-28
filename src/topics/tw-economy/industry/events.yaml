@@ -309,6 +309,18 @@
     - title: 維基百科：臺灣經濟
       url: https://zh.wikipedia.org/wiki/臺灣經濟
 
+- id: in-1954-four-companies
+  year: 1954
+  title: 台泥等四大公司移轉民營，民間工業資本就此成形
+  category: policy
+  importance: 4
+  desc: 台灣水泥、台灣紙業、台灣工礦、台灣農林四家公營公司的股權，因為被拿去補償耕者有其田的地主而流入民間，這一年正式改為民營。11 月台泥召開第一次股東大會，由板橋林家的林柏壽出任董事長、鹿港辜家的辜振甫實際經營。此前的工業幾乎全是接收日產而來的公營事業，這是第一次出現具規模的民營製造業；買下小地主賤價出脫股票的幾個家族，也在這一步從地主變成日後的企業集團。
+  sources:
+    - title: 維基百科：台灣水泥
+      url: https://zh.wikipedia.org/wiki/台灣水泥
+    - title: 維基百科：耕者有其田
+      url: https://zh.wikipedia.org/wiki/耕者有其田
+
 - id: in-1954-formosa-plastics
   year: 1954
   title: 福懋塑膠獲准設立，用美援貸款蓋 PVC 廠
@@ -350,6 +362,16 @@
   sources:
     - title: 維基百科：獎勵投資條例
       url: https://zh.wikipedia.org/wiki/獎勵投資條例
+
+- id: in-1962-stock-exchange
+  year: 1962
+  title: 台灣證券交易所開業，工業有了自己的籌資管道
+  category: policy
+  importance: 4
+  desc: 1961 年 10 月設立，隔年 2 月 9 日開始集中交易。起因正是土地改革：地主拿到的土地債券與四大公司股票開始在市面上轉手，代客買賣的行號四散難以管理，才有了設集中市場的必要。工業投資從此不必只靠美援、銀行貸款與家族資金，這是台灣資本市場的起點——也讓 1980 年代之後的科技業得以用上市籌到蓋廠的錢。
+  sources:
+    - title: 維基百科：臺灣證券交易所
+      url: https://zh.wikipedia.org/wiki/臺灣證券交易所
 
 - id: in-1963-industry-overtakes-agriculture
   year: 1963
@@ -559,6 +581,16 @@
       url: https://zh.wikipedia.org/wiki/台塑企業
     - title: 維基百科：第六套輕油裂解廠
       url: https://zh.wikipedia.org/wiki/第六套輕油裂解廠
+
+- id: in-1996-no-haste
+  year: 1996
+  title: 戒急用忍，替西進的資金裝上閘門
+  category: policy
+  importance: 4
+  desc: 9 月李登輝提出對中國的高科技、五千萬美元以上與基礎建設三類投資從嚴審查，小額投資才鬆綁。1987 年台幣升值之後傳統產業已整批外移，這一步要擋的是資金與技術跟著走。2000 年政黨輪替後改為「積極開放、有效管理」，2006 年再翻回「積極管理、有效開放」——同一個問題三次改名，反映的是這條路線始終沒有共識。台灣往後三十年關於兩岸經貿的爭論，包括 ECFA 與服貿，都是從這裡開始的。
+  sources:
+    - title: 維基百科：戒急用忍
+      url: https://zh.wikipedia.org/wiki/戒急用忍
 
 - id: in-2000-nuclear-four-halt
   year: 2000

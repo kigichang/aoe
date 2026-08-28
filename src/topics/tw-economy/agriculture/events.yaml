@@ -598,6 +598,16 @@
     - title: 維基百科：公地放領
       url: https://zh.wikipedia.org/wiki/公地放領
 
+- id: ag-1952-farmers-association
+  year: 1952
+  title: 各級農會改組，確立總幹事責任制
+  category: policy
+  importance: 3
+  desc: 農會與合作社在 1949 年併成一個組織，這一年再頒行改進辦法，把決策權留給農民選出的理事會、執行權交給聘任的總幹事。從此往後三十年，肥料換穀、稻穀保價收購、農業推廣與農貸全都經由這套系統落地——政府在農村的每一項政策，實際執行者都是它。附設的信用部後來也讓農會成為鄉鎮唯一的金融機構。
+  sources:
+    - title: 維基百科：中華民國農會
+      url: https://zh.wikipedia.org/wiki/中華民國農會
+
 - id: ag-1953-land-to-tiller
   year: 1953
   title: 耕者有其田
@@ -629,6 +639,18 @@
   sources:
     - title: 維基百科：石門水庫 (臺灣)
       url: https://zh.wikipedia.org/wiki/石門水庫_(臺灣)
+
+- id: ag-1969-banana-scandal
+  year: 1969
+  title: 剝蕉案，香蕉外銷的黃金期告終
+  category: trade
+  importance: 4
+  desc: 1960 年代香蕉是僅次於糖與米的外匯來源，靠日本市場撐起中南部的蕉農與青果運銷合作社。3 月高雄青果社理事長吳振瑞等人以贈送金碗金盤遭訴，判刑定讞；主事者去職、外銷體系瓦解後，對日出口一路衰退，市場被菲律賓與中南美洲接手。1989 年政府發還沒收物並私下致歉，此案至今被視為冤案。一項出口主力可以因為政治與司法的介入在數年內消失，這是台灣農產外銷最早的一次示範。
+  sources:
+    - title: 維基百科：高雄青果社舞弊案
+      url: https://zh.wikipedia.org/wiki/高雄青果社舞弊案
+    - title: 維基百科：吳振瑞
+      url: https://zh.wikipedia.org/wiki/吳振瑞
 
 - id: ag-1972-rural-measures
   year: 1972
