@@ -1,0 +1,1214 @@
+# year: 負數 = 西元前，沒有西元 0 年。endYear 選填（有跨度的事件）。
+# category: politics | war | culture | science | religion | economy
+# importance: 1-5。縮放到全域視角時只會顯示 5，放大後才逐層釋出。
+#
+# 本欄由 world/china/events.yaml 複製（year ≥ 1500），兩份獨立維護、不會自動同步；
+# id 與世界史相同只是為了日後 diff 方便。
+#
+# 年代經維基百科查證；標題與描述為自行撰寫，未取用條目文字。
+
+- id: cn-wang-yangming
+  year: 1508
+  title: 王陽明龍場悟道，心學興起
+  category: culture
+  importance: 4
+  desc: 貶謫貴州龍場時提出「心外無理」，後倡致良知與知行合一。心學把人的主體性放進學說重心，一洗程朱理學之弊，並東傳日本與朝鮮。
+  sources:
+    - title: 維基百科：王守仁
+      url: https://zh.wikipedia.org/wiki/王守仁
+    - title: 維基百科：心學
+      url: https://zh.wikipedia.org/wiki/心學
+
+- id: cn-great-rites-controversy
+  year: 1521
+  endYear: 1524
+  title: 大禮議之爭
+  category: politics
+  importance: 3
+  desc: 以外藩身分入繼大統的嘉靖帝，堅持追尊生父為皇考而非僅稱皇叔，與內閣楊廷和等朝臣爆發長達三年的禮法之爭，最終皇帝獲勝，卻也重創了文官集團的制衡力量。
+  sources:
+    - title: 維基百科：大禮議
+      url: https://zh.wikipedia.org/wiki/大禮議
+
+- id: cn-gengxu-incident
+  year: 1550
+  title: 庚戌之變，俺答汗兵臨北京城下
+  category: war
+  importance: 3
+  desc: 蒙古土默特部俺答汗因求貢遭拒，率軍長驅直入圍攻北京城外八天，大肆焚掠而去，暴露京營戰力空虛，促成二十年後的隆慶封貢和議。
+  sources:
+    - title: 維基百科：庚戌之變
+      url: https://zh.wikipedia.org/wiki/庚戌之變
+
+- id: cn-macau-lease
+  year: 1557
+  title: 葡萄牙人取得澳門居留權
+  category: economy
+  importance: 3
+  desc: 歐洲人在東亞的第一個長期據點，成為中國、日本與歐洲三方轉口貿易的節點。
+  sources:
+    - title: 維基百科：葡屬澳門
+      url: https://zh.wikipedia.org/wiki/葡屬澳門
+    - title: 維基百科：澳門歷史
+      url: https://zh.wikipedia.org/wiki/澳門歷史
+
+- id: cn-longqing-opening
+  year: 1567
+  title: 隆慶開關，部分解除海禁
+  category: economy
+  importance: 4
+  desc: 漳州月港開放民間出海貿易。此前的走私與倭亂大幅減少，美洲白銀自此經馬尼拉大量流入，支撐了晚明的銀本位。
+  sources:
+    - title: 維基百科：隆慶開關
+      url: https://zh.wikipedia.org/wiki/隆慶開關
+    - title: 維基百科：明朝
+      url: https://zh.wikipedia.org/wiki/明朝
+
+- id: cn-manila-galleon
+  year: 1571
+  title: 馬尼拉大帆船開航，美洲白銀流入
+  category: economy
+  importance: 4
+  desc: 美洲白銀經馬尼拉大量進入中國，支撐了明代後期的銀本位與賦稅折銀。
+  sources:
+    - title: 維基百科：馬尼拉大帆船
+      url: https://zh.wikipedia.org/wiki/馬尼拉大帆船
+
+- id: cn-zhang-juzheng
+  year: 1573
+  title: 張居正改革
+  category: politics
+  importance: 3
+  desc: 神宗年幼，首輔張居正代行主政十年，推行考成法整頓官員效率、清丈全國田畝、將賦役合併折銀徵收（一條鞭法），國庫從入不敷出轉為積蓄可支數年之用。他死後不到半年即遭抄家削爵、改革政令多遭廢止——明代難得一段財政中興，卻也是人亡政息的典型案例。
+  sources:
+    - title: 維基百科：張居正
+      url: https://zh.wikipedia.org/wiki/張居正
+
+- id: cn-bencao-gangmu
+  year: 1578
+  title: 李時珍《本草綱目》成書
+  category: science
+  importance: 4
+  desc: 收錄藥物近一千九百種，體例上以自然屬性分類，而非依療效編排。
+  sources:
+    - title: 維基百科：本草綱目
+      url: https://zh.wikipedia.org/wiki/本草綱目
+
+- id: cn-imjin-war
+  year: 1592
+  title: 萬曆朝鮮之役，明軍援朝抗日
+  category: war
+  importance: 4
+  endYear: 1598
+  desc: 明、朝鮮、日本三方投入的大規模戰爭，耗竭明朝國庫，也削弱了豐臣政權。
+  sources:
+    - title: 維基百科：萬曆朝鮮之役
+      url: https://zh.wikipedia.org/wiki/萬曆朝鮮之役
+
+- id: cn-sweet-potato
+  year: 1593
+  title: 番薯自呂宋傳入福建
+  category: economy
+  importance: 4
+  desc: 耐旱、可種於瘠地的新作物。與玉米一同讓中國人口在此後兩百年間增長數倍。
+  sources:
+    - title: 維基百科：番薯
+      url: https://zh.wikipedia.org/wiki/番薯
+    - title: 維基百科：陳振龍
+      url: https://zh.wikipedia.org/wiki/陳振龍
+
+- id: cn-peony-pavilion
+  year: 1598
+  title: 湯顯祖《牡丹亭》
+  category: culture
+  importance: 3
+  desc: 崑曲的代表作，也是晚明市民文化興盛的指標。
+  sources:
+    - title: 維基百科：牡丹亭
+      url: https://zh.wikipedia.org/wiki/牡丹亭
+
+- id: cn-ricci-beijing
+  year: 1601
+  title: 利瑪竇入北京，西學東漸
+  category: religion
+  importance: 4
+  desc: 以曆算與輿圖為敲門磚傳教，把歐幾里得幾何與世界地圖一併帶進士大夫圈子。
+  sources:
+    - title: 維基百科：利瑪竇
+      url: https://zh.wikipedia.org/wiki/利瑪竇
+
+- id: cn-mingmo-sanan
+  year: 1615
+  endYear: 1620
+  title: 明末三大案，梃擊、紅丸、移宮
+  category: politics
+  importance: 3
+  desc: 梃擊案：萬曆四十三年，一名男子持棗木棍闖入太子朱常洛所居的慈慶宮行凶，供稱受鄭貴妃指使，牽出立儲之爭多年的恩怨；紅丸案：光宗即位僅一個月，服下鴻臚寺丞所獻的紅色藥丸後暴斃；移宮案：熹宗即位，東林黨人以李選侍不宜與新君同居宮中為由，逼其遷出乾清宮。三案表面各自獨立，骨子裡都是東林黨與宮廷、閹黨勢力角力的延伸——國本之爭打的是皇位繼承的名分，這三案打的是繼承之後誰能貼身把持皇帝。
+  sources:
+    - title: 維基百科：明末三大案
+      url: https://zh.wikipedia.org/wiki/明末三大案
+
+- id: cn-eight-banners
+  year: 1615
+  title: 努爾哈赤創建八旗制度
+  category: politics
+  importance: 4
+  desc: 將女真各部按軍事編制整編為八旗，兵民合一、出則為兵入則為民，是後金崛起的組織根基，也是日後滿洲統治中國近三百年的核心制度。
+  sources:
+    - title: 維基百科：八旗
+      url: https://zh.wikipedia.org/wiki/八旗
+
+- id: cn-later-jin
+  year: 1616
+  title: 努爾哈赤建後金
+  category: politics
+  importance: 4
+  desc: 努爾哈赤統一女真諸部後，在赫圖阿拉稱汗，建元天命，國號大金（史稱後金，與宋代的金區隔）。兩年後他以「七大恨」誓師伐明，薩爾滸一役重創明軍，遼東戰局自此逆轉。這個由建州女真部落聯盟起家的政權，二十年後改號為清，最終入主中原。
+  sources:
+    - title: 維基百科：努爾哈赤
+      url: https://zh.wikipedia.org/wiki/努爾哈赤
+
+- id: cn-seven-grievances
+  year: 1618
+  title: 七大恨，後金起兵反明
+  category: war
+  importance: 3
+  desc: 努爾哈赤以「七大恨」告天，正式起兵伐明，隔年即在薩爾滸大破明軍四路。
+  sources:
+    - title: 維基百科：七大恨
+      url: https://zh.wikipedia.org/wiki/七大恨
+
+- id: cn-sarhu
+  year: 1619
+  title: 薩爾滸之戰，明清攻守易勢
+  category: war
+  importance: 3
+  desc: 努爾哈赤以少擊眾，明軍四路喪其三。此後明朝在遼東由攻轉守，再無力主動出擊。
+  sources:
+    - title: 維基百科：薩爾滸之戰
+      url: https://zh.wikipedia.org/wiki/薩爾滸之戰
+
+- id: cn-little-ice-age
+  year: 1620
+  title: 小冰河期最冷階段，農業歉收
+  category: economy
+  importance: 3
+  endYear: 1710
+  desc: 極端低溫使作物減產、財政收入下滑，旱災與流民接連而起。這是明末民變與王朝崩解的背景之一，而非單一事件。
+  sources:
+    - title: 維基百科：小冰期
+      url: https://zh.wikipedia.org/wiki/小冰期
+    - title: 維基百科：南明
+      url: https://zh.wikipedia.org/wiki/南明
+    - title: 維基百科：明末民變
+      url: https://zh.wikipedia.org/wiki/明末民變
+
+- id: cn-donglin-eunuchs
+  year: 1624
+  title: 魏忠賢閹黨與東林黨爭
+  category: politics
+  importance: 3
+  desc: 天啟年間閹黨大興冤獄，東林人士遭誅戮。崇禎即位後雖剷除閹黨，黨爭卻未止，吏治持續敗壞。
+  sources:
+    - title: 維基百科：魏忠賢
+      url: https://zh.wikipedia.org/wiki/魏忠賢
+    - title: 維基百科：東林黨
+      url: https://zh.wikipedia.org/wiki/東林黨
+
+- id: cn-ningyuan-battle
+  year: 1626
+  title: 寧遠之戰，努爾哈赤負傷病逝
+  category: war
+  importance: 4
+  desc: 明將袁崇煥以紅夷大砲固守寧遠，擊退努爾哈赤親率的十三萬大軍，是後金崛起以來首次重大挫敗。努爾哈赤數月後傷重去世，皇太極繼位。
+  sources:
+    - title: 維基百科：寧遠之戰
+      url: https://zh.wikipedia.org/wiki/寧遠之戰
+
+- id: cn-jisi-incident
+  year: 1629
+  title: 己巳之變，皇太極首次入塞，袁崇煥下獄被殺
+  category: war
+  importance: 4
+  desc: 皇太極繞道蒙古突破長城防線，直逼北京城下，寧遠之戰的功臣袁崇煥星夜回援卻反遭崇禎帝以通敵之罪凌遲處死，明朝自毀長城，遼東再無良將可用。
+  sources:
+    - title: 維基百科：己巳之變 (崇禎)
+      url: https://zh.wikipedia.org/wiki/己巳之變_(崇禎)
+
+- id: cn-late-ming-rebellions
+  year: 1630
+  endYear: 1641
+  title: 李自成、張獻忠等民變勢力坐大
+  category: war
+  importance: 4
+  desc: 陝西饑荒與加派並起，流民聚為民變，李自成、張獻忠等部在官軍圍剿與招撫間反覆坐大。1641 年李自成攻破洛陽、殺福王朱常洵，民變自此從流竄劫掠轉為足以顛覆王朝的力量。
+  sources:
+    - title: 維基百科：李自成
+      url: https://zh.wikipedia.org/wiki/李自成
+    - title: 維基百科：張獻忠
+      url: https://zh.wikipedia.org/wiki/張獻忠
+
+- id: cn-qing-proclaimed
+  year: 1636
+  title: 皇太極改國號為清
+  category: politics
+  importance: 3
+  desc: 皇太極先於前一年降服漠南蒙古末代大汗林丹汗之子，並將女真族名改為滿洲，隨後在盛京稱帝，改國號大清，滿蒙聯合統治的格局自此成形。
+  sources:
+    - title: 維基百科：皇太極
+      url: https://zh.wikipedia.org/wiki/皇太極
+
+- id: cn-tiangong-kaiwu
+  year: 1637
+  title: 宋應星《天工開物》
+  category: science
+  importance: 4
+  desc: 系統記錄農業與手工業的實作技術，在當時的士人著作裡相當罕見。
+  sources:
+    - title: 維基百科：天工開物
+      url: https://zh.wikipedia.org/wiki/天工開物
+
+- id: cn-songjin-campaign
+  year: 1642
+  title: 松錦之戰，明朝關外主力覆滅
+  category: war
+  importance: 4
+  desc: 清軍圍困松山、錦州近兩年，明將洪承疇兵敗被俘後降清，明朝在關外最後一支主力全軍覆沒，山海關外已無力抵禦，兩年後清軍便長驅入關。
+  sources:
+    - title: 維基百科：松錦之戰
+      url: https://zh.wikipedia.org/wiki/松錦之戰
+
+- id: cn-qing-enters
+  year: 1644
+  title: 李自成入北京，清軍入關
+  category: war
+  importance: 5
+  desc: 李自成率大順軍攻破北京，崇禎帝自縊煤山，明朝滅亡；駐守山海關的明將吳三桂降清，引清軍入關，聯手在山海關大敗李自成，隨即攻佔北京，順治帝遷都於此。短短一個多月內，北京城頭三度易幟——先明、後大順、再清——是中國歷史上少見的政權更迭速度。
+  sources:
+    - title: 維基百科：李自成
+      url: https://zh.wikipedia.org/wiki/李自成
+    - title: 維基百科：甲申之變
+      url: https://zh.wikipedia.org/wiki/甲申之變
+
+- id: cn-southern-ming
+  year: 1644
+  title: 南明諸政權相繼建立與覆滅
+  category: politics
+  importance: 4
+  endYear: 1662
+  desc: 弘光、隆武、紹武、永曆等政權在南方接連而起，彼此不相統屬甚至互相攻伐。1659 年永曆帝在吳三桂追擊下逃入緬甸，1662 年遭吳三桂率軍入緬索回，於昆明遇害，南明告終。
+  sources:
+    - title: 維基百科：南明
+      url: https://zh.wikipedia.org/wiki/南明
+
+- id: cn-queue-order
+  year: 1645
+  title: 剃髮易服令
+  category: politics
+  importance: 3
+  desc: 「留頭不留髮」的強制同化，激起江南各地激烈抵抗。
+  sources:
+    - title: 維基百科：剃髮易服
+      url: https://zh.wikipedia.org/wiki/剃髮易服
+
+- id: cn-yangzhou-massacre
+  year: 1645
+  title: 揚州十日，史可法殉城
+  category: war
+  importance: 3
+  desc: 清軍破揚州後屠城。同年弘光政權覆滅，江南反剃髮的抗清鬥爭隨之而起。
+  sources:
+    - title: 維基百科：揚州十日
+      url: https://zh.wikipedia.org/wiki/揚州十日
+    - title: 維基百科：史可法
+      url: https://zh.wikipedia.org/wiki/史可法
+
+- id: cn-li-dingguo-victories
+  year: 1652
+  title: 李定國兩蹶名王，南明中興一線生機
+  category: war
+  importance: 4
+  desc: 原大西軍將領李定國奉永曆政權出兵，桂林一役逼死清定南王孔有德，衡陽一役陣斬清敬謹親王尼堪，是南明抗清以來最輝煌的戰果，一度讓復國看似有望。
+  sources:
+    - title: 維基百科：李定國
+      url: https://zh.wikipedia.org/wiki/李定國
+
+- id: cn-zheng-chenggong-northern-expedition
+  year: 1659
+  title: 鄭成功北伐兵臨南京，功敗垂成
+  category: war
+  importance: 4
+  desc: 鄭成功率十餘萬大軍溯長江而上，一度兵臨南京城下，卻中緩兵之計延誤戰機，最終大敗撤回廈門。北伐受挫促使他轉而東取臺灣，作為反清基地。
+  sources:
+    - title: 維基百科：鄭成功北伐
+      url: https://zh.wikipedia.org/wiki/鄭成功北伐
+
+- id: cn-koxinga
+  year: 1662
+  title: 鄭成功驅逐荷蘭人，取得臺灣
+  category: war
+  importance: 3
+  desc: 北伐受挫後，鄭成功轉而率軍渡海圍攻荷蘭東印度公司經營近四十年的熱蘭遮城，歷經九個月圍城，荷蘭守將揆一開城投降。鄭氏以臺灣為根據地，繼續奉明朔、稱「延平王」與清朝分庭抗禮，直到二十一年後才被清軍攻滅——南明最後一塊反清基地，選在了海峽對岸。
+  sources:
+    - title: 維基百科：鄭成功攻臺之役
+      url: https://zh.wikipedia.org/wiki/鄭成功攻臺之役
+
+- id: cn-kangxi-regent-ousted
+  year: 1669
+  title: 康熙帝智擒鰲拜，正式親政
+  category: politics
+  importance: 4
+  desc: 十六歲的康熙帝以布庫少年設局擒拿專擅跋扈的輔政大臣鰲拜，結束四大臣輔政體制，開啟長達六十一年的親政時期。
+  sources:
+    - title: 維基百科：鼇拜
+      url: https://zh.wikipedia.org/wiki/鼇拜
+
+- id: cn-three-feudatories
+  year: 1673
+  title: 三藩之亂
+  category: war
+  importance: 4
+  endYear: 1681
+  desc: 康熙撤藩引發的八年內戰。平定之後，清朝對南方的統治才真正穩固。
+  sources:
+    - title: 維基百科：三藩之亂
+      url: https://zh.wikipedia.org/wiki/三藩之亂
+
+- id: cn-taiwan-qing
+  year: 1683
+  title: 清朝統一臺灣
+  category: politics
+  importance: 3
+  desc: 康熙採納施琅建議，發兵渡海在澎湖海戰擊潰鄭氏水師主力，鄭克塽隨即降清，臺灣正式納入清朝版圖，設一府三縣隸屬福建省。清初朝中原本頗有棄守臺灣、只留澎湖的聲音，靠施琅力陳其戰略地位才得以保留——鄭氏經營二十餘年的反清基地，換了主人之後反而第一次被正式編入中國的行政體系。
+  sources:
+    - title: 維基百科：澎湖海戰
+      url: https://zh.wikipedia.org/wiki/澎湖海戰
+
+- id: cn-literary-inquisition
+  year: 1663
+  endYear: 1781
+  title: 清代文字獄
+  category: culture
+  importance: 4
+  desc: 康熙年間的明史案，因書中沿用南明年號被舉發，牽連七十餘人處死；雍正年間的呂留良案，人已去世多年仍被剖棺戮屍，門生故舊連坐流放。乾隆一朝案件暴增至一百三十餘起，達到頂峰，禁毀書籍的種類是明代的十餘倍。文網之密，讓讀書人不敢輕議時政，轉而埋首考據訓詁——清代考據學的興盛，某種程度上正是文字獄逼出來的產物：寫詩論政有殺身之禍，校勘古書總安全得多。
+  sources:
+    - title: 維基百科：文字獄
+      url: https://zh.wikipedia.org/wiki/文字獄
+
+- id: cn-nerchinsk
+  year: 1689
+  title: 尼布楚條約，中俄劃定東段邊界
+  category: politics
+  importance: 4
+  desc: 中國第一份與歐洲國家對等簽訂的條約，以拉丁文為正本。
+  sources:
+    - title: 維基百科：尼布楚條約
+      url: https://zh.wikipedia.org/wiki/尼布楚條約
+
+- id: cn-galdan-campaigns
+  year: 1690
+  title: 三征噶爾丹，喀爾喀蒙古歸清
+  category: war
+  importance: 3
+  endYear: 1697
+  desc: 準噶爾汗噶爾丹東征喀爾喀，康熙三度親征將其擊滅。多倫會盟後外蒙古正式納入版圖。
+  sources:
+    - title: 維基百科：三征噶爾丹
+      url: https://zh.wikipedia.org/wiki/三征噶爾丹
+    - title: 維基百科：多倫會盟
+      url: https://zh.wikipedia.org/wiki/多倫會盟
+
+- id: cn-poll-tax-frozen
+  year: 1712
+  title: 滋生人丁永不加賦
+  category: economy
+  importance: 3
+  desc: 人頭稅額就此凍結，隨後併入田賦（攤丁入畝），隱匿人口的誘因消失，戶口數字開始暴增。
+  sources:
+    - title: 維基百科：攤丁入畝
+      url: https://zh.wikipedia.org/wiki/攤丁入畝
+
+- id: cn-jiuzi-duodi
+  year: 1708
+  endYear: 1722
+  title: 九子奪嫡
+  category: politics
+  importance: 3
+  desc: 太子胤礽兩度被廢，康熙其餘諸子分裂成大千歲黨、三爺黨、四爺黨、八爺黨等陣營，明爭暗鬥長達十四年。最終四子胤禛在九門提督隆科多支持下繼位，是為雍正帝；繼位過程眾說紛紜，野史盛傳詔書「傳位十四子」被改為「傳位于四子」，正史雖不採信，卻反映了這場鬥爭在民間留下的疑雲有多深。雍正鑑於兄弟鬩牆之禍，此後改行秘密立儲——傳位詔書密封藏於乾清宮「正大光明」匾後，皇帝駕崩才當眾開啟，終清一代沿用不改。
+  sources:
+    - title: 維基百科：九子奪嫡
+      url: https://zh.wikipedia.org/wiki/九子奪嫡
+
+- id: cn-rites-controversy
+  year: 1724
+  title: 雍正禁教，中國禮儀之爭落幕
+  category: religion
+  importance: 3
+  desc: 祭祖祭孔算不算偶像崇拜的爭執，最終以全面禁教收場，西學東漸中斷百餘年。
+  sources:
+    - title: 維基百科：中國禮儀之爭
+      url: https://zh.wikipedia.org/wiki/中國禮儀之爭
+
+- id: cn-kyakhta-treaty
+  year: 1727
+  title: 恰克圖條約，劃定漠北中俄疆界
+  category: politics
+  importance: 3
+  desc: 繼尼布楚條約劃定東段邊界後，這次條約確立了外蒙古與西伯利亞之間的邊界，並開放恰克圖為兩國通商口岸。
+  sources:
+    - title: 維基百科：恰克圖界約
+      url: https://zh.wikipedia.org/wiki/恰克圖界約
+
+- id: cn-grand-council
+  year: 1729
+  title: 軍機處設立，皇權高度集中
+  category: politics
+  importance: 4
+  desc: 原是為西征準噶爾而設的軍務機構，後來成為實際的決策中樞，繞過內閣直達皇帝，密摺制度至此完備。
+  sources:
+    - title: 維基百科：軍機處
+      url: https://zh.wikipedia.org/wiki/軍機處
+
+- id: cn-tanding-ruyi
+  year: 1735
+  title: 攤丁入畝定制，耗羨歸公與養廉銀
+  category: economy
+  importance: 4
+  desc: 雍正將丁銀全數併入田賦徵收，並把地方私徵的耗羨銀收歸中央、轉發官員為養廉銀，同時抑制陋規、增加國庫收入，是清代財政制度最重要的一次整頓。
+  sources:
+    - title: 維基百科：攤丁入地
+      url: https://zh.wikipedia.org/wiki/攤丁入地
+
+- id: cn-dream-red-chamber
+  year: 1754
+  title: 《紅樓夢》抄本流傳
+  category: culture
+  importance: 4
+  desc: 曹雪芹生前僅以抄本傳世，成書年份只能推定。
+  sources:
+    - title: 維基百科：紅樓夢
+      url: https://zh.wikipedia.org/wiki/紅樓夢
+
+- id: cn-canton-system
+  year: 1757
+  title: 一口通商，廣州十三行專營對外貿易
+  category: economy
+  importance: 4
+  desc: 對歐貿易集中於廣州一港並由行商包辦，這個體制一直維持到鴉片戰爭。
+  sources:
+    - title: 維基百科：一口通商
+      url: https://zh.wikipedia.org/wiki/一口通商
+    - title: 維基百科：廣州十三行
+      url: https://zh.wikipedia.org/wiki/廣州十三行
+
+- id: cn-xinjiang-conquest
+  year: 1759
+  title: 平定準噶爾與回部，疆域達於極盛
+  category: war
+  importance: 4
+  desc: 乾隆先滅準噶爾，再平大小和卓，天山南北納入版圖。清朝疆域至此約一千三百萬平方公里。
+  sources:
+    - title: 維基百科：三征噶爾丹
+      url: https://zh.wikipedia.org/wiki/三征噶爾丹
+    - title: 維基百科：大小和卓之亂
+      url: https://zh.wikipedia.org/wiki/大小和卓之亂
+
+- id: cn-burma-campaigns
+  year: 1769
+  endYear: 1788
+  title: 清緬戰爭，四征皆無功而返
+  category: war
+  importance: 3
+  desc: 乾隆四度出兵緬甸貢榜王朝，瘴癘與叢林戰重創清軍，最終雙方僅止戰言和，是乾隆「十全武功」中唯一未能真正取勝的一役。
+  sources:
+    - title: 維基百科：清緬戰爭
+      url: https://zh.wikipedia.org/wiki/清緬戰爭
+
+- id: cn-siku-quanshu
+  year: 1782
+  title: 《四庫全書》修成
+  category: culture
+  importance: 4
+  desc: 規模空前的叢書工程，同時也是一次大規模的禁毀與刪改。
+  sources:
+    - title: 維基百科：四庫全書
+      url: https://zh.wikipedia.org/wiki/四庫全書
+
+- id: cn-macartney
+  year: 1793
+  title: 馬戛爾尼使華
+  category: politics
+  importance: 3
+  desc: 英國使節團要求通商被拒，常被視為兩個世界秩序的正面相遇。
+  sources:
+    - title: 維基百科：馬戛爾尼使團
+      url: https://zh.wikipedia.org/wiki/馬戛爾尼使團
+
+- id: cn-white-lotus
+  year: 1796
+  title: 川楚白蓮教起事
+  category: war
+  importance: 3
+  endYear: 1804
+  desc: 歷時九年才平定，軍費耗盡國庫，八旗綠營的戰力衰退也就此暴露。
+  sources:
+    - title: 維基百科：川楚教亂
+      url: https://zh.wikipedia.org/wiki/川楚教亂
+
+- id: cn-heshen-fall
+  year: 1799
+  title: 乾隆逝世，嘉慶誅殺和珅
+  category: politics
+  importance: 4
+  desc: 乾隆帝以太上皇身分掌權四年後去世，嘉慶帝隨即賜死寵臣和珅並抄沒家產，據稱其資產相當於當時國庫數年收入，「和珅跌倒，嘉慶吃飽」之說由此而來。
+  sources:
+    - title: 維基百科：和珅
+      url: https://zh.wikipedia.org/wiki/和珅
+
+- id: cn-opium-war
+  year: 1840
+  title: 鴉片戰爭
+  category: war
+  importance: 5
+  endYear: 1842
+  desc: 林則徐虎門銷煙引發開戰。戰敗後簽下《南京條約》 —— 五口通商、割讓香港、賠款兩千一百萬銀元，是清朝第一個不平等條約。
+  sources:
+    - title: 維基百科：第一次鴉片戰爭
+      url: https://zh.wikipedia.org/wiki/第一次鴉片戰爭
+    - title: 維基百科：南京條約
+      url: https://zh.wikipedia.org/wiki/南京條約
+
+- id: cn-taiping
+  year: 1851
+  title: 太平天國
+  category: war
+  importance: 4
+  endYear: 1864
+  desc: 屢試不第的洪秀全自創拜上帝會，融合基督教與傳統民間信仰，於廣西金田起義，一路北上定都南京、改稱天京，建立起與清廷分庭抗禮的政權，全盛時期占據半壁江山。1856年天京事變，東王楊秀清、北王韋昌輝等領導層自相殘殺，元氣大傷；1864年天京陷落，洪秀全病逝，太平天國覆滅。這場內戰造成的人口損失，現代研究估計高達五千萬至近億人，是十九世紀死傷最慘重的戰爭之一；湘軍、淮軍等地方團練也在鎮壓過程中崛起，為日後晚清政局埋下漢人督撫坐大的伏筆。
+  sources:
+    - title: 維基百科：太平天國
+      url: https://zh.wikipedia.org/wiki/太平天國
+
+- id: cn-second-opium-war
+  year: 1856
+  title: 第二次鴉片戰爭；英法聯軍火燒圓明園
+  category: war
+  importance: 4
+  endYear: 1860
+  desc: 修約交涉破裂而開戰。1860 年聯軍攻陷北京、焚毀圓明園，清廷簽下《天津條約》與《北京條約》。
+  sources:
+    - title: 維基百科：第二次鴉片戰爭
+      url: https://zh.wikipedia.org/wiki/第二次鴉片戰爭
+    - title: 維基百科：圓明園
+      url: https://zh.wikipedia.org/wiki/圓明園
+    - title: 維基百科：北京條約
+      url: https://zh.wikipedia.org/wiki/北京條約
+
+- id: cn-aigun-treaty
+  year: 1858
+  title: 璦琿條約，俄國取走外東北
+  category: politics
+  importance: 3
+  desc: 俄方以調停有功為由取得黑龍江以北。1860 年北京條約再割烏蘇里江以東，1864 年勘分西北界又割外西北。
+  sources:
+    - title: 維基百科：璦琿條約
+      url: https://zh.wikipedia.org/wiki/璦琿條約
+    - title: 維基百科：北京條約
+      url: https://zh.wikipedia.org/wiki/北京條約
+
+- id: cn-xinyou-coup
+  year: 1861
+  title: 辛酉政變，慈禧太后垂簾聽政
+  category: politics
+  importance: 5
+  desc: 咸豐帝崩逝後，慈禧太后聯合恭親王奕訢發動政變，剷除顧命八大臣，改行兩宮太后垂簾、恭親王輔政的體制。慈禧自此主導清廷政局近半世紀，直至1908年去世。
+  sources:
+    - title: 維基百科：辛酉政變
+      url: https://zh.wikipedia.org/wiki/辛酉政變
+
+- id: cn-self-strengthening
+  year: 1861
+  title: 洋務運動開始
+  category: economy
+  importance: 4
+  desc: 兩次鴉片戰爭的慘敗讓恭親王奕訢、曾國藩、李鴻章等人主張「師夷長技以制夷」，設同文館、建江南製造局、福州船政局，引進西式槍砲船艦與工業技術，卻始終堅持「中學為體，西學為用」——只學技術，不動制度。三十餘年下來建起了北洋艦隊等新式武力，甲午一戰卻被同樣起步向西方學習、卻連根本體制都一併改造的日本徹底擊潰，暴露了這條路線的極限。
+  sources:
+    - title: 維基百科：洋務運動
+      url: https://zh.wikipedia.org/wiki/洋務運動
+
+- id: cn-zuo-zongtang-reconquest
+  year: 1862
+  endYear: 1878
+  title: 左宗棠平定陝甘回變，收復新疆
+  category: war
+  importance: 4
+  desc: 左宗棠先後鎮壓陝甘回變，再率湘軍西征，擊滅阿古柏在新疆建立的哲德沙爾汗國，收復除伊犁外的全疆，是清朝晚期少數成功的軍事行動。
+  sources:
+    - title: 維基百科：同治陝甘回亂
+      url: https://zh.wikipedia.org/wiki/同治陝甘回亂
+    - title: 維基百科：左宗棠
+      url: https://zh.wikipedia.org/wiki/左宗棠
+    - title: 維基百科：阿古柏
+      url: https://zh.wikipedia.org/wiki/阿古柏
+
+- id: cn-dingwu-famine
+  year: 1875
+  title: 丁戊奇荒，華北連年大旱
+  category: economy
+  importance: 4
+  endYear: 1878
+  desc: 河南、山西、陝西、直隸、山東連年旱災，山西尤重。死亡人數估計九百五十萬至兩千萬，約當時全國人口的百分之二到四。
+  sources:
+    - title: 維基百科：丁戊奇荒
+      url: https://zh.wikipedia.org/wiki/丁戊奇荒
+
+- id: cn-sino-french-war
+  year: 1884
+  endYear: 1885
+  title: 中法戰爭，清朝失去越南宗主權
+  category: war
+  importance: 4
+  desc: 法國為爭奪越南宗主權開戰，清軍在陸戰一度取勝（鎮南關大捷），卻仍簽下《中法新約》承認法國對越南的保護權，傳統朝貢體系在東南亞率先崩解。
+  sources:
+    - title: 維基百科：中法戰爭
+      url: https://zh.wikipedia.org/wiki/中法戰爭
+
+- id: cn-jiawu
+  year: 1894
+  title: 甲午戰爭
+  category: war
+  importance: 5
+  desc: 清朝敗於新興的日本，隔年簽下《馬關條約》——割讓臺灣、澎湖，承認朝鮮獨立，賠款二億兩白銀。鉅額賠款掏空國庫，列強隨後掀起劃分勢力範圍的瓜分狂潮。
+  sources:
+    - title: 維基百科：甲午戰爭
+      url: https://zh.wikipedia.org/wiki/甲午戰爭
+    - title: 維基百科：馬關條約
+      url: https://zh.wikipedia.org/wiki/馬關條約
+
+- id: cn-gongche-shangshu
+  year: 1895
+  title: 公車上書
+  category: politics
+  importance: 3
+  desc: 馬關條約割台議和的消息傳到北京，正在應試的各省舉人群情激憤，康有為、梁啟超聯合近千名舉人聯名上書光緒帝，提出拒和、遷都、練兵、變法四項主張——梁啟超後來認為「變法」才是真正的根本之計。這是讀書人第一次以群眾連署的方式介入國家大政，被視為近代中國群眾政治運動的開端，也揭開了三年後戊戌變法的序幕。
+  sources:
+    - title: 維基百科：公車上書
+      url: https://zh.wikipedia.org/wiki/公車上書
+
+- id: cn-hundred-days
+  year: 1898
+  title: 戊戌變法
+  category: politics
+  importance: 4
+  desc: 光緒帝頒布「明定國是詔」，推行設京師大學堂、廢八股、改練新軍、裁減冗官等新政，前後僅維持一百零三天。變法觸動了滿人統治根基與慈禧的實權，慈禧發動政變重新訓政，光緒被幽禁於瀛台，除京師大學堂外新政盡數廢止，譚嗣同等「戊戌六君子」遭處決，康有為、梁啟超分別逃亡香港與日本。體制內改革這條路徹底堵死，此後主張激進革命的聲音才逐漸壓過主張漸進改良的一派，為十三年後的辛亥革命鋪路。
+  sources:
+    - title: 維基百科：戊戌變法
+      url: https://zh.wikipedia.org/wiki/戊戌變法
+
+- id: cn-boxer
+  year: 1900
+  title: 義和團與八國聯軍
+  category: war
+  importance: 4
+  desc: 慈禧太后借義和團之勢向十一國宣戰，八國聯軍隨即攻陷北京。隔年簽下《辛丑條約》，賠款四億五千萬兩、准許列強在北京至山海關沿線駐軍，清廷財政與主權自此更受制於外力。
+  sources:
+    - title: 維基百科：義和團運動
+      url: https://zh.wikipedia.org/wiki/義和團運動
+    - title: 維基百科：八國聯軍之役
+      url: https://zh.wikipedia.org/wiki/八國聯軍之役
+    - title: 維基百科：辛丑條約
+      url: https://zh.wikipedia.org/wiki/辛丑條約
+
+- id: cn-abolish-examination
+  year: 1905
+  title: 廢除科舉
+  category: culture
+  importance: 4
+  desc: 行之一千三百年的取士制度就此終結。士人上升的舊管道消失，新式學堂與出洋留學驟然成為主流。
+  sources:
+    - title: 維基百科：科舉
+      url: https://zh.wikipedia.org/wiki/科舉
+    - title: 維基百科：清末新政
+      url: https://zh.wikipedia.org/wiki/清末新政
+
+- id: cn-constitution-outline
+  year: 1908
+  title: 頒布《欽定憲法大綱》；光緒與慈禧同年去世
+  category: politics
+  importance: 3
+  desc: 清末新政的立憲承諾。同年兩位掌權者相繼過世，三歲的溥儀繼位，政局失去重心。
+  sources:
+    - title: 維基百科：欽定憲法大綱
+      url: https://zh.wikipedia.org/wiki/欽定憲法大綱
+    - title: 維基百科：清末新政
+      url: https://zh.wikipedia.org/wiki/清末新政
+    - title: 維基百科：慈禧太后
+      url: https://zh.wikipedia.org/wiki/慈禧太后
+
+- id: cn-xinhai
+  year: 1911
+  title: 辛亥革命，帝制終結
+  category: politics
+  importance: 5
+  desc: 清廷宣布鐵路國有政策引發四川保路運動，總督趙爾豐鎮壓釀成流血衝突，調防軍隊北上平亂的空隙，讓革命黨人在武昌率新軍發難成功。短短兩個月內十餘省相繼宣布獨立，孫文被推舉為臨時大總統，隔年二月宣統帝退位——一場原本計畫外、倉促而起的兵變，意外終結了自秦以來延續兩千餘年的皇帝制度，建立起亞洲第一個共和國。
+  sources:
+    - title: 維基百科：辛亥革命
+      url: https://zh.wikipedia.org/wiki/辛亥革命
+
+- id: cn-roc-founding
+  year: 1912
+  title: 中華民國臨時政府成立，孫中山就任臨時大總統
+  category: politics
+  importance: 5
+  desc: 南京臨時政府成立，孫文就任臨時大總統，改用陽曆紀年。旋即讓位於掌握北洋新軍的袁世凱，臨時政府隨後北遷北京。
+  sources:
+    - title: 維基百科：中華民國臨時政府
+      url: https://zh.wikipedia.org/wiki/中華民國臨時政府
+
+- id: cn-second-revolution
+  year: 1913
+  title: 二次革命，國民黨討袁失敗
+  category: war
+  importance: 3
+  desc: 宋教仁遇刺後，孫中山、黃興號召南方各省起兵討伐袁世凱，旋即失敗，孫中山被迫二度流亡日本。
+  sources:
+    - title: 維基百科：二次革命
+      url: https://zh.wikipedia.org/wiki/二次革命
+
+- id: cn-hongxian
+  year: 1915
+  title: 洪憲帝制，護國戰爭爆發
+  category: politics
+  importance: 4
+  desc: 袁世凱稱帝改元洪憲，蔡鍔在雲南起兵反對，各省相繼響應，袁世凱被迫取消帝制，隔年病逝。
+  sources:
+    - title: 維基百科：中華帝國
+      url: https://zh.wikipedia.org/wiki/中華帝國
+    - title: 維基百科：護國戰爭
+      url: https://zh.wikipedia.org/wiki/護國戰爭
+
+- id: cn-zhang-xun-restoration
+  year: 1917
+  title: 張勳復辟，十二天帝制鬧劇
+  category: politics
+  importance: 3
+  desc: 張勳率辮子軍擁廢帝溥儀復位，段祺瑞自天津起兵討逆，十二天後復辟即告瓦解。
+  sources:
+    - title: 維基百科：張勳復辟
+      url: https://zh.wikipedia.org/wiki/張勳復辟
+
+- id: cn-may-fourth
+  year: 1919
+  title: 五四運動
+  category: culture
+  importance: 5
+  desc: 巴黎和會決議把戰敗德國在山東的權益轉交日本、而非歸還中國，消息傳回北京，三千餘名學生走上街頭抗議，火燒交通總長曹汝霖住宅，痛毆親日官員章宗祥，示威隨即蔓延全國、商界罷市工人罷工聲援，北洋政府最終拒籤和約。這場運動也是新文化運動的分水嶺——從單純提倡白話文、批判傳統禮教，轉向與街頭政治行動結合，「德先生」與「賽先生」（民主與科學）成為此後一整個世代的口號，中國共產黨等左翼政治力量也在這股思潮中萌芽。
+  sources:
+    - title: 維基百科：五四運動
+      url: https://zh.wikipedia.org/wiki/五四運動
+
+- id: cn-northern-expedition
+  year: 1926
+  endYear: 1928
+  title: 國民革命軍北伐
+  category: war
+  importance: 5
+  desc: 蔣中正率國民革命軍自廣州出師，沿途收編或擊敗各地軍閥，1928年底東北易幟後完成形式上的全國統一。
+  sources:
+    - title: 維基百科：國民革命軍北伐
+      url: https://zh.wikipedia.org/wiki/國民革命軍北伐
+
+- id: cn-april-12-incident
+  year: 1927
+  title: 清黨，國共第一次合作破裂
+  category: politics
+  importance: 4
+  desc: 蔣中正在上海清剿中國共產黨與左派勢力，史稱四一二事件；國民政府隨後定都南京，寧漢分裂落幕，第一次國共合作正式終結。
+  sources:
+    - title: 維基百科：四一二事件
+      url: https://zh.wikipedia.org/wiki/四一二事件
+    - title: 維基百科：寧漢分裂
+      url: https://zh.wikipedia.org/wiki/寧漢分裂
+
+- id: cn-manchurian-incident
+  year: 1931
+  title: 九一八事變，日本佔領東北
+  category: war
+  importance: 5
+  desc: 關東軍炸毀南滿鐵路並反誣中國軍隊所為，隨即出兵佔領東北全境，扶植滿洲國，中日全面戰爭的序幕自此揭開。
+  sources:
+    - title: 維基百科：九一八事變
+      url: https://zh.wikipedia.org/wiki/九一八事變
+
+- id: cn-xian-incident
+  year: 1936
+  title: 西安事變，兵諫促成國共合作
+  category: politics
+  importance: 4
+  desc: 張學良、楊虎城扣留蔣中正，要求停止剿共、一致抗日。事件和平落幕，促成第二次國共合作與抗日民族統一戰線。
+  sources:
+    - title: 維基百科：西安事變
+      url: https://zh.wikipedia.org/wiki/西安事變
+
+- id: cn-war-japan
+  year: 1937
+  title: 七七事變，抗日戰爭全面爆發
+  category: war
+  importance: 5
+  endYear: 1945
+  desc: 日軍在盧溝橋演習期間藉口士兵失蹤，砲轟宛平縣城，中日全面戰爭爆發。國共二度合作共赴國難，但正面戰場屢屢敗退，首都南京淪陷後更爆發大屠殺；戰事僵持進入相持階段，直到1941年珍珠港事變後美國參戰，戰局才逐漸扭轉。八年苦戰，中國軍民傷亡估計逾三千萬，1945年日本無條件投降，臺灣、澎湖依《開羅宣言》歸還中國——但戰爭消耗殆盡的國力，與國共兩黨在戰時累積的實力消長，四年後便引爆了決定中國命運的內戰。
+  sources:
+    - title: 維基百科：七七事變
+      url: https://zh.wikipedia.org/wiki/七七事變
+    - title: 維基百科：中國抗日戰爭
+      url: https://zh.wikipedia.org/wiki/中國抗日戰爭
+
+- id: cn-nanjing-massacre
+  year: 1937
+  title: 南京大屠殺
+  category: war
+  importance: 5
+  desc: 日軍攻陷首都南京後展開大規模屠殺與暴行，數週內死亡人數估計逾二十萬。
+  sources:
+    - title: 維基百科：南京大屠殺
+      url: https://zh.wikipedia.org/wiki/南京大屠殺
+
+- id: cn-roc-constitution
+  year: 1946
+  endYear: 1947
+  title: 制憲國民大會通過《中華民國憲法》
+  category: politics
+  importance: 4
+  desc: 國民大會在南京召開制憲會議，通過《中華民國憲法》，隔年12月25日施行，確立五權分立的憲政體制。
+  sources:
+    - title: 維基百科：中華民國憲法
+      url: https://zh.wikipedia.org/wiki/中華民國憲法
+
+- id: cn-1948-election
+  year: 1948
+  title: 行憲後首任總統選舉，蔣中正當選
+  category: politics
+  importance: 3
+  desc: 國民大會依新憲選出蔣中正、李宗仁為首任正副總統，是行憲後、也是遷台前唯一一次在中國大陸舉行的總統選舉。
+  sources:
+    - title: 維基百科：1948年中華民國總統選舉
+      url: https://zh.wikipedia.org/wiki/1948年中華民國總統選舉
+
+- id: cn-temporary-provisions
+  year: 1948
+  title: 動員戡亂時期臨時條款公布
+  category: politics
+  importance: 4
+  desc: 國民大會通過臨時條款，賦予總統緊急處分權並凍結憲法部分條文，以因應國共內戰。此後在台灣延續四十三年，1991年始廢止。
+  sources:
+    - title: 維基百科：動員戡亂時期臨時條款
+      url: https://zh.wikipedia.org/wiki/動員戡亂時期臨時條款
+
+- id: cn-prc-founding
+  year: 1949
+  title: 中華人民共和國成立；國府遷臺
+  category: politics
+  importance: 5
+  desc: 國共內戰勝負底定，毛澤東在天安門城樓宣告中華人民共和國成立，定都北京；戰敗的中華民國政府則率軍民與故宮文物撤退來臺，以臺北為戰時首都，兩岸從此分治。同一個「中國」名分底下出現兩個政權、各自宣稱代表全中國，這道裂痕延續至今仍未彌合，也是本站台灣史與中國史兩欄敘事此後逐漸分道的起點。
+  sources:
+    - title: 維基百科：中華人民共和國開國大典
+      url: https://zh.wikipedia.org/wiki/中華人民共和國開國大典
+    - title: 維基百科：中華民國政府遷臺
+      url: https://zh.wikipedia.org/wiki/中華民國政府遷臺
+
+- id: cn-korean-war
+  year: 1950
+  endYear: 1953
+  title: 抗美援朝，中國人民志願軍入朝參戰
+  category: war
+  importance: 5
+  desc: 韓戰爆發後，中國人民志願軍跨過鴨綠江參戰，與美軍為首的聯合國軍在朝鮮半島鏖戰近三年，最終在三八線附近停戰，也讓中華人民共和國自此與美國長期對立。
+  sources:
+    - title: 維基百科：朝鮮戰爭
+      url: https://zh.wikipedia.org/wiki/朝鮮戰爭
+
+- id: cn-land-reform-prc
+  year: 1950
+  title: 土地改革運動，廢除封建土地所有制
+  category: economy
+  importance: 4
+  desc: 沒收地主土地分配給無地或少地農民，徹底改變農村的土地所有結構，是中共建政初期鞏固政權、動員農村的核心政策。
+  sources:
+    - title: 維基百科：土地改革運動
+      url: https://zh.wikipedia.org/wiki/土地改革運動
+
+- id: cn-first-five-year-plan
+  year: 1953
+  title: 第一個五年計畫，優先發展重工業
+  category: economy
+  importance: 3
+  desc: 仿效蘇聯模式，集中資源發展重工業與國防工業，同時推行農業與工商業的社會主義改造，奠定計畫經濟體制的基礎。
+  sources:
+    - title: 維基百科：第一個五年計畫（中國）
+      url: https://zh.wikipedia.org/wiki/第一個五年計畫_(中國)
+
+- id: cn-anti-rightist-movement
+  year: 1957
+  title: 反右運動
+  category: politics
+  importance: 4
+  desc: 「百花齊放、百家爭鳴」政策開放批評後急轉直下，數十萬知識分子與黨內異議者被劃為「右派」，遭受批鬥、勞改或下放，此後政治氣氛急速收緊。
+  sources:
+    - title: 維基百科：反右運動
+      url: https://zh.wikipedia.org/wiki/反右運動
+
+- id: cn-great-leap-famine
+  year: 1958
+  endYear: 1961
+  title: 大躍進與三年大饑荒
+  category: economy
+  importance: 5
+  desc: 以土法煉鋼與浮誇的糧食產量口號推動超英趕美的躍進運動，人民公社化打亂農業生產，隨之而來的大饑荒造成至少上千萬人死亡，是中共建政以來最嚴重的人禍。
+  sources:
+    - title: 維基百科：大躍進
+      url: https://zh.wikipedia.org/wiki/大躍進
+    - title: 維基百科：三年困難時期
+      url: https://zh.wikipedia.org/wiki/三年困難時期
+
+- id: cn-lushan-conference-1959
+  year: 1959
+  title: 廬山會議，彭德懷被打成反黨集團
+  category: politics
+  importance: 4
+  desc: 大躍進造成的浮誇與饑荒已現端倪，會議原意在糾正左傾錯誤。國防部長彭德懷上「萬言書」，坦言大方向沒錯但執行躁進、比例失調，語氣其實相當節制。毛澤東卻在會議中途把調性從「糾左」轉為「反右」，認定這封信是「資產階級動搖性」與「右傾機會主義進攻」，彭德懷與黃克誠、張聞天、周小舟一併被打成「反黨集團」，彭本人直到1978年才獲平反。此後黨內再無人敢當面指出大躍進的錯誤，饑荒因此又延續了三年——一封語氣克制的諫言換來的教訓，比信件本身更長遠：講真話的成本，從此高得沒有人再想付。
+  sources:
+    - title: 維基百科：廬山會議 (1959年)
+      url: https://zh.wikipedia.org/wiki/廬山會議_(1959年)
+    - title: 維基百科：彭德懷
+      url: https://zh.wikipedia.org/wiki/彭德懷
+
+- id: cn-sino-soviet-split
+  year: 1960
+  endYear: 1969
+  title: 中蘇交惡，珍寶島事件
+  category: politics
+  importance: 4
+  desc: 赫魯曉夫的去史達林化與對美緩和路線，讓毛澤東認定蘇聯背離了革命初衷；1960年蘇聯片面撤回全部在華專家、廢止六百餘項合作合同，兩黨關係公開破裂。1969年3月，雙方軍隊在烏蘇里江珍寶島爆發武裝衝突，蘇聯戰後陳兵百萬於中蘇邊境，一度考慮對中國實施核打擊。「社會主義陣營」內部兵戎相見，逼得中國轉向尋求與美國關係正常化——三年後尼克森訪華，正是這場交惡逼出來的外交轉向。
+  sources:
+    - title: 維基百科：中蘇交惡
+      url: https://zh.wikipedia.org/wiki/中蘇交惡
+    - title: 維基百科：珍寶島事件
+      url: https://zh.wikipedia.org/wiki/珍寶島事件
+
+- id: cn-atomic-bomb
+  year: 1964
+  title: 中國第一顆原子彈試爆成功
+  category: science
+  importance: 4
+  desc: 代號「596工程」——取自1959年6月蘇聯以核裁軍談判為由中止對中國核技術援助的那個月分，中國決定自力更生研製核武器。1964年10月16日，第一顆原子彈在羅布泊試驗場成功引爆，中國成為繼美、蘇、英、法之後第五個擁有核武器的國家，也是亞洲第一個。這項成就完全是在蘇聯撤走專家、切斷技術支援之後獨力完成的——「蘇聯不給，我們自己造」，這句話後來也成了中國核工業的立業敘事。
+  sources:
+    - title: 維基百科：596工程
+      url: https://zh.wikipedia.org/wiki/596工程
+
+- id: cn-cultural-revolution
+  year: 1966
+  title: 文化大革命
+  category: politics
+  importance: 5
+  endYear: 1976
+  desc: 毛澤東以防止「資本主義復辟」為號召發動運動，實則意在奪回大躍進失敗後旁落的權力、打倒劉少奇等黨內對手。紅衛兵破四舊、抄家批鬥席捲全國，數以千萬計的知識青年其後被下放農村「上山下鄉」，高考制度一度廢止，各地武鬥、清查「牛鬼蛇神」造成大量非正常死亡，估計人數從數十萬到逾千萬不等，各方說法不一。1976年毛澤東去世，華國鋒等人隨即發動政變逮捕四人幫，十年動亂告終。1981年中共中央正式定性文革為「領導者錯誤發動、被反革命集團利用」的內亂，是中華人民共和國建政以來最深的一次自我否定。
+  sources:
+    - title: 維基百科：文化大革命
+      url: https://zh.wikipedia.org/wiki/文化大革命
+
+- id: cn-lin-biao-incident
+  year: 1971
+  title: 九一三事件，林彪座機墜毀
+  category: politics
+  importance: 4
+  desc: 林彪身兼中共副主席、軍委副主席與國防部長，1969年更被寫入黨章，正式確立為毛澤東的接班人。毛澤東南巡期間暗批軍委辦事組「有人急於想當國家主席」，林彪一系警覺大禍臨頭，倉皇搭乘三叉戟專機出逃，飛越中蒙邊境後於蒙古溫都爾汗墜毀，機上九人全數罹難。官方欽定的接班人竟以叛逃墜機收場，「終身接班人」的說法從此再無人敢輕信；林彪集團隨即遭清算，客觀上也宣告了文革理論的破產，是文革由盛轉衰的轉捩點。
+  sources:
+    - title: 維基百科：九一三事件
+      url: https://zh.wikipedia.org/wiki/九一三事件
+    - title: 維基百科：林彪
+      url: https://zh.wikipedia.org/wiki/林彪
+
+- id: cn-un-seat
+  year: 1971
+  title: 取代中華民國，取得聯合國中國代表權
+  category: politics
+  importance: 5
+  desc: 聯合國大會通過第2758號決議，中華人民共和國取代中華民國成為中國在聯合國的唯一合法代表，並隨即取得安理會常任理事國席位。
+  sources:
+    - title: 維基百科：聯合國大會第2758號決議
+      url: https://zh.wikipedia.org/wiki/聯合國大會第2758號決議
+
+- id: cn-nixon-visit
+  year: 1972
+  title: 尼克森訪華，中美關係破冰
+  category: politics
+  importance: 5
+  desc: 美國總統尼克森應邀訪問北京，會見毛澤東，雙方發表《上海公報》，結束二十多年的敵對隔絕狀態，為後續建交鋪路。
+  sources:
+    - title: 維基百科：1972年尼克松訪華
+      url: https://zh.wikipedia.org/wiki/1972年尼克松訪華
+
+- id: cn-japan-normalization
+  year: 1972
+  title: 中日建交，中日和約失效
+  category: politics
+  importance: 4
+  desc: 日本首相田中角榮訪中，雙方發表《中日聯合聲明》建立外交關係，日本隨即宣布與中華民國的中日和約（台北和約）失去存在意義。
+  sources:
+    - title: 維基百科：中日聯合聲明
+      url: https://zh.wikipedia.org/wiki/中日聯合聲明
+
+- id: cn-mao-death
+  year: 1976
+  title: 毛澤東逝世；四人幫垮台，文革結束
+  category: politics
+  importance: 5
+  desc: 毛澤東病逝後不到一個月，華國鋒聯合軍方逮捕江青等四人幫成員，長達十年的文化大革命自此終結，中國隨即走向鄧小平主導的改革開放。
+  sources:
+    - title: 維基百科：四人幫
+      url: https://zh.wikipedia.org/wiki/四人幫
+
+- id: cn-reform-opening
+  year: 1978
+  title: 改革開放
+  category: economy
+  importance: 5
+  desc: 文革結束兩年後，中共十一屆三中全會確立以經濟建設為中心，鄧小平主導推行家庭聯產承包責任制取代人民公社、在深圳等地設立經濟特區對外招商引資，計畫經濟逐步讓位給市場機制。「不管黑貓白貓，捉到老鼠就是好貓」——意識形態的爭論暫時讓位給發展優先的務實路線，往後四十年間中國從一個歷經大饑荒與文革動盪的貧困農業國，成長為全球第二大經濟體。
+  sources:
+    - title: 維基百科：改革開放
+      url: https://zh.wikipedia.org/wiki/改革開放
+
+- id: cn-tiananmen-1989
+  year: 1989
+  title: 六四事件
+  category: politics
+  importance: 5
+  desc: 學生與市民聚集天安門廣場要求政治改革，持續近兩個月的請願運動最終遭軍隊武力清場，總書記趙紫陽因同情學生而下台，事件至今仍是中國政治的禁忌話題。
+  sources:
+    - title: 維基百科：六四事件
+      url: https://zh.wikipedia.org/wiki/六四事件
+
+- id: cn-deng-southern-tour
+  year: 1992
+  title: 鄧小平南巡，改革開放重新提速
+  category: economy
+  importance: 4
+  desc: 鄧小平南下深圳、珠海等經濟特區發表談話，重申「發展才是硬道理」，扭轉六四事件後改革趨於保守的路線，市場化改革自此加速推進。
+  sources:
+    - title: 維基百科：鄧小平南巡
+      url: https://zh.wikipedia.org/wiki/鄧小平南巡
+
+- id: cn-hk-handover
+  year: 1997
+  title: 香港回歸，一國兩制正式實施
+  category: politics
+  importance: 5
+  desc: 英國結束一百五十餘年的殖民統治，香港主權移交中華人民共和國，成立特別行政區，「一國兩制」由構想進入實踐。
+  sources:
+    - title: 維基百科：香港回歸
+      url: https://zh.wikipedia.org/wiki/香港回歸
+
+- id: cn-macau-handover
+  year: 1999
+  title: 澳門回歸
+  category: politics
+  importance: 4
+  desc: 葡萄牙結束四百餘年的管治，澳門主權移交中華人民共和國，成為第二個實施「一國兩制」的特別行政區。
+  sources:
+    - title: 維基百科：澳門回歸
+      url: https://zh.wikipedia.org/wiki/澳門回歸
+
+- id: cn-wto-accession
+  year: 2001
+  title: 加入世界貿易組織
+  category: economy
+  importance: 4
+  desc: 歷經十五年談判，中國正式成為世界貿易組織成員，全面融入全球貿易體系，出口導向的經濟自此高速成長，也重塑了世界製造業版圖。
+  sources:
+    - title: 維基百科：世界貿易組織
+      url: https://zh.wikipedia.org/wiki/世界貿易組織
+
+- id: cn-sars-2003
+  year: 2003
+  title: SARS疫情爆發
+  category: politics
+  importance: 4
+  desc: 疫情起於廣東，初期因地方隱瞞疫情延誤防治，蔓延至北京與全球數十國，促使中國政府其後改革公共衛生通報體系。
+  sources:
+    - title: 維基百科：嚴重急性呼吸系統綜合症疫情
+      url: https://zh.wikipedia.org/wiki/嚴重急性呼吸系統綜合症疫情
+
+- id: cn-shenzhou5
+  year: 2003
+  title: 神舟五號，首次載人航天飛行
+  category: science
+  importance: 4
+  desc: 楊利偉搭乘神舟五號進入太空並安全返回，中國成為繼蘇聯／俄羅斯、美國之後第三個能夠自主將太空人送入太空的國家。
+  sources:
+    - title: 維基百科：神舟五號
+      url: https://zh.wikipedia.org/wiki/神舟五号
+
+- id: cn-beijing-olympics
+  year: 2008
+  title: 北京奧運
+  category: culture
+  importance: 4
+  desc: 第29屆夏季奧運在北京舉行，是中國首次主辦奧運，開幕式的大型場面展演被視為國力展示的象徵性時刻。
+  sources:
+    - title: 維基百科：2008年夏季奧林匹克運動會
+      url: https://zh.wikipedia.org/wiki/2008年夏季奧林匹克運動會
+
+- id: cn-gdp-second
+  year: 2010
+  title: GDP超越日本，成為全球第二大經濟體
+  category: economy
+  importance: 4
+  desc: 中國名目GDP正式超越日本，躍居僅次於美國的世界第二大經濟體，標誌著改革開放三十餘年高速成長的階段性成果。
+  sources:
+    - title: 維基百科：中華人民共和國國內生產總值
+      url: https://zh.wikipedia.org/wiki/中華人民共和國國內生產總值
+
+- id: cn-xi-jinping-succession
+  year: 2012
+  endYear: 2013
+  title: 習近平接班，出任總書記與國家主席
+  category: politics
+  importance: 4
+  desc: 中共十八大選出習近平為總書記，隔年全國人大選舉其為國家主席，完成第五代領導集體的權力交接，此後政治路線轉向更集中的個人領導。
+  sources:
+    - title: 維基百科：習近平
+      url: https://zh.wikipedia.org/wiki/習近平
+
+- id: cn-belt-and-road
+  year: 2013
+  title: 提出「一帶一路」倡議
+  category: economy
+  importance: 4
+  desc: 習近平先後提出「絲綢之路經濟帶」與「21世紀海上絲綢之路」構想，透過基礎建設投資與貸款串連歐亞非數十國，成為中國對外經濟與地緣戰略的核心工程。
+  sources:
+    - title: 維基百科：一帶一路
+      url: https://zh.wikipedia.org/wiki/一帶一路
+
+- id: cn-hk-protests-nsl
+  year: 2019
+  endYear: 2020
+  title: 香港反送中運動；港版國安法頒布
+  category: politics
+  importance: 5
+  desc: 《逃犯條例》修訂草案引爆大規模抗議，運動持續近半年並多次爆發激烈衝突。翌年北京主導制定《香港國安法》，香港的自治空間與言論環境自此大幅緊縮。
+  sources:
+    - title: 維基百科：反對逃犯條例修訂草案運動
+      url: https://zh.wikipedia.org/wiki/反對逃犯條例修訂草案運動
+    - title: 維基百科：中華人民共和國香港特別行政區維護國家安全法
+      url: https://zh.wikipedia.org/wiki/中華人民共和國香港特別行政區維護國家安全法
+
+- id: cn-covid-outbreak
+  year: 2019
+  endYear: 2022
+  title: 武漢新冠疫情爆發，清零政策實施與解封
+  category: politics
+  importance: 5
+  desc: 武漢首先出現不明肺炎病例，疫情迅速擴散為全球大流行。中國採取嚴格的「清零政策」封控超過兩年，2022年底因防疫成本與民眾抗議急轉為「新十條」全面解封。
+  sources:
+    - title: 維基百科：2019冠狀病毒病疫情
+      url: https://zh.wikipedia.org/wiki/2019冠狀病毒病疫情

@@ -1,0 +1,39 @@
+# 日本的時代劃分是連續不重疊的，所以單一 track 就夠。
+# 戰國時代（1467-1615）橫跨室町與安土桃山，若要單獨畫成色帶得開 track 1；
+# 目前改用「應仁之亂」這則跨度事件表示，免得為了一條色帶多吃掉一整欄寬度。
+
+- id: jp-muromachi
+  name: 室町
+  start: 1500
+  end: 1572
+  note: 含南北朝與戰國前期；實際始於 1333 年，此處為時間軸起點所截
+
+- id: jp-azuchi
+  name: 安土桃山
+  start: 1573
+  end: 1602
+
+- id: jp-edo
+  name: 江戶
+  start: 1603
+  end: 1867
+
+- id: jp-meiji
+  name: 明治
+  start: 1868
+  end: 1911
+
+- id: jp-taisho
+  name: 大正
+  start: 1912
+  end: 1925
+
+- id: jp-showa
+  name: 昭和
+  start: 1926
+  end: 1988
+
+- id: jp-heisei
+  name: 平成・令和
+  start: 1989
+  end: 2026
