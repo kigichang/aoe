@@ -1436,6 +1436,18 @@
     - title: 維基百科：1953年伊朗政變
       url: https://zh.wikipedia.org/wiki/1953年伊朗政變
 
+- id: am-formosa-resolution
+  year: 1955
+  title: 台灣決議案，國會授權總統防衛台澎
+  category: politics
+  importance: 3
+  desc: 第一次台海危機期間，艾森豪要求國會授權他在必要時動用美軍防衛台灣與澎湖及「相關陣地」，參眾兩院以壓倒性票數通過。這是美國國會第一次事先給總統海外用兵的空白授權，後來的東京灣決議案沿用了這個模式。決議案刻意不寫明金門、馬祖，讓美國保留是否為外島而戰的模糊空間 —— 這種「戰略模糊」從此成為美國對台政策的基調。
+  sources:
+    - title: 維基百科：1955年台灣決議案
+      url: https://zh.wikipedia.org/wiki/1955年台灣決議案
+    - title: 英文維基百科：Formosa Resolution of 1955
+      url: https://en.wikipedia.org/wiki/Formosa_Resolution_of_1955
+
 - id: me-suez-crisis
   year: 1956
   title: 蘇伊士運河危機
@@ -1582,6 +1594,18 @@
     - title: 維基百科：水門事件
       url: https://zh.wikipedia.org/wiki/水門事件
 
+- id: am-shanghai-communique
+  year: 1972
+  title: 上海公報，美國「認知」台灣海峽兩岸都主張一個中國
+  category: politics
+  importance: 4
+  desc: 季辛吉前一年秘密訪問北京鋪路，尼克森訪華結束時雙方在上海發表聯合公報。台灣條款的措辭經過反覆推敲：美國「認知」（acknowledge）海峽兩岸的中國人都認為只有一個中國、台灣是中國的一部分，對此「不提出異議」，並表示將逐步減少駐台美軍。這句話刻意迴避美國自己的立場，為與北京建交留下七年的過渡期；同時也給了台灣一個訊號 —— 華府的優先順序已經改變，退出聯合國才一年，台北的處境從此更為孤立。
+  sources:
+    - title: 維基百科：中美三個聯合公報
+      url: https://zh.wikipedia.org/wiki/中美三個聯合公報
+    - title: 英文維基百科：Shanghai Communiqué
+      url: https://en.wikipedia.org/wiki/Shanghai_Communiqué
+
 - id: sa-pokhran-1
   year: 1974
   title: 印度首次核試驗
@@ -1626,6 +1650,32 @@
   sources:
     - title: 維基百科：伊朗伊斯蘭革命
       url: https://zh.wikipedia.org/wiki/伊朗伊斯蘭革命
+
+- id: am-taiwan-relations-act
+  year: 1979
+  title: 《台灣關係法》，以國內法延續對台承諾
+  category: politics
+  importance: 4
+  desc: 卡特宣布與中華民國斷交、廢止共同防禦條約，國會不滿行政部門事先未諮詢，三個月內以近乎一致的票數通過台灣關係法。法案把台灣視同外國政府處理，承諾提供防禦性武器、視任何以非和平方式決定台灣前途的企圖為對西太平洋和平的威脅，並設美國在台協會維持非官方關係。一部國內法取代了一份條約，四十餘年來美國對台軍售與安全承諾的法律基礎都在這裡。
+  sources:
+    - title: 維基百科：臺灣關係法
+      url: https://zh.wikipedia.org/wiki/臺灣關係法
+    - title: 英文維基百科：Taiwan Relations Act
+      url: https://en.wikipedia.org/wiki/Taiwan_Relations_Act
+
+- id: am-817-communique
+  year: 1982
+  title: 八一七公報與六項保證，對台軍售的雙重承諾
+  category: politics
+  importance: 3
+  desc: 雷根政府為換取北京在對蘇聯問題上的合作，在八一七公報中承諾對台軍售在質與量上不超過建交後的水準並逐步減少。簽署前一個月，雷根透過在台協會向台北提出六項保證：不設軍售終止日期、不事先與北京磋商、不修改台灣關係法、不改變對台灣主權的立場、不逼台灣談判、不做調人。公報與保證互相牽制，「三個公報、一部法、六項保證」從此是美國一中政策的完整清單，雷根本人還留下備忘錄，把減少軍售的前提綁在北京承諾和平解決。
+  sources:
+    - title: 維基百科：中美三個聯合公報
+      url: https://zh.wikipedia.org/wiki/中美三個聯合公報
+    - title: 維基百科：六項保證
+      url: https://zh.wikipedia.org/wiki/六項保證
+    - title: 英文維基百科：Six Assurances
+      url: https://en.wikipedia.org/wiki/Six_Assurances
 
 - id: eu-berlin-wall
   year: 1989
@@ -1724,3 +1774,15 @@
   sources:
     - title: 維基百科：2011年埃及革命
       url: https://zh.wikipedia.org/wiki/2011年埃及革命
+
+- id: am-taiwan-travel-act
+  year: 2018
+  title: 《台灣旅行法》，解除美台高層互訪限制
+  category: politics
+  importance: 2
+  desc: 川普簽署國會兩院無異議通過的台灣旅行法，鼓勵美國各級官員訪台、台灣高層官員訪美，解除 1979 年以來行政部門自我設限的往來規範。它是台灣關係法之後第一部專為台灣制定的美國法律，此後《台北法》、《台灣保證法》等接連立法，國會成為美台關係升溫的主要推手；2022 年眾議院議長裴洛西訪台就是在這條線上發生的。
+  sources:
+    - title: 維基百科：台灣旅行法
+      url: https://zh.wikipedia.org/wiki/台灣旅行法
+    - title: 英文維基百科：Taiwan Travel Act
+      url: https://en.wikipedia.org/wiki/Taiwan_Travel_Act
