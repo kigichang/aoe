@@ -1,0 +1,278 @@
+# 礦業。硫磺、煤、金銅、石油四種礦產共用一欄。
+#
+# **為什麼是「礦業」而不是「煤礦」**：煤確實是這一欄的主幹（1876–2000，
+# 事件數過半），但台灣的礦業從硫磺開始、與金銅同時擴張、被石油取代，
+# 只收煤的話 1642 之前與 1985 之後都沒有東西可講，而那兩端正是
+# 「這個產業怎麼開始、怎麼結束」的部分。
+#
+# **三則 `in-` 開頭的事件是從工業欄搬過來的**（硫磺輸出、八斗子官礦、
+# 1984 三場礦災），**id 刻意不改**。id 會進網址（`#e=in-1876-badouzi-coal`），
+# 改了就是讓既有的分享連結失效 —— 同 CLAUDE.md 世界欄留著 `eu-` 前綴的理由。
+# 新事件一律用 `mn-`。看到一欄裡混兩種前綴不要「順手統一」。
+
+# ── 荷西到清末：官方壟斷與禁採下的零星開採 ──────────────────
+#
+# 這一段沒有斷代色帶（periods.yaml 從 1876 才開始）。硫磺是官方採辦、
+# 煤是禁採下的私掘，兩者都沒有可稱為「產業」的組織形式。
+
+- id: in-1626-sulphur
+  year: 1626
+  endYear: 1642
+  title: 北投、金包里的硫磺輸出，中國商人為此渡海而來
+  category: trade
+  importance: 3
+  desc: 硫磺產在內北投社與金包里社一帶，由巴賽人在九月到十二月間採取，賣給西班牙人與渡海來的中國商人 —— 中國商船北上雞籠、淡水，主要就是為了收這一項。這是台灣的礦產第一次留下產地、季節與買家都寫得出來的紀錄，而採的人、賣的人、買的人分屬三方，島上沒有任何加工環節。此後兩百年製硫一直停在零星採集，1697 年郁永河北上採硫用的還是同一套做法。
+  sources:
+    - title: 維基百科：臺灣西班牙統治時期
+      url: https://zh.wikipedia.org/wiki/臺灣西班牙統治時期
+    - title: 維基百科：巴賽族
+      url: https://zh.wikipedia.org/wiki/巴賽族
+
+- id: mn-1697-sulphur-procurement
+  year: 1697
+  title: 郁永河奉命北上採硫，硫磺是官方獨佔的軍需品
+  category: policy
+  importance: 3
+  desc: 福州火藥庫焚毀，郁永河受命來台採硫，從府城走陸路到北投，在硫穴旁搭寮煉硫近一年。這趟差事說明了清代礦產的位置 —— 它不是商品而是軍需，官方要用才准開採，民間私採是罪。同一套邏輯此後也套在煤上，於是台灣的礦業直到十九世紀後期都停在「有需要才挖、挖完就停」，沒有累積出任何長期的採掘組織。他把過程寫成《裨海紀遊》，成為台灣最早的一份實地見聞錄。
+  sources:
+    - title: 維基百科：郁永河
+      url: https://zh.wikipedia.org/wiki/郁永河
+    - title: 維基百科：裨海紀遊
+      url: https://zh.wikipedia.org/wiki/裨海紀遊
+
+- id: mn-1864-coal-export
+  year: 1864
+  title: 全台煤炭輸出達 4,315 噸，禁令下的私採已成規模
+  category: trade
+  importance: 3
+  desc: 清廷以「開挖既甚恐傷龍脈」為由禁採，但基隆一帶的土法小坑從未停過。南京條約之後外商陸續來勘查，1847 年起英美商人買煤運補汽船，開港通商又把買家送到門口 —— 這一年的輸出量說明禁令早已名存實亡。台灣的煤最初不是為了自己用，是為了替別人的輪船加燃料，而這也決定了往後一百年它的位置：一種賣給機器的原料，價格由外面決定。
+  sources:
+    - title: 維基百科：台灣煤礦
+      url: https://zh.wikipedia.org/wiki/台灣煤礦
+
+# ── 清末官辦：第一次用機器挖礦 ──────────────────────────────
+
+- id: in-1876-badouzi-coal
+  year: 1876
+  title: 八斗子官營煤礦開坑，台灣第一個官營礦場
+  category: infrastructure
+  importance: 4
+  desc: 「清國井」由官方經營，引進新式機械採掘設備，供應輪船與機器所需的燃料。這是台灣第一次為了機器而開採能源，也是近代工業的第一個前提條件。但官礦撐不久，經營幾度停頓，真正把台灣的煤變成一個產業的是日治之後的資本與法規。
+  sources:
+    - title: 維基百科：八斗子
+      url: https://zh.wikipedia.org/wiki/八斗子
+    - title: 維基百科：沈葆楨
+      url: https://zh.wikipedia.org/wiki/沈葆楨
+
+- id: mn-1878-chuhuangkeng-oil
+  year: 1878
+  title: 出磺坑鑽出油，東亞第一口現代化油井
+  category: technology
+  importance: 4
+  desc: 1861 年居民在後龍溪畔發現浮油，起初只是挑到街上賣的照明燃料；1877 年官方引進美國鑽井機具與技師，隔年鑽出油來。手掘與機器鑽井的差別不在深度而在可重複性 —— 從這一年起「找油」變成一件有方法可循的事。這口井至今仍在生產，是全球持續開採年代最久的油井之一，而台灣的石油產量始終微小，真正的意義是它讓島上很早就有一批懂鑽井與地質的人。
+  sources:
+    - title: 維基百科：出磺坑
+      url: https://zh.wikipedia.org/wiki/出磺坑
+    - title: 維基百科：台灣中油
+      url: https://zh.wikipedia.org/wiki/台灣中油
+
+- id: mn-1890-gold-rush
+  year: 1890
+  title: 基隆河發現砂金，淘金客湧進九份與金瓜石
+  category: labour
+  importance: 4
+  desc: 縱貫鐵路架設基隆河鐵橋時，工人在河床淘出砂金，消息傳開後採金的人沿溪往上游找，1893 年在九份山區找到小金瓜與大金瓜的金脈露頭。這是台灣第一次出現「因為礦而長出來的聚落」—— 在此之前礦工是農閒時的兼業，此後九份、金瓜石有了整批只靠礦吃飯的人口，聚落、商街與戲院都是礦養出來的，礦停了也就跟著空掉。
+  sources:
+    - title: 維基百科：金瓜石
+      url: https://zh.wikipedia.org/wiki/金瓜石
+    - title: 維基百科：九份
+      url: https://zh.wikipedia.org/wiki/九份
+
+# ── 日治：法規把礦權分配掉，資本進場 ────────────────────────
+
+- id: mn-1896-mining-regulations
+  year: 1896
+  title: 台灣礦業規則頒布，礦權只給日本國民
+  category: policy
+  importance: 5
+  desc: 總督府把礦產收歸國有再核發礦權，而申請資格限日本國民，全台一開始只核出四個礦區。這一條規則決定了此後五十年誰能挖礦 —— 台灣人要進場只能承包、租坑，或等到日本業主撐不下去時把礦權買回來，顏家走的正是後面這條路。同年十月總督府把基隆山劃成東西兩塊，東邊金瓜石、西邊瑞芳，隔年開採，台灣的金礦從此有了明確的產權邊界。
+  sources:
+    - title: 維基百科：台灣煤礦
+      url: https://zh.wikipedia.org/wiki/台灣煤礦
+    - title: 維基百科：金瓜石
+      url: https://zh.wikipedia.org/wiki/金瓜石
+
+- id: mn-1905-steam-boiler
+  year: 1905
+  title: 基隆田寮港煤礦裝設蒸氣鍋，機械採煤之始
+  category: technology
+  importance: 3
+  desc: 蒸氣動力先用在抽水與捲揚，這兩件事決定坑道能挖多深 —— 手工排水的極限大約就是淺層露頭，裝了鍋爐才有辦法往下追煤層。台灣的煤產量自此開始穩定成長，1919 年突破百萬噸的基礎是在這十幾年裡鋪出來的。
+  sources:
+    - title: 維基百科：台灣煤礦
+      url: https://zh.wikipedia.org/wiki/台灣煤礦
+
+- id: mn-1914-yen-jiufen
+  year: 1914
+  title: 顏雲年買下九份金礦，本島資本第一次拿到大礦權
+  category: enterprise
+  importance: 4
+  desc: 顏雲年 1897 年起向總督府申請礦權，1899 年設金裕豐號承租礦區，1904 年起陸續拿到三爪子、侯硐、瑞芳、深澳、平溪、五堵、三峽的煤礦權 —— 一路都是承包他人礦區起家。藤田傳三郎過世後藤田組無力續營，他與簡阿牛合資把瑞芳金礦買下來，本島人第一次成為大礦區的業主而不是包工。礦業規則把台灣人擋在門外，實務上卻擋不住從承包一步步累積起來的資本。
+  sources:
+    - title: 維基百科：顏雲年
+      url: https://zh.wikipedia.org/wiki/顏雲年
+    - title: 日文維基百科：藤田伝三郎
+      url: https://ja.wikipedia.org/wiki/藤田伝三郎
+
+- id: mn-1918-keelung-tanko
+  year: 1918
+  title: 基隆炭礦成立，一家公司包辦全台半數煤產
+  category: enterprise
+  importance: 5
+  desc: 顏雲年與三井合名合資設立，把北部零散的礦區整併進同一家公司，此後產量占全台一半。台灣的煤礦從這一年起不再是各挖各的小坑，而是有資本、有專用鐵道、有統一銷路的產業 —— 平溪線就是為了運石底的煤而鋪的。代價是門檻同時被拉高，小礦主此後多半只能替大公司包坑。
+  sources:
+    - title: 維基百科：顏雲年
+      url: https://zh.wikipedia.org/wiki/顏雲年
+    - title: 維基百科：平溪線
+      url: https://zh.wikipedia.org/wiki/平溪線
+
+- id: mn-1919-million-tons
+  year: 1919
+  title: 煤產量突破百萬噸，台灣煤賣到華南與南洋
+  category: trade
+  importance: 3
+  desc: 一次大戰把日本的船運與工業需求推上去，台灣的煤第一次大量外銷。從 1917 到 1918 一年之內新增礦區從 81 個跳到 113 個，是整個日治時期擴張最快的一段。景氣退了以後這些礦區有一半撐不住，但坑口、鐵道與礦工聚落留了下來，成為此後八十年的骨架。
+  sources:
+    - title: 維基百科：台灣煤礦
+      url: https://zh.wikipedia.org/wiki/台灣煤礦
+
+- id: mn-1920-taiyang
+  year: 1920
+  title: 台陽礦業成立，顏家與板橋林家合股
+  category: enterprise
+  importance: 4
+  desc: 顏雲年與林熊徵等人設立，把顏家的煤礦與金礦資產放進同一家株式會社。台陽是日治時期規模最大的本島人企業之一，也是少數在戰後政權更替中存續下來的礦業公司 —— 台灣的礦業有一條由本地家族一路持有的線，不是全部隨政權轉手。顏雲年 1923 年病逝後由其弟顏國年接手。
+  sources:
+    - title: 維基百科：顏雲年
+      url: https://zh.wikipedia.org/wiki/顏雲年
+    - title: 維基百科：顏國年
+      url: https://zh.wikipedia.org/wiki/顏國年
+
+- id: mn-1933-nippon-mining
+  year: 1933
+  title: 日本礦業買下金瓜石，金礦轉向大規模選煉
+  category: enterprise
+  importance: 4
+  desc: 新業主投入資本重整礦山，在水湳洞蓋選礦與煉製設施，把金瓜石從挖礦石的礦場變成能把低品位礦砂處理成金屬的工廠。這是台灣的礦業第一次不只把礦挖出來運走，而是在島上完成後段加工 —— 隨後金瓜石同時產金與產銅，戰爭期間銅比金更被需要。
+  sources:
+    - title: 維基百科：金瓜石
+      url: https://zh.wikipedia.org/wiki/金瓜石
+    - title: 維基百科：水湳洞
+      url: https://zh.wikipedia.org/wiki/水湳洞
+
+- id: mn-1941-coal-control
+  year: 1941
+  title: 台灣石炭株式會社成立，煤炭進入戰時統制
+  category: policy
+  importance: 4
+  desc: 產、運、銷全部收進一家會社統一調度，價格與配額由官方決定。此前 1933 年民間已組成台灣炭業組合協調產銷，統制令把那套自願的協調換成強制的分配。這一步讓煤徹底變成軍需物資，礦場只要挖出來就有人收，卻也讓經營者失去看價格決定產量的能力 —— 戰後接手的公營體系直接沿用了這套思路。
+  sources:
+    - title: 維基百科：台灣煤礦
+      url: https://zh.wikipedia.org/wiki/台灣煤礦
+
+# ── 戰後：能源支柱，然後被石油取代 ──────────────────────────
+
+- id: mn-1946-state-mines
+  year: 1946
+  title: 金銅礦收歸國有，煤礦留在民間
+  category: policy
+  importance: 3
+  desc: 金瓜石與瑞芳的礦山由資源委員會接收，1948 年改為台灣金銅礦務局，後來改組成台灣金屬礦業公司；煤礦則因為礦區零散、業主眾多，除了少數大礦之外多半留在民間，同業組織也從日治的統制會社改為省煤礦公會。金銅走公營、煤走民營，這個分岔決定了兩者後來完全不同的結局 —— 金銅由一家公司的財務撐著，煤則由幾百家小礦各自面對市場。
+  sources:
+    - title: 維基百科：金瓜石
+      url: https://zh.wikipedia.org/wiki/金瓜石
+    - title: 維基百科：台灣煤礦
+      url: https://zh.wikipedia.org/wiki/台灣煤礦
+
+- id: mn-1958-coal-decontrol
+  year: 1958
+  title: 廢止煤炭徵購辦法，准許部分外銷
+  category: policy
+  importance: 3
+  desc: 戰後初期政府比照戰時做法徵購煤炭配給軍公與公營事業，礦主賣多少、賣給誰都不能自己決定。這一年解除徵購並開放部分外銷，煤價回到市場，隨後幾年產量一路衝到戰後高點。放開管制救得了產量，救不了成本 —— 台灣的煤層薄、坑道深，開放之後才發現真正的對手是進口煤。
+  sources:
+    - title: 維基百科：台灣煤礦
+      url: https://zh.wikipedia.org/wiki/台灣煤礦
+
+- id: mn-1960-coal-peak
+  year: 1960
+  title: 年產量將近 400 萬公噸，台灣煤礦的最高點
+  category: trade
+  importance: 4
+  desc: 戰後從 1951 年的 165 萬噸一路爬到這一年的高峰，煤是當時發電、鐵路與工廠唯一的大宗燃料。但高點也就是轉折點 —— 產能過剩隨即出現，而電力與運輸接著改燒重油，台灣的煤失去了它最大的一群買家。此後二十年產量的起伏都是外部油價造成的，礦場自己什麼也決定不了。
+  sources:
+    - title: 維基百科：台灣煤礦
+      url: https://zh.wikipedia.org/wiki/台灣煤礦
+
+- id: mn-1969-mine-deaths
+  year: 1969
+  endYear: 1971
+  title: 侯硐瑞三、基隆七星接連塌坑，礦災成為常態
+  category: labour
+  importance: 3
+  desc: 1969 年瑞三煤礦 37 人罹難，1971 年 12 月 1 日七星煤礦 42 人罹難。台灣的煤層薄且傾斜，坑道要跟著煤走，愈挖愈深愈遠，通風、排水與支撐的成本隨深度上升 —— 而煤價由進口煤壓著，省下來的多半就是安全。這些數字在當時被當成採礦的必要代價，直到 1984 年半年內死了近三百人才再也解釋不過去。
+  sources:
+    - title: 維基百科：台灣煤礦
+      url: https://zh.wikipedia.org/wiki/台灣煤礦
+    - title: 維基百科：瑞三煤礦
+      url: https://zh.wikipedia.org/wiki/瑞三煤礦
+
+- id: mn-1973-oil-crisis-rebound
+  year: 1973
+  title: 石油危機讓煤產回升到 300 萬噸
+  category: trade
+  importance: 3
+  desc: 油價暴漲，燒煤忽然又划算起來，已經萎縮的礦場重新加班趕工。這波回升是台灣煤礦最後一次擴張，但它靠的是別人的價格而不是自己的成本 —— 油價回穩、進口煤恢復供應之後，回頭來看只是把收坑的時間往後推了十年，代價是那十年裡礦坑挖得更深、更趕。
+  sources:
+    - title: 維基百科：台灣煤礦
+      url: https://zh.wikipedia.org/wiki/台灣煤礦
+
+- id: in-1984-coal-disasters
+  year: 1984
+  title: 一年三場礦災，台灣煤礦業的喪鐘
+  category: labour
+  importance: 4
+  desc: 6 月 20 日土城海山煤礦煤塵爆炸 72 死，罹難者多為阿美族礦工；7 月 10 日瑞芳煤山煤礦大火 103 死，是戰後台灣最嚴重的礦災；12 月 5 日三峽海山一坑再炸，93 死。半年之內近三百條人命，把礦坑裡長年的低薪、深坑與敷衍的安全設備一次攤在檯面上。此後本地煤敵不過進口煤的價格，礦場陸續收坑，2000 年台灣全面停止採煤 —— 撐了一百多年的產業就此結束，而它是靠一連串災變被結束的。
+  sources:
+    - title: 維基百科：海山煤礦
+      url: https://zh.wikipedia.org/wiki/海山煤礦
+    - title: 維基百科：煤山煤礦礦災
+      url: https://zh.wikipedia.org/wiki/煤山煤礦礦災
+
+- id: mn-1987-taijin-closure
+  year: 1987
+  title: 台灣金屬礦業公司歇業，金瓜石停採
+  category: enterprise
+  importance: 4
+  desc: 礦脈品位下降、成本上升，1981 年貸款興建的禮樂煉銅廠又壓上龐大債務，公司在這一年宣告歇業，開採將近九十年的金瓜石礦山停下來。同一年台積電成立 —— 台灣賺外匯的方式在這一年換了人，一邊是從地底挖出來的金屬，一邊是從矽晶圓上長出來的電路。金瓜石與九份此後靠觀光重新有人，2004 年黃金博物園區在原礦區開園。
+  sources:
+    - title: 維基百科：金瓜石
+      url: https://zh.wikipedia.org/wiki/金瓜石
+    - title: 維基百科：禮樂煉銅廠
+      url: https://zh.wikipedia.org/wiki/禮樂煉銅廠
+    - title: 維基百科：新北市立黃金博物館
+      url: https://zh.wikipedia.org/wiki/新北市立黃金博物館
+
+- id: mn-2000-last-coal-mines
+  year: 2000
+  title: 最後四座煤礦停工，台灣不再採煤
+  category: enterprise
+  importance: 5
+  desc: 利豐、裕峰、安順、台誠相繼停工，從 1876 年八斗子官礦算起一百二十四年的採煤史結束。收尾的原因不是煤挖完了，是薄煤層深坑的成本贏不了進口煤，而三場大礦災之後也再沒有人願意用那種條件開坑。礦區留下的坑口、卸煤櫓與礦工聚落陸續被指定為文化資產，新平溪與猴硐的舊礦場改成博物園區 —— 這一欄的故事到此為止，接下來台灣需要的礦全部從外面買。
+  sources:
+    - title: 維基百科：台灣煤礦
+      url: https://zh.wikipedia.org/wiki/台灣煤礦
+    - title: 維基百科：新平溪煤礦博物園區
+      url: https://zh.wikipedia.org/wiki/新平溪煤礦博物園區
+    - title: 維基百科：猴硐煤礦博物園區
+      url: https://zh.wikipedia.org/wiki/猴硐煤礦博物園區

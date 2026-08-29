@@ -20,20 +20,11 @@
 # ── 荷西到清末：分散的採集與手工加工 ──────────────────────────
 #
 # 這一段沒有斷代色帶（periods.yaml 從 1860 才開始），因為只有零星的
-# 硫磺、糖廍與腦寮，沒有可稱為「時期」的共同結構。事件本身照收。
-
-- id: in-1626-sulphur
-  year: 1626
-  endYear: 1642
-  title: 北投、金包里的硫磺輸出，中國商人為此渡海而來
-  category: trade
-  importance: 3
-  desc: 硫磺產在內北投社與金包里社一帶，由巴賽人在九月到十二月間採取，賣給西班牙人與渡海來的中國商人 —— 中國商船北上雞籠、淡水，主要就是為了收這一項。這是台灣的礦產第一次留下產地、季節與買家都寫得出來的紀錄，而採的人、賣的人、買的人分屬三方，島上沒有任何加工環節。此後兩百年製硫一直停在零星採集，1697 年郁永河北上採硫用的還是同一套做法。
-  sources:
-    - title: 維基百科：臺灣西班牙統治時期
-      url: https://zh.wikipedia.org/wiki/臺灣西班牙統治時期
-    - title: 維基百科：巴賽族
-      url: https://zh.wikipedia.org/wiki/巴賽族
+# 糖廍與腦寮，沒有可稱為「時期」的共同結構。事件本身照收。
+#
+# 硫磺輸出（in-1626-sulphur）與八斗子官礦（in-1876-badouzi-coal）原本在
+# 這一欄，加了礦業欄之後搬過去了；id 保持 `in-` 前綴不動，理由見
+# mining/events.yaml 開頭。
 
 - id: in-1644-sugar-mills
   year: 1644
@@ -82,16 +73,6 @@
       url: https://zh.wikipedia.org/wiki/天津條約
     - title: 維基百科：臺灣清治時期
       url: https://zh.wikipedia.org/wiki/臺灣清治時期
-
-- id: in-1876-badouzi-coal
-  year: 1876
-  title: 八斗子官營煤礦開坑，台灣第一個官營礦場
-  category: infrastructure
-  importance: 4
-  desc: 「清國井」由官方經營，供應輪船與機器所需的燃料。這是台灣第一次為了機器而開採能源，也是近代工業的第一個前提條件。
-  sources:
-    - title: 維基百科：八斗子
-      url: https://zh.wikipedia.org/wiki/八斗子
 
 - id: in-1884-sugar-price-crash
   year: 1884
@@ -494,18 +475,6 @@
   sources:
     - title: 維基百科：臺灣經濟
       url: https://zh.wikipedia.org/wiki/臺灣經濟
-
-- id: in-1984-coal-disasters
-  year: 1984
-  title: 一年三場礦災，台灣煤礦業的喪鐘
-  category: labour
-  importance: 4
-  desc: 6 月 20 日土城海山煤礦煤塵爆炸 72 死，罹難者多為阿美族礦工；7 月 10 日瑞芳煤山煤礦大火 103 死，是戰後台灣最嚴重的礦災；12 月 5 日三峽海山一坑再炸，93 死。半年之內近三百條人命，把礦坑裡長年的低薪、深坑與敷衍的安全設備一次攤在檯面上。此後本地煤敵不過進口煤的價格，礦場陸續收坑，2000 年台灣全面停止採礦 —— 撐了一百多年的產業就此結束，而它是靠一連串災變被結束的。
-  sources:
-    - title: 維基百科：海山煤礦
-      url: https://zh.wikipedia.org/wiki/海山煤礦
-    - title: 維基百科：煤山煤礦礦災
-      url: https://zh.wikipedia.org/wiki/煤山煤礦礦災
 
 - id: in-1984-labor-standards-act
   year: 1984
