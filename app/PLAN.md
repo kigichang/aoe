@@ -243,7 +243,7 @@ Phase 1 的 PR 進 `main`；其餘在 `app` 分支。
 ## 進度
 
 - [x] Phase 0 骨架（2026-08-29）：`tauri dev` 可啟動，Rust 從 repo YAML 載入 8 主題／3,216 則事件／282 段時期入 SQLite，`get_view_payload` 有 `cargo test` 覆蓋；`vite build` 產物不含任何 YAML（shim 生效，主 chunk 296KB）。
-- [ ] Phase 1 網站三個小 PR
+- [x] Phase 1 網站擴充點（2026-08-29，分支 `web/extension-points`，已併入 app，尚未進 main）：`validate.ts` 抽出、`AppProps`（mastheadExtra／toolbarExtra／detailExtra／virtualize）、`RegionColumn.viewport` 直接實作剔除。桌面版 `main.tsx` 開 `virtualize`，shim 用 `validate.ts` 重跑語意檢查。實測跳轉 1945 後畫面完整。
 - [ ] Phase 2 View
 - [ ] Phase 3 使用者事件
 - [ ] Phase 4 Tag 與關聯
@@ -261,4 +261,5 @@ Phase 1 的 PR 進 `main`；其餘在 `app` 分支。
 - 開發期每次啟動都從 YAML 重建上游表（`lib.rs` setup）；YAML 有錯 App 起不來並印原因，跟網站同一個精神。
 - 資料庫在 `~/Library/Application Support/tw.kigi.aoe/aoe.sqlite`（Windows 是 `%APPDATA%\tw.kigi.aoe\`）。
 - macOS 上 `screencapture` 要給終端機螢幕錄製權限才能自動截圖驗畫面。
+- `app/index.html` 曾被根目錄 `.gitignore` 的 `/*/index.html` 擋掉沒進 commit，已加 `!/app/index.html` 例外。
 - 字型仍走 Google Fonts（CSP 已放行）；離線退回系統字型。打包前內嵌（Phase 7）。

@@ -5,6 +5,7 @@ import '@web/styles.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    {/* 跨主題 View 一次可能兩三千則，開視窗剔除；排版仍整欄算（見 RegionColumn.viewport） */}
+    <App virtualize />
   </StrictMode>,
 )
