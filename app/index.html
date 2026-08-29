@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AoE</title>
+    <script>
+      // 同網站 index.html：首次繪製前套用存下來的主題。key 必須跟 src/lib/theme.ts 的 THEME_KEY 一致。
+      try {
+        var t = localStorage.getItem('aoe:theme')
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t
+      } catch (e) {}
+    </script>
+    <!-- 字型暫時沿用網站的 Google Fonts；離線時退回系統字型。打包前改成內嵌（見 PLAN.md Phase 7）。 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/bootstrap.ts"></script>
+  </body>
+</html>
