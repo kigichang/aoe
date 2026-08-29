@@ -1,0 +1,23 @@
+[package]
+name = "aoe-app"
+version = "0.1.0"
+edition = "2021"
+description = "AoE 桌面版：把不同地區／主題的歷史放在同一條時間軸上並排比較"
+license = "MIT"
+
+[lib]
+name = "aoe_app_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# serde_yaml 已停維護；saphyr 是 yaml-rust 的後繼，serde-saphyr 是它的 serde 介面
+serde-saphyr = "1"
+rusqlite = { version = "0.40", features = ["bundled"] }
+rusqlite_migration = "2"
+anyhow = "1"

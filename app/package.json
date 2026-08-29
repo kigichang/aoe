@@ -1,0 +1,22 @@
+{
+  "name": "aoe-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "check": "tsc --noEmit",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.11.1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.11.4",
+    "@vitejs/plugin-react": "^4.6.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.0"
+  },
+  "//": "react／react-dom／zod／@types/* 刻意不列：必須跟網站共用根目錄 node_modules 的同一份，否則會有兩份 React（hooks 壞掉）與兩份 Zod（tsc 型別互比 OOM）。先在根目錄 npm install。"
+}
