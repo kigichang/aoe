@@ -17,6 +17,18 @@ interface Props {
   onSelect: (id: string) => void
   collapsed: boolean
   onToggleCollapse: () => void
+  /**
+   * 只渲染落在這段 y 範圍（欄內像素，不含 HEAD_H）的圖釘與標籤。
+   *
+   * **排版不虛擬化，渲染才虛擬化。** `placeEvents` 是 importance 優先的區間佔位，
+   * 欄內任兩則都可能互相影響，必須整欄一起算；算完之後才剔除視窗外的，
+   * 結果跟全渲染完全相同，第一條不變式（y = 年份）不受影響。
+   * 引線是 EventMark 自己畫的，圖釘（y）或標籤（labelY）任一在範圍內就留著。
+   *
+   * 不傳就全部渲染 —— 網站目前的量還不需要，桌面版的跨主題 View 才會傳。
+   * 呼叫端自己決定 buffer（建議上下各一屏）。
+   */
+  viewport?: { top: number; bottom: number }
 }
 
 function RegionColumnImpl({
@@ -30,6 +42,7 @@ function RegionColumnImpl({
   onSelect,
   collapsed,
   onToggleCollapse,
+  viewport,
 }: Props) {
   const floor = minImportance(ppy)
 
@@ -46,11 +59,16 @@ function RegionColumnImpl({
     return placeEvents(visible, (year) => yearToY(year, ppy), laneCount, ppy)
   }, [region.events, floor, categories, showLegendary, ppy, laneCount, collapsed])
 
-  const lanes = useMemo(
-    () =>
-      Array.from({ length: laneCount }, (_, i) => placed.filter((p) => p.lane === i)),
-    [placed, laneCount],
-  )
+  const lanes = useMemo(() => {
+    const inView = viewport
+      ? placed.filter(
+          (p) =>
+            (p.y >= viewport.top && p.y <= viewport.bottom) ||
+            (p.labelY >= viewport.top && p.labelY <= viewport.bottom),
+        )
+      : placed
+    return Array.from({ length: laneCount }, (_, i) => inView.filter((p) => p.lane === i))
+  }, [placed, laneCount, viewport])
 
   const tracks = useMemo(
     () =>

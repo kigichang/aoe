@@ -28,6 +28,8 @@ interface Props {
   onJump: (year: number) => void
   /** 搜尋框。由 App 傳進來，Toolbar 不需要知道事件索引長什麼樣子 */
   search: ReactNode
+  /** 第一列最右邊的額外內容（桌面版掛自己的按鈕用）。不傳就跟現在一樣。 */
+  extra?: ReactNode
 }
 
 export function Toolbar({
@@ -41,6 +43,7 @@ export function Toolbar({
   onZoom,
   onJump,
   search,
+  extra,
 }: Props) {
   const floor = minImportance(ppy)
   return (
@@ -65,6 +68,7 @@ export function Toolbar({
             </button>
           ))}
         </nav>
+        {extra}
       </div>
       {/* 這排同時是圖例：欄位靠顏色識別，類別靠漢字識別 */}
       <div className="toolbar-row legend">
