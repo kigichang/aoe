@@ -1,4 +1,12 @@
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
+import {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+  type ReactNode,
+} from 'react'
 import { CATEGORY_IDS, REGIONS, TOPIC } from './lib/data'
 import type { Category, HistEvent, Region } from './lib/schema'
 import {
@@ -54,6 +62,8 @@ const CONCURRENT_WINDOW = 60
  * 打開之後位置會偏掉，而且偏多少還跟視窗高度有關。
  */
 const VIEW_ANCHOR = 0.4
+/** 虛擬化可見範圍的量化步長（px），見下方 viewport 那段 */
+const VIEWPORT_STEP = 400
 
 /** 只在載入時讀一次；之後網址由這支程式自己寫，不再回頭讀 */
 const INITIAL_URL = readUrlState()
@@ -62,7 +72,25 @@ const ALL_EVENTS = REGIONS.flatMap((r, slot) =>
   r.events.map((e) => ({ event: e, region: r, slot })),
 )
 
-export default function App() {
+/**
+ * 給「把這個畫面當元件用」的外層（目前是桌面版 `app/`）的擴充點。
+ *
+ * **全部選填，不傳就等於現在的網站** —— 網站的 `main.tsx` 就是 `<App />`。
+ * 桌面版靠這幾個位置掛上編輯、Tag、題庫等按鈕與區塊，而不是複製一份 App.tsx
+ * 去改：縮放錨定、時間游標、欄位計算這些邏輯只該有一份。
+ */
+export interface AppProps {
+  /** 標題列右側、主題切換器之前 */
+  mastheadExtra?: ReactNode
+  /** 工具列第一列（縮放／搜尋／跳轉）的最右邊 */
+  toolbarExtra?: ReactNode
+  /** 詳情面板裡，出處之後、同時期之前 */
+  detailExtra?: (event: HistEvent, region: Region) => ReactNode
+  /** 各欄只渲染視窗附近的事件（見 RegionColumn 的 `viewport`）。不開就全渲染。 */
+  virtualize?: boolean
+}
+
+export default function App({ mastheadExtra, toolbarExtra, detailExtra, virtualize }: AppProps = {}) {
   const scrollRef = useRef<HTMLDivElement>(null)
   /*
    * 開場縮放，由主題的 defaultPpy 決定（沒填就取整條軸約兩屏）。
@@ -393,6 +421,41 @@ export default function App() {
     syncUrl()
   }, [ppy, selectedId, syncUrl])
 
+  /**
+   * 虛擬化用的可見範圍（欄內像素）。**排版不虛擬化，渲染才虛擬化**，
+   * 見 RegionColumn 的 `viewport`。
+   *
+   * 上下各多留一屏當 buffer，並把邊界量化到 `VIEWPORT_STEP` 的倍數 ——
+   * 不量化的話每捲一像素 viewport 物件就變一次，所有欄全部重新渲染，
+   * 比不虛擬化還糟。量化後只有跨過一格才會變。
+   * 不開（網站）就一直是 undefined，RegionColumn 走全渲染那條路。
+   */
+  const [viewport, setViewport] = useState<{ top: number; bottom: number } | undefined>(undefined)
+  useEffect(() => {
+    const el = scrollRef.current
+    if (!virtualize || !el) return
+    let raf = 0
+    const update = () => {
+      raf = 0
+      const h = el.clientHeight
+      const top = Math.floor((el.scrollTop - HEAD_H - h) / VIEWPORT_STEP) * VIEWPORT_STEP
+      const bottom = Math.ceil((el.scrollTop - HEAD_H + 2 * h) / VIEWPORT_STEP) * VIEWPORT_STEP
+      setViewport((prev) => (prev && prev.top === top && prev.bottom === bottom ? prev : { top, bottom }))
+    }
+    const onScroll = () => {
+      if (!raf) raf = requestAnimationFrame(update)
+    }
+    update()
+    el.addEventListener('scroll', onScroll, { passive: true })
+    const ro = new ResizeObserver(onScroll)
+    ro.observe(el)
+    return () => {
+      el.removeEventListener('scroll', onScroll)
+      ro.disconnect()
+      if (raf) cancelAnimationFrame(raf)
+    }
+  }, [virtualize, ppy])
+
   /*
    * 外部改動 hash（貼上別人分享的連結、手動編輯網址）時要跟著跳。
    * 自己寫入用的是 replaceState，不會觸發 hashchange，所以不會打架。
@@ -526,6 +589,7 @@ export default function App() {
           <p>{TOPIC.description}</p>
         </div>
         <div className="masthead-actions">
+          {mastheadExtra}
           <TopicSwitcher />
           <button
             type="button"
@@ -565,6 +629,7 @@ export default function App() {
         onZoom={(f) => zoomAt(f, (scrollRef.current?.clientHeight ?? 0) / 2)}
         onJump={scrollToYear}
         search={<SearchBox all={ALL_EVENTS} onPick={revealEvent} />}
+        extra={toolbarExtra}
       />
 
       {/* 捲動區與詳情面板並排：面板是版面的一部分，不是浮在上面的東西 */}
@@ -599,6 +664,7 @@ export default function App() {
                 onSelect={setSelectedId}
                 collapsed={collapsedRegions.has(region.id)}
                 onToggleCollapse={() => toggleCollapse(region.id)}
+                viewport={viewport}
               />
             ))}
 
@@ -623,6 +689,7 @@ export default function App() {
             concurrent={concurrent}
             onClose={clearSelection}
             onSelect={selectConcurrent}
+            extra={detailExtra?.(selected.event, selected.region)}
           />
         )}
       </div>
