@@ -11,12 +11,19 @@ on:
       tag:
         description: '要建置的版本標籤（例如 app-v0.1.0）'
         required: true
+      skip_build:
+        description: '跳過建置，只對已存在的 draft release 跑一次冒煙測試'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
 
 jobs:
   build:
+    # skip_build 讓「只重跑冒煙測試」變成一次 dispatch，不必為了驗證安裝檔
+    # 重建一次十幾分鐘的 Rust release build。
+    if: ${{ !inputs.skip_build }}
     strategy:
       fail-fast: false
       matrix:
@@ -96,6 +103,8 @@ jobs:
   # release 這時還是 draft，所以測試掛掉就不會有人按到 Publish。
   smoke-windows:
     needs: build
+    # build 被 skip_build 跳過時這一關仍要跑（skipped 不算失敗）
+    if: ${{ always() && needs.build.result != 'failure' && needs.build.result != 'cancelled' }}
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v7
