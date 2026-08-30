@@ -131,3 +131,7 @@
 .practice-flash-answer { white-space: pre-wrap; line-height: 1.7; padding: 8px 12px; border-left: 3px solid var(--r0); background: var(--page); border-radius: 0 8px 8px 0; }
 .practice-self { display: flex; gap: 8px; align-items: center; margin-top: 10px; }
 .practice-done { text-align: center; padding: 20px 0; }
+
+/* 資料面板 */
+.views-msg { white-space: pre-wrap; font-size: 13px; color: var(--r2); margin: 8px 0; }
+.data-info { font-size: 13px; margin: 4px 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; }

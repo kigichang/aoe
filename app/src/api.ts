@@ -1,12 +1,15 @@
 import { invoke } from '@tauri-apps/api/core'
 import type {
+  BundleInfo,
   EventHit,
   EventLink,
   LinkInput,
+  Orphan,
   Question,
   QuestionCard,
   QuizStats,
   ReviewState,
+  SyncCheck,
   Tag,
   TagGroup,
   TopicCatalog,
@@ -55,6 +58,12 @@ export const api = {
   gradeQuestion: (id: string, grade: number, elapsedMs?: number) =>
     invoke<ReviewState>('grade_question', { id, grade, elapsedMs }),
   quizStats: () => invoke<QuizStats>('quiz_stats'),
+
+  bundleInfo: () => invoke<BundleInfo>('bundle_info'),
+  syncCheck: () => invoke<SyncCheck>('sync_check'),
+  syncApply: () => invoke<[BundleInfo, Orphan[]]>('sync_apply'),
+  listOrphans: () => invoke<Orphan[]>('list_orphans'),
+  deleteOrphan: (kind: string, key: string) => invoke<void>('delete_orphan', { kind, key }),
 }
 
 /** 切換 View = 整頁重載（見 bootstrap.ts） */

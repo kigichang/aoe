@@ -909,3 +909,103 @@ pub fn quiz_stats(conn: &Connection) -> Result<QuizStats> {
         reviewed_today,
     })
 }
+
+/* ---------------- 同步與孤兒 ---------------- */
+
+pub fn bundle_info(conn: &Connection, from_repo: bool) -> Result<BundleInfo> {
+    let (version, imported_at): (String, String) = conn
+        .query_row("SELECT version, imported_at FROM bundle_meta WHERE id = 1", [], |r| Ok((r.get(0)?, r.get(1)?)))
+        .optional()?
+        .unwrap_or_else(|| ("（尚未載入）".into(), String::new()));
+    let event_count: u64 = conn.query_row("SELECT COUNT(*) FROM events", [], |r| r.get::<_, i64>(0))? as u64;
+    let topic_count: u64 = conn.query_row("SELECT COUNT(*) FROM topics", [], |r| r.get::<_, i64>(0))? as u64;
+    Ok(BundleInfo { version, imported_at, event_count, topic_count, from_repo })
+}
+
+pub fn has_upstream(conn: &Connection) -> Result<bool> {
+    Ok(conn.query_row("SELECT COUNT(*) FROM topics", [], |r| r.get::<_, i64>(0))? > 0)
+}
+
+/// 使用者資料裡指向已不存在事件的列。**只列出、不刪**——刪是使用者的決定。
+pub fn orphans(conn: &Connection) -> Result<Vec<Orphan>> {
+    let exists = |r#ref: &str| -> Result<bool> {
+        if r#ref.starts_with("user/") {
+            return Ok(user_event_get(conn, r#ref)?.is_some());
+        }
+        Ok(conn.query_row("SELECT 1 FROM events WHERE ref = ?1", [r#ref], |_| Ok(())).optional()?.is_some())
+    };
+    let mut out = Vec::new();
+
+    let mut st = conn.prepare("SELECT event_ref, tag_id, title_snapshot, (SELECT name FROM tags WHERE id = tag_id) FROM event_tags")?;
+    let rows: Vec<(String, String, String, Option<String>)> =
+        st.query_map([], |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?, r.get(3)?)))?.collect::<rusqlite::Result<_>>()?;
+    for (r#ref, tag, snap, name) in rows {
+        if !exists(&r#ref)? {
+            out.push(Orphan { kind: "event_tag".into(), key: format!("{ref}\u{1f}{tag}"), r#ref, snapshot: snap, detail: format!("tag「{}」", name.unwrap_or(tag)) });
+        }
+    }
+
+    let mut st = conn.prepare("SELECT id, from_ref, to_ref, kind, snapshot_from, snapshot_to FROM event_links")?;
+    let rows: Vec<(String, String, String, String, String, String)> = st
+        .query_map([], |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?, r.get(3)?, r.get(4)?, r.get(5)?)))?
+        .collect::<rusqlite::Result<_>>()?;
+    for (id, from, to, kind, sf, st_) in rows {
+        let (fo, to_) = (!exists(&from)?, !exists(&to)?);
+        if fo || to_ {
+            out.push(Orphan {
+                kind: "event_link".into(),
+                key: id,
+                r#ref: if fo { from } else { to },
+                snapshot: if fo { sf.clone() } else { st_.clone() },
+                detail: format!("關聯「{sf}」{kind}→「{st_}」"),
+            });
+        }
+    }
+
+    let mut st = conn.prepare("SELECT question_id, event_ref, title_snapshot, (SELECT prompt FROM questions WHERE id = question_id) FROM question_events")?;
+    let rows: Vec<(String, String, String, Option<String>)> =
+        st.query_map([], |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?, r.get(3)?)))?.collect::<rusqlite::Result<_>>()?;
+    for (qid, r#ref, snap, prompt) in rows {
+        if !exists(&r#ref)? {
+            out.push(Orphan { kind: "question_event".into(), key: format!("{qid}\u{1f}{ref}"), r#ref, snapshot: snap, detail: format!("題目「{}」", prompt.unwrap_or_default()) });
+        }
+    }
+
+    // placement 指向的欄位或類別不見了（上游改了 regions.yaml／categories.yaml）
+    let mut st = conn.prepare(
+        "SELECT p.event_ref, p.topic, p.region, p.category, e.title FROM event_placements p JOIN user_events e ON e.ref = p.event_ref",
+    )?;
+    let rows: Vec<(String, String, String, String, String)> =
+        st.query_map([], |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?, r.get(3)?, r.get(4)?)))?.collect::<rusqlite::Result<_>>()?;
+    for (r#ref, topic, region, category, title) in rows {
+        let region_ok = conn.query_row("SELECT 1 FROM regions WHERE topic = ?1 AND id = ?2", params![topic, region], |_| Ok(())).optional()?.is_some();
+        let cat_ok = conn.query_row("SELECT 1 FROM categories WHERE topic = ?1 AND id = ?2", params![topic, category], |_| Ok(())).optional()?.is_some();
+        if !region_ok || !cat_ok {
+            out.push(Orphan {
+                kind: "placement".into(),
+                key: format!("{ref}\u{1f}{topic}\u{1f}{region}"),
+                r#ref: r#ref.clone(),
+                snapshot: title,
+                detail: if !region_ok { format!("欄位 {topic}/{region} 已不存在") } else { format!("類別 {topic}/{category} 已不存在") },
+            });
+        }
+    }
+    Ok(out)
+}
+
+pub fn orphan_delete(conn: &Connection, kind: &str, key: &str) -> Result<()> {
+    let parts: Vec<&str> = key.split('\u{1f}').collect();
+    let n = match (kind, parts.as_slice()) {
+        ("event_tag", [r#ref, tag]) => conn.execute("DELETE FROM event_tags WHERE event_ref = ?1 AND tag_id = ?2", params![r#ref, tag])?,
+        ("event_link", [id]) => conn.execute("DELETE FROM event_links WHERE id = ?1", [id])?,
+        ("question_event", [qid, r#ref]) => conn.execute("DELETE FROM question_events WHERE question_id = ?1 AND event_ref = ?2", params![qid, r#ref])?,
+        ("placement", [r#ref, topic, region]) => {
+            conn.execute("DELETE FROM event_placements WHERE event_ref = ?1 AND topic = ?2 AND region = ?3", params![r#ref, topic, region])?
+        }
+        _ => bail!("未知的孤兒類型 {kind}"),
+    };
+    if n == 0 {
+        bail!("找不到要刪的列");
+    }
+    Ok(())
+}

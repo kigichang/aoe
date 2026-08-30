@@ -115,8 +115,9 @@ pub struct Event {
     pub links: Option<BTreeMap<String, String>>,
 }
 
-/// 一個主題讀完 YAML 之後的樣子（尚未入庫）
-#[derive(Debug, Clone)]
+/// 一個主題讀完 YAML 之後的樣子（尚未入庫）。也是 bundle 裡每個主題的形狀
+///（tools/bundle.mjs 產的 JSON 與這裡一對一）。
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct TopicData {
     pub slug: String,
     pub meta: TopicMeta,
@@ -125,7 +126,7 @@ pub struct TopicData {
     pub regions: Vec<RegionData>,
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct RegionData {
     pub meta: RegionMeta,
     pub periods: Vec<Period>,
@@ -340,6 +341,54 @@ pub struct TopicCatalog {
     pub timeline: Timeline,
     pub regions: Vec<RegionMeta>,
     pub categories: Vec<CategoryDef>,
+}
+
+/* ---------------- 同步 ---------------- */
+
+/// tools/bundle.mjs 產的 manifest.json
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct Manifest {
+    pub version: String,
+    pub built_at: String,
+    pub sha256: String,
+    pub size: u64,
+    pub event_count: u64,
+    #[serde(default)]
+    pub topic_count: u64,
+    pub url: String,
+}
+
+#[derive(Debug, Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct BundleInfo {
+    pub version: String,
+    pub imported_at: String,
+    pub event_count: u64,
+    pub topic_count: u64,
+    /// 開發期直接讀 repo YAML 時為 true（同步功能不適用）
+    pub from_repo: bool,
+}
+
+#[derive(Debug, Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct SyncCheck {
+    pub local: BundleInfo,
+    pub remote: Manifest,
+    pub newer: bool,
+}
+
+/// 使用者資料裡指向已不存在事件的列
+#[derive(Debug, Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct Orphan {
+    /// event_tag／event_link／question_event／placement
+    pub kind: String,
+    /// 刪除時用的鍵（各 kind 自己解讀）
+    pub key: String,
+    pub r#ref: String,
+    pub snapshot: String,
+    pub detail: String,
 }
 
 /* ---------------- 給前端的 payload（對齊 app/src/types.ts） ---------------- */

@@ -1,3 +1,4 @@
+mod bundle;
 mod commands;
 mod db;
 mod loader;
@@ -18,6 +19,10 @@ pub struct AppState {
 
 /// 資料來源目錄：`AOE_TOPICS_DIR` 優先；debug 建置預設指到 repo 的 src/topics。
 fn topics_dir() -> Option<PathBuf> {
+    // AOE_NO_REPO=1：即使是 debug 建置也走 bundle 模式（測同步用）
+    if std::env::var("AOE_NO_REPO").is_ok() {
+        return None;
+    }
     if let Ok(p) = std::env::var("AOE_TOPICS_DIR") {
         return Some(PathBuf::from(p));
     }
@@ -42,6 +47,11 @@ pub fn run() {
             if let Some(d) = &dir {
                 let topics = loader::load_topics(d).map_err(|e| format!("{e:#}"))?;
                 db::replace_upstream(&mut conn, &topics, "repo").map_err(|e| format!("{e:#}"))?;
+            } else if !db::has_upstream(&conn).map_err(|e| format!("{e:#}"))? {
+                // 發布版第一次啟動：用安裝檔內嵌的 bundle，離線也有完整資料。
+                // 之後的更新由使用者在「資料」面板按「檢查更新」。
+                let b = bundle::parse(bundle::EMBEDDED).map_err(|e| format!("{e:#}"))?;
+                db::replace_upstream(&mut conn, &b.topics, &b.version).map_err(|e| format!("{e:#}"))?;
             }
             app.manage(AppState { db: Mutex::new(conn), topics_dir: dir, export_dir: data_dir.join("export") });
             // 開發用：AOE_START_QUERY="view=v-perf&perf=1" 讓視窗一開就載入指定的 View（效能基準用）
@@ -91,6 +101,11 @@ pub fn run() {
             commands::grade_question,
             commands::quiz_stats,
             commands::log_perf,
+            commands::bundle_info,
+            commands::sync_check,
+            commands::sync_apply,
+            commands::list_orphans,
+            commands::delete_orphan,
             commands::reload_from_repo
         ])
         .run(tauri::generate_context!())

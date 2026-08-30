@@ -41,10 +41,7 @@ pub fn load_topics(dir: &Path) -> Result<Vec<TopicData>> {
     if topics.is_empty() {
         bail!("找不到任何主題：{}/<主題>/topic.yaml 至少要有一份。", dir.display());
     }
-    let roots: Vec<_> = topics.iter().filter(|t| t.meta.root == Some(true)).map(|t| t.slug.as_str()).collect();
-    if roots.len() != 1 {
-        bail!("恰好要有一個主題設定 root: true（目前有 {} 個：{}）。", roots.len(), roots.join("、"));
-    }
+    validate_topics(&topics)?;
     Ok(topics)
 }
 
@@ -52,48 +49,77 @@ fn load_topic(dir: &Path, slug: &str) -> Result<TopicData> {
     let meta: TopicMeta = read_yaml(&dir.join("topic.yaml"))?;
     let timeline: Timeline = read_yaml(&dir.join("timeline.yaml"))
         .with_context(|| format!("主題 \"{slug}\" 缺少或無法讀取 timeline.yaml"))?;
+    let cat_path = dir.join("categories.yaml");
+    let categories: Vec<CategoryDef> = if cat_path.exists() { read_yaml(&cat_path)? } else { default_categories() };
+    let region_metas: Vec<RegionMeta> = read_yaml(&dir.join("regions.yaml"))
+        .with_context(|| format!("主題 \"{slug}\" 缺少或無法讀取 regions.yaml"))?;
+    let mut regions = Vec::new();
+    for rm in region_metas {
+        let rdir = dir.join(&rm.id);
+        let periods: Vec<Period> = read_yaml_list(&rdir.join("periods.yaml"))?;
+        let events: Vec<Event> = read_yaml_list(&rdir.join("events.yaml"))?;
+        regions.push(RegionData { meta: rm, periods, events });
+    }
+    let t = TopicData { slug: slug.to_string(), meta, timeline, categories, regions };
+    validate_topic(&t)?;
+    Ok(t)
+}
+
+/// 整批的檢查（含「恰好一個 root」）。YAML 載入與 bundle 匯入都走這裡。
+pub fn validate_topics(topics: &[TopicData]) -> Result<()> {
+    for t in topics {
+        validate_topic(t)?;
+    }
+    let roots: Vec<_> = topics.iter().filter(|t| t.meta.root == Some(true)).map(|t| t.slug.as_str()).collect();
+    if roots.len() != 1 {
+        bail!("恰好要有一個主題設定 root: true（目前有 {} 個：{}）。", roots.len(), roots.join("、"));
+    }
+    let mut seen = HashSet::new();
+    for t in topics {
+        if !seen.insert(t.slug.as_str()) {
+            bail!("主題 slug 重複：{}", t.slug);
+        }
+    }
+    Ok(())
+}
+
+/// 網站 data.ts 六道語意檢查的移植：id 唯一、時期不重疊、範圍內、actualYear、類別存在，
+/// 外加 schema 層的形狀（沒有西元 0 年、importance 1…5、glyph 一個字、類別 1…6 個）。
+pub fn validate_topic(t: &TopicData) -> Result<()> {
+    let slug = &t.slug;
+    let timeline = &t.timeline;
     if timeline.max_year <= timeline.min_year {
         bail!("{slug}/timeline.yaml：maxYear 必須大於 minYear");
     }
-    for y in meta.jumps.iter().flatten() {
+    for y in t.meta.jumps.iter().flatten() {
         if *y < timeline.min_year || *y > timeline.max_year {
             bail!("{slug}/topic.yaml：跳轉年代 {y} 超出時間軸範圍 {}…{}", timeline.min_year, timeline.max_year);
         }
     }
-
-    let cat_path = dir.join("categories.yaml");
-    let categories: Vec<CategoryDef> = if cat_path.exists() { read_yaml(&cat_path)? } else { default_categories() };
-    if categories.is_empty() || categories.len() > 6 {
+    if t.categories.is_empty() || t.categories.len() > 6 {
         bail!("{slug}/categories.yaml：類別要在 1…6 個之間（識別靠漢字圖釘）");
     }
-    for c in &categories {
+    for c in &t.categories {
         if c.glyph.chars().count() != 1 {
             bail!("{slug}/categories.yaml：類別 \"{}\" 的 glyph 必須剛好一個字", c.id);
         }
     }
-    let cat_ids: HashSet<&str> = categories.iter().map(|c| c.id.as_str()).collect();
+    let cat_ids: HashSet<&str> = t.categories.iter().map(|c| c.id.as_str()).collect();
+    assert_unique_ids(t.regions.iter().map(|r| r.meta.id.as_str()), &format!("{slug}/regions.yaml"))?;
 
-    let region_metas: Vec<RegionMeta> = read_yaml(&dir.join("regions.yaml"))
-        .with_context(|| format!("主題 \"{slug}\" 缺少或無法讀取 regions.yaml"))?;
-    assert_unique_ids(region_metas.iter().map(|r| r.id.as_str()), &format!("{slug}/regions.yaml"))?;
-
-    let mut regions = Vec::new();
-    for rm in region_metas {
-        let rdir = dir.join(&rm.id);
-        let where_ = format!("{slug}/{}", rm.id);
-        let periods: Vec<Period> = read_yaml_list(&rdir.join("periods.yaml"))?;
-        let events: Vec<Event> = read_yaml_list(&rdir.join("events.yaml"))?;
-
+    for r in &t.regions {
+        let where_ = format!("{slug}/{}", r.meta.id);
+        let (periods, events) = (&r.periods, &r.events);
         assert_unique_ids(periods.iter().map(|p| p.id.as_str()), &format!("{where_}/periods.yaml"))?;
         assert_unique_ids(events.iter().map(|e| e.id.as_str()), &format!("{where_}/events.yaml"))?;
-        assert_no_overlap(&periods, &where_)?;
-        for p in &periods {
+        assert_no_overlap(periods, &where_)?;
+        for p in periods {
             if p.end < p.start {
                 bail!("{where_}/periods.yaml：\"{}\" 的 end 不能早於 start", p.id);
             }
-            assert_in_range(&p.id, p.start, p.end, &timeline, &format!("{where_}/periods.yaml"))?;
+            assert_in_range(&p.id, p.start, p.end, timeline, &format!("{where_}/periods.yaml"))?;
         }
-        for e in &events {
+        for e in events {
             if e.year == 0 || e.end_year == Some(0) || e.actual_year == Some(0) {
                 bail!("{where_}/events.yaml：\"{}\" 沒有西元 0 年", e.id);
             }
@@ -121,12 +147,10 @@ fn load_topic(dir: &Path, slug: &str) -> Result<TopicData> {
                     );
                 }
             }
-            assert_in_range(&e.id, e.year, e.end_year.unwrap_or(e.year), &timeline, &format!("{where_}/events.yaml"))?;
+            assert_in_range(&e.id, e.year, e.end_year.unwrap_or(e.year), timeline, &format!("{where_}/events.yaml"))?;
         }
-        regions.push(RegionData { meta: rm, periods, events });
     }
-
-    Ok(TopicData { slug: slug.to_string(), meta, timeline, categories, regions })
+    Ok(())
 }
 
 fn assert_unique_ids<'a>(ids: impl Iterator<Item = &'a str>, where_: &str) -> Result<()> {

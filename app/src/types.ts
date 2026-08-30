@@ -178,3 +178,38 @@ export const QUESTION_KINDS: { id: QuestionKind; label: string }[] = [
   { id: 'order', label: '排序' },
   { id: 'flash', label: '問答（自評）' },
 ]
+
+/* ---------------- 同步與孤兒，對齊 model.rs ---------------- */
+
+export interface BundleInfo {
+  version: string
+  importedAt: string
+  eventCount: number
+  topicCount: number
+  /** 開發期直接讀 repo YAML（同步不適用） */
+  fromRepo: boolean
+}
+
+export interface Manifest {
+  version: string
+  builtAt: string
+  sha256: string
+  size: number
+  eventCount: number
+  topicCount: number
+  url: string
+}
+
+export interface SyncCheck {
+  local: BundleInfo
+  remote: Manifest
+  newer: boolean
+}
+
+export interface Orphan {
+  kind: 'event_tag' | 'event_link' | 'question_event' | 'placement'
+  key: string
+  ref: string
+  snapshot: string
+  detail: string
+}

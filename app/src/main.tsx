@@ -11,6 +11,7 @@ import { EventExtras } from './tags/EventExtras'
 import { TagsOverlay } from './tags/TagsOverlay'
 import { QuizOverlay } from './quiz/QuizOverlay'
 import { EventQuestions } from './quiz/EventQuestions'
+import { DataOverlay } from './sync/DataOverlay'
 import type { Question } from './types'
 import { runPerf } from './perf'
 import { USER_EVENT_PREFIX } from './types'
@@ -41,6 +42,8 @@ function Desktop() {
   const closeTags = useCallback(() => setTagsOpen(false), [])
   const [quiz, setQuiz] = useState<{ edit?: Question } | null>(null)
   const closeQuiz = useCallback(() => setQuiz(null), [])
+  const [dataOpen, setDataOpen] = useState(false)
+  const closeData = useCallback(() => setDataOpen(false), [])
   const [editor, setEditor] = useState<{ editRef?: string } | null>(null)
   const closeEditor = useCallback(() => setEditor(null), [])
   const closeViews = useCallback(() => setViewsOpen(false), [])
@@ -84,6 +87,15 @@ function Desktop() {
             <button
               type="button"
               className="theme-toggle"
+              onClick={() => setDataOpen(true)}
+              title="資料版本、更新、孤兒檢查、匯出"
+              aria-label="資料"
+            >
+              <span className="btn-label">資料</span>
+            </button>
+            <button
+              type="button"
+              className="theme-toggle"
               onClick={() => setViewsOpen(true)}
               title="跨主題組合視圖"
               aria-label="跨主題組合視圖"
@@ -111,6 +123,7 @@ function Desktop() {
       {viewsOpen && <ViewsOverlay currentId={TOPIC_ID} onClose={closeViews} />}
       {tagsOpen && <TagsOverlay onClose={closeTags} />}
       {quiz && <QuizOverlay initialEdit={quiz.edit} onClose={closeQuiz} />}
+      {dataOpen && <DataOverlay onClose={closeData} />}
       {editor && (
         <EventEditor editRef={editor.editRef} initialPlacement={placement} onClose={closeEditor} />
       )}

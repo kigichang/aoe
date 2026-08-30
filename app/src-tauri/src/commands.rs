@@ -3,7 +3,7 @@
 use crate::db;
 use crate::model::*;
 use crate::AppState;
-use anyhow::{anyhow, Result};
+use anyhow::{anyhow, bail, Context, Result};
 use std::collections::BTreeSet;
 use tauri::State;
 
@@ -428,6 +428,89 @@ pub fn quiz_stats(state: State<'_, AppState>) -> Result<QuizStats, String> {
     db::quiz_stats(&conn).map_err(err)
 }
 
+/* ---------------- 同步與孤兒 ---------------- */
+
+/// manifest 與 bundle 的來源；`AOE_SYNC_BASE` 可以改（例如指到本機的 vite preview）
+fn sync_base() -> String {
+    std::env::var("AOE_SYNC_BASE").unwrap_or_else(|_| "https://aoe.kigi.tw/data".to_string())
+}
+
+fn http() -> Result<reqwest::Client> {
+    Ok(reqwest::Client::builder()
+        .user_agent(concat!("aoe-app/", env!("CARGO_PKG_VERSION")))
+        .timeout(std::time::Duration::from_secs(30))
+        .build()?)
+}
+
+#[tauri::command]
+pub fn bundle_info(state: State<'_, AppState>) -> Result<BundleInfo, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::bundle_info(&conn, state.topics_dir.is_some()).map_err(err)
+}
+
+/// 抓 manifest.json 比版本。網域走 Cloudflare 有快取，URL 加時間戳破快取。
+#[tauri::command]
+pub async fn sync_check(state: State<'_, AppState>) -> Result<SyncCheck, String> {
+    let local = {
+        let conn = state.db.lock().map_err(|e| e.to_string())?;
+        db::bundle_info(&conn, state.topics_dir.is_some()).map_err(err)?
+    };
+    let now = std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH).map(|d| d.as_secs()).unwrap_or(0);
+    let url = format!("{}/manifest.json?t={now}", sync_base());
+    let remote: Manifest = (async {
+        let r = http()?.get(&url).send().await.with_context(|| format!("連線 {url}"))?;
+        if !r.status().is_success() {
+            bail!("{url} 回應 {}", r.status());
+        }
+        Ok::<_, anyhow::Error>(r.json::<Manifest>().await.context("manifest.json 格式")?)
+    })
+    .await
+    .map_err(err)?;
+    let newer = remote.version != local.version;
+    Ok(SyncCheck { local, remote, newer })
+}
+
+/// 下載 bundle → 驗 sha256 → 解析並驗證 → 一個 transaction 換掉上游表。
+/// 任何一步失敗都保留舊資料。回傳套用後的孤兒清單。
+#[tauri::command]
+pub async fn sync_apply(state: State<'_, AppState>) -> Result<(BundleInfo, Vec<Orphan>), String> {
+    if state.topics_dir.is_some() {
+        return Err("目前直接讀 repo 的 YAML（開發模式），不做線上同步。".into());
+    }
+    let base = sync_base();
+    let now = std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH).map(|d| d.as_secs()).unwrap_or(0);
+    let (manifest, bytes) = (async {
+        let c = http()?;
+        let m: Manifest = c.get(format!("{base}/manifest.json?t={now}")).send().await?.error_for_status()?.json().await?;
+        let b = c.get(format!("{base}/{}?v={}", m.url, m.version)).send().await?.error_for_status()?.bytes().await?;
+        Ok::<_, anyhow::Error>((m, b.to_vec()))
+    })
+    .await
+    .map_err(err)?;
+    let got = crate::bundle::sha256_hex(&bytes);
+    if got != manifest.sha256 {
+        return Err(format!("下載的 bundle sha256 不符（manifest {}…，實際 {}…），不套用。", &manifest.sha256[..12], &got[..12]));
+    }
+    let bundle = crate::bundle::parse(&bytes).map_err(err)?;
+    let mut conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::replace_upstream(&mut conn, &bundle.topics, &bundle.version).map_err(err)?;
+    let info = db::bundle_info(&conn, false).map_err(err)?;
+    let orphans = db::orphans(&conn).map_err(err)?;
+    Ok((info, orphans))
+}
+
+#[tauri::command]
+pub fn list_orphans(state: State<'_, AppState>) -> Result<Vec<Orphan>, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::orphans(&conn).map_err(err)
+}
+
+#[tauri::command]
+pub fn delete_orphan(kind: String, key: String, state: State<'_, AppState>) -> Result<(), String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::orphan_delete(&conn, &kind, &key).map_err(err)
+}
+
 /// 開發用：前端效能基準把結果印到 stdout（tauri dev 的終端）
 #[tauri::command]
 pub fn log_perf(text: String) {
@@ -616,6 +699,22 @@ mod tests {
         let mut bad = q.clone();
         bad.answer = serde_json::json!(7);
         assert!(db::question_save(&mut conn, &bad).is_err());
+
+        // 孤兒：刪掉使用者事件後，tag／關聯／題目變孤兒；能列出、能刪
+        let orphans = db::orphans(&conn).unwrap();
+        assert!(orphans.iter().any(|o| o.kind == "event_link" && o.snapshot == "測試事件"));
+        assert!(orphans.iter().any(|o| o.kind == "event_tag" && o.r#ref == "user/test-1"));
+        for o in &orphans {
+            db::orphan_delete(&conn, &o.kind, &o.key).unwrap();
+        }
+        assert!(db::orphans(&conn).unwrap().is_empty());
+
+        // 內嵌 bundle 解析得出來，且跟 YAML 同一套檢查
+        let b = crate::bundle::parse(crate::bundle::EMBEDDED).unwrap();
+        assert_eq!(b.topics.len(), 8);
+        let n: usize = b.topics.iter().map(|t| t.regions.iter().map(|r| r.events.len()).sum::<usize>()).sum();
+        assert!(n > 3000, "{n}");
+        assert_eq!(crate::bundle::sha256_hex(b"abc"), "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad");
 
         // 內建不能刪、不能改
         assert!(db::view_delete(&conn, "world").is_err());
