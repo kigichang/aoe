@@ -51,4 +51,30 @@ export interface TopicCatalog {
   meta: TopicMeta
   timeline: Timeline
   regions: RegionMeta[]
+  categories: CategoryDef[]
 }
+
+/* ---------------- 使用者事件，對齊 model.rs 的 UserEvent ---------------- */
+
+export interface Placement {
+  topic: string
+  region: string
+  /** 該主題的類別 id */
+  category: string
+}
+
+export interface UserEvent {
+  /** "user/<uuid>" */
+  ref: string
+  year: number
+  endYear?: number
+  title: string
+  desc?: string
+  importance: number
+  legendary: boolean
+  sources: { title: string; url?: string }[]
+  placements: Placement[]
+}
+
+/** 事件 id 以此開頭就是使用者自訂的（payload 裡它的 id 就是 ref） */
+export const USER_EVENT_PREFIX = 'user/'

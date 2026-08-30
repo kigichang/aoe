@@ -11,6 +11,8 @@ pub struct AppState {
     pub db: Mutex<rusqlite::Connection>,
     /// 開發期的資料來源：repo 的 src/topics。發布版是 None，資料來自內嵌／下載的 bundle。
     pub topics_dir: Option<PathBuf>,
+    /// 匯出檔放這裡（app data 目錄下的 export/）
+    pub export_dir: PathBuf,
 }
 
 /// 資料來源目錄：`AOE_TOPICS_DIR` 優先；debug 建置預設指到 repo 的 src/topics。
@@ -40,7 +42,7 @@ pub fn run() {
                 let topics = loader::load_topics(d).map_err(|e| format!("{e:#}"))?;
                 db::replace_upstream(&mut conn, &topics, "repo").map_err(|e| format!("{e:#}"))?;
             }
-            app.manage(AppState { db: Mutex::new(conn), topics_dir: dir });
+            app.manage(AppState { db: Mutex::new(conn), topics_dir: dir, export_dir: data_dir.join("export") });
             Ok(())
         })
         .invoke_handler(tauri::generate_handler![
@@ -49,6 +51,11 @@ pub fn run() {
             commands::save_view,
             commands::delete_view,
             commands::list_topic_catalog,
+            commands::list_user_events,
+            commands::get_user_event,
+            commands::save_user_event,
+            commands::delete_user_event,
+            commands::export_user_events,
             commands::reload_from_repo
         ])
         .run(tauri::generate_context!())

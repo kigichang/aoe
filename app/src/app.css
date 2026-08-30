@@ -42,3 +42,14 @@
 .views-check .views-sub { margin-left: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 .views-range { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 10px; }
+
+/* 事件編輯器 */
+.views-field-wide { display: flex; width: 100%; margin-bottom: 10px; }
+.views-field-wide input, .views-field-wide textarea { width: 100%; box-sizing: border-box; }
+.views-field textarea, .views-field select { font: inherit; font-size: 14px; color: var(--text-primary); background: var(--page); border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; }
+.views-cols input[type='text'], .views-cols input[type='url'] { flex: 1; font: inherit; font-size: 13px; color: var(--text-primary); background: var(--page); border: 1px solid var(--border); border-radius: 6px; padding: 4px 8px; min-width: 0; }
+.views-cols select { max-width: 200px; }
+.views-spacer { flex: 1; }
+.views-danger { color: var(--r7) !important; border-color: var(--r7) !important; }
+.detail-user { margin: 12px 0; padding: 8px 10px; border: 1px dashed var(--border); border-radius: 8px; font-size: 13px; display: flex; align-items: center; gap: 8px; }
+.detail-user .views-sub { margin-left: 0; flex: 1; }

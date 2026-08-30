@@ -10,6 +10,7 @@ use std::path::Path;
 const MIGRATIONS: &[M<'static>] = &[
     M::up(include_str!("migrations/001_upstream.sql")),
     M::up(include_str!("migrations/002_views.sql")),
+    M::up(include_str!("migrations/003_user_events.sql")),
 ];
 
 pub fn open(path: &Path) -> Result<Connection> {
@@ -303,4 +304,161 @@ pub fn events_of(conn: &Connection, topic: &str, region: &str) -> Result<Vec<Eve
         })
     })?;
     Ok(rows.collect::<rusqlite::Result<_>>()?)
+}
+
+/* ---------------- 使用者事件 ---------------- */
+
+fn user_event_from_row(r: &rusqlite::Row) -> rusqlite::Result<UserEvent> {
+    let sources: Option<String> = r.get("sources_json")?;
+    Ok(UserEvent {
+        r#ref: r.get("ref")?,
+        year: r.get("year")?,
+        end_year: r.get("end_year")?,
+        title: r.get("title")?,
+        desc: r.get("desc")?,
+        importance: r.get("importance")?,
+        legendary: r.get::<_, i64>("legendary")? != 0,
+        sources: sources.and_then(|s| serde_json::from_str(&s).ok()).unwrap_or_default(),
+        placements: Vec::new(),
+    })
+}
+
+fn fill_placements(conn: &Connection, events: &mut [UserEvent]) -> Result<()> {
+    let mut st = conn.prepare(
+        "SELECT topic, region, category FROM event_placements WHERE event_ref = ?1 ORDER BY rowid",
+    )?;
+    for e in events {
+        e.placements = st
+            .query_map([&e.r#ref], |r| Ok(Placement { topic: r.get(0)?, region: r.get(1)?, category: r.get(2)? }))?
+            .collect::<rusqlite::Result<_>>()?;
+    }
+    Ok(())
+}
+
+pub fn user_events_all(conn: &Connection) -> Result<Vec<UserEvent>> {
+    let mut st = conn.prepare("SELECT * FROM user_events ORDER BY year, title")?;
+    let mut out: Vec<UserEvent> = st.query_map([], user_event_from_row)?.collect::<rusqlite::Result<_>>()?;
+    fill_placements(conn, &mut out)?;
+    Ok(out)
+}
+
+pub fn user_event_get(conn: &Connection, r#ref: &str) -> Result<Option<UserEvent>> {
+    let mut st = conn.prepare("SELECT * FROM user_events WHERE ref = ?1")?;
+    let mut out: Vec<UserEvent> = st.query_map([r#ref], user_event_from_row)?.collect::<rusqlite::Result<_>>()?;
+    fill_placements(conn, &mut out)?;
+    Ok(out.pop())
+}
+
+/// 放在某一欄上的使用者事件，已轉成畫圖用的 Event（id = ref，category = placement 的）。
+pub fn user_events_in_column(conn: &Connection, topic: &str, region: &str) -> Result<Vec<Event>> {
+    let mut st = conn.prepare(
+        "SELECT e.ref, e.year, e.end_year, e.title, p.category, e.importance, e.desc, e.legendary, e.sources_json
+         FROM event_placements p JOIN user_events e ON e.ref = p.event_ref
+         WHERE p.topic = ?1 AND p.region = ?2 ORDER BY e.year",
+    )?;
+    let rows = st.query_map([topic, region], |r| {
+        let sources: Option<String> = r.get(8)?;
+        Ok(Event {
+            id: r.get(0)?,
+            year: r.get(1)?,
+            end_year: r.get(2)?,
+            title: r.get(3)?,
+            category: r.get(4)?,
+            importance: r.get(5)?,
+            desc: r.get(6)?,
+            legendary: Some(r.get::<_, i64>(7)? != 0).filter(|b| *b),
+            actual_year: None,
+            sources: sources.and_then(|s| serde_json::from_str::<Vec<Source>>(&s).ok()).filter(|v| !v.is_empty()),
+            links: None,
+        })
+    })?;
+    Ok(rows.collect::<rusqlite::Result<_>>()?)
+}
+
+/// 新增或整個覆寫。驗證跟上游資料同一套標準：沒有西元 0 年、importance 1…5、
+/// endYear ≥ year、每個 placement 的欄位存在、類別屬於該主題、年份落在該主題的軸上
+/// （落在外面會被靜默畫到畫布外，正是網站最忌諱的 bug）。
+pub fn user_event_save(conn: &mut Connection, e: &UserEvent) -> Result<()> {
+    if !e.r#ref.starts_with("user/") {
+        bail!("使用者事件的 ref 必須以 user/ 開頭");
+    }
+    if e.title.trim().is_empty() {
+        bail!("標題不能是空的");
+    }
+    if e.year == 0 || e.end_year == Some(0) {
+        bail!("沒有西元 0 年（-1 的下一年是 1）");
+    }
+    if !(1..=5).contains(&e.importance) {
+        bail!("importance 要在 1…5");
+    }
+    if let Some(ey) = e.end_year {
+        if ey < e.year {
+            bail!("endYear 不能早於 year");
+        }
+    }
+    if e.placements.is_empty() {
+        bail!("至少要放到一個欄位上");
+    }
+    let to = e.end_year.unwrap_or(e.year);
+    for p in &e.placements {
+        let region_ok: bool = conn
+            .query_row("SELECT 1 FROM regions WHERE topic = ?1 AND id = ?2", params![p.topic, p.region], |_| Ok(true))
+            .optional()?
+            .unwrap_or(false);
+        if !region_ok {
+            bail!("欄位 {}/{} 不存在", p.topic, p.region);
+        }
+        let cat_ok: bool = conn
+            .query_row("SELECT 1 FROM categories WHERE topic = ?1 AND id = ?2", params![p.topic, p.category], |_| Ok(true))
+            .optional()?
+            .unwrap_or(false);
+        if !cat_ok {
+            let avail: Vec<String> = categories_of(conn, &p.topic)?.into_iter().map(|c| c.id).collect();
+            bail!("類別 \"{}\" 不在主題 \"{}\" 的類別表裡（可用：{}）", p.category, p.topic, avail.join("、"));
+        }
+        let t = timeline_of(conn, &p.topic)?.ok_or_else(|| anyhow!("{} 缺 timeline", p.topic))?;
+        if e.year < t.min_year || to > t.max_year {
+            bail!(
+                "年份 {}…{to} 超出主題 \"{}\" 的時間軸範圍 {}…{}，放上去會被畫到畫布外",
+                e.year, p.topic, t.min_year, t.max_year
+            );
+        }
+    }
+
+    let tx = conn.transaction()?;
+    tx.execute(
+        "INSERT INTO user_events (ref, year, end_year, title, desc, importance, legendary, sources_json)
+         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8)
+         ON CONFLICT(ref) DO UPDATE SET year = excluded.year, end_year = excluded.end_year,
+           title = excluded.title, desc = excluded.desc, importance = excluded.importance,
+           legendary = excluded.legendary, sources_json = excluded.sources_json,
+           updated_at = datetime('now')",
+        params![
+            e.r#ref,
+            e.year,
+            e.end_year,
+            e.title.trim(),
+            e.desc.as_deref().map(str::trim).filter(|s| !s.is_empty()),
+            e.importance,
+            e.legendary as i64,
+            if e.sources.is_empty() { None } else { Some(serde_json::to_string(&e.sources)?) },
+        ],
+    )?;
+    tx.execute("DELETE FROM event_placements WHERE event_ref = ?1", [&e.r#ref])?;
+    for p in &e.placements {
+        tx.execute(
+            "INSERT OR REPLACE INTO event_placements (event_ref, topic, region, category) VALUES (?1, ?2, ?3, ?4)",
+            params![e.r#ref, p.topic, p.region, p.category],
+        )?;
+    }
+    tx.commit()?;
+    Ok(())
+}
+
+pub fn user_event_delete(conn: &Connection, r#ref: &str) -> Result<()> {
+    let n = conn.execute("DELETE FROM user_events WHERE ref = ?1", [r#ref])?;
+    if n == 0 {
+        bail!("找不到事件 {ref}");
+    }
+    Ok(())
 }

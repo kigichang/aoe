@@ -78,7 +78,10 @@ fn build_view_payload(conn: &rusqlite::Connection, view: Option<&str>) -> Result
             }
         }
 
-        let all_events = db::events_of(conn, &col.topic, &col.region)?;
+        let mut all_events = db::events_of(conn, &col.topic, &col.region)?;
+        // 使用者事件放在這一欄的也一起畫。id 是 ref（"user/…"），本來就全域唯一，
+        // 不必再加主題前綴；前端靠這個前綴認出「這是自訂的」。
+        all_events.extend(db::user_events_in_column(conn, &col.topic, &col.region)?);
         let total = all_events.len();
         let mut events: Vec<Event> = all_events
             .into_iter()
@@ -91,7 +94,10 @@ fn build_view_payload(conn: &rusqlite::Connection, view: Option<&str>) -> Result
             }
             if cross {
                 e.category = format!("{}:{}", col.topic, e.category);
-                e.id = format!("{}:{}", col.topic, e.id);
+                // 使用者事件的 ref 本身就全域唯一，且前端靠 "user/" 前綴認出它，不改
+                if !e.id.starts_with("user/") {
+                    e.id = format!("{}:{}", col.topic, e.id);
+                }
             }
             // actualYear 是「真實年代早於這條軸的起點」。換了一條起點更晚的軸，
             // 原本的 year 本身可能就已經早於新起點而被濾掉；留下來的若 actualYear
@@ -214,7 +220,13 @@ pub fn list_topic_catalog(state: State<'_, AppState>) -> Result<Vec<TopicCatalog
         let mut out = Vec::new();
         for (slug, meta) in db::all_topics(&conn)? {
             let timeline = db::timeline_of(&conn, &slug)?.ok_or_else(|| anyhow!("{slug} 缺 timeline"))?;
-            out.push(TopicCatalog { regions: db::regions_of(&conn, &slug)?, slug, meta, timeline });
+            out.push(TopicCatalog {
+                regions: db::regions_of(&conn, &slug)?,
+                categories: db::categories_of(&conn, &slug)?,
+                slug,
+                meta,
+                timeline,
+            });
         }
         out.sort_by(|a, b| {
             let oa = a.meta.order.unwrap_or(f64::INFINITY);
@@ -222,6 +234,69 @@ pub fn list_topic_catalog(state: State<'_, AppState>) -> Result<Vec<TopicCatalog
             oa.partial_cmp(&ob).unwrap().then_with(|| a.slug.cmp(&b.slug))
         });
         Ok(out)
+    })()
+    .map_err(err)
+}
+
+#[tauri::command]
+pub fn list_user_events(state: State<'_, AppState>) -> Result<Vec<UserEvent>, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::user_events_all(&conn).map_err(err)
+}
+
+#[tauri::command]
+pub fn get_user_event(r#ref: String, state: State<'_, AppState>) -> Result<Option<UserEvent>, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::user_event_get(&conn, &r#ref).map_err(err)
+}
+
+#[tauri::command]
+pub fn save_user_event(event: UserEvent, state: State<'_, AppState>) -> Result<(), String> {
+    let mut conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::user_event_save(&mut conn, &event).map_err(err)
+}
+
+#[tauri::command]
+pub fn delete_user_event(r#ref: String, state: State<'_, AppState>) -> Result<(), String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::user_event_delete(&conn, &r#ref).map_err(err)
+}
+
+/// 把使用者事件匯出成跟 src/topics 同格式的 YAML（每個 placement 一則，分主題／欄位），
+/// 寫到 app data 目錄下的 export/，回傳寫了哪些檔。日後想回貢獻到 repo 直接複製。
+#[tauri::command]
+pub fn export_user_events(state: State<'_, AppState>) -> Result<Vec<String>, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    (|| -> Result<Vec<String>> {
+        let events = db::user_events_all(&conn)?;
+        let mut by_column: std::collections::BTreeMap<(String, String), Vec<Event>> = Default::default();
+        for e in &events {
+            for p in &e.placements {
+                by_column.entry((p.topic.clone(), p.region.clone())).or_default().push(Event {
+                    id: e.r#ref.trim_start_matches("user/").to_string(),
+                    year: e.year,
+                    end_year: e.end_year,
+                    title: e.title.clone(),
+                    category: p.category.clone(),
+                    importance: e.importance,
+                    desc: e.desc.clone(),
+                    legendary: if e.legendary { Some(true) } else { None },
+                    actual_year: None,
+                    sources: if e.sources.is_empty() { None } else { Some(e.sources.clone()) },
+                    links: None,
+                });
+            }
+        }
+        let dir = state.export_dir.clone();
+        std::fs::create_dir_all(&dir)?;
+        let mut written = Vec::new();
+        for ((topic, region), list) in by_column {
+            let path = dir.join(format!("{topic}--{region}.events.yaml"));
+            let yaml = serde_saphyr::to_string(&list).map_err(|e| anyhow!("序列化 YAML：{e}"))?;
+            std::fs::write(&path, format!("# 由 AoE 桌面版匯出的自訂事件（{topic}/{region}）\n{yaml}"))?;
+            written.push(path.display().to_string());
+        }
+        Ok(written)
     })()
     .map_err(err)
 }
@@ -311,6 +386,43 @@ mod tests {
         assert!(p.regions.iter().flat_map(|r| &r.periods).all(|x| x.start >= 1500 && x.end <= 2026));
         // 切換清單含這個 View
         assert!(p.topics.iter().any(|t| t.slug == "v-test" && t.is_current));
+
+        // 使用者事件：放到兩個主題的欄位上，兩邊都看得到
+        let ue = UserEvent {
+            r#ref: "user/test-1".into(),
+            year: 1687,
+            end_year: None,
+            title: "測試事件".into(),
+            desc: None,
+            importance: 5,
+            legendary: false,
+            sources: vec![],
+            placements: vec![
+                Placement { topic: "world".into(), region: "china".into(), category: "science".into() },
+                Placement { topic: "science".into(), region: "physical".into(), category: "theory".into() },
+            ],
+        };
+        db::user_event_save(&mut conn, &ue).unwrap();
+        let p = build_view_payload(&conn, Some("v-test")).unwrap();
+        let hits: Vec<_> = p.regions.iter().filter(|r| r.events.iter().any(|e| e.id == "user/test-1")).collect();
+        assert_eq!(hits.len(), 2);
+        let e = p.regions[1].events.iter().find(|e| e.id == "user/test-1").unwrap();
+        assert_eq!(e.category, "science:theory");
+        assert_eq!(e.importance, 5); // offset +1 後夾在 5
+        // 單一主題 View 裡類別不加前綴
+        let w = build_view_payload(&conn, Some("world")).unwrap();
+        let e = w.regions.iter().flat_map(|r| &r.events).find(|e| e.id == "user/test-1").unwrap();
+        assert_eq!(e.category, "science");
+        // 驗證：類別不屬於該主題、年份超出範圍
+        let mut bad = ue.clone();
+        bad.placements[0].category = "theory".into();
+        assert!(db::user_event_save(&mut conn, &bad).is_err());
+        let mut bad = ue.clone();
+        bad.year = 1400;
+        bad.placements = vec![Placement { topic: "taiwan".into(), region: "china".into(), category: "war".into() }];
+        assert!(db::user_event_save(&mut conn, &bad).is_err());
+        db::user_event_delete(&conn, "user/test-1").unwrap();
+        assert!(db::user_event_get(&conn, "user/test-1").unwrap().is_none());
 
         // 內建不能刪、不能改
         assert!(db::view_delete(&conn, "world").is_err());

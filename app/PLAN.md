@@ -246,7 +246,9 @@ Phase 1 的 PR 進 `main`；其餘在 `app` 分支。
 - [x] Phase 1 網站擴充點（2026-08-29，分支 `web/extension-points`，已併入 app，尚未進 main）：`validate.ts` 抽出、`AppProps`（mastheadExtra／toolbarExtra／detailExtra／virtualize）、`RegionColumn.viewport` 直接實作剔除。桌面版 `main.tsx` 開 `virtualize`，shim 用 `validate.ts` 重跑語意檢查。實測跳轉 1945 後畫面完整。
 - [x] Phase 2 View（2026-08-30）：migration 002、跨主題 payload 合併（類別／事件 id 加主題前綴、範圍外計數進副標、跨界時期夾住、每欄 offset）、「組合視圖」對話框。實測 world/china + science/physical + art/music、範圍 1500–2026：三欄各自的時期色帶、18 個帶主題後綴的類別 chip、詳情面板與同時期清單都正常。
   - 已知可改善：跨主題時類別 chip 一列擠 18 顆（每主題 6 顆），之後可依主題分組或收成下拉。
-- [ ] Phase 3 使用者事件
+- [x] Phase 3 使用者事件（2026-08-30）：migration 003（user_events／event_placements）、`user_event_save` 驗證（欄位存在、類別屬於該主題、年份在該主題軸內）、payload 併入各欄、`export_user_events` 寫 `<app data>/export/<topic>--<region>.events.yaml`。前端 `EventEditor`（標題／年份／重要度／傳說／描述／多 placement 各選類別／出處），「＋ 事件」在標題列，詳情面板對 `user/` 開頭的事件顯示「自訂事件・編輯」。實測一則事件放到 taiwan/taiwan 與 world/china，兩邊都畫得出來、搜尋也找得到。
+  - 跨主題 View 裡使用者事件的 id 不加主題前綴（ref 本身全域唯一，前端靠 `user/` 認它）。
+  - 匯出還沒接 UI 按鈕，先留 command。
 - [ ] Phase 4 Tag 與關聯
 - [ ] Phase 5 題庫
 - [ ] Phase 6 虛擬化

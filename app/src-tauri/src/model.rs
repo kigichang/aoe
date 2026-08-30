@@ -132,6 +132,37 @@ pub struct RegionData {
     pub events: Vec<Event>,
 }
 
+/* ---------------- 使用者事件 ---------------- */
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct Placement {
+    pub topic: String,
+    pub region: String,
+    /// 這個主題的類別 id（每個主題的類別表不同，所以掛在 placement 上）
+    pub category: String,
+}
+
+/// 使用者自己加的事件。欄位對齊上游 Event，少了 actualYear／links（自訂事件用不到）。
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct UserEvent {
+    /// "user/<uuid>"
+    #[serde(rename = "ref")]
+    pub r#ref: String,
+    pub year: Year,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub end_year: Option<Year>,
+    pub title: String,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub desc: Option<String>,
+    pub importance: i64,
+    #[serde(default)]
+    pub legendary: bool,
+    #[serde(default)]
+    pub sources: Vec<Source>,
+    pub placements: Vec<Placement>,
+}
+
 /* ---------------- View ---------------- */
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -168,6 +199,7 @@ pub struct TopicCatalog {
     pub meta: TopicMeta,
     pub timeline: Timeline,
     pub regions: Vec<RegionMeta>,
+    pub categories: Vec<CategoryDef>,
 }
 
 /* ---------------- 給前端的 payload（對齊 app/src/types.ts） ---------------- */
