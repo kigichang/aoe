@@ -63,7 +63,7 @@ const CONCURRENT_WINDOW = 60
  */
 const VIEW_ANCHOR = 0.4
 /** 虛擬化可見範圍的量化步長（px），見下方 viewport 那段 */
-const VIEWPORT_STEP = 400
+const VIEWPORT_STEP = 1200
 
 /** 只在載入時讀一次；之後網址由這支程式自己寫，不再回頭讀 */
 const INITIAL_URL = readUrlState()

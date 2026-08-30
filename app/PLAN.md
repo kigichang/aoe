@@ -255,7 +255,18 @@ Phase 1 的 PR 進 `main`；其餘在 `app` 分支。
 - [x] Phase 5 題庫（2026-08-30）：migration 005（questions／question_events／review_state／review_log）、四種題型（單選／年份±N／排序／問答自評）、`quiz.rs` 的 SM-2 與 CSV／Anki 純文字剖析（有單元測試）、匯入一筆錯整批不寫、今日到期／錯題本佇列、統計。前端：題庫面板（練習／題目／匯入）、題目編輯器（含相關事件搜尋）、練習流程（自動評分：對 4 錯 1；問答自評 1／3／5）、詳情面板「題目／出題」（預填年份題）。實測匯入 4 題 CSV → 練習：單選答錯進錯題本、年份 ±1 答對、排序題打亂顯示、統計 2／1／4／2。
   - 題型比計畫多了 `flash`（問答自評），因為 Anki 匯入天然就是正面／背面。
   - `.apkg` 未做；CSV 的 events 欄要填全域 ref（`topic/region/id`），匯入時補標題快照。
-- [ ] Phase 6 虛擬化
+- [x] Phase 6 虛擬化（2026-08-30）：`?perf=1` 自動基準（`src/perf.ts`，程式化捲動 + 12 次縮放，結果由 `log_perf` 印到 dev log；`AOE_START_QUERY` 讓視窗一開就載入指定 View）。8 欄 View（world×4 + science×4，1,392 則）、ppy=4、debug 建置 + React dev mode：
+
+  | 設定 | DOM marks | 捲動 avg／p95 | 縮放 avg |
+  |---|---|---|---|
+  | 剔除關 | 1,393 | 16.9／17ms | 68ms |
+  | 剔除開，步長 400 | 471 | 17.6／25ms | 42ms |
+  | 剔除開，步長 1200 | 888 | 17.5／23ms | 43ms |
+  | 剔除開 + CSS containment | 888 | 17.2／22ms | 43ms |
+
+  結論：**捲動全部貼著 60Hz 一幀，1,400 個 mark 的 DOM 靜態捲動撐得住**（CLAUDE.md 那句「DOM 撐得住」在這個量級仍成立），剔除只在縮放時有效（少建 2/3 的 DOM）。CSS containment 無差異，不加。保留 `virtualize`、`VIEWPORT_STEP` 改 1200 減少捲動時的重渲染。
+  - 縮放仍 >16ms：瓶頸是 8 欄重跑 `placeEvents` + React 調和，不是渲染。要再快得走「縮放中先只動 CSS transform、放手後才重排版」，不在這一輪。
+  - 數字是 debug + dev mode 的，release 會更好；相對關係才是重點。
 - [ ] Phase 7 同步與打包
 
 ## Phase 0 筆記

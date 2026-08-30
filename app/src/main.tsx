@@ -12,6 +12,7 @@ import { TagsOverlay } from './tags/TagsOverlay'
 import { QuizOverlay } from './quiz/QuizOverlay'
 import { EventQuestions } from './quiz/EventQuestions'
 import type { Question } from './types'
+import { runPerf } from './perf'
 import { USER_EVENT_PREFIX } from './types'
 
 /**
@@ -25,6 +26,13 @@ function defaultPlacement() {
   if (!first) return undefined
   const [a, b] = first.id.split(':')
   return b ? { topic: a, region: b } : { topic: TOPIC_ID, region: a }
+}
+
+const PARAMS = new URLSearchParams(location.search)
+/** `?virt=0` 關掉視窗剔除，給效能基準對照用 */
+const VIRTUALIZE = PARAMS.get('virt') !== '0'
+if (PARAMS.get('perf')) {
+  setTimeout(() => runPerf(VIRTUALIZE ? 'virtualize=on' : 'virtualize=off'), 500)
 }
 
 function Desktop() {
@@ -43,7 +51,7 @@ function Desktop() {
     <>
       {/* 跨主題 View 一次可能兩三千則，開視窗剔除；排版仍整欄算（見 RegionColumn.viewport） */}
       <App
-        virtualize
+        virtualize={VIRTUALIZE}
         mastheadExtra={
           <>
             <button

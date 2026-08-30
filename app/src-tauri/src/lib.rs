@@ -44,6 +44,17 @@ pub fn run() {
                 db::replace_upstream(&mut conn, &topics, "repo").map_err(|e| format!("{e:#}"))?;
             }
             app.manage(AppState { db: Mutex::new(conn), topics_dir: dir, export_dir: data_dir.join("export") });
+            // 開發用：AOE_START_QUERY="view=v-perf&perf=1" 讓視窗一開就載入指定的 View（效能基準用）
+            if let Ok(q) = std::env::var("AOE_START_QUERY") {
+                if let Some(w) = app.get_webview_window("main") {
+                    let mut url = w.url()?;
+                    // 「query#fragment」兩段都可以給，例如 view=v-perf&perf=1#y=1600&z=4
+                    let (query, frag) = q.split_once('#').unwrap_or((q.as_str(), ""));
+                    url.set_query(Some(query));
+                    url.set_fragment(if frag.is_empty() { None } else { Some(frag) });
+                    w.navigate(url)?;
+                }
+            }
             Ok(())
         })
         .invoke_handler(tauri::generate_handler![
@@ -79,6 +90,7 @@ pub fn run() {
             commands::quiz_queue,
             commands::grade_question,
             commands::quiz_stats,
+            commands::log_perf,
             commands::reload_from_repo
         ])
         .run(tauri::generate_context!())

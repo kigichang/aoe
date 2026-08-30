@@ -428,6 +428,12 @@ pub fn quiz_stats(state: State<'_, AppState>) -> Result<QuizStats, String> {
     db::quiz_stats(&conn).map_err(err)
 }
 
+/// 開發用：前端效能基準把結果印到 stdout（tauri dev 的終端）
+#[tauri::command]
+pub fn log_perf(text: String) {
+    eprintln!("{text}");
+}
+
 /// 開發期：從 repo 的 YAML 重新載入上游資料
 #[tauri::command]
 pub fn reload_from_repo(state: State<'_, AppState>) -> Result<usize, String> {
