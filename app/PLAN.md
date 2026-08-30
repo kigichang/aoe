@@ -351,6 +351,34 @@ CI 要 `npm ci` **兩次**（根目錄 + `app/`）：`app/package.json` 刻意�
 偽裝成「檔案壞了」：`sync_check` 只看狀態碼的話，會拿 HTML 去 parse JSON，
 訊息是 serde 的「expected value at line 1」。已加一道 content-type／`<` 開頭的檢查。
 
+### Windows 第一次建置就抓到一個「只有 Windows 會壞」的 bug
+
+`app-v0.1.0` 第一次跑 CI，macOS 綠、**Windows 紅**，錯誤訊息是：
+
+```
+../src/topics/religion/topic.yaml (1:7): Unexpected character '。'
+```
+
+看起來像 YAML 壞了，實際上是 **`vite.config.ts` 的 shim 沒有生效**。
+比對用的是解析後的絕對路徑，而 `resolve()` 在 Windows 上給的是
+`D:\a\aoe\src\lib\data.ts`（反斜線），Vite／Rollup 的 `id` 一律是正斜線 ——
+兩者永遠不相等。於是網站真正的 `data.ts` 被拉進模組圖，它的
+`import.meta.glob('../topics/*/*/events.yaml')` 需要 `@rollup/plugin-yaml`
+（桌面版刻意沒裝），最後炸在一個看起來毫不相干的地方。
+
+修法是比對前一律 `replace(/\\/g, '/')`。但**真正的教訓是它太安靜** ——
+如果桌面版剛好裝了 yaml plugin，這個 build 會成功，只是資料變成從 YAML 來、
+不是從 `window.__AOE_DATA__` 來，整個 View 機制默默失效而畫面看起來正常。
+這正是 CLAUDE.md 那句「畫面看起來正常，資料其實錯了」。
+
+所以同時加了兩道建置期防護（實測把 `norm` 改成不對稱之後兩道都會擋下來）：
+
+1. **YAML 進到模組圖就 `this.error`** —— 那是這個 bug 的直接症狀。
+2. **`buildEnd` 檢查 `data.ts` 的 shim 有沒有真的命中。**
+
+`topic.ts` 那支刻意**不**列入必須命中：它唯一的 importer 就是 `data.ts`，
+而那支已經被換掉了，所以現在沒有人 import 它 —— 這也是加了檢查才發現的。
+
 ### 還沒做
 
 - **乾淨的 Windows 機器實測**（安裝 → 離線開啟 → 連線同步一次）。手上沒有 Windows 環境，
