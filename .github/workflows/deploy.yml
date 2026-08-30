@@ -25,9 +25,11 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      # `npm run build` 尾端會一併產生 dist/data（桌面版的資料 bundle）。
+      # 這裡刻意**不再單獨跑一次 bundle**：aoe.kigi.tw 已經搬到 Cloudflare Pages，
+      # 那邊的建置指令是後台設定的 `npm run build`，repo 管不到。把 bundle 綁進
+      # build script 才是唯一能保證「不論誰建置這個站，/data/ 都在」的做法。
       - run: npm run build
-      # 桌面版的資料 bundle：跟網站一起部署到 /data/，App 啟動時比對 manifest.json 的版本
-      - run: npm run bundle -- --out dist/data
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:
