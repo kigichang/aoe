@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && npm run bundle -- --out dist/data",
     "preview": "vite preview",
     "check": "tsc -b --noEmit",
     "lint:data": "node scripts/lint-data.mjs",

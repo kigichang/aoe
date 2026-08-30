@@ -9,6 +9,12 @@
 // 驗證用的是網站同一套 Zod schema 與 validate.ts —— 這支檔案不自己定義任何規則，
 // 所以「網站載得起來」與「bundle 打得出來」永遠是同一個判準。
 // 桌面版讀進去時 Rust 端還會再驗一次結構（serde），前端 shim 再跑一次 validate.ts。
+//
+// **這支是 `npm run build` 的最後一步，不是 CI 的一個步驟。** 站台已經搬到
+// Cloudflare Pages，那邊的建置指令是後台設定的 `npm run build`，repo 管不到；
+// 把它掛在 CI 上的話，Cloudflare 建出來的站就沒有 /data/，而症狀很難查 ——
+// Pages 對未知路徑回的是 **200 + index.html**（不是 404），桌面版拿到 HTML
+// 去 parse JSON，錯誤訊息看起來像「manifest 檔案壞了」。
 
 import { createHash } from 'node:crypto'
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
