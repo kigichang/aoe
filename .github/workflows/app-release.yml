@@ -82,42 +82,74 @@ jobs:
           includeUpdaterJson: true
           args: ${{ matrix.args }}
 
-      # 乾淨機器的冒煙測試。**GitHub 的 windows runner 就是一台乾淨機器** ——
-      # 沒有 repo 的 YAML、沒有前一版留下的資料庫、不是開發模式，正好就是 Phase 7
-      # 完成判準裡「乾淨 Windows 機器可安裝、離線開啟」那一條。手上沒有 Windows
-      # 機器，就讓每次發版都自動跑一遍。
-      #
-      # 驗的是**安裝檔內嵌的那份 bundle**：在完全沒按過「檢查更新」的情況下，
-      # 上游表有沒有自己建起來 —— 那是使用者裝完打開會走的唯一一條路。
-      #
-      # 放在打包之後：這時 release 還是 draft，冒煙測試掛掉就不會有人按到 Publish。
-      - name: Smoke test（乾淨機器安裝並啟動）
-        if: matrix.platform == 'windows-latest'
+  # 乾淨機器的冒煙測試。**GitHub 的 windows runner 就是一台乾淨機器** ——
+  # 沒有 repo 的 YAML、沒有前一版留下的資料庫、不是開發模式，正好就是 Phase 7
+  # 完成判準裡「乾淨 Windows 機器可安裝、離線開啟」那一條。手上沒有 Windows
+  # 機器，就讓每次發版自動跑一遍。
+  #
+  # **刻意是獨立的 job，而且從 release 下載安裝檔**，不是在 build job 裡就地測：
+  #
+  # - 測到的是**真的會發出去的那一個檔**，不是建置樹裡的中間產物。
+  # - 這個 job 兩分鐘就跑完，掛掉時可以單獨重跑，不必重建整包（Rust release
+  #   build 每次十幾分鐘）。冒煙測試最需要的就是能快速重試。
+  #
+  # release 這時還是 draft，所以測試掛掉就不會有人按到 Publish。
+  smoke-windows:
+    needs: build
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: 從 draft release 下載安裝檔
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          $tag = "${{ github.event.inputs.tag || github.ref_name }}"
+          gh release download $tag --pattern '*x64-setup.exe' --dir dl
+          Get-ChildItem dl
+
+      - name: 安裝、啟動、檢查內嵌的資料
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
 
-          $setup = Get-ChildItem -Recurse app/src-tauri/target/release/bundle/nsis -Filter '*-setup.exe' |
-            Select-Object -First 1
-          if (-not $setup) { throw '找不到 NSIS 安裝檔' }
-          Write-Host "安裝 $($setup.Name)"
+          $setup = Get-ChildItem dl -Filter '*-setup.exe' | Select-Object -First 1
+          Write-Host "靜默安裝 $($setup.Name)"
           Start-Process -FilePath $setup.FullName -ArgumentList '/S' -Wait   # /S = NSIS 靜默安裝
+          Start-Sleep -Seconds 3
 
-          # installMode 是 currentUser，所以裝在 %LOCALAPPDATA%\AoE
-          $app = Join-Path $env:LOCALAPPDATA 'AoE\AoE.exe'
-          if (-not (Test-Path $app)) {
-            $found = Get-ChildItem -Recurse -ErrorAction SilentlyContinue $env:LOCALAPPDATA -Filter 'AoE.exe' |
-              Select-Object -First 1
-            if (-not $found) { throw '安裝完找不到 AoE.exe' }
-            $app = $found.FullName
+          # **安裝路徑問登錄檔，不要猜。** 第一版寫死 %LOCALAPPDATA%\AoE 就猜錯了，
+          # 而猜錯的症狀（找不到 exe）跟「安裝根本失敗」長得一模一樣。
+          $entry = Get-ItemProperty `
+            'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*',
+            'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*' `
+            -ErrorAction SilentlyContinue |
+            Where-Object { $_.DisplayName -like '*AoE*' } | Select-Object -First 1
+          if (-not $entry) {
+            Write-Host '--- HKCU 的 Uninstall 項目 ---'
+            Get-ItemProperty 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*' `
+              -ErrorAction SilentlyContinue | Select-Object DisplayName, InstallLocation | Format-Table
+            throw '登錄檔裡找不到 AoE 的安裝項目——靜默安裝多半沒成功'
           }
-          Write-Host "啟動 $app"
+          Write-Host "DisplayName=$($entry.DisplayName)  InstallLocation=$($entry.InstallLocation)"
+
+          $exe = Get-ChildItem $entry.InstallLocation -Filter '*.exe' |
+            Where-Object { $_.Name -notlike 'uninstall*' } | Select-Object -First 1
+          if (-not $exe) {
+            Get-ChildItem -Recurse $entry.InstallLocation | Select-Object FullName | Format-Table
+            throw "安裝目錄裡沒有可執行檔：$($entry.InstallLocation)"
+          }
+          Write-Host "啟動 $($exe.FullName)"
 
           $dir = Join-Path $env:APPDATA 'tw.kigi.aoe'
           $db = Join-Path $dir 'aoe.sqlite'
           if (Test-Path $dir) { Remove-Item "$dir\aoe.sqlite*" -Force -ErrorAction SilentlyContinue }
 
-          $p = Start-Process -FilePath $app -PassThru
+          $p = Start-Process -FilePath $exe.FullName -PassThru
           for ($i = 0; $i -lt 90; $i++) {
             if ($p.HasExited) { throw "App 啟動後立刻結束了（exit code $($p.ExitCode)）" }
             if ((Test-Path $db) -and ((Get-Item $db).Length -gt 0)) { break }
