@@ -379,10 +379,42 @@ CI 要 `npm ci` **兩次**（根目錄 + `app/`）：`app/package.json` 刻意�
 `topic.ts` 那支刻意**不**列入必須命中：它唯一的 importer 就是 `data.ts`，
 而那支已經被換掉了，所以現在沒有人 import 它 —— 這也是加了檢查才發現的。
 
+### 乾淨 Windows 機器的驗證交給 CI
+
+手上沒有 Windows 機器，所以「乾淨機器可安裝、離線開啟」這條判準改由
+`app-release.yml` 的 `smoke-windows` job 每次發版自動跑：**下載 draft release 裡
+的安裝檔 → 靜默安裝 → 啟動 → 檢查資料庫**。GitHub 的 windows runner 本來就是
+一台乾淨機器（沒有 repo 的 YAML、沒有前一版的資料庫、不是開發模式）。
+
+實測輸出：
+
+```
+DisplayName=AoE  InstallLocation=C:\Users\runneradmin\AppData\Local\AoE
+啟動 aoe-app.exe
+version=20260830.d46ca7a topics=8 events=3216 periods=282 builtinViews=8
+```
+
+**刻意是獨立的 job 並從 release 下載**，不是在 build job 裡就地測：測到的是真的
+會發出去的那一個檔，而且兩分鐘跑完、掛掉可以單獨重跑（`skip_build` 這個
+dispatch 參數就是為此），不必為了驗證安裝檔付一次十幾分鐘的 Rust release build。
+第一版是就地測的，每修一個小問題就要等一輪完整建置。
+
+寫這段時踩到的三個 Windows 細節，都是「猜」出來的失敗長得像另一回事：
+
+| 猜的 | 真的 |
+|---|---|
+| exe 叫 `AoE.exe`（productName） | `aoe-app.exe`（Cargo 的 crate 名）——productName 只用在顯示名稱與安裝目錄 |
+| 登錄檔的 `InstallLocation` 是乾淨路徑 | 值裡**帶著字面上的引號**，不 Trim 會被當成一個叫 `"C` 的磁碟機 |
+| 找不到 exe = 安裝失敗 | 兩者症狀一樣；所以現在找不到時會把 HKCU 的 Uninstall 項目全印出來 |
+
+冒煙測試的期望值**刻意不寫死事件數**——每補一批資料就要回來改的檢查遲早會被
+改成擺設。改成驗量級（`events >= 1000`）與結構（內建 View 數 == 主題數），
+外加 `version` 不可以是 `"repo"`（那代表它讀到 repo 的 YAML，等於什麼都沒測到）。
+
 ### 還沒做
 
-- **乾淨的 Windows 機器實測**（安裝 → 離線開啟 → 連線同步一次）。手上沒有 Windows 環境，
-  這是 Phase 7 完成判準裡唯一沒有勾到的一項。
+- **Windows 上的線上同步**還沒實測（macOS 已對正式端點驗過）。冒煙測試只驗到
+  內嵌 bundle 那條路。
 - Windows 程式碼簽章憑證（公開發布前要嘛買、要嘛接受 SmartScreen 警告）。
 - macOS 公證（使用者決定開發期不處理）。
 
