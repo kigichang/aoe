@@ -339,6 +339,18 @@ CI 要 `npm ci` **兩次**（根目錄 + `app/`）：`app/package.json` 刻意�
 前端靠 vite 的 dedupe 共用根目錄那一份；`build.rs` 產內嵌 bundle 時跑的
 `tools/bundle.mjs` 也吃根目錄的 js-yaml 與 zod。
 
+### 同步端點掛在 Cloudflare Pages，不是 GitHub Pages
+
+`dig aoe.kigi.tw` → `aoe-911.pages.dev`：站台早就搬到 **Cloudflare Pages**
+（見 repo 的 `CLOUDFLARE.md`），`deploy.yml` 建出來的 GitHub Pages 那份已經不是
+線上內容。所以 bundle 一開始加在 deploy.yml 的獨立步驟是**沒有效果的** ——
+它只進了那份沒人看的部署。改成綁在 `npm run build` 尾端，因為 Cloudflare 的
+建置指令設在後台、repo 管不到，只有 build script 是兩邊共通的那一段。
+
+**Cloudflare Pages 對未知路徑回 200 + index.html，不是 404。** 這讓「檔案沒部署」
+偽裝成「檔案壞了」：`sync_check` 只看狀態碼的話，會拿 HTML 去 parse JSON，
+訊息是 serde 的「expected value at line 1」。已加一道 content-type／`<` 開頭的檢查。
+
 ### 還沒做
 
 - **乾淨的 Windows 機器實測**（安裝 → 離線開啟 → 連線同步一次）。手上沒有 Windows 環境，
