@@ -7,6 +7,8 @@ import '@web/styles.css'
 import './app.css'
 import { EventEditor } from './editor/EventEditor'
 import { ViewsOverlay } from './views/ViewsOverlay'
+import { EventExtras } from './tags/EventExtras'
+import { TagsOverlay } from './tags/TagsOverlay'
 import { USER_EVENT_PREFIX } from './types'
 
 /**
@@ -24,6 +26,8 @@ function defaultPlacement() {
 
 function Desktop() {
   const [viewsOpen, setViewsOpen] = useState(false)
+  const [tagsOpen, setTagsOpen] = useState(false)
+  const closeTags = useCallback(() => setTagsOpen(false), [])
   const [editor, setEditor] = useState<{ editRef?: string } | null>(null)
   const closeEditor = useCallback(() => setEditor(null), [])
   const closeViews = useCallback(() => setViewsOpen(false), [])
@@ -49,6 +53,15 @@ function Desktop() {
             <button
               type="button"
               className="theme-toggle"
+              onClick={() => setTagsOpen(true)}
+              title="標籤管理與瀏覽"
+              aria-label="標籤管理與瀏覽"
+            >
+              <span className="btn-label">標籤</span>
+            </button>
+            <button
+              type="button"
+              className="theme-toggle"
               onClick={() => setViewsOpen(true)}
               title="跨主題組合視圖"
               aria-label="跨主題組合視圖"
@@ -57,18 +70,23 @@ function Desktop() {
             </button>
           </>
         }
-        detailExtra={(e: HistEvent) =>
-          e.id.startsWith(USER_EVENT_PREFIX) ? (
-            <div className="detail-user">
-              <span className="views-sub">自訂事件</span>
-              <button type="button" className="views-act" onClick={() => setEditor({ editRef: e.id })}>
-                編輯
-              </button>
-            </div>
-          ) : null
-        }
+        detailExtra={(e: HistEvent) => (
+          <>
+            {e.id.startsWith(USER_EVENT_PREFIX) && (
+              <div className="detail-user">
+                <span className="views-sub">自訂事件</span>
+                <button type="button" className="views-act" onClick={() => setEditor({ editRef: e.id })}>
+                  編輯
+                </button>
+              </div>
+            )}
+            {/* key 讓換一則事件時整個區塊重新載入，不沿用上一則的 tag／關聯 */}
+            <EventExtras key={e.id} event={e} />
+          </>
+        )}
       />
       {viewsOpen && <ViewsOverlay currentId={TOPIC_ID} onClose={closeViews} />}
+      {tagsOpen && <TagsOverlay onClose={closeTags} />}
       {editor && (
         <EventEditor editRef={editor.editRef} initialPlacement={placement} onClose={closeEditor} />
       )}

@@ -55,6 +55,7 @@ fn build_view_payload(conn: &rusqlite::Connection, view: Option<&str>) -> Result
     }
 
     let mut regions = Vec::new();
+    let mut refs = std::collections::HashMap::new();
     for (i, col) in view.columns.iter().enumerate() {
         let meta = db::regions_of(conn, &col.topic)?
             .into_iter()
@@ -89,6 +90,7 @@ fn build_view_payload(conn: &rusqlite::Connection, view: Option<&str>) -> Result
             .collect();
         let outside = total - events.len();
         for e in &mut events {
+            let r#ref = if e.id.starts_with("user/") { e.id.clone() } else { format!("{}/{}/{}", col.topic, col.region, e.id) };
             if col.importance_offset != 0 {
                 e.importance = (e.importance + col.importance_offset).clamp(1, 5);
             }
@@ -107,6 +109,7 @@ fn build_view_payload(conn: &rusqlite::Connection, view: Option<&str>) -> Result
                     e.actual_year = None;
                 }
             }
+            refs.insert(e.id.clone(), r#ref);
         }
 
         let mut subtitle_parts = Vec::new();
@@ -181,7 +184,7 @@ fn build_view_payload(conn: &rusqlite::Connection, view: Option<&str>) -> Result
         });
     }
 
-    Ok(ViewPayload { view_id, topic, timeline, categories, regions, topics })
+    Ok(ViewPayload { view_id, topic, timeline, categories, regions, topics, refs })
 }
 
 fn err(e: anyhow::Error) -> String {
@@ -299,6 +302,77 @@ pub fn export_user_events(state: State<'_, AppState>) -> Result<Vec<String>, Str
         Ok(written)
     })()
     .map_err(err)
+}
+
+/* ---------------- Tag ---------------- */
+
+#[tauri::command]
+pub fn list_tag_groups(state: State<'_, AppState>) -> Result<Vec<TagGroup>, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::tag_groups_all(&conn).map_err(err)
+}
+#[tauri::command]
+pub fn save_tag_group(group: TagGroup, state: State<'_, AppState>) -> Result<(), String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::tag_group_save(&conn, &group).map_err(err)
+}
+#[tauri::command]
+pub fn delete_tag_group(id: String, state: State<'_, AppState>) -> Result<(), String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::tag_group_delete(&conn, &id).map_err(err)
+}
+#[tauri::command]
+pub fn list_tags(state: State<'_, AppState>) -> Result<Vec<Tag>, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::tags_all(&conn).map_err(err)
+}
+#[tauri::command]
+pub fn save_tag(tag: Tag, state: State<'_, AppState>) -> Result<(), String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::tag_save(&conn, &tag).map_err(err)
+}
+#[tauri::command]
+pub fn delete_tag(id: String, state: State<'_, AppState>) -> Result<(), String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::tag_delete(&conn, &id).map_err(err)
+}
+#[tauri::command]
+pub fn get_event_tags(r#ref: String, state: State<'_, AppState>) -> Result<Vec<String>, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::event_tag_ids(&conn, &r#ref).map_err(err)
+}
+#[tauri::command]
+pub fn set_event_tags(r#ref: String, tag_ids: Vec<String>, title: String, state: State<'_, AppState>) -> Result<(), String> {
+    let mut conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::event_tags_set(&mut conn, &r#ref, &tag_ids, &title).map_err(err)
+}
+#[tauri::command]
+pub fn events_with_tag(tag_id: String, state: State<'_, AppState>) -> Result<Vec<EventHit>, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::events_with_tag(&conn, &tag_id).map_err(err)
+}
+#[tauri::command]
+pub fn search_events(query: String, limit: Option<usize>, state: State<'_, AppState>) -> Result<Vec<EventHit>, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::search_events(&conn, &query, limit.unwrap_or(30)).map_err(err)
+}
+
+/* ---------------- 關聯 ---------------- */
+
+#[tauri::command]
+pub fn list_links(r#ref: String, state: State<'_, AppState>) -> Result<Vec<EventLink>, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::links_of(&conn, &r#ref).map_err(err)
+}
+#[tauri::command]
+pub fn save_link(link: LinkInput, state: State<'_, AppState>) -> Result<(), String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::link_save(&conn, &link).map_err(err)
+}
+#[tauri::command]
+pub fn delete_link(id: String, state: State<'_, AppState>) -> Result<(), String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::link_delete(&conn, &id).map_err(err)
 }
 
 /// 開發期：從 repo 的 YAML 重新載入上游資料
@@ -421,8 +495,40 @@ mod tests {
         bad.year = 1400;
         bad.placements = vec![Placement { topic: "taiwan".into(), region: "china".into(), category: "war".into() }];
         assert!(db::user_event_save(&mut conn, &bad).is_err());
+        // refs：單一主題 View 的 id 對到 "{topic}/{region}/{id}"，跨主題的去掉前綴，使用者事件對到自己
+        assert_eq!(w.refs.get("cn-qin-unification").map(String::as_str), Some("world/china/cn-qin-unification"));
+        let first = &p.regions[0].events[0].id;
+        assert_eq!(p.refs.get(first).map(String::as_str), Some(format!("world/china/{}", first.trim_start_matches("world:")).as_str()));
+        assert_eq!(p.refs.get("user/test-1").map(String::as_str), Some("user/test-1"));
+
+        // Tag：分組、層級、打標、含子 tag 的查詢、成環防護
+        db::tag_group_save(&conn, &TagGroup { id: "g1".into(), name: "主題".into(), order: 0 }).unwrap();
+        db::tag_save(&conn, &Tag { id: "t1".into(), group_id: Some("g1".into()), parent_id: None, name: "科學革命".into(), color: None, order: 0, count: 0 }).unwrap();
+        db::tag_save(&conn, &Tag { id: "t2".into(), group_id: Some("g1".into()), parent_id: Some("t1".into()), name: "力學".into(), color: None, order: 0, count: 0 }).unwrap();
+        let cyc = Tag { id: "t1".into(), group_id: None, parent_id: Some("t2".into()), name: "科學革命".into(), color: None, order: 0, count: 0 };
+        assert!(db::tag_save(&conn, &cyc).is_err());
+        db::event_tags_set(&mut conn, "world/china/cn-qin-unification", &["t2".into()], "秦滅六國").unwrap();
+        db::event_tags_set(&mut conn, "user/test-1", &["t1".into()], "測試事件").unwrap();
+        let hits = db::events_with_tag(&conn, "t1").unwrap();
+        assert_eq!(hits.len(), 2, "含子 tag");
+        assert!(hits.iter().all(|h| !h.orphan));
+        assert!(hits.iter().any(|h| h.event_id == "cn-qin-unification" && h.topic == "world"));
+        assert_eq!(db::tags_all(&conn).unwrap().iter().find(|t| t.id == "t2").unwrap().count, 1);
+
+        // 關聯：雙向查得到、不能自連、快照
+        db::link_save(&conn, &LinkInput { id: "l1".into(), from_ref: "user/test-1".into(), to_ref: "world/china/cn-qin-unification".into(), kind: "對照".into(), note: None }).unwrap();
+        assert!(db::link_save(&conn, &LinkInput { id: "l2".into(), from_ref: "user/test-1".into(), to_ref: "user/test-1".into(), kind: "x".into(), note: None }).is_err());
+        let ls = db::links_of(&conn, "world/china/cn-qin-unification").unwrap();
+        assert_eq!(ls.len(), 1);
+        assert_eq!(ls[0].from.title, "測試事件");
+        // 搜尋
+        assert!(db::search_events(&conn, "秦滅", 10).unwrap().iter().any(|h| h.event_id == "cn-qin-unification"));
+
+        // 刪掉使用者事件後，關聯與 tag 變孤兒但還讀得到快照
         db::user_event_delete(&conn, "user/test-1").unwrap();
         assert!(db::user_event_get(&conn, "user/test-1").unwrap().is_none());
+        let ls = db::links_of(&conn, "world/china/cn-qin-unification").unwrap();
+        assert!(ls[0].from.orphan && ls[0].from.title == "測試事件");
 
         // 內建不能刪、不能改
         assert!(db::view_delete(&conn, "world").is_err());

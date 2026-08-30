@@ -249,7 +249,9 @@ Phase 1 的 PR 進 `main`；其餘在 `app` 分支。
 - [x] Phase 3 使用者事件（2026-08-30）：migration 003（user_events／event_placements）、`user_event_save` 驗證（欄位存在、類別屬於該主題、年份在該主題軸內）、payload 併入各欄、`export_user_events` 寫 `<app data>/export/<topic>--<region>.events.yaml`。前端 `EventEditor`（標題／年份／重要度／傳說／描述／多 placement 各選類別／出處），「＋ 事件」在標題列，詳情面板對 `user/` 開頭的事件顯示「自訂事件・編輯」。實測一則事件放到 taiwan/taiwan 與 world/china，兩邊都畫得出來、搜尋也找得到。
   - 跨主題 View 裡使用者事件的 id 不加主題前綴（ref 本身全域唯一，前端靠 `user/` 認它）。
   - 匯出還沒接 UI 按鈕，先留 command。
-- [ ] Phase 4 Tag 與關聯
+- [x] Phase 4 Tag 與關聯（2026-08-30）：migration 004（tag_groups／tags 有 parent／event_tags／event_links 都帶 title_snapshot）、成環防護、含子 tag 的查詢、全域事件搜尋（關聯目標可指到任何主題）、payload 加 `refs`（畫面 id → 全域 ref）。前端：詳情面板的 Tag（勾選＋快速新增）與關聯（搜尋→選目標→方向／類型／備註）、標題列「標籤」管理與依 tag 瀏覽、`gotoHit` 在同 View 內走 hash、跨 View 走 `?view=…#e=…`。實測：關原之戰貼 tag、關聯到大坂之陣、反向顯示、點擊跳轉、標籤面板列出事件。
+  - 孤兒（ref 對不到事件）目前只在關聯／tag 清單裡以刪除線呈現，還沒有集中的孤兒檢查頁（Phase 7 同步時做）。
+  - `window.prompt` 在 WKWebView 不可靠，取名改用對話框內的輸入列；`confirm` 可用。
 - [ ] Phase 5 題庫
 - [ ] Phase 6 虛擬化
 - [ ] Phase 7 同步與打包

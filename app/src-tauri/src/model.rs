@@ -163,6 +163,74 @@ pub struct UserEvent {
     pub placements: Vec<Placement>,
 }
 
+/* ---------------- Tag 與關聯 ---------------- */
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct TagGroup {
+    pub id: String,
+    pub name: String,
+    #[serde(default)]
+    pub order: i64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct Tag {
+    pub id: String,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub group_id: Option<String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub parent_id: Option<String>,
+    pub name: String,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub color: Option<String>,
+    #[serde(default)]
+    pub order: i64,
+    /// 打了這個 tag 的事件數（唯讀，存檔時忽略）
+    #[serde(default)]
+    pub count: i64,
+}
+
+/// 一則事件的「現在」：給 tag 瀏覽、關聯清單、搜尋結果用。
+/// `event_id` 是它在自己主題的 View 裡的 id（上游是原 id，使用者事件是 ref），
+/// 前端拿來組 `?view={topic}#e={event_id}` 跳過去。
+#[derive(Debug, Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct EventHit {
+    #[serde(rename = "ref")]
+    pub r#ref: String,
+    pub title: String,
+    pub year: Year,
+    pub topic: String,
+    pub region: String,
+    pub topic_name: String,
+    pub region_name: String,
+    pub event_id: String,
+    /// ref 已經對不到任何事件（上游改了 id 或刪了），title 是快照
+    pub orphan: bool,
+}
+
+#[derive(Debug, Clone, Serialize)]
+pub struct EventLink {
+    pub id: String,
+    pub from: EventHit,
+    pub to: EventHit,
+    pub kind: String,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub note: Option<String>,
+}
+
+#[derive(Debug, Clone, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct LinkInput {
+    pub id: String,
+    pub from_ref: String,
+    pub to_ref: String,
+    pub kind: String,
+    #[serde(default)]
+    pub note: Option<String>,
+}
+
 /* ---------------- View ---------------- */
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -232,4 +300,7 @@ pub struct ViewPayload {
     pub categories: Vec<CategoryDef>,
     pub regions: Vec<RegionPayload>,
     pub topics: Vec<TopicEntry>,
+    /// 畫面上的事件 id → 全域 ref（"{topic}/{region}/{id}" 或 "user/…"）。
+    /// 跨主題 View 的 id 有前綴、單一主題沒有，前端不該自己猜，這裡直接給。
+    pub refs: std::collections::HashMap<String, String>,
 }

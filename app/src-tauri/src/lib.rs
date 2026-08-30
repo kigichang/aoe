@@ -56,6 +56,19 @@ pub fn run() {
             commands::save_user_event,
             commands::delete_user_event,
             commands::export_user_events,
+            commands::list_tag_groups,
+            commands::save_tag_group,
+            commands::delete_tag_group,
+            commands::list_tags,
+            commands::save_tag,
+            commands::delete_tag,
+            commands::get_event_tags,
+            commands::set_event_tags,
+            commands::events_with_tag,
+            commands::search_events,
+            commands::list_links,
+            commands::save_link,
+            commands::delete_link,
             commands::reload_from_repo
         ])
         .run(tauri::generate_context!())

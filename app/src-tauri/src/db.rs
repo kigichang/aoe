@@ -11,6 +11,7 @@ const MIGRATIONS: &[M<'static>] = &[
     M::up(include_str!("migrations/001_upstream.sql")),
     M::up(include_str!("migrations/002_views.sql")),
     M::up(include_str!("migrations/003_user_events.sql")),
+    M::up(include_str!("migrations/004_tags_links.sql")),
 ];
 
 pub fn open(path: &Path) -> Result<Connection> {
@@ -460,5 +461,265 @@ pub fn user_event_delete(conn: &Connection, r#ref: &str) -> Result<()> {
     if n == 0 {
         bail!("找不到事件 {ref}");
     }
+    Ok(())
+}
+
+/* ---------------- Tag ---------------- */
+
+pub fn tag_groups_all(conn: &Connection) -> Result<Vec<TagGroup>> {
+    let mut st = conn.prepare("SELECT id, name, order_no FROM tag_groups ORDER BY order_no, name")?;
+    let rows = st.query_map([], |r| Ok(TagGroup { id: r.get(0)?, name: r.get(1)?, order: r.get(2)? }))?;
+    Ok(rows.collect::<rusqlite::Result<_>>()?)
+}
+
+pub fn tag_group_save(conn: &Connection, g: &TagGroup) -> Result<()> {
+    if g.name.trim().is_empty() {
+        bail!("分組名稱不能是空的");
+    }
+    conn.execute(
+        "INSERT INTO tag_groups (id, name, order_no) VALUES (?1, ?2, ?3)
+         ON CONFLICT(id) DO UPDATE SET name = excluded.name, order_no = excluded.order_no",
+        params![g.id, g.name.trim(), g.order],
+    )?;
+    Ok(())
+}
+
+/// 刪分組不刪底下的 tag（FK 是 SET NULL），tag 變成「未分組」
+pub fn tag_group_delete(conn: &Connection, id: &str) -> Result<()> {
+    conn.execute("DELETE FROM tag_groups WHERE id = ?1", [id])?;
+    Ok(())
+}
+
+pub fn tags_all(conn: &Connection) -> Result<Vec<Tag>> {
+    let mut st = conn.prepare(
+        "SELECT t.id, t.group_id, t.parent_id, t.name, t.color, t.order_no,
+                (SELECT COUNT(*) FROM event_tags e WHERE e.tag_id = t.id)
+         FROM tags t ORDER BY t.order_no, t.name",
+    )?;
+    let rows = st.query_map([], |r| {
+        Ok(Tag {
+            id: r.get(0)?,
+            group_id: r.get(1)?,
+            parent_id: r.get(2)?,
+            name: r.get(3)?,
+            color: r.get(4)?,
+            order: r.get(5)?,
+            count: r.get(6)?,
+        })
+    })?;
+    Ok(rows.collect::<rusqlite::Result<_>>()?)
+}
+
+pub fn tag_save(conn: &Connection, t: &Tag) -> Result<()> {
+    if t.name.trim().is_empty() {
+        bail!("Tag 名稱不能是空的");
+    }
+    // 父子不能成環：沿 parent 往上走不可以回到自己
+    let mut cur = t.parent_id.clone();
+    let mut hops = 0;
+    while let Some(p) = cur {
+        if p == t.id {
+            bail!("Tag 的父層不能是自己或自己的子層");
+        }
+        cur = conn.query_row("SELECT parent_id FROM tags WHERE id = ?1", [&p], |r| r.get(0)).optional()?.flatten();
+        hops += 1;
+        if hops > 32 {
+            bail!("Tag 層級太深");
+        }
+    }
+    conn.execute(
+        "INSERT INTO tags (id, group_id, parent_id, name, color, order_no) VALUES (?1, ?2, ?3, ?4, ?5, ?6)
+         ON CONFLICT(id) DO UPDATE SET group_id = excluded.group_id, parent_id = excluded.parent_id,
+           name = excluded.name, color = excluded.color, order_no = excluded.order_no",
+        params![t.id, t.group_id, t.parent_id, t.name.trim(), t.color, t.order],
+    )?;
+    Ok(())
+}
+
+/// 刪 tag：事件上的標記一起刪（CASCADE），子 tag 升到上一層（SET NULL）
+pub fn tag_delete(conn: &Connection, id: &str) -> Result<()> {
+    conn.execute("DELETE FROM tags WHERE id = ?1", [id])?;
+    Ok(())
+}
+
+pub fn event_tag_ids(conn: &Connection, r#ref: &str) -> Result<Vec<String>> {
+    let mut st = conn.prepare("SELECT tag_id FROM event_tags WHERE event_ref = ?1")?;
+    let rows = st.query_map([r#ref], |r| r.get(0))?;
+    Ok(rows.collect::<rusqlite::Result<_>>()?)
+}
+
+pub fn event_tags_set(conn: &mut Connection, r#ref: &str, tag_ids: &[String], title: &str) -> Result<()> {
+    let tx = conn.transaction()?;
+    tx.execute("DELETE FROM event_tags WHERE event_ref = ?1", [r#ref])?;
+    for t in tag_ids {
+        tx.execute(
+            "INSERT OR IGNORE INTO event_tags (event_ref, tag_id, title_snapshot) VALUES (?1, ?2, ?3)",
+            params![r#ref, t, title],
+        )?;
+    }
+    tx.commit()?;
+    Ok(())
+}
+
+/// 打了某個 tag 的事件（含子 tag 的）。回傳 ref + 標題快照；標題以現在的資料為準，
+/// 找不到（孤兒）才退回快照。
+pub fn events_with_tag(conn: &Connection, tag_id: &str) -> Result<Vec<EventHit>> {
+    // 子孫 tag
+    let mut ids = vec![tag_id.to_string()];
+    let mut i = 0;
+    while i < ids.len() {
+        let mut st = conn.prepare("SELECT id FROM tags WHERE parent_id = ?1")?;
+        let kids: Vec<String> = st.query_map([&ids[i]], |r| r.get(0))?.collect::<rusqlite::Result<_>>()?;
+        for k in kids {
+            if !ids.contains(&k) {
+                ids.push(k);
+            }
+        }
+        i += 1;
+    }
+    let mut out = Vec::new();
+    let mut seen = std::collections::HashSet::new();
+    for t in &ids {
+        let mut st = conn.prepare("SELECT event_ref, title_snapshot FROM event_tags WHERE tag_id = ?1")?;
+        let rows: Vec<(String, String)> =
+            st.query_map([t], |r| Ok((r.get(0)?, r.get(1)?)))?.collect::<rusqlite::Result<_>>()?;
+        for (r#ref, snap) in rows {
+            if seen.insert(r#ref.clone()) {
+                out.push(resolve_hit(conn, &r#ref, &snap)?);
+            }
+        }
+    }
+    out.sort_by_key(|h| h.year);
+    Ok(out)
+}
+
+/// 用 ref 查現在的事件；找不到就用快照並標記 orphan
+pub fn resolve_hit(conn: &Connection, r#ref: &str, snapshot: &str) -> Result<EventHit> {
+    if let Some(u) = user_event_get(conn, r#ref)? {
+        let p = u.placements.first();
+        return Ok(EventHit {
+            r#ref: r#ref.to_string(),
+            title: u.title,
+            year: u.year,
+            topic: p.map(|p| p.topic.clone()).unwrap_or_default(),
+            region: p.map(|p| p.region.clone()).unwrap_or_default(),
+            topic_name: p.map(|p| topic_name_of(conn, &p.topic)).unwrap_or_default(),
+            region_name: p.map(|p| region_name_of(conn, &p.topic, &p.region)).unwrap_or_default(),
+            event_id: r#ref.to_string(),
+            orphan: false,
+        });
+    }
+    let row: Option<(String, String, String, i64, String)> = conn
+        .query_row(
+            "SELECT topic, region, id, year, title FROM events WHERE ref = ?1",
+            [r#ref],
+            |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?, r.get(3)?, r.get(4)?)),
+        )
+        .optional()?;
+    Ok(match row {
+        Some((topic, region, id, year, title)) => EventHit {
+            r#ref: r#ref.to_string(),
+            title,
+            year,
+            topic_name: topic_name_of(conn, &topic),
+            region_name: region_name_of(conn, &topic, &region),
+            topic,
+            region,
+            event_id: id,
+            orphan: false,
+        },
+        None => EventHit {
+            r#ref: r#ref.to_string(),
+            title: snapshot.to_string(),
+            year: 0,
+            topic: String::new(),
+            region: String::new(),
+            topic_name: String::new(),
+            region_name: String::new(),
+            event_id: String::new(),
+            orphan: true,
+        },
+    })
+}
+
+fn topic_name_of(conn: &Connection, slug: &str) -> String {
+    conn.query_row("SELECT name FROM topics WHERE slug = ?1", [slug], |r| r.get(0)).unwrap_or_else(|_| slug.to_string())
+}
+fn region_name_of(conn: &Connection, topic: &str, region: &str) -> String {
+    conn.query_row("SELECT name FROM regions WHERE topic = ?1 AND id = ?2", [topic, region], |r| r.get(0))
+        .unwrap_or_else(|_| region.to_string())
+}
+
+/// 全域搜尋（上游 + 使用者事件），給關聯目標選擇器用。子字串比對標題，跟網站 search.ts 一樣不斷詞。
+pub fn search_events(conn: &Connection, q: &str, limit: usize) -> Result<Vec<EventHit>> {
+    let q = q.trim();
+    if q.is_empty() {
+        return Ok(Vec::new());
+    }
+    let like = format!("%{}%", q.replace('%', "\\%").replace('_', "\\_"));
+    let mut out = Vec::new();
+    let mut st = conn.prepare(
+        "SELECT ref FROM events WHERE title LIKE ?1 ESCAPE '\\' ORDER BY importance DESC, year LIMIT ?2",
+    )?;
+    let refs: Vec<String> = st.query_map(params![like, limit as i64], |r| r.get(0))?.collect::<rusqlite::Result<_>>()?;
+    for r in refs {
+        out.push(resolve_hit(conn, &r, "")?);
+    }
+    let mut st = conn.prepare("SELECT ref FROM user_events WHERE title LIKE ?1 ESCAPE '\\' ORDER BY year LIMIT ?2")?;
+    let refs: Vec<String> = st.query_map(params![like, limit as i64], |r| r.get(0))?.collect::<rusqlite::Result<_>>()?;
+    for r in refs {
+        out.push(resolve_hit(conn, &r, "")?);
+    }
+    Ok(out)
+}
+
+/* ---------------- 有向關聯 ---------------- */
+
+pub fn links_of(conn: &Connection, r#ref: &str) -> Result<Vec<EventLink>> {
+    let mut st = conn.prepare(
+        "SELECT id, from_ref, to_ref, kind, note, snapshot_from, snapshot_to FROM event_links
+         WHERE from_ref = ?1 OR to_ref = ?1 ORDER BY created_at",
+    )?;
+    let rows: Vec<(String, String, String, String, Option<String>, String, String)> = st
+        .query_map([r#ref], |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?, r.get(3)?, r.get(4)?, r.get(5)?, r.get(6)?)))?
+        .collect::<rusqlite::Result<_>>()?;
+    let mut out = Vec::new();
+    for (id, from, to, kind, note, sf, st_) in rows {
+        out.push(EventLink {
+            id,
+            from: resolve_hit(conn, &from, &sf)?,
+            to: resolve_hit(conn, &to, &st_)?,
+            kind,
+            note,
+        });
+    }
+    Ok(out)
+}
+
+pub fn link_save(conn: &Connection, l: &LinkInput) -> Result<()> {
+    if l.from_ref == l.to_ref {
+        bail!("事件不能關聯到自己");
+    }
+    if l.kind.trim().is_empty() {
+        bail!("關係類型不能是空的");
+    }
+    let from = resolve_hit(conn, &l.from_ref, "")?;
+    let to = resolve_hit(conn, &l.to_ref, "")?;
+    if from.orphan || to.orphan {
+        bail!("關聯的兩端都必須是存在的事件");
+    }
+    conn.execute(
+        "INSERT INTO event_links (id, from_ref, to_ref, kind, note, snapshot_from, snapshot_to)
+         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)
+         ON CONFLICT(id) DO UPDATE SET from_ref = excluded.from_ref, to_ref = excluded.to_ref,
+           kind = excluded.kind, note = excluded.note, snapshot_from = excluded.snapshot_from,
+           snapshot_to = excluded.snapshot_to",
+        params![l.id, l.from_ref, l.to_ref, l.kind.trim(), l.note.as_deref().map(str::trim).filter(|s| !s.is_empty()), from.title, to.title],
+    )?;
+    Ok(())
+}
+
+pub fn link_delete(conn: &Connection, id: &str) -> Result<()> {
+    conn.execute("DELETE FROM event_links WHERE id = ?1", [id])?;
     Ok(())
 }
