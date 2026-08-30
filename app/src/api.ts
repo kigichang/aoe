@@ -4,6 +4,7 @@ import type {
   EventHit,
   EventLink,
   LinkInput,
+  AppUpdate,
   Orphan,
   Question,
   QuestionCard,
@@ -64,6 +65,9 @@ export const api = {
   syncApply: () => invoke<[BundleInfo, Orphan[]]>('sync_apply'),
   listOrphans: () => invoke<Orphan[]>('list_orphans'),
   deleteOrphan: (kind: string, key: string) => invoke<void>('delete_orphan', { kind, key }),
+  appUpdateCheck: () => invoke<AppUpdate | null>('app_update_check'),
+  // Windows 上安裝程式會關掉目前的行程，所以這個 Promise 正常不會 resolve
+  appUpdateInstall: () => invoke<void>('app_update_install'),
 }
 
 /** 切換 View = 整頁重載（見 bootstrap.ts） */

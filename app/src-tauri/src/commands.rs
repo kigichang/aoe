@@ -511,6 +511,44 @@ pub fn delete_orphan(kind: String, key: String, state: State<'_, AppState>) -> R
     db::orphan_delete(&conn, &kind, &key).map_err(err)
 }
 
+/* ---------------- App 自身的更新 ---------------- */
+
+/// 更新包是用自己的 minisign 金鑰簽的，**跟 Apple／Windows 的程式碼簽章是兩回事** ——
+/// 驗的是「這包更新確實出自這把私鑰」，作業系統的 Gatekeeper／SmartScreen 仍然
+/// 各管各的。這也是開發期不處理 Apple Developer 憑證仍然能發更新的原因。
+///
+/// 沒有新版回 `Ok(None)`；連不上、簽章不符都回 `Err`，由 UI 顯示原因 ——
+/// 靜默失敗的話使用者會一直停在舊版而不自知。
+#[tauri::command]
+pub async fn app_update_check(app: tauri::AppHandle) -> Result<Option<AppUpdate>, String> {
+    use tauri_plugin_updater::UpdaterExt;
+    let found = app
+        .updater()
+        .map_err(|e| e.to_string())?
+        .check()
+        .await
+        .map_err(|e| e.to_string())?;
+    Ok(found.map(|u| AppUpdate {
+        version: u.version.clone(),
+        notes: u.body.clone(),
+        date: u.date.map(|d| d.to_string()),
+    }))
+}
+
+/// 下載並安裝新版，然後重開。
+///
+/// **Windows 上安裝程式會先把目前這個行程關掉**，所以正常路徑上這個函式不會回傳，
+/// 前端不要期待收到成功的回覆（收到 Err 才是真的有事）。
+#[tauri::command]
+pub async fn app_update_install(app: tauri::AppHandle) -> Result<(), String> {
+    use tauri_plugin_updater::UpdaterExt;
+    let Some(update) = app.updater().map_err(|e| e.to_string())?.check().await.map_err(|e| e.to_string())? else {
+        return Err("沒有可安裝的新版本。".into());
+    };
+    update.download_and_install(|_, _| {}, || {}).await.map_err(|e| e.to_string())?;
+    app.restart()
+}
+
 /// 開發用：前端效能基準把結果印到 stdout（tauri dev 的終端）
 #[tauri::command]
 pub fn log_perf(text: String) {

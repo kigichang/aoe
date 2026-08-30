@@ -378,6 +378,15 @@ pub struct SyncCheck {
     pub newer: bool,
 }
 
+/// App 自身的新版本（不是資料的版本，那是 BundleInfo）
+#[derive(Debug, Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AppUpdate {
+    pub version: String,
+    pub notes: Option<String>,
+    pub date: Option<String>,
+}
+
 /// 使用者資料裡指向已不存在事件的列
 #[derive(Debug, Clone, Serialize)]
 #[serde(rename_all = "camelCase")]

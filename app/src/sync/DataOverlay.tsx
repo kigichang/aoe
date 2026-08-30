@@ -1,10 +1,15 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { getVersion } from '@tauri-apps/api/app'
 import { CloseIcon } from '@web/components/icons'
 import { api } from '../api'
-import type { BundleInfo, Orphan, SyncCheck } from '../types'
+import type { AppUpdate, BundleInfo, Orphan, SyncCheck } from '../types'
 
 /**
  * 「資料」：目前載入的資料版本、檢查／套用線上更新、孤兒檢查、匯出自訂事件。
+ *
+ * **「歷史資料」與「App 版本」是兩條獨立的更新線**：前者換的是 src/topics 打包出來的
+ * bundle（補了新事件就會動），後者換的是程式本身。補資料的頻率遠高於改程式，
+ * 分開才不必為了幾則新事件重發一次安裝檔。
  *
  * 同步套用後整頁重載（上游表換了，View 是 per-document 常數）。
  * 孤兒（使用者資料指向已不存在的事件）**只列出、逐筆由使用者決定刪不刪**——
@@ -14,6 +19,8 @@ export function DataOverlay({ onClose }: { onClose: () => void }) {
   const [info, setInfo] = useState<BundleInfo | null>(null)
   const [check, setCheck] = useState<SyncCheck | null>(null)
   const [orphans, setOrphans] = useState<Orphan[]>([])
+  const [appVersion, setAppVersion] = useState<string | null>(null)
+  const [update, setUpdate] = useState<AppUpdate | null | 'none'>(null)
   const [busy, setBusy] = useState<string | null>(null)
   const [msg, setMsg] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -26,6 +33,7 @@ export function DataOverlay({ onClose }: { onClose: () => void }) {
   }, [])
   useEffect(() => {
     load().catch((e) => setError(String(e)))
+    getVersion().then(setAppVersion).catch(() => setAppVersion(null))
   }, [load])
 
   useEffect(() => {
@@ -66,6 +74,18 @@ export function DataOverlay({ onClose }: { onClose: () => void }) {
     run('export', async () => {
       const files = await api.exportUserEvents()
       setMsg(files.length ? `已匯出：\n${files.join('\n')}` : '沒有自訂事件可匯出。')
+    })
+  const doAppCheck = () =>
+    run('appCheck', async () => {
+      const u = await api.appUpdateCheck()
+      setUpdate(u ?? 'none')
+    })
+  // 這個 Promise 在 Windows 上不會 resolve（安裝程式會先關掉這個行程），
+  // 所以訊息要在呼叫「之前」就寫上去。
+  const doAppInstall = () =>
+    run('appInstall', async () => {
+      setMsg('下載中，安裝完成後會自動重開…')
+      await api.appUpdateInstall()
     })
   const removeOrphan = (o: Orphan) =>
     run('orphan', async () => {
@@ -148,6 +168,28 @@ export function DataOverlay({ onClose }: { onClose: () => void }) {
             </ul>
           </>
         )}
+
+        <h3>App 版本</h3>
+        <p className="data-info">
+          目前 <b>{appVersion ?? '—'}</b>
+          {update && update !== 'none' && <span className="views-sub">有新版 {update.version}</span>}
+          {update === 'none' && <span className="views-sub">已是最新</span>}
+        </p>
+        <div className="views-actions" style={{ justifyContent: 'flex-start', marginTop: 6 }}>
+          <button type="button" onClick={doAppCheck} disabled={busy !== null}>
+            {busy === 'appCheck' ? '檢查中…' : '檢查 App 更新'}
+          </button>
+          {update && update !== 'none' && (
+            <button type="button" className="views-primary" onClick={doAppInstall} disabled={busy !== null}>
+              {busy === 'appInstall' ? '安裝中…' : `更新到 ${update.version} 並重開`}
+            </button>
+          )}
+        </div>
+        {update && update !== 'none' && update.notes && <p className="views-hint">{update.notes}</p>}
+        <p className="views-hint">
+          更新包用專案自己的金鑰簽章驗證，跟 Apple／Windows 的程式碼簽章是兩回事——
+          macOS 開發期未經 Apple 簽章，第一次開啟仍要在 Finder 右鍵→開啟。
+        </p>
 
         <h3>匯出</h3>
         <div className="views-actions" style={{ justifyContent: 'flex-start', marginTop: 6 }}>

@@ -1,0 +1,83 @@
+# 桌面版（app/）的發布。網站的部署是 deploy.yml，兩者互不相干 ——
+# 補歷史資料只需要 deploy.yml 重新產生 /data/ 的 bundle，App 端按「檢查更新」就拿得到，
+# 不必為了幾則新事件重發一次安裝檔。這支只在改了程式、要出新版 App 時才跑。
+name: Release desktop app
+
+on:
+  push:
+    tags: ['app-v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: '要建置的版本標籤（例如 app-v0.1.0）'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # macOS 出一份 universal，Intel／Apple Silicon 共用一個 .dmg。
+          # 分兩個 runner 各出各的也可以，但使用者要自己挑對架構，不值得。
+          - platform: macos-latest
+            args: '--target universal-apple-darwin'
+            rust-targets: 'aarch64-apple-darwin,x86_64-apple-darwin'
+          - platform: windows-latest
+            args: ''
+            rust-targets: ''
+    runs-on: ${{ matrix.platform }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.inputs.tag || github.ref }}
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.rust-targets }}
+
+      - uses: swatinem/rust-cache@v2
+        with:
+          workspaces: './app/src-tauri -> target'
+
+      # 根目錄的 node_modules 是必要的，不是順便裝的：
+      # app/package.json 刻意不列 react／zod（兩份 React 會弄壞 hooks、兩份 Zod
+      # 會讓 tsc 型別互比 OOM），前端靠 vite 的 dedupe 共用根目錄那一份；
+      # src-tauri/build.rs 產生內嵌 bundle 時跑的 tools/bundle.mjs 也吃這裡的 js-yaml 與 zod。
+      - run: npm ci
+      - run: npm ci
+        working-directory: app
+
+      - uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # 更新包的簽章金鑰。這是專案自簽的 minisign 金鑰，只用來證明
+          # 「這包更新出自這把私鑰」，跟 Apple／Windows 的程式碼簽章無關。
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+        with:
+          projectPath: app
+          tagName: ${{ github.event.inputs.tag || github.ref_name }}
+          releaseName: 'AoE 桌面版 __VERSION__'
+          releaseBody: |
+            ### 安裝
+
+            - **Windows**：下載 `.exe` 安裝檔。目前**沒有程式碼簽章憑證**，SmartScreen
+              會擋一次，點「其他資訊」→「仍要執行」。
+            - **macOS**：下載 `.dmg`。開發期未經 Apple 公證，第一次要在 Finder 對
+              AoE.app **右鍵→開啟**（直接雙擊會被 Gatekeeper 擋掉）。
+
+            歷史資料內含於安裝檔，離線就能用；之後在「資料」面板按「檢查更新」
+            就會抓 aoe.kigi.tw 上最新的一份，自訂事件／Tag／題目都會保留。
+          releaseDraft: true
+          prerelease: false
+          includeUpdaterJson: true
+          args: ${{ matrix.args }}

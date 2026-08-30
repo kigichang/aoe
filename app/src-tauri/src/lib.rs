@@ -38,6 +38,7 @@ fn topics_dir() -> Option<PathBuf> {
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
+        .plugin(tauri_plugin_updater::Builder::new().build())
         .setup(|app| {
             let data_dir = app.path().app_data_dir()?;
             let mut conn = db::open(&data_dir.join("aoe.sqlite"))?;
@@ -106,6 +107,8 @@ pub fn run() {
             commands::sync_apply,
             commands::list_orphans,
             commands::delete_orphan,
+            commands::app_update_check,
+            commands::app_update_install,
             commands::reload_from_repo
         ])
         .run(tauri::generate_context!())

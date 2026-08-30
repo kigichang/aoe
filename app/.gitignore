@@ -4,3 +4,5 @@ src-tauri/target
 src-tauri/gen/schemas
 *.tsbuildinfo
 src-tauri/data
+# npm run fonts 抓下來的 Google Fonts（約 11MB）；產生得出來的東西不進版控
+public/fonts

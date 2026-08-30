@@ -206,6 +206,13 @@ export interface SyncCheck {
   newer: boolean
 }
 
+/** App 自身的新版本；資料的版本是 BundleInfo，兩者無關 */
+export interface AppUpdate {
+  version: string
+  notes: string | null
+  date: string | null
+}
+
 export interface Orphan {
   kind: 'event_tag' | 'event_link' | 'question_event' | 'placement'
   key: string

@@ -26,3 +26,6 @@ flate2 = "1"
 # rustls：Windows 上不必裝 OpenSSL。刻意不開 gzip feature：bundle 本身是 .gz，
 # 讓 reqwest 自動解壓的話拿到的就不是原始 bytes，sha256 永遠對不上。
 reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "json"] }
+# App 自身的更新。用自簽的 minisign 金鑰驗證更新包，跟 Apple 的憑證體系無關 ——
+# 這正是開發期能在不處理 Apple Developer 簽章的前提下發 Windows 版的原因。
+tauri-plugin-updater = "2"

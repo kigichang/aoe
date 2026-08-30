@@ -267,7 +267,84 @@ Phase 1 的 PR 進 `main`；其餘在 `app` 分支。
   結論：**捲動全部貼著 60Hz 一幀，1,400 個 mark 的 DOM 靜態捲動撐得住**（CLAUDE.md 那句「DOM 撐得住」在這個量級仍成立），剔除只在縮放時有效（少建 2/3 的 DOM）。CSS containment 無差異，不加。保留 `virtualize`、`VIEWPORT_STEP` 改 1200 減少捲動時的重渲染。
   - 縮放仍 >16ms：瓶頸是 8 欄重跑 `placeEvents` + React 調和，不是渲染。要再快得走「縮放中先只動 CSS transform、放手後才重排版」，不在這一輪。
   - 數字是 debug + dev mode 的，release 會更好；相對關係才是重點。
-- [ ] Phase 7 同步與打包
+- [x] Phase 7 同步與打包（2026-08-30）：`tools/bundle.mjs`（跟網站共用 Zod schema 與 `validate.ts`）產 `data-bundle.json.gz` + `manifest.json`，deploy.yml 一併部署到 `/data/`；`build.rs` 把同一份 bundle `include_bytes!` 進安裝檔（離線首開即有完整資料）；「資料」面板做完版本顯示／檢查更新／下載套用／孤兒檢查／匯出。App 自身的更新走 `tauri-plugin-updater` + GitHub Releases。字型改成本機內嵌。
+  - 實測同步一次：`repo` → `20260830.d51fdba`，user_events=1／event_tags=1／questions=4 全數保留。
+  - 實測 `tauri build`（macOS aarch64）：`AoE.app`、`AoE_0.1.0_aarch64.dmg`、`AoE.app.tar.gz`(updater) + `.sig`。
+
+## Phase 7 筆記
+
+### 兩條互不相干的更新線
+
+**歷史資料**換的是 `src/topics` 打包出來的 bundle，**App 版本**換的是程式本身。
+補幾則事件遠比改程式頻繁，分開才不必為了新增一則事件重發整包安裝檔 ——
+補完資料 push `main`，deploy.yml 重新產生 `/data/`，App 端按「檢查更新」就拿得到。
+
+上游資料的來源有三個，優先序固定：**repo YAML（開發期）→ 內嵌 bundle → 線上下載**。
+`AOE_NO_REPO=1` 可以讓 debug 建置也走 bundle 模式（測同步用），
+`AOE_SYNC_BASE` 可以把來源指到本機的 `vite preview`。
+
+### reqwest 刻意不開 `gzip` feature
+
+bundle 本身就是 `.gz`。開了 gzip feature 之後 reqwest 會自動解壓，
+`bytes()` 拿到的就不是原始檔，manifest 裡的 sha256 **永遠對不上**。
+症狀是「manifest 100cae82…，實際 6482743e…」，看起來像檔案在傳輸中壞掉，
+很容易往網路那邊查。這條跟 CLAUDE.md 那些「畫面看起來正常，資料其實錯了」是同一類陷阱。
+
+manifest 抓取一律帶 `?t=<now>`：網域走 Cloudflare 有快取，不破快取的話剛部署的版本會有一陣子檢查不到。
+
+### 上游表整批重建，所以孤兒檢查是必要配套
+
+使用者資料指向上游事件的欄位**刻意沒有 FK**（上游會被 DROP 重建）。
+代價是同步後可能出現指向不存在 ref 的 tag／關聯／題目／placement，
+所以 `orphans()` 不是選配。**孤兒不自動刪** —— `title_snapshot` 讓使用者還讀得懂
+那筆原本指的是什麼，要改連結還是刪除是他的決定。上游改了 id 不該連使用者的筆記一起帶走。
+
+### 簽章：三種互不相干的東西
+
+| 簽的是什麼 | 用什麼 | 現況 |
+|---|---|---|
+| 更新包出自這把私鑰 | 自己的 minisign 金鑰 | 已建立，私鑰在 `~/.aoe/aoe-updater.key`（**不在版控**），公鑰寫在 `tauri.conf.json` |
+| Windows：這個 exe 出自某個可信發行者 | 程式碼簽章憑證 | **沒有**，SmartScreen 會擋一次 |
+| macOS：Apple 公證過 | Apple Developer ID | **沒有**（使用者的決定：開發期不處理），只做 ad-hoc `signingIdentity: "-"` |
+
+三者互不替代。updater 能運作跟 Apple／Microsoft 的憑證完全無關，這正是開發期
+不碰 Apple Developer 也能發 Windows 版並自動更新的原因。
+
+**私鑰遺失就沒辦法再發更新給已安裝的使用者**（公鑰已經寫死在他們的 App 裡）。
+CI 用 `TAURI_SIGNING_PRIVATE_KEY`（金鑰內容，不是路徑 —— `..._PATH` 那個環境變數
+tauri CLI 認不得，會在 bundle 完成後才報「找不到私鑰」，而且 exit code 還是 0）
+與 `TAURI_SIGNING_PRIVATE_KEY_PASSWORD` 兩個 GitHub secret。
+
+### 字型改成本機內嵌
+
+原本沿用網站的 `<link>` 到 fonts.googleapis.com。桌面版第一次啟動可能完全離線，
+退回系統字型會讓 LXGW WenKai TC 的手寫感（軸線刻度與標題用它）不見，
+而且是**時有時無** —— 有網路一個樣、沒網路另一個樣，比一律用系統字型更難查。
+
+`npm run fonts`（`tools/fonts.mjs`，predev／prebuild 自動跑）抓 335 個 woff2 子集共約 14MB，
+產物 gitignored。**刻意不做 subset**：使用者可以自己新增事件，打什麼字不可預期，
+subset 過的字型會出現豆腐字。完整子集靠 unicode-range，WebView 只會載入真的用到的那幾個。
+CSP 也因此收緊成 `font-src 'self'`。
+
+### 發布流程
+
+`.github/workflows/app-release.yml`，推 `app-v*` 標籤觸發，出 draft release：
+
+- macOS 一份 universal `.dmg`（分兩個 runner 各出各的也行，但使用者要自己挑架構，不值得）
+- Windows NSIS `.exe`，`installMode: currentUser`（不必 UAC；更新時也不會每次跳提權）
+- `includeUpdaterJson` 產生 `latest.json`，`tauri.conf.json` 的 endpoint 指到
+  `releases/latest/download/latest.json` —— **draft release 不算 latest**，要按下發布才會生效。
+
+CI 要 `npm ci` **兩次**（根目錄 + `app/`）：`app/package.json` 刻意不列 react／zod，
+前端靠 vite 的 dedupe 共用根目錄那一份；`build.rs` 產內嵌 bundle 時跑的
+`tools/bundle.mjs` 也吃根目錄的 js-yaml 與 zod。
+
+### 還沒做
+
+- **乾淨的 Windows 機器實測**（安裝 → 離線開啟 → 連線同步一次）。手上沒有 Windows 環境，
+  這是 Phase 7 完成判準裡唯一沒有勾到的一項。
+- Windows 程式碼簽章憑證（公開發布前要嘛買、要嘛接受 SmartScreen 警告）。
+- macOS 公證（使用者決定開發期不處理）。
 
 ## Phase 0 筆記
 
@@ -281,4 +358,4 @@ Phase 1 的 PR 進 `main`；其餘在 `app` 分支。
 - macOS 上 `screencapture` 要給終端機螢幕錄製權限才能自動截圖驗畫面。
 - `app/index.html` 曾被根目錄 `.gitignore` 的 `/*/index.html` 擋掉沒進 commit，已加 `!/app/index.html` 例外。
 - 自動化測試打字會被中文輸入法吃掉，改用 `pbcopy` + ⌘V 貼上；Esc 會先關對話框（Esc 協定）。
-- 字型仍走 Google Fonts（CSP 已放行）；離線退回系統字型。打包前內嵌（Phase 7）。
+- ~~字型仍走 Google Fonts~~：Phase 7 已改成本機內嵌，CSP 收緊成 `font-src 'self'`。

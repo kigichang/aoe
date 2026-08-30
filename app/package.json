@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
+    "fonts": "node tools/fonts.mjs",
+    "predev": "npm run fonts",
+    "prebuild": "npm run fonts",
     "check": "tsc --noEmit",
     "tauri": "tauri"
   },

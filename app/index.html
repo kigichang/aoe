@@ -11,11 +11,10 @@
         if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t
       } catch (e) {}
     </script>
-    <!-- 字型暫時沿用網站的 Google Fonts；離線時退回系統字型。打包前改成內嵌（見 PLAN.md Phase 7）。 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&display=swap" />
+    <!-- 字型是本機的，不連 fonts.googleapis.com：桌面版第一次啟動可能完全離線，
+         而「有網路一個樣、沒網路另一個樣」比一律用系統字型更難查。
+         這個檔由 npm run fonts 產生（predev／prebuild 會自動跑），見 tools/fonts.mjs。 -->
+    <link rel="stylesheet" href="/fonts/fonts.css" />
   </head>
   <body>
     <div id="root"></div>
