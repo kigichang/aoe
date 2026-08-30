@@ -144,15 +144,20 @@ jobs:
               -ErrorAction SilentlyContinue | Select-Object DisplayName, InstallLocation | Format-Table
             throw '登錄檔裡找不到 AoE 的安裝項目——靜默安裝多半沒成功'
           }
-          Write-Host "DisplayName=$($entry.DisplayName)  InstallLocation=$($entry.InstallLocation)"
+          # InstallLocation 的值**帶著字面上的引號**（`"C:\Users\...\AoE"`），
+          # 不 Trim 的話 PowerShell 會把它當成一個叫 `"C` 的磁碟機。
+          $loc = $entry.InstallLocation.Trim('"')
+          Write-Host "DisplayName=$($entry.DisplayName)  InstallLocation=$loc"
 
-          $exe = Get-ChildItem $entry.InstallLocation -Filter '*.exe' |
+          # **exe 的檔名不要寫死。** 它是 Cargo 的 crate 名（aoe-app.exe），不是
+          # productName（AoE）—— 第一版寫死 AoE.exe 找不到，就是這個原因。
+          $exe = Get-ChildItem $loc -Filter '*.exe' |
             Where-Object { $_.Name -notlike 'uninstall*' } | Select-Object -First 1
           if (-not $exe) {
-            Get-ChildItem -Recurse $entry.InstallLocation | Select-Object FullName | Format-Table
-            throw "安裝目錄裡沒有可執行檔：$($entry.InstallLocation)"
+            Get-ChildItem -Recurse $loc | Select-Object FullName | Format-Table
+            throw "安裝目錄裡沒有可執行檔：$loc"
           }
-          Write-Host "啟動 $($exe.FullName)"
+          Write-Host "啟動 $($exe.Name)"
 
           $dir = Join-Path $env:APPDATA 'tw.kigi.aoe'
           $db = Join-Path $dir 'aoe.sqlite'
