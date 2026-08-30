@@ -81,3 +81,53 @@ jobs:
           prerelease: false
           includeUpdaterJson: true
           args: ${{ matrix.args }}
+
+      # 乾淨機器的冒煙測試。**GitHub 的 windows runner 就是一台乾淨機器** ——
+      # 沒有 repo 的 YAML、沒有前一版留下的資料庫、不是開發模式，正好就是 Phase 7
+      # 完成判準裡「乾淨 Windows 機器可安裝、離線開啟」那一條。手上沒有 Windows
+      # 機器，就讓每次發版都自動跑一遍。
+      #
+      # 驗的是**安裝檔內嵌的那份 bundle**：在完全沒按過「檢查更新」的情況下，
+      # 上游表有沒有自己建起來 —— 那是使用者裝完打開會走的唯一一條路。
+      #
+      # 放在打包之後：這時 release 還是 draft，冒煙測試掛掉就不會有人按到 Publish。
+      - name: Smoke test（乾淨機器安裝並啟動）
+        if: matrix.platform == 'windows-latest'
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $setup = Get-ChildItem -Recurse app/src-tauri/target/release/bundle/nsis -Filter '*-setup.exe' |
+            Select-Object -First 1
+          if (-not $setup) { throw '找不到 NSIS 安裝檔' }
+          Write-Host "安裝 $($setup.Name)"
+          Start-Process -FilePath $setup.FullName -ArgumentList '/S' -Wait   # /S = NSIS 靜默安裝
+
+          # installMode 是 currentUser，所以裝在 %LOCALAPPDATA%\AoE
+          $app = Join-Path $env:LOCALAPPDATA 'AoE\AoE.exe'
+          if (-not (Test-Path $app)) {
+            $found = Get-ChildItem -Recurse -ErrorAction SilentlyContinue $env:LOCALAPPDATA -Filter 'AoE.exe' |
+              Select-Object -First 1
+            if (-not $found) { throw '安裝完找不到 AoE.exe' }
+            $app = $found.FullName
+          }
+          Write-Host "啟動 $app"
+
+          $dir = Join-Path $env:APPDATA 'tw.kigi.aoe'
+          $db = Join-Path $dir 'aoe.sqlite'
+          if (Test-Path $dir) { Remove-Item "$dir\aoe.sqlite*" -Force -ErrorAction SilentlyContinue }
+
+          $p = Start-Process -FilePath $app -PassThru
+          for ($i = 0; $i -lt 90; $i++) {
+            if ($p.HasExited) { throw "App 啟動後立刻結束了（exit code $($p.ExitCode)）" }
+            if ((Test-Path $db) -and ((Get-Item $db).Length -gt 0)) { break }
+            Start-Sleep -Seconds 1
+          }
+          Start-Sleep -Seconds 8   # 讓它把上游表整批寫完
+          $p.CloseMainWindow() | Out-Null
+          Start-Sleep -Seconds 3
+          if (-not $p.HasExited) { Stop-Process -Id $p.Id -Force }
+
+          if (-not (Test-Path $db)) { throw "啟動後沒有建立資料庫：$db" }
+          # node:sqlite 在 Node 22 要旗標；node-version 升到 24 之後可以拿掉
+          node --experimental-sqlite app/tools/smoke-check.mjs $db
