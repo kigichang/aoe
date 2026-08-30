@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "check": "tsc -b --noEmit",
     "lint:data": "node scripts/lint-data.mjs",
-    "icons": "node scripts/make-favicon.mjs"
+    "icons": "node scripts/make-favicon.mjs",
+    "bundle": "node --experimental-strip-types tools/bundle.mjs"
   },
   "dependencies": {
     "react": "^19.1.0",
