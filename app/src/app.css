@@ -1,0 +1,44 @@
+/* 桌面版專屬的樣式。網站的 styles.css 先載入，這裡只補新元件，顏色一律用它的變數。 */
+
+.views-dialog { max-width: 720px; }
+.views-error { color: var(--r7); font-size: 13px; margin: 8px 0; white-space: pre-wrap; }
+.views-warn { color: var(--r3); font-size: 13px; margin: 6px 0; }
+.views-hint { color: var(--muted); font-size: 12px; margin: 6px 0 0; }
+.views-sub { color: var(--muted); font-size: 12px; margin-left: 8px; font-weight: 400; }
+.views-empty { color: var(--muted); font-size: 13px; padding: 6px 0; list-style: none; }
+
+.views-list { list-style: none; margin: 10px 0; padding: 0; }
+.views-list li { display: flex; align-items: center; gap: 6px; padding: 4px 0; border-bottom: 1px solid var(--border); }
+.views-list li.is-current .views-name { color: var(--r0); }
+.views-open { flex: 1; text-align: left; background: none; border: 0; color: var(--text-primary); font: inherit; padding: 6px 4px; cursor: pointer; border-radius: 6px; }
+.views-open:hover { background: var(--page); }
+.views-name { font-weight: 600; }
+.views-act { background: none; border: 1px solid var(--border); border-radius: 6px; color: var(--text-secondary); font: inherit; font-size: 12px; padding: 3px 8px; cursor: pointer; }
+.views-act:hover { color: var(--text-primary); }
+
+.views-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 14px; }
+.views-actions button, .views-range button { font: inherit; font-size: 13px; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-1); color: var(--text-primary); cursor: pointer; }
+.views-actions button:disabled { opacity: 0.5; cursor: default; }
+.views-primary { background: var(--r0) !important; border-color: var(--r0) !important; color: #fff !important; }
+
+.views-form h3 { margin: 14px 0 6px; font-size: 13px; }
+.views-field { display: inline-flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--text-secondary); }
+.views-field input { font: inherit; font-size: 14px; color: var(--text-primary); background: var(--page); border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; min-width: 120px; }
+.views-field input[type='text'] { min-width: 320px; }
+
+.views-cols { list-style: none; margin: 0; padding: 0; }
+.views-cols li { display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 13px; }
+.views-cols .swatch { width: 10px; height: 10px; border-radius: 50%; background: var(--region, var(--r0)); flex: none; }
+.views-col-name { flex: 1; }
+.views-offset { font-size: 12px; color: var(--text-secondary); display: inline-flex; gap: 4px; align-items: center; }
+.views-offset select, .views-cols button { font: inherit; font-size: 12px; background: var(--surface-1); color: var(--text-primary); border: 1px solid var(--border); border-radius: 6px; padding: 2px 6px; cursor: pointer; }
+.views-cols button:disabled { opacity: 0.35; cursor: default; }
+
+.views-catalog { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; margin-top: 8px; }
+.views-catalog fieldset { border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px 8px; margin: 0; min-width: 0; }
+.views-catalog legend { font-size: 13px; font-weight: 600; padding: 0 4px; }
+.views-catalog legend .views-sub { display: block; margin-left: 0; }
+.views-check { display: flex; align-items: center; gap: 6px; font-size: 13px; padding: 2px 0; cursor: pointer; }
+.views-check .views-sub { margin-left: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.views-range { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 10px; }

@@ -132,6 +132,44 @@ pub struct RegionData {
     pub events: Vec<Event>,
 }
 
+/* ---------------- View ---------------- */
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ViewColumn {
+    pub topic: String,
+    pub region: String,
+    #[serde(default)]
+    pub importance_offset: i64,
+}
+
+/// 跨主題的欄位組合。內建的每主題一個（id = slug），其餘是使用者建的。
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct View {
+    pub id: String,
+    pub name: String,
+    pub min_year: Year,
+    pub max_year: Year,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub default_ppy: Option<f64>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub order: Option<f64>,
+    #[serde(default)]
+    pub builtin: bool,
+    pub columns: Vec<ViewColumn>,
+}
+
+/// 給欄位選擇器用：每個主題有哪些欄位、時間軸多長
+#[derive(Debug, Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct TopicCatalog {
+    pub slug: String,
+    pub meta: TopicMeta,
+    pub timeline: Timeline,
+    pub regions: Vec<RegionMeta>,
+}
+
 /* ---------------- 給前端的 payload（對齊 app/src/types.ts） ---------------- */
 
 #[derive(Debug, Clone, Serialize)]

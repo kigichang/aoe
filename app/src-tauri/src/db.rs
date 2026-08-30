@@ -1,12 +1,16 @@
 //! SQLite 存取。開發期每次啟動從 repo YAML 重建上游表；使用者表（之後的 migration）不動。
 
 use crate::model::*;
-use anyhow::{anyhow, Context, Result};
+use anyhow::{anyhow, bail, Context, Result};
 use rusqlite::{params, Connection, OptionalExtension};
 use rusqlite_migration::{Migrations, M};
 use std::path::Path;
 
-const MIGRATIONS: &[M<'static>] = &[M::up(include_str!("schema.sql"))];
+/// 只能往後加，不能改既有的一支 —— 使用者機器上的資料庫已經套過了。
+const MIGRATIONS: &[M<'static>] = &[
+    M::up(include_str!("migrations/001_upstream.sql")),
+    M::up(include_str!("migrations/002_views.sql")),
+];
 
 pub fn open(path: &Path) -> Result<Connection> {
     if let Some(dir) = path.parent() {
@@ -15,8 +19,12 @@ pub fn open(path: &Path) -> Result<Connection> {
     let mut conn = Connection::open(path).with_context(|| format!("開啟資料庫 {}", path.display()))?;
     conn.pragma_update(None, "journal_mode", "WAL")?;
     conn.pragma_update(None, "foreign_keys", "ON")?;
-    Migrations::new(MIGRATIONS.to_vec()).to_latest(&mut conn).context("資料庫 migration")?;
+    migrate(&mut conn)?;
     Ok(conn)
+}
+
+pub fn migrate(conn: &mut Connection) -> Result<()> {
+    Migrations::new(MIGRATIONS.to_vec()).to_latest(conn).context("資料庫 migration")
 }
 
 /// 整批換掉上游資料。一個 transaction：失敗就保留舊資料。
@@ -93,7 +101,110 @@ pub fn replace_upstream(conn: &mut Connection, topics: &[TopicData], version: &s
         "INSERT INTO bundle_meta (id, version, imported_at) VALUES (1, ?1, datetime('now'))",
         params![version],
     )?;
+
+    // 內建 View 跟著上游走：每個主題一個，id 就是 slug。已不存在的主題連 View 一起刪。
+    tx.execute("DELETE FROM views WHERE builtin = 1", [])?;
+    for t in topics {
+        tx.execute(
+            "INSERT INTO views (id, name, min_year, max_year, default_ppy, order_no, builtin)
+             VALUES (?1, ?2, ?3, ?4, ?5, ?6, 1)",
+            params![t.slug, t.meta.name, t.timeline.min_year, t.timeline.max_year, t.meta.default_ppy, t.meta.order],
+        )?;
+        for (i, r) in t.regions.iter().enumerate() {
+            tx.execute(
+                "INSERT INTO view_columns (view_id, order_no, topic, region) VALUES (?1, ?2, ?3, ?4)",
+                params![t.slug, i as i64, t.slug, r.meta.id],
+            )?;
+        }
+    }
     tx.commit()?;
+    Ok(())
+}
+
+/* ---------------- View ---------------- */
+
+pub fn views_all(conn: &Connection) -> Result<Vec<View>> {
+    let mut st = conn.prepare(
+        "SELECT id, name, min_year, max_year, default_ppy, order_no, builtin FROM views
+         ORDER BY builtin DESC, order_no IS NULL, order_no, name",
+    )?;
+    let mut views: Vec<View> = st
+        .query_map([], |r| {
+            Ok(View {
+                id: r.get(0)?,
+                name: r.get(1)?,
+                min_year: r.get(2)?,
+                max_year: r.get(3)?,
+                default_ppy: r.get(4)?,
+                order: r.get(5)?,
+                builtin: r.get::<_, i64>(6)? != 0,
+                columns: Vec::new(),
+            })
+        })?
+        .collect::<rusqlite::Result<_>>()?;
+    let mut cst = conn.prepare(
+        "SELECT topic, region, importance_offset FROM view_columns WHERE view_id = ?1 ORDER BY order_no",
+    )?;
+    for v in &mut views {
+        v.columns = cst
+            .query_map([&v.id], |r| {
+                Ok(ViewColumn { topic: r.get(0)?, region: r.get(1)?, importance_offset: r.get(2)? })
+            })?
+            .collect::<rusqlite::Result<_>>()?;
+    }
+    Ok(views)
+}
+
+pub fn view_get(conn: &Connection, id: &str) -> Result<Option<View>> {
+    Ok(views_all(conn)?.into_iter().find(|v| v.id == id))
+}
+
+/// 新增或整個覆寫（欄位清單一併重寫）。內建的不給改。
+pub fn view_save(conn: &mut Connection, v: &View) -> Result<()> {
+    if let Some(existing) = view_get(conn, &v.id)? {
+        if existing.builtin {
+            bail!("內建的 View「{}」不能修改，請另存成新的組合。", existing.name);
+        }
+    }
+    if v.columns.is_empty() {
+        bail!("至少要有一個欄位。");
+    }
+    if v.max_year <= v.min_year {
+        bail!("年份範圍的上限必須大於下限。");
+    }
+    let tx = conn.transaction()?;
+    tx.execute(
+        "INSERT INTO views (id, name, min_year, max_year, default_ppy, order_no, builtin)
+         VALUES (?1, ?2, ?3, ?4, ?5, ?6, 0)
+         ON CONFLICT(id) DO UPDATE SET name = excluded.name, min_year = excluded.min_year,
+           max_year = excluded.max_year, default_ppy = excluded.default_ppy,
+           order_no = excluded.order_no, updated_at = datetime('now')",
+        params![v.id, v.name, v.min_year, v.max_year, v.default_ppy, v.order],
+    )?;
+    tx.execute("DELETE FROM view_columns WHERE view_id = ?1", [&v.id])?;
+    for (i, c) in v.columns.iter().enumerate() {
+        let exists: bool = tx.query_row(
+            "SELECT 1 FROM regions WHERE topic = ?1 AND id = ?2",
+            params![c.topic, c.region],
+            |_| Ok(true),
+        ).optional()?.unwrap_or(false);
+        if !exists {
+            bail!("欄位 {}/{} 不存在。", c.topic, c.region);
+        }
+        tx.execute(
+            "INSERT INTO view_columns (view_id, order_no, topic, region, importance_offset) VALUES (?1, ?2, ?3, ?4, ?5)",
+            params![v.id, i as i64, c.topic, c.region, c.importance_offset.clamp(-2, 2)],
+        )?;
+    }
+    tx.commit()?;
+    Ok(())
+}
+
+pub fn view_delete(conn: &Connection, id: &str) -> Result<()> {
+    let n = conn.execute("DELETE FROM views WHERE id = ?1 AND builtin = 0", [id])?;
+    if n == 0 {
+        bail!("找不到可刪除的 View「{id}」（內建的不能刪）。");
+    }
     Ok(())
 }
 

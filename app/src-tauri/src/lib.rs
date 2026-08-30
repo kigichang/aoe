@@ -43,7 +43,14 @@ pub fn run() {
             app.manage(AppState { db: Mutex::new(conn), topics_dir: dir });
             Ok(())
         })
-        .invoke_handler(tauri::generate_handler![commands::get_view_payload, commands::reload_from_repo])
+        .invoke_handler(tauri::generate_handler![
+            commands::get_view_payload,
+            commands::list_views,
+            commands::save_view,
+            commands::delete_view,
+            commands::list_topic_catalog,
+            commands::reload_from_repo
+        ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
