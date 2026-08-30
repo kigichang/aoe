@@ -244,7 +244,8 @@ Phase 1 的 PR 進 `main`；其餘在 `app` 分支。
 
 - [x] Phase 0 骨架（2026-08-29）：`tauri dev` 可啟動，Rust 從 repo YAML 載入 8 主題／3,216 則事件／282 段時期入 SQLite，`get_view_payload` 有 `cargo test` 覆蓋；`vite build` 產物不含任何 YAML（shim 生效，主 chunk 296KB）。
 - [x] Phase 1 網站擴充點（2026-08-29，分支 `web/extension-points`，已併入 app，尚未進 main）：`validate.ts` 抽出、`AppProps`（mastheadExtra／toolbarExtra／detailExtra／virtualize）、`RegionColumn.viewport` 直接實作剔除。桌面版 `main.tsx` 開 `virtualize`，shim 用 `validate.ts` 重跑語意檢查。實測跳轉 1945 後畫面完整。
-- [ ] Phase 2 View
+- [x] Phase 2 View（2026-08-30）：migration 002、跨主題 payload 合併（類別／事件 id 加主題前綴、範圍外計數進副標、跨界時期夾住、每欄 offset）、「組合視圖」對話框。實測 world/china + science/physical + art/music、範圍 1500–2026：三欄各自的時期色帶、18 個帶主題後綴的類別 chip、詳情面板與同時期清單都正常。
+  - 已知可改善：跨主題時類別 chip 一列擠 18 顆（每主題 6 顆），之後可依主題分組或收成下拉。
 - [ ] Phase 3 使用者事件
 - [ ] Phase 4 Tag 與關聯
 - [ ] Phase 5 題庫
@@ -262,4 +263,5 @@ Phase 1 的 PR 進 `main`；其餘在 `app` 分支。
 - 資料庫在 `~/Library/Application Support/tw.kigi.aoe/aoe.sqlite`（Windows 是 `%APPDATA%\tw.kigi.aoe\`）。
 - macOS 上 `screencapture` 要給終端機螢幕錄製權限才能自動截圖驗畫面。
 - `app/index.html` 曾被根目錄 `.gitignore` 的 `/*/index.html` 擋掉沒進 commit，已加 `!/app/index.html` 例外。
+- 自動化測試打字會被中文輸入法吃掉，改用 `pbcopy` + ⌘V 貼上；Esc 會先關對話框（Esc 協定）。
 - 字型仍走 Google Fonts（CSP 已放行）；離線退回系統字型。打包前內嵌（Phase 7）。
