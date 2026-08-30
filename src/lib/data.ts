@@ -16,6 +16,13 @@ import {
   type TopicMeta,
 } from './schema'
 import { TOPIC_SLUG } from './topic'
+import {
+  assertActualYearBeforeMinYear,
+  assertInRange,
+  assertKnownCategory,
+  assertNoOverlap,
+  assertUniqueIds,
+} from './validate'
 
 /**
  * 資料全部用 glob 載入，所以**新增一個主題或一個欄位都不必回來改這支程式**：
@@ -270,95 +277,8 @@ function byRegion<T>(files: Record<string, unknown>, schema: z.ZodType<T>) {
 const periodsByRegion = byRegion<Period>(periodFiles, periodSchema)
 const eventsByRegion = byRegion<HistEvent>(eventFiles, eventSchema)
 
-function assertUniqueIds(items: { id: string }[], where: string) {
-  const seen = new Set<string>()
-  for (const item of items) {
-    if (seen.has(item.id)) throw new Error(`${where}：id 重複 "${item.id}"`)
-    seen.add(item.id)
-  }
-}
-
-/** 同一條 track 上的時期不可重疊，否則背景色帶會互相蓋掉。 */
-function assertNoOverlap(periods: Period[], where: string) {
-  const byTrack = new Map<number, Period[]>()
-  for (const p of periods) {
-    const list = byTrack.get(p.track) ?? []
-    list.push(p)
-    byTrack.set(p.track, list)
-  }
-  for (const [track, list] of byTrack) {
-    const sorted = [...list].sort((a, b) => a.start - b.start)
-    for (let i = 1; i < sorted.length; i++) {
-      const prev = sorted[i - 1]
-      const cur = sorted[i]
-      if (cur.start <= prev.end) {
-        throw new Error(
-          `${where} track ${track}：時期重疊 — "${prev.name}"(…${prev.end}) 與 "${cur.name}"(${cur.start}…)。` +
-            `請改用不同的 track。`,
-        )
-      }
-    }
-  }
-}
-
-/**
- * 事件與時期都必須落在時間軸的上下界之內。
- *
- * 沒有這道防護時，超出範圍的資料會被算成負的 y 座標、畫到畫布外面 ——
- * **不報錯、主控台乾淨、欄位標題的「N 則」還照算**，只是讀者永遠看不到它。
- * 實測一則 `year: -5000` 的事件會落在 `top: -1211px`，完全無聲無息。
- * 這跟 assertNoOverlap 是同一種東西：寧可載入期整片白，也不要靜默掉資料。
- */
-function assertInRange(items: { id: string; from: number; to: number }[], where: string) {
-  const { minYear, maxYear } = TIMELINE
-  for (const { id, from, to } of items) {
-    if (from < minYear || to > maxYear) {
-      throw new Error(
-        `${where}："${id}" 的年份 ${from}…${to} 超出時間軸範圍 ${minYear}…${maxYear}。` +
-          `請修正資料，或調整 src/topics/${TOPIC_ID}/timeline.yaml 的上下界。`,
-      )
-    }
-  }
-}
-
-/**
- * `actualYear`（真實估計年代）只有在事件真的被時間軸起點截斷時才有意義，
- * 也就是必須早於 `MIN_YEAR`。`displayYear()` 只要看到 `actualYear` 就會
- * 拿它取代 `year` 印在畫面上，但圖釘的 y 座標永遠是照 `year` 算的 ——
- * 沒有這道防護的話，日後有人手滑填了一個不早於起點的 `actualYear`
- * （例如 -2000），圖釘會畫在 `year`（-3000）的位置，文字卻印著 -2000，
- * 兩者對不上而且不會有任何報錯，比截斷本身更誤導。
- */
-function assertActualYearBeforeMinYear(events: HistEvent[], where: string) {
-  const { minYear } = TIMELINE
-  for (const e of events) {
-    if (e.actualYear !== undefined && e.actualYear >= minYear) {
-      throw new Error(
-        `${where}："${e.id}" 的 actualYear (${e.actualYear}) 沒有早於時間軸起點 ` +
-          `${minYear}，不需要（或不應該）填這個欄位。`,
-      )
-    }
-  }
-}
-
-/**
- * 事件的 category 必須在當前主題的類別表裡。
- *
- * 類別是主題自訂的，schema 那邊只能驗到 string，所以合法性在這裡擋。
- * 沒有這道防護的話 `CATEGORIES[event.category]` 會是 undefined，
- * 在 `EventMark` 讀 `.glyph` 時才炸，而且訊息完全看不出是哪一筆資料的問題。
- */
-function assertKnownCategory(events: HistEvent[], where: string) {
-  for (const e of events) {
-    if (!CATEGORIES[e.category]) {
-      throw new Error(
-        `${where}："${e.id}" 的類別 "${e.category}" 不存在。` +
-          `\n主題 "${TOPIC_ID}" 可用的類別：${CATEGORY_IDS.join('、')}` +
-          `\n（要新增類別請編輯 src/topics/${TOPIC_ID}/categories.yaml）`,
-      )
-    }
-  }
-}
+// 六道語意檢查（id 唯一、時期不重疊、範圍內、actualYear、類別存在）在 validate.ts，
+// 抽成純函式是為了讓桌面版與打包工具跑同一套，不是各寫一份。
 
 export const REGIONS: Region[] = parse(regionSchema, regionEntry[1], regionEntry[0])
   .sort((a, b) => a.order - b.order)
@@ -369,15 +289,19 @@ export const REGIONS: Region[] = parse(regionSchema, regionEntry[1], regionEntry
     assertUniqueIds(periods, `${where}/periods.yaml`)
     assertUniqueIds(events, `${where}/events.yaml`)
     assertNoOverlap(periods, where)
-    assertKnownCategory(events, `${where}/events.yaml`)
-    assertActualYearBeforeMinYear(events, `${where}/events.yaml`)
+    assertKnownCategory(events, CATEGORIES, `${where}/events.yaml`, TOPIC_ID)
+    assertActualYearBeforeMinYear(events, TIMELINE, `${where}/events.yaml`)
     assertInRange(
       periods.map((p) => ({ id: p.id, from: p.start, to: p.end })),
+      TIMELINE,
       `${where}/periods.yaml`,
+      TOPIC_ID,
     )
     assertInRange(
       events.map((e) => ({ id: e.id, from: e.year, to: e.endYear ?? e.year })),
+      TIMELINE,
       `${where}/events.yaml`,
+      TOPIC_ID,
     )
     return {
       ...meta,

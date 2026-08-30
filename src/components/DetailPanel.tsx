@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, type ReactNode } from 'react'
 import { CATEGORIES } from '../lib/data'
 import type { HistEvent, Region } from '../lib/schema'
 import { displayYear, fmtRange } from '../lib/scale'
@@ -12,9 +12,15 @@ interface Props {
   concurrent: { region: Region; slot: number; events: HistEvent[]; nearestIds: Set<string> }[]
   onClose: () => void
   onSelect: (id: string) => void
+  /**
+   * 出處之後、同時期之前的額外區塊（桌面版放 Tag、關聯、相關題目）。
+   * 不傳就跟現在一樣。放在同時期之前是因為那些是「這一則自己的東西」，
+   * 同時期則是跨欄的對照，順序上先講自己再講別人。
+   */
+  extra?: ReactNode
 }
 
-export function DetailPanel({ event, region, slot, concurrent, onClose, onSelect }: Props) {
+export function DetailPanel({ event, region, slot, concurrent, onClose, onSelect, extra }: Props) {
   const detailRef = useRef<HTMLElement>(null)
 
   // 換一則事件時面板整個內容都變了，捲動位置卻是舊的 —— 尤其從「同時期」清單
@@ -93,6 +99,8 @@ export function DetailPanel({ event, region, slot, concurrent, onClose, onSelect
             </ul>
           </div>
         )}
+
+        {extra}
 
         {concurrent.length > 0 && (
           <div className="detail-concurrent">
