@@ -462,7 +462,15 @@ pub async fn sync_check(state: State<'_, AppState>) -> Result<SyncCheck, String>
         if !r.status().is_success() {
             bail!("{url} 回應 {}", r.status());
         }
-        Ok::<_, anyhow::Error>(r.json::<Manifest>().await.context("manifest.json 格式")?)
+        // **200 不代表檔案在。** 站台掛在 Cloudflare Pages，未知路徑回的是
+        // 200 + index.html（不是 404）。少了這道檢查，錯誤訊息會是 serde 的
+        // 「expected value at line 1」，看起來像 manifest 壞掉，而不是根本沒部署。
+        let ct = r.headers().get(reqwest::header::CONTENT_TYPE).and_then(|v| v.to_str().ok()).unwrap_or("").to_string();
+        let body = r.text().await.context("讀取 manifest.json")?;
+        if !ct.contains("json") && body.trim_start().starts_with('<') {
+            bail!("{url} 回的是網頁不是 JSON（{ct}）——這個位址上多半還沒有部署資料 bundle。");
+        }
+        Ok::<_, anyhow::Error>(serde_json::from_str::<Manifest>(&body).context("manifest.json 格式")?)
     })
     .await
     .map_err(err)?;
