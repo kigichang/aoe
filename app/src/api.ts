@@ -1,5 +1,19 @@
 import { invoke } from '@tauri-apps/api/core'
-import type { EventHit, EventLink, LinkInput, Tag, TagGroup, TopicCatalog, UserEvent, View, ViewPayload } from './types'
+import type {
+  EventHit,
+  EventLink,
+  LinkInput,
+  Question,
+  QuestionCard,
+  QuizStats,
+  ReviewState,
+  Tag,
+  TagGroup,
+  TopicCatalog,
+  UserEvent,
+  View,
+  ViewPayload,
+} from './types'
 
 /** 與 src-tauri/src/commands.rs 一對一。 */
 export const api = {
@@ -30,6 +44,17 @@ export const api = {
   listLinks: (ref: string) => invoke<EventLink[]>('list_links', { ref }),
   saveLink: (link: LinkInput) => invoke<void>('save_link', { link }),
   deleteLink: (id: string) => invoke<void>('delete_link', { id }),
+
+  listQuestions: () => invoke<QuestionCard[]>('list_questions'),
+  getQuestion: (id: string) => invoke<QuestionCard | null>('get_question', { id }),
+  questionsForEvent: (ref: string) => invoke<QuestionCard[]>('questions_for_event', { ref }),
+  saveQuestion: (question: Question) => invoke<void>('save_question', { question }),
+  deleteQuestion: (id: string) => invoke<void>('delete_question', { id }),
+  importQuestions: (text: string, source: string) => invoke<number>('import_questions', { text, source }),
+  quizQueue: (wrongOnly: boolean, limit = 50) => invoke<QuestionCard[]>('quiz_queue', { wrongOnly, limit }),
+  gradeQuestion: (id: string, grade: number, elapsedMs?: number) =>
+    invoke<ReviewState>('grade_question', { id, grade, elapsedMs }),
+  quizStats: () => invoke<QuizStats>('quiz_stats'),
 }
 
 /** 切換 View = 整頁重載（見 bootstrap.ts） */

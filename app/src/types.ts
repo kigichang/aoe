@@ -132,3 +132,49 @@ export interface LinkInput {
 
 /** 關係類型的預設選項；kind 本身是自由字串 */
 export const LINK_KINDS = ['導致', '回應', '延續', '對照', '其他'] as const
+
+/* ---------------- 題庫，對齊 model.rs ---------------- */
+
+export type QuestionKind = 'choice' | 'year' | 'order' | 'flash'
+
+export interface Question {
+  id: string
+  kind: QuestionKind
+  prompt: string
+  /** choice：選項；order：正確順序的項目 */
+  options: string[]
+  /** choice：索引；year：{year, tolerance}；order：null；flash：答案文字 */
+  answer: unknown
+  explanation?: string
+  sourceFile?: string
+  events: { ref: string; title: string }[]
+}
+
+export interface ReviewState {
+  ease: number
+  intervalDays: number
+  dueAt?: string
+  reps: number
+  lapses: number
+  lastGrade?: number
+}
+
+export interface QuestionCard extends Question {
+  review: ReviewState
+  hits: EventHit[]
+  due: boolean
+}
+
+export interface QuizStats {
+  total: number
+  due: number
+  wrong: number
+  reviewedToday: number
+}
+
+export const QUESTION_KINDS: { id: QuestionKind; label: string }[] = [
+  { id: 'choice', label: '單選' },
+  { id: 'year', label: '年份' },
+  { id: 'order', label: '排序' },
+  { id: 'flash', label: '問答（自評）' },
+]

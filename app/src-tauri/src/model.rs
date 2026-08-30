@@ -231,6 +231,78 @@ pub struct LinkInput {
     pub note: Option<String>,
 }
 
+/* ---------------- 題庫 ---------------- */
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct QuestionEventRef {
+    #[serde(rename = "ref")]
+    pub r#ref: String,
+    /// 快照；讀出時以現況為準
+    #[serde(default)]
+    pub title: String,
+}
+
+/// 題目。`options`／`answer` 依 kind：
+/// - choice：options 是選項文字，answer 是正確選項的索引（number）
+/// - year：options 空，answer 是 {"year": N, "tolerance": M}
+/// - order：options 是**正確順序**的項目，answer 是 null（出題時打亂）
+/// - flash：options 空，answer 是答案文字（自評）
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct Question {
+    pub id: String,
+    pub kind: String,
+    pub prompt: String,
+    #[serde(default)]
+    pub options: Vec<String>,
+    pub answer: serde_json::Value,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub explanation: Option<String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub source_file: Option<String>,
+    #[serde(default)]
+    pub events: Vec<QuestionEventRef>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ReviewState {
+    pub ease: f64,
+    pub interval_days: i64,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub due_at: Option<String>,
+    pub reps: i64,
+    pub lapses: i64,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub last_grade: Option<i64>,
+}
+
+impl Default for ReviewState {
+    fn default() -> Self {
+        Self { ease: 2.5, interval_days: 0, due_at: None, reps: 0, lapses: 0, last_grade: None }
+    }
+}
+
+/// 題目 + 排程狀態 + 關聯事件的現況，給清單與練習用
+#[derive(Debug, Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct QuestionCard {
+    #[serde(flatten)]
+    pub question: Question,
+    pub review: ReviewState,
+    pub hits: Vec<EventHit>,
+    pub due: bool,
+}
+
+#[derive(Debug, Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct QuizStats {
+    pub total: i64,
+    pub due: i64,
+    pub wrong: i64,
+    pub reviewed_today: i64,
+}
+
 /* ---------------- View ---------------- */
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

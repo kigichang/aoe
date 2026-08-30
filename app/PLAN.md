@@ -252,7 +252,9 @@ Phase 1 的 PR 進 `main`；其餘在 `app` 分支。
 - [x] Phase 4 Tag 與關聯（2026-08-30）：migration 004（tag_groups／tags 有 parent／event_tags／event_links 都帶 title_snapshot）、成環防護、含子 tag 的查詢、全域事件搜尋（關聯目標可指到任何主題）、payload 加 `refs`（畫面 id → 全域 ref）。前端：詳情面板的 Tag（勾選＋快速新增）與關聯（搜尋→選目標→方向／類型／備註）、標題列「標籤」管理與依 tag 瀏覽、`gotoHit` 在同 View 內走 hash、跨 View 走 `?view=…#e=…`。實測：關原之戰貼 tag、關聯到大坂之陣、反向顯示、點擊跳轉、標籤面板列出事件。
   - 孤兒（ref 對不到事件）目前只在關聯／tag 清單裡以刪除線呈現，還沒有集中的孤兒檢查頁（Phase 7 同步時做）。
   - `window.prompt` 在 WKWebView 不可靠，取名改用對話框內的輸入列；`confirm` 可用。
-- [ ] Phase 5 題庫
+- [x] Phase 5 題庫（2026-08-30）：migration 005（questions／question_events／review_state／review_log）、四種題型（單選／年份±N／排序／問答自評）、`quiz.rs` 的 SM-2 與 CSV／Anki 純文字剖析（有單元測試）、匯入一筆錯整批不寫、今日到期／錯題本佇列、統計。前端：題庫面板（練習／題目／匯入）、題目編輯器（含相關事件搜尋）、練習流程（自動評分：對 4 錯 1；問答自評 1／3／5）、詳情面板「題目／出題」（預填年份題）。實測匯入 4 題 CSV → 練習：單選答錯進錯題本、年份 ±1 答對、排序題打亂顯示、統計 2／1／4／2。
+  - 題型比計畫多了 `flash`（問答自評），因為 Anki 匯入天然就是正面／背面。
+  - `.apkg` 未做；CSV 的 events 欄要填全域 ref（`topic/region/id`），匯入時補標題快照。
 - [ ] Phase 6 虛擬化
 - [ ] Phase 7 同步與打包
 

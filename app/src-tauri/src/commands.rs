@@ -375,6 +375,59 @@ pub fn delete_link(id: String, state: State<'_, AppState>) -> Result<(), String>
     db::link_delete(&conn, &id).map_err(err)
 }
 
+/* ---------------- 題庫 ---------------- */
+
+#[tauri::command]
+pub fn list_questions(state: State<'_, AppState>) -> Result<Vec<QuestionCard>, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::questions_all(&conn).map_err(err)
+}
+#[tauri::command]
+pub fn get_question(id: String, state: State<'_, AppState>) -> Result<Option<QuestionCard>, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::question_get(&conn, &id).map_err(err)
+}
+#[tauri::command]
+pub fn questions_for_event(r#ref: String, state: State<'_, AppState>) -> Result<Vec<QuestionCard>, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::questions_for_event(&conn, &r#ref).map_err(err)
+}
+#[tauri::command]
+pub fn save_question(question: Question, state: State<'_, AppState>) -> Result<(), String> {
+    let mut conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::question_save(&mut conn, &question).map_err(err)
+}
+#[tauri::command]
+pub fn delete_question(id: String, state: State<'_, AppState>) -> Result<(), String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::question_delete(&conn, &id).map_err(err)
+}
+/// 匯入 CSV 或 Anki 純文字；回傳匯入的題數。全部驗證過才寫入，一筆錯就整批不寫。
+#[tauri::command]
+pub fn import_questions(text: String, source: String, state: State<'_, AppState>) -> Result<usize, String> {
+    let qs = crate::quiz::parse_import(&text, &source).map_err(err)?;
+    let mut conn = state.db.lock().map_err(|e| e.to_string())?;
+    for q in &qs {
+        db::question_save(&mut conn, q).map_err(err)?;
+    }
+    Ok(qs.len())
+}
+#[tauri::command]
+pub fn quiz_queue(wrong_only: bool, limit: Option<usize>, state: State<'_, AppState>) -> Result<Vec<QuestionCard>, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::questions_queue(&conn, wrong_only, limit.unwrap_or(50)).map_err(err)
+}
+#[tauri::command]
+pub fn grade_question(id: String, grade: i64, elapsed_ms: Option<i64>, state: State<'_, AppState>) -> Result<ReviewState, String> {
+    let mut conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::grade_question(&mut conn, &id, grade, elapsed_ms).map_err(err)
+}
+#[tauri::command]
+pub fn quiz_stats(state: State<'_, AppState>) -> Result<QuizStats, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::quiz_stats(&conn).map_err(err)
+}
+
 /// 開發期：從 repo 的 YAML 重新載入上游資料
 #[tauri::command]
 pub fn reload_from_repo(state: State<'_, AppState>) -> Result<usize, String> {
@@ -529,6 +582,34 @@ mod tests {
         assert!(db::user_event_get(&conn, "user/test-1").unwrap().is_none());
         let ls = db::links_of(&conn, "world/china/cn-qin-unification").unwrap();
         assert!(ls[0].from.orphan && ls[0].from.title == "測試事件");
+
+        // 題庫：存題、掛事件、佇列、評分、錯題本、統計
+        let q = Question {
+            id: "q1".into(),
+            kind: "choice".into(),
+            prompt: "秦滅六國是哪一年？".into(),
+            options: vec!["-221".into(), "-206".into()],
+            answer: serde_json::json!(0),
+            explanation: None,
+            source_file: None,
+            events: vec![QuestionEventRef { r#ref: "world/china/cn-qin-unification".into(), title: String::new() }],
+        };
+        db::question_save(&mut conn, &q).unwrap();
+        let c = db::question_get(&conn, "q1").unwrap().unwrap();
+        assert!(c.due && c.hits[0].event_id == "cn-qin-unification" && !c.question.events[0].title.is_empty());
+        assert_eq!(db::questions_for_event(&conn, "world/china/cn-qin-unification").unwrap().len(), 1);
+        assert_eq!(db::questions_queue(&conn, false, 10).unwrap().len(), 1);
+        let r = db::grade_question(&mut conn, "q1", 5, Some(1200)).unwrap();
+        assert_eq!((r.reps, r.interval_days), (1, 1));
+        assert_eq!(db::questions_queue(&conn, false, 10).unwrap().len(), 0, "評分後明天才到期");
+        assert_eq!(db::questions_queue(&conn, true, 10).unwrap().len(), 0);
+        db::grade_question(&mut conn, "q1", 1, None).unwrap();
+        assert_eq!(db::questions_queue(&conn, true, 10).unwrap().len(), 1, "答錯進錯題本");
+        let st = db::quiz_stats(&conn).unwrap();
+        assert_eq!((st.total, st.wrong, st.reviewed_today), (1, 1, 1));
+        let mut bad = q.clone();
+        bad.answer = serde_json::json!(7);
+        assert!(db::question_save(&mut conn, &bad).is_err());
 
         // 內建不能刪、不能改
         assert!(db::view_delete(&conn, "world").is_err());

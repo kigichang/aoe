@@ -9,6 +9,9 @@ import { EventEditor } from './editor/EventEditor'
 import { ViewsOverlay } from './views/ViewsOverlay'
 import { EventExtras } from './tags/EventExtras'
 import { TagsOverlay } from './tags/TagsOverlay'
+import { QuizOverlay } from './quiz/QuizOverlay'
+import { EventQuestions } from './quiz/EventQuestions'
+import type { Question } from './types'
 import { USER_EVENT_PREFIX } from './types'
 
 /**
@@ -28,6 +31,8 @@ function Desktop() {
   const [viewsOpen, setViewsOpen] = useState(false)
   const [tagsOpen, setTagsOpen] = useState(false)
   const closeTags = useCallback(() => setTagsOpen(false), [])
+  const [quiz, setQuiz] = useState<{ edit?: Question } | null>(null)
+  const closeQuiz = useCallback(() => setQuiz(null), [])
   const [editor, setEditor] = useState<{ editRef?: string } | null>(null)
   const closeEditor = useCallback(() => setEditor(null), [])
   const closeViews = useCallback(() => setViewsOpen(false), [])
@@ -49,6 +54,15 @@ function Desktop() {
               aria-label="新增自訂事件"
             >
               <span className="btn-label">＋ 事件</span>
+            </button>
+            <button
+              type="button"
+              className="theme-toggle"
+              onClick={() => setQuiz({})}
+              title="題庫與錯題本"
+              aria-label="題庫與錯題本"
+            >
+              <span className="btn-label">題庫</span>
             </button>
             <button
               type="button"
@@ -82,11 +96,13 @@ function Desktop() {
             )}
             {/* key 讓換一則事件時整個區塊重新載入，不沿用上一則的 tag／關聯 */}
             <EventExtras key={e.id} event={e} />
+            <EventQuestions key={`q-${e.id}`} event={e} onEdit={(q) => setQuiz({ edit: q })} />
           </>
         )}
       />
       {viewsOpen && <ViewsOverlay currentId={TOPIC_ID} onClose={closeViews} />}
       {tagsOpen && <TagsOverlay onClose={closeTags} />}
+      {quiz && <QuizOverlay initialEdit={quiz.edit} onClose={closeQuiz} />}
       {editor && (
         <EventEditor editRef={editor.editRef} initialPlacement={placement} onClose={closeEditor} />
       )}

@@ -2,6 +2,7 @@ mod commands;
 mod db;
 mod loader;
 mod model;
+mod quiz;
 
 use std::path::PathBuf;
 use std::sync::Mutex;
@@ -69,6 +70,15 @@ pub fn run() {
             commands::list_links,
             commands::save_link,
             commands::delete_link,
+            commands::list_questions,
+            commands::get_question,
+            commands::questions_for_event,
+            commands::save_question,
+            commands::delete_question,
+            commands::import_questions,
+            commands::quiz_queue,
+            commands::grade_question,
+            commands::quiz_stats,
             commands::reload_from_repo
         ])
         .run(tauri::generate_context!())

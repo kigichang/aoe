@@ -12,6 +12,7 @@ const MIGRATIONS: &[M<'static>] = &[
     M::up(include_str!("migrations/002_views.sql")),
     M::up(include_str!("migrations/003_user_events.sql")),
     M::up(include_str!("migrations/004_tags_links.sql")),
+    M::up(include_str!("migrations/005_quiz.sql")),
 ];
 
 pub fn open(path: &Path) -> Result<Connection> {
@@ -722,4 +723,189 @@ pub fn link_save(conn: &Connection, l: &LinkInput) -> Result<()> {
 pub fn link_delete(conn: &Connection, id: &str) -> Result<()> {
     conn.execute("DELETE FROM event_links WHERE id = ?1", [id])?;
     Ok(())
+}
+
+/* ---------------- 題庫 ---------------- */
+
+fn question_from_row(r: &rusqlite::Row) -> rusqlite::Result<Question> {
+    let options: String = r.get("options_json")?;
+    let answer: String = r.get("answer_json")?;
+    Ok(Question {
+        id: r.get("id")?,
+        kind: r.get("kind")?,
+        prompt: r.get("prompt")?,
+        options: serde_json::from_str(&options).unwrap_or_default(),
+        answer: serde_json::from_str(&answer).unwrap_or(serde_json::Value::Null),
+        explanation: r.get("explanation")?,
+        source_file: r.get("source_file")?,
+        events: Vec::new(),
+    })
+}
+
+fn review_of(conn: &Connection, id: &str) -> Result<ReviewState> {
+    Ok(conn
+        .query_row(
+            "SELECT ease, interval_days, due_at, reps, lapses, last_grade FROM review_state WHERE question_id = ?1",
+            [id],
+            |r| {
+                Ok(ReviewState {
+                    ease: r.get(0)?,
+                    interval_days: r.get(1)?,
+                    due_at: r.get(2)?,
+                    reps: r.get(3)?,
+                    lapses: r.get(4)?,
+                    last_grade: r.get(5)?,
+                })
+            },
+        )
+        .optional()?
+        .unwrap_or_default())
+}
+
+fn card_of(conn: &Connection, mut q: Question) -> Result<QuestionCard> {
+    let mut st = conn.prepare("SELECT event_ref, title_snapshot FROM question_events WHERE question_id = ?1")?;
+    let rows: Vec<(String, String)> = st.query_map([&q.id], |r| Ok((r.get(0)?, r.get(1)?)))?.collect::<rusqlite::Result<_>>()?;
+    let mut hits = Vec::new();
+    for (r#ref, snap) in rows {
+        let h = resolve_hit(conn, &r#ref, &snap)?;
+        q.events.push(QuestionEventRef { r#ref: h.r#ref.clone(), title: h.title.clone() });
+        hits.push(h);
+    }
+    let review = review_of(conn, &q.id)?;
+    let due = match &review.due_at {
+        None => true,
+        Some(d) => d.as_str() <= now_str().as_str(),
+    };
+    Ok(QuestionCard { question: q, review, hits, due })
+}
+
+fn now_str() -> String {
+    // 跟 SQLite 的 datetime('now') 同格式（UTC）
+    let secs = std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH).map(|d| d.as_secs()).unwrap_or(0) as i64;
+    fmt_utc(secs)
+}
+
+fn fmt_utc(secs: i64) -> String {
+    // 簡單的 civil-from-days（Howard Hinnant），避免拉 chrono
+    let days = secs.div_euclid(86400);
+    let rem = secs.rem_euclid(86400);
+    let z = days + 719468;
+    let era = z.div_euclid(146097);
+    let doe = z - era * 146097;
+    let yoe = (doe - doe / 1460 + doe / 36524 - doe / 146096) / 365;
+    let y = yoe + era * 400;
+    let doy = doe - (365 * yoe + yoe / 4 - yoe / 100);
+    let mp = (5 * doy + 2) / 153;
+    let d = doy - (153 * mp + 2) / 5 + 1;
+    let m = if mp < 10 { mp + 3 } else { mp - 9 };
+    let y = if m <= 2 { y + 1 } else { y };
+    format!("{y:04}-{m:02}-{d:02} {:02}:{:02}:{:02}", rem / 3600, (rem % 3600) / 60, rem % 60)
+}
+
+pub fn questions_all(conn: &Connection) -> Result<Vec<QuestionCard>> {
+    let mut st = conn.prepare("SELECT * FROM questions ORDER BY created_at DESC")?;
+    let qs: Vec<Question> = st.query_map([], question_from_row)?.collect::<rusqlite::Result<_>>()?;
+    qs.into_iter().map(|q| card_of(conn, q)).collect()
+}
+
+pub fn question_get(conn: &Connection, id: &str) -> Result<Option<QuestionCard>> {
+    let mut st = conn.prepare("SELECT * FROM questions WHERE id = ?1")?;
+    let q: Option<Question> = st.query_map([id], question_from_row)?.next().transpose()?;
+    q.map(|q| card_of(conn, q)).transpose()
+}
+
+/// 掛在某一則事件上的題目
+pub fn questions_for_event(conn: &Connection, r#ref: &str) -> Result<Vec<QuestionCard>> {
+    let mut st = conn.prepare(
+        "SELECT q.* FROM questions q JOIN question_events e ON e.question_id = q.id WHERE e.event_ref = ?1 ORDER BY q.created_at",
+    )?;
+    let qs: Vec<Question> = st.query_map([r#ref], question_from_row)?.collect::<rusqlite::Result<_>>()?;
+    qs.into_iter().map(|q| card_of(conn, q)).collect()
+}
+
+pub fn question_save(conn: &mut Connection, q: &Question) -> Result<()> {
+    crate::quiz::validate_question(q)?;
+    let tx = conn.transaction()?;
+    tx.execute(
+        "INSERT INTO questions (id, kind, prompt, options_json, answer_json, explanation, source_file)
+         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)
+         ON CONFLICT(id) DO UPDATE SET kind = excluded.kind, prompt = excluded.prompt,
+           options_json = excluded.options_json, answer_json = excluded.answer_json,
+           explanation = excluded.explanation, updated_at = datetime('now')",
+        params![
+            q.id,
+            q.kind,
+            q.prompt.trim(),
+            serde_json::to_string(&q.options)?,
+            serde_json::to_string(&q.answer)?,
+            q.explanation.as_deref().map(str::trim).filter(|s| !s.is_empty()),
+            q.source_file,
+        ],
+    )?;
+    tx.execute("DELETE FROM question_events WHERE question_id = ?1", [&q.id])?;
+    for e in &q.events {
+        // 快照以現況為準；匯入的 CSV 只有 ref 沒標題，就在這裡補
+        let h = resolve_hit(&tx, &e.r#ref, &e.title)?;
+        tx.execute(
+            "INSERT OR IGNORE INTO question_events (question_id, event_ref, title_snapshot) VALUES (?1, ?2, ?3)",
+            params![q.id, e.r#ref, h.title],
+        )?;
+    }
+    tx.execute("INSERT OR IGNORE INTO review_state (question_id) VALUES (?1)", [&q.id])?;
+    tx.commit()?;
+    Ok(())
+}
+
+pub fn question_delete(conn: &Connection, id: &str) -> Result<()> {
+    conn.execute("DELETE FROM questions WHERE id = ?1", [id])?;
+    Ok(())
+}
+
+/// 到期的題目（含從沒複習過的），依到期時間排；錯題本 = lapses > 0
+pub fn questions_queue(conn: &Connection, wrong_only: bool, limit: usize) -> Result<Vec<QuestionCard>> {
+    let all = questions_all(conn)?;
+    let mut list: Vec<QuestionCard> = all
+        .into_iter()
+        .filter(|c| if wrong_only { c.review.lapses > 0 } else { c.due })
+        .collect();
+    list.sort_by(|a, b| a.review.due_at.cmp(&b.review.due_at));
+    list.truncate(limit);
+    Ok(list)
+}
+
+pub fn grade_question(conn: &mut Connection, id: &str, grade: i64, elapsed_ms: Option<i64>) -> Result<ReviewState> {
+    let cur = review_of(conn, id)?;
+    let next = crate::quiz::sm2(&cur, grade);
+    let secs = std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH).map(|d| d.as_secs()).unwrap_or(0) as i64;
+    let due_at = fmt_utc(secs + next.interval_days * 86400);
+    let tx = conn.transaction()?;
+    tx.execute(
+        "INSERT INTO review_state (question_id, ease, interval_days, due_at, reps, lapses, last_grade)
+         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)
+         ON CONFLICT(question_id) DO UPDATE SET ease = excluded.ease, interval_days = excluded.interval_days,
+           due_at = excluded.due_at, reps = excluded.reps, lapses = excluded.lapses, last_grade = excluded.last_grade",
+        params![id, next.ease, next.interval_days, due_at, next.reps, next.lapses, next.last_grade],
+    )?;
+    tx.execute(
+        "INSERT INTO review_log (question_id, grade, elapsed_ms) VALUES (?1, ?2, ?3)",
+        params![id, grade.clamp(0, 5), elapsed_ms],
+    )?;
+    tx.commit()?;
+    Ok(ReviewState { due_at: Some(due_at), ..next })
+}
+
+pub fn quiz_stats(conn: &Connection) -> Result<QuizStats> {
+    let all = questions_all(conn)?;
+    let today = now_str()[..10].to_string();
+    let reviewed_today: i64 = conn.query_row(
+        "SELECT COUNT(DISTINCT question_id) FROM review_log WHERE substr(reviewed_at, 1, 10) = ?1",
+        [today],
+        |r| r.get(0),
+    )?;
+    Ok(QuizStats {
+        total: all.len() as i64,
+        due: all.iter().filter(|c| c.due).count() as i64,
+        wrong: all.iter().filter(|c| c.review.lapses > 0).count() as i64,
+        reviewed_today,
+    })
 }
