@@ -150,15 +150,31 @@ export function EventEditor({ editRef, initialPlacement, onClose }: Props) {
                 />
               </label>
               <label className="views-field">
-                <span>重要度</span>
-                <select value={ev.importance} onChange={(e) => setEv({ ...ev, importance: Number(e.target.value) })}>
-                  {[5, 4, 3, 2, 1].map((n) => (
-                    <option key={n} value={n}>
-                      {n}
-                      {n === 5 ? '（全域視角就看得到）' : n === 1 ? '（放到最大才看得到）' : ''}
-                    </option>
-                  ))}
-                </select>
+                <span>
+                  重要度
+                  <span className="views-tip">
+                    <button type="button" className="views-tip-btn" aria-label="重要度說明" aria-describedby="importance-tip">
+                      ?
+                    </button>
+                    <span className="views-tip-body" id="importance-tip" role="tooltip">
+                      {/* 一行寫完：JSX 跨行的文字會被接成一個半形空白，中文句號後面會多出一格 */}
+                      決定事件在哪個縮放層級出現：5 全域視角就看得到，逐級放大才會釋出 4、3、2，1 要放到最大。同一欄給太多 5，縮小時就會擠成一團。
+                    </span>
+                  </span>
+                </span>
+                <input
+                  type="number"
+                  min={1}
+                  max={5}
+                  step={1}
+                  value={ev.importance}
+                  onChange={(e) => {
+                    // 一律夾在 1–5：清空欄位時 Number('') 會變 0，不夾住就會存進不合法的值
+                    const n = Math.round(Number(e.target.value))
+                    setEv({ ...ev, importance: Number.isFinite(n) ? Math.min(5, Math.max(1, n)) : ev.importance })
+                  }}
+                  required
+                />
               </label>
               <label className="views-check">
                 <input
