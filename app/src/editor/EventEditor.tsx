@@ -152,7 +152,7 @@ export function EventEditor({ editRef, initialPlacement, onClose }: Props) {
               <label className="views-field">
                 <span>
                   重要度
-                  <span className="views-tip">
+                  <span className="views-tip views-tip-end">
                     <button type="button" className="views-tip-btn" aria-label="重要度說明" aria-describedby="importance-tip">
                       ?
                     </button>

@@ -145,6 +145,15 @@ export function DataOverlay({ onClose }: { onClose: () => void }) {
 
         <h3>
           孤兒檢查
+          <span className="views-tip">
+            <button type="button" className="views-tip-btn" aria-label="孤兒檢查說明" aria-describedby="orphan-tip">
+              ?
+            </button>
+            <span className="views-tip-body" id="orphan-tip" role="tooltip">
+              {/* 一行寫完：JSX 跨行的文字會被接成一個半形空白，中文句號後面會多出一格 */}
+              你的 tag、關聯、題目、自訂事件的欄位都是用 ref 指向上游事件。更新資料時上游是整批重建，上游改了 id、刪了事件，或動了欄位／類別表，這些筆記就會指向不存在的東西。這裡把它們列出來，保留當時的標題快照，刪不刪由你決定。
+            </span>
+          </span>
           <span className="views-sub">{orphans.length ? `${orphans.length} 筆` : '沒有問題'}</span>
         </h3>
         {orphans.length > 0 && (
