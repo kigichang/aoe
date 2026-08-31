@@ -178,7 +178,18 @@ export function DataOverlay({ onClose }: { onClose: () => void }) {
           </>
         )}
 
-        <h3>App 版本</h3>
+        <h3>
+          App 版本
+          <span className="views-tip">
+            <button type="button" className="views-tip-btn" aria-label="App 版本說明" aria-describedby="appver-tip">
+              ?
+            </button>
+            <span className="views-tip-body" id="appver-tip" role="tooltip">
+              {/* 一行寫完：JSX 跨行的文字會被接成一個半形空白，中文句號後面會多出一格 */}
+              跟上面的「歷史資料」是兩條各走各的更新線：這裡換的是程式本身，上面換的是打包好的歷史資料。補幾則事件不必重發一次安裝檔，所以兩邊的版本號沒有關係。
+            </span>
+          </span>
+        </h3>
         <p className="data-info">
           目前 <b>{appVersion ?? '—'}</b>
           {update && update !== 'none' && <span className="views-sub">有新版 {update.version}</span>}

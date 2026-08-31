@@ -8,12 +8,15 @@
 
 /* 標籤旁的「?」與它的 tooltip。展開方向要看「?」在對話框的哪一側：.help 是
    overflow-y: auto，往任何一邊超出去都不會被裁掉，而是長出一條水平捲軸（實測過）。
-   預設往右長（靠左的標題用），靠右的欄位加 .views-tip-end 改成往左長。 */
+   預設往右上長（靠左的標題用），靠右的欄位加 .views-tip-end 改成往左長，
+   對話框最上緣的標題加 .views-tip-below 改成往下長 —— 往上會超出捲動內容的頂端，
+   那個方向沒得捲，只會被切掉。 */
 .views-tip { position: relative; display: inline-flex; margin-left: 6px; vertical-align: middle; }
 .views-range .views-tip-btn, .views-tip-btn { font: inherit; font-size: 11px; line-height: 1; width: 15px; height: 15px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--border); border-radius: 50%; background: var(--surface-1); color: var(--muted); cursor: help; }
 .views-tip-btn:hover, .views-tip-btn:focus-visible { color: var(--text-primary); }
 .views-tip-body { position: absolute; left: -8px; bottom: calc(100% + 7px); z-index: 2; width: min(260px, 70vw); padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-1); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22); color: var(--text-secondary); font-size: 12px; font-weight: 400; line-height: 1.6; text-align: left; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity 0.12s ease; }
 .views-tip-end .views-tip-body { left: auto; right: -6px; }
+.views-tip-below .views-tip-body { bottom: auto; top: calc(100% + 7px); }
 .views-tip:hover .views-tip-body, .views-tip:focus-within .views-tip-body { opacity: 1; visibility: visible; }
 .views-empty { color: var(--muted); font-size: 13px; padding: 6px 0; list-style: none; }
 

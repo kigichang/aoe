@@ -91,7 +91,18 @@ export function TagsOverlay({ onClose }: { onClose: () => void }) {
     <div className="help-backdrop" onClick={onClose}>
       <div className="help views-dialog tags-dialog" role="dialog" aria-modal="true" onClick={(e) => e.stopPropagation()}>
         <div className="help-head">
-          <h2>標籤</h2>
+          <h2>
+            標籤
+            <span className="views-tip views-tip-below">
+            <button type="button" className="views-tip-btn" aria-label="標籤說明" aria-describedby="tags-tip">
+              ?
+            </button>
+            <span className="views-tip-body" id="tags-tip" role="tooltip">
+              {/* 一行寫完：JSX 跨行的文字會被接成一個半形空白，中文句號後面會多出一格 */}
+              「分組」與「父層」是兩件事：分組是扁平的收納，只有根 tag 能選，子 tag 跟著父層走；父層是階層——用一個 tag 查事件時，會一併列出它的子 tag 打過的事件。
+            </span>
+          </span>
+          </h2>
           <button type="button" className="help-close" onClick={onClose} ref={closeRef} aria-label="關閉">
             <CloseIcon />
           </button>

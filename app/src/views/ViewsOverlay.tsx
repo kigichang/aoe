@@ -215,7 +215,18 @@ function ViewEditor({ catalog, initial, onCancel, onSave }: EditorProps) {
         />
       </label>
 
-      <h3>欄位（左到右）</h3>
+      <h3>
+        欄位（左到右）
+        <span className="views-tip views-tip-below">
+            <button type="button" className="views-tip-btn" aria-label="欄位說明" aria-describedby="view-cols-tip">
+              ?
+            </button>
+            <span className="views-tip-body" id="view-cols-tip" role="tooltip">
+              {/* 一行寫完：JSX 跨行的文字會被接成一個半形空白，中文句號後面會多出一格 */}
+              勾選要並排的欄位，順序就是畫面上的左右順序，也決定配色。「重要度 ±」把這一欄的分層門檻整體加減：各主題的 importance 是各自的尺規（台灣史的 5 是「台灣史上最重要」，世界史的 5 是「世界史上最重要」），跨主題並排時用它把兩邊拉齊。
+            </span>
+          </span>
+      </h3>
       {cols.length > VERIFIED_COLUMNS && (
         <p className="views-warn">超過 {VERIFIED_COLUMNS} 欄，相鄰欄的配色沒驗證過，色盲讀者可能分不開。</p>
       )}
@@ -270,7 +281,18 @@ function ViewEditor({ catalog, initial, onCancel, onSave }: EditorProps) {
         ))}
       </div>
 
-      <h3>時間軸</h3>
+      <h3>
+        時間軸
+        <span className="views-tip">
+            <button type="button" className="views-tip-btn" aria-label="時間軸說明" aria-describedby="view-axis-tip">
+              ?
+            </button>
+            <span className="views-tip-body" id="view-axis-tip" role="tooltip">
+              {/* 一行寫完：JSX 跨行的文字會被接成一個半形空白，中文句號後面會多出一格 */}
+              起迄決定這個視圖的軸畫多長，範圍外的事件不會出現。開場縮放是「一年佔幾個像素」：值越大事件攤得越開、讀得到的標題越多，但一個畫面看到的年數越少；留空就依跨度自動算。
+            </span>
+          </span>
+      </h3>
       <div className="views-range">
         <label className="views-field">
           <span>起</span>
