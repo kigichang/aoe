@@ -307,21 +307,6 @@ pub fn export_user_events(state: State<'_, AppState>) -> Result<Vec<String>, Str
 /* ---------------- Tag ---------------- */
 
 #[tauri::command]
-pub fn list_tag_groups(state: State<'_, AppState>) -> Result<Vec<TagGroup>, String> {
-    let conn = state.db.lock().map_err(|e| e.to_string())?;
-    db::tag_groups_all(&conn).map_err(err)
-}
-#[tauri::command]
-pub fn save_tag_group(group: TagGroup, state: State<'_, AppState>) -> Result<(), String> {
-    let conn = state.db.lock().map_err(|e| e.to_string())?;
-    db::tag_group_save(&conn, &group).map_err(err)
-}
-#[tauri::command]
-pub fn delete_tag_group(id: String, state: State<'_, AppState>) -> Result<(), String> {
-    let conn = state.db.lock().map_err(|e| e.to_string())?;
-    db::tag_group_delete(&conn, &id).map_err(err)
-}
-#[tauri::command]
 pub fn list_tags(state: State<'_, AppState>) -> Result<Vec<Tag>, String> {
     let conn = state.db.lock().map_err(|e| e.to_string())?;
     db::tags_all(&conn).map_err(err)
@@ -689,11 +674,10 @@ mod tests {
         assert_eq!(p.refs.get(first).map(String::as_str), Some(format!("world/china/{}", first.trim_start_matches("world:")).as_str()));
         assert_eq!(p.refs.get("user/test-1").map(String::as_str), Some("user/test-1"));
 
-        // Tag：分組、層級、打標、含子 tag 的查詢、成環防護
-        db::tag_group_save(&conn, &TagGroup { id: "g1".into(), name: "主題".into(), order: 0 }).unwrap();
-        db::tag_save(&conn, &Tag { id: "t1".into(), group_id: Some("g1".into()), parent_id: None, name: "科學革命".into(), color: None, order: 0, count: 0 }).unwrap();
-        db::tag_save(&conn, &Tag { id: "t2".into(), group_id: Some("g1".into()), parent_id: Some("t1".into()), name: "力學".into(), color: None, order: 0, count: 0 }).unwrap();
-        let cyc = Tag { id: "t1".into(), group_id: None, parent_id: Some("t2".into()), name: "科學革命".into(), color: None, order: 0, count: 0 };
+        // Tag：層級、打標、含子 tag 的查詢、成環防護
+        db::tag_save(&conn, &Tag { id: "t1".into(), parent_id: None, name: "科學革命".into(), color: None, order: 0, count: 0 }).unwrap();
+        db::tag_save(&conn, &Tag { id: "t2".into(), parent_id: Some("t1".into()), name: "力學".into(), color: None, order: 0, count: 0 }).unwrap();
+        let cyc = Tag { id: "t1".into(), parent_id: Some("t2".into()), name: "科學革命".into(), color: None, order: 0, count: 0 };
         assert!(db::tag_save(&conn, &cyc).is_err());
         db::event_tags_set(&mut conn, "world/china/cn-qin-unification", &["t2".into()], "秦滅六國").unwrap();
         db::event_tags_set(&mut conn, "user/test-1", &["t1".into()], "測試事件").unwrap();

@@ -1,15 +1,8 @@
--- Tag：有分組、可有父子層級。event_ref 指向上游事件（"{topic}/{region}/{id}"）或使用者事件
+-- Tag：可有父子層級。event_ref 指向上游事件（"{topic}/{region}/{id}"）或使用者事件
 -- （"user/…"），對上游刻意不設 FK —— 上游表每次同步整批重建。title_snapshot 讓 ref 失效
 --（上游改 id 或刪除）之後，孤兒檢查列出來時人還讀得懂。
-CREATE TABLE tag_groups (
-  id       TEXT PRIMARY KEY,
-  name     TEXT NOT NULL,
-  order_no INTEGER NOT NULL DEFAULT 0
-);
-
 CREATE TABLE tags (
   id        TEXT PRIMARY KEY,
-  group_id  TEXT REFERENCES tag_groups(id) ON DELETE SET NULL,
   parent_id TEXT REFERENCES tags(id) ON DELETE SET NULL,
   name      TEXT NOT NULL,
   color     TEXT,

@@ -12,7 +12,6 @@ import type {
   ReviewState,
   SyncCheck,
   Tag,
-  TagGroup,
   TopicCatalog,
   UserEvent,
   View,
@@ -33,9 +32,6 @@ export const api = {
   /** 回傳寫出的檔案路徑 */
   exportUserEvents: () => invoke<string[]>('export_user_events'),
 
-  listTagGroups: () => invoke<TagGroup[]>('list_tag_groups'),
-  saveTagGroup: (group: TagGroup) => invoke<void>('save_tag_group', { group }),
-  deleteTagGroup: (id: string) => invoke<void>('delete_tag_group', { id }),
   listTags: () => invoke<Tag[]>('list_tags'),
   saveTag: (tag: Tag) => invoke<void>('save_tag', { tag }),
   deleteTag: (id: string) => invoke<void>('delete_tag', { id }),

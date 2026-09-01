@@ -167,19 +167,9 @@ pub struct UserEvent {
 /* ---------------- Tag 與關聯 ---------------- */
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct TagGroup {
-    pub id: String,
-    pub name: String,
-    #[serde(default)]
-    pub order: i64,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Tag {
     pub id: String,
-    #[serde(default, skip_serializing_if = "Option::is_none")]
-    pub group_id: Option<String>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub parent_id: Option<String>,
     pub name: String,

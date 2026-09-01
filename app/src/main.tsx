@@ -79,8 +79,8 @@ function Desktop() {
               type="button"
               className="theme-toggle"
               onClick={() => setTagsOpen(true)}
-              title="標籤管理與瀏覽"
-              aria-label="標籤管理與瀏覽"
+              title="標籤管理"
+              aria-label="標籤管理"
             >
               <span className="btn-label">標籤</span>
             </button>

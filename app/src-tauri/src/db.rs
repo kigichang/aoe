@@ -467,45 +467,20 @@ pub fn user_event_delete(conn: &Connection, r#ref: &str) -> Result<()> {
 
 /* ---------------- Tag ---------------- */
 
-pub fn tag_groups_all(conn: &Connection) -> Result<Vec<TagGroup>> {
-    let mut st = conn.prepare("SELECT id, name, order_no FROM tag_groups ORDER BY order_no, name")?;
-    let rows = st.query_map([], |r| Ok(TagGroup { id: r.get(0)?, name: r.get(1)?, order: r.get(2)? }))?;
-    Ok(rows.collect::<rusqlite::Result<_>>()?)
-}
-
-pub fn tag_group_save(conn: &Connection, g: &TagGroup) -> Result<()> {
-    if g.name.trim().is_empty() {
-        bail!("分組名稱不能是空的");
-    }
-    conn.execute(
-        "INSERT INTO tag_groups (id, name, order_no) VALUES (?1, ?2, ?3)
-         ON CONFLICT(id) DO UPDATE SET name = excluded.name, order_no = excluded.order_no",
-        params![g.id, g.name.trim(), g.order],
-    )?;
-    Ok(())
-}
-
-/// 刪分組不刪底下的 tag（FK 是 SET NULL），tag 變成「未分組」
-pub fn tag_group_delete(conn: &Connection, id: &str) -> Result<()> {
-    conn.execute("DELETE FROM tag_groups WHERE id = ?1", [id])?;
-    Ok(())
-}
-
 pub fn tags_all(conn: &Connection) -> Result<Vec<Tag>> {
     let mut st = conn.prepare(
-        "SELECT t.id, t.group_id, t.parent_id, t.name, t.color, t.order_no,
+        "SELECT t.id, t.parent_id, t.name, t.color, t.order_no,
                 (SELECT COUNT(*) FROM event_tags e WHERE e.tag_id = t.id)
          FROM tags t ORDER BY t.order_no, t.name",
     )?;
     let rows = st.query_map([], |r| {
         Ok(Tag {
             id: r.get(0)?,
-            group_id: r.get(1)?,
-            parent_id: r.get(2)?,
-            name: r.get(3)?,
-            color: r.get(4)?,
-            order: r.get(5)?,
-            count: r.get(6)?,
+            parent_id: r.get(1)?,
+            name: r.get(2)?,
+            color: r.get(3)?,
+            order: r.get(4)?,
+            count: r.get(5)?,
         })
     })?;
     Ok(rows.collect::<rusqlite::Result<_>>()?)
@@ -529,10 +504,10 @@ pub fn tag_save(conn: &Connection, t: &Tag) -> Result<()> {
         }
     }
     conn.execute(
-        "INSERT INTO tags (id, group_id, parent_id, name, color, order_no) VALUES (?1, ?2, ?3, ?4, ?5, ?6)
-         ON CONFLICT(id) DO UPDATE SET group_id = excluded.group_id, parent_id = excluded.parent_id,
+        "INSERT INTO tags (id, parent_id, name, color, order_no) VALUES (?1, ?2, ?3, ?4, ?5)
+         ON CONFLICT(id) DO UPDATE SET parent_id = excluded.parent_id,
            name = excluded.name, color = excluded.color, order_no = excluded.order_no",
-        params![t.id, t.group_id, t.parent_id, t.name.trim(), t.color, t.order],
+        params![t.id, t.parent_id, t.name.trim(), t.color, t.order],
     )?;
     Ok(())
 }
@@ -1009,3 +984,4 @@ pub fn orphan_delete(conn: &Connection, kind: &str, key: &str) -> Result<()> {
     }
     Ok(())
 }
+

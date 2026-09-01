@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { fmtYear } from '@web/lib/scale'
 import type { HistEvent } from '@web/lib/schema'
 import { api, gotoHit, refOf } from '../api'
-import { LINK_KINDS, type EventHit, type EventLink, type Tag, type TagGroup } from '../types'
+import { LINK_KINDS, type EventHit, type EventLink, type Tag } from '../types'
 import { tagTree } from './tagTree'
 
 /**
@@ -22,14 +22,14 @@ export function EventExtras({ event }: { event: HistEvent }) {
 /* ---------------- Tag ---------------- */
 
 function TagsBlock({ eventRef, title }: { eventRef: string; title: string }) {
-  const [all, setAll] = useState<{ tags: Tag[]; groups: TagGroup[] } | null>(null)
+  const [all, setAll] = useState<Tag[] | null>(null)
   const [mine, setMine] = useState<string[]>([])
   const [editing, setEditing] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
   const load = useCallback(async () => {
-    const [tags, groups, ids] = await Promise.all([api.listTags(), api.listTagGroups(), api.getEventTags(eventRef)])
-    setAll({ tags, groups })
+    const [tags, ids] = await Promise.all([api.listTags(), api.getEventTags(eventRef)])
+    setAll(tags)
     setMine(ids)
   }, [eventRef])
 
@@ -43,7 +43,7 @@ function TagsBlock({ eventRef, title }: { eventRef: string; title: string }) {
     try {
       await api.setEventTags(eventRef, next, title)
       // 計數會變，重抓一次
-      setAll({ tags: await api.listTags(), groups: all?.groups ?? [] })
+      setAll(await api.listTags())
     } catch (e) {
       setError(String(e))
     }
@@ -61,7 +61,7 @@ function TagsBlock({ eventRef, title }: { eventRef: string; title: string }) {
   }
 
   if (!all) return null
-  const byId = new Map(all.tags.map((t) => [t.id, t]))
+  const byId = new Map(all.map((t) => [t.id, t]))
   const chips = mine.map((id) => byId.get(id)).filter((t): t is Tag => !!t)
 
   return (
@@ -83,19 +83,14 @@ function TagsBlock({ eventRef, title }: { eventRef: string; title: string }) {
       </div>
       {editing && (
         <div className="tag-picker">
-          {tagTree(all.tags, all.groups).map(({ group, nodes }) => (
-            <div key={group?.id ?? '_'}>
-              <h4>{group?.name ?? '未分組'}</h4>
-              {nodes.map(({ tag, depth }) => (
-                <label key={tag.id} className="views-check" style={{ paddingLeft: depth * 16 }}>
-                  <input type="checkbox" checked={mine.includes(tag.id)} onChange={() => toggle(tag.id)} />
-                  {tag.name}
-                  <span className="views-sub">{tag.count}</span>
-                </label>
-              ))}
-              {nodes.length === 0 && <p className="views-sub">（空）</p>}
-            </div>
+          {tagTree(all).map(({ tag, depth }) => (
+            <label key={tag.id} className="views-check" style={{ paddingLeft: depth * 16 }}>
+              <input type="checkbox" checked={mine.includes(tag.id)} onChange={() => toggle(tag.id)} />
+              {tag.name}
+              <span className="views-sub">{tag.count}</span>
+            </label>
           ))}
+          {all.length === 0 && <p className="views-sub">（還沒有 tag）</p>}
           <form
             className="tag-quick"
             onSubmit={(e) => {
@@ -106,7 +101,7 @@ function TagsBlock({ eventRef, title }: { eventRef: string; title: string }) {
               input.value = ''
             }}
           >
-            <input name="name" type="text" placeholder="新 tag 名稱（未分組）" />
+            <input name="name" type="text" placeholder="新 tag 名稱" />
             <button type="submit" className="views-act">
               ＋
             </button>

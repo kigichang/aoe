@@ -83,15 +83,8 @@ export const USER_EVENT_PREFIX = 'user/'
 
 /* ---------------- Tag 與關聯，對齊 model.rs ---------------- */
 
-export interface TagGroup {
-  id: string
-  name: string
-  order: number
-}
-
 export interface Tag {
   id: string
-  groupId?: string
   parentId?: string
   name: string
   color?: string

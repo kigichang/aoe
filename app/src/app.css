@@ -73,7 +73,6 @@
 .tag-chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .tag-chip { font-size: 12px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--tag, var(--border)); color: var(--text-primary); background: color-mix(in srgb, var(--tag, var(--muted)) 12%, transparent); }
 .tag-picker { margin-top: 8px; border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; max-height: 260px; overflow: auto; }
-.tag-picker h4 { margin: 6px 0 2px; font-size: 12px; color: var(--muted); }
 .tag-quick { display: flex; gap: 6px; margin-top: 8px; }
 .tag-quick input, .link-form input[type='text'] { flex: 1; font: inherit; font-size: 13px; color: var(--text-primary); background: var(--page); border: 1px solid var(--border); border-radius: 6px; padding: 4px 8px; min-width: 0; }
 .link-list { list-style: none; margin: 0; padding: 0; }
@@ -96,16 +95,10 @@
 .link-kind-row .views-primary { font: inherit; font-size: 13px; padding: 4px 10px; border-radius: 6px; border: 0; cursor: pointer; }
 
 /* 標籤管理 */
-.tags-dialog { max-width: 960px; }
-.tags-layout { display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; }
-.tags-section h4 { display: flex; align-items: center; gap: 6px; margin: 10px 0 4px; font-size: 13px; }
+.tags-dialog { max-width: 640px; }
 .tags-row { display: flex; align-items: center; gap: 4px; padding: 2px 0; font-size: 13px; }
-.tags-row.is-selected .tags-name { color: var(--r0); }
-.tags-name { flex: 1; min-width: 120px; text-align: left; background: none; border: 0; font: inherit; color: var(--text-primary); cursor: pointer; padding: 2px 4px; border-radius: 6px; }
-.tags-name:hover { background: var(--page); }
+.tags-name { flex: 1; min-width: 120px; padding: 2px 4px; }
 .tags-row select { font: inherit; font-size: 12px; max-width: 110px; background: var(--surface-1); color: var(--text-primary); border: 1px solid var(--border); border-radius: 6px; padding: 1px 4px; }
-.tags-hits h4 { margin: 10px 0 4px; font-size: 13px; }
-@media (max-width: 900px) { .tags-layout { grid-template-columns: 1fr; } }
 
 /* 題庫 */
 .quiz-dialog { max-width: 760px; }

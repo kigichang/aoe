@@ -7,7 +7,7 @@
 
 1. 跨主題並列：把不同主題的欄位（`world/china` + `science/physical` + `art/music`）放在同一條軸上。
 2. 使用者自行新增事件，一則事件可放到多個主題的欄位上。
-3. 事件加多組 Tag（有分組／層級）並建立明確的有向關聯。
+3. 事件加多組 Tag（有層級）並建立明確的有向關聯。
 4. 題庫：自行出題、匯入既有題庫檔、錯題本走間隔重複。
 
 使用者決定：**Tauri 2**（前端沿用現有 React/TS，後端 Rust）；桌面版的操作會比 Web 複雜；要一併考慮虛擬化。
@@ -89,7 +89,7 @@ app/
     api.ts                   invoke() 的型別封裝（與 Rust command 一對一）
     shims/{data,topic}.ts
     views/                   View 管理：欄位選擇器（主題→欄位）、範圍、offset
-    editor/                  事件編輯、placement、Tag 編輯（分組／層級）、關聯編輯
+    editor/                  事件編輯、placement、Tag 編輯（層級）、關聯編輯
     quiz/                    出題、練習、錯題本、匯入
     sync/                    資料版本檢查、下載進度、孤兒檢查結果
   src-tauri/
@@ -130,8 +130,7 @@ events      (ref PK, topic, region, id, year, end_year, title, category, importa
 ```
 user_events      (ref PK "user/{uuid}", year, end_year, title, desc, importance, legendary, sources_json, created_at, updated_at)
 event_placements (event_ref, topic, region, category)     -- category 掛 placement：每主題類別表不同
-tag_groups       (id PK, name, order_no)
-tags             (id PK, group_id, parent_id NULL, name, color)
+tags             (id PK, parent_id NULL, name, color)      -- 只有層級，沒有分組
 event_tags       (event_ref, tag_id, title_snapshot)
 event_links      (id PK, from_ref, to_ref, kind, note, title_snapshot_from, title_snapshot_to)
                   kind 自由字串，UI 預設：導致／回應／延續／對照
@@ -250,6 +249,14 @@ Phase 1 的 PR 進 `main`；其餘在 `app` 分支。
   - 跨主題 View 裡使用者事件的 id 不加主題前綴（ref 本身全域唯一，前端靠 `user/` 認它）。
   - 匯出還沒接 UI 按鈕，先留 command。
 - [x] Phase 4 Tag 與關聯（2026-08-30）：migration 004（tag_groups／tags 有 parent／event_tags／event_links 都帶 title_snapshot）、成環防護、含子 tag 的查詢、全域事件搜尋（關聯目標可指到任何主題）、payload 加 `refs`（畫面 id → 全域 ref）。前端：詳情面板的 Tag（勾選＋快速新增）與關聯（搜尋→選目標→方向／類型／備註）、標題列「標籤」管理與依 tag 瀏覽、`gotoHit` 在同 View 內走 hash、跨 View 走 `?view=…#e=…`。實測：關原之戰貼 tag、關聯到大坂之陣、反向顯示、點擊跳轉、標籤面板列出事件。
+  - ~~tag_groups（分組）~~：2026-09-01 移除。分組是扁平的收納、父層是階層，兩層收納對這個量的 tag
+    是多的；管理對話框也拿掉「點 tag 在右邊列出事件」那半邊（`events_with_tag` 留著，command 與 `api.ts`
+    仍是一對一）。**還沒發布給使用者，所以直接改 migration 004，不另開一支做搬遷**（使用者的決定），
+    開發機的 tag 資料清空重來。日後有人裝了就不能再這樣做。
+  - 那條「只能往後加」的規則若日後真的要破例做**重建表**的 migration：`rusqlite`（bundled）的
+    `foreign_keys` 預設是 **ON**，`DROP TABLE tags` 會經由 `event_tags` 的 `ON DELETE CASCADE`
+    把使用者貼過的 tag 安靜地清掉，而 migration 本身還是成功的。要在 `db::open()` 明著關掉 FK、
+    跑完再打開（PRAGMA 寫在 migration 的 SQL 裡不生效，那是在 transaction 內）。
   - 孤兒（ref 對不到事件）目前只在關聯／tag 清單裡以刪除線呈現，還沒有集中的孤兒檢查頁（Phase 7 同步時做）。
   - `window.prompt` 在 WKWebView 不可靠，取名改用對話框內的輸入列；`confirm` 可用。
 - [x] Phase 5 題庫（2026-08-30）：migration 005（questions／question_events／review_state／review_log）、四種題型（單選／年份±N／排序／問答自評）、`quiz.rs` 的 SM-2 與 CSV／Anki 純文字剖析（有單元測試）、匯入一筆錯整批不寫、今日到期／錯題本佇列、統計。前端：題庫面板（練習／題目／匯入）、題目編輯器（含相關事件搜尋）、練習流程（自動評分：對 4 錯 1；問答自評 1／3／5）、詳情面板「題目／出題」（預填年份題）。實測匯入 4 題 CSV → 練習：單選答錯進錯題本、年份 ±1 答對、排序題打亂顯示、統計 2／1／4／2。
