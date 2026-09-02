@@ -33,6 +33,7 @@ import { MailIcon, QuestionIcon } from './components/icons'
 import { HelpOverlay } from './components/HelpOverlay'
 import { ReportOverlay } from './components/ReportOverlay'
 import { SearchBox } from './components/SearchBox'
+import type { ExtraMatch } from './lib/search'
 import { TopicSwitcher } from './components/TopicSwitcher'
 import { SITE_NAME } from './lib/site'
 import { useTheme } from './lib/theme'
@@ -88,9 +89,27 @@ export interface AppProps {
   detailExtra?: (event: HistEvent, region: Region) => ReactNode
   /** 各欄只渲染視窗附近的事件（見 RegionColumn 的 `viewport`）。不開就全渲染。 */
   virtualize?: boolean
+  /**
+   * 搜尋的額外比對來源，見 `lib/search.ts` 的 `ExtraMatch`。
+   * 桌面版拿來比對 Tag（Tag 不在 `HistEvent` 上，網站看不到也不該看到）。
+   */
+  searchExtra?: ExtraMatch
+  /** 搜尋框剛聚焦。桌面版用來重抓 `searchExtra` 依賴的那份非同步索引。 */
+  onSearchOpen?: () => void
 }
 
-export default function App({ mastheadExtra, toolbarExtra, detailExtra, virtualize }: AppProps = {}) {
+/*
+ * searchExtra 與 onSearchOpen 刻意是兩個扁平的 prop，不包成一個物件 ——
+ * 物件字面值每次 render 都是新的，會讓 SearchBox 的 useMemo 每次都重算。
+ */
+export default function App({
+  mastheadExtra,
+  toolbarExtra,
+  detailExtra,
+  virtualize,
+  searchExtra,
+  onSearchOpen,
+}: AppProps = {}) {
   const scrollRef = useRef<HTMLDivElement>(null)
   /*
    * 開場縮放，由主題的 defaultPpy 決定（沒填就取整條軸約兩屏）。
@@ -628,7 +647,14 @@ export default function App({ mastheadExtra, toolbarExtra, detailExtra, virtuali
         onToggleCategory={toggleCategory}
         onZoom={(f) => zoomAt(f, (scrollRef.current?.clientHeight ?? 0) / 2)}
         onJump={scrollToYear}
-        search={<SearchBox all={ALL_EVENTS} onPick={revealEvent} />}
+        search={
+          <SearchBox
+            all={ALL_EVENTS}
+            onPick={revealEvent}
+            extraMatch={searchExtra}
+            onOpen={onSearchOpen}
+          />
+        }
         extra={toolbarExtra}
       />
 
