@@ -92,7 +92,7 @@
 .link-kind-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .link-kind-row input[type='text'] { flex: 1 1 140px; min-width: 140px; }
 .link-kind-row select { font: inherit; font-size: 13px; background: var(--surface-1); color: var(--text-primary); border: 1px solid var(--border); border-radius: 6px; padding: 3px 6px; }
-.link-kind-row .views-primary { font: inherit; font-size: 13px; padding: 4px 10px; border-radius: 6px; border: 0; cursor: pointer; }
+.link-kind-row .views-primary, .tag-quick .views-primary { font: inherit; font-size: 13px; padding: 4px 10px; border-radius: 6px; border: 0; cursor: pointer; }
 
 /* 標籤管理 */
 .tags-dialog { max-width: 640px; }
