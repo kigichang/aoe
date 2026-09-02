@@ -537,6 +537,24 @@ pub fn event_tags_set(conn: &mut Connection, r#ref: &str, tag_ids: &[String], ti
     Ok(())
 }
 
+/// 整張 event_tags 攤平成 ref → tag 名稱，給前端搜尋框當索引。
+///
+/// **只給貼在這則事件身上的那幾個，不展開子孫。** 展開是前端的事：它手上已經有
+/// `tags_all()` 的 parent_id，自己往上補祖先比較省 —— 在這裡展開的話同一個名字
+/// 會在很多則事件上重複傳一遍。
+pub fn event_tag_names(conn: &Connection) -> Result<std::collections::HashMap<String, Vec<String>>> {
+    let mut st = conn.prepare(
+        "SELECT et.event_ref, t.name FROM event_tags et JOIN tags t ON t.id = et.tag_id",
+    )?;
+    let rows = st.query_map([], |r| Ok((r.get::<_, String>(0)?, r.get::<_, String>(1)?)))?;
+    let mut out: std::collections::HashMap<String, Vec<String>> = std::collections::HashMap::new();
+    for row in rows {
+        let (r#ref, name) = row?;
+        out.entry(r#ref).or_default().push(name);
+    }
+    Ok(out)
+}
+
 /// 打了某個 tag 的事件（含子 tag 的）。回傳 ref + 標題快照；標題以現在的資料為準，
 /// 找不到（孤兒）才退回快照。
 pub fn events_with_tag(conn: &Connection, tag_id: &str) -> Result<Vec<EventHit>> {

@@ -9,6 +9,7 @@ import { EventEditor } from './editor/EventEditor'
 import { ViewsOverlay } from './views/ViewsOverlay'
 import { EventExtras } from './tags/EventExtras'
 import { TagsOverlay } from './tags/TagsOverlay'
+import { useTagIndex } from './tags/useTagIndex'
 import { QuizOverlay } from './quiz/QuizOverlay'
 import { EventQuestions } from './quiz/EventQuestions'
 import { DataOverlay } from './sync/DataOverlay'
@@ -49,12 +50,17 @@ function Desktop() {
   const closeViews = useCallback(() => setViewsOpen(false), [])
   // 每次 render 新物件會讓 EventEditor 的 effect 重跑，固定住
   const placement = useMemo(defaultPlacement, [])
+  // 搜尋框也要找得到貼在事件上的 Tag。索引在搜尋框聚焦時重抓 ——
+  // 剛貼完 tag 就想搜，點回搜尋框那一下就會生效。
+  const tagIndex = useTagIndex()
 
   return (
     <>
       {/* 跨主題 View 一次可能兩三千則，開視窗剔除；排版仍整欄算（見 RegionColumn.viewport） */}
       <App
         virtualize={VIRTUALIZE}
+        searchExtra={tagIndex.match}
+        onSearchOpen={tagIndex.refresh}
         mastheadExtra={
           <>
             <button

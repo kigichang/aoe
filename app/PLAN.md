@@ -257,6 +257,12 @@ Phase 1 的 PR 進 `main`；其餘在 `app` 分支。
     `foreign_keys` 預設是 **ON**，`DROP TABLE tags` 會經由 `event_tags` 的 `ON DELETE CASCADE`
     把使用者貼過的 tag 安靜地清掉，而 migration 本身還是成功的。要在 `db::open()` 明著關掉 FK、
     跑完再打開（PRAGMA 寫在 migration 的 SQL 裡不生效，那是在 transaction 內）。
+  - 2026-09-02 補**工具列搜尋比對 tag**：網站的 `search()` 加一個選填的 `ExtraMatch`（排在鏈的最後、
+    權重 0，網站不傳就完全等於現況；實測 bundle +174 bytes，前五道比對的最小化輸出逐字元相同），
+    桌面版用 `app/src/tags/useTagIndex.ts` 把 tag 攤平進記憶體再同步比對。走的是新的
+    `list_event_tag_names`（整張 event_tags 攤平，不展開子孫）——**`events_with_tag` 仍然沒有前端
+    呼叫者**，祖先展開刻意放在前端做，後端展開的話同一個名字會在很多則事件上重複傳一遍。
+    索引在搜尋框聚焦時重抓（外加掛載時一次）：貼完 tag 不會立刻生效，點回搜尋框才會。
   - 孤兒（ref 對不到事件）目前只在關聯／tag 清單裡以刪除線呈現，還沒有集中的孤兒檢查頁（Phase 7 同步時做）。
   - `window.prompt` 在 WKWebView 不可靠，取名改用對話框內的輸入列；`confirm` 可用。
 - [x] Phase 5 題庫（2026-08-30）：migration 005（questions／question_events／review_state／review_log）、四種題型（單選／年份±N／排序／問答自評）、`quiz.rs` 的 SM-2 與 CSV／Anki 純文字剖析（有單元測試）、匯入一筆錯整批不寫、今日到期／錯題本佇列、統計。前端：題庫面板（練習／題目／匯入）、題目編輯器（含相關事件搜尋）、練習流程（自動評分：對 4 錯 1；問答自評 1／3／5）、詳情面板「題目／出題」（預填年份題）。實測匯入 4 題 CSV → 練習：單選答錯進錯題本、年份 ±1 答對、排序題打亂顯示、統計 2／1／4／2。

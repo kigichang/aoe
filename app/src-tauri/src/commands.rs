@@ -332,6 +332,11 @@ pub fn set_event_tags(r#ref: String, tag_ids: Vec<String>, title: String, state:
     db::event_tags_set(&mut conn, &r#ref, &tag_ids, &title).map_err(err)
 }
 #[tauri::command]
+pub fn list_event_tag_names(state: State<'_, AppState>) -> Result<std::collections::HashMap<String, Vec<String>>, String> {
+    let conn = state.db.lock().map_err(|e| e.to_string())?;
+    db::event_tag_names(&conn).map_err(err)
+}
+#[tauri::command]
 pub fn events_with_tag(tag_id: String, state: State<'_, AppState>) -> Result<Vec<EventHit>, String> {
     let conn = state.db.lock().map_err(|e| e.to_string())?;
     db::events_with_tag(&conn, &tag_id).map_err(err)
@@ -686,6 +691,11 @@ mod tests {
         assert!(hits.iter().all(|h| !h.orphan));
         assert!(hits.iter().any(|h| h.event_id == "cn-qin-unification" && h.topic == "world"));
         assert_eq!(db::tags_all(&conn).unwrap().iter().find(|t| t.id == "t2").unwrap().count, 1);
+        // 搜尋索引：ref → 貼在它身上的名字，**不展開子孫**（祖先由前端補）
+        let names = db::event_tag_names(&conn).unwrap();
+        assert_eq!(names.len(), 2);
+        assert_eq!(names.get("world/china/cn-qin-unification").unwrap(), &vec!["力學".to_string()]);
+        assert_eq!(names.get("user/test-1").unwrap(), &vec!["科學革命".to_string()]);
 
         // 關聯：雙向查得到、不能自連、快照
         db::link_save(&conn, &LinkInput { id: "l1".into(), from_ref: "user/test-1".into(), to_ref: "world/china/cn-qin-unification".into(), kind: "對照".into(), note: None }).unwrap();

@@ -106,6 +106,8 @@ node tools/smoke-check.mjs ~/Library/Application\ Support/tw.kigi.aoe/aoe.sqlite
 
 **Tag 與關聯**（「標籤」）
 8. 在「標籤」面板建一個 tag 與它的子 tag，對兩則事件貼上去，詳情面板的 chip 與計數都要對。
+8b. ★ 工具列搜尋打**父** tag 的名字，只貼了子 tag 的那兩則也要出現（meta 寫 `Tag：<名字>`），
+    點了會跳過去。剛貼完的 tag 要**點回搜尋框**（重新聚焦）才會進索引，這是刻意的。
 9. 建一條有向關聯，到目標事件那邊看得到反向的那筆，點了會跳過去。
 
 **題庫**（「題庫」）

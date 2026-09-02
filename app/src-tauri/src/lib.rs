@@ -84,6 +84,7 @@ pub fn run() {
             commands::delete_tag,
             commands::get_event_tags,
             commands::set_event_tags,
+            commands::list_event_tag_names,
             commands::events_with_tag,
             commands::search_events,
             commands::list_links,

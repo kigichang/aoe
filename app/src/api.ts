@@ -38,6 +38,8 @@ export const api = {
   getEventTags: (ref: string) => invoke<string[]>('get_event_tags', { ref }),
   setEventTags: (ref: string, tagIds: string[], title: string) =>
     invoke<void>('set_event_tags', { ref, tagIds, title }),
+  /** 整張 event_tags 攤平成 ref → tag 名稱（不含子孫），給搜尋框當索引 */
+  listEventTagNames: () => invoke<Record<string, string[]>>('list_event_tag_names'),
   eventsWithTag: (tagId: string) => invoke<EventHit[]>('events_with_tag', { tagId }),
   searchEvents: (query: string, limit = 30) => invoke<EventHit[]>('search_events', { query, limit }),
 
