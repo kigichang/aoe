@@ -1,21 +1,32 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { CATEGORIES } from '../lib/data'
 import { displayYear, fmtYear } from '../lib/scale'
-import { search, type Hit, type Indexed } from '../lib/search'
+import { search, type ExtraMatch, type Hit, type Indexed } from '../lib/search'
 
 interface Props {
   all: Indexed[]
   onPick: (id: string) => void
+  /**
+   * 選填的額外比對來源，見 `search.ts` 的 `ExtraMatch`。**網站不傳。**
+   * 桌面版拿來把 Tag 掛進來。
+   */
+  extraMatch?: ExtraMatch
+  /**
+   * 搜尋框剛聚焦（含 ⌘K／`/`）。桌面版用來重抓 `extraMatch` 依賴的索引 ——
+   * 那份索引是非同步取得的，而 `search()` 是同步的。
+   */
+  onOpen?: () => void
 }
 
-export function SearchBox({ all, onPick }: Props) {
+export function SearchBox({ all, onPick, extraMatch, onOpen }: Props) {
   const [query, setQuery] = useState('')
   const [active, setActive] = useState(0)
   const [open, setOpen] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
   const boxRef = useRef<HTMLDivElement>(null)
 
-  const hits = useMemo(() => search(query, all), [query, all])
+  // extraMatch 一定要進 deps：漏了不會報錯，只會讓它撈出來的結果一直是舊的
+  const hits = useMemo(() => search(query, all, undefined, extraMatch), [query, all, extraMatch])
 
   // ⌘K／Ctrl+K 或 / 都能聚焦。/ 要避開正在打字的情況
   useEffect(() => {
@@ -85,7 +96,10 @@ export function SearchBox({ all, onPick }: Props) {
           setActive(0)
           setOpen(true)
         }}
-        onFocus={() => setOpen(true)}
+        onFocus={() => {
+          setOpen(true)
+          onOpen?.()
+        }}
         onKeyDown={onKeyDown}
       />
 
