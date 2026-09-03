@@ -4,8 +4,13 @@ import { api } from '../api'
 import type { Tag } from '../types'
 import { tagTree } from './tagTree'
 
-/** 標題列的「標籤」：管理 tag（新增／改名／換父層／刪除）。貼 tag 在詳情面板做。 */
-export function TagsOverlay({ onClose }: { onClose: () => void }) {
+/**
+ * 標題列的「標籤」：管理 tag（新增／改名／換父層／刪除）。貼 tag 在詳情面板做。
+ *
+ * 點 tag 的名字＝在時間軸上標出貼著它的事件（`onPick`，見 tagView.tsx），
+ * 由呼叫端決定要不要關掉這個視窗 —— 這裡只負責回報「使用者點了誰」。
+ */
+export function TagsOverlay({ onClose, onPick }: { onClose: () => void; onPick: (t: Tag) => void }) {
   const [tags, setTags] = useState<Tag[]>([])
   const [error, setError] = useState<string | null>(null)
   /** 取名／改名用的輸入列。WebView 的 window.prompt 不可靠，自己畫一個。 */
@@ -99,9 +104,14 @@ export function TagsOverlay({ onClose }: { onClose: () => void }) {
           {nodes.length === 0 && <p className="views-sub">還沒有 tag。</p>}
           {nodes.map(({ tag, depth }) => (
             <div key={tag.id} className="tags-row" style={{ paddingLeft: depth * 16 }}>
-              <span className="tags-name">
+              <button
+                type="button"
+                className="tags-name"
+                onClick={() => onPick(tag)}
+                title={`在時間軸上標出貼著「${tag.name}」的事件`}
+              >
                 {tag.name} <span className="views-sub">{tag.count}</span>
-              </span>
+              </button>
               <button type="button" className="views-act" onClick={() => addTag(tag.id)} title="加子 tag">＋子</button>
               <button type="button" className="views-act" onClick={() => renameTag(tag)}>改名</button>
               <select

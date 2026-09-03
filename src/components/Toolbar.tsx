@@ -30,6 +30,12 @@ interface Props {
   search: ReactNode
   /** 第一列最右邊的額外內容（桌面版掛自己的按鈕用）。不傳就跟現在一樣。 */
   extra?: ReactNode
+  /**
+   * 目前正在強調哪一組事件（見 App 的 `highlightLabel`）。
+   * 有值才在圖例列的最後多一格；不傳就跟現在完全一樣。
+   */
+  highlightLabel?: string
+  onClearHighlight?: () => void
 }
 
 export function Toolbar({
@@ -44,6 +50,8 @@ export function Toolbar({
   onJump,
   search,
   extra,
+  highlightLabel,
+  onClearHighlight,
 }: Props) {
   const floor = minImportance(ppy)
   return (
@@ -131,6 +139,29 @@ export function Toolbar({
                   傳
                 </span>
                 傳說
+              </button>
+            </div>
+          </>
+        )}
+
+        {/*
+          強調中的那一組事件（桌面版點某個 tag 進來的）。這一格不是篩選 ——
+          它不關掉任何東西，只是把那組事件墊到最高重要度並畫成選中的樣式，
+          所以刻意排在類別／傳說之後、用一條分隔線隔開。
+        */}
+        {highlightLabel && (
+          <>
+            <span className="group-sep" aria-hidden="true" />
+            <div className="chip-group highlight-group">
+              <span className="chip chip-highlight is-on">{highlightLabel}</span>
+              <button
+                type="button"
+                className="chip chip-clear"
+                onClick={onClearHighlight}
+                title={`取消強調「${highlightLabel}」`}
+                aria-label={`取消強調「${highlightLabel}」`}
+              >
+                ✕
               </button>
             </div>
           </>

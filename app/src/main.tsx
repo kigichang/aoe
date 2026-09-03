@@ -9,11 +9,12 @@ import { EventEditor } from './editor/EventEditor'
 import { ViewsOverlay } from './views/ViewsOverlay'
 import { EventExtras } from './tags/EventExtras'
 import { TagsOverlay } from './tags/TagsOverlay'
+import { TagNotice, useTagView } from './tags/tagView'
 import { useTagIndex } from './tags/useTagIndex'
 import { QuizOverlay } from './quiz/QuizOverlay'
 import { EventQuestions } from './quiz/EventQuestions'
 import { DataOverlay } from './sync/DataOverlay'
-import type { Question } from './types'
+import type { Question, Tag } from './types'
 import { runPerf } from './perf'
 import { USER_EVENT_PREFIX } from './types'
 
@@ -53,6 +54,17 @@ function Desktop() {
   // 搜尋框也要找得到貼在事件上的 Tag。索引在搜尋框聚焦時重抓 ——
   // 剛貼完 tag 就想搜，點回搜尋框那一下就會生效。
   const tagIndex = useTagIndex()
+  // 點某個 tag ＝在時間軸上標出貼著它的事件（不是篩選，見 tags/tagView.tsx）
+  const { view: tagView, openTag, clear: clearTag, notice: tagNotice, dismissNotice } = useTagView()
+  const pickTag = useCallback(
+    (t: Tag) => {
+      // 找不到事件時不關管理視窗會疊兩層對話框，Esc 一次會把兩層一起關掉
+      // （兩個監聽器都掛在 document，preventDefault 擋不住同一個節點上的另一個）。
+      setTagsOpen(false)
+      openTag(t)
+    },
+    [openTag],
+  )
 
   return (
     <>
@@ -61,6 +73,9 @@ function Desktop() {
         virtualize={VIRTUALIZE}
         searchExtra={tagIndex.match}
         onSearchOpen={tagIndex.refresh}
+        highlightIds={tagView?.ids}
+        highlightLabel={tagView?.label}
+        onClearHighlight={clearTag}
         mastheadExtra={
           <>
             <button
@@ -121,18 +136,19 @@ function Desktop() {
               </div>
             )}
             {/* key 讓換一則事件時整個區塊重新載入，不沿用上一則的 tag／關聯 */}
-            <EventExtras key={e.id} event={e} />
+            <EventExtras key={e.id} event={e} onPickTag={pickTag} />
             <EventQuestions key={`q-${e.id}`} event={e} onEdit={(q) => setQuiz({ edit: q })} />
           </>
         )}
       />
       {viewsOpen && <ViewsOverlay currentId={TOPIC_ID} onClose={closeViews} />}
-      {tagsOpen && <TagsOverlay onClose={closeTags} />}
+      {tagsOpen && <TagsOverlay onClose={closeTags} onPick={pickTag} />}
       {quiz && <QuizOverlay initialEdit={quiz.edit} onClose={closeQuiz} />}
       {dataOpen && <DataOverlay onClose={closeData} />}
       {editor && (
         <EventEditor editRef={editor.editRef} initialPlacement={placement} onClose={closeEditor} />
       )}
+      {tagNotice && <TagNotice text={tagNotice} onClose={dismissNotice} />}
     </>
   )
 }

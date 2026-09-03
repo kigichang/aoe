@@ -23,7 +23,7 @@ import {
   yToYear,
   yearToY,
 } from './lib/scale'
-import { placeEvents } from './lib/layout'
+import { HIGHLIGHT_IMPORTANCE, highlightImportance, placeEvents } from './lib/layout'
 import { Axis } from './components/Axis'
 import { RegionColumn } from './components/RegionColumn'
 import { Toolbar } from './components/Toolbar'
@@ -96,6 +96,17 @@ export interface AppProps {
   searchExtra?: ExtraMatch
   /** 搜尋框剛聚焦。桌面版用來重抓 `searchExtra` 依賴的那份非同步索引。 */
   onSearchOpen?: () => void
+  /**
+   * 強調這一組事件：畫成跟選中一樣的樣式，重要度一律視為最高
+   * （見 `layout.ts` 的 `highlightImportance`），所以不必放大就看得到。
+   * 桌面版用來顯示「貼了某個 tag 的事件」。
+   *
+   * **這不是篩選** —— 其餘事件照畫，橫向對照仍然完整。
+   */
+  highlightIds?: ReadonlySet<string>
+  /** 強調中的那一組叫什麼；有值時工具列會多一格，附一顆取消的按鈕 */
+  highlightLabel?: string
+  onClearHighlight?: () => void
 }
 
 /*
@@ -109,6 +120,9 @@ export default function App({
   virtualize,
   searchExtra,
   onSearchOpen,
+  highlightIds,
+  highlightLabel,
+  onClearHighlight,
 }: AppProps = {}) {
   const scrollRef = useRef<HTMLDivElement>(null)
   /*
@@ -312,7 +326,8 @@ export default function App({
 
       const fitsAt = (candidate: number) => {
         const floor = minImportance(candidate)
-        const visible = region.events.filter(
+        // 跟 RegionColumn 算 placed 時同一份輸入，否則問出來的縮放層級是別人的畫面
+        const visible = highlightImportance(region.events, highlightIds).filter(
           (e) =>
             e.importance >= floor &&
             effCategories.has(e.category) &&
@@ -322,13 +337,14 @@ export default function App({
         return placed.find((p) => p.event.id === event.id)?.dotOnly === false
       }
 
-      let target = Math.max(ppyForImportance(event.importance), fromPpy)
+      const importance = highlightIds?.has(event.id) ? HIGHLIGHT_IMPORTANCE : event.importance
+      let target = Math.max(ppyForImportance(importance), fromPpy)
       for (let i = 0; i < 20 && target < MAX_PPY && !fitsAt(target); i++) {
         target = clampPpy(target * 1.4)
       }
       return target
     },
-    [categories, showLegendary, laneCount],
+    [categories, showLegendary, laneCount, highlightIds],
   )
 
   /**
@@ -647,6 +663,8 @@ export default function App({
         onToggleCategory={toggleCategory}
         onZoom={(f) => zoomAt(f, (scrollRef.current?.clientHeight ?? 0) / 2)}
         onJump={scrollToYear}
+        highlightLabel={highlightLabel}
+        onClearHighlight={onClearHighlight}
         search={
           <SearchBox
             all={ALL_EVENTS}
@@ -688,6 +706,7 @@ export default function App({
                 laneCount={laneCount}
                 selectedId={selectedId}
                 onSelect={setSelectedId}
+                highlightIds={highlightIds}
                 collapsed={collapsedRegions.has(region.id)}
                 onToggleCollapse={() => toggleCollapse(region.id)}
                 viewport={viewport}

@@ -11,10 +11,15 @@ interface Props {
   placed: PlacedEvent
   ppy: number
   selected: boolean
+  /**
+   * 屬於目前被強調的那一組（例如貼了某個 tag）。畫成跟選中一樣的樣式，
+   * 但**不設 aria-current** —— 「目前在看哪一則」只會有一則，那是 selected。
+   */
+  highlighted?: boolean
   onSelect: (id: string) => void
 }
 
-export function EventMark({ placed, ppy, selected, onSelect }: Props) {
+export function EventMark({ placed, ppy, selected, highlighted, onSelect }: Props) {
   const { event, y, labelY, dotOnly } = placed
   const cat = CATEGORIES[event.category]
   const shifted = labelY - y > 2
@@ -23,13 +28,14 @@ export function EventMark({ placed, ppy, selected, onSelect }: Props) {
   // 圖釘畫在哪裡（y）永遠是 event.year 算的，跟這裡的文字顯示無關 ——
   // 文字一律用 actualYear（若有），讀者看到的數字才是真實年代
   const yearLabel = fmtYear(displayYear(event))
+  const lit = selected || highlighted ? ' is-selected' : ''
 
   // 只畫圖釘：標籤被擠掉了，但年份位置還是要標出來
   if (dotOnly) {
     return (
       <button
         type="button"
-        className={`mark mark-dot-only${soft}${selected ? ' is-selected' : ''}`}
+        className={`mark mark-dot-only${soft}${lit}`}
         // 同 layout.ts 的理由：畫布頂端的圖釘也是以中心定位，不夾住會露一半
         style={{ top: Math.max(0, y - 3.5) }}
         onClick={() => onSelect(event.id)}
@@ -54,7 +60,7 @@ export function EventMark({ placed, ppy, selected, onSelect }: Props) {
       )}
       <button
         type="button"
-        className={`mark imp-${event.importance}${selected ? ' is-selected' : ''}${soft}`}
+        className={`mark imp-${event.importance}${lit}${soft}`}
         style={{ top: labelY - HALF_ROW }}
         onClick={() => onSelect(event.id)}
         aria-current={selected || undefined}

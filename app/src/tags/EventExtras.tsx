@@ -9,11 +9,11 @@ import { tagTree } from './tagTree'
  * 掛在詳情面板（App 的 detailExtra）裡：這一則事件的 Tag 與關聯。
  * 出處之後、同時期之前 —— 先講「這一則自己的東西」，再講跨欄的對照。
  */
-export function EventExtras({ event }: { event: HistEvent }) {
+export function EventExtras({ event, onPickTag }: { event: HistEvent; onPickTag: (t: Tag) => void }) {
   const ref = refOf(event.id)
   return (
     <div className="extras">
-      <TagsBlock eventRef={ref} title={event.title} />
+      <TagsBlock eventRef={ref} title={event.title} onPickTag={onPickTag} />
       <LinksBlock eventRef={ref} />
     </div>
   )
@@ -21,7 +21,16 @@ export function EventExtras({ event }: { event: HistEvent }) {
 
 /* ---------------- Tag ---------------- */
 
-function TagsBlock({ eventRef, title }: { eventRef: string; title: string }) {
+function TagsBlock({
+  eventRef,
+  title,
+  onPickTag,
+}: {
+  eventRef: string
+  title: string
+  /** 點 chip＝在時間軸上標出貼著同一個 tag 的事件（見 tagView.tsx） */
+  onPickTag: (t: Tag) => void
+}) {
   const [all, setAll] = useState<Tag[] | null>(null)
   const [mine, setMine] = useState<string[]>([])
   const [editing, setEditing] = useState(false)
@@ -76,9 +85,16 @@ function TagsBlock({ eventRef, title }: { eventRef: string; title: string }) {
       {chips.length === 0 && !editing && <p className="views-sub">還沒有 tag。</p>}
       <div className="tag-chips">
         {chips.map((t) => (
-          <span key={t.id} className="tag-chip" style={t.color ? { ['--tag' as string]: t.color } : undefined}>
+          <button
+            key={t.id}
+            type="button"
+            className="tag-chip"
+            style={t.color ? { ['--tag' as string]: t.color } : undefined}
+            onClick={() => onPickTag(t)}
+            title={`在時間軸上標出貼著「${t.name}」的事件`}
+          >
             {t.name}
-          </span>
+          </button>
         ))}
       </div>
       {editing && (

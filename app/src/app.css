@@ -71,7 +71,8 @@
 .extras-block { margin: 14px 0; }
 .extras-block h3 { display: flex; align-items: center; gap: 8px; font-size: 13px; margin: 0 0 6px; }
 .tag-chips { display: flex; flex-wrap: wrap; gap: 6px; }
-.tag-chip { font-size: 12px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--tag, var(--border)); color: var(--text-primary); background: color-mix(in srgb, var(--tag, var(--muted)) 12%, transparent); }
+.tag-chip { font: inherit; font-size: 12px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--tag, var(--border)); color: var(--text-primary); background: color-mix(in srgb, var(--tag, var(--muted)) 12%, transparent); cursor: pointer; }
+.tag-chip:hover { background: color-mix(in srgb, var(--tag, var(--muted)) 26%, transparent); }
 .tag-picker { margin-top: 8px; border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; max-height: 260px; overflow: auto; }
 .tag-quick { display: flex; gap: 6px; margin-top: 8px; }
 .tag-quick input, .link-form input[type='text'] { flex: 1; font: inherit; font-size: 13px; color: var(--text-primary); background: var(--page); border: 1px solid var(--border); border-radius: 6px; padding: 4px 8px; min-width: 0; }
@@ -97,7 +98,8 @@
 /* 標籤管理 */
 .tags-dialog { max-width: 640px; }
 .tags-row { display: flex; align-items: center; gap: 4px; padding: 2px 0; font-size: 13px; }
-.tags-name { flex: 1; min-width: 120px; padding: 2px 4px; }
+.tags-name { flex: 1; min-width: 120px; padding: 2px 4px; text-align: left; font: inherit; font-size: 13px; color: var(--text-primary); background: none; border: 0; border-radius: 6px; cursor: pointer; }
+.tags-name:hover { background: var(--page); }
 .tags-row select { font: inherit; font-size: 12px; max-width: 110px; background: var(--surface-1); color: var(--text-primary); border: 1px solid var(--border); border-radius: 6px; padding: 1px 4px; }
 
 /* 題庫 */

@@ -1,7 +1,7 @@
 import { memo, useMemo } from 'react'
 import type { Category, Region } from '../lib/schema'
 import { minImportance, totalHeight, yearToY } from '../lib/scale'
-import { placeEvents } from '../lib/layout'
+import { highlightImportance, placeEvents } from '../lib/layout'
 import { PeriodRail } from './PeriodRail'
 import { EventMark } from './EventMark'
 import { CaretDownIcon } from './icons'
@@ -15,6 +15,11 @@ interface Props {
   laneCount: number
   selectedId: string | null
   onSelect: (id: string) => void
+  /**
+   * 被強調的事件 id（見 App 的 `highlightIds`）：一律畫成選中的樣式，
+   * 重要度視為最高，所以不必放大就排得進來。不傳就跟現在完全一樣。
+   */
+  highlightIds?: ReadonlySet<string>
   collapsed: boolean
   onToggleCollapse: () => void
   /**
@@ -40,6 +45,7 @@ function RegionColumnImpl({
   laneCount,
   selectedId,
   onSelect,
+  highlightIds,
   collapsed,
   onToggleCollapse,
   viewport,
@@ -50,14 +56,15 @@ function RegionColumnImpl({
   // 代價是沒有則數可報 —— 標題列因此在收合時不印那一格。
   const placed = useMemo(() => {
     if (collapsed) return []
-    const visible = region.events.filter(
+    // 墊重要度要在篩門檻之前 —— 被強調的事件本來可能低於 floor
+    const visible = highlightImportance(region.events, highlightIds).filter(
       (e) =>
         e.importance >= floor &&
         categories.has(e.category) &&
         (showLegendary || !e.legendary),
     )
     return placeEvents(visible, (year) => yearToY(year, ppy), laneCount, ppy)
-  }, [region.events, floor, categories, showLegendary, ppy, laneCount, collapsed])
+  }, [region.events, floor, categories, showLegendary, ppy, laneCount, collapsed, highlightIds])
 
   const lanes = useMemo(() => {
     const inView = viewport
@@ -126,6 +133,7 @@ function RegionColumnImpl({
                     placed={p}
                     ppy={ppy}
                     selected={p.event.id === selectedId}
+                    highlighted={highlightIds?.has(p.event.id)}
                     onSelect={onSelect}
                   />
                 ))}

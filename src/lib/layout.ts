@@ -111,3 +111,29 @@ export function placeEvents(
   // 依年份順序輸出，渲染結果才穩定
   return events.map((e) => result.get(e.id)!)
 }
+
+/** 被強調的事件一律當成最高重要度看待 */
+export const HIGHLIGHT_IMPORTANCE = 5
+
+/**
+ * 把「被強調的那組事件」的重要度墊到最高。
+ *
+ * 為什麼是改 importance 而不是另開一個旗標：重要度同時管兩件事 ——
+ * 縮放層級的門檻（`minImportance`）與排版的佔位順序（`placeEvents` 是
+ * 重要度優先）。強調的目的是「不必放大就看得到，而且不會被鄰居擠成圖釘」，
+ * 兩件事都要，墊 importance 一次到位。
+ *
+ * 覆寫的是**複本**：`REGIONS` 裡的事件、詳情面板拿到的那則都還是原值，
+ * 所以取消強調只是不再套這一層，沒有「還原重要度」這種需要記帳的狀態。
+ *
+ * `ids` 沒傳或是空的就原樣回傳（連複製都不做）—— 網站永遠走這條。
+ */
+export function highlightImportance(
+  events: HistEvent[],
+  ids?: ReadonlySet<string>,
+): HistEvent[] {
+  if (!ids?.size) return events
+  return events.map((e) =>
+    ids.has(e.id) ? { ...e, importance: HIGHLIGHT_IMPORTANCE } : e,
+  )
+}

@@ -336,6 +336,28 @@ button {
   background: var(--surface-1);
 }
 
+/*
+ * 「正在強調某一組事件」那一格。它不是可切換的篩選 chip：標題本身不可點，
+ * 要取消請按旁邊的 ✕（借 .is-on 的外觀只是為了讓這一格看起來是亮著的）。
+ * 兩顆去掉中間的圓角與縫隙，當成一個東西讀。
+ */
+.highlight-group { gap: 0; }
+.legend .chip-highlight {
+  padding: 3px 8px 3px 10px;
+  border-right: 0;
+  border-radius: 999px 0 0 999px;
+  cursor: default;
+}
+.legend .chip-clear {
+  padding: 3px 9px;
+  border-radius: 0 999px 999px 0;
+  color: var(--text-primary);
+  border-color: var(--baseline);
+  background: var(--surface-1);
+  cursor: pointer;
+}
+.legend .chip-clear:hover { color: var(--r7); }
+
 /* ---------------- 時間軸畫布 ---------------- */
 
 /*
