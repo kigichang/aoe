@@ -1,7 +1,7 @@
 {
   "$schema": "../gen/schemas/desktop-schema.json",
   "identifier": "default",
-  "description": "主視窗的權限：目前只需要呼叫自訂 command",
+  "description": "主視窗的權限：自訂 command，以及用系統預設瀏覽器開外部連結",
   "windows": ["main"],
-  "permissions": ["core:default"]
+  "permissions": ["core:default", "opener:default"]
 }

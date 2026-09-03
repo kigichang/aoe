@@ -29,3 +29,6 @@ reqwest = { version = "0.12", default-features = false, features = ["rustls-tls"
 # App 自身的更新。用自簽的 minisign 金鑰驗證更新包，跟 Apple 的憑證體系無關 ——
 # 這正是開發期能在不處理 Apple Developer 簽章的前提下發 Windows 版的原因。
 tauri-plugin-updater = "2"
+# 外部連結（出處、儲存庫、mailto）用系統預設瀏覽器開啟。WebView 沒有分頁，
+# `target="_blank"` 在這裡是完全沒反應，見 ../src/externalLinks.ts。
+tauri-plugin-opener = "2"

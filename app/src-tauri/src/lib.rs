@@ -39,6 +39,7 @@ fn topics_dir() -> Option<PathBuf> {
 pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_updater::Builder::new().build())
+        .plugin(tauri_plugin_opener::init())
         .setup(|app| {
             let data_dir = app.path().app_data_dir()?;
             let mut conn = db::open(&data_dir.join("aoe.sqlite"))?;

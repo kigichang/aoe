@@ -16,6 +16,7 @@ import { EventQuestions } from './quiz/EventQuestions'
 import { DataOverlay } from './sync/DataOverlay'
 import type { Question, Tag } from './types'
 import { runPerf } from './perf'
+import { installExternalLinks } from './externalLinks'
 import { USER_EVENT_PREFIX } from './types'
 
 /**
@@ -30,6 +31,9 @@ function defaultPlacement() {
   const [a, b] = first.id.split(':')
   return b ? { topic: a, region: b } : { topic: TOPIC_ID, region: a }
 }
+
+// 出處等外部連結交給系統瀏覽器（WebView 開不了新分頁，見 externalLinks.ts）
+installExternalLinks()
 
 const PARAMS = new URLSearchParams(location.search)
 /** `?virt=0` 關掉視窗剔除，給效能基準對照用 */

@@ -460,6 +460,22 @@ dispatch 參數就是為此），不必為了驗證安裝檔付一次十幾分�
 這是 tauri-plugin-updater 的行為不是本專案的 bug，但**訊息完全看不出跟磁碟有關**，
 使用者回報時要先問一句「App 放在哪個磁碟」。
 
+### 外部連結（出處）要走 opener plugin
+
+詳情面板的「出處」點下去完全沒反應：WebView 沒有分頁也不讓頁面自己開視窗，
+`target="_blank"` 在這裡是 no-op，**而且不報錯、console 乾淨** —— 又一個
+「畫面看起來正常、功能其實壞了」。同一個症狀還有事件連結、說明裡的儲存庫連結、
+回報面板的 issues 與 mailto。
+
+修法：`tauri-plugin-opener` + capability 加 `opener:default`
+（它自帶的 scope 只放行 `http`／`https`／`mailto`／`tel`），前端 `src/externalLinks.ts`
+在 document 冒泡階段攔跨來源的 `<a>`，改呼叫 `openUrl()`。
+
+兩個容易踩到的點記在那支檔案裡：**判準是跨來源不是 `target="_blank"`**
+（`a.href` 會把主題切換器的相對路徑解析成絕對網址，只看協定會把站內導覽也丟出去），
+以及 **plugin 自己就注入了一段功能重疊的 init script**（只攔有 `target` 的、
+且跳過 cmd／alt 點擊），我們掛得比它早、攔到就 `preventDefault()`，所以不會開兩次。
+
 ### 還沒做
 
 - **Windows 上的線上同步與 App 更新**還沒實測（macOS 兩者都對正式端點驗過）。
