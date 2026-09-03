@@ -91,10 +91,10 @@ function Desktop() {
               type="button"
               className="theme-toggle"
               onClick={() => setQuiz({})}
-              title="題庫與錯題本"
-              aria-label="題庫與錯題本"
+              title="錯題本"
+              aria-label="錯題本"
             >
-              <span className="btn-label">題庫</span>
+              <span className="btn-label">錯題本</span>
             </button>
             <button
               type="button"

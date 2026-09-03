@@ -24,7 +24,7 @@ export function Practice({ queue, onDone, onExit }: { queue: QuestionCard[]; onD
       <div className="practice-done">
         <p>這一輪結束了。</p>
         <button type="button" className="views-primary" onClick={onDone}>
-          回題庫
+          回錯題本
         </button>
       </div>
     )

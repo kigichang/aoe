@@ -8,7 +8,7 @@ import { QuestionEditor, emptyQuestion } from './QuestionEditor'
 type Tab = 'practice' | 'list' | 'import'
 
 /**
- * 標題列的「題庫」。三頁：練習（今日到期／錯題本／全部）、題目清單、匯入。
+ * 標題列的「錯題本」。三頁：練習（今日到期／錯題本／全部）、題目清單、匯入。
  * 也可以由外面帶一題進來直接編輯（詳情面板的「出題」）。
  */
 export function QuizOverlay({ initialEdit, onClose }: { initialEdit?: Question; onClose: () => void }) {
@@ -80,7 +80,7 @@ export function QuizOverlay({ initialEdit, onClose }: { initialEdit?: Question; 
     <div className="help-backdrop" onClick={onClose}>
       <div className="help views-dialog quiz-dialog" role="dialog" aria-modal="true" onClick={(e) => e.stopPropagation()}>
         <div className="help-head">
-          <h2>題庫</h2>
+          <h2>錯題本</h2>
           <button type="button" className="help-close" onClick={onClose} ref={closeRef} aria-label="關閉">
             <CloseIcon />
           </button>
